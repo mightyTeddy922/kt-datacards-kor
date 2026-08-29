@@ -1,0 +1,1600 @@
+{
+  "team": "xv26-stealth-battlesuits",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:41.922288+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/xv26-stealth-battlesuits/content/xv26-stealth-battlesuits-content.json",
+          "hash": "f6fd98a0ed73b67ff246fd0bfa38fcda703f1ebba84235486a6866b30f46a8a5",
+          "modified": "2026-08-29T18:51:16.052069+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:51:33.037702+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/manifest.json": "6cd5e4d54afe33d305f3ea41533c799ed69d21b9ff23851036e00321abcbabb5",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "3506a0201272b759e920db602ee125ed00f12a62a404192fa3c5fb9dbf09c92e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "9fe66b34e52639f14bb2760287fd3d48b775260be13986c467102ebd20eacf8e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "ec003ff0dda8b78971679af9488ffdf432c0b9d10c8902de58292d9ba354b8f9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "85151c86367e9755a4c589652b504a939fc61ec1fe2fd075662fd9c0bce929db",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "b9dc9b90d00540e6e3dd8b9a65dda68f214cfadd7d1d03915869bfc67e219ec7",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "39d5439e082ce78b24ea0d44fb515cbc98b1d5b659adf8ff5b23fd3e007fc256",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "1bb7b338d96a00fc8cf8520c5e52de545cbd074c6fef0a330f8922fa05787ba6",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "06351c2385eabc15eb9b2b8facaf37ab52590cdb16d5b9642b36e1d2d2bf92c7",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "9f51a95f9c5f587f935eeff3930bee198c8967da6390b8446f70198350a78deb",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "242d60b71ed7c3449987608185c011d7f29894e57fc01536c4a5e374491018a6",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "bc34f834b0fad6b02aad81d7356b098ac93dd00ff469bfd06a3b038da2c2f46f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "aa762974171daa292997988db3a98022205b1e57ede622feb939f56bd52e96f9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "667555d24ef8ce5ed25264b96d10025174836abeadb86b5d896ec3aa0fea4a3c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "9c8e4d53d1fb171c7c9404a5f41db89a87fb5a578e47c8348351552538800bfe",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv15-gun-drone.pdf": "07961b5179589dc34781afecc30dd89b7d720212cf6ecb2c9dd51506cf739ff2",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv75-marker-drone.pdf": "4f26cf79f2d47bd43ca9aa6a6a28be84ef8d20b75783adb53819ee3ce265ef60",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-designator.pdf": "99c57e4664fdfa11edbee07f8417aab3ea4dbf3b498ca53520ee6fd24b6a4eba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-infiltrator.pdf": "fb8a999caf7ebe48767c0a92379ee7a38b183279044f3250179360995b01c7c8",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-liberator.pdf": "72bde4a394e3b42e0d4cadd64840728d4c1b532f432b43a4872e774a9379976b",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-lodestar.pdf": "91fe00e9f257a5739cc0beb4c833786e58139db11264d52d268f08db6f1a5a93",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-neutraliser.pdf": "b5a41205e11550ef00a3b59b554b6319404784bb79b684d41d23fb326ef390cf",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-shasvre.pdf": "28f57f87d43da60a862adfe6e8c98cb14f1d0cb93c63a115276fc3c3db949ad8",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-advanced-blacksun-filters.pdf": "b5bdb91ffbbfb92257658226ed67b0b633587faeb694e9c9bd31dc10f87b9a4e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-counter-network-jammers.pdf": "a37ea689bdd1092253b20b3e38cc54ea770925ed484e799be3e3ee31d8bd53ed",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-hardwired-target-locks.pdf": "f7572d4e221a3a581ad8dff4f7ae18573d9280c087d7a63fef64e63242d929d3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-xv26-multitrackers.pdf": "104419e4cab71b2159e62092a59e0d9078f6c261d890542a6c63cc86bde3790a",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-kauyon.pdf": "e2af981d603ac5b77853ca8520687758fdb11f1181e5ebbf1cdfea1d0464bc5f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-stealth-fields.pdf": "1e9f9a29ae5df218a858b71ccb6de8423a5ef88e83f047032c9907a502544bad",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-engage-jet-pack.pdf": "cd218fa8681213b729dd8f8e59c350cb7ef4a7fe17220e81327df6eed66f6bcd",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-ghostshroud.pdf": "0d99d8330ab85f799305bc443c37747b450f632ea2249f50298c8d93c4a6bfef",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-saviour-protocols.pdf": "07edb37b2840b4db99f86605bbb48ebef7c2652df1729c26a09264eca8343d37",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-vectored-retro-thrusters.pdf": "0a12701ab5967ade2a82e470f652e922862139cd4e14616c134d3b5910428eca",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-1.pdf": "7455642c4e8e9d065049d5bfc1ac44fb78e4f011107cfc968d73811b1cc3033c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-10.pdf": "e02c7efc86b3dfb516474d3ee55e09bf77eb0cc90d36ece80fc172f32012bb16",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-11.pdf": "169e7db8c9c9432c1663f027ea7cae96a83bb00a2bc3f4d0c66e3b0d2e136925",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-12.pdf": "2fa75af1013e794da9e37f54d897ff9602307e34b02312b98e2aac116561a460",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-13.pdf": "916369d23f22fd47b66fd87517ee49f74c0abe0682ba4f6325c35aebd424df53",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-14.pdf": "e3b11f9e47fc8ec5467fb9b7633cd1416cb2ecd94d8b496a2fb78e23ed395c2f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-15.pdf": "50738c0935bb840b3cedfd6fe07fede2e1baeca6de7e2b95fc7696a69b965832",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-16.pdf": "c0681120fdb0f85fdddfe62261c85af861f78415eb83c17763f192b62e6a434f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-2.pdf": "1a778685dce6a493ecbe3750ee6c51166a6899d00d79445a423c1372ebab5be9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-3.pdf": "e1205f8f3c625bcc347b41034faea80a57d6bb61fac08420ce67e1f804a9ff4b",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-4.pdf": "8c8c807924efde1c25b0056ce77356a692414359f703490917d818e134815f8a",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-5.pdf": "eefbc3dbf18dac82866f738a0fdc8fd0af6f8a462cb7bcecf2cfca76cb48f925",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-6.pdf": "99b98d38da0efe45c9b6f1a59ac6a059a3543189fdc264dd40e75967a3fe486e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-7.pdf": "5a6677d35401c350e7efab5096d658019b9bc2f55f9173bc09a3fa7de2fb8ae9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-8.pdf": "1f8e6cb72619825f9b91559822f8dc58a1807c74d50d312b2612f6284cdfb83c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-9.pdf": "a36c302a934595bfe375da6c03992b91901b383293edee21f8c092ed8355fddf",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection.pdf": "09e693b494adbf196156555bf2674193c810fc90e0028396d1161a6cae6fcc7e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-bonds-of-unity.pdf": "c1a9cf4224fde8a782ec50bb4cef561d0fa12c0e01c08079e8340592c41843b3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-holowave-countermeasures.pdf": "c751269baff99953c2abee77c27ecd9249ab9c610c3ad4811f0c405c5306d1fc",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-patient-hunters.pdf": "2b7b749042bc20a49d8f53070e34e0de1cdd4c0588ec64b00b8248956552bee3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-prepare-ambush.pdf": "2c6e6b58253d49d9093b42bcb6cf6ca87ca4b03a7da5b4334a5b75993e8ae5ba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-token-guide-token-guide.pdf": "eb8acc660505c6bfbcc01ad66f9cebdc2e41f810042f232999740e656d664bf7"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/xv26-stealth-battlesuits/card-backside/xv26-stealth-battlesuits-backside-landscape.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-07-12T18:59:15.349283+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/xv26-stealth-battlesuits/card-backside/xv26-stealth-battlesuits-backside-portrait.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-07-12T18:59:15.354549+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:59:15.362418+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-token.jpg": "c84604f0f83a3d418cd383cbff42fa362e4c997b625e60fb925929ed346d16ba",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/xv26-stealth-battlesuits-ambush.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-ambush.png",
+          "hash": "4ec77b25d8e499a3b959f43ab6a6ac32b8763373dad4c1609ae257e796c77dff",
+          "modified": "2026-08-29T18:51:34.216058+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-electrochaff-launcher.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-electrochaff-launcher.png",
+          "hash": "130369e5b8be9fbb01e042d9de1841e6bb5c8b1611084c2712ffbeda8424bc05",
+          "modified": "2026-08-29T18:51:34.223581+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-emp-bomb.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-emp-bomb.png",
+          "hash": "601a67312e810c5c64817faf8ec89f6308490bb0282752ccb7d556de4ea3a304",
+          "modified": "2026-08-29T18:51:34.230086+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-homing-beacon.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-homing-beacon.png",
+          "hash": "11bd5546caef79b505b77164eeb9a9e39c605c4e153359ada21de108bad8c432",
+          "modified": "2026-08-29T18:51:34.236648+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-multispectrum-sensor-package.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multispectrum-sensor-package.png",
+          "hash": "700fb197f63517bebd5c21c25515c6f9324bddc90a72d05b6b8ad2681e4b4b13",
+          "modified": "2026-08-29T18:51:34.246696+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-multitracker.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multitracker.png",
+          "hash": "f11dc3d7601039dc54df472d76c77f17873bd70688a4ca9967eee75053526946",
+          "modified": "2026-08-29T18:51:34.254721+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-photon-grenade-launcher.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-photon-grenade-launcher.png",
+          "hash": "d45efde1266ff1841b18bf27b37383175696ac4baa31d3148896ce1a344a7485",
+          "modified": "2026-08-29T18:51:34.265685+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-ambush.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-ambush.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.269194+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-electrochaff-launcher.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-electrochaff-launcher.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.271193+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-emp-bomb.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-emp-bomb.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.275195+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-homing-beacon.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-homing-beacon.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.277699+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-multispectrum-sensor-package.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multispectrum-sensor-package.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.280207+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-multitracker.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multitracker.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.283166+00:00"
+        },
+        "tokens/xv26-stealth-battlesuits-photon-grenade-launcher.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-photon-grenade-launcher.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:51:34.284171+00:00"
+        },
+        "tokens/tokenbag/xv26-stealth-battlesuits-token-bag-icon.png": {
+          "path": "output/xv26-stealth-battlesuits/tokens/tokenbag/xv26-stealth-battlesuits-token-bag-icon.png",
+          "hash": "c84604f0f83a3d418cd383cbff42fa362e4c997b625e60fb925929ed346d16ba",
+          "modified": "2026-08-29T18:51:34.293216+00:00"
+        },
+        "tokens/tokenbag/xv26-stealth-battlesuits-token-bag.obj": {
+          "path": "output/xv26-stealth-battlesuits/tokens/tokenbag/xv26-stealth-battlesuits-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:51:34.294387+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:51:52.072317+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/manifest.json": "6cd5e4d54afe33d305f3ea41533c799ed69d21b9ff23851036e00321abcbabb5",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-token.jpg": "c84604f0f83a3d418cd383cbff42fa362e4c997b625e60fb925929ed346d16ba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "3506a0201272b759e920db602ee125ed00f12a62a404192fa3c5fb9dbf09c92e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "9fe66b34e52639f14bb2760287fd3d48b775260be13986c467102ebd20eacf8e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "ec003ff0dda8b78971679af9488ffdf432c0b9d10c8902de58292d9ba354b8f9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "85151c86367e9755a4c589652b504a939fc61ec1fe2fd075662fd9c0bce929db",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "b9dc9b90d00540e6e3dd8b9a65dda68f214cfadd7d1d03915869bfc67e219ec7",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "39d5439e082ce78b24ea0d44fb515cbc98b1d5b659adf8ff5b23fd3e007fc256",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "1bb7b338d96a00fc8cf8520c5e52de545cbd074c6fef0a330f8922fa05787ba6",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "06351c2385eabc15eb9b2b8facaf37ab52590cdb16d5b9642b36e1d2d2bf92c7",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "9f51a95f9c5f587f935eeff3930bee198c8967da6390b8446f70198350a78deb",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "242d60b71ed7c3449987608185c011d7f29894e57fc01536c4a5e374491018a6",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "bc34f834b0fad6b02aad81d7356b098ac93dd00ff469bfd06a3b038da2c2f46f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "aa762974171daa292997988db3a98022205b1e57ede622feb939f56bd52e96f9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "667555d24ef8ce5ed25264b96d10025174836abeadb86b5d896ec3aa0fea4a3c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "9c8e4d53d1fb171c7c9404a5f41db89a87fb5a578e47c8348351552538800bfe",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv15-gun-drone.pdf": "07961b5179589dc34781afecc30dd89b7d720212cf6ecb2c9dd51506cf739ff2",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv75-marker-drone.pdf": "4f26cf79f2d47bd43ca9aa6a6a28be84ef8d20b75783adb53819ee3ce265ef60",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-designator.pdf": "99c57e4664fdfa11edbee07f8417aab3ea4dbf3b498ca53520ee6fd24b6a4eba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-infiltrator.pdf": "fb8a999caf7ebe48767c0a92379ee7a38b183279044f3250179360995b01c7c8",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-liberator.pdf": "72bde4a394e3b42e0d4cadd64840728d4c1b532f432b43a4872e774a9379976b",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-lodestar.pdf": "91fe00e9f257a5739cc0beb4c833786e58139db11264d52d268f08db6f1a5a93",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-neutraliser.pdf": "b5a41205e11550ef00a3b59b554b6319404784bb79b684d41d23fb326ef390cf",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-shasvre.pdf": "28f57f87d43da60a862adfe6e8c98cb14f1d0cb93c63a115276fc3c3db949ad8",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-advanced-blacksun-filters.pdf": "b5bdb91ffbbfb92257658226ed67b0b633587faeb694e9c9bd31dc10f87b9a4e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-counter-network-jammers.pdf": "a37ea689bdd1092253b20b3e38cc54ea770925ed484e799be3e3ee31d8bd53ed",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-hardwired-target-locks.pdf": "f7572d4e221a3a581ad8dff4f7ae18573d9280c087d7a63fef64e63242d929d3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-xv26-multitrackers.pdf": "104419e4cab71b2159e62092a59e0d9078f6c261d890542a6c63cc86bde3790a",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-kauyon.pdf": "e2af981d603ac5b77853ca8520687758fdb11f1181e5ebbf1cdfea1d0464bc5f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-stealth-fields.pdf": "1e9f9a29ae5df218a858b71ccb6de8423a5ef88e83f047032c9907a502544bad",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-engage-jet-pack.pdf": "cd218fa8681213b729dd8f8e59c350cb7ef4a7fe17220e81327df6eed66f6bcd",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-ghostshroud.pdf": "0d99d8330ab85f799305bc443c37747b450f632ea2249f50298c8d93c4a6bfef",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-saviour-protocols.pdf": "07edb37b2840b4db99f86605bbb48ebef7c2652df1729c26a09264eca8343d37",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-vectored-retro-thrusters.pdf": "0a12701ab5967ade2a82e470f652e922862139cd4e14616c134d3b5910428eca",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-1.pdf": "7455642c4e8e9d065049d5bfc1ac44fb78e4f011107cfc968d73811b1cc3033c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-10.pdf": "e02c7efc86b3dfb516474d3ee55e09bf77eb0cc90d36ece80fc172f32012bb16",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-11.pdf": "169e7db8c9c9432c1663f027ea7cae96a83bb00a2bc3f4d0c66e3b0d2e136925",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-12.pdf": "2fa75af1013e794da9e37f54d897ff9602307e34b02312b98e2aac116561a460",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-13.pdf": "916369d23f22fd47b66fd87517ee49f74c0abe0682ba4f6325c35aebd424df53",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-14.pdf": "e3b11f9e47fc8ec5467fb9b7633cd1416cb2ecd94d8b496a2fb78e23ed395c2f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-15.pdf": "50738c0935bb840b3cedfd6fe07fede2e1baeca6de7e2b95fc7696a69b965832",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-16.pdf": "c0681120fdb0f85fdddfe62261c85af861f78415eb83c17763f192b62e6a434f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-2.pdf": "1a778685dce6a493ecbe3750ee6c51166a6899d00d79445a423c1372ebab5be9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-3.pdf": "e1205f8f3c625bcc347b41034faea80a57d6bb61fac08420ce67e1f804a9ff4b",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-4.pdf": "8c8c807924efde1c25b0056ce77356a692414359f703490917d818e134815f8a",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-5.pdf": "eefbc3dbf18dac82866f738a0fdc8fd0af6f8a462cb7bcecf2cfca76cb48f925",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-6.pdf": "99b98d38da0efe45c9b6f1a59ac6a059a3543189fdc264dd40e75967a3fe486e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-7.pdf": "5a6677d35401c350e7efab5096d658019b9bc2f55f9173bc09a3fa7de2fb8ae9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-8.pdf": "1f8e6cb72619825f9b91559822f8dc58a1807c74d50d312b2612f6284cdfb83c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-9.pdf": "a36c302a934595bfe375da6c03992b91901b383293edee21f8c092ed8355fddf",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection.pdf": "09e693b494adbf196156555bf2674193c810fc90e0028396d1161a6cae6fcc7e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-bonds-of-unity.pdf": "c1a9cf4224fde8a782ec50bb4cef561d0fa12c0e01c08079e8340592c41843b3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-holowave-countermeasures.pdf": "c751269baff99953c2abee77c27ecd9249ab9c610c3ad4811f0c405c5306d1fc",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-patient-hunters.pdf": "2b7b749042bc20a49d8f53070e34e0de1cdd4c0588ec64b00b8248956552bee3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-prepare-ambush.pdf": "2c6e6b58253d49d9093b42bcb6cf6ca87ca4b03a7da5b4334a5b75993e8ae5ba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-token-guide-token-guide.pdf": "eb8acc660505c6bfbcc01ad66f9cebdc2e41f810042f232999740e656d664bf7"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/xv26-stealth-battlesuits/dice/xv26-stealth-battlesuits-dice-light.jpg",
+          "hash": "dbe1609df56eb1d1399c98b67a2d9718d0a3d18e42ac2c5ef546f5bbc4409b82",
+          "modified": "2026-08-29T18:51:59.221105+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/xv26-stealth-battlesuits/dice/xv26-stealth-battlesuits-dice-dark.jpg",
+          "hash": "4d2048d985b9a103c976e290869b8d567d44659cfed01303119b4e584a3f98f5",
+          "modified": "2026-08-29T18:51:59.222105+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/xv26-stealth-battlesuits/dice/xv26-stealth-battlesuits-dice-team.jpg",
+          "hash": "22615b26a5693457ade1e791fd3fcee0d207a76c34fa1f28c8c09c43d44301d8",
+          "modified": "2026-08-29T18:51:59.223158+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:51:59.224161+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-token-transparent.png": "72951a7850a50ba79bb5bbb860fb349a1030eaaa95dec3151df2bcd88d8fc7ac",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cardbox/xv26-stealth-battlesuits-card-box-texture.jpg",
+          "hash": "63f43f5716bb5ba4163d918634e32579f2c2190b1b2719e1f66fb731cf76477a",
+          "modified": "2026-08-29T18:51:59.301126+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/xv26-stealth-battlesuits/cardbox/xv26-stealth-battlesuits-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:51:59.301126+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:51:59.304246+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-token.jpg": "c84604f0f83a3d418cd383cbff42fa362e4c997b625e60fb925929ed346d16ba",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/mv15-gun-drone-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/mv15-gun-drone-back.jpg",
+          "hash": "f9e712dd6af43185dcd71613aa3d51406d7454e9a675118b45eb39375ab12e53",
+          "modified": "2026-08-29T18:52:15.489101+00:00"
+        },
+        "cards/datacards/mv15-gun-drone-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/mv15-gun-drone-front.jpg",
+          "hash": "8933a31acb4267f18365eabbcabe91ed6f1eaa98499ef97df642af061b859385",
+          "modified": "2026-08-29T18:52:15.489101+00:00"
+        },
+        "cards/datacards/mv75-marker-drone-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/mv75-marker-drone-back.jpg",
+          "hash": "78cba113cf0219059faf730214c3ab24f184d0f1ac9594a2ef984c040f789b71",
+          "modified": "2026-08-29T18:52:15.490605+00:00"
+        },
+        "cards/datacards/mv75-marker-drone-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/mv75-marker-drone-front.jpg",
+          "hash": "7be6506d80bf8474c15ce024ba7d2656f66ee7a16b242b97be516063849d0dfa",
+          "modified": "2026-08-29T18:52:15.490605+00:00"
+        },
+        "cards/datacards/xv26-designator-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-designator-back.jpg",
+          "hash": "7e202c24d6420f8742ec35ec4baed46feece047dc278d0134a22631b1d91139e",
+          "modified": "2026-08-29T18:52:15.490605+00:00"
+        },
+        "cards/datacards/xv26-designator-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-designator-front.jpg",
+          "hash": "95d52a1926d3c7c618176f0ff6a8f9f909a4a6860f3a5478a899636a0cd65999",
+          "modified": "2026-08-29T18:52:15.492115+00:00"
+        },
+        "cards/datacards/xv26-infiltrator-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-infiltrator-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.492115+00:00"
+        },
+        "cards/datacards/xv26-infiltrator-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-infiltrator-front.jpg",
+          "hash": "a135667cc9e1c6af26963575d3ee636f219446f858a81b300e9619ab0a2da19f",
+          "modified": "2026-08-29T18:52:15.492115+00:00"
+        },
+        "cards/datacards/xv26-liberator-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-liberator-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.493618+00:00"
+        },
+        "cards/datacards/xv26-liberator-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-liberator-front.jpg",
+          "hash": "146c00f1e2f6770cb234b6fcb3337edbf99010f4748c2196a954588682594c11",
+          "modified": "2026-08-29T18:52:15.493618+00:00"
+        },
+        "cards/datacards/xv26-lodestar-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-lodestar-back.jpg",
+          "hash": "b57621a6af2f586685eacda2b6c487c6a451ecb33ce5162f5b644736e09a1538",
+          "modified": "2026-08-29T18:52:15.494621+00:00"
+        },
+        "cards/datacards/xv26-lodestar-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-lodestar-front.jpg",
+          "hash": "9eb0fd73bf15e38e922562ae2d7e3ec2605001e2c9e840b75f38053b3aa0e449",
+          "modified": "2026-08-29T18:52:15.495624+00:00"
+        },
+        "cards/datacards/xv26-neutraliser-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-neutraliser-back.jpg",
+          "hash": "886dcffbc24e5161d31707b74ec079e710e80a337bc87a1f89f39718321c8faf",
+          "modified": "2026-08-29T18:52:15.495624+00:00"
+        },
+        "cards/datacards/xv26-neutraliser-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-neutraliser-front.jpg",
+          "hash": "41f96380059b04c2e964781a315132068681aa8dcd0e25f02cd472530d12e86e",
+          "modified": "2026-08-29T18:52:15.496622+00:00"
+        },
+        "cards/datacards/xv26-shas’vre-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-shas’vre-back.jpg",
+          "hash": "a3ba7cbae16346aee22acb1a814f3a2858027006f17e204b22f6bec8959f7c3c",
+          "modified": "2026-07-12T19:24:23.598006+00:00"
+        },
+        "cards/datacards/xv26-shas’vre-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-shas’vre-front.jpg",
+          "hash": "25b971e91d587255b210d4b7d3fb4cf97b2214f4c8efa13a8119c8af01c10527",
+          "modified": "2026-07-12T19:24:23.602778+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-advanced-blacksun-filters-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-advanced-blacksun-filters-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.498726+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-advanced-blacksun-filters-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-advanced-blacksun-filters-front.jpg",
+          "hash": "021c8154e6b7933d8d012879d03a99b5f7e967cd56fc47f0addcf5d2d13e0a58",
+          "modified": "2026-08-29T18:52:15.498726+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-counter-network-jammers-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-counter-network-jammers-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.499726+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-counter-network-jammers-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-counter-network-jammers-front.jpg",
+          "hash": "1a3e8bed43ce40bea29a0b245bb1fb17f9494e21f0c63f217f09dcdd657c8a42",
+          "modified": "2026-08-29T18:52:15.500228+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-hardwired-target-locks-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-hardwired-target-locks-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.500228+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-hardwired-target-locks-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-hardwired-target-locks-front.jpg",
+          "hash": "56ecde6c27ed5290b64b38dea9da516de1e5bd01e50f92415c38259659f3ead7",
+          "modified": "2026-08-29T18:52:15.501233+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-xv26-multitrackers-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-xv26-multitrackers-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.501233+00:00"
+        },
+        "cards/equipment/xv26-stealth-battlesuits-xv26-multitrackers-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-xv26-multitrackers-front.jpg",
+          "hash": "f1611b70d7645b41af8c042f38126131fb380a574d308bbbfa6ca40a3d10bccb",
+          "modified": "2026-08-29T18:52:15.502231+00:00"
+        },
+        "cards/faction_rules/xv26-stealth-battlesuits-kauyon-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-kauyon-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.502231+00:00"
+        },
+        "cards/faction_rules/xv26-stealth-battlesuits-kauyon-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-kauyon-front.jpg",
+          "hash": "6aa9bd6b45aa2f1757de8bfb2ed8d71d8c46cf1aa84a42711a6e24d069c5bb10",
+          "modified": "2026-08-29T18:52:15.503736+00:00"
+        },
+        "cards/faction_rules/xv26-stealth-battlesuits-stealth-fields-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-stealth-fields-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.503736+00:00"
+        },
+        "cards/faction_rules/xv26-stealth-battlesuits-stealth-fields-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-stealth-fields-front.jpg",
+          "hash": "bb40179faf8ad5253ed23c5b4f594dc8a34265bb5cff5f77321bcc740c1b192b",
+          "modified": "2026-08-29T18:52:15.504740+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-engage-jet-pack-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-engage-jet-pack-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.504740+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-engage-jet-pack-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-engage-jet-pack-front.jpg",
+          "hash": "d2dc3ceb091291b4049a7f2d399bc09a5301807a154be9b9f9134e4c1278e54c",
+          "modified": "2026-08-29T18:52:15.505741+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-ghostshroud-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-ghostshroud-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.505741+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-ghostshroud-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-ghostshroud-front.jpg",
+          "hash": "30df41c22e91a53302e94223113c685115e925da78a0a014d3af73a00527d889",
+          "modified": "2026-08-29T18:52:15.507193+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-saviour-protocols-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-saviour-protocols-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.507698+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-saviour-protocols-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-saviour-protocols-front.jpg",
+          "hash": "14a0dae87b48377049db0bc44f55d6a7cbf36f5f4f85162ecd2bfa797c8b7314",
+          "modified": "2026-08-29T18:52:15.508702+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-vectored-retro-thrusters-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-vectored-retro-thrusters-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.508702+00:00"
+        },
+        "cards/firefight_ploys/xv26-stealth-battlesuits-vectored-retro-thrusters-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-vectored-retro-thrusters-front.jpg",
+          "hash": "8b648e6a1802132af20833f2f2d20297bf3f8874427f05dc2f66aac8335b3124",
+          "modified": "2026-08-29T18:52:15.510206+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.510717+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-front.jpg",
+          "hash": "278d3281713a6998bfae55b53c347be5aeea3c960efa1fe55de985da962bba49",
+          "modified": "2026-08-29T18:52:15.734840+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-bonds-of-unity-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-bonds-of-unity-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.734840+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-bonds-of-unity-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-bonds-of-unity-front.jpg",
+          "hash": "7fa49bd8a43961475c123f9f4b2d4c0368abe14d695fc63e69c0d2ea130fb1ad",
+          "modified": "2026-08-29T18:52:15.734840+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-holowave-countermeasures-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-holowave-countermeasures-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.736342+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-holowave-countermeasures-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-holowave-countermeasures-front.jpg",
+          "hash": "8833fd40f557631b24dd78646399f4736de9846eeaa856a8469358ce798da8e4",
+          "modified": "2026-08-29T18:52:15.736342+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-patient-hunters-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-patient-hunters-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.736342+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-patient-hunters-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-patient-hunters-front.jpg",
+          "hash": "666cabdab33a725b08b79319d968b77df9dcfc58b822d19544f086f809c44905",
+          "modified": "2026-08-29T18:52:15.737855+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-prepare-ambush-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-prepare-ambush-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.737855+00:00"
+        },
+        "cards/strategy_ploys/xv26-stealth-battlesuits-prepare-ambush-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-prepare-ambush-front.jpg",
+          "hash": "bb57e78650550b12df0dc57d9b9b2574a0ae385528d745b850c72ad97d5fbdba",
+          "modified": "2026-08-29T18:52:15.738860+00:00"
+        },
+        "cards/token_guide/xv26-stealth-battlesuits-token-guide-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/token_guide/xv26-stealth-battlesuits-token-guide-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.739860+00:00"
+        },
+        "cards/token_guide/xv26-stealth-battlesuits-token-guide-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/token_guide/xv26-stealth-battlesuits-token-guide-front.jpg",
+          "hash": "e944387b6399e28ad689118cf712b306c19a43c3514fb1461a665a5a75f170b3",
+          "modified": "2026-08-29T18:52:15.739860+00:00"
+        },
+        "cards/datacards/xv26-shasvre-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-shasvre-back.jpg",
+          "hash": "a3ba7cbae16346aee22acb1a814f3a2858027006f17e204b22f6bec8959f7c3c",
+          "modified": "2026-08-29T18:52:15.497621+00:00"
+        },
+        "cards/datacards/xv26-shasvre-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/xv26-shasvre-front.jpg",
+          "hash": "25b971e91d587255b210d4b7d3fb4cf97b2214f4c8efa13a8119c8af01c10527",
+          "modified": "2026-08-29T18:52:15.497621+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.283654+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "af8d5accee140e26a7637edfb026350d2655fdf7ad938a0b09f7cbc5c423ecde",
+          "modified": "2026-08-29T18:52:15.290729+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.298755+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "93f8ed788c2425dda2daf8e50374d1075d2e21bc6a1231976c01a435d286ced3",
+          "modified": "2026-08-29T18:52:15.304335+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.312931+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "f9019ab8914d17d4565dd9d401b63d2cf7c751b6340efbc5b8674dc8fb82f560",
+          "modified": "2026-08-29T18:52:15.319969+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.325981+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg",
+          "hash": "a6b60254eb94fcae399523a9569ff4a71accd77dbd0c37b8dbfc479ac76f5432",
+          "modified": "2026-08-29T18:52:15.333530+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.339545+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg",
+          "hash": "0aa8cbfb8f99c40aaff1df6e5813fa21ff392e091b9c41720af1efd74c195d69",
+          "modified": "2026-08-29T18:52:15.345387+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.354158+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg",
+          "hash": "1f97c35fa767db61c1423ea12cd9535c97ccd3d55670025ddf1af390b81f5f55",
+          "modified": "2026-08-29T18:52:15.362238+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.371345+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "b20c00bb476376a6dbcc9ea5a5c21766dc6ee1a191dc08467c6e9bacbe336217",
+          "modified": "2026-08-29T18:52:15.382386+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.390638+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "4b93a30a264f1599494e6bda9a1a9a25d358aefe78acbff2863afbac5ffec35b",
+          "modified": "2026-08-29T18:52:15.398287+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.407082+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "f756b3c78aa5006c4dc25c83ab6c610bb391c5ada4954e5d034208d2188fe935",
+          "modified": "2026-08-29T18:52:15.415719+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.424181+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "740fbee7c18c5284304cbdd69d50ecbe541a477a415f804040a9124ac50a785d",
+          "modified": "2026-08-29T18:52:15.430716+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.436236+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "5c21fe09d0de639e63a8f4b48c502b520738653694323d968204eebfca22a408",
+          "modified": "2026-08-29T18:52:15.445262+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.451786+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "2cac25557c044674ce780ad932153ff14986a41a2243d37da8e16f850d26463f",
+          "modified": "2026-08-29T18:52:15.458903+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.466782+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "d82c22ad426f7f5db18fb169e310da9bbac6d9dc7691d5be0fded967b3e4a18d",
+          "modified": "2026-08-29T18:52:15.473364+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+          "modified": "2026-08-29T18:52:15.479992+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "f488e3d0d19c9e4e06fbda538651b3a9cb1d76b0842c951c0a065f9b2ebdf4fb",
+          "modified": "2026-08-29T18:52:15.488096+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card1-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card1-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.516777+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card1-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card1-front.jpg",
+          "hash": "0b1a55182341a260587d26b8598cee250e6db8570f1e91697f25836932779169",
+          "modified": "2026-08-29T18:52:15.523840+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card10-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card10-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.532597+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card10-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card10-front.jpg",
+          "hash": "87cc32f1b90a36d55cfa4c35bf29fbf4452406ecbda0b45062c10944b62d4062",
+          "modified": "2026-08-29T18:52:15.538125+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card11-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card11-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.546182+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card11-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card11-front.jpg",
+          "hash": "4a1660598a3b8cb5ece59a195eea959f81d5580de5e98062f0d2f4babcc15712",
+          "modified": "2026-08-29T18:52:15.552282+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card12-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card12-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.558882+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card12-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card12-front.jpg",
+          "hash": "1dd2abbc6d5b8bbc1e2888fb7537078d67a587cd69d70d70fc562472f216069d",
+          "modified": "2026-08-29T18:52:15.566467+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card13-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card13-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.574612+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card13-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card13-front.jpg",
+          "hash": "213634d3664b9a6d28bd96cbb2b84d86e8bd6b7febf95ee25221cf92192516a5",
+          "modified": "2026-08-29T18:52:15.580642+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card14-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card14-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.588887+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card14-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card14-front.jpg",
+          "hash": "4798da741b576487ef3abe155ea4c65a107af40e9d050913986dd2516bd59306",
+          "modified": "2026-08-29T18:52:15.594723+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card15-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card15-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.600740+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card15-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card15-front.jpg",
+          "hash": "afd963c8173ef2156037192d46bb39b846f4c9b1f390d364655ffd132d3c2fc7",
+          "modified": "2026-08-29T18:52:15.606749+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card16-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card16-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.613371+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card16-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card16-front.jpg",
+          "hash": "67283dfddf829d31529ad8e3a0bce30b9311a4ef5bcde3d457d78f287c675d1f",
+          "modified": "2026-08-29T18:52:15.620904+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card2-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card2-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.629021+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card2-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card2-front.jpg",
+          "hash": "b9df255393f6608891cb602ee9677de1d1976f56083b9831c0b897c1ffbac879",
+          "modified": "2026-08-29T18:52:15.636536+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card3-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card3-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.643244+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card3-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card3-front.jpg",
+          "hash": "2729484cf0c71fe37a3f737a16f7614cef8af99f5c5e193784b017239a1ae9e9",
+          "modified": "2026-08-29T18:52:15.649544+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card4-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card4-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.657653+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card4-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card4-front.jpg",
+          "hash": "d2b69e72544ff395eaf6f8f69812c8cc025194a8c79f7da2dd63951aac26d670",
+          "modified": "2026-08-29T18:52:15.663566+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card5-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card5-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.672489+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card5-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card5-front.jpg",
+          "hash": "04dfe89aab3c80081b531bfa7e85e43d547d97479d37d594e51430a452a2ab60",
+          "modified": "2026-08-29T18:52:15.679013+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card6-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card6-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.684521+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card6-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card6-front.jpg",
+          "hash": "cfa387e2a08c6894d4b61bfe049d6ce14aba084fc9ae4fd2935558b09ad1e406",
+          "modified": "2026-08-29T18:52:15.692163+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card7-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card7-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.698689+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card7-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card7-front.jpg",
+          "hash": "bf6b2e7a4cf799948a4458479f508d5de732fc608597c3c48f8a0aa1aa8c21bc",
+          "modified": "2026-08-29T18:52:15.704726+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card8-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card8-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.713512+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card8-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card8-front.jpg",
+          "hash": "02686e15c6f0ac9785d1ba3290c30751766a23ca86ccf8367730b8fe444b4768",
+          "modified": "2026-08-29T18:52:15.720052+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card9-back.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card9-back.jpg",
+          "hash": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+          "modified": "2026-08-29T18:52:15.726321+00:00"
+        },
+        "cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card9-front.jpg": {
+          "path": "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card9-front.jpg",
+          "hash": "8eea62b96c02322ac305020ab31910243e772b19c1746b5321b6c4ddc971a33f",
+          "modified": "2026-08-29T18:52:15.733839+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:52:15.800224+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/manifest.json": "6cd5e4d54afe33d305f3ea41533c799ed69d21b9ff23851036e00321abcbabb5",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "3506a0201272b759e920db602ee125ed00f12a62a404192fa3c5fb9dbf09c92e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "9fe66b34e52639f14bb2760287fd3d48b775260be13986c467102ebd20eacf8e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "ec003ff0dda8b78971679af9488ffdf432c0b9d10c8902de58292d9ba354b8f9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "85151c86367e9755a4c589652b504a939fc61ec1fe2fd075662fd9c0bce929db",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "b9dc9b90d00540e6e3dd8b9a65dda68f214cfadd7d1d03915869bfc67e219ec7",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "39d5439e082ce78b24ea0d44fb515cbc98b1d5b659adf8ff5b23fd3e007fc256",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "1bb7b338d96a00fc8cf8520c5e52de545cbd074c6fef0a330f8922fa05787ba6",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "06351c2385eabc15eb9b2b8facaf37ab52590cdb16d5b9642b36e1d2d2bf92c7",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "9f51a95f9c5f587f935eeff3930bee198c8967da6390b8446f70198350a78deb",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "242d60b71ed7c3449987608185c011d7f29894e57fc01536c4a5e374491018a6",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "bc34f834b0fad6b02aad81d7356b098ac93dd00ff469bfd06a3b038da2c2f46f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "aa762974171daa292997988db3a98022205b1e57ede622feb939f56bd52e96f9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "667555d24ef8ce5ed25264b96d10025174836abeadb86b5d896ec3aa0fea4a3c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "9c8e4d53d1fb171c7c9404a5f41db89a87fb5a578e47c8348351552538800bfe",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv15-gun-drone.pdf": "07961b5179589dc34781afecc30dd89b7d720212cf6ecb2c9dd51506cf739ff2",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv75-marker-drone.pdf": "4f26cf79f2d47bd43ca9aa6a6a28be84ef8d20b75783adb53819ee3ce265ef60",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-designator.pdf": "99c57e4664fdfa11edbee07f8417aab3ea4dbf3b498ca53520ee6fd24b6a4eba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-infiltrator.pdf": "fb8a999caf7ebe48767c0a92379ee7a38b183279044f3250179360995b01c7c8",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-liberator.pdf": "72bde4a394e3b42e0d4cadd64840728d4c1b532f432b43a4872e774a9379976b",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-lodestar.pdf": "91fe00e9f257a5739cc0beb4c833786e58139db11264d52d268f08db6f1a5a93",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-neutraliser.pdf": "b5a41205e11550ef00a3b59b554b6319404784bb79b684d41d23fb326ef390cf",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-shasvre.pdf": "28f57f87d43da60a862adfe6e8c98cb14f1d0cb93c63a115276fc3c3db949ad8",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-advanced-blacksun-filters.pdf": "b5bdb91ffbbfb92257658226ed67b0b633587faeb694e9c9bd31dc10f87b9a4e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-counter-network-jammers.pdf": "a37ea689bdd1092253b20b3e38cc54ea770925ed484e799be3e3ee31d8bd53ed",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-hardwired-target-locks.pdf": "f7572d4e221a3a581ad8dff4f7ae18573d9280c087d7a63fef64e63242d929d3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-xv26-multitrackers.pdf": "104419e4cab71b2159e62092a59e0d9078f6c261d890542a6c63cc86bde3790a",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-kauyon.pdf": "e2af981d603ac5b77853ca8520687758fdb11f1181e5ebbf1cdfea1d0464bc5f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-stealth-fields.pdf": "1e9f9a29ae5df218a858b71ccb6de8423a5ef88e83f047032c9907a502544bad",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-engage-jet-pack.pdf": "cd218fa8681213b729dd8f8e59c350cb7ef4a7fe17220e81327df6eed66f6bcd",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-ghostshroud.pdf": "0d99d8330ab85f799305bc443c37747b450f632ea2249f50298c8d93c4a6bfef",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-saviour-protocols.pdf": "07edb37b2840b4db99f86605bbb48ebef7c2652df1729c26a09264eca8343d37",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-vectored-retro-thrusters.pdf": "0a12701ab5967ade2a82e470f652e922862139cd4e14616c134d3b5910428eca",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-1.pdf": "7455642c4e8e9d065049d5bfc1ac44fb78e4f011107cfc968d73811b1cc3033c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-10.pdf": "e02c7efc86b3dfb516474d3ee55e09bf77eb0cc90d36ece80fc172f32012bb16",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-11.pdf": "169e7db8c9c9432c1663f027ea7cae96a83bb00a2bc3f4d0c66e3b0d2e136925",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-12.pdf": "2fa75af1013e794da9e37f54d897ff9602307e34b02312b98e2aac116561a460",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-13.pdf": "916369d23f22fd47b66fd87517ee49f74c0abe0682ba4f6325c35aebd424df53",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-14.pdf": "e3b11f9e47fc8ec5467fb9b7633cd1416cb2ecd94d8b496a2fb78e23ed395c2f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-15.pdf": "50738c0935bb840b3cedfd6fe07fede2e1baeca6de7e2b95fc7696a69b965832",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-16.pdf": "c0681120fdb0f85fdddfe62261c85af861f78415eb83c17763f192b62e6a434f",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-2.pdf": "1a778685dce6a493ecbe3750ee6c51166a6899d00d79445a423c1372ebab5be9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-3.pdf": "e1205f8f3c625bcc347b41034faea80a57d6bb61fac08420ce67e1f804a9ff4b",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-4.pdf": "8c8c807924efde1c25b0056ce77356a692414359f703490917d818e134815f8a",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-5.pdf": "eefbc3dbf18dac82866f738a0fdc8fd0af6f8a462cb7bcecf2cfca76cb48f925",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-6.pdf": "99b98d38da0efe45c9b6f1a59ac6a059a3543189fdc264dd40e75967a3fe486e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-7.pdf": "5a6677d35401c350e7efab5096d658019b9bc2f55f9173bc09a3fa7de2fb8ae9",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-8.pdf": "1f8e6cb72619825f9b91559822f8dc58a1807c74d50d312b2612f6284cdfb83c",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-9.pdf": "a36c302a934595bfe375da6c03992b91901b383293edee21f8c092ed8355fddf",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection.pdf": "09e693b494adbf196156555bf2674193c810fc90e0028396d1161a6cae6fcc7e",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-bonds-of-unity.pdf": "c1a9cf4224fde8a782ec50bb4cef561d0fa12c0e01c08079e8340592c41843b3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-holowave-countermeasures.pdf": "c751269baff99953c2abee77c27ecd9249ab9c610c3ad4811f0c405c5306d1fc",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-patient-hunters.pdf": "2b7b749042bc20a49d8f53070e34e0de1cdd4c0588ec64b00b8248956552bee3",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-prepare-ambush.pdf": "2c6e6b58253d49d9093b42bcb6cf6ca87ca4b03a7da5b4334a5b75993e8ae5ba",
+        "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-token-guide-token-guide.pdf": "eb8acc660505c6bfbcc01ad66f9cebdc2e41f810042f232999740e656d664bf7",
+        "layers/integration/xv26-stealth-battlesuits/card-backside/xv26-stealth-battlesuits-backside-portrait.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/xv26-stealth-battlesuits/card-backside/xv26-stealth-battlesuits-backside-landscape.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/xv26-stealth-battlesuits/data/xv26-stealth-battlesuits-team-data.json",
+          "hash": "f6fd98a0ed73b67ff246fd0bfa38fcda703f1ebba84235486a6866b30f46a8a5",
+          "modified": "2026-08-29T18:52:15.856299+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:52:15.856299+00:00",
+      "inputs": {
+        "layers/integration/xv26-stealth-battlesuits/content/xv26-stealth-battlesuits-content.json": "f6fd98a0ed73b67ff246fd0bfa38fcda703f1ebba84235486a6866b30f46a8a5"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Xv26 Stealth Battlesuits Box.json": {
+          "path": "output/xv26-stealth-battlesuits/tts_objects/Xv26 Stealth Battlesuits Box.json",
+          "hash": "b3747adeda01938f8458aea595c312ca43d3638f277489378b0c2f5778723b32",
+          "modified": "2026-07-21T11:11:16.206094+00:00"
+        },
+        "tts_objects/Xv26 Stealth Battlesuits.json": {
+          "path": "output/xv26-stealth-battlesuits/tts_objects/Xv26 Stealth Battlesuits.json",
+          "hash": "8524f668b73c04563a731dc642c4ed42d9aefd1eedfc1964e03973df1df1b550",
+          "modified": "2026-08-29T18:53:41.834528+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:41.922288+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "af8d5accee140e26a7637edfb026350d2655fdf7ad938a0b09f7cbc5c423ecde",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "93f8ed788c2425dda2daf8e50374d1075d2e21bc6a1231976c01a435d286ced3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "f9019ab8914d17d4565dd9d401b63d2cf7c751b6340efbc5b8674dc8fb82f560",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "a6b60254eb94fcae399523a9569ff4a71accd77dbd0c37b8dbfc479ac76f5432",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": "0aa8cbfb8f99c40aaff1df6e5813fa21ff392e091b9c41720af1efd74c195d69",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": "1f97c35fa767db61c1423ea12cd9535c97ccd3d55670025ddf1af390b81f5f55",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "b20c00bb476376a6dbcc9ea5a5c21766dc6ee1a191dc08467c6e9bacbe336217",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "4b93a30a264f1599494e6bda9a1a9a25d358aefe78acbff2863afbac5ffec35b",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "f756b3c78aa5006c4dc25c83ab6c610bb391c5ada4954e5d034208d2188fe935",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "740fbee7c18c5284304cbdd69d50ecbe541a477a415f804040a9124ac50a785d",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "5c21fe09d0de639e63a8f4b48c502b520738653694323d968204eebfca22a408",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "2cac25557c044674ce780ad932153ff14986a41a2243d37da8e16f850d26463f",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "d82c22ad426f7f5db18fb169e310da9bbac6d9dc7691d5be0fded967b3e4a18d",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "f488e3d0d19c9e4e06fbda538651b3a9cb1d76b0842c951c0a065f9b2ebdf4fb",
+        "output/xv26-stealth-battlesuits/cards/datacards/mv15-gun-drone-back.jpg": "f9e712dd6af43185dcd71613aa3d51406d7454e9a675118b45eb39375ab12e53",
+        "output/xv26-stealth-battlesuits/cards/datacards/mv15-gun-drone-front.jpg": "8933a31acb4267f18365eabbcabe91ed6f1eaa98499ef97df642af061b859385",
+        "output/xv26-stealth-battlesuits/cards/datacards/mv75-marker-drone-back.jpg": "78cba113cf0219059faf730214c3ab24f184d0f1ac9594a2ef984c040f789b71",
+        "output/xv26-stealth-battlesuits/cards/datacards/mv75-marker-drone-front.jpg": "7be6506d80bf8474c15ce024ba7d2656f66ee7a16b242b97be516063849d0dfa",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-designator-back.jpg": "7e202c24d6420f8742ec35ec4baed46feece047dc278d0134a22631b1d91139e",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-designator-front.jpg": "95d52a1926d3c7c618176f0ff6a8f9f909a4a6860f3a5478a899636a0cd65999",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-infiltrator-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-infiltrator-front.jpg": "a135667cc9e1c6af26963575d3ee636f219446f858a81b300e9619ab0a2da19f",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-liberator-back.jpg": "aa3ef16d82920c3d7a1a1ada367c6372a5ea9e928cd4fd117cc8bf20ebd022e3",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-liberator-front.jpg": "146c00f1e2f6770cb234b6fcb3337edbf99010f4748c2196a954588682594c11",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-lodestar-back.jpg": "b57621a6af2f586685eacda2b6c487c6a451ecb33ce5162f5b644736e09a1538",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-lodestar-front.jpg": "9eb0fd73bf15e38e922562ae2d7e3ec2605001e2c9e840b75f38053b3aa0e449",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-neutraliser-back.jpg": "886dcffbc24e5161d31707b74ec079e710e80a337bc87a1f89f39718321c8faf",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-neutraliser-front.jpg": "41f96380059b04c2e964781a315132068681aa8dcd0e25f02cd472530d12e86e",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-shasvre-back.jpg": "a3ba7cbae16346aee22acb1a814f3a2858027006f17e204b22f6bec8959f7c3c",
+        "output/xv26-stealth-battlesuits/cards/datacards/xv26-shasvre-front.jpg": "25b971e91d587255b210d4b7d3fb4cf97b2214f4c8efa13a8119c8af01c10527",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-advanced-blacksun-filters-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-advanced-blacksun-filters-front.jpg": "021c8154e6b7933d8d012879d03a99b5f7e967cd56fc47f0addcf5d2d13e0a58",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-counter-network-jammers-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-counter-network-jammers-front.jpg": "1a3e8bed43ce40bea29a0b245bb1fb17f9494e21f0c63f217f09dcdd657c8a42",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-hardwired-target-locks-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-hardwired-target-locks-front.jpg": "56ecde6c27ed5290b64b38dea9da516de1e5bd01e50f92415c38259659f3ead7",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-xv26-multitrackers-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-xv26-multitrackers-front.jpg": "f1611b70d7645b41af8c042f38126131fb380a574d308bbbfa6ca40a3d10bccb",
+        "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-kauyon-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-kauyon-front.jpg": "6aa9bd6b45aa2f1757de8bfb2ed8d71d8c46cf1aa84a42711a6e24d069c5bb10",
+        "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-stealth-fields-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/faction_rules/xv26-stealth-battlesuits-stealth-fields-front.jpg": "bb40179faf8ad5253ed23c5b4f594dc8a34265bb5cff5f77321bcc740c1b192b",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-engage-jet-pack-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-engage-jet-pack-front.jpg": "d2dc3ceb091291b4049a7f2d399bc09a5301807a154be9b9f9134e4c1278e54c",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-ghostshroud-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-ghostshroud-front.jpg": "30df41c22e91a53302e94223113c685115e925da78a0a014d3af73a00527d889",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-saviour-protocols-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-saviour-protocols-front.jpg": "14a0dae87b48377049db0bc44f55d6a7cbf36f5f4f85162ecd2bfa797c8b7314",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-vectored-retro-thrusters-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/firefight_ploys/xv26-stealth-battlesuits-vectored-retro-thrusters-front.jpg": "8b648e6a1802132af20833f2f2d20297bf3f8874427f05dc2f66aac8335b3124",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card1-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card1-front.jpg": "0b1a55182341a260587d26b8598cee250e6db8570f1e91697f25836932779169",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card10-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card10-front.jpg": "87cc32f1b90a36d55cfa4c35bf29fbf4452406ecbda0b45062c10944b62d4062",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card11-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card11-front.jpg": "4a1660598a3b8cb5ece59a195eea959f81d5580de5e98062f0d2f4babcc15712",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card12-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card12-front.jpg": "1dd2abbc6d5b8bbc1e2888fb7537078d67a587cd69d70d70fc562472f216069d",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card13-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card13-front.jpg": "213634d3664b9a6d28bd96cbb2b84d86e8bd6b7febf95ee25221cf92192516a5",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card14-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card14-front.jpg": "4798da741b576487ef3abe155ea4c65a107af40e9d050913986dd2516bd59306",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card15-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card15-front.jpg": "afd963c8173ef2156037192d46bb39b846f4c9b1f390d364655ffd132d3c2fc7",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card16-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card16-front.jpg": "67283dfddf829d31529ad8e3a0bce30b9311a4ef5bcde3d457d78f287c675d1f",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card2-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card2-front.jpg": "b9df255393f6608891cb602ee9677de1d1976f56083b9831c0b897c1ffbac879",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card3-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card3-front.jpg": "2729484cf0c71fe37a3f737a16f7614cef8af99f5c5e193784b017239a1ae9e9",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card4-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card4-front.jpg": "d2b69e72544ff395eaf6f8f69812c8cc025194a8c79f7da2dd63951aac26d670",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card5-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card5-front.jpg": "04dfe89aab3c80081b531bfa7e85e43d547d97479d37d594e51430a452a2ab60",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card6-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card6-front.jpg": "cfa387e2a08c6894d4b61bfe049d6ce14aba084fc9ae4fd2935558b09ad1e406",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card7-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card7-front.jpg": "bf6b2e7a4cf799948a4458479f508d5de732fc608597c3c48f8a0aa1aa8c21bc",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card8-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card8-front.jpg": "02686e15c6f0ac9785d1ba3290c30751766a23ca86ccf8367730b8fe444b4768",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card9-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-card9-front.jpg": "8eea62b96c02322ac305020ab31910243e772b19c1746b5321b6c4ddc971a33f",
+        "output/xv26-stealth-battlesuits/cards/operatives_selection/xv26-stealth-battlesuits-operative-selection-front.jpg": "278d3281713a6998bfae55b53c347be5aeea3c960efa1fe55de985da962bba49",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-bonds-of-unity-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-bonds-of-unity-front.jpg": "7fa49bd8a43961475c123f9f4b2d4c0368abe14d695fc63e69c0d2ea130fb1ad",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-holowave-countermeasures-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-holowave-countermeasures-front.jpg": "8833fd40f557631b24dd78646399f4736de9846eeaa856a8469358ce798da8e4",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-patient-hunters-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-patient-hunters-front.jpg": "666cabdab33a725b08b79319d968b77df9dcfc58b822d19544f086f809c44905",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-prepare-ambush-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/strategy_ploys/xv26-stealth-battlesuits-prepare-ambush-front.jpg": "bb57e78650550b12df0dc57d9b9b2574a0ae385528d745b850c72ad97d5fbdba",
+        "output/xv26-stealth-battlesuits/cards/token_guide/xv26-stealth-battlesuits-token-guide-back.jpg": "e84ceec3dac0b444eec19d7e5bd7284831aaf07484055f17906fae98810ae563",
+        "output/xv26-stealth-battlesuits/cards/token_guide/xv26-stealth-battlesuits-token-guide-front.jpg": "e944387b6399e28ad689118cf712b306c19a43c3514fb1461a665a5a75f170b3",
+        "output/xv26-stealth-battlesuits/cardbox/xv26-stealth-battlesuits-card-box-texture.jpg": "63f43f5716bb5ba4163d918634e32579f2c2190b1b2719e1f66fb731cf76477a",
+        "output/xv26-stealth-battlesuits/cardbox/xv26-stealth-battlesuits-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/xv26-stealth-battlesuits/tokens/tokenbag/xv26-stealth-battlesuits-token-bag-icon.png": "c84604f0f83a3d418cd383cbff42fa362e4c997b625e60fb925929ed346d16ba",
+        "output/xv26-stealth-battlesuits/tokens/tokenbag/xv26-stealth-battlesuits-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-ambush.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-ambush.png": "4ec77b25d8e499a3b959f43ab6a6ac32b8763373dad4c1609ae257e796c77dff",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-electrochaff-launcher.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-electrochaff-launcher.png": "130369e5b8be9fbb01e042d9de1841e6bb5c8b1611084c2712ffbeda8424bc05",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-emp-bomb.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-emp-bomb.png": "601a67312e810c5c64817faf8ec89f6308490bb0282752ccb7d556de4ea3a304",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-homing-beacon.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-homing-beacon.png": "11bd5546caef79b505b77164eeb9a9e39c605c4e153359ada21de108bad8c432",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multispectrum-sensor-package.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multispectrum-sensor-package.png": "700fb197f63517bebd5c21c25515c6f9324bddc90a72d05b6b8ad2681e4b4b13",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multitracker.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-multitracker.png": "f11dc3d7601039dc54df472d76c77f17873bd70688a4ca9967eee75053526946",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-photon-grenade-launcher.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/xv26-stealth-battlesuits/tokens/xv26-stealth-battlesuits-photon-grenade-launcher.png": "d45efde1266ff1841b18bf27b37383175696ac4baa31d3148896ce1a344a7485",
+        "output/xv26-stealth-battlesuits/dice/xv26-stealth-battlesuits-dice-dark.jpg": "4d2048d985b9a103c976e290869b8d567d44659cfed01303119b4e584a3f98f5",
+        "output/xv26-stealth-battlesuits/dice/xv26-stealth-battlesuits-dice-light.jpg": "dbe1609df56eb1d1399c98b67a2d9718d0a3d18e42ac2c5ef546f5bbc4409b82",
+        "output/xv26-stealth-battlesuits/dice/xv26-stealth-battlesuits-dice-team.jpg": "22615b26a5693457ade1e791fd3fcee0d207a76c34fa1f28c8c09c43d44301d8",
+        "output/xv26-stealth-battlesuits/data/xv26-stealth-battlesuits-team-data.json": "f6fd98a0ed73b67ff246fd0bfa38fcda703f1ebba84235486a6866b30f46a8a5",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "strategy-ploys": {
+          "hash": "147ab6f33cfd00dfda3dd95755b978687ae831208b23c793e1066d25645fa2d9",
+          "outputs": [
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/strategy-ploys/xv26-stealth-battlesuits-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/strategy-ploys/xv26-stealth-battlesuits-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/strategy-ploys/xv26-stealth-battlesuits-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/strategy-ploys/xv26-stealth-battlesuits-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:00:41.453934+00:00"
+        },
+        "faction-rules": {
+          "hash": "0718cf51b082b28ffd985c7125dc60a32453128fbcdaad278656eb32c7688a4e",
+          "outputs": [
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/faction-rules/xv26-stealth-battlesuits-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/faction-rules/xv26-stealth-battlesuits-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/faction-rules/xv26-stealth-battlesuits-faction-rules-page_2.pdf"
+          ],
+          "modified": "2026-07-06T16:03:22.654748+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "444702c1ae0cf0ed704a1bae5a8b722c37aa705e7279be4c5b14717dc234af23",
+          "outputs": [
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/firefight-ploys/xv26-stealth-battlesuits-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/firefight-ploys/xv26-stealth-battlesuits-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/firefight-ploys/xv26-stealth-battlesuits-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/firefight-ploys/xv26-stealth-battlesuits-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:07:11.545271+00:00"
+        },
+        "operatives-selection": {
+          "hash": "ec1f14ba6e197785e9ec70a41b3a5ba9e51cb23ba8391afc986163810b2fe045",
+          "outputs": [
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/operatives-selection/xv26-stealth-battlesuits-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:09:22.033353+00:00"
+        },
+        "datacards": {
+          "hash": "b1688010c6dd3fcb2ee04bfabb403f2087d6e9d5aefa98681b1879a9512b3af1",
+          "outputs": [
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_0.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_1.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_2.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_3.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_4.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_5.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_6.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_7.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_8.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_9.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_10.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_11.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_12.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/datacards/xv26-stealth-battlesuits-datacards-page_13.pdf"
+          ],
+          "modified": "2026-07-06T16:13:09.244800+00:00"
+        },
+        "equipment": {
+          "hash": "cc7d9d6e322e712b00f4a8724a3b7651e600afd3ef087d5b089b299e7894f625",
+          "outputs": [
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-equipment-page_0.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-equipment-page_1.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-equipment-page_2.pdf",
+            "layers/kt-app/extracted/xv26-stealth-battlesuits/cards/equipment/xv26-stealth-battlesuits-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:13:09.855402+00:00"
+        },
+        "cards": {
+          "hash": "4dfcdcba39f6af2128799edb54818519d5d8053530048c2c7d4da3de61949db4",
+          "outputs": [
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:35:25.416607+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:35:25.416607+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/xv26-stealth-battlesuits-structure.json",
+          "hash": "6cd5e4d54afe33d305f3ea41533c799ed69d21b9ff23851036e00321abcbabb5",
+          "modified": "2026-08-29T18:50:54.366315+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card1_landscape.pdf": "e6829eb03f77b63f53b051b77da6fa078c32a291a72a0bf824e703f22da2d3cc",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card2_landscape.pdf": "292f27eacc50713c7cfb4cb12c792a030cb0244b6f8f4867c1c6eeb4a7daafb7",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card3_landscape.pdf": "d88e867a8dfb302c5e8a8a3329fb6204f62c3e58a03cdcf05201a6d0ff66bcfc",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card4_landscape.pdf": "1af3ab7e459f9763fb27e9dab7162ff456de4d7a43ef179bb0b922e913a90485",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card1_landscape.pdf": "0448ee0fa769abba94977c0ad96edd2f8f15b964d301541bf65c8cc5e6ac339a",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card2_landscape.pdf": "845fa0b9f55236703b3941184f170a9babf7a4e415098bdd145b89779de71c0a",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card3_landscape.pdf": "1345941b83e110b7bf40425af3da935310794953a7f0edbc4453ac9413963934",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card4_landscape.pdf": "fb900826d2a0d98b3e69843e2799369c68877feb6dff3ef04da6e03d2ae4cfe5",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card1_landscape.pdf": "5ea73800f9a7d4285c68e331c47a9310915d8b5ec041cd796cd94f725aec9ddc",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card2_landscape.pdf": "4984c2bc3c7769106e40f015a2065638166538c7a6edc836b07cf4b5bc30ad42",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card3_landscape.pdf": "c7c90dcdd1c1b22f18317b545bfe029ca781c089b62ff3f2cac05eca6cc7d870",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card4_landscape.pdf": "6735db505e0bad7e6e626bfda644caec86be69e87393c497487cd4518b66e6d6",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card1_landscape.pdf": "e6d4c7472849b5ab380e594f93e2b79fccdb650b7ebef8cbbca6c84c1576b65c",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card2_landscape.pdf": "33247cba4c1f31caa6b77847b58feee7cd952c246046a7b680e95931dabb18eb",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card3_landscape.pdf": "4f401c1c6e8c7bb8a63a6fde4786cff98911ed88b8e81fe89249434fe329ccb2",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card4_landscape.pdf": "fbc59a69daef0e2eca51f2b41c05832c7a8b86d90eca64fafeb224066e54dc5f",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card1_portrait.pdf": "350d553f0ca9bedad8f559ce886a88c7a9d5388331b511f2b8d33d367fe9315b",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card2_portrait.pdf": "2c8f134a2c0e8c4c014ea485401695edb114f40a87f0883ccb040e4fec78f079",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card3_portrait.pdf": "c157d05d7159802a3cf84e9610fe24e196c7b1eede93ce2f984e4dc5ac3dd648",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card4_portrait.pdf": "33913fc2c99d7e4cd59d7c604c2dcd86923e4688eeebfd9c12531b53b46c2afb",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card1_portrait.pdf": "c24a3517aa032d1bdf64e5aa49815ae5ae5b901b9fa9d1f6ea1a2e4bbfb2415c",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card2_portrait.pdf": "307f1e8cebedeb7bd118fbadedbac22dec5a6de2e039b8b64c99555b77a490c4",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card3_portrait.pdf": "f73ad12a8d5a65878540d4106b1501e567fbaf80a07689e290fd3dc5d483e124",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card4_portrait.pdf": "0cce3c08fac9bb0923194134238a2fc182512c626d39b41a0db84e17d367b579",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card1_portrait.pdf": "0fddbf4e1af6832b4de682cdc87b72188404f52cc869867d675c8121a7d9c471",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card2_portrait.pdf": "53527ef63e432d3dc1dba0c35f41bb985b2d18cea3203ec49ec6f4c71e4f4381",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card3_portrait.pdf": "c4c142dffc250b3e31d43e57e0e71948c9048b3201d8c761baba5df1c9645757",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card4_portrait.pdf": "fd68f1fb83fc08ae939163d121c9c0b84b8ab64c7c015d50911a409f5d744429",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card1_portrait.pdf": "2a79e3846144f4fe07a80532c4201282fef2b9e196bb146a66d4f7b6fb29e3ae",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card2_portrait.pdf": "2f60da9cc7f63fcf5c434abcb16a64574300c151d53cfc3f4858b9acec67b8ee",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card3_portrait.pdf": "1cf925204b9e2cdc1303733625c54f10586271af521599cdbc7d6b56720430d4",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card4_portrait.pdf": "2abf4d90d67c381cf72e156cadde7db94e915aaf5cbefb63ced9f66fcc0813f3"
+      },
+      "completed": "2026-08-29T18:50:54.775082+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/xv26-stealth-battlesuits/manifest.json",
+          "hash": "6cd5e4d54afe33d305f3ea41533c799ed69d21b9ff23851036e00321abcbabb5",
+          "modified": "2026-08-29T18:50:55.054121+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-xv26-shasvre.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-shasvre.pdf",
+          "hash": "28f57f87d43da60a862adfe6e8c98cb14f1d0cb93c63a115276fc3c3db949ad8",
+          "modified": "2026-08-26T15:18:16.814458+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-xv26-designator.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-designator.pdf",
+          "hash": "99c57e4664fdfa11edbee07f8417aab3ea4dbf3b498ca53520ee6fd24b6a4eba",
+          "modified": "2026-08-26T15:18:16.816456+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-xv26-infiltrator.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-infiltrator.pdf",
+          "hash": "fb8a999caf7ebe48767c0a92379ee7a38b183279044f3250179360995b01c7c8",
+          "modified": "2026-08-26T15:18:16.818159+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-xv26-liberator.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-liberator.pdf",
+          "hash": "72bde4a394e3b42e0d4cadd64840728d4c1b532f432b43a4872e774a9379976b",
+          "modified": "2026-08-26T15:18:16.819454+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-xv26-lodestar.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-lodestar.pdf",
+          "hash": "91fe00e9f257a5739cc0beb4c833786e58139db11264d52d268f08db6f1a5a93",
+          "modified": "2026-08-26T15:18:16.823679+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-xv26-neutraliser.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-xv26-neutraliser.pdf",
+          "hash": "b5a41205e11550ef00a3b59b554b6319404784bb79b684d41d23fb326ef390cf",
+          "modified": "2026-08-26T15:18:16.826357+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-mv15-gun-drone.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv15-gun-drone.pdf",
+          "hash": "07961b5179589dc34781afecc30dd89b7d720212cf6ecb2c9dd51506cf739ff2",
+          "modified": "2026-08-26T15:18:16.828315+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-mv75-marker-drone.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-mv75-marker-drone.pdf",
+          "hash": "4f26cf79f2d47bd43ca9aa6a6a28be84ef8d20b75783adb53819ee3ce265ef60",
+          "modified": "2026-08-26T15:18:16.830417+00:00"
+        },
+        "xv26-stealth-battlesuits-equipment-xv26-multitrackers.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-xv26-multitrackers.pdf",
+          "hash": "104419e4cab71b2159e62092a59e0d9078f6c261d890542a6c63cc86bde3790a",
+          "modified": "2026-08-26T15:18:16.834666+00:00"
+        },
+        "xv26-stealth-battlesuits-equipment-counter-network-jammers.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-counter-network-jammers.pdf",
+          "hash": "a37ea689bdd1092253b20b3e38cc54ea770925ed484e799be3e3ee31d8bd53ed",
+          "modified": "2026-08-26T15:18:16.843170+00:00"
+        },
+        "xv26-stealth-battlesuits-equipment-advanced-blacksun-filters.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-advanced-blacksun-filters.pdf",
+          "hash": "b5bdb91ffbbfb92257658226ed67b0b633587faeb694e9c9bd31dc10f87b9a4e",
+          "modified": "2026-08-26T15:18:16.851538+00:00"
+        },
+        "xv26-stealth-battlesuits-equipment-hardwired-target-locks.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-equipment-hardwired-target-locks.pdf",
+          "hash": "f7572d4e221a3a581ad8dff4f7ae18573d9280c087d7a63fef64e63242d929d3",
+          "modified": "2026-08-26T15:18:16.864091+00:00"
+        },
+        "xv26-stealth-battlesuits-faction-rule-kauyon.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-kauyon.pdf",
+          "hash": "e2af981d603ac5b77853ca8520687758fdb11f1181e5ebbf1cdfea1d0464bc5f",
+          "modified": "2026-08-26T15:18:16.872602+00:00"
+        },
+        "xv26-stealth-battlesuits-faction-rule-stealth-fields.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-faction-rule-stealth-fields.pdf",
+          "hash": "1e9f9a29ae5df218a858b71ccb6de8423a5ef88e83f047032c9907a502544bad",
+          "modified": "2026-08-26T15:18:16.882760+00:00"
+        },
+        "xv26-stealth-battlesuits-token-guide-token-guide.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-token-guide-token-guide.pdf",
+          "hash": "eb8acc660505c6bfbcc01ad66f9cebdc2e41f810042f232999740e656d664bf7",
+          "modified": "2026-08-26T15:18:16.894301+00:00"
+        },
+        "xv26-stealth-battlesuits-firefight-ploy-vectored-retro-thrusters.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-vectored-retro-thrusters.pdf",
+          "hash": "0a12701ab5967ade2a82e470f652e922862139cd4e14616c134d3b5910428eca",
+          "modified": "2026-08-26T15:18:16.897105+00:00"
+        },
+        "xv26-stealth-battlesuits-firefight-ploy-ghostshroud.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-ghostshroud.pdf",
+          "hash": "0d99d8330ab85f799305bc443c37747b450f632ea2249f50298c8d93c4a6bfef",
+          "modified": "2026-08-26T15:18:16.898619+00:00"
+        },
+        "xv26-stealth-battlesuits-firefight-ploy-engage-jet-pack.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-engage-jet-pack.pdf",
+          "hash": "cd218fa8681213b729dd8f8e59c350cb7ef4a7fe17220e81327df6eed66f6bcd",
+          "modified": "2026-08-26T15:18:16.900771+00:00"
+        },
+        "xv26-stealth-battlesuits-firefight-ploy-saviour-protocols.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-firefight-ploy-saviour-protocols.pdf",
+          "hash": "07edb37b2840b4db99f86605bbb48ebef7c2652df1729c26a09264eca8343d37",
+          "modified": "2026-08-26T15:18:16.904034+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection.pdf",
+          "hash": "09e693b494adbf196156555bf2674193c810fc90e0028396d1161a6cae6fcc7e",
+          "modified": "2026-08-26T15:18:16.905847+00:00"
+        },
+        "xv26-stealth-battlesuits-strategy-ploy-patient-hunters.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-patient-hunters.pdf",
+          "hash": "2b7b749042bc20a49d8f53070e34e0de1cdd4c0588ec64b00b8248956552bee3",
+          "modified": "2026-08-26T15:18:16.907566+00:00"
+        },
+        "xv26-stealth-battlesuits-strategy-ploy-bonds-of-unity.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-bonds-of-unity.pdf",
+          "hash": "c1a9cf4224fde8a782ec50bb4cef561d0fa12c0e01c08079e8340592c41843b3",
+          "modified": "2026-08-26T15:18:16.909285+00:00"
+        },
+        "xv26-stealth-battlesuits-strategy-ploy-prepare-ambush.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-prepare-ambush.pdf",
+          "hash": "2c6e6b58253d49d9093b42bcb6cf6ca87ca4b03a7da5b4334a5b75993e8ae5ba",
+          "modified": "2026-08-26T15:18:16.911954+00:00"
+        },
+        "xv26-stealth-battlesuits-strategy-ploy-holowave-countermeasures.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-strategy-ploy-holowave-countermeasures.pdf",
+          "hash": "c751269baff99953c2abee77c27ecd9249ab9c610c3ad4811f0c405c5306d1fc",
+          "modified": "2026-08-26T15:18:16.913885+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "3506a0201272b759e920db602ee125ed00f12a62a404192fa3c5fb9dbf09c92e",
+          "modified": "2026-08-29T18:50:55.088753+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "1bb7b338d96a00fc8cf8520c5e52de545cbd074c6fef0a330f8922fa05787ba6",
+          "modified": "2026-08-29T18:50:55.179938+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "06351c2385eabc15eb9b2b8facaf37ab52590cdb16d5b9642b36e1d2d2bf92c7",
+          "modified": "2026-08-29T18:51:01.838109+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "9f51a95f9c5f587f935eeff3930bee198c8967da6390b8446f70198350a78deb",
+          "modified": "2026-08-29T18:51:02.429390+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "242d60b71ed7c3449987608185c011d7f29894e57fc01536c4a5e374491018a6",
+          "modified": "2026-08-29T18:51:07.869733+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "bc34f834b0fad6b02aad81d7356b098ac93dd00ff469bfd06a3b038da2c2f46f",
+          "modified": "2026-08-29T18:51:07.895789+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "aa762974171daa292997988db3a98022205b1e57ede622feb939f56bd52e96f9",
+          "modified": "2026-08-29T18:51:07.911445+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "667555d24ef8ce5ed25264b96d10025174836abeadb86b5d896ec3aa0fea4a3c",
+          "modified": "2026-08-29T18:51:07.923140+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "9c8e4d53d1fb171c7c9404a5f41db89a87fb5a578e47c8348351552538800bfe",
+          "modified": "2026-08-29T18:51:10.788582+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "9fe66b34e52639f14bb2760287fd3d48b775260be13986c467102ebd20eacf8e",
+          "modified": "2026-08-29T18:51:10.804233+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "ec003ff0dda8b78971679af9488ffdf432c0b9d10c8902de58292d9ba354b8f9",
+          "modified": "2026-08-29T18:51:14.540306+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf",
+          "hash": "85151c86367e9755a4c589652b504a939fc61ec1fe2fd075662fd9c0bce929db",
+          "modified": "2026-08-29T18:51:14.565938+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf",
+          "hash": "b9dc9b90d00540e6e3dd8b9a65dda68f214cfadd7d1d03915869bfc67e219ec7",
+          "modified": "2026-08-29T18:51:14.589043+00:00"
+        },
+        "xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf",
+          "hash": "39d5439e082ce78b24ea0d44fb515cbc98b1d5b659adf8ff5b23fd3e007fc256",
+          "modified": "2026-08-29T18:51:14.625829+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-1.pdf",
+          "hash": "7455642c4e8e9d065049d5bfc1ac44fb78e4f011107cfc968d73811b1cc3033c",
+          "modified": "2026-08-29T18:51:14.653490+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-2.pdf",
+          "hash": "1a778685dce6a493ecbe3750ee6c51166a6899d00d79445a423c1372ebab5be9",
+          "modified": "2026-08-29T18:51:14.670382+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-3.pdf",
+          "hash": "e1205f8f3c625bcc347b41034faea80a57d6bb61fac08420ce67e1f804a9ff4b",
+          "modified": "2026-08-29T18:51:14.689495+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-4.pdf",
+          "hash": "8c8c807924efde1c25b0056ce77356a692414359f703490917d818e134815f8a",
+          "modified": "2026-08-29T18:51:14.706145+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-5.pdf",
+          "hash": "eefbc3dbf18dac82866f738a0fdc8fd0af6f8a462cb7bcecf2cfca76cb48f925",
+          "modified": "2026-08-29T18:51:14.720182+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-6.pdf",
+          "hash": "99b98d38da0efe45c9b6f1a59ac6a059a3543189fdc264dd40e75967a3fe486e",
+          "modified": "2026-08-29T18:51:14.733731+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-7.pdf",
+          "hash": "5a6677d35401c350e7efab5096d658019b9bc2f55f9173bc09a3fa7de2fb8ae9",
+          "modified": "2026-08-29T18:51:14.748310+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-8.pdf",
+          "hash": "1f8e6cb72619825f9b91559822f8dc58a1807c74d50d312b2612f6284cdfb83c",
+          "modified": "2026-08-29T18:51:14.762841+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-9.pdf",
+          "hash": "a36c302a934595bfe375da6c03992b91901b383293edee21f8c092ed8355fddf",
+          "modified": "2026-08-29T18:51:14.778118+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-10.pdf",
+          "hash": "e02c7efc86b3dfb516474d3ee55e09bf77eb0cc90d36ece80fc172f32012bb16",
+          "modified": "2026-08-29T18:51:14.790506+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-11.pdf",
+          "hash": "169e7db8c9c9432c1663f027ea7cae96a83bb00a2bc3f4d0c66e3b0d2e136925",
+          "modified": "2026-08-29T18:51:14.805051+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-12.pdf",
+          "hash": "2fa75af1013e794da9e37f54d897ff9602307e34b02312b98e2aac116561a460",
+          "modified": "2026-08-29T18:51:14.818246+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-13.pdf",
+          "hash": "916369d23f22fd47b66fd87517ee49f74c0abe0682ba4f6325c35aebd424df53",
+          "modified": "2026-08-29T18:51:14.834321+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-14.pdf",
+          "hash": "e3b11f9e47fc8ec5467fb9b7633cd1416cb2ecd94d8b496a2fb78e23ed395c2f",
+          "modified": "2026-08-29T18:51:14.917612+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-15.pdf",
+          "hash": "50738c0935bb840b3cedfd6fe07fede2e1baeca6de7e2b95fc7696a69b965832",
+          "modified": "2026-08-29T18:51:14.931352+00:00"
+        },
+        "xv26-stealth-battlesuits-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/xv26-stealth-battlesuits/xv26-stealth-battlesuits-operatives-selection-operative-selection-16.pdf",
+          "hash": "c0681120fdb0f85fdddfe62261c85af861f78415eb83c17763f192b62e6a434f",
+          "modified": "2026-08-29T18:51:14.941938+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/xv26-stealth-battlesuits-structure.json": "6cd5e4d54afe33d305f3ea41533c799ed69d21b9ff23851036e00321abcbabb5",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card1_landscape.pdf": "e6829eb03f77b63f53b051b77da6fa078c32a291a72a0bf824e703f22da2d3cc",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card2_landscape.pdf": "292f27eacc50713c7cfb4cb12c792a030cb0244b6f8f4867c1c6eeb4a7daafb7",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card3_landscape.pdf": "d88e867a8dfb302c5e8a8a3329fb6204f62c3e58a03cdcf05201a6d0ff66bcfc",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page01_card4_landscape.pdf": "1af3ab7e459f9763fb27e9dab7162ff456de4d7a43ef179bb0b922e913a90485",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card1_landscape.pdf": "0448ee0fa769abba94977c0ad96edd2f8f15b964d301541bf65c8cc5e6ac339a",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card2_landscape.pdf": "845fa0b9f55236703b3941184f170a9babf7a4e415098bdd145b89779de71c0a",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card3_landscape.pdf": "1345941b83e110b7bf40425af3da935310794953a7f0edbc4453ac9413963934",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page02_card4_landscape.pdf": "fb900826d2a0d98b3e69843e2799369c68877feb6dff3ef04da6e03d2ae4cfe5",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card1_landscape.pdf": "5ea73800f9a7d4285c68e331c47a9310915d8b5ec041cd796cd94f725aec9ddc",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card2_landscape.pdf": "4984c2bc3c7769106e40f015a2065638166538c7a6edc836b07cf4b5bc30ad42",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card3_landscape.pdf": "c7c90dcdd1c1b22f18317b545bfe029ca781c089b62ff3f2cac05eca6cc7d870",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page03_card4_landscape.pdf": "6735db505e0bad7e6e626bfda644caec86be69e87393c497487cd4518b66e6d6",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card1_landscape.pdf": "e6d4c7472849b5ab380e594f93e2b79fccdb650b7ebef8cbbca6c84c1576b65c",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page04_card2_landscape.pdf": "33247cba4c1f31caa6b77847b58feee7cd952c246046a7b680e95931dabb18eb",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card1_portrait.pdf": "350d553f0ca9bedad8f559ce886a88c7a9d5388331b511f2b8d33d367fe9315b",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card2_portrait.pdf": "2c8f134a2c0e8c4c014ea485401695edb114f40a87f0883ccb040e4fec78f079",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card3_portrait.pdf": "c157d05d7159802a3cf84e9610fe24e196c7b1eede93ce2f984e4dc5ac3dd648",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page05_card4_portrait.pdf": "33913fc2c99d7e4cd59d7c604c2dcd86923e4688eeebfd9c12531b53b46c2afb",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card1_portrait.pdf": "c24a3517aa032d1bdf64e5aa49815ae5ae5b901b9fa9d1f6ea1a2e4bbfb2415c",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card2_portrait.pdf": "307f1e8cebedeb7bd118fbadedbac22dec5a6de2e039b8b64c99555b77a490c4",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card3_portrait.pdf": "f73ad12a8d5a65878540d4106b1501e567fbaf80a07689e290fd3dc5d483e124",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page06_card4_portrait.pdf": "0cce3c08fac9bb0923194134238a2fc182512c626d39b41a0db84e17d367b579",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card1_portrait.pdf": "0fddbf4e1af6832b4de682cdc87b72188404f52cc869867d675c8121a7d9c471",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card2_portrait.pdf": "53527ef63e432d3dc1dba0c35f41bb985b2d18cea3203ec49ec6f4c71e4f4381",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card3_portrait.pdf": "c4c142dffc250b3e31d43e57e0e71948c9048b3201d8c761baba5df1c9645757",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page07_card4_portrait.pdf": "fd68f1fb83fc08ae939163d121c9c0b84b8ab64c7c015d50911a409f5d744429",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card1_portrait.pdf": "2a79e3846144f4fe07a80532c4201282fef2b9e196bb146a66d4f7b6fb29e3ae",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card2_portrait.pdf": "2f60da9cc7f63fcf5c434abcb16a64574300c151d53cfc3f4858b9acec67b8ee",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card3_portrait.pdf": "1cf925204b9e2cdc1303733625c54f10586271af521599cdbc7d6b56720430d4",
+        "layers/warcom/extracted/xv26-stealth-battlesuits/cards/xv26-stealth-battlesuits_page08_card4_portrait.pdf": "2abf4d90d67c381cf72e156cadde7db94e915aaf5cbefb63ced9f66fcc0813f3"
+      },
+      "completed": "2026-08-29T18:51:15.072233+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "4dfcdcba39f6af2128799edb54818519d5d8053530048c2c7d4da3de61949db4",
+          "outputs": [
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-01.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-02.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-03.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-04.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-05.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-06.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-07.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-08.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-09.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-10.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-11.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-12.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-13.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-14.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-15.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-16.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-17.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-18.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-19.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-20.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-21.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-22.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-23.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-24.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-25.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-26.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-27.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-28.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-29.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-30.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-31.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-32.jpeg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/xv26-stealth-battlesuits-artwork-metadata.json",
+            "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-landscape.jpg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-portrait.jpg",
+            "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-token-transparent.png",
+            "layers/integration/xv26-stealth-battlesuits/artwork/icons/xv26-stealth-battlesuits-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:39:31.156301+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:39:31.156301+00:00"
+    }
+  }
+}

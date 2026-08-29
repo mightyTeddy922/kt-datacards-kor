@@ -1,0 +1,1831 @@
+{
+  "team": "hearthkyn-salvagers",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:38.624209+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/hearthkyn-salvagers/content/hearthkyn-salvagers-content.json",
+          "hash": "5f5a91f96d23e1aca65aa8fa6233115dc990bc98909bfe403367f2374467ee1f",
+          "modified": "2026-08-29T18:44:38.844131+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:40.242554+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/manifest.json": "52bb5023ee8a68144a2d31e7b11ff7bbd66d650cfaa6edd823893d6175af5a7e",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-dozr.pdf": "d9c37f7f193ca06961bca0e109be7b7df5759365e04f2081593e01ea79fe3ef9",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-field-medic.pdf": "0caf528eb28e1c3d792fbbc99224d03073b87c10b5909b56331d95bd3b8bdc10",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-grenadier.pdf": "4f8fb7641cfd3c0818a2049f279fddc48ef7d48877479ea85563d37724ed74b9",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-gunner.pdf": "4c353199e46f68e81bb27a13fc521ef2e8e27a690b8fa240acfbe9cda4081a70",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-jump-pack-warrior.pdf": "3745c96f4b9ce7feb4c9d1e37b1d174fab6e4957ca33c9bbeb63ce5e1a929c92",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kinlynk.pdf": "e72088118e274e3061fba937e8f3d83f1eb8264f2bccaaf37dbcbe9153578f4b",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kognitaar.pdf": "2b7964946af6fc9bdb20f7d72e356470a4642fffa30f3616ae8478db3a8b2914",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lokatr.pdf": "dc1500c716860100b36309d16dba60653a9c8bb8a044235edd64c52075d05d90",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lugger.pdf": "1ef411f5d7914854fa194147d5d50cc8ce6bfadaa6a40443ae160ac091ece696",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-theyn.pdf": "19fc29dd175bbe4ce08c77c01972e96c25d014bebc33f96f74b5b267c3559631",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-warrior.pdf": "57c49945aa8ae78b9ee98c15e8e1483688ebef9a26acf9063c446ef13954b6d0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "fb3a476e0f9bfbf7b73c9d7ff74e72fa6fe768643803a76f1cb4982afda15639",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "8d4c7d19138a6d75e8258d98b27f49f733128f857f0e93707ec23d993cef7c94",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "42d510faa260c2b94722cf1208822eed85753fea91104b3618bf305acaa8f8fa",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "02c0bfa282df23b91fad3a5e4c2aa3d711af3339294e2b0a9c259ef670dfc3ad",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "dc6954f84480d5e05f835329c75da215d48bc5b89c7718edbcb8d4a59f3c6692",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "3c23452eed6db700c7499d320ea5da765c99406681fadf672a63baddcfc8bfd2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": "23a1199b7f9aef239aadd380402801f36c354e84e2cdbc26395dbbbb2d962d8a",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-16.pdf": "caac99527429f4969e2ec85bad76c2c5487c9209bee289fa7c21500c3da0ebd2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-17.pdf": "55563cc8e52f3b818984201d392577db2dea24139e3965e2a50dea4f437c8475",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-18.pdf": "46cfd50394adcf314d94fc8ed1831ee705888a51d7309a103c00188b87de6746",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "79929ede18a6788418906ccefae0f661aa745727e4f8d6aab23eed89cdd78df3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "a2a4ef79e747eff9385966ebdbed12709f6114cfd406825e16c1e0c1dce534f8",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "2ab7552c601100d81519cd28df9668394c8bb2f04050ef81594634df343dd87d",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "79a60c725f4c85b0a3a6ed9a03220b64d1187242db65da23c2a5300988901375",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "164562ac47e26228299dd1f73b372a7169967bfc14eabcb2e9f1bbf9cd120948",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "2db9c73a4359ddf66b737a3f01499570b2dfefea62607f2d5ac71f76015f6fc2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "52ef149386968462d685ef46553a3f5681041c1acbc960d57d98271cc8865788",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "a07ff27598274fa8e73ed0ddff9bdfa5dec272a98038712d7fdc845b21c9d377",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-climbing-rigs.pdf": "d5780c39854f45345cc75fba9d64845aa9e50d94b7c8fe210df2457d425448d0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-excavation-tools.pdf": "08414aa7f897389f26da81407bbacf110992c7263f86c87d95eba0841309e927",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-plasma-knives.pdf": "556c618203950827ed9d6493a901bc48603bc2d612c7ec4d6406ad7dacfb3a32",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-writ-of-claim.pdf": "3190968defa5d18c9866564d29024b21892e28cb575272dfeffbf733b4da5b6a",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-faction-rule-grudge.pdf": "2f6713f868d88b896ce98ad84ea7f4071bba447235e6e6bfd17c63372982a645",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-engage-to-acquire.pdf": "8d62be7ed3a26ca365f96fc5ad5b2b78f0ff3bfab75c85d78dd78ad401f7cfaf",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-sturdy.pdf": "218809431e7cdc0d8a9dd2a35744cb5a298d0d2708349b4b73083a699ddf4b64",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-the-ancestors-are-watching.pdf": "a3609d23981f7df575ab7fa1a741cb606a5125e6a311a36031f010daedc91c67",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-worth-it.pdf": "39ad3ac466d01aad7d8242d4fd5f8b24f63c306e168e64609521b0cb8893fe47",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-1.pdf": "8bc3d9d54dc80d62c785be12e8ffcb63a8882b0ce67b06ab76ab61c950650617",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-10.pdf": "3f2fdd6ad09a2a4773f04832f857dcab3a428337e22aff84ee195edd4b15f6a2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-11.pdf": "90f4fd5fb16907f66d3f52593b2ea5099049749eacf596682753e1f449510423",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-12.pdf": "be54f9c23aee5c243d087316644b753ad8c5c09e65adc8ac1ac7ebfcdf5bb99c",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-13.pdf": "010dcd2d167c1a97de4ff8a4a64d75f6c345039afd26fda3de6a89c442544534",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-14.pdf": "fa4de0ab41fbdbe59c807877bcb9d27db686f8350fdb32b9dc8fc3964d5133f8",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-15.pdf": "40c3cba418ae2e41f4463690b987f12a9bcf2dbf941e21fb733405df384b2659",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-16.pdf": "3808cd5377f4975b4858d2bedd53f828049198d946988d826b07b1828ad2ab9c",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-2.pdf": "8ce75e232ee68fc25d6cf32178d90dbaad34ca5444b1db089e0ec42d1ad2b597",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-3.pdf": "0948ac00c779d7c7c45e8cc3b517da66cf1189ea63003fc3a6f0b30c712047d1",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-4.pdf": "8dc449302ddf909f41da9fa013ad0324d0eb8c3032420e3ca3611d736e047451",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-5.pdf": "c2c103aa4b862c781ce931be97adc0750e7a6b56e51dfcff51a2902fb43098a5",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-6.pdf": "a27efe4410eb8aebc1f8c6ec236f3b66eb97193da3f1b4d532bfb0f23efb268f",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-7.pdf": "fb2551db9a5cbd63cb0563d2b36b2bd4bbf9823f8d2176b03aeb797780012238",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-8.pdf": "9f3b1dcbd8c5290fd80baf853d933f238a77d4880396919cc142c1ac0d3d1a37",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-9.pdf": "1b4a56207507e2f04a0ec5690947ef79f693001b03ac956d99c7b994193994b2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection.pdf": "8c7961fc3598be078f7549820dfcc36134b5a6ce0ed4221a4e5988eaa9120f71",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-need-keeps.pdf": "5eab1d3caaa30912aea9f0b62b9d9527c50660bf34f115ca3b255993fa748af4",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-proximate-firepower.pdf": "4bc76d2862b1c559f61d5bc4cfb63f849f83602b554e08dd8640d24bc34601e3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-toil-earns.pdf": "4073ca640fadc5df50a7f9e4ab07112f42a4a1fe78a50936c2aed340dfaadab0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-wrought-defence.pdf": "7bd6f7b3480d8dacdbc59ebe51406201ba3695f985a55497081ccf45eb283268",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-token-guide-token-guide.pdf": "b9b923b2b3adc2b0fc32e61e7b74572145a326890a1df5e28b9db570592060a8"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/hearthkyn-salvagers/card-backside/hearthkyn-salvagers-backside-landscape.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-07-12T18:47:42.753499+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/hearthkyn-salvagers/card-backside/hearthkyn-salvagers-backside-portrait.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-07-12T18:47:42.761924+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:47:42.786374+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-token.jpg": "d7977d2fc5a8415bf844c4a19439161e6eced66466921e3d6cbfea8cf5076f93",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/hearthkyn-salvagers-attack.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-attack.png",
+          "hash": "a90029e8758aee20ed48010d2d3d5498581da3c82fe5f75ed686db70bbb0926f",
+          "modified": "2026-08-29T18:44:45.145452+00:00"
+        },
+        "tokens/hearthkyn-salvagers-c8-hx-charge.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-c8-hx-charge.png",
+          "hash": "781a0438dbc8d145308377e4882950db27845371919fc8f6378f5d8bba0169fa",
+          "modified": "2026-08-29T18:44:45.736525+00:00"
+        },
+        "tokens/hearthkyn-salvagers-defence.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-defence.png",
+          "hash": "b572a444343c84426a04b83dd89c1b2b916151e349abcc02b43ce2fd59aaceac",
+          "modified": "2026-08-29T18:44:46.079835+00:00"
+        },
+        "tokens/hearthkyn-salvagers-grudge.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-grudge.png",
+          "hash": "c99e3f02298005159e83760ec31ead13b96d24b0ea1bc2646ebf994d77372cf1",
+          "modified": "2026-08-29T18:44:47.074764+00:00"
+        },
+        "tokens/hearthkyn-salvagers-medic.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-medic.png",
+          "hash": "a7741556853cad3777e925f78b18b22c32d0353b54e38798b5b82c9ec96f8af5",
+          "modified": "2026-08-29T18:44:47.725333+00:00"
+        },
+        "tokens/hearthkyn-salvagers-need-keeps.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-need-keeps.png",
+          "hash": "377c77da23d9a7cd0117020c45d4dda6cc6acfad8067a6700a5b6e030cba0729",
+          "modified": "2026-08-29T18:44:48.322451+00:00"
+        },
+        "tokens/hearthkyn-salvagers-pan-spectral-scan.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-pan-spectral-scan.png",
+          "hash": "f589d1f8e2bea71737709e9ec7efefd6fb7c379e9dbfeb4a3818e1cc873aeebf",
+          "modified": "2026-08-29T18:44:48.682412+00:00"
+        },
+        "tokens/hearthkyn-salvagers-spot.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-spot.png",
+          "hash": "c0f9f444d30cdde8c870e220cf51dadc5e678cc56bd3f8f548241acf39dad70b",
+          "modified": "2026-08-29T18:44:49.605109+00:00"
+        },
+        "tokens/hearthkyn-salvagers-system-jam.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-system-jam.png",
+          "hash": "bd975c5b99fc4c10fa27c97629592afa1c6d05feaa58b6ab11fe1087ec9df654",
+          "modified": "2026-08-29T18:44:50.373440+00:00"
+        },
+        "tokens/hearthkyn-salvagers-toil-earns.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-toil-earns.png",
+          "hash": "9d5eab10d4e9a5ed9df7e92925a1a0f3905de6a3d19e07f1e4195c926d979dfe",
+          "modified": "2026-08-29T18:44:50.967926+00:00"
+        },
+        "tokens/hearthkyn-salvagers-utility-grenade.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-utility-grenade.png",
+          "hash": "3ac51e0bb82413b4cece242706f05ef416dbcf63abd02a35c14e686c9de5bf6f",
+          "modified": "2026-08-29T18:44:51.371721+00:00"
+        },
+        "tokens/hearthkyn-salvagers-writ-of-claim.png": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-writ-of-claim.png",
+          "hash": "edc9d865caf4d1e271380f5cf7a6c3466d2c6b675295e93ac5fe22ca1311a45e",
+          "modified": "2026-08-29T18:44:51.381255+00:00"
+        },
+        "tokens/hearthkyn-salvagers-attack.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-attack.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.382255+00:00"
+        },
+        "tokens/hearthkyn-salvagers-c8-hx-charge.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-c8-hx-charge.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.384766+00:00"
+        },
+        "tokens/hearthkyn-salvagers-defence.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-defence.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.386765+00:00"
+        },
+        "tokens/hearthkyn-salvagers-grudge.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-grudge.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.391223+00:00"
+        },
+        "tokens/hearthkyn-salvagers-medic.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-medic.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.395300+00:00"
+        },
+        "tokens/hearthkyn-salvagers-need-keeps.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-need-keeps.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.397819+00:00"
+        },
+        "tokens/hearthkyn-salvagers-pan-spectral-scan.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-pan-spectral-scan.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.400344+00:00"
+        },
+        "tokens/hearthkyn-salvagers-spot.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-spot.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.402249+00:00"
+        },
+        "tokens/hearthkyn-salvagers-system-jam.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-system-jam.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.405254+00:00"
+        },
+        "tokens/hearthkyn-salvagers-toil-earns.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-toil-earns.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.409280+00:00"
+        },
+        "tokens/hearthkyn-salvagers-utility-grenade.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-utility-grenade.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.413256+00:00"
+        },
+        "tokens/hearthkyn-salvagers-writ-of-claim.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-writ-of-claim.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:51.415427+00:00"
+        },
+        "tokens/tokenbag/hearthkyn-salvagers-token-bag-icon.png": {
+          "path": "output/hearthkyn-salvagers/tokens/tokenbag/hearthkyn-salvagers-token-bag-icon.png",
+          "hash": "d7977d2fc5a8415bf844c4a19439161e6eced66466921e3d6cbfea8cf5076f93",
+          "modified": "2026-08-29T18:44:51.424087+00:00"
+        },
+        "tokens/tokenbag/hearthkyn-salvagers-token-bag.obj": {
+          "path": "output/hearthkyn-salvagers/tokens/tokenbag/hearthkyn-salvagers-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:44:51.427595+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:52.704672+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/manifest.json": "52bb5023ee8a68144a2d31e7b11ff7bbd66d650cfaa6edd823893d6175af5a7e",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-token.jpg": "d7977d2fc5a8415bf844c4a19439161e6eced66466921e3d6cbfea8cf5076f93",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-dozr.pdf": "d9c37f7f193ca06961bca0e109be7b7df5759365e04f2081593e01ea79fe3ef9",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-field-medic.pdf": "0caf528eb28e1c3d792fbbc99224d03073b87c10b5909b56331d95bd3b8bdc10",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-grenadier.pdf": "4f8fb7641cfd3c0818a2049f279fddc48ef7d48877479ea85563d37724ed74b9",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-gunner.pdf": "4c353199e46f68e81bb27a13fc521ef2e8e27a690b8fa240acfbe9cda4081a70",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-jump-pack-warrior.pdf": "3745c96f4b9ce7feb4c9d1e37b1d174fab6e4957ca33c9bbeb63ce5e1a929c92",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kinlynk.pdf": "e72088118e274e3061fba937e8f3d83f1eb8264f2bccaaf37dbcbe9153578f4b",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kognitaar.pdf": "2b7964946af6fc9bdb20f7d72e356470a4642fffa30f3616ae8478db3a8b2914",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lokatr.pdf": "dc1500c716860100b36309d16dba60653a9c8bb8a044235edd64c52075d05d90",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lugger.pdf": "1ef411f5d7914854fa194147d5d50cc8ce6bfadaa6a40443ae160ac091ece696",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-theyn.pdf": "19fc29dd175bbe4ce08c77c01972e96c25d014bebc33f96f74b5b267c3559631",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-warrior.pdf": "57c49945aa8ae78b9ee98c15e8e1483688ebef9a26acf9063c446ef13954b6d0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "fb3a476e0f9bfbf7b73c9d7ff74e72fa6fe768643803a76f1cb4982afda15639",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "8d4c7d19138a6d75e8258d98b27f49f733128f857f0e93707ec23d993cef7c94",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "42d510faa260c2b94722cf1208822eed85753fea91104b3618bf305acaa8f8fa",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "02c0bfa282df23b91fad3a5e4c2aa3d711af3339294e2b0a9c259ef670dfc3ad",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "dc6954f84480d5e05f835329c75da215d48bc5b89c7718edbcb8d4a59f3c6692",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "3c23452eed6db700c7499d320ea5da765c99406681fadf672a63baddcfc8bfd2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": "23a1199b7f9aef239aadd380402801f36c354e84e2cdbc26395dbbbb2d962d8a",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-16.pdf": "caac99527429f4969e2ec85bad76c2c5487c9209bee289fa7c21500c3da0ebd2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-17.pdf": "55563cc8e52f3b818984201d392577db2dea24139e3965e2a50dea4f437c8475",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-18.pdf": "46cfd50394adcf314d94fc8ed1831ee705888a51d7309a103c00188b87de6746",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "79929ede18a6788418906ccefae0f661aa745727e4f8d6aab23eed89cdd78df3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "a2a4ef79e747eff9385966ebdbed12709f6114cfd406825e16c1e0c1dce534f8",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "2ab7552c601100d81519cd28df9668394c8bb2f04050ef81594634df343dd87d",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "79a60c725f4c85b0a3a6ed9a03220b64d1187242db65da23c2a5300988901375",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "164562ac47e26228299dd1f73b372a7169967bfc14eabcb2e9f1bbf9cd120948",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "2db9c73a4359ddf66b737a3f01499570b2dfefea62607f2d5ac71f76015f6fc2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "52ef149386968462d685ef46553a3f5681041c1acbc960d57d98271cc8865788",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "a07ff27598274fa8e73ed0ddff9bdfa5dec272a98038712d7fdc845b21c9d377",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-climbing-rigs.pdf": "d5780c39854f45345cc75fba9d64845aa9e50d94b7c8fe210df2457d425448d0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-excavation-tools.pdf": "08414aa7f897389f26da81407bbacf110992c7263f86c87d95eba0841309e927",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-plasma-knives.pdf": "556c618203950827ed9d6493a901bc48603bc2d612c7ec4d6406ad7dacfb3a32",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-writ-of-claim.pdf": "3190968defa5d18c9866564d29024b21892e28cb575272dfeffbf733b4da5b6a",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-faction-rule-grudge.pdf": "2f6713f868d88b896ce98ad84ea7f4071bba447235e6e6bfd17c63372982a645",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-engage-to-acquire.pdf": "8d62be7ed3a26ca365f96fc5ad5b2b78f0ff3bfab75c85d78dd78ad401f7cfaf",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-sturdy.pdf": "218809431e7cdc0d8a9dd2a35744cb5a298d0d2708349b4b73083a699ddf4b64",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-the-ancestors-are-watching.pdf": "a3609d23981f7df575ab7fa1a741cb606a5125e6a311a36031f010daedc91c67",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-worth-it.pdf": "39ad3ac466d01aad7d8242d4fd5f8b24f63c306e168e64609521b0cb8893fe47",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-1.pdf": "8bc3d9d54dc80d62c785be12e8ffcb63a8882b0ce67b06ab76ab61c950650617",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-10.pdf": "3f2fdd6ad09a2a4773f04832f857dcab3a428337e22aff84ee195edd4b15f6a2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-11.pdf": "90f4fd5fb16907f66d3f52593b2ea5099049749eacf596682753e1f449510423",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-12.pdf": "be54f9c23aee5c243d087316644b753ad8c5c09e65adc8ac1ac7ebfcdf5bb99c",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-13.pdf": "010dcd2d167c1a97de4ff8a4a64d75f6c345039afd26fda3de6a89c442544534",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-14.pdf": "fa4de0ab41fbdbe59c807877bcb9d27db686f8350fdb32b9dc8fc3964d5133f8",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-15.pdf": "40c3cba418ae2e41f4463690b987f12a9bcf2dbf941e21fb733405df384b2659",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-16.pdf": "3808cd5377f4975b4858d2bedd53f828049198d946988d826b07b1828ad2ab9c",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-2.pdf": "8ce75e232ee68fc25d6cf32178d90dbaad34ca5444b1db089e0ec42d1ad2b597",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-3.pdf": "0948ac00c779d7c7c45e8cc3b517da66cf1189ea63003fc3a6f0b30c712047d1",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-4.pdf": "8dc449302ddf909f41da9fa013ad0324d0eb8c3032420e3ca3611d736e047451",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-5.pdf": "c2c103aa4b862c781ce931be97adc0750e7a6b56e51dfcff51a2902fb43098a5",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-6.pdf": "a27efe4410eb8aebc1f8c6ec236f3b66eb97193da3f1b4d532bfb0f23efb268f",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-7.pdf": "fb2551db9a5cbd63cb0563d2b36b2bd4bbf9823f8d2176b03aeb797780012238",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-8.pdf": "9f3b1dcbd8c5290fd80baf853d933f238a77d4880396919cc142c1ac0d3d1a37",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-9.pdf": "1b4a56207507e2f04a0ec5690947ef79f693001b03ac956d99c7b994193994b2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection.pdf": "8c7961fc3598be078f7549820dfcc36134b5a6ce0ed4221a4e5988eaa9120f71",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-need-keeps.pdf": "5eab1d3caaa30912aea9f0b62b9d9527c50660bf34f115ca3b255993fa748af4",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-proximate-firepower.pdf": "4bc76d2862b1c559f61d5bc4cfb63f849f83602b554e08dd8640d24bc34601e3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-toil-earns.pdf": "4073ca640fadc5df50a7f9e4ab07112f42a4a1fe78a50936c2aed340dfaadab0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-wrought-defence.pdf": "7bd6f7b3480d8dacdbc59ebe51406201ba3695f985a55497081ccf45eb283268",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-token-guide-token-guide.pdf": "b9b923b2b3adc2b0fc32e61e7b74572145a326890a1df5e28b9db570592060a8",
+        "config/teams/hearthkyn-salvagers/custom-tokens/hearthkyn-salvagers-grudge.png": "32d0acd080e289ec1de3e68c757746f968d60db5d769a2ec2e0465d0ef31d363"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/hearthkyn-salvagers/dice/hearthkyn-salvagers-dice-light.jpg",
+          "hash": "9c936d95e5a5b337e18d80e98c7845b93b1800f12157eb9e62af1df5858069ba",
+          "modified": "2026-08-29T18:45:01.445156+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/hearthkyn-salvagers/dice/hearthkyn-salvagers-dice-dark.jpg",
+          "hash": "292e82108cba0010282ebf7b2f31bb53a937aeb6a05e4dd47dc5a360188fa66d",
+          "modified": "2026-08-29T18:45:01.451197+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/hearthkyn-salvagers/dice/hearthkyn-salvagers-dice-team.jpg",
+          "hash": "7a5616eebbde136845a3be229c21495c13032401bcd8ab9653a15290a47d8a8d",
+          "modified": "2026-08-29T18:45:01.455231+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:45:01.458740+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-token-transparent.png": "fe5e80c5b99530ff7e0f47d0a4545dad12a373188509f6b757922831fcd466f3",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/hearthkyn-salvagers/cardbox/hearthkyn-salvagers-card-box-texture.jpg",
+          "hash": "2cd39e84c08416d18682cb6198c4c337283d54c118797b75fd86f03c81b77d04",
+          "modified": "2026-08-29T18:45:01.594149+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/hearthkyn-salvagers/cardbox/hearthkyn-salvagers-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:45:01.597180+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:45:01.615797+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-token.jpg": "d7977d2fc5a8415bf844c4a19439161e6eced66466921e3d6cbfea8cf5076f93",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/hearthkyn-dôzr-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dôzr-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-07-25T18:07:12.546491+00:00"
+        },
+        "cards/datacards/hearthkyn-dôzr-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dôzr-front.jpg",
+          "hash": "7c813e628616f9b5bb526dde1bdd4a7693eeafae98246a9d613bc12f2439085e",
+          "modified": "2026-07-25T18:07:12.547189+00:00"
+        },
+        "cards/datacards/hearthkyn-field-medic-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-field-medic-back.jpg",
+          "hash": "f7299da557286e709065432d056b7ce07e453f95ccab92f0bad5bb4982c4418e",
+          "modified": "2026-08-29T18:45:15.749744+00:00"
+        },
+        "cards/datacards/hearthkyn-field-medic-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-field-medic-front.jpg",
+          "hash": "b145a744f6512c4f0051aa2f9f2b9b070bbbaa93b516d057ff8e95b6f9c0e334",
+          "modified": "2026-08-29T18:45:15.758771+00:00"
+        },
+        "cards/datacards/hearthkyn-grenadier-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-grenadier-back.jpg",
+          "hash": "c61a795b9d4e3e10c6fc1eeab56c9ebaa78899828a98aae92a2b2c82903d2dd9",
+          "modified": "2026-08-29T18:45:17.311917+00:00"
+        },
+        "cards/datacards/hearthkyn-grenadier-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-grenadier-front.jpg",
+          "hash": "513912d677d02b70f85178a72573d3ac138dd5e40b9d5ede4cdb9c1e16a6c4b0",
+          "modified": "2026-08-29T18:45:19.948644+00:00"
+        },
+        "cards/datacards/hearthkyn-gunner-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-gunner-back.jpg",
+          "hash": "9cad8a671156080eeeb5a9e38f44522c18333b614ed4f25b44a95e8ed1b42f2e",
+          "modified": "2026-08-29T18:45:21.053085+00:00"
+        },
+        "cards/datacards/hearthkyn-gunner-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-gunner-front.jpg",
+          "hash": "eaadc39d74d351d3d8982ed16b0641edbc5c81dfb2eb6990320712722917b5f3",
+          "modified": "2026-08-29T18:45:22.108659+00:00"
+        },
+        "cards/datacards/hearthkyn-jump-pack-warrior-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-jump-pack-warrior-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:22.109662+00:00"
+        },
+        "cards/datacards/hearthkyn-jump-pack-warrior-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-jump-pack-warrior-front.jpg",
+          "hash": "e6954335c537a7ae937fe4cd99518766a2967c3dda2b7c036d95c753642ef9c8",
+          "modified": "2026-08-29T18:45:22.112724+00:00"
+        },
+        "cards/datacards/hearthkyn-kinlynk-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kinlynk-back.jpg",
+          "hash": "9d56e0105184f97c3262f04c2511b048ea27f3c56d539cd6d86dbef327c76804",
+          "modified": "2026-08-29T18:45:22.114723+00:00"
+        },
+        "cards/datacards/hearthkyn-kinlynk-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kinlynk-front.jpg",
+          "hash": "9640c92b548020b0fb307c0da8aee4eba0ea2547c15ed99a007df4aa3a6f8239",
+          "modified": "2026-08-29T18:45:22.116838+00:00"
+        },
+        "cards/datacards/hearthkyn-kognitâar-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitâar-back.jpg",
+          "hash": "f5e5d14c623967272d60057258f2cff4ac3fb12bff94247589c2892fa38389c6",
+          "modified": "2026-07-25T18:07:12.560808+00:00"
+        },
+        "cards/datacards/hearthkyn-kognitâar-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitâar-front.jpg",
+          "hash": "aed56f6b4fc13ef8ce5a8d862fcc3eb7c42b196f59973cf0e64c88bbe40fabbb",
+          "modified": "2026-07-25T18:07:12.561406+00:00"
+        },
+        "cards/datacards/hearthkyn-lokâtr-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokâtr-back.jpg",
+          "hash": "6ac62a3def4b116403f6ed7fc04c22572255d216aaf311f8279317935dbbe434",
+          "modified": "2026-07-25T18:07:12.563132+00:00"
+        },
+        "cards/datacards/hearthkyn-lokâtr-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokâtr-front.jpg",
+          "hash": "1f0472816980a220549847e77dd8f8a25c6e65044699086456574f29d0ee167b",
+          "modified": "2026-07-25T18:07:12.563640+00:00"
+        },
+        "cards/datacards/hearthkyn-lugger-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lugger-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:22.122371+00:00"
+        },
+        "cards/datacards/hearthkyn-lugger-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lugger-front.jpg",
+          "hash": "f5771cff0222a1c31e35b567a90c66b8f10fa6b8c3670aec0c1ff83c2d946738",
+          "modified": "2026-08-29T18:45:22.123373+00:00"
+        },
+        "cards/datacards/hearthkyn-theyn-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-theyn-back.jpg",
+          "hash": "210986cb5de485d50aed53964f92927250bedaa8d9dc13ee5189c7eeb7793e8c",
+          "modified": "2026-08-29T18:45:22.124399+00:00"
+        },
+        "cards/datacards/hearthkyn-theyn-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-theyn-front.jpg",
+          "hash": "11d25db07893e932951d00523d4154722dc959475deb912c03298c243a66c6c6",
+          "modified": "2026-08-29T18:45:22.125398+00:00"
+        },
+        "cards/datacards/hearthkyn-warrior-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-warrior-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:22.125398+00:00"
+        },
+        "cards/datacards/hearthkyn-warrior-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-warrior-front.jpg",
+          "hash": "78257cf56ead2d7ec8d465558bc10fc33bb6853b78745af6699e6a17af5ea533",
+          "modified": "2026-08-29T18:45:22.126903+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-climbing-rigs-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-climbing-rigs-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.660304+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-climbing-rigs-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-climbing-rigs-front.jpg",
+          "hash": "e8ef4c6e5f4ac29acff545f0579f1c9fac96cfe9a08d361ebd2f05eca5a6f650",
+          "modified": "2026-08-29T18:45:35.661304+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-excavation-tools-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-excavation-tools-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.661304+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-excavation-tools-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-excavation-tools-front.jpg",
+          "hash": "2949c7cd3e5ac40bbb611e4922117c5366f54ef2adf88977a4796dd5a5c1688c",
+          "modified": "2026-08-29T18:45:35.662364+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-plasma-knives-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-plasma-knives-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.662364+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-plasma-knives-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-plasma-knives-front.jpg",
+          "hash": "2e638ea89c26ca71a8d8595d42114c69c44b3b4296b4634f4f5ef8e19976866a",
+          "modified": "2026-08-29T18:45:35.662364+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-writ-of-claim-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-writ-of-claim-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.663867+00:00"
+        },
+        "cards/equipment/hearthkyn-salvagers-writ-of-claim-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-writ-of-claim-front.jpg",
+          "hash": "21bc6d8ca254c6afab78efb398c93ab16e47f08a50840b2cbeadc8c1c6175ae3",
+          "modified": "2026-08-29T18:45:35.663867+00:00"
+        },
+        "cards/faction_rules/hearthkyn-salvagers-grudge-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/faction_rules/hearthkyn-salvagers-grudge-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.664870+00:00"
+        },
+        "cards/faction_rules/hearthkyn-salvagers-grudge-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/faction_rules/hearthkyn-salvagers-grudge-front.jpg",
+          "hash": "ec53a92d58e19ba7450182896cd804dbd088215641d5bbb71726036aad0f2b8e",
+          "modified": "2026-08-29T18:45:35.664870+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.665871+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-front.jpg",
+          "hash": "2fa1afadcd3a2fbda1986b5147faa8e137dbf57cc91a30c47efeb201eff87811",
+          "modified": "2026-08-29T18:45:35.666375+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-sturdy-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-sturdy-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.666375+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-sturdy-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-sturdy-front.jpg",
+          "hash": "8bb621046df19d4206c6607a494fe7ee79701937d256ed264b6a2ed36bee60d1",
+          "modified": "2026-08-29T18:45:35.667379+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.667889+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-front.jpg",
+          "hash": "8e3541e42be18fc8a1ae0153cdf434b644eab6cde182e9ae650d0a4c8dea63ab",
+          "modified": "2026-08-29T18:45:35.667889+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-worth-it-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-worth-it-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:35.668893+00:00"
+        },
+        "cards/firefight_ploys/hearthkyn-salvagers-worth-it-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-worth-it-front.jpg",
+          "hash": "90661a090db55ce9a730996db991ceef463df710cbcc61924b987d120e23ee52",
+          "modified": "2026-08-29T18:45:35.669893+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-back.jpg",
+          "hash": "746256636461686c4a967570f4d5f4a0e85c2bdd91861b328b307a3fed6a5326",
+          "modified": "2026-08-29T18:45:35.669893+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-front.jpg",
+          "hash": "6e3cdc8551560ae284edab31d9fcdf9320614d348de3c8ef65f48a3b01e60036",
+          "modified": "2026-08-29T18:45:47.735490+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-need-keeps-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-need-keeps-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:47.868500+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-need-keeps-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-need-keeps-front.jpg",
+          "hash": "6a6f20117871674997061611396df444e1ac4a2f8d0ebf1d99142842b85e5e0b",
+          "modified": "2026-08-29T18:45:48.083308+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:48.186675+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-front.jpg",
+          "hash": "09bcac1b74d921ceb33ee8388735d7c171a53bd8f43346faf9b723f0a8a2284f",
+          "modified": "2026-08-29T18:45:48.325436+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-toil-earns-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-toil-earns-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:48.327944+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-toil-earns-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-toil-earns-front.jpg",
+          "hash": "d546b25e3de5be3b7e004eeb54fd8f7c9f63182433a0a62c0d6fe951baa0c58b",
+          "modified": "2026-08-29T18:45:48.378012+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:48.379017+00:00"
+        },
+        "cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-front.jpg",
+          "hash": "1091cd2476dd6cfbb7baf695ce07ab14df2badc5d5aa93ae593372e73d50a53b",
+          "modified": "2026-08-29T18:45:48.687829+00:00"
+        },
+        "cards/token_guide/hearthkyn-salvagers-token-guide-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/token_guide/hearthkyn-salvagers-token-guide-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:48.689834+00:00"
+        },
+        "cards/token_guide/hearthkyn-salvagers-token-guide-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/token_guide/hearthkyn-salvagers-token-guide-front.jpg",
+          "hash": "fdabea26809e4a849436312704b7af06116135ce74a5557fe4c883aaaccf3f95",
+          "modified": "2026-08-29T18:45:48.693024+00:00"
+        },
+        "cards/datacards/hearthkyn-dzr-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dzr-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-07-25T18:07:12.539517+00:00"
+        },
+        "cards/datacards/hearthkyn-dzr-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dzr-front.jpg",
+          "hash": "7c813e628616f9b5bb526dde1bdd4a7693eeafae98246a9d613bc12f2439085e",
+          "modified": "2026-07-25T18:07:12.540239+00:00"
+        },
+        "cards/datacards/hearthkyn-kognitar-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitar-back.jpg",
+          "hash": "f5e5d14c623967272d60057258f2cff4ac3fb12bff94247589c2892fa38389c6",
+          "modified": "2026-07-25T18:07:12.559696+00:00"
+        },
+        "cards/datacards/hearthkyn-kognitar-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitar-front.jpg",
+          "hash": "aed56f6b4fc13ef8ce5a8d862fcc3eb7c42b196f59973cf0e64c88bbe40fabbb",
+          "modified": "2026-07-25T18:07:12.560309+00:00"
+        },
+        "cards/datacards/hearthkyn-loktr-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-loktr-back.jpg",
+          "hash": "6ac62a3def4b116403f6ed7fc04c22572255d216aaf311f8279317935dbbe434",
+          "modified": "2026-07-25T18:07:12.562005+00:00"
+        },
+        "cards/datacards/hearthkyn-loktr-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-loktr-front.jpg",
+          "hash": "1f0472816980a220549847e77dd8f8a25c6e65044699086456574f29d0ee167b",
+          "modified": "2026-07-25T18:07:12.562513+00:00"
+        },
+        "cards/datacards/hearthkyn-dozr-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dozr-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:15.735614+00:00"
+        },
+        "cards/datacards/hearthkyn-dozr-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dozr-front.jpg",
+          "hash": "7c813e628616f9b5bb526dde1bdd4a7693eeafae98246a9d613bc12f2439085e",
+          "modified": "2026-08-29T18:45:15.744166+00:00"
+        },
+        "cards/datacards/hearthkyn-kognitaar-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitaar-back.jpg",
+          "hash": "f5e5d14c623967272d60057258f2cff4ac3fb12bff94247589c2892fa38389c6",
+          "modified": "2026-08-29T18:45:22.117837+00:00"
+        },
+        "cards/datacards/hearthkyn-kognitaar-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitaar-front.jpg",
+          "hash": "aed56f6b4fc13ef8ce5a8d862fcc3eb7c42b196f59973cf0e64c88bbe40fabbb",
+          "modified": "2026-08-29T18:45:22.118858+00:00"
+        },
+        "cards/datacards/hearthkyn-lokatr-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokatr-back.jpg",
+          "hash": "6ac62a3def4b116403f6ed7fc04c22572255d216aaf311f8279317935dbbe434",
+          "modified": "2026-08-29T18:45:22.120860+00:00"
+        },
+        "cards/datacards/hearthkyn-lokatr-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokatr-front.jpg",
+          "hash": "1f0472816980a220549847e77dd8f8a25c6e65044699086456574f29d0ee167b",
+          "modified": "2026-08-29T18:45:22.121366+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:22.134943+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "c97a0fd950c5b0a4e52473bb15c7c5d97fc954dfc82a62a025dd757335b6a7ee",
+          "modified": "2026-08-29T18:45:23.145327+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:23.771002+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "a8252b797cc9effbe27d0f9887bc4f8420e226fca020351862aa9e1fb35a9686",
+          "modified": "2026-08-29T18:45:24.616140+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.625689+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "22ff0ff2cb86c8d63fc3c2b992217027a1b8559a3068deb6f19cb893fb32e79d",
+          "modified": "2026-08-29T18:45:24.634330+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.643949+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg",
+          "hash": "92c454885fb54b95d66f3c378935950a68c26409245598a921c2e3395186899b",
+          "modified": "2026-08-29T18:45:24.652097+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.660271+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg",
+          "hash": "c1ead63d4b958bc2609c7b032e5fc9bbcf023e8cdb40b6b9e8da3df6156e871b",
+          "modified": "2026-08-29T18:45:24.668893+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.674038+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg",
+          "hash": "d7813776c9cc1471e2d592436475103969ac8283f1a6e1de6a737eb9dbe2468e",
+          "modified": "2026-08-29T18:45:24.683122+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.690640+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg",
+          "hash": "75135d9d69bf174af235c5e1a76232f5bb1199df7ce043511efcbe7a9054834a",
+          "modified": "2026-08-29T18:45:24.702723+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.712650+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-front.jpg",
+          "hash": "6931525e180c131157d52293d7c6f99d8832205575215adde836a2157d8385f6",
+          "modified": "2026-08-29T18:45:24.723229+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:24.736875+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-front.jpg",
+          "hash": "7629eead51ab6093a065f6d5dec691b65ca3c60f56414e1faf27857278852403",
+          "modified": "2026-08-29T18:45:25.068975+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:25.077670+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-front.jpg",
+          "hash": "7b5770e9f86740ff4b7ed2dd45fe8b00841120e4c346b02d6263d023229e3a08",
+          "modified": "2026-08-29T18:45:25.087803+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:25.096912+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "209ab25524096437c4f08b0c9b1de430332ee2d8f5f7e84a76e205df3b891df2",
+          "modified": "2026-08-29T18:45:26.037842+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:26.407991+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "1ab175d3260dfa4362a25f5c3ca60db56a9a7e21a2515eb8ac9b794e136b6e52",
+          "modified": "2026-08-29T18:45:28.333177+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:29.990726+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "ed8a4e5cfb9f738afd9a66fb6efad225ef5c3f276a0413fe32159d608b25e2e0",
+          "modified": "2026-08-29T18:45:32.911505+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:34.754798+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "97222003bf2097721601fcefbad91eb3d961047e52c876d02084b829f85f3251",
+          "modified": "2026-08-29T18:45:35.595559+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:35.604590+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "70714c9770298eb30d83ffca8322b29d3ae97286e26d6283a77e297089892dbc",
+          "modified": "2026-08-29T18:45:35.614837+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:35.622151+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "5983f0a1d572ce4f9dfe6ec9399eb3a29102f4db1f46aa8885aeeaf29f1778e0",
+          "modified": "2026-08-29T18:45:35.630728+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:35.639212+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "cb4da7adf78ac0a344a8140babbababe3f559acd249e72cbce4087b16452e8ff",
+          "modified": "2026-08-29T18:45:35.645228+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+          "modified": "2026-08-29T18:45:35.653406+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "d207370d325b7f33f0dcc7d9ca72ea641cda7db17bf00bd2170d55e16c863bf8",
+          "modified": "2026-08-29T18:45:35.659304+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:37.022338+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-front.jpg",
+          "hash": "a96a6a6cea54f99a3cd6ac404dea26ad82a074d6debebb9a5c5b2a73cd765f4a",
+          "modified": "2026-08-29T18:45:39.406662+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:41.492130+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-front.jpg",
+          "hash": "1dc7f087c8982a5a4cf6fd1165730b4350b495d29611a92c0c7d91f3d6514032",
+          "modified": "2026-08-29T18:45:42.509030+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:42.936054+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-front.jpg",
+          "hash": "04c9ecaf78a60122b46564ec22c28e8c113a77dbff6fb2062f0cb72d70414185",
+          "modified": "2026-08-29T18:45:43.598006+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:44.252509+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-front.jpg",
+          "hash": "613c92c74eab7707415a0513bdce8317c93ec82de1145c67c3125b6b924bc682",
+          "modified": "2026-08-29T18:45:45.005388+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:45.392160+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-front.jpg",
+          "hash": "23d8bebbd7a9768c6ba0f860368c8cc6f9459f1aee2c052b1ad11fc32e42f7b1",
+          "modified": "2026-08-29T18:45:46.360441+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.734260+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-front.jpg",
+          "hash": "6a9f1188920c3323846fc9f4a7d11156e35888fe13bac555ce25aab5558a9f49",
+          "modified": "2026-08-29T18:45:46.747782+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.757844+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-front.jpg",
+          "hash": "188e91bde8a5f617337dec3c4da53b65965c5165ce171291a98009a079a99acb",
+          "modified": "2026-08-29T18:45:46.768875+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.777694+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-front.jpg",
+          "hash": "7f1656c9ff612c84ff75223118e50b63850a204c3c244ff3c27a4aa6b33860f6",
+          "modified": "2026-08-29T18:45:46.791231+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.800784+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-front.jpg",
+          "hash": "f518fc70554906a18463cc593305380dad847cc6ea6066b2959f0e968b902a27",
+          "modified": "2026-08-29T18:45:46.815123+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.822187+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-front.jpg",
+          "hash": "20459b83558d7d418abae6c8ec1652abd26cb1c4c9abbc685a210f4c69dc33d9",
+          "modified": "2026-08-29T18:45:46.831229+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.840525+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-front.jpg",
+          "hash": "ec34907edf401ec81eb07acf9c8cbc23617fc8bb631551de281f3ffb6ff1029a",
+          "modified": "2026-08-29T18:45:46.850139+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.859230+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-front.jpg",
+          "hash": "ace5b0169ff19e6351f9a5857eb434327f763e311673f95b4ac51117873fbaa0",
+          "modified": "2026-08-29T18:45:46.864744+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.872761+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-front.jpg",
+          "hash": "171c4ed22215e877510f9678a63ae92de26e71961b5913277268e4259529d01d",
+          "modified": "2026-08-29T18:45:46.883069+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:46.890612+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-front.jpg",
+          "hash": "17f0c27280e077df03b1502e018c0dd6f2af4c64f64c69aebf3100b1e563fd91",
+          "modified": "2026-08-29T18:45:46.901144+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:47.012329+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-front.jpg",
+          "hash": "32ffa457c7f2338e6a3e0dadb4a9d69057626dcdbef002eac83571813c7aae1d",
+          "modified": "2026-08-29T18:45:47.205441+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-back.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-back.jpg",
+          "hash": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+          "modified": "2026-08-29T18:45:47.305303+00:00"
+        },
+        "cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-front.jpg": {
+          "path": "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-front.jpg",
+          "hash": "599f2de8f36fd42118eed644b6d7337ec81fecd86bedee1ac9461f6cdb7274be",
+          "modified": "2026-08-29T18:45:47.486193+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:45:49.129437+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/manifest.json": "52bb5023ee8a68144a2d31e7b11ff7bbd66d650cfaa6edd823893d6175af5a7e",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-dozr.pdf": "d9c37f7f193ca06961bca0e109be7b7df5759365e04f2081593e01ea79fe3ef9",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-field-medic.pdf": "0caf528eb28e1c3d792fbbc99224d03073b87c10b5909b56331d95bd3b8bdc10",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-grenadier.pdf": "4f8fb7641cfd3c0818a2049f279fddc48ef7d48877479ea85563d37724ed74b9",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-gunner.pdf": "4c353199e46f68e81bb27a13fc521ef2e8e27a690b8fa240acfbe9cda4081a70",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-jump-pack-warrior.pdf": "3745c96f4b9ce7feb4c9d1e37b1d174fab6e4957ca33c9bbeb63ce5e1a929c92",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kinlynk.pdf": "e72088118e274e3061fba937e8f3d83f1eb8264f2bccaaf37dbcbe9153578f4b",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kognitaar.pdf": "2b7964946af6fc9bdb20f7d72e356470a4642fffa30f3616ae8478db3a8b2914",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lokatr.pdf": "dc1500c716860100b36309d16dba60653a9c8bb8a044235edd64c52075d05d90",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lugger.pdf": "1ef411f5d7914854fa194147d5d50cc8ce6bfadaa6a40443ae160ac091ece696",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-theyn.pdf": "19fc29dd175bbe4ce08c77c01972e96c25d014bebc33f96f74b5b267c3559631",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-warrior.pdf": "57c49945aa8ae78b9ee98c15e8e1483688ebef9a26acf9063c446ef13954b6d0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "fb3a476e0f9bfbf7b73c9d7ff74e72fa6fe768643803a76f1cb4982afda15639",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "8d4c7d19138a6d75e8258d98b27f49f733128f857f0e93707ec23d993cef7c94",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "42d510faa260c2b94722cf1208822eed85753fea91104b3618bf305acaa8f8fa",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "02c0bfa282df23b91fad3a5e4c2aa3d711af3339294e2b0a9c259ef670dfc3ad",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "dc6954f84480d5e05f835329c75da215d48bc5b89c7718edbcb8d4a59f3c6692",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "3c23452eed6db700c7499d320ea5da765c99406681fadf672a63baddcfc8bfd2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": "23a1199b7f9aef239aadd380402801f36c354e84e2cdbc26395dbbbb2d962d8a",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-16.pdf": "caac99527429f4969e2ec85bad76c2c5487c9209bee289fa7c21500c3da0ebd2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-17.pdf": "55563cc8e52f3b818984201d392577db2dea24139e3965e2a50dea4f437c8475",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-18.pdf": "46cfd50394adcf314d94fc8ed1831ee705888a51d7309a103c00188b87de6746",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "79929ede18a6788418906ccefae0f661aa745727e4f8d6aab23eed89cdd78df3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "a2a4ef79e747eff9385966ebdbed12709f6114cfd406825e16c1e0c1dce534f8",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "2ab7552c601100d81519cd28df9668394c8bb2f04050ef81594634df343dd87d",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "79a60c725f4c85b0a3a6ed9a03220b64d1187242db65da23c2a5300988901375",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "164562ac47e26228299dd1f73b372a7169967bfc14eabcb2e9f1bbf9cd120948",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "2db9c73a4359ddf66b737a3f01499570b2dfefea62607f2d5ac71f76015f6fc2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "52ef149386968462d685ef46553a3f5681041c1acbc960d57d98271cc8865788",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "a07ff27598274fa8e73ed0ddff9bdfa5dec272a98038712d7fdc845b21c9d377",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-climbing-rigs.pdf": "d5780c39854f45345cc75fba9d64845aa9e50d94b7c8fe210df2457d425448d0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-excavation-tools.pdf": "08414aa7f897389f26da81407bbacf110992c7263f86c87d95eba0841309e927",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-plasma-knives.pdf": "556c618203950827ed9d6493a901bc48603bc2d612c7ec4d6406ad7dacfb3a32",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-writ-of-claim.pdf": "3190968defa5d18c9866564d29024b21892e28cb575272dfeffbf733b4da5b6a",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-faction-rule-grudge.pdf": "2f6713f868d88b896ce98ad84ea7f4071bba447235e6e6bfd17c63372982a645",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-engage-to-acquire.pdf": "8d62be7ed3a26ca365f96fc5ad5b2b78f0ff3bfab75c85d78dd78ad401f7cfaf",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-sturdy.pdf": "218809431e7cdc0d8a9dd2a35744cb5a298d0d2708349b4b73083a699ddf4b64",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-the-ancestors-are-watching.pdf": "a3609d23981f7df575ab7fa1a741cb606a5125e6a311a36031f010daedc91c67",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-worth-it.pdf": "39ad3ac466d01aad7d8242d4fd5f8b24f63c306e168e64609521b0cb8893fe47",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-1.pdf": "8bc3d9d54dc80d62c785be12e8ffcb63a8882b0ce67b06ab76ab61c950650617",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-10.pdf": "3f2fdd6ad09a2a4773f04832f857dcab3a428337e22aff84ee195edd4b15f6a2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-11.pdf": "90f4fd5fb16907f66d3f52593b2ea5099049749eacf596682753e1f449510423",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-12.pdf": "be54f9c23aee5c243d087316644b753ad8c5c09e65adc8ac1ac7ebfcdf5bb99c",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-13.pdf": "010dcd2d167c1a97de4ff8a4a64d75f6c345039afd26fda3de6a89c442544534",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-14.pdf": "fa4de0ab41fbdbe59c807877bcb9d27db686f8350fdb32b9dc8fc3964d5133f8",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-15.pdf": "40c3cba418ae2e41f4463690b987f12a9bcf2dbf941e21fb733405df384b2659",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-16.pdf": "3808cd5377f4975b4858d2bedd53f828049198d946988d826b07b1828ad2ab9c",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-2.pdf": "8ce75e232ee68fc25d6cf32178d90dbaad34ca5444b1db089e0ec42d1ad2b597",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-3.pdf": "0948ac00c779d7c7c45e8cc3b517da66cf1189ea63003fc3a6f0b30c712047d1",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-4.pdf": "8dc449302ddf909f41da9fa013ad0324d0eb8c3032420e3ca3611d736e047451",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-5.pdf": "c2c103aa4b862c781ce931be97adc0750e7a6b56e51dfcff51a2902fb43098a5",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-6.pdf": "a27efe4410eb8aebc1f8c6ec236f3b66eb97193da3f1b4d532bfb0f23efb268f",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-7.pdf": "fb2551db9a5cbd63cb0563d2b36b2bd4bbf9823f8d2176b03aeb797780012238",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-8.pdf": "9f3b1dcbd8c5290fd80baf853d933f238a77d4880396919cc142c1ac0d3d1a37",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-9.pdf": "1b4a56207507e2f04a0ec5690947ef79f693001b03ac956d99c7b994193994b2",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection.pdf": "8c7961fc3598be078f7549820dfcc36134b5a6ce0ed4221a4e5988eaa9120f71",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-need-keeps.pdf": "5eab1d3caaa30912aea9f0b62b9d9527c50660bf34f115ca3b255993fa748af4",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-proximate-firepower.pdf": "4bc76d2862b1c559f61d5bc4cfb63f849f83602b554e08dd8640d24bc34601e3",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-toil-earns.pdf": "4073ca640fadc5df50a7f9e4ab07112f42a4a1fe78a50936c2aed340dfaadab0",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-wrought-defence.pdf": "7bd6f7b3480d8dacdbc59ebe51406201ba3695f985a55497081ccf45eb283268",
+        "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-token-guide-token-guide.pdf": "b9b923b2b3adc2b0fc32e61e7b74572145a326890a1df5e28b9db570592060a8",
+        "layers/integration/hearthkyn-salvagers/card-backside/hearthkyn-salvagers-backside-portrait.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/hearthkyn-salvagers/card-backside/hearthkyn-salvagers-backside-landscape.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/hearthkyn-salvagers/data/hearthkyn-salvagers-team-data.json",
+          "hash": "5f5a91f96d23e1aca65aa8fa6233115dc990bc98909bfe403367f2374467ee1f",
+          "modified": "2026-08-29T18:45:49.189912+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:45:49.190917+00:00",
+      "inputs": {
+        "layers/integration/hearthkyn-salvagers/content/hearthkyn-salvagers-content.json": "5f5a91f96d23e1aca65aa8fa6233115dc990bc98909bfe403367f2374467ee1f"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Hearthkyn Salvagers Box.json": {
+          "path": "output/hearthkyn-salvagers/tts_objects/Hearthkyn Salvagers Box.json",
+          "hash": "f353e35e5ea103bb28927387367dcd75b93e5f714b68d938ec6e028527661bfa",
+          "modified": "2026-07-25T16:53:44.486428+00:00"
+        },
+        "tts_objects/Hearthkyn Salvagers.json": {
+          "path": "output/hearthkyn-salvagers/tts_objects/Hearthkyn Salvagers.json",
+          "hash": "84dcdeb573bd2565ad4b0659b5325fec2e0a569acb09454d511709e2a69714c3",
+          "modified": "2026-08-29T18:53:38.533610+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:38.624209+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dozr-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-dozr-front.jpg": "7c813e628616f9b5bb526dde1bdd4a7693eeafae98246a9d613bc12f2439085e",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-field-medic-back.jpg": "f7299da557286e709065432d056b7ce07e453f95ccab92f0bad5bb4982c4418e",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-field-medic-front.jpg": "b145a744f6512c4f0051aa2f9f2b9b070bbbaa93b516d057ff8e95b6f9c0e334",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-grenadier-back.jpg": "c61a795b9d4e3e10c6fc1eeab56c9ebaa78899828a98aae92a2b2c82903d2dd9",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-grenadier-front.jpg": "513912d677d02b70f85178a72573d3ac138dd5e40b9d5ede4cdb9c1e16a6c4b0",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-gunner-back.jpg": "9cad8a671156080eeeb5a9e38f44522c18333b614ed4f25b44a95e8ed1b42f2e",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-gunner-front.jpg": "eaadc39d74d351d3d8982ed16b0641edbc5c81dfb2eb6990320712722917b5f3",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-jump-pack-warrior-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-jump-pack-warrior-front.jpg": "e6954335c537a7ae937fe4cd99518766a2967c3dda2b7c036d95c753642ef9c8",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kinlynk-back.jpg": "9d56e0105184f97c3262f04c2511b048ea27f3c56d539cd6d86dbef327c76804",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kinlynk-front.jpg": "9640c92b548020b0fb307c0da8aee4eba0ea2547c15ed99a007df4aa3a6f8239",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitaar-back.jpg": "f5e5d14c623967272d60057258f2cff4ac3fb12bff94247589c2892fa38389c6",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitaar-front.jpg": "aed56f6b4fc13ef8ce5a8d862fcc3eb7c42b196f59973cf0e64c88bbe40fabbb",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokatr-back.jpg": "6ac62a3def4b116403f6ed7fc04c22572255d216aaf311f8279317935dbbe434",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokatr-front.jpg": "1f0472816980a220549847e77dd8f8a25c6e65044699086456574f29d0ee167b",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lugger-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-lugger-front.jpg": "f5771cff0222a1c31e35b567a90c66b8f10fa6b8c3670aec0c1ff83c2d946738",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-theyn-back.jpg": "210986cb5de485d50aed53964f92927250bedaa8d9dc13ee5189c7eeb7793e8c",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-theyn-front.jpg": "11d25db07893e932951d00523d4154722dc959475deb912c03298c243a66c6c6",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-warrior-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/hearthkyn-warrior-front.jpg": "78257cf56ead2d7ec8d465558bc10fc33bb6853b78745af6699e6a17af5ea533",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "c97a0fd950c5b0a4e52473bb15c7c5d97fc954dfc82a62a025dd757335b6a7ee",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "a8252b797cc9effbe27d0f9887bc4f8420e226fca020351862aa9e1fb35a9686",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "22ff0ff2cb86c8d63fc3c2b992217027a1b8559a3068deb6f19cb893fb32e79d",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "92c454885fb54b95d66f3c378935950a68c26409245598a921c2e3395186899b",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": "c1ead63d4b958bc2609c7b032e5fc9bbcf023e8cdb40b6b9e8da3df6156e871b",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": "d7813776c9cc1471e2d592436475103969ac8283f1a6e1de6a737eb9dbe2468e",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg": "75135d9d69bf174af235c5e1a76232f5bb1199df7ce043511efcbe7a9054834a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-front.jpg": "6931525e180c131157d52293d7c6f99d8832205575215adde836a2157d8385f6",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-front.jpg": "7629eead51ab6093a065f6d5dec691b65ca3c60f56414e1faf27857278852403",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-front.jpg": "7b5770e9f86740ff4b7ed2dd45fe8b00841120e4c346b02d6263d023229e3a08",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "209ab25524096437c4f08b0c9b1de430332ee2d8f5f7e84a76e205df3b891df2",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "1ab175d3260dfa4362a25f5c3ca60db56a9a7e21a2515eb8ac9b794e136b6e52",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "ed8a4e5cfb9f738afd9a66fb6efad225ef5c3f276a0413fe32159d608b25e2e0",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "97222003bf2097721601fcefbad91eb3d961047e52c876d02084b829f85f3251",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "70714c9770298eb30d83ffca8322b29d3ae97286e26d6283a77e297089892dbc",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "5983f0a1d572ce4f9dfe6ec9399eb3a29102f4db1f46aa8885aeeaf29f1778e0",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "cb4da7adf78ac0a344a8140babbababe3f559acd249e72cbce4087b16452e8ff",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "6322ed0ab7acce26d739697f7312ed5405c658ae2e1508adf68cb88188f1d46a",
+        "output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "d207370d325b7f33f0dcc7d9ca72ea641cda7db17bf00bd2170d55e16c863bf8",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-climbing-rigs-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-climbing-rigs-front.jpg": "e8ef4c6e5f4ac29acff545f0579f1c9fac96cfe9a08d361ebd2f05eca5a6f650",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-excavation-tools-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-excavation-tools-front.jpg": "2949c7cd3e5ac40bbb611e4922117c5366f54ef2adf88977a4796dd5a5c1688c",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-plasma-knives-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-plasma-knives-front.jpg": "2e638ea89c26ca71a8d8595d42114c69c44b3b4296b4634f4f5ef8e19976866a",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-writ-of-claim-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-writ-of-claim-front.jpg": "21bc6d8ca254c6afab78efb398c93ab16e47f08a50840b2cbeadc8c1c6175ae3",
+        "output/hearthkyn-salvagers/cards/faction_rules/hearthkyn-salvagers-grudge-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/faction_rules/hearthkyn-salvagers-grudge-front.jpg": "ec53a92d58e19ba7450182896cd804dbd088215641d5bbb71726036aad0f2b8e",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-front.jpg": "2fa1afadcd3a2fbda1986b5147faa8e137dbf57cc91a30c47efeb201eff87811",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-sturdy-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-sturdy-front.jpg": "8bb621046df19d4206c6607a494fe7ee79701937d256ed264b6a2ed36bee60d1",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-front.jpg": "8e3541e42be18fc8a1ae0153cdf434b644eab6cde182e9ae650d0a4c8dea63ab",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-worth-it-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-worth-it-front.jpg": "90661a090db55ce9a730996db991ceef463df710cbcc61924b987d120e23ee52",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-back.jpg": "746256636461686c4a967570f4d5f4a0e85c2bdd91861b328b307a3fed6a5326",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-front.jpg": "a96a6a6cea54f99a3cd6ac404dea26ad82a074d6debebb9a5c5b2a73cd765f4a",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-front.jpg": "1dc7f087c8982a5a4cf6fd1165730b4350b495d29611a92c0c7d91f3d6514032",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-front.jpg": "04c9ecaf78a60122b46564ec22c28e8c113a77dbff6fb2062f0cb72d70414185",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-front.jpg": "613c92c74eab7707415a0513bdce8317c93ec82de1145c67c3125b6b924bc682",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-front.jpg": "23d8bebbd7a9768c6ba0f860368c8cc6f9459f1aee2c052b1ad11fc32e42f7b1",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-front.jpg": "6a9f1188920c3323846fc9f4a7d11156e35888fe13bac555ce25aab5558a9f49",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-front.jpg": "188e91bde8a5f617337dec3c4da53b65965c5165ce171291a98009a079a99acb",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-front.jpg": "7f1656c9ff612c84ff75223118e50b63850a204c3c244ff3c27a4aa6b33860f6",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-front.jpg": "f518fc70554906a18463cc593305380dad847cc6ea6066b2959f0e968b902a27",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-front.jpg": "20459b83558d7d418abae6c8ec1652abd26cb1c4c9abbc685a210f4c69dc33d9",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-front.jpg": "ec34907edf401ec81eb07acf9c8cbc23617fc8bb631551de281f3ffb6ff1029a",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-front.jpg": "ace5b0169ff19e6351f9a5857eb434327f763e311673f95b4ac51117873fbaa0",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-front.jpg": "171c4ed22215e877510f9678a63ae92de26e71961b5913277268e4259529d01d",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-front.jpg": "17f0c27280e077df03b1502e018c0dd6f2af4c64f64c69aebf3100b1e563fd91",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-front.jpg": "32ffa457c7f2338e6a3e0dadb4a9d69057626dcdbef002eac83571813c7aae1d",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-front.jpg": "599f2de8f36fd42118eed644b6d7337ec81fecd86bedee1ac9461f6cdb7274be",
+        "output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-front.jpg": "6e3cdc8551560ae284edab31d9fcdf9320614d348de3c8ef65f48a3b01e60036",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-need-keeps-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-need-keeps-front.jpg": "6a6f20117871674997061611396df444e1ac4a2f8d0ebf1d99142842b85e5e0b",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-front.jpg": "09bcac1b74d921ceb33ee8388735d7c171a53bd8f43346faf9b723f0a8a2284f",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-toil-earns-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-toil-earns-front.jpg": "d546b25e3de5be3b7e004eeb54fd8f7c9f63182433a0a62c0d6fe951baa0c58b",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-front.jpg": "1091cd2476dd6cfbb7baf695ce07ab14df2badc5d5aa93ae593372e73d50a53b",
+        "output/hearthkyn-salvagers/cards/token_guide/hearthkyn-salvagers-token-guide-back.jpg": "147c51db6548705c60c8d3444dfc133f72c5affbf4a182d4e2c995ade755c8c8",
+        "output/hearthkyn-salvagers/cards/token_guide/hearthkyn-salvagers-token-guide-front.jpg": "fdabea26809e4a849436312704b7af06116135ce74a5557fe4c883aaaccf3f95",
+        "output/hearthkyn-salvagers/cardbox/hearthkyn-salvagers-card-box-texture.jpg": "2cd39e84c08416d18682cb6198c4c337283d54c118797b75fd86f03c81b77d04",
+        "output/hearthkyn-salvagers/cardbox/hearthkyn-salvagers-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-attack.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-attack.png": "a90029e8758aee20ed48010d2d3d5498581da3c82fe5f75ed686db70bbb0926f",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-c8-hx-charge.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-c8-hx-charge.png": "781a0438dbc8d145308377e4882950db27845371919fc8f6378f5d8bba0169fa",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-defence.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-defence.png": "b572a444343c84426a04b83dd89c1b2b916151e349abcc02b43ce2fd59aaceac",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-grudge.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-grudge.png": "c99e3f02298005159e83760ec31ead13b96d24b0ea1bc2646ebf994d77372cf1",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-medic.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-medic.png": "a7741556853cad3777e925f78b18b22c32d0353b54e38798b5b82c9ec96f8af5",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-need-keeps.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-need-keeps.png": "377c77da23d9a7cd0117020c45d4dda6cc6acfad8067a6700a5b6e030cba0729",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-pan-spectral-scan.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-pan-spectral-scan.png": "f589d1f8e2bea71737709e9ec7efefd6fb7c379e9dbfeb4a3818e1cc873aeebf",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-spot.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-spot.png": "c0f9f444d30cdde8c870e220cf51dadc5e678cc56bd3f8f548241acf39dad70b",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-system-jam.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-system-jam.png": "bd975c5b99fc4c10fa27c97629592afa1c6d05feaa58b6ab11fe1087ec9df654",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-toil-earns.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-toil-earns.png": "9d5eab10d4e9a5ed9df7e92925a1a0f3905de6a3d19e07f1e4195c926d979dfe",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-utility-grenade.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-utility-grenade.png": "3ac51e0bb82413b4cece242706f05ef416dbcf63abd02a35c14e686c9de5bf6f",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-writ-of-claim.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-writ-of-claim.png": "edc9d865caf4d1e271380f5cf7a6c3466d2c6b675295e93ac5fe22ca1311a45e",
+        "output/hearthkyn-salvagers/tokens/tokenbag/hearthkyn-salvagers-token-bag-icon.png": "d7977d2fc5a8415bf844c4a19439161e6eced66466921e3d6cbfea8cf5076f93",
+        "output/hearthkyn-salvagers/tokens/tokenbag/hearthkyn-salvagers-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/hearthkyn-salvagers/dice/hearthkyn-salvagers-dice-dark.jpg": "292e82108cba0010282ebf7b2f31bb53a937aeb6a05e4dd47dc5a360188fa66d",
+        "output/hearthkyn-salvagers/dice/hearthkyn-salvagers-dice-light.jpg": "9c936d95e5a5b337e18d80e98c7845b93b1800f12157eb9e62af1df5858069ba",
+        "output/hearthkyn-salvagers/dice/hearthkyn-salvagers-dice-team.jpg": "7a5616eebbde136845a3be229c21495c13032401bcd8ab9653a15290a47d8a8d",
+        "output/hearthkyn-salvagers/data/hearthkyn-salvagers-team-data.json": "5f5a91f96d23e1aca65aa8fa6233115dc990bc98909bfe403367f2374467ee1f",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "strategy-ploys": {
+          "hash": "be4d8a51b72b9a6062fee996c3f00b67550a0efc72a3d4f371d889aa3d886da7",
+          "outputs": [
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/strategy-ploys/hearthkyn-salvagers-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/strategy-ploys/hearthkyn-salvagers-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/strategy-ploys/hearthkyn-salvagers-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/strategy-ploys/hearthkyn-salvagers-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:40.543712+00:00"
+        },
+        "equipment": {
+          "hash": "b7ea4469c34e275b3d5486ad77b18eef158588842a6b78c9e6a9e6ddf3dc90d0",
+          "outputs": [
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-equipment-page_0.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-equipment-page_1.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-equipment-page_2.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:47.743030+00:00"
+        },
+        "operatives-selection": {
+          "hash": "0da4710e540e921780cc2cbaaf37a4c3a413a9fa9bd90351147304af45c1bd82",
+          "outputs": [
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/operatives-selection/hearthkyn-salvagers-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/operatives-selection/hearthkyn-salvagers-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:06:50.532602+00:00"
+        },
+        "faction-rules": {
+          "hash": "b45628562fd6c42cad3052e55a021fd15370568badf53076d043bff7fd7a6ae9",
+          "outputs": [
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/faction-rules/hearthkyn-salvagers-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/faction-rules/hearthkyn-salvagers-faction-rules-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:08:11.689939+00:00"
+        },
+        "datacards": {
+          "hash": "8d49aa333e71c08b25e827009eeb4ea4fe62b0280dbf9bf0e681bc443211f9a6",
+          "outputs": [
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_0.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_1.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_2.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_3.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_4.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_5.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_6.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_7.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_8.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_9.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_10.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_11.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_12.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_13.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_14.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_15.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_16.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/datacards/hearthkyn-salvagers-datacards-page_17.pdf"
+          ],
+          "modified": "2026-07-06T16:11:39.262965+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "25b98944d9e037a0da59431495d89989dfccfede52f409e6f7217804fee2a107",
+          "outputs": [
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/firefight-ploys/hearthkyn-salvagers-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/firefight-ploys/hearthkyn-salvagers-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/firefight-ploys/hearthkyn-salvagers-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/hearthkyn-salvagers/cards/firefight-ploys/hearthkyn-salvagers-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:11:42.251194+00:00"
+        },
+        "cards": {
+          "hash": "eb964cfe4119a8b4eaa3d428d91be088cfde72967c87fe7a0db322eb6e6c2456",
+          "outputs": [
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card1_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card2_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card3_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card4_landscape.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card4_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card1_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card2_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card3_portrait.pdf",
+            "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:13:34.743523+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:13:34.743523+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/hearthkyn-salvagers-structure.json",
+          "hash": "52bb5023ee8a68144a2d31e7b11ff7bbd66d650cfaa6edd823893d6175af5a7e",
+          "modified": "2026-08-29T18:44:05.473945+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card1_landscape.pdf": "c8c49c6eae037268eebed80ea865a99d48291ef426d395b76c90a652025d8d69",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card2_landscape.pdf": "844559ecf7e31c3231a576eca549c588663f7cc24cc8b170cb3f7a3f62ed8228",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card3_landscape.pdf": "1f1ed55ba00184ece56aefafd99d8d0454ee4082ff5085807908c413eb3379e9",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card4_landscape.pdf": "a50baee14c7afaaa9f54630dfccb0b0afe542435fad98859b1a1d20f91b75313",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card1_landscape.pdf": "25adc04afcde0265b54cc12f67eefd52c512080b9861c5a5cfbfd5ca0151db79",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card2_landscape.pdf": "90add0094a5ac7c28339e3fc27f5cf8c9a750e13145a1e657b11218c7b7e9bb5",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card3_landscape.pdf": "ac789ffcc5bebb962e9d0ac28ece5f18c63e08ff85d88e50024974393148af08",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card4_landscape.pdf": "359fef03acf7a574f36a70133d11aea070938c42d281fa8fddbe4ba3d1391cd6",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card1_landscape.pdf": "bdd5268d893b066ab80564a6aa8be8e65940b862b3aa01285405e2d9f453855a",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card2_landscape.pdf": "12fb73001188c2485b1c53a7702e8c7de07d5cf6463d04f4b497cec910db9b91",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card3_landscape.pdf": "e859d7fcbd18a4c546cc9efec94f717dfde179dfd3dee1d4d0a60faa85ed9110",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card4_landscape.pdf": "f4288e90b48b11e9c3d783c70b05df4567c2565e82cdb3f6312e099ef2dc9a98",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card1_landscape.pdf": "f081421f5d36217ff138f211e82fbacf3e96a14fb078f8af4ff72ca737bf030d",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card2_landscape.pdf": "3acaeaf3e7734efcd4daa26de06fc25c98c3d7ff0be94d0ac6752898921e6367",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card3_landscape.pdf": "bdcfd2f745930c74e60f3ec75942af6ef9bd2fdaece98199614a3dfdaaeb1243",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card4_landscape.pdf": "4fad5a28ef1df081a086408eb868b9032e0af77f340d6086ba77cba9bc45883f",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card1_landscape.pdf": "d82cb7f7319174d14c392d77bbe7c08b448e96de07dbf2ec6a9b1daf650c7cca",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card2_landscape.pdf": "3832c3c5f0272c25c099c21d29b6d06816bd45f9bbbcd11e3d17e4a02c71b033",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card3_landscape.pdf": "788d301048d392bbd3fcf03e15bd367b9d247bc787fd9f453588f68753c912d8",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card4_landscape.pdf": "a4e9e01b39d97f6eacf0628de459e0fe26bc148b3aa9442083368737b228ff54",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card1_portrait.pdf": "d11db32d7980c9b82258567fe78fac41e5a8ac2e9b2b2b1ab6ce78fb3cfd55d3",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card2_portrait.pdf": "1d2a23628daa809263e0367494dc6c582bcebd33b0fef3371ec4e9c5c05f8b06",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card3_portrait.pdf": "f7d012b28ca5834203e69bc4c87a046cac2502870b22d764edbad67da0ac334e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card4_portrait.pdf": "eba769f3ec6298f0e4dc404bec9393e34ceae8a301e63798cc158cefee4ba3eb",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card1_portrait.pdf": "a4d9e72be50e259eafcf068b3cc8ba2979f909a03b8f4cb2110bb31ee9b52cdf",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card2_portrait.pdf": "748aceec057ec4cec85ea5f41d4d28036730d2e94fbc62456da38f9a254a380e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card3_portrait.pdf": "e3a844acbd5489026a0872020b02c73b87d3bcb5281ad20873e29f9d83550925",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card4_portrait.pdf": "1f72a3305a73b90bcaf237c82b8a77b30e2f4a769803953021d23d06e5ba60aa",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card1_portrait.pdf": "c449c02433ea806235aa7f4d5c03c0f21a41fc15feabac8d371fdcc599421c57",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card2_portrait.pdf": "a3c40af62cb94494afa5ddbb9223cc67d2085844393403291a95e68bba803f51",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card3_portrait.pdf": "92e91a28766de774da5022948e2d8df0626f71460c2f16bb1b0d69a87fd1af48",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card4_portrait.pdf": "8e4ed4088ec049eec8f3db4f66b1505ea876b5ffb8962d30965c81c0fc95ca9e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card1_portrait.pdf": "cfa7014d3b42f5cd2914282e74fff0b67c28c65f1e8db561955f469b64c55a5c",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card2_portrait.pdf": "8cd40debbe27de199346439805add443af2443df45610c4b1c064360c5ef924d",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card3_portrait.pdf": "f928b4650374a8e08ebc0a4ee7a077c7a76d352aaf7a966b2670b7a201a35c21",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card4_portrait.pdf": "6685795f4de6975b33efd8aa92a4bfdb1c1ca3171de363fd74ae06a2f8bab180"
+      },
+      "completed": "2026-08-29T18:44:19.087968+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/hearthkyn-salvagers/manifest.json",
+          "hash": "52bb5023ee8a68144a2d31e7b11ff7bbd66d650cfaa6edd823893d6175af5a7e",
+          "modified": "2026-08-29T18:44:30.952481+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-theyn.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-theyn.pdf",
+          "hash": "19fc29dd175bbe4ce08c77c01972e96c25d014bebc33f96f74b5b267c3559631",
+          "modified": "2026-07-12T19:10:31.206184+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-dzr.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-dzr.pdf",
+          "hash": "d9c37f7f193ca06961bca0e109be7b7df5759365e04f2081593e01ea79fe3ef9",
+          "modified": "2026-07-12T19:10:31.216918+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-field-medic.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-field-medic.pdf",
+          "hash": "0caf528eb28e1c3d792fbbc99224d03073b87c10b5909b56331d95bd3b8bdc10",
+          "modified": "2026-07-12T19:10:31.228990+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-grenadier.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-grenadier.pdf",
+          "hash": "4f8fb7641cfd3c0818a2049f279fddc48ef7d48877479ea85563d37724ed74b9",
+          "modified": "2026-07-12T19:10:31.247956+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-gunner.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-gunner.pdf",
+          "hash": "4c353199e46f68e81bb27a13fc521ef2e8e27a690b8fa240acfbe9cda4081a70",
+          "modified": "2026-07-12T19:10:31.276208+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-jump-pack-warrior.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-jump-pack-warrior.pdf",
+          "hash": "3745c96f4b9ce7feb4c9d1e37b1d174fab6e4957ca33c9bbeb63ce5e1a929c92",
+          "modified": "2026-07-12T19:10:31.305680+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-kinlynk.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kinlynk.pdf",
+          "hash": "e72088118e274e3061fba937e8f3d83f1eb8264f2bccaaf37dbcbe9153578f4b",
+          "modified": "2026-07-12T19:10:34.721915+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-kognitar.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-kognitar.pdf",
+          "hash": "2b7964946af6fc9bdb20f7d72e356470a4642fffa30f3616ae8478db3a8b2914",
+          "modified": "2026-07-12T19:10:34.733991+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-loktr.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-loktr.pdf",
+          "hash": "dc1500c716860100b36309d16dba60653a9c8bb8a044235edd64c52075d05d90",
+          "modified": "2026-07-12T19:10:37.893893+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-lugger.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-lugger.pdf",
+          "hash": "1ef411f5d7914854fa194147d5d50cc8ce6bfadaa6a40443ae160ac091ece696",
+          "modified": "2026-07-12T19:10:42.910382+00:00"
+        },
+        "hearthkyn-salvagers-datacard-hearthkyn-warrior.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-hearthkyn-warrior.pdf",
+          "hash": "57c49945aa8ae78b9ee98c15e8e1483688ebef9a26acf9063c446ef13954b6d0",
+          "modified": "2026-07-12T19:10:44.708361+00:00"
+        },
+        "hearthkyn-salvagers-equipment-plasma-knives.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-plasma-knives.pdf",
+          "hash": "556c618203950827ed9d6493a901bc48603bc2d612c7ec4d6406ad7dacfb3a32",
+          "modified": "2026-07-12T19:10:44.718376+00:00"
+        },
+        "hearthkyn-salvagers-equipment-climbing-rigs.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-climbing-rigs.pdf",
+          "hash": "d5780c39854f45345cc75fba9d64845aa9e50d94b7c8fe210df2457d425448d0",
+          "modified": "2026-07-12T19:10:44.736080+00:00"
+        },
+        "hearthkyn-salvagers-equipment-excavation-tools.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-excavation-tools.pdf",
+          "hash": "08414aa7f897389f26da81407bbacf110992c7263f86c87d95eba0841309e927",
+          "modified": "2026-07-12T19:10:44.745871+00:00"
+        },
+        "hearthkyn-salvagers-equipment-writ-of-claim.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-equipment-writ-of-claim.pdf",
+          "hash": "3190968defa5d18c9866564d29024b21892e28cb575272dfeffbf733b4da5b6a",
+          "modified": "2026-07-12T19:10:44.764661+00:00"
+        },
+        "hearthkyn-salvagers-faction-rule-grudge.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-faction-rule-grudge.pdf",
+          "hash": "2f6713f868d88b896ce98ad84ea7f4071bba447235e6e6bfd17c63372982a645",
+          "modified": "2026-07-12T19:10:44.781663+00:00"
+        },
+        "hearthkyn-salvagers-token-guide-token-guide.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-token-guide-token-guide.pdf",
+          "hash": "b9b923b2b3adc2b0fc32e61e7b74572145a326890a1df5e28b9db570592060a8",
+          "modified": "2026-07-12T19:10:51.673055+00:00"
+        },
+        "hearthkyn-salvagers-firefight-ploy-the-ancestors-are-watching.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-the-ancestors-are-watching.pdf",
+          "hash": "a3609d23981f7df575ab7fa1a741cb606a5125e6a311a36031f010daedc91c67",
+          "modified": "2026-07-12T19:10:51.686516+00:00"
+        },
+        "hearthkyn-salvagers-firefight-ploy-worth-it.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-worth-it.pdf",
+          "hash": "39ad3ac466d01aad7d8242d4fd5f8b24f63c306e168e64609521b0cb8893fe47",
+          "modified": "2026-07-12T19:10:51.695611+00:00"
+        },
+        "hearthkyn-salvagers-firefight-ploy-sturdy.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-sturdy.pdf",
+          "hash": "218809431e7cdc0d8a9dd2a35744cb5a298d0d2708349b4b73083a699ddf4b64",
+          "modified": "2026-07-12T19:10:51.704654+00:00"
+        },
+        "hearthkyn-salvagers-firefight-ploy-engage-to-acquire.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-firefight-ploy-engage-to-acquire.pdf",
+          "hash": "8d62be7ed3a26ca365f96fc5ad5b2b78f0ff3bfab75c85d78dd78ad401f7cfaf",
+          "modified": "2026-07-12T19:10:51.715077+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection.pdf",
+          "hash": "8c7961fc3598be078f7549820dfcc36134b5a6ce0ed4221a4e5988eaa9120f71",
+          "modified": "2026-07-12T19:10:51.729162+00:00"
+        },
+        "hearthkyn-salvagers-strategy-ploy-need-keeps.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-need-keeps.pdf",
+          "hash": "5eab1d3caaa30912aea9f0b62b9d9527c50660bf34f115ca3b255993fa748af4",
+          "modified": "2026-07-12T19:10:51.737883+00:00"
+        },
+        "hearthkyn-salvagers-strategy-ploy-toil-earns.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-toil-earns.pdf",
+          "hash": "4073ca640fadc5df50a7f9e4ab07112f42a4a1fe78a50936c2aed340dfaadab0",
+          "modified": "2026-07-12T19:10:51.747653+00:00"
+        },
+        "hearthkyn-salvagers-strategy-ploy-wrought-defence.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-wrought-defence.pdf",
+          "hash": "7bd6f7b3480d8dacdbc59ebe51406201ba3695f985a55497081ccf45eb283268",
+          "modified": "2026-07-12T19:10:51.756461+00:00"
+        },
+        "hearthkyn-salvagers-strategy-ploy-proximate-firepower.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-strategy-ploy-proximate-firepower.pdf",
+          "hash": "4bc76d2862b1c559f61d5bc4cfb63f849f83602b554e08dd8640d24bc34601e3",
+          "modified": "2026-07-12T19:10:51.766330+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "fb3a476e0f9bfbf7b73c9d7ff74e72fa6fe768643803a76f1cb4982afda15639",
+          "modified": "2026-08-29T18:44:32.658088+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "79929ede18a6788418906ccefae0f661aa745727e4f8d6aab23eed89cdd78df3",
+          "modified": "2026-08-29T18:44:34.775926+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "a2a4ef79e747eff9385966ebdbed12709f6114cfd406825e16c1e0c1dce534f8",
+          "modified": "2026-08-29T18:44:35.008594+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "2ab7552c601100d81519cd28df9668394c8bb2f04050ef81594634df343dd87d",
+          "modified": "2026-08-29T18:44:35.027812+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "79a60c725f4c85b0a3a6ed9a03220b64d1187242db65da23c2a5300988901375",
+          "modified": "2026-08-29T18:44:35.041473+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "164562ac47e26228299dd1f73b372a7169967bfc14eabcb2e9f1bbf9cd120948",
+          "modified": "2026-08-29T18:44:35.105311+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "2db9c73a4359ddf66b737a3f01499570b2dfefea62607f2d5ac71f76015f6fc2",
+          "modified": "2026-08-29T18:44:35.160910+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "52ef149386968462d685ef46553a3f5681041c1acbc960d57d98271cc8865788",
+          "modified": "2026-08-29T18:44:35.173039+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "a07ff27598274fa8e73ed0ddff9bdfa5dec272a98038712d7fdc845b21c9d377",
+          "modified": "2026-08-29T18:44:35.191212+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "8d4c7d19138a6d75e8258d98b27f49f733128f857f0e93707ec23d993cef7c94",
+          "modified": "2026-08-29T18:44:35.210355+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "42d510faa260c2b94722cf1208822eed85753fea91104b3618bf305acaa8f8fa",
+          "modified": "2026-08-29T18:44:35.227994+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf",
+          "hash": "02c0bfa282df23b91fad3a5e4c2aa3d711af3339294e2b0a9c259ef670dfc3ad",
+          "modified": "2026-08-29T18:44:35.246149+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf",
+          "hash": "dc6954f84480d5e05f835329c75da215d48bc5b89c7718edbcb8d4a59f3c6692",
+          "modified": "2026-08-29T18:44:35.263774+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf",
+          "hash": "3c23452eed6db700c7499d320ea5da765c99406681fadf672a63baddcfc8bfd2",
+          "modified": "2026-08-29T18:44:35.276757+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf",
+          "hash": "23a1199b7f9aef239aadd380402801f36c354e84e2cdbc26395dbbbb2d962d8a",
+          "modified": "2026-08-29T18:44:35.288790+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-16.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-16.pdf",
+          "hash": "caac99527429f4969e2ec85bad76c2c5487c9209bee289fa7c21500c3da0ebd2",
+          "modified": "2026-08-29T18:44:35.302410+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-17.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-17.pdf",
+          "hash": "55563cc8e52f3b818984201d392577db2dea24139e3965e2a50dea4f437c8475",
+          "modified": "2026-08-29T18:44:35.317997+00:00"
+        },
+        "hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-18.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-18.pdf",
+          "hash": "46cfd50394adcf314d94fc8ed1831ee705888a51d7309a103c00188b87de6746",
+          "modified": "2026-08-29T18:44:35.330714+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-1.pdf",
+          "hash": "8bc3d9d54dc80d62c785be12e8ffcb63a8882b0ce67b06ab76ab61c950650617",
+          "modified": "2026-08-29T18:44:35.358842+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-2.pdf",
+          "hash": "8ce75e232ee68fc25d6cf32178d90dbaad34ca5444b1db089e0ec42d1ad2b597",
+          "modified": "2026-08-29T18:44:35.386094+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-3.pdf",
+          "hash": "0948ac00c779d7c7c45e8cc3b517da66cf1189ea63003fc3a6f0b30c712047d1",
+          "modified": "2026-08-29T18:44:35.410422+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-4.pdf",
+          "hash": "8dc449302ddf909f41da9fa013ad0324d0eb8c3032420e3ca3611d736e047451",
+          "modified": "2026-08-29T18:44:35.434612+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-5.pdf",
+          "hash": "c2c103aa4b862c781ce931be97adc0750e7a6b56e51dfcff51a2902fb43098a5",
+          "modified": "2026-08-29T18:44:35.458944+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-6.pdf",
+          "hash": "a27efe4410eb8aebc1f8c6ec236f3b66eb97193da3f1b4d532bfb0f23efb268f",
+          "modified": "2026-08-29T18:44:35.486224+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-7.pdf",
+          "hash": "fb2551db9a5cbd63cb0563d2b36b2bd4bbf9823f8d2176b03aeb797780012238",
+          "modified": "2026-08-29T18:44:35.519512+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-8.pdf",
+          "hash": "9f3b1dcbd8c5290fd80baf853d933f238a77d4880396919cc142c1ac0d3d1a37",
+          "modified": "2026-08-29T18:44:35.878879+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-9.pdf",
+          "hash": "1b4a56207507e2f04a0ec5690947ef79f693001b03ac956d99c7b994193994b2",
+          "modified": "2026-08-29T18:44:36.246641+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-10.pdf",
+          "hash": "3f2fdd6ad09a2a4773f04832f857dcab3a428337e22aff84ee195edd4b15f6a2",
+          "modified": "2026-08-29T18:44:36.787700+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-11.pdf",
+          "hash": "90f4fd5fb16907f66d3f52593b2ea5099049749eacf596682753e1f449510423",
+          "modified": "2026-08-29T18:44:37.077793+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-12.pdf",
+          "hash": "be54f9c23aee5c243d087316644b753ad8c5c09e65adc8ac1ac7ebfcdf5bb99c",
+          "modified": "2026-08-29T18:44:37.103069+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-13.pdf",
+          "hash": "010dcd2d167c1a97de4ff8a4a64d75f6c345039afd26fda3de6a89c442544534",
+          "modified": "2026-08-29T18:44:37.134853+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-14.pdf",
+          "hash": "fa4de0ab41fbdbe59c807877bcb9d27db686f8350fdb32b9dc8fc3964d5133f8",
+          "modified": "2026-08-29T18:44:37.164963+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-15.pdf",
+          "hash": "40c3cba418ae2e41f4463690b987f12a9bcf2dbf941e21fb733405df384b2659",
+          "modified": "2026-08-29T18:44:37.446109+00:00"
+        },
+        "hearthkyn-salvagers-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/hearthkyn-salvagers/hearthkyn-salvagers-operatives-selection-operative-selection-16.pdf",
+          "hash": "3808cd5377f4975b4858d2bedd53f828049198d946988d826b07b1828ad2ab9c",
+          "modified": "2026-08-29T18:44:37.754372+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/hearthkyn-salvagers-structure.json": "52bb5023ee8a68144a2d31e7b11ff7bbd66d650cfaa6edd823893d6175af5a7e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card1_landscape.pdf": "c8c49c6eae037268eebed80ea865a99d48291ef426d395b76c90a652025d8d69",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card2_landscape.pdf": "844559ecf7e31c3231a576eca549c588663f7cc24cc8b170cb3f7a3f62ed8228",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card3_landscape.pdf": "1f1ed55ba00184ece56aefafd99d8d0454ee4082ff5085807908c413eb3379e9",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page01_card4_landscape.pdf": "a50baee14c7afaaa9f54630dfccb0b0afe542435fad98859b1a1d20f91b75313",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card1_landscape.pdf": "25adc04afcde0265b54cc12f67eefd52c512080b9861c5a5cfbfd5ca0151db79",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card2_landscape.pdf": "90add0094a5ac7c28339e3fc27f5cf8c9a750e13145a1e657b11218c7b7e9bb5",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card3_landscape.pdf": "ac789ffcc5bebb962e9d0ac28ece5f18c63e08ff85d88e50024974393148af08",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page02_card4_landscape.pdf": "359fef03acf7a574f36a70133d11aea070938c42d281fa8fddbe4ba3d1391cd6",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card1_landscape.pdf": "bdd5268d893b066ab80564a6aa8be8e65940b862b3aa01285405e2d9f453855a",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card2_landscape.pdf": "12fb73001188c2485b1c53a7702e8c7de07d5cf6463d04f4b497cec910db9b91",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card3_landscape.pdf": "e859d7fcbd18a4c546cc9efec94f717dfde179dfd3dee1d4d0a60faa85ed9110",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page03_card4_landscape.pdf": "f4288e90b48b11e9c3d783c70b05df4567c2565e82cdb3f6312e099ef2dc9a98",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card1_landscape.pdf": "f081421f5d36217ff138f211e82fbacf3e96a14fb078f8af4ff72ca737bf030d",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card2_landscape.pdf": "3acaeaf3e7734efcd4daa26de06fc25c98c3d7ff0be94d0ac6752898921e6367",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card3_landscape.pdf": "bdcfd2f745930c74e60f3ec75942af6ef9bd2fdaece98199614a3dfdaaeb1243",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page04_card4_landscape.pdf": "4fad5a28ef1df081a086408eb868b9032e0af77f340d6086ba77cba9bc45883f",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card1_landscape.pdf": "d82cb7f7319174d14c392d77bbe7c08b448e96de07dbf2ec6a9b1daf650c7cca",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page05_card2_landscape.pdf": "3832c3c5f0272c25c099c21d29b6d06816bd45f9bbbcd11e3d17e4a02c71b033",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card1_portrait.pdf": "d11db32d7980c9b82258567fe78fac41e5a8ac2e9b2b2b1ab6ce78fb3cfd55d3",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card2_portrait.pdf": "1d2a23628daa809263e0367494dc6c582bcebd33b0fef3371ec4e9c5c05f8b06",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card3_portrait.pdf": "f7d012b28ca5834203e69bc4c87a046cac2502870b22d764edbad67da0ac334e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page06_card4_portrait.pdf": "eba769f3ec6298f0e4dc404bec9393e34ceae8a301e63798cc158cefee4ba3eb",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card1_portrait.pdf": "a4d9e72be50e259eafcf068b3cc8ba2979f909a03b8f4cb2110bb31ee9b52cdf",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card2_portrait.pdf": "748aceec057ec4cec85ea5f41d4d28036730d2e94fbc62456da38f9a254a380e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card3_portrait.pdf": "e3a844acbd5489026a0872020b02c73b87d3bcb5281ad20873e29f9d83550925",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page07_card4_portrait.pdf": "1f72a3305a73b90bcaf237c82b8a77b30e2f4a769803953021d23d06e5ba60aa",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card1_portrait.pdf": "c449c02433ea806235aa7f4d5c03c0f21a41fc15feabac8d371fdcc599421c57",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card2_portrait.pdf": "a3c40af62cb94494afa5ddbb9223cc67d2085844393403291a95e68bba803f51",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card3_portrait.pdf": "92e91a28766de774da5022948e2d8df0626f71460c2f16bb1b0d69a87fd1af48",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page08_card4_portrait.pdf": "8e4ed4088ec049eec8f3db4f66b1505ea876b5ffb8962d30965c81c0fc95ca9e",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card1_portrait.pdf": "cfa7014d3b42f5cd2914282e74fff0b67c28c65f1e8db561955f469b64c55a5c",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card2_portrait.pdf": "8cd40debbe27de199346439805add443af2443df45610c4b1c064360c5ef924d",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card3_portrait.pdf": "f928b4650374a8e08ebc0a4ee7a077c7a76d352aaf7a966b2670b7a201a35c21",
+        "layers/warcom/extracted/hearthkyn-salvagers/cards/hearthkyn-salvagers_page09_card4_portrait.pdf": "6685795f4de6975b33efd8aa92a4bfdb1c1ca3171de363fd74ae06a2f8bab180"
+      },
+      "completed": "2026-08-29T18:44:38.119977+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "eb964cfe4119a8b4eaa3d428d91be088cfde72967c87fe7a0db322eb6e6c2456",
+          "outputs": [
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-01.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-02.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-03.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-03.png",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-04.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-05.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-06.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-07.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-08.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-09.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-10.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-11.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-12.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-13.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-14.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-15.jpeg",
+            "layers/integration/hearthkyn-salvagers/artwork/hearthkyn-salvagers-artwork-metadata.json",
+            "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-landscape.jpg",
+            "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-portrait.jpg",
+            "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-token-transparent.png",
+            "layers/integration/hearthkyn-salvagers/artwork/icons/hearthkyn-salvagers-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:38:42.278236+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:38:42.278236+00:00"
+    }
+  }
+}

@@ -1,0 +1,1726 @@
+{
+  "team": "death-korps",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:37.477815+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/death-korps/content/death-korps-content.json",
+          "hash": "aa5b63f59a8a382dcce3da71bbbc3b2db56a24233de85be6c76b3cbb0dc00aea",
+          "modified": "2026-08-29T18:41:17.700353+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:28.620554+00:00",
+      "inputs": {
+        "layers/integration/death-korps/manifest.json": "16311c72347cd41657202678c644e5d9f10a1fdb9ce0443f19553c5040016e72",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-bruiser.pdf": "13372f0979ee51fe194b6a94e2d348d8b734e03696cabd24be0934229ae9f3e4",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-confidant.pdf": "9bab0222d5256f880fb210cd9ba08b6609832391ceb074ba5f78f47fab66937a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-gunner.pdf": "c60c5f082f05ca0dbef64bcced3ecf40004ab9a5cdb5a6391d860aee630c513d",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-medic.pdf": "9645aa13f74e75edf62d88e513a7de078c15b897ba152c34f89183b12ced10c9",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-sapper.pdf": "9b4aa1803cd3092b43f2add967726abdc574719f4d9bfc8e039eacdd762b941a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-sniper.pdf": "98eb667f643e6643f5794eccb5fff8dc4c64bf5750994038bb180a8b64e63c21",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-spotter.pdf": "06e65d301d01c8874c86d8823076844d5d10eef60c23a8a8db885907c8ddcaa9",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-trooper.pdf": "badb969df335d558169518f8607f1d647787ff3d8cc0cde989214f472ef7859d",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-veteran.pdf": "e2f2303a6ac96538c7e04231a4046bd2d72f5bcd01b5bb66407a0c63b600004a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-vox-operator.pdf": "e0b70aa3b1b0ab020695a9fcaa0e0c24b27a2eed7f5b928d8faa7a248d9f600a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-watchmaster.pdf": "ff39cc534d4c8b71e7aaa82c675144aa3ac4b992e0fdccb84cca1c1a1211b36e",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-zealot.pdf": "222978ca23487d6b0e3496caaeef471b0db5c66433bf9c94705966027e4e117e",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "ea190a93194e8dcea90dca60a87d57aeb7e6f8065b18167d27fad8a5179b81da",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "4b6e0bfd238a03afc888fe330a3d7def9a62df207750bdc351127ffc912fae16",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "4c7f15540b11b82398dc64834ff6a05d35fd167ea0f3cf959b7273974f465f49",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "b1f3607999cf789d6a0292054a0918e897205d921a9365969850de9946fa26ba",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "5b840cfa1881d8cf76251f57f455b3b025a3148924e7fddda96899b5902eec0b",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "edefad489395a18ccc975478d873451fb2abb194fb8fd38656ed447ef330d61d",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "a2d27b096dc916dc663e41f751fcd55773106527376b3812fced6dd01dc45618",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "51313f3b69d2a060b56d7423d0f76de5cdcd1efcba19dc7ced8c880f28727113",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "c9cf05fd84fb7d24a03411fd5bfb81ac496dd9b3905ff9ebeb4de0344da0e25d",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "e4abb6674cb02d087006223440a19ec0d29e4b046afe3afd722ffb1875d76482",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "3c42559fd7f3c691351eaa54f7e11fab6dd2d216625f5f3336d7264a0f81efd4",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "433b761a7a7e45ca922c929c217c33540670f1a73ea9702e6aa246ce891637e4",
+        "layers/integration/death-korps/death-korps-equipment-chronometer.pdf": "b6032051afbdcd5dcf880e0fa34372f89000f283c846a0821fb73798d546e9bd",
+        "layers/integration/death-korps/death-korps-equipment-comm-beads.pdf": "440b396e7e9273e8a4851b60ecd35ef06f4787ed4d2faf45841914903dd11c0d",
+        "layers/integration/death-korps/death-korps-equipment-gas-bombardment.pdf": "ff8a524bdb97edaaa133d179dda421e797afe21090135d371c304c3df3c79fcc",
+        "layers/integration/death-korps/death-korps-equipment-hand-axes.pdf": "2a1d5ff934054293263df7eba04fb353a64e02f8f0b9a6c6a140c5fd8e399a6c",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-1.pdf": "eda666820d8be93116cde7cb8dd13eec10e36c0f5b20f444137d2de6edb129b4",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-2.pdf": "90805cd5121da017ac958dbb5c93810f5419bd422b163558191055b6880ee08a",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-3.pdf": "e18e21ffeddc5dc4f8b92c01a815b3289c54479ba8a672ef643ee06cd916c9cf",
+        "layers/integration/death-korps/death-korps-firefight-ploy-combined-arms.pdf": "b47c0ed2fc18764fe285814c38445792afb56ad1010151d2099708a9449beccd",
+        "layers/integration/death-korps/death-korps-firefight-ploy-in-death-atonement.pdf": "116a615a611b34b07eca1c2d5ccea409aa6be9998f6ee4bf513e07c28d72152f",
+        "layers/integration/death-korps/death-korps-firefight-ploy-in-life-shame.pdf": "e2fe714970d65d79190bcac17046c058e390bb1e53e42932c5396d826d926430",
+        "layers/integration/death-korps/death-korps-firefight-ploy-inspirational-leadership.pdf": "142c17fa13c5453bd8346b967316fd0598bea02a207c76604a1cf016be819e11",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-1.pdf": "dc0c6b89e9fc9738b03c879d8530a520c5c0b7b48418e1576be2910936f98b47",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-10.pdf": "3750a81050d6fda21a7223e39164e778bcaa1df8292f8a420ff37773ef96e647",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-11.pdf": "030987e64566fade4d2143158790f96f5f196ecf967c9281f3063f17ebe9eed7",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-12.pdf": "e3ed709522865360e6f7e1353ba20357ac8320a49799c37b4fbe9427eadf0bc5",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-13.pdf": "4c7d777c15f49457619f995b983eb971ae76a254722cb465b06b0ee46d83b573",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-14.pdf": "21ccbace305d14ad2486798bc2bd9ea42ef9e63bc6a321c197c7d44c28cfecb6",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-15.pdf": "a12519c9fd7dceea3dcd6c33fc9f93c84c8b0f8f5ce519bcfbc87ad73bd40891",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-16.pdf": "214daf091723a3876004c121fd64f0d03e2220a518a2dd117097d287f261a395",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-17.pdf": "3f2a1f02e7d510a73e69e88e8dc9bf381b0ab2420ce76930e39d53106c039932",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-2.pdf": "633a1f1aeaafb29f5ba3aa06a878026d44a2ba88e380816c00f82e9ed36eb6b6",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-3.pdf": "c27d890b8676ebbc03b5d326ce8f2e27576051a39a863d6dc666039b15a87da0",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-4.pdf": "86ba13218e7ed2a5a5782e3ef59a3a7074e659e0b970b4ecb927d3e9211c7c29",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-5.pdf": "dc72d0358657a5d8fb4cd4639a1401775df8650e82b2634d89b148964783507d",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-6.pdf": "8e2ca3ad9f23b9190f3b008d2d441aaacd8e60a020afc63d77f9aa170671ca33",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-7.pdf": "ea735ca0317e5c93a36c3c39c9cfb19c2fd1681ab04536bb446a2d55d5fc747e",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-8.pdf": "88982bdc4b9c1b3f3929fa3203108012fd644ef306d4cc2b15e3494e9d3c396b",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-9.pdf": "cac8c060f27d309f718ba985f8ad1267e8b23dbf3bbe094eca6b62666f3f19b2",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection.pdf": "bd993d0efe1e284e411868e06011f600e2f11907f1799e9f5585fcda63c917e5",
+        "layers/integration/death-korps/death-korps-strategy-ploy-clear-the-line.pdf": "6853fe270d49051247d2c8d12943e071e9127ce5a368c3c08f810212d3bbdfa5",
+        "layers/integration/death-korps/death-korps-strategy-ploy-regroup.pdf": "984c1c7f2f6de964a9293eaf9743c10b928c40cc5715647ce731a8da472c0bbd",
+        "layers/integration/death-korps/death-korps-strategy-ploy-siege-warfare.pdf": "00ed2c7024ab24f9b04bb2f1d1766963564b79029faec52b7ad47176cf1e68e0",
+        "layers/integration/death-korps/death-korps-strategy-ploy-take-cover.pdf": "5e689d4cc98f857113f0a274b1c95186a57cb50dc71adaaa2c0acc11c73fd23e",
+        "layers/integration/death-korps/death-korps-token-guide-token-guide.pdf": "d2364bf42d4b30c354e7e8156c940ee86469f20cb8410d11d39cc464b8f2b0f5"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/death-korps/card-backside/death-korps-backside-landscape.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-07-12T18:43:02.109932+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/death-korps/card-backside/death-korps-backside-portrait.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-07-12T18:43:02.110336+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:43:02.112681+00:00",
+      "inputs": {
+        "layers/integration/death-korps/artwork/icons/death-korps-icon-token.jpg": "327fcf528892e49d2857839b9b9082bf4a42cde2fa2c9f1250a5afd25ee018c1",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/death-korps-bruiser.png": {
+          "path": "output/death-korps/tokens/death-korps-bruiser.png",
+          "hash": "3b95d13b53a9eb9e01463dc88edbb8a1e53e772976c38a5244a1d830f3ba200e",
+          "modified": "2026-08-29T18:41:43.854823+00:00"
+        },
+        "tokens/death-korps-dig-in.png": {
+          "path": "output/death-korps/tokens/death-korps-dig-in.png",
+          "hash": "5ad60f6e10e17f41ab97e8d97b9624ca1ac2f6c5879b02ebff78441bc8a27b2c",
+          "modified": "2026-08-29T18:41:44.393942+00:00"
+        },
+        "tokens/death-korps-fix-bayonets.png": {
+          "path": "output/death-korps/tokens/death-korps-fix-bayonets.png",
+          "hash": "fe0b52b34e6fa98ad80e5fb4d2cae8c2946767cf2b9c1705eef8afff57a06daa",
+          "modified": "2026-08-29T18:41:44.931806+00:00"
+        },
+        "tokens/death-korps-gas.png": {
+          "path": "output/death-korps/tokens/death-korps-gas.png",
+          "hash": "b03825d94b3041bb896245a0e4d6a7d17dbb686c456e5416f3bf388e24b818e6",
+          "modified": "2026-08-29T18:41:45.471887+00:00"
+        },
+        "tokens/death-korps-medic.png": {
+          "path": "output/death-korps/tokens/death-korps-medic.png",
+          "hash": "59a8be12779da700351acedcbd76a3e175371cf8ab87633d1550f3bbe81f2c5b",
+          "modified": "2026-08-29T18:41:46.019109+00:00"
+        },
+        "tokens/death-korps-mine.png": {
+          "path": "output/death-korps/tokens/death-korps-mine.png",
+          "hash": "666f8f7d69de9e99d984b5506f82192c879f4c5b44f21215f0f3d4f722344db4",
+          "modified": "2026-08-29T18:41:47.108825+00:00"
+        },
+        "tokens/death-korps-move-move-move.png": {
+          "path": "output/death-korps/tokens/death-korps-move-move-move.png",
+          "hash": "a6a357de4471a2bbd166751d0955963cf50b1ef45c2e9780de094277787c6996",
+          "modified": "2026-08-29T18:41:47.648768+00:00"
+        },
+        "tokens/death-korps-remote-detonator.png": {
+          "path": "output/death-korps/tokens/death-korps-remote-detonator.png",
+          "hash": "f8e4a672fab993fcfebd9ea0e4a0e82c69044a0ea5fb7d5bb5f3dec5b44616bd",
+          "modified": "2026-08-29T18:41:48.197918+00:00"
+        },
+        "tokens/death-korps-spot.png": {
+          "path": "output/death-korps/tokens/death-korps-spot.png",
+          "hash": "f15a388a242ba6917536034aba12172f6c9194f748e0b0494381ae8c0b9f2e6f",
+          "modified": "2026-08-29T18:41:48.739034+00:00"
+        },
+        "tokens/death-korps-take-aim.png": {
+          "path": "output/death-korps/tokens/death-korps-take-aim.png",
+          "hash": "1dff396ce9ef423fa424d248753060cb299d4c6058f9f9920377c1e0fefe6707",
+          "modified": "2026-08-29T18:41:48.746538+00:00"
+        },
+        "tokens/death-korps-bruiser.obj": {
+          "path": "output/death-korps/tokens/death-korps-bruiser.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.749560+00:00"
+        },
+        "tokens/death-korps-dig-in.obj": {
+          "path": "output/death-korps/tokens/death-korps-dig-in.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.750558+00:00"
+        },
+        "tokens/death-korps-fix-bayonets.obj": {
+          "path": "output/death-korps/tokens/death-korps-fix-bayonets.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.752061+00:00"
+        },
+        "tokens/death-korps-gas.obj": {
+          "path": "output/death-korps/tokens/death-korps-gas.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.753065+00:00"
+        },
+        "tokens/death-korps-medic.obj": {
+          "path": "output/death-korps/tokens/death-korps-medic.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.755575+00:00"
+        },
+        "tokens/death-korps-mine.obj": {
+          "path": "output/death-korps/tokens/death-korps-mine.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.756573+00:00"
+        },
+        "tokens/death-korps-move-move-move.obj": {
+          "path": "output/death-korps/tokens/death-korps-move-move-move.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.759081+00:00"
+        },
+        "tokens/death-korps-remote-detonator.obj": {
+          "path": "output/death-korps/tokens/death-korps-remote-detonator.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.760584+00:00"
+        },
+        "tokens/death-korps-spot.obj": {
+          "path": "output/death-korps/tokens/death-korps-spot.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.761589+00:00"
+        },
+        "tokens/death-korps-take-aim.obj": {
+          "path": "output/death-korps/tokens/death-korps-take-aim.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:48.763640+00:00"
+        },
+        "tokens/tokenbag/death-korps-token-bag-icon.png": {
+          "path": "output/death-korps/tokens/tokenbag/death-korps-token-bag-icon.png",
+          "hash": "327fcf528892e49d2857839b9b9082bf4a42cde2fa2c9f1250a5afd25ee018c1",
+          "modified": "2026-08-29T18:41:48.773041+00:00"
+        },
+        "tokens/tokenbag/death-korps-token-bag.obj": {
+          "path": "output/death-korps/tokens/tokenbag/death-korps-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:41:48.776046+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:59.072602+00:00",
+      "inputs": {
+        "layers/integration/death-korps/manifest.json": "16311c72347cd41657202678c644e5d9f10a1fdb9ce0443f19553c5040016e72",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/death-korps/artwork/icons/death-korps-icon-token.jpg": "327fcf528892e49d2857839b9b9082bf4a42cde2fa2c9f1250a5afd25ee018c1",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-bruiser.pdf": "13372f0979ee51fe194b6a94e2d348d8b734e03696cabd24be0934229ae9f3e4",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-confidant.pdf": "9bab0222d5256f880fb210cd9ba08b6609832391ceb074ba5f78f47fab66937a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-gunner.pdf": "c60c5f082f05ca0dbef64bcced3ecf40004ab9a5cdb5a6391d860aee630c513d",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-medic.pdf": "9645aa13f74e75edf62d88e513a7de078c15b897ba152c34f89183b12ced10c9",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-sapper.pdf": "9b4aa1803cd3092b43f2add967726abdc574719f4d9bfc8e039eacdd762b941a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-sniper.pdf": "98eb667f643e6643f5794eccb5fff8dc4c64bf5750994038bb180a8b64e63c21",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-spotter.pdf": "06e65d301d01c8874c86d8823076844d5d10eef60c23a8a8db885907c8ddcaa9",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-trooper.pdf": "badb969df335d558169518f8607f1d647787ff3d8cc0cde989214f472ef7859d",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-veteran.pdf": "e2f2303a6ac96538c7e04231a4046bd2d72f5bcd01b5bb66407a0c63b600004a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-vox-operator.pdf": "e0b70aa3b1b0ab020695a9fcaa0e0c24b27a2eed7f5b928d8faa7a248d9f600a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-watchmaster.pdf": "ff39cc534d4c8b71e7aaa82c675144aa3ac4b992e0fdccb84cca1c1a1211b36e",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-zealot.pdf": "222978ca23487d6b0e3496caaeef471b0db5c66433bf9c94705966027e4e117e",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "ea190a93194e8dcea90dca60a87d57aeb7e6f8065b18167d27fad8a5179b81da",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "4b6e0bfd238a03afc888fe330a3d7def9a62df207750bdc351127ffc912fae16",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "4c7f15540b11b82398dc64834ff6a05d35fd167ea0f3cf959b7273974f465f49",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "b1f3607999cf789d6a0292054a0918e897205d921a9365969850de9946fa26ba",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "5b840cfa1881d8cf76251f57f455b3b025a3148924e7fddda96899b5902eec0b",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "edefad489395a18ccc975478d873451fb2abb194fb8fd38656ed447ef330d61d",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "a2d27b096dc916dc663e41f751fcd55773106527376b3812fced6dd01dc45618",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "51313f3b69d2a060b56d7423d0f76de5cdcd1efcba19dc7ced8c880f28727113",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "c9cf05fd84fb7d24a03411fd5bfb81ac496dd9b3905ff9ebeb4de0344da0e25d",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "e4abb6674cb02d087006223440a19ec0d29e4b046afe3afd722ffb1875d76482",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "3c42559fd7f3c691351eaa54f7e11fab6dd2d216625f5f3336d7264a0f81efd4",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "433b761a7a7e45ca922c929c217c33540670f1a73ea9702e6aa246ce891637e4",
+        "layers/integration/death-korps/death-korps-equipment-chronometer.pdf": "b6032051afbdcd5dcf880e0fa34372f89000f283c846a0821fb73798d546e9bd",
+        "layers/integration/death-korps/death-korps-equipment-comm-beads.pdf": "440b396e7e9273e8a4851b60ecd35ef06f4787ed4d2faf45841914903dd11c0d",
+        "layers/integration/death-korps/death-korps-equipment-gas-bombardment.pdf": "ff8a524bdb97edaaa133d179dda421e797afe21090135d371c304c3df3c79fcc",
+        "layers/integration/death-korps/death-korps-equipment-hand-axes.pdf": "2a1d5ff934054293263df7eba04fb353a64e02f8f0b9a6c6a140c5fd8e399a6c",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-1.pdf": "eda666820d8be93116cde7cb8dd13eec10e36c0f5b20f444137d2de6edb129b4",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-2.pdf": "90805cd5121da017ac958dbb5c93810f5419bd422b163558191055b6880ee08a",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-3.pdf": "e18e21ffeddc5dc4f8b92c01a815b3289c54479ba8a672ef643ee06cd916c9cf",
+        "layers/integration/death-korps/death-korps-firefight-ploy-combined-arms.pdf": "b47c0ed2fc18764fe285814c38445792afb56ad1010151d2099708a9449beccd",
+        "layers/integration/death-korps/death-korps-firefight-ploy-in-death-atonement.pdf": "116a615a611b34b07eca1c2d5ccea409aa6be9998f6ee4bf513e07c28d72152f",
+        "layers/integration/death-korps/death-korps-firefight-ploy-in-life-shame.pdf": "e2fe714970d65d79190bcac17046c058e390bb1e53e42932c5396d826d926430",
+        "layers/integration/death-korps/death-korps-firefight-ploy-inspirational-leadership.pdf": "142c17fa13c5453bd8346b967316fd0598bea02a207c76604a1cf016be819e11",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-1.pdf": "dc0c6b89e9fc9738b03c879d8530a520c5c0b7b48418e1576be2910936f98b47",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-10.pdf": "3750a81050d6fda21a7223e39164e778bcaa1df8292f8a420ff37773ef96e647",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-11.pdf": "030987e64566fade4d2143158790f96f5f196ecf967c9281f3063f17ebe9eed7",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-12.pdf": "e3ed709522865360e6f7e1353ba20357ac8320a49799c37b4fbe9427eadf0bc5",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-13.pdf": "4c7d777c15f49457619f995b983eb971ae76a254722cb465b06b0ee46d83b573",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-14.pdf": "21ccbace305d14ad2486798bc2bd9ea42ef9e63bc6a321c197c7d44c28cfecb6",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-15.pdf": "a12519c9fd7dceea3dcd6c33fc9f93c84c8b0f8f5ce519bcfbc87ad73bd40891",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-16.pdf": "214daf091723a3876004c121fd64f0d03e2220a518a2dd117097d287f261a395",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-17.pdf": "3f2a1f02e7d510a73e69e88e8dc9bf381b0ab2420ce76930e39d53106c039932",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-2.pdf": "633a1f1aeaafb29f5ba3aa06a878026d44a2ba88e380816c00f82e9ed36eb6b6",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-3.pdf": "c27d890b8676ebbc03b5d326ce8f2e27576051a39a863d6dc666039b15a87da0",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-4.pdf": "86ba13218e7ed2a5a5782e3ef59a3a7074e659e0b970b4ecb927d3e9211c7c29",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-5.pdf": "dc72d0358657a5d8fb4cd4639a1401775df8650e82b2634d89b148964783507d",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-6.pdf": "8e2ca3ad9f23b9190f3b008d2d441aaacd8e60a020afc63d77f9aa170671ca33",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-7.pdf": "ea735ca0317e5c93a36c3c39c9cfb19c2fd1681ab04536bb446a2d55d5fc747e",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-8.pdf": "88982bdc4b9c1b3f3929fa3203108012fd644ef306d4cc2b15e3494e9d3c396b",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-9.pdf": "cac8c060f27d309f718ba985f8ad1267e8b23dbf3bbe094eca6b62666f3f19b2",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection.pdf": "bd993d0efe1e284e411868e06011f600e2f11907f1799e9f5585fcda63c917e5",
+        "layers/integration/death-korps/death-korps-strategy-ploy-clear-the-line.pdf": "6853fe270d49051247d2c8d12943e071e9127ce5a368c3c08f810212d3bbdfa5",
+        "layers/integration/death-korps/death-korps-strategy-ploy-regroup.pdf": "984c1c7f2f6de964a9293eaf9743c10b928c40cc5715647ce731a8da472c0bbd",
+        "layers/integration/death-korps/death-korps-strategy-ploy-siege-warfare.pdf": "00ed2c7024ab24f9b04bb2f1d1766963564b79029faec52b7ad47176cf1e68e0",
+        "layers/integration/death-korps/death-korps-strategy-ploy-take-cover.pdf": "5e689d4cc98f857113f0a274b1c95186a57cb50dc71adaaa2c0acc11c73fd23e",
+        "layers/integration/death-korps/death-korps-token-guide-token-guide.pdf": "d2364bf42d4b30c354e7e8156c940ee86469f20cb8410d11d39cc464b8f2b0f5"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/death-korps/dice/death-korps-dice-light.jpg",
+          "hash": "4899676f10963a9730f2b0ce55ce44920c7cf7f3e91f5de791e1e4bc26b30c5a",
+          "modified": "2026-08-29T18:42:15.318298+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/death-korps/dice/death-korps-dice-dark.jpg",
+          "hash": "ffc2c203212aeebe9b60145c957ba4c30108e2f1358342d8f42edecd13e8a0f1",
+          "modified": "2026-08-29T18:42:15.323817+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/death-korps/dice/death-korps-dice-team.jpg",
+          "hash": "50a7cc0a56f42ccf0848381951331cecc26d2a8c1a6274a31ca51bf8c756b441",
+          "modified": "2026-08-29T18:42:15.325817+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:15.327849+00:00",
+      "inputs": {
+        "layers/integration/death-korps/artwork/icons/death-korps-icon-token-transparent.png": "59dd53668282a06d677bd0af47e70a270a8754e4ba717f96ea6c5f553615cf8d",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/death-korps/cardbox/death-korps-card-box-texture.jpg",
+          "hash": "a2f979a0662e316c2b14fa1dc86b9709457cb8961461c8cec89b6c1812dfa197",
+          "modified": "2026-08-29T18:42:15.455095+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/death-korps/cardbox/death-korps-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:42:15.456094+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:15.462119+00:00",
+      "inputs": {
+        "layers/integration/death-korps/artwork/icons/death-korps-icon-token.jpg": "327fcf528892e49d2857839b9b9082bf4a42cde2fa2c9f1250a5afd25ee018c1",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/death-korps-bruiser-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-bruiser-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.324321+00:00"
+        },
+        "cards/datacards/death-korps-bruiser-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-bruiser-front.jpg",
+          "hash": "98a3c9372a25285d8db13501f13d8b3377c28a2d1ad453ace1e93fb802fba84a",
+          "modified": "2026-08-29T18:42:26.325326+00:00"
+        },
+        "cards/datacards/death-korps-confidant-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-confidant-back.jpg",
+          "hash": "0c2985122dfc63415bf86752c88352e18ea75a95a36a4ee5011cfc21e4f21890",
+          "modified": "2026-08-29T18:42:26.326331+00:00"
+        },
+        "cards/datacards/death-korps-confidant-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-confidant-front.jpg",
+          "hash": "fb390ace86574da7c6efd5322805e0cb14b46985a20acdb3d2aba30a8ab23cea",
+          "modified": "2026-08-29T18:42:26.328842+00:00"
+        },
+        "cards/datacards/death-korps-gunner-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-gunner-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.329845+00:00"
+        },
+        "cards/datacards/death-korps-gunner-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-gunner-front.jpg",
+          "hash": "d97a729a676b3fbb7fee87974d15b54ce0a8feec239daf31cfc91650432ff219",
+          "modified": "2026-08-29T18:42:26.334869+00:00"
+        },
+        "cards/datacards/death-korps-medic-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-medic-back.jpg",
+          "hash": "5e455e6ea2922b6f1b70d6d07bc17a3dc12bb37fddbf0c161af52f11aeec0798",
+          "modified": "2026-08-29T18:42:26.335871+00:00"
+        },
+        "cards/datacards/death-korps-medic-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-medic-front.jpg",
+          "hash": "46c26b942d7b2a4676b4540a5090713ff28b1d7f8a70ebff3307168644f79c2e",
+          "modified": "2026-08-29T18:42:26.335871+00:00"
+        },
+        "cards/datacards/death-korps-sapper-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-sapper-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.337995+00:00"
+        },
+        "cards/datacards/death-korps-sapper-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-sapper-front.jpg",
+          "hash": "28de0656fa76ec5b475dd760d1d7944d62775bb13b5f9a1a4a5c771502d7b6e3",
+          "modified": "2026-08-29T18:42:26.339002+00:00"
+        },
+        "cards/datacards/death-korps-sniper-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-sniper-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.340002+00:00"
+        },
+        "cards/datacards/death-korps-sniper-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-sniper-front.jpg",
+          "hash": "ae4e0cdadfd3de6bf8f925f694797ab671227551e8a7cb3d960a5f8bd45afb04",
+          "modified": "2026-08-29T18:42:26.342509+00:00"
+        },
+        "cards/datacards/death-korps-spotter-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-spotter-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.343542+00:00"
+        },
+        "cards/datacards/death-korps-spotter-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-spotter-front.jpg",
+          "hash": "0948fc1bc0a485dc091486ba5974cdfddc26c9479ad51c16ee8f39ce781d5048",
+          "modified": "2026-08-29T18:42:26.346547+00:00"
+        },
+        "cards/datacards/death-korps-trooper-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-trooper-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.349569+00:00"
+        },
+        "cards/datacards/death-korps-trooper-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-trooper-front.jpg",
+          "hash": "8dab23112a0de163822c93b6adfaa6efbfb6076c53a9ae5af65d437738f35a25",
+          "modified": "2026-08-29T18:42:26.352585+00:00"
+        },
+        "cards/datacards/death-korps-veteran-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-veteran-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.357100+00:00"
+        },
+        "cards/datacards/death-korps-veteran-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-veteran-front.jpg",
+          "hash": "48a0d317602d8e91864dc5ff9600d0ccd332c97bf15164f6323e870e160c0d71",
+          "modified": "2026-08-29T18:42:26.359610+00:00"
+        },
+        "cards/datacards/death-korps-vox-operator-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-vox-operator-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.359610+00:00"
+        },
+        "cards/datacards/death-korps-vox-operator-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-vox-operator-front.jpg",
+          "hash": "f6170a14f64b7ff43d2d720baa8ac928813defe8ad3cb4646367886b64891e36",
+          "modified": "2026-08-29T18:42:26.361610+00:00"
+        },
+        "cards/datacards/death-korps-watchmaster-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-watchmaster-back.jpg",
+          "hash": "90818e0519bf5b85a61486f92a1d211961fd50568d5500d6da5cf89c4738a109",
+          "modified": "2026-08-29T18:42:26.362630+00:00"
+        },
+        "cards/datacards/death-korps-watchmaster-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-watchmaster-front.jpg",
+          "hash": "937b3f9971d5e1bd2f6b724e3f3ae1c601446e4b560acceb86e1d10cf1cf2717",
+          "modified": "2026-08-29T18:42:26.363635+00:00"
+        },
+        "cards/datacards/death-korps-zealot-back.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-zealot-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.364634+00:00"
+        },
+        "cards/datacards/death-korps-zealot-front.jpg": {
+          "path": "output/death-korps/cards/datacards/death-korps-zealot-front.jpg",
+          "hash": "9b876785bcc9a3096b751c3c12451cea31b8f68164d0064065626b4c311a540b",
+          "modified": "2026-08-29T18:42:26.368667+00:00"
+        },
+        "cards/equipment/death-korps-chronometer-back.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-chronometer-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:41.347844+00:00"
+        },
+        "cards/equipment/death-korps-chronometer-front.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-chronometer-front.jpg",
+          "hash": "ba88dadd5cbd1e51f788d2ddfb4d8e12b67b104d624402a13699ce3ddf6f4ae8",
+          "modified": "2026-08-29T18:42:42.455320+00:00"
+        },
+        "cards/equipment/death-korps-comm-beads-back.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-comm-beads-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.459444+00:00"
+        },
+        "cards/equipment/death-korps-comm-beads-front.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-comm-beads-front.jpg",
+          "hash": "6984c69afa8521b279ac9d2b1e018997baff5d113cfb812751b0a372f91ed28b",
+          "modified": "2026-08-29T18:42:42.467016+00:00"
+        },
+        "cards/equipment/death-korps-gas-bombardment-back.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-gas-bombardment-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.471043+00:00"
+        },
+        "cards/equipment/death-korps-gas-bombardment-front.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-gas-bombardment-front.jpg",
+          "hash": "48a28e227c2da9540745b68fc862793dcb7cd36cec30dd9d8ff72ecc0b308f53",
+          "modified": "2026-08-29T18:42:42.476702+00:00"
+        },
+        "cards/equipment/death-korps-hand-axes-back.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-hand-axes-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.478758+00:00"
+        },
+        "cards/equipment/death-korps-hand-axes-front.jpg": {
+          "path": "output/death-korps/cards/equipment/death-korps-hand-axes-front.jpg",
+          "hash": "cf9751a7944eacab918ab06454800034f2838466549875a3106fad1d7e290e77",
+          "modified": "2026-08-29T18:42:42.479758+00:00"
+        },
+        "cards/faction_rules/death-korps-guardsmen-orders-card1-back.jpg": {
+          "path": "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card1-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.482295+00:00"
+        },
+        "cards/faction_rules/death-korps-guardsmen-orders-card1-front.jpg": {
+          "path": "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card1-front.jpg",
+          "hash": "cf1bfe4b9b5f0a0f1f319135071c559dfaa87854ac02f776844fcfa9486b3c62",
+          "modified": "2026-08-29T18:42:42.486303+00:00"
+        },
+        "cards/faction_rules/death-korps-guardsmen-orders-card2-back.jpg": {
+          "path": "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card2-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.489809+00:00"
+        },
+        "cards/faction_rules/death-korps-guardsmen-orders-card2-front.jpg": {
+          "path": "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card2-front.jpg",
+          "hash": "c45e2fcfb246ced604635a1488be0b6fceb83aa494abeb693771fcb6f8140fe1",
+          "modified": "2026-08-29T18:42:42.492313+00:00"
+        },
+        "cards/faction_rules/death-korps-guardsmen-orders-card3-back.jpg": {
+          "path": "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card3-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.494317+00:00"
+        },
+        "cards/faction_rules/death-korps-guardsmen-orders-card3-front.jpg": {
+          "path": "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card3-front.jpg",
+          "hash": "d2ae835870a95c3c9f5ac8f1db95211309323a385b6689ceb77ae0d75fdafd94",
+          "modified": "2026-08-29T18:42:42.496317+00:00"
+        },
+        "cards/firefight_ploys/death-korps-combined-arms-back.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-combined-arms-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.497821+00:00"
+        },
+        "cards/firefight_ploys/death-korps-combined-arms-front.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-combined-arms-front.jpg",
+          "hash": "49b59626a9f304ec67d86946e754b3fc5454a002c33aba382440f472c9bf1e2e",
+          "modified": "2026-08-29T18:42:42.500328+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-death-atonement-back.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-death-atonement-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.502845+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-death-atonement-front.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-death-atonement-front.jpg",
+          "hash": "6f5497cf3502a0b175f456fa882ec845018b826a54e1bf45316bd43ae7eac4ad",
+          "modified": "2026-08-29T18:42:42.509003+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-life-shame-back.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-life-shame-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.513555+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-life-shame-front.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-life-shame-front.jpg",
+          "hash": "7aaf55e24bed8bf8257d9a30956c466f8e0fac6b17836ad5cfdc83959cba642d",
+          "modified": "2026-08-29T18:42:42.519085+00:00"
+        },
+        "cards/firefight_ploys/death-korps-inspirational-leadership-back.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-inspirational-leadership-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.520084+00:00"
+        },
+        "cards/firefight_ploys/death-korps-inspirational-leadership-front.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-inspirational-leadership-front.jpg",
+          "hash": "76c3eaa375bbcf0e707f3957221c6b4959fd2448a17ba0ed901996e491c63663",
+          "modified": "2026-08-29T18:42:42.523091+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-back.jpg",
+          "hash": "00582164a3f6f37a71366df39b167752bac973d805cf160750ed4cb2b529df93",
+          "modified": "2026-08-29T18:42:42.525091+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-front.jpg",
+          "hash": "a3b075d786282b2ea6f5cc7438636d2d7d1ae0d73483ec6c0af6a62780ce5455",
+          "modified": "2026-08-29T18:42:43.992756+00:00"
+        },
+        "cards/strategy_ploys/death-korps-clear-the-line-back.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-clear-the-line-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.993755+00:00"
+        },
+        "cards/strategy_ploys/death-korps-clear-the-line-front.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-clear-the-line-front.jpg",
+          "hash": "7976921670c98b0a69e815d1c3fb70f1df0cc8139ef7759a8c700d17973e9b03",
+          "modified": "2026-08-29T18:42:43.996263+00:00"
+        },
+        "cards/strategy_ploys/death-korps-regroup-back.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-regroup-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.997768+00:00"
+        },
+        "cards/strategy_ploys/death-korps-regroup-front.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-regroup-front.jpg",
+          "hash": "cc7556f062a6a8fa1741ed3518b6962b8b16d72d1695a1a89f3f9b8e511ba9a0",
+          "modified": "2026-08-29T18:42:44.003310+00:00"
+        },
+        "cards/strategy_ploys/death-korps-siege-warfare-back.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-siege-warfare-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:44.007310+00:00"
+        },
+        "cards/strategy_ploys/death-korps-siege-warfare-front.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-siege-warfare-front.jpg",
+          "hash": "68dc5bf07ce40d2fbe4fd5902b4dd6f8b144ee8419315e9ad80431fbf1034070",
+          "modified": "2026-08-29T18:42:44.012347+00:00"
+        },
+        "cards/strategy_ploys/death-korps-take-cover-back.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-take-cover-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:44.015354+00:00"
+        },
+        "cards/strategy_ploys/death-korps-take-cover-front.jpg": {
+          "path": "output/death-korps/cards/strategy_ploys/death-korps-take-cover-front.jpg",
+          "hash": "485c5c00a8e58d55cfdff9cd8be5375736ec317409309d1304249dcc42c517a2",
+          "modified": "2026-08-29T18:42:44.017861+00:00"
+        },
+        "cards/token_guide/death-korps-token-guide-back.jpg": {
+          "path": "output/death-korps/cards/token_guide/death-korps-token-guide-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:44.018865+00:00"
+        },
+        "cards/token_guide/death-korps-token-guide-front.jpg": {
+          "path": "output/death-korps/cards/token_guide/death-korps-token-guide-front.jpg",
+          "hash": "adc416254d67b8a9d6586aa649927c389ed3d2f938b31b25a433fa7ad4bc28f5",
+          "modified": "2026-08-29T18:42:44.020973+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-death,-atonement-back.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-death,-atonement-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-07-12T19:10:19.497562+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-death,-atonement-front.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-death,-atonement-front.jpg",
+          "hash": "11299deae20abae2a045e0378c49db995cf01abc43b43adccb9dad0470511b9d",
+          "modified": "2026-07-12T19:10:20.132257+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-life,-shame-back.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-life,-shame-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-07-12T19:10:20.369927+00:00"
+        },
+        "cards/firefight_ploys/death-korps-in-life,-shame-front.jpg": {
+          "path": "output/death-korps/cards/firefight_ploys/death-korps-in-life,-shame-front.jpg",
+          "hash": "2eb2050a71708b4b1b2434513a9ea9106e8195be22fa894d25bf811d482aa776",
+          "modified": "2026-07-12T19:10:20.373470+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "3f61037dbcd9c1d09ec7067a8c36083ef8ec9f7a72c3703623485a6caadc5482",
+          "modified": "2026-08-29T18:42:26.381714+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "5132aca496f4406e4053a877a6760ec7bfded9661d41f245bb2699e01ace82ed",
+          "modified": "2026-08-29T18:42:26.392270+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.399295+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "58a9b113f8f560a831b32993278d8873819fdf85360005a688f668703dea807d",
+          "modified": "2026-08-29T18:42:26.409854+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.483833+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "b9ac14558fdc791b125da94092b9c0552bafabce26c51a75a41f322cc8149fb7",
+          "modified": "2026-08-29T18:42:26.682020+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:26.808630+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg",
+          "hash": "ca0c89fdadc4ec2f760acb9782a856d7e0b23daaeede3dfb3ce513111047eb33",
+          "modified": "2026-08-29T18:42:26.982683+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:27.089046+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "b84fc62102b365c87e7b956eafa356087b074cc4133180df78d153f14c763b5c",
+          "modified": "2026-08-29T18:42:27.351346+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "6e1d23732ed56493ae3041e26a05741e32fef42e1b229d2053b347c3e8ec2de9",
+          "modified": "2026-08-29T18:42:27.595769+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "6b66d9fc4ff7a29cd895a85ae220f1dd2a4c00f9d370441955fc29f317e54427",
+          "modified": "2026-08-29T18:42:27.881173+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:29.064915+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "d6d671d8d8b9073bf5b5d16c745f2e518aff385b81f3d19f5ed2c1728ce4efc0",
+          "modified": "2026-08-29T18:42:30.346555+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "1d0846813ab2f2d76a7ff3ba8780e3c00349c38586c71a5d60013a3105fabdea",
+          "modified": "2026-08-29T18:42:32.616932+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "7a5fd519ca36a7ae9243f2f1f583c339c557aef64c69d8a408667ea043df2f63",
+          "modified": "2026-08-29T18:42:33.800192+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:34.637898+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "5bacbe02cf36b90fa1c7765261e3da2eb15cf3aef80f585dc1474bb9b8abee45",
+          "modified": "2026-08-29T18:42:35.673468+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:36.235216+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "b9c9d90ebe39be69cd8c077ccb180fa36b890752b3ee083bae229f5b7c1e3eee",
+          "modified": "2026-08-29T18:42:37.253272+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:37.770080+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "e6ac2636fb458f03748c355ee94ebe563873dce0198999e3210882cfa9e9e13f",
+          "modified": "2026-08-29T18:42:38.793473+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+          "modified": "2026-08-29T18:42:39.310759+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "de5bc04d5e63eadaa28f73026c08c4b69c02e92190a1f06aedb8f05c9b8e703b",
+          "modified": "2026-08-29T18:42:40.349100+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card1-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card1-back.jpg",
+          "hash": "00582164a3f6f37a71366df39b167752bac973d805cf160750ed4cb2b529df93",
+          "modified": "2026-08-29T18:42:42.538691+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card1-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card1-front.jpg",
+          "hash": "527dd6eb88e7b1e9ebb22d358a14c6cefceccbaf89c53b62d59a8e77c5bafc86",
+          "modified": "2026-08-29T18:42:42.550823+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card10-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card10-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.560870+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card10-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card10-front.jpg",
+          "hash": "8fea166ea3051c78c7482ed22e12a93b5a8f56ce30a7dc38bd69c923c9807f9d",
+          "modified": "2026-08-29T18:42:42.604313+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card11-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card11-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:42.712068+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card11-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card11-front.jpg",
+          "hash": "0bc2b607e3000ef9a76b59ed4f4806dd4a63dd41b71dca038ad582c8c151b17c",
+          "modified": "2026-08-29T18:42:42.893720+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card12-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card12-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.015436+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card12-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card12-front.jpg",
+          "hash": "99c453c48b0307481423f3e848d6c1c3f96e873daad4aada507bddf3f56e17b3",
+          "modified": "2026-08-29T18:42:43.169804+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card13-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card13-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.282202+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card13-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card13-front.jpg",
+          "hash": "977fd2604142be0b43be1880799cb61100af895b9bd4138a2e69154ab5aa8588",
+          "modified": "2026-08-29T18:42:43.487856+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card14-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card14-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.578026+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card14-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card14-front.jpg",
+          "hash": "a830f1bbf14fb5c8f9c38a2c01a68414f809793de21c04942b7f60b95c5b8dcf",
+          "modified": "2026-08-29T18:42:43.752985+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card15-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card15-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.815445+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card15-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card15-front.jpg",
+          "hash": "d25c5557b305ea13b5cda4b2d45bcfa1c888f0a174a38d4a80e5302b53578a5c",
+          "modified": "2026-08-29T18:42:43.822771+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card16-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card16-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.831539+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card16-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card16-front.jpg",
+          "hash": "1ebe7476721a35baae4477fa5da8600e94452a4b7518190098ca496173184b9c",
+          "modified": "2026-08-29T18:42:43.841130+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card17-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card17-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.847731+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card17-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card17-front.jpg",
+          "hash": "a2985da425d867c76c629e95697220eb9a26eba05f80be26f587309149db0efc",
+          "modified": "2026-08-29T18:42:43.853870+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card2-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card2-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.862907+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card2-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card2-front.jpg",
+          "hash": "ad86fb624bec119f571fcfc3ce8556e9176cb36610c1ddc5d3b70a6b755457a7",
+          "modified": "2026-08-29T18:42:43.872477+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card3-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card3-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.879021+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card3-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card3-front.jpg",
+          "hash": "f549985a2c7457e110e2e79ae39ac4904558fa7c923b75713240e454e20b0499",
+          "modified": "2026-08-29T18:42:43.886115+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card4-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card4-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.892159+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card4-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card4-front.jpg",
+          "hash": "1c3bcfd43597be848f5b3e31a1c776ef0415657524b29c514e5bcc079d982b74",
+          "modified": "2026-08-29T18:42:43.902389+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card5-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card5-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.910479+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card5-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card5-front.jpg",
+          "hash": "adc416254d67b8a9d6586aa649927c389ed3d2f938b31b25a433fa7ad4bc28f5",
+          "modified": "2026-08-29T18:42:43.921085+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card6-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card6-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.929484+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card6-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card6-front.jpg",
+          "hash": "67036a81aa0e5975864455842b126a855343d473c5464eb4e3cf357fc20999f2",
+          "modified": "2026-08-29T18:42:43.939049+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card7-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card7-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.948062+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card7-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card7-front.jpg",
+          "hash": "913d6e9909550946ed193eb84f0f6a74b4b75f9669cc9503c0c4a189353e526e",
+          "modified": "2026-08-29T18:42:43.956368+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card8-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card8-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.961913+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card8-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card8-front.jpg",
+          "hash": "117f03d912624d0d985a4e8b577714280d775a21018e3424f254bea1afcdd2dd",
+          "modified": "2026-08-29T18:42:43.972809+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card9-back.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card9-back.jpg",
+          "hash": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+          "modified": "2026-08-29T18:42:43.981332+00:00"
+        },
+        "cards/operatives_selection/death-korps-operative-selection-card9-front.jpg": {
+          "path": "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card9-front.jpg",
+          "hash": "3f94121d6bbc9bd694e96bf98ebb385e8c1856eb84ac6a3f2acd63eb977abbc7",
+          "modified": "2026-08-29T18:42:43.988045+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:46.036564+00:00",
+      "inputs": {
+        "layers/integration/death-korps/manifest.json": "16311c72347cd41657202678c644e5d9f10a1fdb9ce0443f19553c5040016e72",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-bruiser.pdf": "13372f0979ee51fe194b6a94e2d348d8b734e03696cabd24be0934229ae9f3e4",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-confidant.pdf": "9bab0222d5256f880fb210cd9ba08b6609832391ceb074ba5f78f47fab66937a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-gunner.pdf": "c60c5f082f05ca0dbef64bcced3ecf40004ab9a5cdb5a6391d860aee630c513d",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-medic.pdf": "9645aa13f74e75edf62d88e513a7de078c15b897ba152c34f89183b12ced10c9",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-sapper.pdf": "9b4aa1803cd3092b43f2add967726abdc574719f4d9bfc8e039eacdd762b941a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-sniper.pdf": "98eb667f643e6643f5794eccb5fff8dc4c64bf5750994038bb180a8b64e63c21",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-spotter.pdf": "06e65d301d01c8874c86d8823076844d5d10eef60c23a8a8db885907c8ddcaa9",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-trooper.pdf": "badb969df335d558169518f8607f1d647787ff3d8cc0cde989214f472ef7859d",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-veteran.pdf": "e2f2303a6ac96538c7e04231a4046bd2d72f5bcd01b5bb66407a0c63b600004a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-vox-operator.pdf": "e0b70aa3b1b0ab020695a9fcaa0e0c24b27a2eed7f5b928d8faa7a248d9f600a",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-watchmaster.pdf": "ff39cc534d4c8b71e7aaa82c675144aa3ac4b992e0fdccb84cca1c1a1211b36e",
+        "layers/integration/death-korps/death-korps-datacard-death-korps-zealot.pdf": "222978ca23487d6b0e3496caaeef471b0db5c66433bf9c94705966027e4e117e",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "ea190a93194e8dcea90dca60a87d57aeb7e6f8065b18167d27fad8a5179b81da",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "4b6e0bfd238a03afc888fe330a3d7def9a62df207750bdc351127ffc912fae16",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "4c7f15540b11b82398dc64834ff6a05d35fd167ea0f3cf959b7273974f465f49",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "b1f3607999cf789d6a0292054a0918e897205d921a9365969850de9946fa26ba",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "5b840cfa1881d8cf76251f57f455b3b025a3148924e7fddda96899b5902eec0b",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "edefad489395a18ccc975478d873451fb2abb194fb8fd38656ed447ef330d61d",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "a2d27b096dc916dc663e41f751fcd55773106527376b3812fced6dd01dc45618",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "51313f3b69d2a060b56d7423d0f76de5cdcd1efcba19dc7ced8c880f28727113",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "c9cf05fd84fb7d24a03411fd5bfb81ac496dd9b3905ff9ebeb4de0344da0e25d",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "e4abb6674cb02d087006223440a19ec0d29e4b046afe3afd722ffb1875d76482",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "3c42559fd7f3c691351eaa54f7e11fab6dd2d216625f5f3336d7264a0f81efd4",
+        "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "433b761a7a7e45ca922c929c217c33540670f1a73ea9702e6aa246ce891637e4",
+        "layers/integration/death-korps/death-korps-equipment-chronometer.pdf": "b6032051afbdcd5dcf880e0fa34372f89000f283c846a0821fb73798d546e9bd",
+        "layers/integration/death-korps/death-korps-equipment-comm-beads.pdf": "440b396e7e9273e8a4851b60ecd35ef06f4787ed4d2faf45841914903dd11c0d",
+        "layers/integration/death-korps/death-korps-equipment-gas-bombardment.pdf": "ff8a524bdb97edaaa133d179dda421e797afe21090135d371c304c3df3c79fcc",
+        "layers/integration/death-korps/death-korps-equipment-hand-axes.pdf": "2a1d5ff934054293263df7eba04fb353a64e02f8f0b9a6c6a140c5fd8e399a6c",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-1.pdf": "eda666820d8be93116cde7cb8dd13eec10e36c0f5b20f444137d2de6edb129b4",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-2.pdf": "90805cd5121da017ac958dbb5c93810f5419bd422b163558191055b6880ee08a",
+        "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-3.pdf": "e18e21ffeddc5dc4f8b92c01a815b3289c54479ba8a672ef643ee06cd916c9cf",
+        "layers/integration/death-korps/death-korps-firefight-ploy-combined-arms.pdf": "b47c0ed2fc18764fe285814c38445792afb56ad1010151d2099708a9449beccd",
+        "layers/integration/death-korps/death-korps-firefight-ploy-in-death-atonement.pdf": "116a615a611b34b07eca1c2d5ccea409aa6be9998f6ee4bf513e07c28d72152f",
+        "layers/integration/death-korps/death-korps-firefight-ploy-in-life-shame.pdf": "e2fe714970d65d79190bcac17046c058e390bb1e53e42932c5396d826d926430",
+        "layers/integration/death-korps/death-korps-firefight-ploy-inspirational-leadership.pdf": "142c17fa13c5453bd8346b967316fd0598bea02a207c76604a1cf016be819e11",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-1.pdf": "dc0c6b89e9fc9738b03c879d8530a520c5c0b7b48418e1576be2910936f98b47",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-10.pdf": "3750a81050d6fda21a7223e39164e778bcaa1df8292f8a420ff37773ef96e647",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-11.pdf": "030987e64566fade4d2143158790f96f5f196ecf967c9281f3063f17ebe9eed7",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-12.pdf": "e3ed709522865360e6f7e1353ba20357ac8320a49799c37b4fbe9427eadf0bc5",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-13.pdf": "4c7d777c15f49457619f995b983eb971ae76a254722cb465b06b0ee46d83b573",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-14.pdf": "21ccbace305d14ad2486798bc2bd9ea42ef9e63bc6a321c197c7d44c28cfecb6",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-15.pdf": "a12519c9fd7dceea3dcd6c33fc9f93c84c8b0f8f5ce519bcfbc87ad73bd40891",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-16.pdf": "214daf091723a3876004c121fd64f0d03e2220a518a2dd117097d287f261a395",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-17.pdf": "3f2a1f02e7d510a73e69e88e8dc9bf381b0ab2420ce76930e39d53106c039932",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-2.pdf": "633a1f1aeaafb29f5ba3aa06a878026d44a2ba88e380816c00f82e9ed36eb6b6",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-3.pdf": "c27d890b8676ebbc03b5d326ce8f2e27576051a39a863d6dc666039b15a87da0",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-4.pdf": "86ba13218e7ed2a5a5782e3ef59a3a7074e659e0b970b4ecb927d3e9211c7c29",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-5.pdf": "dc72d0358657a5d8fb4cd4639a1401775df8650e82b2634d89b148964783507d",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-6.pdf": "8e2ca3ad9f23b9190f3b008d2d441aaacd8e60a020afc63d77f9aa170671ca33",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-7.pdf": "ea735ca0317e5c93a36c3c39c9cfb19c2fd1681ab04536bb446a2d55d5fc747e",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-8.pdf": "88982bdc4b9c1b3f3929fa3203108012fd644ef306d4cc2b15e3494e9d3c396b",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-9.pdf": "cac8c060f27d309f718ba985f8ad1267e8b23dbf3bbe094eca6b62666f3f19b2",
+        "layers/integration/death-korps/death-korps-operatives-selection-operative-selection.pdf": "bd993d0efe1e284e411868e06011f600e2f11907f1799e9f5585fcda63c917e5",
+        "layers/integration/death-korps/death-korps-strategy-ploy-clear-the-line.pdf": "6853fe270d49051247d2c8d12943e071e9127ce5a368c3c08f810212d3bbdfa5",
+        "layers/integration/death-korps/death-korps-strategy-ploy-regroup.pdf": "984c1c7f2f6de964a9293eaf9743c10b928c40cc5715647ce731a8da472c0bbd",
+        "layers/integration/death-korps/death-korps-strategy-ploy-siege-warfare.pdf": "00ed2c7024ab24f9b04bb2f1d1766963564b79029faec52b7ad47176cf1e68e0",
+        "layers/integration/death-korps/death-korps-strategy-ploy-take-cover.pdf": "5e689d4cc98f857113f0a274b1c95186a57cb50dc71adaaa2c0acc11c73fd23e",
+        "layers/integration/death-korps/death-korps-token-guide-token-guide.pdf": "d2364bf42d4b30c354e7e8156c940ee86469f20cb8410d11d39cc464b8f2b0f5",
+        "layers/integration/death-korps/card-backside/death-korps-backside-portrait.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/death-korps/card-backside/death-korps-backside-landscape.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/death-korps/data/death-korps-team-data.json",
+          "hash": "aa5b63f59a8a382dcce3da71bbbc3b2db56a24233de85be6c76b3cbb0dc00aea",
+          "modified": "2026-08-29T18:42:46.180111+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:46.181111+00:00",
+      "inputs": {
+        "layers/integration/death-korps/content/death-korps-content.json": "aa5b63f59a8a382dcce3da71bbbc3b2db56a24233de85be6c76b3cbb0dc00aea"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Death Korps Box.json": {
+          "path": "output/death-korps/tts_objects/Death Korps Box.json",
+          "hash": "4c9bacf71fe2dfbad580f378a6626fba4f430a85699b4bc4b510f31403be557d",
+          "modified": "2026-07-25T16:53:44.701325+00:00"
+        },
+        "tts_objects/Death Korps.json": {
+          "path": "output/death-korps/tts_objects/Death Korps.json",
+          "hash": "a58d51466820e0347597ea88a347a88fa72424b678b490eec27d1189fcbab430",
+          "modified": "2026-08-29T18:53:37.392237+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:37.477815+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/death-korps/cards/datacards/death-korps-bruiser-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-bruiser-front.jpg": "98a3c9372a25285d8db13501f13d8b3377c28a2d1ad453ace1e93fb802fba84a",
+        "output/death-korps/cards/datacards/death-korps-confidant-back.jpg": "0c2985122dfc63415bf86752c88352e18ea75a95a36a4ee5011cfc21e4f21890",
+        "output/death-korps/cards/datacards/death-korps-confidant-front.jpg": "fb390ace86574da7c6efd5322805e0cb14b46985a20acdb3d2aba30a8ab23cea",
+        "output/death-korps/cards/datacards/death-korps-gunner-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-gunner-front.jpg": "d97a729a676b3fbb7fee87974d15b54ce0a8feec239daf31cfc91650432ff219",
+        "output/death-korps/cards/datacards/death-korps-medic-back.jpg": "5e455e6ea2922b6f1b70d6d07bc17a3dc12bb37fddbf0c161af52f11aeec0798",
+        "output/death-korps/cards/datacards/death-korps-medic-front.jpg": "46c26b942d7b2a4676b4540a5090713ff28b1d7f8a70ebff3307168644f79c2e",
+        "output/death-korps/cards/datacards/death-korps-sapper-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-sapper-front.jpg": "28de0656fa76ec5b475dd760d1d7944d62775bb13b5f9a1a4a5c771502d7b6e3",
+        "output/death-korps/cards/datacards/death-korps-sniper-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-sniper-front.jpg": "ae4e0cdadfd3de6bf8f925f694797ab671227551e8a7cb3d960a5f8bd45afb04",
+        "output/death-korps/cards/datacards/death-korps-spotter-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-spotter-front.jpg": "0948fc1bc0a485dc091486ba5974cdfddc26c9479ad51c16ee8f39ce781d5048",
+        "output/death-korps/cards/datacards/death-korps-trooper-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-trooper-front.jpg": "8dab23112a0de163822c93b6adfaa6efbfb6076c53a9ae5af65d437738f35a25",
+        "output/death-korps/cards/datacards/death-korps-veteran-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-veteran-front.jpg": "48a0d317602d8e91864dc5ff9600d0ccd332c97bf15164f6323e870e160c0d71",
+        "output/death-korps/cards/datacards/death-korps-vox-operator-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-vox-operator-front.jpg": "f6170a14f64b7ff43d2d720baa8ac928813defe8ad3cb4646367886b64891e36",
+        "output/death-korps/cards/datacards/death-korps-watchmaster-back.jpg": "90818e0519bf5b85a61486f92a1d211961fd50568d5500d6da5cf89c4738a109",
+        "output/death-korps/cards/datacards/death-korps-watchmaster-front.jpg": "937b3f9971d5e1bd2f6b724e3f3ae1c601446e4b560acceb86e1d10cf1cf2717",
+        "output/death-korps/cards/datacards/death-korps-zealot-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/death-korps-zealot-front.jpg": "9b876785bcc9a3096b751c3c12451cea31b8f68164d0064065626b4c311a540b",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "3f61037dbcd9c1d09ec7067a8c36083ef8ec9f7a72c3703623485a6caadc5482",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "5132aca496f4406e4053a877a6760ec7bfded9661d41f245bb2699e01ace82ed",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "58a9b113f8f560a831b32993278d8873819fdf85360005a688f668703dea807d",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "b9ac14558fdc791b125da94092b9c0552bafabce26c51a75a41f322cc8149fb7",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "ca0c89fdadc4ec2f760acb9782a856d7e0b23daaeede3dfb3ce513111047eb33",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "b84fc62102b365c87e7b956eafa356087b074cc4133180df78d153f14c763b5c",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "6e1d23732ed56493ae3041e26a05741e32fef42e1b229d2053b347c3e8ec2de9",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "6b66d9fc4ff7a29cd895a85ae220f1dd2a4c00f9d370441955fc29f317e54427",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "d6d671d8d8b9073bf5b5d16c745f2e518aff385b81f3d19f5ed2c1728ce4efc0",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "1d0846813ab2f2d76a7ff3ba8780e3c00349c38586c71a5d60013a3105fabdea",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "7a5fd519ca36a7ae9243f2f1f583c339c557aef64c69d8a408667ea043df2f63",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "5bacbe02cf36b90fa1c7765261e3da2eb15cf3aef80f585dc1474bb9b8abee45",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "b9c9d90ebe39be69cd8c077ccb180fa36b890752b3ee083bae229f5b7c1e3eee",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "e6ac2636fb458f03748c355ee94ebe563873dce0198999e3210882cfa9e9e13f",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "71574ea2552fb1701e9e677444f5e20912e1963f011cfcf4d90b89c284bb7fc8",
+        "output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "de5bc04d5e63eadaa28f73026c08c4b69c02e92190a1f06aedb8f05c9b8e703b",
+        "output/death-korps/cards/equipment/death-korps-chronometer-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/equipment/death-korps-chronometer-front.jpg": "ba88dadd5cbd1e51f788d2ddfb4d8e12b67b104d624402a13699ce3ddf6f4ae8",
+        "output/death-korps/cards/equipment/death-korps-comm-beads-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/equipment/death-korps-comm-beads-front.jpg": "6984c69afa8521b279ac9d2b1e018997baff5d113cfb812751b0a372f91ed28b",
+        "output/death-korps/cards/equipment/death-korps-gas-bombardment-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/equipment/death-korps-gas-bombardment-front.jpg": "48a28e227c2da9540745b68fc862793dcb7cd36cec30dd9d8ff72ecc0b308f53",
+        "output/death-korps/cards/equipment/death-korps-hand-axes-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/equipment/death-korps-hand-axes-front.jpg": "cf9751a7944eacab918ab06454800034f2838466549875a3106fad1d7e290e77",
+        "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card1-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card1-front.jpg": "cf1bfe4b9b5f0a0f1f319135071c559dfaa87854ac02f776844fcfa9486b3c62",
+        "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card2-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card2-front.jpg": "c45e2fcfb246ced604635a1488be0b6fceb83aa494abeb693771fcb6f8140fe1",
+        "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card3-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card3-front.jpg": "d2ae835870a95c3c9f5ac8f1db95211309323a385b6689ceb77ae0d75fdafd94",
+        "output/death-korps/cards/firefight_ploys/death-korps-combined-arms-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/firefight_ploys/death-korps-combined-arms-front.jpg": "49b59626a9f304ec67d86946e754b3fc5454a002c33aba382440f472c9bf1e2e",
+        "output/death-korps/cards/firefight_ploys/death-korps-in-death-atonement-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/firefight_ploys/death-korps-in-death-atonement-front.jpg": "6f5497cf3502a0b175f456fa882ec845018b826a54e1bf45316bd43ae7eac4ad",
+        "output/death-korps/cards/firefight_ploys/death-korps-in-life-shame-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/firefight_ploys/death-korps-in-life-shame-front.jpg": "7aaf55e24bed8bf8257d9a30956c466f8e0fac6b17836ad5cfdc83959cba642d",
+        "output/death-korps/cards/firefight_ploys/death-korps-inspirational-leadership-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/firefight_ploys/death-korps-inspirational-leadership-front.jpg": "76c3eaa375bbcf0e707f3957221c6b4959fd2448a17ba0ed901996e491c63663",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-back.jpg": "00582164a3f6f37a71366df39b167752bac973d805cf160750ed4cb2b529df93",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card1-back.jpg": "00582164a3f6f37a71366df39b167752bac973d805cf160750ed4cb2b529df93",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card1-front.jpg": "527dd6eb88e7b1e9ebb22d358a14c6cefceccbaf89c53b62d59a8e77c5bafc86",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card10-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card10-front.jpg": "8fea166ea3051c78c7482ed22e12a93b5a8f56ce30a7dc38bd69c923c9807f9d",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card11-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card11-front.jpg": "0bc2b607e3000ef9a76b59ed4f4806dd4a63dd41b71dca038ad582c8c151b17c",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card12-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card12-front.jpg": "99c453c48b0307481423f3e848d6c1c3f96e873daad4aada507bddf3f56e17b3",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card13-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card13-front.jpg": "977fd2604142be0b43be1880799cb61100af895b9bd4138a2e69154ab5aa8588",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card14-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card14-front.jpg": "a830f1bbf14fb5c8f9c38a2c01a68414f809793de21c04942b7f60b95c5b8dcf",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card15-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card15-front.jpg": "d25c5557b305ea13b5cda4b2d45bcfa1c888f0a174a38d4a80e5302b53578a5c",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card16-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card16-front.jpg": "1ebe7476721a35baae4477fa5da8600e94452a4b7518190098ca496173184b9c",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card17-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card17-front.jpg": "a2985da425d867c76c629e95697220eb9a26eba05f80be26f587309149db0efc",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card2-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card2-front.jpg": "ad86fb624bec119f571fcfc3ce8556e9176cb36610c1ddc5d3b70a6b755457a7",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card3-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card3-front.jpg": "f549985a2c7457e110e2e79ae39ac4904558fa7c923b75713240e454e20b0499",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card4-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card4-front.jpg": "1c3bcfd43597be848f5b3e31a1c776ef0415657524b29c514e5bcc079d982b74",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card5-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card5-front.jpg": "adc416254d67b8a9d6586aa649927c389ed3d2f938b31b25a433fa7ad4bc28f5",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card6-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card6-front.jpg": "67036a81aa0e5975864455842b126a855343d473c5464eb4e3cf357fc20999f2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card7-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card7-front.jpg": "913d6e9909550946ed193eb84f0f6a74b4b75f9669cc9503c0c4a189353e526e",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card8-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card8-front.jpg": "117f03d912624d0d985a4e8b577714280d775a21018e3424f254bea1afcdd2dd",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card9-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-card9-front.jpg": "3f94121d6bbc9bd694e96bf98ebb385e8c1856eb84ac6a3f2acd63eb977abbc7",
+        "output/death-korps/cards/operatives_selection/death-korps-operative-selection-front.jpg": "a3b075d786282b2ea6f5cc7438636d2d7d1ae0d73483ec6c0af6a62780ce5455",
+        "output/death-korps/cards/strategy_ploys/death-korps-clear-the-line-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/strategy_ploys/death-korps-clear-the-line-front.jpg": "7976921670c98b0a69e815d1c3fb70f1df0cc8139ef7759a8c700d17973e9b03",
+        "output/death-korps/cards/strategy_ploys/death-korps-regroup-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/strategy_ploys/death-korps-regroup-front.jpg": "cc7556f062a6a8fa1741ed3518b6962b8b16d72d1695a1a89f3f9b8e511ba9a0",
+        "output/death-korps/cards/strategy_ploys/death-korps-siege-warfare-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/strategy_ploys/death-korps-siege-warfare-front.jpg": "68dc5bf07ce40d2fbe4fd5902b4dd6f8b144ee8419315e9ad80431fbf1034070",
+        "output/death-korps/cards/strategy_ploys/death-korps-take-cover-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/strategy_ploys/death-korps-take-cover-front.jpg": "485c5c00a8e58d55cfdff9cd8be5375736ec317409309d1304249dcc42c517a2",
+        "output/death-korps/cards/token_guide/death-korps-token-guide-back.jpg": "5eac2004547877e8e8b1596543a55c59f48aa15791288a88f48e002b5cb551a2",
+        "output/death-korps/cards/token_guide/death-korps-token-guide-front.jpg": "adc416254d67b8a9d6586aa649927c389ed3d2f938b31b25a433fa7ad4bc28f5",
+        "output/death-korps/cardbox/death-korps-card-box-texture.jpg": "a2f979a0662e316c2b14fa1dc86b9709457cb8961461c8cec89b6c1812dfa197",
+        "output/death-korps/cardbox/death-korps-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/death-korps/tokens/death-korps-bruiser.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-bruiser.png": "3b95d13b53a9eb9e01463dc88edbb8a1e53e772976c38a5244a1d830f3ba200e",
+        "output/death-korps/tokens/death-korps-dig-in.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-dig-in.png": "5ad60f6e10e17f41ab97e8d97b9624ca1ac2f6c5879b02ebff78441bc8a27b2c",
+        "output/death-korps/tokens/death-korps-fix-bayonets.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-fix-bayonets.png": "fe0b52b34e6fa98ad80e5fb4d2cae8c2946767cf2b9c1705eef8afff57a06daa",
+        "output/death-korps/tokens/death-korps-gas.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-gas.png": "b03825d94b3041bb896245a0e4d6a7d17dbb686c456e5416f3bf388e24b818e6",
+        "output/death-korps/tokens/death-korps-medic.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-medic.png": "59a8be12779da700351acedcbd76a3e175371cf8ab87633d1550f3bbe81f2c5b",
+        "output/death-korps/tokens/death-korps-mine.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-mine.png": "666f8f7d69de9e99d984b5506f82192c879f4c5b44f21215f0f3d4f722344db4",
+        "output/death-korps/tokens/death-korps-move-move-move.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-move-move-move.png": "a6a357de4471a2bbd166751d0955963cf50b1ef45c2e9780de094277787c6996",
+        "output/death-korps/tokens/death-korps-remote-detonator.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-remote-detonator.png": "f8e4a672fab993fcfebd9ea0e4a0e82c69044a0ea5fb7d5bb5f3dec5b44616bd",
+        "output/death-korps/tokens/death-korps-spot.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-spot.png": "f15a388a242ba6917536034aba12172f6c9194f748e0b0494381ae8c0b9f2e6f",
+        "output/death-korps/tokens/death-korps-take-aim.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/death-korps/tokens/death-korps-take-aim.png": "1dff396ce9ef423fa424d248753060cb299d4c6058f9f9920377c1e0fefe6707",
+        "output/death-korps/tokens/tokenbag/death-korps-token-bag-icon.png": "327fcf528892e49d2857839b9b9082bf4a42cde2fa2c9f1250a5afd25ee018c1",
+        "output/death-korps/tokens/tokenbag/death-korps-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/death-korps/dice/death-korps-dice-dark.jpg": "ffc2c203212aeebe9b60145c957ba4c30108e2f1358342d8f42edecd13e8a0f1",
+        "output/death-korps/dice/death-korps-dice-light.jpg": "4899676f10963a9730f2b0ce55ce44920c7cf7f3e91f5de791e1e4bc26b30c5a",
+        "output/death-korps/dice/death-korps-dice-team.jpg": "50a7cc0a56f42ccf0848381951331cecc26d2a8c1a6274a31ca51bf8c756b441",
+        "output/death-korps/data/death-korps-team-data.json": "aa5b63f59a8a382dcce3da71bbbc3b2db56a24233de85be6c76b3cbb0dc00aea",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "operatives-selection": {
+          "hash": "683648cd01e49c680c97558564cdf27de963a2e52b6a16de3d758c4adf721fcd",
+          "outputs": [
+            "layers/kt-app/extracted/death-korps/cards/operatives-selection/death-korps-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/death-korps/cards/operatives-selection/death-korps-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:02:47.029710+00:00"
+        },
+        "datacards": {
+          "hash": "aed4c761030e274d9686fe95ba6864edf8510b5d4f4aef482963549ed7b66a42",
+          "outputs": [
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_0.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_1.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_2.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_3.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_4.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_5.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_6.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_7.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_8.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_9.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_10.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_11.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_12.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_13.pdf",
+            "layers/kt-app/extracted/death-korps/cards/datacards/death-korps-datacards-page_14.pdf"
+          ],
+          "modified": "2026-07-06T16:09:33.217747+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "32d54d30525f997e7fcab2ca687a3ee40856663758e7e991403fe6b3ada90631",
+          "outputs": [
+            "layers/kt-app/extracted/death-korps/cards/firefight-ploys/death-korps-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/death-korps/cards/firefight-ploys/death-korps-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/death-korps/cards/firefight-ploys/death-korps-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/death-korps/cards/firefight-ploys/death-korps-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:10:17.935327+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "782821b3b3afe7dd0d9d7ba6d0e08a9d9a500bd64762c3ad244ef4a9c4020b29",
+          "outputs": [
+            "layers/kt-app/extracted/death-korps/cards/strategy-ploys/death-korps-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/death-korps/cards/strategy-ploys/death-korps-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/death-korps/cards/strategy-ploys/death-korps-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/death-korps/cards/strategy-ploys/death-korps-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:10:51.363158+00:00"
+        },
+        "faction-rules": {
+          "hash": "cda718c3eda7ede761df6d71228d9488b3572f3d233ade5c44731d6fe12dc294",
+          "outputs": [
+            "layers/kt-app/extracted/death-korps/cards/faction-rules/death-korps-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/death-korps/cards/faction-rules/death-korps-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/death-korps/cards/faction-rules/death-korps-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/death-korps/cards/faction-rules/death-korps-faction-rules-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:11:05.855064+00:00"
+        },
+        "equipment": {
+          "hash": "95e837750b1e67f2bd7dc0b98d7251d82dd565bbea2150b6a66be1b081614467",
+          "outputs": [
+            "layers/kt-app/extracted/death-korps/cards/equipment/death-korps-equipment-page_0.pdf",
+            "layers/kt-app/extracted/death-korps/cards/equipment/death-korps-equipment-page_1.pdf",
+            "layers/kt-app/extracted/death-korps/cards/equipment/death-korps-equipment-page_2.pdf",
+            "layers/kt-app/extracted/death-korps/cards/equipment/death-korps-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:11:27.487936+00:00"
+        },
+        "cards": {
+          "hash": "1743df415a29476d1d151c01f7ccbabad76b0dfb22d36c4b921a83ab8320564d",
+          "outputs": [
+            "layers/warcom/extracted/death-korps/cards/death-korps_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page08_card4_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page09_card1_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page09_card2_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page09_card3_portrait.pdf",
+            "layers/warcom/extracted/death-korps/cards/death-korps_page09_card4_portrait.pdf"
+          ],
+          "modified": "2026-07-08T19:04:33.991624+00:00"
+        }
+      },
+      "completed": "2026-07-08T19:04:33.991664+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/death-korps-structure.json",
+          "hash": "16311c72347cd41657202678c644e5d9f10a1fdb9ce0443f19553c5040016e72",
+          "modified": "2026-08-29T18:41:10.236817+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card1_landscape.pdf": "9c956610a72a0021049265ddf8d1a02d1794510cb159c79f716736a148439ede",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card2_landscape.pdf": "1146769de1ec4d483f726cec69dde6e0cf7154177fac3d4bfca9ab58d1fe9000",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card3_landscape.pdf": "d52d7b6490b1f6c0bc951abfc16dab79b2e888c234bc2e3a862f92974be3739a",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card4_landscape.pdf": "0aed9a84a142f8894adef8857462388de8460934ff0339a774a66c316ef7d5cf",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card1_landscape.pdf": "daf5625777707a53a093087d49e83c1773c909004a10c832ed0d7a6847276493",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card2_landscape.pdf": "c9109f47db2467901fef45f47b112b0ce2565eb486fa889428df3b52bf8a7638",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card3_landscape.pdf": "a0f46c9c6b3a62cccf5b0b4f7a4951060577b2fd548ebff5fa8a384feef9bc40",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card4_landscape.pdf": "0349f80cfa99cdda668e5b288f7667dd8398372e6c02e53edc2bdd3d857fdd5b",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card1_landscape.pdf": "b96ee2f4e91e599578c67aa052dafa21e1326ce8b279caf97db02207661a26e9",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card2_landscape.pdf": "f02304498302a9bf5545c86b96b4f226b184577969ddc817725fd9dfd73760b6",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card3_landscape.pdf": "d1004b399998f35fd2bba5b651cd3751fcbace163e15cc661c00a4d6d1edd06c",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card4_landscape.pdf": "2fe57314f27ea891634bd4a64927e402fd94da7cf489156bbcfbbc73fc843bc2",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card1_landscape.pdf": "6cf8e9f2c8bef56b26b6c237aefbe96ca18da176e6ecd534dfbc4d977dfb8a61",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card2_landscape.pdf": "9fa8ba7067d0b32fda99acee12ac75dd2cd78bab15f40e415063134cb6db137d",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card3_landscape.pdf": "92f90b40a86f07c2a64df3244fd8368dfaa65fed7714df429a6ff3672a8d57c7",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card4_landscape.pdf": "3563912396847a6846a7c9ff4ab31fd2f0c9e9a916be26e99473e3f4e847514c",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card1_portrait.pdf": "af4983c7aa3f67109e48f21aa455fdaeb15adf50d9d330bb0c4cc67092604f2d",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card2_portrait.pdf": "e620ddcf3eed14282d451114cf35a8c538e953f9ded82d4d1ef875e3b0f6078e",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card3_portrait.pdf": "a999f7fb4f74b35d412330908b49535e9b6dfff831eff237795c201af84e6171",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card4_portrait.pdf": "0a6bc199ae20f0049e133d85322be9a30485ba6c9a60ce45b9ae6e964d6c3ae6",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card1_portrait.pdf": "4f9cbe5d5bf6081bf2d58a90a76f63bc06836c3773011fee044a05221f2b02f6",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card2_portrait.pdf": "b094f3c72d695f8984ebb50852c2a90b62d11514d15bb5168d2389187d48c220",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card3_portrait.pdf": "50625f45dccf003dc8c42d4f797d6b23ff1a92b1b836946e3c08c0d002cca2e7",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card4_portrait.pdf": "99cd75b22b202c592fa5cdb2c7f9e554ba125bbdfca8df26322b135b7989e6dc",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card1_portrait.pdf": "eedd3b891e631ff5ed72a3ebc14e9aa267d730069dbc696580f94af2599c0cfd",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card2_portrait.pdf": "a0f49900dbe5cfcf10fdae1513921c1605be89cd9474300d6c4e67027d5a4907",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card3_portrait.pdf": "14f3316bc27bb39c03de7e50cea25494635400c135f50ce70706c7f1ddc09e29",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card4_portrait.pdf": "153cb10e36825755be21d0862c5b5e9eb22fffbb041d55d2c1d0862954ece1ef",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card1_portrait.pdf": "aa628a68fe0c3d70d1a9f99a2f121d9e052d15a9a924fd1fb977addc156c824f",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card2_portrait.pdf": "c2ead5589256b107a0f5e53f2d46bff8704c65e92035bbad3c492e937a024dda",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card3_portrait.pdf": "b5df4c86a95ae8174ef7143abecdd0648f480518e3bbb93c3cf78921597af546",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card4_portrait.pdf": "a80794210e9d630d705b3a40d0791d254a80a6a10f0e17527176f9fc32e7c564",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page09_card1_portrait.pdf": "968994ed3e34b175fec81522ea7c7004d741d6131bfac2f6813632284771a857",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page09_card2_portrait.pdf": "882050bf6502e42a8933938186dabbd28613428f76718b6d7d7ec19f75415f1f",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page09_card3_portrait.pdf": "e08428ed90799a321c58f9ec89a8c1c2123c750fe64d692424d9e230106042f4",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page09_card4_portrait.pdf": "292dc215d08074deb38cc10646a31d894ada9baab43d9752c3b36284ab6ee517"
+      },
+      "completed": "2026-08-29T18:41:11.159424+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/death-korps/manifest.json",
+          "hash": "16311c72347cd41657202678c644e5d9f10a1fdb9ce0443f19553c5040016e72",
+          "modified": "2026-08-29T18:41:11.957093+00:00"
+        },
+        "death-korps-datacard-death-korps-watchmaster.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-watchmaster.pdf",
+          "hash": "ff39cc534d4c8b71e7aaa82c675144aa3ac4b992e0fdccb84cca1c1a1211b36e",
+          "modified": "2026-07-12T19:06:36.473302+00:00"
+        },
+        "death-korps-datacard-death-korps-bruiser.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-bruiser.pdf",
+          "hash": "13372f0979ee51fe194b6a94e2d348d8b734e03696cabd24be0934229ae9f3e4",
+          "modified": "2026-07-12T19:06:36.483867+00:00"
+        },
+        "death-korps-datacard-death-korps-confidant.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-confidant.pdf",
+          "hash": "9bab0222d5256f880fb210cd9ba08b6609832391ceb074ba5f78f47fab66937a",
+          "modified": "2026-07-12T19:06:36.495424+00:00"
+        },
+        "death-korps-datacard-death-korps-gunner.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-gunner.pdf",
+          "hash": "c60c5f082f05ca0dbef64bcced3ecf40004ab9a5cdb5a6391d860aee630c513d",
+          "modified": "2026-07-12T19:06:36.506811+00:00"
+        },
+        "death-korps-datacard-death-korps-medic.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-medic.pdf",
+          "hash": "9645aa13f74e75edf62d88e513a7de078c15b897ba152c34f89183b12ced10c9",
+          "modified": "2026-07-12T19:06:36.518369+00:00"
+        },
+        "death-korps-datacard-death-korps-sapper.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-sapper.pdf",
+          "hash": "9b4aa1803cd3092b43f2add967726abdc574719f4d9bfc8e039eacdd762b941a",
+          "modified": "2026-07-12T19:06:36.529122+00:00"
+        },
+        "death-korps-datacard-death-korps-sniper.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-sniper.pdf",
+          "hash": "98eb667f643e6643f5794eccb5fff8dc4c64bf5750994038bb180a8b64e63c21",
+          "modified": "2026-07-12T19:06:36.540302+00:00"
+        },
+        "death-korps-datacard-death-korps-spotter.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-spotter.pdf",
+          "hash": "06e65d301d01c8874c86d8823076844d5d10eef60c23a8a8db885907c8ddcaa9",
+          "modified": "2026-07-12T19:06:36.550712+00:00"
+        },
+        "death-korps-datacard-death-korps-trooper.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-trooper.pdf",
+          "hash": "badb969df335d558169518f8607f1d647787ff3d8cc0cde989214f472ef7859d",
+          "modified": "2026-07-12T19:06:36.562172+00:00"
+        },
+        "death-korps-datacard-death-korps-veteran.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-veteran.pdf",
+          "hash": "e2f2303a6ac96538c7e04231a4046bd2d72f5bcd01b5bb66407a0c63b600004a",
+          "modified": "2026-07-12T19:06:36.580613+00:00"
+        },
+        "death-korps-datacard-death-korps-vox-operator.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-vox-operator.pdf",
+          "hash": "e0b70aa3b1b0ab020695a9fcaa0e0c24b27a2eed7f5b928d8faa7a248d9f600a",
+          "modified": "2026-07-12T19:06:36.599480+00:00"
+        },
+        "death-korps-datacard-death-korps-zealot.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-death-korps-zealot.pdf",
+          "hash": "222978ca23487d6b0e3496caaeef471b0db5c66433bf9c94705966027e4e117e",
+          "modified": "2026-07-12T19:06:36.620260+00:00"
+        },
+        "death-korps-equipment-chronometer.pdf": {
+          "path": "layers/integration/death-korps/death-korps-equipment-chronometer.pdf",
+          "hash": "b6032051afbdcd5dcf880e0fa34372f89000f283c846a0821fb73798d546e9bd",
+          "modified": "2026-07-12T19:06:36.630070+00:00"
+        },
+        "death-korps-equipment-comm-beads.pdf": {
+          "path": "layers/integration/death-korps/death-korps-equipment-comm-beads.pdf",
+          "hash": "440b396e7e9273e8a4851b60ecd35ef06f4787ed4d2faf45841914903dd11c0d",
+          "modified": "2026-07-12T19:06:36.638982+00:00"
+        },
+        "death-korps-equipment-hand-axes.pdf": {
+          "path": "layers/integration/death-korps/death-korps-equipment-hand-axes.pdf",
+          "hash": "2a1d5ff934054293263df7eba04fb353a64e02f8f0b9a6c6a140c5fd8e399a6c",
+          "modified": "2026-07-12T19:06:36.656287+00:00"
+        },
+        "death-korps-equipment-gas-bombardment.pdf": {
+          "path": "layers/integration/death-korps/death-korps-equipment-gas-bombardment.pdf",
+          "hash": "ff8a524bdb97edaaa133d179dda421e797afe21090135d371c304c3df3c79fcc",
+          "modified": "2026-07-12T19:06:36.673553+00:00"
+        },
+        "death-korps-faction-rule-guardsmen-orders-1.pdf": {
+          "path": "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-1.pdf",
+          "hash": "eda666820d8be93116cde7cb8dd13eec10e36c0f5b20f444137d2de6edb129b4",
+          "modified": "2026-07-12T19:06:36.684237+00:00"
+        },
+        "death-korps-faction-rule-guardsmen-orders-2.pdf": {
+          "path": "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-2.pdf",
+          "hash": "90805cd5121da017ac958dbb5c93810f5419bd422b163558191055b6880ee08a",
+          "modified": "2026-07-12T19:06:36.695769+00:00"
+        },
+        "death-korps-faction-rule-guardsmen-orders-3.pdf": {
+          "path": "layers/integration/death-korps/death-korps-faction-rule-guardsmen-orders-3.pdf",
+          "hash": "e18e21ffeddc5dc4f8b92c01a815b3289c54479ba8a672ef643ee06cd916c9cf",
+          "modified": "2026-07-12T19:06:36.707490+00:00"
+        },
+        "death-korps-token-guide-token-guide.pdf": {
+          "path": "layers/integration/death-korps/death-korps-token-guide-token-guide.pdf",
+          "hash": "d2364bf42d4b30c354e7e8156c940ee86469f20cb8410d11d39cc464b8f2b0f5",
+          "modified": "2026-07-12T19:06:36.718401+00:00"
+        },
+        "death-korps-firefight-ploy-inspirational-leadership.pdf": {
+          "path": "layers/integration/death-korps/death-korps-firefight-ploy-inspirational-leadership.pdf",
+          "hash": "142c17fa13c5453bd8346b967316fd0598bea02a207c76604a1cf016be819e11",
+          "modified": "2026-07-12T19:06:36.727885+00:00"
+        },
+        "death-korps-firefight-ploy-combined-arms.pdf": {
+          "path": "layers/integration/death-korps/death-korps-firefight-ploy-combined-arms.pdf",
+          "hash": "b47c0ed2fc18764fe285814c38445792afb56ad1010151d2099708a9449beccd",
+          "modified": "2026-07-12T19:06:36.736871+00:00"
+        },
+        "death-korps-firefight-ploy-in-life-shame.pdf": {
+          "path": "layers/integration/death-korps/death-korps-firefight-ploy-in-life-shame.pdf",
+          "hash": "e2fe714970d65d79190bcac17046c058e390bb1e53e42932c5396d826d926430",
+          "modified": "2026-07-12T19:06:36.745519+00:00"
+        },
+        "death-korps-firefight-ploy-in-death-atonement.pdf": {
+          "path": "layers/integration/death-korps/death-korps-firefight-ploy-in-death-atonement.pdf",
+          "hash": "116a615a611b34b07eca1c2d5ccea409aa6be9998f6ee4bf513e07c28d72152f",
+          "modified": "2026-07-12T19:06:36.755089+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection.pdf",
+          "hash": "bd993d0efe1e284e411868e06011f600e2f11907f1799e9f5585fcda63c917e5",
+          "modified": "2026-07-12T19:06:36.765585+00:00"
+        },
+        "death-korps-strategy-ploy-siege-warfare.pdf": {
+          "path": "layers/integration/death-korps/death-korps-strategy-ploy-siege-warfare.pdf",
+          "hash": "00ed2c7024ab24f9b04bb2f1d1766963564b79029faec52b7ad47176cf1e68e0",
+          "modified": "2026-07-12T19:06:36.778646+00:00"
+        },
+        "death-korps-strategy-ploy-take-cover.pdf": {
+          "path": "layers/integration/death-korps/death-korps-strategy-ploy-take-cover.pdf",
+          "hash": "5e689d4cc98f857113f0a274b1c95186a57cb50dc71adaaa2c0acc11c73fd23e",
+          "modified": "2026-07-12T19:06:36.791371+00:00"
+        },
+        "death-korps-strategy-ploy-clear-the-line.pdf": {
+          "path": "layers/integration/death-korps/death-korps-strategy-ploy-clear-the-line.pdf",
+          "hash": "6853fe270d49051247d2c8d12943e071e9127ce5a368c3c08f810212d3bbdfa5",
+          "modified": "2026-07-12T19:06:36.802617+00:00"
+        },
+        "death-korps-strategy-ploy-regroup.pdf": {
+          "path": "layers/integration/death-korps/death-korps-strategy-ploy-regroup.pdf",
+          "hash": "984c1c7f2f6de964a9293eaf9743c10b928c40cc5715647ce731a8da472c0bbd",
+          "modified": "2026-07-12T19:06:36.814582+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "ea190a93194e8dcea90dca60a87d57aeb7e6f8065b18167d27fad8a5179b81da",
+          "modified": "2026-08-29T18:41:12.378006+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "5b840cfa1881d8cf76251f57f455b3b025a3148924e7fddda96899b5902eec0b",
+          "modified": "2026-08-29T18:41:12.395620+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "edefad489395a18ccc975478d873451fb2abb194fb8fd38656ed447ef330d61d",
+          "modified": "2026-08-29T18:41:12.423846+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "a2d27b096dc916dc663e41f751fcd55773106527376b3812fced6dd01dc45618",
+          "modified": "2026-08-29T18:41:12.442063+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "51313f3b69d2a060b56d7423d0f76de5cdcd1efcba19dc7ced8c880f28727113",
+          "modified": "2026-08-29T18:41:12.467987+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "c9cf05fd84fb7d24a03411fd5bfb81ac496dd9b3905ff9ebeb4de0344da0e25d",
+          "modified": "2026-08-29T18:41:12.488678+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "e4abb6674cb02d087006223440a19ec0d29e4b046afe3afd722ffb1875d76482",
+          "modified": "2026-08-29T18:41:12.514865+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "3c42559fd7f3c691351eaa54f7e11fab6dd2d216625f5f3336d7264a0f81efd4",
+          "modified": "2026-08-29T18:41:12.531026+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "433b761a7a7e45ca922c929c217c33540670f1a73ea9702e6aa246ce891637e4",
+          "modified": "2026-08-29T18:41:12.809547+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "4b6e0bfd238a03afc888fe330a3d7def9a62df207750bdc351127ffc912fae16",
+          "modified": "2026-08-29T18:41:13.275074+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "4c7f15540b11b82398dc64834ff6a05d35fd167ea0f3cf959b7273974f465f49",
+          "modified": "2026-08-29T18:41:13.465949+00:00"
+        },
+        "death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": {
+          "path": "layers/integration/death-korps/death-korps-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf",
+          "hash": "b1f3607999cf789d6a0292054a0918e897205d921a9365969850de9946fa26ba",
+          "modified": "2026-08-29T18:41:13.702994+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-1.pdf",
+          "hash": "dc0c6b89e9fc9738b03c879d8530a520c5c0b7b48418e1576be2910936f98b47",
+          "modified": "2026-08-29T18:41:13.754364+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-2.pdf",
+          "hash": "633a1f1aeaafb29f5ba3aa06a878026d44a2ba88e380816c00f82e9ed36eb6b6",
+          "modified": "2026-08-29T18:41:14.360694+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-3.pdf",
+          "hash": "c27d890b8676ebbc03b5d326ce8f2e27576051a39a863d6dc666039b15a87da0",
+          "modified": "2026-08-29T18:41:14.387882+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-4.pdf",
+          "hash": "86ba13218e7ed2a5a5782e3ef59a3a7074e659e0b970b4ecb927d3e9211c7c29",
+          "modified": "2026-08-29T18:41:14.401939+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-5.pdf",
+          "hash": "dc72d0358657a5d8fb4cd4639a1401775df8650e82b2634d89b148964783507d",
+          "modified": "2026-08-29T18:41:14.465770+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-6.pdf",
+          "hash": "8e2ca3ad9f23b9190f3b008d2d441aaacd8e60a020afc63d77f9aa170671ca33",
+          "modified": "2026-08-29T18:41:14.494152+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-7.pdf",
+          "hash": "ea735ca0317e5c93a36c3c39c9cfb19c2fd1681ab04536bb446a2d55d5fc747e",
+          "modified": "2026-08-29T18:41:15.056046+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-8.pdf",
+          "hash": "88982bdc4b9c1b3f3929fa3203108012fd644ef306d4cc2b15e3494e9d3c396b",
+          "modified": "2026-08-29T18:41:15.144246+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-9.pdf",
+          "hash": "cac8c060f27d309f718ba985f8ad1267e8b23dbf3bbe094eca6b62666f3f19b2",
+          "modified": "2026-08-29T18:41:15.548045+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-10.pdf",
+          "hash": "3750a81050d6fda21a7223e39164e778bcaa1df8292f8a420ff37773ef96e647",
+          "modified": "2026-08-29T18:41:16.035742+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-11.pdf",
+          "hash": "030987e64566fade4d2143158790f96f5f196ecf967c9281f3063f17ebe9eed7",
+          "modified": "2026-08-29T18:41:16.117341+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-12.pdf",
+          "hash": "e3ed709522865360e6f7e1353ba20357ac8320a49799c37b4fbe9427eadf0bc5",
+          "modified": "2026-08-29T18:41:16.134410+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-13.pdf",
+          "hash": "4c7d777c15f49457619f995b983eb971ae76a254722cb465b06b0ee46d83b573",
+          "modified": "2026-08-29T18:41:16.151465+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-14.pdf",
+          "hash": "21ccbace305d14ad2486798bc2bd9ea42ef9e63bc6a321c197c7d44c28cfecb6",
+          "modified": "2026-08-29T18:41:16.165598+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-15.pdf",
+          "hash": "a12519c9fd7dceea3dcd6c33fc9f93c84c8b0f8f5ce519bcfbc87ad73bd40891",
+          "modified": "2026-08-29T18:41:16.181255+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-16.pdf",
+          "hash": "214daf091723a3876004c121fd64f0d03e2220a518a2dd117097d287f261a395",
+          "modified": "2026-08-29T18:41:16.199025+00:00"
+        },
+        "death-korps-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/death-korps/death-korps-operatives-selection-operative-selection-17.pdf",
+          "hash": "3f2a1f02e7d510a73e69e88e8dc9bf381b0ab2420ce76930e39d53106c039932",
+          "modified": "2026-08-29T18:41:16.220282+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/death-korps-structure.json": "16311c72347cd41657202678c644e5d9f10a1fdb9ce0443f19553c5040016e72",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card1_landscape.pdf": "9c956610a72a0021049265ddf8d1a02d1794510cb159c79f716736a148439ede",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card2_landscape.pdf": "1146769de1ec4d483f726cec69dde6e0cf7154177fac3d4bfca9ab58d1fe9000",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card3_landscape.pdf": "d52d7b6490b1f6c0bc951abfc16dab79b2e888c234bc2e3a862f92974be3739a",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page01_card4_landscape.pdf": "0aed9a84a142f8894adef8857462388de8460934ff0339a774a66c316ef7d5cf",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card1_landscape.pdf": "daf5625777707a53a093087d49e83c1773c909004a10c832ed0d7a6847276493",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card2_landscape.pdf": "c9109f47db2467901fef45f47b112b0ce2565eb486fa889428df3b52bf8a7638",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card3_landscape.pdf": "a0f46c9c6b3a62cccf5b0b4f7a4951060577b2fd548ebff5fa8a384feef9bc40",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page02_card4_landscape.pdf": "0349f80cfa99cdda668e5b288f7667dd8398372e6c02e53edc2bdd3d857fdd5b",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card1_landscape.pdf": "b96ee2f4e91e599578c67aa052dafa21e1326ce8b279caf97db02207661a26e9",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card2_landscape.pdf": "f02304498302a9bf5545c86b96b4f226b184577969ddc817725fd9dfd73760b6",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card3_landscape.pdf": "d1004b399998f35fd2bba5b651cd3751fcbace163e15cc661c00a4d6d1edd06c",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page03_card4_landscape.pdf": "2fe57314f27ea891634bd4a64927e402fd94da7cf489156bbcfbbc73fc843bc2",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card1_landscape.pdf": "6cf8e9f2c8bef56b26b6c237aefbe96ca18da176e6ecd534dfbc4d977dfb8a61",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card2_landscape.pdf": "9fa8ba7067d0b32fda99acee12ac75dd2cd78bab15f40e415063134cb6db137d",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page04_card3_landscape.pdf": "92f90b40a86f07c2a64df3244fd8368dfaa65fed7714df429a6ff3672a8d57c7",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card1_portrait.pdf": "af4983c7aa3f67109e48f21aa455fdaeb15adf50d9d330bb0c4cc67092604f2d",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card2_portrait.pdf": "e620ddcf3eed14282d451114cf35a8c538e953f9ded82d4d1ef875e3b0f6078e",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card3_portrait.pdf": "a999f7fb4f74b35d412330908b49535e9b6dfff831eff237795c201af84e6171",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page05_card4_portrait.pdf": "0a6bc199ae20f0049e133d85322be9a30485ba6c9a60ce45b9ae6e964d6c3ae6",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card1_portrait.pdf": "4f9cbe5d5bf6081bf2d58a90a76f63bc06836c3773011fee044a05221f2b02f6",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card2_portrait.pdf": "b094f3c72d695f8984ebb50852c2a90b62d11514d15bb5168d2389187d48c220",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card3_portrait.pdf": "50625f45dccf003dc8c42d4f797d6b23ff1a92b1b836946e3c08c0d002cca2e7",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page06_card4_portrait.pdf": "99cd75b22b202c592fa5cdb2c7f9e554ba125bbdfca8df26322b135b7989e6dc",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card1_portrait.pdf": "eedd3b891e631ff5ed72a3ebc14e9aa267d730069dbc696580f94af2599c0cfd",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card2_portrait.pdf": "a0f49900dbe5cfcf10fdae1513921c1605be89cd9474300d6c4e67027d5a4907",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card3_portrait.pdf": "14f3316bc27bb39c03de7e50cea25494635400c135f50ce70706c7f1ddc09e29",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page07_card4_portrait.pdf": "153cb10e36825755be21d0862c5b5e9eb22fffbb041d55d2c1d0862954ece1ef",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card1_portrait.pdf": "aa628a68fe0c3d70d1a9f99a2f121d9e052d15a9a924fd1fb977addc156c824f",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card2_portrait.pdf": "c2ead5589256b107a0f5e53f2d46bff8704c65e92035bbad3c492e937a024dda",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card3_portrait.pdf": "b5df4c86a95ae8174ef7143abecdd0648f480518e3bbb93c3cf78921597af546",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page08_card4_portrait.pdf": "a80794210e9d630d705b3a40d0791d254a80a6a10f0e17527176f9fc32e7c564",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page09_card1_portrait.pdf": "968994ed3e34b175fec81522ea7c7004d741d6131bfac2f6813632284771a857",
+        "layers/warcom/extracted/death-korps/cards/death-korps_page09_card2_portrait.pdf": "882050bf6502e42a8933938186dabbd28613428f76718b6d7d7ec19f75415f1f"
+      },
+      "completed": "2026-08-29T18:41:17.057995+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "1743df415a29476d1d151c01f7ccbabad76b0dfb22d36c4b921a83ab8320564d",
+          "outputs": [
+            "layers/integration/death-korps/artwork/death-korps-artwork-01.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-02.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-03.png",
+            "layers/integration/death-korps/artwork/death-korps-artwork-04.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-05.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-06.png",
+            "layers/integration/death-korps/artwork/death-korps-artwork-07.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-08.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-09.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-10.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-11.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-12.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-13.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-14.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-15.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-16.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-17.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-18.jpeg",
+            "layers/integration/death-korps/artwork/death-korps-artwork-metadata.json",
+            "layers/integration/death-korps/artwork/icons/death-korps-icon-landscape.jpg",
+            "layers/integration/death-korps/artwork/icons/death-korps-icon-portrait.jpg",
+            "layers/integration/death-korps/artwork/icons/death-korps-icon-token-transparent.png",
+            "layers/integration/death-korps/artwork/icons/death-korps-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:52:50.307029+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:52:50.307062+00:00"
+    }
+  }
+}

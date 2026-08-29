@@ -22,7 +22,14 @@ teams:
     faction: imperium
     army: adeptus-mechanicus
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 135
+    - 97
+    - 92
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Breach
       shape: round
@@ -42,15 +49,20 @@ teams:
     - name: Prioritised Acquisition
       shape: operative
       type: token
-    dice_back_color: [135, 97, 92]
-    dice_front_color: [255, 255, 255]
   blades-of-khaine:
     canonical_name: Blades of Khaine
     faction: xenos
     army: aeldari
     aliases:
     - blade-of-khaine
-    tokens_ready: true
+    dice_back_color:
+    - 255
+    - 255
+    - 255
+    dice_front_color:
+    - 110
+    - 152
+    - 148
     tokens:
     - name: Wraithbone Talisman
       shape: round
@@ -61,14 +73,19 @@ teams:
     - name: Rune of Prophecy
       shape: round
       type: token
-    dice_back_color: [255, 255, 255]
-    dice_front_color: [110, 152, 148]
   blooded:
     canonical_name: Blooded
     faction: chaos
     army: Renegade Guardsmen
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 70
+    - 36
+    - 41
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: A Name Whispered In Blood
       shape: operative
@@ -97,21 +114,24 @@ teams:
     - name: Under The Gaze Of The Gods
       shape: operative
       type: token
-    dice_back_color: [70, 36, 41]
-    dice_front_color: [255, 255, 255]
   brood-brothers:
     canonical_name: Brood Brothers
     faction: xenos
     army: tyranids
     aliases:
     - brood-brother
-    tokens_ready: true
+    dice_back_color:
+    - 120
+    - 97
+    - 128
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Crossfire
       shape: operative
       type: custom
-      tags:
-      - Stackable
     - name: Devoted
       shape: operative
       type: token
@@ -142,14 +162,19 @@ teams:
     - name: explosives
       shape: ''
       type: ''
-    dice_back_color: [120, 97, 128]
-    dice_front_color: [255, 255, 255]
   canoptek-circle:
     canonical_name: Canoptek Circle
     faction: xenos
     army: necrons
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 110
+    - 144
+    - 100
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Obelisk Node
       shape: round
@@ -169,15 +194,20 @@ teams:
     - name: Reanimate
       shape: operative
       type: token
-    dice_back_color: [110, 144, 100]
-    dice_front_color: [255, 255, 255]
   celestian-insidiants:
     canonical_name: Celestian Insidiant
     faction: imperium
     army: Adepta Sororitas
     aliases:
     - celestian-insidiant
-    tokens_ready: true
+    dice_back_color:
+    - 66
+    - 65
+    - 66
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Psyk-Out Grenades
       shape: round
@@ -215,8 +245,6 @@ teams:
     - name: Holy Example
       shape: operative
       type: token
-    dice_back_color: [66, 65, 66]
-    dice_front_color: [255, 255, 255]
   chaos-cult:
     canonical_name: Chaos Cult
     faction: chaos
@@ -244,7 +272,14 @@ teams:
     faction: xenos
     army: aeldari
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 17
+    - 116
+    - 123
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: erudite hunter
       shape: operative
@@ -264,15 +299,20 @@ teams:
     - name: warding shield
       shape: operative
       type: token
-    dice_back_color: [17, 116, 123]
-    dice_front_color: [255, 255, 255]
   death-korps:
     canonical_name: Death Korps
     faction: imperium
     army: imperial-guard
     aliases:
     - death-korp
-    tokens_ready: true
+    dice_back_color:
+    - 74
+    - 64
+    - 54
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Bruiser
       shape: operative
@@ -304,14 +344,19 @@ teams:
     - name: Take Aim
       shape: round
       type: token
-    dice_back_color: [74, 64, 54]
-    dice_front_color: [255, 255, 255]
   deathwatch:
     canonical_name: Deathwatch
     faction: imperium
     army: space-marines
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 69
+    - 69
+    - 71
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Ammunition Reserve
       shape: round
@@ -337,27 +382,25 @@ teams:
     - name: scrutavore servo-thrall
       shape: round
       type: token
-    dice_back_color: [69, 69, 71]
-    dice_front_color: [255, 255, 255]
   elucidian-starstriders:
     canonical_name: Elucidian Starstriders
     faction: imperium
     army: agents-of-the-imperium
     aliases:
     - elucidian-starstrider
-  exodite-dragon-masters:
-    canonical_name: Exodite Dragon Masters
-    faction: xenos
-    army: aeldari
-    aliases:
-    - exodite-dragon-master
-    - dragon-masters
   exaction-squad:
     canonical_name: Exaction Squad
     faction: imperium
     army: arbites
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 194
+    - 167
+    - 102
+    dice_front_color:
+    - 21
+    - 24
+    - 23
     tokens:
     - name: Aggressive
       shape: operative
@@ -386,15 +429,135 @@ teams:
     - name: nuncio-aquila
       shape: round
       type: marker
-    dice_back_color: [194, 167, 102]
-    dice_front_color: [21, 24, 23]
+  exodite-dragon-masters:
+    canonical_name: Exodite Dragon Masters
+    faction: xenos
+    army: aeldari
+    aliases:
+    - exodite-dragon-master
+    # Two per-model click counters injected onto the datacard via one context
+    # menu item. MOUNTED riders get Remaining Actions + Speed; other operatives
+    # (Drakolithe) get only Speed (auto-centred). Right-click = up, left = down.
+    operative_counters_menu: Add Exodite Counters
+    operative_counters:
+    # Left: inches of movement used (generated 1-12 -> counter-only art under a
+    # tokens/counters/ subfolder, so NO box dispensers). Centre: Speed (every
+    # operative). Right: Remaining Actions. Non-mounted (Drakolithe) get only
+    # Speed, auto-centred. Right-click = up, left = down.
+    - name: Movement Remaining
+      applies_to:
+      - MOUNTED
+      init: 12
+      min: 0
+      max: 12
+      generate:
+        background: exodite-dragon-masters-counter-bg.png
+    - name: Speed
+      applies_to: all
+      init: 1
+      min: 1
+      max: 3
+      states:
+      - value: 1
+        label: 'SPEED 3-'
+        token: exodite-dragon-masters-speed-3.png
+      - value: 2
+        label: 'SPEED 4+'
+        token: exodite-dragon-masters-speed-4.png
+      - value: 3
+        label: 'SPEED 7+'
+        token: exodite-dragon-masters-speed-7.png
+    - name: Remaining Actions
+      applies_to:
+      - MOUNTED
+      init: 4
+      min: 1
+      max: 4
+      states:
+      - value: 1
+        label: '1 Action'
+        token: exodite-dragon-masters-remaining-actions-1.png
+      - value: 2
+        label: '2 Actions'
+        token: exodite-dragon-masters-remaining-actions-2.png
+      - value: 3
+        label: '3 Actions'
+        token: exodite-dragon-masters-remaining-actions-3.png
+      - value: 4
+        label: '4 Actions'
+        token: exodite-dragon-masters-remaining-actions-4.png
+    # Auto-extracted tokens replaced by the custom-token variants below (and a
+    # blank misdetection). Dropped during extraction via exclude_tokens.
+    exclude_tokens:
+    - remaining-actions
+    - speed-speed-3-indicated-by-no
+    - token-01
+    tokens:
+    - name: Remaining Actions 1
+      shape: operative
+      type: token
+    - name: Remaining Actions 2
+      shape: operative
+      type: token
+    - name: Remaining Actions 3
+      shape: operative
+      type: token
+    - name: Remaining Actions 4
+      shape: operative
+      type: token
+    - name: Speed 3
+      shape: operative
+      type: token
+    - name: Speed 4
+      shape: operative
+      type: token
+    - name: Speed 7
+      shape: operative
+      type: token
+    - name: Sow the Seeds
+      shape: operative
+      type: token
+    - name: Spectral Nimbus
+      shape: operative
+      type: token
+    - name: Wails of the World
+      shape: operative
+      type: token
+    - name: Wind's Grace
+      shape: operative
+      type: token
+    - name: Song of Renewal
+      shape: operative
+      type: token
+    - name: Fated Shot
+      shape: operative
+      type: token
+    - name: Nexus Sentinel
+      shape: operative
+      type: token
+    - name: Dragonscale Mesh
+      shape: diamond
+      type: token
+    - name: Clan Talismans
+      shape: diamond
+      type: token
+    - name: Lileathan Crystal Matrices
+      shape: diamond
+      type: token
   farstalker-kinband:
     canonical_name: Farstalker Kinband
     faction: xenos
     army: T'au Empire
     aliases:
     - farstalker
-    tokens_ready: true
+    dice_back_color:
+    - 196
+    - 176
+    - 152
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Call The Kill
       shape: operative
@@ -426,15 +589,20 @@ teams:
     - name: Victory Shriek
       shape: operative
       type: token
-    dice_back_color: [196, 176, 152]
-    dice_front_color: [255, 255, 255]
   fellgor-ravagers:
     canonical_name: Fellgor Ravagers
     faction: chaos
     army: chaos-space-marines
     aliases:
     - fellgor-ravager
-    tokens_ready: true
+    dice_back_color:
+    - 129
+    - 102
+    - 101
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Brass Adornments
       shape: round
@@ -457,8 +625,6 @@ teams:
     - name: Pelting Firepower
       shape: operative
       type: token
-    dice_back_color: [129, 102, 101]
-    dice_front_color: [255, 255, 255]
   gellerpox-infected:
     canonical_name: Gellerpox Infected
     faction: chaos
@@ -470,22 +636,52 @@ teams:
     army: demons
     aliases:
     - goremonger
-    tokens_ready: true
+    faction_rule:
+      name: Gore Tanks
+      select: 1
+      applies_to:
+      - GOREMONGER
+      options:
+      - name: Empty
+        text: Cannot use Sanguavitae until the Gore Tank is increased.
+      - name: Half
+        text: Starting level. Can be increased or decreased by one level when rules
+          allow.
+      - name: Full
+        text: Cannot increase further. Decrease by one level to use Sanguavitae rules.
     operative_counter:
       name: Gore Tank
       max: 2
       min: 0
       operatives: all
+      states:
+      - value: 0
+        label: Empty
+        token: goremongers-gore-tank-empty.png
+      - value: 1
+        label: Half
+        token: goremongers-gore-tank-half.png
+      - value: 2
+        label: Full
+        token: goremongers-gore-tank-full.png
+    dice_back_color:
+    - 193
+    - 153
+    - 147
+    dice_front_color:
+    - 84
+    - 55
+    - 4
     tokens:
     - name: Bleeding
       shape: operative
       type: token
     - name: Bloody Cadaver
       shape: round
-      type: marker
+      type: both
     - name: Chaos Sigil
       shape: round
-      type: marker
+      type: token
     - name: Claim Skull
       shape: operative
       type: token
@@ -504,17 +700,22 @@ teams:
     - name: Wrist Chains
       shape: round
       type: token
-    dice_back_color: [193, 153, 147]
-    dice_front_color: [84, 55, 4]
   hand-of-the-archon:
     canonical_name: Hand of the Archon
     faction: xenos
     army: aeldari
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 50
+    - 42
+    - 56
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Pain
-      shape: round
+      shape: operative
       type: operative
     - name: Brutal Display
       shape: operative
@@ -540,15 +741,20 @@ teams:
     - name: Toxin Coating
       shape: round
       type: token
-    dice_back_color: [50, 42, 56]
-    dice_front_color: [255, 255, 255]
   hearthkyn-salvagers:
     canonical_name: Hearthkyn Salvagers
     faction: xenos
     army: leagues-of-votann
     aliases:
     - hearthkyn-salvager
-    tokens_ready: true
+    dice_back_color:
+    - 224
+    - 199
+    - 171
+    dice_front_color:
+    - 25
+    - 23
+    - 20
     tokens:
     - name: Attack
       shape: round
@@ -562,8 +768,6 @@ teams:
     - name: Grudge
       shape: operative
       type: custom
-      tags:
-      - KTUIStackable
     - name: Medic
       shape: operative
       type: token
@@ -588,15 +792,26 @@ teams:
     - name: Writ Of Claim
       shape: round
       type: token
-    dice_back_color: [224, 199, 171]
-    dice_front_color: [25, 23, 20]
   hernkyn-yaegirs:
     canonical_name: Hernkyn Yaegirs
     faction: xenos
     army: leagues-of-votann
     aliases:
     - hernkyn-yaegir
-    tokens_ready: true
+    dice_back_color:
+    - 121
+    - 145
+    - 159
+    dice_front_color:
+    - 255
+    - 255
+    - 255
+    # The single-image "Minefield" and "hy-pex mine" auto-extracted from the token
+    # guide are replaced by the two double-sided Minefield tiles below (HY-PEX shows
+    # the mine on its back, Blank shows plain), so drop both standalones.
+    exclude_tokens:
+    - Minefield
+    - hy-pex mine
     tokens:
     - name: Fallen Kin
       shape: round
@@ -604,9 +819,6 @@ teams:
     - name: Firestorm Bolt Shells
       shape: round
       type: token
-    - name: Minefield
-      shape: round
-      type: marker
     - name: Outright Conviction
       shape: operative
       type: token
@@ -619,21 +831,43 @@ teams:
     - name: Throwing Plasma Knife
       shape: operative
       type: token
-    - name: hy-pex mine
+    - name: Resourceful Points
       shape: round
-      type: marker
-    - name: Resourceful
+      type: token
+    # Double-sided Minefield markers (TTS Custom_Tile): front is the Minefield art,
+    # back differs per token. Finished textures live in
+    # config/teams/hernkyn-yaegirs/custom-tiles/ and are referenced directly (no
+    # extraction/compositing). See tts_impl._build_tile_token_objects.
+    - name: Minefield (HY-PEX)
       shape: round
-      type: custom
-    dice_back_color: [121, 145, 159]
-    dice_front_color: [255, 255, 255]
+      type: tile
+      label: Minefield
+      front: minefield-front.png
+      back: hy-pex-back.png
+      tags:
+      - KTUIMarker
+    - name: Minefield (Blank)
+      shape: round
+      type: tile
+      label: Minefield
+      front: minefield-front.png
+      back: blank-back.png
+      tags:
+      - KTUIMarker
   hierotek-circle:
     canonical_name: Hierotek Circle
     faction: xenos
     army: necrons
     aliases:
     - hierotek-circle
-    tokens_ready: true
+    dice_back_color:
+    - 57
+    - 62
+    - 64
+    dice_front_color:
+    - 124
+    - 188
+    - 88
     tokens:
     - name: Augment Weapon
       shape: operative
@@ -674,8 +908,6 @@ teams:
     - name: multi- dimensional vision
       shape: operative
       type: token
-    dice_back_color: [57, 62, 64]
-    dice_front_color: [124, 188, 88]
   hunter-clade:
     canonical_name: Hunter Clade
     faction: xenos
@@ -688,7 +920,14 @@ teams:
     army: imperial-navy
     aliases:
     - imperial-navy-breacher
-    tokens_ready: true
+    dice_back_color:
+    - 134
+    - 118
+    - 98
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Attack Order
       shape: round
@@ -723,15 +962,20 @@ teams:
     - name: Weld Shut
       shape: round
       type: marker
-    dice_back_color: [134, 118, 98]
-    dice_front_color: [255, 255, 255]
   inquisitorial-agents:
     canonical_name: Inquisitorial Agents
     faction: imperium
     army: inquisition
     aliases:
     - inquisitorial-agent
-    tokens_ready: true
+    dice_back_color:
+    - 102
+    - 66
+    - 69
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Chasten
       shape: operative
@@ -769,14 +1013,19 @@ teams:
     - name: tome-skull
       shape: round
       type: marker
-    dice_back_color: [102, 66, 69]
-    dice_front_color: [255, 255, 255]
   kasrkin:
     canonical_name: Kasrkin
     faction: imperium
     army: imperial-guard
     aliases: []
-    tokens_ready: true
+    dice_back_color:
+    - 80
+    - 95
+    - 62
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Auspex Scan
       shape: operative
@@ -796,15 +1045,20 @@ teams:
     - name: Tactical Command
       shape: operative
       type: token
-    dice_back_color: [80, 95, 62]
-    dice_front_color: [255, 255, 255]
   kommandos:
     canonical_name: Kommandos
     faction: xenos
     army: orks
     aliases:
     - kommando
-    tokens_ready: true
+    dice_back_color:
+    - 92
+    - 77
+    - 66
+    dice_front_color:
+    - 43
+    - 78
+    - 22
     tokens:
     - name: Breach
       shape: round
@@ -824,15 +1078,12 @@ teams:
     - name: Stun Grenade
       shape: round
       type: token
-    dice_back_color: [92, 77, 66]
-    dice_front_color: [43, 78, 22]
   legionaries:
     canonical_name: Legionaries
     faction: chaos
     army: chaos-space-marines
     aliases:
     - legionary
-    tokens_ready: true
     faction_rule:
       name: Marks of Chaos
       select: 1
@@ -842,6 +1093,14 @@ teams:
       - name: Slaanesh
       - name: Tzeentch
       - name: Undivided
+    dice_back_color:
+    - 255
+    - 255
+    - 255
+    dice_front_color:
+    - 68
+    - 89
+    - 54
     tokens:
     - name: Grisly
       shape: round
@@ -870,15 +1129,20 @@ teams:
     - name: Warded Armour
       shape: operative
       type: token
-    dice_back_color: [255, 255, 255]
-    dice_front_color: [68, 89, 54]
   mandrakes:
     canonical_name: Mandrakes
     faction: xenos
     army: aeldari
     aliases:
     - mandrake
-    tokens_ready: true
+    dice_back_color:
+    - 121
+    - 155
+    - 148
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Balefire
       shape: operative
@@ -907,20 +1171,15 @@ teams:
     - name: Shadow Glyph
       shape: round
       type: token
-    - name: soul harvest
+    - name: soul harvest points
       shape: round
       type: custom
-      tags:
-      - KTUIStackable
-    dice_back_color: [121, 155, 148]
-    dice_front_color: [255, 255, 255]
   murderwings:
     canonical_name: Murderwings
     faction: chaos
     army: chaos-space-marines
     aliases:
     - murderwing
-    tokens_ready: true
     tokens:
     - name: Damnation Points
       shape: octagon
@@ -946,7 +1205,6 @@ teams:
     army: aeldari
     aliases:
     - nemesis-claw
-    tokens_ready: true
     tokens:
     - name: Disconcerting Mimicry
       shape: operative
@@ -975,7 +1233,14 @@ teams:
     army: adeptus-astrates
     aliases:
     - novitiate
-    tokens_ready: true
+    dice_back_color:
+    - 187
+    - 172
+    - 144
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Blaze
       shape: operative
@@ -1001,23 +1266,24 @@ teams:
     - name: faith
       shape: round
       type: custom
-      tags:
-      - KTUIStackable
-    dice_back_color: [187, 172, 144]
-    dice_front_color: [255, 255, 255]
   pathfinders:
     canonical_name: Pathfinders
     faction: xenos
     army: T'au Empire
     aliases:
     - pathfinder
-    tokens_ready: true
+    dice_back_color:
+    - 255
+    - 255
+    - 255
+    dice_front_color:
+    - 231
+    - 191
+    - 178
     tokens:
     - name: Markerlight
       shape: operative
       type: custom
-      tags:
-      - KTUIStackable
     - name: Saviour Protocols
       shape: operative
       type: custom
@@ -1037,7 +1303,7 @@ teams:
       shape: round
       type: token
     - name: Photon Grenade
-      shape: operative
+      shape: round
       type: token
     - name: Pulse Accelerator
       shape: operative
@@ -1051,15 +1317,20 @@ teams:
     - name: multi- dimensional
       shape: operative
       type: token
-    dice_back_color: [255, 255, 255]
-    dice_front_color: [231, 191, 178]
   phobos-strike-team:
     canonical_name: Phobos Strike Team
     faction: imperium
     army: space-marines
     aliases:
     - phobos-strike-team
-    tokens_ready: true
+    dice_back_color:
+    - 93
+    - 108
+    - 142
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Auspex Scan
       shape: operative
@@ -1091,8 +1362,6 @@ teams:
     - name: omni-scrambler
       shape: operative
       type: token
-    dice_back_color: [93, 108, 142]
-    dice_front_color: [255, 255, 255]
   plague-marines:
     canonical_name: Plague Marines
     faction: chaos
@@ -1105,13 +1374,20 @@ teams:
     army: imperial-guard
     aliases:
     - ratling
-    tokens_ready: true
+    dice_back_color:
+    - 146
+    - 118
+    - 110
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Early Warning
       shape: operative
       type: token
     - name: Evade
-      shape: round
+      shape: operative
       type: token
     - name: Explosive Arsenal
       shape: operative
@@ -1123,7 +1399,7 @@ teams:
       shape: operative
       type: token
     - name: Purloined Rations
-      shape: operative
+      shape: round
       type: token
     - name: Scarper
       shape: operative
@@ -1137,15 +1413,20 @@ teams:
     - name: Tripwire
       shape: round
       type: marker
-    dice_back_color: [146, 118, 110]
-    dice_front_color: [255, 255, 255]
   raveners:
     canonical_name: Raveners
     faction: xenos
     army: tyranids
     aliases:
     - ravener
-    tokens_ready: true
+    dice_back_color:
+    - 50
+    - 42
+    - 63
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Tunnel
       shape: round
@@ -1162,8 +1443,6 @@ teams:
     - name: Subterranean Ambush
       shape: operative
       type: token
-    dice_back_color: [50, 42, 63]
-    dice_front_color: [255, 255, 255]
   sanctifiers:
     canonical_name: Sanctifiers
     faction: imperium
@@ -1171,7 +1450,14 @@ teams:
     aliases:
     - sanctifier
     - sancifier
-    tokens_ready: true
+    dice_back_color:
+    - 181
+    - 153
+    - 132
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Blaze
       shape: operative
@@ -1209,15 +1495,20 @@ teams:
     - name: Wreathe In Fire
       shape: operative
       type: token
-    dice_back_color: [181, 153, 132]
-    dice_front_color: [255, 255, 255]
   scout-squad:
     canonical_name: Scout Squad
     faction: imperium
     army: space-marines
     aliases:
     - scout-squad
-    tokens_ready: true
+    dice_back_color:
+    - 83
+    - 87
+    - 88
+    dice_front_color:
+    - 0
+    - 1
+    - 1
     tokens:
     - name: Auspex Scan
       shape: operative
@@ -1243,14 +1534,11 @@ teams:
     - name: Trip Alarm
       shape: round
       type: marker
-    dice_back_color: [83, 87, 88]
-    dice_front_color: [0, 1, 1]
   spectre-squad:
     canonical_name: Spectre Squad
     faction: imperium
     army: imperial-guard
     aliases: []
-    tokens_ready: true
     tokens:
     - name: Advanced Camouflage
       shape: operative
@@ -1288,7 +1576,14 @@ teams:
     army: imperial-guard
     aliases:
     - tempestus-aquilon
-    tokens_ready: true
+    dice_back_color:
+    - 101
+    - 131
+    - 132
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Detected
       shape: operative
@@ -1302,15 +1597,20 @@ teams:
     - name: Melta Bomb
       shape: operative
       type: token
-    dice_back_color: [101, 131, 132]
-    dice_front_color: [255, 255, 255]
   vespid-stingwings:
     canonical_name: Vespid Stingwings
     faction: xenos
     army: aeldari
     aliases:
     - vespid-stingwing
-    tokens_ready: true
+    dice_back_color:
+    - 93
+    - 130
+    - 139
+    dice_front_color:
+    - 1
+    - 0
+    - 1
     tokens:
     - name: Communion Point
       shape: round
@@ -1327,8 +1627,7 @@ teams:
     - name: Skytorch
       shape: round
       type: custom
-    dice_back_color: [93, 130, 139]
-    dice_front_color: [1, 0, 1]
+      size: 28
   void-dancer-troupe:
     canonical_name: Void Dancer Troupe
     faction: xenos
@@ -1347,7 +1646,14 @@ teams:
     army: space-marines
     aliases:
     - wolf-scout
-    tokens_ready: true
+    dice_back_color:
+    - 110
+    - 128
+    - 145
+    dice_front_color:
+    - 255
+    - 255
+    - 255
     tokens:
     - name: Call The Storm
       shape: operative
@@ -1379,14 +1685,11 @@ teams:
     - name: Wolfteeth Necklaces
       shape: operative
       type: token
-    dice_back_color: [110, 128, 145]
-    dice_front_color: [255, 255, 255]
   wrecka-krew:
     canonical_name: Wrecka Krew
     faction: xenos
     army: orks
     aliases: []
-    tokens_ready: true
     tokens:
     - name: Breach
       shape: round
@@ -1430,7 +1733,14 @@ teams:
     army: T'au Empire
     aliases:
     - xv26-stealth-battlesuit
-    tokens_ready: true
+    dice_back_color:
+    - 255
+    - 255
+    - 255
+    dice_front_color:
+    - 163
+    - 116
+    - 119
     tokens:
     - name: Ambush
       shape: round
@@ -1453,5 +1763,3 @@ teams:
     - name: Photon Grenade Launcher
       shape: operative
       type: token
-    dice_back_color: [255, 255, 255]
-    dice_front_color: [163, 116, 119]

@@ -1,0 +1,11 @@
+-- KT model-side extension (appended AFTER the healed KTUI extender script).
+-- This is OUR code that rides on top of the real extender model script, composed
+-- into the single KTUI_MODELSCRIPT our cards stamp onto a model.
+--
+-- Append-safety relies on the composer healing getWoundPanelWidth first.
+-- Slot for future model-side hooks (move/sprint/callout). When adding code, chain
+-- onLoad: `local prev = onLoad; function onLoad(...) if prev then pcall(prev, ...) end ... end`.
+
+-- START KT_EXTENSION_V1 --
+-- (no active extension code yet)
+-- END KT_EXTENSION_V1 --

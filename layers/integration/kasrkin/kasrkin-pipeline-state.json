@@ -1,0 +1,1707 @@
+{
+  "team": "kasrkin",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:39.389705+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/kasrkin/content/kasrkin-content.json",
+          "hash": "b9b5fb451aec9a167f92d064b827e441233cc92d7f6b92d8b695c3e9b33da088",
+          "modified": "2026-08-29T18:45:55.392050+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:46:07.289911+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/manifest.json": "eee6f2eb9de1d8f2dabc979d08b75b6965c96b912e463ea7a69b0c3e7ff919a9",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "25498b88f4abc885121a879622fe4a05b15589e2954064c0297188a0914d2db0",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "fe86c160ce5de9bb73d252c5efbc6c3e9a5887f469c68ab0d33dab6c5702a0ad",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "c135d160a4916ae54e539df5fc5fd5812dd0b2e49d19d12ce7d8b9d86f9f2fb2",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "20e5a341761fe335752e20838e822d600b428b11125bd78123dbb95dcdaf4ccb",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "f8891fba2d8a3e4542eaf09134b5cd04edb71e9cd2ed4f08925ebdab54208b3f",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "252c6f5ec13488cba48412a738229abbb1d0c1a83b7dc10551b29d2a493e3158",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "30bdc492a87654e9fc87b28c86ebd7b582d4f7ed3b48093c2b8bc0f22c3fd2e6",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "2cbd0971474fafe1366eb85d53d07bb120a9ba50c1b64402f57f9e687c7fad99",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "c74c3a443cd27cf474c8f701e6ec778b2377fc3e133de1a7fd044402df402470",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5d6e1e17b745b1cde2d7bb0ee5a1b3969de33a7d64aeaf58c6ba7bef813fc68b",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "9580e25216906bb7914f552d8502096c282613ced494e6fad547cdec0f7fa404",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-combat-medic.pdf": "da6ba48958789dc9860dc569cf814b7f64e29e008a8914492f4d0582432227b2",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-demo-trooper.pdf": "cd676aac6530ed40be08c7c2c3f6ebe00017e2a7f355f3b751c64bf6aefc712f",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-gunner.pdf": "14f59fa253836a971942c0d6451aa5261842fdf59a5ba658da8bca09c2a1fd03",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-recon-trooper.pdf": "407de41e7f3e16c1ac3d827e061301d308362e1c069d9ee217196e8ef97942b2",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sergeant.pdf": "c6c4b44baaa0c496b600cd7be8681f255406b91c9d7f1e930d620ce710d7816d",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sharpshooter.pdf": "63fee54047db8d43847ef006012d923a691e7db19d099679cd929c81778e3665",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-trooper.pdf": "a5dadac9ad1813831ccd42abe59aea1a1d5822b25c1ec5547e596d48ed65e399",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-vox-trooper.pdf": "e750a818a0619e14b20c86fb7cc9291a06f35bb675a74502e15ab17148873373",
+        "layers/integration/kasrkin/kasrkin-equipment-combat-daggers.pdf": "feaf84d06623d4b64466ee1b5d0269e1828680c0877a598caa962c61427ea2cf",
+        "layers/integration/kasrkin/kasrkin-equipment-foregrip.pdf": "6e03c78505572010164121f44388d28cea424474ddbc52df8ab0c66d6adc9758",
+        "layers/integration/kasrkin/kasrkin-equipment-long-range-scope.pdf": "5c38c15f4c7bae9071ffe5805a550fd53da8fb2d4cff6e3e1279a26c9a1582e4",
+        "layers/integration/kasrkin/kasrkin-equipment-relics-of-cadia.pdf": "d544cb83f087bc9964fa0365e1e3af0f122350adfe0e0f3e00d6271949503f0d",
+        "layers/integration/kasrkin/kasrkin-faction-rule-rapid-fire.pdf": "683114f2adf44ea3a321f86674d0bf9942ec4c147625e91683233ee1c39e4ac9",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-1.pdf": "68b78980908d043ba58935b2943a5efd5e04b9e7d1ad22fd2f9e7ca8b95c8050",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-2.pdf": "f8ec0b645b2056dafbf3c40daabd3dca544ec039ffd064e3e8f5565f8425cbed",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-3.pdf": "c81600e2156af0b146ebf94fa8bc3b1dc8ac1af358fa97b19a0c55b2fd3f2ceb",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-4.pdf": "85e9c0c67149eaf01b7828b0e156219a895330e76a09805145a1fa9ca11e9b01",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-5.pdf": "f22225d39288848654463b4dc98d6c7d8df26345b41f8f4b8d6b8d8a9fa98098",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-cover-retreat.pdf": "e37f053c18ed0d36ea8771df88f0dcfaf23f76df44fd2bbb5ad3dae2ee8b8155",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-give-no-ground.pdf": "3d60beae399244646f2988b22a97556e80631706f9d2a9001a0dfedc693062e7",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-neutralise-target.pdf": "16b3da37faeeb6e5923efe26405800a0323f1e1d25029bf883ad597c6c749e31",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-seize-the-initiative.pdf": "98647385dc252e7cf0994dab7dcc331f6a7c868089dfaa612dcf1d539ed2bf61",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-1.pdf": "9d2ee7867e1cfdd198c0b7a46adf5e9d095b6bf05379ba2e219327f325ddeacf",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-10.pdf": "91364a5624ece419261de3a9c1bf8d962fa383f2d9c069822451af69117b3da7",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-11.pdf": "2794fe1e49ef2c2506a1b5eff31128ce7db60678322b9b25732b4644c5237ba7",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-12.pdf": "fa5d5c7958e8ce0ffb9bd81655c79d045a97f56bff3e53d40b9bd5a318759eec",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-13.pdf": "7c2e27703487df039f7c23d648deda1a7d7ff85392170b48bc13c4104d179a8e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-14.pdf": "2b939704288f96dc894741dfa6194c60810a0e8f5da336d866e49b519d742d35",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-15.pdf": "c5dfdfcc85aebe5237d22834f2e85e397ae042b8cf9a36fd4d6e9eff1175be69",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-16.pdf": "da8c3a244370203c1d430eb96cd9c14392f57f719879dc16d096d35faeacbe0e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-17.pdf": "ea1ad1fecf7d043f0ece7941a17e118a2e5e98e532c89ae5999655625afaf32d",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-18.pdf": "91afdcf4f9781c07f368bd2405d40057146c2c51fcdbc015f23214cd5f797063",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-19.pdf": "16416b0af8e2fc258b7c35134db3b52ae9e6d108a542de69fc6db1198a1e704f",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-2.pdf": "1b621ad1879ead23e0d436fb1252a0f7e52914b7aa8241d3b3f85d55d259cfad",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-20.pdf": "c58d6c0691f6b353f7176d627fa912586671ea86364c20b7c4742db1db5dd541",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-21.pdf": "bef1d267843835b75d87287de39a29bce2f1054d87c3b14cc808b241a0908272",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-3.pdf": "119be57d498c1f596d6798eed339572f7777918018837be2ad3cc4fba03923d4",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-4.pdf": "cb2898c57f39870fef4373a8ac7eaaded367b32920275ab210f5c807a818460e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-5.pdf": "4fd52902f40c33a428e767bb668c1ccc35c47027ff8dc9e0f5d41d1ee6f088d6",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-6.pdf": "5564a6acb3331d3b922180501af929a1e19c5b5bbcdf2009164fb26bee2b80ea",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-7.pdf": "973b01572ea6a0d6b9255c195c1487d47f7231ffc0aa33c008276afa484d5a80",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-8.pdf": "4239c33a776b890de0b7ba8d6d5b7848c1e747a1c0be79bf648cf1290d20e882",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-9.pdf": "548851934cad4a0cc7253f1fe4fd43e47a712101ef077f80c38a64ba263f8d3a",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection.pdf": "181d7be947118095b9914bf902f32abf22d2b43718b1e062ff0934f3af134237",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-clearance-sweep.pdf": "e583f43a9adc338ace53fdfb53aed150909b15ae6836c77cad2822164874817a",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-elimination-pattern.pdf": "05d88af583a59985a8f3a79024b6b6e7454a2e2df2b5847423ca0437ab4d1dea",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-engage-from-cover.pdf": "3dac918536a56b158de229fe40459adb1152c3160d166218bfc0bbd88eb13bde",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-relocate.pdf": "a6f2d820899e9141a0fd42553c017859bfdda212bc2d53f9a4678b6397030485",
+        "layers/integration/kasrkin/kasrkin-token-guide-token-guide.pdf": "c533b027e0bb7e12d14dd183943f781ab304f40bdfe9739da06831e15a200ae9"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/kasrkin/card-backside/kasrkin-backside-landscape.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-07-12T18:51:03.272501+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/kasrkin/card-backside/kasrkin-backside-portrait.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-07-12T18:51:03.390475+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:51:03.438124+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/artwork/icons/kasrkin-icon-token.jpg": "c4b664397f2e392f88454a7bafc979fbbe31593c432ca353b92d855730436d3b",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/kasrkin-auspex-scan.png": {
+          "path": "output/kasrkin/tokens/kasrkin-auspex-scan.png",
+          "hash": "bd91822c9da575fe7ea54ce01fac5587800f6dff93d535e48ff122bf4f23b7e2",
+          "modified": "2026-08-29T18:46:08.390383+00:00"
+        },
+        "tokens/kasrkin-clearance-sweep.png": {
+          "path": "output/kasrkin/tokens/kasrkin-clearance-sweep.png",
+          "hash": "c723078baab0018b228de8669cfe3544e98b45f9ea08f67fefe6570aa62414cb",
+          "modified": "2026-08-29T18:46:08.398993+00:00"
+        },
+        "tokens/kasrkin-medic.png": {
+          "path": "output/kasrkin/tokens/kasrkin-medic.png",
+          "hash": "099b94abc4cb4b4100bcd0b34013a10cd246917fc56cd8b6c3e2c944cc8a2ec9",
+          "modified": "2026-08-29T18:46:08.405031+00:00"
+        },
+        "tokens/kasrkin-melta-mine.png": {
+          "path": "output/kasrkin/tokens/kasrkin-melta-mine.png",
+          "hash": "ffc09a1b99ca9d09e05247390dfa3c296da309b07c65e184f2c573f5b8dc8332",
+          "modified": "2026-08-29T18:46:08.414109+00:00"
+        },
+        "tokens/kasrkin-relics-of-cadia.png": {
+          "path": "output/kasrkin/tokens/kasrkin-relics-of-cadia.png",
+          "hash": "8a4d4d3cf431d9ae4ab9b7aeba0b98b3710a075d133f947de21db924624e84ca",
+          "modified": "2026-08-29T18:46:08.420644+00:00"
+        },
+        "tokens/kasrkin-tactical-command.png": {
+          "path": "output/kasrkin/tokens/kasrkin-tactical-command.png",
+          "hash": "b6c0f990086eab6b122d96e4ed73e4d552bb180c7d0292e906d203ba6a168f66",
+          "modified": "2026-08-29T18:46:08.428704+00:00"
+        },
+        "tokens/kasrkin-auspex-scan.obj": {
+          "path": "output/kasrkin/tokens/kasrkin-auspex-scan.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:46:08.432212+00:00"
+        },
+        "tokens/kasrkin-clearance-sweep.obj": {
+          "path": "output/kasrkin/tokens/kasrkin-clearance-sweep.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:46:08.434212+00:00"
+        },
+        "tokens/kasrkin-medic.obj": {
+          "path": "output/kasrkin/tokens/kasrkin-medic.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:46:08.437744+00:00"
+        },
+        "tokens/kasrkin-melta-mine.obj": {
+          "path": "output/kasrkin/tokens/kasrkin-melta-mine.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:46:08.438748+00:00"
+        },
+        "tokens/kasrkin-relics-of-cadia.obj": {
+          "path": "output/kasrkin/tokens/kasrkin-relics-of-cadia.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:46:08.442252+00:00"
+        },
+        "tokens/kasrkin-tactical-command.obj": {
+          "path": "output/kasrkin/tokens/kasrkin-tactical-command.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:46:08.444353+00:00"
+        },
+        "tokens/tokenbag/kasrkin-token-bag-icon.png": {
+          "path": "output/kasrkin/tokens/tokenbag/kasrkin-token-bag-icon.png",
+          "hash": "c4b664397f2e392f88454a7bafc979fbbe31593c432ca353b92d855730436d3b",
+          "modified": "2026-08-29T18:46:08.451515+00:00"
+        },
+        "tokens/tokenbag/kasrkin-token-bag.obj": {
+          "path": "output/kasrkin/tokens/tokenbag/kasrkin-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:46:08.453514+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:46:12.115846+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/manifest.json": "eee6f2eb9de1d8f2dabc979d08b75b6965c96b912e463ea7a69b0c3e7ff919a9",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/kasrkin/artwork/icons/kasrkin-icon-token.jpg": "c4b664397f2e392f88454a7bafc979fbbe31593c432ca353b92d855730436d3b",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "25498b88f4abc885121a879622fe4a05b15589e2954064c0297188a0914d2db0",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "fe86c160ce5de9bb73d252c5efbc6c3e9a5887f469c68ab0d33dab6c5702a0ad",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "c135d160a4916ae54e539df5fc5fd5812dd0b2e49d19d12ce7d8b9d86f9f2fb2",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "20e5a341761fe335752e20838e822d600b428b11125bd78123dbb95dcdaf4ccb",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "f8891fba2d8a3e4542eaf09134b5cd04edb71e9cd2ed4f08925ebdab54208b3f",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "252c6f5ec13488cba48412a738229abbb1d0c1a83b7dc10551b29d2a493e3158",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "30bdc492a87654e9fc87b28c86ebd7b582d4f7ed3b48093c2b8bc0f22c3fd2e6",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "2cbd0971474fafe1366eb85d53d07bb120a9ba50c1b64402f57f9e687c7fad99",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "c74c3a443cd27cf474c8f701e6ec778b2377fc3e133de1a7fd044402df402470",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5d6e1e17b745b1cde2d7bb0ee5a1b3969de33a7d64aeaf58c6ba7bef813fc68b",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "9580e25216906bb7914f552d8502096c282613ced494e6fad547cdec0f7fa404",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-combat-medic.pdf": "da6ba48958789dc9860dc569cf814b7f64e29e008a8914492f4d0582432227b2",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-demo-trooper.pdf": "cd676aac6530ed40be08c7c2c3f6ebe00017e2a7f355f3b751c64bf6aefc712f",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-gunner.pdf": "14f59fa253836a971942c0d6451aa5261842fdf59a5ba658da8bca09c2a1fd03",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-recon-trooper.pdf": "407de41e7f3e16c1ac3d827e061301d308362e1c069d9ee217196e8ef97942b2",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sergeant.pdf": "c6c4b44baaa0c496b600cd7be8681f255406b91c9d7f1e930d620ce710d7816d",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sharpshooter.pdf": "63fee54047db8d43847ef006012d923a691e7db19d099679cd929c81778e3665",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-trooper.pdf": "a5dadac9ad1813831ccd42abe59aea1a1d5822b25c1ec5547e596d48ed65e399",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-vox-trooper.pdf": "e750a818a0619e14b20c86fb7cc9291a06f35bb675a74502e15ab17148873373",
+        "layers/integration/kasrkin/kasrkin-equipment-combat-daggers.pdf": "feaf84d06623d4b64466ee1b5d0269e1828680c0877a598caa962c61427ea2cf",
+        "layers/integration/kasrkin/kasrkin-equipment-foregrip.pdf": "6e03c78505572010164121f44388d28cea424474ddbc52df8ab0c66d6adc9758",
+        "layers/integration/kasrkin/kasrkin-equipment-long-range-scope.pdf": "5c38c15f4c7bae9071ffe5805a550fd53da8fb2d4cff6e3e1279a26c9a1582e4",
+        "layers/integration/kasrkin/kasrkin-equipment-relics-of-cadia.pdf": "d544cb83f087bc9964fa0365e1e3af0f122350adfe0e0f3e00d6271949503f0d",
+        "layers/integration/kasrkin/kasrkin-faction-rule-rapid-fire.pdf": "683114f2adf44ea3a321f86674d0bf9942ec4c147625e91683233ee1c39e4ac9",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-1.pdf": "68b78980908d043ba58935b2943a5efd5e04b9e7d1ad22fd2f9e7ca8b95c8050",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-2.pdf": "f8ec0b645b2056dafbf3c40daabd3dca544ec039ffd064e3e8f5565f8425cbed",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-3.pdf": "c81600e2156af0b146ebf94fa8bc3b1dc8ac1af358fa97b19a0c55b2fd3f2ceb",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-4.pdf": "85e9c0c67149eaf01b7828b0e156219a895330e76a09805145a1fa9ca11e9b01",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-5.pdf": "f22225d39288848654463b4dc98d6c7d8df26345b41f8f4b8d6b8d8a9fa98098",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-cover-retreat.pdf": "e37f053c18ed0d36ea8771df88f0dcfaf23f76df44fd2bbb5ad3dae2ee8b8155",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-give-no-ground.pdf": "3d60beae399244646f2988b22a97556e80631706f9d2a9001a0dfedc693062e7",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-neutralise-target.pdf": "16b3da37faeeb6e5923efe26405800a0323f1e1d25029bf883ad597c6c749e31",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-seize-the-initiative.pdf": "98647385dc252e7cf0994dab7dcc331f6a7c868089dfaa612dcf1d539ed2bf61",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-1.pdf": "9d2ee7867e1cfdd198c0b7a46adf5e9d095b6bf05379ba2e219327f325ddeacf",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-10.pdf": "91364a5624ece419261de3a9c1bf8d962fa383f2d9c069822451af69117b3da7",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-11.pdf": "2794fe1e49ef2c2506a1b5eff31128ce7db60678322b9b25732b4644c5237ba7",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-12.pdf": "fa5d5c7958e8ce0ffb9bd81655c79d045a97f56bff3e53d40b9bd5a318759eec",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-13.pdf": "7c2e27703487df039f7c23d648deda1a7d7ff85392170b48bc13c4104d179a8e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-14.pdf": "2b939704288f96dc894741dfa6194c60810a0e8f5da336d866e49b519d742d35",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-15.pdf": "c5dfdfcc85aebe5237d22834f2e85e397ae042b8cf9a36fd4d6e9eff1175be69",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-16.pdf": "da8c3a244370203c1d430eb96cd9c14392f57f719879dc16d096d35faeacbe0e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-17.pdf": "ea1ad1fecf7d043f0ece7941a17e118a2e5e98e532c89ae5999655625afaf32d",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-18.pdf": "91afdcf4f9781c07f368bd2405d40057146c2c51fcdbc015f23214cd5f797063",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-19.pdf": "16416b0af8e2fc258b7c35134db3b52ae9e6d108a542de69fc6db1198a1e704f",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-2.pdf": "1b621ad1879ead23e0d436fb1252a0f7e52914b7aa8241d3b3f85d55d259cfad",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-20.pdf": "c58d6c0691f6b353f7176d627fa912586671ea86364c20b7c4742db1db5dd541",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-21.pdf": "bef1d267843835b75d87287de39a29bce2f1054d87c3b14cc808b241a0908272",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-3.pdf": "119be57d498c1f596d6798eed339572f7777918018837be2ad3cc4fba03923d4",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-4.pdf": "cb2898c57f39870fef4373a8ac7eaaded367b32920275ab210f5c807a818460e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-5.pdf": "4fd52902f40c33a428e767bb668c1ccc35c47027ff8dc9e0f5d41d1ee6f088d6",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-6.pdf": "5564a6acb3331d3b922180501af929a1e19c5b5bbcdf2009164fb26bee2b80ea",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-7.pdf": "973b01572ea6a0d6b9255c195c1487d47f7231ffc0aa33c008276afa484d5a80",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-8.pdf": "4239c33a776b890de0b7ba8d6d5b7848c1e747a1c0be79bf648cf1290d20e882",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-9.pdf": "548851934cad4a0cc7253f1fe4fd43e47a712101ef077f80c38a64ba263f8d3a",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection.pdf": "181d7be947118095b9914bf902f32abf22d2b43718b1e062ff0934f3af134237",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-clearance-sweep.pdf": "e583f43a9adc338ace53fdfb53aed150909b15ae6836c77cad2822164874817a",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-elimination-pattern.pdf": "05d88af583a59985a8f3a79024b6b6e7454a2e2df2b5847423ca0437ab4d1dea",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-engage-from-cover.pdf": "3dac918536a56b158de229fe40459adb1152c3160d166218bfc0bbd88eb13bde",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-relocate.pdf": "a6f2d820899e9141a0fd42553c017859bfdda212bc2d53f9a4678b6397030485",
+        "layers/integration/kasrkin/kasrkin-token-guide-token-guide.pdf": "c533b027e0bb7e12d14dd183943f781ab304f40bdfe9739da06831e15a200ae9"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/kasrkin/dice/kasrkin-dice-light.jpg",
+          "hash": "6ec9cc8dbcbe2e47945098452f8a3e756ad488c221606c1bc0ecab67adfe0e37",
+          "modified": "2026-08-29T18:46:13.010919+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/kasrkin/dice/kasrkin-dice-dark.jpg",
+          "hash": "6a5292b0c78b9545920ed69d79b3b9097ee955485e7c07f4ab53f78935b45801",
+          "modified": "2026-08-29T18:46:13.014923+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/kasrkin/dice/kasrkin-dice-team.jpg",
+          "hash": "41e460be709f670a05e2c10c7cbc5ce2e914c162bdb4cd3ded86f153340bc9b2",
+          "modified": "2026-08-29T18:46:13.017058+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:46:13.020085+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/artwork/icons/kasrkin-icon-token-transparent.png": "83bd32bf7cb60bd454c132c85c7d623d2206affe32e45d72cb65f13bcc0f0cef",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/kasrkin/cardbox/kasrkin-card-box-texture.jpg",
+          "hash": "0572e3e2e40bea122c5228e177b2440a70202717b66e1d6dd0d29b5aef4e8d37",
+          "modified": "2026-08-29T18:46:13.151901+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/kasrkin/cardbox/kasrkin-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:46:13.153438+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:46:13.178140+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/artwork/icons/kasrkin-icon-token.jpg": "c4b664397f2e392f88454a7bafc979fbbe31593c432ca353b92d855730436d3b",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/kasrkin-combat-medic-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-combat-medic-back.jpg",
+          "hash": "b997ccff0241f21338394ccf7a8cca46693444d6489dc24408c15e15b814adcf",
+          "modified": "2026-08-29T18:46:33.180999+00:00"
+        },
+        "cards/datacards/kasrkin-combat-medic-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-combat-medic-front.jpg",
+          "hash": "824da5e739fb4fee949827762d7d3949401c242c2e338eca56f8268db500881e",
+          "modified": "2026-08-29T18:46:33.185514+00:00"
+        },
+        "cards/datacards/kasrkin-demo-trooper-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-demo-trooper-back.jpg",
+          "hash": "593a9cb536702cce01dc39a0d4175d9bf1e79b76a707f9de868bbfdcf440fee8",
+          "modified": "2026-08-29T18:46:33.190534+00:00"
+        },
+        "cards/datacards/kasrkin-demo-trooper-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-demo-trooper-front.jpg",
+          "hash": "cb113bf6c79c7a0188aea182f8519e6348ecf02ec76211869d84c6028be76cf8",
+          "modified": "2026-08-29T18:46:33.198046+00:00"
+        },
+        "cards/datacards/kasrkin-gunner-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-gunner-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:33.201920+00:00"
+        },
+        "cards/datacards/kasrkin-gunner-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-gunner-front.jpg",
+          "hash": "f5e5b60bbc534a2da899aa9f8138de6fc84baf40078d176c2ec1b1a6bc67df77",
+          "modified": "2026-08-29T18:46:33.205959+00:00"
+        },
+        "cards/datacards/kasrkin-recon-trooper-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-recon-trooper-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:33.208996+00:00"
+        },
+        "cards/datacards/kasrkin-recon-trooper-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-recon-trooper-front.jpg",
+          "hash": "bfcc0ed165547473546e783bbe04761f4e5fb40dfc0e78526831478f2bc58ab0",
+          "modified": "2026-08-29T18:46:33.211082+00:00"
+        },
+        "cards/datacards/kasrkin-sergeant-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-sergeant-back.jpg",
+          "hash": "42ed495bfac749514a019dbe4cce9da30d351827fea4667b084c70980004d00c",
+          "modified": "2026-08-29T18:46:33.213087+00:00"
+        },
+        "cards/datacards/kasrkin-sergeant-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-sergeant-front.jpg",
+          "hash": "1bd56ead592794ff12fae3461865241f024bb7d010455dd6670d72e9fb31bc67",
+          "modified": "2026-08-29T18:46:33.214088+00:00"
+        },
+        "cards/datacards/kasrkin-sharpshooter-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-sharpshooter-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:33.215087+00:00"
+        },
+        "cards/datacards/kasrkin-sharpshooter-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-sharpshooter-front.jpg",
+          "hash": "dc2b27ca388594f778d11c5bfce4dec95e532f391a58b8008de5df7e99e40cf0",
+          "modified": "2026-08-29T18:46:33.217087+00:00"
+        },
+        "cards/datacards/kasrkin-trooper-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-trooper-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:33.219104+00:00"
+        },
+        "cards/datacards/kasrkin-trooper-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-trooper-front.jpg",
+          "hash": "74f1828d02785a05b9ee4054c448128674764d84297d06c131df4ce53301157a",
+          "modified": "2026-08-29T18:46:33.224636+00:00"
+        },
+        "cards/datacards/kasrkin-vox-trooper-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-vox-trooper-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:33.227141+00:00"
+        },
+        "cards/datacards/kasrkin-vox-trooper-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/kasrkin-vox-trooper-front.jpg",
+          "hash": "6117064778b9ea6c4ea7c128294b302a395361974638293257b79275464c7968",
+          "modified": "2026-08-29T18:46:33.232406+00:00"
+        },
+        "cards/equipment/kasrkin-combat-daggers-back.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-combat-daggers-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:33.233912+00:00"
+        },
+        "cards/equipment/kasrkin-combat-daggers-front.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-combat-daggers-front.jpg",
+          "hash": "4c6912c05c3f90693a11b865ce393e4654d18cf0a588d1e934726602c586cce6",
+          "modified": "2026-08-29T18:46:33.236937+00:00"
+        },
+        "cards/equipment/kasrkin-foregrip-back.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-foregrip-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:33.237942+00:00"
+        },
+        "cards/equipment/kasrkin-foregrip-front.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-foregrip-front.jpg",
+          "hash": "d0d671df638ade6199632e88e6101395e07f1fa535c7e98b3e10ae36aebfab63",
+          "modified": "2026-08-29T18:46:33.238981+00:00"
+        },
+        "cards/equipment/kasrkin-long-range-scope-back.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-long-range-scope-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:33.240484+00:00"
+        },
+        "cards/equipment/kasrkin-long-range-scope-front.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-long-range-scope-front.jpg",
+          "hash": "d34fc8a6c0f909c2dbb498fb536e43e4d83c6d9b663e688d6a9eade000ef881d",
+          "modified": "2026-08-29T18:46:33.242606+00:00"
+        },
+        "cards/equipment/kasrkin-relics-of-cadia-back.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-relics-of-cadia-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:33.244110+00:00"
+        },
+        "cards/equipment/kasrkin-relics-of-cadia-front.jpg": {
+          "path": "output/kasrkin/cards/equipment/kasrkin-relics-of-cadia-front.jpg",
+          "hash": "2cd61e9d4b97708e5451010e9a6e5740add5811f44d617c9a0e4035b03404899",
+          "modified": "2026-08-29T18:46:33.245114+00:00"
+        },
+        "cards/faction_rules/kasrkin-rapid-fire-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-rapid-fire-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:33.248132+00:00"
+        },
+        "cards/faction_rules/kasrkin-rapid-fire-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-rapid-fire-front.jpg",
+          "hash": "03537c0928393b13947fea9afb73fc3737ec8d26bc817e6869c072a68a941690",
+          "modified": "2026-08-29T18:46:33.584422+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card1-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card1-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:33.987340+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card1-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card1-front.jpg",
+          "hash": "0ecfb84c721d7cb7c148041f3abc1194cb4e3210820b80694074bb68d5001cc9",
+          "modified": "2026-08-29T18:46:34.330118+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card2-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card2-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.331118+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card2-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card2-front.jpg",
+          "hash": "ff8b506ddcd093719df6d4003f3ad7f3e0dd757e223853b6b37fd522a930f817",
+          "modified": "2026-08-29T18:46:34.333126+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card3-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card3-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.334134+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card3-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card3-front.jpg",
+          "hash": "c747c4c058edc76344536b76c61f24195551f2b5a8f241dbd10a540e16247edf",
+          "modified": "2026-08-29T18:46:34.336134+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card4-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card4-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.337131+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card4-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card4-front.jpg",
+          "hash": "99cfb5e477836c5ee0b30b2a59e736ae4521204e714e546f41e9585e09b076e9",
+          "modified": "2026-08-29T18:46:34.339244+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card5-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card5-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.340390+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card5-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card5-front.jpg",
+          "hash": "a923a5ff302310dafab224a726f8cf6886a1c4e3e31a4077922a9e13a4aa2cf7",
+          "modified": "2026-08-29T18:46:34.342389+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-cover-retreat-back.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-cover-retreat-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.345405+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-cover-retreat-front.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-cover-retreat-front.jpg",
+          "hash": "2d2da5e0ea6a01e44af0b87ca628cd8a72fa33c19ef977a59cd4e51509a04e66",
+          "modified": "2026-08-29T18:46:34.348977+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-give-no-ground-back.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-give-no-ground-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.349978+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-give-no-ground-front.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-give-no-ground-front.jpg",
+          "hash": "52069fe4b42ef1fcf5a36bd6fc3ff33d866dbbec7afd626e59ea5567d3ff2f52",
+          "modified": "2026-08-29T18:46:34.352489+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-neutralise-target-back.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-neutralise-target-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.353489+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-neutralise-target-front.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-neutralise-target-front.jpg",
+          "hash": "b6655d196f68c58441189b3435f52db41941a50b07b751b2bbc57ac84261ab13",
+          "modified": "2026-08-29T18:46:34.355490+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-seize-the-initiative-back.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-seize-the-initiative-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.357562+00:00"
+        },
+        "cards/firefight_ploys/kasrkin-seize-the-initiative-front.jpg": {
+          "path": "output/kasrkin/cards/firefight_ploys/kasrkin-seize-the-initiative-front.jpg",
+          "hash": "fe65a27aee9f3fe728f65c27b5f6a99c558ba200fabc77cdf3c59cfa7a771068",
+          "modified": "2026-08-29T18:46:34.359076+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-back.jpg",
+          "hash": "e81c6855ce51bc73a47b5075c48f436a2c0eb1226531b3c6cbee8aa1ad0c6f5e",
+          "modified": "2026-08-29T18:46:34.361075+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-front.jpg",
+          "hash": "29239df6eeb9cc96756026c3aa466730066106f75d39259bae972d78bc2a77f3",
+          "modified": "2026-08-29T18:46:47.364182+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-clearance-sweep-back.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-clearance-sweep-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:48.158994+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-clearance-sweep-front.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-clearance-sweep-front.jpg",
+          "hash": "17dd27e5e283b1eb24da7c9986f1d79746c46f339850819c8d7428f15a9384e2",
+          "modified": "2026-08-29T18:46:48.823643+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-elimination-pattern-back.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-elimination-pattern-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:49.149001+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-elimination-pattern-front.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-elimination-pattern-front.jpg",
+          "hash": "f4c4ba2732d81120d9d59d87cca9197ec0c7990803da3ad8c0cd63aac73fdd67",
+          "modified": "2026-08-29T18:46:49.800959+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-engage-from-cover-back.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-engage-from-cover-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:50.110616+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-engage-from-cover-front.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-engage-from-cover-front.jpg",
+          "hash": "e2d2585536a630d34c03a675ac0cc5aeec7f04ee55466e9f7320b36c9a16e80d",
+          "modified": "2026-08-29T18:46:50.114042+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-relocate-back.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-relocate-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:50.116041+00:00"
+        },
+        "cards/strategy_ploys/kasrkin-relocate-front.jpg": {
+          "path": "output/kasrkin/cards/strategy_ploys/kasrkin-relocate-front.jpg",
+          "hash": "9593f5df978b14142e21c0a11f313c2e6bf5007669de40b2e97bc290e0e480a2",
+          "modified": "2026-08-29T18:46:50.119421+00:00"
+        },
+        "cards/token_guide/kasrkin-token-guide-back.jpg": {
+          "path": "output/kasrkin/cards/token_guide/kasrkin-token-guide-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:50.121422+00:00"
+        },
+        "cards/token_guide/kasrkin-token-guide-front.jpg": {
+          "path": "output/kasrkin/cards/token_guide/kasrkin-token-guide-front.jpg",
+          "hash": "ee029b0ffcb659e357c19ebaa3d9ee2ce808f621a00e0dcc720e2291a81c5bfa",
+          "modified": "2026-08-29T18:46:50.124928+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card6-back.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card6-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.342389+00:00"
+        },
+        "cards/faction_rules/kasrkin-skill-at-arms-card6-front.jpg": {
+          "path": "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card6-front.jpg",
+          "hash": "ec63d34dfb33fc015d44d6139c74b08d75cd2af371ff5dd838820d1ef4676234",
+          "modified": "2026-08-29T18:46:34.343892+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:24.148771+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "4a22be8c0133cf3b706886cf45021a0105b97e8740f49d26e86983c0bb74c937",
+          "modified": "2026-08-29T18:46:24.164673+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:24.175594+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "1136c602256a918817ae8148175bc16a2210b780635ec50d297b0cd8c3ad6c9e",
+          "modified": "2026-08-29T18:46:24.185375+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:24.514978+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "822b358b5bfc78a0e8dcc6d73de22445cedf2e925e3dc11b59270cfa28eda0d6",
+          "modified": "2026-08-29T18:46:25.500389+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:26.150202+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "e9d6ee8c78ce2410fb21e45632cd8fc1a0e0b6b965d8b0d7d7628c314867eabc",
+          "modified": "2026-08-29T18:46:26.162236+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:26.801088+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "cc294e26551cfd1f43b75b897858b4f663d882476f0f6ecda6934c51c878a607",
+          "modified": "2026-08-29T18:46:27.496389+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:27.507930+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "134aea4b8b1a3e3eb7ccab6f0057b5b781c1c976a950acf6fd9bac86bc8268e1",
+          "modified": "2026-08-29T18:46:27.516460+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:27.521082+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "438a79209467a7ca73713955700198a4a09b9b04dee7420f7407e413fcc6947e",
+          "modified": "2026-08-29T18:46:27.528577+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:27.860048+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "4927732d10e94327d23493efae2983150f324fc9a739b8a976dc6df193781cef",
+          "modified": "2026-08-29T18:46:28.812046+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:29.460681+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "748b53db23c9bdbbd487db2939267fa92636c3db61f03811a4798967a89990fb",
+          "modified": "2026-08-29T18:46:30.462372+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:30.805705+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "75a676b6a0929138fd56edcbb0ee2debb7cb1d4ae19b792ea9274cfa4d02e8c4",
+          "modified": "2026-08-29T18:46:31.886912+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+          "modified": "2026-08-29T18:46:32.247846+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "7bd3e9d603db4608f366a4202d27e410a37507f51cd3cbfa05f8e1f201095558",
+          "modified": "2026-08-29T18:46:33.139211+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card1-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card1-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.368107+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card1-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card1-front.jpg",
+          "hash": "6cb85ad7b1aeb213ebf86a50eeff0872caa3f24e3fe5968e68105d8c72e15f3d",
+          "modified": "2026-08-29T18:46:34.374131+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card10-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card10-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.380249+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card10-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card10-front.jpg",
+          "hash": "15526e7be3a35ea431c9fa73afee13ecdd5ad0dd25952e26dce9f97ff97eb85b",
+          "modified": "2026-08-29T18:46:34.387822+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card11-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card11-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:34.730178+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card11-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card11-front.jpg",
+          "hash": "0e8be3cf496356ceadde3d644ef6ef1fec5bfa78083c7972599358dd83e68a22",
+          "modified": "2026-08-29T18:46:35.388446+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card12-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card12-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:35.399014+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card12-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card12-front.jpg",
+          "hash": "46e28cd31b693403ebad02566c3272a2a6c1d9a0993224667fbd0673ec642a0f",
+          "modified": "2026-08-29T18:46:35.736284+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card13-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card13-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:36.080588+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card13-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card13-front.jpg",
+          "hash": "bf62fd47c2a69cfb62c27b56784791a79949297710f4ff882032de674080e049",
+          "modified": "2026-08-29T18:46:36.407835+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card14-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card14-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:36.747180+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card14-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card14-front.jpg",
+          "hash": "0171e2bff3157e85b21fd9cf166ca5a39f1bffbc451dcf1fb48f059f0134524a",
+          "modified": "2026-08-29T18:46:36.756708+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card15-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card15-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:36.764341+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card15-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card15-front.jpg",
+          "hash": "11895793f4864f3a44b46ab4fbcc34c99f82674d54664ef0179a9906dd9041a1",
+          "modified": "2026-08-29T18:46:36.774382+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card16-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card16-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:37.113360+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card16-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card16-front.jpg",
+          "hash": "dc6c2aae48cda2af1ab2ed530666e59f3f30e9ba6966a4b8a70e90e00fe4f409",
+          "modified": "2026-08-29T18:46:37.516312+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card17-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card17-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:37.866256+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card17-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card17-front.jpg",
+          "hash": "ebea4788a6c9d99ac65e297e9b32a5a394f01659389b05e118811b8077403aba",
+          "modified": "2026-08-29T18:46:37.876217+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card18-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card18-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:37.884813+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card18-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card18-front.jpg",
+          "hash": "6c8738b2a7bb028deea360c69ff178eb7621cd0a39308b29676b325cf283fefa",
+          "modified": "2026-08-29T18:46:37.893340+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card19-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card19-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:38.285009+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card19-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card19-front.jpg",
+          "hash": "88867b7ddc396b9306e3c313acc2e60e01f2e1897dff7cf6cd306ff1f3612f9c",
+          "modified": "2026-08-29T18:46:38.973418+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card2-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card2-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:39.322403+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card2-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card2-front.jpg",
+          "hash": "55ea4e0f1b9f08eb8420268bf9bba8074a08f55c7de5999ba9ec7db8d1913f18",
+          "modified": "2026-08-29T18:46:40.013240+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card20-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card20-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:40.350879+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card20-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card20-front.jpg",
+          "hash": "96e36d6015504ec2ed089bdb3faa07e91346560954c0322eefd51afade87dfcb",
+          "modified": "2026-08-29T18:46:40.974233+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card21-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card21-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:41.280990+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card21-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card21-front.jpg",
+          "hash": "2a059143e2c0ef0305b59b86e55d210c9df8aa8a4cab5ca0b40b1b1a08f0593a",
+          "modified": "2026-08-29T18:46:42.269160+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card3-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card3-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:42.278710+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card3-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card3-front.jpg",
+          "hash": "17df01b7af80a5ac4ae99cc4c9cefeabdb4ae4fbf0bda579f00fadedad39f941",
+          "modified": "2026-08-29T18:46:42.287752+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card4-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card4-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:42.295011+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card4-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card4-front.jpg",
+          "hash": "db8a9dc32c6605f08bb751eee25c49fd28fb603b71c264e90b734d725c3eabed",
+          "modified": "2026-08-29T18:46:42.301539+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card5-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card5-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:42.309075+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card5-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card5-front.jpg",
+          "hash": "c37ced15e7a340fd3c539c72b474c33cd25119ae35589be56a59274703ca0f27",
+          "modified": "2026-08-29T18:46:42.316614+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card6-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card6-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:42.323146+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card6-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card6-front.jpg",
+          "hash": "0605675747eda04ddd3359740cf30f830a9e777d0b5eec6a80840a0997b696bf",
+          "modified": "2026-08-29T18:46:42.328685+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card7-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card7-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:42.666599+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card7-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card7-front.jpg",
+          "hash": "4382e9de1325972c1575f51a8ec9591b33b860ead47b7a29567767e9838a8165",
+          "modified": "2026-08-29T18:46:43.695623+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card8-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card8-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:44.066118+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card8-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card8-front.jpg",
+          "hash": "928b71f7ff88bf0a033a807e463696400660b45017e1f56aeda346f31ffae65a",
+          "modified": "2026-08-29T18:46:44.553478+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card9-back.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card9-back.jpg",
+          "hash": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+          "modified": "2026-08-29T18:46:44.964266+00:00"
+        },
+        "cards/operatives_selection/kasrkin-operative-selection-card9-front.jpg": {
+          "path": "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card9-front.jpg",
+          "hash": "18316e89ca472608f8eec141ebb02f60ccc28aa4fda4c9253fbbe8bc102812bc",
+          "modified": "2026-08-29T18:46:46.053408+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:46:57.740532+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/manifest.json": "eee6f2eb9de1d8f2dabc979d08b75b6965c96b912e463ea7a69b0c3e7ff919a9",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "25498b88f4abc885121a879622fe4a05b15589e2954064c0297188a0914d2db0",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "fe86c160ce5de9bb73d252c5efbc6c3e9a5887f469c68ab0d33dab6c5702a0ad",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "c135d160a4916ae54e539df5fc5fd5812dd0b2e49d19d12ce7d8b9d86f9f2fb2",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "20e5a341761fe335752e20838e822d600b428b11125bd78123dbb95dcdaf4ccb",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "f8891fba2d8a3e4542eaf09134b5cd04edb71e9cd2ed4f08925ebdab54208b3f",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "252c6f5ec13488cba48412a738229abbb1d0c1a83b7dc10551b29d2a493e3158",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "30bdc492a87654e9fc87b28c86ebd7b582d4f7ed3b48093c2b8bc0f22c3fd2e6",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "2cbd0971474fafe1366eb85d53d07bb120a9ba50c1b64402f57f9e687c7fad99",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "c74c3a443cd27cf474c8f701e6ec778b2377fc3e133de1a7fd044402df402470",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5d6e1e17b745b1cde2d7bb0ee5a1b3969de33a7d64aeaf58c6ba7bef813fc68b",
+        "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "9580e25216906bb7914f552d8502096c282613ced494e6fad547cdec0f7fa404",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-combat-medic.pdf": "da6ba48958789dc9860dc569cf814b7f64e29e008a8914492f4d0582432227b2",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-demo-trooper.pdf": "cd676aac6530ed40be08c7c2c3f6ebe00017e2a7f355f3b751c64bf6aefc712f",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-gunner.pdf": "14f59fa253836a971942c0d6451aa5261842fdf59a5ba658da8bca09c2a1fd03",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-recon-trooper.pdf": "407de41e7f3e16c1ac3d827e061301d308362e1c069d9ee217196e8ef97942b2",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sergeant.pdf": "c6c4b44baaa0c496b600cd7be8681f255406b91c9d7f1e930d620ce710d7816d",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sharpshooter.pdf": "63fee54047db8d43847ef006012d923a691e7db19d099679cd929c81778e3665",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-trooper.pdf": "a5dadac9ad1813831ccd42abe59aea1a1d5822b25c1ec5547e596d48ed65e399",
+        "layers/integration/kasrkin/kasrkin-datacard-kasrkin-vox-trooper.pdf": "e750a818a0619e14b20c86fb7cc9291a06f35bb675a74502e15ab17148873373",
+        "layers/integration/kasrkin/kasrkin-equipment-combat-daggers.pdf": "feaf84d06623d4b64466ee1b5d0269e1828680c0877a598caa962c61427ea2cf",
+        "layers/integration/kasrkin/kasrkin-equipment-foregrip.pdf": "6e03c78505572010164121f44388d28cea424474ddbc52df8ab0c66d6adc9758",
+        "layers/integration/kasrkin/kasrkin-equipment-long-range-scope.pdf": "5c38c15f4c7bae9071ffe5805a550fd53da8fb2d4cff6e3e1279a26c9a1582e4",
+        "layers/integration/kasrkin/kasrkin-equipment-relics-of-cadia.pdf": "d544cb83f087bc9964fa0365e1e3af0f122350adfe0e0f3e00d6271949503f0d",
+        "layers/integration/kasrkin/kasrkin-faction-rule-rapid-fire.pdf": "683114f2adf44ea3a321f86674d0bf9942ec4c147625e91683233ee1c39e4ac9",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-1.pdf": "68b78980908d043ba58935b2943a5efd5e04b9e7d1ad22fd2f9e7ca8b95c8050",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-2.pdf": "f8ec0b645b2056dafbf3c40daabd3dca544ec039ffd064e3e8f5565f8425cbed",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-3.pdf": "c81600e2156af0b146ebf94fa8bc3b1dc8ac1af358fa97b19a0c55b2fd3f2ceb",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-4.pdf": "85e9c0c67149eaf01b7828b0e156219a895330e76a09805145a1fa9ca11e9b01",
+        "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-5.pdf": "f22225d39288848654463b4dc98d6c7d8df26345b41f8f4b8d6b8d8a9fa98098",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-cover-retreat.pdf": "e37f053c18ed0d36ea8771df88f0dcfaf23f76df44fd2bbb5ad3dae2ee8b8155",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-give-no-ground.pdf": "3d60beae399244646f2988b22a97556e80631706f9d2a9001a0dfedc693062e7",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-neutralise-target.pdf": "16b3da37faeeb6e5923efe26405800a0323f1e1d25029bf883ad597c6c749e31",
+        "layers/integration/kasrkin/kasrkin-firefight-ploy-seize-the-initiative.pdf": "98647385dc252e7cf0994dab7dcc331f6a7c868089dfaa612dcf1d539ed2bf61",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-1.pdf": "9d2ee7867e1cfdd198c0b7a46adf5e9d095b6bf05379ba2e219327f325ddeacf",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-10.pdf": "91364a5624ece419261de3a9c1bf8d962fa383f2d9c069822451af69117b3da7",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-11.pdf": "2794fe1e49ef2c2506a1b5eff31128ce7db60678322b9b25732b4644c5237ba7",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-12.pdf": "fa5d5c7958e8ce0ffb9bd81655c79d045a97f56bff3e53d40b9bd5a318759eec",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-13.pdf": "7c2e27703487df039f7c23d648deda1a7d7ff85392170b48bc13c4104d179a8e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-14.pdf": "2b939704288f96dc894741dfa6194c60810a0e8f5da336d866e49b519d742d35",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-15.pdf": "c5dfdfcc85aebe5237d22834f2e85e397ae042b8cf9a36fd4d6e9eff1175be69",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-16.pdf": "da8c3a244370203c1d430eb96cd9c14392f57f719879dc16d096d35faeacbe0e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-17.pdf": "ea1ad1fecf7d043f0ece7941a17e118a2e5e98e532c89ae5999655625afaf32d",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-18.pdf": "91afdcf4f9781c07f368bd2405d40057146c2c51fcdbc015f23214cd5f797063",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-19.pdf": "16416b0af8e2fc258b7c35134db3b52ae9e6d108a542de69fc6db1198a1e704f",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-2.pdf": "1b621ad1879ead23e0d436fb1252a0f7e52914b7aa8241d3b3f85d55d259cfad",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-20.pdf": "c58d6c0691f6b353f7176d627fa912586671ea86364c20b7c4742db1db5dd541",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-21.pdf": "bef1d267843835b75d87287de39a29bce2f1054d87c3b14cc808b241a0908272",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-3.pdf": "119be57d498c1f596d6798eed339572f7777918018837be2ad3cc4fba03923d4",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-4.pdf": "cb2898c57f39870fef4373a8ac7eaaded367b32920275ab210f5c807a818460e",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-5.pdf": "4fd52902f40c33a428e767bb668c1ccc35c47027ff8dc9e0f5d41d1ee6f088d6",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-6.pdf": "5564a6acb3331d3b922180501af929a1e19c5b5bbcdf2009164fb26bee2b80ea",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-7.pdf": "973b01572ea6a0d6b9255c195c1487d47f7231ffc0aa33c008276afa484d5a80",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-8.pdf": "4239c33a776b890de0b7ba8d6d5b7848c1e747a1c0be79bf648cf1290d20e882",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-9.pdf": "548851934cad4a0cc7253f1fe4fd43e47a712101ef077f80c38a64ba263f8d3a",
+        "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection.pdf": "181d7be947118095b9914bf902f32abf22d2b43718b1e062ff0934f3af134237",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-clearance-sweep.pdf": "e583f43a9adc338ace53fdfb53aed150909b15ae6836c77cad2822164874817a",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-elimination-pattern.pdf": "05d88af583a59985a8f3a79024b6b6e7454a2e2df2b5847423ca0437ab4d1dea",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-engage-from-cover.pdf": "3dac918536a56b158de229fe40459adb1152c3160d166218bfc0bbd88eb13bde",
+        "layers/integration/kasrkin/kasrkin-strategy-ploy-relocate.pdf": "a6f2d820899e9141a0fd42553c017859bfdda212bc2d53f9a4678b6397030485",
+        "layers/integration/kasrkin/kasrkin-token-guide-token-guide.pdf": "c533b027e0bb7e12d14dd183943f781ab304f40bdfe9739da06831e15a200ae9",
+        "layers/integration/kasrkin/card-backside/kasrkin-backside-portrait.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/kasrkin/card-backside/kasrkin-backside-landscape.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/kasrkin/data/kasrkin-team-data.json",
+          "hash": "b9b5fb451aec9a167f92d064b827e441233cc92d7f6b92d8b695c3e9b33da088",
+          "modified": "2026-08-29T18:46:59.451522+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:46:59.474959+00:00",
+      "inputs": {
+        "layers/integration/kasrkin/content/kasrkin-content.json": "b9b5fb451aec9a167f92d064b827e441233cc92d7f6b92d8b695c3e9b33da088"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Kasrkin Box.json": {
+          "path": "output/kasrkin/tts_objects/Kasrkin Box.json",
+          "hash": "2a4b5f196482e70d0f35b0136045de9168402898a21f7f8795303283c829774e",
+          "modified": "2026-07-21T11:11:13.544968+00:00"
+        },
+        "tts_objects/Kasrkin.json": {
+          "path": "output/kasrkin/tts_objects/Kasrkin.json",
+          "hash": "c432b6e40baf07ff5f38f44e35320e59417f3cfb524d61953446c134fa00e7bd",
+          "modified": "2026-08-29T18:53:39.294108+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:39.389705+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "4a22be8c0133cf3b706886cf45021a0105b97e8740f49d26e86983c0bb74c937",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "1136c602256a918817ae8148175bc16a2210b780635ec50d297b0cd8c3ad6c9e",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "822b358b5bfc78a0e8dcc6d73de22445cedf2e925e3dc11b59270cfa28eda0d6",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "e9d6ee8c78ce2410fb21e45632cd8fc1a0e0b6b965d8b0d7d7628c314867eabc",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "cc294e26551cfd1f43b75b897858b4f663d882476f0f6ecda6934c51c878a607",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "134aea4b8b1a3e3eb7ccab6f0057b5b781c1c976a950acf6fd9bac86bc8268e1",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "438a79209467a7ca73713955700198a4a09b9b04dee7420f7407e413fcc6947e",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "4927732d10e94327d23493efae2983150f324fc9a739b8a976dc6df193781cef",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "748b53db23c9bdbbd487db2939267fa92636c3db61f03811a4798967a89990fb",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "75a676b6a0929138fd56edcbb0ee2debb7cb1d4ae19b792ea9274cfa4d02e8c4",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "7bd3e9d603db4608f366a4202d27e410a37507f51cd3cbfa05f8e1f201095558",
+        "output/kasrkin/cards/datacards/kasrkin-combat-medic-back.jpg": "b997ccff0241f21338394ccf7a8cca46693444d6489dc24408c15e15b814adcf",
+        "output/kasrkin/cards/datacards/kasrkin-combat-medic-front.jpg": "824da5e739fb4fee949827762d7d3949401c242c2e338eca56f8268db500881e",
+        "output/kasrkin/cards/datacards/kasrkin-demo-trooper-back.jpg": "593a9cb536702cce01dc39a0d4175d9bf1e79b76a707f9de868bbfdcf440fee8",
+        "output/kasrkin/cards/datacards/kasrkin-demo-trooper-front.jpg": "cb113bf6c79c7a0188aea182f8519e6348ecf02ec76211869d84c6028be76cf8",
+        "output/kasrkin/cards/datacards/kasrkin-gunner-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/kasrkin-gunner-front.jpg": "f5e5b60bbc534a2da899aa9f8138de6fc84baf40078d176c2ec1b1a6bc67df77",
+        "output/kasrkin/cards/datacards/kasrkin-recon-trooper-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/kasrkin-recon-trooper-front.jpg": "bfcc0ed165547473546e783bbe04761f4e5fb40dfc0e78526831478f2bc58ab0",
+        "output/kasrkin/cards/datacards/kasrkin-sergeant-back.jpg": "42ed495bfac749514a019dbe4cce9da30d351827fea4667b084c70980004d00c",
+        "output/kasrkin/cards/datacards/kasrkin-sergeant-front.jpg": "1bd56ead592794ff12fae3461865241f024bb7d010455dd6670d72e9fb31bc67",
+        "output/kasrkin/cards/datacards/kasrkin-sharpshooter-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/kasrkin-sharpshooter-front.jpg": "dc2b27ca388594f778d11c5bfce4dec95e532f391a58b8008de5df7e99e40cf0",
+        "output/kasrkin/cards/datacards/kasrkin-trooper-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/kasrkin-trooper-front.jpg": "74f1828d02785a05b9ee4054c448128674764d84297d06c131df4ce53301157a",
+        "output/kasrkin/cards/datacards/kasrkin-vox-trooper-back.jpg": "8a55333a032c89888c241ca6726c637fdfc74c774cb2adae02a3c592938511c3",
+        "output/kasrkin/cards/datacards/kasrkin-vox-trooper-front.jpg": "6117064778b9ea6c4ea7c128294b302a395361974638293257b79275464c7968",
+        "output/kasrkin/cards/equipment/kasrkin-combat-daggers-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/equipment/kasrkin-combat-daggers-front.jpg": "4c6912c05c3f90693a11b865ce393e4654d18cf0a588d1e934726602c586cce6",
+        "output/kasrkin/cards/equipment/kasrkin-foregrip-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/equipment/kasrkin-foregrip-front.jpg": "d0d671df638ade6199632e88e6101395e07f1fa535c7e98b3e10ae36aebfab63",
+        "output/kasrkin/cards/equipment/kasrkin-long-range-scope-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/equipment/kasrkin-long-range-scope-front.jpg": "d34fc8a6c0f909c2dbb498fb536e43e4d83c6d9b663e688d6a9eade000ef881d",
+        "output/kasrkin/cards/equipment/kasrkin-relics-of-cadia-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/equipment/kasrkin-relics-of-cadia-front.jpg": "2cd61e9d4b97708e5451010e9a6e5740add5811f44d617c9a0e4035b03404899",
+        "output/kasrkin/cards/faction_rules/kasrkin-rapid-fire-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-rapid-fire-front.jpg": "03537c0928393b13947fea9afb73fc3737ec8d26bc817e6869c072a68a941690",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card1-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card1-front.jpg": "0ecfb84c721d7cb7c148041f3abc1194cb4e3210820b80694074bb68d5001cc9",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card2-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card2-front.jpg": "ff8b506ddcd093719df6d4003f3ad7f3e0dd757e223853b6b37fd522a930f817",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card3-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card3-front.jpg": "c747c4c058edc76344536b76c61f24195551f2b5a8f241dbd10a540e16247edf",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card4-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card4-front.jpg": "99cfb5e477836c5ee0b30b2a59e736ae4521204e714e546f41e9585e09b076e9",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card5-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card5-front.jpg": "a923a5ff302310dafab224a726f8cf6886a1c4e3e31a4077922a9e13a4aa2cf7",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card6-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/faction_rules/kasrkin-skill-at-arms-card6-front.jpg": "ec63d34dfb33fc015d44d6139c74b08d75cd2af371ff5dd838820d1ef4676234",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-cover-retreat-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-cover-retreat-front.jpg": "2d2da5e0ea6a01e44af0b87ca628cd8a72fa33c19ef977a59cd4e51509a04e66",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-give-no-ground-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-give-no-ground-front.jpg": "52069fe4b42ef1fcf5a36bd6fc3ff33d866dbbec7afd626e59ea5567d3ff2f52",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-neutralise-target-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-neutralise-target-front.jpg": "b6655d196f68c58441189b3435f52db41941a50b07b751b2bbc57ac84261ab13",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-seize-the-initiative-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/firefight_ploys/kasrkin-seize-the-initiative-front.jpg": "fe65a27aee9f3fe728f65c27b5f6a99c558ba200fabc77cdf3c59cfa7a771068",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-back.jpg": "e81c6855ce51bc73a47b5075c48f436a2c0eb1226531b3c6cbee8aa1ad0c6f5e",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card1-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card1-front.jpg": "6cb85ad7b1aeb213ebf86a50eeff0872caa3f24e3fe5968e68105d8c72e15f3d",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card10-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card10-front.jpg": "15526e7be3a35ea431c9fa73afee13ecdd5ad0dd25952e26dce9f97ff97eb85b",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card11-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card11-front.jpg": "0e8be3cf496356ceadde3d644ef6ef1fec5bfa78083c7972599358dd83e68a22",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card12-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card12-front.jpg": "46e28cd31b693403ebad02566c3272a2a6c1d9a0993224667fbd0673ec642a0f",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card13-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card13-front.jpg": "bf62fd47c2a69cfb62c27b56784791a79949297710f4ff882032de674080e049",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card14-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card14-front.jpg": "0171e2bff3157e85b21fd9cf166ca5a39f1bffbc451dcf1fb48f059f0134524a",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card15-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card15-front.jpg": "11895793f4864f3a44b46ab4fbcc34c99f82674d54664ef0179a9906dd9041a1",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card16-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card16-front.jpg": "dc6c2aae48cda2af1ab2ed530666e59f3f30e9ba6966a4b8a70e90e00fe4f409",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card17-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card17-front.jpg": "ebea4788a6c9d99ac65e297e9b32a5a394f01659389b05e118811b8077403aba",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card18-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card18-front.jpg": "6c8738b2a7bb028deea360c69ff178eb7621cd0a39308b29676b325cf283fefa",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card19-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card19-front.jpg": "88867b7ddc396b9306e3c313acc2e60e01f2e1897dff7cf6cd306ff1f3612f9c",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card2-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card2-front.jpg": "55ea4e0f1b9f08eb8420268bf9bba8074a08f55c7de5999ba9ec7db8d1913f18",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card20-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card20-front.jpg": "96e36d6015504ec2ed089bdb3faa07e91346560954c0322eefd51afade87dfcb",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card21-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card21-front.jpg": "2a059143e2c0ef0305b59b86e55d210c9df8aa8a4cab5ca0b40b1b1a08f0593a",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card3-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card3-front.jpg": "17df01b7af80a5ac4ae99cc4c9cefeabdb4ae4fbf0bda579f00fadedad39f941",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card4-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card4-front.jpg": "db8a9dc32c6605f08bb751eee25c49fd28fb603b71c264e90b734d725c3eabed",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card5-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card5-front.jpg": "c37ced15e7a340fd3c539c72b474c33cd25119ae35589be56a59274703ca0f27",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card6-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card6-front.jpg": "0605675747eda04ddd3359740cf30f830a9e777d0b5eec6a80840a0997b696bf",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card7-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card7-front.jpg": "4382e9de1325972c1575f51a8ec9591b33b860ead47b7a29567767e9838a8165",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card8-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card8-front.jpg": "928b71f7ff88bf0a033a807e463696400660b45017e1f56aeda346f31ffae65a",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card9-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-card9-front.jpg": "18316e89ca472608f8eec141ebb02f60ccc28aa4fda4c9253fbbe8bc102812bc",
+        "output/kasrkin/cards/operatives_selection/kasrkin-operative-selection-front.jpg": "29239df6eeb9cc96756026c3aa466730066106f75d39259bae972d78bc2a77f3",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-clearance-sweep-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-clearance-sweep-front.jpg": "17dd27e5e283b1eb24da7c9986f1d79746c46f339850819c8d7428f15a9384e2",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-elimination-pattern-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-elimination-pattern-front.jpg": "f4c4ba2732d81120d9d59d87cca9197ec0c7990803da3ad8c0cd63aac73fdd67",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-engage-from-cover-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-engage-from-cover-front.jpg": "e2d2585536a630d34c03a675ac0cc5aeec7f04ee55466e9f7320b36c9a16e80d",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-relocate-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/strategy_ploys/kasrkin-relocate-front.jpg": "9593f5df978b14142e21c0a11f313c2e6bf5007669de40b2e97bc290e0e480a2",
+        "output/kasrkin/cards/token_guide/kasrkin-token-guide-back.jpg": "91f3e4cd5c94d818301288669a039d0eb65ec0cd6c4ce1aca3d71856a6dd6687",
+        "output/kasrkin/cards/token_guide/kasrkin-token-guide-front.jpg": "ee029b0ffcb659e357c19ebaa3d9ee2ce808f621a00e0dcc720e2291a81c5bfa",
+        "output/kasrkin/cardbox/kasrkin-card-box-texture.jpg": "0572e3e2e40bea122c5228e177b2440a70202717b66e1d6dd0d29b5aef4e8d37",
+        "output/kasrkin/cardbox/kasrkin-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/kasrkin/tokens/kasrkin-auspex-scan.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/kasrkin/tokens/kasrkin-auspex-scan.png": "bd91822c9da575fe7ea54ce01fac5587800f6dff93d535e48ff122bf4f23b7e2",
+        "output/kasrkin/tokens/kasrkin-clearance-sweep.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/kasrkin/tokens/kasrkin-clearance-sweep.png": "c723078baab0018b228de8669cfe3544e98b45f9ea08f67fefe6570aa62414cb",
+        "output/kasrkin/tokens/kasrkin-medic.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/kasrkin/tokens/kasrkin-medic.png": "099b94abc4cb4b4100bcd0b34013a10cd246917fc56cd8b6c3e2c944cc8a2ec9",
+        "output/kasrkin/tokens/kasrkin-melta-mine.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/kasrkin/tokens/kasrkin-melta-mine.png": "ffc09a1b99ca9d09e05247390dfa3c296da309b07c65e184f2c573f5b8dc8332",
+        "output/kasrkin/tokens/kasrkin-relics-of-cadia.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/kasrkin/tokens/kasrkin-relics-of-cadia.png": "8a4d4d3cf431d9ae4ab9b7aeba0b98b3710a075d133f947de21db924624e84ca",
+        "output/kasrkin/tokens/kasrkin-tactical-command.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/kasrkin/tokens/kasrkin-tactical-command.png": "b6c0f990086eab6b122d96e4ed73e4d552bb180c7d0292e906d203ba6a168f66",
+        "output/kasrkin/tokens/tokenbag/kasrkin-token-bag-icon.png": "c4b664397f2e392f88454a7bafc979fbbe31593c432ca353b92d855730436d3b",
+        "output/kasrkin/tokens/tokenbag/kasrkin-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/kasrkin/dice/kasrkin-dice-dark.jpg": "6a5292b0c78b9545920ed69d79b3b9097ee955485e7c07f4ab53f78935b45801",
+        "output/kasrkin/dice/kasrkin-dice-light.jpg": "6ec9cc8dbcbe2e47945098452f8a3e756ad488c221606c1bc0ecab67adfe0e37",
+        "output/kasrkin/dice/kasrkin-dice-team.jpg": "41e460be709f670a05e2c10c7cbc5ce2e914c162bdb4cd3ded86f153340bc9b2",
+        "output/kasrkin/data/kasrkin-team-data.json": "b9b5fb451aec9a167f92d064b827e441233cc92d7f6b92d8b695c3e9b33da088",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/kasrkin/manifest.json",
+          "hash": "eee6f2eb9de1d8f2dabc979d08b75b6965c96b912e463ea7a69b0c3e7ff919a9",
+          "modified": "2026-08-29T18:45:49.111374+00:00"
+        },
+        "kasrkin-datacard-kasrkin-sergeant.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sergeant.pdf",
+          "hash": "c6c4b44baaa0c496b600cd7be8681f255406b91c9d7f1e930d620ce710d7816d",
+          "modified": "2026-07-12T19:14:12.554689+00:00"
+        },
+        "kasrkin-datacard-kasrkin-combat-medic.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-combat-medic.pdf",
+          "hash": "da6ba48958789dc9860dc569cf814b7f64e29e008a8914492f4d0582432227b2",
+          "modified": "2026-07-12T19:14:12.581558+00:00"
+        },
+        "kasrkin-datacard-kasrkin-demo-trooper.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-demo-trooper.pdf",
+          "hash": "cd676aac6530ed40be08c7c2c3f6ebe00017e2a7f355f3b751c64bf6aefc712f",
+          "modified": "2026-07-12T19:14:12.608749+00:00"
+        },
+        "kasrkin-datacard-kasrkin-gunner.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-gunner.pdf",
+          "hash": "14f59fa253836a971942c0d6451aa5261842fdf59a5ba658da8bca09c2a1fd03",
+          "modified": "2026-07-12T19:14:12.637025+00:00"
+        },
+        "kasrkin-datacard-kasrkin-recon-trooper.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-recon-trooper.pdf",
+          "hash": "407de41e7f3e16c1ac3d827e061301d308362e1c069d9ee217196e8ef97942b2",
+          "modified": "2026-07-12T19:14:12.669568+00:00"
+        },
+        "kasrkin-datacard-kasrkin-sharpshooter.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-sharpshooter.pdf",
+          "hash": "63fee54047db8d43847ef006012d923a691e7db19d099679cd929c81778e3665",
+          "modified": "2026-07-12T19:14:12.719373+00:00"
+        },
+        "kasrkin-datacard-kasrkin-trooper.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-trooper.pdf",
+          "hash": "a5dadac9ad1813831ccd42abe59aea1a1d5822b25c1ec5547e596d48ed65e399",
+          "modified": "2026-07-12T19:14:12.765424+00:00"
+        },
+        "kasrkin-datacard-kasrkin-vox-trooper.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-kasrkin-vox-trooper.pdf",
+          "hash": "e750a818a0619e14b20c86fb7cc9291a06f35bb675a74502e15ab17148873373",
+          "modified": "2026-07-12T19:14:12.836578+00:00"
+        },
+        "kasrkin-equipment-foregrip.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-equipment-foregrip.pdf",
+          "hash": "6e03c78505572010164121f44388d28cea424474ddbc52df8ab0c66d6adc9758",
+          "modified": "2026-07-12T19:14:12.877478+00:00"
+        },
+        "kasrkin-equipment-long-range-scope.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-equipment-long-range-scope.pdf",
+          "hash": "5c38c15f4c7bae9071ffe5805a550fd53da8fb2d4cff6e3e1279a26c9a1582e4",
+          "modified": "2026-07-12T19:14:14.546144+00:00"
+        },
+        "kasrkin-equipment-relics-of-cadia.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-equipment-relics-of-cadia.pdf",
+          "hash": "d544cb83f087bc9964fa0365e1e3af0f122350adfe0e0f3e00d6271949503f0d",
+          "modified": "2026-07-12T19:14:22.426080+00:00"
+        },
+        "kasrkin-equipment-combat-daggers.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-equipment-combat-daggers.pdf",
+          "hash": "feaf84d06623d4b64466ee1b5d0269e1828680c0877a598caa962c61427ea2cf",
+          "modified": "2026-07-12T19:14:22.467038+00:00"
+        },
+        "kasrkin-faction-rule-skill-at-arms-1.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-1.pdf",
+          "hash": "68b78980908d043ba58935b2943a5efd5e04b9e7d1ad22fd2f9e7ca8b95c8050",
+          "modified": "2026-07-12T19:14:22.490830+00:00"
+        },
+        "kasrkin-faction-rule-skill-at-arms-2.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-2.pdf",
+          "hash": "f8ec0b645b2056dafbf3c40daabd3dca544ec039ffd064e3e8f5565f8425cbed",
+          "modified": "2026-07-12T19:14:22.518258+00:00"
+        },
+        "kasrkin-faction-rule-skill-at-arms-3.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-3.pdf",
+          "hash": "c81600e2156af0b146ebf94fa8bc3b1dc8ac1af358fa97b19a0c55b2fd3f2ceb",
+          "modified": "2026-07-12T19:14:22.536712+00:00"
+        },
+        "kasrkin-faction-rule-skill-at-arms-4.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-4.pdf",
+          "hash": "85e9c0c67149eaf01b7828b0e156219a895330e76a09805145a1fa9ca11e9b01",
+          "modified": "2026-07-12T19:14:22.557922+00:00"
+        },
+        "kasrkin-faction-rule-skill-at-arms-5.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-faction-rule-skill-at-arms-5.pdf",
+          "hash": "f22225d39288848654463b4dc98d6c7d8df26345b41f8f4b8d6b8d8a9fa98098",
+          "modified": "2026-07-12T19:14:22.572834+00:00"
+        },
+        "kasrkin-faction-rule-rapid-fire.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-faction-rule-rapid-fire.pdf",
+          "hash": "683114f2adf44ea3a321f86674d0bf9942ec4c147625e91683233ee1c39e4ac9",
+          "modified": "2026-07-12T19:14:22.600619+00:00"
+        },
+        "kasrkin-token-guide-token-guide.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-token-guide-token-guide.pdf",
+          "hash": "c533b027e0bb7e12d14dd183943f781ab304f40bdfe9739da06831e15a200ae9",
+          "modified": "2026-07-12T19:14:22.621269+00:00"
+        },
+        "kasrkin-firefight-ploy-seize-the-initiative.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-firefight-ploy-seize-the-initiative.pdf",
+          "hash": "98647385dc252e7cf0994dab7dcc331f6a7c868089dfaa612dcf1d539ed2bf61",
+          "modified": "2026-07-12T19:14:22.636960+00:00"
+        },
+        "kasrkin-firefight-ploy-cover-retreat.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-firefight-ploy-cover-retreat.pdf",
+          "hash": "e37f053c18ed0d36ea8771df88f0dcfaf23f76df44fd2bbb5ad3dae2ee8b8155",
+          "modified": "2026-07-12T19:14:22.649276+00:00"
+        },
+        "kasrkin-firefight-ploy-neutralise-target.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-firefight-ploy-neutralise-target.pdf",
+          "hash": "16b3da37faeeb6e5923efe26405800a0323f1e1d25029bf883ad597c6c749e31",
+          "modified": "2026-07-12T19:14:22.673135+00:00"
+        },
+        "kasrkin-firefight-ploy-give-no-ground.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-firefight-ploy-give-no-ground.pdf",
+          "hash": "3d60beae399244646f2988b22a97556e80631706f9d2a9001a0dfedc693062e7",
+          "modified": "2026-07-12T19:14:22.701114+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection.pdf",
+          "hash": "181d7be947118095b9914bf902f32abf22d2b43718b1e062ff0934f3af134237",
+          "modified": "2026-07-12T19:14:22.720942+00:00"
+        },
+        "kasrkin-strategy-ploy-elimination-pattern.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-strategy-ploy-elimination-pattern.pdf",
+          "hash": "05d88af583a59985a8f3a79024b6b6e7454a2e2df2b5847423ca0437ab4d1dea",
+          "modified": "2026-07-12T19:14:23.382347+00:00"
+        },
+        "kasrkin-strategy-ploy-engage-from-cover.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-strategy-ploy-engage-from-cover.pdf",
+          "hash": "3dac918536a56b158de229fe40459adb1152c3160d166218bfc0bbd88eb13bde",
+          "modified": "2026-07-12T19:14:23.392021+00:00"
+        },
+        "kasrkin-strategy-ploy-clearance-sweep.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-strategy-ploy-clearance-sweep.pdf",
+          "hash": "e583f43a9adc338ace53fdfb53aed150909b15ae6836c77cad2822164874817a",
+          "modified": "2026-07-12T19:14:23.406779+00:00"
+        },
+        "kasrkin-strategy-ploy-relocate.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-strategy-ploy-relocate.pdf",
+          "hash": "a6f2d820899e9141a0fd42553c017859bfdda212bc2d53f9a4678b6397030485",
+          "modified": "2026-07-12T19:14:23.421198+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "25498b88f4abc885121a879622fe4a05b15589e2954064c0297188a0914d2db0",
+          "modified": "2026-08-29T18:45:49.126421+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "20e5a341761fe335752e20838e822d600b428b11125bd78123dbb95dcdaf4ccb",
+          "modified": "2026-08-29T18:45:49.145242+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "f8891fba2d8a3e4542eaf09134b5cd04edb71e9cd2ed4f08925ebdab54208b3f",
+          "modified": "2026-08-29T18:45:49.164461+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "252c6f5ec13488cba48412a738229abbb1d0c1a83b7dc10551b29d2a493e3158",
+          "modified": "2026-08-29T18:45:49.178052+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "30bdc492a87654e9fc87b28c86ebd7b582d4f7ed3b48093c2b8bc0f22c3fd2e6",
+          "modified": "2026-08-29T18:45:49.205129+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "2cbd0971474fafe1366eb85d53d07bb120a9ba50c1b64402f57f9e687c7fad99",
+          "modified": "2026-08-29T18:45:49.225135+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "c74c3a443cd27cf474c8f701e6ec778b2377fc3e133de1a7fd044402df402470",
+          "modified": "2026-08-29T18:45:49.244661+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "5d6e1e17b745b1cde2d7bb0ee5a1b3969de33a7d64aeaf58c6ba7bef813fc68b",
+          "modified": "2026-08-29T18:45:49.818129+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "9580e25216906bb7914f552d8502096c282613ced494e6fad547cdec0f7fa404",
+          "modified": "2026-08-29T18:45:50.224237+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "fe86c160ce5de9bb73d252c5efbc6c3e9a5887f469c68ab0d33dab6c5702a0ad",
+          "modified": "2026-08-29T18:45:50.240605+00:00"
+        },
+        "kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "c135d160a4916ae54e539df5fc5fd5812dd0b2e49d19d12ce7d8b9d86f9f2fb2",
+          "modified": "2026-08-29T18:45:50.258765+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-1.pdf",
+          "hash": "9d2ee7867e1cfdd198c0b7a46adf5e9d095b6bf05379ba2e219327f325ddeacf",
+          "modified": "2026-08-29T18:45:50.275588+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-2.pdf",
+          "hash": "1b621ad1879ead23e0d436fb1252a0f7e52914b7aa8241d3b3f85d55d259cfad",
+          "modified": "2026-08-29T18:45:50.292445+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-3.pdf",
+          "hash": "119be57d498c1f596d6798eed339572f7777918018837be2ad3cc4fba03923d4",
+          "modified": "2026-08-29T18:45:50.310509+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-4.pdf",
+          "hash": "cb2898c57f39870fef4373a8ac7eaaded367b32920275ab210f5c807a818460e",
+          "modified": "2026-08-29T18:45:50.329096+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-5.pdf",
+          "hash": "4fd52902f40c33a428e767bb668c1ccc35c47027ff8dc9e0f5d41d1ee6f088d6",
+          "modified": "2026-08-29T18:45:50.345210+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-6.pdf",
+          "hash": "5564a6acb3331d3b922180501af929a1e19c5b5bbcdf2009164fb26bee2b80ea",
+          "modified": "2026-08-29T18:45:50.359321+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-7.pdf",
+          "hash": "973b01572ea6a0d6b9255c195c1487d47f7231ffc0aa33c008276afa484d5a80",
+          "modified": "2026-08-29T18:45:50.377512+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-8.pdf",
+          "hash": "4239c33a776b890de0b7ba8d6d5b7848c1e747a1c0be79bf648cf1290d20e882",
+          "modified": "2026-08-29T18:45:50.392075+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-9.pdf",
+          "hash": "548851934cad4a0cc7253f1fe4fd43e47a712101ef077f80c38a64ba263f8d3a",
+          "modified": "2026-08-29T18:45:50.409278+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-10.pdf",
+          "hash": "91364a5624ece419261de3a9c1bf8d962fa383f2d9c069822451af69117b3da7",
+          "modified": "2026-08-29T18:45:50.426984+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-11.pdf",
+          "hash": "2794fe1e49ef2c2506a1b5eff31128ce7db60678322b9b25732b4644c5237ba7",
+          "modified": "2026-08-29T18:45:50.455843+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-12.pdf",
+          "hash": "fa5d5c7958e8ce0ffb9bd81655c79d045a97f56bff3e53d40b9bd5a318759eec",
+          "modified": "2026-08-29T18:45:50.481515+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-13.pdf",
+          "hash": "7c2e27703487df039f7c23d648deda1a7d7ff85392170b48bc13c4104d179a8e",
+          "modified": "2026-08-29T18:45:50.536278+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-14.pdf",
+          "hash": "2b939704288f96dc894741dfa6194c60810a0e8f5da336d866e49b519d742d35",
+          "modified": "2026-08-29T18:45:50.574684+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-15.pdf",
+          "hash": "c5dfdfcc85aebe5237d22834f2e85e397ae042b8cf9a36fd4d6e9eff1175be69",
+          "modified": "2026-08-29T18:45:50.586335+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-16.pdf",
+          "hash": "da8c3a244370203c1d430eb96cd9c14392f57f719879dc16d096d35faeacbe0e",
+          "modified": "2026-08-29T18:45:50.605554+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-17.pdf",
+          "hash": "ea1ad1fecf7d043f0ece7941a17e118a2e5e98e532c89ae5999655625afaf32d",
+          "modified": "2026-08-29T18:45:50.625960+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-18.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-18.pdf",
+          "hash": "91afdcf4f9781c07f368bd2405d40057146c2c51fcdbc015f23214cd5f797063",
+          "modified": "2026-08-29T18:45:50.645287+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-19.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-19.pdf",
+          "hash": "16416b0af8e2fc258b7c35134db3b52ae9e6d108a542de69fc6db1198a1e704f",
+          "modified": "2026-08-29T18:45:50.663390+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-20.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-20.pdf",
+          "hash": "c58d6c0691f6b353f7176d627fa912586671ea86364c20b7c4742db1db5dd541",
+          "modified": "2026-08-29T18:45:50.674500+00:00"
+        },
+        "kasrkin-operatives-selection-operative-selection-21.pdf": {
+          "path": "layers/integration/kasrkin/kasrkin-operatives-selection-operative-selection-21.pdf",
+          "hash": "bef1d267843835b75d87287de39a29bce2f1054d87c3b14cc808b241a0908272",
+          "modified": "2026-08-29T18:45:50.691662+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/kasrkin-structure.json": "eee6f2eb9de1d8f2dabc979d08b75b6965c96b912e463ea7a69b0c3e7ff919a9",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card1_landscape.pdf": "aaf89d139ed7b152e3ecfe32bdd0ebd708b09c564751714e181667f2dba30fd0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card2_landscape.pdf": "682d1e29901740e447a667c7ef533dc0b358d241a61f61219c0951d975f3bb94",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card3_landscape.pdf": "40daaecbeb8e1afb84f20d60d1cc106dc3f7b5f45c0940012935698aea48ad9c",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card4_landscape.pdf": "8b9dd0a8adc1db925b5f6afc460b9e1429dc4dba63c206526ef3fb3a12a56758",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card1_landscape.pdf": "987a3dcbbab806bb15417f2233bab8205b135a61ae750b05ecad65427eba81d2",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card2_landscape.pdf": "de7abc3390cafd395057b6919c76f1cff67b806e5b0aa56a2411a9a3f66131bb",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card3_landscape.pdf": "61dab7a3dfa8522a44e24cd4de3282e1d7ea6b34b71d1e14cb068973865561d3",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card4_landscape.pdf": "2bf02537da30082b8fb88f05a8bf4726d71a28beaafea1283141abc606d59b07",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card1_landscape.pdf": "6c2e71ccfaf7c1b4b05727e394500e32004458e89fe75ae32012854d23182de7",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card2_landscape.pdf": "773e251414e5d9da3324b7b4fab4eef2e5b2a08cfc72f6ffbea6978abc5aa70e",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card3_landscape.pdf": "b223242c47ca4617a549b76cb8b43709b44695b73b388e609f7b924b69241896",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card1_portrait.pdf": "b4418a7b64900ea28cde1ccad09fe212d768e509d5b66abc1cc39c430cb06e6f",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card2_portrait.pdf": "41ff891d7f31e7e5cbddfee1043c1ca3e85b982d788b6ec7424ef9a85b59d833",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card3_portrait.pdf": "c8859bc4a4af81738b8a35464211c36775a5abb50e2375a299cd368aedaed3c0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card4_portrait.pdf": "0af0db501ec1958e8fedf764b62885589b775281c766f808875f46e46b194253",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card1_portrait.pdf": "e96d79196680336eeb497ffafbd3333f05bc8dd50f2eb6715f5ab880618515a0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card2_portrait.pdf": "88bf7ae0425ecc574181c14ae5d691135f90f38bbccbc4dd0e932169afdf438e",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card3_portrait.pdf": "357234d790a1ee481fd3ca1ffc332562686d65618e68ca071697cef1d813caf7",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card4_portrait.pdf": "14f35b6648dbb4ff0c26b3a36a61ac1abaaf1bd0c624a4a813e103106bff2ce2",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card1_portrait.pdf": "4bccf66d981678f6ea5a7c0542e81c699031efc748e4044c67fa7968784ce92a",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card2_portrait.pdf": "e04c9f68dee8307243cbf5a6745a0a0c2da2f2876db288d955a51dbcc0954338",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card3_portrait.pdf": "8b9653aa8c14397f03072920a270a25978ec05e06a615aff1c0ed89e13a9404c",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card4_portrait.pdf": "e6cf74dbcfb430e44db6aa360b976be54a276e26b3df866afebe7d55c47a4bcb",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card1_portrait.pdf": "2f2829a35619bf5e82985b722d14381dc321c4df3cd297a741fa98f921d90d4a",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card2_portrait.pdf": "ef888e8a9949f757701bd6a69442197adfbaba2d59ff4aa5c5e6ff8e2fc09e74",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card3_portrait.pdf": "5dcc8f7ae96d9ea51e471463dc427000894916b2273172ecc5932a1aa6ad9744",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card4_portrait.pdf": "a7579862e4c0c30018600510b6ceedb91926d06d57329413a4af6a86c9c98bc4",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card1_portrait.pdf": "6c7e4c962119ac47db67157047d22990cd4338086cd840772d49a5d15879911e",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card2_portrait.pdf": "1dbb25755044cf6bb6f81371aa569a7127faabfac525540f56284ee1396096a9",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card3_portrait.pdf": "1960e98d1a61c3ac2c5916b094afb4667859e35abc39d9be63201f7074665223",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card4_portrait.pdf": "ef7a24d96000d232a08b8859b81902d9f4751119da05d79da2fdac326fb09bd7",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card1_portrait.pdf": "da530102b375887c933b385eb532376761bbff145623ae58e67185741e0b04c0"
+      },
+      "completed": "2026-08-29T18:45:54.525284+00:00"
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "operatives-selection": {
+          "hash": "e9b9aeae8d100fa969ddd910c5dadd746bd64297a15534643249b412f1ee4ab7",
+          "outputs": [
+            "layers/kt-app/extracted/kasrkin/cards/operatives-selection/kasrkin-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/operatives-selection/kasrkin-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T15:06:01.228410+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "87dd6511ca5316f23c8a1fd74df17f42d7d22b4eb49e0b1c6a48689b8161beaa",
+          "outputs": [
+            "layers/kt-app/extracted/kasrkin/cards/firefight-ploys/kasrkin-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/firefight-ploys/kasrkin-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/firefight-ploys/kasrkin-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/firefight-ploys/kasrkin-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:07:24.574128+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "99d6d58b638b3af2728884de713d1b6da5e59432e5a6b673e1fb32fefb3e497c",
+          "outputs": [
+            "layers/kt-app/extracted/kasrkin/cards/strategy-ploys/kasrkin-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/strategy-ploys/kasrkin-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/strategy-ploys/kasrkin-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/strategy-ploys/kasrkin-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:11:43.855164+00:00"
+        },
+        "faction-rules": {
+          "hash": "2b6710d37374cf19fc24537838dc22c4f957b7972000e8cdd31e961939dfb96c",
+          "outputs": [
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_3.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_4.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_5.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/faction-rules/kasrkin-faction-rules-page_6.pdf"
+          ],
+          "modified": "2026-07-06T15:13:11.257221+00:00"
+        },
+        "equipment": {
+          "hash": "1d7ecf19e7f106579c5e54768c10c148a1800fbeb3988de15b4c772357f59eef",
+          "outputs": [
+            "layers/kt-app/extracted/kasrkin/cards/equipment/kasrkin-equipment-page_0.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/equipment/kasrkin-equipment-page_1.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/equipment/kasrkin-equipment-page_2.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/equipment/kasrkin-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:14:33.696584+00:00"
+        },
+        "datacards": {
+          "hash": "677a7c1c498ec28298173cdcb3477a0f29b9fb50e8e0a9dbd585ca52c6e6bfee",
+          "outputs": [
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_0.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_1.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_2.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_3.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_4.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_5.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_6.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_7.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_8.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_9.pdf",
+            "layers/kt-app/extracted/kasrkin/cards/datacards/kasrkin-datacards-page_10.pdf"
+          ],
+          "modified": "2026-07-06T15:19:56.294686+00:00"
+        },
+        "cards": {
+          "hash": "90e88628714f32801e0f3938bbfd67137ce545795a8c37c0cf72bb87961ca712",
+          "outputs": [
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card4_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card1_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card2_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card3_portrait.pdf",
+            "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:14:43.249940+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:14:43.249940+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/kasrkin-structure.json",
+          "hash": "eee6f2eb9de1d8f2dabc979d08b75b6965c96b912e463ea7a69b0c3e7ff919a9",
+          "modified": "2026-08-29T18:45:48.376510+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card1_landscape.pdf": "aaf89d139ed7b152e3ecfe32bdd0ebd708b09c564751714e181667f2dba30fd0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card2_landscape.pdf": "682d1e29901740e447a667c7ef533dc0b358d241a61f61219c0951d975f3bb94",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card3_landscape.pdf": "40daaecbeb8e1afb84f20d60d1cc106dc3f7b5f45c0940012935698aea48ad9c",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page01_card4_landscape.pdf": "8b9dd0a8adc1db925b5f6afc460b9e1429dc4dba63c206526ef3fb3a12a56758",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card1_landscape.pdf": "987a3dcbbab806bb15417f2233bab8205b135a61ae750b05ecad65427eba81d2",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card2_landscape.pdf": "de7abc3390cafd395057b6919c76f1cff67b806e5b0aa56a2411a9a3f66131bb",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card3_landscape.pdf": "61dab7a3dfa8522a44e24cd4de3282e1d7ea6b34b71d1e14cb068973865561d3",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page02_card4_landscape.pdf": "2bf02537da30082b8fb88f05a8bf4726d71a28beaafea1283141abc606d59b07",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card1_landscape.pdf": "6c2e71ccfaf7c1b4b05727e394500e32004458e89fe75ae32012854d23182de7",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card2_landscape.pdf": "773e251414e5d9da3324b7b4fab4eef2e5b2a08cfc72f6ffbea6978abc5aa70e",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card3_landscape.pdf": "b223242c47ca4617a549b76cb8b43709b44695b73b388e609f7b924b69241896",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page03_card4_landscape.pdf": "fcd71734690e35d95439921aacbca9200b0b13418cda3c66279c24b80431e0de",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card1_portrait.pdf": "b4418a7b64900ea28cde1ccad09fe212d768e509d5b66abc1cc39c430cb06e6f",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card2_portrait.pdf": "41ff891d7f31e7e5cbddfee1043c1ca3e85b982d788b6ec7424ef9a85b59d833",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card3_portrait.pdf": "c8859bc4a4af81738b8a35464211c36775a5abb50e2375a299cd368aedaed3c0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page04_card4_portrait.pdf": "0af0db501ec1958e8fedf764b62885589b775281c766f808875f46e46b194253",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card1_portrait.pdf": "e96d79196680336eeb497ffafbd3333f05bc8dd50f2eb6715f5ab880618515a0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card2_portrait.pdf": "88bf7ae0425ecc574181c14ae5d691135f90f38bbccbc4dd0e932169afdf438e",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card3_portrait.pdf": "357234d790a1ee481fd3ca1ffc332562686d65618e68ca071697cef1d813caf7",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page05_card4_portrait.pdf": "14f35b6648dbb4ff0c26b3a36a61ac1abaaf1bd0c624a4a813e103106bff2ce2",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card1_portrait.pdf": "4bccf66d981678f6ea5a7c0542e81c699031efc748e4044c67fa7968784ce92a",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card2_portrait.pdf": "e04c9f68dee8307243cbf5a6745a0a0c2da2f2876db288d955a51dbcc0954338",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card3_portrait.pdf": "8b9653aa8c14397f03072920a270a25978ec05e06a615aff1c0ed89e13a9404c",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page06_card4_portrait.pdf": "e6cf74dbcfb430e44db6aa360b976be54a276e26b3df866afebe7d55c47a4bcb",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card1_portrait.pdf": "2f2829a35619bf5e82985b722d14381dc321c4df3cd297a741fa98f921d90d4a",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card2_portrait.pdf": "ef888e8a9949f757701bd6a69442197adfbaba2d59ff4aa5c5e6ff8e2fc09e74",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card3_portrait.pdf": "5dcc8f7ae96d9ea51e471463dc427000894916b2273172ecc5932a1aa6ad9744",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page07_card4_portrait.pdf": "a7579862e4c0c30018600510b6ceedb91926d06d57329413a4af6a86c9c98bc4",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card1_portrait.pdf": "6c7e4c962119ac47db67157047d22990cd4338086cd840772d49a5d15879911e",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card2_portrait.pdf": "1dbb25755044cf6bb6f81371aa569a7127faabfac525540f56284ee1396096a9",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card3_portrait.pdf": "1960e98d1a61c3ac2c5916b094afb4667859e35abc39d9be63201f7074665223",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page08_card4_portrait.pdf": "ef7a24d96000d232a08b8859b81902d9f4751119da05d79da2fdac326fb09bd7",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card1_portrait.pdf": "da530102b375887c933b385eb532376761bbff145623ae58e67185741e0b04c0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card2_portrait.pdf": "ab5f6f03f8da3d872f5d797c481b5080e2040c213378d871cf82d3faf316c2ff",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card3_portrait.pdf": "a69adeb0b7084f09b51645c093829d9b11484bfe6fbd27056e3c5622325b16d0",
+        "layers/warcom/extracted/kasrkin/cards/kasrkin_page09_card4_portrait.pdf": "40a6969aa4409cc4b68b454a67a147dd3e49dac33a8183aa55b223de94e12954"
+      },
+      "completed": "2026-08-29T18:45:48.888073+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "90e88628714f32801e0f3938bbfd67137ce545795a8c37c0cf72bb87961ca712",
+          "outputs": [
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-01.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-02.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-03.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-03.png",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-04.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-05.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-06.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-06.png",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-07.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-08.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-09.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-10.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-11.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-12.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-13.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-14.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-15.jpeg",
+            "layers/integration/kasrkin/artwork/kasrkin-artwork-metadata.json",
+            "layers/integration/kasrkin/artwork/icons/kasrkin-icon-landscape.jpg",
+            "layers/integration/kasrkin/artwork/icons/kasrkin-icon-portrait.jpg",
+            "layers/integration/kasrkin/artwork/icons/kasrkin-icon-token-transparent.png",
+            "layers/integration/kasrkin/artwork/icons/kasrkin-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:38:44.655852+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:38:44.655852+00:00"
+    }
+  }
+}

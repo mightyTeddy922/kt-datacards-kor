@@ -1,0 +1,1395 @@
+{
+  "team": "warpcoven",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:41.515277+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/warpcoven/content/warpcoven-content.json",
+          "hash": "0796a51d3484db43d77fcc9a97e73e11cf45471f72bf2bd8ba6cd2f25064d737",
+          "modified": "2026-08-29T18:50:48.828732+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:50:49.925833+00:00",
+      "inputs": {
+        "layers/integration/warpcoven/manifest.json": "64bac2483d661a7d996edf6d046d7481325a3eaa8681ae8a6fee67d85b27abec",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "f32d62049b2f69bd535cdea6cbe369f351da341ae8cbb50895335342cf7ec95f",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "97f2395c9e495d116ab16d714db80f708024b1f39fa9d86045fd59569a2eca7a",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "8d2162a5a77d06102e8c896077e1625cfbe057528798470eb7605d90845f8e2c",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "fd18574acd3d759883364643b627058dcae6ad718a99627d9f0c7cc5737fda20",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "f69f24c1da62197b554ed13891fc034c36c8578e5d22daee42f5d0ae9676ac46",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "08d867d1d2ad15fe80d3cb8b4edc3e264bbbf866c5b948be518164f541c7b7d6",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "4a7170aeff619819ca16c0cb2e3b93a338938cfd6fc18482df84534ce888bf8a",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "377aac077bb7d090e9e9ecad0543ac3cb025df4f92eb366accc378acb46e64af",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "64b77d9cc5fe2d4adbab5db47b1869bc71d022a5e0ad0e7c94387da8b1efb063",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "adf155f36cefb67ee0ace2fee47fd53ab4169c808566037b81be4079808691c8",
+        "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-gunner.pdf": "e7408dc6282120623f9a27270782dca394cc1ad9081957ebce04fcf5b19dd73d",
+        "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-icon-bearer.pdf": "1084a86689851c4dabdec735f43677019caa3945d9f8d8b5052f82dd7c95f5c9",
+        "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-warrior.pdf": "b541efc62d1e7512f2524ed6b6c608572daad2b1a62ae5e6abfb15b7c21dae8d",
+        "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-destiny.pdf": "44b2b89d54a3d4da34ac90803463a35399a153be83b4a7e876e2f9ea7c03c347",
+        "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-tempyrion.pdf": "ef75ffc52a2dffe444beaa941f6779f8da31359cea8af73ea44a97a46166a15a",
+        "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-warpfire.pdf": "d4429ddcd29325632a8f2b6c1fe5f2df3cd0180d7092a3d14682c3b90a9b4cea",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-champion.pdf": "906f36afd4b3177ca6ca10835568c4c39dcea51df2952dc65dea5e6875f39a18",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-horn-bearer.pdf": "3d8234b8e735d6081f83e207a6f4811aa2e9d02c45397c229abd364d733fe2c5",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-icon-bearer.pdf": "59d0c91edc5cf538b85b6c8e5b2fa93b9c922f064c30cdd3994d8b79a46c52f0",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-warrior.pdf": "fde48c002c8c2f35d67388791cf2234b1e29a7d7c89df3dc7541b220ee082105",
+        "layers/integration/warpcoven/warpcoven-equipment-arcane-robes.pdf": "0da3b7d36fcc2da3dbd29deffddd4f51d537d528850ae0403ef590cde9808dc6",
+        "layers/integration/warpcoven/warpcoven-equipment-daemonmaw-weapons.pdf": "a901b311bb8d4ac6eb067f07c508636729b4752bfe48cf8ac48a7b93b59d1e43",
+        "layers/integration/warpcoven/warpcoven-equipment-ensorcelled-rounds.pdf": "54c4eaef464bc4ee21f10b9e3ba412453e7def59265ba1ccaab1623083b974f3",
+        "layers/integration/warpcoven/warpcoven-equipment-sorcerous-scrolls.pdf": "be26608a41486a916de82aaf5ee2db40be86ffef3c513efc9a79739a8d0337df",
+        "layers/integration/warpcoven/warpcoven-faction-rule-astartes.pdf": "777a5c4ed8b409ca437f0e868317c4d6568af89206a5d280aff3da3096d7b783",
+        "layers/integration/warpcoven/warpcoven-faction-rule-boons-of-tzeentch-1.pdf": "4f790e5bce5df7607585bf6d9ac02539eadd9a8d6395cd8a6e800c9709478d75",
+        "layers/integration/warpcoven/warpcoven-faction-rule-boons-of-tzeentch-2.pdf": "d1d657036428570008e57526f181f63bf9ef739a7cdea9888cd31b68059d593f",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-all-is-dust.pdf": "f30b123b4ed5ead1c8fc3141cb66dc10396240f622b89d645fcb0f6006b9e4b0",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-capricious-plan.pdf": "46b7845a56285d6f25b3c5d87c40a74cc0d426c44cba7f495950e12837c0914d",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-mutant-herd.pdf": "ed8fe57e72c6dce8d395b59436724ece0c357445dd817088b32c545a99a59f95",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-psychic-cabal.pdf": "ffa1d7f038518653d9c0dd588851e3cb13f69976ba5c13d4b03eff71ecbd2005",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-1.pdf": "57a324b34a2a5dd14c74b093440f9cc929a9c80d8b38cf96745e0345d7efbf55",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-10.pdf": "4eb6c029bebc4088e1ffaa249c186839b9a1c916eaafbf510adc80162d636fdb",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-11.pdf": "d037da2ab63b8b8779ff195d8b9d3f23e142766768c33c6e037d0aa8c178871a",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-12.pdf": "2500ca42978db2e267d7e827970b53ec3f51c501d628338d2d98bd393ceea7a5",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-13.pdf": "75d64b36ac9ea533a8fd1d0d79df5a77ed9731be7e9e75ef21283f05638bd63f",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-14.pdf": "232b24f0d46282c0c9645343ea056e01afaf40c39b746e6ec3f50d0bd151c3b3",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-15.pdf": "1743d9d0ec28e6559fd58627e1a08bd9e01e6e8186e1f2289284cb51893b0208",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-16.pdf": "250bd6a605bfdc388b1923dcd8b1e32015390481c77ba6c8d7e1450a555547c5",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-2.pdf": "b9194dc9ecbd92829da542ad4aaf1c9a2cbc1e4a5a1bd3e454b61952c1917335",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-3.pdf": "22d2c8785e917c06674ac336bc7651ad0e5af3ba7bbeb761f478a4b4932d2b99",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-4.pdf": "27191a44a7c748ebfe8ea99ddd7c267b3aa8dcad533f437a331b43020adbafc7",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-5.pdf": "2c0d40b24a5e26b48c915538d8585704becc4be102ccfba706b713e5e7941317",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-6.pdf": "b31e4e97f402bb4c86d129d1ede390188aa5a8ad209703f0db2759fcf17ec112",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-7.pdf": "780b089eb3cdcf5372cd893eba4a9c0562efb9188e70c4b18767ad7e6c9f970f",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-8.pdf": "5b6e87124a462b727f6c753d10ab12901e32a2f44e85234e989120e47a90c4c4",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-9.pdf": "7239a1a51bb01e82dbff72a5bd407498b184b0490be621e4a0adeb2a5f38dc95",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection.pdf": "1082d895b225ea94411333366d5a8b563d0a7186517da865d2da8e0e8209338f",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-aetherial-warding.pdf": "0189aa8ebb775de83d9fd9092075bf3be904da12dedeb823dad290ffeaf0cf07",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-brotherhood-of-sorcerers.pdf": "a93edb3bec0eb916a446df3622cd3b182b1ab8b408a55c9ab49983bfc35057a0",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-fate-itself-is-my-weapon.pdf": "d171dc71157b01be253234276e7f79c269496809e368c5242f4a109a2420b1d3",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-savage-herd.pdf": "4ca481a68ca0bcdf390b277ad4c260aa050f5eaa2e583f34a6c1ff833779f7c1"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/warpcoven/card-backside/warpcoven-backside-landscape.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-07-12T18:59:12.173280+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/warpcoven/card-backside/warpcoven-backside-portrait.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-07-12T18:59:14.548305+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:59:14.788137+00:00",
+      "inputs": {
+        "layers/integration/warpcoven/artwork/icons/warpcoven-icon-token.jpg": "0feb3a85ed945a2b05c07f846bbef8d7ba2e2ec412986920017d054956e9f8bb",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/warpcoven/dice/warpcoven-dice-light.jpg",
+          "hash": "04e973cdfb7df15230f53a4ba85293a186d4cbdbaf8e1abbac40d67c21958032",
+          "modified": "2026-08-29T18:50:54.680912+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/warpcoven/dice/warpcoven-dice-dark.jpg",
+          "hash": "453f59b2b7c306808dd37329ddae09bd662dea96e637ac9421520850f42f664a",
+          "modified": "2026-08-29T18:50:54.688947+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:50:54.693558+00:00",
+      "inputs": {
+        "layers/integration/warpcoven/artwork/icons/warpcoven-icon-token-transparent.png": "610d46fc613320d2f192ea1ec981d7023efcc81c2e9f3339366315b437443462",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/warpcoven/cardbox/warpcoven-card-box-texture.jpg",
+          "hash": "b8e3890bd55f59a5a7a32e3121431e66796bf6ce8f350ee475047bf966928360",
+          "modified": "2026-08-29T18:50:54.858948+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/warpcoven/cardbox/warpcoven-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:50:54.868972+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:50:54.936754+00:00",
+      "inputs": {
+        "layers/integration/warpcoven/artwork/icons/warpcoven-icon-token.jpg": "0feb3a85ed945a2b05c07f846bbef8d7ba2e2ec412986920017d054956e9f8bb",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/rubric-marine-gunner-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/rubric-marine-gunner-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.762841+00:00"
+        },
+        "cards/datacards/rubric-marine-gunner-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/rubric-marine-gunner-front.jpg",
+          "hash": "667bfc7a3f217a79d51982d84268c8f352a684142eddd6a103d8a075b9cc7ffe",
+          "modified": "2026-08-29T18:51:14.764002+00:00"
+        },
+        "cards/datacards/rubric-marine-icon-bearer-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/rubric-marine-icon-bearer-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.765003+00:00"
+        },
+        "cards/datacards/rubric-marine-icon-bearer-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/rubric-marine-icon-bearer-front.jpg",
+          "hash": "b36e4009bc6487455514e839019ad046dc7a03673b51023cc07285119c733585",
+          "modified": "2026-08-29T18:51:14.766002+00:00"
+        },
+        "cards/datacards/rubric-marine-warrior-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/rubric-marine-warrior-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.766506+00:00"
+        },
+        "cards/datacards/rubric-marine-warrior-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/rubric-marine-warrior-front.jpg",
+          "hash": "0f5f28e83d06f3f1d0f194581536b449f6fcfc8569873408e20202b70e35f0bd",
+          "modified": "2026-08-29T18:51:14.767509+00:00"
+        },
+        "cards/datacards/sorcerer-of-destiny-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/sorcerer-of-destiny-back.jpg",
+          "hash": "f0f247acffc18cadbe1bffb5857240702b6b9af6539b1245f7a5407a0bc8c87b",
+          "modified": "2026-08-29T18:51:14.768016+00:00"
+        },
+        "cards/datacards/sorcerer-of-destiny-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/sorcerer-of-destiny-front.jpg",
+          "hash": "675d23527e2ef98aa01c5e13b20aaffb010c8ee20e7f6b72b7477ce7b8425554",
+          "modified": "2026-08-29T18:51:14.769019+00:00"
+        },
+        "cards/datacards/sorcerer-of-tempyrion-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/sorcerer-of-tempyrion-back.jpg",
+          "hash": "1c5434e2b53af9d16a88b1ff0dfe9d08b30ce13f691cd55a9d8afdefd21adba9",
+          "modified": "2026-08-29T18:51:14.770019+00:00"
+        },
+        "cards/datacards/sorcerer-of-tempyrion-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/sorcerer-of-tempyrion-front.jpg",
+          "hash": "013fa5a8dac1d69151530a024134b55575e7728b85d50079dd300395b1f8e0c0",
+          "modified": "2026-08-29T18:51:14.771522+00:00"
+        },
+        "cards/datacards/sorcerer-of-warpfire-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/sorcerer-of-warpfire-back.jpg",
+          "hash": "9e1f4436000f3aed76d077c99c3c75bcdd55feb51b1eab24a1a9084cac887d5f",
+          "modified": "2026-08-29T18:51:14.773046+00:00"
+        },
+        "cards/datacards/sorcerer-of-warpfire-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/sorcerer-of-warpfire-front.jpg",
+          "hash": "fd2695799589cb131771cca6362bad09af93e8338466efcd732ca188d6f4c14e",
+          "modified": "2026-08-29T18:51:14.775047+00:00"
+        },
+        "cards/datacards/tzaangor-champion-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-champion-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.775047+00:00"
+        },
+        "cards/datacards/tzaangor-champion-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-champion-front.jpg",
+          "hash": "b4511d87510efd123a5b14e47d006a3749949e626f9535d2b96628fecc9f7ec2",
+          "modified": "2026-08-29T18:51:14.777047+00:00"
+        },
+        "cards/datacards/tzaangor-horn-bearer-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-horn-bearer-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.779123+00:00"
+        },
+        "cards/datacards/tzaangor-horn-bearer-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-horn-bearer-front.jpg",
+          "hash": "687adc0a6dd13c436475cbb631d627a6013600ca53e3b29ecbc63906d12018aa",
+          "modified": "2026-08-29T18:51:14.780123+00:00"
+        },
+        "cards/datacards/tzaangor-icon-bearer-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-icon-bearer-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.783473+00:00"
+        },
+        "cards/datacards/tzaangor-icon-bearer-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-icon-bearer-front.jpg",
+          "hash": "659cc395ffe2539e55ae33398478f1ae9e400af94aa04f087fe82e0bf649b253",
+          "modified": "2026-08-29T18:51:14.784976+00:00"
+        },
+        "cards/datacards/tzaangor-warrior-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-warrior-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.787483+00:00"
+        },
+        "cards/datacards/tzaangor-warrior-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/tzaangor-warrior-front.jpg",
+          "hash": "54c5ae0094f10e922c9fe7a466aeb7261b83cc116e6efe8ed702cf8586664750",
+          "modified": "2026-08-29T18:51:14.789003+00:00"
+        },
+        "cards/equipment/warpcoven-arcane-robes-back.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-arcane-robes-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.789003+00:00"
+        },
+        "cards/equipment/warpcoven-arcane-robes-front.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-arcane-robes-front.jpg",
+          "hash": "239673a3be27c1ee9ee9d6f5bf5b2a5bfd5e6307a9a2a06e23e642500dfbb6aa",
+          "modified": "2026-08-29T18:51:14.791014+00:00"
+        },
+        "cards/equipment/warpcoven-daemonmaw-weapons-back.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-daemonmaw-weapons-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.792521+00:00"
+        },
+        "cards/equipment/warpcoven-daemonmaw-weapons-front.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-daemonmaw-weapons-front.jpg",
+          "hash": "544656da5ce150ebac402bc2714ba9962f0e1ed6fdf531d013db0e17d4bf5de4",
+          "modified": "2026-08-29T18:51:14.793527+00:00"
+        },
+        "cards/equipment/warpcoven-ensorcelled-rounds-back.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-ensorcelled-rounds-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.793958+00:00"
+        },
+        "cards/equipment/warpcoven-ensorcelled-rounds-front.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-ensorcelled-rounds-front.jpg",
+          "hash": "b66030ed1ca002a1d0c9afffbdc5b42f1d2b8edaa9bf0b0ead5ff48247b3e30b",
+          "modified": "2026-08-29T18:51:14.794524+00:00"
+        },
+        "cards/equipment/warpcoven-sorcerous-scrolls-back.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-sorcerous-scrolls-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.795524+00:00"
+        },
+        "cards/equipment/warpcoven-sorcerous-scrolls-front.jpg": {
+          "path": "output/warpcoven/cards/equipment/warpcoven-sorcerous-scrolls-front.jpg",
+          "hash": "e8e913422572439b8170b2a42e389d6a2008eef5ca3bb9a6b411798a6a933ad4",
+          "modified": "2026-08-29T18:51:14.796523+00:00"
+        },
+        "cards/faction_rules/warpcoven-astartes-back.jpg": {
+          "path": "output/warpcoven/cards/faction_rules/warpcoven-astartes-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.797028+00:00"
+        },
+        "cards/faction_rules/warpcoven-astartes-front.jpg": {
+          "path": "output/warpcoven/cards/faction_rules/warpcoven-astartes-front.jpg",
+          "hash": "9a8fd98e7c29e9310a4fa13144f3c405a2031f203a9980926840dd520e0f70a9",
+          "modified": "2026-08-29T18:51:14.798031+00:00"
+        },
+        "cards/faction_rules/warpcoven-boons-of-tzeentch-card1-back.jpg": {
+          "path": "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card1-back.jpg",
+          "hash": "55fdee8011c023b866d1b5e13041aab1688018839cd33a0d175581a260b0164a",
+          "modified": "2026-08-29T18:51:14.801548+00:00"
+        },
+        "cards/faction_rules/warpcoven-boons-of-tzeentch-card1-front.jpg": {
+          "path": "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card1-front.jpg",
+          "hash": "36be2e27bb545a602164c643bdb40cc2b0a2bb672668f0fe466aca72c5e5c62b",
+          "modified": "2026-08-29T18:51:14.806052+00:00"
+        },
+        "cards/faction_rules/warpcoven-boons-of-tzeentch-card2-back.jpg": {
+          "path": "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card2-back.jpg",
+          "hash": "fbaee03b45eeb56d57a709506641dcc1d98a4c5a8ae02c5473217ae9f9b9de4c",
+          "modified": "2026-08-29T18:51:14.807052+00:00"
+        },
+        "cards/faction_rules/warpcoven-boons-of-tzeentch-card2-front.jpg": {
+          "path": "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card2-front.jpg",
+          "hash": "786df55a64b20911fc5bce4ced42efa4e8072cd93823116b8dfd1731c9f6eb7f",
+          "modified": "2026-08-29T18:51:14.808689+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-all-is-dust-back.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-all-is-dust-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.808689+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-all-is-dust-front.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-all-is-dust-front.jpg",
+          "hash": "572668a5b86ff32179dd6f1926b6df2faafa0d6f8eb2aa9c4a2ef3045bd96ba6",
+          "modified": "2026-08-29T18:51:14.810201+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-capricious-plan-back.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-capricious-plan-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.810715+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-capricious-plan-front.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-capricious-plan-front.jpg",
+          "hash": "92366bc646d5212c3d7f22e364711af6032465a94c65bd587408065e0c3d009f",
+          "modified": "2026-08-29T18:51:14.812226+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-mutant-herd-back.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-mutant-herd-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.812226+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-mutant-herd-front.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-mutant-herd-front.jpg",
+          "hash": "c30098f57ac142a44d2470db6cf9dacfd16924ae02750ea855a900bab0a30869",
+          "modified": "2026-08-29T18:51:14.813231+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-psychic-cabal-back.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-psychic-cabal-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.814738+00:00"
+        },
+        "cards/firefight_ploys/warpcoven-psychic-cabal-front.jpg": {
+          "path": "output/warpcoven/cards/firefight_ploys/warpcoven-psychic-cabal-front.jpg",
+          "hash": "04af005f7207966c53e1907e60453af0a630726c8f960a25df8d2899ab95c05a",
+          "modified": "2026-08-29T18:51:14.817743+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-back.jpg",
+          "hash": "7f398117e994bb576eb41f83d2d607e9994ae7efe550a018c115fbf62b41dd84",
+          "modified": "2026-08-29T18:51:14.820753+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-front.jpg",
+          "hash": "93c86641a3e8bca0499a17d7403b5d9afd1a732ff0e356a5b77b0cab7ee6e337",
+          "modified": "2026-08-29T18:51:16.072239+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-aetherial-warding-back.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-aetherial-warding-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:16.076251+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-aetherial-warding-front.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-aetherial-warding-front.jpg",
+          "hash": "f0027bc0a584d41be0ca2f274e2a2ca635dc194f1c8f54c5095c836cfe9d1406",
+          "modified": "2026-08-29T18:51:16.086778+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-brotherhood-of-sorcerers-back.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-brotherhood-of-sorcerers-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:16.093299+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-brotherhood-of-sorcerers-front.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-brotherhood-of-sorcerers-front.jpg",
+          "hash": "6a331e81634384dafa0846926f29c116b6bacc89cd521d9a77a9b346889aa541",
+          "modified": "2026-08-29T18:51:16.103601+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-fate-itself-is-my-weapon-back.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-fate-itself-is-my-weapon-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:16.109124+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-fate-itself-is-my-weapon-front.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-fate-itself-is-my-weapon-front.jpg",
+          "hash": "6f63482ac70fa6feabb0491b37adaf7b7f6bb845b58bd9854e53199fd92ee014",
+          "modified": "2026-08-29T18:51:16.118723+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-savage-herd-back.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-savage-herd-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:16.123229+00:00"
+        },
+        "cards/strategy_ploys/warpcoven-savage-herd-front.jpg": {
+          "path": "output/warpcoven/cards/strategy_ploys/warpcoven-savage-herd-front.jpg",
+          "hash": "50d4f14927bab33e5b1a66c1b5979380c9c259d380d0ea94bebd4aa7a3210d1e",
+          "modified": "2026-08-29T18:51:16.131407+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "2cb5f3f2c46dcf173a448428bfc091efba84209988341a312b901e2c93fb91c5",
+          "modified": "2026-08-29T18:51:14.564435+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "dc35ae4c4b5962c5d5f354b9c6beeff209d62c9f423a996e97080934f691f83c",
+          "modified": "2026-08-29T18:51:14.579528+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.590682+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "1a563e6026071f8a89538a5e50f12e2e35f9616fab3f365c3124cafdc9eb231c",
+          "modified": "2026-08-29T18:51:14.608907+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "22a5d005f67a7f800bdcb8fef3577ee9b566127e1ccfb0315fc994cf1bd2b2ce",
+          "modified": "2026-08-29T18:51:14.626834+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "e4b1e5ee749a1adc9e691c68c57b25824bd14e59806a2696e0b64fa0eb79b7ec",
+          "modified": "2026-08-29T18:51:14.636816+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "aa048fa7f696fc1469f68b836bdfb14cb708431bda5c61d4cd69fe8214b50770",
+          "modified": "2026-08-29T18:51:14.653490+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "9dca6ee80ea4384d75218ae993de76e420b48d4a6d91b2c6dc5c5bbf1c2916fa",
+          "modified": "2026-08-29T18:51:14.663144+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.671382+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "ae12d68ee9737992b02c5ce642fe870fcb312e400853ceafb1e5b8bfe3112e06",
+          "modified": "2026-08-29T18:51:14.685475+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.691494+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "000dd3c68080c7d016dc90c283779a42b424b892dee33df6888e775e5f1f7bab",
+          "modified": "2026-08-29T18:51:14.701545+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.709165+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "4c30886355ab58284cbcc4e66bab3127271d3327c94b8f93e781242a760e7809",
+          "modified": "2026-08-29T18:51:14.714673+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.722182+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "11ddd338aa3866b05fcda81935e541c9a052882756a279deb0bb855a475a4bff",
+          "modified": "2026-08-29T18:51:14.729706+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.737745+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "ac135cb47e57e65bdfd3b83f7311436e7f2e1d9397309d471b1388829f8e31f5",
+          "modified": "2026-08-29T18:51:14.745808+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+          "modified": "2026-08-29T18:51:14.753821+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "97ce35ee530f9ac7bcd2f7f92c60ecd9b3c7798364181d462798ddf485081b8b",
+          "modified": "2026-08-29T18:51:14.761998+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card1-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card1-back.jpg",
+          "hash": "7f398117e994bb576eb41f83d2d607e9994ae7efe550a018c115fbf62b41dd84",
+          "modified": "2026-08-29T18:51:14.830308+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card1-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card1-front.jpg",
+          "hash": "453398b7c7d60e20f6bacf2c0c597a49ffeccab07e74ee8d6405b77373673076",
+          "modified": "2026-08-29T18:51:14.837829+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card10-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card10-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.844853+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card10-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card10-front.jpg",
+          "hash": "fede95ed9c11579a16772786eb492352d25e5d7541fbf23a67266df983c7d997",
+          "modified": "2026-08-29T18:51:14.922316+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card11-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card11-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.926337+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card11-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card11-front.jpg",
+          "hash": "0d6d2334606a199fd8dbe8b63abd7d90b94d85128ded28f0e701f3b384d1a8dc",
+          "modified": "2026-08-29T18:51:14.935865+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card12-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card12-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:14.942442+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card12-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card12-front.jpg",
+          "hash": "f44af618c874e9090f0478d46e36288265353188b1b333160106f3f38ec4a652",
+          "modified": "2026-08-29T18:51:14.997680+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card13-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card13-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.006623+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card13-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card13-front.jpg",
+          "hash": "f173ce6ae1536f16a9a761e681ead4a60c4995179bb498ec87e1690c72eba8bd",
+          "modified": "2026-08-29T18:51:15.015158+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card14-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card14-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.024398+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card14-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card14-front.jpg",
+          "hash": "675fcce6a38f9c7b5ee8bf5904eaa4f913bcbd00777a6d77689f2e51475031d3",
+          "modified": "2026-08-29T18:51:15.031982+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card15-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card15-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.040109+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card15-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card15-front.jpg",
+          "hash": "bdace8d0481faeaa73b0a3bfe17154700bf672979b18423933d11a35a17819b2",
+          "modified": "2026-08-29T18:51:15.049687+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card16-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card16-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.057776+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card16-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card16-front.jpg",
+          "hash": "1487d38d99f7791ffdbf4b74becb850978250dfdf0509c88babef84e573da9df",
+          "modified": "2026-08-29T18:51:15.067842+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card2-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card2-back.jpg",
+          "hash": "c6813c705f0299beb136b5a3a34d3c39fb44addbda5aff945355f5cdb38cbf11",
+          "modified": "2026-08-29T18:51:15.081862+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card2-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card2-front.jpg",
+          "hash": "b22ca5fb1eddf8f9c9d2cecce0898f6284e18004ba5cbae0f956220e04c3409c",
+          "modified": "2026-08-29T18:51:15.105916+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card3-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card3-back.jpg",
+          "hash": "7ad61877a2fd188dca68f7a25965327d4f8b42ac1c8c303853930d3148d67235",
+          "modified": "2026-08-29T18:51:15.122678+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card3-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card3-front.jpg",
+          "hash": "6c51ae917192a09e4bf5324b564a16f3bfcba136d2edd9eb636efa1c9df91f6d",
+          "modified": "2026-08-29T18:51:15.140265+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card4-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card4-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.147880+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card4-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card4-front.jpg",
+          "hash": "fc628b6010697476098d37bfb7d16132510926e290be346c06713acc79356ce7",
+          "modified": "2026-08-29T18:51:15.159005+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card5-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card5-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.166518+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card5-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card5-front.jpg",
+          "hash": "1ad584e0a08807386ce2e747a1b270e4915b0bb1250d0a155b99728d88010bfc",
+          "modified": "2026-08-29T18:51:15.186280+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card6-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card6-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.246394+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card6-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card6-front.jpg",
+          "hash": "ca8084ece05c1a531a73ed21533b87f0f1d85a1aed9a4efbccde5d8a19d423e0",
+          "modified": "2026-08-29T18:51:15.424117+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card7-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card7-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.507639+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card7-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card7-front.jpg",
+          "hash": "2a207ea67372c1087e520e0f093d53fbe2627ac7543d2d8eb2dac7ff890e4657",
+          "modified": "2026-08-29T18:51:15.692088+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card8-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card8-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:15.792813+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card8-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card8-front.jpg",
+          "hash": "85a2e8e7b10edfc2f34a6fdc82dc494c720123a60e054ca0741361570909899b",
+          "modified": "2026-08-29T18:51:16.040958+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card9-back.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card9-back.jpg",
+          "hash": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+          "modified": "2026-08-29T18:51:16.049057+00:00"
+        },
+        "cards/operatives_selection/warpcoven-operative-selection-card9-front.jpg": {
+          "path": "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card9-front.jpg",
+          "hash": "7879e41dced316186e75848b2dd3716fb3f95af44296ebc6888875a01e0a634c",
+          "modified": "2026-08-29T18:51:16.062119+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:51:33.152214+00:00",
+      "inputs": {
+        "layers/integration/warpcoven/manifest.json": "64bac2483d661a7d996edf6d046d7481325a3eaa8681ae8a6fee67d85b27abec",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "f32d62049b2f69bd535cdea6cbe369f351da341ae8cbb50895335342cf7ec95f",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "97f2395c9e495d116ab16d714db80f708024b1f39fa9d86045fd59569a2eca7a",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "8d2162a5a77d06102e8c896077e1625cfbe057528798470eb7605d90845f8e2c",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "fd18574acd3d759883364643b627058dcae6ad718a99627d9f0c7cc5737fda20",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "f69f24c1da62197b554ed13891fc034c36c8578e5d22daee42f5d0ae9676ac46",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "08d867d1d2ad15fe80d3cb8b4edc3e264bbbf866c5b948be518164f541c7b7d6",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "4a7170aeff619819ca16c0cb2e3b93a338938cfd6fc18482df84534ce888bf8a",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "377aac077bb7d090e9e9ecad0543ac3cb025df4f92eb366accc378acb46e64af",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "64b77d9cc5fe2d4adbab5db47b1869bc71d022a5e0ad0e7c94387da8b1efb063",
+        "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "adf155f36cefb67ee0ace2fee47fd53ab4169c808566037b81be4079808691c8",
+        "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-gunner.pdf": "e7408dc6282120623f9a27270782dca394cc1ad9081957ebce04fcf5b19dd73d",
+        "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-icon-bearer.pdf": "1084a86689851c4dabdec735f43677019caa3945d9f8d8b5052f82dd7c95f5c9",
+        "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-warrior.pdf": "b541efc62d1e7512f2524ed6b6c608572daad2b1a62ae5e6abfb15b7c21dae8d",
+        "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-destiny.pdf": "44b2b89d54a3d4da34ac90803463a35399a153be83b4a7e876e2f9ea7c03c347",
+        "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-tempyrion.pdf": "ef75ffc52a2dffe444beaa941f6779f8da31359cea8af73ea44a97a46166a15a",
+        "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-warpfire.pdf": "d4429ddcd29325632a8f2b6c1fe5f2df3cd0180d7092a3d14682c3b90a9b4cea",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-champion.pdf": "906f36afd4b3177ca6ca10835568c4c39dcea51df2952dc65dea5e6875f39a18",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-horn-bearer.pdf": "3d8234b8e735d6081f83e207a6f4811aa2e9d02c45397c229abd364d733fe2c5",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-icon-bearer.pdf": "59d0c91edc5cf538b85b6c8e5b2fa93b9c922f064c30cdd3994d8b79a46c52f0",
+        "layers/integration/warpcoven/warpcoven-datacard-tzaangor-warrior.pdf": "fde48c002c8c2f35d67388791cf2234b1e29a7d7c89df3dc7541b220ee082105",
+        "layers/integration/warpcoven/warpcoven-equipment-arcane-robes.pdf": "0da3b7d36fcc2da3dbd29deffddd4f51d537d528850ae0403ef590cde9808dc6",
+        "layers/integration/warpcoven/warpcoven-equipment-daemonmaw-weapons.pdf": "a901b311bb8d4ac6eb067f07c508636729b4752bfe48cf8ac48a7b93b59d1e43",
+        "layers/integration/warpcoven/warpcoven-equipment-ensorcelled-rounds.pdf": "54c4eaef464bc4ee21f10b9e3ba412453e7def59265ba1ccaab1623083b974f3",
+        "layers/integration/warpcoven/warpcoven-equipment-sorcerous-scrolls.pdf": "be26608a41486a916de82aaf5ee2db40be86ffef3c513efc9a79739a8d0337df",
+        "layers/integration/warpcoven/warpcoven-faction-rule-astartes.pdf": "777a5c4ed8b409ca437f0e868317c4d6568af89206a5d280aff3da3096d7b783",
+        "layers/integration/warpcoven/warpcoven-faction-rule-boons-of-tzeentch-1.pdf": "4f790e5bce5df7607585bf6d9ac02539eadd9a8d6395cd8a6e800c9709478d75",
+        "layers/integration/warpcoven/warpcoven-faction-rule-boons-of-tzeentch-2.pdf": "d1d657036428570008e57526f181f63bf9ef739a7cdea9888cd31b68059d593f",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-all-is-dust.pdf": "f30b123b4ed5ead1c8fc3141cb66dc10396240f622b89d645fcb0f6006b9e4b0",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-capricious-plan.pdf": "46b7845a56285d6f25b3c5d87c40a74cc0d426c44cba7f495950e12837c0914d",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-mutant-herd.pdf": "ed8fe57e72c6dce8d395b59436724ece0c357445dd817088b32c545a99a59f95",
+        "layers/integration/warpcoven/warpcoven-firefight-ploy-psychic-cabal.pdf": "ffa1d7f038518653d9c0dd588851e3cb13f69976ba5c13d4b03eff71ecbd2005",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-1.pdf": "57a324b34a2a5dd14c74b093440f9cc929a9c80d8b38cf96745e0345d7efbf55",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-10.pdf": "4eb6c029bebc4088e1ffaa249c186839b9a1c916eaafbf510adc80162d636fdb",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-11.pdf": "d037da2ab63b8b8779ff195d8b9d3f23e142766768c33c6e037d0aa8c178871a",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-12.pdf": "2500ca42978db2e267d7e827970b53ec3f51c501d628338d2d98bd393ceea7a5",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-13.pdf": "75d64b36ac9ea533a8fd1d0d79df5a77ed9731be7e9e75ef21283f05638bd63f",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-14.pdf": "232b24f0d46282c0c9645343ea056e01afaf40c39b746e6ec3f50d0bd151c3b3",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-15.pdf": "1743d9d0ec28e6559fd58627e1a08bd9e01e6e8186e1f2289284cb51893b0208",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-16.pdf": "250bd6a605bfdc388b1923dcd8b1e32015390481c77ba6c8d7e1450a555547c5",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-2.pdf": "b9194dc9ecbd92829da542ad4aaf1c9a2cbc1e4a5a1bd3e454b61952c1917335",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-3.pdf": "22d2c8785e917c06674ac336bc7651ad0e5af3ba7bbeb761f478a4b4932d2b99",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-4.pdf": "27191a44a7c748ebfe8ea99ddd7c267b3aa8dcad533f437a331b43020adbafc7",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-5.pdf": "2c0d40b24a5e26b48c915538d8585704becc4be102ccfba706b713e5e7941317",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-6.pdf": "b31e4e97f402bb4c86d129d1ede390188aa5a8ad209703f0db2759fcf17ec112",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-7.pdf": "780b089eb3cdcf5372cd893eba4a9c0562efb9188e70c4b18767ad7e6c9f970f",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-8.pdf": "5b6e87124a462b727f6c753d10ab12901e32a2f44e85234e989120e47a90c4c4",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-9.pdf": "7239a1a51bb01e82dbff72a5bd407498b184b0490be621e4a0adeb2a5f38dc95",
+        "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection.pdf": "1082d895b225ea94411333366d5a8b563d0a7186517da865d2da8e0e8209338f",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-aetherial-warding.pdf": "0189aa8ebb775de83d9fd9092075bf3be904da12dedeb823dad290ffeaf0cf07",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-brotherhood-of-sorcerers.pdf": "a93edb3bec0eb916a446df3622cd3b182b1ab8b408a55c9ab49983bfc35057a0",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-fate-itself-is-my-weapon.pdf": "d171dc71157b01be253234276e7f79c269496809e368c5242f4a109a2420b1d3",
+        "layers/integration/warpcoven/warpcoven-strategy-ploy-savage-herd.pdf": "4ca481a68ca0bcdf390b277ad4c260aa050f5eaa2e583f34a6c1ff833779f7c1",
+        "layers/integration/warpcoven/card-backside/warpcoven-backside-portrait.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/warpcoven/card-backside/warpcoven-backside-landscape.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/warpcoven/data/warpcoven-team-data.json",
+          "hash": "0796a51d3484db43d77fcc9a97e73e11cf45471f72bf2bd8ba6cd2f25064d737",
+          "modified": "2026-08-29T18:51:33.272117+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:51:33.273286+00:00",
+      "inputs": {
+        "layers/integration/warpcoven/content/warpcoven-content.json": "0796a51d3484db43d77fcc9a97e73e11cf45471f72bf2bd8ba6cd2f25064d737"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Warpcoven Box.json": {
+          "path": "output/warpcoven/tts_objects/Warpcoven Box.json",
+          "hash": "ab9c6804c7ed639442ce970f797e4ce80b1a60178db0c823d8905d849e88923f",
+          "modified": "2026-07-21T11:11:15.749202+00:00"
+        },
+        "tts_objects/Warpcoven.json": {
+          "path": "output/warpcoven/tts_objects/Warpcoven.json",
+          "hash": "35d8d83ccf69576607186bbebbca7a0023576e5400939c8a613fcd6be60286f8",
+          "modified": "2026-08-29T18:53:41.423538+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:41.515277+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "2cb5f3f2c46dcf173a448428bfc091efba84209988341a312b901e2c93fb91c5",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "dc35ae4c4b5962c5d5f354b9c6beeff209d62c9f423a996e97080934f691f83c",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "1a563e6026071f8a89538a5e50f12e2e35f9616fab3f365c3124cafdc9eb231c",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "22a5d005f67a7f800bdcb8fef3577ee9b566127e1ccfb0315fc994cf1bd2b2ce",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "e4b1e5ee749a1adc9e691c68c57b25824bd14e59806a2696e0b64fa0eb79b7ec",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "aa048fa7f696fc1469f68b836bdfb14cb708431bda5c61d4cd69fe8214b50770",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "9dca6ee80ea4384d75218ae993de76e420b48d4a6d91b2c6dc5c5bbf1c2916fa",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "ae12d68ee9737992b02c5ce642fe870fcb312e400853ceafb1e5b8bfe3112e06",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "000dd3c68080c7d016dc90c283779a42b424b892dee33df6888e775e5f1f7bab",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "4c30886355ab58284cbcc4e66bab3127271d3327c94b8f93e781242a760e7809",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "11ddd338aa3866b05fcda81935e541c9a052882756a279deb0bb855a475a4bff",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "ac135cb47e57e65bdfd3b83f7311436e7f2e1d9397309d471b1388829f8e31f5",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "97ce35ee530f9ac7bcd2f7f92c60ecd9b3c7798364181d462798ddf485081b8b",
+        "output/warpcoven/cards/datacards/rubric-marine-gunner-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/rubric-marine-gunner-front.jpg": "667bfc7a3f217a79d51982d84268c8f352a684142eddd6a103d8a075b9cc7ffe",
+        "output/warpcoven/cards/datacards/rubric-marine-icon-bearer-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/rubric-marine-icon-bearer-front.jpg": "b36e4009bc6487455514e839019ad046dc7a03673b51023cc07285119c733585",
+        "output/warpcoven/cards/datacards/rubric-marine-warrior-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/rubric-marine-warrior-front.jpg": "0f5f28e83d06f3f1d0f194581536b449f6fcfc8569873408e20202b70e35f0bd",
+        "output/warpcoven/cards/datacards/sorcerer-of-destiny-back.jpg": "f0f247acffc18cadbe1bffb5857240702b6b9af6539b1245f7a5407a0bc8c87b",
+        "output/warpcoven/cards/datacards/sorcerer-of-destiny-front.jpg": "675d23527e2ef98aa01c5e13b20aaffb010c8ee20e7f6b72b7477ce7b8425554",
+        "output/warpcoven/cards/datacards/sorcerer-of-tempyrion-back.jpg": "1c5434e2b53af9d16a88b1ff0dfe9d08b30ce13f691cd55a9d8afdefd21adba9",
+        "output/warpcoven/cards/datacards/sorcerer-of-tempyrion-front.jpg": "013fa5a8dac1d69151530a024134b55575e7728b85d50079dd300395b1f8e0c0",
+        "output/warpcoven/cards/datacards/sorcerer-of-warpfire-back.jpg": "9e1f4436000f3aed76d077c99c3c75bcdd55feb51b1eab24a1a9084cac887d5f",
+        "output/warpcoven/cards/datacards/sorcerer-of-warpfire-front.jpg": "fd2695799589cb131771cca6362bad09af93e8338466efcd732ca188d6f4c14e",
+        "output/warpcoven/cards/datacards/tzaangor-champion-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/tzaangor-champion-front.jpg": "b4511d87510efd123a5b14e47d006a3749949e626f9535d2b96628fecc9f7ec2",
+        "output/warpcoven/cards/datacards/tzaangor-horn-bearer-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/tzaangor-horn-bearer-front.jpg": "687adc0a6dd13c436475cbb631d627a6013600ca53e3b29ecbc63906d12018aa",
+        "output/warpcoven/cards/datacards/tzaangor-icon-bearer-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/tzaangor-icon-bearer-front.jpg": "659cc395ffe2539e55ae33398478f1ae9e400af94aa04f087fe82e0bf649b253",
+        "output/warpcoven/cards/datacards/tzaangor-warrior-back.jpg": "03a7902acd3c54c22a4d7323eceb8b870e00e2db9fd586e86402da72f1b46376",
+        "output/warpcoven/cards/datacards/tzaangor-warrior-front.jpg": "54c5ae0094f10e922c9fe7a466aeb7261b83cc116e6efe8ed702cf8586664750",
+        "output/warpcoven/cards/equipment/warpcoven-arcane-robes-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/equipment/warpcoven-arcane-robes-front.jpg": "239673a3be27c1ee9ee9d6f5bf5b2a5bfd5e6307a9a2a06e23e642500dfbb6aa",
+        "output/warpcoven/cards/equipment/warpcoven-daemonmaw-weapons-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/equipment/warpcoven-daemonmaw-weapons-front.jpg": "544656da5ce150ebac402bc2714ba9962f0e1ed6fdf531d013db0e17d4bf5de4",
+        "output/warpcoven/cards/equipment/warpcoven-ensorcelled-rounds-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/equipment/warpcoven-ensorcelled-rounds-front.jpg": "b66030ed1ca002a1d0c9afffbdc5b42f1d2b8edaa9bf0b0ead5ff48247b3e30b",
+        "output/warpcoven/cards/equipment/warpcoven-sorcerous-scrolls-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/equipment/warpcoven-sorcerous-scrolls-front.jpg": "e8e913422572439b8170b2a42e389d6a2008eef5ca3bb9a6b411798a6a933ad4",
+        "output/warpcoven/cards/faction_rules/warpcoven-astartes-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/faction_rules/warpcoven-astartes-front.jpg": "9a8fd98e7c29e9310a4fa13144f3c405a2031f203a9980926840dd520e0f70a9",
+        "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card1-back.jpg": "55fdee8011c023b866d1b5e13041aab1688018839cd33a0d175581a260b0164a",
+        "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card1-front.jpg": "36be2e27bb545a602164c643bdb40cc2b0a2bb672668f0fe466aca72c5e5c62b",
+        "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card2-back.jpg": "fbaee03b45eeb56d57a709506641dcc1d98a4c5a8ae02c5473217ae9f9b9de4c",
+        "output/warpcoven/cards/faction_rules/warpcoven-boons-of-tzeentch-card2-front.jpg": "786df55a64b20911fc5bce4ced42efa4e8072cd93823116b8dfd1731c9f6eb7f",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-all-is-dust-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-all-is-dust-front.jpg": "572668a5b86ff32179dd6f1926b6df2faafa0d6f8eb2aa9c4a2ef3045bd96ba6",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-capricious-plan-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-capricious-plan-front.jpg": "92366bc646d5212c3d7f22e364711af6032465a94c65bd587408065e0c3d009f",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-mutant-herd-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-mutant-herd-front.jpg": "c30098f57ac142a44d2470db6cf9dacfd16924ae02750ea855a900bab0a30869",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-psychic-cabal-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/firefight_ploys/warpcoven-psychic-cabal-front.jpg": "04af005f7207966c53e1907e60453af0a630726c8f960a25df8d2899ab95c05a",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-back.jpg": "7f398117e994bb576eb41f83d2d607e9994ae7efe550a018c115fbf62b41dd84",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card1-back.jpg": "7f398117e994bb576eb41f83d2d607e9994ae7efe550a018c115fbf62b41dd84",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card1-front.jpg": "453398b7c7d60e20f6bacf2c0c597a49ffeccab07e74ee8d6405b77373673076",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card10-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card10-front.jpg": "fede95ed9c11579a16772786eb492352d25e5d7541fbf23a67266df983c7d997",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card11-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card11-front.jpg": "0d6d2334606a199fd8dbe8b63abd7d90b94d85128ded28f0e701f3b384d1a8dc",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card12-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card12-front.jpg": "f44af618c874e9090f0478d46e36288265353188b1b333160106f3f38ec4a652",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card13-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card13-front.jpg": "f173ce6ae1536f16a9a761e681ead4a60c4995179bb498ec87e1690c72eba8bd",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card14-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card14-front.jpg": "675fcce6a38f9c7b5ee8bf5904eaa4f913bcbd00777a6d77689f2e51475031d3",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card15-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card15-front.jpg": "bdace8d0481faeaa73b0a3bfe17154700bf672979b18423933d11a35a17819b2",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card16-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card16-front.jpg": "1487d38d99f7791ffdbf4b74becb850978250dfdf0509c88babef84e573da9df",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card2-back.jpg": "c6813c705f0299beb136b5a3a34d3c39fb44addbda5aff945355f5cdb38cbf11",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card2-front.jpg": "b22ca5fb1eddf8f9c9d2cecce0898f6284e18004ba5cbae0f956220e04c3409c",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card3-back.jpg": "7ad61877a2fd188dca68f7a25965327d4f8b42ac1c8c303853930d3148d67235",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card3-front.jpg": "6c51ae917192a09e4bf5324b564a16f3bfcba136d2edd9eb636efa1c9df91f6d",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card4-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card4-front.jpg": "fc628b6010697476098d37bfb7d16132510926e290be346c06713acc79356ce7",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card5-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card5-front.jpg": "1ad584e0a08807386ce2e747a1b270e4915b0bb1250d0a155b99728d88010bfc",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card6-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card6-front.jpg": "ca8084ece05c1a531a73ed21533b87f0f1d85a1aed9a4efbccde5d8a19d423e0",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card7-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card7-front.jpg": "2a207ea67372c1087e520e0f093d53fbe2627ac7543d2d8eb2dac7ff890e4657",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card8-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card8-front.jpg": "85a2e8e7b10edfc2f34a6fdc82dc494c720123a60e054ca0741361570909899b",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card9-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-card9-front.jpg": "7879e41dced316186e75848b2dd3716fb3f95af44296ebc6888875a01e0a634c",
+        "output/warpcoven/cards/operatives_selection/warpcoven-operative-selection-front.jpg": "93c86641a3e8bca0499a17d7403b5d9afd1a732ff0e356a5b77b0cab7ee6e337",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-aetherial-warding-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-aetherial-warding-front.jpg": "f0027bc0a584d41be0ca2f274e2a2ca635dc194f1c8f54c5095c836cfe9d1406",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-brotherhood-of-sorcerers-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-brotherhood-of-sorcerers-front.jpg": "6a331e81634384dafa0846926f29c116b6bacc89cd521d9a77a9b346889aa541",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-fate-itself-is-my-weapon-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-fate-itself-is-my-weapon-front.jpg": "6f63482ac70fa6feabb0491b37adaf7b7f6bb845b58bd9854e53199fd92ee014",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-savage-herd-back.jpg": "62e4d493ab6537df495a317bf4e91be4cf05d2240abecf6adf547632eca0b1ff",
+        "output/warpcoven/cards/strategy_ploys/warpcoven-savage-herd-front.jpg": "50d4f14927bab33e5b1a66c1b5979380c9c259d380d0ea94bebd4aa7a3210d1e",
+        "output/warpcoven/cardbox/warpcoven-card-box-texture.jpg": "b8e3890bd55f59a5a7a32e3121431e66796bf6ce8f350ee475047bf966928360",
+        "output/warpcoven/cardbox/warpcoven-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/warpcoven/dice/warpcoven-dice-dark.jpg": "453f59b2b7c306808dd37329ddae09bd662dea96e637ac9421520850f42f664a",
+        "output/warpcoven/dice/warpcoven-dice-light.jpg": "04e973cdfb7df15230f53a4ba85293a186d4cbdbaf8e1abbac40d67c21958032",
+        "output/warpcoven/data/warpcoven-team-data.json": "0796a51d3484db43d77fcc9a97e73e11cf45471f72bf2bd8ba6cd2f25064d737",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "firefight-ploys": {
+          "hash": "a111e38200697b1e6e9acd8201e1a7026b6cfe0118b2b45207a18153f324afa4",
+          "outputs": [
+            "layers/kt-app/extracted/warpcoven/cards/firefight-ploys/warpcoven-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/firefight-ploys/warpcoven-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/firefight-ploys/warpcoven-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/firefight-ploys/warpcoven-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:59:40.889323+00:00"
+        },
+        "equipment": {
+          "hash": "de774156130b0b4129d563a75edf6a630806712348b956c732f5433f6daa1258",
+          "outputs": [
+            "layers/kt-app/extracted/warpcoven/cards/equipment/warpcoven-equipment-page_0.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/equipment/warpcoven-equipment-page_1.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/equipment/warpcoven-equipment-page_2.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/equipment/warpcoven-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:59:49.078664+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "1ef1da105d9f8f1ae012f04481747bcf8aad9f536256afeeba2cf47379896b87",
+          "outputs": [
+            "layers/kt-app/extracted/warpcoven/cards/strategy-ploys/warpcoven-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/strategy-ploys/warpcoven-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/strategy-ploys/warpcoven-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/strategy-ploys/warpcoven-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:03:52.213108+00:00"
+        },
+        "faction-rules": {
+          "hash": "3d444a44e76ac493c1b1f2b302ee40ba8f358c2848c8ef35f7bcffac44d9f41a",
+          "outputs": [
+            "layers/kt-app/extracted/warpcoven/cards/faction-rules/warpcoven-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/faction-rules/warpcoven-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/faction-rules/warpcoven-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/faction-rules/warpcoven-faction-rules-page_3.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/faction-rules/warpcoven-faction-rules-page_4.pdf"
+          ],
+          "modified": "2026-07-06T16:08:05.977211+00:00"
+        },
+        "operatives-selection": {
+          "hash": "cbba3d41df9a53d04934b10fbc9a47699e55bea29df4adfaa58c17bbfee9ce73",
+          "outputs": [
+            "layers/kt-app/extracted/warpcoven/cards/operatives-selection/warpcoven-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/operatives-selection/warpcoven-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:09:47.680977+00:00"
+        },
+        "datacards": {
+          "hash": "f33cb114188f6ce977789664c4a1931f7870a6994e979db688177318a1bf0262",
+          "outputs": [
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_0.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_1.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_2.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_3.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_4.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_5.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_6.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_7.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_8.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_9.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_10.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_11.pdf",
+            "layers/kt-app/extracted/warpcoven/cards/datacards/warpcoven-datacards-page_12.pdf"
+          ],
+          "modified": "2026-07-06T16:13:00.722730+00:00"
+        },
+        "cards": {
+          "hash": "468140fce74077922df86f83f634f9ca247a26b7ff375236d4d5d7fe68098ef6",
+          "outputs": [
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card4_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card1_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card2_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card3_portrait.pdf",
+            "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card4_portrait.pdf"
+          ],
+          "modified": "2026-07-08T19:06:23.472671+00:00"
+        }
+      },
+      "completed": "2026-07-08T19:06:23.472714+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/warpcoven-structure.json",
+          "hash": "64bac2483d661a7d996edf6d046d7481325a3eaa8681ae8a6fee67d85b27abec",
+          "modified": "2026-08-29T18:49:48.690962+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card1_landscape.pdf": "2d5a60eedf6abe8b74cd881a7fd7cb9932cb0bb49e241415af42d1390488e497",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card2_landscape.pdf": "a0ce6cdced9de83391dda5b5f05e51f27f914f27b0bf4a76f8daee2c054912d4",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card3_landscape.pdf": "ec71b70b1c47cd0269a564f083b69d2c5c74943240652917b777532ce257c674",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card4_landscape.pdf": "c2384afcf4258776d1355ff1b33624c1a7f471c1b61b47920caf4d5b245e26f8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card1_landscape.pdf": "c52d1c0417d0e50ce51e1279765210f3dbc0032bfa51554e2086f7381c0382f8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card2_landscape.pdf": "bf789331db21c77f03194068969dc08b7ac65053e4abb6f220d847fc52a01d4d",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card3_landscape.pdf": "963cd8be0303952d86b38fa5ab20495a974585fc06f70fc8a0d01e7e8664c781",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card4_landscape.pdf": "21259250440f6f1022afb515332b4e99247d098bfa6003486cdd3e6b10522d54",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card1_landscape.pdf": "50ffd4bba06103d84bc119543d712e717b76d482df977e9d853f1e49eb56527d",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card2_landscape.pdf": "4bfd14ee7b29b1f027b10cbf5ddc99d7c6b4d6735d2583ea28b037edf80ed410",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card3_landscape.pdf": "d23e1fca1682797d124c8d11d356d2c83b90136a59068ff03089870440e29b6c",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card4_landscape.pdf": "16e180a1e73703abb7a824b169c200e16e7efdf00ca4e9423b05689d269a3afa",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card1_landscape.pdf": "0d087d5dd6c5161fadc56bd0a352a2c3d08d74e37d2b0900d776c40e178b43a7",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card2_landscape.pdf": "80947d21e27d9ab069a5a5f696d80a5b83f8733b6f38094bb242d5ea0caadfbe",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card3_landscape.pdf": "b41ef63d45e78c3473bc825979c129b15e79d7b5cddee42224a800fa97e59eb3",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card4_landscape.pdf": "64f7da65643d4f9c6d6a51e2bb1057297feb163594f9091625fcd04e9b53587a",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card1_portrait.pdf": "0db951d40fef0cf09829847af0b417a583143343d9380a6ccebf88bc60a34aef",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card2_portrait.pdf": "63e91a4484dad522f8e31e253e234a5f28f229c4c21604bf71755567ccb954b3",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card3_portrait.pdf": "df515998f961fc7de698cf81a45bd7c6988297dba8cada0e984cf68501814ac9",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card4_portrait.pdf": "300cede803583453ee6a094cb00c47cfd4dad38e11543af89852798ed3b58380",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card1_portrait.pdf": "10cfb1f66b2a7f5f44a90fcc24d06a7117ccfc71739b4b81d1aa9611e1914fa8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card2_portrait.pdf": "9a0f15df6c7371c6839223f6a6e32bf04b733fd5b4c3fa6339fd3d0e1cfd639c",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card3_portrait.pdf": "6c1015983f1efb9df1113828ec827d338ea8ad3591d7bac00e688dbf3c0db340",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card4_portrait.pdf": "8dffd07042ef5b7b3ff5cf42067b1dac535be6cd909119818595f5e93d536a6d",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card1_portrait.pdf": "baf571fa3b0785c28035ef6ef40f9ea8e4858d7bf20f54b1f0b7cca8575c1f66",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card2_portrait.pdf": "b97597575bdfc3329280787976ea2fa316720888ab99b74563842e6c950228ac",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card3_portrait.pdf": "a3e77b6c39978de3d43b58292c6b60763e05922bd56511479d4159ba26e9e110",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card4_portrait.pdf": "f338fe6284246d0aa4396b121a7c71030adce43025a88373307f3501e1c0e271",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card1_portrait.pdf": "c93d1a13c43788d5f7c47068fe247d8c3c685be2cd5e914144c33358776a2fc7",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card2_portrait.pdf": "8726fb9a99246bc1c079fe6f812d7e7448465a08ce27b39d217de4e46b4b6ab8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card3_portrait.pdf": "26eb884048101ec91e466f63ab777b44aeac06516486649606c74a814fad934f",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card4_portrait.pdf": "9fdeb9513dd8f428a05d570fb14177dcbff6cdee063aa8d91765b0cb69d3fe18",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card1_portrait.pdf": "efbf2c58677e0231258d30877516723b1500f78e0f7f645fda5f8a936ca45a6f",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card2_portrait.pdf": "152cfd51a596997bcc2d5aeb9fc5f2afcd1d87ea9f2c78af233c50d16e502146",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card3_portrait.pdf": "ef4a38466ae51bb1452a06acdb89dbed7a45405832f2fb6e3a06779bf029fddb",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card4_portrait.pdf": "7f5563a254a584fe1c38980c0ea7ae4dffe1f8614d3e76460bd2b8954f719652"
+      },
+      "completed": "2026-08-29T18:50:01.625223+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/warpcoven/manifest.json",
+          "hash": "64bac2483d661a7d996edf6d046d7481325a3eaa8681ae8a6fee67d85b27abec",
+          "modified": "2026-08-29T18:50:01.968001+00:00"
+        },
+        "warpcoven-datacard-sorcerer-of-destiny.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-destiny.pdf",
+          "hash": "44b2b89d54a3d4da34ac90803463a35399a153be83b4a7e876e2f9ea7c03c347",
+          "modified": "2026-07-12T19:22:10.032454+00:00"
+        },
+        "warpcoven-datacard-sorcerer-of-tempyrion.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-tempyrion.pdf",
+          "hash": "ef75ffc52a2dffe444beaa941f6779f8da31359cea8af73ea44a97a46166a15a",
+          "modified": "2026-07-12T19:22:10.044209+00:00"
+        },
+        "warpcoven-datacard-sorcerer-of-warpfire.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-sorcerer-of-warpfire.pdf",
+          "hash": "d4429ddcd29325632a8f2b6c1fe5f2df3cd0180d7092a3d14682c3b90a9b4cea",
+          "modified": "2026-07-12T19:22:10.053266+00:00"
+        },
+        "warpcoven-datacard-rubric-marine-gunner.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-gunner.pdf",
+          "hash": "e7408dc6282120623f9a27270782dca394cc1ad9081957ebce04fcf5b19dd73d",
+          "modified": "2026-07-12T19:22:10.064202+00:00"
+        },
+        "warpcoven-datacard-rubric-marine-icon-bearer.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-icon-bearer.pdf",
+          "hash": "1084a86689851c4dabdec735f43677019caa3945d9f8d8b5052f82dd7c95f5c9",
+          "modified": "2026-07-12T19:22:10.074489+00:00"
+        },
+        "warpcoven-datacard-rubric-marine-warrior.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-rubric-marine-warrior.pdf",
+          "hash": "b541efc62d1e7512f2524ed6b6c608572daad2b1a62ae5e6abfb15b7c21dae8d",
+          "modified": "2026-07-12T19:22:10.084634+00:00"
+        },
+        "warpcoven-datacard-tzaangor-champion.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-tzaangor-champion.pdf",
+          "hash": "906f36afd4b3177ca6ca10835568c4c39dcea51df2952dc65dea5e6875f39a18",
+          "modified": "2026-07-12T19:22:10.096685+00:00"
+        },
+        "warpcoven-datacard-tzaangor-horn-bearer.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-tzaangor-horn-bearer.pdf",
+          "hash": "3d8234b8e735d6081f83e207a6f4811aa2e9d02c45397c229abd364d733fe2c5",
+          "modified": "2026-07-12T19:22:10.119816+00:00"
+        },
+        "warpcoven-datacard-tzaangor-icon-bearer.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-tzaangor-icon-bearer.pdf",
+          "hash": "59d0c91edc5cf538b85b6c8e5b2fa93b9c922f064c30cdd3994d8b79a46c52f0",
+          "modified": "2026-07-12T19:22:10.141765+00:00"
+        },
+        "warpcoven-datacard-tzaangor-warrior.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-tzaangor-warrior.pdf",
+          "hash": "fde48c002c8c2f35d67388791cf2234b1e29a7d7c89df3dc7541b220ee082105",
+          "modified": "2026-07-12T19:22:10.152972+00:00"
+        },
+        "warpcoven-equipment-ensorcelled-rounds.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-equipment-ensorcelled-rounds.pdf",
+          "hash": "54c4eaef464bc4ee21f10b9e3ba412453e7def59265ba1ccaab1623083b974f3",
+          "modified": "2026-07-12T19:22:10.173973+00:00"
+        },
+        "warpcoven-equipment-daemonmaw-weapons.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-equipment-daemonmaw-weapons.pdf",
+          "hash": "a901b311bb8d4ac6eb067f07c508636729b4752bfe48cf8ac48a7b93b59d1e43",
+          "modified": "2026-07-12T19:22:10.197583+00:00"
+        },
+        "warpcoven-equipment-arcane-robes.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-equipment-arcane-robes.pdf",
+          "hash": "0da3b7d36fcc2da3dbd29deffddd4f51d537d528850ae0403ef590cde9808dc6",
+          "modified": "2026-07-12T19:22:10.214663+00:00"
+        },
+        "warpcoven-equipment-sorcerous-scrolls.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-equipment-sorcerous-scrolls.pdf",
+          "hash": "be26608a41486a916de82aaf5ee2db40be86ffef3c513efc9a79739a8d0337df",
+          "modified": "2026-07-12T19:22:10.231308+00:00"
+        },
+        "warpcoven-faction-rule-boons-of-tzeentch-1.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-faction-rule-boons-of-tzeentch-1.pdf",
+          "hash": "4f790e5bce5df7607585bf6d9ac02539eadd9a8d6395cd8a6e800c9709478d75",
+          "modified": "2026-07-12T19:22:10.281420+00:00"
+        },
+        "warpcoven-faction-rule-boons-of-tzeentch-2.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-faction-rule-boons-of-tzeentch-2.pdf",
+          "hash": "d1d657036428570008e57526f181f63bf9ef739a7cdea9888cd31b68059d593f",
+          "modified": "2026-07-12T19:22:10.343276+00:00"
+        },
+        "warpcoven-faction-rule-astartes.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-faction-rule-astartes.pdf",
+          "hash": "777a5c4ed8b409ca437f0e868317c4d6568af89206a5d280aff3da3096d7b783",
+          "modified": "2026-07-12T19:22:10.358470+00:00"
+        },
+        "warpcoven-firefight-ploy-all-is-dust.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-firefight-ploy-all-is-dust.pdf",
+          "hash": "f30b123b4ed5ead1c8fc3141cb66dc10396240f622b89d645fcb0f6006b9e4b0",
+          "modified": "2026-07-12T19:22:10.369649+00:00"
+        },
+        "warpcoven-firefight-ploy-capricious-plan.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-firefight-ploy-capricious-plan.pdf",
+          "hash": "46b7845a56285d6f25b3c5d87c40a74cc0d426c44cba7f495950e12837c0914d",
+          "modified": "2026-07-12T19:22:10.405451+00:00"
+        },
+        "warpcoven-firefight-ploy-psychic-cabal.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-firefight-ploy-psychic-cabal.pdf",
+          "hash": "ffa1d7f038518653d9c0dd588851e3cb13f69976ba5c13d4b03eff71ecbd2005",
+          "modified": "2026-07-12T19:22:10.472476+00:00"
+        },
+        "warpcoven-firefight-ploy-mutant-herd.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-firefight-ploy-mutant-herd.pdf",
+          "hash": "ed8fe57e72c6dce8d395b59436724ece0c357445dd817088b32c545a99a59f95",
+          "modified": "2026-07-12T19:22:10.516734+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection.pdf",
+          "hash": "1082d895b225ea94411333366d5a8b563d0a7186517da865d2da8e0e8209338f",
+          "modified": "2026-07-12T19:22:10.552077+00:00"
+        },
+        "warpcoven-strategy-ploy-aetherial-warding.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-strategy-ploy-aetherial-warding.pdf",
+          "hash": "0189aa8ebb775de83d9fd9092075bf3be904da12dedeb823dad290ffeaf0cf07",
+          "modified": "2026-07-12T19:22:10.601480+00:00"
+        },
+        "warpcoven-strategy-ploy-fate-itself-is-my-weapon.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-strategy-ploy-fate-itself-is-my-weapon.pdf",
+          "hash": "d171dc71157b01be253234276e7f79c269496809e368c5242f4a109a2420b1d3",
+          "modified": "2026-07-12T19:22:10.663687+00:00"
+        },
+        "warpcoven-strategy-ploy-brotherhood-of-sorcerers.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-strategy-ploy-brotherhood-of-sorcerers.pdf",
+          "hash": "a93edb3bec0eb916a446df3622cd3b182b1ab8b408a55c9ab49983bfc35057a0",
+          "modified": "2026-07-12T19:22:10.696007+00:00"
+        },
+        "warpcoven-strategy-ploy-savage-herd.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-strategy-ploy-savage-herd.pdf",
+          "hash": "4ca481a68ca0bcdf390b277ad4c260aa050f5eaa2e583f34a6c1ff833779f7c1",
+          "modified": "2026-07-12T19:22:10.707247+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "f32d62049b2f69bd535cdea6cbe369f351da341ae8cbb50895335342cf7ec95f",
+          "modified": "2026-08-29T18:50:02.020852+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "8d2162a5a77d06102e8c896077e1625cfbe057528798470eb7605d90845f8e2c",
+          "modified": "2026-08-29T18:50:02.045798+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "fd18574acd3d759883364643b627058dcae6ad718a99627d9f0c7cc5737fda20",
+          "modified": "2026-08-29T18:50:02.063434+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "f69f24c1da62197b554ed13891fc034c36c8578e5d22daee42f5d0ae9676ac46",
+          "modified": "2026-08-29T18:50:02.076161+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "08d867d1d2ad15fe80d3cb8b4edc3e264bbbf866c5b948be518164f541c7b7d6",
+          "modified": "2026-08-29T18:50:02.089230+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "4a7170aeff619819ca16c0cb2e3b93a338938cfd6fc18482df84534ce888bf8a",
+          "modified": "2026-08-29T18:50:02.104437+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "377aac077bb7d090e9e9ecad0543ac3cb025df4f92eb366accc378acb46e64af",
+          "modified": "2026-08-29T18:50:02.118890+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "64b77d9cc5fe2d4adbab5db47b1869bc71d022a5e0ad0e7c94387da8b1efb063",
+          "modified": "2026-08-29T18:50:02.142230+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "adf155f36cefb67ee0ace2fee47fd53ab4169c808566037b81be4079808691c8",
+          "modified": "2026-08-29T18:50:02.170566+00:00"
+        },
+        "warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "97f2395c9e495d116ab16d714db80f708024b1f39fa9d86045fd59569a2eca7a",
+          "modified": "2026-08-29T18:50:02.202270+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-1.pdf",
+          "hash": "57a324b34a2a5dd14c74b093440f9cc929a9c80d8b38cf96745e0345d7efbf55",
+          "modified": "2026-08-29T18:50:12.964514+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-2.pdf",
+          "hash": "b9194dc9ecbd92829da542ad4aaf1c9a2cbc1e4a5a1bd3e454b61952c1917335",
+          "modified": "2026-08-29T18:50:20.429919+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-3.pdf",
+          "hash": "22d2c8785e917c06674ac336bc7651ad0e5af3ba7bbeb761f478a4b4932d2b99",
+          "modified": "2026-08-29T18:50:22.956179+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-4.pdf",
+          "hash": "27191a44a7c748ebfe8ea99ddd7c267b3aa8dcad533f437a331b43020adbafc7",
+          "modified": "2026-08-29T18:50:26.449057+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-5.pdf",
+          "hash": "2c0d40b24a5e26b48c915538d8585704becc4be102ccfba706b713e5e7941317",
+          "modified": "2026-08-29T18:50:26.769764+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-6.pdf",
+          "hash": "b31e4e97f402bb4c86d129d1ede390188aa5a8ad209703f0db2759fcf17ec112",
+          "modified": "2026-08-29T18:50:26.786168+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-7.pdf",
+          "hash": "780b089eb3cdcf5372cd893eba4a9c0562efb9188e70c4b18767ad7e6c9f970f",
+          "modified": "2026-08-29T18:50:26.799391+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-8.pdf",
+          "hash": "5b6e87124a462b727f6c753d10ab12901e32a2f44e85234e989120e47a90c4c4",
+          "modified": "2026-08-29T18:50:26.815529+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-9.pdf",
+          "hash": "7239a1a51bb01e82dbff72a5bd407498b184b0490be621e4a0adeb2a5f38dc95",
+          "modified": "2026-08-29T18:50:26.836602+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-10.pdf",
+          "hash": "4eb6c029bebc4088e1ffaa249c186839b9a1c916eaafbf510adc80162d636fdb",
+          "modified": "2026-08-29T18:50:26.860899+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-11.pdf",
+          "hash": "d037da2ab63b8b8779ff195d8b9d3f23e142766768c33c6e037d0aa8c178871a",
+          "modified": "2026-08-29T18:50:26.876459+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-12.pdf",
+          "hash": "2500ca42978db2e267d7e827970b53ec3f51c501d628338d2d98bd393ceea7a5",
+          "modified": "2026-08-29T18:50:26.894103+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-13.pdf",
+          "hash": "75d64b36ac9ea533a8fd1d0d79df5a77ed9731be7e9e75ef21283f05638bd63f",
+          "modified": "2026-08-29T18:50:26.917601+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-14.pdf",
+          "hash": "232b24f0d46282c0c9645343ea056e01afaf40c39b746e6ec3f50d0bd151c3b3",
+          "modified": "2026-08-29T18:50:26.932658+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-15.pdf",
+          "hash": "1743d9d0ec28e6559fd58627e1a08bd9e01e6e8186e1f2289284cb51893b0208",
+          "modified": "2026-08-29T18:50:26.955946+00:00"
+        },
+        "warpcoven-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/warpcoven/warpcoven-operatives-selection-operative-selection-16.pdf",
+          "hash": "250bd6a605bfdc388b1923dcd8b1e32015390481c77ba6c8d7e1450a555547c5",
+          "modified": "2026-08-29T18:50:27.004336+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/warpcoven-structure.json": "64bac2483d661a7d996edf6d046d7481325a3eaa8681ae8a6fee67d85b27abec",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card1_landscape.pdf": "2d5a60eedf6abe8b74cd881a7fd7cb9932cb0bb49e241415af42d1390488e497",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card2_landscape.pdf": "a0ce6cdced9de83391dda5b5f05e51f27f914f27b0bf4a76f8daee2c054912d4",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card3_landscape.pdf": "ec71b70b1c47cd0269a564f083b69d2c5c74943240652917b777532ce257c674",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page01_card4_landscape.pdf": "c2384afcf4258776d1355ff1b33624c1a7f471c1b61b47920caf4d5b245e26f8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card1_landscape.pdf": "c52d1c0417d0e50ce51e1279765210f3dbc0032bfa51554e2086f7381c0382f8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card2_landscape.pdf": "bf789331db21c77f03194068969dc08b7ac65053e4abb6f220d847fc52a01d4d",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card3_landscape.pdf": "963cd8be0303952d86b38fa5ab20495a974585fc06f70fc8a0d01e7e8664c781",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page02_card4_landscape.pdf": "21259250440f6f1022afb515332b4e99247d098bfa6003486cdd3e6b10522d54",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card1_landscape.pdf": "50ffd4bba06103d84bc119543d712e717b76d482df977e9d853f1e49eb56527d",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card2_landscape.pdf": "4bfd14ee7b29b1f027b10cbf5ddc99d7c6b4d6735d2583ea28b037edf80ed410",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card3_landscape.pdf": "d23e1fca1682797d124c8d11d356d2c83b90136a59068ff03089870440e29b6c",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page03_card4_landscape.pdf": "16e180a1e73703abb7a824b169c200e16e7efdf00ca4e9423b05689d269a3afa",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page04_card1_landscape.pdf": "0d087d5dd6c5161fadc56bd0a352a2c3d08d74e37d2b0900d776c40e178b43a7",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card1_portrait.pdf": "0db951d40fef0cf09829847af0b417a583143343d9380a6ccebf88bc60a34aef",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card2_portrait.pdf": "63e91a4484dad522f8e31e253e234a5f28f229c4c21604bf71755567ccb954b3",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card3_portrait.pdf": "df515998f961fc7de698cf81a45bd7c6988297dba8cada0e984cf68501814ac9",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page05_card4_portrait.pdf": "300cede803583453ee6a094cb00c47cfd4dad38e11543af89852798ed3b58380",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card1_portrait.pdf": "10cfb1f66b2a7f5f44a90fcc24d06a7117ccfc71739b4b81d1aa9611e1914fa8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card2_portrait.pdf": "9a0f15df6c7371c6839223f6a6e32bf04b733fd5b4c3fa6339fd3d0e1cfd639c",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card3_portrait.pdf": "6c1015983f1efb9df1113828ec827d338ea8ad3591d7bac00e688dbf3c0db340",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page06_card4_portrait.pdf": "8dffd07042ef5b7b3ff5cf42067b1dac535be6cd909119818595f5e93d536a6d",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card1_portrait.pdf": "baf571fa3b0785c28035ef6ef40f9ea8e4858d7bf20f54b1f0b7cca8575c1f66",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card2_portrait.pdf": "b97597575bdfc3329280787976ea2fa316720888ab99b74563842e6c950228ac",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card3_portrait.pdf": "a3e77b6c39978de3d43b58292c6b60763e05922bd56511479d4159ba26e9e110",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page07_card4_portrait.pdf": "f338fe6284246d0aa4396b121a7c71030adce43025a88373307f3501e1c0e271",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card1_portrait.pdf": "c93d1a13c43788d5f7c47068fe247d8c3c685be2cd5e914144c33358776a2fc7",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card2_portrait.pdf": "8726fb9a99246bc1c079fe6f812d7e7448465a08ce27b39d217de4e46b4b6ab8",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card3_portrait.pdf": "26eb884048101ec91e466f63ab777b44aeac06516486649606c74a814fad934f",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page08_card4_portrait.pdf": "9fdeb9513dd8f428a05d570fb14177dcbff6cdee063aa8d91765b0cb69d3fe18",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card1_portrait.pdf": "efbf2c58677e0231258d30877516723b1500f78e0f7f645fda5f8a936ca45a6f",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card2_portrait.pdf": "152cfd51a596997bcc2d5aeb9fc5f2afcd1d87ea9f2c78af233c50d16e502146",
+        "layers/warcom/extracted/warpcoven/cards/warpcoven_page09_card3_portrait.pdf": "ef4a38466ae51bb1452a06acdb89dbed7a45405832f2fb6e3a06779bf029fddb"
+      },
+      "completed": "2026-08-29T18:50:38.285284+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "468140fce74077922df86f83f634f9ca247a26b7ff375236d4d5d7fe68098ef6",
+          "outputs": [
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-01.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-02.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-03.png",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-04.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-05.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-06.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-07.png",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-08.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-09.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-10.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-11.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-12.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-13.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-14.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-15.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-16.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-17.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-18.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-19.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-20.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-21.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-22.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-23.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-24.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-25.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-26.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-27.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-28.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-29.jpeg",
+            "layers/integration/warpcoven/artwork/warpcoven-artwork-metadata.json",
+            "layers/integration/warpcoven/artwork/icons/warpcoven-icon-landscape.jpg",
+            "layers/integration/warpcoven/artwork/icons/warpcoven-icon-portrait.jpg",
+            "layers/integration/warpcoven/artwork/icons/warpcoven-icon-token-transparent.png",
+            "layers/integration/warpcoven/artwork/icons/warpcoven-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:55:56.491561+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:55:56.491576+00:00"
+    }
+  }
+}

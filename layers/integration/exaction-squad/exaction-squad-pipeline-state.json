@@ -1,0 +1,1697 @@
+{
+  "team": "exaction-squad",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:37.775967+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/exaction-squad/content/exaction-squad-content.json",
+          "hash": "a82edd1b4c7a28d3a3c478cb7a8b5ce23b55db71107571c7d2aee9e8668a9966",
+          "modified": "2026-08-29T18:42:45.832494+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:47.443729+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/manifest.json": "9977dd6973352a0c5b081a318fe87edf987cbf04eff7ec70ef2d105bcbe83b7b",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-castigator.pdf": "255ea8bbacff66ae0ef4d6d776a7d1314367c9f6ef7714a9e4de4b6d3769a7de",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-chirurgant.pdf": "e6c0465d1765b7e3b10cfa071cd3abb80270197c693ea0b54de3b2f26f0b7d4f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-gunner.pdf": "fe61e921bb6527d97c3925a3ef1b4d591351b911af8e04ec31facd595eab3ede",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-leashmaster.pdf": "06b038710d2b16df86e060f7001cf574f235e89e2da229e7ddb72cdbe1b1ff4f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-malocator.pdf": "9d5e7dfd3d82abacbdc2a66e094e5077a4c6c933cfef9f063f2669863e29bf6e",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-marksman.pdf": "fb567b3d5d649ddcea6ad77ab86ff9042245ec9ec9ba9196e9bf4d9f632dce3f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-proctor-exactant.pdf": "ae9e1fee08050169397ecbbaa261c84f01fa0c0fcba409f96d9845afbdb6f8ff",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-revelatum.pdf": "9339120b2428a8b29a0ef7a8a82736348b7c77cc922af682534aa5ca57320195",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-subductor.pdf": "fd0e1d33f07aea46a1ce8e42cef515ff91ee47d66dda96cb870b1fc6220a66f4",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vigilant.pdf": "405ef6caea5b95085d6f96154cbbacc549f92395c4e0f743f27f977a37493071",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vox-signifier.pdf": "87d96b9e94e20daa49ccf21a4af40cd30873f65cd2e9700426f35f1703026b6c",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "1fa57a3218592b7d5d6fb1ce5916708335cff1b1d8267f72865cca9928eb4760",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "a54f931b86e50fda437d80add22a1423d4555a4d32904615b1d8f5d83ba53a1a",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "68383c67d5abb4bdb6ddce91c7cb9efcb8c987ebe59a5d6e08b799ad77215da9",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "1009ae6be401ee9acb4ec064c0e527a3c931ec92b6e2ac83eb975874504654de",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "b8471bc68b4663409cefbf844012783cb02579549180165d7a3df328cdb82351",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "97bd47a002342395955bd747be40921fb2e353d7420c75e03777eacf1673d2dc",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "d1dac6dd9764df0162a7a63b6a90fd0568a23bd1e3ee6c6d18d164768d37ebff",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "3080ff3e0d8dfdd331b90bc3c4054c7bd89878189ab93712265f4fa1f25989ea",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "35cb72532de76e2f87df021ad36c4c244e031abd18fe47450683d4ca6da51ff7",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "be5452563fab8890bbf0ca7c0b17c24a18320fa26fb326bc4cdfee7d415dccae",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5190c37d00f080716261e992a1500db6e78a1ea095c67ce96abff4020a572fd4",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ab26161e0cc3277011ae52f304c97b2ec06c35e706e8da1fe529892cc9a2fab9",
+        "layers/integration/exaction-squad/exaction-squad-datacard-r-vr-cyber-mastiff.pdf": "659204e3845eaf835614afde39f3c19df242346768a410dc43a7273a178f5c88",
+        "layers/integration/exaction-squad/exaction-squad-equipment-manacles.pdf": "134604faaa755be7e248326b6e9c8aaaf24e571cbeaa9972eccc549a03add1f4",
+        "layers/integration/exaction-squad/exaction-squad-equipment-reinforced-mirror-visor.pdf": "5fad84778a45f29a6ca5cc8b1fc921a2463229f2c687cce11572dbdd9740ae77",
+        "layers/integration/exaction-squad/exaction-squad-equipment-special-issue-shells.pdf": "7cc584024e8544694c7713c1310e1411a3ab6efa172aa67ff8b60f2bc9a725e8",
+        "layers/integration/exaction-squad/exaction-squad-equipment-strobing-phosphor-lumen.pdf": "9a52ad9d3c6dd5d25fb25d8e90abc82b58e1d7fc0bf4e46095dca118c22718f2",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-marked-for-justice.pdf": "882212bc2110b58152e98c4be8fc2e7fdcc027057de56836c2d82506fa1038df",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-repress.pdf": "6b05fda27b28d47724f9ba19a679d1054ed926345269fc4faf2644de274abad1",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-ruthless-efficiency.pdf": "a980f1edd0430d7ec850d2faf3604bfcc9659e1e8741298c603b8c2f3444dba2",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-brutal-backup.pdf": "b8acf24173ed8d7122b322260684f49f6a75eb27045f5ece90212a37a40aae94",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-exact-punishment.pdf": "943be0ff892672fc59b271bf533eb0d5cafab85960a918b6c426924711d11f11",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-execution-order.pdf": "088a05d12a36f65ff7890b62ac54698d8139b263ef47900ad8ca8b85a8f9e2a8",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-long-arm-of-the-emperors-law.pdf": "4a344575cbde79ced0d123e44c039fd1758cb5278a101f1ac350c3162fc45949",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-1.pdf": "d13411bd93cfc82d858ab169093e0285bc55272828bb0b40fe9967dbdd57fdee",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-10.pdf": "6d0676f4448f7610597eb79a2b52406b0d56d2a6f90ca2130b06cfdd7d8ddba1",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-11.pdf": "eaeefdabec420b7488b6e0272178ed27bceed4c1392e7911f6d5b0c1abefc336",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-12.pdf": "766496db3dec21b7282c351c74bae637ce032a98bac4ba425341fedbe14ebfd5",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-13.pdf": "598cd09802bfb6c6eda371806c791664bae1f7808a5f5af2fa962e2ab7f3c6e7",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-14.pdf": "9de96f94dc7239f1d80902e3fd24d8aa97f04f3b61b20814e362ceeec97ca8ce",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-15.pdf": "0c9c814cbe4720a51a9af15e89dff3fdec071e9ca4177d3c45ba2a25742aff9f",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-16.pdf": "ca91a3e62a0dc1fa6a20322f8f68343a7f46c716dd39ce86cee77e9edfee50c8",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-17.pdf": "b810a8ea3c6423948ae094293bda897e7571b20f80504f81949f6409291fefe2",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-2.pdf": "176887a5c39d59eacc7d4f33b094bbf52c711f2478dcd8a9c969dd8259019d18",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-3.pdf": "be7f4dee3f238d1e313a668efbddab49b41078d7d52df9df0e311b87e1e5eadf",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-4.pdf": "cc405ab0851ea3eece8506b14a6fc444ce478dc3d8f882a95008f2d2ae7c4968",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-5.pdf": "ebdf8fa924be1594b8e652ffc97208dd51a4f2bb9722bb2841ce60dfca0efde0",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-6.pdf": "05d3bb6d17e10f6b1767418c3d8a8d918d48790c307753603c5189238c01e2a6",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-7.pdf": "5d7c458265fde347307efefd58d60c1b32472fe3a98720b60a91aa6cb0085a5e",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-8.pdf": "5271ad41d9cb79f2e9ca9ad133dcd66d57837871e25c03a2c4a221e526351f40",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-9.pdf": "6c6f82e1563e9746850fe23b7a0035849ffd9b12ae51ad984bca179492af3b0a",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection.pdf": "d1fd9ca5346c330ff1e946f5c0fa252761e01565761876c516f3dd2e4526f88d",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-dispense-justice.pdf": "fb26ee06414bc80053296e8296636aacc465f868052b43b3b88109baed642800",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-guilt-reveals-itself.pdf": "19315e097dd3cfe933c6b90869777a4798d96a7422f84f0f48cd08186d3b3082",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-inviolate-jurisdiction.pdf": "d8f7bb4d28dd4cc01ef68dffc563a268b021dd03213f95e2b0ca0c44b7e6d1b2",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-terminal-decree.pdf": "ac18bd4619487b9f4940129c2aa0542d8eb063e0e9aae9b72cdbaa9b785acb1d",
+        "layers/integration/exaction-squad/exaction-squad-token-guide-token-guide.pdf": "4b7acc3c2f1fce634a80f7047d67dd0b3fe3554517e573be01e35c9095961835"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/exaction-squad/card-backside/exaction-squad-backside-landscape.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-07-12T18:46:57.408031+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/exaction-squad/card-backside/exaction-squad-backside-portrait.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-07-12T18:46:58.859467+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:47:08.015386+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-token.jpg": "55e52059d5f2740483b8a250a00dacec7c57dca0057375aad1ecb17ecef018ea",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/exaction-squad-aggressive.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-aggressive.png",
+          "hash": "830b46f93df83a0a228ae01da1add980d12cb0eaea028e14c7468faf8a12e4cf",
+          "modified": "2026-08-29T18:42:49.867812+00:00"
+        },
+        "tokens/exaction-squad-apprehend.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-apprehend.png",
+          "hash": "43bd751eb481887ff58a06d2acc65da7d200535f93d76765c6939b60b142e848",
+          "modified": "2026-08-29T18:42:49.877857+00:00"
+        },
+        "tokens/exaction-squad-defensive.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-defensive.png",
+          "hash": "9d34dadcf23312032ab158ca55159f9128150dd77ce6a02a29066bba553a9eca",
+          "modified": "2026-08-29T18:42:49.888971+00:00"
+        },
+        "tokens/exaction-squad-marked-for-justice.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-marked-for-justice.png",
+          "hash": "7fa43b119e0ae100573a792eca864e59957e742fff0850f44ad425ce91fa8da9",
+          "modified": "2026-08-29T18:42:49.902485+00:00"
+        },
+        "tokens/exaction-squad-medic.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-medic.png",
+          "hash": "36372c5c37b5a7dac987ed46f2c412cd6acee7391669d0f5e7e14de890874c41",
+          "modified": "2026-08-29T18:42:49.916415+00:00"
+        },
+        "tokens/exaction-squad-nuncio-aquila.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-nuncio-aquila.png",
+          "hash": "d53e734be9a742d35f5dedd966a11310cbb3ed11255eefdd4b1947f2c3a9a4c1",
+          "modified": "2026-08-29T18:42:49.932510+00:00"
+        },
+        "tokens/exaction-squad-spot.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-spot.png",
+          "hash": "9370de5641d3689924f7ee1538791ac0befccea13bc5d05ecb32d2ae94135164",
+          "modified": "2026-08-29T18:42:49.953093+00:00"
+        },
+        "tokens/exaction-squad-swift.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-swift.png",
+          "hash": "29840655d0edaebbe71bed04f2791758aa7dfb878bf1285c481fe4774c8acabf",
+          "modified": "2026-08-29T18:42:49.983600+00:00"
+        },
+        "tokens/exaction-squad-veriscant.png": {
+          "path": "output/exaction-squad/tokens/exaction-squad-veriscant.png",
+          "hash": "03c1b08e37f0b17ea19936e3d151f1f3263d860d229d22c25b38acf90db99278",
+          "modified": "2026-08-29T18:42:50.008062+00:00"
+        },
+        "tokens/exaction-squad-aggressive.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-aggressive.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.016257+00:00"
+        },
+        "tokens/exaction-squad-apprehend.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-apprehend.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.017760+00:00"
+        },
+        "tokens/exaction-squad-defensive.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-defensive.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.022268+00:00"
+        },
+        "tokens/exaction-squad-marked-for-justice.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-marked-for-justice.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.023296+00:00"
+        },
+        "tokens/exaction-squad-medic.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-medic.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.025301+00:00"
+        },
+        "tokens/exaction-squad-nuncio-aquila.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-nuncio-aquila.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.026301+00:00"
+        },
+        "tokens/exaction-squad-spot.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-spot.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.027807+00:00"
+        },
+        "tokens/exaction-squad-swift.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-swift.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.030326+00:00"
+        },
+        "tokens/exaction-squad-veriscant.obj": {
+          "path": "output/exaction-squad/tokens/exaction-squad-veriscant.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:50.034212+00:00"
+        },
+        "tokens/tokenbag/exaction-squad-token-bag-icon.png": {
+          "path": "output/exaction-squad/tokens/tokenbag/exaction-squad-token-bag-icon.png",
+          "hash": "55e52059d5f2740483b8a250a00dacec7c57dca0057375aad1ecb17ecef018ea",
+          "modified": "2026-08-29T18:42:50.041261+00:00"
+        },
+        "tokens/tokenbag/exaction-squad-token-bag.obj": {
+          "path": "output/exaction-squad/tokens/tokenbag/exaction-squad-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:42:50.043300+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:53.012579+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/manifest.json": "9977dd6973352a0c5b081a318fe87edf987cbf04eff7ec70ef2d105bcbe83b7b",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-token.jpg": "55e52059d5f2740483b8a250a00dacec7c57dca0057375aad1ecb17ecef018ea",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-castigator.pdf": "255ea8bbacff66ae0ef4d6d776a7d1314367c9f6ef7714a9e4de4b6d3769a7de",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-chirurgant.pdf": "e6c0465d1765b7e3b10cfa071cd3abb80270197c693ea0b54de3b2f26f0b7d4f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-gunner.pdf": "fe61e921bb6527d97c3925a3ef1b4d591351b911af8e04ec31facd595eab3ede",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-leashmaster.pdf": "06b038710d2b16df86e060f7001cf574f235e89e2da229e7ddb72cdbe1b1ff4f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-malocator.pdf": "9d5e7dfd3d82abacbdc2a66e094e5077a4c6c933cfef9f063f2669863e29bf6e",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-marksman.pdf": "fb567b3d5d649ddcea6ad77ab86ff9042245ec9ec9ba9196e9bf4d9f632dce3f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-proctor-exactant.pdf": "ae9e1fee08050169397ecbbaa261c84f01fa0c0fcba409f96d9845afbdb6f8ff",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-revelatum.pdf": "9339120b2428a8b29a0ef7a8a82736348b7c77cc922af682534aa5ca57320195",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-subductor.pdf": "fd0e1d33f07aea46a1ce8e42cef515ff91ee47d66dda96cb870b1fc6220a66f4",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vigilant.pdf": "405ef6caea5b95085d6f96154cbbacc549f92395c4e0f743f27f977a37493071",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vox-signifier.pdf": "87d96b9e94e20daa49ccf21a4af40cd30873f65cd2e9700426f35f1703026b6c",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "1fa57a3218592b7d5d6fb1ce5916708335cff1b1d8267f72865cca9928eb4760",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "a54f931b86e50fda437d80add22a1423d4555a4d32904615b1d8f5d83ba53a1a",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "68383c67d5abb4bdb6ddce91c7cb9efcb8c987ebe59a5d6e08b799ad77215da9",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "1009ae6be401ee9acb4ec064c0e527a3c931ec92b6e2ac83eb975874504654de",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "b8471bc68b4663409cefbf844012783cb02579549180165d7a3df328cdb82351",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "97bd47a002342395955bd747be40921fb2e353d7420c75e03777eacf1673d2dc",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "d1dac6dd9764df0162a7a63b6a90fd0568a23bd1e3ee6c6d18d164768d37ebff",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "3080ff3e0d8dfdd331b90bc3c4054c7bd89878189ab93712265f4fa1f25989ea",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "35cb72532de76e2f87df021ad36c4c244e031abd18fe47450683d4ca6da51ff7",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "be5452563fab8890bbf0ca7c0b17c24a18320fa26fb326bc4cdfee7d415dccae",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5190c37d00f080716261e992a1500db6e78a1ea095c67ce96abff4020a572fd4",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ab26161e0cc3277011ae52f304c97b2ec06c35e706e8da1fe529892cc9a2fab9",
+        "layers/integration/exaction-squad/exaction-squad-datacard-r-vr-cyber-mastiff.pdf": "659204e3845eaf835614afde39f3c19df242346768a410dc43a7273a178f5c88",
+        "layers/integration/exaction-squad/exaction-squad-equipment-manacles.pdf": "134604faaa755be7e248326b6e9c8aaaf24e571cbeaa9972eccc549a03add1f4",
+        "layers/integration/exaction-squad/exaction-squad-equipment-reinforced-mirror-visor.pdf": "5fad84778a45f29a6ca5cc8b1fc921a2463229f2c687cce11572dbdd9740ae77",
+        "layers/integration/exaction-squad/exaction-squad-equipment-special-issue-shells.pdf": "7cc584024e8544694c7713c1310e1411a3ab6efa172aa67ff8b60f2bc9a725e8",
+        "layers/integration/exaction-squad/exaction-squad-equipment-strobing-phosphor-lumen.pdf": "9a52ad9d3c6dd5d25fb25d8e90abc82b58e1d7fc0bf4e46095dca118c22718f2",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-marked-for-justice.pdf": "882212bc2110b58152e98c4be8fc2e7fdcc027057de56836c2d82506fa1038df",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-repress.pdf": "6b05fda27b28d47724f9ba19a679d1054ed926345269fc4faf2644de274abad1",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-ruthless-efficiency.pdf": "a980f1edd0430d7ec850d2faf3604bfcc9659e1e8741298c603b8c2f3444dba2",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-brutal-backup.pdf": "b8acf24173ed8d7122b322260684f49f6a75eb27045f5ece90212a37a40aae94",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-exact-punishment.pdf": "943be0ff892672fc59b271bf533eb0d5cafab85960a918b6c426924711d11f11",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-execution-order.pdf": "088a05d12a36f65ff7890b62ac54698d8139b263ef47900ad8ca8b85a8f9e2a8",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-long-arm-of-the-emperors-law.pdf": "4a344575cbde79ced0d123e44c039fd1758cb5278a101f1ac350c3162fc45949",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-1.pdf": "d13411bd93cfc82d858ab169093e0285bc55272828bb0b40fe9967dbdd57fdee",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-10.pdf": "6d0676f4448f7610597eb79a2b52406b0d56d2a6f90ca2130b06cfdd7d8ddba1",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-11.pdf": "eaeefdabec420b7488b6e0272178ed27bceed4c1392e7911f6d5b0c1abefc336",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-12.pdf": "766496db3dec21b7282c351c74bae637ce032a98bac4ba425341fedbe14ebfd5",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-13.pdf": "598cd09802bfb6c6eda371806c791664bae1f7808a5f5af2fa962e2ab7f3c6e7",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-14.pdf": "9de96f94dc7239f1d80902e3fd24d8aa97f04f3b61b20814e362ceeec97ca8ce",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-15.pdf": "0c9c814cbe4720a51a9af15e89dff3fdec071e9ca4177d3c45ba2a25742aff9f",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-16.pdf": "ca91a3e62a0dc1fa6a20322f8f68343a7f46c716dd39ce86cee77e9edfee50c8",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-17.pdf": "b810a8ea3c6423948ae094293bda897e7571b20f80504f81949f6409291fefe2",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-2.pdf": "176887a5c39d59eacc7d4f33b094bbf52c711f2478dcd8a9c969dd8259019d18",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-3.pdf": "be7f4dee3f238d1e313a668efbddab49b41078d7d52df9df0e311b87e1e5eadf",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-4.pdf": "cc405ab0851ea3eece8506b14a6fc444ce478dc3d8f882a95008f2d2ae7c4968",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-5.pdf": "ebdf8fa924be1594b8e652ffc97208dd51a4f2bb9722bb2841ce60dfca0efde0",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-6.pdf": "05d3bb6d17e10f6b1767418c3d8a8d918d48790c307753603c5189238c01e2a6",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-7.pdf": "5d7c458265fde347307efefd58d60c1b32472fe3a98720b60a91aa6cb0085a5e",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-8.pdf": "5271ad41d9cb79f2e9ca9ad133dcd66d57837871e25c03a2c4a221e526351f40",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-9.pdf": "6c6f82e1563e9746850fe23b7a0035849ffd9b12ae51ad984bca179492af3b0a",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection.pdf": "d1fd9ca5346c330ff1e946f5c0fa252761e01565761876c516f3dd2e4526f88d",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-dispense-justice.pdf": "fb26ee06414bc80053296e8296636aacc465f868052b43b3b88109baed642800",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-guilt-reveals-itself.pdf": "19315e097dd3cfe933c6b90869777a4798d96a7422f84f0f48cd08186d3b3082",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-inviolate-jurisdiction.pdf": "d8f7bb4d28dd4cc01ef68dffc563a268b021dd03213f95e2b0ca0c44b7e6d1b2",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-terminal-decree.pdf": "ac18bd4619487b9f4940129c2aa0542d8eb063e0e9aae9b72cdbaa9b785acb1d",
+        "layers/integration/exaction-squad/exaction-squad-token-guide-token-guide.pdf": "4b7acc3c2f1fce634a80f7047d67dd0b3fe3554517e573be01e35c9095961835"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/exaction-squad/dice/exaction-squad-dice-light.jpg",
+          "hash": "fe9a6b8a2e41eb6f26b19024923954e2ed199edd2819dc6b00f5691ce2d5ead7",
+          "modified": "2026-08-29T18:42:54.842448+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/exaction-squad/dice/exaction-squad-dice-dark.jpg",
+          "hash": "b3e667a8d28a89ce152470a954adff3916eb37666751a47e671da3daaa9b2335",
+          "modified": "2026-08-29T18:42:54.848457+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/exaction-squad/dice/exaction-squad-dice-team.jpg",
+          "hash": "38ce44ee688bd41715c73cbfaa037a60776a6964e9df91acf7b7c0b2f09c458c",
+          "modified": "2026-08-29T18:42:54.850979+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:54.854487+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-token-transparent.png": "09bdf742b3d93ed57f364a36852f58c9c4bd461fdab6d20bd565bfdfecc6fda8",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/exaction-squad/cardbox/exaction-squad-card-box-texture.jpg",
+          "hash": "a93213fd52f3db0710fae7e6d05438bc088014c797dc5519496c0985c4459e2f",
+          "modified": "2026-08-29T18:42:55.737956+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/exaction-squad/cardbox/exaction-squad-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:42:55.738959+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:55.744481+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-token.jpg": "55e52059d5f2740483b8a250a00dacec7c57dca0057375aad1ecb17ecef018ea",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/arbites-castigator-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-castigator-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:06.637694+00:00"
+        },
+        "cards/datacards/arbites-castigator-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-castigator-front.jpg",
+          "hash": "10251daf89169e0a1c28d881c91b44ec63ce4074a35aa9d0d6661ed31560b713",
+          "modified": "2026-08-29T18:43:06.639698+00:00"
+        },
+        "cards/datacards/arbites-chirurgant-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-chirurgant-back.jpg",
+          "hash": "988b623e70ec48995b30ba17ecaf4126c498303c7884a7d52a9be540ae505dd2",
+          "modified": "2026-08-29T18:43:06.642206+00:00"
+        },
+        "cards/datacards/arbites-chirurgant-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-chirurgant-front.jpg",
+          "hash": "e00ff865c77c3caf223848117b853eeeb9e687a611fa7d21e6524e7b60a8d082",
+          "modified": "2026-08-29T18:43:07.172077+00:00"
+        },
+        "cards/datacards/arbites-gunner-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-gunner-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.185109+00:00"
+        },
+        "cards/datacards/arbites-gunner-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-gunner-front.jpg",
+          "hash": "3456dedf4a1e5b194e41786b9aa78ec2be974c5375b8d1458fc6073ec30437a5",
+          "modified": "2026-08-29T18:43:07.188122+00:00"
+        },
+        "cards/datacards/arbites-leashmaster-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-leashmaster-back.jpg",
+          "hash": "a36c50db5d115239249cd9128d97b1ceda97cbb85dc1233f42aefc7cae57c58c",
+          "modified": "2026-08-29T18:43:07.190128+00:00"
+        },
+        "cards/datacards/arbites-leashmaster-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-leashmaster-front.jpg",
+          "hash": "1dea84d6c21b5b8e4d67d0088e29cec9544a20f4331818def643407054d1d2c6",
+          "modified": "2026-08-29T18:43:07.194726+00:00"
+        },
+        "cards/datacards/arbites-malocator-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-malocator-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.196726+00:00"
+        },
+        "cards/datacards/arbites-malocator-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-malocator-front.jpg",
+          "hash": "d72bc2260872c8cd5a7f7d4e06a872a60db3c0f81b9405a7cf2e44c8a1f66acb",
+          "modified": "2026-08-29T18:43:07.198757+00:00"
+        },
+        "cards/datacards/arbites-marksman-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-marksman-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.201274+00:00"
+        },
+        "cards/datacards/arbites-marksman-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-marksman-front.jpg",
+          "hash": "67d22ed1e22179fd46196901b3b4d50e049ffdf50b857709725319a0f8ea9496",
+          "modified": "2026-08-29T18:43:07.203379+00:00"
+        },
+        "cards/datacards/arbites-proctor-exactant-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-proctor-exactant-back.jpg",
+          "hash": "1379f4a16837585081c69d15c5daaef7cff6ab6efd07bf0e463087709f75ef5f",
+          "modified": "2026-08-29T18:43:07.206886+00:00"
+        },
+        "cards/datacards/arbites-proctor-exactant-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-proctor-exactant-front.jpg",
+          "hash": "ab5c5edc525dec6465e8aab2d82eedd6865b3df74ca77e8b8bb2898dee621053",
+          "modified": "2026-08-29T18:43:07.208964+00:00"
+        },
+        "cards/datacards/arbites-revelatum-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-revelatum-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.210964+00:00"
+        },
+        "cards/datacards/arbites-revelatum-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-revelatum-front.jpg",
+          "hash": "40ff210642d954a6b35f14f5db93e4d07c37c2389c72f79a9e542b0764e2e890",
+          "modified": "2026-08-29T18:43:07.215440+00:00"
+        },
+        "cards/datacards/arbites-subductor-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-subductor-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.215440+00:00"
+        },
+        "cards/datacards/arbites-subductor-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-subductor-front.jpg",
+          "hash": "e6f3de5d3bf7f803139bc344d64aa163d6a3af2e6e07860ee90c390c33007597",
+          "modified": "2026-08-29T18:43:07.217950+00:00"
+        },
+        "cards/datacards/arbites-vigilant-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-vigilant-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.219965+00:00"
+        },
+        "cards/datacards/arbites-vigilant-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-vigilant-front.jpg",
+          "hash": "82185e37b2d292b569b11ae8d74a53f0d0d3c41a30837587d085f16f40b5874b",
+          "modified": "2026-08-29T18:43:07.222984+00:00"
+        },
+        "cards/datacards/arbites-vox-signifier-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-vox-signifier-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.224988+00:00"
+        },
+        "cards/datacards/arbites-vox-signifier-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/arbites-vox-signifier-front.jpg",
+          "hash": "e2b90bb2192f0ed5a878a5a7b1b8ae2fd39934d8b27dc55177702cdb023efc79",
+          "modified": "2026-08-29T18:43:07.226988+00:00"
+        },
+        "cards/datacards/r-vr-cyber-mastiff-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/r-vr-cyber-mastiff-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.996368+00:00"
+        },
+        "cards/datacards/r-vr-cyber-mastiff-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/r-vr-cyber-mastiff-front.jpg",
+          "hash": "2cd111e91cfa6faeb9954760aa84ebc538cf1f6f09fa11790244c2188229f9b3",
+          "modified": "2026-08-29T18:43:07.999488+00:00"
+        },
+        "cards/equipment/exaction-squad-manacles-back.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-manacles-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.001556+00:00"
+        },
+        "cards/equipment/exaction-squad-manacles-front.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-manacles-front.jpg",
+          "hash": "aeb079510e854e78885e9ee398ff34ff2033fd4f278bc8882c967dc480bb47dc",
+          "modified": "2026-08-29T18:43:08.002555+00:00"
+        },
+        "cards/equipment/exaction-squad-reinforced-mirror-visor-back.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-reinforced-mirror-visor-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.004060+00:00"
+        },
+        "cards/equipment/exaction-squad-reinforced-mirror-visor-front.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-reinforced-mirror-visor-front.jpg",
+          "hash": "3755f95e9e7f6ee53d610ccb6ace84a87b3cc5be16d2d607fcab82c2b9b52734",
+          "modified": "2026-08-29T18:43:08.008079+00:00"
+        },
+        "cards/equipment/exaction-squad-special-issue-shells-back.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-special-issue-shells-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.011594+00:00"
+        },
+        "cards/equipment/exaction-squad-special-issue-shells-front.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-special-issue-shells-front.jpg",
+          "hash": "a80aaa8020b306af359b329f32ed251fc8f94a4c7c590287464d7a6653f8f288",
+          "modified": "2026-08-29T18:43:08.016948+00:00"
+        },
+        "cards/equipment/exaction-squad-strobing-phosphor-lumen-back.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-strobing-phosphor-lumen-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.018999+00:00"
+        },
+        "cards/equipment/exaction-squad-strobing-phosphor-lumen-front.jpg": {
+          "path": "output/exaction-squad/cards/equipment/exaction-squad-strobing-phosphor-lumen-front.jpg",
+          "hash": "0445d858121a59b019705c26401fb243a3a8e1bdd6e62da15b1cba6f03ec79f9",
+          "modified": "2026-08-29T18:43:08.026021+00:00"
+        },
+        "cards/faction_rules/exaction-squad-marked-for-justice-back.jpg": {
+          "path": "output/exaction-squad/cards/faction_rules/exaction-squad-marked-for-justice-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.028021+00:00"
+        },
+        "cards/faction_rules/exaction-squad-marked-for-justice-front.jpg": {
+          "path": "output/exaction-squad/cards/faction_rules/exaction-squad-marked-for-justice-front.jpg",
+          "hash": "beed6958e72d104822234e4719c74eddac13f5bb00cac90a39bf83fca6cff3c5",
+          "modified": "2026-08-29T18:43:08.034885+00:00"
+        },
+        "cards/faction_rules/exaction-squad-repress-back.jpg": {
+          "path": "output/exaction-squad/cards/faction_rules/exaction-squad-repress-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.037906+00:00"
+        },
+        "cards/faction_rules/exaction-squad-repress-front.jpg": {
+          "path": "output/exaction-squad/cards/faction_rules/exaction-squad-repress-front.jpg",
+          "hash": "766e9a66056fef9209c6fb9b2a42761f4e7260a5294fa661ec5eb0c595a9ba53",
+          "modified": "2026-08-29T18:43:08.045983+00:00"
+        },
+        "cards/faction_rules/exaction-squad-ruthless-efficiency-back.jpg": {
+          "path": "output/exaction-squad/cards/faction_rules/exaction-squad-ruthless-efficiency-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.049551+00:00"
+        },
+        "cards/faction_rules/exaction-squad-ruthless-efficiency-front.jpg": {
+          "path": "output/exaction-squad/cards/faction_rules/exaction-squad-ruthless-efficiency-front.jpg",
+          "hash": "e650bb119598ab9dafae83a3756509dcd156b16fa03696cb0938079725f95624",
+          "modified": "2026-08-29T18:43:08.055079+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-brutal-backup-back.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-brutal-backup-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.059266+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-brutal-backup-front.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-brutal-backup-front.jpg",
+          "hash": "0da9fa47c67a4484ff4dbf5f400c652f5ac9607156f231e078044dd3154fc5cd",
+          "modified": "2026-08-29T18:43:08.062406+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-exact-punishment-back.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-exact-punishment-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.063614+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-exact-punishment-front.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-exact-punishment-front.jpg",
+          "hash": "f9e17153a77a323f0495e5869903c7a8fc8bce9f6334694ebb6b5be734ff3278",
+          "modified": "2026-08-29T18:43:08.066119+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-execution-order-back.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-execution-order-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.067123+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-execution-order-front.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-execution-order-front.jpg",
+          "hash": "d8e5b0c026a1ae0eaf96cf4cdb79f029bdb3183704cffecd40a69780c393559c",
+          "modified": "2026-08-29T18:43:08.069204+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-long-arm-of-the-emperors-law-back.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-long-arm-of-the-emperors-law-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.069707+00:00"
+        },
+        "cards/firefight_ploys/exaction-squad-long-arm-of-the-emperors-law-front.jpg": {
+          "path": "output/exaction-squad/cards/firefight_ploys/exaction-squad-long-arm-of-the-emperors-law-front.jpg",
+          "hash": "84a55d30911213cc3d0c5793cb6e73a9d4b7b33c86187f0b3a2628e620d73863",
+          "modified": "2026-08-29T18:43:08.072213+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-back.jpg",
+          "hash": "f74a5c42ca9f12d6f838982d54465b583975742b9a87d7dc58ccfe0922eff464",
+          "modified": "2026-08-29T18:43:08.078231+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-front.jpg",
+          "hash": "32803ddc6fb2dbcd9df1a8b92b9d359516d5ee43c9362f9ae02f56b3c081b723",
+          "modified": "2026-08-29T18:43:09.140783+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-dispense-justice-back.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-dispense-justice-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.140783+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-dispense-justice-front.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-dispense-justice-front.jpg",
+          "hash": "185c533492aa68ec99fb60b31462f893e77e783ed282f31c2a37604900e99f9e",
+          "modified": "2026-08-29T18:43:09.140783+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-guilt-reveals-itself-back.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-guilt-reveals-itself-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.143291+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-guilt-reveals-itself-front.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-guilt-reveals-itself-front.jpg",
+          "hash": "0ff3319584d7aceed7e068853a0699960a8e0666a4bd21ab67d507d5a676134b",
+          "modified": "2026-08-29T18:43:09.145291+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-inviolate-jurisdiction-back.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-inviolate-jurisdiction-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.146799+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-inviolate-jurisdiction-front.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-inviolate-jurisdiction-front.jpg",
+          "hash": "c6ade8282858f4130303dc31331a31460929b3e081bf87bd81da7bbe1ee2f118",
+          "modified": "2026-08-29T18:43:09.813174+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-terminal-decree-back.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-terminal-decree-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:10.459290+00:00"
+        },
+        "cards/strategy_ploys/exaction-squad-terminal-decree-front.jpg": {
+          "path": "output/exaction-squad/cards/strategy_ploys/exaction-squad-terminal-decree-front.jpg",
+          "hash": "62e57d79f6fbc9664af0e8291259958a5d5e305008ef1eb4af9bc47ff35fdf6e",
+          "modified": "2026-08-29T18:43:10.827695+00:00"
+        },
+        "cards/token_guide/exaction-squad-token-guide-back.jpg": {
+          "path": "output/exaction-squad/cards/token_guide/exaction-squad-token-guide-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:10.829699+00:00"
+        },
+        "cards/token_guide/exaction-squad-token-guide-front.jpg": {
+          "path": "output/exaction-squad/cards/token_guide/exaction-squad-token-guide-front.jpg",
+          "hash": "1175f56fa20462a2cd99042d57486e1996525fe4fdefdfc293a10a0709f7edec",
+          "modified": "2026-08-29T18:43:10.832222+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "90cf60622b7188961bc4fd2fbd4cc8fe2baff8904f02df218adc4cb5f4c33a15",
+          "modified": "2026-08-29T18:43:07.239200+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "6315d607b49fe5117b57d092e20aea8951d31033568196bfdd3c48461f5ca0db",
+          "modified": "2026-08-29T18:43:07.248723+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.258050+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "6f818f5440d35ba185ab3d6d1048e707c942793b8e4ad888d317a1e3719ddacc",
+          "modified": "2026-08-29T18:43:07.270207+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.281235+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "357541da7bf1ac22a94303968c98169fce51223aa54e277b142fe746b5a704ee",
+          "modified": "2026-08-29T18:43:07.294343+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.304491+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg",
+          "hash": "76cad2e9ab0193b419de5743e3bcacae9ee28f95227fb30af4043e35718bb8cb",
+          "modified": "2026-08-29T18:43:07.315023+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "e9fb493c3b34f34930dd90a92c5659a96150860d20339201ae171ac94414912d",
+          "modified": "2026-08-29T18:43:07.325075+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "3196b0ad7278b7199219cdd55d57ae91c1c867d881b6df1b2023b1bcddd70e95",
+          "modified": "2026-08-29T18:43:07.332221+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "bb293b2f9f3b4ed1991630f851f33c276396a4e9420d742101cfd0d0747718e2",
+          "modified": "2026-08-29T18:43:07.344039+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "5b13e3400b0f975d4c4a30bea76ced4a6d48d60434862bfb62cb92562684cb7d",
+          "modified": "2026-08-29T18:43:07.353354+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.878607+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "9a4805a8bbcdb45a6793f4ecf20f01f45b276792020d01ba0f277d37fc6673c1",
+          "modified": "2026-08-29T18:43:07.891178+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.900213+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "c5dd5e0dbd8deadac1ddb3c46ced05288f7be3ccecf250f6367b518d9b14c6e2",
+          "modified": "2026-08-29T18:43:07.915466+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.924011+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "ad0fc2f60d3d47268fb6faf0d4b3044f74109c17649ddaea99f67c8d27be1108",
+          "modified": "2026-08-29T18:43:07.934609+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.944204+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "0ec91264069474094a90dec159a28e2e405f0b2029519a179c66da7e78accc4e",
+          "modified": "2026-08-29T18:43:07.955942+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.963189+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "8aefb5b810772ad2a7a505dd1e01695bf9bbe50d814bb9425d4c554f04f8de97",
+          "modified": "2026-08-29T18:43:07.973261+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+          "modified": "2026-08-29T18:43:07.982317+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "fac7f0a24de9526b306f3b3bda3b6fd099c15c80e46f13f1197dcba9f47e5e0b",
+          "modified": "2026-08-29T18:43:07.995368+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card1-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card1-back.jpg",
+          "hash": "f74a5c42ca9f12d6f838982d54465b583975742b9a87d7dc58ccfe0922eff464",
+          "modified": "2026-08-29T18:43:08.093457+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card1-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card1-front.jpg",
+          "hash": "b2108d2bc6e597e5ed9e109ab3c8775f8e462fccee56fffb4d0eea70c8dfadcb",
+          "modified": "2026-08-29T18:43:08.107695+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card10-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card10-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.119023+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card10-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card10-front.jpg",
+          "hash": "189bbc625accb8e152f0c22701b19856a9ee96fa582562e4d7836885e864c554",
+          "modified": "2026-08-29T18:43:08.179801+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card11-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card11-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.192365+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card11-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card11-front.jpg",
+          "hash": "ca01562fa849d01e28a224fc76fbaf983eeb0b14ba719a5eb21153b985f2cd13",
+          "modified": "2026-08-29T18:43:08.206327+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card12-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card12-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.219142+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card12-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card12-front.jpg",
+          "hash": "e584042c489f35a04b8743f77521147f8ed2de3838294d43e62c9a0c595b25d0",
+          "modified": "2026-08-29T18:43:08.230228+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card13-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card13-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.238275+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card13-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card13-front.jpg",
+          "hash": "cc64d8962d1da305b5978f3e01cf80898fc4ff82bc2a9fdf806b4aa4bdc52d2f",
+          "modified": "2026-08-29T18:43:08.246939+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card14-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card14-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.256467+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card14-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card14-front.jpg",
+          "hash": "8f26e02f5758dd4f35b8f3d7fbd80a31a765a22938201719994052b1222e95a8",
+          "modified": "2026-08-29T18:43:08.264011+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card15-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card15-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.276583+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card15-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card15-front.jpg",
+          "hash": "eedc30b85d11dc51f264e5d27e254e942c712b52fa3d8043dc9a5ade31473f02",
+          "modified": "2026-08-29T18:43:08.290726+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card16-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card16-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.298839+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card16-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card16-front.jpg",
+          "hash": "94428e7177eeb6134a8ee8f2bbafd0a088007e80d258d21d80975c41c9fef67a",
+          "modified": "2026-08-29T18:43:08.311323+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card17-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card17-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.325002+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card17-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card17-front.jpg",
+          "hash": "ab0430ee00bcdd289e90054d62c8021bb0e8d64154251f523f7619fca7232539",
+          "modified": "2026-08-29T18:43:08.384152+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card2-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card2-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.403809+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card2-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card2-front.jpg",
+          "hash": "82ab3fe3bd6f5534038bfacc06c4080783e8a328b1b6500fe0ca186c093e9f45",
+          "modified": "2026-08-29T18:43:08.417902+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card3-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card3-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.426569+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card3-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card3-front.jpg",
+          "hash": "674c0d1786be1a55705a1bf3d587577ef5019d7a2ebec337b2cde6845d50c11b",
+          "modified": "2026-08-29T18:43:08.437100+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card4-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card4-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:08.495077+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card4-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card4-front.jpg",
+          "hash": "82e1dfe4a4ecc6e965f3e47336a851c65dcde93ecd0fa886961bd0c13bc9e6be",
+          "modified": "2026-08-29T18:43:09.023129+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card5-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card5-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.034157+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card5-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card5-front.jpg",
+          "hash": "13ac749991e25ec46f70c798a76e91f2a3f8a6867b777315a0d59eedda98a2c4",
+          "modified": "2026-08-29T18:43:09.043045+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card6-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card6-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.055574+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card6-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card6-front.jpg",
+          "hash": "d0644a207d39479755eada835fee733ae7a36fd5ca8b19dc7b7266c424377183",
+          "modified": "2026-08-29T18:43:09.067103+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card7-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card7-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.076721+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card7-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card7-front.jpg",
+          "hash": "604c6e4cee841000f33c56d2c09fc124fcd3f9537580ebb1d76c2b7eeed23136",
+          "modified": "2026-08-29T18:43:09.092587+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card8-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card8-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.102155+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card8-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card8-front.jpg",
+          "hash": "bc9864b7dcee836d69320311a8f4bc64c1ab908ea298cc5236ab2f881ae9ed0c",
+          "modified": "2026-08-29T18:43:09.120957+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card9-back.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card9-back.jpg",
+          "hash": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+          "modified": "2026-08-29T18:43:09.132098+00:00"
+        },
+        "cards/operatives_selection/exaction-squad-operative-selection-card9-front.jpg": {
+          "path": "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card9-front.jpg",
+          "hash": "fe23e99bb2fe70f60caf6eee0087c4d7c895e2b2338598510d294af349f05730",
+          "modified": "2026-08-29T18:43:09.139750+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:44.824659+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/manifest.json": "9977dd6973352a0c5b081a318fe87edf987cbf04eff7ec70ef2d105bcbe83b7b",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-castigator.pdf": "255ea8bbacff66ae0ef4d6d776a7d1314367c9f6ef7714a9e4de4b6d3769a7de",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-chirurgant.pdf": "e6c0465d1765b7e3b10cfa071cd3abb80270197c693ea0b54de3b2f26f0b7d4f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-gunner.pdf": "fe61e921bb6527d97c3925a3ef1b4d591351b911af8e04ec31facd595eab3ede",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-leashmaster.pdf": "06b038710d2b16df86e060f7001cf574f235e89e2da229e7ddb72cdbe1b1ff4f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-malocator.pdf": "9d5e7dfd3d82abacbdc2a66e094e5077a4c6c933cfef9f063f2669863e29bf6e",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-marksman.pdf": "fb567b3d5d649ddcea6ad77ab86ff9042245ec9ec9ba9196e9bf4d9f632dce3f",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-proctor-exactant.pdf": "ae9e1fee08050169397ecbbaa261c84f01fa0c0fcba409f96d9845afbdb6f8ff",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-revelatum.pdf": "9339120b2428a8b29a0ef7a8a82736348b7c77cc922af682534aa5ca57320195",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-subductor.pdf": "fd0e1d33f07aea46a1ce8e42cef515ff91ee47d66dda96cb870b1fc6220a66f4",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vigilant.pdf": "405ef6caea5b95085d6f96154cbbacc549f92395c4e0f743f27f977a37493071",
+        "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vox-signifier.pdf": "87d96b9e94e20daa49ccf21a4af40cd30873f65cd2e9700426f35f1703026b6c",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "1fa57a3218592b7d5d6fb1ce5916708335cff1b1d8267f72865cca9928eb4760",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "a54f931b86e50fda437d80add22a1423d4555a4d32904615b1d8f5d83ba53a1a",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "68383c67d5abb4bdb6ddce91c7cb9efcb8c987ebe59a5d6e08b799ad77215da9",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "1009ae6be401ee9acb4ec064c0e527a3c931ec92b6e2ac83eb975874504654de",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "b8471bc68b4663409cefbf844012783cb02579549180165d7a3df328cdb82351",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "97bd47a002342395955bd747be40921fb2e353d7420c75e03777eacf1673d2dc",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "d1dac6dd9764df0162a7a63b6a90fd0568a23bd1e3ee6c6d18d164768d37ebff",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "3080ff3e0d8dfdd331b90bc3c4054c7bd89878189ab93712265f4fa1f25989ea",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "35cb72532de76e2f87df021ad36c4c244e031abd18fe47450683d4ca6da51ff7",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "be5452563fab8890bbf0ca7c0b17c24a18320fa26fb326bc4cdfee7d415dccae",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5190c37d00f080716261e992a1500db6e78a1ea095c67ce96abff4020a572fd4",
+        "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ab26161e0cc3277011ae52f304c97b2ec06c35e706e8da1fe529892cc9a2fab9",
+        "layers/integration/exaction-squad/exaction-squad-datacard-r-vr-cyber-mastiff.pdf": "659204e3845eaf835614afde39f3c19df242346768a410dc43a7273a178f5c88",
+        "layers/integration/exaction-squad/exaction-squad-equipment-manacles.pdf": "134604faaa755be7e248326b6e9c8aaaf24e571cbeaa9972eccc549a03add1f4",
+        "layers/integration/exaction-squad/exaction-squad-equipment-reinforced-mirror-visor.pdf": "5fad84778a45f29a6ca5cc8b1fc921a2463229f2c687cce11572dbdd9740ae77",
+        "layers/integration/exaction-squad/exaction-squad-equipment-special-issue-shells.pdf": "7cc584024e8544694c7713c1310e1411a3ab6efa172aa67ff8b60f2bc9a725e8",
+        "layers/integration/exaction-squad/exaction-squad-equipment-strobing-phosphor-lumen.pdf": "9a52ad9d3c6dd5d25fb25d8e90abc82b58e1d7fc0bf4e46095dca118c22718f2",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-marked-for-justice.pdf": "882212bc2110b58152e98c4be8fc2e7fdcc027057de56836c2d82506fa1038df",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-repress.pdf": "6b05fda27b28d47724f9ba19a679d1054ed926345269fc4faf2644de274abad1",
+        "layers/integration/exaction-squad/exaction-squad-faction-rule-ruthless-efficiency.pdf": "a980f1edd0430d7ec850d2faf3604bfcc9659e1e8741298c603b8c2f3444dba2",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-brutal-backup.pdf": "b8acf24173ed8d7122b322260684f49f6a75eb27045f5ece90212a37a40aae94",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-exact-punishment.pdf": "943be0ff892672fc59b271bf533eb0d5cafab85960a918b6c426924711d11f11",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-execution-order.pdf": "088a05d12a36f65ff7890b62ac54698d8139b263ef47900ad8ca8b85a8f9e2a8",
+        "layers/integration/exaction-squad/exaction-squad-firefight-ploy-long-arm-of-the-emperors-law.pdf": "4a344575cbde79ced0d123e44c039fd1758cb5278a101f1ac350c3162fc45949",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-1.pdf": "d13411bd93cfc82d858ab169093e0285bc55272828bb0b40fe9967dbdd57fdee",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-10.pdf": "6d0676f4448f7610597eb79a2b52406b0d56d2a6f90ca2130b06cfdd7d8ddba1",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-11.pdf": "eaeefdabec420b7488b6e0272178ed27bceed4c1392e7911f6d5b0c1abefc336",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-12.pdf": "766496db3dec21b7282c351c74bae637ce032a98bac4ba425341fedbe14ebfd5",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-13.pdf": "598cd09802bfb6c6eda371806c791664bae1f7808a5f5af2fa962e2ab7f3c6e7",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-14.pdf": "9de96f94dc7239f1d80902e3fd24d8aa97f04f3b61b20814e362ceeec97ca8ce",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-15.pdf": "0c9c814cbe4720a51a9af15e89dff3fdec071e9ca4177d3c45ba2a25742aff9f",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-16.pdf": "ca91a3e62a0dc1fa6a20322f8f68343a7f46c716dd39ce86cee77e9edfee50c8",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-17.pdf": "b810a8ea3c6423948ae094293bda897e7571b20f80504f81949f6409291fefe2",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-2.pdf": "176887a5c39d59eacc7d4f33b094bbf52c711f2478dcd8a9c969dd8259019d18",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-3.pdf": "be7f4dee3f238d1e313a668efbddab49b41078d7d52df9df0e311b87e1e5eadf",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-4.pdf": "cc405ab0851ea3eece8506b14a6fc444ce478dc3d8f882a95008f2d2ae7c4968",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-5.pdf": "ebdf8fa924be1594b8e652ffc97208dd51a4f2bb9722bb2841ce60dfca0efde0",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-6.pdf": "05d3bb6d17e10f6b1767418c3d8a8d918d48790c307753603c5189238c01e2a6",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-7.pdf": "5d7c458265fde347307efefd58d60c1b32472fe3a98720b60a91aa6cb0085a5e",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-8.pdf": "5271ad41d9cb79f2e9ca9ad133dcd66d57837871e25c03a2c4a221e526351f40",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-9.pdf": "6c6f82e1563e9746850fe23b7a0035849ffd9b12ae51ad984bca179492af3b0a",
+        "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection.pdf": "d1fd9ca5346c330ff1e946f5c0fa252761e01565761876c516f3dd2e4526f88d",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-dispense-justice.pdf": "fb26ee06414bc80053296e8296636aacc465f868052b43b3b88109baed642800",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-guilt-reveals-itself.pdf": "19315e097dd3cfe933c6b90869777a4798d96a7422f84f0f48cd08186d3b3082",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-inviolate-jurisdiction.pdf": "d8f7bb4d28dd4cc01ef68dffc563a268b021dd03213f95e2b0ca0c44b7e6d1b2",
+        "layers/integration/exaction-squad/exaction-squad-strategy-ploy-terminal-decree.pdf": "ac18bd4619487b9f4940129c2aa0542d8eb063e0e9aae9b72cdbaa9b785acb1d",
+        "layers/integration/exaction-squad/exaction-squad-token-guide-token-guide.pdf": "4b7acc3c2f1fce634a80f7047d67dd0b3fe3554517e573be01e35c9095961835",
+        "layers/integration/exaction-squad/card-backside/exaction-squad-backside-portrait.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/exaction-squad/card-backside/exaction-squad-backside-landscape.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/exaction-squad/data/exaction-squad-team-data.json",
+          "hash": "a82edd1b4c7a28d3a3c478cb7a8b5ce23b55db71107571c7d2aee9e8668a9966",
+          "modified": "2026-08-29T18:43:44.898652+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:44.900161+00:00",
+      "inputs": {
+        "layers/integration/exaction-squad/content/exaction-squad-content.json": "a82edd1b4c7a28d3a3c478cb7a8b5ce23b55db71107571c7d2aee9e8668a9966"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Exaction Squad Box.json": {
+          "path": "output/exaction-squad/tts_objects/Exaction Squad Box.json",
+          "hash": "e5b777bcefebc2e438a523b17f6f7424fdfdc543015470d582fb264cc8b52b0c",
+          "modified": "2026-07-21T11:11:11.951127+00:00"
+        },
+        "tts_objects/Exaction Squad.json": {
+          "path": "output/exaction-squad/tts_objects/Exaction Squad.json",
+          "hash": "4ea66f9167b6bbc141ff3f96d789195414e0100ca08addbc21104a62fe022990",
+          "modified": "2026-08-29T18:53:37.687816+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:37.775967+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/exaction-squad/cards/datacards/arbites-castigator-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-castigator-front.jpg": "10251daf89169e0a1c28d881c91b44ec63ce4074a35aa9d0d6661ed31560b713",
+        "output/exaction-squad/cards/datacards/arbites-chirurgant-back.jpg": "988b623e70ec48995b30ba17ecaf4126c498303c7884a7d52a9be540ae505dd2",
+        "output/exaction-squad/cards/datacards/arbites-chirurgant-front.jpg": "e00ff865c77c3caf223848117b853eeeb9e687a611fa7d21e6524e7b60a8d082",
+        "output/exaction-squad/cards/datacards/arbites-gunner-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-gunner-front.jpg": "3456dedf4a1e5b194e41786b9aa78ec2be974c5375b8d1458fc6073ec30437a5",
+        "output/exaction-squad/cards/datacards/arbites-leashmaster-back.jpg": "a36c50db5d115239249cd9128d97b1ceda97cbb85dc1233f42aefc7cae57c58c",
+        "output/exaction-squad/cards/datacards/arbites-leashmaster-front.jpg": "1dea84d6c21b5b8e4d67d0088e29cec9544a20f4331818def643407054d1d2c6",
+        "output/exaction-squad/cards/datacards/arbites-malocator-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-malocator-front.jpg": "d72bc2260872c8cd5a7f7d4e06a872a60db3c0f81b9405a7cf2e44c8a1f66acb",
+        "output/exaction-squad/cards/datacards/arbites-marksman-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-marksman-front.jpg": "67d22ed1e22179fd46196901b3b4d50e049ffdf50b857709725319a0f8ea9496",
+        "output/exaction-squad/cards/datacards/arbites-proctor-exactant-back.jpg": "1379f4a16837585081c69d15c5daaef7cff6ab6efd07bf0e463087709f75ef5f",
+        "output/exaction-squad/cards/datacards/arbites-proctor-exactant-front.jpg": "ab5c5edc525dec6465e8aab2d82eedd6865b3df74ca77e8b8bb2898dee621053",
+        "output/exaction-squad/cards/datacards/arbites-revelatum-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-revelatum-front.jpg": "40ff210642d954a6b35f14f5db93e4d07c37c2389c72f79a9e542b0764e2e890",
+        "output/exaction-squad/cards/datacards/arbites-subductor-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-subductor-front.jpg": "e6f3de5d3bf7f803139bc344d64aa163d6a3af2e6e07860ee90c390c33007597",
+        "output/exaction-squad/cards/datacards/arbites-vigilant-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-vigilant-front.jpg": "82185e37b2d292b569b11ae8d74a53f0d0d3c41a30837587d085f16f40b5874b",
+        "output/exaction-squad/cards/datacards/arbites-vox-signifier-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/arbites-vox-signifier-front.jpg": "e2b90bb2192f0ed5a878a5a7b1b8ae2fd39934d8b27dc55177702cdb023efc79",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "90cf60622b7188961bc4fd2fbd4cc8fe2baff8904f02df218adc4cb5f4c33a15",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "6315d607b49fe5117b57d092e20aea8951d31033568196bfdd3c48461f5ca0db",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "6f818f5440d35ba185ab3d6d1048e707c942793b8e4ad888d317a1e3719ddacc",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "357541da7bf1ac22a94303968c98169fce51223aa54e277b142fe746b5a704ee",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "76cad2e9ab0193b419de5743e3bcacae9ee28f95227fb30af4043e35718bb8cb",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "e9fb493c3b34f34930dd90a92c5659a96150860d20339201ae171ac94414912d",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "3196b0ad7278b7199219cdd55d57ae91c1c867d881b6df1b2023b1bcddd70e95",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "bb293b2f9f3b4ed1991630f851f33c276396a4e9420d742101cfd0d0747718e2",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "5b13e3400b0f975d4c4a30bea76ced4a6d48d60434862bfb62cb92562684cb7d",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "9a4805a8bbcdb45a6793f4ecf20f01f45b276792020d01ba0f277d37fc6673c1",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "c5dd5e0dbd8deadac1ddb3c46ced05288f7be3ccecf250f6367b518d9b14c6e2",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "ad0fc2f60d3d47268fb6faf0d4b3044f74109c17649ddaea99f67c8d27be1108",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "0ec91264069474094a90dec159a28e2e405f0b2029519a179c66da7e78accc4e",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "8aefb5b810772ad2a7a505dd1e01695bf9bbe50d814bb9425d4c554f04f8de97",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "fac7f0a24de9526b306f3b3bda3b6fd099c15c80e46f13f1197dcba9f47e5e0b",
+        "output/exaction-squad/cards/datacards/r-vr-cyber-mastiff-back.jpg": "138810e6d8b8367e4a40f918e2dfd5e5f3651f3a1210bf405889fe3f5ca18f33",
+        "output/exaction-squad/cards/datacards/r-vr-cyber-mastiff-front.jpg": "2cd111e91cfa6faeb9954760aa84ebc538cf1f6f09fa11790244c2188229f9b3",
+        "output/exaction-squad/cards/equipment/exaction-squad-manacles-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/equipment/exaction-squad-manacles-front.jpg": "aeb079510e854e78885e9ee398ff34ff2033fd4f278bc8882c967dc480bb47dc",
+        "output/exaction-squad/cards/equipment/exaction-squad-reinforced-mirror-visor-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/equipment/exaction-squad-reinforced-mirror-visor-front.jpg": "3755f95e9e7f6ee53d610ccb6ace84a87b3cc5be16d2d607fcab82c2b9b52734",
+        "output/exaction-squad/cards/equipment/exaction-squad-special-issue-shells-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/equipment/exaction-squad-special-issue-shells-front.jpg": "a80aaa8020b306af359b329f32ed251fc8f94a4c7c590287464d7a6653f8f288",
+        "output/exaction-squad/cards/equipment/exaction-squad-strobing-phosphor-lumen-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/equipment/exaction-squad-strobing-phosphor-lumen-front.jpg": "0445d858121a59b019705c26401fb243a3a8e1bdd6e62da15b1cba6f03ec79f9",
+        "output/exaction-squad/cards/faction_rules/exaction-squad-marked-for-justice-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/faction_rules/exaction-squad-marked-for-justice-front.jpg": "beed6958e72d104822234e4719c74eddac13f5bb00cac90a39bf83fca6cff3c5",
+        "output/exaction-squad/cards/faction_rules/exaction-squad-repress-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/faction_rules/exaction-squad-repress-front.jpg": "766e9a66056fef9209c6fb9b2a42761f4e7260a5294fa661ec5eb0c595a9ba53",
+        "output/exaction-squad/cards/faction_rules/exaction-squad-ruthless-efficiency-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/faction_rules/exaction-squad-ruthless-efficiency-front.jpg": "e650bb119598ab9dafae83a3756509dcd156b16fa03696cb0938079725f95624",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-brutal-backup-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-brutal-backup-front.jpg": "0da9fa47c67a4484ff4dbf5f400c652f5ac9607156f231e078044dd3154fc5cd",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-exact-punishment-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-exact-punishment-front.jpg": "f9e17153a77a323f0495e5869903c7a8fc8bce9f6334694ebb6b5be734ff3278",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-execution-order-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-execution-order-front.jpg": "d8e5b0c026a1ae0eaf96cf4cdb79f029bdb3183704cffecd40a69780c393559c",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-long-arm-of-the-emperors-law-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/firefight_ploys/exaction-squad-long-arm-of-the-emperors-law-front.jpg": "84a55d30911213cc3d0c5793cb6e73a9d4b7b33c86187f0b3a2628e620d73863",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-back.jpg": "f74a5c42ca9f12d6f838982d54465b583975742b9a87d7dc58ccfe0922eff464",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card1-back.jpg": "f74a5c42ca9f12d6f838982d54465b583975742b9a87d7dc58ccfe0922eff464",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card1-front.jpg": "b2108d2bc6e597e5ed9e109ab3c8775f8e462fccee56fffb4d0eea70c8dfadcb",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card10-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card10-front.jpg": "189bbc625accb8e152f0c22701b19856a9ee96fa582562e4d7836885e864c554",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card11-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card11-front.jpg": "ca01562fa849d01e28a224fc76fbaf983eeb0b14ba719a5eb21153b985f2cd13",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card12-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card12-front.jpg": "e584042c489f35a04b8743f77521147f8ed2de3838294d43e62c9a0c595b25d0",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card13-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card13-front.jpg": "cc64d8962d1da305b5978f3e01cf80898fc4ff82bc2a9fdf806b4aa4bdc52d2f",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card14-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card14-front.jpg": "8f26e02f5758dd4f35b8f3d7fbd80a31a765a22938201719994052b1222e95a8",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card15-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card15-front.jpg": "eedc30b85d11dc51f264e5d27e254e942c712b52fa3d8043dc9a5ade31473f02",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card16-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card16-front.jpg": "94428e7177eeb6134a8ee8f2bbafd0a088007e80d258d21d80975c41c9fef67a",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card17-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card17-front.jpg": "ab0430ee00bcdd289e90054d62c8021bb0e8d64154251f523f7619fca7232539",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card2-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card2-front.jpg": "82ab3fe3bd6f5534038bfacc06c4080783e8a328b1b6500fe0ca186c093e9f45",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card3-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card3-front.jpg": "674c0d1786be1a55705a1bf3d587577ef5019d7a2ebec337b2cde6845d50c11b",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card4-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card4-front.jpg": "82e1dfe4a4ecc6e965f3e47336a851c65dcde93ecd0fa886961bd0c13bc9e6be",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card5-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card5-front.jpg": "13ac749991e25ec46f70c798a76e91f2a3f8a6867b777315a0d59eedda98a2c4",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card6-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card6-front.jpg": "d0644a207d39479755eada835fee733ae7a36fd5ca8b19dc7b7266c424377183",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card7-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card7-front.jpg": "604c6e4cee841000f33c56d2c09fc124fcd3f9537580ebb1d76c2b7eeed23136",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card8-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card8-front.jpg": "bc9864b7dcee836d69320311a8f4bc64c1ab908ea298cc5236ab2f881ae9ed0c",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card9-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-card9-front.jpg": "fe23e99bb2fe70f60caf6eee0087c4d7c895e2b2338598510d294af349f05730",
+        "output/exaction-squad/cards/operatives_selection/exaction-squad-operative-selection-front.jpg": "32803ddc6fb2dbcd9df1a8b92b9d359516d5ee43c9362f9ae02f56b3c081b723",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-dispense-justice-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-dispense-justice-front.jpg": "185c533492aa68ec99fb60b31462f893e77e783ed282f31c2a37604900e99f9e",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-guilt-reveals-itself-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-guilt-reveals-itself-front.jpg": "0ff3319584d7aceed7e068853a0699960a8e0666a4bd21ab67d507d5a676134b",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-inviolate-jurisdiction-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-inviolate-jurisdiction-front.jpg": "c6ade8282858f4130303dc31331a31460929b3e081bf87bd81da7bbe1ee2f118",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-terminal-decree-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/strategy_ploys/exaction-squad-terminal-decree-front.jpg": "62e57d79f6fbc9664af0e8291259958a5d5e305008ef1eb4af9bc47ff35fdf6e",
+        "output/exaction-squad/cards/token_guide/exaction-squad-token-guide-back.jpg": "8bc7ae64c57db34d6ea05d7ec52969a7acd5699bae2b82b3fbf42f6110523550",
+        "output/exaction-squad/cards/token_guide/exaction-squad-token-guide-front.jpg": "1175f56fa20462a2cd99042d57486e1996525fe4fdefdfc293a10a0709f7edec",
+        "output/exaction-squad/cardbox/exaction-squad-card-box-texture.jpg": "a93213fd52f3db0710fae7e6d05438bc088014c797dc5519496c0985c4459e2f",
+        "output/exaction-squad/cardbox/exaction-squad-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/exaction-squad/tokens/exaction-squad-aggressive.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-aggressive.png": "830b46f93df83a0a228ae01da1add980d12cb0eaea028e14c7468faf8a12e4cf",
+        "output/exaction-squad/tokens/exaction-squad-apprehend.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-apprehend.png": "43bd751eb481887ff58a06d2acc65da7d200535f93d76765c6939b60b142e848",
+        "output/exaction-squad/tokens/exaction-squad-defensive.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-defensive.png": "9d34dadcf23312032ab158ca55159f9128150dd77ce6a02a29066bba553a9eca",
+        "output/exaction-squad/tokens/exaction-squad-marked-for-justice.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-marked-for-justice.png": "7fa43b119e0ae100573a792eca864e59957e742fff0850f44ad425ce91fa8da9",
+        "output/exaction-squad/tokens/exaction-squad-medic.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-medic.png": "36372c5c37b5a7dac987ed46f2c412cd6acee7391669d0f5e7e14de890874c41",
+        "output/exaction-squad/tokens/exaction-squad-nuncio-aquila.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-nuncio-aquila.png": "d53e734be9a742d35f5dedd966a11310cbb3ed11255eefdd4b1947f2c3a9a4c1",
+        "output/exaction-squad/tokens/exaction-squad-spot.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-spot.png": "9370de5641d3689924f7ee1538791ac0befccea13bc5d05ecb32d2ae94135164",
+        "output/exaction-squad/tokens/exaction-squad-swift.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-swift.png": "29840655d0edaebbe71bed04f2791758aa7dfb878bf1285c481fe4774c8acabf",
+        "output/exaction-squad/tokens/exaction-squad-veriscant.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/exaction-squad/tokens/exaction-squad-veriscant.png": "03c1b08e37f0b17ea19936e3d151f1f3263d860d229d22c25b38acf90db99278",
+        "output/exaction-squad/tokens/tokenbag/exaction-squad-token-bag-icon.png": "55e52059d5f2740483b8a250a00dacec7c57dca0057375aad1ecb17ecef018ea",
+        "output/exaction-squad/tokens/tokenbag/exaction-squad-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/exaction-squad/dice/exaction-squad-dice-dark.jpg": "b3e667a8d28a89ce152470a954adff3916eb37666751a47e671da3daaa9b2335",
+        "output/exaction-squad/dice/exaction-squad-dice-light.jpg": "fe9a6b8a2e41eb6f26b19024923954e2ed199edd2819dc6b00f5691ce2d5ead7",
+        "output/exaction-squad/dice/exaction-squad-dice-team.jpg": "38ce44ee688bd41715c73cbfaa037a60776a6964e9df91acf7b7c0b2f09c458c",
+        "output/exaction-squad/data/exaction-squad-team-data.json": "a82edd1b4c7a28d3a3c478cb7a8b5ce23b55db71107571c7d2aee9e8668a9966",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "firefight-ploys": {
+          "hash": "392446e013e9cf4609c33482bdaffedaa44e40bf4b1bf9932c6ce27e3f61c9ee",
+          "outputs": [
+            "layers/kt-app/extracted/exaction-squad/cards/firefight-ploys/exaction-squad-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/firefight-ploys/exaction-squad-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/firefight-ploys/exaction-squad-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/firefight-ploys/exaction-squad-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:58:57.239325+00:00"
+        },
+        "faction-rules": {
+          "hash": "900fe87d7349d26798afb0fd661ac1c81a3c80d63990a29acf3e3994ed94cdc1",
+          "outputs": [
+            "layers/kt-app/extracted/exaction-squad/cards/faction-rules/exaction-squad-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/faction-rules/exaction-squad-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/faction-rules/exaction-squad-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/faction-rules/exaction-squad-faction-rules-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:59:39.535293+00:00"
+        },
+        "operatives-selection": {
+          "hash": "8e89ad1cda3f72f99bdf07610a42601c9d38f90e527c4a5c2a21ad5e24262f78",
+          "outputs": [
+            "layers/kt-app/extracted/exaction-squad/cards/operatives-selection/exaction-squad-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/operatives-selection/exaction-squad-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:00:52.703696+00:00"
+        },
+        "equipment": {
+          "hash": "0074167cc1eb9122f662fed9278a369ccaf650d2f6dba4aaac4e1c7ffdb68f3d",
+          "outputs": [
+            "layers/kt-app/extracted/exaction-squad/cards/equipment/exaction-squad-equipment-page_0.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/equipment/exaction-squad-equipment-page_1.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/equipment/exaction-squad-equipment-page_2.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/equipment/exaction-squad-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:20.345787+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "9619da026c9bdabd8ac2507db4a0f12e730dbc689cbc040a037ce19ca9bc7f91",
+          "outputs": [
+            "layers/kt-app/extracted/exaction-squad/cards/strategy-ploys/exaction-squad-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/strategy-ploys/exaction-squad-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/strategy-ploys/exaction-squad-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/strategy-ploys/exaction-squad-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:04:21.423055+00:00"
+        },
+        "datacards": {
+          "hash": "88d5d35688422a27ad4b7d5d274b25f90c1fd67f2933ecdead41fae538975bbc",
+          "outputs": [
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_0.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_1.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_2.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_3.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_4.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_5.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_6.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_7.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_8.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_9.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_10.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_11.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_12.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_13.pdf",
+            "layers/kt-app/extracted/exaction-squad/cards/datacards/exaction-squad-datacards-page_14.pdf"
+          ],
+          "modified": "2026-07-06T16:09:45.611272+00:00"
+        },
+        "cards": {
+          "hash": "a7f94538224486a7eb601a974da885d72feab7052ce1e1c5a2bc534487742905",
+          "outputs": [
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card4_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card1_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card2_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card3_portrait.pdf",
+            "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:27:47.576919+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:27:47.576919+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/exaction-squad-structure.json",
+          "hash": "9977dd6973352a0c5b081a318fe87edf987cbf04eff7ec70ef2d105bcbe83b7b",
+          "modified": "2026-08-29T18:42:00.046216+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card1_landscape.pdf": "3d1409d6b4ffaf8093f1bae2c3bf4a0b74248e5ae51ea980e5701b24d30939fb",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card2_landscape.pdf": "4acfa471c3d5f84b5cf9d63a4f8b4e97fc699f76d1e302934d995c2506995af3",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card3_landscape.pdf": "7c4eb91dd0ee097936c68bbfa29d2005b33504dba1a80f6ef2c320262ba186b9",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card4_landscape.pdf": "f9aa729983d0c47e4cf565b79f9f0f4ec50c0f9eb71bd0f6ed80e4008837fab9",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card1_landscape.pdf": "dceec3a2853bcc6b293cf27be75509c7d21cad08b1fb1d5b6b20ae658f8c0661",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card2_landscape.pdf": "fc733b3d9307de0271d135a26d8ddb6d9b80f03aa6d82767e4a3afaa1ec966a0",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card3_landscape.pdf": "95fdd70294e5b8c00c66c124ee90c0e42602e25dcaf8a26c30b26521e61ba929",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card4_landscape.pdf": "fb4282994d14d742c644b2574360c29d5a54d1d10af3c91b941d17ebd2a03b3f",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card1_landscape.pdf": "003a90bd80ccee657b907c69bf4e26e9c08aec012f6edb9abbc2d88ad477768c",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card2_landscape.pdf": "05f7703cf91dba598d59666cf2fd3e96192cec60a058554a0f14b521844923c1",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card3_landscape.pdf": "8daba3c750fafe426b9c800ce18494958d077dd95e8fea95a55b70cfb222c3cb",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card4_landscape.pdf": "8d6c9eb1f9daf68a2a2cd17d17cbac342bcb11fa636aa35d9b0f24bd06b15abc",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card1_landscape.pdf": "bf205fa554b9acc4e8e14405fa161e34c26708f10e29356027218a91b6d68585",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card2_landscape.pdf": "53aa877e6f0cad7828843e5c9859124f9e97b1f0455d80c3bd2e982fc58a57f6",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card3_landscape.pdf": "614cfa4020949a38ca7d40a423c1ec22acdfa4f24be6fd77432ce6722635bd36",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card4_landscape.pdf": "6bdf583d03d6cc7678d50a58f3a361266033b085570fdc07b8f1a03e667afd69",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card1_portrait.pdf": "5b03ade32ccdc92fe7452e51e5883a777e94d0e922073cddb573080146ffc022",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card2_portrait.pdf": "30674e8de91877e1eda9dffba6d1d53239f0d4e5e437c9c19449d588db2be432",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card3_portrait.pdf": "2fc330f9472bca9c87b7740be7d7fc73e3752b3204736794c51efd74a1a97cca",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card4_portrait.pdf": "e661997979087a10f7b29fedb0671e4efee451fc719593d0c24795bd8ff85849",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card1_portrait.pdf": "f4ff81f6a64607f8933020780977c734fc26af0ae78cd10b840a9ef9569c58d3",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card2_portrait.pdf": "4ea92e0e0b8d9c4f1af05ed8e9caace135f2e0bf866f732fc1ecbaeaba36d565",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card3_portrait.pdf": "1347ef721acf751e0db291e9eb161bde1b59b5e921eecdec83fe15f33a5e2963",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card4_portrait.pdf": "a16e3ee3a799e1ad763099a1bc7104bf95aa23217e43338966c249d56e259535",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card1_portrait.pdf": "3369b6563651d8943b6dd014bee3da58ff20c0678f609c341236627aaea165bf",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card2_portrait.pdf": "e60fedae08621dc57d1669dabd62c7fc7442b62ab5177a2317c92939238219f6",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card3_portrait.pdf": "d1d333b6a7f3b5ad201b0c473d2cc7eada7763076c97a1dc9a368e4e7b3f7394",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card4_portrait.pdf": "2766a210f7edb8249c8aa394dc6a1495d1f2bc95d6678a3c9c1ffadfac972382",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card1_portrait.pdf": "c66aa6cd21afcb9d5b20bd52c36f4e9890b7d978aa36075124b56014a4779484",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card2_portrait.pdf": "dd067202bacc2c8e29985abb79dc264869581af4f762bd996f3532dd03493ac7",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card3_portrait.pdf": "1a014d80ee182997edad8724fe10acd7a9a3822a12a7416351f765f913e7f477",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card4_portrait.pdf": "bc117f7e61b85afaa37344ec18351ca34c853b407cb693958b4f310989c4680c",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card1_portrait.pdf": "24e26d92f76c610b0293ded08011600e686ff89597db0372812b544355b5d562",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card2_portrait.pdf": "be26b67b66df10118a262a19d9ad967fa64f3e7f43405b23e252ae00a11d476e",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card3_portrait.pdf": "8e4ea3cf25fbe287995dad4da4990d2090a84f80839a33461bb1139c0a28bdd2",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card4_portrait.pdf": "03b1a96528c6637b248ff0675d6e6c0f27c65eba819f0f102a88f633633ad73c"
+      },
+      "completed": "2026-08-29T18:42:15.398802+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/exaction-squad/manifest.json",
+          "hash": "9977dd6973352a0c5b081a318fe87edf987cbf04eff7ec70ef2d105bcbe83b7b",
+          "modified": "2026-08-29T18:42:15.600253+00:00"
+        },
+        "exaction-squad-datacard-arbites-proctor-exactant.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-proctor-exactant.pdf",
+          "hash": "ae9e1fee08050169397ecbbaa261c84f01fa0c0fcba409f96d9845afbdb6f8ff",
+          "modified": "2026-07-12T19:10:30.019915+00:00"
+        },
+        "exaction-squad-datacard-arbites-chirurgant.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-chirurgant.pdf",
+          "hash": "e6c0465d1765b7e3b10cfa071cd3abb80270197c693ea0b54de3b2f26f0b7d4f",
+          "modified": "2026-07-12T19:10:30.032234+00:00"
+        },
+        "exaction-squad-datacard-arbites-leashmaster.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-leashmaster.pdf",
+          "hash": "06b038710d2b16df86e060f7001cf574f235e89e2da229e7ddb72cdbe1b1ff4f",
+          "modified": "2026-07-12T19:10:30.054230+00:00"
+        },
+        "exaction-squad-datacard-r-vr-cyber-mastiff.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-r-vr-cyber-mastiff.pdf",
+          "hash": "659204e3845eaf835614afde39f3c19df242346768a410dc43a7273a178f5c88",
+          "modified": "2026-07-12T19:10:30.082771+00:00"
+        },
+        "exaction-squad-datacard-arbites-castigator.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-castigator.pdf",
+          "hash": "255ea8bbacff66ae0ef4d6d776a7d1314367c9f6ef7714a9e4de4b6d3769a7de",
+          "modified": "2026-07-12T19:10:30.107308+00:00"
+        },
+        "exaction-squad-datacard-arbites-gunner.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-gunner.pdf",
+          "hash": "fe61e921bb6527d97c3925a3ef1b4d591351b911af8e04ec31facd595eab3ede",
+          "modified": "2026-07-12T19:10:30.148914+00:00"
+        },
+        "exaction-squad-datacard-arbites-malocator.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-malocator.pdf",
+          "hash": "9d5e7dfd3d82abacbdc2a66e094e5077a4c6c933cfef9f063f2669863e29bf6e",
+          "modified": "2026-07-12T19:10:30.212829+00:00"
+        },
+        "exaction-squad-datacard-arbites-marksman.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-marksman.pdf",
+          "hash": "fb567b3d5d649ddcea6ad77ab86ff9042245ec9ec9ba9196e9bf4d9f632dce3f",
+          "modified": "2026-07-12T19:10:30.283054+00:00"
+        },
+        "exaction-squad-datacard-arbites-revelatum.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-revelatum.pdf",
+          "hash": "9339120b2428a8b29a0ef7a8a82736348b7c77cc922af682534aa5ca57320195",
+          "modified": "2026-07-12T19:10:30.406994+00:00"
+        },
+        "exaction-squad-datacard-arbites-subductor.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-subductor.pdf",
+          "hash": "fd0e1d33f07aea46a1ce8e42cef515ff91ee47d66dda96cb870b1fc6220a66f4",
+          "modified": "2026-07-12T19:10:30.534120+00:00"
+        },
+        "exaction-squad-datacard-arbites-vigilant.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vigilant.pdf",
+          "hash": "405ef6caea5b95085d6f96154cbbacc549f92395c4e0f743f27f977a37493071",
+          "modified": "2026-07-12T19:10:30.706093+00:00"
+        },
+        "exaction-squad-datacard-arbites-vox-signifier.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-arbites-vox-signifier.pdf",
+          "hash": "87d96b9e94e20daa49ccf21a4af40cd30873f65cd2e9700426f35f1703026b6c",
+          "modified": "2026-07-12T19:10:30.830365+00:00"
+        },
+        "exaction-squad-equipment-reinforced-mirror-visor.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-equipment-reinforced-mirror-visor.pdf",
+          "hash": "5fad84778a45f29a6ca5cc8b1fc921a2463229f2c687cce11572dbdd9740ae77",
+          "modified": "2026-07-12T19:10:30.862802+00:00"
+        },
+        "exaction-squad-equipment-manacles.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-equipment-manacles.pdf",
+          "hash": "134604faaa755be7e248326b6e9c8aaaf24e571cbeaa9972eccc549a03add1f4",
+          "modified": "2026-07-12T19:10:30.891158+00:00"
+        },
+        "exaction-squad-equipment-strobing-phosphor-lumen.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-equipment-strobing-phosphor-lumen.pdf",
+          "hash": "9a52ad9d3c6dd5d25fb25d8e90abc82b58e1d7fc0bf4e46095dca118c22718f2",
+          "modified": "2026-07-12T19:10:30.932667+00:00"
+        },
+        "exaction-squad-equipment-special-issue-shells.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-equipment-special-issue-shells.pdf",
+          "hash": "7cc584024e8544694c7713c1310e1411a3ab6efa172aa67ff8b60f2bc9a725e8",
+          "modified": "2026-07-12T19:10:30.937734+00:00"
+        },
+        "exaction-squad-faction-rule-ruthless-efficiency.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-faction-rule-ruthless-efficiency.pdf",
+          "hash": "a980f1edd0430d7ec850d2faf3604bfcc9659e1e8741298c603b8c2f3444dba2",
+          "modified": "2026-07-12T19:10:30.953650+00:00"
+        },
+        "exaction-squad-faction-rule-marked-for-justice.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-faction-rule-marked-for-justice.pdf",
+          "hash": "882212bc2110b58152e98c4be8fc2e7fdcc027057de56836c2d82506fa1038df",
+          "modified": "2026-07-12T19:10:30.985917+00:00"
+        },
+        "exaction-squad-faction-rule-repress.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-faction-rule-repress.pdf",
+          "hash": "6b05fda27b28d47724f9ba19a679d1054ed926345269fc4faf2644de274abad1",
+          "modified": "2026-07-12T19:10:31.017084+00:00"
+        },
+        "exaction-squad-token-guide-token-guide.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-token-guide-token-guide.pdf",
+          "hash": "4b7acc3c2f1fce634a80f7047d67dd0b3fe3554517e573be01e35c9095961835",
+          "modified": "2026-07-12T19:10:31.043847+00:00"
+        },
+        "exaction-squad-firefight-ploy-long-arm-of-the-emperors-law.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-firefight-ploy-long-arm-of-the-emperors-law.pdf",
+          "hash": "4a344575cbde79ced0d123e44c039fd1758cb5278a101f1ac350c3162fc45949",
+          "modified": "2026-07-12T19:10:31.067837+00:00"
+        },
+        "exaction-squad-firefight-ploy-exact-punishment.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-firefight-ploy-exact-punishment.pdf",
+          "hash": "943be0ff892672fc59b271bf533eb0d5cafab85960a918b6c426924711d11f11",
+          "modified": "2026-07-12T19:10:31.075297+00:00"
+        },
+        "exaction-squad-firefight-ploy-brutal-backup.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-firefight-ploy-brutal-backup.pdf",
+          "hash": "b8acf24173ed8d7122b322260684f49f6a75eb27045f5ece90212a37a40aae94",
+          "modified": "2026-07-12T19:10:31.096829+00:00"
+        },
+        "exaction-squad-firefight-ploy-execution-order.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-firefight-ploy-execution-order.pdf",
+          "hash": "088a05d12a36f65ff7890b62ac54698d8139b263ef47900ad8ca8b85a8f9e2a8",
+          "modified": "2026-07-12T19:10:31.126711+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection.pdf",
+          "hash": "d1fd9ca5346c330ff1e946f5c0fa252761e01565761876c516f3dd2e4526f88d",
+          "modified": "2026-07-12T19:10:31.144186+00:00"
+        },
+        "exaction-squad-strategy-ploy-guilt-reveals-itself.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-strategy-ploy-guilt-reveals-itself.pdf",
+          "hash": "19315e097dd3cfe933c6b90869777a4798d96a7422f84f0f48cd08186d3b3082",
+          "modified": "2026-07-12T19:10:31.158236+00:00"
+        },
+        "exaction-squad-strategy-ploy-inviolate-jurisdiction.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-strategy-ploy-inviolate-jurisdiction.pdf",
+          "hash": "d8f7bb4d28dd4cc01ef68dffc563a268b021dd03213f95e2b0ca0c44b7e6d1b2",
+          "modified": "2026-07-12T19:10:31.171095+00:00"
+        },
+        "exaction-squad-strategy-ploy-dispense-justice.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-strategy-ploy-dispense-justice.pdf",
+          "hash": "fb26ee06414bc80053296e8296636aacc465f868052b43b3b88109baed642800",
+          "modified": "2026-07-12T19:10:31.183423+00:00"
+        },
+        "exaction-squad-strategy-ploy-terminal-decree.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-strategy-ploy-terminal-decree.pdf",
+          "hash": "ac18bd4619487b9f4940129c2aa0542d8eb063e0e9aae9b72cdbaa9b785acb1d",
+          "modified": "2026-07-12T19:10:31.193215+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "1fa57a3218592b7d5d6fb1ce5916708335cff1b1d8267f72865cca9928eb4760",
+          "modified": "2026-08-29T18:42:16.602632+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "b8471bc68b4663409cefbf844012783cb02579549180165d7a3df328cdb82351",
+          "modified": "2026-08-29T18:42:19.866196+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "97bd47a002342395955bd747be40921fb2e353d7420c75e03777eacf1673d2dc",
+          "modified": "2026-08-29T18:42:23.089408+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "d1dac6dd9764df0162a7a63b6a90fd0568a23bd1e3ee6c6d18d164768d37ebff",
+          "modified": "2026-08-29T18:42:25.020885+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "3080ff3e0d8dfdd331b90bc3c4054c7bd89878189ab93712265f4fa1f25989ea",
+          "modified": "2026-08-29T18:42:26.314781+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "35cb72532de76e2f87df021ad36c4c244e031abd18fe47450683d4ca6da51ff7",
+          "modified": "2026-08-29T18:42:26.332359+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "be5452563fab8890bbf0ca7c0b17c24a18320fa26fb326bc4cdfee7d415dccae",
+          "modified": "2026-08-29T18:42:26.354592+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "5190c37d00f080716261e992a1500db6e78a1ea095c67ce96abff4020a572fd4",
+          "modified": "2026-08-29T18:42:26.380714+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "ab26161e0cc3277011ae52f304c97b2ec06c35e706e8da1fe529892cc9a2fab9",
+          "modified": "2026-08-29T18:42:26.402323+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "a54f931b86e50fda437d80add22a1423d4555a4d32904615b1d8f5d83ba53a1a",
+          "modified": "2026-08-29T18:42:27.388318+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "68383c67d5abb4bdb6ddce91c7cb9efcb8c987ebe59a5d6e08b799ad77215da9",
+          "modified": "2026-08-29T18:42:32.615933+00:00"
+        },
+        "exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf",
+          "hash": "1009ae6be401ee9acb4ec064c0e527a3c931ec92b6e2ac83eb975874504654de",
+          "modified": "2026-08-29T18:42:36.745242+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-1.pdf",
+          "hash": "d13411bd93cfc82d858ab169093e0285bc55272828bb0b40fe9967dbdd57fdee",
+          "modified": "2026-08-29T18:42:41.398796+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-2.pdf",
+          "hash": "176887a5c39d59eacc7d4f33b094bbf52c711f2478dcd8a9c969dd8259019d18",
+          "modified": "2026-08-29T18:42:42.470044+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-3.pdf",
+          "hash": "be7f4dee3f238d1e313a668efbddab49b41078d7d52df9df0e311b87e1e5eadf",
+          "modified": "2026-08-29T18:42:42.490809+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-4.pdf",
+          "hash": "cc405ab0851ea3eece8506b14a6fc444ce478dc3d8f882a95008f2d2ae7c4968",
+          "modified": "2026-08-29T18:42:42.520084+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-5.pdf",
+          "hash": "ebdf8fa924be1594b8e652ffc97208dd51a4f2bb9722bb2841ce60dfca0efde0",
+          "modified": "2026-08-29T18:42:42.540194+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-6.pdf",
+          "hash": "05d3bb6d17e10f6b1767418c3d8a8d918d48790c307753603c5189238c01e2a6",
+          "modified": "2026-08-29T18:42:42.559866+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-7.pdf",
+          "hash": "5d7c458265fde347307efefd58d60c1b32472fe3a98720b60a91aa6cb0085a5e",
+          "modified": "2026-08-29T18:42:43.107975+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-8.pdf",
+          "hash": "5271ad41d9cb79f2e9ca9ad133dcd66d57837871e25c03a2c4a221e526351f40",
+          "modified": "2026-08-29T18:42:43.549014+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-9.pdf",
+          "hash": "6c6f82e1563e9746850fe23b7a0035849ffd9b12ae51ad984bca179492af3b0a",
+          "modified": "2026-08-29T18:42:43.816445+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-10.pdf",
+          "hash": "6d0676f4448f7610597eb79a2b52406b0d56d2a6f90ca2130b06cfdd7d8ddba1",
+          "modified": "2026-08-29T18:42:43.830539+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-11.pdf",
+          "hash": "eaeefdabec420b7488b6e0272178ed27bceed4c1392e7911f6d5b0c1abefc336",
+          "modified": "2026-08-29T18:42:43.844639+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-12.pdf",
+          "hash": "766496db3dec21b7282c351c74bae637ce032a98bac4ba425341fedbe14ebfd5",
+          "modified": "2026-08-29T18:42:43.859398+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-13.pdf",
+          "hash": "598cd09802bfb6c6eda371806c791664bae1f7808a5f5af2fa962e2ab7f3c6e7",
+          "modified": "2026-08-29T18:42:43.873989+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-14.pdf",
+          "hash": "9de96f94dc7239f1d80902e3fd24d8aa97f04f3b61b20814e362ceeec97ca8ce",
+          "modified": "2026-08-29T18:42:43.887653+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-15.pdf",
+          "hash": "0c9c814cbe4720a51a9af15e89dff3fdec071e9ca4177d3c45ba2a25742aff9f",
+          "modified": "2026-08-29T18:42:43.899190+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-16.pdf",
+          "hash": "ca91a3e62a0dc1fa6a20322f8f68343a7f46c716dd39ce86cee77e9edfee50c8",
+          "modified": "2026-08-29T18:42:43.920085+00:00"
+        },
+        "exaction-squad-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/exaction-squad/exaction-squad-operatives-selection-operative-selection-17.pdf",
+          "hash": "b810a8ea3c6423948ae094293bda897e7571b20f80504f81949f6409291fefe2",
+          "modified": "2026-08-29T18:42:43.942560+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/exaction-squad-structure.json": "9977dd6973352a0c5b081a318fe87edf987cbf04eff7ec70ef2d105bcbe83b7b",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card1_landscape.pdf": "3d1409d6b4ffaf8093f1bae2c3bf4a0b74248e5ae51ea980e5701b24d30939fb",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card2_landscape.pdf": "4acfa471c3d5f84b5cf9d63a4f8b4e97fc699f76d1e302934d995c2506995af3",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card3_landscape.pdf": "7c4eb91dd0ee097936c68bbfa29d2005b33504dba1a80f6ef2c320262ba186b9",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page01_card4_landscape.pdf": "f9aa729983d0c47e4cf565b79f9f0f4ec50c0f9eb71bd0f6ed80e4008837fab9",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card1_landscape.pdf": "dceec3a2853bcc6b293cf27be75509c7d21cad08b1fb1d5b6b20ae658f8c0661",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card2_landscape.pdf": "fc733b3d9307de0271d135a26d8ddb6d9b80f03aa6d82767e4a3afaa1ec966a0",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card3_landscape.pdf": "95fdd70294e5b8c00c66c124ee90c0e42602e25dcaf8a26c30b26521e61ba929",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page02_card4_landscape.pdf": "fb4282994d14d742c644b2574360c29d5a54d1d10af3c91b941d17ebd2a03b3f",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card1_landscape.pdf": "003a90bd80ccee657b907c69bf4e26e9c08aec012f6edb9abbc2d88ad477768c",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card2_landscape.pdf": "05f7703cf91dba598d59666cf2fd3e96192cec60a058554a0f14b521844923c1",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card3_landscape.pdf": "8daba3c750fafe426b9c800ce18494958d077dd95e8fea95a55b70cfb222c3cb",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page03_card4_landscape.pdf": "8d6c9eb1f9daf68a2a2cd17d17cbac342bcb11fa636aa35d9b0f24bd06b15abc",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card1_landscape.pdf": "bf205fa554b9acc4e8e14405fa161e34c26708f10e29356027218a91b6d68585",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card2_landscape.pdf": "53aa877e6f0cad7828843e5c9859124f9e97b1f0455d80c3bd2e982fc58a57f6",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page04_card3_landscape.pdf": "614cfa4020949a38ca7d40a423c1ec22acdfa4f24be6fd77432ce6722635bd36",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card1_portrait.pdf": "5b03ade32ccdc92fe7452e51e5883a777e94d0e922073cddb573080146ffc022",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card2_portrait.pdf": "30674e8de91877e1eda9dffba6d1d53239f0d4e5e437c9c19449d588db2be432",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card3_portrait.pdf": "2fc330f9472bca9c87b7740be7d7fc73e3752b3204736794c51efd74a1a97cca",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page05_card4_portrait.pdf": "e661997979087a10f7b29fedb0671e4efee451fc719593d0c24795bd8ff85849",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card1_portrait.pdf": "f4ff81f6a64607f8933020780977c734fc26af0ae78cd10b840a9ef9569c58d3",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card2_portrait.pdf": "4ea92e0e0b8d9c4f1af05ed8e9caace135f2e0bf866f732fc1ecbaeaba36d565",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card3_portrait.pdf": "1347ef721acf751e0db291e9eb161bde1b59b5e921eecdec83fe15f33a5e2963",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page06_card4_portrait.pdf": "a16e3ee3a799e1ad763099a1bc7104bf95aa23217e43338966c249d56e259535",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card1_portrait.pdf": "3369b6563651d8943b6dd014bee3da58ff20c0678f609c341236627aaea165bf",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card2_portrait.pdf": "e60fedae08621dc57d1669dabd62c7fc7442b62ab5177a2317c92939238219f6",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card3_portrait.pdf": "d1d333b6a7f3b5ad201b0c473d2cc7eada7763076c97a1dc9a368e4e7b3f7394",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page07_card4_portrait.pdf": "2766a210f7edb8249c8aa394dc6a1495d1f2bc95d6678a3c9c1ffadfac972382",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card1_portrait.pdf": "c66aa6cd21afcb9d5b20bd52c36f4e9890b7d978aa36075124b56014a4779484",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card2_portrait.pdf": "dd067202bacc2c8e29985abb79dc264869581af4f762bd996f3532dd03493ac7",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card3_portrait.pdf": "1a014d80ee182997edad8724fe10acd7a9a3822a12a7416351f765f913e7f477",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page08_card4_portrait.pdf": "bc117f7e61b85afaa37344ec18351ca34c853b407cb693958b4f310989c4680c",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card1_portrait.pdf": "24e26d92f76c610b0293ded08011600e686ff89597db0372812b544355b5d562",
+        "layers/warcom/extracted/exaction-squad/cards/exaction-squad_page09_card2_portrait.pdf": "be26b67b66df10118a262a19d9ad967fa64f3e7f43405b23e252ae00a11d476e"
+      },
+      "completed": "2026-08-29T18:42:44.411270+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "a7f94538224486a7eb601a974da885d72feab7052ce1e1c5a2bc534487742905",
+          "outputs": [
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-01.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-02.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-03.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-03.png",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-04.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-05.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-06.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-06.png",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-07.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-08.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-09.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-10.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-11.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-12.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-13.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-14.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-15.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-16.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-17.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-18.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-19.jpeg",
+            "layers/integration/exaction-squad/artwork/exaction-squad-artwork-metadata.json",
+            "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-landscape.jpg",
+            "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-portrait.jpg",
+            "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-token-transparent.png",
+            "layers/integration/exaction-squad/artwork/icons/exaction-squad-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:37:17.922361+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:37:17.922361+00:00"
+    }
+  }
+}

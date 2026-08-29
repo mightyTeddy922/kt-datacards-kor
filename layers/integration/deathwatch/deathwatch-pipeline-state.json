@@ -1,0 +1,1591 @@
+{
+  "team": "deathwatch",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:37.593247+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/deathwatch/content/deathwatch-content.json",
+          "hash": "f250cdcba266c93bec0845730f86f2dd730a948778b20b7c863fff40a903698b",
+          "modified": "2026-08-29T18:41:28.484184+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:29.987851+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/manifest.json": "f422c9047b357dbf34a033e8fb1a4021746a600030ff0ff108adff9e4dbca236",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-aegis-veteran.pdf": "0e9237f072e839c176104bb1bb0b548b6e511700d337fb00e262b43ad6625290",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-blademaster-veteran.pdf": "388c5d00033d4b0098db92099f9cdef2b9aeaf8afaca30eb5dad6b9828ed7bd8",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-bombard-veteran.pdf": "2ed15f8f10f17d39536e977781e134e2ffcf1b1c4c7253e589da75b09a6d7ba2",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-breacher-veteran.pdf": "0d55a3db1bf9552b70c7a74dda9b7a1d27bf2a9548ad19b035bc635c1170fbf0",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-demolisher-veteran.pdf": "071dc49da694ac31107a13e04fa94c55062beeaf63d6f717bdbab06d9509ea9b",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-disruptor-veteran.pdf": "aeee87dcacd9bf15284a010052cf41dd5fe1c72fb2c180cdf7f3dc101b06607e",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-gunner-veteran.pdf": "f3efe84efbd2cc275b4570e2b044080a0279cc00dc318d6686d0d1780d460fae",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-headtaker-veteran.pdf": "911ac18eea2170b5c7fe8c28cd694231c9f15a5f3009baa0cbaee027e25feeec",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-horde-slayer-veteran.pdf": "0a5f18ebe5226c2cc0ab8c96dc6ce11e97da4202c5ec2326a91684758f6f6ad7",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-marksman-veteran.pdf": "1b59d050ce192eba2e6b02b668712b0509b6b254d5abbf27d8a6130ef9e3de3f",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-watch-sergeant.pdf": "543479b84918813cf4aa8b6f1aa78ab47f685ca688aadca6f061b062f8990c19",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "e843842c1cb1ce2fd1c92c35af4af2cea43ef888c7576262397df1994ea9368e",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "6a94dc41a14e8b84f78470cbebbed9b8bfe8fdbae75e6081847bf9204d2af2d9",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "661100a0d886d289438256356e2b50019846efd4b3508088ec9dab7c78a83ff9",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "168dbac80577c1fa7876256ed5aad7f6970d459da7b6c122a00e7ebc47d558da",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "0f3e2c0824c4babc880ec44e1058b3b483dbadfbb567b1f2850b41b53822bc2e",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "5e2dc255d3669584c48a5254b085ae3dd02aae71a5ae6495d7aef74bb9ae6fc5",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "d474035c361e407b8d6a73b1245d69c6c0ba98cba38c6c65d5a35573e34ba8e3",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "7faa7a23f8f7656ddc4bc2a0f027a6231994a36e055274d4b0d6f912e7a1d279",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "21862521c4213020ac7b39acbf13313ed310069963f200f8de391b0f88563081",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "ff779d034736424a4da21f3481bbb0063471e2d4b466b07ef40032b1f5d32de0",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "54540c72209963904f2c71b9a8461e9174609431325b42681e1723afd2ffd64c",
+        "layers/integration/deathwatch/deathwatch-equipment-ammunition-reserve.pdf": "1e68c71447658160d0bb4c8843c945ecbcd60409ec683a6ac11c521348a92157",
+        "layers/integration/deathwatch/deathwatch-equipment-digital-weapons.pdf": "0c338cac091713480228c7a452e16eed2e2980689954f07c69e2360144c35801",
+        "layers/integration/deathwatch/deathwatch-equipment-sanctus-v-bioscryer-cuffs.pdf": "c38aa57697ff1efd04dc3692cfa8d44990dd4cf914356e3c2f3d06bc7922b6e4",
+        "layers/integration/deathwatch/deathwatch-equipment-scrutavore-servo-thrall.pdf": "6505c22ad87c7a58fd5f38c4f77d4fae12676506e789f10f33528cf54bbdf530",
+        "layers/integration/deathwatch/deathwatch-faction-rule-special-issue-ammunition.pdf": "09d8dbff851d941b71571188c7026fc414ea00c6559c25e2e9fd0eaae217aeab",
+        "layers/integration/deathwatch/deathwatch-faction-rule-veteran-astartes.pdf": "7b60e5758500c2df515eeb3c3623a2862becfc35f971ee66ad10f65b19dcca3c",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-advanced-auspex-scan.pdf": "b6daa391c7526d0acc4d19c09fc7c7965f261de4f1acf3cdc4684a61d37cdac5",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-auspicator-tracking.pdf": "d171fdb8f854213c50c681d5c41d1539caf0780dacb73e030dd70666b32e3cd4",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-suffer-not-the-alien.pdf": "f40843f1127939a838de0fe83afbda6fb3c91d10d44d4aa2964e1aeb5d1bf636",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-transhuman-physiology.pdf": "56b044ac6e37ffbb43c37bfb9b1621096173c67256a43ccc26cb897458b70d15",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-1.pdf": "504fd7cf7b6be7478557ff786b6d6493cfb339b55edd8dfec8b456c06f3af32d",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-10.pdf": "a720cb0faa3e2ab43eefe3afaa833aa8431fc63941a75e2f0694a252348fd38f",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-11.pdf": "876c289e1352b11569d806c44c3c66a3261a3f67acd04c454a85d5c14ad8b5d7",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-12.pdf": "024d94d0758b30dc89f6d29a6c8c9217fe885b7f6f2914c0ec2fdba060060241",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-13.pdf": "5281efa82c95caf2dca108994d9c4489ce50bb97a4a026f5c955fec2d543c2f3",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-14.pdf": "2ad052b03ba06032f73016b86a4ce7a6ce5986848472c80907099ded5e07f78d",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-15.pdf": "8fd1c9287bf01feaa765e311f9cf69f1c01dd9f4a19635c443e9a606eda28ac8",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-16.pdf": "6c511f6fbac2026782939d161142a5b9c2712f63d6130bb8b7786fdf1eb7402a",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-2.pdf": "6dde77f237c792d10b823c135555556c42c53765fc4e8fdba290a28e6e31f733",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-3.pdf": "2d3f6c59284830ced652feb063c0e6183fbd94878f38abf02c2cc1c453181d61",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-4.pdf": "3bf6847f430c5758494e0e0a29beec3ab84d16f1e26c2329b539a9a3b6e8becd",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-5.pdf": "491840500e46213b00af6282cbb6e87236873d2d2c8801695282f87fd3ac8584",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-6.pdf": "5f48ebe7499e7376171a303fe5f53defb1241a16a4bdc2c174e7f96f15a74b14",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-7.pdf": "3b7b758181096bfa01930f3e98f4194da0d23964b959378b5c75ddfefac54851",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-8.pdf": "e85fca8f716739450b59a5e9de07cf287a9972aa2db7e5826cdbf92c5651ed16",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-9.pdf": "0d194c4fcbd03f202bb040b890f48540e90657f9e6963c7344c6d51ba2c6c998",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection.pdf": "dbfd1da57b8683afb5246e033bf21a5f2a10af78547b7a1ac17f93aa2651cc51",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-and-they-shall-know-no-fear.pdf": "45124ba03a1fa75808e5439682b055bec94f8c08341ae9f119f7777913a8dd24",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-mission-tactics.pdf": "c1db84504442cc0e7493739a664862ee0dd21caa5d342bcb8c2418888f983175",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-the-long-vigil.pdf": "cd5d664c49837c6852c2e4b83abad8fb3aab2a21a151d755dc9ea470d0482da1",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-the-shield-that-slays.pdf": "f675516030df18e1a515a5b48a6ab23818a468f1607593d894ea0eb13ee89803",
+        "layers/integration/deathwatch/deathwatch-token-guide-token-guide.pdf": "b76a0bcd53aee25da6940cb8d5b1a160cf25884709b740d72959d21812740835"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/deathwatch/card-backside/deathwatch-backside-landscape.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-07-12T18:46:36.903381+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/deathwatch/card-backside/deathwatch-backside-portrait.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-07-12T18:46:40.256360+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:46:41.093988+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/artwork/icons/deathwatch-icon-token.jpg": "07001f2d1adb58a66a70ca24e1231bb53bfe126dbe058097987fc7bb6ad6c4aa",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/deathwatch-advanced-omni-scrambler.png": {
+          "path": "output/deathwatch/tokens/deathwatch-advanced-omni-scrambler.png",
+          "hash": "51f9a821802981cb721a68d599a702b094b0fad0d64e68812162cd700f795f92",
+          "modified": "2026-08-29T18:41:58.640911+00:00"
+        },
+        "tokens/deathwatch-ammunition-reserve.png": {
+          "path": "output/deathwatch/tokens/deathwatch-ammunition-reserve.png",
+          "hash": "a980bae001192e4239ace5a85ebb2b51accf1866c7dd57fb21de17a6b0d992e9",
+          "modified": "2026-08-29T18:41:58.649675+00:00"
+        },
+        "tokens/deathwatch-digital-weapons.png": {
+          "path": "output/deathwatch/tokens/deathwatch-digital-weapons.png",
+          "hash": "83185c660fbd044b3c1f9fdae99e58795d7e7df3730f1abc579a45af1fa02e15",
+          "modified": "2026-08-29T18:41:58.660366+00:00"
+        },
+        "tokens/deathwatch-melta-bomb.png": {
+          "path": "output/deathwatch/tokens/deathwatch-melta-bomb.png",
+          "hash": "42e6b24cd41f5072a22b34b9a850ad5faf22af0153568d0393c66ff2e00b16a0",
+          "modified": "2026-08-29T18:41:58.668983+00:00"
+        },
+        "tokens/deathwatch-scrutavore-servo-thrall.png": {
+          "path": "output/deathwatch/tokens/deathwatch-scrutavore-servo-thrall.png",
+          "hash": "cf86896008139f268f319546809b45d22e34397ff0299b2ce31e5f512d87da7e",
+          "modified": "2026-08-29T18:41:58.677125+00:00"
+        },
+        "tokens/deathwatch-strategic-command-firefight-ploy.png": {
+          "path": "output/deathwatch/tokens/deathwatch-strategic-command-firefight-ploy.png",
+          "hash": "086ac78996500551d74b11114c22a00ecf16c4e6d4ae8648c9da3e277bae0567",
+          "modified": "2026-08-29T18:41:58.684681+00:00"
+        },
+        "tokens/deathwatch-strategic-command-strategy-ploy.png": {
+          "path": "output/deathwatch/tokens/deathwatch-strategic-command-strategy-ploy.png",
+          "hash": "95da48582c2db24588f9d072b4c9746c7872734e43f91f973e241fde328d7914",
+          "modified": "2026-08-29T18:41:58.691734+00:00"
+        },
+        "tokens/deathwatch-vigilant-marksman.png": {
+          "path": "output/deathwatch/tokens/deathwatch-vigilant-marksman.png",
+          "hash": "21da7d96adf62183d294249216144e1d300925f5f4f746b7b20e35141c0f75bd",
+          "modified": "2026-08-29T18:41:58.701263+00:00"
+        },
+        "tokens/deathwatch-advanced-omni-scrambler.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-advanced-omni-scrambler.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.703072+00:00"
+        },
+        "tokens/deathwatch-ammunition-reserve.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-ammunition-reserve.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.705101+00:00"
+        },
+        "tokens/deathwatch-digital-weapons.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-digital-weapons.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.707101+00:00"
+        },
+        "tokens/deathwatch-melta-bomb.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-melta-bomb.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.709171+00:00"
+        },
+        "tokens/deathwatch-scrutavore-servo-thrall.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-scrutavore-servo-thrall.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.710171+00:00"
+        },
+        "tokens/deathwatch-strategic-command-firefight-ploy.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-strategic-command-firefight-ploy.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.710171+00:00"
+        },
+        "tokens/deathwatch-strategic-command-strategy-ploy.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-strategic-command-strategy-ploy.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.712224+00:00"
+        },
+        "tokens/deathwatch-vigilant-marksman.obj": {
+          "path": "output/deathwatch/tokens/deathwatch-vigilant-marksman.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:58.713730+00:00"
+        },
+        "tokens/tokenbag/deathwatch-token-bag-icon.png": {
+          "path": "output/deathwatch/tokens/tokenbag/deathwatch-token-bag-icon.png",
+          "hash": "07001f2d1adb58a66a70ca24e1231bb53bfe126dbe058097987fc7bb6ad6c4aa",
+          "modified": "2026-08-29T18:41:58.719763+00:00"
+        },
+        "tokens/tokenbag/deathwatch-token-bag.obj": {
+          "path": "output/deathwatch/tokens/tokenbag/deathwatch-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:41:58.720763+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:00.198671+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/manifest.json": "f422c9047b357dbf34a033e8fb1a4021746a600030ff0ff108adff9e4dbca236",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/deathwatch/artwork/icons/deathwatch-icon-token.jpg": "07001f2d1adb58a66a70ca24e1231bb53bfe126dbe058097987fc7bb6ad6c4aa",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-aegis-veteran.pdf": "0e9237f072e839c176104bb1bb0b548b6e511700d337fb00e262b43ad6625290",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-blademaster-veteran.pdf": "388c5d00033d4b0098db92099f9cdef2b9aeaf8afaca30eb5dad6b9828ed7bd8",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-bombard-veteran.pdf": "2ed15f8f10f17d39536e977781e134e2ffcf1b1c4c7253e589da75b09a6d7ba2",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-breacher-veteran.pdf": "0d55a3db1bf9552b70c7a74dda9b7a1d27bf2a9548ad19b035bc635c1170fbf0",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-demolisher-veteran.pdf": "071dc49da694ac31107a13e04fa94c55062beeaf63d6f717bdbab06d9509ea9b",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-disruptor-veteran.pdf": "aeee87dcacd9bf15284a010052cf41dd5fe1c72fb2c180cdf7f3dc101b06607e",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-gunner-veteran.pdf": "f3efe84efbd2cc275b4570e2b044080a0279cc00dc318d6686d0d1780d460fae",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-headtaker-veteran.pdf": "911ac18eea2170b5c7fe8c28cd694231c9f15a5f3009baa0cbaee027e25feeec",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-horde-slayer-veteran.pdf": "0a5f18ebe5226c2cc0ab8c96dc6ce11e97da4202c5ec2326a91684758f6f6ad7",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-marksman-veteran.pdf": "1b59d050ce192eba2e6b02b668712b0509b6b254d5abbf27d8a6130ef9e3de3f",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-watch-sergeant.pdf": "543479b84918813cf4aa8b6f1aa78ab47f685ca688aadca6f061b062f8990c19",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "e843842c1cb1ce2fd1c92c35af4af2cea43ef888c7576262397df1994ea9368e",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "6a94dc41a14e8b84f78470cbebbed9b8bfe8fdbae75e6081847bf9204d2af2d9",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "661100a0d886d289438256356e2b50019846efd4b3508088ec9dab7c78a83ff9",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "168dbac80577c1fa7876256ed5aad7f6970d459da7b6c122a00e7ebc47d558da",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "0f3e2c0824c4babc880ec44e1058b3b483dbadfbb567b1f2850b41b53822bc2e",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "5e2dc255d3669584c48a5254b085ae3dd02aae71a5ae6495d7aef74bb9ae6fc5",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "d474035c361e407b8d6a73b1245d69c6c0ba98cba38c6c65d5a35573e34ba8e3",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "7faa7a23f8f7656ddc4bc2a0f027a6231994a36e055274d4b0d6f912e7a1d279",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "21862521c4213020ac7b39acbf13313ed310069963f200f8de391b0f88563081",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "ff779d034736424a4da21f3481bbb0063471e2d4b466b07ef40032b1f5d32de0",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "54540c72209963904f2c71b9a8461e9174609431325b42681e1723afd2ffd64c",
+        "layers/integration/deathwatch/deathwatch-equipment-ammunition-reserve.pdf": "1e68c71447658160d0bb4c8843c945ecbcd60409ec683a6ac11c521348a92157",
+        "layers/integration/deathwatch/deathwatch-equipment-digital-weapons.pdf": "0c338cac091713480228c7a452e16eed2e2980689954f07c69e2360144c35801",
+        "layers/integration/deathwatch/deathwatch-equipment-sanctus-v-bioscryer-cuffs.pdf": "c38aa57697ff1efd04dc3692cfa8d44990dd4cf914356e3c2f3d06bc7922b6e4",
+        "layers/integration/deathwatch/deathwatch-equipment-scrutavore-servo-thrall.pdf": "6505c22ad87c7a58fd5f38c4f77d4fae12676506e789f10f33528cf54bbdf530",
+        "layers/integration/deathwatch/deathwatch-faction-rule-special-issue-ammunition.pdf": "09d8dbff851d941b71571188c7026fc414ea00c6559c25e2e9fd0eaae217aeab",
+        "layers/integration/deathwatch/deathwatch-faction-rule-veteran-astartes.pdf": "7b60e5758500c2df515eeb3c3623a2862becfc35f971ee66ad10f65b19dcca3c",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-advanced-auspex-scan.pdf": "b6daa391c7526d0acc4d19c09fc7c7965f261de4f1acf3cdc4684a61d37cdac5",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-auspicator-tracking.pdf": "d171fdb8f854213c50c681d5c41d1539caf0780dacb73e030dd70666b32e3cd4",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-suffer-not-the-alien.pdf": "f40843f1127939a838de0fe83afbda6fb3c91d10d44d4aa2964e1aeb5d1bf636",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-transhuman-physiology.pdf": "56b044ac6e37ffbb43c37bfb9b1621096173c67256a43ccc26cb897458b70d15",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-1.pdf": "504fd7cf7b6be7478557ff786b6d6493cfb339b55edd8dfec8b456c06f3af32d",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-10.pdf": "a720cb0faa3e2ab43eefe3afaa833aa8431fc63941a75e2f0694a252348fd38f",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-11.pdf": "876c289e1352b11569d806c44c3c66a3261a3f67acd04c454a85d5c14ad8b5d7",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-12.pdf": "024d94d0758b30dc89f6d29a6c8c9217fe885b7f6f2914c0ec2fdba060060241",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-13.pdf": "5281efa82c95caf2dca108994d9c4489ce50bb97a4a026f5c955fec2d543c2f3",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-14.pdf": "2ad052b03ba06032f73016b86a4ce7a6ce5986848472c80907099ded5e07f78d",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-15.pdf": "8fd1c9287bf01feaa765e311f9cf69f1c01dd9f4a19635c443e9a606eda28ac8",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-16.pdf": "6c511f6fbac2026782939d161142a5b9c2712f63d6130bb8b7786fdf1eb7402a",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-2.pdf": "6dde77f237c792d10b823c135555556c42c53765fc4e8fdba290a28e6e31f733",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-3.pdf": "2d3f6c59284830ced652feb063c0e6183fbd94878f38abf02c2cc1c453181d61",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-4.pdf": "3bf6847f430c5758494e0e0a29beec3ab84d16f1e26c2329b539a9a3b6e8becd",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-5.pdf": "491840500e46213b00af6282cbb6e87236873d2d2c8801695282f87fd3ac8584",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-6.pdf": "5f48ebe7499e7376171a303fe5f53defb1241a16a4bdc2c174e7f96f15a74b14",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-7.pdf": "3b7b758181096bfa01930f3e98f4194da0d23964b959378b5c75ddfefac54851",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-8.pdf": "e85fca8f716739450b59a5e9de07cf287a9972aa2db7e5826cdbf92c5651ed16",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-9.pdf": "0d194c4fcbd03f202bb040b890f48540e90657f9e6963c7344c6d51ba2c6c998",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection.pdf": "dbfd1da57b8683afb5246e033bf21a5f2a10af78547b7a1ac17f93aa2651cc51",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-and-they-shall-know-no-fear.pdf": "45124ba03a1fa75808e5439682b055bec94f8c08341ae9f119f7777913a8dd24",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-mission-tactics.pdf": "c1db84504442cc0e7493739a664862ee0dd21caa5d342bcb8c2418888f983175",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-the-long-vigil.pdf": "cd5d664c49837c6852c2e4b83abad8fb3aab2a21a151d755dc9ea470d0482da1",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-the-shield-that-slays.pdf": "f675516030df18e1a515a5b48a6ab23818a468f1607593d894ea0eb13ee89803",
+        "layers/integration/deathwatch/deathwatch-token-guide-token-guide.pdf": "b76a0bcd53aee25da6940cb8d5b1a160cf25884709b740d72959d21812740835"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/deathwatch/dice/deathwatch-dice-light.jpg",
+          "hash": "87eb26eba3decf20856e39075166b073832b58d8c4bf0646884b9364ccb0971c",
+          "modified": "2026-08-29T18:42:19.213887+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/deathwatch/dice/deathwatch-dice-dark.jpg",
+          "hash": "43577cdeef68dd0fcbca51f29fa32216c60ea35a1e786469e6c4a4ae7e320245",
+          "modified": "2026-08-29T18:42:20.520909+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/deathwatch/dice/deathwatch-dice-team.jpg",
+          "hash": "fdd06ac60ecbd846d290482b6e5ddd5d3b7b96286383f0e6076f124dd6f7f4fd",
+          "modified": "2026-08-29T18:42:21.787723+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:22.452850+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/artwork/icons/deathwatch-icon-token-transparent.png": "4c8f7c903fa1a71ae27f5269758f29cf196e444a1e8d687a9b04810ace7016e3",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/deathwatch/cardbox/deathwatch-card-box-texture.jpg",
+          "hash": "eeed6e932cbf8e5cd843d92eb57114c0f01ca3e42cb66c32178ebeaf9692e490",
+          "modified": "2026-08-29T18:42:26.388246+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/deathwatch/cardbox/deathwatch-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:42:26.390249+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:26.399295+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/artwork/icons/deathwatch-icon-token.jpg": "07001f2d1adb58a66a70ca24e1231bb53bfe126dbe058097987fc7bb6ad6c4aa",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/deathwatch-aegis-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-aegis-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.477702+00:00"
+        },
+        "cards/datacards/deathwatch-aegis-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-aegis-veteran-front.jpg",
+          "hash": "3b85ec105c51fcb9757a5768f258fd0a924e6d91ef8f23b88e33671adf66853a",
+          "modified": "2026-08-29T18:42:42.480791+00:00"
+        },
+        "cards/datacards/deathwatch-blademaster-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-blademaster-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.482798+00:00"
+        },
+        "cards/datacards/deathwatch-blademaster-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-blademaster-veteran-front.jpg",
+          "hash": "4eb7003140b84626e0199262a7f1d65e8c7369ae1137cf03b66ff585f5a1e568",
+          "modified": "2026-08-29T18:42:42.487805+00:00"
+        },
+        "cards/datacards/deathwatch-bombard-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-bombard-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.490809+00:00"
+        },
+        "cards/datacards/deathwatch-bombard-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-bombard-veteran-front.jpg",
+          "hash": "9528652b8e6ffa81547f2f50f9f913f64e2a173e16e9984ecf93bd606725860e",
+          "modified": "2026-08-29T18:42:42.493317+00:00"
+        },
+        "cards/datacards/deathwatch-breacher-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-breacher-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.495318+00:00"
+        },
+        "cards/datacards/deathwatch-breacher-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-breacher-veteran-front.jpg",
+          "hash": "3dc8673417683fc3386ab42f116b93fa15905be247a2a173a2b7bf739a75d74c",
+          "modified": "2026-08-29T18:42:42.496317+00:00"
+        },
+        "cards/datacards/deathwatch-demolisher-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-demolisher-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.497821+00:00"
+        },
+        "cards/datacards/deathwatch-demolisher-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-demolisher-veteran-front.jpg",
+          "hash": "eddbfd77750d4b5121dd9509e2abf53bfabfa6d5c02bef1d3bf943c1c2a216ae",
+          "modified": "2026-08-29T18:42:42.500328+00:00"
+        },
+        "cards/datacards/deathwatch-disruptor-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-disruptor-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.502845+00:00"
+        },
+        "cards/datacards/deathwatch-disruptor-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-disruptor-veteran-front.jpg",
+          "hash": "4a98da63017147d3ee3d5a1d15704c0365ab59f11f471e5387803d1acf5b8104",
+          "modified": "2026-08-29T18:42:42.510003+00:00"
+        },
+        "cards/datacards/deathwatch-gunner-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-gunner-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.514556+00:00"
+        },
+        "cards/datacards/deathwatch-gunner-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-gunner-veteran-front.jpg",
+          "hash": "d30fd2113334404d79c4201f0db97f2804fd574ee747514005d7ca0ef9f3aa2a",
+          "modified": "2026-08-29T18:42:42.520084+00:00"
+        },
+        "cards/datacards/deathwatch-headtaker-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-headtaker-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.521586+00:00"
+        },
+        "cards/datacards/deathwatch-headtaker-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-headtaker-veteran-front.jpg",
+          "hash": "88db6daa1af0f4ac688eec1fb1ea93327caa511a85678ef3a43bf7e937245e8d",
+          "modified": "2026-08-29T18:42:42.524092+00:00"
+        },
+        "cards/datacards/deathwatch-horde-slayer-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-horde-slayer-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.526091+00:00"
+        },
+        "cards/datacards/deathwatch-horde-slayer-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-horde-slayer-veteran-front.jpg",
+          "hash": "5352a6c5b8faa7c5cdbc0ececd8c142bd795b766b7304f9fa1b9f892932ce1fc",
+          "modified": "2026-08-29T18:42:42.531155+00:00"
+        },
+        "cards/datacards/deathwatch-marksman-veteran-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-marksman-veteran-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.533662+00:00"
+        },
+        "cards/datacards/deathwatch-marksman-veteran-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-marksman-veteran-front.jpg",
+          "hash": "b014c23a93ba81ca271dc4bc41a760019b3ca2ddd3e9c3026449b06f43f3f764",
+          "modified": "2026-08-29T18:42:42.541198+00:00"
+        },
+        "cards/datacards/deathwatch-watch-sergeant-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-watch-sergeant-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.543199+00:00"
+        },
+        "cards/datacards/deathwatch-watch-sergeant-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/deathwatch-watch-sergeant-front.jpg",
+          "hash": "7dab5131effd04c5924466e711af059fbb15adb2cd9b581f574059654a6265f3",
+          "modified": "2026-08-29T18:42:42.548792+00:00"
+        },
+        "cards/equipment/deathwatch-ammunition-reserve-back.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-ammunition-reserve-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.903389+00:00"
+        },
+        "cards/equipment/deathwatch-ammunition-reserve-front.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-ammunition-reserve-front.jpg",
+          "hash": "33b477ae32fecd783fca8ff94c24f4e11e8c60fd5dc25a6419a37a72e2ab9000",
+          "modified": "2026-08-29T18:42:43.906466+00:00"
+        },
+        "cards/equipment/deathwatch-digital-weapons-back.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-digital-weapons-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.907971+00:00"
+        },
+        "cards/equipment/deathwatch-digital-weapons-front.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-digital-weapons-front.jpg",
+          "hash": "79e5f92134f1a074f6bbef9e485cd44dd5a016777f891acfbc2e1385dd4976f3",
+          "modified": "2026-08-29T18:42:43.908976+00:00"
+        },
+        "cards/equipment/deathwatch-sanctus-v-bioscryer-cuffs-back.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-sanctus-v-bioscryer-cuffs-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.910479+00:00"
+        },
+        "cards/equipment/deathwatch-sanctus-v-bioscryer-cuffs-front.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-sanctus-v-bioscryer-cuffs-front.jpg",
+          "hash": "fb720a0ff7185f7f1243415552bcdfb44be3fd6acf432906cd509209c82ed7e6",
+          "modified": "2026-08-29T18:42:43.915057+00:00"
+        },
+        "cards/equipment/deathwatch-scrutavore-servo-thrall-back.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-scrutavore-servo-thrall-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.916561+00:00"
+        },
+        "cards/equipment/deathwatch-scrutavore-servo-thrall-front.jpg": {
+          "path": "output/deathwatch/cards/equipment/deathwatch-scrutavore-servo-thrall-front.jpg",
+          "hash": "67e17717add4ac482c82edf25fa8a5e2480a89bfd09acd1717b325cd8e556db3",
+          "modified": "2026-08-29T18:42:43.920085+00:00"
+        },
+        "cards/faction_rules/deathwatch-special-issue-ammunition-back.jpg": {
+          "path": "output/deathwatch/cards/faction_rules/deathwatch-special-issue-ammunition-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.921085+00:00"
+        },
+        "cards/faction_rules/deathwatch-special-issue-ammunition-front.jpg": {
+          "path": "output/deathwatch/cards/faction_rules/deathwatch-special-issue-ammunition-front.jpg",
+          "hash": "2ed0c4efdc44698474a99788b8e038a4e94e2dabeb2de3d4daaca65223e9394e",
+          "modified": "2026-08-29T18:42:43.923979+00:00"
+        },
+        "cards/faction_rules/deathwatch-veteran-astartes-back.jpg": {
+          "path": "output/deathwatch/cards/faction_rules/deathwatch-veteran-astartes-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.925977+00:00"
+        },
+        "cards/faction_rules/deathwatch-veteran-astartes-front.jpg": {
+          "path": "output/deathwatch/cards/faction_rules/deathwatch-veteran-astartes-front.jpg",
+          "hash": "dbd161c182e6c9a8bf31cf66f3e41a2ad82ad37030f0dc72fd3cc4eb9b6df296",
+          "modified": "2026-08-29T18:42:43.927977+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-advanced-auspex-scan-back.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-advanced-auspex-scan-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.929484+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-advanced-auspex-scan-front.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-advanced-auspex-scan-front.jpg",
+          "hash": "c0f2ced88ca5348ac6c8bdc64f0a54d7dc938be0d8c50c2aaa2f4097c4a070d7",
+          "modified": "2026-08-29T18:42:43.931990+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-auspicator-tracking-back.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-auspicator-tracking-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.933498+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-auspicator-tracking-front.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-auspicator-tracking-front.jpg",
+          "hash": "990cc2aee926eaff30743ed7a560fb5f474a6ab6792e06dcb0a7451db268eccd",
+          "modified": "2026-08-29T18:42:43.937011+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-suffer-not-the-alien-back.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-suffer-not-the-alien-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.938011+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-suffer-not-the-alien-front.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-suffer-not-the-alien-front.jpg",
+          "hash": "b0b9db17fcfa4c5e2e5229e73fb8f84cddce4d816ff13a4bc28170e13167ab70",
+          "modified": "2026-08-29T18:42:43.941050+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-transhuman-physiology-back.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-transhuman-physiology-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.943550+00:00"
+        },
+        "cards/firefight_ploys/deathwatch-transhuman-physiology-front.jpg": {
+          "path": "output/deathwatch/cards/firefight_ploys/deathwatch-transhuman-physiology-front.jpg",
+          "hash": "c410aedf3ec7f01084ac8c8ccd1e15b0cabfd11c15ae834d5499e4a417bb6514",
+          "modified": "2026-08-29T18:42:43.945554+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.947057+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-front.jpg",
+          "hash": "dd50accfe71961c317b09e24c82120d6b746666ebefe3bc97767a68cb9789b5a",
+          "modified": "2026-08-29T18:42:44.375391+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-and-they-shall-know-no-fear-back.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-and-they-shall-know-no-fear-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.376391+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-and-they-shall-know-no-fear-front.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-and-they-shall-know-no-fear-front.jpg",
+          "hash": "4e30745cc1d148c892de1db516ad5461819a3d52d9ccb5d79755c4b87e982249",
+          "modified": "2026-08-29T18:42:44.377894+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-mission-tactics-back.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-mission-tactics-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.380408+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-mission-tactics-front.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-mission-tactics-front.jpg",
+          "hash": "6a97f922775087aae1fd4a139814ac0c0a6164328b1bd585ab298334f92dc176",
+          "modified": "2026-08-29T18:42:44.385425+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-the-long-vigil-back.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-the-long-vigil-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.386425+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-the-long-vigil-front.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-the-long-vigil-front.jpg",
+          "hash": "209a104a5f26ce4148dfbf1eabef16d23f59c0211cc315a3e3f72aa52c97f10c",
+          "modified": "2026-08-29T18:42:44.388005+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-the-shield-that-slays-back.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-the-shield-that-slays-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.389513+00:00"
+        },
+        "cards/strategy_ploys/deathwatch-the-shield-that-slays-front.jpg": {
+          "path": "output/deathwatch/cards/strategy_ploys/deathwatch-the-shield-that-slays-front.jpg",
+          "hash": "b5b0d5d215c3fd32f429cca4f80375734c3576e6e4003ce2145aec3bff4b135c",
+          "modified": "2026-08-29T18:42:44.390518+00:00"
+        },
+        "cards/token_guide/deathwatch-token-guide-back.jpg": {
+          "path": "output/deathwatch/cards/token_guide/deathwatch-token-guide-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.392023+00:00"
+        },
+        "cards/token_guide/deathwatch-token-guide-front.jpg": {
+          "path": "output/deathwatch/cards/token_guide/deathwatch-token-guide-front.jpg",
+          "hash": "181aba8dd7b778134d361cf307dead6d45c70213501dee7905556a20c9cfbbb8",
+          "modified": "2026-08-29T18:42:44.394530+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.556341+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "0418f86b4647c4d5aa6956f1918cb1a742170319eaeff1dd8c182d2eb7a93987",
+          "modified": "2026-08-29T18:42:42.564382+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.639644+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "8d08ef098e422849e111683a7812179d0cb39d3af9d0b0f5e998d93257baeebd",
+          "modified": "2026-08-29T18:42:42.826510+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:42.917920+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "14bf1484ecb2c9758d4d82ad464e36f22062e257fd6c103c5bfa222d84807a3f",
+          "modified": "2026-08-29T18:42:43.132051+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.256079+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "f31f26ec5feb482358d002423e34e7f501657f903b185144a73ad36abe793dbe",
+          "modified": "2026-08-29T18:42:43.487856+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.578026+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "068687a19467c1c2728005c3fbc2140f4c90a48dea2ef905fa7ebf0a3ed759d2",
+          "modified": "2026-08-29T18:42:43.764022+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.814445+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "a89d79a6bd4f176fb54ced29a36eefd5ad1a201d879351cb8d5c8993f6d9431a",
+          "modified": "2026-08-29T18:42:43.822771+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.831539+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "b8eac57de1d5d5b91325ba21850c78fc91bf3dd4a7bb0d3c136a715002c4d387",
+          "modified": "2026-08-29T18:42:43.839131+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.846731+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "89f27a16beaecb6ac975f5b10fabf2e11e7ae6384ab13d370c4f8f219940c415",
+          "modified": "2026-08-29T18:42:43.856890+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.863907+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "3f9271587ba1ec32051a9a8be7355349ee7c906906124aa319e61aaca3155c81",
+          "modified": "2026-08-29T18:42:43.872477+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.879021+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "64eca57b6e0f83decec96dee56cd8bdeb220cb3f109937789fe0e4f8c9b72482",
+          "modified": "2026-08-29T18:42:43.887653+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+          "modified": "2026-08-29T18:42:43.894685+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "098e3b6e84aa7b335bb1797a5cf3e0f0e37478def03c56f0b63172f8f7af04ee",
+          "modified": "2026-08-29T18:42:43.902389+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card1-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card1-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.952096+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card1-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card1-front.jpg",
+          "hash": "1c5096445fbf429fcb4c7b01d91490220bc979e2c0121cf6fb6ec6550be0479a",
+          "modified": "2026-08-29T18:42:43.959914+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card10-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card10-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.968784+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card10-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card10-front.jpg",
+          "hash": "087becefd6eb1de36dcdbb1a1c2b5bfe173959dd952606cb3f13c518bb6bce2f",
+          "modified": "2026-08-29T18:42:43.977821+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card11-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card11-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:43.986542+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card11-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card11-front.jpg",
+          "hash": "504d23e81095d2d7d9795b27acdee02b4bbff325c8f2c0e44d1b63a1b0d33863",
+          "modified": "2026-08-29T18:42:43.993755+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card12-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card12-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.002310+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card12-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card12-front.jpg",
+          "hash": "cc11a21a22dadb6f2ef3786c2a8253eb846488f188a37fa7c144320e4aea4ace",
+          "modified": "2026-08-29T18:42:44.015354+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card13-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card13-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.023085+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card13-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card13-front.jpg",
+          "hash": "f7efb10ce92c235a4e0a4b2b4f41c18bde3eb4ffef17662e48de66925215ee41",
+          "modified": "2026-08-29T18:42:44.038141+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card14-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card14-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.047676+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card14-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card14-front.jpg",
+          "hash": "44bcf1e6ae853c3d9bd4eab660ded0cd4ad3717fe1428aeccc5ce4e4f84e7778",
+          "modified": "2026-08-29T18:42:44.059254+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card15-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card15-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.065023+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card15-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card15-front.jpg",
+          "hash": "85fd083b47e6b9111296900f7feb9fb2c4b3eb42bd9e19d7bd62c28c3f94cce1",
+          "modified": "2026-08-29T18:42:44.089876+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card16-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card16-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.111453+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card16-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card16-front.jpg",
+          "hash": "b3f8118892a8ebb16722c0af541e400687a534cb084e0528f0ee52a787d393b7",
+          "modified": "2026-08-29T18:42:44.141085+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card2-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card2-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.154491+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card2-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card2-front.jpg",
+          "hash": "f0b27004aefef261228a39467ff6b538b237fef5d24fcca510d842718292e003",
+          "modified": "2026-08-29T18:42:44.176402+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card3-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card3-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.189435+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card3-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card3-front.jpg",
+          "hash": "19d4dbb2495ecddfeb7d604dd0ca92102f6455564fbccfe29bb1e72bca115522",
+          "modified": "2026-08-29T18:42:44.214121+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card4-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card4-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.231547+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card4-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card4-front.jpg",
+          "hash": "181aba8dd7b778134d361cf307dead6d45c70213501dee7905556a20c9cfbbb8",
+          "modified": "2026-08-29T18:42:44.257776+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card5-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card5-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.274415+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card5-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card5-front.jpg",
+          "hash": "73e5b89a2099511e8585c697d83cd2a140172bf74141a935a1f82526785f3150",
+          "modified": "2026-08-29T18:42:44.295643+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card6-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card6-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.310888+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card6-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card6-front.jpg",
+          "hash": "dada932fa2e25993fe7f21cf4e446ec37cc8f9452da4e20110504991acf48a2c",
+          "modified": "2026-08-29T18:42:44.317942+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card7-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card7-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.326483+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card7-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card7-front.jpg",
+          "hash": "2dd666ef49ed1c666c0fcb43c82e7ca1e0014b66a11b5ee8b4a901ca41d8fac4",
+          "modified": "2026-08-29T18:42:44.337938+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card8-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card8-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.345509+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card8-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card8-front.jpg",
+          "hash": "1f57776b79b32fd6e75c78424b1998e03ed348f2e091fe2a9f7cb6e43945fac6",
+          "modified": "2026-08-29T18:42:44.355895+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card9-back.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card9-back.jpg",
+          "hash": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+          "modified": "2026-08-29T18:42:44.363468+00:00"
+        },
+        "cards/operatives_selection/deathwatch-operative-selection-card9-front.jpg": {
+          "path": "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card9-front.jpg",
+          "hash": "af6b9eaa35b48bec8398343acd931efd101f9bfee13e8252e006dc6ce873627a",
+          "modified": "2026-08-29T18:42:44.372391+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:46.899258+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/manifest.json": "f422c9047b357dbf34a033e8fb1a4021746a600030ff0ff108adff9e4dbca236",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-aegis-veteran.pdf": "0e9237f072e839c176104bb1bb0b548b6e511700d337fb00e262b43ad6625290",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-blademaster-veteran.pdf": "388c5d00033d4b0098db92099f9cdef2b9aeaf8afaca30eb5dad6b9828ed7bd8",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-bombard-veteran.pdf": "2ed15f8f10f17d39536e977781e134e2ffcf1b1c4c7253e589da75b09a6d7ba2",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-breacher-veteran.pdf": "0d55a3db1bf9552b70c7a74dda9b7a1d27bf2a9548ad19b035bc635c1170fbf0",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-demolisher-veteran.pdf": "071dc49da694ac31107a13e04fa94c55062beeaf63d6f717bdbab06d9509ea9b",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-disruptor-veteran.pdf": "aeee87dcacd9bf15284a010052cf41dd5fe1c72fb2c180cdf7f3dc101b06607e",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-gunner-veteran.pdf": "f3efe84efbd2cc275b4570e2b044080a0279cc00dc318d6686d0d1780d460fae",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-headtaker-veteran.pdf": "911ac18eea2170b5c7fe8c28cd694231c9f15a5f3009baa0cbaee027e25feeec",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-horde-slayer-veteran.pdf": "0a5f18ebe5226c2cc0ab8c96dc6ce11e97da4202c5ec2326a91684758f6f6ad7",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-marksman-veteran.pdf": "1b59d050ce192eba2e6b02b668712b0509b6b254d5abbf27d8a6130ef9e3de3f",
+        "layers/integration/deathwatch/deathwatch-datacard-deathwatch-watch-sergeant.pdf": "543479b84918813cf4aa8b6f1aa78ab47f685ca688aadca6f061b062f8990c19",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "e843842c1cb1ce2fd1c92c35af4af2cea43ef888c7576262397df1994ea9368e",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "6a94dc41a14e8b84f78470cbebbed9b8bfe8fdbae75e6081847bf9204d2af2d9",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "661100a0d886d289438256356e2b50019846efd4b3508088ec9dab7c78a83ff9",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "168dbac80577c1fa7876256ed5aad7f6970d459da7b6c122a00e7ebc47d558da",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "0f3e2c0824c4babc880ec44e1058b3b483dbadfbb567b1f2850b41b53822bc2e",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "5e2dc255d3669584c48a5254b085ae3dd02aae71a5ae6495d7aef74bb9ae6fc5",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "d474035c361e407b8d6a73b1245d69c6c0ba98cba38c6c65d5a35573e34ba8e3",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "7faa7a23f8f7656ddc4bc2a0f027a6231994a36e055274d4b0d6f912e7a1d279",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "21862521c4213020ac7b39acbf13313ed310069963f200f8de391b0f88563081",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "ff779d034736424a4da21f3481bbb0063471e2d4b466b07ef40032b1f5d32de0",
+        "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "54540c72209963904f2c71b9a8461e9174609431325b42681e1723afd2ffd64c",
+        "layers/integration/deathwatch/deathwatch-equipment-ammunition-reserve.pdf": "1e68c71447658160d0bb4c8843c945ecbcd60409ec683a6ac11c521348a92157",
+        "layers/integration/deathwatch/deathwatch-equipment-digital-weapons.pdf": "0c338cac091713480228c7a452e16eed2e2980689954f07c69e2360144c35801",
+        "layers/integration/deathwatch/deathwatch-equipment-sanctus-v-bioscryer-cuffs.pdf": "c38aa57697ff1efd04dc3692cfa8d44990dd4cf914356e3c2f3d06bc7922b6e4",
+        "layers/integration/deathwatch/deathwatch-equipment-scrutavore-servo-thrall.pdf": "6505c22ad87c7a58fd5f38c4f77d4fae12676506e789f10f33528cf54bbdf530",
+        "layers/integration/deathwatch/deathwatch-faction-rule-special-issue-ammunition.pdf": "09d8dbff851d941b71571188c7026fc414ea00c6559c25e2e9fd0eaae217aeab",
+        "layers/integration/deathwatch/deathwatch-faction-rule-veteran-astartes.pdf": "7b60e5758500c2df515eeb3c3623a2862becfc35f971ee66ad10f65b19dcca3c",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-advanced-auspex-scan.pdf": "b6daa391c7526d0acc4d19c09fc7c7965f261de4f1acf3cdc4684a61d37cdac5",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-auspicator-tracking.pdf": "d171fdb8f854213c50c681d5c41d1539caf0780dacb73e030dd70666b32e3cd4",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-suffer-not-the-alien.pdf": "f40843f1127939a838de0fe83afbda6fb3c91d10d44d4aa2964e1aeb5d1bf636",
+        "layers/integration/deathwatch/deathwatch-firefight-ploy-transhuman-physiology.pdf": "56b044ac6e37ffbb43c37bfb9b1621096173c67256a43ccc26cb897458b70d15",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-1.pdf": "504fd7cf7b6be7478557ff786b6d6493cfb339b55edd8dfec8b456c06f3af32d",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-10.pdf": "a720cb0faa3e2ab43eefe3afaa833aa8431fc63941a75e2f0694a252348fd38f",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-11.pdf": "876c289e1352b11569d806c44c3c66a3261a3f67acd04c454a85d5c14ad8b5d7",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-12.pdf": "024d94d0758b30dc89f6d29a6c8c9217fe885b7f6f2914c0ec2fdba060060241",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-13.pdf": "5281efa82c95caf2dca108994d9c4489ce50bb97a4a026f5c955fec2d543c2f3",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-14.pdf": "2ad052b03ba06032f73016b86a4ce7a6ce5986848472c80907099ded5e07f78d",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-15.pdf": "8fd1c9287bf01feaa765e311f9cf69f1c01dd9f4a19635c443e9a606eda28ac8",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-16.pdf": "6c511f6fbac2026782939d161142a5b9c2712f63d6130bb8b7786fdf1eb7402a",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-2.pdf": "6dde77f237c792d10b823c135555556c42c53765fc4e8fdba290a28e6e31f733",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-3.pdf": "2d3f6c59284830ced652feb063c0e6183fbd94878f38abf02c2cc1c453181d61",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-4.pdf": "3bf6847f430c5758494e0e0a29beec3ab84d16f1e26c2329b539a9a3b6e8becd",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-5.pdf": "491840500e46213b00af6282cbb6e87236873d2d2c8801695282f87fd3ac8584",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-6.pdf": "5f48ebe7499e7376171a303fe5f53defb1241a16a4bdc2c174e7f96f15a74b14",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-7.pdf": "3b7b758181096bfa01930f3e98f4194da0d23964b959378b5c75ddfefac54851",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-8.pdf": "e85fca8f716739450b59a5e9de07cf287a9972aa2db7e5826cdbf92c5651ed16",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-9.pdf": "0d194c4fcbd03f202bb040b890f48540e90657f9e6963c7344c6d51ba2c6c998",
+        "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection.pdf": "dbfd1da57b8683afb5246e033bf21a5f2a10af78547b7a1ac17f93aa2651cc51",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-and-they-shall-know-no-fear.pdf": "45124ba03a1fa75808e5439682b055bec94f8c08341ae9f119f7777913a8dd24",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-mission-tactics.pdf": "c1db84504442cc0e7493739a664862ee0dd21caa5d342bcb8c2418888f983175",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-the-long-vigil.pdf": "cd5d664c49837c6852c2e4b83abad8fb3aab2a21a151d755dc9ea470d0482da1",
+        "layers/integration/deathwatch/deathwatch-strategy-ploy-the-shield-that-slays.pdf": "f675516030df18e1a515a5b48a6ab23818a468f1607593d894ea0eb13ee89803",
+        "layers/integration/deathwatch/deathwatch-token-guide-token-guide.pdf": "b76a0bcd53aee25da6940cb8d5b1a160cf25884709b740d72959d21812740835",
+        "layers/integration/deathwatch/card-backside/deathwatch-backside-portrait.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/deathwatch/card-backside/deathwatch-backside-landscape.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/deathwatch/data/deathwatch-team-data.json",
+          "hash": "f250cdcba266c93bec0845730f86f2dd730a948778b20b7c863fff40a903698b",
+          "modified": "2026-08-29T18:42:47.435780+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:47.436779+00:00",
+      "inputs": {
+        "layers/integration/deathwatch/content/deathwatch-content.json": "f250cdcba266c93bec0845730f86f2dd730a948778b20b7c863fff40a903698b"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Deathwatch Box.json": {
+          "path": "output/deathwatch/tts_objects/Deathwatch Box.json",
+          "hash": "5b4b98607a1c8dbc2f81323d0cb021ba5a69f91a9e83f3b5d98d882b9ab86b17",
+          "modified": "2026-07-21T11:11:11.731757+00:00"
+        },
+        "tts_objects/Deathwatch.json": {
+          "path": "output/deathwatch/tts_objects/Deathwatch.json",
+          "hash": "56ad8e7e58a782ada5c4868c395fb85c4c7ed9443f7f58be3ad39b7de393f654",
+          "modified": "2026-08-29T18:53:37.494088+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:37.593247+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/deathwatch/cards/datacards/deathwatch-aegis-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-aegis-veteran-front.jpg": "3b85ec105c51fcb9757a5768f258fd0a924e6d91ef8f23b88e33671adf66853a",
+        "output/deathwatch/cards/datacards/deathwatch-blademaster-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-blademaster-veteran-front.jpg": "4eb7003140b84626e0199262a7f1d65e8c7369ae1137cf03b66ff585f5a1e568",
+        "output/deathwatch/cards/datacards/deathwatch-bombard-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-bombard-veteran-front.jpg": "9528652b8e6ffa81547f2f50f9f913f64e2a173e16e9984ecf93bd606725860e",
+        "output/deathwatch/cards/datacards/deathwatch-breacher-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-breacher-veteran-front.jpg": "3dc8673417683fc3386ab42f116b93fa15905be247a2a173a2b7bf739a75d74c",
+        "output/deathwatch/cards/datacards/deathwatch-demolisher-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-demolisher-veteran-front.jpg": "eddbfd77750d4b5121dd9509e2abf53bfabfa6d5c02bef1d3bf943c1c2a216ae",
+        "output/deathwatch/cards/datacards/deathwatch-disruptor-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-disruptor-veteran-front.jpg": "4a98da63017147d3ee3d5a1d15704c0365ab59f11f471e5387803d1acf5b8104",
+        "output/deathwatch/cards/datacards/deathwatch-gunner-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-gunner-veteran-front.jpg": "d30fd2113334404d79c4201f0db97f2804fd574ee747514005d7ca0ef9f3aa2a",
+        "output/deathwatch/cards/datacards/deathwatch-headtaker-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-headtaker-veteran-front.jpg": "88db6daa1af0f4ac688eec1fb1ea93327caa511a85678ef3a43bf7e937245e8d",
+        "output/deathwatch/cards/datacards/deathwatch-horde-slayer-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-horde-slayer-veteran-front.jpg": "5352a6c5b8faa7c5cdbc0ececd8c142bd795b766b7304f9fa1b9f892932ce1fc",
+        "output/deathwatch/cards/datacards/deathwatch-marksman-veteran-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-marksman-veteran-front.jpg": "b014c23a93ba81ca271dc4bc41a760019b3ca2ddd3e9c3026449b06f43f3f764",
+        "output/deathwatch/cards/datacards/deathwatch-watch-sergeant-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/deathwatch-watch-sergeant-front.jpg": "7dab5131effd04c5924466e711af059fbb15adb2cd9b581f574059654a6265f3",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "0418f86b4647c4d5aa6956f1918cb1a742170319eaeff1dd8c182d2eb7a93987",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "8d08ef098e422849e111683a7812179d0cb39d3af9d0b0f5e998d93257baeebd",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "14bf1484ecb2c9758d4d82ad464e36f22062e257fd6c103c5bfa222d84807a3f",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "f31f26ec5feb482358d002423e34e7f501657f903b185144a73ad36abe793dbe",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "068687a19467c1c2728005c3fbc2140f4c90a48dea2ef905fa7ebf0a3ed759d2",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "a89d79a6bd4f176fb54ced29a36eefd5ad1a201d879351cb8d5c8993f6d9431a",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "b8eac57de1d5d5b91325ba21850c78fc91bf3dd4a7bb0d3c136a715002c4d387",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "89f27a16beaecb6ac975f5b10fabf2e11e7ae6384ab13d370c4f8f219940c415",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "3f9271587ba1ec32051a9a8be7355349ee7c906906124aa319e61aaca3155c81",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "64eca57b6e0f83decec96dee56cd8bdeb220cb3f109937789fe0e4f8c9b72482",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "263e999124b42be1bc40666d029eb4841c013801a9098604e56a0779a8fb7fa1",
+        "output/deathwatch/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "098e3b6e84aa7b335bb1797a5cf3e0f0e37478def03c56f0b63172f8f7af04ee",
+        "output/deathwatch/cards/equipment/deathwatch-ammunition-reserve-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/equipment/deathwatch-ammunition-reserve-front.jpg": "33b477ae32fecd783fca8ff94c24f4e11e8c60fd5dc25a6419a37a72e2ab9000",
+        "output/deathwatch/cards/equipment/deathwatch-digital-weapons-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/equipment/deathwatch-digital-weapons-front.jpg": "79e5f92134f1a074f6bbef9e485cd44dd5a016777f891acfbc2e1385dd4976f3",
+        "output/deathwatch/cards/equipment/deathwatch-sanctus-v-bioscryer-cuffs-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/equipment/deathwatch-sanctus-v-bioscryer-cuffs-front.jpg": "fb720a0ff7185f7f1243415552bcdfb44be3fd6acf432906cd509209c82ed7e6",
+        "output/deathwatch/cards/equipment/deathwatch-scrutavore-servo-thrall-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/equipment/deathwatch-scrutavore-servo-thrall-front.jpg": "67e17717add4ac482c82edf25fa8a5e2480a89bfd09acd1717b325cd8e556db3",
+        "output/deathwatch/cards/faction_rules/deathwatch-special-issue-ammunition-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/faction_rules/deathwatch-special-issue-ammunition-front.jpg": "2ed0c4efdc44698474a99788b8e038a4e94e2dabeb2de3d4daaca65223e9394e",
+        "output/deathwatch/cards/faction_rules/deathwatch-veteran-astartes-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/faction_rules/deathwatch-veteran-astartes-front.jpg": "dbd161c182e6c9a8bf31cf66f3e41a2ad82ad37030f0dc72fd3cc4eb9b6df296",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-advanced-auspex-scan-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-advanced-auspex-scan-front.jpg": "c0f2ced88ca5348ac6c8bdc64f0a54d7dc938be0d8c50c2aaa2f4097c4a070d7",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-auspicator-tracking-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-auspicator-tracking-front.jpg": "990cc2aee926eaff30743ed7a560fb5f474a6ab6792e06dcb0a7451db268eccd",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-suffer-not-the-alien-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-suffer-not-the-alien-front.jpg": "b0b9db17fcfa4c5e2e5229e73fb8f84cddce4d816ff13a4bc28170e13167ab70",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-transhuman-physiology-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/firefight_ploys/deathwatch-transhuman-physiology-front.jpg": "c410aedf3ec7f01084ac8c8ccd1e15b0cabfd11c15ae834d5499e4a417bb6514",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card1-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card1-front.jpg": "1c5096445fbf429fcb4c7b01d91490220bc979e2c0121cf6fb6ec6550be0479a",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card10-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card10-front.jpg": "087becefd6eb1de36dcdbb1a1c2b5bfe173959dd952606cb3f13c518bb6bce2f",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card11-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card11-front.jpg": "504d23e81095d2d7d9795b27acdee02b4bbff325c8f2c0e44d1b63a1b0d33863",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card12-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card12-front.jpg": "cc11a21a22dadb6f2ef3786c2a8253eb846488f188a37fa7c144320e4aea4ace",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card13-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card13-front.jpg": "f7efb10ce92c235a4e0a4b2b4f41c18bde3eb4ffef17662e48de66925215ee41",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card14-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card14-front.jpg": "44bcf1e6ae853c3d9bd4eab660ded0cd4ad3717fe1428aeccc5ce4e4f84e7778",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card15-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card15-front.jpg": "85fd083b47e6b9111296900f7feb9fb2c4b3eb42bd9e19d7bd62c28c3f94cce1",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card16-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card16-front.jpg": "b3f8118892a8ebb16722c0af541e400687a534cb084e0528f0ee52a787d393b7",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card2-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card2-front.jpg": "f0b27004aefef261228a39467ff6b538b237fef5d24fcca510d842718292e003",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card3-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card3-front.jpg": "19d4dbb2495ecddfeb7d604dd0ca92102f6455564fbccfe29bb1e72bca115522",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card4-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card4-front.jpg": "181aba8dd7b778134d361cf307dead6d45c70213501dee7905556a20c9cfbbb8",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card5-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card5-front.jpg": "73e5b89a2099511e8585c697d83cd2a140172bf74141a935a1f82526785f3150",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card6-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card6-front.jpg": "dada932fa2e25993fe7f21cf4e446ec37cc8f9452da4e20110504991acf48a2c",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card7-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card7-front.jpg": "2dd666ef49ed1c666c0fcb43c82e7ca1e0014b66a11b5ee8b4a901ca41d8fac4",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card8-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card8-front.jpg": "1f57776b79b32fd6e75c78424b1998e03ed348f2e091fe2a9f7cb6e43945fac6",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card9-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-card9-front.jpg": "af6b9eaa35b48bec8398343acd931efd101f9bfee13e8252e006dc6ce873627a",
+        "output/deathwatch/cards/operatives_selection/deathwatch-operative-selection-front.jpg": "dd50accfe71961c317b09e24c82120d6b746666ebefe3bc97767a68cb9789b5a",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-and-they-shall-know-no-fear-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-and-they-shall-know-no-fear-front.jpg": "4e30745cc1d148c892de1db516ad5461819a3d52d9ccb5d79755c4b87e982249",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-mission-tactics-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-mission-tactics-front.jpg": "6a97f922775087aae1fd4a139814ac0c0a6164328b1bd585ab298334f92dc176",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-the-long-vigil-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-the-long-vigil-front.jpg": "209a104a5f26ce4148dfbf1eabef16d23f59c0211cc315a3e3f72aa52c97f10c",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-the-shield-that-slays-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/strategy_ploys/deathwatch-the-shield-that-slays-front.jpg": "b5b0d5d215c3fd32f429cca4f80375734c3576e6e4003ce2145aec3bff4b135c",
+        "output/deathwatch/cards/token_guide/deathwatch-token-guide-back.jpg": "4652de56066f8f767fb64fc06c3612fe616849c97e0c7a2f38b2406bb1898b50",
+        "output/deathwatch/cards/token_guide/deathwatch-token-guide-front.jpg": "181aba8dd7b778134d361cf307dead6d45c70213501dee7905556a20c9cfbbb8",
+        "output/deathwatch/cardbox/deathwatch-card-box-texture.jpg": "eeed6e932cbf8e5cd843d92eb57114c0f01ca3e42cb66c32178ebeaf9692e490",
+        "output/deathwatch/cardbox/deathwatch-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/deathwatch/tokens/deathwatch-advanced-omni-scrambler.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-advanced-omni-scrambler.png": "51f9a821802981cb721a68d599a702b094b0fad0d64e68812162cd700f795f92",
+        "output/deathwatch/tokens/deathwatch-ammunition-reserve.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-ammunition-reserve.png": "a980bae001192e4239ace5a85ebb2b51accf1866c7dd57fb21de17a6b0d992e9",
+        "output/deathwatch/tokens/deathwatch-digital-weapons.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-digital-weapons.png": "83185c660fbd044b3c1f9fdae99e58795d7e7df3730f1abc579a45af1fa02e15",
+        "output/deathwatch/tokens/deathwatch-melta-bomb.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-melta-bomb.png": "42e6b24cd41f5072a22b34b9a850ad5faf22af0153568d0393c66ff2e00b16a0",
+        "output/deathwatch/tokens/deathwatch-scrutavore-servo-thrall.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-scrutavore-servo-thrall.png": "cf86896008139f268f319546809b45d22e34397ff0299b2ce31e5f512d87da7e",
+        "output/deathwatch/tokens/deathwatch-strategic-command-firefight-ploy.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-strategic-command-firefight-ploy.png": "086ac78996500551d74b11114c22a00ecf16c4e6d4ae8648c9da3e277bae0567",
+        "output/deathwatch/tokens/deathwatch-strategic-command-strategy-ploy.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-strategic-command-strategy-ploy.png": "95da48582c2db24588f9d072b4c9746c7872734e43f91f973e241fde328d7914",
+        "output/deathwatch/tokens/deathwatch-vigilant-marksman.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/deathwatch/tokens/deathwatch-vigilant-marksman.png": "21da7d96adf62183d294249216144e1d300925f5f4f746b7b20e35141c0f75bd",
+        "output/deathwatch/tokens/tokenbag/deathwatch-token-bag-icon.png": "07001f2d1adb58a66a70ca24e1231bb53bfe126dbe058097987fc7bb6ad6c4aa",
+        "output/deathwatch/tokens/tokenbag/deathwatch-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/deathwatch/dice/deathwatch-dice-dark.jpg": "43577cdeef68dd0fcbca51f29fa32216c60ea35a1e786469e6c4a4ae7e320245",
+        "output/deathwatch/dice/deathwatch-dice-light.jpg": "87eb26eba3decf20856e39075166b073832b58d8c4bf0646884b9364ccb0971c",
+        "output/deathwatch/dice/deathwatch-dice-team.jpg": "fdd06ac60ecbd846d290482b6e5ddd5d3b7b96286383f0e6076f124dd6f7f4fd",
+        "output/deathwatch/data/deathwatch-team-data.json": "f250cdcba266c93bec0845730f86f2dd730a948778b20b7c863fff40a903698b",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "equipment": {
+          "hash": "48465e18c4304eb8dc236a4ca9e1256b880fee31c6d9cd50bfce230c4650b417",
+          "outputs": [
+            "layers/kt-app/extracted/deathwatch/cards/equipment/deathwatch-equipment-page_0.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/equipment/deathwatch-equipment-page_1.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/equipment/deathwatch-equipment-page_2.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/equipment/deathwatch-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:58:37.800806+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "f16e404e62ed396b65f9d541b9648745d878221b84a7c8b149fc6f8533a7c072",
+          "outputs": [
+            "layers/kt-app/extracted/deathwatch/cards/strategy-ploys/deathwatch-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/strategy-ploys/deathwatch-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/strategy-ploys/deathwatch-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/strategy-ploys/deathwatch-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:03:18.923456+00:00"
+        },
+        "faction-rules": {
+          "hash": "0c906d0d294a0393fd96782816996f72230e125e0c40ea7c113649f7f6aba553",
+          "outputs": [
+            "layers/kt-app/extracted/deathwatch/cards/faction-rules/deathwatch-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/faction-rules/deathwatch-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/faction-rules/deathwatch-faction-rules-page_2.pdf"
+          ],
+          "modified": "2026-07-06T16:07:41.399867+00:00"
+        },
+        "datacards": {
+          "hash": "db3a7f2caddf4789e7719ef630f1ccaa0e5498ced4a311dd3f5754b73b53ba0d",
+          "outputs": [
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_0.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_1.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_2.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_3.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_4.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_5.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_6.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_7.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_8.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_9.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/datacards/deathwatch-datacards-page_10.pdf"
+          ],
+          "modified": "2026-07-06T16:07:45.369945+00:00"
+        },
+        "operatives-selection": {
+          "hash": "219dc12fd87bf55fcf335887fc4633529f4c369a327eed5bc7fc16e79342a96d",
+          "outputs": [
+            "layers/kt-app/extracted/deathwatch/cards/operatives-selection/deathwatch-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:08:48.131100+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "e3222f025bf992f3bbecceeb8ee3895bfed8395720008cf11dfbda7e0bbd1772",
+          "outputs": [
+            "layers/kt-app/extracted/deathwatch/cards/firefight-ploys/deathwatch-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/firefight-ploys/deathwatch-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/firefight-ploys/deathwatch-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/deathwatch/cards/firefight-ploys/deathwatch-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:08:50.288443+00:00"
+        },
+        "cards": {
+          "hash": "e4d1a8e0e80c1d894dbb4021c659243c81ea15547f02e550100c47f7e24bda37",
+          "outputs": [
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:26:56.247568+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:26:56.247568+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/deathwatch-structure.json",
+          "hash": "f422c9047b357dbf34a033e8fb1a4021746a600030ff0ff108adff9e4dbca236",
+          "modified": "2026-08-29T18:41:12.395620+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card1_landscape.pdf": "acc4d7f85caeb0930bd6b822f828ac69665ceab124434806246b9001f0892be8",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card2_landscape.pdf": "7132b99c81c7e07984b7ac36a1ec2d5dfc7ab4e5000aba876d4435643a128d93",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card3_landscape.pdf": "01128679423389b807aaebc3a743265b38e0f26503d9ea387b838737d33ffeb4",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card4_landscape.pdf": "d04e0a0a4ce8549fb5d2d42eee4e47e410e1d17523e6e08eae64d4a8f12720b7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card1_landscape.pdf": "3931dd753cb4928e909b4842803ca261f3240db0e2985b43bf21473426c87549",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card2_landscape.pdf": "accef6cece4ea6fa7d92630e60575ceb0b8308c054e791fe04aff7488153d5aa",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card3_landscape.pdf": "713e3f0bb939a162fca4785e11d11ac6d07becba7efdb0bfdedfdabfe6ef5566",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card4_landscape.pdf": "1f174acaeabe392445ce1a40dcf71203180f5d31000a8461f5682c0fef504b67",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card1_landscape.pdf": "404acf0e39c5401f8a45ac9557b09f7ece600404d399901052d2532cda42e254",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card2_landscape.pdf": "7f69dc089c56bab17e1dc4993d1ace23db9644962b1ae453af07b9ec36b8fcd7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card3_landscape.pdf": "acd9d8e5d2661b9b97069988edf0d9939d7471e88bf7ab74f098f6f5cedc1ebc",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card4_landscape.pdf": "4345586e459c244350f032ca6815ea3a36dfd26333fce586b3643688c2ac62af",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card1_portrait.pdf": "c75b19a9ef6966d2742303e59034456631f17611ecc484068c93173577f11159",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card2_portrait.pdf": "05612801b44815b307a152917ecfe250d9c4a9b66d8cfdce43c4428fab69c82b",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card3_portrait.pdf": "8bca2d2d26d0723626bdef6e9d6e2f555cc6a2fe95c18f7f53d90abc24ed32a4",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card4_portrait.pdf": "6078383150445d7552978275107ea4497c685722f1fed3853b227b57f85594a7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card1_portrait.pdf": "2a561fd03c22cc0fbd2b3f22c9096b1e13462d9b4794ba8532e64e80d3af8b9c",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card2_portrait.pdf": "b98f7c5b73e7e26ddc9bd7a6e136e45618dd6942e4c415a7185e4a8bac996fd7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card3_portrait.pdf": "58abc120ff5c2a97a34fa4aa10b43aaeace27bacc2d32e081d0db215f22bbbaa",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card4_portrait.pdf": "0f52fe0360b8068f888a1aaa5ec0c8191ac14029e5ffb2f07623e6cb2fa5bdb3",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card1_portrait.pdf": "f794cd336b2013c40b476c2870298f70929f30225fd2421e3f2390558cc1d618",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card2_portrait.pdf": "b033b03a9fd2123682b73f2ccc8fb2909b86c5d5563181842c26ca6a4d36577a",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card3_portrait.pdf": "3de9231d568ad12df0dcc26c9e81e70320ec197b3e037795485772770864235a",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card4_portrait.pdf": "b1dccd350a463dff7017ae9747ddf87cf7d20087ce4b096cfb7facdb8ab7cb2b",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card1_portrait.pdf": "6c04e36b4d8c37a6cbbd9bda61002ea46932c4ae6f34951c9e3f7aad12684d20",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card2_portrait.pdf": "2eb4c4028431570de1488ecdec0f4b4cb27ed7c1eb6e1ee4aece7dfa779a3f47",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card3_portrait.pdf": "2e5bc2bff55ea67a1582de77989f7e20728d2ea9a5100a8a73fcb026638fa109",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card4_portrait.pdf": "92de9b384b8426fe6ac297b540182d27c97a10a83a76087b791c6b88384daeed"
+      },
+      "completed": "2026-08-29T18:41:14.390886+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/deathwatch/manifest.json",
+          "hash": "f422c9047b357dbf34a033e8fb1a4021746a600030ff0ff108adff9e4dbca236",
+          "modified": "2026-08-29T18:41:15.556366+00:00"
+        },
+        "deathwatch-datacard-deathwatch-watch-sergeant.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-watch-sergeant.pdf",
+          "hash": "543479b84918813cf4aa8b6f1aa78ab47f685ca688aadca6f061b062f8990c19",
+          "modified": "2026-08-26T15:17:53.359639+00:00"
+        },
+        "deathwatch-datacard-deathwatch-aegis-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-aegis-veteran.pdf",
+          "hash": "0e9237f072e839c176104bb1bb0b548b6e511700d337fb00e262b43ad6625290",
+          "modified": "2026-08-26T15:17:53.381797+00:00"
+        },
+        "deathwatch-datacard-deathwatch-blademaster-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-blademaster-veteran.pdf",
+          "hash": "388c5d00033d4b0098db92099f9cdef2b9aeaf8afaca30eb5dad6b9828ed7bd8",
+          "modified": "2026-08-26T15:17:53.406942+00:00"
+        },
+        "deathwatch-datacard-deathwatch-bombard-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-bombard-veteran.pdf",
+          "hash": "2ed15f8f10f17d39536e977781e134e2ffcf1b1c4c7253e589da75b09a6d7ba2",
+          "modified": "2026-08-26T15:17:53.426662+00:00"
+        },
+        "deathwatch-datacard-deathwatch-breacher-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-breacher-veteran.pdf",
+          "hash": "0d55a3db1bf9552b70c7a74dda9b7a1d27bf2a9548ad19b035bc635c1170fbf0",
+          "modified": "2026-08-26T15:17:53.428727+00:00"
+        },
+        "deathwatch-datacard-deathwatch-demolisher-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-demolisher-veteran.pdf",
+          "hash": "071dc49da694ac31107a13e04fa94c55062beeaf63d6f717bdbab06d9509ea9b",
+          "modified": "2026-08-26T15:17:53.430694+00:00"
+        },
+        "deathwatch-datacard-deathwatch-disruptor-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-disruptor-veteran.pdf",
+          "hash": "aeee87dcacd9bf15284a010052cf41dd5fe1c72fb2c180cdf7f3dc101b06607e",
+          "modified": "2026-08-26T15:17:53.434296+00:00"
+        },
+        "deathwatch-datacard-deathwatch-gunner-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-gunner-veteran.pdf",
+          "hash": "f3efe84efbd2cc275b4570e2b044080a0279cc00dc318d6686d0d1780d460fae",
+          "modified": "2026-08-26T15:17:53.442234+00:00"
+        },
+        "deathwatch-datacard-deathwatch-headtaker-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-headtaker-veteran.pdf",
+          "hash": "911ac18eea2170b5c7fe8c28cd694231c9f15a5f3009baa0cbaee027e25feeec",
+          "modified": "2026-08-26T15:17:53.451371+00:00"
+        },
+        "deathwatch-datacard-deathwatch-horde-slayer-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-horde-slayer-veteran.pdf",
+          "hash": "0a5f18ebe5226c2cc0ab8c96dc6ce11e97da4202c5ec2326a91684758f6f6ad7",
+          "modified": "2026-08-26T15:17:53.455049+00:00"
+        },
+        "deathwatch-datacard-deathwatch-marksman-veteran.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-deathwatch-marksman-veteran.pdf",
+          "hash": "1b59d050ce192eba2e6b02b668712b0509b6b254d5abbf27d8a6130ef9e3de3f",
+          "modified": "2026-08-26T15:17:53.461598+00:00"
+        },
+        "deathwatch-equipment-digital-weapons.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-equipment-digital-weapons.pdf",
+          "hash": "0c338cac091713480228c7a452e16eed2e2980689954f07c69e2360144c35801",
+          "modified": "2026-08-26T15:17:53.466140+00:00"
+        },
+        "deathwatch-equipment-scrutavore-servo-thrall.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-equipment-scrutavore-servo-thrall.pdf",
+          "hash": "6505c22ad87c7a58fd5f38c4f77d4fae12676506e789f10f33528cf54bbdf530",
+          "modified": "2026-08-26T15:17:53.471706+00:00"
+        },
+        "deathwatch-equipment-sanctus-v-bioscryer-cuffs.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-equipment-sanctus-v-bioscryer-cuffs.pdf",
+          "hash": "c38aa57697ff1efd04dc3692cfa8d44990dd4cf914356e3c2f3d06bc7922b6e4",
+          "modified": "2026-08-26T15:17:53.479510+00:00"
+        },
+        "deathwatch-equipment-ammunition-reserve.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-equipment-ammunition-reserve.pdf",
+          "hash": "1e68c71447658160d0bb4c8843c945ecbcd60409ec683a6ac11c521348a92157",
+          "modified": "2026-08-26T15:17:53.481978+00:00"
+        },
+        "deathwatch-faction-rule-veteran-astartes.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-faction-rule-veteran-astartes.pdf",
+          "hash": "7b60e5758500c2df515eeb3c3623a2862becfc35f971ee66ad10f65b19dcca3c",
+          "modified": "2026-08-26T15:17:53.498390+00:00"
+        },
+        "deathwatch-faction-rule-special-issue-ammunition.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-faction-rule-special-issue-ammunition.pdf",
+          "hash": "09d8dbff851d941b71571188c7026fc414ea00c6559c25e2e9fd0eaae217aeab",
+          "modified": "2026-08-26T15:17:53.528226+00:00"
+        },
+        "deathwatch-token-guide-token-guide.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-token-guide-token-guide.pdf",
+          "hash": "b76a0bcd53aee25da6940cb8d5b1a160cf25884709b740d72959d21812740835",
+          "modified": "2026-08-26T15:17:53.542002+00:00"
+        },
+        "deathwatch-firefight-ploy-suffer-not-the-alien.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-firefight-ploy-suffer-not-the-alien.pdf",
+          "hash": "f40843f1127939a838de0fe83afbda6fb3c91d10d44d4aa2964e1aeb5d1bf636",
+          "modified": "2026-08-26T15:17:53.548675+00:00"
+        },
+        "deathwatch-firefight-ploy-auspicator-tracking.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-firefight-ploy-auspicator-tracking.pdf",
+          "hash": "d171fdb8f854213c50c681d5c41d1539caf0780dacb73e030dd70666b32e3cd4",
+          "modified": "2026-08-26T15:17:53.554549+00:00"
+        },
+        "deathwatch-firefight-ploy-advanced-auspex-scan.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-firefight-ploy-advanced-auspex-scan.pdf",
+          "hash": "b6daa391c7526d0acc4d19c09fc7c7965f261de4f1acf3cdc4684a61d37cdac5",
+          "modified": "2026-08-26T15:17:53.559556+00:00"
+        },
+        "deathwatch-firefight-ploy-transhuman-physiology.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-firefight-ploy-transhuman-physiology.pdf",
+          "hash": "56b044ac6e37ffbb43c37bfb9b1621096173c67256a43ccc26cb897458b70d15",
+          "modified": "2026-08-26T15:17:53.567324+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection.pdf",
+          "hash": "dbfd1da57b8683afb5246e033bf21a5f2a10af78547b7a1ac17f93aa2651cc51",
+          "modified": "2026-08-26T15:17:53.573543+00:00"
+        },
+        "deathwatch-strategy-ploy-mission-tactics.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-strategy-ploy-mission-tactics.pdf",
+          "hash": "c1db84504442cc0e7493739a664862ee0dd21caa5d342bcb8c2418888f983175",
+          "modified": "2026-08-26T15:17:53.578995+00:00"
+        },
+        "deathwatch-strategy-ploy-the-long-vigil.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-strategy-ploy-the-long-vigil.pdf",
+          "hash": "cd5d664c49837c6852c2e4b83abad8fb3aab2a21a151d755dc9ea470d0482da1",
+          "modified": "2026-08-26T15:17:53.584649+00:00"
+        },
+        "deathwatch-strategy-ploy-the-shield-that-slays.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-strategy-ploy-the-shield-that-slays.pdf",
+          "hash": "f675516030df18e1a515a5b48a6ab23818a468f1607593d894ea0eb13ee89803",
+          "modified": "2026-08-26T15:17:53.591726+00:00"
+        },
+        "deathwatch-strategy-ploy-and-they-shall-know-no-fear.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-strategy-ploy-and-they-shall-know-no-fear.pdf",
+          "hash": "45124ba03a1fa75808e5439682b055bec94f8c08341ae9f119f7777913a8dd24",
+          "modified": "2026-08-26T15:17:53.596383+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "e843842c1cb1ce2fd1c92c35af4af2cea43ef888c7576262397df1994ea9368e",
+          "modified": "2026-08-29T18:41:16.089997+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "168dbac80577c1fa7876256ed5aad7f6970d459da7b6c122a00e7ebc47d558da",
+          "modified": "2026-08-29T18:41:16.133406+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "0f3e2c0824c4babc880ec44e1058b3b483dbadfbb567b1f2850b41b53822bc2e",
+          "modified": "2026-08-29T18:41:16.151465+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "5e2dc255d3669584c48a5254b085ae3dd02aae71a5ae6495d7aef74bb9ae6fc5",
+          "modified": "2026-08-29T18:41:16.164094+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "d474035c361e407b8d6a73b1245d69c6c0ba98cba38c6c65d5a35573e34ba8e3",
+          "modified": "2026-08-29T18:41:16.177727+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "7faa7a23f8f7656ddc4bc2a0f027a6231994a36e055274d4b0d6f912e7a1d279",
+          "modified": "2026-08-29T18:41:16.194682+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "21862521c4213020ac7b39acbf13313ed310069963f200f8de391b0f88563081",
+          "modified": "2026-08-29T18:41:16.209584+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "ff779d034736424a4da21f3481bbb0063471e2d4b466b07ef40032b1f5d32de0",
+          "modified": "2026-08-29T18:41:16.224558+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "54540c72209963904f2c71b9a8461e9174609431325b42681e1723afd2ffd64c",
+          "modified": "2026-08-29T18:41:16.251334+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "6a94dc41a14e8b84f78470cbebbed9b8bfe8fdbae75e6081847bf9204d2af2d9",
+          "modified": "2026-08-29T18:41:16.278948+00:00"
+        },
+        "deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "661100a0d886d289438256356e2b50019846efd4b3508088ec9dab7c78a83ff9",
+          "modified": "2026-08-29T18:41:16.319078+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-1.pdf",
+          "hash": "504fd7cf7b6be7478557ff786b6d6493cfb339b55edd8dfec8b456c06f3af32d",
+          "modified": "2026-08-29T18:41:16.348826+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-2.pdf",
+          "hash": "6dde77f237c792d10b823c135555556c42c53765fc4e8fdba290a28e6e31f733",
+          "modified": "2026-08-29T18:41:16.406330+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-3.pdf",
+          "hash": "2d3f6c59284830ced652feb063c0e6183fbd94878f38abf02c2cc1c453181d61",
+          "modified": "2026-08-29T18:41:16.424485+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-4.pdf",
+          "hash": "3bf6847f430c5758494e0e0a29beec3ab84d16f1e26c2329b539a9a3b6e8becd",
+          "modified": "2026-08-29T18:41:16.447660+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-5.pdf",
+          "hash": "491840500e46213b00af6282cbb6e87236873d2d2c8801695282f87fd3ac8584",
+          "modified": "2026-08-29T18:41:16.474449+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-6.pdf",
+          "hash": "5f48ebe7499e7376171a303fe5f53defb1241a16a4bdc2c174e7f96f15a74b14",
+          "modified": "2026-08-29T18:41:16.501325+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-7.pdf",
+          "hash": "3b7b758181096bfa01930f3e98f4194da0d23964b959378b5c75ddfefac54851",
+          "modified": "2026-08-29T18:41:16.579693+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-8.pdf",
+          "hash": "e85fca8f716739450b59a5e9de07cf287a9972aa2db7e5826cdbf92c5651ed16",
+          "modified": "2026-08-29T18:41:16.620650+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-9.pdf",
+          "hash": "0d194c4fcbd03f202bb040b890f48540e90657f9e6963c7344c6d51ba2c6c998",
+          "modified": "2026-08-29T18:41:17.029602+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-10.pdf",
+          "hash": "a720cb0faa3e2ab43eefe3afaa833aa8431fc63941a75e2f0694a252348fd38f",
+          "modified": "2026-08-29T18:41:17.054430+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-11.pdf",
+          "hash": "876c289e1352b11569d806c44c3c66a3261a3f67acd04c454a85d5c14ad8b5d7",
+          "modified": "2026-08-29T18:41:17.078070+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-12.pdf",
+          "hash": "024d94d0758b30dc89f6d29a6c8c9217fe885b7f6f2914c0ec2fdba060060241",
+          "modified": "2026-08-29T18:41:17.106935+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-13.pdf",
+          "hash": "5281efa82c95caf2dca108994d9c4489ce50bb97a4a026f5c955fec2d543c2f3",
+          "modified": "2026-08-29T18:41:17.120848+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-14.pdf",
+          "hash": "2ad052b03ba06032f73016b86a4ce7a6ce5986848472c80907099ded5e07f78d",
+          "modified": "2026-08-29T18:41:17.330779+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-15.pdf",
+          "hash": "8fd1c9287bf01feaa765e311f9cf69f1c01dd9f4a19635c443e9a606eda28ac8",
+          "modified": "2026-08-29T18:41:17.691376+00:00"
+        },
+        "deathwatch-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/deathwatch/deathwatch-operatives-selection-operative-selection-16.pdf",
+          "hash": "6c511f6fbac2026782939d161142a5b9c2712f63d6130bb8b7786fdf1eb7402a",
+          "modified": "2026-08-29T18:41:17.710159+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/deathwatch-structure.json": "f422c9047b357dbf34a033e8fb1a4021746a600030ff0ff108adff9e4dbca236",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card1_landscape.pdf": "acc4d7f85caeb0930bd6b822f828ac69665ceab124434806246b9001f0892be8",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card2_landscape.pdf": "7132b99c81c7e07984b7ac36a1ec2d5dfc7ab4e5000aba876d4435643a128d93",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card3_landscape.pdf": "01128679423389b807aaebc3a743265b38e0f26503d9ea387b838737d33ffeb4",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page01_card4_landscape.pdf": "d04e0a0a4ce8549fb5d2d42eee4e47e410e1d17523e6e08eae64d4a8f12720b7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card1_landscape.pdf": "3931dd753cb4928e909b4842803ca261f3240db0e2985b43bf21473426c87549",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card2_landscape.pdf": "accef6cece4ea6fa7d92630e60575ceb0b8308c054e791fe04aff7488153d5aa",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card3_landscape.pdf": "713e3f0bb939a162fca4785e11d11ac6d07becba7efdb0bfdedfdabfe6ef5566",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page02_card4_landscape.pdf": "1f174acaeabe392445ce1a40dcf71203180f5d31000a8461f5682c0fef504b67",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card1_landscape.pdf": "404acf0e39c5401f8a45ac9557b09f7ece600404d399901052d2532cda42e254",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card2_landscape.pdf": "7f69dc089c56bab17e1dc4993d1ace23db9644962b1ae453af07b9ec36b8fcd7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page03_card3_landscape.pdf": "acd9d8e5d2661b9b97069988edf0d9939d7471e88bf7ab74f098f6f5cedc1ebc",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card1_portrait.pdf": "c75b19a9ef6966d2742303e59034456631f17611ecc484068c93173577f11159",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card2_portrait.pdf": "05612801b44815b307a152917ecfe250d9c4a9b66d8cfdce43c4428fab69c82b",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card3_portrait.pdf": "8bca2d2d26d0723626bdef6e9d6e2f555cc6a2fe95c18f7f53d90abc24ed32a4",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page04_card4_portrait.pdf": "6078383150445d7552978275107ea4497c685722f1fed3853b227b57f85594a7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card1_portrait.pdf": "2a561fd03c22cc0fbd2b3f22c9096b1e13462d9b4794ba8532e64e80d3af8b9c",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card2_portrait.pdf": "b98f7c5b73e7e26ddc9bd7a6e136e45618dd6942e4c415a7185e4a8bac996fd7",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card3_portrait.pdf": "58abc120ff5c2a97a34fa4aa10b43aaeace27bacc2d32e081d0db215f22bbbaa",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page05_card4_portrait.pdf": "0f52fe0360b8068f888a1aaa5ec0c8191ac14029e5ffb2f07623e6cb2fa5bdb3",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card1_portrait.pdf": "f794cd336b2013c40b476c2870298f70929f30225fd2421e3f2390558cc1d618",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card2_portrait.pdf": "b033b03a9fd2123682b73f2ccc8fb2909b86c5d5563181842c26ca6a4d36577a",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card3_portrait.pdf": "3de9231d568ad12df0dcc26c9e81e70320ec197b3e037795485772770864235a",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page06_card4_portrait.pdf": "b1dccd350a463dff7017ae9747ddf87cf7d20087ce4b096cfb7facdb8ab7cb2b",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card1_portrait.pdf": "6c04e36b4d8c37a6cbbd9bda61002ea46932c4ae6f34951c9e3f7aad12684d20",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card2_portrait.pdf": "2eb4c4028431570de1488ecdec0f4b4cb27ed7c1eb6e1ee4aece7dfa779a3f47",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card3_portrait.pdf": "2e5bc2bff55ea67a1582de77989f7e20728d2ea9a5100a8a73fcb026638fa109",
+        "layers/warcom/extracted/deathwatch/cards/deathwatch_page07_card4_portrait.pdf": "92de9b384b8426fe6ac297b540182d27c97a10a83a76087b791c6b88384daeed"
+      },
+      "completed": "2026-08-29T18:41:26.532416+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "e4d1a8e0e80c1d894dbb4021c659243c81ea15547f02e550100c47f7e24bda37",
+          "outputs": [
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-01.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-02.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-03.png",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-04.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-05.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-06.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-07.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-08.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-09.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-10.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-11.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-12.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-13.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-14.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-15.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-16.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-17.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-18.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-19.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-20.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-21.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-22.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-23.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-24.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-25.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-26.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-27.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-28.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-29.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-30.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-31.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-32.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-33.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-34.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-35.jpeg",
+            "layers/integration/deathwatch/artwork/deathwatch-artwork-metadata.json",
+            "layers/integration/deathwatch/artwork/icons/deathwatch-icon-landscape.jpg",
+            "layers/integration/deathwatch/artwork/icons/deathwatch-icon-portrait.jpg",
+            "layers/integration/deathwatch/artwork/icons/deathwatch-icon-token-transparent.png",
+            "layers/integration/deathwatch/artwork/icons/deathwatch-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:49:47.308366+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:49:47.308387+00:00"
+    }
+  }
+}

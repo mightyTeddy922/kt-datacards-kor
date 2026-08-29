@@ -1,0 +1,1683 @@
+{
+  "team": "celestian-insidiants",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:37.169646+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/celestian-insidiants/content/celestian-insidiants-content.json",
+          "hash": "a951df7d4788a3ce00bb3cf1ef8b21d3f1efa8dc7630c770e40ca3b73b234466",
+          "modified": "2026-08-29T18:41:10.960574+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:12.592300+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/manifest.json": "1dc7d419c6e1d2cc8797aac5cfcb464e3cef8e2939d2a7d5788b5722685ab3b3",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "f684b837b2abd811c7fa929b13368a12581610e8b4ac3596c86a3a0fd08b0975",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "d4539573c1afd4c67e7f45d18cc35f16a8aca6a197425225325e86020b14ca9e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "a7c227fd66692fc09fbf53f807ce70a05ade857ef96da201369c289c8dd14b9b",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "622f814731a01a6e3e2284656c5c6ee849053b42d854230938dffffbdd45aa92",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "11414a417d37c2b07e84236bd739ab5792c3c7a2a22da4978cafa570055276df",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "5f462ed449d66ff37f315fb3c549929ef2bad9da6054162b3bc120cb164ffe4f",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "65d78533f78b173ec4c1d8b7c37652786b255c0217af9a1c0616401ae22ad53c",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "17de3d5c18c6f7553ff22fd32e233514126bcdf66c51bf53a3fcc66f35851ac0",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-abjuror.pdf": "89a1de3c486cae7651038cc0840287bcf4ed4c28da0fef264c4f91a63065b098",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-censor.pdf": "858295fbc2c277d4cc1eea95c95c5e5c7da1937d005034da9b305232795be34a",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-cremator.pdf": "7f4c71f28595f67b041fc8cadbfdc69cee2e9e2742b49740709390b456063c3a",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-denuncia.pdf": "a022ede93498c8fba5aab0b55b431e22949ffd16518a9818a17d9f1c5f18f60d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-mortisanctus.pdf": "f3972551390dcefa9d41fb5a8097dbc225f0b8621f3fab704a29b938a94c7745",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-reliquarius.pdf": "a9de0459e2df26f878e017c29e11581e4b658e4c27463222721a718e1742e339",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-superior.pdf": "fa241a003d79ebad30f85310b649b8eae4e57cce4eaaf17b63f033730586ed9d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-warrior.pdf": "194241cc398680a08a1d2e3e7b9c66aeb70f720b48465257b2f92994d1931193",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-auto-flagellator.pdf": "ccaa3033d884a4d264a7f1820bba3aee4ce85a2d05e798fa4985dfe732a377b5",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-psyk-out-grenades.pdf": "e2f2d6024cd00036492b7a02c411333bb298112d02834874e713e7a57acc6fc3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-saintly-relics.pdf": "ea408ceff2cff001744dd1215a7d193f64b5b3bc5b33fdc21413ee86896b7bdf",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-vocifera-mortis.pdf": "c70ab313308bad72f359fcf23a8928ffc4b41cdcc599af36f868a5085ab77c09",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-benedictions.pdf": "06c543d51053fecc0bfc66f3ace52e16496d335a7c50c20257efb00d8597f2e8",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-inspiration.pdf": "8246d46b84705a910c697acd020b8163595a6e30493b500f7eeda0b9ff8abbcd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-martyrdom.pdf": "5eb3167c61f3ed7b88f3cb0b424fd9319d920ec91b8ac8d8e6daf3a8e1a0f418",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-weapons-of-the-witch-hunters.pdf": "0f7a6816bb592f937d2c113188973beccccdf0ecf823d7b1eed2fcc511020b49",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-faith-fury.pdf": "a35228c86bbde01c04369e69db079fb06bd035e08d933b05a4eb9d611546c6f4",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-fervent-hate.pdf": "959f2b7f4269eee256ce1b96fb4fa4ccf6dbcaeef77ee9ac66882c13da334bec",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-glory-to-the-martyrs.pdf": "ab6fda267bea41703b6416d51a97f567dbc7e7f33369e1528a5bcaaf6501fb58",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-unshakeable-pursuit.pdf": "1ff82a7df7d1a2f4eba8dab61c6a23bf36d85860722f76c99f2727b5edfa8266",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-1.pdf": "634ba4e3e0f3a3c0fd82eb53d318e1634f561c7a958d0184163d08976772cf62",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-10.pdf": "9f200a5b386f47bff0c9119b020bd2b552e69dca4b271c939cbd9b8b4adf6ed2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-11.pdf": "c9e3452d644f56f59ec8cd44272e2ee1327382b3671a903946b615ae5ff0334d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-12.pdf": "d325b3df937b56b6ac9d733ac7d759f8f2832c3ccd3d7af0698de12527e771fc",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-13.pdf": "a2a368559366d298eab5013c7ef7bc6fab08591c0daeb92113a6921aefbae9a9",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-14.pdf": "a764dfd4e1aeedd89c18d7fe79dab25cb21473b9a5f6d1eec3c51a87b08f2830",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-15.pdf": "13556f1791786a92dae83af69c940fa9d00062c8cf68cb533c5fcbf06b345273",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-16.pdf": "e66b1ed564ef18ba37ea8a1326ae91c3815c73c163b1337b260631c9e03d0bbd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-17.pdf": "fc78b7aa28223f57384b796562ba76d25daa7df02a10badefb8e7b98784cfc56",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-18.pdf": "07cf875372e729762f9e62777c1566f07bfa43179e4ce1b35fc6a2c15a417403",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-19.pdf": "0a2728d44b1e4757e120397a9b02a09ff950444415986949a99377b2d57d6bc2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-2.pdf": "e9971be424f2214ca502ebbce599a2d67210547c5ae864e13505b3caeb01a4cd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-3.pdf": "fe2f58ed48995e04aef285667d7fba770f510399bef649a5e124f48b17aaaea2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-4.pdf": "95bb2d70bc5477037c20b1dab0fc7fc81d29b423781f7eedddd5493b2265e522",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-5.pdf": "e3e1ffe704cc072084ff84b25f529a1da037892efd6bacca993f894a8a0afa01",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-6.pdf": "b81310001ea475c5cfdd02227497e2da4510c89f17acb32841dd526b5e3883c6",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-7.pdf": "2032b0823691dc363a3c2e7a255bd91f5c25cab40bade23c730722d14050d86f",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-8.pdf": "c9756a9f2c9f1932f3fa200e0694575b2a5d64ccdd662c3f5cc3479a3347ead7",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-9.pdf": "e097624e00a4bba29637da93ec948981295c36720043d1d3a0964ae79abf48a3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection.pdf": "bb06a08aaa76387c93a23141d1a637fd7e1c5412337ae84fc6da2d10fb110e0d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-holy-resilience.pdf": "1dcf7bf47fee57f41ec7393bb4e2bd88ec26e105bce496bd559edc3325af1ff5",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suffering-sacrifice.pdf": "88fa9be71766ec3c5629dbc25752d57919e4efaaf9981527787b5b7513c69e87",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suspect-eliminate.pdf": "40d3e319612ef40744b3615074e3ac2a207f4ca7554bc3cbc71508cc30578c3e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-wrathful-determination.pdf": "3012f783df550033b3a4591a6010cccdbfb84c1c08862ab4b16fac9ac6f7723e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-1.pdf": "9a6194d9c7b27cb82b72afec68b65f9fcfa8ab7b6e3b1f28b666eb50f4747376",
+        "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-2.pdf": "c64ed39c804a8938a071f7cc5ca7af0a723fe659ffca648fe3b46694e19c3a78"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/celestian-insidiants/card-backside/celestian-insidiants-backside-landscape.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-07-12T18:43:01.746904+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/celestian-insidiants/card-backside/celestian-insidiants-backside-portrait.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-07-12T18:43:01.756611+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:43:01.782718+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-token.jpg": "044032de32f4f7403dea224fb6f4d9a79c94f689c7eed752e06093633c25d164",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/celestian-insidiants-ardour-benediction.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-ardour-benediction.png",
+          "hash": "5e6141bbf7cd057c5c243072a12c2ed5fa8e6999071a9b387d9e3c34e623dbf3",
+          "modified": "2026-08-29T18:41:16.408838+00:00"
+        },
+        "tokens/celestian-insidiants-holy-defender.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-holy-defender.png",
+          "hash": "8784a13f7551b88dab0910a71b1842a40b54ab860af107e79059c923ca4b258c",
+          "modified": "2026-08-29T18:41:16.417881+00:00"
+        },
+        "tokens/celestian-insidiants-holy-example.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-holy-example.png",
+          "hash": "baddd4bc403414ce7b19aef05741c49c194459371714b127f67777aa3f4a33cc",
+          "modified": "2026-08-29T18:41:16.425989+00:00"
+        },
+        "tokens/celestian-insidiants-inspirational-pyre.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-inspirational-pyre.png",
+          "hash": "a38d2d7ff7b3e0647755514195ca0d49fca71eba58c8498f5beb89586d23ddd5",
+          "modified": "2026-08-29T18:41:16.435568+00:00"
+        },
+        "tokens/celestian-insidiants-inspiring.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-inspiring.png",
+          "hash": "42f935b40665f26d0fa36ca59c48bb8f45a95c28e67d928b84ad6d4979317951",
+          "modified": "2026-08-29T18:41:16.444150+00:00"
+        },
+        "tokens/celestian-insidiants-nullification.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-nullification.png",
+          "hash": "4bbce6cc3a2bba31e804fcdd716f8851f052f442f31605ebc7a06dca1a130ebe",
+          "modified": "2026-08-29T18:41:16.451675+00:00"
+        },
+        "tokens/celestian-insidiants-psyk-out-grenades.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-psyk-out-grenades.png",
+          "hash": "1d1043d9af49cd1cea017f20974286eb2b318301d508202979256975d39ae36e",
+          "modified": "2026-08-29T18:41:16.459905+00:00"
+        },
+        "tokens/celestian-insidiants-saintly-relics.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-saintly-relics.png",
+          "hash": "368c0612c13bae4093c1c9e5740e0fed96845f4adf5fb8e91d4fdc1f90cca9b1",
+          "modified": "2026-08-29T18:41:16.469436+00:00"
+        },
+        "tokens/celestian-insidiants-suspicion.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-suspicion.png",
+          "hash": "c130db76d32dc469efaa8b6e4f8880fd42a9d63bc9717d3510874a43b35f6df5",
+          "modified": "2026-08-29T18:41:16.480086+00:00"
+        },
+        "tokens/celestian-insidiants-vocifera-mortis.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-vocifera-mortis.png",
+          "hash": "8249461b83411f199f399476deac3eddf2976600d765bb4135470f5fc669ce85",
+          "modified": "2026-08-29T18:41:16.489651+00:00"
+        },
+        "tokens/celestian-insidiants-wrath-benediction.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-wrath-benediction.png",
+          "hash": "4fd5d065f734328ef56f90086bee8060c8027adf3211b92d0b0be50b8a17804c",
+          "modified": "2026-08-29T18:41:16.502325+00:00"
+        },
+        "tokens/celestian-insidiants-zealous-ultimatum.png": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-zealous-ultimatum.png",
+          "hash": "b71c7c100e1a42204edaeef2bcfc1069841f6f0ee06694999f6d620f81ca710e",
+          "modified": "2026-08-29T18:41:16.557816+00:00"
+        },
+        "tokens/celestian-insidiants-ardour-benediction.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-ardour-benediction.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.564139+00:00"
+        },
+        "tokens/celestian-insidiants-holy-defender.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-holy-defender.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.568667+00:00"
+        },
+        "tokens/celestian-insidiants-holy-example.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-holy-example.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.572171+00:00"
+        },
+        "tokens/celestian-insidiants-inspirational-pyre.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-inspirational-pyre.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.576175+00:00"
+        },
+        "tokens/celestian-insidiants-inspiring.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-inspiring.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.579693+00:00"
+        },
+        "tokens/celestian-insidiants-nullification.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-nullification.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.582196+00:00"
+        },
+        "tokens/celestian-insidiants-psyk-out-grenades.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-psyk-out-grenades.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.585704+00:00"
+        },
+        "tokens/celestian-insidiants-saintly-relics.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-saintly-relics.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.589782+00:00"
+        },
+        "tokens/celestian-insidiants-suspicion.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-suspicion.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.592366+00:00"
+        },
+        "tokens/celestian-insidiants-vocifera-mortis.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-vocifera-mortis.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.595370+00:00"
+        },
+        "tokens/celestian-insidiants-wrath-benediction.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-wrath-benediction.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.598891+00:00"
+        },
+        "tokens/celestian-insidiants-zealous-ultimatum.obj": {
+          "path": "output/celestian-insidiants/tokens/celestian-insidiants-zealous-ultimatum.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:16.601980+00:00"
+        },
+        "tokens/tokenbag/celestian-insidiants-token-bag-icon.png": {
+          "path": "output/celestian-insidiants/tokens/tokenbag/celestian-insidiants-token-bag-icon.png",
+          "hash": "044032de32f4f7403dea224fb6f4d9a79c94f689c7eed752e06093633c25d164",
+          "modified": "2026-08-29T18:41:16.620650+00:00"
+        },
+        "tokens/tokenbag/celestian-insidiants-token-bag.obj": {
+          "path": "output/celestian-insidiants/tokens/tokenbag/celestian-insidiants-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:41:16.628695+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:27.854031+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/manifest.json": "1dc7d419c6e1d2cc8797aac5cfcb464e3cef8e2939d2a7d5788b5722685ab3b3",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-token.jpg": "044032de32f4f7403dea224fb6f4d9a79c94f689c7eed752e06093633c25d164",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "f684b837b2abd811c7fa929b13368a12581610e8b4ac3596c86a3a0fd08b0975",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "d4539573c1afd4c67e7f45d18cc35f16a8aca6a197425225325e86020b14ca9e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "a7c227fd66692fc09fbf53f807ce70a05ade857ef96da201369c289c8dd14b9b",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "622f814731a01a6e3e2284656c5c6ee849053b42d854230938dffffbdd45aa92",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "11414a417d37c2b07e84236bd739ab5792c3c7a2a22da4978cafa570055276df",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "5f462ed449d66ff37f315fb3c549929ef2bad9da6054162b3bc120cb164ffe4f",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "65d78533f78b173ec4c1d8b7c37652786b255c0217af9a1c0616401ae22ad53c",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "17de3d5c18c6f7553ff22fd32e233514126bcdf66c51bf53a3fcc66f35851ac0",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-abjuror.pdf": "89a1de3c486cae7651038cc0840287bcf4ed4c28da0fef264c4f91a63065b098",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-censor.pdf": "858295fbc2c277d4cc1eea95c95c5e5c7da1937d005034da9b305232795be34a",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-cremator.pdf": "7f4c71f28595f67b041fc8cadbfdc69cee2e9e2742b49740709390b456063c3a",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-denuncia.pdf": "a022ede93498c8fba5aab0b55b431e22949ffd16518a9818a17d9f1c5f18f60d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-mortisanctus.pdf": "f3972551390dcefa9d41fb5a8097dbc225f0b8621f3fab704a29b938a94c7745",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-reliquarius.pdf": "a9de0459e2df26f878e017c29e11581e4b658e4c27463222721a718e1742e339",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-superior.pdf": "fa241a003d79ebad30f85310b649b8eae4e57cce4eaaf17b63f033730586ed9d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-warrior.pdf": "194241cc398680a08a1d2e3e7b9c66aeb70f720b48465257b2f92994d1931193",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-auto-flagellator.pdf": "ccaa3033d884a4d264a7f1820bba3aee4ce85a2d05e798fa4985dfe732a377b5",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-psyk-out-grenades.pdf": "e2f2d6024cd00036492b7a02c411333bb298112d02834874e713e7a57acc6fc3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-saintly-relics.pdf": "ea408ceff2cff001744dd1215a7d193f64b5b3bc5b33fdc21413ee86896b7bdf",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-vocifera-mortis.pdf": "c70ab313308bad72f359fcf23a8928ffc4b41cdcc599af36f868a5085ab77c09",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-benedictions.pdf": "06c543d51053fecc0bfc66f3ace52e16496d335a7c50c20257efb00d8597f2e8",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-inspiration.pdf": "8246d46b84705a910c697acd020b8163595a6e30493b500f7eeda0b9ff8abbcd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-martyrdom.pdf": "5eb3167c61f3ed7b88f3cb0b424fd9319d920ec91b8ac8d8e6daf3a8e1a0f418",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-weapons-of-the-witch-hunters.pdf": "0f7a6816bb592f937d2c113188973beccccdf0ecf823d7b1eed2fcc511020b49",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-faith-fury.pdf": "a35228c86bbde01c04369e69db079fb06bd035e08d933b05a4eb9d611546c6f4",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-fervent-hate.pdf": "959f2b7f4269eee256ce1b96fb4fa4ccf6dbcaeef77ee9ac66882c13da334bec",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-glory-to-the-martyrs.pdf": "ab6fda267bea41703b6416d51a97f567dbc7e7f33369e1528a5bcaaf6501fb58",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-unshakeable-pursuit.pdf": "1ff82a7df7d1a2f4eba8dab61c6a23bf36d85860722f76c99f2727b5edfa8266",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-1.pdf": "634ba4e3e0f3a3c0fd82eb53d318e1634f561c7a958d0184163d08976772cf62",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-10.pdf": "9f200a5b386f47bff0c9119b020bd2b552e69dca4b271c939cbd9b8b4adf6ed2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-11.pdf": "c9e3452d644f56f59ec8cd44272e2ee1327382b3671a903946b615ae5ff0334d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-12.pdf": "d325b3df937b56b6ac9d733ac7d759f8f2832c3ccd3d7af0698de12527e771fc",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-13.pdf": "a2a368559366d298eab5013c7ef7bc6fab08591c0daeb92113a6921aefbae9a9",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-14.pdf": "a764dfd4e1aeedd89c18d7fe79dab25cb21473b9a5f6d1eec3c51a87b08f2830",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-15.pdf": "13556f1791786a92dae83af69c940fa9d00062c8cf68cb533c5fcbf06b345273",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-16.pdf": "e66b1ed564ef18ba37ea8a1326ae91c3815c73c163b1337b260631c9e03d0bbd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-17.pdf": "fc78b7aa28223f57384b796562ba76d25daa7df02a10badefb8e7b98784cfc56",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-18.pdf": "07cf875372e729762f9e62777c1566f07bfa43179e4ce1b35fc6a2c15a417403",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-19.pdf": "0a2728d44b1e4757e120397a9b02a09ff950444415986949a99377b2d57d6bc2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-2.pdf": "e9971be424f2214ca502ebbce599a2d67210547c5ae864e13505b3caeb01a4cd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-3.pdf": "fe2f58ed48995e04aef285667d7fba770f510399bef649a5e124f48b17aaaea2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-4.pdf": "95bb2d70bc5477037c20b1dab0fc7fc81d29b423781f7eedddd5493b2265e522",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-5.pdf": "e3e1ffe704cc072084ff84b25f529a1da037892efd6bacca993f894a8a0afa01",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-6.pdf": "b81310001ea475c5cfdd02227497e2da4510c89f17acb32841dd526b5e3883c6",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-7.pdf": "2032b0823691dc363a3c2e7a255bd91f5c25cab40bade23c730722d14050d86f",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-8.pdf": "c9756a9f2c9f1932f3fa200e0694575b2a5d64ccdd662c3f5cc3479a3347ead7",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-9.pdf": "e097624e00a4bba29637da93ec948981295c36720043d1d3a0964ae79abf48a3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection.pdf": "bb06a08aaa76387c93a23141d1a637fd7e1c5412337ae84fc6da2d10fb110e0d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-holy-resilience.pdf": "1dcf7bf47fee57f41ec7393bb4e2bd88ec26e105bce496bd559edc3325af1ff5",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suffering-sacrifice.pdf": "88fa9be71766ec3c5629dbc25752d57919e4efaaf9981527787b5b7513c69e87",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suspect-eliminate.pdf": "40d3e319612ef40744b3615074e3ac2a207f4ca7554bc3cbc71508cc30578c3e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-wrathful-determination.pdf": "3012f783df550033b3a4591a6010cccdbfb84c1c08862ab4b16fac9ac6f7723e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-1.pdf": "9a6194d9c7b27cb82b72afec68b65f9fcfa8ab7b6e3b1f28b666eb50f4747376",
+        "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-2.pdf": "c64ed39c804a8938a071f7cc5ca7af0a723fe659ffca648fe3b46694e19c3a78"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/celestian-insidiants/dice/celestian-insidiants-dice-light.jpg",
+          "hash": "38acfcee31413fa354f159136e39a5af333fd19491ec8f4a9efdc60eb1e5ac7d",
+          "modified": "2026-08-29T18:41:29.785374+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/celestian-insidiants/dice/celestian-insidiants-dice-dark.jpg",
+          "hash": "b2d5afe73e2eb8ad602b11a0329b7ebf2e0ff0db4fdcfb8e91b8b9745cadbe0c",
+          "modified": "2026-08-29T18:41:29.938003+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/celestian-insidiants/dice/celestian-insidiants-dice-team.jpg",
+          "hash": "1bf3d1b300033f21d1b9385f4c8e55344f90890db9d688db9842164a524fbbd2",
+          "modified": "2026-08-29T18:41:29.939007+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:29.943037+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-token-transparent.png": "ecd5d997870c79603b7d228d20786b418c84c6f67b5c09eb0552f83e0413c0c3",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/celestian-insidiants/cardbox/celestian-insidiants-card-box-texture.jpg",
+          "hash": "97ca6139640d1d55c077889468d181849fed0a0d8d1ee887681a728a3c42584b",
+          "modified": "2026-08-29T18:41:30.072386+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/celestian-insidiants/cardbox/celestian-insidiants-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:41:30.073381+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:30.076406+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-token.jpg": "044032de32f4f7403dea224fb6f4d9a79c94f689c7eed752e06093633c25d164",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/insidiant-abjuror-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-abjuror-back.jpg",
+          "hash": "2b3669f6fa830faaaf23f604c38e5b1f0d123a34ab96022e88f7f3bb1f230cb7",
+          "modified": "2026-08-29T18:41:55.331138+00:00"
+        },
+        "cards/datacards/insidiant-abjuror-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-abjuror-front.jpg",
+          "hash": "e6d7ad0828c1f1e79cc3ba1294462495e59f7bec9e2e745aae43905ea91e23b3",
+          "modified": "2026-08-29T18:41:55.970556+00:00"
+        },
+        "cards/datacards/insidiant-censor-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-censor-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:56.295101+00:00"
+        },
+        "cards/datacards/insidiant-censor-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-censor-front.jpg",
+          "hash": "5316a86bbc791616af89b603e4c0f233c9525d86bac94a743005e06839f169ec",
+          "modified": "2026-08-29T18:41:56.939317+00:00"
+        },
+        "cards/datacards/insidiant-cremator-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-cremator-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:57.259132+00:00"
+        },
+        "cards/datacards/insidiant-cremator-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-cremator-front.jpg",
+          "hash": "9c381ede7956226aa63455dc6eae2558ec8522d9ba3febce00421d63b06dab5e",
+          "modified": "2026-08-29T18:41:57.934018+00:00"
+        },
+        "cards/datacards/insidiant-denuncia-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-denuncia-back.jpg",
+          "hash": "3ad2787dae2ed4b3dcff92eee4cca80b390af8953d75f4d0140f60bb1ca8c3e8",
+          "modified": "2026-08-29T18:41:58.564398+00:00"
+        },
+        "cards/datacards/insidiant-denuncia-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-denuncia-front.jpg",
+          "hash": "955e2ff83450c23e5a217b0131fdd4d04fc0df9d9ed166b483ff3cd6f5922241",
+          "modified": "2026-08-29T18:41:58.628878+00:00"
+        },
+        "cards/datacards/insidiant-mortisanctus-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-mortisanctus-back.jpg",
+          "hash": "47c32705a28550bcd204e480de1d2000086c65628d613ad7152fe12c8467e629",
+          "modified": "2026-08-29T18:41:58.633891+00:00"
+        },
+        "cards/datacards/insidiant-mortisanctus-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-mortisanctus-front.jpg",
+          "hash": "530c59271987c8030752c7b94750085e7ec62b807e451091a9feddc8562e5dba",
+          "modified": "2026-08-29T18:41:58.639911+00:00"
+        },
+        "cards/datacards/insidiant-reliquarius-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-reliquarius-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:58.642414+00:00"
+        },
+        "cards/datacards/insidiant-reliquarius-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-reliquarius-front.jpg",
+          "hash": "3d6d9166b74c42c944eedf9d77d8df1924965434f6e371ff79ec9dbaca67b55c",
+          "modified": "2026-08-29T18:41:58.646929+00:00"
+        },
+        "cards/datacards/insidiant-superior-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-superior-back.jpg",
+          "hash": "94f4c80cb1b313b1d7fb8521af7aee6c3ff5eaab72ff2836ed32e1b54ec635ac",
+          "modified": "2026-08-29T18:41:58.650679+00:00"
+        },
+        "cards/datacards/insidiant-superior-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-superior-front.jpg",
+          "hash": "b03774b79096165edd6c71821d7faf26538758635a99dc724cb1205c2a82a4f9",
+          "modified": "2026-08-29T18:41:58.654192+00:00"
+        },
+        "cards/datacards/insidiant-warrior-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-warrior-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:58.656699+00:00"
+        },
+        "cards/datacards/insidiant-warrior-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/insidiant-warrior-front.jpg",
+          "hash": "140919856b859bd029c6058fdbace88635a7ea7ff25c2bccc8b109eff0d719df",
+          "modified": "2026-08-29T18:41:58.658363+00:00"
+        },
+        "cards/equipment/celestian-insidiants-auto-flagellator-back.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-auto-flagellator-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.659367+00:00"
+        },
+        "cards/equipment/celestian-insidiants-auto-flagellator-front.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-auto-flagellator-front.jpg",
+          "hash": "ecad12eaa73590a311877fd4e7fbf40874cbbe645695100ab3ea5569cb5b0902",
+          "modified": "2026-08-29T18:41:58.661367+00:00"
+        },
+        "cards/equipment/celestian-insidiants-psyk-out-grenades-back.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-psyk-out-grenades-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.664408+00:00"
+        },
+        "cards/equipment/celestian-insidiants-psyk-out-grenades-front.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-psyk-out-grenades-front.jpg",
+          "hash": "f752b496993093e339ac0bf70f927c71d99d5a058d0df5b41e5bc55f48739fd4",
+          "modified": "2026-08-29T18:41:58.666957+00:00"
+        },
+        "cards/equipment/celestian-insidiants-saintly-relics-back.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-saintly-relics-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.667979+00:00"
+        },
+        "cards/equipment/celestian-insidiants-saintly-relics-front.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-saintly-relics-front.jpg",
+          "hash": "a4aa9fcb8418ee7fd7470a8a37a89922b0be1ae18192f274bd3ddc004d70024c",
+          "modified": "2026-08-29T18:41:58.670983+00:00"
+        },
+        "cards/equipment/celestian-insidiants-vocifera-mortis-back.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-vocifera-mortis-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.670983+00:00"
+        },
+        "cards/equipment/celestian-insidiants-vocifera-mortis-front.jpg": {
+          "path": "output/celestian-insidiants/cards/equipment/celestian-insidiants-vocifera-mortis-front.jpg",
+          "hash": "811b80cd61c5be8ad9e22158fd0cdcdf7e8ce68f04b5eb3550d7f00cd8f1e8ec",
+          "modified": "2026-08-29T18:41:58.674095+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-benedictions-back.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-benedictions-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.676125+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-benedictions-front.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-benedictions-front.jpg",
+          "hash": "027c58680395301c877046be8ff79e28ef715fed4885fedad0118e3d935970a9",
+          "modified": "2026-08-29T18:41:58.678125+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-inspiration-back.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-inspiration-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.678125+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-inspiration-front.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-inspiration-front.jpg",
+          "hash": "10ccfb10a3f6f975928b618687658aaf26b65edc972923b7cc0815bb4f3f60c6",
+          "modified": "2026-08-29T18:41:58.680657+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-martyrdom-back.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-martyrdom-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.683164+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-martyrdom-front.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-martyrdom-front.jpg",
+          "hash": "fa6a2e78f64a1f0408457665e5b29cc2a356ce2a4140c453eac032ce9ea4c36a",
+          "modified": "2026-08-29T18:41:58.685685+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-weapons-of-the-witch-hunters-back.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-weapons-of-the-witch-hunters-back.jpg",
+          "hash": "7c7f0c5ff7c100f0d813d86df23fe4545ef39fb11a2fa39735f31ce8e61b5858",
+          "modified": "2026-08-29T18:41:58.686723+00:00"
+        },
+        "cards/faction_rules/celestian-insidiants-weapons-of-the-witch-hunters-front.jpg": {
+          "path": "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-weapons-of-the-witch-hunters-front.jpg",
+          "hash": "577672537f4388298ce642cd3e63efdfbe763e06b18cfd777c870b500606510b",
+          "modified": "2026-08-29T18:41:58.690231+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-faith-fury-back.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-faith-fury-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.690231+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-faith-fury-front.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-faith-fury-front.jpg",
+          "hash": "599a5c2a72e65556663597ddb1a2b6874e5f07fc73695f11fe9c6daa9ce30e0a",
+          "modified": "2026-08-29T18:41:58.695249+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-fervent-hate-back.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-fervent-hate-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.696248+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-fervent-hate-front.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-fervent-hate-front.jpg",
+          "hash": "f653bbc43bb899dd41ba3e8b6bbe57f4c7b36a99057fdd95763c0eac9e8b0c50",
+          "modified": "2026-08-29T18:41:58.697751+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-glory-to-the-martyrs-back.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-glory-to-the-martyrs-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.698755+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-glory-to-the-martyrs-front.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-glory-to-the-martyrs-front.jpg",
+          "hash": "fdf9ef1ecdf7a34ff53d56e5d39c1e2eee88bf5f958a50113338848c48b8a0b1",
+          "modified": "2026-08-29T18:41:58.701263+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-unshakeable-pursuit-back.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-unshakeable-pursuit-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.703072+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-unshakeable-pursuit-front.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-unshakeable-pursuit-front.jpg",
+          "hash": "8c0429b88f2b93918c32b7fd49226775fc48106132ff18eaf9d2109c7e41677b",
+          "modified": "2026-08-29T18:41:58.706103+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.707101+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-front.jpg",
+          "hash": "458a1aed53d2b5e290b60beb914ddd3ff63ebf1948855cb08fa8350bb730a39e",
+          "modified": "2026-08-29T18:42:00.039200+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-holy-resilience-back.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-holy-resilience-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:42:00.043709+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-holy-resilience-front.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-holy-resilience-front.jpg",
+          "hash": "f57d157e4425653c83621f21be0e8d5b66c99130ba1e7112c73708abe4b1299e",
+          "modified": "2026-08-29T18:42:00.047723+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suffering-sacrifice-back.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suffering-sacrifice-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:42:00.048729+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suffering-sacrifice-front.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suffering-sacrifice-front.jpg",
+          "hash": "3d748649e5ee1681f2a15609fe43b9056f03b33c299909477fadde32f4d8aff6",
+          "modified": "2026-08-29T18:42:00.050234+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suspect-eliminate-back.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suspect-eliminate-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:42:00.051254+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suspect-eliminate-front.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suspect-eliminate-front.jpg",
+          "hash": "6d9137f7b5040fada6589b192af180472d5fcfb22797ba5114782b9c2eba5792",
+          "modified": "2026-08-29T18:42:00.052259+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-wrathful-determination-back.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-wrathful-determination-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:42:00.053260+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-wrathful-determination-front.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-wrathful-determination-front.jpg",
+          "hash": "ae65ad48481780a7c8cd5b795c70f1977ca938caca2e1b4784de92a7a4647d8c",
+          "modified": "2026-08-29T18:42:00.058798+00:00"
+        },
+        "cards/token_guide/celestian-insidiants-token-guide-card1-back.jpg": {
+          "path": "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card1-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:42:00.060798+00:00"
+        },
+        "cards/token_guide/celestian-insidiants-token-guide-card1-front.jpg": {
+          "path": "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card1-front.jpg",
+          "hash": "3a37a219ea36c79a1c0d5fb4fdcbcd98e503e6295f318e71276c404a3f801dc1",
+          "modified": "2026-08-29T18:42:00.066026+00:00"
+        },
+        "cards/token_guide/celestian-insidiants-token-guide-card2-back.jpg": {
+          "path": "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card2-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:42:00.069040+00:00"
+        },
+        "cards/token_guide/celestian-insidiants-token-guide-card2-front.jpg": {
+          "path": "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card2-front.jpg",
+          "hash": "495dfa1993ec4596c47642c38986ae9ac43dd8de37f1568d6f1e1fb54751fcbf",
+          "modified": "2026-08-29T18:42:00.074068+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-faith-&-fury-back.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-faith-&-fury-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-07-12T19:10:20.431365+00:00"
+        },
+        "cards/firefight_ploys/celestian-insidiants-faith-&-fury-front.jpg": {
+          "path": "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-faith-&-fury-front.jpg",
+          "hash": "5883a17f01abde15ac0cd23820eb676a98d6cc989cf8213af8ecc9d2bf60a6a1",
+          "modified": "2026-07-12T19:10:20.436538+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suffering-&-sacrifice-back.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suffering-&-sacrifice-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-07-12T19:10:20.545626+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suffering-&-sacrifice-front.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suffering-&-sacrifice-front.jpg",
+          "hash": "5c56ab4a5ced1a05cd7bf178422eb237cb292d46fb3640d28f2259552d09688f",
+          "modified": "2026-07-12T19:10:20.556928+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suspect-&-eliminate-back.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suspect-&-eliminate-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-07-12T19:10:20.584649+00:00"
+        },
+        "cards/strategy_ploys/celestian-insidiants-suspect-&-eliminate-front.jpg": {
+          "path": "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suspect-&-eliminate-front.jpg",
+          "hash": "5459fcda045c0dedc5d1ba430fb28a23c836ed24e19ef09494e5bfadd2b61185",
+          "modified": "2026-07-12T19:10:20.603411+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "488b3918a016ff17082c268041b17a43a5a9b346d7fe535d7613f56f53aa19e8",
+          "modified": "2026-08-29T18:41:48.756573+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "ce7ff23719e4d3fe66015846a1c55811df9693cde75b652cc33221b0e1dee491",
+          "modified": "2026-08-29T18:41:48.765640+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "e8de9d7b02d71e67dc8ffc5336c55105d724c963f24e86663df7414e57a23aac",
+          "modified": "2026-08-29T18:41:48.780573+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "66ede550fc8fc548f65b5e58f6db8990723ebbd1c436778bdf2db6a29e777aa3",
+          "modified": "2026-08-29T18:41:48.788092+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:48.797931+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "d229ce4f670dfa7f451952f127c48345a12ec9a90b426586caf948f376863000",
+          "modified": "2026-08-29T18:41:48.813464+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:48.824020+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "8a7d589be8ab63bbe7d8881b1ad2970bd7f9d65e170899a4f8644fe76f834b2d",
+          "modified": "2026-08-29T18:41:48.834623+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "57463724fc4c7122cd69211806d11f374faefc534810a79c43bb7977ed4a7886",
+          "modified": "2026-08-29T18:41:49.489109+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "4cec7d98a2b720f5be362d443a640276c1d9de059dd98ecd2cc27660cd4879d5",
+          "modified": "2026-08-29T18:41:50.143235+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "9a8795a9eff278717e62e627e4043b8b4b21643273146d0d912712dd17437eb1",
+          "modified": "2026-08-29T18:41:50.801025+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "11efc114cf58f3b5f0bc5757f04ef4655930067ba31b08f3306f12fd4ac1c260",
+          "modified": "2026-08-29T18:41:52.113719+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:52.438984+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "f21d65f4dd29aa75f5457ff475b970dfb07009fe7abb23651c4437ef2124fd46",
+          "modified": "2026-08-29T18:41:54.013185+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+          "modified": "2026-08-29T18:41:54.022217+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "f0037789e1c8efe6882724de1586b22b2307118ca95c6622b272d3ceee1831fd",
+          "modified": "2026-08-29T18:41:54.656336+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card1-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card1-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.716239+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card1-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card1-front.jpg",
+          "hash": "8131cc3d4e9d08e54a20e3c0955cdc42964f08983fd2aedfeabefcb0d2593297",
+          "modified": "2026-08-29T18:41:58.725298+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card10-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card10-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.732316+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card10-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card10-front.jpg",
+          "hash": "9b542d4b43946de67218761654778f23a2f2092b860e72abcc744594dbcfa9b0",
+          "modified": "2026-08-29T18:41:58.743272+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card11-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card11-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.749879+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card11-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card11-front.jpg",
+          "hash": "19afd115a08eefe266a2f545c04fe72b53c4c4fd5feb13af65b50670c8c447e5",
+          "modified": "2026-08-29T18:41:58.761975+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card12-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card12-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.770038+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card12-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card12-front.jpg",
+          "hash": "a97d93398caa477014d27b3a54ffa44eb0af6737deff9ae5c83522f21cc0ce8f",
+          "modified": "2026-08-29T18:41:58.778063+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card13-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card13-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.829634+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card13-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card13-front.jpg",
+          "hash": "e4e1985a394f7e7fbf18af5b73ea864a66dbfe997d5c2152371730c5737a1274",
+          "modified": "2026-08-29T18:41:58.843690+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card14-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card14-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.853236+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card14-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card14-front.jpg",
+          "hash": "638bb6aa403fc7e2b4d46fb2aef9fbb7bf6d0ead669edd50809addcb586b8177",
+          "modified": "2026-08-29T18:41:58.865949+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card15-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card15-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.873997+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card15-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card15-front.jpg",
+          "hash": "7725611ca3845fade8a7a574d9038a4035eaac2c68737eda11fb700233d4007b",
+          "modified": "2026-08-29T18:41:58.882736+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card16-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card16-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.891067+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card16-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card16-front.jpg",
+          "hash": "a409d59d4c078ea514273ee931ea950c90540c5faa2eb5c1b560de35297efd55",
+          "modified": "2026-08-29T18:41:58.902107+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card17-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card17-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.912142+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card17-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card17-front.jpg",
+          "hash": "9a6f3d42163a2f9c084990e752aa8ba8fcfde436d1ded3da8b0b5945aed7f00a",
+          "modified": "2026-08-29T18:41:58.921209+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card18-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card18-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.929258+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card18-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card18-front.jpg",
+          "hash": "a41d23a0928a5a1bc159268bb9da5a81fb12b054aa899ca4114b4cc1d8a2eeba",
+          "modified": "2026-08-29T18:41:58.940390+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card19-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card19-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.949921+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card19-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card19-front.jpg",
+          "hash": "1fd17b9ed6dfacec9759a712e3d13dbe28c95fe0bd7381826b55f8e9675c2741",
+          "modified": "2026-08-29T18:41:58.962465+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card2-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card2-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.972532+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card2-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card2-front.jpg",
+          "hash": "25c4624cc6d43393ef9faed1ab9ad583433eb208ecfbc4ffcae830e6cd501c0a",
+          "modified": "2026-08-29T18:41:58.982069+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card3-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card3-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:58.987659+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card3-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card3-front.jpg",
+          "hash": "4d3c1b99dd4f65f813dff6a24c77879be223ddac589dba300bd0317287910307",
+          "modified": "2026-08-29T18:41:58.998723+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card4-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card4-back.jpg",
+          "hash": "7c7f0c5ff7c100f0d813d86df23fe4545ef39fb11a2fa39735f31ce8e61b5858",
+          "modified": "2026-08-29T18:41:59.009770+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card4-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card4-front.jpg",
+          "hash": "59e0614271b0329c2f5e7e16a76b8008da95d5adc1f2ff9e47d53da3c383358a",
+          "modified": "2026-08-29T18:41:59.023350+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card5-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card5-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:59.032896+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card5-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card5-front.jpg",
+          "hash": "085af3a55bf5171865cb7edef54fe159ba0e5d74024b8eacd712f06654368ec2",
+          "modified": "2026-08-29T18:41:59.043967+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card6-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card6-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:59.049992+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card6-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card6-front.jpg",
+          "hash": "3a37a219ea36c79a1c0d5fb4fdcbcd98e503e6295f318e71276c404a3f801dc1",
+          "modified": "2026-08-29T18:41:59.165989+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card7-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card7-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:59.244174+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card7-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card7-front.jpg",
+          "hash": "a87a0101732ce0a173750dbf4588c09ba9ab2907df25bc88cfb15077536910af",
+          "modified": "2026-08-29T18:41:59.396088+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card8-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card8-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:59.486134+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card8-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card8-front.jpg",
+          "hash": "2cf8ee9bf84a526760e68cbf6a439c9e59a7d0d7dde25408956d9e44b84c2082",
+          "modified": "2026-08-29T18:41:59.734605+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card9-back.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card9-back.jpg",
+          "hash": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+          "modified": "2026-08-29T18:41:59.813133+00:00"
+        },
+        "cards/operatives_selection/celestian-insidiants-operative-selection-card9-front.jpg": {
+          "path": "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card9-front.jpg",
+          "hash": "8091350eb6dedc797abf7f5d2df12df71c078b0d95ee42643c46592e3f340dd3",
+          "modified": "2026-08-29T18:41:59.961406+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:21.743540+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/manifest.json": "1dc7d419c6e1d2cc8797aac5cfcb464e3cef8e2939d2a7d5788b5722685ab3b3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "f684b837b2abd811c7fa929b13368a12581610e8b4ac3596c86a3a0fd08b0975",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "d4539573c1afd4c67e7f45d18cc35f16a8aca6a197425225325e86020b14ca9e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "a7c227fd66692fc09fbf53f807ce70a05ade857ef96da201369c289c8dd14b9b",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "622f814731a01a6e3e2284656c5c6ee849053b42d854230938dffffbdd45aa92",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "11414a417d37c2b07e84236bd739ab5792c3c7a2a22da4978cafa570055276df",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "5f462ed449d66ff37f315fb3c549929ef2bad9da6054162b3bc120cb164ffe4f",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "65d78533f78b173ec4c1d8b7c37652786b255c0217af9a1c0616401ae22ad53c",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "17de3d5c18c6f7553ff22fd32e233514126bcdf66c51bf53a3fcc66f35851ac0",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-abjuror.pdf": "89a1de3c486cae7651038cc0840287bcf4ed4c28da0fef264c4f91a63065b098",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-censor.pdf": "858295fbc2c277d4cc1eea95c95c5e5c7da1937d005034da9b305232795be34a",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-cremator.pdf": "7f4c71f28595f67b041fc8cadbfdc69cee2e9e2742b49740709390b456063c3a",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-denuncia.pdf": "a022ede93498c8fba5aab0b55b431e22949ffd16518a9818a17d9f1c5f18f60d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-mortisanctus.pdf": "f3972551390dcefa9d41fb5a8097dbc225f0b8621f3fab704a29b938a94c7745",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-reliquarius.pdf": "a9de0459e2df26f878e017c29e11581e4b658e4c27463222721a718e1742e339",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-superior.pdf": "fa241a003d79ebad30f85310b649b8eae4e57cce4eaaf17b63f033730586ed9d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-warrior.pdf": "194241cc398680a08a1d2e3e7b9c66aeb70f720b48465257b2f92994d1931193",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-auto-flagellator.pdf": "ccaa3033d884a4d264a7f1820bba3aee4ce85a2d05e798fa4985dfe732a377b5",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-psyk-out-grenades.pdf": "e2f2d6024cd00036492b7a02c411333bb298112d02834874e713e7a57acc6fc3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-saintly-relics.pdf": "ea408ceff2cff001744dd1215a7d193f64b5b3bc5b33fdc21413ee86896b7bdf",
+        "layers/integration/celestian-insidiants/celestian-insidiants-equipment-vocifera-mortis.pdf": "c70ab313308bad72f359fcf23a8928ffc4b41cdcc599af36f868a5085ab77c09",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-benedictions.pdf": "06c543d51053fecc0bfc66f3ace52e16496d335a7c50c20257efb00d8597f2e8",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-inspiration.pdf": "8246d46b84705a910c697acd020b8163595a6e30493b500f7eeda0b9ff8abbcd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-martyrdom.pdf": "5eb3167c61f3ed7b88f3cb0b424fd9319d920ec91b8ac8d8e6daf3a8e1a0f418",
+        "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-weapons-of-the-witch-hunters.pdf": "0f7a6816bb592f937d2c113188973beccccdf0ecf823d7b1eed2fcc511020b49",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-faith-fury.pdf": "a35228c86bbde01c04369e69db079fb06bd035e08d933b05a4eb9d611546c6f4",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-fervent-hate.pdf": "959f2b7f4269eee256ce1b96fb4fa4ccf6dbcaeef77ee9ac66882c13da334bec",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-glory-to-the-martyrs.pdf": "ab6fda267bea41703b6416d51a97f567dbc7e7f33369e1528a5bcaaf6501fb58",
+        "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-unshakeable-pursuit.pdf": "1ff82a7df7d1a2f4eba8dab61c6a23bf36d85860722f76c99f2727b5edfa8266",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-1.pdf": "634ba4e3e0f3a3c0fd82eb53d318e1634f561c7a958d0184163d08976772cf62",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-10.pdf": "9f200a5b386f47bff0c9119b020bd2b552e69dca4b271c939cbd9b8b4adf6ed2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-11.pdf": "c9e3452d644f56f59ec8cd44272e2ee1327382b3671a903946b615ae5ff0334d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-12.pdf": "d325b3df937b56b6ac9d733ac7d759f8f2832c3ccd3d7af0698de12527e771fc",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-13.pdf": "a2a368559366d298eab5013c7ef7bc6fab08591c0daeb92113a6921aefbae9a9",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-14.pdf": "a764dfd4e1aeedd89c18d7fe79dab25cb21473b9a5f6d1eec3c51a87b08f2830",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-15.pdf": "13556f1791786a92dae83af69c940fa9d00062c8cf68cb533c5fcbf06b345273",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-16.pdf": "e66b1ed564ef18ba37ea8a1326ae91c3815c73c163b1337b260631c9e03d0bbd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-17.pdf": "fc78b7aa28223f57384b796562ba76d25daa7df02a10badefb8e7b98784cfc56",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-18.pdf": "07cf875372e729762f9e62777c1566f07bfa43179e4ce1b35fc6a2c15a417403",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-19.pdf": "0a2728d44b1e4757e120397a9b02a09ff950444415986949a99377b2d57d6bc2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-2.pdf": "e9971be424f2214ca502ebbce599a2d67210547c5ae864e13505b3caeb01a4cd",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-3.pdf": "fe2f58ed48995e04aef285667d7fba770f510399bef649a5e124f48b17aaaea2",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-4.pdf": "95bb2d70bc5477037c20b1dab0fc7fc81d29b423781f7eedddd5493b2265e522",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-5.pdf": "e3e1ffe704cc072084ff84b25f529a1da037892efd6bacca993f894a8a0afa01",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-6.pdf": "b81310001ea475c5cfdd02227497e2da4510c89f17acb32841dd526b5e3883c6",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-7.pdf": "2032b0823691dc363a3c2e7a255bd91f5c25cab40bade23c730722d14050d86f",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-8.pdf": "c9756a9f2c9f1932f3fa200e0694575b2a5d64ccdd662c3f5cc3479a3347ead7",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-9.pdf": "e097624e00a4bba29637da93ec948981295c36720043d1d3a0964ae79abf48a3",
+        "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection.pdf": "bb06a08aaa76387c93a23141d1a637fd7e1c5412337ae84fc6da2d10fb110e0d",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-holy-resilience.pdf": "1dcf7bf47fee57f41ec7393bb4e2bd88ec26e105bce496bd559edc3325af1ff5",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suffering-sacrifice.pdf": "88fa9be71766ec3c5629dbc25752d57919e4efaaf9981527787b5b7513c69e87",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suspect-eliminate.pdf": "40d3e319612ef40744b3615074e3ac2a207f4ca7554bc3cbc71508cc30578c3e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-wrathful-determination.pdf": "3012f783df550033b3a4591a6010cccdbfb84c1c08862ab4b16fac9ac6f7723e",
+        "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-1.pdf": "9a6194d9c7b27cb82b72afec68b65f9fcfa8ab7b6e3b1f28b666eb50f4747376",
+        "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-2.pdf": "c64ed39c804a8938a071f7cc5ca7af0a723fe659ffca648fe3b46694e19c3a78",
+        "layers/integration/celestian-insidiants/card-backside/celestian-insidiants-backside-portrait.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/celestian-insidiants/card-backside/celestian-insidiants-backside-landscape.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/celestian-insidiants/data/celestian-insidiants-team-data.json",
+          "hash": "a951df7d4788a3ce00bb3cf1ef8b21d3f1efa8dc7630c770e40ca3b73b234466",
+          "modified": "2026-08-29T18:42:26.344549+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:26.345548+00:00",
+      "inputs": {
+        "layers/integration/celestian-insidiants/content/celestian-insidiants-content.json": "a951df7d4788a3ce00bb3cf1ef8b21d3f1efa8dc7630c770e40ca3b73b234466"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Celestian Insidiants Box.json": {
+          "path": "output/celestian-insidiants/tts_objects/Celestian Insidiants Box.json",
+          "hash": "b27673099e5e3edf0ede0fe78d96a0735ca071592ee174386b1249c06fb02232",
+          "modified": "2026-07-21T11:11:11.227760+00:00"
+        },
+        "tts_objects/Celestian Insidiants.json": {
+          "path": "output/celestian-insidiants/tts_objects/Celestian Insidiants.json",
+          "hash": "4586e77e544f89a41080c77914b5176ec6f0cc8f479db8c5a32f225142988b03",
+          "modified": "2026-08-29T18:53:37.074026+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:37.169646+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "488b3918a016ff17082c268041b17a43a5a9b346d7fe535d7613f56f53aa19e8",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "ce7ff23719e4d3fe66015846a1c55811df9693cde75b652cc33221b0e1dee491",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "e8de9d7b02d71e67dc8ffc5336c55105d724c963f24e86663df7414e57a23aac",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "66ede550fc8fc548f65b5e58f6db8990723ebbd1c436778bdf2db6a29e777aa3",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "d229ce4f670dfa7f451952f127c48345a12ec9a90b426586caf948f376863000",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "8a7d589be8ab63bbe7d8881b1ad2970bd7f9d65e170899a4f8644fe76f834b2d",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "57463724fc4c7122cd69211806d11f374faefc534810a79c43bb7977ed4a7886",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "4cec7d98a2b720f5be362d443a640276c1d9de059dd98ecd2cc27660cd4879d5",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "9a8795a9eff278717e62e627e4043b8b4b21643273146d0d912712dd17437eb1",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "11efc114cf58f3b5f0bc5757f04ef4655930067ba31b08f3306f12fd4ac1c260",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "f21d65f4dd29aa75f5457ff475b970dfb07009fe7abb23651c4437ef2124fd46",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "f0037789e1c8efe6882724de1586b22b2307118ca95c6622b272d3ceee1831fd",
+        "output/celestian-insidiants/cards/datacards/insidiant-abjuror-back.jpg": "2b3669f6fa830faaaf23f604c38e5b1f0d123a34ab96022e88f7f3bb1f230cb7",
+        "output/celestian-insidiants/cards/datacards/insidiant-abjuror-front.jpg": "e6d7ad0828c1f1e79cc3ba1294462495e59f7bec9e2e745aae43905ea91e23b3",
+        "output/celestian-insidiants/cards/datacards/insidiant-censor-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/insidiant-censor-front.jpg": "5316a86bbc791616af89b603e4c0f233c9525d86bac94a743005e06839f169ec",
+        "output/celestian-insidiants/cards/datacards/insidiant-cremator-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/insidiant-cremator-front.jpg": "9c381ede7956226aa63455dc6eae2558ec8522d9ba3febce00421d63b06dab5e",
+        "output/celestian-insidiants/cards/datacards/insidiant-denuncia-back.jpg": "3ad2787dae2ed4b3dcff92eee4cca80b390af8953d75f4d0140f60bb1ca8c3e8",
+        "output/celestian-insidiants/cards/datacards/insidiant-denuncia-front.jpg": "955e2ff83450c23e5a217b0131fdd4d04fc0df9d9ed166b483ff3cd6f5922241",
+        "output/celestian-insidiants/cards/datacards/insidiant-mortisanctus-back.jpg": "47c32705a28550bcd204e480de1d2000086c65628d613ad7152fe12c8467e629",
+        "output/celestian-insidiants/cards/datacards/insidiant-mortisanctus-front.jpg": "530c59271987c8030752c7b94750085e7ec62b807e451091a9feddc8562e5dba",
+        "output/celestian-insidiants/cards/datacards/insidiant-reliquarius-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/insidiant-reliquarius-front.jpg": "3d6d9166b74c42c944eedf9d77d8df1924965434f6e371ff79ec9dbaca67b55c",
+        "output/celestian-insidiants/cards/datacards/insidiant-superior-back.jpg": "94f4c80cb1b313b1d7fb8521af7aee6c3ff5eaab72ff2836ed32e1b54ec635ac",
+        "output/celestian-insidiants/cards/datacards/insidiant-superior-front.jpg": "b03774b79096165edd6c71821d7faf26538758635a99dc724cb1205c2a82a4f9",
+        "output/celestian-insidiants/cards/datacards/insidiant-warrior-back.jpg": "bc86c3699c4670a3ce4e3c3c2f85d5b5b52a8c54104d2d6cbeca5e570b00f47a",
+        "output/celestian-insidiants/cards/datacards/insidiant-warrior-front.jpg": "140919856b859bd029c6058fdbace88635a7ea7ff25c2bccc8b109eff0d719df",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-auto-flagellator-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-auto-flagellator-front.jpg": "ecad12eaa73590a311877fd4e7fbf40874cbbe645695100ab3ea5569cb5b0902",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-psyk-out-grenades-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-psyk-out-grenades-front.jpg": "f752b496993093e339ac0bf70f927c71d99d5a058d0df5b41e5bc55f48739fd4",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-saintly-relics-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-saintly-relics-front.jpg": "a4aa9fcb8418ee7fd7470a8a37a89922b0be1ae18192f274bd3ddc004d70024c",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-vocifera-mortis-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/equipment/celestian-insidiants-vocifera-mortis-front.jpg": "811b80cd61c5be8ad9e22158fd0cdcdf7e8ce68f04b5eb3550d7f00cd8f1e8ec",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-benedictions-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-benedictions-front.jpg": "027c58680395301c877046be8ff79e28ef715fed4885fedad0118e3d935970a9",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-inspiration-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-inspiration-front.jpg": "10ccfb10a3f6f975928b618687658aaf26b65edc972923b7cc0815bb4f3f60c6",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-martyrdom-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-martyrdom-front.jpg": "fa6a2e78f64a1f0408457665e5b29cc2a356ce2a4140c453eac032ce9ea4c36a",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-weapons-of-the-witch-hunters-back.jpg": "7c7f0c5ff7c100f0d813d86df23fe4545ef39fb11a2fa39735f31ce8e61b5858",
+        "output/celestian-insidiants/cards/faction_rules/celestian-insidiants-weapons-of-the-witch-hunters-front.jpg": "577672537f4388298ce642cd3e63efdfbe763e06b18cfd777c870b500606510b",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-faith-fury-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-faith-fury-front.jpg": "599a5c2a72e65556663597ddb1a2b6874e5f07fc73695f11fe9c6daa9ce30e0a",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-fervent-hate-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-fervent-hate-front.jpg": "f653bbc43bb899dd41ba3e8b6bbe57f4c7b36a99057fdd95763c0eac9e8b0c50",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-glory-to-the-martyrs-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-glory-to-the-martyrs-front.jpg": "fdf9ef1ecdf7a34ff53d56e5d39c1e2eee88bf5f958a50113338848c48b8a0b1",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-unshakeable-pursuit-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/firefight_ploys/celestian-insidiants-unshakeable-pursuit-front.jpg": "8c0429b88f2b93918c32b7fd49226775fc48106132ff18eaf9d2109c7e41677b",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card1-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card1-front.jpg": "8131cc3d4e9d08e54a20e3c0955cdc42964f08983fd2aedfeabefcb0d2593297",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card10-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card10-front.jpg": "9b542d4b43946de67218761654778f23a2f2092b860e72abcc744594dbcfa9b0",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card11-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card11-front.jpg": "19afd115a08eefe266a2f545c04fe72b53c4c4fd5feb13af65b50670c8c447e5",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card12-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card12-front.jpg": "a97d93398caa477014d27b3a54ffa44eb0af6737deff9ae5c83522f21cc0ce8f",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card13-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card13-front.jpg": "e4e1985a394f7e7fbf18af5b73ea864a66dbfe997d5c2152371730c5737a1274",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card14-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card14-front.jpg": "638bb6aa403fc7e2b4d46fb2aef9fbb7bf6d0ead669edd50809addcb586b8177",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card15-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card15-front.jpg": "7725611ca3845fade8a7a574d9038a4035eaac2c68737eda11fb700233d4007b",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card16-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card16-front.jpg": "a409d59d4c078ea514273ee931ea950c90540c5faa2eb5c1b560de35297efd55",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card17-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card17-front.jpg": "9a6f3d42163a2f9c084990e752aa8ba8fcfde436d1ded3da8b0b5945aed7f00a",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card18-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card18-front.jpg": "a41d23a0928a5a1bc159268bb9da5a81fb12b054aa899ca4114b4cc1d8a2eeba",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card19-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card19-front.jpg": "1fd17b9ed6dfacec9759a712e3d13dbe28c95fe0bd7381826b55f8e9675c2741",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card2-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card2-front.jpg": "25c4624cc6d43393ef9faed1ab9ad583433eb208ecfbc4ffcae830e6cd501c0a",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card3-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card3-front.jpg": "4d3c1b99dd4f65f813dff6a24c77879be223ddac589dba300bd0317287910307",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card4-back.jpg": "7c7f0c5ff7c100f0d813d86df23fe4545ef39fb11a2fa39735f31ce8e61b5858",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card4-front.jpg": "59e0614271b0329c2f5e7e16a76b8008da95d5adc1f2ff9e47d53da3c383358a",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card5-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card5-front.jpg": "085af3a55bf5171865cb7edef54fe159ba0e5d74024b8eacd712f06654368ec2",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card6-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card6-front.jpg": "3a37a219ea36c79a1c0d5fb4fdcbcd98e503e6295f318e71276c404a3f801dc1",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card7-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card7-front.jpg": "a87a0101732ce0a173750dbf4588c09ba9ab2907df25bc88cfb15077536910af",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card8-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card8-front.jpg": "2cf8ee9bf84a526760e68cbf6a439c9e59a7d0d7dde25408956d9e44b84c2082",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card9-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-card9-front.jpg": "8091350eb6dedc797abf7f5d2df12df71c078b0d95ee42643c46592e3f340dd3",
+        "output/celestian-insidiants/cards/operatives_selection/celestian-insidiants-operative-selection-front.jpg": "458a1aed53d2b5e290b60beb914ddd3ff63ebf1948855cb08fa8350bb730a39e",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-holy-resilience-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-holy-resilience-front.jpg": "f57d157e4425653c83621f21be0e8d5b66c99130ba1e7112c73708abe4b1299e",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suffering-sacrifice-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suffering-sacrifice-front.jpg": "3d748649e5ee1681f2a15609fe43b9056f03b33c299909477fadde32f4d8aff6",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suspect-eliminate-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-suspect-eliminate-front.jpg": "6d9137f7b5040fada6589b192af180472d5fcfb22797ba5114782b9c2eba5792",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-wrathful-determination-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/strategy_ploys/celestian-insidiants-wrathful-determination-front.jpg": "ae65ad48481780a7c8cd5b795c70f1977ca938caca2e1b4784de92a7a4647d8c",
+        "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card1-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card1-front.jpg": "3a37a219ea36c79a1c0d5fb4fdcbcd98e503e6295f318e71276c404a3f801dc1",
+        "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card2-back.jpg": "14079fc9f4df7f31283dcbb0c864d35fc702b27e382c4c823467dcb835846b92",
+        "output/celestian-insidiants/cards/token_guide/celestian-insidiants-token-guide-card2-front.jpg": "495dfa1993ec4596c47642c38986ae9ac43dd8de37f1568d6f1e1fb54751fcbf",
+        "output/celestian-insidiants/cardbox/celestian-insidiants-card-box-texture.jpg": "97ca6139640d1d55c077889468d181849fed0a0d8d1ee887681a728a3c42584b",
+        "output/celestian-insidiants/cardbox/celestian-insidiants-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/celestian-insidiants/tokens/celestian-insidiants-ardour-benediction.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-ardour-benediction.png": "5e6141bbf7cd057c5c243072a12c2ed5fa8e6999071a9b387d9e3c34e623dbf3",
+        "output/celestian-insidiants/tokens/celestian-insidiants-holy-defender.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-holy-defender.png": "8784a13f7551b88dab0910a71b1842a40b54ab860af107e79059c923ca4b258c",
+        "output/celestian-insidiants/tokens/celestian-insidiants-holy-example.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-holy-example.png": "baddd4bc403414ce7b19aef05741c49c194459371714b127f67777aa3f4a33cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-inspirational-pyre.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-inspirational-pyre.png": "a38d2d7ff7b3e0647755514195ca0d49fca71eba58c8498f5beb89586d23ddd5",
+        "output/celestian-insidiants/tokens/celestian-insidiants-inspiring.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-inspiring.png": "42f935b40665f26d0fa36ca59c48bb8f45a95c28e67d928b84ad6d4979317951",
+        "output/celestian-insidiants/tokens/celestian-insidiants-nullification.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-nullification.png": "4bbce6cc3a2bba31e804fcdd716f8851f052f442f31605ebc7a06dca1a130ebe",
+        "output/celestian-insidiants/tokens/celestian-insidiants-psyk-out-grenades.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-psyk-out-grenades.png": "1d1043d9af49cd1cea017f20974286eb2b318301d508202979256975d39ae36e",
+        "output/celestian-insidiants/tokens/celestian-insidiants-saintly-relics.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-saintly-relics.png": "368c0612c13bae4093c1c9e5740e0fed96845f4adf5fb8e91d4fdc1f90cca9b1",
+        "output/celestian-insidiants/tokens/celestian-insidiants-suspicion.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-suspicion.png": "c130db76d32dc469efaa8b6e4f8880fd42a9d63bc9717d3510874a43b35f6df5",
+        "output/celestian-insidiants/tokens/celestian-insidiants-vocifera-mortis.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-vocifera-mortis.png": "8249461b83411f199f399476deac3eddf2976600d765bb4135470f5fc669ce85",
+        "output/celestian-insidiants/tokens/celestian-insidiants-wrath-benediction.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-wrath-benediction.png": "4fd5d065f734328ef56f90086bee8060c8027adf3211b92d0b0be50b8a17804c",
+        "output/celestian-insidiants/tokens/celestian-insidiants-zealous-ultimatum.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/celestian-insidiants/tokens/celestian-insidiants-zealous-ultimatum.png": "b71c7c100e1a42204edaeef2bcfc1069841f6f0ee06694999f6d620f81ca710e",
+        "output/celestian-insidiants/tokens/tokenbag/celestian-insidiants-token-bag-icon.png": "044032de32f4f7403dea224fb6f4d9a79c94f689c7eed752e06093633c25d164",
+        "output/celestian-insidiants/tokens/tokenbag/celestian-insidiants-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/celestian-insidiants/dice/celestian-insidiants-dice-dark.jpg": "b2d5afe73e2eb8ad602b11a0329b7ebf2e0ff0db4fdcfb8e91b8b9745cadbe0c",
+        "output/celestian-insidiants/dice/celestian-insidiants-dice-light.jpg": "38acfcee31413fa354f159136e39a5af333fd19491ec8f4a9efdc60eb1e5ac7d",
+        "output/celestian-insidiants/dice/celestian-insidiants-dice-team.jpg": "1bf3d1b300033f21d1b9385f4c8e55344f90890db9d688db9842164a524fbbd2",
+        "output/celestian-insidiants/data/celestian-insidiants-team-data.json": "a951df7d4788a3ce00bb3cf1ef8b21d3f1efa8dc7630c770e40ca3b73b234466",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "faction-rules": {
+          "hash": "5aa0565fbb576f37cfdcc90116c979311f046ba0bb1591e4752f91cecfb0d6b4",
+          "outputs": [
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_3.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_4.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_5.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/faction-rules/celestian-insidiants-faction-rules-page_6.pdf"
+          ],
+          "modified": "2026-07-06T16:00:07.006989+00:00"
+        },
+        "operatives-selection": {
+          "hash": "e0fed5feb975610e762d8e5c4ce10ee9dec240ad9f0b8790683649035d7859b5",
+          "outputs": [
+            "layers/kt-app/extracted/celestian-insidiants/cards/operatives-selection/celestian-insidiants-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:00:14.217414+00:00"
+        },
+        "equipment": {
+          "hash": "4f6edf0a56bef045441b3b7bdd3a8bb00663b5343406c72c9fa748c761636bd3",
+          "outputs": [
+            "layers/kt-app/extracted/celestian-insidiants/cards/equipment/celestian-insidiants-equipment-page_0.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/equipment/celestian-insidiants-equipment-page_1.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/equipment/celestian-insidiants-equipment-page_2.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/equipment/celestian-insidiants-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:32.295955+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "290296aa8cff083b80326e9dbd61b8470a868dfa133622d7e608d1339e6e9cbb",
+          "outputs": [
+            "layers/kt-app/extracted/celestian-insidiants/cards/strategy-ploys/celestian-insidiants-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/strategy-ploys/celestian-insidiants-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/strategy-ploys/celestian-insidiants-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/strategy-ploys/celestian-insidiants-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:06:07.312792+00:00"
+        },
+        "datacards": {
+          "hash": "494a91dd54c368a4c5e137a6d1f005d5b9b83668717da33405af95718e66e4b6",
+          "outputs": [
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_0.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_1.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_2.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_3.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_4.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_5.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_6.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_7.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_8.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_9.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_10.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/datacards/celestian-insidiants-datacards-page_11.pdf"
+          ],
+          "modified": "2026-07-06T16:08:46.722393+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "59d7a17c97f5bcd7769497032e63b43335e33e869b295281e81501631581cee3",
+          "outputs": [
+            "layers/kt-app/extracted/celestian-insidiants/cards/firefight-ploys/celestian-insidiants-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/firefight-ploys/celestian-insidiants-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/firefight-ploys/celestian-insidiants-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/celestian-insidiants/cards/firefight-ploys/celestian-insidiants-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:09:01.639682+00:00"
+        },
+        "cards": {
+          "hash": "7c3e1d2908eac6f7d509e4ecdfef1c6238b4d659bb2b19d21695ddd1259bb661",
+          "outputs": [
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:26:32.346740+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:26:32.346740+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/celestian-insidiants-structure.json",
+          "hash": "1dc7d419c6e1d2cc8797aac5cfcb464e3cef8e2939d2a7d5788b5722685ab3b3",
+          "modified": "2026-08-29T18:40:41.512397+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card1_landscape.pdf": "e1320a8c2550b543e73dd4b3a2c088fa3619bba87af930af885232d13caab170",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card2_landscape.pdf": "eddabae72907c74a81cebbdc733e3df143aa7abb91710580cebed59d1778d5be",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card3_landscape.pdf": "a208dd0bfefb0a5a54fce1e8175a76510955f74a06417bbfc663aee0007af75c",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card4_landscape.pdf": "3c79118328161e13d6cba53e46896d40d4b5ec04edf4df9a7387a41e99702af5",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card1_landscape.pdf": "7d108780d474e219c76b650eccbd06bf75a7d293016bed855c116d5478ea1add",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card2_landscape.pdf": "64ea5d72ad771f19affa7956b5ba509e1ca35cb36105245ce06c9846404420b4",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card3_landscape.pdf": "2da53377af539946a6bb87d89e53125a9f0c77a65d6b18be6a5b50707586f9d3",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card4_landscape.pdf": "93657818f477eacba629bae1f093ad8c513cc985eca900f2984523d186843367",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card1_landscape.pdf": "e5e27627f54e5855cd92ce42376afc20c32ce7fd5887242d4cb78a3890c7e464",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card2_landscape.pdf": "4c51e60e1750c879120c5b44119146f34a82c53b89d8208725b81ad43423b9d9",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card3_landscape.pdf": "b89c4fc6f0b058f7188b21bbe6166effd94fafce9cf6aecb17facd33e6585e73",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card4_landscape.pdf": "b57895b8ee97fc0da619549da86b6065ea50a69044dc857e63002174e8ab5b90",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card1_portrait.pdf": "647853bf5d026a0115a5581ab9f2ada428c5285e1c0cba1b8ed9c68f745233e3",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card2_portrait.pdf": "b470cbea157171eaec8b614e05858e3b4ecea66f35b7ae14c48c0fcd74f9e841",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card3_portrait.pdf": "8b0671f4da61e59c596b11a14064bc791ed5561c5e88f8713551621a7d250177",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card4_portrait.pdf": "75557019fae1ade93846e80ac26d63db2a9ddb6ee37d969e6730b8d551d94a14",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card1_portrait.pdf": "3e86b39b46dc1e5fe69ed523cfc80fdc3715ae72db06b08c9d2bc6ae1947f420",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card2_portrait.pdf": "75040c5c7d55ed7e0d529f28619c461812db67ae4ea85515288866855c371159",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card3_portrait.pdf": "9e95672a18d02e4b3cfcd999002c2c368cc229c18088f4b7054996ee9788efd6",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card4_portrait.pdf": "79ff9c70490ab648dcd5fd47d3e0f3ddcace5e700826266d3c498b493a3e7c4e",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card1_portrait.pdf": "8ccc9cf9305abbd366cb4f9e9b037edbe115b5d74ca54f6edc8d6d7cdea62375",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card2_portrait.pdf": "65efef1206b2c9cf54fd545559f3aa61ebf607a88bb0983ced4a0e3ba782cc6b",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card3_portrait.pdf": "8e202db1c84a06912ce61848b262e14098acf20f1f325c6e2eb1c2baf476d0be",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card4_portrait.pdf": "ac1f944a8144f4bde6d6fff234454f4fa9eafec8eaeb4b9fe175d368a8ab9a52",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card1_portrait.pdf": "3782c3009b9ce9f98161476dcda95a5fe7309061b221e7fd4ebbfa3c186eb75a",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card2_portrait.pdf": "0e39b91bb01905e4f7d27027c80d73b73c493d84b73a73367d8aafe4fa8dfdd6",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card3_portrait.pdf": "697efb03355f5274791c30f43c9eccf8b01747f41e0755661fbc729139bbc5ab",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card4_portrait.pdf": "6747b645dad340d9c0c58f291de895337ad385f33f9a0f06674cb0c745bd3720",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card1_portrait.pdf": "f26929fbdfeda99d10f8470e429a8b6727ecb2fb3fbefdcf685ac5f07082cfa2",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card2_portrait.pdf": "8e8256f38a64ee8d3cc1626a84fadba4f536b7276f114e17746d280641c58b3a",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card3_portrait.pdf": "897853e510ff31a76ea154076264514a851c25edb80bb8851ef1c620b3bcf243",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card4_portrait.pdf": "3b0f7d4c039fb030ab11e4edb6c337ee80e500752e834324e714a43085680cd6"
+      },
+      "completed": "2026-08-29T18:40:55.502035+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/celestian-insidiants/manifest.json",
+          "hash": "1dc7d419c6e1d2cc8797aac5cfcb464e3cef8e2939d2a7d5788b5722685ab3b3",
+          "modified": "2026-08-29T18:41:06.147684+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-superior.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-superior.pdf",
+          "hash": "fa241a003d79ebad30f85310b649b8eae4e57cce4eaaf17b63f033730586ed9d",
+          "modified": "2026-08-26T15:17:53.323986+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-abjuror.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-abjuror.pdf",
+          "hash": "89a1de3c486cae7651038cc0840287bcf4ed4c28da0fef264c4f91a63065b098",
+          "modified": "2026-08-26T15:17:53.325940+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-censor.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-censor.pdf",
+          "hash": "858295fbc2c277d4cc1eea95c95c5e5c7da1937d005034da9b305232795be34a",
+          "modified": "2026-08-26T15:17:53.327627+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-cremator.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-cremator.pdf",
+          "hash": "7f4c71f28595f67b041fc8cadbfdc69cee2e9e2742b49740709390b456063c3a",
+          "modified": "2026-08-26T15:17:53.343029+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-denuncia.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-denuncia.pdf",
+          "hash": "a022ede93498c8fba5aab0b55b431e22949ffd16518a9818a17d9f1c5f18f60d",
+          "modified": "2026-08-26T15:17:53.345075+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-mortisanctus.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-mortisanctus.pdf",
+          "hash": "f3972551390dcefa9d41fb5a8097dbc225f0b8621f3fab704a29b938a94c7745",
+          "modified": "2026-08-26T15:17:53.348162+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-reliquarius.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-reliquarius.pdf",
+          "hash": "a9de0459e2df26f878e017c29e11581e4b658e4c27463222721a718e1742e339",
+          "modified": "2026-08-26T15:17:53.356520+00:00"
+        },
+        "celestian-insidiants-datacard-insidiant-warrior.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-insidiant-warrior.pdf",
+          "hash": "194241cc398680a08a1d2e3e7b9c66aeb70f720b48465257b2f92994d1931193",
+          "modified": "2026-08-26T15:17:53.362419+00:00"
+        },
+        "celestian-insidiants-equipment-psyk-out-grenades.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-equipment-psyk-out-grenades.pdf",
+          "hash": "e2f2d6024cd00036492b7a02c411333bb298112d02834874e713e7a57acc6fc3",
+          "modified": "2026-08-26T15:17:53.381654+00:00"
+        },
+        "celestian-insidiants-equipment-vocifera-mortis.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-equipment-vocifera-mortis.pdf",
+          "hash": "c70ab313308bad72f359fcf23a8928ffc4b41cdcc599af36f868a5085ab77c09",
+          "modified": "2026-08-26T15:17:53.399882+00:00"
+        },
+        "celestian-insidiants-equipment-saintly-relics.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-equipment-saintly-relics.pdf",
+          "hash": "ea408ceff2cff001744dd1215a7d193f64b5b3bc5b33fdc21413ee86896b7bdf",
+          "modified": "2026-08-26T15:17:53.414061+00:00"
+        },
+        "celestian-insidiants-equipment-auto-flagellator.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-equipment-auto-flagellator.pdf",
+          "hash": "ccaa3033d884a4d264a7f1820bba3aee4ce85a2d05e798fa4985dfe732a377b5",
+          "modified": "2026-08-26T15:17:53.427343+00:00"
+        },
+        "celestian-insidiants-faction-rule-martyrdom.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-martyrdom.pdf",
+          "hash": "5eb3167c61f3ed7b88f3cb0b424fd9319d920ec91b8ac8d8e6daf3a8e1a0f418",
+          "modified": "2026-08-26T15:17:53.429265+00:00"
+        },
+        "celestian-insidiants-faction-rule-benedictions.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-benedictions.pdf",
+          "hash": "06c543d51053fecc0bfc66f3ace52e16496d335a7c50c20257efb00d8597f2e8",
+          "modified": "2026-08-26T15:17:53.431060+00:00"
+        },
+        "celestian-insidiants-faction-rule-weapons-of-the-witch-hunters.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-weapons-of-the-witch-hunters.pdf",
+          "hash": "0f7a6816bb592f937d2c113188973beccccdf0ecf823d7b1eed2fcc511020b49",
+          "modified": "2026-08-26T15:17:53.437870+00:00"
+        },
+        "celestian-insidiants-faction-rule-inspiration.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-faction-rule-inspiration.pdf",
+          "hash": "8246d46b84705a910c697acd020b8163595a6e30493b500f7eeda0b9ff8abbcd",
+          "modified": "2026-08-26T15:17:53.444326+00:00"
+        },
+        "celestian-insidiants-token-guide-token-guide-1.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-1.pdf",
+          "hash": "9a6194d9c7b27cb82b72afec68b65f9fcfa8ab7b6e3b1f28b666eb50f4747376",
+          "modified": "2026-08-26T15:17:53.453444+00:00"
+        },
+        "celestian-insidiants-token-guide-token-guide-2.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-token-guide-token-guide-2.pdf",
+          "hash": "c64ed39c804a8938a071f7cc5ca7af0a723fe659ffca648fe3b46694e19c3a78",
+          "modified": "2026-08-26T15:17:53.457387+00:00"
+        },
+        "celestian-insidiants-firefight-ploy-glory-to-the-martyrs.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-glory-to-the-martyrs.pdf",
+          "hash": "ab6fda267bea41703b6416d51a97f567dbc7e7f33369e1528a5bcaaf6501fb58",
+          "modified": "2026-08-26T15:17:53.463024+00:00"
+        },
+        "celestian-insidiants-firefight-ploy-faith-fury.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-faith-fury.pdf",
+          "hash": "a35228c86bbde01c04369e69db079fb06bd035e08d933b05a4eb9d611546c6f4",
+          "modified": "2026-08-26T15:17:53.467061+00:00"
+        },
+        "celestian-insidiants-firefight-ploy-unshakeable-pursuit.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-unshakeable-pursuit.pdf",
+          "hash": "1ff82a7df7d1a2f4eba8dab61c6a23bf36d85860722f76c99f2727b5edfa8266",
+          "modified": "2026-08-26T15:17:53.477223+00:00"
+        },
+        "celestian-insidiants-firefight-ploy-fervent-hate.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-firefight-ploy-fervent-hate.pdf",
+          "hash": "959f2b7f4269eee256ce1b96fb4fa4ccf6dbcaeef77ee9ac66882c13da334bec",
+          "modified": "2026-08-26T15:17:53.479896+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection.pdf",
+          "hash": "bb06a08aaa76387c93a23141d1a637fd7e1c5412337ae84fc6da2d10fb110e0d",
+          "modified": "2026-08-26T15:17:53.482820+00:00"
+        },
+        "celestian-insidiants-strategy-ploy-suspect-eliminate.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suspect-eliminate.pdf",
+          "hash": "40d3e319612ef40744b3615074e3ac2a207f4ca7554bc3cbc71508cc30578c3e",
+          "modified": "2026-08-26T15:17:53.489902+00:00"
+        },
+        "celestian-insidiants-strategy-ploy-wrathful-determination.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-wrathful-determination.pdf",
+          "hash": "3012f783df550033b3a4591a6010cccdbfb84c1c08862ab4b16fac9ac6f7723e",
+          "modified": "2026-08-26T15:17:53.516253+00:00"
+        },
+        "celestian-insidiants-strategy-ploy-suffering-sacrifice.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-suffering-sacrifice.pdf",
+          "hash": "88fa9be71766ec3c5629dbc25752d57919e4efaaf9981527787b5b7513c69e87",
+          "modified": "2026-08-26T15:17:53.531704+00:00"
+        },
+        "celestian-insidiants-strategy-ploy-holy-resilience.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-strategy-ploy-holy-resilience.pdf",
+          "hash": "1dcf7bf47fee57f41ec7393bb4e2bd88ec26e105bce496bd559edc3325af1ff5",
+          "modified": "2026-08-26T15:17:53.540570+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "f684b837b2abd811c7fa929b13368a12581610e8b4ac3596c86a3a0fd08b0975",
+          "modified": "2026-08-29T18:41:06.168092+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "d4539573c1afd4c67e7f45d18cc35f16a8aca6a197425225325e86020b14ca9e",
+          "modified": "2026-08-29T18:41:06.213033+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "a7c227fd66692fc09fbf53f807ce70a05ade857ef96da201369c289c8dd14b9b",
+          "modified": "2026-08-29T18:41:06.227797+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "622f814731a01a6e3e2284656c5c6ee849053b42d854230938dffffbdd45aa92",
+          "modified": "2026-08-29T18:41:06.247427+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "11414a417d37c2b07e84236bd739ab5792c3c7a2a22da4978cafa570055276df",
+          "modified": "2026-08-29T18:41:06.296587+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "5f462ed449d66ff37f315fb3c549929ef2bad9da6054162b3bc120cb164ffe4f",
+          "modified": "2026-08-29T18:41:07.902683+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "65d78533f78b173ec4c1d8b7c37652786b255c0217af9a1c0616401ae22ad53c",
+          "modified": "2026-08-29T18:41:08.599154+00:00"
+        },
+        "celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "17de3d5c18c6f7553ff22fd32e233514126bcdf66c51bf53a3fcc66f35851ac0",
+          "modified": "2026-08-29T18:41:08.614041+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-1.pdf",
+          "hash": "634ba4e3e0f3a3c0fd82eb53d318e1634f561c7a958d0184163d08976772cf62",
+          "modified": "2026-08-29T18:41:08.628192+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-2.pdf",
+          "hash": "e9971be424f2214ca502ebbce599a2d67210547c5ae864e13505b3caeb01a4cd",
+          "modified": "2026-08-29T18:41:08.646338+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-3.pdf",
+          "hash": "fe2f58ed48995e04aef285667d7fba770f510399bef649a5e124f48b17aaaea2",
+          "modified": "2026-08-29T18:41:08.664053+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-4.pdf",
+          "hash": "95bb2d70bc5477037c20b1dab0fc7fc81d29b423781f7eedddd5493b2265e522",
+          "modified": "2026-08-29T18:41:08.692416+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-5.pdf",
+          "hash": "e3e1ffe704cc072084ff84b25f529a1da037892efd6bacca993f894a8a0afa01",
+          "modified": "2026-08-29T18:41:08.710175+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-6.pdf",
+          "hash": "b81310001ea475c5cfdd02227497e2da4510c89f17acb32841dd526b5e3883c6",
+          "modified": "2026-08-29T18:41:08.727797+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-7.pdf",
+          "hash": "2032b0823691dc363a3c2e7a255bd91f5c25cab40bade23c730722d14050d86f",
+          "modified": "2026-08-29T18:41:08.744826+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-8.pdf",
+          "hash": "c9756a9f2c9f1932f3fa200e0694575b2a5d64ccdd662c3f5cc3479a3347ead7",
+          "modified": "2026-08-29T18:41:08.760901+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-9.pdf",
+          "hash": "e097624e00a4bba29637da93ec948981295c36720043d1d3a0964ae79abf48a3",
+          "modified": "2026-08-29T18:41:08.771454+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-10.pdf",
+          "hash": "9f200a5b386f47bff0c9119b020bd2b552e69dca4b271c939cbd9b8b4adf6ed2",
+          "modified": "2026-08-29T18:41:08.788913+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-11.pdf",
+          "hash": "c9e3452d644f56f59ec8cd44272e2ee1327382b3671a903946b615ae5ff0334d",
+          "modified": "2026-08-29T18:41:08.808960+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-12.pdf",
+          "hash": "d325b3df937b56b6ac9d733ac7d759f8f2832c3ccd3d7af0698de12527e771fc",
+          "modified": "2026-08-29T18:41:08.830649+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-13.pdf",
+          "hash": "a2a368559366d298eab5013c7ef7bc6fab08591c0daeb92113a6921aefbae9a9",
+          "modified": "2026-08-29T18:41:08.880735+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-14.pdf",
+          "hash": "a764dfd4e1aeedd89c18d7fe79dab25cb21473b9a5f6d1eec3c51a87b08f2830",
+          "modified": "2026-08-29T18:41:08.930405+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-15.pdf",
+          "hash": "13556f1791786a92dae83af69c940fa9d00062c8cf68cb533c5fcbf06b345273",
+          "modified": "2026-08-29T18:41:08.945592+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-16.pdf",
+          "hash": "e66b1ed564ef18ba37ea8a1326ae91c3815c73c163b1337b260631c9e03d0bbd",
+          "modified": "2026-08-29T18:41:08.963654+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-17.pdf",
+          "hash": "fc78b7aa28223f57384b796562ba76d25daa7df02a10badefb8e7b98784cfc56",
+          "modified": "2026-08-29T18:41:08.975870+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-18.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-18.pdf",
+          "hash": "07cf875372e729762f9e62777c1566f07bfa43179e4ce1b35fc6a2c15a417403",
+          "modified": "2026-08-29T18:41:09.032569+00:00"
+        },
+        "celestian-insidiants-operatives-selection-operative-selection-19.pdf": {
+          "path": "layers/integration/celestian-insidiants/celestian-insidiants-operatives-selection-operative-selection-19.pdf",
+          "hash": "0a2728d44b1e4757e120397a9b02a09ff950444415986949a99377b2d57d6bc2",
+          "modified": "2026-08-29T18:41:09.082818+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/celestian-insidiants-structure.json": "1dc7d419c6e1d2cc8797aac5cfcb464e3cef8e2939d2a7d5788b5722685ab3b3",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card1_landscape.pdf": "e1320a8c2550b543e73dd4b3a2c088fa3619bba87af930af885232d13caab170",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card2_landscape.pdf": "eddabae72907c74a81cebbdc733e3df143aa7abb91710580cebed59d1778d5be",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card3_landscape.pdf": "a208dd0bfefb0a5a54fce1e8175a76510955f74a06417bbfc663aee0007af75c",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page01_card4_landscape.pdf": "3c79118328161e13d6cba53e46896d40d4b5ec04edf4df9a7387a41e99702af5",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card1_landscape.pdf": "7d108780d474e219c76b650eccbd06bf75a7d293016bed855c116d5478ea1add",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card2_landscape.pdf": "64ea5d72ad771f19affa7956b5ba509e1ca35cb36105245ce06c9846404420b4",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card3_landscape.pdf": "2da53377af539946a6bb87d89e53125a9f0c77a65d6b18be6a5b50707586f9d3",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page02_card4_landscape.pdf": "93657818f477eacba629bae1f093ad8c513cc985eca900f2984523d186843367",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card1_landscape.pdf": "e5e27627f54e5855cd92ce42376afc20c32ce7fd5887242d4cb78a3890c7e464",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card2_landscape.pdf": "4c51e60e1750c879120c5b44119146f34a82c53b89d8208725b81ad43423b9d9",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card3_landscape.pdf": "b89c4fc6f0b058f7188b21bbe6166effd94fafce9cf6aecb17facd33e6585e73",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page03_card4_landscape.pdf": "b57895b8ee97fc0da619549da86b6065ea50a69044dc857e63002174e8ab5b90",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card1_portrait.pdf": "647853bf5d026a0115a5581ab9f2ada428c5285e1c0cba1b8ed9c68f745233e3",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card2_portrait.pdf": "b470cbea157171eaec8b614e05858e3b4ecea66f35b7ae14c48c0fcd74f9e841",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card3_portrait.pdf": "8b0671f4da61e59c596b11a14064bc791ed5561c5e88f8713551621a7d250177",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page04_card4_portrait.pdf": "75557019fae1ade93846e80ac26d63db2a9ddb6ee37d969e6730b8d551d94a14",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card1_portrait.pdf": "3e86b39b46dc1e5fe69ed523cfc80fdc3715ae72db06b08c9d2bc6ae1947f420",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card2_portrait.pdf": "75040c5c7d55ed7e0d529f28619c461812db67ae4ea85515288866855c371159",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card3_portrait.pdf": "9e95672a18d02e4b3cfcd999002c2c368cc229c18088f4b7054996ee9788efd6",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page05_card4_portrait.pdf": "79ff9c70490ab648dcd5fd47d3e0f3ddcace5e700826266d3c498b493a3e7c4e",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card1_portrait.pdf": "8ccc9cf9305abbd366cb4f9e9b037edbe115b5d74ca54f6edc8d6d7cdea62375",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card2_portrait.pdf": "65efef1206b2c9cf54fd545559f3aa61ebf607a88bb0983ced4a0e3ba782cc6b",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card3_portrait.pdf": "8e202db1c84a06912ce61848b262e14098acf20f1f325c6e2eb1c2baf476d0be",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page06_card4_portrait.pdf": "ac1f944a8144f4bde6d6fff234454f4fa9eafec8eaeb4b9fe175d368a8ab9a52",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card1_portrait.pdf": "3782c3009b9ce9f98161476dcda95a5fe7309061b221e7fd4ebbfa3c186eb75a",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card2_portrait.pdf": "0e39b91bb01905e4f7d27027c80d73b73c493d84b73a73367d8aafe4fa8dfdd6",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card3_portrait.pdf": "697efb03355f5274791c30f43c9eccf8b01747f41e0755661fbc729139bbc5ab",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page07_card4_portrait.pdf": "6747b645dad340d9c0c58f291de895337ad385f33f9a0f06674cb0c745bd3720",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card1_portrait.pdf": "f26929fbdfeda99d10f8470e429a8b6727ecb2fb3fbefdcf685ac5f07082cfa2",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card2_portrait.pdf": "8e8256f38a64ee8d3cc1626a84fadba4f536b7276f114e17746d280641c58b3a",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card3_portrait.pdf": "897853e510ff31a76ea154076264514a851c25edb80bb8851ef1c620b3bcf243",
+        "layers/warcom/extracted/celestian-insidiants/cards/celestian-insidiants_page08_card4_portrait.pdf": "3b0f7d4c039fb030ab11e4edb6c337ee80e500752e834324e714a43085680cd6"
+      },
+      "completed": "2026-08-29T18:41:10.251195+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "7c3e1d2908eac6f7d509e4ecdfef1c6238b4d659bb2b19d21695ddd1259bb661",
+          "outputs": [
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-01.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-02.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-03.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-04.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-05.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-06.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-07.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-08.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-09.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-10.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-11.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-12.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-13.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-14.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-15.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-16.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-17.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-18.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-19.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-20.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-21.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-22.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-23.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-24.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-25.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-26.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-27.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-28.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-29.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-30.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-31.jpeg",
+            "layers/integration/celestian-insidiants/artwork/celestian-insidiants-artwork-metadata.json",
+            "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-landscape.jpg",
+            "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-portrait.jpg",
+            "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-token-transparent.png",
+            "layers/integration/celestian-insidiants/artwork/icons/celestian-insidiants-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:36:58.652323+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:36:58.652323+00:00"
+    }
+  }
+}

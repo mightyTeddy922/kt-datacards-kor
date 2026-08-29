@@ -1,11 +1,67 @@
 -- Kill Team Display Table Manager
 -- Attach this to a bag to manage the display table
 
-local TTS_METADATA_URL = "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output_v2/tts-metadata.json"
-local MANAGER_METADATA_URL = "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output_v2/tts-manager.json"
+-- New canonical source: keyed map { slug -> { team, modified, box={url, modified}, ... } }
+-- Each box URL is a BARE Custom_Model_Bag JSON (no ObjectStates wrapper).
+local TTS_METADATA_URL = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/team-urls.json"
+-- The manager bag itself is published as a bare Custom_Bag JSON (no save-file
+-- wrapper) so it can be downloaded and handed straight to spawnObjectJSON.
+local MANAGER_BAG_URL = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/_generic-tts-objects/Kill%20Team%20Card%20Boxes.json"
 local isUpdating = false
 local cancelRequested = false
 local positions = {}
+
+-- URL-decode just enough to recover a human display name from a path segment
+local function urlDecode(s)
+    if not s then return "" end
+    s = s:gsub("+", " ")
+    s = s:gsub("%%(%x%x)", function(h) return string.char(tonumber(h, 16)) end)
+    return s
+end
+
+-- Derive the display name (matches the bag's Nickname) from the box URL filename.
+local function displayNameFromUrl(url)
+    if not url or url == "" then return "" end
+    local cleanUrl = string.match(url, "^[^?]+") or url
+    local file = string.match(cleanUrl, "([^/]+)$") or cleanUrl
+    file = file:gsub("%.json$", "")
+    return urlDecode(file)
+end
+
+-- Extract the team bag from a downloaded box JSON. Supports both bare objects
+-- (new format: { Name="Custom_Model_Bag", ContainedObjects=... }) and the
+-- legacy save-file wrapper ({ ObjectStates = [ {box} ] }).
+local function extractTeamBag(decoded)
+    if type(decoded) ~= "table" then return nil end
+    if decoded.ObjectStates and decoded.ObjectStates[1] then
+        return decoded.ObjectStates[1]
+    end
+    if decoded.Name or decoded.GUID or decoded.ContainedObjects then
+        return decoded
+    end
+    return nil
+end
+
+-- Returns true if the downloaded text is a bare box object (new format).
+-- Detection is cheap: skip whitespace, find the first JSON key, and check it
+-- against the two wrapper keys. Avoids JSON.decode on 500KB+ payloads.
+local function isBareBoxText(text)
+    if type(text) ~= "string" or #text == 0 then return false end
+    local i = 1
+    while i <= #text do
+        local b = text:byte(i)
+        if b ~= 32 and b ~= 9 and b ~= 10 and b ~= 13 then break end
+        i = i + 1
+    end
+    if text:byte(i) ~= 123 then return false end -- '{'
+    -- Find the first key (between quotes after the opening brace).
+    local keyOpen = text:find('"', i + 1, true)
+    if not keyOpen then return false end
+    local keyClose = text:find('"', keyOpen + 1, true)
+    if not keyClose then return false end
+    local firstKey = text:sub(keyOpen + 1, keyClose - 1)
+    return firstKey ~= "SaveName" and firstKey ~= "ObjectStates"
+end
 
 -- Default grid layout: 10 columns x 8 rows = 80 spots
 local GRID_COLUMNS = 10
@@ -30,24 +86,15 @@ function onLoad(script_state)
     
     -- Create buttons
     createButtons()
+
+    -- Move infrequent actions to context menu to keep table UI compact.
+    self.addContextMenuItem("Reload Teams", refreshFromGitHub)
+    self.addContextMenuItem("Update Manager", selfUpdate)
 end
 
 
 function createButtons(mode)
     self.clearButtons()
-    
-    -- Description box always visible (non-clickable button for visual consistency)
-    self.createButton({
-        label="Kill Team Card Boxes\nTake out individual team card boxes (rightclick and search) or use 'Place on Table' for\nthe full display. Click 'Reload All Teams' to update with the latest teams.",
-        click_function="doNothing",
-        function_owner=self,
-        position={0, 0.3, -1.8},
-        rotation={0, 180, 0},
-        height=600, width=4800,
-        font_size=120,
-        color={0, 0, 0},
-        font_color={1, 1, 1}
-    })
     
     if mode == "updating" then
         -- Show only cancel button during update (centered in grid)
@@ -55,7 +102,7 @@ function createButtons(mode)
             label="Cancel Reload",
             click_function="cancelReload",
             function_owner=self,
-            position={0, 0.3, -3.5625},
+            position={0, 0.3, -2.45},
             rotation={0, 180, 0},
             height=500, width=1400,
             font_size=180,
@@ -63,39 +110,12 @@ function createButtons(mode)
             font_color={1, 1, 1}
         })
     else
-        -- Normal 2x2 button grid with proper spacing
-        -- Top-left: Update Manager (swapped X for correct display)
-        self.createButton({
-            label="Update Manager",
-            click_function="selfUpdate",
-            function_owner=self,
-            position={1.6, 0.3, -3.0},
-            rotation={0, 180, 0},
-            height=400, width=1200,
-            font_size=150,
-            color={0.8, 0, 1},
-            font_color={1, 1, 1}
-        })
-        
-        -- Top-right: Reload Teams (swapped X for correct display)
-        self.createButton({
-            label="Reload Teams",
-            click_function="refreshFromGitHub",
-            function_owner=self,
-            position={-1.6, 0.3, -3.0},
-            rotation={0, 180, 0},
-            height=400, width=1200,
-            font_size=150,
-            color={0.2, 0.6, 1},
-            font_color={1, 1, 1}
-        })
-        
-        -- Bottom-left: Place Teams (swapped X for correct display)
+        -- Keep only core table actions on buttons, moved closer to bag.
         self.createButton({
             label="Place Teams",
             click_function="placeTeamsOnTable",
             function_owner=self,
-            position={1.6, 0.3, -4.125},
+            position={1.6, 0.3, -2.45},
             rotation={0, 180, 0},
             height=400, width=1200,
             font_size=150,
@@ -103,12 +123,11 @@ function createButtons(mode)
             font_color={1, 1, 1}
         })
         
-        -- Bottom-right: Recall Teams (swapped X for correct display)
         self.createButton({
             label="Recall Teams",
             click_function="recallTeamsToManager",
             function_owner=self,
-            position={-1.6, 0.3, -4.125},
+            position={-1.6, 0.3, -2.45},
             rotation={0, 180, 0},
             height=400, width=1200,
             font_size=150,
@@ -173,35 +192,51 @@ function refreshFromGitHub()
             return
         end
         
-        local success, teamBoxes = pcall(function() return JSON.decode(webReturn.text) end)
-        if not success then
-            broadcastToAll("Error parsing JSON: " .. tostring(teamBoxes), {1, 0, 0})
+        local success, payload = pcall(function() return JSON.decode(webReturn.text) end)
+        if not success or type(payload) ~= "table" then
+            broadcastToAll("Error parsing JSON: " .. tostring(payload), {1, 0, 0})
             isUpdating = false
             return
         end
-        
-        -- Build lookup table of remote teams by name
+
+        -- Build lookup table of remote teams by display name.
+        -- New shape (keyed map):
+        --   payload[slug] = { team, modified, box = { url, modified } }
+        -- Legacy shape (array): payload[i] = { name, cards_url, team, cards_last_modified, tokens_last_modified }
         local remoteTeams = {}
-        for _, box in ipairs(teamBoxes) do
-            -- Use the latest timestamp (max of cards and tokens)
-            local cardsTs = box.cards_last_modified or ""
-            local tokensTs = box.tokens_last_modified or ""
-            local latestTs = cardsTs
-            -- Only compare if both have values
-            if tokensTs ~= "" and cardsTs ~= "" then
-                if tokensTs > cardsTs then
+        if payload[1] ~= nil then
+            -- Legacy array shape
+            for _, box in ipairs(payload) do
+                local cardsTs = box.cards_last_modified or ""
+                local tokensTs = box.tokens_last_modified or ""
+                local latestTs = cardsTs
+                if tokensTs ~= "" and cardsTs ~= "" then
+                    if tokensTs > cardsTs then latestTs = tokensTs end
+                elseif tokensTs ~= "" then
                     latestTs = tokensTs
                 end
-            elseif tokensTs ~= "" then
-                -- Only tokens timestamp exists
-                latestTs = tokensTs
+                remoteTeams[box.name] = {
+                    url = box.cards_url,
+                    team = box.team,
+                    last_modified = latestTs
+                }
             end
-            
-            remoteTeams[box.name] = {
-                url = box.cards_url,
-                team = box.team,
-                last_modified = latestTs
-            }
+        else
+            -- New keyed-map shape
+            for slug, entry in pairs(payload) do
+                if type(entry) == "table" and entry.box and entry.box.url then
+                    local boxUrl = entry.box.url
+                    local modified = entry.box.modified or entry.modified or ""
+                    local name = displayNameFromUrl(boxUrl)
+                    if name ~= "" then
+                        remoteTeams[name] = {
+                            url = boxUrl,
+                            team = slug,
+                            last_modified = modified
+                        }
+                    end
+                end
+            end
         end
         
         -- Check existing teams in bag
@@ -368,39 +403,49 @@ function processAdds(toAdd, index, remoteTeams, toUpdate, toSkip)
             end, 0.1)
             return
         end
-        
-        local success, decoded = pcall(function() return JSON.decode(webReturn.text) end)
-        if not success or not decoded.ObjectStates or #decoded.ObjectStates == 0 then
-            print("[Error] Invalid JSON for " .. teamName)
-            Wait.time(function()
-                processAdds(toAdd, index + 1, remoteTeams, toUpdate, toSkip)
-            end, 0.1)
-            return
-        end
-        
-        local teamBag = decoded.ObjectStates[1]
-        
-        -- Apply cache busting to all token URLs inside the bag
-        if teamBag.ContainedObjects then
-            for _, obj in ipairs(teamBag.ContainedObjects) do
-                if obj.CustomImage then
-                    if obj.CustomImage.ImageURL and not obj.CustomImage.ImageURL:find("?v=") then
-                        obj.CustomImage.ImageURL = obj.CustomImage.ImageURL .. "?v=" .. cacheBust
+
+        -- Fast path: bare boxes have asset URLs pre-cache-busted by the pipeline
+        -- (Python writes ?v=mtime on every asset URL), so we can hand the raw
+        -- text directly to spawnObjectJSON and skip a costly decode/encode round
+        -- trip on a 500KB+ string.
+        local spawnJson
+        if isBareBoxText(webReturn.text) then
+            spawnJson = webReturn.text
+        else
+            local success, decoded = pcall(function() return JSON.decode(webReturn.text) end)
+            local teamBag = success and extractTeamBag(decoded) or nil
+            if not teamBag then
+                print("[Error] Invalid JSON for " .. teamName)
+                Wait.time(function()
+                    processAdds(toAdd, index + 1, remoteTeams, toUpdate, toSkip)
+                end, 0.1)
+                return
+            end
+
+            -- Legacy wrapper path: keep cache-busting fallback for any in-bag
+            -- asset URLs that lack ?v= (older published boxes).
+            if teamBag.ContainedObjects then
+                for _, obj in ipairs(teamBag.ContainedObjects) do
+                    if obj.CustomImage then
+                        if obj.CustomImage.ImageURL and not obj.CustomImage.ImageURL:find("?v=") then
+                            obj.CustomImage.ImageURL = obj.CustomImage.ImageURL .. "?v=" .. cacheBust
+                        end
+                        if obj.CustomImage.ImageSecondaryURL and not obj.CustomImage.ImageSecondaryURL:find("?v=") then
+                            obj.CustomImage.ImageSecondaryURL = obj.CustomImage.ImageSecondaryURL .. "?v=" .. cacheBust
+                        end
                     end
-                    if obj.CustomImage.ImageSecondaryURL and not obj.CustomImage.ImageSecondaryURL:find("?v=") then
-                        obj.CustomImage.ImageSecondaryURL = obj.CustomImage.ImageSecondaryURL .. "?v=" .. cacheBust
-                    end
-                end
-                if obj.CustomTile and obj.CustomTile.CustomImage then
-                    if obj.CustomTile.CustomImage.ImageURL and not obj.CustomTile.CustomImage.ImageURL:find("?v=") then
-                        obj.CustomTile.CustomImage.ImageURL = obj.CustomTile.CustomImage.ImageURL .. "?v=" .. cacheBust
+                    if obj.CustomTile and obj.CustomTile.CustomImage then
+                        if obj.CustomTile.CustomImage.ImageURL and not obj.CustomTile.CustomImage.ImageURL:find("?v=") then
+                            obj.CustomTile.CustomImage.ImageURL = obj.CustomTile.CustomImage.ImageURL .. "?v=" .. cacheBust
+                        end
                     end
                 end
             end
+            spawnJson = JSON.encode(teamBag)
         end
-        
+
         local spawnedObj = spawnObjectJSON({
-            json = JSON.encode(teamBag),
+            json = spawnJson,
             position = self.getPosition() + Vector(0, 5, 0)
         })
         
@@ -465,39 +510,44 @@ function processUpdates(toUpdate, index, remoteTeams, toSkip)
                     end, 0.1)
                     return
                 end
-                
-                local success, decoded = pcall(function() return JSON.decode(webReturn.text) end)
-                if not success or not decoded.ObjectStates or #decoded.ObjectStates == 0 then
-                    print("[Error] Invalid JSON for " .. teamName)
-                    Wait.time(function()
-                        processUpdates(toUpdate, index + 1, remoteTeams, toSkip)
-                    end, 0.1)
-                    return
-                end
-                
-                local teamBag = decoded.ObjectStates[1]
-                
-                -- Apply cache busting to all token URLs inside the bag
-                if teamBag.ContainedObjects then
-                    for _, obj in ipairs(teamBag.ContainedObjects) do
-                        if obj.CustomImage then
-                            if obj.CustomImage.ImageURL and not obj.CustomImage.ImageURL:find("?v=") then
-                                obj.CustomImage.ImageURL = obj.CustomImage.ImageURL .. "?v=" .. cacheBust
+
+                -- Fast path: bare boxes (asset URLs already cache-busted by pipeline).
+                local spawnJson
+                if isBareBoxText(webReturn.text) then
+                    spawnJson = webReturn.text
+                else
+                    local success, decoded = pcall(function() return JSON.decode(webReturn.text) end)
+                    local teamBag = success and extractTeamBag(decoded) or nil
+                    if not teamBag then
+                        print("[Error] Invalid JSON for " .. teamName)
+                        Wait.time(function()
+                            processUpdates(toUpdate, index + 1, remoteTeams, toSkip)
+                        end, 0.1)
+                        return
+                    end
+
+                    if teamBag.ContainedObjects then
+                        for _, obj in ipairs(teamBag.ContainedObjects) do
+                            if obj.CustomImage then
+                                if obj.CustomImage.ImageURL and not obj.CustomImage.ImageURL:find("?v=") then
+                                    obj.CustomImage.ImageURL = obj.CustomImage.ImageURL .. "?v=" .. cacheBust
+                                end
+                                if obj.CustomImage.ImageSecondaryURL and not obj.CustomImage.ImageSecondaryURL:find("?v=") then
+                                    obj.CustomImage.ImageSecondaryURL = obj.CustomImage.ImageSecondaryURL .. "?v=" .. cacheBust
+                                end
                             end
-                            if obj.CustomImage.ImageSecondaryURL and not obj.CustomImage.ImageSecondaryURL:find("?v=") then
-                                obj.CustomImage.ImageSecondaryURL = obj.CustomImage.ImageSecondaryURL .. "?v=" .. cacheBust
-                            end
-                        end
-                        if obj.CustomTile and obj.CustomTile.CustomImage then
-                            if obj.CustomTile.CustomImage.ImageURL and not obj.CustomTile.CustomImage.ImageURL:find("?v=") then
-                                obj.CustomTile.CustomImage.ImageURL = obj.CustomTile.CustomImage.ImageURL .. "?v=" .. cacheBust
+                            if obj.CustomTile and obj.CustomTile.CustomImage then
+                                if obj.CustomTile.CustomImage.ImageURL and not obj.CustomTile.CustomImage.ImageURL:find("?v=") then
+                                    obj.CustomTile.CustomImage.ImageURL = obj.CustomTile.CustomImage.ImageURL .. "?v=" .. cacheBust
+                                end
                             end
                         end
                     end
+                    spawnJson = JSON.encode(teamBag)
                 end
-                
+
                 local spawnedObj = spawnObjectJSON({
-                    json = JSON.encode(teamBag),
+                    json = spawnJson,
                     position = self.getPosition() + Vector(0, 5, 0)
                 })
                 
@@ -569,13 +619,6 @@ function placeTeamsOnTable()
         end
     end
     
-    -- Clean up old text labels
-    for _, obj in ipairs(getAllObjects()) do
-        if obj.getGMNotes() == "_team_label" then
-            obj.destruct()
-        end
-    end
-    
     if recalled > 0 then
         broadcastToAll("Recalled " .. recalled .. " existing teams.", {0.5, 0.5, 0.5})
     end
@@ -600,59 +643,58 @@ function placeTeamsOnTable()
         table.sort(teamList, function(a, b)
             return a.name < b.name
         end)
-        
-        -- Take out each team bag and spawn label
+
+        -- Precompute a COLLISION-FREE target for every team. Teams with a saved
+        -- custom position keep it and CLAIM that grid cell; teams without one
+        -- get the next FREE grid cell. This stops a newly added team from
+        -- landing on an existing (saved) team's slot -- the bug where two teams
+        -- (e.g. Exodite + Farstalker) spawned on the same spot.
+        local function cellKey(px, pz)
+            local col = math.floor((px / GRID_SPACING_X) + (GRID_COLUMNS - 1) / 2 + 0.5)
+            local row = math.floor(((GRID_START_Z - pz) / GRID_SPACING_Z) + 0.5)
+            return col .. "|" .. row
+        end
+        local occupied = {}
+        local targets = {}
+        for _, team in ipairs(teamList) do
+            local pd = positions[team.name]
+            if pd and pd.pos then
+                targets[team.name] = { pos = pd.pos, rot = pd.rot or {x = 0, y = 270, z = 0} }
+                occupied[cellKey(pd.pos.x, pd.pos.z)] = true
+            end
+        end
+        local gridIndex = 0
+        for _, team in ipairs(teamList) do
+            if not targets[team.name] then
+                local gp, key
+                repeat
+                    gridIndex = gridIndex + 1
+                    gp = calculateGridPosition(gridIndex)
+                    key = cellKey(gp.x, gp.z)
+                until not occupied[key]
+                occupied[key] = true
+                targets[team.name] = { pos = {x = gp.x, y = gp.y, z = gp.z}, rot = {x = 0, y = 270, z = 0} }
+            end
+        end
+
+        -- Take out each team bag at its precomputed, collision-free position.
         local placed = 0
         for i, team in ipairs(teamList) do
             Wait.time(function()
-                local guid = team.guid
-                local teamName = team.name
-                local posData = positions[teamName]  -- Check for saved custom position
-                
-                local relativePos
-                if posData then
-                    -- Use saved custom position
-                    relativePos = {
-                        x = bagPos.x + posData.pos.x,
-                        y = bagPos.y + posData.pos.y,
-                        z = bagPos.z + posData.pos.z
-                    }
-                else
-                    -- Use default grid position (alphabetical order)
-                    local gridPos = calculateGridPosition(i)
-                    relativePos = {
-                        x = bagPos.x + gridPos.x,
-                        y = bagPos.y + gridPos.y,
-                        z = bagPos.z + gridPos.z
-                    }
-                end
-                
-                local bagObj = self.takeObject({
-                    guid = guid,
+                local t = targets[team.name]
+                local relativePos = {
+                    x = bagPos.x + t.pos.x,
+                    y = bagPos.y + t.pos.y,
+                    z = bagPos.z + t.pos.z
+                }
+
+                self.takeObject({
+                    guid = team.guid,
                     position = Vector(relativePos.x, relativePos.y, relativePos.z),
-                    rotation = posData and Vector(posData.rot.x, posData.rot.y, posData.rot.z) or Vector(0, 270, 0),
+                    rotation = Vector(t.rot.x, t.rot.y, t.rot.z),
                     smooth = false
                 })
-                
-                -- Spawn text label for this team
-                Wait.time(function()
-                    if bagObj and teamName and teamName ~= "" then
-                        spawnObject({
-                            type = "3DText",
-                            position = Vector(relativePos.x, relativePos.y - 2.2, relativePos.z + 3.0),
-                            rotation = Vector(90, 0, 0),
-                            scale = Vector(0.015, 0.015, 0.015),
-                            callback_function = function(obj)
-                                obj.TextTool.setValue(teamName)
-                                obj.TextTool.setFontSize(50)
-                                obj.setColorTint({r=1, g=1, b=1})
-                                obj.setLock(true)
-                                obj.setGMNotes("_team_label")
-                            end
-                        })
-                    end
-                end, 0.2)
-                
+
                 placed = placed + 1
                 if placed == #teamList then
                     Wait.time(function()
@@ -692,13 +734,6 @@ function recallTeamsToManager()
         end
     end
     
-    -- Clean up text labels
-    for _, obj in ipairs(getAllObjects()) do
-        if obj.getGMNotes() == "_team_label" then
-            obj.destruct()
-        end
-    end
-    
     if recalled > 0 then
         broadcastToAll("✓ Recalled " .. recalled .. " teams and saved positions.", {0, 1, 0})
     else
@@ -707,127 +742,70 @@ function recallTeamsToManager()
 end
 
 function selfUpdate()
-    broadcastToAll("Checking for Manager updates...", {0.8, 0, 1})
-    
-    -- Fetch manager metadata to get latest version URL
-    WebRequest.get(MANAGER_METADATA_URL, function(request)
-        if request.is_error then
-            broadcastToAll("Could not check for Manager updates: " .. request.error, {1, 0, 0})
-            return
-        end
-        
-        local success, metadata = pcall(function() return JSON.decode(request.text) end)
-        if not success or not metadata or not metadata.url then
-            broadcastToAll("Could not parse Manager metadata", {1, 0, 0})
-            return
-        end
-        
-        local managerUrl = metadata.url
-        local timestamp = (metadata.last_modified or ""):gsub("[^%d]", "")
-        local urlWithCacheBust = managerUrl .. "?v=" .. timestamp
-        
-        broadcastToAll("Downloading latest Manager bag...", {0.8, 0, 1})
-        
-        -- Fetch the new manager bag JSON
-        WebRequest.get(urlWithCacheBust, function(webReturn)
-            if webReturn.is_error then
-                broadcastToAll("Failed to download Manager: " .. webReturn.error, {1, 0, 0})
-                return
-            end
-            
-            local success2, newBagData = pcall(function() return JSON.decode(webReturn.text) end)
-            if not success2 or not newBagData or not newBagData.ObjectStates or #newBagData.ObjectStates == 0 then
-                broadcastToAll("Invalid Manager bag format", {1, 0, 0})
-                return
-            end
-            
-            broadcastToAll("Spawning new Manager bag...", {0.8, 0, 1})
-            
-            -- Get current state
-            local currentPos = self.getPosition()
-            local currentRot = self.getRotation()
-            local savedState = self.script_state
-            local contents = self.getObjects()
-            
-            -- Spawn new manager bag NEXT TO the old one (not on top)
-            local newBagState = newBagData.ObjectStates[1]
-            newBagState.Transform.posX = currentPos.x + 5.0  -- Offset 5 units to the side
-            newBagState.Transform.posY = currentPos.y
-            newBagState.Transform.posZ = currentPos.z
-            newBagState.Transform.rotX = currentRot.x
-            newBagState.Transform.rotY = currentRot.y
-            newBagState.Transform.rotZ = currentRot.z
-            newBagState.LuaScriptState = ""  -- Start with empty state, will update after transfer
-            newBagState.ContainedObjects = {}  -- Spawn empty bag
-            
-            spawnObjectData({
-                data = newBagState,
-                callback_function = function(newBag)
-                    if #contents == 0 then
-                        -- No contents to transfer, restore state and destroy old bag
-                        newBag.script_state = savedState
-                        broadcastToAll("✓ Manager updated! Old Manager destroyed.", {0, 1, 0})
-                        
-                        -- Move new bag to old position
-                        Wait.time(function()
-                            newBag.setPositionSmooth(currentPos, false, false)
-                            Wait.time(function()
-                                self.destruct()
-                            end, 0.5)
-                        end, 0.3)
-                    else
-                        -- Transfer contents one at a time
-                        broadcastToAll("Transferring " .. #contents .. " team boxes...", {0.8, 0, 1})
-                        transferNextBox(newBag, contents, 1, #contents, currentPos, savedState)
-                    end
-                end
-            })
-        end)
-    end)
-end
+    broadcastToAll("Downloading latest Manager bag...", {0.8, 0, 1})
 
-function transferNextBox(newBag, contents, index, total, originalPos, savedState)
-    if index > total then
-        -- All transferred, NOW restore the state, then move and destroy
-        broadcastToAll("✓ Manager updated! All " .. total .. " teams transferred. Restoring state...", {0, 1, 0})
-        newBag.script_state = savedState  -- Restore saved positions AFTER transfer
-        
-        Wait.time(function()
-            newBag.setPositionSmooth(originalPos, false, false)
-            Wait.time(function()
-                self.destruct()
-            end, 1.0)
-        end, 0.3)
-        return
-    end
-    
-    local item = contents[index]
-    broadcastToAll("Transferring " .. (item.name or "team") .. " (" .. index .. "/" .. total .. ")", {0.6, 0.6, 1})
-    
-    -- Take object from old bag and place it to the side (not above)
-    local takenObj = self.takeObject({
-        guid = item.guid,
-        position = self.getPosition() + Vector(0, 1, 5),  -- To the side, not above
-        smooth = false
-    })
-    
-    -- Wait for it to spawn, then put in new bag
-    Wait.condition(
-        function()
-            newBag.putObject(takenObj)
-            
-            -- Wait a moment for putObject to complete, then transfer next
-            Wait.time(function()
-                transferNextBox(newBag, contents, index + 1, total, originalPos, savedState)
-            end, 0.1)
-        end,
-        function() return takenObj ~= nil and not takenObj.spawning end,
-        5,
-        function()
-            -- Timeout - skip this one and move to next
-            print("[Warning] Timeout transferring " .. (item.name or item.guid))
-            transferNextBox(newBag, contents, index + 1, total, originalPos, savedState)
+    local url = MANAGER_BAG_URL .. "?v=" .. tostring(os.time())
+    WebRequest.get(url, function(resp)
+        local code = tonumber(resp.response_code) or 0
+        if resp.is_error or code >= 400 then
+            local msg = resp.error
+            if msg == nil or msg == "" then msg = "HTTP " .. tostring(code) end
+            broadcastToAll("Manager update failed: " .. msg, {1, 0, 0})
+            return
         end
-    )
+
+        -- The manager bag is a bare Custom_Bag JSON. Skip leading whitespace
+        -- and hand the raw text to spawnObjectJSON (no decode of the ~30MB body).
+        local body = resp.text or ""
+        local startIdx = 1
+        while startIdx <= #body do
+            local b = body:byte(startIdx)
+            if b ~= 32 and b ~= 9 and b ~= 10 and b ~= 13 then break end
+            startIdx = startIdx + 1
+        end
+        if startIdx > #body or body:byte(startIdx) ~= 123 then
+            broadcastToAll("Manager update failed: unexpected response format", {1, 0, 0})
+            return
+        end
+        local objJson = (startIdx == 1) and body or body:sub(startIdx)
+
+        local currentPos = self.getPosition()
+        local currentRot = self.getRotation()
+        local savedState = self.script_state
+
+        broadcastToAll("Spawning new Manager bag...", {0.8, 0, 1})
+
+        local spawned = spawnObjectJSON({
+            json = objJson,
+            position = currentPos + Vector(5, 0, 0),
+            rotation = currentRot
+        })
+
+        if spawned == nil then
+            broadcastToAll("Manager update failed: spawnObjectJSON returned nil", {1, 0, 0})
+            return
+        end
+
+        Wait.condition(
+            function()
+                Wait.time(function()
+                    if spawned == nil or spawned.isDestroyed() then
+                        broadcastToAll("Manager update failed during spawn", {1, 0, 0})
+                        return
+                    end
+                    -- Preserve saved positions so Place Teams still works.
+                    spawned.script_state = savedState
+                    self.destruct()
+                    Wait.time(function()
+                        spawned.setPositionSmooth(currentPos, false, true)
+                        spawned.setRotationSmooth(currentRot, false, true)
+                        broadcastToAll("Manager bag updated!", {0, 1, 0})
+                    end, 0.3)
+                end, 0.3)
+            end,
+            function() return spawned ~= nil and not spawned.spawning end,
+            60
+        )
+    end)
 end
 

@@ -1,5 +1,4 @@
 -- constants
-local TTS_METADATA_URL = "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output_v2/tts-metadata.json"
 
 local SCRIPT_VERSION = "v2.0"
 
@@ -169,14 +168,6 @@ local function transmute(t, vfn, kfn)
     return out
 end
 
-local function duplicateTable(oldTable)
-  local newTable = {}
-  for k, v in pairs(oldTable) do
-    newTable[k] = v
-  end
-  return newTable
-end
-
 local function round(num, dec)
   local mult = 10^(dec or 0)
   return math.floor(num * mult + 0.5) / mult
@@ -339,9 +330,13 @@ end
 
 -- handlers for buttons
 function click_setup()
-  -- Reset: Only works after recall - clears bag contents and respawns fresh objects
-  
-  -- Check if we have a setup (memoryList exists)
+  -- Reset: download latest box and respawn it (same flow as Update, no timestamp guard).
+  -- A future iteration can do an in-place per-field reset; for now this matches Update.
+  performBoxUpdate(true)
+end
+
+-- Legacy procedural reset (kept for reference / fallback). Unused.
+function _legacy_click_setup()
   if next(memoryList) == nil then
     broadcastToAll("No setup found. Please use Update button to get latest version.", {1, 0.5, 0})
     return
@@ -927,10 +922,15 @@ function click_place_kt_table(obj, player_color, alt_click)
                 }
               end
             elseif cardType == "faction_rules" then
-              -- Unpack first 2 cards, keep rest as deck at position 3
+              -- 3-card teams: place all 3 individually in slots 1/2/3.
+              -- 4+ card teams: place first 2 individually, remainder as deck at slot 3.
               local originalDeckGuid = guid
-              local deckSize = #obj.getObjects()
-              local cardsToUnpack = math.min(2, deckSize)
+              local allCardGuids = {}
+              for _, cardInfo in ipairs(obj.getObjects()) do
+                table.insert(allCardGuids, cardInfo.guid)
+              end
+              local deckSize = #allCardGuids
+              local cardsToUnpack = (deckSize <= 3) and deckSize or 2
               deckUnpackTracking[originalDeckGuid] = {
                 name = obj.getName(),
                 description = obj.getDescription(),
@@ -938,26 +938,53 @@ function click_place_kt_table(obj, player_color, alt_click)
                 originalEntry = entry,
                 cardType = cardType
               }
-              
-              -- Unpack first 2 cards individually
+
+              -- Unpack cards individually
               for i = 1, cardsToUnpack do
                 local customPos = getWorkshopPosition(player_color, cardType, cardTypeIndices[cardType])
                 if customPos then
-                  local card = obj.takeObject({
-                    position = customPos,
-                    rotation = absoluteRot,
-                    smooth = false
-                  })
-                  if card then
-                    card.setLock(entry.lock)
-                    table.insert(deckUnpackTracking[originalDeckGuid].cardGuids, card.guid)
+                  if obj and not obj.isDestroyed() then
+                    local card = obj.takeObject({
+                      position = customPos,
+                      rotation = absoluteRot,
+                      smooth = false
+                    })
+                    if card then
+                      card.setLock(entry.lock)
+                      table.insert(deckUnpackTracking[originalDeckGuid].cardGuids, card.guid)
+                    end
                   end
                   cardTypeIndices[cardType] = cardTypeIndices[cardType] + 1
                 end
               end
-              
-              -- If there are remaining cards, place them as deck at position 3
-              if deckSize > 2 and obj and not obj.isDestroyed() then
+
+              -- Collapsed-card recovery: TTS auto-destroys a Deck when takeObject
+              -- reduces it to 1 card, leaving the final card untracked at the
+              -- deck's old position. Pick it up and place it in the next slot.
+              if #deckUnpackTracking[originalDeckGuid].cardGuids < cardsToUnpack then
+                local trackedSet = {}
+                for _, cguid in ipairs(deckUnpackTracking[originalDeckGuid].cardGuids) do
+                  trackedSet[cguid] = true
+                end
+                for _, cguid in ipairs(allCardGuids) do
+                  if cguid and not trackedSet[cguid] then
+                    local remainingCard = getObjectFromGUID(cguid)
+                    if remainingCard and not remainingCard.isDestroyed() then
+                      local customPos = getWorkshopPosition(player_color, cardType, cardTypeIndices[cardType] - 1)
+                      if customPos then
+                        remainingCard.setPosition(customPos)
+                        remainingCard.setRotation(absoluteRot)
+                        remainingCard.setLock(entry.lock)
+                      end
+                      table.insert(deckUnpackTracking[originalDeckGuid].cardGuids, cguid)
+                      trackedSet[cguid] = true
+                    end
+                  end
+                end
+              end
+
+              -- 4+ cards: remaining deck goes to slot 3.
+              if deckSize > 3 and obj and not obj.isDestroyed() then
                 local customPos = getWorkshopPosition(player_color, cardType, 3)
                 if customPos then
                   obj.setPosition(customPos)
@@ -1470,144 +1497,256 @@ function click_recall()
 end
 
 function click_update_rules()
-  -- Check if we need to update by comparing timestamps
+  performBoxUpdate(false)
+end
+
+-- performBoxUpdate(force)
+--   force=false : check team-urls.json timestamp; skip if up to date (Update button)
+--   force=true  : always download and respawn (Reset button)
+function performBoxUpdate(force)
   if teamSlug == "" then
     broadcastToAll("Cannot update: team slug not configured", {1, 0.5, 0})
     return
   end
+
+  if force then
+    broadcastToAll("Resetting box from latest version...", {1, 1, 0})
+  else
+    broadcastToAll("Checking for updates...", {1, 1, 0})
+  end
   
-  broadcastToAll("Checking for updates...", {1, 1, 0})
-  
-  -- Fetch tts-metadata.json to check if update is needed (cache-busted)
-  local metadataUrl = TTS_METADATA_URL .. "?v=" .. tostring(os.time())
+  -- Build team-urls.json URL from this box's mesh URL so branch/path stay in sync.
+  local data = self.getData() or {}
+  local meshUrl = ((data.CustomMesh or {}).MeshURL) or ""
+  if meshUrl == "" then
+    broadcastToAll("Cannot check updates: missing box mesh URL", {1, 0.5, 0})
+    return
+  end
+  local cleanMeshUrl = string.match(meshUrl, "^[^?]+") or meshUrl
+  local baseUrl = string.match(cleanMeshUrl, "^(.-)/output/")
+  if not baseUrl or baseUrl == "" then
+    broadcastToAll("Cannot check updates: could not parse repository URL", {1, 0.5, 0})
+    return
+  end
+  local metadataUrl = baseUrl .. "/output/team-urls.json?v=" .. tostring(os.time())
   WebRequest.get(metadataUrl, function(request)
     if request.is_error then
       broadcastToAll("Could not check for updates: " .. request.error, {1, 0.5, 0})
       return
     end
     
-    -- Parse JSON to find this team's last_modified timestamp and URL
-    local success, ttsBoxes = pcall(function() return JSON.decode(request.text) end)
-    if not success or not ttsBoxes then
+    -- Parse JSON to find this team's latest modified timestamp and box URL
+    local success, metadata = pcall(function() return JSON.decode(request.text) end)
+    if not success or not metadata then
       broadcastToAll("Could not parse update info.", {1, 0.5, 0})
       return
     end
-    
-    -- Find our team in the list
+
+    -- Find our team in keyed metadata map (or legacy list fallback)
     local remoteTimestamp = ""
     local cardsUrl = ""
-    for _, box in ipairs(ttsBoxes) do
-      if box.team == teamSlug then
-        remoteTimestamp = box.cards_last_modified or ""
-        cardsUrl = box.cards_url or ""
-        break
+
+    local teamEntry = metadata[teamSlug]
+    if not teamEntry then
+      for _, entry in ipairs(metadata) do
+        if entry and entry.team == teamSlug then
+          teamEntry = entry
+          break
+        end
+      end
+    end
+
+    if teamEntry then
+      -- New lightweight summary mode
+      remoteTimestamp = teamEntry.modified or ""
+
+      -- Backward compatibility with older global shape
+      if remoteTimestamp == "" and teamEntry.box then
+        remoteTimestamp = teamEntry.box.modified or ""
+      end
+      if teamEntry.box then
+        cardsUrl = teamEntry.box.url or ""
       end
     end
     
-    if remoteTimestamp == "" or cardsUrl == "" then
+    if remoteTimestamp == "" then
       broadcastToAll("Could not find team in update list.", {1, 0.5, 0})
       return
     end
     
-    -- Compare timestamps (treat remote <= local as up to date)
+    -- Compare timestamps (treat remote <= local as up to date).
+    -- Normalize to the first 14 digits (YYYYMMDDHHMMSS) so values with extra
+    -- microsecond/timezone digits (e.g. remote isoformat) don't compare as
+    -- artificially larger than a plain local timestamp.
     local function toTimestampNumber(ts)
       local num = tostring(ts or ""):gsub("[^%d]", "")
+      num = string.sub(num, 1, 14)
       return tonumber(num) or 0
     end
     local localStamp = toTimestampNumber(lastCardUpdate)
     local remoteStamp = toTimestampNumber(remoteTimestamp)
     
-    if lastCardUpdate ~= "" and remoteStamp ~= 0 and localStamp >= remoteStamp then
+    if not force and lastCardUpdate ~= "" and remoteStamp ~= 0 and localStamp >= remoteStamp then
       broadcastToAll("Already up to date! (Last: " .. lastCardUpdate .. ")", {0, 1, 0})
       return
     end
     
-    -- Update needed
-    broadcastToAll("Update available! Downloading new version...", {0, 0.7, 1})
-    broadcastToAll("Local: " .. (lastCardUpdate ~= "" and lastCardUpdate or "unknown") .. " | Remote: " .. remoteTimestamp, {0.7, 0.7, 0.7})
-    
-    -- Download and spawn new version
-    local cacheBust = remoteTimestamp:gsub("[^%d]", "")
-    local url = cardsUrl .. "?v=" .. cacheBust
-    
-    WebRequest.get(url, function(webReturn)
+    local function download_and_spawn(updatedCardsUrl, effectiveRemoteTimestamp)
+      if not updatedCardsUrl or updatedCardsUrl == "" then
+        broadcastToAll("Could not find team box URL in update metadata.", {1, 0.5, 0})
+        return
+      end
+
+      broadcastToAll("Update available! Downloading new version...", {0, 0.7, 1})
+      broadcastToAll("Local: " .. (lastCardUpdate ~= "" and lastCardUpdate or "unknown") .. " | Remote: " .. effectiveRemoteTimestamp, {0.7, 0.7, 0.7})
+
+      local cacheBust = tostring(effectiveRemoteTimestamp or ""):gsub("[^%d]", "")
+      local separator = string.find(updatedCardsUrl, "?", 1, true) and "&" or "?"
+      local url = updatedCardsUrl .. separator .. "v=" .. cacheBust
+
+      WebRequest.get(url, function(webReturn)
       if webReturn.is_error then
         broadcastToAll("Failed to download update: " .. webReturn.error, {1, 0.5, 0})
         return
       end
-      
-      local success, decoded = pcall(function() return JSON.decode(webReturn.text) end)
-      if not success or not decoded.ObjectStates or #decoded.ObjectStates == 0 then
+
+      -- The downloaded box file may be EITHER:
+      --   (a) a bare object (new format): { "GUID": ..., "Name": ..., ... }
+      --   (b) a full save-file wrapper (legacy/published boxes still in use):
+      --       { "SaveName": ..., ..., "ObjectStates": [ {box} ] }
+      -- We support both so users with old published boxes can still self-update.
+      --
+      -- CRITICAL: we must NOT run Lua patterns on the ~400KB-1MB payload.
+      -- MoonSharp throws "pattern too complex" even on simple anchored patterns
+      -- at that size. All scanning below uses byte ops and plain string.find
+      -- (4th arg = true), both of which are O(n) native C# in TTS.
+      local saveText = webReturn.text
+      local saveLen = #saveText
+      local function isSpace(b) return b == 32 or b == 9 or b == 10 or b == 13 end
+
+      -- Skip leading whitespace
+      local startIdx = 1
+      while startIdx <= saveLen and isSpace(saveText:byte(startIdx)) do
+        startIdx = startIdx + 1
+      end
+
+      if startIdx > saveLen or saveText:byte(startIdx) ~= 123 then -- 123 = '{'
         broadcastToAll("Invalid update data received.", {1, 0.5, 0})
         return
       end
-      
-      local newBoxData = decoded.ObjectStates[1]
-      
-      -- Ensure the new box state matches the remote timestamp to avoid repeated updates
-      if newBoxData.LuaScriptState ~= nil and newBoxData.LuaScriptState ~= "" then
-        local ok, state = pcall(function() return JSON.decode(newBoxData.LuaScriptState) end)
-        if ok and state then
-          state.lastCardUpdate = remoteTimestamp
-          if not state.teamSlug or state.teamSlug == "" then
-            state.teamSlug = teamSlug
-          end
-          newBoxData.LuaScriptState = JSON.encode(state)
-        end
-      else
-        newBoxData.LuaScriptState = JSON.encode({
-          lastCardUpdate = remoteTimestamp,
-          teamSlug = teamSlug
-        })
+
+      -- Read the first JSON key (between the first pair of quotes after '{')
+      local keyOpenIdx = startIdx + 1
+      while keyOpenIdx <= saveLen and isSpace(saveText:byte(keyOpenIdx)) do
+        keyOpenIdx = keyOpenIdx + 1
       end
-      
+      local firstKey = ""
+      if keyOpenIdx <= saveLen and saveText:byte(keyOpenIdx) == 34 then -- 34 = '"'
+        local keyCloseIdx = saveText:find('"', keyOpenIdx + 1, true)
+        if keyCloseIdx then
+          firstKey = saveText:sub(keyOpenIdx + 1, keyCloseIdx - 1)
+        end
+      end
+
+      local objJson
+      if firstKey == "SaveName" or firstKey == "ObjectStates" then
+        -- (b) Save-file wrapper. Slice the inner box object with plain ops.
+        -- The first occurrence of "ObjectStates" is the real top-level key (it
+        -- precedes the object body whose LuaScript may contain escaped
+        -- \"ObjectStates\" text), so a first-match slice is safe.
+        local osIdx = saveText:find('"ObjectStates"', 1, true)
+        local colonIdx = osIdx and saveText:find(':', osIdx + 14, true)
+        local bracketIdx = colonIdx and saveText:find('[', colonIdx + 1, true)
+        local boxStart = bracketIdx and saveText:find('{', bracketIdx + 1, true)
+
+        -- Walk back from end of file to find the box's closing '}'.
+        -- Tail structure: ... } ] }  (with possible whitespace between).
+        local endIdx = saveLen
+        while endIdx > 0 and isSpace(saveText:byte(endIdx)) do endIdx = endIdx - 1 end
+        if endIdx == 0 or saveText:byte(endIdx) ~= 125 then -- '}' wrapper close
+          broadcastToAll("Invalid update data received.", {1, 0.5, 0})
+          return
+        end
+        endIdx = endIdx - 1
+        while endIdx > 0 and isSpace(saveText:byte(endIdx)) do endIdx = endIdx - 1 end
+        if endIdx == 0 or saveText:byte(endIdx) ~= 93 then -- ']' array close
+          broadcastToAll("Invalid update data received.", {1, 0.5, 0})
+          return
+        end
+        endIdx = endIdx - 1
+        while endIdx > 0 and isSpace(saveText:byte(endIdx)) do endIdx = endIdx - 1 end
+        if endIdx == 0 or saveText:byte(endIdx) ~= 125 then -- '}' box close
+          broadcastToAll("Invalid update data received.", {1, 0.5, 0})
+          return
+        end
+
+        if not boxStart or boxStart > endIdx then
+          broadcastToAll("Invalid update data received.", {1, 0.5, 0})
+          return
+        end
+        objJson = saveText:sub(boxStart, endIdx)
+      else
+        -- (a) Bare object: hand the raw text (minus any leading whitespace)
+        -- straight to spawnObjectJSON, which parses natively in C#.
+        objJson = (startIdx == 1) and saveText or saveText:sub(startIdx)
+      end
+
+      if objJson == "" or objJson:sub(1, 1) ~= "{" then
+        broadcastToAll("Invalid update data received.", {1, 0.5, 0})
+        return
+      end
+
       -- Store current position, rotation, and lock state
       local currentPos = self.getPosition()
       local currentRot = self.getRotation()
       local currentLock = self.getLock()
-      
+
+      -- Spawn next to the current box to avoid overlap. The new box is identical
+      -- to the repo JSON; we don't mutate it (the generated LuaScriptState
+      -- already carries lastCardUpdate, so no injection is needed).
+      local spawnPos = currentPos + Vector(5, 0, 0)
+
       broadcastToAll("Spawning updated card box...", {1, 1, 0})
-      
-      -- Apply position and rotation to new box data
-      newBoxData.Transform.posX = currentPos.x
-      newBoxData.Transform.posY = currentPos.y
-      newBoxData.Transform.posZ = currentPos.z
-      newBoxData.Transform.rotX = currentRot.x
-      newBoxData.Transform.rotY = currentRot.y
-      newBoxData.Transform.rotZ = currentRot.z
-      
-      -- Spawn new box next to the current one to avoid overlap
-      local spawnOffset = Vector(5, 0, 0)
-      local spawnPos = currentPos + spawnOffset
-      newBoxData.Transform.posX = spawnPos.x
-      newBoxData.Transform.posY = spawnPos.y
-      newBoxData.Transform.posZ = spawnPos.z
-      
+
       local spawnedObj = spawnObjectJSON({
-        json = JSON.encode(newBoxData),
-        position = spawnPos
+        json = objJson,
+        position = spawnPos,
+        rotation = currentRot
       })
-      
+
+      if spawnedObj == nil then
+        broadcastToAll("Update failed: could not spawn new box.", {1, 0.5, 0})
+        return
+      end
+
       Wait.condition(
         function()
           -- Wait a moment for script state to initialize
           Wait.time(function()
+            if spawnedObj == nil or spawnedObj.isDestroyed() then
+              broadcastToAll("Update failed during spawn.", {1, 0.5, 0})
+              return
+            end
+
             spawnedObj.setLock(currentLock)
-            
+
             -- Destroy old box after new one is ready
             self.destruct()
-            
+
             -- Move new box to original position
             Wait.time(function()
               spawnedObj.setPositionSmooth(currentPos, false, true)
               spawnedObj.setRotationSmooth(currentRot, false, true)
-              broadcastToAll("✓ Card box updated successfully!", {0, 1, 0})
+              broadcastToAll("Card box updated successfully!", {0, 1, 0})
             end, 0.5)
           end, 0.5)
         end,
         function() return spawnedObj ~= nil and not spawnedObj.spawning end,
         10
       )
-    end)
+      end)
+    end
+
+    download_and_spawn(cardsUrl, remoteTimestamp)
   end)
 end

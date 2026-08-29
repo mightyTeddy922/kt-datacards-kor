@@ -1,0 +1,1731 @@
+{
+  "team": "ratlings",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:40.560730+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/ratlings/content/ratlings-content.json",
+          "hash": "92f2c23b6836627778962d6376836305ebc793ca5ab38b320da52b21f93a88bf",
+          "modified": "2026-08-29T18:47:53.336347+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:47:55.612739+00:00",
+      "inputs": {
+        "layers/integration/ratlings/manifest.json": "fb1e9b045e77462bd0cca6ff5c4a593462aaac19f4d15b354247ea60fc59d481",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/ratlings/ratlings-datacard-bullgryn.pdf": "c2e652ca5fd5183802b065df13b2602e110abd74c9a910af8f126320d10f9607",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "bead8871559422522c1c3814f08e841bc032228377fdd6da1fcc59522756abe2",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "cab10738e66efe077d65a28e4514420bed9fc74d751f7da04694629c30cc5c96",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "83c0d09b5e364012d081f1d562ac6a60fa652fa4ae88cfcb7237e6d70fb78c29",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "919b34d994127f86d893a5a2124a72f03e630bd9582d66c20432eedf5c54f864",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "4caf3b366678a0f12ab47e53e3431d466d7a3dea78c908fc3246467cb3a8cdde",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "d3603ed014ee004699d960564c903490e375781823fe51f045456b3d14b7588e",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": "deaac78a0ee5996155c415635e001e8d61b57deadf11b061c69e9e8a1a7a7e39",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "faeb58c03ea98593f8c75e3d593f0ae15e37aeb1926fa739b345b43e6e9d46db",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c5f22fe40bb8d801b35001a965a8b17d70dcb4fb0f4a2884b0119f3a591e23c5",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "701166d683ba7768ebb7f577bf8046319e38f04c28ed3d6f6c2f833de95b8d30",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "951b21a45ec62dfa441a2d91c4e1105d4e82e35e1fa132b3ead19aaa0c768688",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "d5c32747dbc28b493a1ef2e22f1bf7416a042a3dfea3c60b57af5c6df93a6239",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "bf52a2c8af69ef122f1a46048b68162569476099b166257035f58698efe63301",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "73408e41a7221427589964bc7316f8554f6fe0a51df156a0cf2f9b50f186f242",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "0ee5e428e0d4a84dca078dd5d728ac61e1932a27058dbddd77864480f5bac0dc",
+        "layers/integration/ratlings/ratlings-datacard-ogryn.pdf": "fe200d43655791c6dd00b04a2171060af94fbe68713c6c9464cfeeed54836c2c",
+        "layers/integration/ratlings/ratlings-datacard-ratling-battlemutt.pdf": "f2c42caf7f1321a5b12c5f4d46798732dac16befaa2d5c629a35f64a9cd17ac2",
+        "layers/integration/ratlings/ratlings-datacard-ratling-big-shot.pdf": "9a8889f67ea5fc352bf550c405f63db0f3938b9d482598d5240ffd99e8f8687e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-bomber.pdf": "6098a27e1dd6bde6bb3e0fb41ce9cb121feacbfefb14990ac2d3aae39254a06e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-fixer.pdf": "d9fc4241e2434b8714523889a6795a2d9327c29a8cb2e5ceac7f09a8d6ac665c",
+        "layers/integration/ratlings/ratlings-datacard-ratling-hardbit.pdf": "c3494978a927011a0b32833b746ed1bd51db2fb7bdb71fe3ea7b0c30d2b3abc4",
+        "layers/integration/ratlings/ratlings-datacard-ratling-raider.pdf": "01435bf792325813f17a60500d04ffc553fd7647af6672113a50e58874e975ef",
+        "layers/integration/ratlings/ratlings-datacard-ratling-sneak.pdf": "8e6304adb5151a8dba4d3287a51d45f8470576a4bc2a09de865f0e9264cf959e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-sniper.pdf": "9390832793fdd44c31e668f18fa0e0aaf1e2480850baa46bf384c7bcaa7d6743",
+        "layers/integration/ratlings/ratlings-datacard-ratling-spotter.pdf": "81bc15dbf336b2e79dc3e9536a7c49495d0b27134eb5b7c7ec2cb79f22817c7a",
+        "layers/integration/ratlings/ratlings-datacard-ratling-stashmaster.pdf": "246c72572b6e9a0b29199e4776ec8af52df358d8109a19f5ac754fc4831dafb9",
+        "layers/integration/ratlings/ratlings-datacard-ratling-vox-thief.pdf": "aa3a4b4cb600c32caeb571715af6bc04f3d0b7c0f494a44412b83cb25566c5d5",
+        "layers/integration/ratlings/ratlings-equipment-improvised-armour.pdf": "d74683cdffcf90229707427b897cb37fae70e7eeb43b3c481ebefca7ec883c37",
+        "layers/integration/ratlings/ratlings-equipment-lucky-round.pdf": "ed4541e28a7bb36cb5331f96721c91cc33cdc99538c217e90bc1f9cd7624341b",
+        "layers/integration/ratlings/ratlings-equipment-purloined-rations.pdf": "aa55a68105644619817bbc3c2e6db3639ae216b472e3b817bf7b96429f4b342f",
+        "layers/integration/ratlings/ratlings-equipment-stolen-goods.pdf": "25effc8e25f154f45220a045c2830895cb009b73a1712634823ca438f2eb9379",
+        "layers/integration/ratlings/ratlings-faction-rule-scarper.pdf": "84ddf87c6638bec0fcd171a303bc5719a89880a9945e4ba7ec0c26a8c3c44fae",
+        "layers/integration/ratlings/ratlings-firefight-ploy-larcenous.pdf": "7f9b1d0b5a85b3cc83196bf28908c6ffb191fa313731e6f3672250aceb139329",
+        "layers/integration/ratlings/ratlings-firefight-ploy-sharpshot.pdf": "084e932d6636005a3db5125de68fcc245448e1f32966162ebd3da37e7f0c5ccf",
+        "layers/integration/ratlings/ratlings-firefight-ploy-shoot-and-hide.pdf": "1b1b5b94177d81ef67e2323fa2eeea9d82effa66f64d3072aa5f6c360234ce59",
+        "layers/integration/ratlings/ratlings-firefight-ploy-survival-instincts.pdf": "399828bdf20c7fb41662b83b84dbfe0e2fb0d27d7eb65ff568cdbddaa752a7c5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-1.pdf": "5929c8c8baa033e5daa4e584ea713fb8d0be84c54bfb02ee7ecd342e3651ba09",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-10.pdf": "4fb9a24a7828b4aef6a5fa0a112d2806e8233d56d3aef3361207293383ab8118",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-11.pdf": "c2b74684f23d31f7bb40544bba22475db5cf8124467e663ca268fecea5106d53",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-12.pdf": "6a511aa13a4a38bafbd8ec46cbf6bfd63cc2ba2dde1f9f4f735b65795f3c48de",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-13.pdf": "e81df6dcd507149189771bc03b5f0d6948ea7023ac39662d97860a6491ee4038",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-14.pdf": "d851251e223c18ae97ada8ba700be329db3b22dc33e97f44f392308208d95311",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-15.pdf": "8d6733a6ed5f86b1296e668253f7e6a53ce501078f1a502fbe13cc83618cd2b5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-16.pdf": "abed150d2ff9fa101f1715894e2217f5a6b068292c691c4b4785fdd22ffcff0a",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-2.pdf": "6c4d926e504a0d140781b04e2e799fdfa7a924cf27e32a46168df3a44f05944c",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-3.pdf": "a30ccac8440bcdb4e111b359962839d9b0183889dc3e833db70274f2cc6f08ba",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-4.pdf": "9b2e0e75812cde8a1e25908d298d54ad9e91804001080483b001a35337751292",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-5.pdf": "1ba912b630a289d962ad789f0a8865223bd2f483dc5d75fb83c6971e9ee927a5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-6.pdf": "f2348cf4015f00cd5f301cee5211668b2a7d21f3437e42aba78821de8e62036d",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-7.pdf": "07bb576aa92480843a5a310d0e87d8d6579e1a3d9c67739845e545ff1c7f016a",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-8.pdf": "0f1f427f2e18df526769cc3038e0b6cbd9798b3be0789e29ec63e1beff721ee4",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-9.pdf": "d0a7408adf3fb3b3afbcb0e57863ca9f62df8ad2127855453a10581b8c6a10f1",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection.pdf": "cbe02e01fc68ded5748c6675835da8ec396c60af1e5e8c3552cc4ecfbbed1dc4",
+        "layers/integration/ratlings/ratlings-strategy-ploy-crack-shots.pdf": "3cf131e23a55512d5aeb551672412637f48c4b9d1837351811eb8328d88819bf",
+        "layers/integration/ratlings/ratlings-strategy-ploy-frontline-assault.pdf": "87900481188f877a987b93306c102ae7a893520f9a7b406472f2554f73cf5ae2",
+        "layers/integration/ratlings/ratlings-strategy-ploy-shifty.pdf": "91a2af20857af79be1f238c339c55c575adb75f3f7548620570e0fc5ab2ef51b",
+        "layers/integration/ratlings/ratlings-strategy-ploy-sniper-positions.pdf": "70cd57c2c2f5e78bdfd56af60123316c718f2de86ef2780d6b9b2d8356937142",
+        "layers/integration/ratlings/ratlings-token-guide-token-guide.pdf": "c4c30d4dcf63daf9a80b315a4266b0c9a6f08b6aff4026351f04c54ae7fc40b0"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/ratlings/card-backside/ratlings-backside-landscape.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-07-12T18:55:13.192508+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/ratlings/card-backside/ratlings-backside-portrait.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-07-12T18:55:13.257261+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:55:17.758120+00:00",
+      "inputs": {
+        "layers/integration/ratlings/artwork/icons/ratlings-icon-token.jpg": "42437fe4274d66e840c6f12f37e40b82df715933d9fd310014ec5a1a71394643",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/ratlings-early-warning.png": {
+          "path": "output/ratlings/tokens/ratlings-early-warning.png",
+          "hash": "4269c3b26c577bc3f75fb0906da024b8e93b9e119181a5c8ccf6ecbd0ff83d31",
+          "modified": "2026-08-29T18:48:10.469004+00:00"
+        },
+        "tokens/ratlings-evade.png": {
+          "path": "output/ratlings/tokens/ratlings-evade.png",
+          "hash": "ee712be5633b470287daeb06e644eacc0339557f800232dfa911bd0f18a9f860",
+          "modified": "2026-08-29T18:48:10.606262+00:00"
+        },
+        "tokens/ratlings-explosive-arsenal.png": {
+          "path": "output/ratlings/tokens/ratlings-explosive-arsenal.png",
+          "hash": "c9bc53e6e3519a3949381546f7b67373f5ed1970d925a9fda9ee06e1359e866c",
+          "modified": "2026-08-29T18:48:10.725236+00:00"
+        },
+        "tokens/ratlings-lucky-round.png": {
+          "path": "output/ratlings/tokens/ratlings-lucky-round.png",
+          "hash": "1666435ec6b920b7b5246cfef2c9ed1e10a9b4b90c998601e5ee616e3a5dcd68",
+          "modified": "2026-08-29T18:48:10.778022+00:00"
+        },
+        "tokens/ratlings-optics.png": {
+          "path": "output/ratlings/tokens/ratlings-optics.png",
+          "hash": "9a6edaa05eb4985aa03b01e15994cbb839c9d69149917a48f0f9a6673ba1f2c7",
+          "modified": "2026-08-29T18:48:10.795196+00:00"
+        },
+        "tokens/ratlings-purloined-rations.png": {
+          "path": "output/ratlings/tokens/ratlings-purloined-rations.png",
+          "hash": "cc2fa141a68fd842053c1e4680a1635721efb0ea86b67937e038f319550be39d",
+          "modified": "2026-08-29T18:48:10.803005+00:00"
+        },
+        "tokens/ratlings-scarper.png": {
+          "path": "output/ratlings/tokens/ratlings-scarper.png",
+          "hash": "40a55439607ec5712b77b8105606899f0fa225a790cf6ec9d43c0473f4105149",
+          "modified": "2026-08-29T18:48:10.810259+00:00"
+        },
+        "tokens/ratlings-spot.png": {
+          "path": "output/ratlings/tokens/ratlings-spot.png",
+          "hash": "63d74c7b8b6892ce63c8f1daea128cf1129f967ac3d1187acfb4821594fd0faa",
+          "modified": "2026-08-29T18:48:10.816286+00:00"
+        },
+        "tokens/ratlings-target-designation.png": {
+          "path": "output/ratlings/tokens/ratlings-target-designation.png",
+          "hash": "612cd3ba7d7bf91dd50c108e4c284191f0e0aea9301e10bed9214e015fa21441",
+          "modified": "2026-08-29T18:48:10.825845+00:00"
+        },
+        "tokens/ratlings-tripwire.png": {
+          "path": "output/ratlings/tokens/ratlings-tripwire.png",
+          "hash": "0b40c2a9e1510a2bcb5012d622c948c1d18e218a279209b8a4511ab3937d653e",
+          "modified": "2026-08-29T18:48:10.832381+00:00"
+        },
+        "tokens/ratlings-early-warning.obj": {
+          "path": "output/ratlings/tokens/ratlings-early-warning.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.836383+00:00"
+        },
+        "tokens/ratlings-evade.obj": {
+          "path": "output/ratlings/tokens/ratlings-evade.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.838407+00:00"
+        },
+        "tokens/ratlings-explosive-arsenal.obj": {
+          "path": "output/ratlings/tokens/ratlings-explosive-arsenal.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.841412+00:00"
+        },
+        "tokens/ratlings-lucky-round.obj": {
+          "path": "output/ratlings/tokens/ratlings-lucky-round.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.843925+00:00"
+        },
+        "tokens/ratlings-optics.obj": {
+          "path": "output/ratlings/tokens/ratlings-optics.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.845932+00:00"
+        },
+        "tokens/ratlings-purloined-rations.obj": {
+          "path": "output/ratlings/tokens/ratlings-purloined-rations.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.848435+00:00"
+        },
+        "tokens/ratlings-scarper.obj": {
+          "path": "output/ratlings/tokens/ratlings-scarper.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.851441+00:00"
+        },
+        "tokens/ratlings-spot.obj": {
+          "path": "output/ratlings/tokens/ratlings-spot.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.853440+00:00"
+        },
+        "tokens/ratlings-target-designation.obj": {
+          "path": "output/ratlings/tokens/ratlings-target-designation.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.857455+00:00"
+        },
+        "tokens/ratlings-tripwire.obj": {
+          "path": "output/ratlings/tokens/ratlings-tripwire.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:10.858979+00:00"
+        },
+        "tokens/tokenbag/ratlings-token-bag-icon.png": {
+          "path": "output/ratlings/tokens/tokenbag/ratlings-token-bag-icon.png",
+          "hash": "42437fe4274d66e840c6f12f37e40b82df715933d9fd310014ec5a1a71394643",
+          "modified": "2026-08-29T18:48:10.869504+00:00"
+        },
+        "tokens/tokenbag/ratlings-token-bag.obj": {
+          "path": "output/ratlings/tokens/tokenbag/ratlings-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:48:10.870505+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:12.228829+00:00",
+      "inputs": {
+        "layers/integration/ratlings/manifest.json": "fb1e9b045e77462bd0cca6ff5c4a593462aaac19f4d15b354247ea60fc59d481",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/ratlings/artwork/icons/ratlings-icon-token.jpg": "42437fe4274d66e840c6f12f37e40b82df715933d9fd310014ec5a1a71394643",
+        "layers/integration/ratlings/ratlings-datacard-bullgryn.pdf": "c2e652ca5fd5183802b065df13b2602e110abd74c9a910af8f126320d10f9607",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "bead8871559422522c1c3814f08e841bc032228377fdd6da1fcc59522756abe2",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "cab10738e66efe077d65a28e4514420bed9fc74d751f7da04694629c30cc5c96",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "83c0d09b5e364012d081f1d562ac6a60fa652fa4ae88cfcb7237e6d70fb78c29",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "919b34d994127f86d893a5a2124a72f03e630bd9582d66c20432eedf5c54f864",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "4caf3b366678a0f12ab47e53e3431d466d7a3dea78c908fc3246467cb3a8cdde",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "d3603ed014ee004699d960564c903490e375781823fe51f045456b3d14b7588e",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": "deaac78a0ee5996155c415635e001e8d61b57deadf11b061c69e9e8a1a7a7e39",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "faeb58c03ea98593f8c75e3d593f0ae15e37aeb1926fa739b345b43e6e9d46db",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c5f22fe40bb8d801b35001a965a8b17d70dcb4fb0f4a2884b0119f3a591e23c5",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "701166d683ba7768ebb7f577bf8046319e38f04c28ed3d6f6c2f833de95b8d30",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "951b21a45ec62dfa441a2d91c4e1105d4e82e35e1fa132b3ead19aaa0c768688",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "d5c32747dbc28b493a1ef2e22f1bf7416a042a3dfea3c60b57af5c6df93a6239",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "bf52a2c8af69ef122f1a46048b68162569476099b166257035f58698efe63301",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "73408e41a7221427589964bc7316f8554f6fe0a51df156a0cf2f9b50f186f242",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "0ee5e428e0d4a84dca078dd5d728ac61e1932a27058dbddd77864480f5bac0dc",
+        "layers/integration/ratlings/ratlings-datacard-ogryn.pdf": "fe200d43655791c6dd00b04a2171060af94fbe68713c6c9464cfeeed54836c2c",
+        "layers/integration/ratlings/ratlings-datacard-ratling-battlemutt.pdf": "f2c42caf7f1321a5b12c5f4d46798732dac16befaa2d5c629a35f64a9cd17ac2",
+        "layers/integration/ratlings/ratlings-datacard-ratling-big-shot.pdf": "9a8889f67ea5fc352bf550c405f63db0f3938b9d482598d5240ffd99e8f8687e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-bomber.pdf": "6098a27e1dd6bde6bb3e0fb41ce9cb121feacbfefb14990ac2d3aae39254a06e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-fixer.pdf": "d9fc4241e2434b8714523889a6795a2d9327c29a8cb2e5ceac7f09a8d6ac665c",
+        "layers/integration/ratlings/ratlings-datacard-ratling-hardbit.pdf": "c3494978a927011a0b32833b746ed1bd51db2fb7bdb71fe3ea7b0c30d2b3abc4",
+        "layers/integration/ratlings/ratlings-datacard-ratling-raider.pdf": "01435bf792325813f17a60500d04ffc553fd7647af6672113a50e58874e975ef",
+        "layers/integration/ratlings/ratlings-datacard-ratling-sneak.pdf": "8e6304adb5151a8dba4d3287a51d45f8470576a4bc2a09de865f0e9264cf959e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-sniper.pdf": "9390832793fdd44c31e668f18fa0e0aaf1e2480850baa46bf384c7bcaa7d6743",
+        "layers/integration/ratlings/ratlings-datacard-ratling-spotter.pdf": "81bc15dbf336b2e79dc3e9536a7c49495d0b27134eb5b7c7ec2cb79f22817c7a",
+        "layers/integration/ratlings/ratlings-datacard-ratling-stashmaster.pdf": "246c72572b6e9a0b29199e4776ec8af52df358d8109a19f5ac754fc4831dafb9",
+        "layers/integration/ratlings/ratlings-datacard-ratling-vox-thief.pdf": "aa3a4b4cb600c32caeb571715af6bc04f3d0b7c0f494a44412b83cb25566c5d5",
+        "layers/integration/ratlings/ratlings-equipment-improvised-armour.pdf": "d74683cdffcf90229707427b897cb37fae70e7eeb43b3c481ebefca7ec883c37",
+        "layers/integration/ratlings/ratlings-equipment-lucky-round.pdf": "ed4541e28a7bb36cb5331f96721c91cc33cdc99538c217e90bc1f9cd7624341b",
+        "layers/integration/ratlings/ratlings-equipment-purloined-rations.pdf": "aa55a68105644619817bbc3c2e6db3639ae216b472e3b817bf7b96429f4b342f",
+        "layers/integration/ratlings/ratlings-equipment-stolen-goods.pdf": "25effc8e25f154f45220a045c2830895cb009b73a1712634823ca438f2eb9379",
+        "layers/integration/ratlings/ratlings-faction-rule-scarper.pdf": "84ddf87c6638bec0fcd171a303bc5719a89880a9945e4ba7ec0c26a8c3c44fae",
+        "layers/integration/ratlings/ratlings-firefight-ploy-larcenous.pdf": "7f9b1d0b5a85b3cc83196bf28908c6ffb191fa313731e6f3672250aceb139329",
+        "layers/integration/ratlings/ratlings-firefight-ploy-sharpshot.pdf": "084e932d6636005a3db5125de68fcc245448e1f32966162ebd3da37e7f0c5ccf",
+        "layers/integration/ratlings/ratlings-firefight-ploy-shoot-and-hide.pdf": "1b1b5b94177d81ef67e2323fa2eeea9d82effa66f64d3072aa5f6c360234ce59",
+        "layers/integration/ratlings/ratlings-firefight-ploy-survival-instincts.pdf": "399828bdf20c7fb41662b83b84dbfe0e2fb0d27d7eb65ff568cdbddaa752a7c5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-1.pdf": "5929c8c8baa033e5daa4e584ea713fb8d0be84c54bfb02ee7ecd342e3651ba09",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-10.pdf": "4fb9a24a7828b4aef6a5fa0a112d2806e8233d56d3aef3361207293383ab8118",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-11.pdf": "c2b74684f23d31f7bb40544bba22475db5cf8124467e663ca268fecea5106d53",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-12.pdf": "6a511aa13a4a38bafbd8ec46cbf6bfd63cc2ba2dde1f9f4f735b65795f3c48de",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-13.pdf": "e81df6dcd507149189771bc03b5f0d6948ea7023ac39662d97860a6491ee4038",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-14.pdf": "d851251e223c18ae97ada8ba700be329db3b22dc33e97f44f392308208d95311",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-15.pdf": "8d6733a6ed5f86b1296e668253f7e6a53ce501078f1a502fbe13cc83618cd2b5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-16.pdf": "abed150d2ff9fa101f1715894e2217f5a6b068292c691c4b4785fdd22ffcff0a",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-2.pdf": "6c4d926e504a0d140781b04e2e799fdfa7a924cf27e32a46168df3a44f05944c",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-3.pdf": "a30ccac8440bcdb4e111b359962839d9b0183889dc3e833db70274f2cc6f08ba",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-4.pdf": "9b2e0e75812cde8a1e25908d298d54ad9e91804001080483b001a35337751292",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-5.pdf": "1ba912b630a289d962ad789f0a8865223bd2f483dc5d75fb83c6971e9ee927a5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-6.pdf": "f2348cf4015f00cd5f301cee5211668b2a7d21f3437e42aba78821de8e62036d",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-7.pdf": "07bb576aa92480843a5a310d0e87d8d6579e1a3d9c67739845e545ff1c7f016a",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-8.pdf": "0f1f427f2e18df526769cc3038e0b6cbd9798b3be0789e29ec63e1beff721ee4",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-9.pdf": "d0a7408adf3fb3b3afbcb0e57863ca9f62df8ad2127855453a10581b8c6a10f1",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection.pdf": "cbe02e01fc68ded5748c6675835da8ec396c60af1e5e8c3552cc4ecfbbed1dc4",
+        "layers/integration/ratlings/ratlings-strategy-ploy-crack-shots.pdf": "3cf131e23a55512d5aeb551672412637f48c4b9d1837351811eb8328d88819bf",
+        "layers/integration/ratlings/ratlings-strategy-ploy-frontline-assault.pdf": "87900481188f877a987b93306c102ae7a893520f9a7b406472f2554f73cf5ae2",
+        "layers/integration/ratlings/ratlings-strategy-ploy-shifty.pdf": "91a2af20857af79be1f238c339c55c575adb75f3f7548620570e0fc5ab2ef51b",
+        "layers/integration/ratlings/ratlings-strategy-ploy-sniper-positions.pdf": "70cd57c2c2f5e78bdfd56af60123316c718f2de86ef2780d6b9b2d8356937142",
+        "layers/integration/ratlings/ratlings-token-guide-token-guide.pdf": "c4c30d4dcf63daf9a80b315a4266b0c9a6f08b6aff4026351f04c54ae7fc40b0"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/ratlings/dice/ratlings-dice-light.jpg",
+          "hash": "3930503f47c2b86dded7f31cc7da8802c8ecee7cf7358fe48543091303b3cd43",
+          "modified": "2026-08-29T18:48:24.568157+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/ratlings/dice/ratlings-dice-dark.jpg",
+          "hash": "9544502b0fc54a0d91bb5bcfd777bf563cfc92ff5de65f69fe608d955a0466cd",
+          "modified": "2026-08-29T18:48:24.894590+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/ratlings/dice/ratlings-dice-team.jpg",
+          "hash": "44e689ff9aa40758e6a6d6fb7757f6d84ab25969b30c23f1a5483d0f0ed0c13d",
+          "modified": "2026-08-29T18:48:24.898107+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:25.170080+00:00",
+      "inputs": {
+        "layers/integration/ratlings/artwork/icons/ratlings-icon-token-transparent.png": "d7a20988f3e79dd07513eddad2dc9a50fcf7a095eabc3b6ae0c6e814dbd6bd99",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/ratlings/cardbox/ratlings-card-box-texture.jpg",
+          "hash": "50e32965d42528d8f1bc8bd406469a783c69cbd5b197619e26b66b4ab0ca51cc",
+          "modified": "2026-08-29T18:48:27.153517+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/ratlings/cardbox/ratlings-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:48:27.155517+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:27.161557+00:00",
+      "inputs": {
+        "layers/integration/ratlings/artwork/icons/ratlings-icon-token.jpg": "42437fe4274d66e840c6f12f37e40b82df715933d9fd310014ec5a1a71394643",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/bullgryn-back.jpg": {
+          "path": "output/ratlings/cards/datacards/bullgryn-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:48.342116+00:00"
+        },
+        "cards/datacards/bullgryn-front.jpg": {
+          "path": "output/ratlings/cards/datacards/bullgryn-front.jpg",
+          "hash": "196f1f5c6f33d33f0ebb9ca4010e8b5fcaf51b72fb78f1ff3d32d3fd4f294a36",
+          "modified": "2026-08-29T18:48:48.345139+00:00"
+        },
+        "cards/datacards/ogryn-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ogryn-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.599895+00:00"
+        },
+        "cards/datacards/ogryn-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ogryn-front.jpg",
+          "hash": "7ec7174b2e189cb44cba9d509ed68969dd9247171f9e2a995bbadbe68ef81b21",
+          "modified": "2026-08-29T18:48:50.602398+00:00"
+        },
+        "cards/datacards/ratling-battlemutt-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-battlemutt-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.603402+00:00"
+        },
+        "cards/datacards/ratling-battlemutt-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-battlemutt-front.jpg",
+          "hash": "b4e75b8800bcdbf50a70d5794f1c683e27fc8371b09883560f918365bf780262",
+          "modified": "2026-08-29T18:48:50.605919+00:00"
+        },
+        "cards/datacards/ratling-big-shot-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-big-shot-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.607938+00:00"
+        },
+        "cards/datacards/ratling-big-shot-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-big-shot-front.jpg",
+          "hash": "499cc48936c49d5ff1d15a9eb171e47ef600d05371beb56f4ede7317c78a769f",
+          "modified": "2026-08-29T18:48:50.608943+00:00"
+        },
+        "cards/datacards/ratling-bomber-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-bomber-back.jpg",
+          "hash": "f026ec2679244f13e3642c4da5e375f1087f771c7ff5816e6ce4624c228487b4",
+          "modified": "2026-08-29T18:48:50.610957+00:00"
+        },
+        "cards/datacards/ratling-bomber-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-bomber-front.jpg",
+          "hash": "9343cedbd88eeb36fac13dcd405a0f0be98ed3ec0e3a781128814b08e966b869",
+          "modified": "2026-08-29T18:48:50.614541+00:00"
+        },
+        "cards/datacards/ratling-fixer-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-fixer-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.615541+00:00"
+        },
+        "cards/datacards/ratling-fixer-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-fixer-front.jpg",
+          "hash": "3c01d6b654cbf2a8de0850adc051200aeddcf66be5eac420ee47ee937a84cb22",
+          "modified": "2026-08-29T18:48:50.618554+00:00"
+        },
+        "cards/datacards/ratling-hardbit-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-hardbit-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.620558+00:00"
+        },
+        "cards/datacards/ratling-hardbit-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-hardbit-front.jpg",
+          "hash": "33935d3a9913b33f878d7490241ede6c2518955697fbc59d64d2412a2c603ace",
+          "modified": "2026-08-29T18:48:50.622577+00:00"
+        },
+        "cards/datacards/ratling-raider-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-raider-back.jpg",
+          "hash": "72be93a5f545bd1d184b7558a1a2437ca6506c83a7e725d84eec52573813dbcc",
+          "modified": "2026-08-29T18:48:50.624090+00:00"
+        },
+        "cards/datacards/ratling-raider-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-raider-front.jpg",
+          "hash": "3a096d2c1989e58e05bce5275d6c8904914005a3691c8b68339835fca3a11a36",
+          "modified": "2026-08-29T18:48:50.627092+00:00"
+        },
+        "cards/datacards/ratling-sneak-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-sneak-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.628090+00:00"
+        },
+        "cards/datacards/ratling-sneak-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-sneak-front.jpg",
+          "hash": "eb7a7ceb982bb3915936c0afb135ed66234fdfee2057799502be013f00821f0c",
+          "modified": "2026-08-29T18:48:50.632111+00:00"
+        },
+        "cards/datacards/ratling-sniper-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-sniper-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.633644+00:00"
+        },
+        "cards/datacards/ratling-sniper-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-sniper-front.jpg",
+          "hash": "0cf9571c447344c67aa00d338be9971bddb80b0e2f91680361302aed0bfee486",
+          "modified": "2026-08-29T18:48:50.635159+00:00"
+        },
+        "cards/datacards/ratling-spotter-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-spotter-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.637162+00:00"
+        },
+        "cards/datacards/ratling-spotter-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-spotter-front.jpg",
+          "hash": "5c02ad2d11c297e3b7280afcd7ef13a59185e642216d92e90f317b9a0c54d395",
+          "modified": "2026-08-29T18:48:50.639342+00:00"
+        },
+        "cards/datacards/ratling-stashmaster-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-stashmaster-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.640341+00:00"
+        },
+        "cards/datacards/ratling-stashmaster-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-stashmaster-front.jpg",
+          "hash": "fc3229a0c62451ba9968f41f07cc057421d1739235edbf1be3fc7a5342ab2600",
+          "modified": "2026-08-29T18:48:50.641845+00:00"
+        },
+        "cards/datacards/ratling-vox-thief-back.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-vox-thief-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.642849+00:00"
+        },
+        "cards/datacards/ratling-vox-thief-front.jpg": {
+          "path": "output/ratlings/cards/datacards/ratling-vox-thief-front.jpg",
+          "hash": "e2a9821f2088170ab61f59295c65314ef0890511d6ab3890397ba16f353873ed",
+          "modified": "2026-08-29T18:48:50.645893+00:00"
+        },
+        "cards/equipment/ratlings-improvised-armour-back.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-improvised-armour-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.647396+00:00"
+        },
+        "cards/equipment/ratlings-improvised-armour-front.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-improvised-armour-front.jpg",
+          "hash": "e496cca4c29003f3e8e673e880d31668f5f88f2ee2b4ef1cc4f88d4c7ed3c618",
+          "modified": "2026-08-29T18:48:50.649916+00:00"
+        },
+        "cards/equipment/ratlings-lucky-round-back.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-lucky-round-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.651423+00:00"
+        },
+        "cards/equipment/ratlings-lucky-round-front.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-lucky-round-front.jpg",
+          "hash": "0feb545340cd09f823a9daea4f09d9461fae18fe73763d9a82250fb1002df4e7",
+          "modified": "2026-08-29T18:48:50.653455+00:00"
+        },
+        "cards/equipment/ratlings-purloined-rations-back.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-purloined-rations-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.654459+00:00"
+        },
+        "cards/equipment/ratlings-purloined-rations-front.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-purloined-rations-front.jpg",
+          "hash": "c9265f6377a10b598212f24ea2085fe7dba4c7e75ed022e86dbe795a251b49ef",
+          "modified": "2026-08-29T18:48:50.656459+00:00"
+        },
+        "cards/equipment/ratlings-stolen-goods-back.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-stolen-goods-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.657963+00:00"
+        },
+        "cards/equipment/ratlings-stolen-goods-front.jpg": {
+          "path": "output/ratlings/cards/equipment/ratlings-stolen-goods-front.jpg",
+          "hash": "1b33cbe20a83128636e419d3501812ba92dadfb966453e2c81656e54d17f8d9e",
+          "modified": "2026-08-29T18:48:50.661002+00:00"
+        },
+        "cards/faction_rules/ratlings-scarper-back.jpg": {
+          "path": "output/ratlings/cards/faction_rules/ratlings-scarper-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.662157+00:00"
+        },
+        "cards/faction_rules/ratlings-scarper-front.jpg": {
+          "path": "output/ratlings/cards/faction_rules/ratlings-scarper-front.jpg",
+          "hash": "239629faa9d6a18ff85dc0dff504866d0ec70d94601ac0a7ace5b0897fbae096",
+          "modified": "2026-08-29T18:48:50.665162+00:00"
+        },
+        "cards/firefight_ploys/ratlings-larcenous-back.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-larcenous-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.666212+00:00"
+        },
+        "cards/firefight_ploys/ratlings-larcenous-front.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-larcenous-front.jpg",
+          "hash": "af0b6cd2c72c37d73725d4abebfcb8ea0a25e7bf2c2e3e9524d5e2b90aefcf3e",
+          "modified": "2026-08-29T18:48:50.668720+00:00"
+        },
+        "cards/firefight_ploys/ratlings-sharpshot-back.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-sharpshot-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.670720+00:00"
+        },
+        "cards/firefight_ploys/ratlings-sharpshot-front.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-sharpshot-front.jpg",
+          "hash": "aa00fb1397edde35761453e760199e31fadac25e702d98cbadba4ce686a6f166",
+          "modified": "2026-08-29T18:48:50.673740+00:00"
+        },
+        "cards/firefight_ploys/ratlings-shoot-and-hide-back.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-shoot-and-hide-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.674741+00:00"
+        },
+        "cards/firefight_ploys/ratlings-shoot-and-hide-front.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-shoot-and-hide-front.jpg",
+          "hash": "9317cee878b3b092069d7687d670a3c0403517cea806f9899ac6fbc079b8f2d5",
+          "modified": "2026-08-29T18:48:50.678757+00:00"
+        },
+        "cards/firefight_ploys/ratlings-survival-instincts-back.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-survival-instincts-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.681267+00:00"
+        },
+        "cards/firefight_ploys/ratlings-survival-instincts-front.jpg": {
+          "path": "output/ratlings/cards/firefight_ploys/ratlings-survival-instincts-front.jpg",
+          "hash": "b7b720231c5836897e0ff92e69f9ccad623f3ed2d14401f22d21c971aa23faa0",
+          "modified": "2026-08-29T18:48:50.687775+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-back.jpg",
+          "hash": "4de005a84383e95fdfc8800c7ab75b42226f06f2b033f0c25cbae16e5b837c53",
+          "modified": "2026-08-29T18:48:50.695537+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-front.jpg",
+          "hash": "a12aa997b65406bc3a32cd591e48698b6b78af14f60fdece579a15d476d8b7c9",
+          "modified": "2026-08-29T18:48:51.005792+00:00"
+        },
+        "cards/strategy_ploys/ratlings-crack-shots-back.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-crack-shots-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:51.014360+00:00"
+        },
+        "cards/strategy_ploys/ratlings-crack-shots-front.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-crack-shots-front.jpg",
+          "hash": "d7938ac82e1b6d7238fa51d864bc7770eae841a1591a5a9f9ed8df6968062171",
+          "modified": "2026-08-29T18:48:51.023305+00:00"
+        },
+        "cards/strategy_ploys/ratlings-frontline-assault-back.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-frontline-assault-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:51.027818+00:00"
+        },
+        "cards/strategy_ploys/ratlings-frontline-assault-front.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-frontline-assault-front.jpg",
+          "hash": "175476b8316ba6f84e1cab30a1573e03c0cba73fa0cf7a7f9882853bfa60b62b",
+          "modified": "2026-08-29T18:48:51.033284+00:00"
+        },
+        "cards/strategy_ploys/ratlings-shifty-back.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-shifty-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:51.036312+00:00"
+        },
+        "cards/strategy_ploys/ratlings-shifty-front.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-shifty-front.jpg",
+          "hash": "8a2d86e1e965a95d9abb34256af6d370a186b0a776b7b2e39fc85c52c1600fc1",
+          "modified": "2026-08-29T18:48:51.040332+00:00"
+        },
+        "cards/strategy_ploys/ratlings-sniper-positions-back.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-sniper-positions-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:51.046095+00:00"
+        },
+        "cards/strategy_ploys/ratlings-sniper-positions-front.jpg": {
+          "path": "output/ratlings/cards/strategy_ploys/ratlings-sniper-positions-front.jpg",
+          "hash": "d19f6f2cefe71f803376f935dcb0b92f595f3357935d88887ce304347e1b9ae0",
+          "modified": "2026-08-29T18:48:51.048109+00:00"
+        },
+        "cards/token_guide/ratlings-token-guide-back.jpg": {
+          "path": "output/ratlings/cards/token_guide/ratlings-token-guide-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:51.049115+00:00"
+        },
+        "cards/token_guide/ratlings-token-guide-front.jpg": {
+          "path": "output/ratlings/cards/token_guide/ratlings-token-guide-front.jpg",
+          "hash": "81cd487b4afb85aaf90947643e9c7fc93d31f766f8f022f40d220fe6a769e56a",
+          "modified": "2026-08-29T18:48:51.049620+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:48.352277+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "997e0fc5986ec0df9f98227c09468495e43ef609e0c6901fa47f729fa6b49ae9",
+          "modified": "2026-08-29T18:48:48.361973+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:48.367985+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "d979fd4f69691ba5c5fc2aaec13c3e363f165b429b51a30945738a98d5aa4d4c",
+          "modified": "2026-08-29T18:48:48.376006+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:48.382538+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "f211bad70dc8fb0895ec129f407753af6e37f657aaeab58de1d4456b72268fb8",
+          "modified": "2026-08-29T18:48:48.388044+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:48.396093+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg",
+          "hash": "235209f7c1c4dd533ae9a72b75cb069190d7586a896d1dab9cb8a693a67cf763",
+          "modified": "2026-08-29T18:48:49.035954+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:49.369272+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg",
+          "hash": "bfdd35ad98dc72bfc4f5d4209693109ee9afe4e6984af09d31039f8579405880",
+          "modified": "2026-08-29T18:48:49.758528+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:49.826681+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg",
+          "hash": "6e3921e43cd1bc84d0dbed12dd8bdd9e92c22400e870f4b63d08b0ccf5250c02",
+          "modified": "2026-08-29T18:48:49.957885+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.029705+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg",
+          "hash": "f37fc689e48a4cfe01dd6fdf6bdb398d226455266ff07862f4a2e302a1e35c08",
+          "modified": "2026-08-29T18:48:50.202309+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.399482+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "31a3e2f87f70bdaa07708dff3e2a8ecd2d87dc23c0f0daa5438ee6ab2858a7fb",
+          "modified": "2026-08-29T18:48:50.482258+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.490309+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "49d83e5ae3e33a5d297768806469d00740cfdd7de6a132aa0918cccc1843e229",
+          "modified": "2026-08-29T18:48:50.498881+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.508036+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "e6966c5a18df3133e2677d6ad5db47f5dc0c026f8f412b1de4afb1cb53ec6d31",
+          "modified": "2026-08-29T18:48:50.516250+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.524414+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "936e5e820943cdd685779c534d6849b47fb57ac476fcfe877028b11cbdb11b93",
+          "modified": "2026-08-29T18:48:50.531085+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.536629+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "fe73cbfd46d307820aeb25dda343ee473d5de8497d096451b55991b169cb52b8",
+          "modified": "2026-08-29T18:48:50.547693+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.554840+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "4424a4fd8679a2664ece7cd7ea29cfdbd70a3a2fb76ef0ffb50dc48c5323ade3",
+          "modified": "2026-08-29T18:48:50.565587+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.573185+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "1f9ed98ac91bd634ebbbf9906bf595e57fcb0aad9b061f56b832dce6b3ec6e12",
+          "modified": "2026-08-29T18:48:50.580720+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+          "modified": "2026-08-29T18:48:50.589788+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "a33398bf9ac0ba6677a0b5bc8573fcf010861738f720492a98fd94c05b554c2e",
+          "modified": "2026-08-29T18:48:50.598891+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card1-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card1-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.705591+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card1-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card1-front.jpg",
+          "hash": "7ba5c13f2e00ca8d6eae4843c0fef29c992d4a7f25a57e430888c108260d3371",
+          "modified": "2026-08-29T18:48:50.715133+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card10-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card10-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.724267+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card10-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card10-front.jpg",
+          "hash": "a9065777b8a5b7641094004393e766e2842875bd3438b2c148705f12adcdb140",
+          "modified": "2026-08-29T18:48:50.733875+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card11-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card11-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.741381+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card11-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card11-front.jpg",
+          "hash": "f99ada77f3255897c8ce65b8c70d8a92eaea46efde78d4a256a54e9a627eacbe",
+          "modified": "2026-08-29T18:48:50.748909+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card12-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card12-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.758959+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card12-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card12-front.jpg",
+          "hash": "b49818a44bb137c81847d595687bdcea6dca25fa49c92b6848ee74c5d3c7eac7",
+          "modified": "2026-08-29T18:48:50.768477+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card13-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card13-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.776646+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card13-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card13-front.jpg",
+          "hash": "84868637b12b62e329fa1c1cb81c15446b7616ab128166311b73c1c5109bfa55",
+          "modified": "2026-08-29T18:48:50.786708+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card14-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card14-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.795112+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card14-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card14-front.jpg",
+          "hash": "dc93a50fd648d8f601f9a530f177369648eba18fbff72d7bdba2e69a090bcd73",
+          "modified": "2026-08-29T18:48:50.803185+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card15-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card15-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.810806+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card15-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card15-front.jpg",
+          "hash": "482de73c32b46fd90bce5fccdf62f849c776136e3672d72aad9362d7b8195c23",
+          "modified": "2026-08-29T18:48:50.822454+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card16-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card16-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.830531+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card16-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card16-front.jpg",
+          "hash": "882d50fefa849ccdfbce92b6a69895a29ca14dd9d367286990709a56cdb4ec64",
+          "modified": "2026-08-29T18:48:50.840246+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card2-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card2-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.847096+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card2-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card2-front.jpg",
+          "hash": "d0dfdcd64ba918f80456c6641e44c53573a4304d7390048bf02311001e014181",
+          "modified": "2026-08-29T18:48:50.858004+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card3-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card3-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.865335+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card3-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card3-front.jpg",
+          "hash": "48ffaa4ae8de0b978851d5f010a2bbc09a7aa71ba3b012a53670aff87ff49628",
+          "modified": "2026-08-29T18:48:50.874902+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card4-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card4-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.885107+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card4-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card4-front.jpg",
+          "hash": "96df6e222a2ec3c0e718bc2b2fefcfd5a231bf791024d998cefb2b46be79f3aa",
+          "modified": "2026-08-29T18:48:50.894286+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card5-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card5-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.905845+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card5-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card5-front.jpg",
+          "hash": "745d8e513d50a23ab528b5eefcbf75caa745d8f8752ce40bbd30e87e5b561860",
+          "modified": "2026-08-29T18:48:50.916950+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card6-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card6-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.923711+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card6-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card6-front.jpg",
+          "hash": "d9d2ccf609da22b8da7004b59cc09b1df8283d5fd206b62fbf1197b39bc66643",
+          "modified": "2026-08-29T18:48:50.938358+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card7-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card7-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.947883+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card7-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card7-front.jpg",
+          "hash": "bb5ec27a65912e512447bbe39c386b659e620a81a6f38d8e24630c58e031a372",
+          "modified": "2026-08-29T18:48:50.954625+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card8-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card8-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.961364+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card8-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card8-front.jpg",
+          "hash": "5899f40025c8f5c9a3c53f4c6a3cbdb3faec73b7df352348e93f9b9274444d31",
+          "modified": "2026-08-29T18:48:50.968421+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card9-back.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card9-back.jpg",
+          "hash": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+          "modified": "2026-08-29T18:48:50.980508+00:00"
+        },
+        "cards/operatives_selection/ratlings-operative-selection-card9-front.jpg": {
+          "path": "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card9-front.jpg",
+          "hash": "9c036babb3f99fae616205b42c38719424f6771b216743f640c70a32af8d544a",
+          "modified": "2026-08-29T18:48:50.993774+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:49:09.123010+00:00",
+      "inputs": {
+        "layers/integration/ratlings/manifest.json": "fb1e9b045e77462bd0cca6ff5c4a593462aaac19f4d15b354247ea60fc59d481",
+        "layers/integration/ratlings/ratlings-datacard-bullgryn.pdf": "c2e652ca5fd5183802b065df13b2602e110abd74c9a910af8f126320d10f9607",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "bead8871559422522c1c3814f08e841bc032228377fdd6da1fcc59522756abe2",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "cab10738e66efe077d65a28e4514420bed9fc74d751f7da04694629c30cc5c96",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "83c0d09b5e364012d081f1d562ac6a60fa652fa4ae88cfcb7237e6d70fb78c29",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "919b34d994127f86d893a5a2124a72f03e630bd9582d66c20432eedf5c54f864",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "4caf3b366678a0f12ab47e53e3431d466d7a3dea78c908fc3246467cb3a8cdde",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": "d3603ed014ee004699d960564c903490e375781823fe51f045456b3d14b7588e",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": "deaac78a0ee5996155c415635e001e8d61b57deadf11b061c69e9e8a1a7a7e39",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "faeb58c03ea98593f8c75e3d593f0ae15e37aeb1926fa739b345b43e6e9d46db",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c5f22fe40bb8d801b35001a965a8b17d70dcb4fb0f4a2884b0119f3a591e23c5",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "701166d683ba7768ebb7f577bf8046319e38f04c28ed3d6f6c2f833de95b8d30",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "951b21a45ec62dfa441a2d91c4e1105d4e82e35e1fa132b3ead19aaa0c768688",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "d5c32747dbc28b493a1ef2e22f1bf7416a042a3dfea3c60b57af5c6df93a6239",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "bf52a2c8af69ef122f1a46048b68162569476099b166257035f58698efe63301",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "73408e41a7221427589964bc7316f8554f6fe0a51df156a0cf2f9b50f186f242",
+        "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "0ee5e428e0d4a84dca078dd5d728ac61e1932a27058dbddd77864480f5bac0dc",
+        "layers/integration/ratlings/ratlings-datacard-ogryn.pdf": "fe200d43655791c6dd00b04a2171060af94fbe68713c6c9464cfeeed54836c2c",
+        "layers/integration/ratlings/ratlings-datacard-ratling-battlemutt.pdf": "f2c42caf7f1321a5b12c5f4d46798732dac16befaa2d5c629a35f64a9cd17ac2",
+        "layers/integration/ratlings/ratlings-datacard-ratling-big-shot.pdf": "9a8889f67ea5fc352bf550c405f63db0f3938b9d482598d5240ffd99e8f8687e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-bomber.pdf": "6098a27e1dd6bde6bb3e0fb41ce9cb121feacbfefb14990ac2d3aae39254a06e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-fixer.pdf": "d9fc4241e2434b8714523889a6795a2d9327c29a8cb2e5ceac7f09a8d6ac665c",
+        "layers/integration/ratlings/ratlings-datacard-ratling-hardbit.pdf": "c3494978a927011a0b32833b746ed1bd51db2fb7bdb71fe3ea7b0c30d2b3abc4",
+        "layers/integration/ratlings/ratlings-datacard-ratling-raider.pdf": "01435bf792325813f17a60500d04ffc553fd7647af6672113a50e58874e975ef",
+        "layers/integration/ratlings/ratlings-datacard-ratling-sneak.pdf": "8e6304adb5151a8dba4d3287a51d45f8470576a4bc2a09de865f0e9264cf959e",
+        "layers/integration/ratlings/ratlings-datacard-ratling-sniper.pdf": "9390832793fdd44c31e668f18fa0e0aaf1e2480850baa46bf384c7bcaa7d6743",
+        "layers/integration/ratlings/ratlings-datacard-ratling-spotter.pdf": "81bc15dbf336b2e79dc3e9536a7c49495d0b27134eb5b7c7ec2cb79f22817c7a",
+        "layers/integration/ratlings/ratlings-datacard-ratling-stashmaster.pdf": "246c72572b6e9a0b29199e4776ec8af52df358d8109a19f5ac754fc4831dafb9",
+        "layers/integration/ratlings/ratlings-datacard-ratling-vox-thief.pdf": "aa3a4b4cb600c32caeb571715af6bc04f3d0b7c0f494a44412b83cb25566c5d5",
+        "layers/integration/ratlings/ratlings-equipment-improvised-armour.pdf": "d74683cdffcf90229707427b897cb37fae70e7eeb43b3c481ebefca7ec883c37",
+        "layers/integration/ratlings/ratlings-equipment-lucky-round.pdf": "ed4541e28a7bb36cb5331f96721c91cc33cdc99538c217e90bc1f9cd7624341b",
+        "layers/integration/ratlings/ratlings-equipment-purloined-rations.pdf": "aa55a68105644619817bbc3c2e6db3639ae216b472e3b817bf7b96429f4b342f",
+        "layers/integration/ratlings/ratlings-equipment-stolen-goods.pdf": "25effc8e25f154f45220a045c2830895cb009b73a1712634823ca438f2eb9379",
+        "layers/integration/ratlings/ratlings-faction-rule-scarper.pdf": "84ddf87c6638bec0fcd171a303bc5719a89880a9945e4ba7ec0c26a8c3c44fae",
+        "layers/integration/ratlings/ratlings-firefight-ploy-larcenous.pdf": "7f9b1d0b5a85b3cc83196bf28908c6ffb191fa313731e6f3672250aceb139329",
+        "layers/integration/ratlings/ratlings-firefight-ploy-sharpshot.pdf": "084e932d6636005a3db5125de68fcc245448e1f32966162ebd3da37e7f0c5ccf",
+        "layers/integration/ratlings/ratlings-firefight-ploy-shoot-and-hide.pdf": "1b1b5b94177d81ef67e2323fa2eeea9d82effa66f64d3072aa5f6c360234ce59",
+        "layers/integration/ratlings/ratlings-firefight-ploy-survival-instincts.pdf": "399828bdf20c7fb41662b83b84dbfe0e2fb0d27d7eb65ff568cdbddaa752a7c5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-1.pdf": "5929c8c8baa033e5daa4e584ea713fb8d0be84c54bfb02ee7ecd342e3651ba09",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-10.pdf": "4fb9a24a7828b4aef6a5fa0a112d2806e8233d56d3aef3361207293383ab8118",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-11.pdf": "c2b74684f23d31f7bb40544bba22475db5cf8124467e663ca268fecea5106d53",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-12.pdf": "6a511aa13a4a38bafbd8ec46cbf6bfd63cc2ba2dde1f9f4f735b65795f3c48de",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-13.pdf": "e81df6dcd507149189771bc03b5f0d6948ea7023ac39662d97860a6491ee4038",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-14.pdf": "d851251e223c18ae97ada8ba700be329db3b22dc33e97f44f392308208d95311",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-15.pdf": "8d6733a6ed5f86b1296e668253f7e6a53ce501078f1a502fbe13cc83618cd2b5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-16.pdf": "abed150d2ff9fa101f1715894e2217f5a6b068292c691c4b4785fdd22ffcff0a",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-2.pdf": "6c4d926e504a0d140781b04e2e799fdfa7a924cf27e32a46168df3a44f05944c",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-3.pdf": "a30ccac8440bcdb4e111b359962839d9b0183889dc3e833db70274f2cc6f08ba",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-4.pdf": "9b2e0e75812cde8a1e25908d298d54ad9e91804001080483b001a35337751292",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-5.pdf": "1ba912b630a289d962ad789f0a8865223bd2f483dc5d75fb83c6971e9ee927a5",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-6.pdf": "f2348cf4015f00cd5f301cee5211668b2a7d21f3437e42aba78821de8e62036d",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-7.pdf": "07bb576aa92480843a5a310d0e87d8d6579e1a3d9c67739845e545ff1c7f016a",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-8.pdf": "0f1f427f2e18df526769cc3038e0b6cbd9798b3be0789e29ec63e1beff721ee4",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-9.pdf": "d0a7408adf3fb3b3afbcb0e57863ca9f62df8ad2127855453a10581b8c6a10f1",
+        "layers/integration/ratlings/ratlings-operatives-selection-operative-selection.pdf": "cbe02e01fc68ded5748c6675835da8ec396c60af1e5e8c3552cc4ecfbbed1dc4",
+        "layers/integration/ratlings/ratlings-strategy-ploy-crack-shots.pdf": "3cf131e23a55512d5aeb551672412637f48c4b9d1837351811eb8328d88819bf",
+        "layers/integration/ratlings/ratlings-strategy-ploy-frontline-assault.pdf": "87900481188f877a987b93306c102ae7a893520f9a7b406472f2554f73cf5ae2",
+        "layers/integration/ratlings/ratlings-strategy-ploy-shifty.pdf": "91a2af20857af79be1f238c339c55c575adb75f3f7548620570e0fc5ab2ef51b",
+        "layers/integration/ratlings/ratlings-strategy-ploy-sniper-positions.pdf": "70cd57c2c2f5e78bdfd56af60123316c718f2de86ef2780d6b9b2d8356937142",
+        "layers/integration/ratlings/ratlings-token-guide-token-guide.pdf": "c4c30d4dcf63daf9a80b315a4266b0c9a6f08b6aff4026351f04c54ae7fc40b0",
+        "layers/integration/ratlings/card-backside/ratlings-backside-portrait.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/ratlings/card-backside/ratlings-backside-landscape.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/ratlings/data/ratlings-team-data.json",
+          "hash": "92f2c23b6836627778962d6376836305ebc793ca5ab38b320da52b21f93a88bf",
+          "modified": "2026-08-29T18:49:09.250581+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:49:09.259164+00:00",
+      "inputs": {
+        "layers/integration/ratlings/content/ratlings-content.json": "92f2c23b6836627778962d6376836305ebc793ca5ab38b320da52b21f93a88bf"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Ratlings Box.json": {
+          "path": "output/ratlings/tts_objects/Ratlings Box.json",
+          "hash": "2d9fa2ff1c21b8c02baf5ecdc3a5e1ec7e5eda16eee9c7e4e7f405629f97177c",
+          "modified": "2026-07-21T11:11:14.817427+00:00"
+        },
+        "tts_objects/Ratlings.json": {
+          "path": "output/ratlings/tts_objects/Ratlings.json",
+          "hash": "0daea4cc5703da457bcc8f94b90ff63ce1a4a3b439e7b6fc4a14df9fa67cc230",
+          "modified": "2026-08-29T18:53:40.469104+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:40.560730+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/ratlings/cards/datacards/bullgryn-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/bullgryn-front.jpg": "196f1f5c6f33d33f0ebb9ca4010e8b5fcaf51b72fb78f1ff3d32d3fd4f294a36",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "997e0fc5986ec0df9f98227c09468495e43ef609e0c6901fa47f729fa6b49ae9",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "d979fd4f69691ba5c5fc2aaec13c3e363f165b429b51a30945738a98d5aa4d4c",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "f211bad70dc8fb0895ec129f407753af6e37f657aaeab58de1d4456b72268fb8",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "235209f7c1c4dd533ae9a72b75cb069190d7586a896d1dab9cb8a693a67cf763",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": "bfdd35ad98dc72bfc4f5d4209693109ee9afe4e6984af09d31039f8579405880",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": "6e3921e43cd1bc84d0dbed12dd8bdd9e92c22400e870f4b63d08b0ccf5250c02",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg": "f37fc689e48a4cfe01dd6fdf6bdb398d226455266ff07862f4a2e302a1e35c08",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "31a3e2f87f70bdaa07708dff3e2a8ecd2d87dc23c0f0daa5438ee6ab2858a7fb",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "49d83e5ae3e33a5d297768806469d00740cfdd7de6a132aa0918cccc1843e229",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "e6966c5a18df3133e2677d6ad5db47f5dc0c026f8f412b1de4afb1cb53ec6d31",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "936e5e820943cdd685779c534d6849b47fb57ac476fcfe877028b11cbdb11b93",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "fe73cbfd46d307820aeb25dda343ee473d5de8497d096451b55991b169cb52b8",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "4424a4fd8679a2664ece7cd7ea29cfdbd70a3a2fb76ef0ffb50dc48c5323ade3",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "1f9ed98ac91bd634ebbbf9906bf595e57fcb0aad9b061f56b832dce6b3ec6e12",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "a33398bf9ac0ba6677a0b5bc8573fcf010861738f720492a98fd94c05b554c2e",
+        "output/ratlings/cards/datacards/ogryn-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ogryn-front.jpg": "7ec7174b2e189cb44cba9d509ed68969dd9247171f9e2a995bbadbe68ef81b21",
+        "output/ratlings/cards/datacards/ratling-battlemutt-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-battlemutt-front.jpg": "b4e75b8800bcdbf50a70d5794f1c683e27fc8371b09883560f918365bf780262",
+        "output/ratlings/cards/datacards/ratling-big-shot-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-big-shot-front.jpg": "499cc48936c49d5ff1d15a9eb171e47ef600d05371beb56f4ede7317c78a769f",
+        "output/ratlings/cards/datacards/ratling-bomber-back.jpg": "f026ec2679244f13e3642c4da5e375f1087f771c7ff5816e6ce4624c228487b4",
+        "output/ratlings/cards/datacards/ratling-bomber-front.jpg": "9343cedbd88eeb36fac13dcd405a0f0be98ed3ec0e3a781128814b08e966b869",
+        "output/ratlings/cards/datacards/ratling-fixer-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-fixer-front.jpg": "3c01d6b654cbf2a8de0850adc051200aeddcf66be5eac420ee47ee937a84cb22",
+        "output/ratlings/cards/datacards/ratling-hardbit-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-hardbit-front.jpg": "33935d3a9913b33f878d7490241ede6c2518955697fbc59d64d2412a2c603ace",
+        "output/ratlings/cards/datacards/ratling-raider-back.jpg": "72be93a5f545bd1d184b7558a1a2437ca6506c83a7e725d84eec52573813dbcc",
+        "output/ratlings/cards/datacards/ratling-raider-front.jpg": "3a096d2c1989e58e05bce5275d6c8904914005a3691c8b68339835fca3a11a36",
+        "output/ratlings/cards/datacards/ratling-sneak-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-sneak-front.jpg": "eb7a7ceb982bb3915936c0afb135ed66234fdfee2057799502be013f00821f0c",
+        "output/ratlings/cards/datacards/ratling-sniper-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-sniper-front.jpg": "0cf9571c447344c67aa00d338be9971bddb80b0e2f91680361302aed0bfee486",
+        "output/ratlings/cards/datacards/ratling-spotter-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-spotter-front.jpg": "5c02ad2d11c297e3b7280afcd7ef13a59185e642216d92e90f317b9a0c54d395",
+        "output/ratlings/cards/datacards/ratling-stashmaster-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-stashmaster-front.jpg": "fc3229a0c62451ba9968f41f07cc057421d1739235edbf1be3fc7a5342ab2600",
+        "output/ratlings/cards/datacards/ratling-vox-thief-back.jpg": "35fa2fc63a9be34e143b973abbc78df7d3871967313b44d9fd22ce46b0aaffbe",
+        "output/ratlings/cards/datacards/ratling-vox-thief-front.jpg": "e2a9821f2088170ab61f59295c65314ef0890511d6ab3890397ba16f353873ed",
+        "output/ratlings/cards/equipment/ratlings-improvised-armour-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/equipment/ratlings-improvised-armour-front.jpg": "e496cca4c29003f3e8e673e880d31668f5f88f2ee2b4ef1cc4f88d4c7ed3c618",
+        "output/ratlings/cards/equipment/ratlings-lucky-round-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/equipment/ratlings-lucky-round-front.jpg": "0feb545340cd09f823a9daea4f09d9461fae18fe73763d9a82250fb1002df4e7",
+        "output/ratlings/cards/equipment/ratlings-purloined-rations-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/equipment/ratlings-purloined-rations-front.jpg": "c9265f6377a10b598212f24ea2085fe7dba4c7e75ed022e86dbe795a251b49ef",
+        "output/ratlings/cards/equipment/ratlings-stolen-goods-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/equipment/ratlings-stolen-goods-front.jpg": "1b33cbe20a83128636e419d3501812ba92dadfb966453e2c81656e54d17f8d9e",
+        "output/ratlings/cards/faction_rules/ratlings-scarper-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/faction_rules/ratlings-scarper-front.jpg": "239629faa9d6a18ff85dc0dff504866d0ec70d94601ac0a7ace5b0897fbae096",
+        "output/ratlings/cards/firefight_ploys/ratlings-larcenous-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/firefight_ploys/ratlings-larcenous-front.jpg": "af0b6cd2c72c37d73725d4abebfcb8ea0a25e7bf2c2e3e9524d5e2b90aefcf3e",
+        "output/ratlings/cards/firefight_ploys/ratlings-sharpshot-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/firefight_ploys/ratlings-sharpshot-front.jpg": "aa00fb1397edde35761453e760199e31fadac25e702d98cbadba4ce686a6f166",
+        "output/ratlings/cards/firefight_ploys/ratlings-shoot-and-hide-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/firefight_ploys/ratlings-shoot-and-hide-front.jpg": "9317cee878b3b092069d7687d670a3c0403517cea806f9899ac6fbc079b8f2d5",
+        "output/ratlings/cards/firefight_ploys/ratlings-survival-instincts-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/firefight_ploys/ratlings-survival-instincts-front.jpg": "b7b720231c5836897e0ff92e69f9ccad623f3ed2d14401f22d21c971aa23faa0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-back.jpg": "4de005a84383e95fdfc8800c7ab75b42226f06f2b033f0c25cbae16e5b837c53",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card1-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card1-front.jpg": "7ba5c13f2e00ca8d6eae4843c0fef29c992d4a7f25a57e430888c108260d3371",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card10-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card10-front.jpg": "a9065777b8a5b7641094004393e766e2842875bd3438b2c148705f12adcdb140",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card11-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card11-front.jpg": "f99ada77f3255897c8ce65b8c70d8a92eaea46efde78d4a256a54e9a627eacbe",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card12-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card12-front.jpg": "b49818a44bb137c81847d595687bdcea6dca25fa49c92b6848ee74c5d3c7eac7",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card13-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card13-front.jpg": "84868637b12b62e329fa1c1cb81c15446b7616ab128166311b73c1c5109bfa55",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card14-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card14-front.jpg": "dc93a50fd648d8f601f9a530f177369648eba18fbff72d7bdba2e69a090bcd73",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card15-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card15-front.jpg": "482de73c32b46fd90bce5fccdf62f849c776136e3672d72aad9362d7b8195c23",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card16-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card16-front.jpg": "882d50fefa849ccdfbce92b6a69895a29ca14dd9d367286990709a56cdb4ec64",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card2-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card2-front.jpg": "d0dfdcd64ba918f80456c6641e44c53573a4304d7390048bf02311001e014181",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card3-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card3-front.jpg": "48ffaa4ae8de0b978851d5f010a2bbc09a7aa71ba3b012a53670aff87ff49628",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card4-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card4-front.jpg": "96df6e222a2ec3c0e718bc2b2fefcfd5a231bf791024d998cefb2b46be79f3aa",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card5-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card5-front.jpg": "745d8e513d50a23ab528b5eefcbf75caa745d8f8752ce40bbd30e87e5b561860",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card6-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card6-front.jpg": "d9d2ccf609da22b8da7004b59cc09b1df8283d5fd206b62fbf1197b39bc66643",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card7-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card7-front.jpg": "bb5ec27a65912e512447bbe39c386b659e620a81a6f38d8e24630c58e031a372",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card8-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card8-front.jpg": "5899f40025c8f5c9a3c53f4c6a3cbdb3faec73b7df352348e93f9b9274444d31",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card9-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-card9-front.jpg": "9c036babb3f99fae616205b42c38719424f6771b216743f640c70a32af8d544a",
+        "output/ratlings/cards/operatives_selection/ratlings-operative-selection-front.jpg": "a12aa997b65406bc3a32cd591e48698b6b78af14f60fdece579a15d476d8b7c9",
+        "output/ratlings/cards/strategy_ploys/ratlings-crack-shots-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/strategy_ploys/ratlings-crack-shots-front.jpg": "d7938ac82e1b6d7238fa51d864bc7770eae841a1591a5a9f9ed8df6968062171",
+        "output/ratlings/cards/strategy_ploys/ratlings-frontline-assault-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/strategy_ploys/ratlings-frontline-assault-front.jpg": "175476b8316ba6f84e1cab30a1573e03c0cba73fa0cf7a7f9882853bfa60b62b",
+        "output/ratlings/cards/strategy_ploys/ratlings-shifty-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/strategy_ploys/ratlings-shifty-front.jpg": "8a2d86e1e965a95d9abb34256af6d370a186b0a776b7b2e39fc85c52c1600fc1",
+        "output/ratlings/cards/strategy_ploys/ratlings-sniper-positions-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/strategy_ploys/ratlings-sniper-positions-front.jpg": "d19f6f2cefe71f803376f935dcb0b92f595f3357935d88887ce304347e1b9ae0",
+        "output/ratlings/cards/token_guide/ratlings-token-guide-back.jpg": "e3a7eadb50e0c79288a804e812ce9b352782412e377caf4b1fbc454f39af03a0",
+        "output/ratlings/cards/token_guide/ratlings-token-guide-front.jpg": "81cd487b4afb85aaf90947643e9c7fc93d31f766f8f022f40d220fe6a769e56a",
+        "output/ratlings/cardbox/ratlings-card-box-texture.jpg": "50e32965d42528d8f1bc8bd406469a783c69cbd5b197619e26b66b4ab0ca51cc",
+        "output/ratlings/cardbox/ratlings-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/ratlings/tokens/ratlings-early-warning.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-early-warning.png": "4269c3b26c577bc3f75fb0906da024b8e93b9e119181a5c8ccf6ecbd0ff83d31",
+        "output/ratlings/tokens/ratlings-evade.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-evade.png": "ee712be5633b470287daeb06e644eacc0339557f800232dfa911bd0f18a9f860",
+        "output/ratlings/tokens/ratlings-explosive-arsenal.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-explosive-arsenal.png": "c9bc53e6e3519a3949381546f7b67373f5ed1970d925a9fda9ee06e1359e866c",
+        "output/ratlings/tokens/ratlings-lucky-round.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-lucky-round.png": "1666435ec6b920b7b5246cfef2c9ed1e10a9b4b90c998601e5ee616e3a5dcd68",
+        "output/ratlings/tokens/ratlings-optics.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-optics.png": "9a6edaa05eb4985aa03b01e15994cbb839c9d69149917a48f0f9a6673ba1f2c7",
+        "output/ratlings/tokens/ratlings-purloined-rations.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-purloined-rations.png": "cc2fa141a68fd842053c1e4680a1635721efb0ea86b67937e038f319550be39d",
+        "output/ratlings/tokens/ratlings-scarper.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-scarper.png": "40a55439607ec5712b77b8105606899f0fa225a790cf6ec9d43c0473f4105149",
+        "output/ratlings/tokens/ratlings-spot.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-spot.png": "63d74c7b8b6892ce63c8f1daea128cf1129f967ac3d1187acfb4821594fd0faa",
+        "output/ratlings/tokens/ratlings-target-designation.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-target-designation.png": "612cd3ba7d7bf91dd50c108e4c284191f0e0aea9301e10bed9214e015fa21441",
+        "output/ratlings/tokens/ratlings-tripwire.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/ratlings/tokens/ratlings-tripwire.png": "0b40c2a9e1510a2bcb5012d622c948c1d18e218a279209b8a4511ab3937d653e",
+        "output/ratlings/tokens/tokenbag/ratlings-token-bag-icon.png": "42437fe4274d66e840c6f12f37e40b82df715933d9fd310014ec5a1a71394643",
+        "output/ratlings/tokens/tokenbag/ratlings-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/ratlings/dice/ratlings-dice-dark.jpg": "9544502b0fc54a0d91bb5bcfd777bf563cfc92ff5de65f69fe608d955a0466cd",
+        "output/ratlings/dice/ratlings-dice-light.jpg": "3930503f47c2b86dded7f31cc7da8802c8ecee7cf7358fe48543091303b3cd43",
+        "output/ratlings/dice/ratlings-dice-team.jpg": "44e689ff9aa40758e6a6d6fb7757f6d84ab25969b30c23f1a5483d0f0ed0c13d",
+        "output/ratlings/data/ratlings-team-data.json": "92f2c23b6836627778962d6376836305ebc793ca5ab38b320da52b21f93a88bf",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "operatives-selection": {
+          "hash": "35677447f8afd7ec7d145a3b52ac89151f93eda7e1a6aaa8a78de1b55787fcf6",
+          "outputs": [
+            "layers/kt-app/extracted/ratlings/cards/operatives-selection/ratlings-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/ratlings/cards/operatives-selection/ratlings-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T15:59:02.967082+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "39b22fdd7244de4fb7ac1c882278040f08f6bf986ea3ad5b926a0b1053398b16",
+          "outputs": [
+            "layers/kt-app/extracted/ratlings/cards/firefight-ploys/ratlings-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/ratlings/cards/firefight-ploys/ratlings-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/ratlings/cards/firefight-ploys/ratlings-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/ratlings/cards/firefight-ploys/ratlings-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:00:40.623986+00:00"
+        },
+        "equipment": {
+          "hash": "5101958d5025e3f7ce105b698a40466a95524dd8324b2555b1186e50d4617a98",
+          "outputs": [
+            "layers/kt-app/extracted/ratlings/cards/equipment/ratlings-equipment-page_0.pdf",
+            "layers/kt-app/extracted/ratlings/cards/equipment/ratlings-equipment-page_1.pdf",
+            "layers/kt-app/extracted/ratlings/cards/equipment/ratlings-equipment-page_2.pdf",
+            "layers/kt-app/extracted/ratlings/cards/equipment/ratlings-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:51.470597+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "b0763623f9da05ac2ee4018de08d018478e9c2c4ac43c57291c007176f7a51de",
+          "outputs": [
+            "layers/kt-app/extracted/ratlings/cards/strategy-ploys/ratlings-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/ratlings/cards/strategy-ploys/ratlings-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/ratlings/cards/strategy-ploys/ratlings-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/ratlings/cards/strategy-ploys/ratlings-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:06:06.903007+00:00"
+        },
+        "faction-rules": {
+          "hash": "93dac3c628e1c6c00e4f57a1c32f539b58add44907de55e71344b78f4407ebe6",
+          "outputs": [
+            "layers/kt-app/extracted/ratlings/cards/faction-rules/ratlings-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/ratlings/cards/faction-rules/ratlings-faction-rules-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:11:02.150838+00:00"
+        },
+        "datacards": {
+          "hash": "56315582ca7b450cf76b187228aee78b005f40a106711fb03f7a17e0a8ffd419",
+          "outputs": [
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_0.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_1.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_2.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_3.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_4.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_5.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_6.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_7.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_8.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_9.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_10.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_11.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_12.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_13.pdf",
+            "layers/kt-app/extracted/ratlings/cards/datacards/ratlings-datacards-page_14.pdf"
+          ],
+          "modified": "2026-07-06T16:12:47.549982+00:00"
+        },
+        "cards": {
+          "hash": "c0042a7bc6560f88f42071d1ae41555610b5f3350ef8f73ae49351b0b347a339",
+          "outputs": [
+            "layers/warcom/extracted/ratlings/cards/ratlings_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/ratlings/cards/ratlings_page08_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:33:31.156474+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:33:31.156474+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/ratlings-structure.json",
+          "hash": "fb1e9b045e77462bd0cca6ff5c4a593462aaac19f4d15b354247ea60fc59d481",
+          "modified": "2026-08-29T18:47:41.103863+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card1_landscape.pdf": "bd27a6cc2104ad9e0fad9119ea44fa466472076764d6de0671722cd839aa37ae",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card2_landscape.pdf": "2ea045ecd71a29faa25700b6ab32e9ebbebd63b23e7bf4197a40aa9ea61915d1",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card3_landscape.pdf": "56f369274eeaa70226a281c34ba4b6bb2584b4c20063150ade0a7a4f3c773757",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card4_landscape.pdf": "52383d813206bfc48857cfe8e7aa0685b3a119c3281feb4c1e7b5a80f54b5b2e",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card1_landscape.pdf": "e6662af21bc5040f84e75b98e45c8d83036d23cfaa2b5088b8d0da1624a55101",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card2_landscape.pdf": "1f7f161f6b57341c239da04b17f9b7d425a60d83ca72286746e9fae993d8f868",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card3_landscape.pdf": "2940aeac464f7025a3d129ed63502d0a1dc99957d32d799dc76dd231d8b8d49b",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card4_landscape.pdf": "f70f370c600df079b4c4850d572e8fd4fb42fcdb8a48573d0536fb9ea075d682",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card1_landscape.pdf": "3d001bf9628d2742b223e68b4b697a27a34cacfe973a2de2601f0af9a6d1806e",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card2_landscape.pdf": "848e67431186d9c610fc19f3ff5415de488facfe961d25795bbe2de64d851832",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card3_landscape.pdf": "02249d27a69bc48258ae9746f293102675a2ea32fefc6c0b617fcf0bba6da15e",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card4_landscape.pdf": "4ae049394904909ffeb920e2b0a3f6f4f962acda7605eef5909588db42bac335",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card1_landscape.pdf": "934499d1b31634e1ab3d1ae8bda2a9953e45cdb5d1e90377d6d026bc72e3bddb",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card2_landscape.pdf": "ea56595a872f89a055017475b26d7515cc822dd21d4df481d18acb4c1499fb9b",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card3_landscape.pdf": "d2574ac7862215843552ee0cc8cb6cd7af5d847139cc5b93feac3ac0f8d27745",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card4_landscape.pdf": "15ce79a91b8cbd11e31a583d4c454ac7b404d84b48bbe272e05feaa48575bdeb",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card1_portrait.pdf": "4869101c28fde91615d0d6bf28e33c4a2f3a8a8d288cbba6be3fe1501b5d5a3a",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card2_portrait.pdf": "093fe053ac6562d17729dd46edb4fdea591d3d750e6607e50305b44234b7a332",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card3_portrait.pdf": "e52055e0c04f8d9c164e0fd04a8afaf8459267cba11ca2f8859b8092b50a0957",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card4_portrait.pdf": "b3e6a6754c00b503e503a12e8c999f09e2b39140701bfb4d9d8d69fee23e6e2a",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card1_portrait.pdf": "e283af33208f6c5f6e86e0a8de4e396f9f75fc7824b2a3a23c2ed9fea99150db",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card2_portrait.pdf": "e076e08b317518d113fe5470afd821c504aded1faabe7cb06effb996ad8f11eb",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card3_portrait.pdf": "497d5595d615169572a5ed96756bf4cb1a2c68fd2d79b857f8efa4c41249df88",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card4_portrait.pdf": "330f698fdab6eea80ae9bfed73f97c9cb818ec17305bf67f4819f64559ae6c18",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card1_portrait.pdf": "c2383ebabfc4a1268649560df3c9b6fb87f6e93c2188c61f15a00bbd1b615998",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card2_portrait.pdf": "14b6115db85ba23ea4529052283f72552c5f718b6d0d4153e5578f50e15eb108",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card3_portrait.pdf": "fbbdc345d1f5f229a83e12d265f3925cfdbb99d8d660e6f4aaa4e6bef89bd157",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card4_portrait.pdf": "7ca4774b7eaa7903c86a06e3c6e54441a716ddd5130fd4d2502203218e7b0d59",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card1_portrait.pdf": "e856d2aa7fd72bb840549cc8c1695998b9791d7d83fb0696595fc65bc8586ac5",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card2_portrait.pdf": "40281b03cd1c067e304edc099d0526215dfd58eff7c8cbd9c1e1da451fd13173",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card3_portrait.pdf": "878810e0124b25ea1a968ce2754a5d970ca1e86c99c1165af4e89a7009a4b1da",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card4_portrait.pdf": "086f336e703e7c8a684380c9465022b9858c56a1bbb8c039f01029db31bb58f6"
+      },
+      "completed": "2026-08-29T18:47:41.861085+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/ratlings/manifest.json",
+          "hash": "fb1e9b045e77462bd0cca6ff5c4a593462aaac19f4d15b354247ea60fc59d481",
+          "modified": "2026-08-29T18:47:42.034741+00:00"
+        },
+        "ratlings-datacard-ratling-fixer.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-fixer.pdf",
+          "hash": "d9fc4241e2434b8714523889a6795a2d9327c29a8cb2e5ceac7f09a8d6ac665c",
+          "modified": "2026-07-12T19:18:09.177205+00:00"
+        },
+        "ratlings-datacard-ratling-battlemutt.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-battlemutt.pdf",
+          "hash": "f2c42caf7f1321a5b12c5f4d46798732dac16befaa2d5c629a35f64a9cd17ac2",
+          "modified": "2026-07-12T19:18:09.210673+00:00"
+        },
+        "ratlings-datacard-bullgryn.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-bullgryn.pdf",
+          "hash": "c2e652ca5fd5183802b065df13b2602e110abd74c9a910af8f126320d10f9607",
+          "modified": "2026-07-12T19:18:09.223832+00:00"
+        },
+        "ratlings-datacard-ogryn.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ogryn.pdf",
+          "hash": "fe200d43655791c6dd00b04a2171060af94fbe68713c6c9464cfeeed54836c2c",
+          "modified": "2026-07-12T19:18:10.840689+00:00"
+        },
+        "ratlings-datacard-ratling-big-shot.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-big-shot.pdf",
+          "hash": "9a8889f67ea5fc352bf550c405f63db0f3938b9d482598d5240ffd99e8f8687e",
+          "modified": "2026-07-12T19:18:10.855218+00:00"
+        },
+        "ratlings-datacard-ratling-bomber.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-bomber.pdf",
+          "hash": "6098a27e1dd6bde6bb3e0fb41ce9cb121feacbfefb14990ac2d3aae39254a06e",
+          "modified": "2026-07-12T19:18:10.875066+00:00"
+        },
+        "ratlings-datacard-ratling-hardbit.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-hardbit.pdf",
+          "hash": "c3494978a927011a0b32833b746ed1bd51db2fb7bdb71fe3ea7b0c30d2b3abc4",
+          "modified": "2026-07-12T19:18:10.889138+00:00"
+        },
+        "ratlings-datacard-ratling-raider.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-raider.pdf",
+          "hash": "01435bf792325813f17a60500d04ffc553fd7647af6672113a50e58874e975ef",
+          "modified": "2026-07-12T19:18:10.906414+00:00"
+        },
+        "ratlings-datacard-ratling-sneak.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-sneak.pdf",
+          "hash": "8e6304adb5151a8dba4d3287a51d45f8470576a4bc2a09de865f0e9264cf959e",
+          "modified": "2026-07-12T19:18:10.928779+00:00"
+        },
+        "ratlings-datacard-ratling-sniper.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-sniper.pdf",
+          "hash": "9390832793fdd44c31e668f18fa0e0aaf1e2480850baa46bf384c7bcaa7d6743",
+          "modified": "2026-07-12T19:18:10.948567+00:00"
+        },
+        "ratlings-datacard-ratling-spotter.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-spotter.pdf",
+          "hash": "81bc15dbf336b2e79dc3e9536a7c49495d0b27134eb5b7c7ec2cb79f22817c7a",
+          "modified": "2026-07-12T19:18:11.309472+00:00"
+        },
+        "ratlings-datacard-ratling-stashmaster.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-stashmaster.pdf",
+          "hash": "246c72572b6e9a0b29199e4776ec8af52df358d8109a19f5ac754fc4831dafb9",
+          "modified": "2026-07-12T19:18:11.950820+00:00"
+        },
+        "ratlings-datacard-ratling-vox-thief.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-ratling-vox-thief.pdf",
+          "hash": "aa3a4b4cb600c32caeb571715af6bc04f3d0b7c0f494a44412b83cb25566c5d5",
+          "modified": "2026-07-12T19:18:11.968913+00:00"
+        },
+        "ratlings-equipment-purloined-rations.pdf": {
+          "path": "layers/integration/ratlings/ratlings-equipment-purloined-rations.pdf",
+          "hash": "aa55a68105644619817bbc3c2e6db3639ae216b472e3b817bf7b96429f4b342f",
+          "modified": "2026-07-12T19:18:11.978479+00:00"
+        },
+        "ratlings-equipment-lucky-round.pdf": {
+          "path": "layers/integration/ratlings/ratlings-equipment-lucky-round.pdf",
+          "hash": "ed4541e28a7bb36cb5331f96721c91cc33cdc99538c217e90bc1f9cd7624341b",
+          "modified": "2026-07-12T19:18:11.988537+00:00"
+        },
+        "ratlings-equipment-stolen-goods.pdf": {
+          "path": "layers/integration/ratlings/ratlings-equipment-stolen-goods.pdf",
+          "hash": "25effc8e25f154f45220a045c2830895cb009b73a1712634823ca438f2eb9379",
+          "modified": "2026-07-12T19:18:11.997399+00:00"
+        },
+        "ratlings-equipment-improvised-armour.pdf": {
+          "path": "layers/integration/ratlings/ratlings-equipment-improvised-armour.pdf",
+          "hash": "d74683cdffcf90229707427b897cb37fae70e7eeb43b3c481ebefca7ec883c37",
+          "modified": "2026-07-12T19:18:12.007985+00:00"
+        },
+        "ratlings-faction-rule-scarper.pdf": {
+          "path": "layers/integration/ratlings/ratlings-faction-rule-scarper.pdf",
+          "hash": "84ddf87c6638bec0fcd171a303bc5719a89880a9945e4ba7ec0c26a8c3c44fae",
+          "modified": "2026-07-12T19:18:12.019701+00:00"
+        },
+        "ratlings-token-guide-token-guide.pdf": {
+          "path": "layers/integration/ratlings/ratlings-token-guide-token-guide.pdf",
+          "hash": "c4c30d4dcf63daf9a80b315a4266b0c9a6f08b6aff4026351f04c54ae7fc40b0",
+          "modified": "2026-07-12T19:18:12.031785+00:00"
+        },
+        "ratlings-firefight-ploy-survival-instincts.pdf": {
+          "path": "layers/integration/ratlings/ratlings-firefight-ploy-survival-instincts.pdf",
+          "hash": "399828bdf20c7fb41662b83b84dbfe0e2fb0d27d7eb65ff568cdbddaa752a7c5",
+          "modified": "2026-07-12T19:18:12.040923+00:00"
+        },
+        "ratlings-firefight-ploy-sharpshot.pdf": {
+          "path": "layers/integration/ratlings/ratlings-firefight-ploy-sharpshot.pdf",
+          "hash": "084e932d6636005a3db5125de68fcc245448e1f32966162ebd3da37e7f0c5ccf",
+          "modified": "2026-07-12T19:18:12.060411+00:00"
+        },
+        "ratlings-firefight-ploy-larcenous.pdf": {
+          "path": "layers/integration/ratlings/ratlings-firefight-ploy-larcenous.pdf",
+          "hash": "7f9b1d0b5a85b3cc83196bf28908c6ffb191fa313731e6f3672250aceb139329",
+          "modified": "2026-07-12T19:18:12.075631+00:00"
+        },
+        "ratlings-firefight-ploy-shoot-and-hide.pdf": {
+          "path": "layers/integration/ratlings/ratlings-firefight-ploy-shoot-and-hide.pdf",
+          "hash": "1b1b5b94177d81ef67e2323fa2eeea9d82effa66f64d3072aa5f6c360234ce59",
+          "modified": "2026-07-12T19:18:12.091948+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection.pdf",
+          "hash": "cbe02e01fc68ded5748c6675835da8ec396c60af1e5e8c3552cc4ecfbbed1dc4",
+          "modified": "2026-07-12T19:18:12.112073+00:00"
+        },
+        "ratlings-strategy-ploy-sniper-positions.pdf": {
+          "path": "layers/integration/ratlings/ratlings-strategy-ploy-sniper-positions.pdf",
+          "hash": "70cd57c2c2f5e78bdfd56af60123316c718f2de86ef2780d6b9b2d8356937142",
+          "modified": "2026-07-12T19:18:12.128219+00:00"
+        },
+        "ratlings-strategy-ploy-crack-shots.pdf": {
+          "path": "layers/integration/ratlings/ratlings-strategy-ploy-crack-shots.pdf",
+          "hash": "3cf131e23a55512d5aeb551672412637f48c4b9d1837351811eb8328d88819bf",
+          "modified": "2026-07-12T19:18:12.141932+00:00"
+        },
+        "ratlings-strategy-ploy-shifty.pdf": {
+          "path": "layers/integration/ratlings/ratlings-strategy-ploy-shifty.pdf",
+          "hash": "91a2af20857af79be1f238c339c55c575adb75f3f7548620570e0fc5ab2ef51b",
+          "modified": "2026-07-12T19:18:12.169900+00:00"
+        },
+        "ratlings-strategy-ploy-frontline-assault.pdf": {
+          "path": "layers/integration/ratlings/ratlings-strategy-ploy-frontline-assault.pdf",
+          "hash": "87900481188f877a987b93306c102ae7a893520f9a7b406472f2554f73cf5ae2",
+          "modified": "2026-07-12T19:18:12.190871+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "bead8871559422522c1c3814f08e841bc032228377fdd6da1fcc59522756abe2",
+          "modified": "2026-08-29T18:47:42.052025+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "faeb58c03ea98593f8c75e3d593f0ae15e37aeb1926fa739b345b43e6e9d46db",
+          "modified": "2026-08-29T18:47:42.072283+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "c5f22fe40bb8d801b35001a965a8b17d70dcb4fb0f4a2884b0119f3a591e23c5",
+          "modified": "2026-08-29T18:47:42.091413+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "701166d683ba7768ebb7f577bf8046319e38f04c28ed3d6f6c2f833de95b8d30",
+          "modified": "2026-08-29T18:47:42.107873+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "951b21a45ec62dfa441a2d91c4e1105d4e82e35e1fa132b3ead19aaa0c768688",
+          "modified": "2026-08-29T18:47:42.138084+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "d5c32747dbc28b493a1ef2e22f1bf7416a042a3dfea3c60b57af5c6df93a6239",
+          "modified": "2026-08-29T18:47:42.161441+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "bf52a2c8af69ef122f1a46048b68162569476099b166257035f58698efe63301",
+          "modified": "2026-08-29T18:47:42.182070+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "73408e41a7221427589964bc7316f8554f6fe0a51df156a0cf2f9b50f186f242",
+          "modified": "2026-08-29T18:47:42.436229+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "0ee5e428e0d4a84dca078dd5d728ac61e1932a27058dbddd77864480f5bac0dc",
+          "modified": "2026-08-29T18:47:42.708004+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "cab10738e66efe077d65a28e4514420bed9fc74d751f7da04694629c30cc5c96",
+          "modified": "2026-08-29T18:47:42.730266+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "83c0d09b5e364012d081f1d562ac6a60fa652fa4ae88cfcb7237e6d70fb78c29",
+          "modified": "2026-08-29T18:47:42.755265+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf",
+          "hash": "919b34d994127f86d893a5a2124a72f03e630bd9582d66c20432eedf5c54f864",
+          "modified": "2026-08-29T18:47:42.775404+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf",
+          "hash": "4caf3b366678a0f12ab47e53e3431d466d7a3dea78c908fc3246467cb3a8cdde",
+          "modified": "2026-08-29T18:47:42.794579+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-14.pdf",
+          "hash": "d3603ed014ee004699d960564c903490e375781823fe51f045456b3d14b7588e",
+          "modified": "2026-08-29T18:47:42.832476+00:00"
+        },
+        "ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf": {
+          "path": "layers/integration/ratlings/ratlings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-15.pdf",
+          "hash": "deaac78a0ee5996155c415635e001e8d61b57deadf11b061c69e9e8a1a7a7e39",
+          "modified": "2026-08-29T18:47:42.856303+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-1.pdf",
+          "hash": "5929c8c8baa033e5daa4e584ea713fb8d0be84c54bfb02ee7ecd342e3651ba09",
+          "modified": "2026-08-29T18:47:42.879484+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-2.pdf",
+          "hash": "6c4d926e504a0d140781b04e2e799fdfa7a924cf27e32a46168df3a44f05944c",
+          "modified": "2026-08-29T18:47:43.103489+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-3.pdf",
+          "hash": "a30ccac8440bcdb4e111b359962839d9b0183889dc3e833db70274f2cc6f08ba",
+          "modified": "2026-08-29T18:47:43.459857+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-4.pdf",
+          "hash": "9b2e0e75812cde8a1e25908d298d54ad9e91804001080483b001a35337751292",
+          "modified": "2026-08-29T18:47:43.481487+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-5.pdf",
+          "hash": "1ba912b630a289d962ad789f0a8865223bd2f483dc5d75fb83c6971e9ee927a5",
+          "modified": "2026-08-29T18:47:43.509662+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-6.pdf",
+          "hash": "f2348cf4015f00cd5f301cee5211668b2a7d21f3437e42aba78821de8e62036d",
+          "modified": "2026-08-29T18:47:43.534326+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-7.pdf",
+          "hash": "07bb576aa92480843a5a310d0e87d8d6579e1a3d9c67739845e545ff1c7f016a",
+          "modified": "2026-08-29T18:47:45.524015+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-8.pdf",
+          "hash": "0f1f427f2e18df526769cc3038e0b6cbd9798b3be0789e29ec63e1beff721ee4",
+          "modified": "2026-08-29T18:47:45.540930+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-9.pdf",
+          "hash": "d0a7408adf3fb3b3afbcb0e57863ca9f62df8ad2127855453a10581b8c6a10f1",
+          "modified": "2026-08-29T18:47:45.558084+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-10.pdf",
+          "hash": "4fb9a24a7828b4aef6a5fa0a112d2806e8233d56d3aef3361207293383ab8118",
+          "modified": "2026-08-29T18:47:45.572559+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-11.pdf",
+          "hash": "c2b74684f23d31f7bb40544bba22475db5cf8124467e663ca268fecea5106d53",
+          "modified": "2026-08-29T18:47:46.618099+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-12.pdf",
+          "hash": "6a511aa13a4a38bafbd8ec46cbf6bfd63cc2ba2dde1f9f4f735b65795f3c48de",
+          "modified": "2026-08-29T18:47:46.631010+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-13.pdf",
+          "hash": "e81df6dcd507149189771bc03b5f0d6948ea7023ac39662d97860a6491ee4038",
+          "modified": "2026-08-29T18:47:46.642096+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-14.pdf",
+          "hash": "d851251e223c18ae97ada8ba700be329db3b22dc33e97f44f392308208d95311",
+          "modified": "2026-08-29T18:47:48.235352+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-15.pdf",
+          "hash": "8d6733a6ed5f86b1296e668253f7e6a53ce501078f1a502fbe13cc83618cd2b5",
+          "modified": "2026-08-29T18:47:48.252593+00:00"
+        },
+        "ratlings-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/ratlings/ratlings-operatives-selection-operative-selection-16.pdf",
+          "hash": "abed150d2ff9fa101f1715894e2217f5a6b068292c691c4b4785fdd22ffcff0a",
+          "modified": "2026-08-29T18:47:49.547718+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/ratlings-structure.json": "fb1e9b045e77462bd0cca6ff5c4a593462aaac19f4d15b354247ea60fc59d481",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card1_landscape.pdf": "bd27a6cc2104ad9e0fad9119ea44fa466472076764d6de0671722cd839aa37ae",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card2_landscape.pdf": "2ea045ecd71a29faa25700b6ab32e9ebbebd63b23e7bf4197a40aa9ea61915d1",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card3_landscape.pdf": "56f369274eeaa70226a281c34ba4b6bb2584b4c20063150ade0a7a4f3c773757",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page01_card4_landscape.pdf": "52383d813206bfc48857cfe8e7aa0685b3a119c3281feb4c1e7b5a80f54b5b2e",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card1_landscape.pdf": "e6662af21bc5040f84e75b98e45c8d83036d23cfaa2b5088b8d0da1624a55101",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card2_landscape.pdf": "1f7f161f6b57341c239da04b17f9b7d425a60d83ca72286746e9fae993d8f868",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card3_landscape.pdf": "2940aeac464f7025a3d129ed63502d0a1dc99957d32d799dc76dd231d8b8d49b",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page02_card4_landscape.pdf": "f70f370c600df079b4c4850d572e8fd4fb42fcdb8a48573d0536fb9ea075d682",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card1_landscape.pdf": "3d001bf9628d2742b223e68b4b697a27a34cacfe973a2de2601f0af9a6d1806e",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card2_landscape.pdf": "848e67431186d9c610fc19f3ff5415de488facfe961d25795bbe2de64d851832",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card3_landscape.pdf": "02249d27a69bc48258ae9746f293102675a2ea32fefc6c0b617fcf0bba6da15e",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page03_card4_landscape.pdf": "4ae049394904909ffeb920e2b0a3f6f4f962acda7605eef5909588db42bac335",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card1_landscape.pdf": "934499d1b31634e1ab3d1ae8bda2a9953e45cdb5d1e90377d6d026bc72e3bddb",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card2_landscape.pdf": "ea56595a872f89a055017475b26d7515cc822dd21d4df481d18acb4c1499fb9b",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page04_card3_landscape.pdf": "d2574ac7862215843552ee0cc8cb6cd7af5d847139cc5b93feac3ac0f8d27745",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card1_portrait.pdf": "4869101c28fde91615d0d6bf28e33c4a2f3a8a8d288cbba6be3fe1501b5d5a3a",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card2_portrait.pdf": "093fe053ac6562d17729dd46edb4fdea591d3d750e6607e50305b44234b7a332",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card3_portrait.pdf": "e52055e0c04f8d9c164e0fd04a8afaf8459267cba11ca2f8859b8092b50a0957",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page05_card4_portrait.pdf": "b3e6a6754c00b503e503a12e8c999f09e2b39140701bfb4d9d8d69fee23e6e2a",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card1_portrait.pdf": "e283af33208f6c5f6e86e0a8de4e396f9f75fc7824b2a3a23c2ed9fea99150db",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card2_portrait.pdf": "e076e08b317518d113fe5470afd821c504aded1faabe7cb06effb996ad8f11eb",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card3_portrait.pdf": "497d5595d615169572a5ed96756bf4cb1a2c68fd2d79b857f8efa4c41249df88",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page06_card4_portrait.pdf": "330f698fdab6eea80ae9bfed73f97c9cb818ec17305bf67f4819f64559ae6c18",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card1_portrait.pdf": "c2383ebabfc4a1268649560df3c9b6fb87f6e93c2188c61f15a00bbd1b615998",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card2_portrait.pdf": "14b6115db85ba23ea4529052283f72552c5f718b6d0d4153e5578f50e15eb108",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card3_portrait.pdf": "fbbdc345d1f5f229a83e12d265f3925cfdbb99d8d660e6f4aaa4e6bef89bd157",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page07_card4_portrait.pdf": "7ca4774b7eaa7903c86a06e3c6e54441a716ddd5130fd4d2502203218e7b0d59",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card1_portrait.pdf": "e856d2aa7fd72bb840549cc8c1695998b9791d7d83fb0696595fc65bc8586ac5",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card2_portrait.pdf": "40281b03cd1c067e304edc099d0526215dfd58eff7c8cbd9c1e1da451fd13173",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card3_portrait.pdf": "878810e0124b25ea1a968ce2754a5d970ca1e86c99c1165af4e89a7009a4b1da",
+        "layers/warcom/extracted/ratlings/cards/ratlings_page08_card4_portrait.pdf": "086f336e703e7c8a684380c9465022b9858c56a1bbb8c039f01029db31bb58f6"
+      },
+      "completed": "2026-08-29T18:47:49.580739+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "c0042a7bc6560f88f42071d1ae41555610b5f3350ef8f73ae49351b0b347a339",
+          "outputs": [
+            "layers/integration/ratlings/artwork/ratlings-artwork-01.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-02.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-03.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-03.png",
+            "layers/integration/ratlings/artwork/ratlings-artwork-04.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-05.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-06.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-07.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-08.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-09.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-10.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-11.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-12.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-13.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-14.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-15.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-16.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-17.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-18.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-19.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-20.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-21.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-22.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-23.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-24.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-25.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-26.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-27.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-28.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-29.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-30.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-31.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-32.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-33.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-34.jpeg",
+            "layers/integration/ratlings/artwork/ratlings-artwork-metadata.json",
+            "layers/integration/ratlings/artwork/icons/ratlings-icon-landscape.jpg",
+            "layers/integration/ratlings/artwork/icons/ratlings-icon-portrait.jpg",
+            "layers/integration/ratlings/artwork/icons/ratlings-icon-token-transparent.png",
+            "layers/integration/ratlings/artwork/icons/ratlings-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:38:49.684783+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:38:49.684783+00:00"
+    }
+  }
+}

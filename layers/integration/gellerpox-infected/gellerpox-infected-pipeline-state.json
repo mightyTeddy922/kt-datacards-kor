@@ -1,0 +1,1416 @@
+{
+  "team": "gellerpox-infected",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:43:48.679656+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/gellerpox-infected/content/gellerpox-infected-content.json",
+          "hash": "187a5331f51814e7f4717d306007a6def53e6b20793d6263b21ef78b641441d3",
+          "modified": "2026-08-29T18:42:54.748272+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:07.894182+00:00",
+      "inputs": {
+        "layers/integration/gellerpox-infected/manifest.json": "121b428d3b07753dd9bc68d27eed10a34350aa6071fa58e39b0a603c28461951",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-bloatspawn.pdf": "68562e07a67abc4205058ed4192590b919bfbca3b965d5698ee312d059b01375",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-cursemite.pdf": "7d1deb27cdc61b2e12ddfbf3083b4cf87c67ece627f07f4a2e62b600690af938",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-eyestinger-swarm.pdf": "87fd9af7aa693f8690fd4c5351fd6d072e6b8f8021ac856da676ceef6ce625da",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-fleshscreamer.pdf": "1d6ea2892110fdad19dcd5e66b2c8c0b6d179c63e18df7b4a0400be34e901f2c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-glitchling.pdf": "3cea342d4871f32e6461bd090a482e58eed20c92cc3434c8f86a4ed5fc53541c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "6be00b4f09cacf115fe22187ec3f7599bcd6ed727cb927a3596abc3afe5bc70c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "80d2830c454c426112ae5401c6aee56be871bd4c0bf5629862992577d3e23336",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "bdde008992c03206b7b310c7ddc6e4ebf81edd68be020af5989f72963ca30a4c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "66009fa414d4b417750d188fc7f1104992612fc5b5007a428d2582334b87e4ac",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "2729763af7067e0a094297fc5bf7699e75ed00e942d594c3f06c1d6d9278f9e5",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "9bf3e9a13a68b1bb97fe8f1b1117cae994be04acf749e8e003745b6168058ccd",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "b9bbb4314d740c8fdde7fe070d71388468142390f4d9d3c0007cf7569325c96f",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "f6a6b914cc25e0990f62d0b6753b845cb8a6635b736af0fccd57199b21d9fd35",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ef472c93caf07487113b167932b31de6b2d15dd8d0a41e6e73d815bb3ad24484",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-lumberghast.pdf": "6f78ff8d81de438ce86d696421ae80f7fc5986f59b0e6fe502b23b2c28008908",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-mutant.pdf": "ed442c2759254fc4fadf27bd5dadc8a9aefeacc764b75af88766fe9c833ace7c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-sludge-grub.pdf": "373d99e21a5944d92d1625a5693a84e65e9ee659a8b2d2cf250e19a8fa91708c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-vulgrar-thrice-cursed.pdf": "17ed20a0e903396695d61afa85fb3c1cab1eb62bcaf740a8ec08bc20f38d6dfc",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-mutated-symptoms.pdf": "d79882a944f1e5f6844b55a78e50c922fc22ebec65b6cb97a7ed3c5a6a8db3b9",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-mutoid-vermin.pdf": "e425ebfe2bf26b1cece7f6dc94383f973894b477221bd5b328df58cc5cf63c59",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-plague-bellows.pdf": "97e566e91a4cffdfac5ecdd38872dc1cbad54910c0ece41fddd3cd4f8753dbe7",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-polluted-stockpile.pdf": "2443f085d43ef8952508688cbfd31dc39d0e3b8f9f29096d4458e24d8cf71085",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-mutoid-vermin.pdf": "0802b1c3f78ecf44536e1315b13ddd3a193df27e8f6aba1d1fbfda91866bbba8",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-nightmare-hulks.pdf": "d4cc06bda2cc5b9de79c0c67531121ab811026e25399189a3e84a4092743b376",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-revoltingly-resilient.pdf": "e7fa1d32375ad0ac581a517e7df1b864617d5abdc476ae4073f0a0f04f8b539b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-techno-curse-2.pdf": "48b4d5e8939e29584d5e1e9111aba9f899663e0a1499de5e16b2e0e08a9ce442",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-techno-curse.pdf": "ca5922952518e53fc00a7d2ceb0ef06581bd65b675b07af044c1d7201735e389",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-barge.pdf": "45c1eb3c45c0fcf70889f3489ac1a6f83734d758e9bfd6ad26aa1df8d9a1f783",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-frightening-onslaught.pdf": "2ad3624b730c374ea3a96540f3ed02e17fc1ae23875688bd5a99281342479834",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-putrescent-demise.pdf": "9fbc452786edc9863957e18d9d9c9d544557bd453edc432dfa9617afac2d3bbc",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-revolting-technology.pdf": "99406d9b1a2b711de64462817c9bbc4192409b5e4abda4407c9a5dc5aae6833f",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-1.pdf": "0dd2698ccd12261452418f184011d93b88c785d3f99f925bd7bbc6e2eadfdbdc",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-10.pdf": "f6f3323569e3fa0720dc793d637c17c1285b17ed2d0ee0047f99da71f1e9991b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-11.pdf": "859a6cb743773537fa3602e7ca34e36b3d9f54fa2fcb36f76ff1f8baa007556c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-12.pdf": "6bb5a55aa58ddd49759d7e567518f116968498caba44ea535534e867be6cce0b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-13.pdf": "81a222e9c2ced0b06ae07ac011dbfcc714fd01a9f427f72293374839ad61d469",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-14.pdf": "eac270958473bdcabf8954e5c1012e7b83e760152518c414e01d0989f4cc4112",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-15.pdf": "83ecccf27e359da4dc9cd8f24235c4656bfc47f2f509e1810a2b6fddaa085aeb",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-16.pdf": "d09722512b083b7fcb976685d7e40e63f6b5d1cb7a72da3509fa83d4ab716e48",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-17.pdf": "a41a2ce4900d6e268317e11eb6e0b14ae054b8a9a5b386faa373d6f2ed10f672",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-18.pdf": "8e895e290c9450cac063ad8cbb5e827c206c29d4564f254f42cafadbb5ce1e3e",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-2.pdf": "87a2c29c29b5d25d79cfcb15eed2cb4549a5aa02b66a2077afd1f55c8aef5684",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-3.pdf": "f0177b82dc69fd3187dce83c6749fe2f570766f048326e7b9a059a69a765b55a",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-4.pdf": "610f251c3fa9393baa3db30fed220c741bdeec067d56a24741d9dad817cca36b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-5.pdf": "dda34a0baa775910a45726b73f0f17341f846f6e9587840729d4796c2a17efde",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-6.pdf": "3f11a89c36c379923dee408869287f7c2a85f78dabcaa002398e8bd4e24447f0",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-7.pdf": "d07e6e42c51922b29c84f6ff8a5e9037e99e49f71295f109b08b3040f7ad05ad",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-8.pdf": "eb37ae613951fca1d87334edc7f6faa58d7fa240c59d9545ad7aae55b4fd6170",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-9.pdf": "9e76d00b2ec555d573a14da20d2c7a093d02c094334da20e5bc94de41c553249",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection.pdf": "fbab9c04fda5f6f56ab732b8af2315708cfca079436e00e493deeb8af793713d",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-blessings-of-infection.pdf": "65c3140bcb7ff1c77c541d3d1a5c0f2e7b9b9d0efc3e85dcc7206841104e24f3",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-drawn-to-the-hum.pdf": "9369e4f32eec78af3508518f92e1070bf98b326a051f8d63aa897082a9a294a7",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-plagueridden-determination.pdf": "a562df8544278bcf266cefdafc0c5eb25da436b2042eac115409f36694b86640",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-rust-emanations.pdf": "344b2c69e5a48af8a6db6f53e9b0fa7148be451f4a99c5ff254a6a4ed225ec2d"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/gellerpox-infected/card-backside/gellerpox-infected-backside-landscape.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-07-12T18:47:42.450383+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/gellerpox-infected/card-backside/gellerpox-infected-backside-portrait.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-07-12T18:47:42.454105+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:47:42.457120+00:00",
+      "inputs": {
+        "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-token.jpg": "326cae29b7a8adaf5e562a45136e8ad76c4e918fd75771240276c53fa73c37ad",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/gellerpox-infected/dice/gellerpox-infected-dice-light.jpg",
+          "hash": "37f1ae9e1a6f542851c17cfdcea16104b808c87c837d60a792d21a45482d2f80",
+          "modified": "2026-08-29T18:22:54.519268+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/gellerpox-infected/dice/gellerpox-infected-dice-dark.jpg",
+          "hash": "9b9f80b2e93fb0c3e602b4b877a440ccffab554e060fedad818afbf4d6fdee78",
+          "modified": "2026-08-29T18:22:54.520787+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:22:54.520787+00:00",
+      "inputs": {
+        "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-token-transparent.png": "24c54ce0234b2ee27f4a247565bdeca525351cd3b96793fc243ec0916f00107a",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/gellerpox-infected/cardbox/gellerpox-infected-card-box-texture.jpg",
+          "hash": "467b2e4b23ade5c84339bbbad8599928f86cf97c03641710ca03cb2037fbed76",
+          "modified": "2026-08-29T18:22:54.598580+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/gellerpox-infected/cardbox/gellerpox-infected-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:22:54.606141+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:22:54.609160+00:00",
+      "inputs": {
+        "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-token.jpg": "326cae29b7a8adaf5e562a45136e8ad76c4e918fd75771240276c53fa73c37ad",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/bloatspawn-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/bloatspawn-back.jpg",
+          "hash": "493aea1b70b7e7d864186b660350dedb40f6aa5bac8cc7253e76338887545084",
+          "modified": "2026-08-29T18:43:44.710448+00:00"
+        },
+        "cards/datacards/bloatspawn-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/bloatspawn-front.jpg",
+          "hash": "12b3f0213660ff88c425f17034f4792cebef0d4e92b7b621ced2d036fa23925e",
+          "modified": "2026-08-29T18:43:44.713452+00:00"
+        },
+        "cards/datacards/cursemite-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/cursemite-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.714622+00:00"
+        },
+        "cards/datacards/cursemite-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/cursemite-front.jpg",
+          "hash": "22d9c951de3fa37bbc889e62d4adccc84c107c41d222fb1aff2a8bf638686a5f",
+          "modified": "2026-08-29T18:43:44.716621+00:00"
+        },
+        "cards/datacards/eyestinger-swarm-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/eyestinger-swarm-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.719188+00:00"
+        },
+        "cards/datacards/eyestinger-swarm-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/eyestinger-swarm-front.jpg",
+          "hash": "e443862174e97aaf7a48de8264c52262bb788463a7664ac1c8f2b3e53ad024d0",
+          "modified": "2026-08-29T18:43:44.721187+00:00"
+        },
+        "cards/datacards/fleshscreamer-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/fleshscreamer-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.721187+00:00"
+        },
+        "cards/datacards/fleshscreamer-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/fleshscreamer-front.jpg",
+          "hash": "4ede3e592ce8db6f4a5571055e61ef62874a7c25002c4bf6065ac4288fcfb38d",
+          "modified": "2026-08-29T18:43:44.725034+00:00"
+        },
+        "cards/datacards/glitchling-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/glitchling-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.726033+00:00"
+        },
+        "cards/datacards/glitchling-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/glitchling-front.jpg",
+          "hash": "6d7ebd259e43961916dee9ab7d0dc8fcc10a54801ad88bb2bb62b8952bb989d9",
+          "modified": "2026-08-29T18:43:44.728536+00:00"
+        },
+        "cards/datacards/lumberghast-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/lumberghast-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.810183+00:00"
+        },
+        "cards/datacards/lumberghast-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/lumberghast-front.jpg",
+          "hash": "265f2eeea32d87c7c4c32c95a7136e8504eb478412867f2876471ae34a20a510",
+          "modified": "2026-08-29T18:43:44.811188+00:00"
+        },
+        "cards/datacards/mutant-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/mutant-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.813531+00:00"
+        },
+        "cards/datacards/mutant-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/mutant-front.jpg",
+          "hash": "6ffe19df628fa8b262c81857892a7b8759df7a73af7a040ca2474bcedc38be99",
+          "modified": "2026-08-29T18:43:44.817046+00:00"
+        },
+        "cards/datacards/sludge-grub-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/sludge-grub-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.818046+00:00"
+        },
+        "cards/datacards/sludge-grub-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/sludge-grub-front.jpg",
+          "hash": "1d06034324af1ca4fbcff6882b8fc12fd462f2112e8b4e7b633567614559e98f",
+          "modified": "2026-08-29T18:43:44.822151+00:00"
+        },
+        "cards/datacards/vulgrar-thrice-cursed-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/vulgrar-thrice-cursed-back.jpg",
+          "hash": "fd7126be42535475d45a3dee90628859189ed3b518b9ba49ccf56cf11f921f68",
+          "modified": "2026-08-29T18:43:44.824659+00:00"
+        },
+        "cards/datacards/vulgrar-thrice-cursed-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/vulgrar-thrice-cursed-front.jpg",
+          "hash": "c16433a0737306f098153050b968207801ee5f44b88e2e0aef6ee527eaf479ea",
+          "modified": "2026-08-29T18:43:44.828732+00:00"
+        },
+        "cards/equipment/gellerpox-infected-mutated-symptoms-back.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutated-symptoms-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.831733+00:00"
+        },
+        "cards/equipment/gellerpox-infected-mutated-symptoms-front.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutated-symptoms-front.jpg",
+          "hash": "8bee7e9f85abd5e2b10fccfa6a24f5615a8c62a3a1ebafa38a42f55956375e9c",
+          "modified": "2026-08-29T18:43:44.837768+00:00"
+        },
+        "cards/equipment/gellerpox-infected-mutoid-vermin-back.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutoid-vermin-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.840772+00:00"
+        },
+        "cards/equipment/gellerpox-infected-mutoid-vermin-front.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutoid-vermin-front.jpg",
+          "hash": "935ff5215af6014a50a52038fb4c1c1e9a911957c177688876c8a9a368c24907",
+          "modified": "2026-08-29T18:43:44.842277+00:00"
+        },
+        "cards/equipment/gellerpox-infected-plague-bellows-back.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-plague-bellows-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.843781+00:00"
+        },
+        "cards/equipment/gellerpox-infected-plague-bellows-front.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-plague-bellows-front.jpg",
+          "hash": "e115e9b7b0fd6708ceaeeefa3c2ad53004aed190df51a393332a4b39696578ab",
+          "modified": "2026-08-29T18:43:44.845784+00:00"
+        },
+        "cards/equipment/gellerpox-infected-polluted-stockpile-back.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-polluted-stockpile-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.846785+00:00"
+        },
+        "cards/equipment/gellerpox-infected-polluted-stockpile-front.jpg": {
+          "path": "output/gellerpox-infected/cards/equipment/gellerpox-infected-polluted-stockpile-front.jpg",
+          "hash": "bb5e99882d94a8004e0feb68a8a307b6161cad05b597eab2dc2591b3b8a54fc5",
+          "modified": "2026-08-29T18:43:44.850312+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-mutoid-vermin-back.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-mutoid-vermin-back.jpg",
+          "hash": "e76b631dbab08b6d4d7689ba051cf81cc6bd3acb42ef592fb089d065c3e22f18",
+          "modified": "2026-08-29T18:43:44.854365+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-mutoid-vermin-front.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-mutoid-vermin-front.jpg",
+          "hash": "e35e7cea3511943da584e2b2fa522a8d7700a05aebf6c565840dceb9b35854c2",
+          "modified": "2026-08-29T18:43:44.859937+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-nightmare-hulks-back.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-nightmare-hulks-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.860936+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-nightmare-hulks-front.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-nightmare-hulks-front.jpg",
+          "hash": "ec9e43a19a9a10b7bf5b1e07263af3a585ab6d46909cf59c33ed2e2922068a9f",
+          "modified": "2026-08-29T18:43:44.867884+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-revoltingly-resilient-back.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-revoltingly-resilient-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.869397+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-revoltingly-resilient-front.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-revoltingly-resilient-front.jpg",
+          "hash": "45f76bcdf61b4900a8e063f5ca1379895ede645f4119eaaad9e8f2d2aa0ed05f",
+          "modified": "2026-08-29T18:43:44.874443+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-techno-curse-2-back.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-2-back.jpg",
+          "hash": "f28f10975840408947422c9d55dc3c2a4f3c22790157c690235d966486db04fc",
+          "modified": "2026-08-29T18:43:44.877952+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-techno-curse-2-front.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-2-front.jpg",
+          "hash": "5acf4fa21261498e8bb887b4cb4db777f66980d6a67270054e5c1584fe38dbc7",
+          "modified": "2026-08-29T18:43:44.878957+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-techno-curse-back.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-back.jpg",
+          "hash": "87f8b696b6b19e0ef16e1d6c796526e5103b644e6e9a6203fae1569547edf71d",
+          "modified": "2026-08-29T18:43:44.880461+00:00"
+        },
+        "cards/faction_rules/gellerpox-infected-techno-curse-front.jpg": {
+          "path": "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-front.jpg",
+          "hash": "5acf4fa21261498e8bb887b4cb4db777f66980d6a67270054e5c1584fe38dbc7",
+          "modified": "2026-08-29T18:43:44.882969+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-barge-back.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-barge-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.883973+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-barge-front.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-barge-front.jpg",
+          "hash": "2caaafa4232ebe57f88b8e4773e88ea82b549b1279253e467222f5885707af8e",
+          "modified": "2026-08-29T18:43:44.887992+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-frightening-onslaught-back.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-frightening-onslaught-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.889997+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-frightening-onslaught-front.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-frightening-onslaught-front.jpg",
+          "hash": "7c266d591eb0ca9c2a7e08b1a4d3c160d7324e2c0a5af27764549c1cd1ce35cc",
+          "modified": "2026-08-29T18:43:44.892633+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-putrescent-demise-back.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-putrescent-demise-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.893636+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-putrescent-demise-front.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-putrescent-demise-front.jpg",
+          "hash": "26815c3174e3aa99c0ea287e3c6747220652ae11f6ee86a96e5077638598876d",
+          "modified": "2026-08-29T18:43:44.895636+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-revolting-technology-back.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-revolting-technology-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.895636+00:00"
+        },
+        "cards/firefight_ploys/gellerpox-infected-revolting-technology-front.jpg": {
+          "path": "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-revolting-technology-front.jpg",
+          "hash": "4ac89adc6b28d3064a18531e2e2c68f5ff19ecaf5bb41b70ef83d205e6c27f77",
+          "modified": "2026-08-29T18:43:44.898140+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.898652+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-front.jpg",
+          "hash": "3ec6ef090590f81970a9757908515bc042f99580eee338084c1f3bee967504e9",
+          "modified": "2026-08-29T18:43:46.289702+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-blessings-of-infection-back.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-blessings-of-infection-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.292207+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-blessings-of-infection-front.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-blessings-of-infection-front.jpg",
+          "hash": "fb1455ed000af2cb1157e98519bd6ae48fe097d1cff7871be42c6ad8c77e2bf3",
+          "modified": "2026-08-29T18:43:46.294725+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-drawn-to-the-hum-back.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-drawn-to-the-hum-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.296730+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-drawn-to-the-hum-front.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-drawn-to-the-hum-front.jpg",
+          "hash": "8aabc44303eace8c1b320c95196a1108fa7b80137477f00ca961504fc975d74a",
+          "modified": "2026-08-29T18:43:46.300239+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-plagueridden-determination-back.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-plagueridden-determination-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.302760+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-plagueridden-determination-front.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-plagueridden-determination-front.jpg",
+          "hash": "19e3e5f73a174d4b013da3275ca3bde3a0a3e14a8ed04500cf9ca420b3d63c1f",
+          "modified": "2026-08-29T18:43:46.305269+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-rust-emanations-back.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-rust-emanations-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.306274+00:00"
+        },
+        "cards/strategy_ploys/gellerpox-infected-rust-emanations-front.jpg": {
+          "path": "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-rust-emanations-front.jpg",
+          "hash": "191dee04dc6050984326a32b9c8fbcd9c8d83d1c7a256847a35f4e2930226f69",
+          "modified": "2026-08-29T18:43:46.311287+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "55e12beb202b1675f9b06c2ddd705ab6f8caaf72056510cc7f84efcc46bcf9e6",
+          "modified": "2026-08-29T18:43:44.730540+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "bb259ae62d47b0a19d8b2b3e4164633ab6734722dd40bce32c030ad1a7f11249",
+          "modified": "2026-08-29T18:43:44.733548+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "7240d8b901db6f8d19a2e34966a6f08c898bfee79654dd05eb89eb483a151f4c",
+          "modified": "2026-08-29T18:43:44.736077+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "abf15b98a09f0f3c8467bf329668e331ab60b696b77208301ab4ced7c199aa42",
+          "modified": "2026-08-29T18:43:44.738092+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.745124+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "44b0cf1121cb3928f13a9e9bb63aa38830fae540ae15a4373d11394facf8c197",
+          "modified": "2026-08-29T18:43:44.747124+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.755666+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "2fbf8db06227a50d6326d8c3c9fd3d29f338cb451112d9cb6d71a777492b5588",
+          "modified": "2026-08-29T18:43:44.757809+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.764948+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "ff9495fdec9591ccdd03ff9b6354a7ac0f3e0757f8b504276dbf846fb6c0533f",
+          "modified": "2026-08-29T18:43:44.769039+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.774103+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "6d0a80e45993985570a036e20ab1ec205009f81c46b74b37ffa0d61f44069a2d",
+          "modified": "2026-08-29T18:43:44.777723+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.784238+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "7b084797fb93bf5961130ac58aef700f004a312ca12bbba044f48093275edbd4",
+          "modified": "2026-08-29T18:43:44.787748+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.794122+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "42f4ecead41ec7b2dc2932fc5075a8315cc1cbaca3d532982e3ed6216b5fc791",
+          "modified": "2026-08-29T18:43:44.798133+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+          "modified": "2026-08-29T18:43:44.806166+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "a0ec9fce1e649e587580902d7206d19f73da1ee9a98bcb0de6d0d1a7c8336ade",
+          "modified": "2026-08-29T18:43:44.808679+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card1-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card1-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.906702+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card1-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card1-front.jpg",
+          "hash": "7f76c8060c770db4ec55d220860239b52613ab323784702a62978b6b7abeafbf",
+          "modified": "2026-08-29T18:43:44.912769+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card10-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card10-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.919785+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card10-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card10-front.jpg",
+          "hash": "18a1184db41cda65127a402906815e34383d783a46f1e82117b7999a4a69cd5e",
+          "modified": "2026-08-29T18:43:44.921289+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card11-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card11-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.929577+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card11-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card11-front.jpg",
+          "hash": "aa6ad896f4cf6f00f270e5cc34ba491659fc2ac8b57d70d289c07a846daa36ff",
+          "modified": "2026-08-29T18:43:44.935111+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card12-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card12-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.944166+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card12-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card12-front.jpg",
+          "hash": "75ff19e432e015a3305468091e4014fbb279af9151a4cb1f45d1e1a1c01cd215",
+          "modified": "2026-08-29T18:43:44.948672+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card13-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card13-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:44.955199+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card13-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card13-front.jpg",
+          "hash": "e9491e5ad0635c96c692eda15a215d638bff33d4f304ae7b5a42bcfef55964ba",
+          "modified": "2026-08-29T18:43:44.957703+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card14-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card14-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:45.026698+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card14-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card14-front.jpg",
+          "hash": "1bb2de3c3725aad3baab277079e9e59c3b9ffab84caf20e12f60754ed1a91041",
+          "modified": "2026-08-29T18:43:45.192581+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card15-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card15-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:45.327849+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card15-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card15-front.jpg",
+          "hash": "daab7954279f7d849cf37054c813c535d46fa10c408a37072bb6df005da0641d",
+          "modified": "2026-08-29T18:43:45.503042+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card16-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card16-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:45.601685+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card16-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card16-front.jpg",
+          "hash": "467a8d1078f0a8fdf4283b432c0ee84854a8ac17cfa2dae3711e22194a613649",
+          "modified": "2026-08-29T18:43:45.792028+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card17-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card17-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:45.917759+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card17-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card17-front.jpg",
+          "hash": "b8d5c437c952eae1acb833bdba7a899e5472e20e42871fa1ee2a83c2dfad5e19",
+          "modified": "2026-08-29T18:43:46.142784+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card18-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card18-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.191248+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card18-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card18-front.jpg",
+          "hash": "54294e8de8b73f7e50d315b068c2ebecc5f595c01c87729d0f4b55012c87a520",
+          "modified": "2026-08-29T18:43:46.195755+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card2-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card2-back.jpg",
+          "hash": "5ae0ef4e29ed652e3e57ce0e2759d175b98ccdf011b9b27b9b06213d1c6aba14",
+          "modified": "2026-08-29T18:43:46.201788+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card2-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card2-front.jpg",
+          "hash": "04fba3533b9dc5f9770e1a25e4104f1131718552f78a7d36a60078388eeefa46",
+          "modified": "2026-08-29T18:43:46.207844+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card3-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card3-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.216415+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card3-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card3-front.jpg",
+          "hash": "1c31261ba38d68458e0cf029a59ca8de38f6c2abf05359d34416c4f74ad15f8b",
+          "modified": "2026-08-29T18:43:46.217927+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card4-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card4-back.jpg",
+          "hash": "e76b631dbab08b6d4d7689ba051cf81cc6bd3acb42ef592fb089d065c3e22f18",
+          "modified": "2026-08-29T18:43:46.220952+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card4-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card4-front.jpg",
+          "hash": "2ac8c37fd41c2b2b2c4ca162e057a191f0526af8c2dc452946651ccc5ec8c8b6",
+          "modified": "2026-08-29T18:43:46.227966+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card5-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card5-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.236569+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card5-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card5-front.jpg",
+          "hash": "fc103f9055a6c00c9efd36afe33e86a3f5c0042f675ba249efaa69832d8c40fd",
+          "modified": "2026-08-29T18:43:46.243077+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card6-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card6-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.249173+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card6-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card6-front.jpg",
+          "hash": "613ae36bbdc66fffeec15c87718b11a9f15b85119cea849b6ec681f0bd104dd3",
+          "modified": "2026-08-29T18:43:46.252184+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card7-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card7-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.260193+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card7-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card7-front.jpg",
+          "hash": "1fe12dbdff0aeebd7b4726a9ddfdccff2e7da3712ddb9d89eafa7a37f51a86bd",
+          "modified": "2026-08-29T18:43:46.263055+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card8-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card8-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.272094+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card8-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card8-front.jpg",
+          "hash": "faaa0b712adb95d14ff2709c36d9eda9684f7df696094dba1c753019062d9d99",
+          "modified": "2026-08-29T18:43:46.275112+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card9-back.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card9-back.jpg",
+          "hash": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+          "modified": "2026-08-29T18:43:46.283675+00:00"
+        },
+        "cards/operatives_selection/gellerpox-infected-operative-selection-card9-front.jpg": {
+          "path": "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card9-front.jpg",
+          "hash": "99fa3731c02d26ee95b7016d4f3df6b68f6a6f549cfb444d22b9c99cc2152c25",
+          "modified": "2026-08-29T18:43:46.285678+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:48.679656+00:00",
+      "inputs": {
+        "layers/integration/gellerpox-infected/manifest.json": "121b428d3b07753dd9bc68d27eed10a34350aa6071fa58e39b0a603c28461951",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-bloatspawn.pdf": "68562e07a67abc4205058ed4192590b919bfbca3b965d5698ee312d059b01375",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-cursemite.pdf": "7d1deb27cdc61b2e12ddfbf3083b4cf87c67ece627f07f4a2e62b600690af938",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-eyestinger-swarm.pdf": "87fd9af7aa693f8690fd4c5351fd6d072e6b8f8021ac856da676ceef6ce625da",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-fleshscreamer.pdf": "1d6ea2892110fdad19dcd5e66b2c8c0b6d179c63e18df7b4a0400be34e901f2c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-glitchling.pdf": "3cea342d4871f32e6461bd090a482e58eed20c92cc3434c8f86a4ed5fc53541c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "6be00b4f09cacf115fe22187ec3f7599bcd6ed727cb927a3596abc3afe5bc70c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "80d2830c454c426112ae5401c6aee56be871bd4c0bf5629862992577d3e23336",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "bdde008992c03206b7b310c7ddc6e4ebf81edd68be020af5989f72963ca30a4c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "66009fa414d4b417750d188fc7f1104992612fc5b5007a428d2582334b87e4ac",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "2729763af7067e0a094297fc5bf7699e75ed00e942d594c3f06c1d6d9278f9e5",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "9bf3e9a13a68b1bb97fe8f1b1117cae994be04acf749e8e003745b6168058ccd",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "b9bbb4314d740c8fdde7fe070d71388468142390f4d9d3c0007cf7569325c96f",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "f6a6b914cc25e0990f62d0b6753b845cb8a6635b736af0fccd57199b21d9fd35",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ef472c93caf07487113b167932b31de6b2d15dd8d0a41e6e73d815bb3ad24484",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-lumberghast.pdf": "6f78ff8d81de438ce86d696421ae80f7fc5986f59b0e6fe502b23b2c28008908",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-mutant.pdf": "ed442c2759254fc4fadf27bd5dadc8a9aefeacc764b75af88766fe9c833ace7c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-sludge-grub.pdf": "373d99e21a5944d92d1625a5693a84e65e9ee659a8b2d2cf250e19a8fa91708c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-datacard-vulgrar-thrice-cursed.pdf": "17ed20a0e903396695d61afa85fb3c1cab1eb62bcaf740a8ec08bc20f38d6dfc",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-mutated-symptoms.pdf": "d79882a944f1e5f6844b55a78e50c922fc22ebec65b6cb97a7ed3c5a6a8db3b9",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-mutoid-vermin.pdf": "e425ebfe2bf26b1cece7f6dc94383f973894b477221bd5b328df58cc5cf63c59",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-plague-bellows.pdf": "97e566e91a4cffdfac5ecdd38872dc1cbad54910c0ece41fddd3cd4f8753dbe7",
+        "layers/integration/gellerpox-infected/gellerpox-infected-equipment-polluted-stockpile.pdf": "2443f085d43ef8952508688cbfd31dc39d0e3b8f9f29096d4458e24d8cf71085",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-mutoid-vermin.pdf": "0802b1c3f78ecf44536e1315b13ddd3a193df27e8f6aba1d1fbfda91866bbba8",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-nightmare-hulks.pdf": "d4cc06bda2cc5b9de79c0c67531121ab811026e25399189a3e84a4092743b376",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-revoltingly-resilient.pdf": "e7fa1d32375ad0ac581a517e7df1b864617d5abdc476ae4073f0a0f04f8b539b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-techno-curse-2.pdf": "48b4d5e8939e29584d5e1e9111aba9f899663e0a1499de5e16b2e0e08a9ce442",
+        "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-techno-curse.pdf": "ca5922952518e53fc00a7d2ceb0ef06581bd65b675b07af044c1d7201735e389",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-barge.pdf": "45c1eb3c45c0fcf70889f3489ac1a6f83734d758e9bfd6ad26aa1df8d9a1f783",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-frightening-onslaught.pdf": "2ad3624b730c374ea3a96540f3ed02e17fc1ae23875688bd5a99281342479834",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-putrescent-demise.pdf": "9fbc452786edc9863957e18d9d9c9d544557bd453edc432dfa9617afac2d3bbc",
+        "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-revolting-technology.pdf": "99406d9b1a2b711de64462817c9bbc4192409b5e4abda4407c9a5dc5aae6833f",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-1.pdf": "0dd2698ccd12261452418f184011d93b88c785d3f99f925bd7bbc6e2eadfdbdc",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-10.pdf": "f6f3323569e3fa0720dc793d637c17c1285b17ed2d0ee0047f99da71f1e9991b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-11.pdf": "859a6cb743773537fa3602e7ca34e36b3d9f54fa2fcb36f76ff1f8baa007556c",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-12.pdf": "6bb5a55aa58ddd49759d7e567518f116968498caba44ea535534e867be6cce0b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-13.pdf": "81a222e9c2ced0b06ae07ac011dbfcc714fd01a9f427f72293374839ad61d469",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-14.pdf": "eac270958473bdcabf8954e5c1012e7b83e760152518c414e01d0989f4cc4112",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-15.pdf": "83ecccf27e359da4dc9cd8f24235c4656bfc47f2f509e1810a2b6fddaa085aeb",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-16.pdf": "d09722512b083b7fcb976685d7e40e63f6b5d1cb7a72da3509fa83d4ab716e48",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-17.pdf": "a41a2ce4900d6e268317e11eb6e0b14ae054b8a9a5b386faa373d6f2ed10f672",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-18.pdf": "8e895e290c9450cac063ad8cbb5e827c206c29d4564f254f42cafadbb5ce1e3e",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-2.pdf": "87a2c29c29b5d25d79cfcb15eed2cb4549a5aa02b66a2077afd1f55c8aef5684",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-3.pdf": "f0177b82dc69fd3187dce83c6749fe2f570766f048326e7b9a059a69a765b55a",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-4.pdf": "610f251c3fa9393baa3db30fed220c741bdeec067d56a24741d9dad817cca36b",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-5.pdf": "dda34a0baa775910a45726b73f0f17341f846f6e9587840729d4796c2a17efde",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-6.pdf": "3f11a89c36c379923dee408869287f7c2a85f78dabcaa002398e8bd4e24447f0",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-7.pdf": "d07e6e42c51922b29c84f6ff8a5e9037e99e49f71295f109b08b3040f7ad05ad",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-8.pdf": "eb37ae613951fca1d87334edc7f6faa58d7fa240c59d9545ad7aae55b4fd6170",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-9.pdf": "9e76d00b2ec555d573a14da20d2c7a093d02c094334da20e5bc94de41c553249",
+        "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection.pdf": "fbab9c04fda5f6f56ab732b8af2315708cfca079436e00e493deeb8af793713d",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-blessings-of-infection.pdf": "65c3140bcb7ff1c77c541d3d1a5c0f2e7b9b9d0efc3e85dcc7206841104e24f3",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-drawn-to-the-hum.pdf": "9369e4f32eec78af3508518f92e1070bf98b326a051f8d63aa897082a9a294a7",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-plagueridden-determination.pdf": "a562df8544278bcf266cefdafc0c5eb25da436b2042eac115409f36694b86640",
+        "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-rust-emanations.pdf": "344b2c69e5a48af8a6db6f53e9b0fa7148be451f4a99c5ff254a6a4ed225ec2d",
+        "layers/integration/gellerpox-infected/card-backside/gellerpox-infected-backside-portrait.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/gellerpox-infected/card-backside/gellerpox-infected-backside-landscape.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/gellerpox-infected/data/gellerpox-infected-team-data.json",
+          "hash": "187a5331f51814e7f4717d306007a6def53e6b20793d6263b21ef78b641441d3",
+          "modified": "2026-08-29T18:23:11.949609+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:23:11.950112+00:00",
+      "inputs": {
+        "layers/integration/gellerpox-infected/content/gellerpox-infected-content.json": "187a5331f51814e7f4717d306007a6def53e6b20793d6263b21ef78b641441d3"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Gellerpox Infected Box.json": {
+          "path": "output/gellerpox-infected/tts_objects/Gellerpox Infected Box.json",
+          "hash": "254834711e99ace259022018668b570cf6a7fdd58370c4f0a69a22bd062ac3db",
+          "modified": "2026-07-21T11:11:12.311081+00:00"
+        },
+        "tts_objects/Gellerpox Infected.json": {
+          "path": "output/gellerpox-infected/tts_objects/Gellerpox Infected.json",
+          "hash": "c6001be66ab4c4696a74788918356e9097b157a7dd4e16bcf5d6f57b9cf9063d",
+          "modified": "2026-08-29T18:23:30.500006+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:23:30.573168+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/gellerpox-infected/cards/datacards/bloatspawn-back.jpg": "493aea1b70b7e7d864186b660350dedb40f6aa5bac8cc7253e76338887545084",
+        "output/gellerpox-infected/cards/datacards/bloatspawn-front.jpg": "12b3f0213660ff88c425f17034f4792cebef0d4e92b7b621ced2d036fa23925e",
+        "output/gellerpox-infected/cards/datacards/cursemite-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/cursemite-front.jpg": "22d9c951de3fa37bbc889e62d4adccc84c107c41d222fb1aff2a8bf638686a5f",
+        "output/gellerpox-infected/cards/datacards/eyestinger-swarm-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/eyestinger-swarm-front.jpg": "e443862174e97aaf7a48de8264c52262bb788463a7664ac1c8f2b3e53ad024d0",
+        "output/gellerpox-infected/cards/datacards/fleshscreamer-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/fleshscreamer-front.jpg": "4ede3e592ce8db6f4a5571055e61ef62874a7c25002c4bf6065ac4288fcfb38d",
+        "output/gellerpox-infected/cards/datacards/glitchling-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/glitchling-front.jpg": "6d7ebd259e43961916dee9ab7d0dc8fcc10a54801ad88bb2bb62b8952bb989d9",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "55e12beb202b1675f9b06c2ddd705ab6f8caaf72056510cc7f84efcc46bcf9e6",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "bb259ae62d47b0a19d8b2b3e4164633ab6734722dd40bce32c030ad1a7f11249",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "7240d8b901db6f8d19a2e34966a6f08c898bfee79654dd05eb89eb483a151f4c",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "abf15b98a09f0f3c8467bf329668e331ab60b696b77208301ab4ced7c199aa42",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "44b0cf1121cb3928f13a9e9bb63aa38830fae540ae15a4373d11394facf8c197",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "2fbf8db06227a50d6326d8c3c9fd3d29f338cb451112d9cb6d71a777492b5588",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "ff9495fdec9591ccdd03ff9b6354a7ac0f3e0757f8b504276dbf846fb6c0533f",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "6d0a80e45993985570a036e20ab1ec205009f81c46b74b37ffa0d61f44069a2d",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "7b084797fb93bf5961130ac58aef700f004a312ca12bbba044f48093275edbd4",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "42f4ecead41ec7b2dc2932fc5075a8315cc1cbaca3d532982e3ed6216b5fc791",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "a0ec9fce1e649e587580902d7206d19f73da1ee9a98bcb0de6d0d1a7c8336ade",
+        "output/gellerpox-infected/cards/datacards/lumberghast-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/lumberghast-front.jpg": "265f2eeea32d87c7c4c32c95a7136e8504eb478412867f2876471ae34a20a510",
+        "output/gellerpox-infected/cards/datacards/mutant-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/mutant-front.jpg": "6ffe19df628fa8b262c81857892a7b8759df7a73af7a040ca2474bcedc38be99",
+        "output/gellerpox-infected/cards/datacards/sludge-grub-back.jpg": "8ba22ea86e2a3081824193a182d03a22913296a7293edb9fe5ef5caf557c0031",
+        "output/gellerpox-infected/cards/datacards/sludge-grub-front.jpg": "1d06034324af1ca4fbcff6882b8fc12fd462f2112e8b4e7b633567614559e98f",
+        "output/gellerpox-infected/cards/datacards/vulgrar-thrice-cursed-back.jpg": "fd7126be42535475d45a3dee90628859189ed3b518b9ba49ccf56cf11f921f68",
+        "output/gellerpox-infected/cards/datacards/vulgrar-thrice-cursed-front.jpg": "c16433a0737306f098153050b968207801ee5f44b88e2e0aef6ee527eaf479ea",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutated-symptoms-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutated-symptoms-front.jpg": "8bee7e9f85abd5e2b10fccfa6a24f5615a8c62a3a1ebafa38a42f55956375e9c",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutoid-vermin-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-mutoid-vermin-front.jpg": "935ff5215af6014a50a52038fb4c1c1e9a911957c177688876c8a9a368c24907",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-plague-bellows-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-plague-bellows-front.jpg": "e115e9b7b0fd6708ceaeeefa3c2ad53004aed190df51a393332a4b39696578ab",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-polluted-stockpile-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/equipment/gellerpox-infected-polluted-stockpile-front.jpg": "bb5e99882d94a8004e0feb68a8a307b6161cad05b597eab2dc2591b3b8a54fc5",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-mutoid-vermin-back.jpg": "e76b631dbab08b6d4d7689ba051cf81cc6bd3acb42ef592fb089d065c3e22f18",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-mutoid-vermin-front.jpg": "e35e7cea3511943da584e2b2fa522a8d7700a05aebf6c565840dceb9b35854c2",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-nightmare-hulks-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-nightmare-hulks-front.jpg": "ec9e43a19a9a10b7bf5b1e07263af3a585ab6d46909cf59c33ed2e2922068a9f",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-revoltingly-resilient-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-revoltingly-resilient-front.jpg": "45f76bcdf61b4900a8e063f5ca1379895ede645f4119eaaad9e8f2d2aa0ed05f",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-2-back.jpg": "f28f10975840408947422c9d55dc3c2a4f3c22790157c690235d966486db04fc",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-2-front.jpg": "5acf4fa21261498e8bb887b4cb4db777f66980d6a67270054e5c1584fe38dbc7",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-back.jpg": "87f8b696b6b19e0ef16e1d6c796526e5103b644e6e9a6203fae1569547edf71d",
+        "output/gellerpox-infected/cards/faction_rules/gellerpox-infected-techno-curse-front.jpg": "5acf4fa21261498e8bb887b4cb4db777f66980d6a67270054e5c1584fe38dbc7",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-barge-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-barge-front.jpg": "2caaafa4232ebe57f88b8e4773e88ea82b549b1279253e467222f5885707af8e",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-frightening-onslaught-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-frightening-onslaught-front.jpg": "7c266d591eb0ca9c2a7e08b1a4d3c160d7324e2c0a5af27764549c1cd1ce35cc",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-putrescent-demise-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-putrescent-demise-front.jpg": "26815c3174e3aa99c0ea287e3c6747220652ae11f6ee86a96e5077638598876d",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-revolting-technology-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/firefight_ploys/gellerpox-infected-revolting-technology-front.jpg": "4ac89adc6b28d3064a18531e2e2c68f5ff19ecaf5bb41b70ef83d205e6c27f77",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card1-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card1-front.jpg": "7f76c8060c770db4ec55d220860239b52613ab323784702a62978b6b7abeafbf",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card10-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card10-front.jpg": "18a1184db41cda65127a402906815e34383d783a46f1e82117b7999a4a69cd5e",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card11-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card11-front.jpg": "aa6ad896f4cf6f00f270e5cc34ba491659fc2ac8b57d70d289c07a846daa36ff",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card12-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card12-front.jpg": "75ff19e432e015a3305468091e4014fbb279af9151a4cb1f45d1e1a1c01cd215",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card13-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card13-front.jpg": "e9491e5ad0635c96c692eda15a215d638bff33d4f304ae7b5a42bcfef55964ba",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card14-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card14-front.jpg": "1bb2de3c3725aad3baab277079e9e59c3b9ffab84caf20e12f60754ed1a91041",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card15-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card15-front.jpg": "daab7954279f7d849cf37054c813c535d46fa10c408a37072bb6df005da0641d",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card16-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card16-front.jpg": "467a8d1078f0a8fdf4283b432c0ee84854a8ac17cfa2dae3711e22194a613649",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card17-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card17-front.jpg": "b8d5c437c952eae1acb833bdba7a899e5472e20e42871fa1ee2a83c2dfad5e19",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card18-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card18-front.jpg": "54294e8de8b73f7e50d315b068c2ebecc5f595c01c87729d0f4b55012c87a520",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card2-back.jpg": "5ae0ef4e29ed652e3e57ce0e2759d175b98ccdf011b9b27b9b06213d1c6aba14",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card2-front.jpg": "04fba3533b9dc5f9770e1a25e4104f1131718552f78a7d36a60078388eeefa46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card3-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card3-front.jpg": "1c31261ba38d68458e0cf029a59ca8de38f6c2abf05359d34416c4f74ad15f8b",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card4-back.jpg": "e76b631dbab08b6d4d7689ba051cf81cc6bd3acb42ef592fb089d065c3e22f18",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card4-front.jpg": "2ac8c37fd41c2b2b2c4ca162e057a191f0526af8c2dc452946651ccc5ec8c8b6",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card5-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card5-front.jpg": "fc103f9055a6c00c9efd36afe33e86a3f5c0042f675ba249efaa69832d8c40fd",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card6-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card6-front.jpg": "613ae36bbdc66fffeec15c87718b11a9f15b85119cea849b6ec681f0bd104dd3",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card7-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card7-front.jpg": "1fe12dbdff0aeebd7b4726a9ddfdccff2e7da3712ddb9d89eafa7a37f51a86bd",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card8-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card8-front.jpg": "faaa0b712adb95d14ff2709c36d9eda9684f7df696094dba1c753019062d9d99",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card9-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-card9-front.jpg": "99fa3731c02d26ee95b7016d4f3df6b68f6a6f549cfb444d22b9c99cc2152c25",
+        "output/gellerpox-infected/cards/operatives_selection/gellerpox-infected-operative-selection-front.jpg": "3ec6ef090590f81970a9757908515bc042f99580eee338084c1f3bee967504e9",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-blessings-of-infection-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-blessings-of-infection-front.jpg": "fb1455ed000af2cb1157e98519bd6ae48fe097d1cff7871be42c6ad8c77e2bf3",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-drawn-to-the-hum-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-drawn-to-the-hum-front.jpg": "8aabc44303eace8c1b320c95196a1108fa7b80137477f00ca961504fc975d74a",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-plagueridden-determination-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-plagueridden-determination-front.jpg": "19e3e5f73a174d4b013da3275ca3bde3a0a3e14a8ed04500cf9ca420b3d63c1f",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-rust-emanations-back.jpg": "27e2ea4894d2491d908678fa7d705fe1aee7cb5150e88f16308713b03df14e46",
+        "output/gellerpox-infected/cards/strategy_ploys/gellerpox-infected-rust-emanations-front.jpg": "191dee04dc6050984326a32b9c8fbcd9c8d83d1c7a256847a35f4e2930226f69",
+        "output/gellerpox-infected/cardbox/gellerpox-infected-card-box-texture.jpg": "467b2e4b23ade5c84339bbbad8599928f86cf97c03641710ca03cb2037fbed76",
+        "output/gellerpox-infected/cardbox/gellerpox-infected-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/gellerpox-infected/dice/gellerpox-infected-dice-dark.jpg": "9b9f80b2e93fb0c3e602b4b877a440ccffab554e060fedad818afbf4d6fdee78",
+        "output/gellerpox-infected/dice/gellerpox-infected-dice-light.jpg": "37f1ae9e1a6f542851c17cfdcea16104b808c87c837d60a792d21a45482d2f80",
+        "output/gellerpox-infected/data/gellerpox-infected-team-data.json": "187a5331f51814e7f4717d306007a6def53e6b20793d6263b21ef78b641441d3",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "equipment": {
+          "hash": "d9bcde59bcd21aa9a1cbfe8760e9c91e0ac62af01c727fa658762d639b78e4f7",
+          "outputs": [
+            "layers/kt-app/extracted/gellerpox-infected/cards/equipment/gellerpox-infected-equipment-page_0.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/equipment/gellerpox-infected-equipment-page_1.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/equipment/gellerpox-infected-equipment-page_2.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/equipment/gellerpox-infected-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:02:34.902765+00:00"
+        },
+        "faction-rules": {
+          "hash": "19a9fa4dc37ec593f6a1e824b6d0571f8bca14e4cc0d3ff443a16c5b98549acc",
+          "outputs": [
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_3.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_4.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_5.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/faction-rules/gellerpox-infected-faction-rules-page_6.pdf"
+          ],
+          "modified": "2026-07-06T16:02:38.467986+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "ee719f03d07707a249e449d82987829cec6b3400b61c5d6545f3c82c11821889",
+          "outputs": [
+            "layers/kt-app/extracted/gellerpox-infected/cards/firefight-ploys/gellerpox-infected-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/firefight-ploys/gellerpox-infected-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/firefight-ploys/gellerpox-infected-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/firefight-ploys/gellerpox-infected-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:04:59.868762+00:00"
+        },
+        "operatives-selection": {
+          "hash": "338267eca49624774c89620a27b2e610d233b94d5336990dfda98a4afd0b752d",
+          "outputs": [
+            "layers/kt-app/extracted/gellerpox-infected/cards/operatives-selection/gellerpox-infected-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:06:53.889905+00:00"
+        },
+        "datacards": {
+          "hash": "1f1568584fae8127ce4e52067e80463839a053f9346b90dcd79a3ed6f8b678cb",
+          "outputs": [
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_0.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_1.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_2.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_3.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_4.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_5.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_6.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_7.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_8.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_9.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/datacards/gellerpox-infected-datacards-page_10.pdf"
+          ],
+          "modified": "2026-07-06T16:07:29.772090+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "39be9483165303fe0318a1cb3f6ec2eb0899b028e24de1dda8b63566c5ffe28d",
+          "outputs": [
+            "layers/kt-app/extracted/gellerpox-infected/cards/strategy-ploys/gellerpox-infected-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/strategy-ploys/gellerpox-infected-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/strategy-ploys/gellerpox-infected-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/gellerpox-infected/cards/strategy-ploys/gellerpox-infected-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:10:55.402423+00:00"
+        },
+        "cards": {
+          "hash": "e06bb8a70319b33fc57202329364d7d2d36d2411bbfdec932be71712e932cf3c",
+          "outputs": [
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:20:06.753035+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:20:06.753035+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/gellerpox-infected-structure.json",
+          "hash": "121b428d3b07753dd9bc68d27eed10a34350aa6071fa58e39b0a603c28461951",
+          "modified": "2026-08-29T18:42:47.389835+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card1_landscape.pdf": "fec0e35f3335b60fdf642d09bde44118ab9620308f3859eeaff31c5a070f7a3a",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card2_landscape.pdf": "aa21c3aa5a9eee73be695d8826dd9d499dec5c0daf56fe5da5b3cb812eaa5b9f",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card3_landscape.pdf": "1ec199e10a064375cc2c1ed16bcff295f9c024eedee55c464307124d2591ebc6",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card4_landscape.pdf": "fe3fe4564c9736e95e5ef3f33379155a4b25f072f59c2a930289b461c512a426",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card1_landscape.pdf": "c81d88961095bd2bef47d6e970342d9b0987be1f360bfa9e1ab8e5bbd51a520c",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card2_landscape.pdf": "f8d594490328276edf490ee32e314d92faad827449121b8cdcf30ec12d37965d",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card3_landscape.pdf": "bc14eb31b5ec4137ab62a03d74c668bffd4860f37c8b9b45bde87a6058afbf03",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card4_landscape.pdf": "b82932ff3e23c50d7a6da660adcd97ee5d5e51293e19f5507503bbd47525c884",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card1_landscape.pdf": "fa0640c6da6decd642e97aa9ca6871bb3ec599a0ce0b2836d2c42f1fb6d81e17",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card2_landscape.pdf": "8ad1997c7c27cc1d30346b96db46f604d58749d87939883ef9884ed95233092b",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card3_landscape.pdf": "37b03fd4663a92856c463a3a407de1d8d6d7dd48f051976201443e5b84cbb97f",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card4_landscape.pdf": "f6861009cdf9c6b35bd78e2970fd25e8cd5171a7fd076bee0b31f2f5dd678b17",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card1_portrait.pdf": "e15e7d1d69259c68f9a097c71c970a7fb2404942dc82773426136387d9346949",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card2_portrait.pdf": "d92dc7e2e00e83272d6ffd39fa310a2de74300ee930d7ccd0b50d3cda2c35eb4",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card3_portrait.pdf": "de3a71839eeabe461b94db9c02fb4fff9623a5daf5466c90834ca830f8e458ba",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card4_portrait.pdf": "915df0e1e21f7f6711107aac355701480ad3c11d4f12a620750215185dd50186",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card1_portrait.pdf": "1ed3539720ec76150903bb02e4fa5cca3c450ecc060b3295f41042a59af9d1ff",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card2_portrait.pdf": "696921699cdf0b1b630d0659785923af0292bf28a64d6ee792c4216509e8fdec",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card3_portrait.pdf": "75e531748c0a3c307cc0a8e30e896609186171bd1dfebfdf873a943778c49f50",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card4_portrait.pdf": "0e5320c1b82cf1d20ca20e86c983bc0bf734054269a4a9489ef0aca79e4851fa",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card1_portrait.pdf": "2528ffe99110ce95d2af699fde746f7b9ede895c39f25dcfbd08d7dfc14d0781",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card2_portrait.pdf": "31c357d8f82206bb03fcce6a2696b2543f16fd40f5e8c20e9b0e433fc8ea480e",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card3_portrait.pdf": "d95163d13103551a87dfcba1d974d14594a4573279ed6d90748fa8a513835374",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card4_portrait.pdf": "43dc7b99f190dd27466637625210c3234d701af89374c545ce444aaed2883011",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card1_portrait.pdf": "8945f02af0e652aa290ca2304a7851cbce3baff2e1b98a1afa71f0c8c4dc9262",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card2_portrait.pdf": "0225a5e5963902a8c60561fcaa4b1a2d4c26a7f22e63c0c19bee1b2cae16667b",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card3_portrait.pdf": "6ac5c986581901f01310b8076a329d3ee8ba3689b921c4906d2bb335b684f32e",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card4_portrait.pdf": "9a9d5caa0e9f1a46f4dea35b2ce082fdf258fb30103860fffcbc0b8c903c2917",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card1_portrait.pdf": "6f3a2ebd8bdeff1a7b542c4d5b190be80b9372f9d541dfd4a25e5bca3d16ff9c",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card2_portrait.pdf": "c292a216ec9a1e56f2f8749ca53df8f84ae80b66e1031b9246a9495def338384",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card3_portrait.pdf": "ed9a16ddd06d3b6b93060ecbeead18c7bc053f4855ac4ebcb1aba94a4381f17f",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card4_portrait.pdf": "005111309485cda6685e781b5c09847aeb8adc924123488acbd476f1ffde315f"
+      },
+      "completed": "2026-08-29T18:42:49.624647+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/gellerpox-infected/manifest.json",
+          "hash": "121b428d3b07753dd9bc68d27eed10a34350aa6071fa58e39b0a603c28461951",
+          "modified": "2026-08-29T18:42:50.393773+00:00"
+        },
+        "gellerpox-infected-datacard-vulgrar-thrice-cursed.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-vulgrar-thrice-cursed.pdf",
+          "hash": "17ed20a0e903396695d61afa85fb3c1cab1eb62bcaf740a8ec08bc20f38d6dfc",
+          "modified": "2026-08-26T15:17:53.439927+00:00"
+        },
+        "gellerpox-infected-datacard-bloatspawn.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-bloatspawn.pdf",
+          "hash": "68562e07a67abc4205058ed4192590b919bfbca3b965d5698ee312d059b01375",
+          "modified": "2026-08-26T15:17:53.446418+00:00"
+        },
+        "gellerpox-infected-datacard-fleshscreamer.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-fleshscreamer.pdf",
+          "hash": "1d6ea2892110fdad19dcd5e66b2c8c0b6d179c63e18df7b4a0400be34e901f2c",
+          "modified": "2026-08-26T15:17:53.454288+00:00"
+        },
+        "gellerpox-infected-datacard-lumberghast.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-lumberghast.pdf",
+          "hash": "6f78ff8d81de438ce86d696421ae80f7fc5986f59b0e6fe502b23b2c28008908",
+          "modified": "2026-08-26T15:17:53.460938+00:00"
+        },
+        "gellerpox-infected-datacard-mutant.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-mutant.pdf",
+          "hash": "ed442c2759254fc4fadf27bd5dadc8a9aefeacc764b75af88766fe9c833ace7c",
+          "modified": "2026-08-26T15:17:53.465359+00:00"
+        },
+        "gellerpox-infected-datacard-glitchling.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-glitchling.pdf",
+          "hash": "3cea342d4871f32e6461bd090a482e58eed20c92cc3434c8f86a4ed5fc53541c",
+          "modified": "2026-08-26T15:17:53.470393+00:00"
+        },
+        "gellerpox-infected-datacard-cursemite.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-cursemite.pdf",
+          "hash": "7d1deb27cdc61b2e12ddfbf3083b4cf87c67ece627f07f4a2e62b600690af938",
+          "modified": "2026-08-26T15:17:53.478975+00:00"
+        },
+        "gellerpox-infected-datacard-eyestinger-swarm.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-eyestinger-swarm.pdf",
+          "hash": "87fd9af7aa693f8690fd4c5351fd6d072e6b8f8021ac856da676ceef6ce625da",
+          "modified": "2026-08-26T15:17:53.481785+00:00"
+        },
+        "gellerpox-infected-datacard-sludge-grub.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-sludge-grub.pdf",
+          "hash": "373d99e21a5944d92d1625a5693a84e65e9ee659a8b2d2cf250e19a8fa91708c",
+          "modified": "2026-08-26T15:17:53.488839+00:00"
+        },
+        "gellerpox-infected-equipment-mutoid-vermin.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-equipment-mutoid-vermin.pdf",
+          "hash": "e425ebfe2bf26b1cece7f6dc94383f973894b477221bd5b328df58cc5cf63c59",
+          "modified": "2026-08-26T15:17:53.516761+00:00"
+        },
+        "gellerpox-infected-equipment-polluted-stockpile.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-equipment-polluted-stockpile.pdf",
+          "hash": "2443f085d43ef8952508688cbfd31dc39d0e3b8f9f29096d4458e24d8cf71085",
+          "modified": "2026-08-26T15:17:53.535164+00:00"
+        },
+        "gellerpox-infected-equipment-mutated-symptoms.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-equipment-mutated-symptoms.pdf",
+          "hash": "d79882a944f1e5f6844b55a78e50c922fc22ebec65b6cb97a7ed3c5a6a8db3b9",
+          "modified": "2026-08-26T15:17:53.543426+00:00"
+        },
+        "gellerpox-infected-equipment-plague-bellows.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-equipment-plague-bellows.pdf",
+          "hash": "97e566e91a4cffdfac5ecdd38872dc1cbad54910c0ece41fddd3cd4f8753dbe7",
+          "modified": "2026-08-26T15:17:53.549960+00:00"
+        },
+        "gellerpox-infected-faction-rule-techno-curse.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-techno-curse.pdf",
+          "hash": "ca5922952518e53fc00a7d2ceb0ef06581bd65b675b07af044c1d7201735e389",
+          "modified": "2026-08-26T15:17:53.557634+00:00"
+        },
+        "gellerpox-infected-faction-rule-techno-curse-2.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-techno-curse-2.pdf",
+          "hash": "48b4d5e8939e29584d5e1e9111aba9f899663e0a1499de5e16b2e0e08a9ce442",
+          "modified": "2026-08-26T15:17:53.566480+00:00"
+        },
+        "gellerpox-infected-faction-rule-mutoid-vermin.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-mutoid-vermin.pdf",
+          "hash": "0802b1c3f78ecf44536e1315b13ddd3a193df27e8f6aba1d1fbfda91866bbba8",
+          "modified": "2026-08-26T15:17:53.572238+00:00"
+        },
+        "gellerpox-infected-faction-rule-nightmare-hulks.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-nightmare-hulks.pdf",
+          "hash": "d4cc06bda2cc5b9de79c0c67531121ab811026e25399189a3e84a4092743b376",
+          "modified": "2026-08-26T15:17:53.578781+00:00"
+        },
+        "gellerpox-infected-faction-rule-revoltingly-resilient.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-faction-rule-revoltingly-resilient.pdf",
+          "hash": "e7fa1d32375ad0ac581a517e7df1b864617d5abdc476ae4073f0a0f04f8b539b",
+          "modified": "2026-08-26T15:17:53.585599+00:00"
+        },
+        "gellerpox-infected-firefight-ploy-revolting-technology.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-revolting-technology.pdf",
+          "hash": "99406d9b1a2b711de64462817c9bbc4192409b5e4abda4407c9a5dc5aae6833f",
+          "modified": "2026-08-26T15:17:53.593370+00:00"
+        },
+        "gellerpox-infected-firefight-ploy-barge.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-barge.pdf",
+          "hash": "45c1eb3c45c0fcf70889f3489ac1a6f83734d758e9bfd6ad26aa1df8d9a1f783",
+          "modified": "2026-08-26T15:17:53.598846+00:00"
+        },
+        "gellerpox-infected-firefight-ploy-putrescent-demise.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-putrescent-demise.pdf",
+          "hash": "9fbc452786edc9863957e18d9d9c9d544557bd453edc432dfa9617afac2d3bbc",
+          "modified": "2026-08-26T15:17:53.605073+00:00"
+        },
+        "gellerpox-infected-firefight-ploy-frightening-onslaught.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-firefight-ploy-frightening-onslaught.pdf",
+          "hash": "2ad3624b730c374ea3a96540f3ed02e17fc1ae23875688bd5a99281342479834",
+          "modified": "2026-08-26T15:17:53.609466+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection.pdf",
+          "hash": "fbab9c04fda5f6f56ab732b8af2315708cfca079436e00e493deeb8af793713d",
+          "modified": "2026-08-26T15:17:53.838145+00:00"
+        },
+        "gellerpox-infected-strategy-ploy-plagueridden-determination.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-plagueridden-determination.pdf",
+          "hash": "a562df8544278bcf266cefdafc0c5eb25da436b2042eac115409f36694b86640",
+          "modified": "2026-08-26T15:17:53.874331+00:00"
+        },
+        "gellerpox-infected-strategy-ploy-blessings-of-infection.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-blessings-of-infection.pdf",
+          "hash": "65c3140bcb7ff1c77c541d3d1a5c0f2e7b9b9d0efc3e85dcc7206841104e24f3",
+          "modified": "2026-08-26T15:17:53.879275+00:00"
+        },
+        "gellerpox-infected-strategy-ploy-drawn-to-the-hum.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-drawn-to-the-hum.pdf",
+          "hash": "9369e4f32eec78af3508518f92e1070bf98b326a051f8d63aa897082a9a294a7",
+          "modified": "2026-08-26T15:17:53.887138+00:00"
+        },
+        "gellerpox-infected-strategy-ploy-rust-emanations.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-strategy-ploy-rust-emanations.pdf",
+          "hash": "344b2c69e5a48af8a6db6f53e9b0fa7148be451f4a99c5ff254a6a4ed225ec2d",
+          "modified": "2026-08-26T15:17:53.892660+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "6be00b4f09cacf115fe22187ec3f7599bcd6ed727cb927a3596abc3afe5bc70c",
+          "modified": "2026-08-29T18:42:50.594617+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "80d2830c454c426112ae5401c6aee56be871bd4c0bf5629862992577d3e23336",
+          "modified": "2026-08-29T18:42:50.605719+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "bdde008992c03206b7b310c7ddc6e4ebf81edd68be020af5989f72963ca30a4c",
+          "modified": "2026-08-29T18:42:50.612834+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "66009fa414d4b417750d188fc7f1104992612fc5b5007a428d2582334b87e4ac",
+          "modified": "2026-08-29T18:42:50.621400+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "2729763af7067e0a094297fc5bf7699e75ed00e942d594c3f06c1d6d9278f9e5",
+          "modified": "2026-08-29T18:42:50.636931+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "9bf3e9a13a68b1bb97fe8f1b1117cae994be04acf749e8e003745b6168058ccd",
+          "modified": "2026-08-29T18:42:50.649008+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "b9bbb4314d740c8fdde7fe070d71388468142390f4d9d3c0007cf7569325c96f",
+          "modified": "2026-08-29T18:42:50.659065+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "f6a6b914cc25e0990f62d0b6753b845cb8a6635b736af0fccd57199b21d9fd35",
+          "modified": "2026-08-29T18:42:50.690855+00:00"
+        },
+        "gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "ef472c93caf07487113b167932b31de6b2d15dd8d0a41e6e73d815bb3ad24484",
+          "modified": "2026-08-29T18:42:50.698431+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-1.pdf",
+          "hash": "0dd2698ccd12261452418f184011d93b88c785d3f99f925bd7bbc6e2eadfdbdc",
+          "modified": "2026-08-29T18:42:50.773998+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-2.pdf",
+          "hash": "87a2c29c29b5d25d79cfcb15eed2cb4549a5aa02b66a2077afd1f55c8aef5684",
+          "modified": "2026-08-29T18:42:52.161936+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-3.pdf",
+          "hash": "f0177b82dc69fd3187dce83c6749fe2f570766f048326e7b9a059a69a765b55a",
+          "modified": "2026-08-29T18:42:52.414331+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-4.pdf",
+          "hash": "610f251c3fa9393baa3db30fed220c741bdeec067d56a24741d9dad817cca36b",
+          "modified": "2026-08-29T18:42:52.424840+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-5.pdf",
+          "hash": "dda34a0baa775910a45726b73f0f17341f846f6e9587840729d4796c2a17efde",
+          "modified": "2026-08-29T18:42:52.441868+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-6.pdf",
+          "hash": "3f11a89c36c379923dee408869287f7c2a85f78dabcaa002398e8bd4e24447f0",
+          "modified": "2026-08-29T18:42:52.452410+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-7.pdf",
+          "hash": "d07e6e42c51922b29c84f6ff8a5e9037e99e49f71295f109b08b3040f7ad05ad",
+          "modified": "2026-08-29T18:42:52.457927+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-8.pdf",
+          "hash": "eb37ae613951fca1d87334edc7f6faa58d7fa240c59d9545ad7aae55b4fd6170",
+          "modified": "2026-08-29T18:42:52.513456+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-9.pdf",
+          "hash": "9e76d00b2ec555d573a14da20d2c7a093d02c094334da20e5bc94de41c553249",
+          "modified": "2026-08-29T18:42:52.826260+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-10.pdf",
+          "hash": "f6f3323569e3fa0720dc793d637c17c1285b17ed2d0ee0047f99da71f1e9991b",
+          "modified": "2026-08-29T18:42:52.832807+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-11.pdf",
+          "hash": "859a6cb743773537fa3602e7ca34e36b3d9f54fa2fcb36f76ff1f8baa007556c",
+          "modified": "2026-08-29T18:42:52.839131+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-12.pdf",
+          "hash": "6bb5a55aa58ddd49759d7e567518f116968498caba44ea535534e867be6cce0b",
+          "modified": "2026-08-29T18:42:52.848172+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-13.pdf",
+          "hash": "81a222e9c2ced0b06ae07ac011dbfcc714fd01a9f427f72293374839ad61d469",
+          "modified": "2026-08-29T18:42:52.856202+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-14.pdf",
+          "hash": "eac270958473bdcabf8954e5c1012e7b83e760152518c414e01d0989f4cc4112",
+          "modified": "2026-08-29T18:42:52.866235+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-15.pdf",
+          "hash": "83ecccf27e359da4dc9cd8f24235c4656bfc47f2f509e1810a2b6fddaa085aeb",
+          "modified": "2026-08-29T18:42:52.873477+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-16.pdf",
+          "hash": "d09722512b083b7fcb976685d7e40e63f6b5d1cb7a72da3509fa83d4ab716e48",
+          "modified": "2026-08-29T18:42:52.883517+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-17.pdf",
+          "hash": "a41a2ce4900d6e268317e11eb6e0b14ae054b8a9a5b386faa373d6f2ed10f672",
+          "modified": "2026-08-29T18:42:52.890341+00:00"
+        },
+        "gellerpox-infected-operatives-selection-operative-selection-18.pdf": {
+          "path": "layers/integration/gellerpox-infected/gellerpox-infected-operatives-selection-operative-selection-18.pdf",
+          "hash": "8e895e290c9450cac063ad8cbb5e827c206c29d4564f254f42cafadbb5ce1e3e",
+          "modified": "2026-08-29T18:42:52.898971+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/gellerpox-infected-structure.json": "121b428d3b07753dd9bc68d27eed10a34350aa6071fa58e39b0a603c28461951",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card1_landscape.pdf": "fec0e35f3335b60fdf642d09bde44118ab9620308f3859eeaff31c5a070f7a3a",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card2_landscape.pdf": "aa21c3aa5a9eee73be695d8826dd9d499dec5c0daf56fe5da5b3cb812eaa5b9f",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card3_landscape.pdf": "1ec199e10a064375cc2c1ed16bcff295f9c024eedee55c464307124d2591ebc6",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page01_card4_landscape.pdf": "fe3fe4564c9736e95e5ef3f33379155a4b25f072f59c2a930289b461c512a426",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card1_landscape.pdf": "c81d88961095bd2bef47d6e970342d9b0987be1f360bfa9e1ab8e5bbd51a520c",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card2_landscape.pdf": "f8d594490328276edf490ee32e314d92faad827449121b8cdcf30ec12d37965d",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card3_landscape.pdf": "bc14eb31b5ec4137ab62a03d74c668bffd4860f37c8b9b45bde87a6058afbf03",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page02_card4_landscape.pdf": "b82932ff3e23c50d7a6da660adcd97ee5d5e51293e19f5507503bbd47525c884",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card1_landscape.pdf": "fa0640c6da6decd642e97aa9ca6871bb3ec599a0ce0b2836d2c42f1fb6d81e17",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card2_landscape.pdf": "8ad1997c7c27cc1d30346b96db46f604d58749d87939883ef9884ed95233092b",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page03_card3_landscape.pdf": "37b03fd4663a92856c463a3a407de1d8d6d7dd48f051976201443e5b84cbb97f",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card1_portrait.pdf": "e15e7d1d69259c68f9a097c71c970a7fb2404942dc82773426136387d9346949",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card2_portrait.pdf": "d92dc7e2e00e83272d6ffd39fa310a2de74300ee930d7ccd0b50d3cda2c35eb4",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card3_portrait.pdf": "de3a71839eeabe461b94db9c02fb4fff9623a5daf5466c90834ca830f8e458ba",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page04_card4_portrait.pdf": "915df0e1e21f7f6711107aac355701480ad3c11d4f12a620750215185dd50186",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card1_portrait.pdf": "1ed3539720ec76150903bb02e4fa5cca3c450ecc060b3295f41042a59af9d1ff",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card2_portrait.pdf": "696921699cdf0b1b630d0659785923af0292bf28a64d6ee792c4216509e8fdec",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card3_portrait.pdf": "75e531748c0a3c307cc0a8e30e896609186171bd1dfebfdf873a943778c49f50",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page05_card4_portrait.pdf": "0e5320c1b82cf1d20ca20e86c983bc0bf734054269a4a9489ef0aca79e4851fa",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card1_portrait.pdf": "2528ffe99110ce95d2af699fde746f7b9ede895c39f25dcfbd08d7dfc14d0781",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card2_portrait.pdf": "31c357d8f82206bb03fcce6a2696b2543f16fd40f5e8c20e9b0e433fc8ea480e",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card3_portrait.pdf": "d95163d13103551a87dfcba1d974d14594a4573279ed6d90748fa8a513835374",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page06_card4_portrait.pdf": "43dc7b99f190dd27466637625210c3234d701af89374c545ce444aaed2883011",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card1_portrait.pdf": "8945f02af0e652aa290ca2304a7851cbce3baff2e1b98a1afa71f0c8c4dc9262",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card2_portrait.pdf": "0225a5e5963902a8c60561fcaa4b1a2d4c26a7f22e63c0c19bee1b2cae16667b",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card3_portrait.pdf": "6ac5c986581901f01310b8076a329d3ee8ba3689b921c4906d2bb335b684f32e",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page07_card4_portrait.pdf": "9a9d5caa0e9f1a46f4dea35b2ce082fdf258fb30103860fffcbc0b8c903c2917",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card1_portrait.pdf": "6f3a2ebd8bdeff1a7b542c4d5b190be80b9372f9d541dfd4a25e5bca3d16ff9c",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card2_portrait.pdf": "c292a216ec9a1e56f2f8749ca53df8f84ae80b66e1031b9246a9495def338384",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card3_portrait.pdf": "ed9a16ddd06d3b6b93060ecbeead18c7bc053f4855ac4ebcb1aba94a4381f17f",
+        "layers/warcom/extracted/gellerpox-infected/cards/gellerpox-infected_page08_card4_portrait.pdf": "005111309485cda6685e781b5c09847aeb8adc924123488acbd476f1ffde315f"
+      },
+      "completed": "2026-08-29T18:42:53.194361+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "e06bb8a70319b33fc57202329364d7d2d36d2411bbfdec932be71712e932cf3c",
+          "outputs": [
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-01.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-02.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-03.png",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-04.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-05.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-06.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-07.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-08.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-09.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-10.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-11.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-12.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-13.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-14.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-15.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-16.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-17.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-18.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-19.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-20.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-21.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-22.jpeg",
+            "layers/integration/gellerpox-infected/artwork/gellerpox-infected-artwork-metadata.json",
+            "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-landscape.jpg",
+            "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-portrait.jpg",
+            "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-token-transparent.png",
+            "layers/integration/gellerpox-infected/artwork/icons/gellerpox-infected-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:46:32.894618+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:46:32.894635+00:00"
+    }
+  }
+}

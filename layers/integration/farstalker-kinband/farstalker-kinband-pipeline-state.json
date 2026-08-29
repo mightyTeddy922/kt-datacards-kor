@@ -1,0 +1,1635 @@
+{
+  "team": "farstalker-kinband",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:38.103261+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/farstalker-kinband/content/farstalker-kinband-content.json",
+          "hash": "077ce67f1114d9b95931a8f752563224934724f52ac2b7fe6acc5baab5731e5d",
+          "modified": "2026-08-29T18:42:49.573347+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:50.629916+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/manifest.json": "452b8394178fd7c3f49fea1a2046b1a01cb549fc6ca97902004c36325ab13a6c",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "640961f1fed93bcaca377961f4b6a2a8650ce7f8273f11e34b0cd2bae86151f7",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "c00e5937e5e737101e3da0555f2d1088c6bd1f4ad47ad27b9088dd3047c6e9a3",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "44584fa61f9913d4818fa2ecdf8094901b748fa05c80efc2a73a1982644b3d75",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "4f138a15d0afcceaf78e1c63d46b465dcf4f7e93c6bb0e14fe1e168c7beec828",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "79f821e9b0f7453e2ddc27edb9f3465e87c61eb4d86a0c188338965a07696e61",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "896d220c1e5d0a72cce92edbc75034a39f7a7fd4c7a37297cef9e823984347fa",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "e9f5a4de5decb6d66a52a184f7ce2c4aa9c9a7982a4a3d61afe700996aaf4857",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "b09a03e777b441e6f5cf51cfe9300eac07e1ffe8164e2dc23028ca11b42d8a28",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "18d586980d6569ec1e7a619aa95337595f1bce847b25ad202aab046ff75c6793",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "8f95d9faa0076978b5137a16aa839f13e693b62377270d80b737ea1c1078405a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "ffac930b8c2ea5bd52eebb6fbc9eb55cc7251e8772b98c3acdf446e1cd49a281",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "8e5389fef9c58963ee305a2fd2c7122df20b003bd9fab348e0c1723e981f34ba",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "e7725790f2c8245f6e85ff6e6b4464ce68837fb09753f71efa10643f3e483bac",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-bow-hunter.pdf": "a01142fe20e25cef02edb58eedd72352512e3557160bcbe59f8112eb841abfcb",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cold-blood.pdf": "83d647dd4dce041e85fb89018ee4855c8001ad46e8d22752963716df112282b2",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cut-skin.pdf": "5dbfbf63bc784c2e9ff0987c3710b060f38b0cbf55f2f394b0b281e8d55c9b7d",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-heavy-gunner.pdf": "65baecccb54f063600c3dcad52ed706fda6a71f6a7cb7c00e125cd96215eeadf",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-hound.pdf": "84e9eb6155f25e7a7b938151b613a820c1d4dc0fc2d9991f7a41b1426ce57adc",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-kill-broker.pdf": "8ccee7ab88df4df623d06cfa6e4313c0def596b2e8a01624a985692ef03b8687",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-long-sight.pdf": "b88f85b29173c5c201d44ae8919551a8f0583caaf1bed3c2f00578ae6ec302fa",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-pistolier.pdf": "a4685a60ed2367b3120a20efd89f40df4ddeed91cf9d02a5aa82e3ade7c8c439",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-stalker.pdf": "41e1e6f37bb471d3a0d0dfdfbd2a0709ee080729475949cb2facaebb34e2aaa7",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-tracker.pdf": "d8eccc2256b58be2f577fd645bb46af175b142651e8f5d13368b47c0aedafc9e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-warrior.pdf": "590bfdc451f63420849ddc0e196cee511eecd76af688c5c8817f93d5b9a92bd4",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-meat.pdf": "cfc77d2b46c84a8833a6276e9044bc5934e80090d3b538eb47ec2cc2c0044e26",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-piercing-shot.pdf": "7f67920dd0691c0e75ef14bc5eb32f84fb024460ccb9c7704fd8cfe8352dae59",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-toxin-shot.pdf": "ef909e380b8f1280d68f7043e941a67aae6ca461f888a5a1c87ec9b8e130f29e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-trophy.pdf": "4df6c61c1f0f8f6f4678752250423bbdecb19c0459bd173ce1e721f6ff49598a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-faction-rule-farstalker.pdf": "b1c5abf32eb4f5fc0b52ee9246a51c9e3fbe35d9a9d92b7daa75fc2ab3cbdb79",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-poach.pdf": "a4ecb6922587c1a25a2a7f3313de1b0f434c7c0d9cbed99991adbfcb699c3155",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-savage-ambush.pdf": "b4dc322349b6229c730f1a0b161d377225a893b72b1f77841883c89a0f162a22",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-slip-away.pdf": "fd8e062570ea891b9b8f2db55c55ffdc50d4eee0a794e12acd1eec49d1b2aa5a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-vengeance-for-the-kinband.pdf": "3f4ee0183695dba0c3749dd8554b217a77f3c9f35e054b5c213659a0238a950f",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-1.pdf": "3b8b1c8dafd08ce931cacaaba07163eb56199cfa0416718be275a772c294d991",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-10.pdf": "846065e39a931693245404342563148cc3fb6f91241b4666b5203001130a0f06",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-11.pdf": "3632707639a1cb011aca24e703fb22f91a4cb7d63ae1e82b65573c0ed279f67e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-12.pdf": "9e8f4aadf6180848e064c32c64678d8d33eca9bb6f82aae213dd8d2dc845771e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-13.pdf": "55bcc3215e172874557283298d88b6855bd33600ef7eaaab0e88f26d1e1c801e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-14.pdf": "29adddfc1772aa174d47f168d8a70461c274ab46bc002704195229d58697054c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-15.pdf": "180ce4f652cbcd05ff9194611a15b25f19c35b2a070bdb4b25d1f2885ded92fd",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-16.pdf": "f7ac79f918a6183ed05fe641c0a7207d3f6056cd0e90a2c0f12d8182633578bc",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-2.pdf": "b9c24723f408d742ae72afb3955e77619e4f234e28e7a93e73d2bdc0ffb0b42a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-3.pdf": "50589b17d9494cbee6c580e5aa2cb6b13da5c7dad072172711ca1b3c1f6144cb",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-4.pdf": "dce12f362e6a4af005a8636c0eddbbc8fc9a7fd6839886f0dd0ad897e3b278f8",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-5.pdf": "76b7a1bcf8317e71137bba82f74e8e68d5a0f3b90a88506044c4ecaf7461b063",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-6.pdf": "5b943a56827738ec0d9791ac12101b2b0eda50b5694f1f1aab4af54ac04e894f",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-7.pdf": "903fe4aaf4c5fb12f08c45808e8ba6ad4bae8d02759d73a8d2c32a1830fdcd5c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-8.pdf": "ad376a8096746eb3e883f20d3a962de5108f5c977aaeac406875a60ecb3ab8d4",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-9.pdf": "2b0bc92549248d730ef1390bc6ad01e70c4f9e957423f0c940ef3fddd78ce677",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection.pdf": "6cb78c2c4ff9c78618cb13ea13c60494ef675aabec7fe668069d5a6b727c0776",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-bound.pdf": "fbc6d23721f3fb84d22f46876329c86259d65ec3776ba09083a6ec6bc1922a14",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-cut-throats.pdf": "b10fcf306941c224a21f9010c7edb7f29cd8ba46ad16f236eb8fdb2378c1ca21",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-prey.pdf": "f71d5530fcb5d70ac2d07c80e52336b095999c7832445da90d92fec7013cf732",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-rogue.pdf": "493240ccefed548b102cfd8ce7ba821e9c22b48a2929c85b5cba2e8be07a6457",
+        "layers/integration/farstalker-kinband/farstalker-kinband-token-guide-token-guide.pdf": "ad6811ef7799cb966386d9a2ea50245128e508416f6253e1d17bbfca0b96925f"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/farstalker-kinband/card-backside/farstalker-kinband-backside-landscape.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-07-12T18:46:56.626382+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/farstalker-kinband/card-backside/farstalker-kinband-backside-portrait.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-07-12T18:46:56.628497+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:46:56.632655+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-token.jpg": "4a7772f49e330d3a092d95fee634c8ab356ef52ec0927ad2eceb744363cc9f85",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/farstalker-kinband-call-the-kill.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-call-the-kill.png",
+          "hash": "c9f962295e13aab446a5bac7f451a5c92e45286b7898873201a15139bef88bf3",
+          "modified": "2026-08-29T18:42:53.149996+00:00"
+        },
+        "tokens/farstalker-kinband-meat.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-meat.png",
+          "hash": "7e351566487b505c152a5c56f5033ab116fe1f8c75857145989a07f923e69bb2",
+          "modified": "2026-08-29T18:42:53.157031+00:00"
+        },
+        "tokens/farstalker-kinband-pechra.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-pechra.png",
+          "hash": "4ebdfae4766d1c8ff6c2d80be344d700f3730edadf544bedd0941b847df0590c",
+          "modified": "2026-08-29T18:42:53.163566+00:00"
+        },
+        "tokens/farstalker-kinband-piercing-shot.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-piercing-shot.png",
+          "hash": "bd10e88c584087011f304fd12fa8de726579eb6e8bf1bbbfa4c10448e3398bfe",
+          "modified": "2026-08-29T18:42:53.171668+00:00"
+        },
+        "tokens/farstalker-kinband-quick-draw.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-quick-draw.png",
+          "hash": "c74d5eb18a1fec7d2620008c7bfa83c72f088112cb5272d4089823f594a70055",
+          "modified": "2026-08-29T18:42:53.181194+00:00"
+        },
+        "tokens/farstalker-kinband-ready-for-anything.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-ready-for-anything.png",
+          "hash": "ab265d4b47da516dc5cfea459ca3058d62a68bfedf380095f218e6c611b1a562",
+          "modified": "2026-08-29T18:42:53.191346+00:00"
+        },
+        "tokens/farstalker-kinband-toxin-shot.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-toxin-shot.png",
+          "hash": "494fc4cb0f3491d2e7710f39fa3b351af53bbfa8081b9b3d7d29b3f9a9920b88",
+          "modified": "2026-08-29T18:42:53.201913+00:00"
+        },
+        "tokens/farstalker-kinband-trophy.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-trophy.png",
+          "hash": "46c4048c0724d4c0b95086a58f31ed973a28bfc389f8fab761b4d8e8a667e4c1",
+          "modified": "2026-08-29T18:42:53.211956+00:00"
+        },
+        "tokens/farstalker-kinband-vengeance-for-the-kinband.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-vengeance-for-the-kinband.png",
+          "hash": "b105b4d5d6ae059dad8e59eb350dd7cfce17412e610d00f5ef6f45fadd48d561",
+          "modified": "2026-08-29T18:42:53.222493+00:00"
+        },
+        "tokens/farstalker-kinband-victory-shriek.png": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-victory-shriek.png",
+          "hash": "1ce917e3b898a1b0f50aadba723e42639d91793bb2ee314816b714ab2cab981f",
+          "modified": "2026-08-29T18:42:53.233607+00:00"
+        },
+        "tokens/farstalker-kinband-call-the-kill.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-call-the-kill.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.238120+00:00"
+        },
+        "tokens/farstalker-kinband-meat.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-meat.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.241178+00:00"
+        },
+        "tokens/farstalker-kinband-pechra.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-pechra.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.244259+00:00"
+        },
+        "tokens/farstalker-kinband-piercing-shot.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-piercing-shot.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.247258+00:00"
+        },
+        "tokens/farstalker-kinband-quick-draw.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-quick-draw.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.248270+00:00"
+        },
+        "tokens/farstalker-kinband-ready-for-anything.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-ready-for-anything.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.252289+00:00"
+        },
+        "tokens/farstalker-kinband-toxin-shot.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-toxin-shot.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.254797+00:00"
+        },
+        "tokens/farstalker-kinband-trophy.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-trophy.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.256802+00:00"
+        },
+        "tokens/farstalker-kinband-vengeance-for-the-kinband.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-vengeance-for-the-kinband.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.259315+00:00"
+        },
+        "tokens/farstalker-kinband-victory-shriek.obj": {
+          "path": "output/farstalker-kinband/tokens/farstalker-kinband-victory-shriek.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:53.262200+00:00"
+        },
+        "tokens/tokenbag/farstalker-kinband-token-bag-icon.png": {
+          "path": "output/farstalker-kinband/tokens/tokenbag/farstalker-kinband-token-bag-icon.png",
+          "hash": "4a7772f49e330d3a092d95fee634c8ab356ef52ec0927ad2eceb744363cc9f85",
+          "modified": "2026-08-29T18:42:53.280814+00:00"
+        },
+        "tokens/tokenbag/farstalker-kinband-token-bag.obj": {
+          "path": "output/farstalker-kinband/tokens/tokenbag/farstalker-kinband-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:42:53.283321+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:07.251035+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/manifest.json": "452b8394178fd7c3f49fea1a2046b1a01cb549fc6ca97902004c36325ab13a6c",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-token.jpg": "4a7772f49e330d3a092d95fee634c8ab356ef52ec0927ad2eceb744363cc9f85",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "640961f1fed93bcaca377961f4b6a2a8650ce7f8273f11e34b0cd2bae86151f7",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "c00e5937e5e737101e3da0555f2d1088c6bd1f4ad47ad27b9088dd3047c6e9a3",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "44584fa61f9913d4818fa2ecdf8094901b748fa05c80efc2a73a1982644b3d75",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "4f138a15d0afcceaf78e1c63d46b465dcf4f7e93c6bb0e14fe1e168c7beec828",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "79f821e9b0f7453e2ddc27edb9f3465e87c61eb4d86a0c188338965a07696e61",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "896d220c1e5d0a72cce92edbc75034a39f7a7fd4c7a37297cef9e823984347fa",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "e9f5a4de5decb6d66a52a184f7ce2c4aa9c9a7982a4a3d61afe700996aaf4857",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "b09a03e777b441e6f5cf51cfe9300eac07e1ffe8164e2dc23028ca11b42d8a28",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "18d586980d6569ec1e7a619aa95337595f1bce847b25ad202aab046ff75c6793",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "8f95d9faa0076978b5137a16aa839f13e693b62377270d80b737ea1c1078405a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "ffac930b8c2ea5bd52eebb6fbc9eb55cc7251e8772b98c3acdf446e1cd49a281",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "8e5389fef9c58963ee305a2fd2c7122df20b003bd9fab348e0c1723e981f34ba",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "e7725790f2c8245f6e85ff6e6b4464ce68837fb09753f71efa10643f3e483bac",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-bow-hunter.pdf": "a01142fe20e25cef02edb58eedd72352512e3557160bcbe59f8112eb841abfcb",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cold-blood.pdf": "83d647dd4dce041e85fb89018ee4855c8001ad46e8d22752963716df112282b2",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cut-skin.pdf": "5dbfbf63bc784c2e9ff0987c3710b060f38b0cbf55f2f394b0b281e8d55c9b7d",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-heavy-gunner.pdf": "65baecccb54f063600c3dcad52ed706fda6a71f6a7cb7c00e125cd96215eeadf",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-hound.pdf": "84e9eb6155f25e7a7b938151b613a820c1d4dc0fc2d9991f7a41b1426ce57adc",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-kill-broker.pdf": "8ccee7ab88df4df623d06cfa6e4313c0def596b2e8a01624a985692ef03b8687",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-long-sight.pdf": "b88f85b29173c5c201d44ae8919551a8f0583caaf1bed3c2f00578ae6ec302fa",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-pistolier.pdf": "a4685a60ed2367b3120a20efd89f40df4ddeed91cf9d02a5aa82e3ade7c8c439",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-stalker.pdf": "41e1e6f37bb471d3a0d0dfdfbd2a0709ee080729475949cb2facaebb34e2aaa7",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-tracker.pdf": "d8eccc2256b58be2f577fd645bb46af175b142651e8f5d13368b47c0aedafc9e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-warrior.pdf": "590bfdc451f63420849ddc0e196cee511eecd76af688c5c8817f93d5b9a92bd4",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-meat.pdf": "cfc77d2b46c84a8833a6276e9044bc5934e80090d3b538eb47ec2cc2c0044e26",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-piercing-shot.pdf": "7f67920dd0691c0e75ef14bc5eb32f84fb024460ccb9c7704fd8cfe8352dae59",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-toxin-shot.pdf": "ef909e380b8f1280d68f7043e941a67aae6ca461f888a5a1c87ec9b8e130f29e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-trophy.pdf": "4df6c61c1f0f8f6f4678752250423bbdecb19c0459bd173ce1e721f6ff49598a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-faction-rule-farstalker.pdf": "b1c5abf32eb4f5fc0b52ee9246a51c9e3fbe35d9a9d92b7daa75fc2ab3cbdb79",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-poach.pdf": "a4ecb6922587c1a25a2a7f3313de1b0f434c7c0d9cbed99991adbfcb699c3155",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-savage-ambush.pdf": "b4dc322349b6229c730f1a0b161d377225a893b72b1f77841883c89a0f162a22",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-slip-away.pdf": "fd8e062570ea891b9b8f2db55c55ffdc50d4eee0a794e12acd1eec49d1b2aa5a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-vengeance-for-the-kinband.pdf": "3f4ee0183695dba0c3749dd8554b217a77f3c9f35e054b5c213659a0238a950f",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-1.pdf": "3b8b1c8dafd08ce931cacaaba07163eb56199cfa0416718be275a772c294d991",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-10.pdf": "846065e39a931693245404342563148cc3fb6f91241b4666b5203001130a0f06",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-11.pdf": "3632707639a1cb011aca24e703fb22f91a4cb7d63ae1e82b65573c0ed279f67e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-12.pdf": "9e8f4aadf6180848e064c32c64678d8d33eca9bb6f82aae213dd8d2dc845771e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-13.pdf": "55bcc3215e172874557283298d88b6855bd33600ef7eaaab0e88f26d1e1c801e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-14.pdf": "29adddfc1772aa174d47f168d8a70461c274ab46bc002704195229d58697054c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-15.pdf": "180ce4f652cbcd05ff9194611a15b25f19c35b2a070bdb4b25d1f2885ded92fd",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-16.pdf": "f7ac79f918a6183ed05fe641c0a7207d3f6056cd0e90a2c0f12d8182633578bc",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-2.pdf": "b9c24723f408d742ae72afb3955e77619e4f234e28e7a93e73d2bdc0ffb0b42a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-3.pdf": "50589b17d9494cbee6c580e5aa2cb6b13da5c7dad072172711ca1b3c1f6144cb",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-4.pdf": "dce12f362e6a4af005a8636c0eddbbc8fc9a7fd6839886f0dd0ad897e3b278f8",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-5.pdf": "76b7a1bcf8317e71137bba82f74e8e68d5a0f3b90a88506044c4ecaf7461b063",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-6.pdf": "5b943a56827738ec0d9791ac12101b2b0eda50b5694f1f1aab4af54ac04e894f",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-7.pdf": "903fe4aaf4c5fb12f08c45808e8ba6ad4bae8d02759d73a8d2c32a1830fdcd5c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-8.pdf": "ad376a8096746eb3e883f20d3a962de5108f5c977aaeac406875a60ecb3ab8d4",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-9.pdf": "2b0bc92549248d730ef1390bc6ad01e70c4f9e957423f0c940ef3fddd78ce677",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection.pdf": "6cb78c2c4ff9c78618cb13ea13c60494ef675aabec7fe668069d5a6b727c0776",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-bound.pdf": "fbc6d23721f3fb84d22f46876329c86259d65ec3776ba09083a6ec6bc1922a14",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-cut-throats.pdf": "b10fcf306941c224a21f9010c7edb7f29cd8ba46ad16f236eb8fdb2378c1ca21",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-prey.pdf": "f71d5530fcb5d70ac2d07c80e52336b095999c7832445da90d92fec7013cf732",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-rogue.pdf": "493240ccefed548b102cfd8ce7ba821e9c22b48a2929c85b5cba2e8be07a6457",
+        "layers/integration/farstalker-kinband/farstalker-kinband-token-guide-token-guide.pdf": "ad6811ef7799cb966386d9a2ea50245128e508416f6253e1d17bbfca0b96925f"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/farstalker-kinband/dice/farstalker-kinband-dice-light.jpg",
+          "hash": "2e0e70607d0ace35ea0f925f197d70c7c28b01eaadf2a0370c7c8f731afad428",
+          "modified": "2026-08-29T18:43:08.278087+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/farstalker-kinband/dice/farstalker-kinband-dice-dark.jpg",
+          "hash": "adc48c65fab1b995d8770fa77de62fe0785cbe6af400de4b167a7c65a8176dd0",
+          "modified": "2026-08-29T18:43:08.279178+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/farstalker-kinband/dice/farstalker-kinband-dice-team.jpg",
+          "hash": "03883fee0e65c2d5c9b49435a730c2aaaea1c40c6e8fa9d8658aaec1545ae450",
+          "modified": "2026-08-29T18:43:08.280183+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:08.281182+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-token-transparent.png": "c5819a5e15ec83e3f6638573f8ac0696aae7432530561427b469f0d12c506e62",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/farstalker-kinband/cardbox/farstalker-kinband-card-box-texture.jpg",
+          "hash": "80abf70af65d9d213c185a64c407659826d3aeaeccd9641655d74ef1fbffa5f8",
+          "modified": "2026-08-29T18:43:09.041214+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/farstalker-kinband/cardbox/farstalker-kinband-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:43:09.043045+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:09.047049+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-token.jpg": "4a7772f49e330d3a092d95fee634c8ab356ef52ec0927ad2eceb744363cc9f85",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/kroot-bow-hunter-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-bow-hunter-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:39.922311+00:00"
+        },
+        "cards/datacards/kroot-bow-hunter-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-bow-hunter-front.jpg",
+          "hash": "f028c0aa6891b266e55a5a19a3872b30d6dfba366c3eb7e598c302c5c9b6c113",
+          "modified": "2026-08-29T18:43:39.925822+00:00"
+        },
+        "cards/datacards/kroot-cold-blood-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-cold-blood-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:39.927822+00:00"
+        },
+        "cards/datacards/kroot-cold-blood-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-cold-blood-front.jpg",
+          "hash": "74829bb20d37c847b472b7421f4e70b97093b90ceff884dc53c8816d938ffb7b",
+          "modified": "2026-08-29T18:43:40.446198+00:00"
+        },
+        "cards/datacards/kroot-cut-skin-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-cut-skin-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:40.448212+00:00"
+        },
+        "cards/datacards/kroot-cut-skin-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-cut-skin-front.jpg",
+          "hash": "e7fefa5bfea5c4d355ae74b9d195117bba449613564888983964ccae21792bae",
+          "modified": "2026-08-29T18:43:40.452235+00:00"
+        },
+        "cards/datacards/kroot-heavy-gunner-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-heavy-gunner-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:40.454785+00:00"
+        },
+        "cards/datacards/kroot-heavy-gunner-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-heavy-gunner-front.jpg",
+          "hash": "a55874e62def012c6f20fcaf7d7358f1c380d5c5ef2646957e9e8cd5084153ca",
+          "modified": "2026-08-29T18:43:40.980187+00:00"
+        },
+        "cards/datacards/kroot-hound-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-hound-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:40.981187+00:00"
+        },
+        "cards/datacards/kroot-hound-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-hound-front.jpg",
+          "hash": "1680057eef04b508b660836474b994796b1ebc79dfe7db7b430952c0952e200e",
+          "modified": "2026-08-29T18:43:40.985396+00:00"
+        },
+        "cards/datacards/kroot-kill-broker-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-kill-broker-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:40.986401+00:00"
+        },
+        "cards/datacards/kroot-kill-broker-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-kill-broker-front.jpg",
+          "hash": "a0f33e8f468c0767782cb232fd5cba92c5b9523b206c871ec3a23cb35bdc53e2",
+          "modified": "2026-08-29T18:43:41.511394+00:00"
+        },
+        "cards/datacards/kroot-long-sight-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-long-sight-back.jpg",
+          "hash": "99774fc461a4f7e6a01e8917f6c000103e02333b620d4f46ba01ecd63ea13262",
+          "modified": "2026-08-29T18:43:41.512394+00:00"
+        },
+        "cards/datacards/kroot-long-sight-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-long-sight-front.jpg",
+          "hash": "eccb75506c4e5b38f05afb9ce5dcb0e2637a0eca2c8936e75d1411585238c8ba",
+          "modified": "2026-08-29T18:43:41.514902+00:00"
+        },
+        "cards/datacards/kroot-pistolier-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-pistolier-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:41.516407+00:00"
+        },
+        "cards/datacards/kroot-pistolier-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-pistolier-front.jpg",
+          "hash": "c67bce4993f32a0a2f0773bcb62074bb37f81e78325c3e839c0fb5d35f3f5899",
+          "modified": "2026-08-29T18:43:41.999910+00:00"
+        },
+        "cards/datacards/kroot-stalker-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-stalker-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:42.041907+00:00"
+        },
+        "cards/datacards/kroot-stalker-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-stalker-front.jpg",
+          "hash": "841aca0fddd5d215bf7989505f9d78f9010ed26542cb32f205cc557c2c7e3a5a",
+          "modified": "2026-08-29T18:43:42.044978+00:00"
+        },
+        "cards/datacards/kroot-tracker-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-tracker-back.jpg",
+          "hash": "115930af13fab140a424f6054a719d3833513311e048e1840d683747c470974e",
+          "modified": "2026-08-29T18:43:42.046481+00:00"
+        },
+        "cards/datacards/kroot-tracker-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-tracker-front.jpg",
+          "hash": "579834dc226f3c2557411c57ec2011192c39adc0fdeac3ce68024f9437bb08db",
+          "modified": "2026-08-29T18:43:42.048566+00:00"
+        },
+        "cards/datacards/kroot-warrior-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-warrior-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:42.052073+00:00"
+        },
+        "cards/datacards/kroot-warrior-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/kroot-warrior-front.jpg",
+          "hash": "b896622db8fdd4a7aebc2b1bf8f60aab7082721d697f1ffcbc279bcbdedd3b3b",
+          "modified": "2026-08-29T18:43:42.574554+00:00"
+        },
+        "cards/equipment/farstalker-kinband-meat-back.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-meat-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:42.576058+00:00"
+        },
+        "cards/equipment/farstalker-kinband-meat-front.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-meat-front.jpg",
+          "hash": "b63e331ff0e04c87e8b38d4dc54fda4f1d26e624eee81ff2c165eef9e6197c46",
+          "modified": "2026-08-29T18:43:42.578061+00:00"
+        },
+        "cards/equipment/farstalker-kinband-piercing-shot-back.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-piercing-shot-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:42.579121+00:00"
+        },
+        "cards/equipment/farstalker-kinband-piercing-shot-front.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-piercing-shot-front.jpg",
+          "hash": "a567e9d481ee4e4dc2c51251f0cb1126cefd9856cebaab692f142680eecdeeee",
+          "modified": "2026-08-29T18:43:42.582136+00:00"
+        },
+        "cards/equipment/farstalker-kinband-toxin-shot-back.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-toxin-shot-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:43.065810+00:00"
+        },
+        "cards/equipment/farstalker-kinband-toxin-shot-front.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-toxin-shot-front.jpg",
+          "hash": "0b5793f8a8876d1937aadad90dd6d7f95963bf75a5a7404df75c408b9632e854",
+          "modified": "2026-08-29T18:43:43.107932+00:00"
+        },
+        "cards/equipment/farstalker-kinband-trophy-back.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-trophy-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:43.109442+00:00"
+        },
+        "cards/equipment/farstalker-kinband-trophy-front.jpg": {
+          "path": "output/farstalker-kinband/cards/equipment/farstalker-kinband-trophy-front.jpg",
+          "hash": "9094ecd10a0b11c0383284ac2a83e4aab4ef69bb89ff4fdc178e30d30de47eef",
+          "modified": "2026-08-29T18:43:43.110957+00:00"
+        },
+        "cards/faction_rules/farstalker-kinband-farstalker-back.jpg": {
+          "path": "output/farstalker-kinband/cards/faction_rules/farstalker-kinband-farstalker-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:43.112460+00:00"
+        },
+        "cards/faction_rules/farstalker-kinband-farstalker-front.jpg": {
+          "path": "output/farstalker-kinband/cards/faction_rules/farstalker-kinband-farstalker-front.jpg",
+          "hash": "35ee252cb336ad485001f945827f505048606b46360086b6b73cdb1a2613ab42",
+          "modified": "2026-08-29T18:43:43.115476+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-poach-back.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-poach-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:43.629906+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-poach-front.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-poach-front.jpg",
+          "hash": "73315d43d06d0a00bea08b01118e27e66763ba6561ba365c1b8ab7a8e4d1d7f2",
+          "modified": "2026-08-29T18:43:43.633414+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-savage-ambush-back.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-savage-ambush-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:43.634422+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-savage-ambush-front.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-savage-ambush-front.jpg",
+          "hash": "f4359ccb33384a31a6550cbd274ca3901013967f612c1297c1444b79db483f66",
+          "modified": "2026-08-29T18:43:43.636426+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-slip-away-back.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-slip-away-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:43.638938+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-slip-away-front.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-slip-away-front.jpg",
+          "hash": "4ac3fb6743c5b5fae140c3519453ef9780db086d4556182cdbb2e2f3fb80fb1f",
+          "modified": "2026-08-29T18:43:44.162004+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-vengeance-for-the-kinband-back.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-vengeance-for-the-kinband-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.164022+00:00"
+        },
+        "cards/firefight_ploys/farstalker-kinband-vengeance-for-the-kinband-front.jpg": {
+          "path": "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-vengeance-for-the-kinband-front.jpg",
+          "hash": "26be53ea7a284565e6d953da25a28efe25cea6c2123de02e89a177a0bfbb2b0d",
+          "modified": "2026-08-29T18:43:44.166063+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-back.jpg",
+          "hash": "9327488efadf9b29f25942a7f3834d355803e3316b797ca88c18e0aa1c55fa3b",
+          "modified": "2026-08-29T18:43:44.167063+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-front.jpg",
+          "hash": "07812eb1afe530a38be23c7d39320327117e3fa9f72ca682009dbea508ee49a9",
+          "modified": "2026-08-29T18:43:45.167103+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-bound-back.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-bound-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:45.292341+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-bound-front.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-bound-front.jpg",
+          "hash": "fee66fc84bdfb862773bac8181bb22d264333edff1bedd509eae57698b79a008",
+          "modified": "2026-08-29T18:43:45.447015+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-cut-throats-back.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-cut-throats-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:45.546824+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-cut-throats-front.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-cut-throats-front.jpg",
+          "hash": "53590652b95548ee45fb377d6b5812a869c4f686181a2dcbd86544584c721eed",
+          "modified": "2026-08-29T18:43:45.720501+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-prey-back.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-prey-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:45.823012+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-prey-front.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-prey-front.jpg",
+          "hash": "860cc2cb322441430428bfc9765fc28b2ac8e5b433ac6d754defbd5eebb597d7",
+          "modified": "2026-08-29T18:43:46.037672+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-rogue-back.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-rogue-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:46.097583+00:00"
+        },
+        "cards/strategy_ploys/farstalker-kinband-rogue-front.jpg": {
+          "path": "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-rogue-front.jpg",
+          "hash": "886fd702e56e6320fe62bcb0e9811c268b21781c3bb9538f7cdb16a29522a742",
+          "modified": "2026-08-29T18:43:46.185718+00:00"
+        },
+        "cards/token_guide/farstalker-kinband-token-guide-back.jpg": {
+          "path": "output/farstalker-kinband/cards/token_guide/farstalker-kinband-token-guide-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:46.186719+00:00"
+        },
+        "cards/token_guide/farstalker-kinband-token-guide-front.jpg": {
+          "path": "output/farstalker-kinband/cards/token_guide/farstalker-kinband-token-guide-front.jpg",
+          "hash": "32addade527d359742b17aad46f3bcbe49b75338d9955a721ae8d78407796036",
+          "modified": "2026-08-29T18:43:46.188739+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:18.689022+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "990352f90eecd87c94342d02dce17beb804ee9e8cfb99590d8dc1dcc29ca4200",
+          "modified": "2026-08-29T18:43:18.699134+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:19.233239+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "38f4655ad00028aeaf569fe6316d0d139282cfcfe6678c22b0bc9af23001afde",
+          "modified": "2026-08-29T18:43:19.755091+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:20.286249+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "f4ebabd2e220d6bd404c6d5fd041847f45b04204725a49d0cefe093176528f33",
+          "modified": "2026-08-29T18:43:21.958049+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:22.331230+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg",
+          "hash": "f78e863635daf59db2b000cd6d9c7317f229cc6b4394180e638284c2e16180a0",
+          "modified": "2026-08-29T18:43:23.505885+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:24.415989+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg",
+          "hash": "c43ad3c5189cd01e2808f187d21637322219582e35bf445e3448f12b505700ff",
+          "modified": "2026-08-29T18:43:25.949314+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:27.133483+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "003eec4057b68e9921fde0ff5a5e751ebbed7af44b52fc7a575052fa7cc7debe",
+          "modified": "2026-08-29T18:43:28.981116+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:29.833873+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "3e8cb3711c731486214a6f9c24d3f28195e7783cfae922a1cca1b342a784204d",
+          "modified": "2026-08-29T18:43:31.093696+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:31.927996+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "cda03d10c5f1d634f6e169f5a842fc14e17efd0f337d27eff7690dc2e76eedf3",
+          "modified": "2026-08-29T18:43:34.029970+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:34.392265+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "df6f0c4b01e892550cd61787860e7a7d1f6702fbe7e430e0002dcd08a5d9f0c8",
+          "modified": "2026-08-29T18:43:36.268470+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:37.439853+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "0b669c33d50d16ec1942b39ededcf72c18e3fa2da11ed0d4e4f7ee1f53e103ec",
+          "modified": "2026-08-29T18:43:38.285678+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:38.336138+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "b3b8127fcfb77cd6dc25c2d54b248a60b0b66952dbe26e90f6f2e9d772b01d6a",
+          "modified": "2026-08-29T18:43:38.858007+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:38.865603+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "75f10a1c7748be2af27fc3e196fdcbc89bbdd39495ad01e4cfb2b491fd4242b9",
+          "modified": "2026-08-29T18:43:39.389446+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+          "modified": "2026-08-29T18:43:39.397979+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "ad1b5bdce554d348a60a540a2e421740387985fc9485a883dc2a6db7d553256e",
+          "modified": "2026-08-29T18:43:39.920306+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card1-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card1-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.691313+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card1-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card1-front.jpg",
+          "hash": "c73d95d7293bb41757aa6a76f3f8177225b4609186b81408ba590b8007551739",
+          "modified": "2026-08-29T18:43:44.702408+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card10-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card10-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.709934+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card10-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card10-front.jpg",
+          "hash": "863c6928211c5ba4f67d8fc60cd7bea70db91ddea6b8aea67892adbf6be8f02a",
+          "modified": "2026-08-29T18:43:44.719188+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card11-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card11-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.726033+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card11-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card11-front.jpg",
+          "hash": "46dd56b39b97eb91ba0507feda1beaec088d1534a18f267cf4d3b8355535cd98",
+          "modified": "2026-08-29T18:43:44.735070+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card12-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card12-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.742115+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card12-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card12-front.jpg",
+          "hash": "d9ba6c67106edd7e1ef9caca6dfafd8d153cf0aa312b7528a4cab17045e43aec",
+          "modified": "2026-08-29T18:43:44.750306+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card13-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card13-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.759319+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card13-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card13-front.jpg",
+          "hash": "4dc1515cc63018e6dbde72d261b094cf2469b87d3a4490356b7dbb8ff135a837",
+          "modified": "2026-08-29T18:43:44.767992+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card14-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card14-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.777213+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card14-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card14-front.jpg",
+          "hash": "aaca308688b370cdf67d6ba1cecced78ba9a8c09788fdf8652d2a5f10799f628",
+          "modified": "2026-08-29T18:43:44.785742+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card15-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card15-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.793118+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card15-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card15-front.jpg",
+          "hash": "9339f7c70ce7212f9b0f0c4d1ddf4744cb380c372951a757b7a9f2b4d57359b1",
+          "modified": "2026-08-29T18:43:44.800137+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card16-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card16-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.808679+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card16-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card16-front.jpg",
+          "hash": "e0eacba47a35d20e36eae2c22b253d95954409136695b75c103e206837e3eb95",
+          "modified": "2026-08-29T18:43:44.817046+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card2-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card2-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.823155+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card2-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card2-front.jpg",
+          "hash": "ba66685ce29d8b965a2211ffd7157282ba973e8da0c5003b8b7f6f16998a04de",
+          "modified": "2026-08-29T18:43:44.835265+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card3-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card3-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.844785+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card3-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card3-front.jpg",
+          "hash": "9b8dade98489ef313dc025158ba8e9d8a3e1d5e12fcb0f20ca27aa98ef8c7f06",
+          "modified": "2026-08-29T18:43:44.854365+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card4-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card4-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.861937+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card4-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card4-front.jpg",
+          "hash": "e897aa0f588933347f56866f845f9ea33a7e0a287e98f588763e8835e20497a6",
+          "modified": "2026-08-29T18:43:44.875448+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card5-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card5-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.882466+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card5-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card5-front.jpg",
+          "hash": "51b6fd4459f50b2086f27f7c95825d02d8040a8dd63ff4626eadd0d9a312d00f",
+          "modified": "2026-08-29T18:43:44.889997+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card6-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card6-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.898140+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card6-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card6-front.jpg",
+          "hash": "acd6bc877087dea73cf9e692411471d57f45fdbad77357b3f66101b833d07a48",
+          "modified": "2026-08-29T18:43:44.907702+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card7-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card7-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.915769+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card7-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card7-front.jpg",
+          "hash": "3764ec1010506031f2d1a055e80a4b3b563edc3fe5454cd8a14fdc0d123a355e",
+          "modified": "2026-08-29T18:43:44.923064+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card8-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card8-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.933591+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card8-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card8-front.jpg",
+          "hash": "19e9deb7775546c6ce59b5d9282a7a91425f70c433fa18c1cfcfb05480d31494",
+          "modified": "2026-08-29T18:43:44.944166+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card9-back.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card9-back.jpg",
+          "hash": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+          "modified": "2026-08-29T18:43:44.951175+00:00"
+        },
+        "cards/operatives_selection/farstalker-kinband-operative-selection-card9-front.jpg": {
+          "path": "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card9-front.jpg",
+          "hash": "0ffd8a6ce34dd349f664c81f303c18a2cb15bbc96067a5035f87e47b5b03c466",
+          "modified": "2026-08-29T18:43:44.959213+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:46.748432+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/manifest.json": "452b8394178fd7c3f49fea1a2046b1a01cb549fc6ca97902004c36325ab13a6c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "640961f1fed93bcaca377961f4b6a2a8650ce7f8273f11e34b0cd2bae86151f7",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "c00e5937e5e737101e3da0555f2d1088c6bd1f4ad47ad27b9088dd3047c6e9a3",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "44584fa61f9913d4818fa2ecdf8094901b748fa05c80efc2a73a1982644b3d75",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": "4f138a15d0afcceaf78e1c63d46b465dcf4f7e93c6bb0e14fe1e168c7beec828",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": "79f821e9b0f7453e2ddc27edb9f3465e87c61eb4d86a0c188338965a07696e61",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "896d220c1e5d0a72cce92edbc75034a39f7a7fd4c7a37297cef9e823984347fa",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "e9f5a4de5decb6d66a52a184f7ce2c4aa9c9a7982a4a3d61afe700996aaf4857",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "b09a03e777b441e6f5cf51cfe9300eac07e1ffe8164e2dc23028ca11b42d8a28",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "18d586980d6569ec1e7a619aa95337595f1bce847b25ad202aab046ff75c6793",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "8f95d9faa0076978b5137a16aa839f13e693b62377270d80b737ea1c1078405a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "ffac930b8c2ea5bd52eebb6fbc9eb55cc7251e8772b98c3acdf446e1cd49a281",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "8e5389fef9c58963ee305a2fd2c7122df20b003bd9fab348e0c1723e981f34ba",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "e7725790f2c8245f6e85ff6e6b4464ce68837fb09753f71efa10643f3e483bac",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-bow-hunter.pdf": "a01142fe20e25cef02edb58eedd72352512e3557160bcbe59f8112eb841abfcb",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cold-blood.pdf": "83d647dd4dce041e85fb89018ee4855c8001ad46e8d22752963716df112282b2",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cut-skin.pdf": "5dbfbf63bc784c2e9ff0987c3710b060f38b0cbf55f2f394b0b281e8d55c9b7d",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-heavy-gunner.pdf": "65baecccb54f063600c3dcad52ed706fda6a71f6a7cb7c00e125cd96215eeadf",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-hound.pdf": "84e9eb6155f25e7a7b938151b613a820c1d4dc0fc2d9991f7a41b1426ce57adc",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-kill-broker.pdf": "8ccee7ab88df4df623d06cfa6e4313c0def596b2e8a01624a985692ef03b8687",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-long-sight.pdf": "b88f85b29173c5c201d44ae8919551a8f0583caaf1bed3c2f00578ae6ec302fa",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-pistolier.pdf": "a4685a60ed2367b3120a20efd89f40df4ddeed91cf9d02a5aa82e3ade7c8c439",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-stalker.pdf": "41e1e6f37bb471d3a0d0dfdfbd2a0709ee080729475949cb2facaebb34e2aaa7",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-tracker.pdf": "d8eccc2256b58be2f577fd645bb46af175b142651e8f5d13368b47c0aedafc9e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-warrior.pdf": "590bfdc451f63420849ddc0e196cee511eecd76af688c5c8817f93d5b9a92bd4",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-meat.pdf": "cfc77d2b46c84a8833a6276e9044bc5934e80090d3b538eb47ec2cc2c0044e26",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-piercing-shot.pdf": "7f67920dd0691c0e75ef14bc5eb32f84fb024460ccb9c7704fd8cfe8352dae59",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-toxin-shot.pdf": "ef909e380b8f1280d68f7043e941a67aae6ca461f888a5a1c87ec9b8e130f29e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-equipment-trophy.pdf": "4df6c61c1f0f8f6f4678752250423bbdecb19c0459bd173ce1e721f6ff49598a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-faction-rule-farstalker.pdf": "b1c5abf32eb4f5fc0b52ee9246a51c9e3fbe35d9a9d92b7daa75fc2ab3cbdb79",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-poach.pdf": "a4ecb6922587c1a25a2a7f3313de1b0f434c7c0d9cbed99991adbfcb699c3155",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-savage-ambush.pdf": "b4dc322349b6229c730f1a0b161d377225a893b72b1f77841883c89a0f162a22",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-slip-away.pdf": "fd8e062570ea891b9b8f2db55c55ffdc50d4eee0a794e12acd1eec49d1b2aa5a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-vengeance-for-the-kinband.pdf": "3f4ee0183695dba0c3749dd8554b217a77f3c9f35e054b5c213659a0238a950f",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-1.pdf": "3b8b1c8dafd08ce931cacaaba07163eb56199cfa0416718be275a772c294d991",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-10.pdf": "846065e39a931693245404342563148cc3fb6f91241b4666b5203001130a0f06",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-11.pdf": "3632707639a1cb011aca24e703fb22f91a4cb7d63ae1e82b65573c0ed279f67e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-12.pdf": "9e8f4aadf6180848e064c32c64678d8d33eca9bb6f82aae213dd8d2dc845771e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-13.pdf": "55bcc3215e172874557283298d88b6855bd33600ef7eaaab0e88f26d1e1c801e",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-14.pdf": "29adddfc1772aa174d47f168d8a70461c274ab46bc002704195229d58697054c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-15.pdf": "180ce4f652cbcd05ff9194611a15b25f19c35b2a070bdb4b25d1f2885ded92fd",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-16.pdf": "f7ac79f918a6183ed05fe641c0a7207d3f6056cd0e90a2c0f12d8182633578bc",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-2.pdf": "b9c24723f408d742ae72afb3955e77619e4f234e28e7a93e73d2bdc0ffb0b42a",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-3.pdf": "50589b17d9494cbee6c580e5aa2cb6b13da5c7dad072172711ca1b3c1f6144cb",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-4.pdf": "dce12f362e6a4af005a8636c0eddbbc8fc9a7fd6839886f0dd0ad897e3b278f8",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-5.pdf": "76b7a1bcf8317e71137bba82f74e8e68d5a0f3b90a88506044c4ecaf7461b063",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-6.pdf": "5b943a56827738ec0d9791ac12101b2b0eda50b5694f1f1aab4af54ac04e894f",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-7.pdf": "903fe4aaf4c5fb12f08c45808e8ba6ad4bae8d02759d73a8d2c32a1830fdcd5c",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-8.pdf": "ad376a8096746eb3e883f20d3a962de5108f5c977aaeac406875a60ecb3ab8d4",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-9.pdf": "2b0bc92549248d730ef1390bc6ad01e70c4f9e957423f0c940ef3fddd78ce677",
+        "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection.pdf": "6cb78c2c4ff9c78618cb13ea13c60494ef675aabec7fe668069d5a6b727c0776",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-bound.pdf": "fbc6d23721f3fb84d22f46876329c86259d65ec3776ba09083a6ec6bc1922a14",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-cut-throats.pdf": "b10fcf306941c224a21f9010c7edb7f29cd8ba46ad16f236eb8fdb2378c1ca21",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-prey.pdf": "f71d5530fcb5d70ac2d07c80e52336b095999c7832445da90d92fec7013cf732",
+        "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-rogue.pdf": "493240ccefed548b102cfd8ce7ba821e9c22b48a2929c85b5cba2e8be07a6457",
+        "layers/integration/farstalker-kinband/farstalker-kinband-token-guide-token-guide.pdf": "ad6811ef7799cb966386d9a2ea50245128e508416f6253e1d17bbfca0b96925f",
+        "layers/integration/farstalker-kinband/card-backside/farstalker-kinband-backside-portrait.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/farstalker-kinband/card-backside/farstalker-kinband-backside-landscape.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/farstalker-kinband/data/farstalker-kinband-team-data.json",
+          "hash": "077ce67f1114d9b95931a8f752563224934724f52ac2b7fe6acc5baab5731e5d",
+          "modified": "2026-08-29T18:43:46.834482+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:46.836534+00:00",
+      "inputs": {
+        "layers/integration/farstalker-kinband/content/farstalker-kinband-content.json": "077ce67f1114d9b95931a8f752563224934724f52ac2b7fe6acc5baab5731e5d"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Farstalker Kinband Box.json": {
+          "path": "output/farstalker-kinband/tts_objects/Farstalker Kinband Box.json",
+          "hash": "ab6350e7d989f4f519b6e3bcc1123095e221f77ea5a85912b67a799b38c2782a",
+          "modified": "2026-07-21T11:11:12.074897+00:00"
+        },
+        "tts_objects/Farstalker Kinband.json": {
+          "path": "output/farstalker-kinband/tts_objects/Farstalker Kinband.json",
+          "hash": "b5818459b99e5643fa358f033f8abf648c76a932326dc7b91432a88ff489577d",
+          "modified": "2026-08-29T18:53:38.010096+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:38.103261+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "990352f90eecd87c94342d02dce17beb804ee9e8cfb99590d8dc1dcc29ca4200",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "38f4655ad00028aeaf569fe6316d0d139282cfcfe6678c22b0bc9af23001afde",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "f4ebabd2e220d6bd404c6d5fd041847f45b04204725a49d0cefe093176528f33",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "f78e863635daf59db2b000cd6d9c7317f229cc6b4394180e638284c2e16180a0",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": "c43ad3c5189cd01e2808f187d21637322219582e35bf445e3448f12b505700ff",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "003eec4057b68e9921fde0ff5a5e751ebbed7af44b52fc7a575052fa7cc7debe",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "3e8cb3711c731486214a6f9c24d3f28195e7783cfae922a1cca1b342a784204d",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "cda03d10c5f1d634f6e169f5a842fc14e17efd0f337d27eff7690dc2e76eedf3",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "df6f0c4b01e892550cd61787860e7a7d1f6702fbe7e430e0002dcd08a5d9f0c8",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "0b669c33d50d16ec1942b39ededcf72c18e3fa2da11ed0d4e4f7ee1f53e103ec",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "b3b8127fcfb77cd6dc25c2d54b248a60b0b66952dbe26e90f6f2e9d772b01d6a",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "75f10a1c7748be2af27fc3e196fdcbc89bbdd39495ad01e4cfb2b491fd4242b9",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "ad1b5bdce554d348a60a540a2e421740387985fc9485a883dc2a6db7d553256e",
+        "output/farstalker-kinband/cards/datacards/kroot-bow-hunter-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-bow-hunter-front.jpg": "f028c0aa6891b266e55a5a19a3872b30d6dfba366c3eb7e598c302c5c9b6c113",
+        "output/farstalker-kinband/cards/datacards/kroot-cold-blood-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-cold-blood-front.jpg": "74829bb20d37c847b472b7421f4e70b97093b90ceff884dc53c8816d938ffb7b",
+        "output/farstalker-kinband/cards/datacards/kroot-cut-skin-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-cut-skin-front.jpg": "e7fefa5bfea5c4d355ae74b9d195117bba449613564888983964ccae21792bae",
+        "output/farstalker-kinband/cards/datacards/kroot-heavy-gunner-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-heavy-gunner-front.jpg": "a55874e62def012c6f20fcaf7d7358f1c380d5c5ef2646957e9e8cd5084153ca",
+        "output/farstalker-kinband/cards/datacards/kroot-hound-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-hound-front.jpg": "1680057eef04b508b660836474b994796b1ebc79dfe7db7b430952c0952e200e",
+        "output/farstalker-kinband/cards/datacards/kroot-kill-broker-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-kill-broker-front.jpg": "a0f33e8f468c0767782cb232fd5cba92c5b9523b206c871ec3a23cb35bdc53e2",
+        "output/farstalker-kinband/cards/datacards/kroot-long-sight-back.jpg": "99774fc461a4f7e6a01e8917f6c000103e02333b620d4f46ba01ecd63ea13262",
+        "output/farstalker-kinband/cards/datacards/kroot-long-sight-front.jpg": "eccb75506c4e5b38f05afb9ce5dcb0e2637a0eca2c8936e75d1411585238c8ba",
+        "output/farstalker-kinband/cards/datacards/kroot-pistolier-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-pistolier-front.jpg": "c67bce4993f32a0a2f0773bcb62074bb37f81e78325c3e839c0fb5d35f3f5899",
+        "output/farstalker-kinband/cards/datacards/kroot-stalker-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-stalker-front.jpg": "841aca0fddd5d215bf7989505f9d78f9010ed26542cb32f205cc557c2c7e3a5a",
+        "output/farstalker-kinband/cards/datacards/kroot-tracker-back.jpg": "115930af13fab140a424f6054a719d3833513311e048e1840d683747c470974e",
+        "output/farstalker-kinband/cards/datacards/kroot-tracker-front.jpg": "579834dc226f3c2557411c57ec2011192c39adc0fdeac3ce68024f9437bb08db",
+        "output/farstalker-kinband/cards/datacards/kroot-warrior-back.jpg": "e833cd249f9afc53caf30239e53de3aacc0b548dda1a21624cc3481cf33d2196",
+        "output/farstalker-kinband/cards/datacards/kroot-warrior-front.jpg": "b896622db8fdd4a7aebc2b1bf8f60aab7082721d697f1ffcbc279bcbdedd3b3b",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-meat-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-meat-front.jpg": "b63e331ff0e04c87e8b38d4dc54fda4f1d26e624eee81ff2c165eef9e6197c46",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-piercing-shot-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-piercing-shot-front.jpg": "a567e9d481ee4e4dc2c51251f0cb1126cefd9856cebaab692f142680eecdeeee",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-toxin-shot-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-toxin-shot-front.jpg": "0b5793f8a8876d1937aadad90dd6d7f95963bf75a5a7404df75c408b9632e854",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-trophy-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/equipment/farstalker-kinband-trophy-front.jpg": "9094ecd10a0b11c0383284ac2a83e4aab4ef69bb89ff4fdc178e30d30de47eef",
+        "output/farstalker-kinband/cards/faction_rules/farstalker-kinband-farstalker-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/faction_rules/farstalker-kinband-farstalker-front.jpg": "35ee252cb336ad485001f945827f505048606b46360086b6b73cdb1a2613ab42",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-poach-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-poach-front.jpg": "73315d43d06d0a00bea08b01118e27e66763ba6561ba365c1b8ab7a8e4d1d7f2",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-savage-ambush-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-savage-ambush-front.jpg": "f4359ccb33384a31a6550cbd274ca3901013967f612c1297c1444b79db483f66",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-slip-away-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-slip-away-front.jpg": "4ac3fb6743c5b5fae140c3519453ef9780db086d4556182cdbb2e2f3fb80fb1f",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-vengeance-for-the-kinband-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/firefight_ploys/farstalker-kinband-vengeance-for-the-kinband-front.jpg": "26be53ea7a284565e6d953da25a28efe25cea6c2123de02e89a177a0bfbb2b0d",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-back.jpg": "9327488efadf9b29f25942a7f3834d355803e3316b797ca88c18e0aa1c55fa3b",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card1-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card1-front.jpg": "c73d95d7293bb41757aa6a76f3f8177225b4609186b81408ba590b8007551739",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card10-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card10-front.jpg": "863c6928211c5ba4f67d8fc60cd7bea70db91ddea6b8aea67892adbf6be8f02a",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card11-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card11-front.jpg": "46dd56b39b97eb91ba0507feda1beaec088d1534a18f267cf4d3b8355535cd98",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card12-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card12-front.jpg": "d9ba6c67106edd7e1ef9caca6dfafd8d153cf0aa312b7528a4cab17045e43aec",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card13-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card13-front.jpg": "4dc1515cc63018e6dbde72d261b094cf2469b87d3a4490356b7dbb8ff135a837",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card14-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card14-front.jpg": "aaca308688b370cdf67d6ba1cecced78ba9a8c09788fdf8652d2a5f10799f628",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card15-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card15-front.jpg": "9339f7c70ce7212f9b0f0c4d1ddf4744cb380c372951a757b7a9f2b4d57359b1",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card16-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card16-front.jpg": "e0eacba47a35d20e36eae2c22b253d95954409136695b75c103e206837e3eb95",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card2-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card2-front.jpg": "ba66685ce29d8b965a2211ffd7157282ba973e8da0c5003b8b7f6f16998a04de",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card3-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card3-front.jpg": "9b8dade98489ef313dc025158ba8e9d8a3e1d5e12fcb0f20ca27aa98ef8c7f06",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card4-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card4-front.jpg": "e897aa0f588933347f56866f845f9ea33a7e0a287e98f588763e8835e20497a6",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card5-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card5-front.jpg": "51b6fd4459f50b2086f27f7c95825d02d8040a8dd63ff4626eadd0d9a312d00f",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card6-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card6-front.jpg": "acd6bc877087dea73cf9e692411471d57f45fdbad77357b3f66101b833d07a48",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card7-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card7-front.jpg": "3764ec1010506031f2d1a055e80a4b3b563edc3fe5454cd8a14fdc0d123a355e",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card8-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card8-front.jpg": "19e9deb7775546c6ce59b5d9282a7a91425f70c433fa18c1cfcfb05480d31494",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card9-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-card9-front.jpg": "0ffd8a6ce34dd349f664c81f303c18a2cb15bbc96067a5035f87e47b5b03c466",
+        "output/farstalker-kinband/cards/operatives_selection/farstalker-kinband-operative-selection-front.jpg": "07812eb1afe530a38be23c7d39320327117e3fa9f72ca682009dbea508ee49a9",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-bound-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-bound-front.jpg": "fee66fc84bdfb862773bac8181bb22d264333edff1bedd509eae57698b79a008",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-cut-throats-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-cut-throats-front.jpg": "53590652b95548ee45fb377d6b5812a869c4f686181a2dcbd86544584c721eed",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-prey-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-prey-front.jpg": "860cc2cb322441430428bfc9765fc28b2ac8e5b433ac6d754defbd5eebb597d7",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-rogue-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/strategy_ploys/farstalker-kinband-rogue-front.jpg": "886fd702e56e6320fe62bcb0e9811c268b21781c3bb9538f7cdb16a29522a742",
+        "output/farstalker-kinband/cards/token_guide/farstalker-kinband-token-guide-back.jpg": "d747f4680dd9953186db61d60ab4a395179dbfd3de2693bedd6cb28d12a9da79",
+        "output/farstalker-kinband/cards/token_guide/farstalker-kinband-token-guide-front.jpg": "32addade527d359742b17aad46f3bcbe49b75338d9955a721ae8d78407796036",
+        "output/farstalker-kinband/cardbox/farstalker-kinband-card-box-texture.jpg": "80abf70af65d9d213c185a64c407659826d3aeaeccd9641655d74ef1fbffa5f8",
+        "output/farstalker-kinband/cardbox/farstalker-kinband-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/farstalker-kinband/tokens/farstalker-kinband-call-the-kill.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-call-the-kill.png": "c9f962295e13aab446a5bac7f451a5c92e45286b7898873201a15139bef88bf3",
+        "output/farstalker-kinband/tokens/farstalker-kinband-meat.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-meat.png": "7e351566487b505c152a5c56f5033ab116fe1f8c75857145989a07f923e69bb2",
+        "output/farstalker-kinband/tokens/farstalker-kinband-pechra.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-pechra.png": "4ebdfae4766d1c8ff6c2d80be344d700f3730edadf544bedd0941b847df0590c",
+        "output/farstalker-kinband/tokens/farstalker-kinband-piercing-shot.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-piercing-shot.png": "bd10e88c584087011f304fd12fa8de726579eb6e8bf1bbbfa4c10448e3398bfe",
+        "output/farstalker-kinband/tokens/farstalker-kinband-quick-draw.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-quick-draw.png": "c74d5eb18a1fec7d2620008c7bfa83c72f088112cb5272d4089823f594a70055",
+        "output/farstalker-kinband/tokens/farstalker-kinband-ready-for-anything.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-ready-for-anything.png": "ab265d4b47da516dc5cfea459ca3058d62a68bfedf380095f218e6c611b1a562",
+        "output/farstalker-kinband/tokens/farstalker-kinband-toxin-shot.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-toxin-shot.png": "494fc4cb0f3491d2e7710f39fa3b351af53bbfa8081b9b3d7d29b3f9a9920b88",
+        "output/farstalker-kinband/tokens/farstalker-kinband-trophy.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-trophy.png": "46c4048c0724d4c0b95086a58f31ed973a28bfc389f8fab761b4d8e8a667e4c1",
+        "output/farstalker-kinband/tokens/farstalker-kinband-vengeance-for-the-kinband.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-vengeance-for-the-kinband.png": "b105b4d5d6ae059dad8e59eb350dd7cfce17412e610d00f5ef6f45fadd48d561",
+        "output/farstalker-kinband/tokens/farstalker-kinband-victory-shriek.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/farstalker-kinband/tokens/farstalker-kinband-victory-shriek.png": "1ce917e3b898a1b0f50aadba723e42639d91793bb2ee314816b714ab2cab981f",
+        "output/farstalker-kinband/tokens/tokenbag/farstalker-kinband-token-bag-icon.png": "4a7772f49e330d3a092d95fee634c8ab356ef52ec0927ad2eceb744363cc9f85",
+        "output/farstalker-kinband/tokens/tokenbag/farstalker-kinband-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/farstalker-kinband/dice/farstalker-kinband-dice-dark.jpg": "adc48c65fab1b995d8770fa77de62fe0785cbe6af400de4b167a7c65a8176dd0",
+        "output/farstalker-kinband/dice/farstalker-kinband-dice-light.jpg": "2e0e70607d0ace35ea0f925f197d70c7c28b01eaadf2a0370c7c8f731afad428",
+        "output/farstalker-kinband/dice/farstalker-kinband-dice-team.jpg": "03883fee0e65c2d5c9b49435a730c2aaaea1c40c6e8fa9d8658aaec1545ae450",
+        "output/farstalker-kinband/data/farstalker-kinband-team-data.json": "077ce67f1114d9b95931a8f752563224934724f52ac2b7fe6acc5baab5731e5d",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "datacards": {
+          "hash": "5edfc9b00bd2c26d2af33f2b569f24b39ca03dcebe345598bb91a6bbb1f1e4de",
+          "outputs": [
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_0.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_1.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_2.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_3.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_4.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_5.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_6.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_7.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_8.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_9.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_10.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_11.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/datacards/farstalker-kinband-datacards-page_12.pdf"
+          ],
+          "modified": "2026-07-06T16:00:06.663228+00:00"
+        },
+        "operatives-selection": {
+          "hash": "78ec0bdf0f7a536f89e660793a33aa9c46f0e1b669f841a757fdb310791f679b",
+          "outputs": [
+            "layers/kt-app/extracted/farstalker-kinband/cards/operatives-selection/farstalker-kinband-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/operatives-selection/farstalker-kinband-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:00:12.186237+00:00"
+        },
+        "faction-rules": {
+          "hash": "30f28e9f56dbf7f2c31f6ab57ede1a0821e72f7a0c3675522d06ef635e1284d4",
+          "outputs": [
+            "layers/kt-app/extracted/farstalker-kinband/cards/faction-rules/farstalker-kinband-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/faction-rules/farstalker-kinband-faction-rules-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:01:29.261191+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "88e4e2e8fa810861c5cb61ecab8323e74c408c0b5a1b78f82f0176b50156258d",
+          "outputs": [
+            "layers/kt-app/extracted/farstalker-kinband/cards/firefight-ploys/farstalker-kinband-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/firefight-ploys/farstalker-kinband-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/firefight-ploys/farstalker-kinband-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/firefight-ploys/farstalker-kinband-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:02:57.317938+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "7a80cd3f6087295a0be684cecfbd73ec81c11fb0c23eae79cca27d4bc189ebf7",
+          "outputs": [
+            "layers/kt-app/extracted/farstalker-kinband/cards/strategy-ploys/farstalker-kinband-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/strategy-ploys/farstalker-kinband-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/strategy-ploys/farstalker-kinband-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/strategy-ploys/farstalker-kinband-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:04:07.976591+00:00"
+        },
+        "equipment": {
+          "hash": "c6e55dcc1ed62433194026536705cba43ed02c5abfa5b2efb3e4fa92ad0030f6",
+          "outputs": [
+            "layers/kt-app/extracted/farstalker-kinband/cards/equipment/farstalker-kinband-equipment-page_0.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/equipment/farstalker-kinband-equipment-page_1.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/equipment/farstalker-kinband-equipment-page_2.pdf",
+            "layers/kt-app/extracted/farstalker-kinband/cards/equipment/farstalker-kinband-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:05:03.296689+00:00"
+        },
+        "cards": {
+          "hash": "e58c3814da7b3dea4927efc589446af46aaebb960492b40eff681ce245387101",
+          "outputs": [
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:12:39.553461+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:12:39.553461+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/farstalker-kinband-structure.json",
+          "hash": "452b8394178fd7c3f49fea1a2046b1a01cb549fc6ca97902004c36325ab13a6c",
+          "modified": "2026-08-29T18:42:43.820513+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card1_landscape.pdf": "a077d575dfb166cd0bbc2004b6e8fc6ffd0c47b17befb6ec52d685e89c9e90c3",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card2_landscape.pdf": "b01b32d9a98a3eb2a43440b4ec3ca88fd0ca4ba1fadd72ad8d3c837410807aa0",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card3_landscape.pdf": "527110a7c10ecf51f37cb0f89793a6b76ec6daf4e3d719172aae8332ba45bf4b",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card4_landscape.pdf": "a92a7b2676b469a930dedea7cd2f4cd8dd8b7a9cf8800a25dd92dfbdb082b0c5",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card1_landscape.pdf": "1fd6206fe41fca0f826b12f3f9913424e4460f2b0b0a35c2fdf0426d33af3fb6",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card2_landscape.pdf": "34d4d11e507d1d33a0d95364a41af6b31153dfa47cecb4131771768ccaf68a47",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card3_landscape.pdf": "f35d3cf2b8d7c06b8fc312d690900fb8a54a1a6cb576d0b2eb18d2f31f446977",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card4_landscape.pdf": "ce3080f61331a649cf724c5ca57cbb34173f60a353a404566e62d94c483987fd",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card1_landscape.pdf": "27afb586aed01e22b25f476116648de8e3be34cc10c80c444ac08e5781aa9368",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card2_landscape.pdf": "63ce9c0b5677feece48f5181c6f73ca36fb4b3f9e57adebd781399c5352832a8",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card3_landscape.pdf": "4b269c7ab0d8d4f01262ddac01251e83f51d2fce70a34331a4b2dc7a4e450629",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card4_landscape.pdf": "4bed553c622c48cfd15c988ceee226e737e399746985fefd6d9bb2daf2bb37e2",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card1_landscape.pdf": "ec11e0db4991542437c0a5ba158fe1d94cf4a8edcdf75d38312625483d8c5489",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card2_landscape.pdf": "cfbff6a0f6a98c601c51f17378e6f84832126794db77a3af987836ef4004eece",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card3_landscape.pdf": "2be83b5bab9a51477500303d70c526b97f0d2a23d4bcada0e73a2368ca802929",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card4_landscape.pdf": "936a5e64d7384276f5ec3234b5c227e067a9400f3172715c135b11cfd91d1b62",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card1_portrait.pdf": "7b0253bf6cd7a4d1ca1eeaafc485b86084ef1a8728a9ab52be15c5017d65eac6",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card2_portrait.pdf": "8e0c3421df65f752b0a1b59d12c69da1ef5dc5fc0d41a15555db5622b7c95c7c",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card3_portrait.pdf": "80d8de1a94beda557cb4614c514b81d9c9650403af84d0bd6d86d49cfb052242",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card4_portrait.pdf": "04e7ca2846aaa9ad2023d5f39afb1e2c119f8d72dc43f272ff1006ade53f4365",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card1_portrait.pdf": "cc1241a7ddd572b5600357087d332e302c1e17a7a4a278011f1ad2b0ec099ac0",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card2_portrait.pdf": "f81fcc6792302a5808a82c60e2ccd8552ed82f88757f27ab549626cb7988d0ea",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card3_portrait.pdf": "9ee679bcd4b647488c225547e7beab8397c4b0cbfda21497617673cf08dd2a73",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card4_portrait.pdf": "3fc5e6956813002324072438faa656b91eaea5d547b2d912be1274cb3a139ebf",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card1_portrait.pdf": "c0b3c2afc18e9b0d17b8ec3600a71017decfd1f0e1673bac5b547c9586a37ee0",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card2_portrait.pdf": "5fe6807793c8ac8fcf3444aac5d2f954ec9db7c8dbf97bdd6f31386cf87a7f23",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card3_portrait.pdf": "dcd056f94330c259f8518a01c326e440038c25b6d7c655fbddd8dcfbb6bc6f5e",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card4_portrait.pdf": "34742c0daff89289b4abb894c750ffb3320b4a8a072536f5e99250e0c9cbeff2",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card1_portrait.pdf": "5db167069a6f77927f90b7e7e98959e1341538ac6930a874d80c9c238f794f0e",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card2_portrait.pdf": "7c666d4bb0fdec5650fe28b3afc146a3839222ede167f416f5388e4d5cb37845",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card3_portrait.pdf": "1a1a1d271711db6cb71a3332fbff303009e39837c6b723ca2dcae0bd009ef3d7",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card4_portrait.pdf": "94013c06b449fd75b9c9156aa20101c849fe77d22e4496418c486a2d11198853"
+      },
+      "completed": "2026-08-29T18:42:43.996263+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/farstalker-kinband/manifest.json",
+          "hash": "452b8394178fd7c3f49fea1a2046b1a01cb549fc6ca97902004c36325ab13a6c",
+          "modified": "2026-08-29T18:42:44.177904+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-kill-broker.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-kill-broker.pdf",
+          "hash": "8ccee7ab88df4df623d06cfa6e4313c0def596b2e8a01624a985692ef03b8687",
+          "modified": "2026-07-12T19:10:29.847958+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-bow-hunter.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-bow-hunter.pdf",
+          "hash": "a01142fe20e25cef02edb58eedd72352512e3557160bcbe59f8112eb841abfcb",
+          "modified": "2026-07-12T19:10:29.864411+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-cold-blood.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cold-blood.pdf",
+          "hash": "83d647dd4dce041e85fb89018ee4855c8001ad46e8d22752963716df112282b2",
+          "modified": "2026-07-12T19:10:29.882333+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-cut-skin.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-cut-skin.pdf",
+          "hash": "5dbfbf63bc784c2e9ff0987c3710b060f38b0cbf55f2f394b0b281e8d55c9b7d",
+          "modified": "2026-07-12T19:10:29.898293+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-heavy-gunner.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-heavy-gunner.pdf",
+          "hash": "65baecccb54f063600c3dcad52ed706fda6a71f6a7cb7c00e125cd96215eeadf",
+          "modified": "2026-07-12T19:10:29.918488+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-hound.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-hound.pdf",
+          "hash": "84e9eb6155f25e7a7b938151b613a820c1d4dc0fc2d9991f7a41b1426ce57adc",
+          "modified": "2026-07-12T19:10:29.935495+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-long-sight.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-long-sight.pdf",
+          "hash": "b88f85b29173c5c201d44ae8919551a8f0583caaf1bed3c2f00578ae6ec302fa",
+          "modified": "2026-07-12T19:10:29.952518+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-pistolier.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-pistolier.pdf",
+          "hash": "a4685a60ed2367b3120a20efd89f40df4ddeed91cf9d02a5aa82e3ade7c8c439",
+          "modified": "2026-07-12T19:10:29.968826+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-stalker.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-stalker.pdf",
+          "hash": "41e1e6f37bb471d3a0d0dfdfbd2a0709ee080729475949cb2facaebb34e2aaa7",
+          "modified": "2026-07-12T19:10:29.986788+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-tracker.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-tracker.pdf",
+          "hash": "d8eccc2256b58be2f577fd645bb46af175b142651e8f5d13368b47c0aedafc9e",
+          "modified": "2026-07-12T19:10:29.998351+00:00"
+        },
+        "farstalker-kinband-datacard-kroot-warrior.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-kroot-warrior.pdf",
+          "hash": "590bfdc451f63420849ddc0e196cee511eecd76af688c5c8817f93d5b9a92bd4",
+          "modified": "2026-07-12T19:10:30.011804+00:00"
+        },
+        "farstalker-kinband-equipment-piercing-shot.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-equipment-piercing-shot.pdf",
+          "hash": "7f67920dd0691c0e75ef14bc5eb32f84fb024460ccb9c7704fd8cfe8352dae59",
+          "modified": "2026-07-12T19:10:30.022072+00:00"
+        },
+        "farstalker-kinband-equipment-toxin-shot.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-equipment-toxin-shot.pdf",
+          "hash": "ef909e380b8f1280d68f7043e941a67aae6ca461f888a5a1c87ec9b8e130f29e",
+          "modified": "2026-07-12T19:10:30.033912+00:00"
+        },
+        "farstalker-kinband-equipment-meat.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-equipment-meat.pdf",
+          "hash": "cfc77d2b46c84a8833a6276e9044bc5934e80090d3b538eb47ec2cc2c0044e26",
+          "modified": "2026-07-12T19:10:30.052109+00:00"
+        },
+        "farstalker-kinband-equipment-trophy.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-equipment-trophy.pdf",
+          "hash": "4df6c61c1f0f8f6f4678752250423bbdecb19c0459bd173ce1e721f6ff49598a",
+          "modified": "2026-07-12T19:10:30.071427+00:00"
+        },
+        "farstalker-kinband-faction-rule-farstalker.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-faction-rule-farstalker.pdf",
+          "hash": "b1c5abf32eb4f5fc0b52ee9246a51c9e3fbe35d9a9d92b7daa75fc2ab3cbdb79",
+          "modified": "2026-07-12T19:10:30.100441+00:00"
+        },
+        "farstalker-kinband-token-guide-token-guide.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-token-guide-token-guide.pdf",
+          "hash": "ad6811ef7799cb966386d9a2ea50245128e508416f6253e1d17bbfca0b96925f",
+          "modified": "2026-07-12T19:10:30.134314+00:00"
+        },
+        "farstalker-kinband-firefight-ploy-savage-ambush.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-savage-ambush.pdf",
+          "hash": "b4dc322349b6229c730f1a0b161d377225a893b72b1f77841883c89a0f162a22",
+          "modified": "2026-07-12T19:10:30.163973+00:00"
+        },
+        "farstalker-kinband-firefight-ploy-slip-away.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-slip-away.pdf",
+          "hash": "fd8e062570ea891b9b8f2db55c55ffdc50d4eee0a794e12acd1eec49d1b2aa5a",
+          "modified": "2026-07-12T19:10:30.224825+00:00"
+        },
+        "farstalker-kinband-firefight-ploy-poach.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-poach.pdf",
+          "hash": "a4ecb6922587c1a25a2a7f3313de1b0f434c7c0d9cbed99991adbfcb699c3155",
+          "modified": "2026-07-12T19:10:30.283169+00:00"
+        },
+        "farstalker-kinband-firefight-ploy-vengeance-for-the-kinband.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-firefight-ploy-vengeance-for-the-kinband.pdf",
+          "hash": "3f4ee0183695dba0c3749dd8554b217a77f3c9f35e054b5c213659a0238a950f",
+          "modified": "2026-07-12T19:10:30.404050+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection.pdf",
+          "hash": "6cb78c2c4ff9c78618cb13ea13c60494ef675aabec7fe668069d5a6b727c0776",
+          "modified": "2026-07-12T19:10:30.491810+00:00"
+        },
+        "farstalker-kinband-strategy-ploy-cut-throats.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-cut-throats.pdf",
+          "hash": "b10fcf306941c224a21f9010c7edb7f29cd8ba46ad16f236eb8fdb2378c1ca21",
+          "modified": "2026-07-12T19:10:30.603637+00:00"
+        },
+        "farstalker-kinband-strategy-ploy-rogue.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-rogue.pdf",
+          "hash": "493240ccefed548b102cfd8ce7ba821e9c22b48a2929c85b5cba2e8be07a6457",
+          "modified": "2026-07-12T19:10:30.736604+00:00"
+        },
+        "farstalker-kinband-strategy-ploy-prey.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-prey.pdf",
+          "hash": "f71d5530fcb5d70ac2d07c80e52336b095999c7832445da90d92fec7013cf732",
+          "modified": "2026-07-12T19:10:30.820808+00:00"
+        },
+        "farstalker-kinband-strategy-ploy-bound.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-strategy-ploy-bound.pdf",
+          "hash": "fbc6d23721f3fb84d22f46876329c86259d65ec3776ba09083a6ec6bc1922a14",
+          "modified": "2026-07-12T19:10:30.858199+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "640961f1fed93bcaca377961f4b6a2a8650ce7f8273f11e34b0cd2bae86151f7",
+          "modified": "2026-08-29T18:42:44.241095+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "896d220c1e5d0a72cce92edbc75034a39f7a7fd4c7a37297cef9e823984347fa",
+          "modified": "2026-08-29T18:42:44.304679+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "e9f5a4de5decb6d66a52a184f7ce2c4aa9c9a7982a4a3d61afe700996aaf4857",
+          "modified": "2026-08-29T18:42:44.323483+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "b09a03e777b441e6f5cf51cfe9300eac07e1ffe8164e2dc23028ca11b42d8a28",
+          "modified": "2026-08-29T18:42:44.342505+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "18d586980d6569ec1e7a619aa95337595f1bce847b25ad202aab046ff75c6793",
+          "modified": "2026-08-29T18:42:44.368080+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "8f95d9faa0076978b5137a16aa839f13e693b62377270d80b737ea1c1078405a",
+          "modified": "2026-08-29T18:42:44.388005+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "ffac930b8c2ea5bd52eebb6fbc9eb55cc7251e8772b98c3acdf446e1cd49a281",
+          "modified": "2026-08-29T18:42:44.410273+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "8e5389fef9c58963ee305a2fd2c7122df20b003bd9fab348e0c1723e981f34ba",
+          "modified": "2026-08-29T18:42:44.445526+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "e7725790f2c8245f6e85ff6e6b4464ce68837fb09753f71efa10643f3e483bac",
+          "modified": "2026-08-29T18:42:44.462884+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "c00e5937e5e737101e3da0555f2d1088c6bd1f4ad47ad27b9088dd3047c6e9a3",
+          "modified": "2026-08-29T18:42:44.970049+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "44584fa61f9913d4818fa2ecdf8094901b748fa05c80efc2a73a1982644b3d75",
+          "modified": "2026-08-29T18:42:45.718823+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-12.pdf",
+          "hash": "4f138a15d0afcceaf78e1c63d46b465dcf4f7e93c6bb0e14fe1e168c7beec828",
+          "modified": "2026-08-29T18:42:45.830990+00:00"
+        },
+        "farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-13.pdf",
+          "hash": "79f821e9b0f7453e2ddc27edb9f3465e87c61eb4d86a0c188338965a07696e61",
+          "modified": "2026-08-29T18:42:45.850122+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-1.pdf",
+          "hash": "3b8b1c8dafd08ce931cacaaba07163eb56199cfa0416718be275a772c294d991",
+          "modified": "2026-08-29T18:42:45.866792+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-2.pdf",
+          "hash": "b9c24723f408d742ae72afb3955e77619e4f234e28e7a93e73d2bdc0ffb0b42a",
+          "modified": "2026-08-29T18:42:45.883387+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-3.pdf",
+          "hash": "50589b17d9494cbee6c580e5aa2cb6b13da5c7dad072172711ca1b3c1f6144cb",
+          "modified": "2026-08-29T18:42:45.901146+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-4.pdf",
+          "hash": "dce12f362e6a4af005a8636c0eddbbc8fc9a7fd6839886f0dd0ad897e3b278f8",
+          "modified": "2026-08-29T18:42:45.918977+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-5.pdf",
+          "hash": "76b7a1bcf8317e71137bba82f74e8e68d5a0f3b90a88506044c4ecaf7461b063",
+          "modified": "2026-08-29T18:42:45.936188+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-6.pdf",
+          "hash": "5b943a56827738ec0d9791ac12101b2b0eda50b5694f1f1aab4af54ac04e894f",
+          "modified": "2026-08-29T18:42:45.952297+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-7.pdf",
+          "hash": "903fe4aaf4c5fb12f08c45808e8ba6ad4bae8d02759d73a8d2c32a1830fdcd5c",
+          "modified": "2026-08-29T18:42:45.969900+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-8.pdf",
+          "hash": "ad376a8096746eb3e883f20d3a962de5108f5c977aaeac406875a60ecb3ab8d4",
+          "modified": "2026-08-29T18:42:45.985489+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-9.pdf",
+          "hash": "2b0bc92549248d730ef1390bc6ad01e70c4f9e957423f0c940ef3fddd78ce677",
+          "modified": "2026-08-29T18:42:46.007107+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-10.pdf",
+          "hash": "846065e39a931693245404342563148cc3fb6f91241b4666b5203001130a0f06",
+          "modified": "2026-08-29T18:42:46.029951+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-11.pdf",
+          "hash": "3632707639a1cb011aca24e703fb22f91a4cb7d63ae1e82b65573c0ed279f67e",
+          "modified": "2026-08-29T18:42:46.053627+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-12.pdf",
+          "hash": "9e8f4aadf6180848e064c32c64678d8d33eca9bb6f82aae213dd8d2dc845771e",
+          "modified": "2026-08-29T18:42:46.118964+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-13.pdf",
+          "hash": "55bcc3215e172874557283298d88b6855bd33600ef7eaaab0e88f26d1e1c801e",
+          "modified": "2026-08-29T18:42:46.157353+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-14.pdf",
+          "hash": "29adddfc1772aa174d47f168d8a70461c274ab46bc002704195229d58697054c",
+          "modified": "2026-08-29T18:42:46.175583+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-15.pdf",
+          "hash": "180ce4f652cbcd05ff9194611a15b25f19c35b2a070bdb4b25d1f2885ded92fd",
+          "modified": "2026-08-29T18:42:46.193766+00:00"
+        },
+        "farstalker-kinband-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/farstalker-kinband/farstalker-kinband-operatives-selection-operative-selection-16.pdf",
+          "hash": "f7ac79f918a6183ed05fe641c0a7207d3f6056cd0e90a2c0f12d8182633578bc",
+          "modified": "2026-08-29T18:42:46.216436+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/farstalker-kinband-structure.json": "452b8394178fd7c3f49fea1a2046b1a01cb549fc6ca97902004c36325ab13a6c",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card1_landscape.pdf": "a077d575dfb166cd0bbc2004b6e8fc6ffd0c47b17befb6ec52d685e89c9e90c3",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card2_landscape.pdf": "b01b32d9a98a3eb2a43440b4ec3ca88fd0ca4ba1fadd72ad8d3c837410807aa0",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card3_landscape.pdf": "527110a7c10ecf51f37cb0f89793a6b76ec6daf4e3d719172aae8332ba45bf4b",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page01_card4_landscape.pdf": "a92a7b2676b469a930dedea7cd2f4cd8dd8b7a9cf8800a25dd92dfbdb082b0c5",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card1_landscape.pdf": "1fd6206fe41fca0f826b12f3f9913424e4460f2b0b0a35c2fdf0426d33af3fb6",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card2_landscape.pdf": "34d4d11e507d1d33a0d95364a41af6b31153dfa47cecb4131771768ccaf68a47",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card3_landscape.pdf": "f35d3cf2b8d7c06b8fc312d690900fb8a54a1a6cb576d0b2eb18d2f31f446977",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page02_card4_landscape.pdf": "ce3080f61331a649cf724c5ca57cbb34173f60a353a404566e62d94c483987fd",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card1_landscape.pdf": "27afb586aed01e22b25f476116648de8e3be34cc10c80c444ac08e5781aa9368",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card2_landscape.pdf": "63ce9c0b5677feece48f5181c6f73ca36fb4b3f9e57adebd781399c5352832a8",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card3_landscape.pdf": "4b269c7ab0d8d4f01262ddac01251e83f51d2fce70a34331a4b2dc7a4e450629",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page03_card4_landscape.pdf": "4bed553c622c48cfd15c988ceee226e737e399746985fefd6d9bb2daf2bb37e2",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page04_card1_landscape.pdf": "ec11e0db4991542437c0a5ba158fe1d94cf4a8edcdf75d38312625483d8c5489",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card1_portrait.pdf": "7b0253bf6cd7a4d1ca1eeaafc485b86084ef1a8728a9ab52be15c5017d65eac6",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card2_portrait.pdf": "8e0c3421df65f752b0a1b59d12c69da1ef5dc5fc0d41a15555db5622b7c95c7c",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card3_portrait.pdf": "80d8de1a94beda557cb4614c514b81d9c9650403af84d0bd6d86d49cfb052242",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page05_card4_portrait.pdf": "04e7ca2846aaa9ad2023d5f39afb1e2c119f8d72dc43f272ff1006ade53f4365",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card1_portrait.pdf": "cc1241a7ddd572b5600357087d332e302c1e17a7a4a278011f1ad2b0ec099ac0",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card2_portrait.pdf": "f81fcc6792302a5808a82c60e2ccd8552ed82f88757f27ab549626cb7988d0ea",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card3_portrait.pdf": "9ee679bcd4b647488c225547e7beab8397c4b0cbfda21497617673cf08dd2a73",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page06_card4_portrait.pdf": "3fc5e6956813002324072438faa656b91eaea5d547b2d912be1274cb3a139ebf",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card1_portrait.pdf": "c0b3c2afc18e9b0d17b8ec3600a71017decfd1f0e1673bac5b547c9586a37ee0",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card2_portrait.pdf": "5fe6807793c8ac8fcf3444aac5d2f954ec9db7c8dbf97bdd6f31386cf87a7f23",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card3_portrait.pdf": "dcd056f94330c259f8518a01c326e440038c25b6d7c655fbddd8dcfbb6bc6f5e",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page07_card4_portrait.pdf": "34742c0daff89289b4abb894c750ffb3320b4a8a072536f5e99250e0c9cbeff2",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card1_portrait.pdf": "5db167069a6f77927f90b7e7e98959e1341538ac6930a874d80c9c238f794f0e",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card2_portrait.pdf": "7c666d4bb0fdec5650fe28b3afc146a3839222ede167f416f5388e4d5cb37845",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card3_portrait.pdf": "1a1a1d271711db6cb71a3332fbff303009e39837c6b723ca2dcae0bd009ef3d7",
+        "layers/warcom/extracted/farstalker-kinband/cards/farstalker-kinband_page08_card4_portrait.pdf": "94013c06b449fd75b9c9156aa20101c849fe77d22e4496418c486a2d11198853"
+      },
+      "completed": "2026-08-29T18:42:48.535007+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "e58c3814da7b3dea4927efc589446af46aaebb960492b40eff681ce245387101",
+          "outputs": [
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-01.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-02.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-03.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-03.png",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-04.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-05.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-06.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-07.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-08.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-09.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-10.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-11.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-12.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-13.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-14.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-15.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-16.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-17.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-18.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-19.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-20.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-21.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-22.jpeg",
+            "layers/integration/farstalker-kinband/artwork/farstalker-kinband-artwork-metadata.json",
+            "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-landscape.jpg",
+            "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-portrait.jpg",
+            "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-token-transparent.png",
+            "layers/integration/farstalker-kinband/artwork/icons/farstalker-kinband-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:39:03.925065+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:39:03.925065+00:00"
+    }
+  }
+}

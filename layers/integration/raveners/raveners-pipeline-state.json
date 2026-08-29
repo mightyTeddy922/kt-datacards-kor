@@ -1,0 +1,1452 @@
+{
+  "team": "raveners",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:40.672962+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/raveners/content/raveners-content.json",
+          "hash": "6e66cac28ba910a13cb8d21bda80a9dab85d958327e3e770919001947f20b101",
+          "modified": "2026-08-29T18:48:11.734057+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:16.312610+00:00",
+      "inputs": {
+        "layers/integration/raveners/manifest.json": "20cac28e305f30854ec12f366ac2db33504f035a1a9f320769b6756798a4d66d",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "817c9c3687c410c4cc3a806d4337ff920df3705c935cba9bba53aa45d3d1a32b",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "9f453bb8b5e970ccf12e0b0171388294ff6d84bfb20859183681278ba19a57de",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "74e8b7e9723cdde7579bb93aca11e3a778e20a36dbd02e8d02366214d33e5fa9",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "67a5ab701eea3cc6c2f60e7a0dc95118dfda798a2fee200d9e7052b9a468485a",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "611c4fa8e8e9efa8962b06f3ce53d91233366c984b601826965e829b0ab7da2e",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "28cdd0b577f78995b40bb5c1570d24970e2928a4dc6a861a635ba890940a7e28",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "698c28eeea12822515c2c14ec87f7032a094fd96816438af0ab46b15f394b845",
+        "layers/integration/raveners/raveners-datacard-ravener-felltalon.pdf": "82d073355052147963e12670d1b4586f618430ea199d30348a4745525ea1c9f7",
+        "layers/integration/raveners/raveners-datacard-ravener-prime.pdf": "a31e6ee686c4dd49ad1fd201989f25307ae984afa5940508db490dfd8415360c",
+        "layers/integration/raveners/raveners-datacard-ravener-tremorscythe.pdf": "a1745402bb18eef70692879933094f26b08ab127dbe315ae80a3e51d4f491637",
+        "layers/integration/raveners/raveners-datacard-ravener-venomspitter.pdf": "ed64d750f8d5abb42a2eeb12b9ad94933cad3f7fa6e8e4968faea4a231ec772c",
+        "layers/integration/raveners/raveners-datacard-ravener-warrior.pdf": "0add35d598fa20d05d2d9c023a13d54fc5de108761a8c10a5535c086fd6cd8a9",
+        "layers/integration/raveners/raveners-datacard-ravener-wrecker.pdf": "a10889b831dda5f88ac43f78e4570775f3f0915bd2c2e571f23b8faca9415534",
+        "layers/integration/raveners/raveners-equipment-acid-blood.pdf": "c9a073aeb36337d1ea1c2bb37d7d265c8be35564cbe9795b215ba19f6a202e2e",
+        "layers/integration/raveners/raveners-equipment-chromatospore-camouflage.pdf": "1b8f074bb7c03b7126a1acb56bdeaa454641e9ffa92af879a8e7c476838df1d5",
+        "layers/integration/raveners/raveners-equipment-heightened-senses.pdf": "1d61237925473e32d8398c88639bf1f6257eed09026c47c3b9b007ec9c86601c",
+        "layers/integration/raveners/raveners-equipment-metamorphic-flesh.pdf": "f6c50dba9ba50632316688d6466eb0edeeac4433415bae1d78508e2ab2819ce3",
+        "layers/integration/raveners/raveners-faction-rule-burrow.pdf": "44519e51b2a7856f87d12e21ab0a7a5cc7f24aa2421efc4f12eab688d9e1b6ab",
+        "layers/integration/raveners/raveners-faction-rule-predatory-instincts.pdf": "9c5b6578f9c3991651819fd835070fed2efaa235f22dc91298154e0bb423d538",
+        "layers/integration/raveners/raveners-faction-rule-tunnel.pdf": "a2b2ce472a54e835fed9edfec1f12eb68c41aeae0fc2002a8f917559afd2ceab",
+        "layers/integration/raveners/raveners-firefight-ploy-burrowing-strike.pdf": "76cffb71a7946e2727f34e5f1c0755da05bd196c4afa1681f42d9e3604d6f745",
+        "layers/integration/raveners/raveners-firefight-ploy-death-frenzy.pdf": "2bf9a21beba317a7ce42d3ba611e1cc8ce3ba6233c0d7bb48e216a2b5a5a676f",
+        "layers/integration/raveners/raveners-firefight-ploy-slithering-evasion.pdf": "12453c035e02106313f898d8512b046802adbe2248cfac680bf43474298535c4",
+        "layers/integration/raveners/raveners-firefight-ploy-subterranean-horror.pdf": "d59342bbf4c61794e74ba0b63eadc25a7330176195ab611ca00bffd901e16c2f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-1.pdf": "5e9dfd2df5026146db89f1a17ac69dcd4ba1348df1bab973663dcf128bc8bfbf",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-10.pdf": "19f4249f483244e13c70751f74284cd758c53438c23d3ae5dbe22e1105cdd536",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-11.pdf": "441535bcdfa6495ebeaa0a2989ad5a4798d1e7595d318a65ec5d0de91cc936a2",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-12.pdf": "8f1c5acca75c29b8a5d938b3a1f55e7ca6b04618456535923fe9bcdd830a3f07",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-13.pdf": "af731893b388ac6299c0e3907c93b914f7faaddfd3a5c5b0c265276149d7df78",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-14.pdf": "0c6a693aab1af4c3b675686d2b3e5e03fcf0f374ca7a84c1ac4883cdbd599b2f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-15.pdf": "b1e0762232eee227cf7148639733bb5fd3b50f3a6099bbf28620d7e865bbfcb9",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-16.pdf": "2000f787db2d6e26946fb4713570e0d692d9afef94d9b0af43bf18f0c44349ad",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-17.pdf": "e44c91ba0bc3cc5002fdfbdca379a97181dcdcfc48b38b96dbeb7a9d508c1e01",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-18.pdf": "e633b43a79d2afb6939a11e0506b644e32a44dbdc1d7c2cfdd468a0dc43db660",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-19.pdf": "68378e7bbddc087c865a9959587bb50953efd450c3a81111e6122780abbec668",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-2.pdf": "78255444d7b23ec9b28234d3f4afc90e7e8410e00c6b18a9cba740ce1d403639",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-3.pdf": "ccf6711f1b244afa05d58bf642e0ae46ffacd07572a61c46b4e6c3e9dacb5cb2",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-4.pdf": "5abd4c9026d95f8dbe26c918903bb2ea1d066b3b1eda050a352893ebead65af3",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-5.pdf": "16dadcc4b1cb75ed7f624cbe5a96dbc8c1939def3d7a29702c5db154121b2139",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-6.pdf": "2e40933da4149d03e7b7ad1a5897c6dd4eabe5c3efb152dae4cb0c7458534b5f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-7.pdf": "b2e105e4e2fccb430a9a55fc9ee5414145d87a6abd4d166976036e01afec6ecc",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-8.pdf": "271b323fe8e338a76a74b279ca71b9854e43924bf761d297000af031c166577d",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-9.pdf": "b06ab5e98770b006eb7c77d3a6a0cfa162560ddc7ea794376b3a6965c7a4b50d",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection.pdf": "f948e3277677beeee0416dc3a57229c6c1f0864371e862931f2380f0d53e4273",
+        "layers/integration/raveners/raveners-strategy-ploy-death-from-below.pdf": "b0c1bcde5e8b2948aa937c7045ef96f970dc5881ddcd070643208351786c378a",
+        "layers/integration/raveners/raveners-strategy-ploy-tunnel-lurkers.pdf": "485bbd5484d6082296cf5b3a4872b84522fcbc25166428bfb5b76788fa4e183a",
+        "layers/integration/raveners/raveners-strategy-ploy-whipcord-emergence.pdf": "cb3fa868b113344b853bbe78d3c319baa14de72ddb20e886f6e32c8cdb957efe",
+        "layers/integration/raveners/raveners-strategy-ploy-writhe-out-of-sight.pdf": "b9c4f4f41f83584effd88b429be46d34d339cc6700e11208c5f16599183f7ad0",
+        "layers/integration/raveners/raveners-token-guide-token-guide.pdf": "6eda00fdf686c365fccf3acb1265dd662df710facdb9016f6d804545c61eee83"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/raveners/card-backside/raveners-backside-landscape.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-07-12T18:55:36.130468+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/raveners/card-backside/raveners-backside-portrait.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-07-12T18:55:36.135615+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:55:36.152459+00:00",
+      "inputs": {
+        "layers/integration/raveners/artwork/icons/raveners-icon-token.jpg": "2daf6803a1772575f8bb116f06eba558dd1fccc89f605d87830e38491e24093d",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/raveners-distend-dorsal-sac.png": {
+          "path": "output/raveners/tokens/raveners-distend-dorsal-sac.png",
+          "hash": "0675e05bdd87f3bcddb6fe9c40207c2d88b601c2ace73b184154144e636a8c52",
+          "modified": "2026-08-29T18:48:32.682462+00:00"
+        },
+        "tokens/raveners-heightened-senses.png": {
+          "path": "output/raveners/tokens/raveners-heightened-senses.png",
+          "hash": "681198d46ad66021af1fec818dac46e55ca30f71a7f95f7daf77ce378f6175bb",
+          "modified": "2026-08-29T18:48:33.838740+00:00"
+        },
+        "tokens/raveners-poison.png": {
+          "path": "output/raveners/tokens/raveners-poison.png",
+          "hash": "be877b187aadf2956e707ac47ff3a458a51975050d37cbcbb300362cb92b0d11",
+          "modified": "2026-08-29T18:48:35.260726+00:00"
+        },
+        "tokens/raveners-subterranean-ambush.png": {
+          "path": "output/raveners/tokens/raveners-subterranean-ambush.png",
+          "hash": "28c7f350bcdf99352c7467b82a82ce6f0dd8edc96796cbd3cabe8d961d084b52",
+          "modified": "2026-08-29T18:48:36.549600+00:00"
+        },
+        "tokens/raveners-tunnel.png": {
+          "path": "output/raveners/tokens/raveners-tunnel.png",
+          "hash": "144f7f861402dfc32c793897a6ef9b5f1549f57dba0ba0d53d2e2e23e618c419",
+          "modified": "2026-08-29T18:48:37.292163+00:00"
+        },
+        "tokens/raveners-distend-dorsal-sac.obj": {
+          "path": "output/raveners/tokens/raveners-distend-dorsal-sac.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:38.584966+00:00"
+        },
+        "tokens/raveners-heightened-senses.obj": {
+          "path": "output/raveners/tokens/raveners-heightened-senses.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:39.309410+00:00"
+        },
+        "tokens/raveners-poison.obj": {
+          "path": "output/raveners/tokens/raveners-poison.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:39.703557+00:00"
+        },
+        "tokens/raveners-subterranean-ambush.obj": {
+          "path": "output/raveners/tokens/raveners-subterranean-ambush.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:40.356310+00:00"
+        },
+        "tokens/raveners-tunnel.obj": {
+          "path": "output/raveners/tokens/raveners-tunnel.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:48:41.400776+00:00"
+        },
+        "tokens/tokenbag/raveners-token-bag-icon.png": {
+          "path": "output/raveners/tokens/tokenbag/raveners-token-bag-icon.png",
+          "hash": "2daf6803a1772575f8bb116f06eba558dd1fccc89f605d87830e38491e24093d",
+          "modified": "2026-08-29T18:48:41.410372+00:00"
+        },
+        "tokens/tokenbag/raveners-token-bag.obj": {
+          "path": "output/raveners/tokens/tokenbag/raveners-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:48:41.411376+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:50.675740+00:00",
+      "inputs": {
+        "layers/integration/raveners/manifest.json": "20cac28e305f30854ec12f366ac2db33504f035a1a9f320769b6756798a4d66d",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/raveners/artwork/icons/raveners-icon-token.jpg": "2daf6803a1772575f8bb116f06eba558dd1fccc89f605d87830e38491e24093d",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "817c9c3687c410c4cc3a806d4337ff920df3705c935cba9bba53aa45d3d1a32b",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "9f453bb8b5e970ccf12e0b0171388294ff6d84bfb20859183681278ba19a57de",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "74e8b7e9723cdde7579bb93aca11e3a778e20a36dbd02e8d02366214d33e5fa9",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "67a5ab701eea3cc6c2f60e7a0dc95118dfda798a2fee200d9e7052b9a468485a",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "611c4fa8e8e9efa8962b06f3ce53d91233366c984b601826965e829b0ab7da2e",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "28cdd0b577f78995b40bb5c1570d24970e2928a4dc6a861a635ba890940a7e28",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "698c28eeea12822515c2c14ec87f7032a094fd96816438af0ab46b15f394b845",
+        "layers/integration/raveners/raveners-datacard-ravener-felltalon.pdf": "82d073355052147963e12670d1b4586f618430ea199d30348a4745525ea1c9f7",
+        "layers/integration/raveners/raveners-datacard-ravener-prime.pdf": "a31e6ee686c4dd49ad1fd201989f25307ae984afa5940508db490dfd8415360c",
+        "layers/integration/raveners/raveners-datacard-ravener-tremorscythe.pdf": "a1745402bb18eef70692879933094f26b08ab127dbe315ae80a3e51d4f491637",
+        "layers/integration/raveners/raveners-datacard-ravener-venomspitter.pdf": "ed64d750f8d5abb42a2eeb12b9ad94933cad3f7fa6e8e4968faea4a231ec772c",
+        "layers/integration/raveners/raveners-datacard-ravener-warrior.pdf": "0add35d598fa20d05d2d9c023a13d54fc5de108761a8c10a5535c086fd6cd8a9",
+        "layers/integration/raveners/raveners-datacard-ravener-wrecker.pdf": "a10889b831dda5f88ac43f78e4570775f3f0915bd2c2e571f23b8faca9415534",
+        "layers/integration/raveners/raveners-equipment-acid-blood.pdf": "c9a073aeb36337d1ea1c2bb37d7d265c8be35564cbe9795b215ba19f6a202e2e",
+        "layers/integration/raveners/raveners-equipment-chromatospore-camouflage.pdf": "1b8f074bb7c03b7126a1acb56bdeaa454641e9ffa92af879a8e7c476838df1d5",
+        "layers/integration/raveners/raveners-equipment-heightened-senses.pdf": "1d61237925473e32d8398c88639bf1f6257eed09026c47c3b9b007ec9c86601c",
+        "layers/integration/raveners/raveners-equipment-metamorphic-flesh.pdf": "f6c50dba9ba50632316688d6466eb0edeeac4433415bae1d78508e2ab2819ce3",
+        "layers/integration/raveners/raveners-faction-rule-burrow.pdf": "44519e51b2a7856f87d12e21ab0a7a5cc7f24aa2421efc4f12eab688d9e1b6ab",
+        "layers/integration/raveners/raveners-faction-rule-predatory-instincts.pdf": "9c5b6578f9c3991651819fd835070fed2efaa235f22dc91298154e0bb423d538",
+        "layers/integration/raveners/raveners-faction-rule-tunnel.pdf": "a2b2ce472a54e835fed9edfec1f12eb68c41aeae0fc2002a8f917559afd2ceab",
+        "layers/integration/raveners/raveners-firefight-ploy-burrowing-strike.pdf": "76cffb71a7946e2727f34e5f1c0755da05bd196c4afa1681f42d9e3604d6f745",
+        "layers/integration/raveners/raveners-firefight-ploy-death-frenzy.pdf": "2bf9a21beba317a7ce42d3ba611e1cc8ce3ba6233c0d7bb48e216a2b5a5a676f",
+        "layers/integration/raveners/raveners-firefight-ploy-slithering-evasion.pdf": "12453c035e02106313f898d8512b046802adbe2248cfac680bf43474298535c4",
+        "layers/integration/raveners/raveners-firefight-ploy-subterranean-horror.pdf": "d59342bbf4c61794e74ba0b63eadc25a7330176195ab611ca00bffd901e16c2f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-1.pdf": "5e9dfd2df5026146db89f1a17ac69dcd4ba1348df1bab973663dcf128bc8bfbf",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-10.pdf": "19f4249f483244e13c70751f74284cd758c53438c23d3ae5dbe22e1105cdd536",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-11.pdf": "441535bcdfa6495ebeaa0a2989ad5a4798d1e7595d318a65ec5d0de91cc936a2",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-12.pdf": "8f1c5acca75c29b8a5d938b3a1f55e7ca6b04618456535923fe9bcdd830a3f07",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-13.pdf": "af731893b388ac6299c0e3907c93b914f7faaddfd3a5c5b0c265276149d7df78",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-14.pdf": "0c6a693aab1af4c3b675686d2b3e5e03fcf0f374ca7a84c1ac4883cdbd599b2f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-15.pdf": "b1e0762232eee227cf7148639733bb5fd3b50f3a6099bbf28620d7e865bbfcb9",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-16.pdf": "2000f787db2d6e26946fb4713570e0d692d9afef94d9b0af43bf18f0c44349ad",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-17.pdf": "e44c91ba0bc3cc5002fdfbdca379a97181dcdcfc48b38b96dbeb7a9d508c1e01",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-18.pdf": "e633b43a79d2afb6939a11e0506b644e32a44dbdc1d7c2cfdd468a0dc43db660",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-19.pdf": "68378e7bbddc087c865a9959587bb50953efd450c3a81111e6122780abbec668",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-2.pdf": "78255444d7b23ec9b28234d3f4afc90e7e8410e00c6b18a9cba740ce1d403639",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-3.pdf": "ccf6711f1b244afa05d58bf642e0ae46ffacd07572a61c46b4e6c3e9dacb5cb2",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-4.pdf": "5abd4c9026d95f8dbe26c918903bb2ea1d066b3b1eda050a352893ebead65af3",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-5.pdf": "16dadcc4b1cb75ed7f624cbe5a96dbc8c1939def3d7a29702c5db154121b2139",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-6.pdf": "2e40933da4149d03e7b7ad1a5897c6dd4eabe5c3efb152dae4cb0c7458534b5f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-7.pdf": "b2e105e4e2fccb430a9a55fc9ee5414145d87a6abd4d166976036e01afec6ecc",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-8.pdf": "271b323fe8e338a76a74b279ca71b9854e43924bf761d297000af031c166577d",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-9.pdf": "b06ab5e98770b006eb7c77d3a6a0cfa162560ddc7ea794376b3a6965c7a4b50d",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection.pdf": "f948e3277677beeee0416dc3a57229c6c1f0864371e862931f2380f0d53e4273",
+        "layers/integration/raveners/raveners-strategy-ploy-death-from-below.pdf": "b0c1bcde5e8b2948aa937c7045ef96f970dc5881ddcd070643208351786c378a",
+        "layers/integration/raveners/raveners-strategy-ploy-tunnel-lurkers.pdf": "485bbd5484d6082296cf5b3a4872b84522fcbc25166428bfb5b76788fa4e183a",
+        "layers/integration/raveners/raveners-strategy-ploy-whipcord-emergence.pdf": "cb3fa868b113344b853bbe78d3c319baa14de72ddb20e886f6e32c8cdb957efe",
+        "layers/integration/raveners/raveners-strategy-ploy-writhe-out-of-sight.pdf": "b9c4f4f41f83584effd88b429be46d34d339cc6700e11208c5f16599183f7ad0",
+        "layers/integration/raveners/raveners-token-guide-token-guide.pdf": "6eda00fdf686c365fccf3acb1265dd662df710facdb9016f6d804545c61eee83",
+        "config/teams/raveners/custom-tokens/raveners-tunnel.png": "5cc0ab693ff1c9cc0acf3cd5fdec50ab6fb6e926caf6264079a38d879cfb4744"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/raveners/dice/raveners-dice-light.jpg",
+          "hash": "45c000a199b32df99f2050e583ac50c8c8c9f886b07b0e74211a0557f9f4ac6a",
+          "modified": "2026-08-29T18:48:51.617551+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/raveners/dice/raveners-dice-dark.jpg",
+          "hash": "95e274e56ea2400ef341f75cb699c97f85acabb94c3e9eb6b2a71cd4d7af7d08",
+          "modified": "2026-08-29T18:48:51.793687+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/raveners/dice/raveners-dice-team.jpg",
+          "hash": "98de26d105e08e918ced5e9fbf9f9d0d9113462a653a3cede30c00b038262be9",
+          "modified": "2026-08-29T18:48:51.799338+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:51.806356+00:00",
+      "inputs": {
+        "layers/integration/raveners/artwork/icons/raveners-icon-token-transparent.png": "1eef57c95c873a0d0b8148ce7e0085b34f8f07c0231566a507b54f8a33e3cd74",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/raveners/cardbox/raveners-card-box-texture.jpg",
+          "hash": "d7fe37311df3a721b6528e7065d62b2fdbeae3c5369f0775e72337eb40cd2843",
+          "modified": "2026-08-29T18:48:53.996359+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/raveners/cardbox/raveners-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:48:53.997861+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:48:54.003937+00:00",
+      "inputs": {
+        "layers/integration/raveners/artwork/icons/raveners-icon-token.jpg": "2daf6803a1772575f8bb116f06eba558dd1fccc89f605d87830e38491e24093d",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/ravener-felltalon-back.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-felltalon-back.jpg",
+          "hash": "9b973099f0a58eeb1c5315ad9251005c27d6f1bd9f56b1e7a26d1996d03ccd16",
+          "modified": "2026-08-29T18:49:09.045237+00:00"
+        },
+        "cards/datacards/ravener-felltalon-front.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-felltalon-front.jpg",
+          "hash": "f19f446f453e9e3f149263a3287eb39b6358d3dfb85858df596d3abb0e6e15fd",
+          "modified": "2026-08-29T18:49:09.046238+00:00"
+        },
+        "cards/datacards/ravener-prime-back.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-prime-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.048747+00:00"
+        },
+        "cards/datacards/ravener-prime-front.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-prime-front.jpg",
+          "hash": "8eb5f17839a23278eb268b74dd895c5092ba4650bf2280cff0dffd51ba1fa28a",
+          "modified": "2026-08-29T18:49:09.100720+00:00"
+        },
+        "cards/datacards/ravener-tremorscythe-back.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-tremorscythe-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.102223+00:00"
+        },
+        "cards/datacards/ravener-tremorscythe-front.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-tremorscythe-front.jpg",
+          "hash": "199e3db4234cfbf4a3c7201d061fbdc33d8589d0c93321554ad5902c5c81c8bf",
+          "modified": "2026-08-29T18:49:09.106227+00:00"
+        },
+        "cards/datacards/ravener-venomspitter-back.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-venomspitter-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.108244+00:00"
+        },
+        "cards/datacards/ravener-venomspitter-front.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-venomspitter-front.jpg",
+          "hash": "b08054a14575bc209204513ea6f34c8fbef9846c46a7b971ac681f23c81eda2c",
+          "modified": "2026-08-29T18:49:09.114335+00:00"
+        },
+        "cards/datacards/ravener-warrior-back.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-warrior-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.117870+00:00"
+        },
+        "cards/datacards/ravener-warrior-front.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-warrior-front.jpg",
+          "hash": "512a18467234a12256b26e460f5af6384f63466b212fc750579fd9c3fd182a71",
+          "modified": "2026-08-29T18:49:09.124014+00:00"
+        },
+        "cards/datacards/ravener-wrecker-back.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-wrecker-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.130107+00:00"
+        },
+        "cards/datacards/ravener-wrecker-front.jpg": {
+          "path": "output/raveners/cards/datacards/ravener-wrecker-front.jpg",
+          "hash": "99989132ccb19c98f880afaeb0cd081d03f9067edf39c57c67b45247772e4758",
+          "modified": "2026-08-29T18:49:09.138154+00:00"
+        },
+        "cards/equipment/raveners-acid-blood-back.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-acid-blood-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.143175+00:00"
+        },
+        "cards/equipment/raveners-acid-blood-front.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-acid-blood-front.jpg",
+          "hash": "809545f14850d57b39feb561056a68745751e7a99f65208c945917a98398bb5d",
+          "modified": "2026-08-29T18:49:09.150805+00:00"
+        },
+        "cards/equipment/raveners-chromatospore-camouflage-back.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-chromatospore-camouflage-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.155320+00:00"
+        },
+        "cards/equipment/raveners-chromatospore-camouflage-front.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-chromatospore-camouflage-front.jpg",
+          "hash": "fec0803acf5f2150b217e5d6466af3aba8032be8b8c107c57c940a67979e88c2",
+          "modified": "2026-08-29T18:49:09.160929+00:00"
+        },
+        "cards/equipment/raveners-heightened-senses-back.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-heightened-senses-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.165445+00:00"
+        },
+        "cards/equipment/raveners-heightened-senses-front.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-heightened-senses-front.jpg",
+          "hash": "35d4be60de593d3a15988ad1bfcf3adada7a564dd77cb725050f5a7ef114bb37",
+          "modified": "2026-08-29T18:49:09.171067+00:00"
+        },
+        "cards/equipment/raveners-metamorphic-flesh-back.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-metamorphic-flesh-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.174067+00:00"
+        },
+        "cards/equipment/raveners-metamorphic-flesh-front.jpg": {
+          "path": "output/raveners/cards/equipment/raveners-metamorphic-flesh-front.jpg",
+          "hash": "2c4c52ab4112fe9964c062670f270fb67edfb5e1e58c39d63637053b51a6f575",
+          "modified": "2026-08-29T18:49:09.181216+00:00"
+        },
+        "cards/faction_rules/raveners-burrow-back.jpg": {
+          "path": "output/raveners/cards/faction_rules/raveners-burrow-back.jpg",
+          "hash": "e7d7ace517748670e4adbbf8568403c611e6f4de6f421601bad5f800a3604150",
+          "modified": "2026-08-29T18:49:09.187742+00:00"
+        },
+        "cards/faction_rules/raveners-burrow-front.jpg": {
+          "path": "output/raveners/cards/faction_rules/raveners-burrow-front.jpg",
+          "hash": "df1dd1a8c862383f421ed052329f383be3753e292a36687ba7ae63997ea3220b",
+          "modified": "2026-08-29T18:49:09.189746+00:00"
+        },
+        "cards/faction_rules/raveners-predatory-instincts-back.jpg": {
+          "path": "output/raveners/cards/faction_rules/raveners-predatory-instincts-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.190746+00:00"
+        },
+        "cards/faction_rules/raveners-predatory-instincts-front.jpg": {
+          "path": "output/raveners/cards/faction_rules/raveners-predatory-instincts-front.jpg",
+          "hash": "11f68bbf896aa935cf4e90d14f2bcb92fb940d8a44e1d5a788674a4d59c04726",
+          "modified": "2026-08-29T18:49:09.192250+00:00"
+        },
+        "cards/faction_rules/raveners-tunnel-back.jpg": {
+          "path": "output/raveners/cards/faction_rules/raveners-tunnel-back.jpg",
+          "hash": "f0675f5d03a9d0642839ef2ad5ca308a80cf7d5c1285ccb0b12b2c69ce1991b3",
+          "modified": "2026-08-29T18:49:09.193253+00:00"
+        },
+        "cards/faction_rules/raveners-tunnel-front.jpg": {
+          "path": "output/raveners/cards/faction_rules/raveners-tunnel-front.jpg",
+          "hash": "043a5fc836ab93fb7078d09924d34c92cb80f437d76d1d62c2439e28d3caeea2",
+          "modified": "2026-08-29T18:49:09.196764+00:00"
+        },
+        "cards/firefight_ploys/raveners-burrowing-strike-back.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-burrowing-strike-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.197764+00:00"
+        },
+        "cards/firefight_ploys/raveners-burrowing-strike-front.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-burrowing-strike-front.jpg",
+          "hash": "6de0e9cd0ef1cc14cbe076eeb5c1e256a4f6c7c6ab8ea256a7172f90158f999d",
+          "modified": "2026-08-29T18:49:09.218854+00:00"
+        },
+        "cards/firefight_ploys/raveners-death-frenzy-back.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-death-frenzy-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.229883+00:00"
+        },
+        "cards/firefight_ploys/raveners-death-frenzy-front.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-death-frenzy-front.jpg",
+          "hash": "da071be3b7c08bb0f1b833693039851c46b7e05aee685c719ea874937055fac0",
+          "modified": "2026-08-29T18:49:09.254096+00:00"
+        },
+        "cards/firefight_ploys/raveners-slithering-evasion-back.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-slithering-evasion-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.265067+00:00"
+        },
+        "cards/firefight_ploys/raveners-slithering-evasion-front.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-slithering-evasion-front.jpg",
+          "hash": "c8a3dd93a6e4f672ea91e9dcc2b9ee542f3409a037abe32cd52485bcfd25c5c1",
+          "modified": "2026-08-29T18:49:09.290242+00:00"
+        },
+        "cards/firefight_ploys/raveners-subterranean-horror-back.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-subterranean-horror-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.302422+00:00"
+        },
+        "cards/firefight_ploys/raveners-subterranean-horror-front.jpg": {
+          "path": "output/raveners/cards/firefight_ploys/raveners-subterranean-horror-front.jpg",
+          "hash": "b3032aed030e6ebf0a3a5dc478f0753f0c433a6bebf036b1bc5732c486443e45",
+          "modified": "2026-08-29T18:49:09.327708+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.338618+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-front.jpg",
+          "hash": "81bde97f54bbb47f5fa70f0d10e3f3e69f9e13ae74341d0533103deb44f3df09",
+          "modified": "2026-08-29T18:49:11.139306+00:00"
+        },
+        "cards/strategy_ploys/raveners-death-from-below-back.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-death-from-below-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.140818+00:00"
+        },
+        "cards/strategy_ploys/raveners-death-from-below-front.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-death-from-below-front.jpg",
+          "hash": "35808f956b576f96bd985626fd72e75fdc1f3e6e089c85eb77d74823aee37e23",
+          "modified": "2026-08-29T18:49:11.143846+00:00"
+        },
+        "cards/strategy_ploys/raveners-tunnel-lurkers-back.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-tunnel-lurkers-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.146362+00:00"
+        },
+        "cards/strategy_ploys/raveners-tunnel-lurkers-front.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-tunnel-lurkers-front.jpg",
+          "hash": "37606df063fc68d3236b393c9eb89b260247613aaaf98d20911d22d26db28318",
+          "modified": "2026-08-29T18:49:11.148870+00:00"
+        },
+        "cards/strategy_ploys/raveners-whipcord-emergence-back.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-whipcord-emergence-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.150376+00:00"
+        },
+        "cards/strategy_ploys/raveners-whipcord-emergence-front.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-whipcord-emergence-front.jpg",
+          "hash": "e3d62bafe598698ff540790be4c52768fe7299e5b657b5d0a441aec3b083a6b6",
+          "modified": "2026-08-29T18:49:11.268510+00:00"
+        },
+        "cards/strategy_ploys/raveners-writhe-out-of-sight-back.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-writhe-out-of-sight-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.342205+00:00"
+        },
+        "cards/strategy_ploys/raveners-writhe-out-of-sight-front.jpg": {
+          "path": "output/raveners/cards/strategy_ploys/raveners-writhe-out-of-sight-front.jpg",
+          "hash": "0aff4cc0aeef77ad93b199e490da6b6b9b7357b9b31a3a021c87d09fff7e3ffd",
+          "modified": "2026-08-29T18:49:11.561250+00:00"
+        },
+        "cards/token_guide/raveners-token-guide-back.jpg": {
+          "path": "output/raveners/cards/token_guide/raveners-token-guide-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.693401+00:00"
+        },
+        "cards/token_guide/raveners-token-guide-front.jpg": {
+          "path": "output/raveners/cards/token_guide/raveners-token-guide-front.jpg",
+          "hash": "d65ab117d228b68f4f79b1a3a3fdfcae5a927e1630beaee98205f59a6ba70147",
+          "modified": "2026-08-29T18:49:11.883194+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:08.922248+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "ddf3106a2b0306d99a4bf46801d769fdb50cc4ed0d317f873ac541e1d871a43d",
+          "modified": "2026-08-29T18:49:08.932445+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:08.942471+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "ba937d16c93fca3850fe442107f4befed1cfe1c70b7064b9685fbf68ae74f11c",
+          "modified": "2026-08-29T18:49:08.951511+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:08.960104+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "c2a8a8d8f1ed06efef3167f793dd7703fa2cebab831708171fdf9a247f1e9fd4",
+          "modified": "2026-08-29T18:49:08.968636+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:08.977194+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "57d0f2d007be872380a3966d21fe59945d16d1aa0345f4621098fa2ea2f2df6e",
+          "modified": "2026-08-29T18:49:08.989215+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:08.996740+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "d07c7d77ef9c29f8fd264b5d977f15ee490a7c2d1670b0681128a531c424cab9",
+          "modified": "2026-08-29T18:49:09.005385+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.014435+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "699d9e0b577bd61052809ed21bb0ca11527647cc97e87e3a92d55822e2e2240a",
+          "modified": "2026-08-29T18:49:09.022543+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+          "modified": "2026-08-29T18:49:09.032107+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "74bd7ed747401bd3cafe32ded4e010fa91a127f8b004299ee71d67f4de50b56a",
+          "modified": "2026-08-29T18:49:09.041723+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card1-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card1-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.354621+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card1-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card1-front.jpg",
+          "hash": "f6d803be51e1ddb54832e136951607affe4a12b1c97e9e87e1e36dd5c2347d15",
+          "modified": "2026-08-29T18:49:09.366068+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card10-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card10-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.373102+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card10-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card10-front.jpg",
+          "hash": "37f150d5af793de7d814cfd7cb98fa62caef317543a676233fa84df0bf2f3b9e",
+          "modified": "2026-08-29T18:49:09.381415+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card11-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card11-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.387484+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card11-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card11-front.jpg",
+          "hash": "d9b9ee347e1233f326db618b28ad9919826a3526ddcd7339df44ce114e041607",
+          "modified": "2026-08-29T18:49:09.396561+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card12-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card12-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.404102+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card12-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card12-front.jpg",
+          "hash": "f83ed69a5cc7c7aa4afa3fc74e2973d0917726c25bb1aac94c79d4d0f84a07f4",
+          "modified": "2026-08-29T18:49:09.414885+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card13-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card13-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.485995+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card13-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card13-front.jpg",
+          "hash": "f80f0fb7bd313019b7e74433eebb665772675decd8603323f79e018622a231f3",
+          "modified": "2026-08-29T18:49:09.682336+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card14-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card14-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:09.796854+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card14-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card14-front.jpg",
+          "hash": "00ad76125158be3498708002225470c631cb59a5c371e1f8ebdfc592e1c1e1c0",
+          "modified": "2026-08-29T18:49:09.962155+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card15-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card15-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:10.077744+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card15-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card15-front.jpg",
+          "hash": "152c694abd1dcd551b52ae73c5117ba2b3f476ee8c5f32a2261591035b4f7ba3",
+          "modified": "2026-08-29T18:49:10.259849+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card16-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card16-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:10.354685+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card16-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card16-front.jpg",
+          "hash": "40de6964b352e01934265188959c5cfa08fcbefbb1e555a0198b2fb297e17bb0",
+          "modified": "2026-08-29T18:49:10.508892+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card17-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card17-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:10.569743+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card17-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card17-front.jpg",
+          "hash": "840a0acd04ba8e4ab2b68be8251de1ff295d85c0e0acd730f1f09d8b561defec",
+          "modified": "2026-08-29T18:49:10.604158+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card18-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card18-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:10.613271+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card18-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card18-front.jpg",
+          "hash": "75cc9aa59f50b0f66f8cae6930fae6e11a1e2a1b832b503b5ec49f5e9df49262",
+          "modified": "2026-08-29T18:49:10.623304+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card19-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card19-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:10.631342+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card19-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card19-front.jpg",
+          "hash": "26e8b7a2962fca519e0fb167d8262ad332e38be7900f52fe846cedcac7421345",
+          "modified": "2026-08-29T18:49:10.639941+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card2-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card2-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:10.703234+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card2-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card2-front.jpg",
+          "hash": "efa23798650af231b36ea493f66d6fc0b134b7efd42fa6712d54cd68c40c8fac",
+          "modified": "2026-08-29T18:49:11.005374+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card3-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card3-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.015967+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card3-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card3-front.jpg",
+          "hash": "8db4788a1f466f38cbd6dddb1a0a66eafc0ec55ba2cb448db7262afb7e2c2913",
+          "modified": "2026-08-29T18:49:11.029031+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card4-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card4-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.038996+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card4-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card4-front.jpg",
+          "hash": "a8b86cfaf052516fa13e6b4a6410cedcf85df702408bb5491eb7c9908b12686d",
+          "modified": "2026-08-29T18:49:11.047020+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card5-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card5-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.055517+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card5-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card5-front.jpg",
+          "hash": "0d8804e38d51a8181b5e6d7411926a063b16aa60130151f55c5308ed2cf61d23",
+          "modified": "2026-08-29T18:49:11.063535+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card6-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card6-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.073116+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card6-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card6-front.jpg",
+          "hash": "607ceffd3c4cca4eaa52e945c15784657e59082e9709739318795e489d7baff2",
+          "modified": "2026-08-29T18:49:11.079733+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card7-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card7-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.089285+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card7-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card7-front.jpg",
+          "hash": "a855120e350eb5a835136fa387638843a7c986ef016ade29750435af01e006f0",
+          "modified": "2026-08-29T18:49:11.101905+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card8-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card8-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.111523+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card8-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card8-front.jpg",
+          "hash": "758d70b283602361967645d1844d53933ba0a23d9e0fccfde316ead3c6f536a8",
+          "modified": "2026-08-29T18:49:11.119564+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card9-back.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card9-back.jpg",
+          "hash": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+          "modified": "2026-08-29T18:49:11.129093+00:00"
+        },
+        "cards/operatives_selection/raveners-operative-selection-card9-front.jpg": {
+          "path": "output/raveners/cards/operatives_selection/raveners-operative-selection-card9-front.jpg",
+          "hash": "42fe3c877eaaebf4920969cb0d899f27cbfc7f3d8764234c848ef5780c4f6be7",
+          "modified": "2026-08-29T18:49:11.137796+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:49:12.998089+00:00",
+      "inputs": {
+        "layers/integration/raveners/manifest.json": "20cac28e305f30854ec12f366ac2db33504f035a1a9f320769b6756798a4d66d",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "817c9c3687c410c4cc3a806d4337ff920df3705c935cba9bba53aa45d3d1a32b",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "9f453bb8b5e970ccf12e0b0171388294ff6d84bfb20859183681278ba19a57de",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "74e8b7e9723cdde7579bb93aca11e3a778e20a36dbd02e8d02366214d33e5fa9",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "67a5ab701eea3cc6c2f60e7a0dc95118dfda798a2fee200d9e7052b9a468485a",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "611c4fa8e8e9efa8962b06f3ce53d91233366c984b601826965e829b0ab7da2e",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "28cdd0b577f78995b40bb5c1570d24970e2928a4dc6a861a635ba890940a7e28",
+        "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "698c28eeea12822515c2c14ec87f7032a094fd96816438af0ab46b15f394b845",
+        "layers/integration/raveners/raveners-datacard-ravener-felltalon.pdf": "82d073355052147963e12670d1b4586f618430ea199d30348a4745525ea1c9f7",
+        "layers/integration/raveners/raveners-datacard-ravener-prime.pdf": "a31e6ee686c4dd49ad1fd201989f25307ae984afa5940508db490dfd8415360c",
+        "layers/integration/raveners/raveners-datacard-ravener-tremorscythe.pdf": "a1745402bb18eef70692879933094f26b08ab127dbe315ae80a3e51d4f491637",
+        "layers/integration/raveners/raveners-datacard-ravener-venomspitter.pdf": "ed64d750f8d5abb42a2eeb12b9ad94933cad3f7fa6e8e4968faea4a231ec772c",
+        "layers/integration/raveners/raveners-datacard-ravener-warrior.pdf": "0add35d598fa20d05d2d9c023a13d54fc5de108761a8c10a5535c086fd6cd8a9",
+        "layers/integration/raveners/raveners-datacard-ravener-wrecker.pdf": "a10889b831dda5f88ac43f78e4570775f3f0915bd2c2e571f23b8faca9415534",
+        "layers/integration/raveners/raveners-equipment-acid-blood.pdf": "c9a073aeb36337d1ea1c2bb37d7d265c8be35564cbe9795b215ba19f6a202e2e",
+        "layers/integration/raveners/raveners-equipment-chromatospore-camouflage.pdf": "1b8f074bb7c03b7126a1acb56bdeaa454641e9ffa92af879a8e7c476838df1d5",
+        "layers/integration/raveners/raveners-equipment-heightened-senses.pdf": "1d61237925473e32d8398c88639bf1f6257eed09026c47c3b9b007ec9c86601c",
+        "layers/integration/raveners/raveners-equipment-metamorphic-flesh.pdf": "f6c50dba9ba50632316688d6466eb0edeeac4433415bae1d78508e2ab2819ce3",
+        "layers/integration/raveners/raveners-faction-rule-burrow.pdf": "44519e51b2a7856f87d12e21ab0a7a5cc7f24aa2421efc4f12eab688d9e1b6ab",
+        "layers/integration/raveners/raveners-faction-rule-predatory-instincts.pdf": "9c5b6578f9c3991651819fd835070fed2efaa235f22dc91298154e0bb423d538",
+        "layers/integration/raveners/raveners-faction-rule-tunnel.pdf": "a2b2ce472a54e835fed9edfec1f12eb68c41aeae0fc2002a8f917559afd2ceab",
+        "layers/integration/raveners/raveners-firefight-ploy-burrowing-strike.pdf": "76cffb71a7946e2727f34e5f1c0755da05bd196c4afa1681f42d9e3604d6f745",
+        "layers/integration/raveners/raveners-firefight-ploy-death-frenzy.pdf": "2bf9a21beba317a7ce42d3ba611e1cc8ce3ba6233c0d7bb48e216a2b5a5a676f",
+        "layers/integration/raveners/raveners-firefight-ploy-slithering-evasion.pdf": "12453c035e02106313f898d8512b046802adbe2248cfac680bf43474298535c4",
+        "layers/integration/raveners/raveners-firefight-ploy-subterranean-horror.pdf": "d59342bbf4c61794e74ba0b63eadc25a7330176195ab611ca00bffd901e16c2f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-1.pdf": "5e9dfd2df5026146db89f1a17ac69dcd4ba1348df1bab973663dcf128bc8bfbf",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-10.pdf": "19f4249f483244e13c70751f74284cd758c53438c23d3ae5dbe22e1105cdd536",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-11.pdf": "441535bcdfa6495ebeaa0a2989ad5a4798d1e7595d318a65ec5d0de91cc936a2",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-12.pdf": "8f1c5acca75c29b8a5d938b3a1f55e7ca6b04618456535923fe9bcdd830a3f07",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-13.pdf": "af731893b388ac6299c0e3907c93b914f7faaddfd3a5c5b0c265276149d7df78",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-14.pdf": "0c6a693aab1af4c3b675686d2b3e5e03fcf0f374ca7a84c1ac4883cdbd599b2f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-15.pdf": "b1e0762232eee227cf7148639733bb5fd3b50f3a6099bbf28620d7e865bbfcb9",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-16.pdf": "2000f787db2d6e26946fb4713570e0d692d9afef94d9b0af43bf18f0c44349ad",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-17.pdf": "e44c91ba0bc3cc5002fdfbdca379a97181dcdcfc48b38b96dbeb7a9d508c1e01",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-18.pdf": "e633b43a79d2afb6939a11e0506b644e32a44dbdc1d7c2cfdd468a0dc43db660",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-19.pdf": "68378e7bbddc087c865a9959587bb50953efd450c3a81111e6122780abbec668",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-2.pdf": "78255444d7b23ec9b28234d3f4afc90e7e8410e00c6b18a9cba740ce1d403639",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-3.pdf": "ccf6711f1b244afa05d58bf642e0ae46ffacd07572a61c46b4e6c3e9dacb5cb2",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-4.pdf": "5abd4c9026d95f8dbe26c918903bb2ea1d066b3b1eda050a352893ebead65af3",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-5.pdf": "16dadcc4b1cb75ed7f624cbe5a96dbc8c1939def3d7a29702c5db154121b2139",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-6.pdf": "2e40933da4149d03e7b7ad1a5897c6dd4eabe5c3efb152dae4cb0c7458534b5f",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-7.pdf": "b2e105e4e2fccb430a9a55fc9ee5414145d87a6abd4d166976036e01afec6ecc",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-8.pdf": "271b323fe8e338a76a74b279ca71b9854e43924bf761d297000af031c166577d",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection-9.pdf": "b06ab5e98770b006eb7c77d3a6a0cfa162560ddc7ea794376b3a6965c7a4b50d",
+        "layers/integration/raveners/raveners-operatives-selection-operative-selection.pdf": "f948e3277677beeee0416dc3a57229c6c1f0864371e862931f2380f0d53e4273",
+        "layers/integration/raveners/raveners-strategy-ploy-death-from-below.pdf": "b0c1bcde5e8b2948aa937c7045ef96f970dc5881ddcd070643208351786c378a",
+        "layers/integration/raveners/raveners-strategy-ploy-tunnel-lurkers.pdf": "485bbd5484d6082296cf5b3a4872b84522fcbc25166428bfb5b76788fa4e183a",
+        "layers/integration/raveners/raveners-strategy-ploy-whipcord-emergence.pdf": "cb3fa868b113344b853bbe78d3c319baa14de72ddb20e886f6e32c8cdb957efe",
+        "layers/integration/raveners/raveners-strategy-ploy-writhe-out-of-sight.pdf": "b9c4f4f41f83584effd88b429be46d34d339cc6700e11208c5f16599183f7ad0",
+        "layers/integration/raveners/raveners-token-guide-token-guide.pdf": "6eda00fdf686c365fccf3acb1265dd662df710facdb9016f6d804545c61eee83",
+        "layers/integration/raveners/card-backside/raveners-backside-portrait.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/raveners/card-backside/raveners-backside-landscape.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/raveners/data/raveners-team-data.json",
+          "hash": "6e66cac28ba910a13cb8d21bda80a9dab85d958327e3e770919001947f20b101",
+          "modified": "2026-08-29T18:49:13.079363+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:49:13.082235+00:00",
+      "inputs": {
+        "layers/integration/raveners/content/raveners-content.json": "6e66cac28ba910a13cb8d21bda80a9dab85d958327e3e770919001947f20b101"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Raveners Box.json": {
+          "path": "output/raveners/tts_objects/Raveners Box.json",
+          "hash": "c949cd84c2a443bcb46da5f35ffa9a4ec84545546721f466925c5be2a1fb89c9",
+          "modified": "2026-07-21T11:11:14.948320+00:00"
+        },
+        "tts_objects/Raveners.json": {
+          "path": "output/raveners/tts_objects/Raveners.json",
+          "hash": "76c82f3566743407824e58800a55ec72b6030dc0f92ffd908091f20497e365c4",
+          "modified": "2026-08-29T18:53:40.575930+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:40.672962+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "ddf3106a2b0306d99a4bf46801d769fdb50cc4ed0d317f873ac541e1d871a43d",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "ba937d16c93fca3850fe442107f4befed1cfe1c70b7064b9685fbf68ae74f11c",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "c2a8a8d8f1ed06efef3167f793dd7703fa2cebab831708171fdf9a247f1e9fd4",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "57d0f2d007be872380a3966d21fe59945d16d1aa0345f4621098fa2ea2f2df6e",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "d07c7d77ef9c29f8fd264b5d977f15ee490a7c2d1670b0681128a531c424cab9",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "699d9e0b577bd61052809ed21bb0ca11527647cc97e87e3a92d55822e2e2240a",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "74bd7ed747401bd3cafe32ded4e010fa91a127f8b004299ee71d67f4de50b56a",
+        "output/raveners/cards/datacards/ravener-felltalon-back.jpg": "9b973099f0a58eeb1c5315ad9251005c27d6f1bd9f56b1e7a26d1996d03ccd16",
+        "output/raveners/cards/datacards/ravener-felltalon-front.jpg": "f19f446f453e9e3f149263a3287eb39b6358d3dfb85858df596d3abb0e6e15fd",
+        "output/raveners/cards/datacards/ravener-prime-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/ravener-prime-front.jpg": "8eb5f17839a23278eb268b74dd895c5092ba4650bf2280cff0dffd51ba1fa28a",
+        "output/raveners/cards/datacards/ravener-tremorscythe-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/ravener-tremorscythe-front.jpg": "199e3db4234cfbf4a3c7201d061fbdc33d8589d0c93321554ad5902c5c81c8bf",
+        "output/raveners/cards/datacards/ravener-venomspitter-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/ravener-venomspitter-front.jpg": "b08054a14575bc209204513ea6f34c8fbef9846c46a7b971ac681f23c81eda2c",
+        "output/raveners/cards/datacards/ravener-warrior-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/ravener-warrior-front.jpg": "512a18467234a12256b26e460f5af6384f63466b212fc750579fd9c3fd182a71",
+        "output/raveners/cards/datacards/ravener-wrecker-back.jpg": "3479ac90f948c56ebc85a6dcfa609dddb9c552107108ec3c603afcf7d3594b84",
+        "output/raveners/cards/datacards/ravener-wrecker-front.jpg": "99989132ccb19c98f880afaeb0cd081d03f9067edf39c57c67b45247772e4758",
+        "output/raveners/cards/equipment/raveners-acid-blood-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/equipment/raveners-acid-blood-front.jpg": "809545f14850d57b39feb561056a68745751e7a99f65208c945917a98398bb5d",
+        "output/raveners/cards/equipment/raveners-chromatospore-camouflage-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/equipment/raveners-chromatospore-camouflage-front.jpg": "fec0803acf5f2150b217e5d6466af3aba8032be8b8c107c57c940a67979e88c2",
+        "output/raveners/cards/equipment/raveners-heightened-senses-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/equipment/raveners-heightened-senses-front.jpg": "35d4be60de593d3a15988ad1bfcf3adada7a564dd77cb725050f5a7ef114bb37",
+        "output/raveners/cards/equipment/raveners-metamorphic-flesh-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/equipment/raveners-metamorphic-flesh-front.jpg": "2c4c52ab4112fe9964c062670f270fb67edfb5e1e58c39d63637053b51a6f575",
+        "output/raveners/cards/faction_rules/raveners-burrow-back.jpg": "e7d7ace517748670e4adbbf8568403c611e6f4de6f421601bad5f800a3604150",
+        "output/raveners/cards/faction_rules/raveners-burrow-front.jpg": "df1dd1a8c862383f421ed052329f383be3753e292a36687ba7ae63997ea3220b",
+        "output/raveners/cards/faction_rules/raveners-predatory-instincts-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/faction_rules/raveners-predatory-instincts-front.jpg": "11f68bbf896aa935cf4e90d14f2bcb92fb940d8a44e1d5a788674a4d59c04726",
+        "output/raveners/cards/faction_rules/raveners-tunnel-back.jpg": "f0675f5d03a9d0642839ef2ad5ca308a80cf7d5c1285ccb0b12b2c69ce1991b3",
+        "output/raveners/cards/faction_rules/raveners-tunnel-front.jpg": "043a5fc836ab93fb7078d09924d34c92cb80f437d76d1d62c2439e28d3caeea2",
+        "output/raveners/cards/firefight_ploys/raveners-burrowing-strike-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/firefight_ploys/raveners-burrowing-strike-front.jpg": "6de0e9cd0ef1cc14cbe076eeb5c1e256a4f6c7c6ab8ea256a7172f90158f999d",
+        "output/raveners/cards/firefight_ploys/raveners-death-frenzy-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/firefight_ploys/raveners-death-frenzy-front.jpg": "da071be3b7c08bb0f1b833693039851c46b7e05aee685c719ea874937055fac0",
+        "output/raveners/cards/firefight_ploys/raveners-slithering-evasion-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/firefight_ploys/raveners-slithering-evasion-front.jpg": "c8a3dd93a6e4f672ea91e9dcc2b9ee542f3409a037abe32cd52485bcfd25c5c1",
+        "output/raveners/cards/firefight_ploys/raveners-subterranean-horror-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/firefight_ploys/raveners-subterranean-horror-front.jpg": "b3032aed030e6ebf0a3a5dc478f0753f0c433a6bebf036b1bc5732c486443e45",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card1-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card1-front.jpg": "f6d803be51e1ddb54832e136951607affe4a12b1c97e9e87e1e36dd5c2347d15",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card10-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card10-front.jpg": "37f150d5af793de7d814cfd7cb98fa62caef317543a676233fa84df0bf2f3b9e",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card11-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card11-front.jpg": "d9b9ee347e1233f326db618b28ad9919826a3526ddcd7339df44ce114e041607",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card12-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card12-front.jpg": "f83ed69a5cc7c7aa4afa3fc74e2973d0917726c25bb1aac94c79d4d0f84a07f4",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card13-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card13-front.jpg": "f80f0fb7bd313019b7e74433eebb665772675decd8603323f79e018622a231f3",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card14-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card14-front.jpg": "00ad76125158be3498708002225470c631cb59a5c371e1f8ebdfc592e1c1e1c0",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card15-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card15-front.jpg": "152c694abd1dcd551b52ae73c5117ba2b3f476ee8c5f32a2261591035b4f7ba3",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card16-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card16-front.jpg": "40de6964b352e01934265188959c5cfa08fcbefbb1e555a0198b2fb297e17bb0",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card17-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card17-front.jpg": "840a0acd04ba8e4ab2b68be8251de1ff295d85c0e0acd730f1f09d8b561defec",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card18-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card18-front.jpg": "75cc9aa59f50b0f66f8cae6930fae6e11a1e2a1b832b503b5ec49f5e9df49262",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card19-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card19-front.jpg": "26e8b7a2962fca519e0fb167d8262ad332e38be7900f52fe846cedcac7421345",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card2-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card2-front.jpg": "efa23798650af231b36ea493f66d6fc0b134b7efd42fa6712d54cd68c40c8fac",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card3-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card3-front.jpg": "8db4788a1f466f38cbd6dddb1a0a66eafc0ec55ba2cb448db7262afb7e2c2913",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card4-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card4-front.jpg": "a8b86cfaf052516fa13e6b4a6410cedcf85df702408bb5491eb7c9908b12686d",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card5-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card5-front.jpg": "0d8804e38d51a8181b5e6d7411926a063b16aa60130151f55c5308ed2cf61d23",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card6-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card6-front.jpg": "607ceffd3c4cca4eaa52e945c15784657e59082e9709739318795e489d7baff2",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card7-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card7-front.jpg": "a855120e350eb5a835136fa387638843a7c986ef016ade29750435af01e006f0",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card8-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card8-front.jpg": "758d70b283602361967645d1844d53933ba0a23d9e0fccfde316ead3c6f536a8",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card9-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-card9-front.jpg": "42fe3c877eaaebf4920969cb0d899f27cbfc7f3d8764234c848ef5780c4f6be7",
+        "output/raveners/cards/operatives_selection/raveners-operative-selection-front.jpg": "81bde97f54bbb47f5fa70f0d10e3f3e69f9e13ae74341d0533103deb44f3df09",
+        "output/raveners/cards/strategy_ploys/raveners-death-from-below-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/strategy_ploys/raveners-death-from-below-front.jpg": "35808f956b576f96bd985626fd72e75fdc1f3e6e089c85eb77d74823aee37e23",
+        "output/raveners/cards/strategy_ploys/raveners-tunnel-lurkers-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/strategy_ploys/raveners-tunnel-lurkers-front.jpg": "37606df063fc68d3236b393c9eb89b260247613aaaf98d20911d22d26db28318",
+        "output/raveners/cards/strategy_ploys/raveners-whipcord-emergence-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/strategy_ploys/raveners-whipcord-emergence-front.jpg": "e3d62bafe598698ff540790be4c52768fe7299e5b657b5d0a441aec3b083a6b6",
+        "output/raveners/cards/strategy_ploys/raveners-writhe-out-of-sight-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/strategy_ploys/raveners-writhe-out-of-sight-front.jpg": "0aff4cc0aeef77ad93b199e490da6b6b9b7357b9b31a3a021c87d09fff7e3ffd",
+        "output/raveners/cards/token_guide/raveners-token-guide-back.jpg": "15754aa3e202d1a780f605872c1d4caed698293ba1147e9ff627f8b0091a5a38",
+        "output/raveners/cards/token_guide/raveners-token-guide-front.jpg": "d65ab117d228b68f4f79b1a3a3fdfcae5a927e1630beaee98205f59a6ba70147",
+        "output/raveners/cardbox/raveners-card-box-texture.jpg": "d7fe37311df3a721b6528e7065d62b2fdbeae3c5369f0775e72337eb40cd2843",
+        "output/raveners/cardbox/raveners-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/raveners/tokens/raveners-distend-dorsal-sac.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/raveners/tokens/raveners-distend-dorsal-sac.png": "0675e05bdd87f3bcddb6fe9c40207c2d88b601c2ace73b184154144e636a8c52",
+        "output/raveners/tokens/raveners-heightened-senses.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/raveners/tokens/raveners-heightened-senses.png": "681198d46ad66021af1fec818dac46e55ca30f71a7f95f7daf77ce378f6175bb",
+        "output/raveners/tokens/raveners-poison.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/raveners/tokens/raveners-poison.png": "be877b187aadf2956e707ac47ff3a458a51975050d37cbcbb300362cb92b0d11",
+        "output/raveners/tokens/raveners-subterranean-ambush.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/raveners/tokens/raveners-subterranean-ambush.png": "28c7f350bcdf99352c7467b82a82ce6f0dd8edc96796cbd3cabe8d961d084b52",
+        "output/raveners/tokens/raveners-tunnel.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/raveners/tokens/raveners-tunnel.png": "144f7f861402dfc32c793897a6ef9b5f1549f57dba0ba0d53d2e2e23e618c419",
+        "output/raveners/tokens/tokenbag/raveners-token-bag-icon.png": "2daf6803a1772575f8bb116f06eba558dd1fccc89f605d87830e38491e24093d",
+        "output/raveners/tokens/tokenbag/raveners-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/raveners/dice/raveners-dice-dark.jpg": "95e274e56ea2400ef341f75cb699c97f85acabb94c3e9eb6b2a71cd4d7af7d08",
+        "output/raveners/dice/raveners-dice-light.jpg": "45c000a199b32df99f2050e583ac50c8c8c9f886b07b0e74211a0557f9f4ac6a",
+        "output/raveners/dice/raveners-dice-team.jpg": "98de26d105e08e918ced5e9fbf9f9d0d9113462a653a3cede30c00b038262be9",
+        "output/raveners/data/raveners-team-data.json": "6e66cac28ba910a13cb8d21bda80a9dab85d958327e3e770919001947f20b101",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "equipment": {
+          "hash": "575ad65f7676201bdcc74ab9bc82d6cfc449992330c499c1887ed7139c9834e0",
+          "outputs": [
+            "layers/kt-app/extracted/raveners/cards/equipment/raveners-equipment-page_0.pdf",
+            "layers/kt-app/extracted/raveners/cards/equipment/raveners-equipment-page_1.pdf",
+            "layers/kt-app/extracted/raveners/cards/equipment/raveners-equipment-page_2.pdf",
+            "layers/kt-app/extracted/raveners/cards/equipment/raveners-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:58:45.620325+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "f18929d95cb4399556ed8c87b68f4c5d59a3d87752345e8849f42e71a0ba7a20",
+          "outputs": [
+            "layers/kt-app/extracted/raveners/cards/firefight-ploys/raveners-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/raveners/cards/firefight-ploys/raveners-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/raveners/cards/firefight-ploys/raveners-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/raveners/cards/firefight-ploys/raveners-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:59:50.107672+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "22a1cb2167fdbb8e02f713d5640dc28f2188fee7c3fc0bee1d1f2ea7cdb166c4",
+          "outputs": [
+            "layers/kt-app/extracted/raveners/cards/strategy-ploys/raveners-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/raveners/cards/strategy-ploys/raveners-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/raveners/cards/strategy-ploys/raveners-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/raveners/cards/strategy-ploys/raveners-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:06:34.337441+00:00"
+        },
+        "faction-rules": {
+          "hash": "306054d08fabdac968f4b7b1ac0479256b4de6b811bbd030e44148cc78de0e38",
+          "outputs": [
+            "layers/kt-app/extracted/raveners/cards/faction-rules/raveners-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/raveners/cards/faction-rules/raveners-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/raveners/cards/faction-rules/raveners-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/raveners/cards/faction-rules/raveners-faction-rules-page_3.pdf",
+            "layers/kt-app/extracted/raveners/cards/faction-rules/raveners-faction-rules-page_4.pdf",
+            "layers/kt-app/extracted/raveners/cards/faction-rules/raveners-faction-rules-page_5.pdf"
+          ],
+          "modified": "2026-07-06T16:07:02.815576+00:00"
+        },
+        "datacards": {
+          "hash": "fe578fcfb22ba391da28646c08749013426269de870b66a014bf0c7fa9c02265",
+          "outputs": [
+            "layers/kt-app/extracted/raveners/cards/datacards/raveners-datacards-page_0.pdf",
+            "layers/kt-app/extracted/raveners/cards/datacards/raveners-datacards-page_1.pdf",
+            "layers/kt-app/extracted/raveners/cards/datacards/raveners-datacards-page_2.pdf",
+            "layers/kt-app/extracted/raveners/cards/datacards/raveners-datacards-page_3.pdf",
+            "layers/kt-app/extracted/raveners/cards/datacards/raveners-datacards-page_4.pdf",
+            "layers/kt-app/extracted/raveners/cards/datacards/raveners-datacards-page_5.pdf"
+          ],
+          "modified": "2026-07-06T16:07:38.604099+00:00"
+        },
+        "operatives-selection": {
+          "hash": "f0a6ccdeab1a2dd99cb58b2617773535b8aa3b8786894de7381f0b1500f83f93",
+          "outputs": [
+            "layers/kt-app/extracted/raveners/cards/operatives-selection/raveners-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:08:24.014678+00:00"
+        },
+        "cards": {
+          "hash": "e3de6e59ca12a0052b076486ba5ea0dcc30436642c6fa9f9db293dd26fc5ef4a",
+          "outputs": [
+            "layers/warcom/extracted/raveners/cards/raveners_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page03_card1_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page03_card2_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page03_card3_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page03_card4_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/raveners/cards/raveners_page07_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:33:25.965231+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:33:25.965231+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/raveners-structure.json",
+          "hash": "20cac28e305f30854ec12f366ac2db33504f035a1a9f320769b6756798a4d66d",
+          "modified": "2026-08-29T18:47:54.998022+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card1_landscape.pdf": "3ea97d521a5c72d1f0a9d7322a57c1536af0ab70a0c1d0fafd568c242bd6de00",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card2_landscape.pdf": "af8f59639aa0da3ac5f8491c0cd0a31afe86edb3743e4c46fd72f99bd1fecc5d",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card3_landscape.pdf": "a8fc7893cac095b17632fcf207cb5b3deae5fa1fe7b381e007c6ef159316c2a2",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card4_landscape.pdf": "1304f3a379838b77adff43b5dc688801ef561fcd12e535d3b8162a76ed17ad98",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card1_landscape.pdf": "3e00902b84bd717a6eb45757ed8fe512b2ca5fa21f32610d3982cd72aedfe05d",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card2_landscape.pdf": "cd52d4724873b77ff84d12778c8d5447132fed019f28f182825349c9bc91e3ec",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card3_landscape.pdf": "ab409c83315a7193fed0c8536d0264907c91e1988af5ad5ab5f669fc6054d234",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card4_landscape.pdf": "3be5dd0eab7a959fee7f5dcfdade46e4a90c39253141af5f3405c51179aa88d9",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card1_portrait.pdf": "d6a97513c6c950880795fc35870a74e60743c1e08c5e772ff2993e4dca7bbfe1",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card2_portrait.pdf": "a6593b0b480c4be5519220b3bb73ef201914b7210791aa18a67bf6e225e20def",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card3_portrait.pdf": "518337b7758122304b39864210707a339032d2939edd6be7c66bb59976045dcb",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card4_portrait.pdf": "dfc9d2353cb9bc65612d55fb70a248541a0ccffdf6c426192ec2a54133250bab",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card1_portrait.pdf": "1e9568fa85e24b062c43f46a7b7e50dfda645a9042a4380584a0920357dd2a0a",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card2_portrait.pdf": "226a0d018548f92ca4c1a6fdf95b9bcc14f514c4d04836252dd78f4b4f4a95be",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card3_portrait.pdf": "7e97a21f875ade67f5d1c81f771191b195d739219f44bde41229db913085ca57",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card4_portrait.pdf": "b3807d43ea151920c02bb7702e32d2b6d70abd63ce5198d6c87048a0e864ae41",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card1_portrait.pdf": "f945eba6dea3301e78286322930c529ca4e254daaa9d912910c7826050169199",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card2_portrait.pdf": "24fed7c13c8acc25e123ee85cb731eb64ce5a67da29acb7db5768a4c850ecb4c",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card3_portrait.pdf": "06ae2e47383dcf16da9d3409176e8afc9379a7f329532b9872fb03c726b7f2b5",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card4_portrait.pdf": "f16a9023473272ac307f3114e95290723645722d007dd028f3f7c54598c64dbe",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card1_portrait.pdf": "a56f12ade6e972fd391d2cbb54ba216b0531bb0907432be246b21f1dad4c5882",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card2_portrait.pdf": "55cc7f6d9e25e32c008ade40c8e8673981772b9d1fc8c9b0b40926dd0948b7bb",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card3_portrait.pdf": "086996ed1425b86a1850f13026c905e8270c27cb9bcd47683a163831f27881d8",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card4_portrait.pdf": "6446ea31f259d5669fffa501d254611eefe2c6860180d56840e45957d8c209e1",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card1_portrait.pdf": "4da61567b26350c8e8a6c0be3f9a60900f87d8512f9f824c189d2a711196f09c",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card2_portrait.pdf": "59b91d86e033ed6deb84d60a0770715c53645ffcce3b72ace969cf90f934a8f2",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card3_portrait.pdf": "d17f00ad8dbb46ff0ec605c0fc52d4dc240a603b45126db9152274268d4399f4",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card4_portrait.pdf": "63e1062bc44472518cfa570dd27a106f208fe4499b450befa221650aac024348"
+      },
+      "completed": "2026-08-29T18:47:55.295804+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/raveners/manifest.json",
+          "hash": "20cac28e305f30854ec12f366ac2db33504f035a1a9f320769b6756798a4d66d",
+          "modified": "2026-08-29T18:47:55.454006+00:00"
+        },
+        "raveners-datacard-ravener-prime.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-ravener-prime.pdf",
+          "hash": "a31e6ee686c4dd49ad1fd201989f25307ae984afa5940508db490dfd8415360c",
+          "modified": "2026-08-26T15:18:11.274167+00:00"
+        },
+        "raveners-datacard-ravener-felltalon.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-ravener-felltalon.pdf",
+          "hash": "82d073355052147963e12670d1b4586f618430ea199d30348a4745525ea1c9f7",
+          "modified": "2026-08-26T15:18:11.291067+00:00"
+        },
+        "raveners-datacard-ravener-tremorscythe.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-ravener-tremorscythe.pdf",
+          "hash": "a1745402bb18eef70692879933094f26b08ab127dbe315ae80a3e51d4f491637",
+          "modified": "2026-08-26T15:18:11.299968+00:00"
+        },
+        "raveners-datacard-ravener-venomspitter.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-ravener-venomspitter.pdf",
+          "hash": "ed64d750f8d5abb42a2eeb12b9ad94933cad3f7fa6e8e4968faea4a231ec772c",
+          "modified": "2026-08-26T15:18:11.302161+00:00"
+        },
+        "raveners-datacard-ravener-warrior.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-ravener-warrior.pdf",
+          "hash": "0add35d598fa20d05d2d9c023a13d54fc5de108761a8c10a5535c086fd6cd8a9",
+          "modified": "2026-08-26T15:18:11.305221+00:00"
+        },
+        "raveners-datacard-ravener-wrecker.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-ravener-wrecker.pdf",
+          "hash": "a10889b831dda5f88ac43f78e4570775f3f0915bd2c2e571f23b8faca9415534",
+          "modified": "2026-08-26T15:18:11.309278+00:00"
+        },
+        "raveners-equipment-chromatospore-camouflage.pdf": {
+          "path": "layers/integration/raveners/raveners-equipment-chromatospore-camouflage.pdf",
+          "hash": "1b8f074bb7c03b7126a1acb56bdeaa454641e9ffa92af879a8e7c476838df1d5",
+          "modified": "2026-08-26T15:18:11.314349+00:00"
+        },
+        "raveners-equipment-acid-blood.pdf": {
+          "path": "layers/integration/raveners/raveners-equipment-acid-blood.pdf",
+          "hash": "c9a073aeb36337d1ea1c2bb37d7d265c8be35564cbe9795b215ba19f6a202e2e",
+          "modified": "2026-08-26T15:18:11.318012+00:00"
+        },
+        "raveners-equipment-metamorphic-flesh.pdf": {
+          "path": "layers/integration/raveners/raveners-equipment-metamorphic-flesh.pdf",
+          "hash": "f6c50dba9ba50632316688d6466eb0edeeac4433415bae1d78508e2ab2819ce3",
+          "modified": "2026-08-26T15:18:11.626675+00:00"
+        },
+        "raveners-equipment-heightened-senses.pdf": {
+          "path": "layers/integration/raveners/raveners-equipment-heightened-senses.pdf",
+          "hash": "1d61237925473e32d8398c88639bf1f6257eed09026c47c3b9b007ec9c86601c",
+          "modified": "2026-08-26T15:18:11.667204+00:00"
+        },
+        "raveners-faction-rule-burrow.pdf": {
+          "path": "layers/integration/raveners/raveners-faction-rule-burrow.pdf",
+          "hash": "44519e51b2a7856f87d12e21ab0a7a5cc7f24aa2421efc4f12eab688d9e1b6ab",
+          "modified": "2026-08-26T15:18:11.669959+00:00"
+        },
+        "raveners-faction-rule-tunnel.pdf": {
+          "path": "layers/integration/raveners/raveners-faction-rule-tunnel.pdf",
+          "hash": "a2b2ce472a54e835fed9edfec1f12eb68c41aeae0fc2002a8f917559afd2ceab",
+          "modified": "2026-08-26T15:18:11.672722+00:00"
+        },
+        "raveners-faction-rule-predatory-instincts.pdf": {
+          "path": "layers/integration/raveners/raveners-faction-rule-predatory-instincts.pdf",
+          "hash": "9c5b6578f9c3991651819fd835070fed2efaa235f22dc91298154e0bb423d538",
+          "modified": "2026-08-26T15:18:11.682423+00:00"
+        },
+        "raveners-token-guide-token-guide.pdf": {
+          "path": "layers/integration/raveners/raveners-token-guide-token-guide.pdf",
+          "hash": "6eda00fdf686c365fccf3acb1265dd662df710facdb9016f6d804545c61eee83",
+          "modified": "2026-08-26T15:18:11.684937+00:00"
+        },
+        "raveners-firefight-ploy-slithering-evasion.pdf": {
+          "path": "layers/integration/raveners/raveners-firefight-ploy-slithering-evasion.pdf",
+          "hash": "12453c035e02106313f898d8512b046802adbe2248cfac680bf43474298535c4",
+          "modified": "2026-08-26T15:18:11.687572+00:00"
+        },
+        "raveners-firefight-ploy-subterranean-horror.pdf": {
+          "path": "layers/integration/raveners/raveners-firefight-ploy-subterranean-horror.pdf",
+          "hash": "d59342bbf4c61794e74ba0b63eadc25a7330176195ab611ca00bffd901e16c2f",
+          "modified": "2026-08-26T15:18:11.689947+00:00"
+        },
+        "raveners-firefight-ploy-burrowing-strike.pdf": {
+          "path": "layers/integration/raveners/raveners-firefight-ploy-burrowing-strike.pdf",
+          "hash": "76cffb71a7946e2727f34e5f1c0755da05bd196c4afa1681f42d9e3604d6f745",
+          "modified": "2026-08-26T15:18:11.691986+00:00"
+        },
+        "raveners-firefight-ploy-death-frenzy.pdf": {
+          "path": "layers/integration/raveners/raveners-firefight-ploy-death-frenzy.pdf",
+          "hash": "2bf9a21beba317a7ce42d3ba611e1cc8ce3ba6233c0d7bb48e216a2b5a5a676f",
+          "modified": "2026-08-26T15:18:11.694755+00:00"
+        },
+        "raveners-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection.pdf",
+          "hash": "f948e3277677beeee0416dc3a57229c6c1f0864371e862931f2380f0d53e4273",
+          "modified": "2026-08-26T15:18:11.699262+00:00"
+        },
+        "raveners-strategy-ploy-death-from-below.pdf": {
+          "path": "layers/integration/raveners/raveners-strategy-ploy-death-from-below.pdf",
+          "hash": "b0c1bcde5e8b2948aa937c7045ef96f970dc5881ddcd070643208351786c378a",
+          "modified": "2026-08-26T15:18:11.703576+00:00"
+        },
+        "raveners-strategy-ploy-whipcord-emergence.pdf": {
+          "path": "layers/integration/raveners/raveners-strategy-ploy-whipcord-emergence.pdf",
+          "hash": "cb3fa868b113344b853bbe78d3c319baa14de72ddb20e886f6e32c8cdb957efe",
+          "modified": "2026-08-26T15:18:11.706532+00:00"
+        },
+        "raveners-strategy-ploy-writhe-out-of-sight.pdf": {
+          "path": "layers/integration/raveners/raveners-strategy-ploy-writhe-out-of-sight.pdf",
+          "hash": "b9c4f4f41f83584effd88b429be46d34d339cc6700e11208c5f16599183f7ad0",
+          "modified": "2026-08-26T15:18:11.709478+00:00"
+        },
+        "raveners-strategy-ploy-tunnel-lurkers.pdf": {
+          "path": "layers/integration/raveners/raveners-strategy-ploy-tunnel-lurkers.pdf",
+          "hash": "485bbd5484d6082296cf5b3a4872b84522fcbc25166428bfb5b76788fa4e183a",
+          "modified": "2026-08-26T15:18:11.712605+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "817c9c3687c410c4cc3a806d4337ff920df3705c935cba9bba53aa45d3d1a32b",
+          "modified": "2026-08-29T18:47:55.510802+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "9f453bb8b5e970ccf12e0b0171388294ff6d84bfb20859183681278ba19a57de",
+          "modified": "2026-08-29T18:47:55.536199+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "74e8b7e9723cdde7579bb93aca11e3a778e20a36dbd02e8d02366214d33e5fa9",
+          "modified": "2026-08-29T18:47:55.566170+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "67a5ab701eea3cc6c2f60e7a0dc95118dfda798a2fee200d9e7052b9a468485a",
+          "modified": "2026-08-29T18:47:55.585580+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "611c4fa8e8e9efa8962b06f3ce53d91233366c984b601826965e829b0ab7da2e",
+          "modified": "2026-08-29T18:47:55.601250+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "28cdd0b577f78995b40bb5c1570d24970e2928a4dc6a861a635ba890940a7e28",
+          "modified": "2026-08-29T18:47:55.614743+00:00"
+        },
+        "raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/raveners/raveners-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "698c28eeea12822515c2c14ec87f7032a094fd96816438af0ab46b15f394b845",
+          "modified": "2026-08-29T18:47:55.655841+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-1.pdf",
+          "hash": "5e9dfd2df5026146db89f1a17ac69dcd4ba1348df1bab973663dcf128bc8bfbf",
+          "modified": "2026-08-29T18:47:55.705877+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-2.pdf",
+          "hash": "78255444d7b23ec9b28234d3f4afc90e7e8410e00c6b18a9cba740ce1d403639",
+          "modified": "2026-08-29T18:47:56.255837+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-3.pdf",
+          "hash": "ccf6711f1b244afa05d58bf642e0ae46ffacd07572a61c46b4e6c3e9dacb5cb2",
+          "modified": "2026-08-29T18:47:58.373539+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-4.pdf",
+          "hash": "5abd4c9026d95f8dbe26c918903bb2ea1d066b3b1eda050a352893ebead65af3",
+          "modified": "2026-08-29T18:48:01.192699+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-5.pdf",
+          "hash": "16dadcc4b1cb75ed7f624cbe5a96dbc8c1939def3d7a29702c5db154121b2139",
+          "modified": "2026-08-29T18:48:04.331386+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-6.pdf",
+          "hash": "2e40933da4149d03e7b7ad1a5897c6dd4eabe5c3efb152dae4cb0c7458534b5f",
+          "modified": "2026-08-29T18:48:05.873708+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-7.pdf",
+          "hash": "b2e105e4e2fccb430a9a55fc9ee5414145d87a6abd4d166976036e01afec6ecc",
+          "modified": "2026-08-29T18:48:08.570377+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-8.pdf",
+          "hash": "271b323fe8e338a76a74b279ca71b9854e43924bf761d297000af031c166577d",
+          "modified": "2026-08-29T18:48:08.587944+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-9.pdf",
+          "hash": "b06ab5e98770b006eb7c77d3a6a0cfa162560ddc7ea794376b3a6965c7a4b50d",
+          "modified": "2026-08-29T18:48:08.600990+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-10.pdf",
+          "hash": "19f4249f483244e13c70751f74284cd758c53438c23d3ae5dbe22e1105cdd536",
+          "modified": "2026-08-29T18:48:08.923427+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-11.pdf",
+          "hash": "441535bcdfa6495ebeaa0a2989ad5a4798d1e7595d318a65ec5d0de91cc936a2",
+          "modified": "2026-08-29T18:48:08.937878+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-12.pdf",
+          "hash": "8f1c5acca75c29b8a5d938b3a1f55e7ca6b04618456535923fe9bcdd830a3f07",
+          "modified": "2026-08-29T18:48:08.951464+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-13.pdf",
+          "hash": "af731893b388ac6299c0e3907c93b914f7faaddfd3a5c5b0c265276149d7df78",
+          "modified": "2026-08-29T18:48:08.969634+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-14.pdf",
+          "hash": "0c6a693aab1af4c3b675686d2b3e5e03fcf0f374ca7a84c1ac4883cdbd599b2f",
+          "modified": "2026-08-29T18:48:08.988957+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-15.pdf",
+          "hash": "b1e0762232eee227cf7148639733bb5fd3b50f3a6099bbf28620d7e865bbfcb9",
+          "modified": "2026-08-29T18:48:09.001504+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-16.pdf",
+          "hash": "2000f787db2d6e26946fb4713570e0d692d9afef94d9b0af43bf18f0c44349ad",
+          "modified": "2026-08-29T18:48:09.024624+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-17.pdf",
+          "hash": "e44c91ba0bc3cc5002fdfbdca379a97181dcdcfc48b38b96dbeb7a9d508c1e01",
+          "modified": "2026-08-29T18:48:09.039608+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-18.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-18.pdf",
+          "hash": "e633b43a79d2afb6939a11e0506b644e32a44dbdc1d7c2cfdd468a0dc43db660",
+          "modified": "2026-08-29T18:48:09.055576+00:00"
+        },
+        "raveners-operatives-selection-operative-selection-19.pdf": {
+          "path": "layers/integration/raveners/raveners-operatives-selection-operative-selection-19.pdf",
+          "hash": "68378e7bbddc087c865a9959587bb50953efd450c3a81111e6122780abbec668",
+          "modified": "2026-08-29T18:48:09.070656+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/raveners-structure.json": "20cac28e305f30854ec12f366ac2db33504f035a1a9f320769b6756798a4d66d",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card1_landscape.pdf": "3ea97d521a5c72d1f0a9d7322a57c1536af0ab70a0c1d0fafd568c242bd6de00",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card2_landscape.pdf": "af8f59639aa0da3ac5f8491c0cd0a31afe86edb3743e4c46fd72f99bd1fecc5d",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card3_landscape.pdf": "a8fc7893cac095b17632fcf207cb5b3deae5fa1fe7b381e007c6ef159316c2a2",
+        "layers/warcom/extracted/raveners/cards/raveners_page01_card4_landscape.pdf": "1304f3a379838b77adff43b5dc688801ef561fcd12e535d3b8162a76ed17ad98",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card1_landscape.pdf": "3e00902b84bd717a6eb45757ed8fe512b2ca5fa21f32610d3982cd72aedfe05d",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card2_landscape.pdf": "cd52d4724873b77ff84d12778c8d5447132fed019f28f182825349c9bc91e3ec",
+        "layers/warcom/extracted/raveners/cards/raveners_page02_card3_landscape.pdf": "ab409c83315a7193fed0c8536d0264907c91e1988af5ad5ab5f669fc6054d234",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card1_portrait.pdf": "d6a97513c6c950880795fc35870a74e60743c1e08c5e772ff2993e4dca7bbfe1",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card2_portrait.pdf": "a6593b0b480c4be5519220b3bb73ef201914b7210791aa18a67bf6e225e20def",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card3_portrait.pdf": "518337b7758122304b39864210707a339032d2939edd6be7c66bb59976045dcb",
+        "layers/warcom/extracted/raveners/cards/raveners_page03_card4_portrait.pdf": "dfc9d2353cb9bc65612d55fb70a248541a0ccffdf6c426192ec2a54133250bab",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card1_portrait.pdf": "1e9568fa85e24b062c43f46a7b7e50dfda645a9042a4380584a0920357dd2a0a",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card2_portrait.pdf": "226a0d018548f92ca4c1a6fdf95b9bcc14f514c4d04836252dd78f4b4f4a95be",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card3_portrait.pdf": "7e97a21f875ade67f5d1c81f771191b195d739219f44bde41229db913085ca57",
+        "layers/warcom/extracted/raveners/cards/raveners_page04_card4_portrait.pdf": "b3807d43ea151920c02bb7702e32d2b6d70abd63ce5198d6c87048a0e864ae41",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card1_portrait.pdf": "f945eba6dea3301e78286322930c529ca4e254daaa9d912910c7826050169199",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card2_portrait.pdf": "24fed7c13c8acc25e123ee85cb731eb64ce5a67da29acb7db5768a4c850ecb4c",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card3_portrait.pdf": "06ae2e47383dcf16da9d3409176e8afc9379a7f329532b9872fb03c726b7f2b5",
+        "layers/warcom/extracted/raveners/cards/raveners_page05_card4_portrait.pdf": "f16a9023473272ac307f3114e95290723645722d007dd028f3f7c54598c64dbe",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card1_portrait.pdf": "a56f12ade6e972fd391d2cbb54ba216b0531bb0907432be246b21f1dad4c5882",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card2_portrait.pdf": "55cc7f6d9e25e32c008ade40c8e8673981772b9d1fc8c9b0b40926dd0948b7bb",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card3_portrait.pdf": "086996ed1425b86a1850f13026c905e8270c27cb9bcd47683a163831f27881d8",
+        "layers/warcom/extracted/raveners/cards/raveners_page06_card4_portrait.pdf": "6446ea31f259d5669fffa501d254611eefe2c6860180d56840e45957d8c209e1",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card1_portrait.pdf": "4da61567b26350c8e8a6c0be3f9a60900f87d8512f9f824c189d2a711196f09c",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card2_portrait.pdf": "59b91d86e033ed6deb84d60a0770715c53645ffcce3b72ace969cf90f934a8f2",
+        "layers/warcom/extracted/raveners/cards/raveners_page07_card3_portrait.pdf": "d17f00ad8dbb46ff0ec605c0fc52d4dc240a603b45126db9152274268d4399f4"
+      },
+      "completed": "2026-08-29T18:48:10.934927+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "e3de6e59ca12a0052b076486ba5ea0dcc30436642c6fa9f9db293dd26fc5ef4a",
+          "outputs": [
+            "layers/integration/raveners/artwork/raveners-artwork-01.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-02.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-03.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-03.png",
+            "layers/integration/raveners/artwork/raveners-artwork-04.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-05.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-06.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-06.png",
+            "layers/integration/raveners/artwork/raveners-artwork-07.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-07.png",
+            "layers/integration/raveners/artwork/raveners-artwork-08.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-08.png",
+            "layers/integration/raveners/artwork/raveners-artwork-09.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-10.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-11.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-12.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-13.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-14.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-15.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-16.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-17.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-18.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-19.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-20.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-21.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-22.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-23.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-24.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-25.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-26.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-27.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-28.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-29.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-30.jpeg",
+            "layers/integration/raveners/artwork/raveners-artwork-metadata.json",
+            "layers/integration/raveners/artwork/icons/raveners-icon-landscape.jpg",
+            "layers/integration/raveners/artwork/icons/raveners-icon-portrait.jpg",
+            "layers/integration/raveners/artwork/icons/raveners-icon-token-transparent.png",
+            "layers/integration/raveners/artwork/icons/raveners-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:39:17.515433+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:39:17.515433+00:00"
+    }
+  }
+}

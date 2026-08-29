@@ -1,0 +1,1580 @@
+{
+  "team": "corsair-voidscarred",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:37.375013+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/corsair-voidscarred/content/corsair-voidscarred-content.json",
+          "hash": "7cc8007df96758f0e9a0b42ae6f3bbf7fd0d2a8b24bf223851bce8a0d643406d",
+          "modified": "2026-08-29T18:41:13.701995+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:16.300050+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/manifest.json": "91aef237d0310edf1e2a0c999a847d435372fdfcaf920df470fe169a0f35c55f",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "5674275573572aead224aa3ad4cc3714567f3ffeb3e40b27b9f76009e09b99ee",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "57d67e00e1b877812fe4ddecc03e439c6ad33c937e5e142d46ad7a07f7cb3ea3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "ce671919d49674e84472919bf7e09665fd6d08e2c7ef67712124114d18195fc5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "b42cdcbabea8324d9e183a409a198c1cae5d920bc9bcfbdcbdc34586896e56da",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c5e0f518dd88821efc0e7853d0147c1bef898794827407ca56b64bc1cf80092f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "c5067c1434419b9cd5e5c0e11513fb0d848d9d613f71d2a452584e55417a31f0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "e305a74367e9bac7c53c8af45598a6faa98e8c558c45397d9b8f6e5fa7c3036f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "50951076ef2cf0506d8b2e7d1d1000d070921bbf2682eeb81d99bc5db04162b1",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "c5a33387b39cc84adff306820e6c86863c1354a727c5a2d0878c0860d162f129",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "8642d42e08147cf481452d8c37c692982eaebf25329eeaaeba7911428734e50d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ec18a0d9dcefef641071869612e72d024580ea908681c9fde7021ddc36315558",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-fate-dealer.pdf": "786a531917479275d26db68f9d836d4f40866bdf3e309728f581d24df3806e50",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-felarch.pdf": "108d09bba56da2ac4e82bf81200eb4dd020c082613b5efac59259087c21179f3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-gunner.pdf": "d77f225f902d1d92bf34cfd352bb355e1325378a3c2d40004bd603d22308b92c",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-heavy-gunner.pdf": "4f13f475e36ef48cf796f0c4e25c572b55537f94e6ea68d1308e5dd75276b180",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnathi.pdf": "16004f2cdf677e4deb3ea5821ffa9d26ccb3336b2cdf86402d4905dd90217665",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnite-hunter.pdf": "37ccc5a5161426facaaed044f3bac8548916bc9d0b86df58a6b91e0a8f0eb458",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-shade-runner.pdf": "71fefde87163e63b4b7b57651f9430b79cdf6e10fb369938fcca58f16461d003",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-soul-weaver.pdf": "4dcf0a6f5ef52f6a20c01fcd019b0edd559e95446941ed930ebbc5dab2032ac5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-starstorm-duellist.pdf": "f82ddf2624b18b2e054f386196e79964c0edf07aa43c9b3fd481400245e06ade",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-warrior.pdf": "ef64d3de930a1805306b226e26aba5d8025014aedec113fe4bcc90420e120ed4",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-way-seeker.pdf": "f4ee1570d78d2a252b21115ee48d8678ed2e2a91510c9184cd0107f83da0920c",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-diuturnal-mantles.pdf": "0f932bdf791136093828e62cbbf236d4241cb09510ce816ced0af778a9604c6a",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-mistfield.pdf": "a300c697930671169db3de748c44c6e16d54d0b671c373730f3fbae6e1b3b8da",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-runes-of-guidance.pdf": "f637c3238edd4cc33be316eafdbf20fb1329efbd3979cc5cf0a9975aa5a96220",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-star-charts.pdf": "322852e44af042bb05f72f5f4a5a00a9b6438776adaa66a64d148fc4fae77d76",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-aeldari-raiders.pdf": "7b06b62ac6035bf673d971ba40d7a6e2e1d9ad71532123bee604a1c752f6fab1",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-rifles.pdf": "b63af838db580395273deab459e0cc62fbcde33ff68ad9ce8ab60ac2c64c6b96",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-capricious-flight.pdf": "ba9c9477c1152116c79a415812ffd57055d285d1853874daf3151266ac4a5434",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-contemptuous-adventurer.pdf": "181bc8dd65f86dcb91fdd84bca4a27365aec2580561d674c75224f1432a5cd86",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-light-fingers.pdf": "cf40bf0ef196f32bb7d1862d7a946dea55b8d103d21b6cb080c6c61f2bff3be4",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-opportunistic-fighters.pdf": "dd67457625dc01561846b063d97746da03f0b4ff943c898ceadbff7eccef3ac9",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-1.pdf": "d32da5a84d71dc2a9eb41002873dc93bff2a96deff346457beb8867de61f5845",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-10.pdf": "7d2c671b9c9afa997858a03593cf7b3d16afa5e9cbb4f46a49da4d756f60e5ce",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-11.pdf": "93c1d501045a18493ac89893de63c8e645acb445db71be81a6ed718f3fd804b5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-12.pdf": "5ac39748e0fd10f34c0b833dcc50d229b7f65228029bc1e32fa97581c9bab782",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-13.pdf": "0fa1fb375db67b4ed506a94b89112a17ef65b88f0650dc8e5cc69639309d270a",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-14.pdf": "37acd23d08c7e5b679b696b4343c5b9a1ff1f0f7bd587c86e5dfbeba89dbf1c6",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-15.pdf": "164dfb282e8bdc5c1d86439e263c42939b5f7052d4539222b1891415bb3b0d21",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-16.pdf": "9f7177943c44c38cb0b175adbb9e3095315812ccabf7b3ebc976478902d9cef0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-2.pdf": "597007e9956ca14f08cb4089b6476931f356a2e4cdfdc075f96ad49a5a6f44f3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-3.pdf": "a49ce35e34bc108644e2bd11327badf8c38fb703704559b0b8cec1fa6b7668a5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-4.pdf": "a8cb50f16b617555a765540b55b1bda8792a94dc73391ab06af933bdda185ac9",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-5.pdf": "c9843f9216a9c9741d64ce93dcca6bc70138cd279fdebad3e2776f5eee3ac68d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-6.pdf": "6d581ddb5a12748b81cf3d82c54257eaa3e1437ef890858a413ab8f2361e4c6d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-7.pdf": "9ebacfb7d4455bdaf3538a16850b1c2f12123bd0fa41fa3443c620da9491e273",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-8.pdf": "f51bd5e30124f7393f8482484754f07b6ec3abb582903272f7a24c0bef1f3e81",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-9.pdf": "5b515ac8be64e79070ced6366962346e9c8934f555c804090609a422e64796a6",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection.pdf": "642260188d9a1acd1a974531519a8f6353c325771c6e9f4412177a4d32b98afd",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-mobile-engagement.pdf": "2729a84d0348c60ad223d456e2aa6f201aedac22839d0b0573aa55cc4d049db8",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-outcasts.pdf": "7edbb048ed0ac979293bd39889119346cb43d8d81ec7d5e3cc3148cfb2e53440",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-piratical-profiteers.pdf": "a8d4ce89f20ae2a116b671e1a7bf19b413c16bd3483dffa51312ff52efaef38e",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-plunderers.pdf": "233f74efa1dead864ae81c8c3c1398effb9a4c28022843ac4cc7392ecc36781d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-token-guide-token-guide.pdf": "03ef25000647b0a1056165cc614b0b99691f5d86d8966b4a883cfa51cf56651d"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/corsair-voidscarred/card-backside/corsair-voidscarred-backside-landscape.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-07-12T18:43:01.630243+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/corsair-voidscarred/card-backside/corsair-voidscarred-backside-portrait.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-07-12T18:43:01.638148+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:43:01.654008+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-token.jpg": "8b17f6db1fbfd69ad23c5172509edf797998fe5ac8f0bcbe8a15183588cb6da0",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/corsair-voidscarred-erudite-hunter.png": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-erudite-hunter.png",
+          "hash": "0faa587012b931368d9162fd950645cfdb987d30f1cf5799e8ab48524b1ad900",
+          "modified": "2026-08-29T18:41:17.796666+00:00"
+        },
+        "tokens/corsair-voidscarred-faolchs-bond.png": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-faolchs-bond.png",
+          "hash": "f72e9f90f97054a9d149801c434ccbfb0e8b6dfdcf88a6e41f5cd68171a8e930",
+          "modified": "2026-08-29T18:41:17.806223+00:00"
+        },
+        "tokens/corsair-voidscarred-mistfield.png": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-mistfield.png",
+          "hash": "4003ac7040748fa3a78f3c5dadef7c5a4fcba7a64e5ca6872f6bb8cc5f1e419b",
+          "modified": "2026-08-29T18:41:17.814269+00:00"
+        },
+        "tokens/corsair-voidscarred-one-step-ahead.png": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-one-step-ahead.png",
+          "hash": "f0f59ff171b50e07c500a9bd534c0023796d8a491b59326e22340c7f5c704279",
+          "modified": "2026-08-29T18:41:17.823562+00:00"
+        },
+        "tokens/corsair-voidscarred-runes-of-guidance.png": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-runes-of-guidance.png",
+          "hash": "914661fc3348790a3c4b249655f277300d1c2b64ec56e82bdc020689739a5712",
+          "modified": "2026-08-29T18:41:17.832993+00:00"
+        },
+        "tokens/corsair-voidscarred-warding-shield.png": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-warding-shield.png",
+          "hash": "43b53ae3df5251ac3a142496cbcca45aa4aacedf28dbdc8dfdabd3a706efe2c8",
+          "modified": "2026-08-29T18:41:17.842165+00:00"
+        },
+        "tokens/corsair-voidscarred-erudite-hunter.obj": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-erudite-hunter.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:17.843166+00:00"
+        },
+        "tokens/corsair-voidscarred-faolchs-bond.obj": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-faolchs-bond.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:17.845181+00:00"
+        },
+        "tokens/corsair-voidscarred-mistfield.obj": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-mistfield.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:17.847688+00:00"
+        },
+        "tokens/corsair-voidscarred-one-step-ahead.obj": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-one-step-ahead.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:17.848693+00:00"
+        },
+        "tokens/corsair-voidscarred-runes-of-guidance.obj": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-runes-of-guidance.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:17.850693+00:00"
+        },
+        "tokens/corsair-voidscarred-warding-shield.obj": {
+          "path": "output/corsair-voidscarred/tokens/corsair-voidscarred-warding-shield.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:41:17.852212+00:00"
+        },
+        "tokens/tokenbag/corsair-voidscarred-token-bag-icon.png": {
+          "path": "output/corsair-voidscarred/tokens/tokenbag/corsair-voidscarred-token-bag-icon.png",
+          "hash": "8b17f6db1fbfd69ad23c5172509edf797998fe5ac8f0bcbe8a15183588cb6da0",
+          "modified": "2026-08-29T18:41:17.859846+00:00"
+        },
+        "tokens/tokenbag/corsair-voidscarred-token-bag.obj": {
+          "path": "output/corsair-voidscarred/tokens/tokenbag/corsair-voidscarred-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:41:17.860846+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:28.684432+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/manifest.json": "91aef237d0310edf1e2a0c999a847d435372fdfcaf920df470fe169a0f35c55f",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-token.jpg": "8b17f6db1fbfd69ad23c5172509edf797998fe5ac8f0bcbe8a15183588cb6da0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "5674275573572aead224aa3ad4cc3714567f3ffeb3e40b27b9f76009e09b99ee",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "57d67e00e1b877812fe4ddecc03e439c6ad33c937e5e142d46ad7a07f7cb3ea3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "ce671919d49674e84472919bf7e09665fd6d08e2c7ef67712124114d18195fc5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "b42cdcbabea8324d9e183a409a198c1cae5d920bc9bcfbdcbdc34586896e56da",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c5e0f518dd88821efc0e7853d0147c1bef898794827407ca56b64bc1cf80092f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "c5067c1434419b9cd5e5c0e11513fb0d848d9d613f71d2a452584e55417a31f0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "e305a74367e9bac7c53c8af45598a6faa98e8c558c45397d9b8f6e5fa7c3036f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "50951076ef2cf0506d8b2e7d1d1000d070921bbf2682eeb81d99bc5db04162b1",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "c5a33387b39cc84adff306820e6c86863c1354a727c5a2d0878c0860d162f129",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "8642d42e08147cf481452d8c37c692982eaebf25329eeaaeba7911428734e50d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ec18a0d9dcefef641071869612e72d024580ea908681c9fde7021ddc36315558",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-fate-dealer.pdf": "786a531917479275d26db68f9d836d4f40866bdf3e309728f581d24df3806e50",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-felarch.pdf": "108d09bba56da2ac4e82bf81200eb4dd020c082613b5efac59259087c21179f3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-gunner.pdf": "d77f225f902d1d92bf34cfd352bb355e1325378a3c2d40004bd603d22308b92c",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-heavy-gunner.pdf": "4f13f475e36ef48cf796f0c4e25c572b55537f94e6ea68d1308e5dd75276b180",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnathi.pdf": "16004f2cdf677e4deb3ea5821ffa9d26ccb3336b2cdf86402d4905dd90217665",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnite-hunter.pdf": "37ccc5a5161426facaaed044f3bac8548916bc9d0b86df58a6b91e0a8f0eb458",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-shade-runner.pdf": "71fefde87163e63b4b7b57651f9430b79cdf6e10fb369938fcca58f16461d003",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-soul-weaver.pdf": "4dcf0a6f5ef52f6a20c01fcd019b0edd559e95446941ed930ebbc5dab2032ac5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-starstorm-duellist.pdf": "f82ddf2624b18b2e054f386196e79964c0edf07aa43c9b3fd481400245e06ade",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-warrior.pdf": "ef64d3de930a1805306b226e26aba5d8025014aedec113fe4bcc90420e120ed4",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-way-seeker.pdf": "f4ee1570d78d2a252b21115ee48d8678ed2e2a91510c9184cd0107f83da0920c",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-diuturnal-mantles.pdf": "0f932bdf791136093828e62cbbf236d4241cb09510ce816ced0af778a9604c6a",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-mistfield.pdf": "a300c697930671169db3de748c44c6e16d54d0b671c373730f3fbae6e1b3b8da",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-runes-of-guidance.pdf": "f637c3238edd4cc33be316eafdbf20fb1329efbd3979cc5cf0a9975aa5a96220",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-star-charts.pdf": "322852e44af042bb05f72f5f4a5a00a9b6438776adaa66a64d148fc4fae77d76",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-aeldari-raiders.pdf": "7b06b62ac6035bf673d971ba40d7a6e2e1d9ad71532123bee604a1c752f6fab1",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-rifles.pdf": "b63af838db580395273deab459e0cc62fbcde33ff68ad9ce8ab60ac2c64c6b96",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-capricious-flight.pdf": "ba9c9477c1152116c79a415812ffd57055d285d1853874daf3151266ac4a5434",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-contemptuous-adventurer.pdf": "181bc8dd65f86dcb91fdd84bca4a27365aec2580561d674c75224f1432a5cd86",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-light-fingers.pdf": "cf40bf0ef196f32bb7d1862d7a946dea55b8d103d21b6cb080c6c61f2bff3be4",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-opportunistic-fighters.pdf": "dd67457625dc01561846b063d97746da03f0b4ff943c898ceadbff7eccef3ac9",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-1.pdf": "d32da5a84d71dc2a9eb41002873dc93bff2a96deff346457beb8867de61f5845",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-10.pdf": "7d2c671b9c9afa997858a03593cf7b3d16afa5e9cbb4f46a49da4d756f60e5ce",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-11.pdf": "93c1d501045a18493ac89893de63c8e645acb445db71be81a6ed718f3fd804b5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-12.pdf": "5ac39748e0fd10f34c0b833dcc50d229b7f65228029bc1e32fa97581c9bab782",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-13.pdf": "0fa1fb375db67b4ed506a94b89112a17ef65b88f0650dc8e5cc69639309d270a",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-14.pdf": "37acd23d08c7e5b679b696b4343c5b9a1ff1f0f7bd587c86e5dfbeba89dbf1c6",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-15.pdf": "164dfb282e8bdc5c1d86439e263c42939b5f7052d4539222b1891415bb3b0d21",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-16.pdf": "9f7177943c44c38cb0b175adbb9e3095315812ccabf7b3ebc976478902d9cef0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-2.pdf": "597007e9956ca14f08cb4089b6476931f356a2e4cdfdc075f96ad49a5a6f44f3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-3.pdf": "a49ce35e34bc108644e2bd11327badf8c38fb703704559b0b8cec1fa6b7668a5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-4.pdf": "a8cb50f16b617555a765540b55b1bda8792a94dc73391ab06af933bdda185ac9",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-5.pdf": "c9843f9216a9c9741d64ce93dcca6bc70138cd279fdebad3e2776f5eee3ac68d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-6.pdf": "6d581ddb5a12748b81cf3d82c54257eaa3e1437ef890858a413ab8f2361e4c6d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-7.pdf": "9ebacfb7d4455bdaf3538a16850b1c2f12123bd0fa41fa3443c620da9491e273",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-8.pdf": "f51bd5e30124f7393f8482484754f07b6ec3abb582903272f7a24c0bef1f3e81",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-9.pdf": "5b515ac8be64e79070ced6366962346e9c8934f555c804090609a422e64796a6",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection.pdf": "642260188d9a1acd1a974531519a8f6353c325771c6e9f4412177a4d32b98afd",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-mobile-engagement.pdf": "2729a84d0348c60ad223d456e2aa6f201aedac22839d0b0573aa55cc4d049db8",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-outcasts.pdf": "7edbb048ed0ac979293bd39889119346cb43d8d81ec7d5e3cc3148cfb2e53440",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-piratical-profiteers.pdf": "a8d4ce89f20ae2a116b671e1a7bf19b413c16bd3483dffa51312ff52efaef38e",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-plunderers.pdf": "233f74efa1dead864ae81c8c3c1398effb9a4c28022843ac4cc7392ecc36781d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-token-guide-token-guide.pdf": "03ef25000647b0a1056165cc614b0b99691f5d86d8966b4a883cfa51cf56651d"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/corsair-voidscarred/dice/corsair-voidscarred-dice-light.jpg",
+          "hash": "323fcae0891736bf7ec3f632d95a9c4c9897606810cf2245bbfbb61c6afa479e",
+          "modified": "2026-08-29T18:41:32.963339+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/corsair-voidscarred/dice/corsair-voidscarred-dice-dark.jpg",
+          "hash": "62d3807cfc70a6db7bd3b04da3fda818efcdb6b0c2c3cb034921dd8e9a5fb5f9",
+          "modified": "2026-08-29T18:41:32.972930+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/corsair-voidscarred/dice/corsair-voidscarred-dice-team.jpg",
+          "hash": "2429998f64624190d4f301d72f1825f29af7ee5e73d7876e8961d81d9adafb5b",
+          "modified": "2026-08-29T18:41:32.977947+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:32.983027+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-token-transparent.png": "412456d5fda6e10770e243dd39c9654f3dd554df9c0402a7dc4c3501a92fbfec",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/corsair-voidscarred/cardbox/corsair-voidscarred-card-box-texture.jpg",
+          "hash": "7ff5bace76dfb1c878f02134abe0041eba7a91eef8614a2c6516f603d25acf7a",
+          "modified": "2026-08-29T18:41:48.756573+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/corsair-voidscarred/cardbox/corsair-voidscarred-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:41:48.758077+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:41:48.764640+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-token.jpg": "8b17f6db1fbfd69ad23c5172509edf797998fe5ac8f0bcbe8a15183588cb6da0",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/voidscarred-fate-dealer-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-fate-dealer-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.886241+00:00"
+        },
+        "cards/datacards/voidscarred-fate-dealer-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-fate-dealer-front.jpg",
+          "hash": "bc208540cab576905559ee51e3ab92d4cf842ba8ee86e12a0ab868d852b7a860",
+          "modified": "2026-08-29T18:41:58.890072+00:00"
+        },
+        "cards/datacards/voidscarred-felarch-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-felarch-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.891067+00:00"
+        },
+        "cards/datacards/voidscarred-felarch-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-felarch-front.jpg",
+          "hash": "d93286f06ce7e9e44e8c62fe66e10b07297437086ef6838acbcbd16024f79b89",
+          "modified": "2026-08-29T18:41:58.894576+00:00"
+        },
+        "cards/datacards/voidscarred-gunner-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-gunner-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.896576+00:00"
+        },
+        "cards/datacards/voidscarred-gunner-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-gunner-front.jpg",
+          "hash": "e2481702841a1fcf48e70d0ffbaeedc8431661acc6e88bc7ddb7f3deb5daebbe",
+          "modified": "2026-08-29T18:41:58.898596+00:00"
+        },
+        "cards/datacards/voidscarred-heavy-gunner-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-heavy-gunner-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.900104+00:00"
+        },
+        "cards/datacards/voidscarred-heavy-gunner-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-heavy-gunner-front.jpg",
+          "hash": "2b7ffe9108e8bf59f772aa85e136a2d4d8845d301a2cb00092e3e7bc1131ed21",
+          "modified": "2026-08-29T18:41:58.902612+00:00"
+        },
+        "cards/datacards/voidscarred-kurnathi-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-kurnathi-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.905122+00:00"
+        },
+        "cards/datacards/voidscarred-kurnathi-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-kurnathi-front.jpg",
+          "hash": "c66aca9b345caf1239725dd8a1b23d60069174c83f041403c9d4db4f416114da",
+          "modified": "2026-08-29T18:41:58.908123+00:00"
+        },
+        "cards/datacards/voidscarred-kurnite-hunter-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-kurnite-hunter-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.908629+00:00"
+        },
+        "cards/datacards/voidscarred-kurnite-hunter-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-kurnite-hunter-front.jpg",
+          "hash": "9a15eb19c27b56a73ef76c0b11a1ff6d3829f032037f428d70dfdba39bf7a047",
+          "modified": "2026-08-29T18:41:58.912142+00:00"
+        },
+        "cards/datacards/voidscarred-shade-runner-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-shade-runner-back.jpg",
+          "hash": "3d6459ea0c50a36fb8721a187de5c2b26380344828b1b441c729ba76d837d3fb",
+          "modified": "2026-08-29T18:41:58.916161+00:00"
+        },
+        "cards/datacards/voidscarred-shade-runner-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-shade-runner-front.jpg",
+          "hash": "4d665eb835f0313171829c7fabcfc26a70bf47066d84f1d74b36aa7a7877a520",
+          "modified": "2026-08-29T18:41:58.921209+00:00"
+        },
+        "cards/datacards/voidscarred-soul-weaver-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-soul-weaver-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.925719+00:00"
+        },
+        "cards/datacards/voidscarred-soul-weaver-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-soul-weaver-front.jpg",
+          "hash": "2de868269a8da14146502f79fac8501633628d59fa2abe910a0bbf8dd6fb6a82",
+          "modified": "2026-08-29T18:41:58.930258+00:00"
+        },
+        "cards/datacards/voidscarred-starstorm-duellist-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-starstorm-duellist-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.931258+00:00"
+        },
+        "cards/datacards/voidscarred-starstorm-duellist-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-starstorm-duellist-front.jpg",
+          "hash": "ddfe7236db99b5b09a03c14cf2902622493cb335e13a408efb8354658902ac74",
+          "modified": "2026-08-29T18:41:58.933763+00:00"
+        },
+        "cards/datacards/voidscarred-warrior-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-warrior-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.934281+00:00"
+        },
+        "cards/datacards/voidscarred-warrior-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-warrior-front.jpg",
+          "hash": "966e3948db1d226b56e019f6b0ed2fa612e8aa082d891bf25461a9d9aeab515b",
+          "modified": "2026-08-29T18:41:58.937797+00:00"
+        },
+        "cards/datacards/voidscarred-way-seeker-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-way-seeker-back.jpg",
+          "hash": "134e5eac7133c263721279d3d9a0e77eee329e184e9329fc39ed57962aa250b7",
+          "modified": "2026-08-29T18:41:58.942397+00:00"
+        },
+        "cards/datacards/voidscarred-way-seeker-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/voidscarred-way-seeker-front.jpg",
+          "hash": "1b6c15c556a83d8523d96d1e32492d925f362c1301eef0988862ddf536839e2c",
+          "modified": "2026-08-29T18:41:58.947907+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-diuturnal-mantles-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-diuturnal-mantles-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.949921+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-diuturnal-mantles-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-diuturnal-mantles-front.jpg",
+          "hash": "ac1c5eccbf7d1800411bbd43ad49645311f76d109c4cde88c286e50ce1d8c74c",
+          "modified": "2026-08-29T18:41:58.955440+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-mistfield-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-mistfield-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.958459+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-mistfield-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-mistfield-front.jpg",
+          "hash": "29e46483ba9541c8bc911f91de596124021e3fac68a611d76ee89c272c6f4f91",
+          "modified": "2026-08-29T18:41:58.963464+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-runes-of-guidance-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-runes-of-guidance-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.966988+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-runes-of-guidance-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-runes-of-guidance-front.jpg",
+          "hash": "fa1cd74b3fa2648c3d2386d63d54aaf21f51cf5a53e7b4fc5c85358797e3b417",
+          "modified": "2026-08-29T18:41:58.969502+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-star-charts-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-star-charts-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.971008+00:00"
+        },
+        "cards/equipment/corsair-voidscarred-star-charts-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-star-charts-front.jpg",
+          "hash": "ca0d0b9262c7f85c61ef68e042b2edc654968da2186e387ed21d2b454def7173",
+          "modified": "2026-08-29T18:41:58.972532+00:00"
+        },
+        "cards/faction_rules/corsair-voidscarred-aeldari-raiders-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-aeldari-raiders-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.973539+00:00"
+        },
+        "cards/faction_rules/corsair-voidscarred-aeldari-raiders-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-aeldari-raiders-front.jpg",
+          "hash": "37c1496d3dd4a0cb024f87fa1e074869dda54256b426a38403a02902f85db37f",
+          "modified": "2026-08-29T18:41:58.977047+00:00"
+        },
+        "cards/faction_rules/corsair-voidscarred-rifles-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-rifles-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.978561+00:00"
+        },
+        "cards/faction_rules/corsair-voidscarred-rifles-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-rifles-front.jpg",
+          "hash": "800e65421361955d3ef3a17b7389f2ca7fe07a43c67efb17ba2cf750694cea2a",
+          "modified": "2026-08-29T18:41:58.982069+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-capricious-flight-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-capricious-flight-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.983073+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-capricious-flight-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-capricious-flight-front.jpg",
+          "hash": "62fa73a4d523d9cac3aec7d79ae91c06d45f66ae75a1101c7c2a07f8e1c066c9",
+          "modified": "2026-08-29T18:41:58.985079+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-contemptuous-adventurer-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-contemptuous-adventurer-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.986153+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-contemptuous-adventurer-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-contemptuous-adventurer-front.jpg",
+          "hash": "dd49a81087233eaea0907401cf8002fed411c6c83c492c4b6258028b669f89d6",
+          "modified": "2026-08-29T18:41:58.989174+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-light-fingers-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-light-fingers-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.991182+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-light-fingers-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-light-fingers-front.jpg",
+          "hash": "ad60a07dd240d775684d608d965875eb3352905e437b01e4cf1fe8ef4df36066",
+          "modified": "2026-08-29T18:41:58.994686+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-opportunistic-fighters-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-opportunistic-fighters-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:58.996208+00:00"
+        },
+        "cards/firefight_ploys/corsair-voidscarred-opportunistic-fighters-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-opportunistic-fighters-front.jpg",
+          "hash": "abdc563cef1491aecc9354e5f4054a41b45ce47ab7c472fba339e93413f5b864",
+          "modified": "2026-08-29T18:41:59.004253+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-back.jpg",
+          "hash": "65dc651ecf844cbc2f56558b61e4be345516144d048b46c1764790ffcb2bb18f",
+          "modified": "2026-08-29T18:41:59.005262+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-front.jpg",
+          "hash": "34086a6310286bb90b441b862806e6277fc02f19077e9d22a2dd3f7c752cabe9",
+          "modified": "2026-08-29T18:42:03.849209+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-mobile-engagement-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-mobile-engagement-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:05.398942+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-mobile-engagement-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-mobile-engagement-front.jpg",
+          "hash": "68c0c374a2ee1d478941895a14651f27a83d6ab0bc39fab6e4c858771ef784d1",
+          "modified": "2026-08-29T18:42:05.756030+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-outcasts-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-outcasts-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:07.760618+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-outcasts-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-outcasts-front.jpg",
+          "hash": "bda9a3afb9ef634426af6dc0765d54dffd8ac621680107c00101ba22ee5bf3a6",
+          "modified": "2026-08-29T18:42:09.555645+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-piratical-profiteers-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-piratical-profiteers-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:10.551006+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-piratical-profiteers-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-piratical-profiteers-front.jpg",
+          "hash": "878782af9a012e3bc147c1fae136996086cd16332f0fcc0c822a619be3b3d5ed",
+          "modified": "2026-08-29T18:42:11.112063+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-plunderers-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-plunderers-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:11.636080+00:00"
+        },
+        "cards/strategy_ploys/corsair-voidscarred-plunderers-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-plunderers-front.jpg",
+          "hash": "acdee2fed2c8d2189546d09e3c3bb66dffdaee222f2cdc9d5eba1791e097c059",
+          "modified": "2026-08-29T18:42:12.154113+00:00"
+        },
+        "cards/token_guide/corsair-voidscarred-token-guide-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/token_guide/corsair-voidscarred-token-guide-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:12.684974+00:00"
+        },
+        "cards/token_guide/corsair-voidscarred-token-guide-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/token_guide/corsair-voidscarred-token-guide-front.jpg",
+          "hash": "3b3143ae021c879b47438035e0722b23e9ac81abed49aed8ff55015d6781ed2d",
+          "modified": "2026-08-29T18:42:13.680447+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.645924+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "5b43468eeb962e592ed13fd72ed9df286ae78a5d897e4ecef1cf344e60ca473d",
+          "modified": "2026-08-29T18:41:58.655695+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.664408+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "3c64dc1aa4d75335ff69b2d9dd7cc74ff5b26d9d2e431bb38dfb912e376e34f5",
+          "modified": "2026-08-29T18:41:58.674095+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "acfe52e78ddfd4d937f5eb94516a53d1956e53958eca7760de216300e7d4d021",
+          "modified": "2026-08-29T18:41:58.683164+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "aa6e2315f964b0f897ddf5c2fe7c8bbada33355b1576e6fbbb3af886f1c6ff52",
+          "modified": "2026-08-29T18:41:58.694243+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.704077+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "c70b9d9128f2f30a8909eacccdd3fd2ff759c394034fe8c15b55fd707a6e623a",
+          "modified": "2026-08-29T18:41:58.712224+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.720763+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "066c236df28a18a300bcd2c6397a10223859fa68baa2a43079d778777d939f7c",
+          "modified": "2026-08-29T18:41:58.730315+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.737833+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "5fb0394fc44796b2c7106f0dd2cc3eb8f0eb4eff498726c2c107f62326e0e146",
+          "modified": "2026-08-29T18:41:58.746356+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.753963+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "1e273152dd7d773822a98a464575386e3a8ab152318b411fd16dccd70f068ff1",
+          "modified": "2026-08-29T18:41:58.767020+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.774556+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "f5387e38629cc19b9bd5d8f3175bb6a932e34251db2c76fa9e50ce6564f3749d",
+          "modified": "2026-08-29T18:41:58.782998+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "73a2e9442ef0423d01be31198ef5499ff672d5c06f401972525c7a60ed063f2b",
+          "modified": "2026-08-29T18:41:58.835167+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "c93aa0aa98375467c009ab5826a50b3fea1d8393d39133fdda8e0f8971606b86",
+          "modified": "2026-08-29T18:41:58.847695+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.855743+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "aa355dbf662da9967308aea856791805b43c6097f76fd3b6ad42f8019eadd5ea",
+          "modified": "2026-08-29T18:41:58.867960+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+          "modified": "2026-08-29T18:41:58.875004+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "1d8db478d69be2f0abd36804888b64244e0286eee705a5ee7ddf2532cf8e96d8",
+          "modified": "2026-08-29T18:41:58.885738+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card1-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card1-back.jpg",
+          "hash": "65dc651ecf844cbc2f56558b61e4be345516144d048b46c1764790ffcb2bb18f",
+          "modified": "2026-08-29T18:41:59.015805+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card1-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card1-front.jpg",
+          "hash": "0cf07ea2541e46f35a9b078a14a8984c57534b77bb408fb72342a2f5a61f0614",
+          "modified": "2026-08-29T18:41:59.027867+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card10-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card10-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:59.036931+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card10-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card10-front.jpg",
+          "hash": "6ce3251dc4b031aedabb069d43a2654257f0b451eac1f18d918e7b2ede314ee5",
+          "modified": "2026-08-29T18:41:59.047968+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card11-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card11-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:59.054510+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card11-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card11-front.jpg",
+          "hash": "926c50ea65169abc028bbc51d4850392755c6e078aa751ff396c48e49c4bdfd0",
+          "modified": "2026-08-29T18:41:59.181049+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card12-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card12-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:59.272284+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card12-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card12-front.jpg",
+          "hash": "78487683df6aa4b6a05f814ac5f28432176b461e94c2ddcdbf99c57c96c7e0a3",
+          "modified": "2026-08-29T18:41:59.452435+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card13-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card13-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:59.549471+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card13-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card13-front.jpg",
+          "hash": "85b362639e0d9a2172c9127a9ed43291b8aa5369b3be6001bcfe86537a4f5f8b",
+          "modified": "2026-08-29T18:41:59.718062+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card14-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card14-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:59.785835+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card14-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card14-front.jpg",
+          "hash": "1abcf046174e957d8f5dc14d9469f5b2b888b90925a1ab1ca0d9ae0dafe96bac",
+          "modified": "2026-08-29T18:41:59.929631+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card15-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card15-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:41:59.993537+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card15-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card15-front.jpg",
+          "hash": "9cabc9b8d8d3b77c0911b27d537d50342669e5bab3af53544a1b4acda2f07a14",
+          "modified": "2026-08-29T18:42:00.043709+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card16-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card16-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.054260+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card16-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card16-front.jpg",
+          "hash": "a21d952cdbd3f2cfa38a3d63b73afe707240df759b4cc2978ff9441fb7b26681",
+          "modified": "2026-08-29T18:42:00.067530+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card2-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card2-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.075578+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card2-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card2-front.jpg",
+          "hash": "616c866b8d7c79c8de390005f35436fbefdf1677663c7047fddee8185cd25ef7",
+          "modified": "2026-08-29T18:42:00.086612+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card3-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card3-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.097159+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card3-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card3-front.jpg",
+          "hash": "07890e415bf1734d86f9fe7e7dc520d4087ba29e9c930ffc78f09f94e022b341",
+          "modified": "2026-08-29T18:42:00.107728+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card4-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card4-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.114767+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card4-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card4-front.jpg",
+          "hash": "3155be96efa799d04081cddd970ca4516eacb3f1282d431753705435a5666945",
+          "modified": "2026-08-29T18:42:00.124832+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card5-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card5-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.131338+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card5-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card5-front.jpg",
+          "hash": "458ab4b8d98a9f80857009b49fa9d053f00fac888c29ca78bf37c854df379b00",
+          "modified": "2026-08-29T18:42:00.138888+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card6-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card6-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.148415+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card6-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card6-front.jpg",
+          "hash": "9420752b182b5bcfcd7d74993b51aa92c6f79e13ce09d269768e60a8ad9bd23e",
+          "modified": "2026-08-29T18:42:00.158974+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card7-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card7-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.168009+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card7-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card7-front.jpg",
+          "hash": "1bb96605a0a2ba8b6a64611be217305fc55ddc774b1c8799761879e9955fdeee",
+          "modified": "2026-08-29T18:42:00.180565+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card8-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card8-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.190612+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card8-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card8-front.jpg",
+          "hash": "e2edc91c8bfe0f21e31debf2396d4f0a274f90e4bd5f99e277f0eddb822f9a8f",
+          "modified": "2026-08-29T18:42:00.202691+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card9-back.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card9-back.jpg",
+          "hash": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+          "modified": "2026-08-29T18:42:00.212223+00:00"
+        },
+        "cards/operatives_selection/corsair-voidscarred-operative-selection-card9-front.jpg": {
+          "path": "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card9-front.jpg",
+          "hash": "1fadc012d2f333bdaa40327ab9ddcdb2a390eb2ce2ed25aaf5837739200a9aac",
+          "modified": "2026-08-29T18:42:01.268068+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:37.252268+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/manifest.json": "91aef237d0310edf1e2a0c999a847d435372fdfcaf920df470fe169a0f35c55f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "5674275573572aead224aa3ad4cc3714567f3ffeb3e40b27b9f76009e09b99ee",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "57d67e00e1b877812fe4ddecc03e439c6ad33c937e5e142d46ad7a07f7cb3ea3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "ce671919d49674e84472919bf7e09665fd6d08e2c7ef67712124114d18195fc5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "b42cdcbabea8324d9e183a409a198c1cae5d920bc9bcfbdcbdc34586896e56da",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c5e0f518dd88821efc0e7853d0147c1bef898794827407ca56b64bc1cf80092f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "c5067c1434419b9cd5e5c0e11513fb0d848d9d613f71d2a452584e55417a31f0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "e305a74367e9bac7c53c8af45598a6faa98e8c558c45397d9b8f6e5fa7c3036f",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "50951076ef2cf0506d8b2e7d1d1000d070921bbf2682eeb81d99bc5db04162b1",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "c5a33387b39cc84adff306820e6c86863c1354a727c5a2d0878c0860d162f129",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "8642d42e08147cf481452d8c37c692982eaebf25329eeaaeba7911428734e50d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "ec18a0d9dcefef641071869612e72d024580ea908681c9fde7021ddc36315558",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-fate-dealer.pdf": "786a531917479275d26db68f9d836d4f40866bdf3e309728f581d24df3806e50",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-felarch.pdf": "108d09bba56da2ac4e82bf81200eb4dd020c082613b5efac59259087c21179f3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-gunner.pdf": "d77f225f902d1d92bf34cfd352bb355e1325378a3c2d40004bd603d22308b92c",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-heavy-gunner.pdf": "4f13f475e36ef48cf796f0c4e25c572b55537f94e6ea68d1308e5dd75276b180",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnathi.pdf": "16004f2cdf677e4deb3ea5821ffa9d26ccb3336b2cdf86402d4905dd90217665",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnite-hunter.pdf": "37ccc5a5161426facaaed044f3bac8548916bc9d0b86df58a6b91e0a8f0eb458",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-shade-runner.pdf": "71fefde87163e63b4b7b57651f9430b79cdf6e10fb369938fcca58f16461d003",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-soul-weaver.pdf": "4dcf0a6f5ef52f6a20c01fcd019b0edd559e95446941ed930ebbc5dab2032ac5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-starstorm-duellist.pdf": "f82ddf2624b18b2e054f386196e79964c0edf07aa43c9b3fd481400245e06ade",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-warrior.pdf": "ef64d3de930a1805306b226e26aba5d8025014aedec113fe4bcc90420e120ed4",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-way-seeker.pdf": "f4ee1570d78d2a252b21115ee48d8678ed2e2a91510c9184cd0107f83da0920c",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-diuturnal-mantles.pdf": "0f932bdf791136093828e62cbbf236d4241cb09510ce816ced0af778a9604c6a",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-mistfield.pdf": "a300c697930671169db3de748c44c6e16d54d0b671c373730f3fbae6e1b3b8da",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-runes-of-guidance.pdf": "f637c3238edd4cc33be316eafdbf20fb1329efbd3979cc5cf0a9975aa5a96220",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-star-charts.pdf": "322852e44af042bb05f72f5f4a5a00a9b6438776adaa66a64d148fc4fae77d76",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-aeldari-raiders.pdf": "7b06b62ac6035bf673d971ba40d7a6e2e1d9ad71532123bee604a1c752f6fab1",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-rifles.pdf": "b63af838db580395273deab459e0cc62fbcde33ff68ad9ce8ab60ac2c64c6b96",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-capricious-flight.pdf": "ba9c9477c1152116c79a415812ffd57055d285d1853874daf3151266ac4a5434",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-contemptuous-adventurer.pdf": "181bc8dd65f86dcb91fdd84bca4a27365aec2580561d674c75224f1432a5cd86",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-light-fingers.pdf": "cf40bf0ef196f32bb7d1862d7a946dea55b8d103d21b6cb080c6c61f2bff3be4",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-opportunistic-fighters.pdf": "dd67457625dc01561846b063d97746da03f0b4ff943c898ceadbff7eccef3ac9",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-1.pdf": "d32da5a84d71dc2a9eb41002873dc93bff2a96deff346457beb8867de61f5845",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-10.pdf": "7d2c671b9c9afa997858a03593cf7b3d16afa5e9cbb4f46a49da4d756f60e5ce",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-11.pdf": "93c1d501045a18493ac89893de63c8e645acb445db71be81a6ed718f3fd804b5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-12.pdf": "5ac39748e0fd10f34c0b833dcc50d229b7f65228029bc1e32fa97581c9bab782",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-13.pdf": "0fa1fb375db67b4ed506a94b89112a17ef65b88f0650dc8e5cc69639309d270a",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-14.pdf": "37acd23d08c7e5b679b696b4343c5b9a1ff1f0f7bd587c86e5dfbeba89dbf1c6",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-15.pdf": "164dfb282e8bdc5c1d86439e263c42939b5f7052d4539222b1891415bb3b0d21",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-16.pdf": "9f7177943c44c38cb0b175adbb9e3095315812ccabf7b3ebc976478902d9cef0",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-2.pdf": "597007e9956ca14f08cb4089b6476931f356a2e4cdfdc075f96ad49a5a6f44f3",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-3.pdf": "a49ce35e34bc108644e2bd11327badf8c38fb703704559b0b8cec1fa6b7668a5",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-4.pdf": "a8cb50f16b617555a765540b55b1bda8792a94dc73391ab06af933bdda185ac9",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-5.pdf": "c9843f9216a9c9741d64ce93dcca6bc70138cd279fdebad3e2776f5eee3ac68d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-6.pdf": "6d581ddb5a12748b81cf3d82c54257eaa3e1437ef890858a413ab8f2361e4c6d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-7.pdf": "9ebacfb7d4455bdaf3538a16850b1c2f12123bd0fa41fa3443c620da9491e273",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-8.pdf": "f51bd5e30124f7393f8482484754f07b6ec3abb582903272f7a24c0bef1f3e81",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-9.pdf": "5b515ac8be64e79070ced6366962346e9c8934f555c804090609a422e64796a6",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection.pdf": "642260188d9a1acd1a974531519a8f6353c325771c6e9f4412177a4d32b98afd",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-mobile-engagement.pdf": "2729a84d0348c60ad223d456e2aa6f201aedac22839d0b0573aa55cc4d049db8",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-outcasts.pdf": "7edbb048ed0ac979293bd39889119346cb43d8d81ec7d5e3cc3148cfb2e53440",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-piratical-profiteers.pdf": "a8d4ce89f20ae2a116b671e1a7bf19b413c16bd3483dffa51312ff52efaef38e",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-plunderers.pdf": "233f74efa1dead864ae81c8c3c1398effb9a4c28022843ac4cc7392ecc36781d",
+        "layers/integration/corsair-voidscarred/corsair-voidscarred-token-guide-token-guide.pdf": "03ef25000647b0a1056165cc614b0b99691f5d86d8966b4a883cfa51cf56651d",
+        "layers/integration/corsair-voidscarred/card-backside/corsair-voidscarred-backside-portrait.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/corsair-voidscarred/card-backside/corsair-voidscarred-backside-landscape.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/corsair-voidscarred/data/corsair-voidscarred-team-data.json",
+          "hash": "7cc8007df96758f0e9a0b42ae6f3bbf7fd0d2a8b24bf223851bce8a0d643406d",
+          "modified": "2026-08-29T18:42:42.500328+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:42.501842+00:00",
+      "inputs": {
+        "layers/integration/corsair-voidscarred/content/corsair-voidscarred-content.json": "7cc8007df96758f0e9a0b42ae6f3bbf7fd0d2a8b24bf223851bce8a0d643406d"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Corsair Voidscarred Box.json": {
+          "path": "output/corsair-voidscarred/tts_objects/Corsair Voidscarred Box.json",
+          "hash": "5cb8d8c1236128a431a43e8ea7be5bff555fff1df0d420ee11375206ac73c778",
+          "modified": "2026-07-21T11:11:11.486266+00:00"
+        },
+        "tts_objects/Corsair Voidscarred.json": {
+          "path": "output/corsair-voidscarred/tts_objects/Corsair Voidscarred.json",
+          "hash": "d41b6c543074575030b2dfce0b73bf364772475de64da7e4d066fa4b075dcdac",
+          "modified": "2026-08-29T18:53:37.287964+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:37.375013+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "5b43468eeb962e592ed13fd72ed9df286ae78a5d897e4ecef1cf344e60ca473d",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "3c64dc1aa4d75335ff69b2d9dd7cc74ff5b26d9d2e431bb38dfb912e376e34f5",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "acfe52e78ddfd4d937f5eb94516a53d1956e53958eca7760de216300e7d4d021",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "aa6e2315f964b0f897ddf5c2fe7c8bbada33355b1576e6fbbb3af886f1c6ff52",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "c70b9d9128f2f30a8909eacccdd3fd2ff759c394034fe8c15b55fd707a6e623a",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "066c236df28a18a300bcd2c6397a10223859fa68baa2a43079d778777d939f7c",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "5fb0394fc44796b2c7106f0dd2cc3eb8f0eb4eff498726c2c107f62326e0e146",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "1e273152dd7d773822a98a464575386e3a8ab152318b411fd16dccd70f068ff1",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "f5387e38629cc19b9bd5d8f3175bb6a932e34251db2c76fa9e50ce6564f3749d",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "73a2e9442ef0423d01be31198ef5499ff672d5c06f401972525c7a60ed063f2b",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "c93aa0aa98375467c009ab5826a50b3fea1d8393d39133fdda8e0f8971606b86",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "aa355dbf662da9967308aea856791805b43c6097f76fd3b6ad42f8019eadd5ea",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "1d8db478d69be2f0abd36804888b64244e0286eee705a5ee7ddf2532cf8e96d8",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-fate-dealer-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-fate-dealer-front.jpg": "bc208540cab576905559ee51e3ab92d4cf842ba8ee86e12a0ab868d852b7a860",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-felarch-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-felarch-front.jpg": "d93286f06ce7e9e44e8c62fe66e10b07297437086ef6838acbcbd16024f79b89",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-gunner-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-gunner-front.jpg": "e2481702841a1fcf48e70d0ffbaeedc8431661acc6e88bc7ddb7f3deb5daebbe",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-heavy-gunner-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-heavy-gunner-front.jpg": "2b7ffe9108e8bf59f772aa85e136a2d4d8845d301a2cb00092e3e7bc1131ed21",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-kurnathi-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-kurnathi-front.jpg": "c66aca9b345caf1239725dd8a1b23d60069174c83f041403c9d4db4f416114da",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-kurnite-hunter-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-kurnite-hunter-front.jpg": "9a15eb19c27b56a73ef76c0b11a1ff6d3829f032037f428d70dfdba39bf7a047",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-shade-runner-back.jpg": "3d6459ea0c50a36fb8721a187de5c2b26380344828b1b441c729ba76d837d3fb",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-shade-runner-front.jpg": "4d665eb835f0313171829c7fabcfc26a70bf47066d84f1d74b36aa7a7877a520",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-soul-weaver-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-soul-weaver-front.jpg": "2de868269a8da14146502f79fac8501633628d59fa2abe910a0bbf8dd6fb6a82",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-starstorm-duellist-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-starstorm-duellist-front.jpg": "ddfe7236db99b5b09a03c14cf2902622493cb335e13a408efb8354658902ac74",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-warrior-back.jpg": "05dbea825a192e9d0d6bb0847508fa6025b5ee0dd629a3ae1f5fad940953f07e",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-warrior-front.jpg": "966e3948db1d226b56e019f6b0ed2fa612e8aa082d891bf25461a9d9aeab515b",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-way-seeker-back.jpg": "134e5eac7133c263721279d3d9a0e77eee329e184e9329fc39ed57962aa250b7",
+        "output/corsair-voidscarred/cards/datacards/voidscarred-way-seeker-front.jpg": "1b6c15c556a83d8523d96d1e32492d925f362c1301eef0988862ddf536839e2c",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-diuturnal-mantles-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-diuturnal-mantles-front.jpg": "ac1c5eccbf7d1800411bbd43ad49645311f76d109c4cde88c286e50ce1d8c74c",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-mistfield-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-mistfield-front.jpg": "29e46483ba9541c8bc911f91de596124021e3fac68a611d76ee89c272c6f4f91",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-runes-of-guidance-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-runes-of-guidance-front.jpg": "fa1cd74b3fa2648c3d2386d63d54aaf21f51cf5a53e7b4fc5c85358797e3b417",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-star-charts-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/equipment/corsair-voidscarred-star-charts-front.jpg": "ca0d0b9262c7f85c61ef68e042b2edc654968da2186e387ed21d2b454def7173",
+        "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-aeldari-raiders-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-aeldari-raiders-front.jpg": "37c1496d3dd4a0cb024f87fa1e074869dda54256b426a38403a02902f85db37f",
+        "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-rifles-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/faction_rules/corsair-voidscarred-rifles-front.jpg": "800e65421361955d3ef3a17b7389f2ca7fe07a43c67efb17ba2cf750694cea2a",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-capricious-flight-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-capricious-flight-front.jpg": "62fa73a4d523d9cac3aec7d79ae91c06d45f66ae75a1101c7c2a07f8e1c066c9",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-contemptuous-adventurer-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-contemptuous-adventurer-front.jpg": "dd49a81087233eaea0907401cf8002fed411c6c83c492c4b6258028b669f89d6",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-light-fingers-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-light-fingers-front.jpg": "ad60a07dd240d775684d608d965875eb3352905e437b01e4cf1fe8ef4df36066",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-opportunistic-fighters-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/firefight_ploys/corsair-voidscarred-opportunistic-fighters-front.jpg": "abdc563cef1491aecc9354e5f4054a41b45ce47ab7c472fba339e93413f5b864",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-back.jpg": "65dc651ecf844cbc2f56558b61e4be345516144d048b46c1764790ffcb2bb18f",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card1-back.jpg": "65dc651ecf844cbc2f56558b61e4be345516144d048b46c1764790ffcb2bb18f",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card1-front.jpg": "0cf07ea2541e46f35a9b078a14a8984c57534b77bb408fb72342a2f5a61f0614",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card10-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card10-front.jpg": "6ce3251dc4b031aedabb069d43a2654257f0b451eac1f18d918e7b2ede314ee5",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card11-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card11-front.jpg": "926c50ea65169abc028bbc51d4850392755c6e078aa751ff396c48e49c4bdfd0",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card12-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card12-front.jpg": "78487683df6aa4b6a05f814ac5f28432176b461e94c2ddcdbf99c57c96c7e0a3",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card13-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card13-front.jpg": "85b362639e0d9a2172c9127a9ed43291b8aa5369b3be6001bcfe86537a4f5f8b",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card14-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card14-front.jpg": "1abcf046174e957d8f5dc14d9469f5b2b888b90925a1ab1ca0d9ae0dafe96bac",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card15-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card15-front.jpg": "9cabc9b8d8d3b77c0911b27d537d50342669e5bab3af53544a1b4acda2f07a14",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card16-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card16-front.jpg": "a21d952cdbd3f2cfa38a3d63b73afe707240df759b4cc2978ff9441fb7b26681",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card2-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card2-front.jpg": "616c866b8d7c79c8de390005f35436fbefdf1677663c7047fddee8185cd25ef7",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card3-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card3-front.jpg": "07890e415bf1734d86f9fe7e7dc520d4087ba29e9c930ffc78f09f94e022b341",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card4-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card4-front.jpg": "3155be96efa799d04081cddd970ca4516eacb3f1282d431753705435a5666945",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card5-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card5-front.jpg": "458ab4b8d98a9f80857009b49fa9d053f00fac888c29ca78bf37c854df379b00",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card6-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card6-front.jpg": "9420752b182b5bcfcd7d74993b51aa92c6f79e13ce09d269768e60a8ad9bd23e",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card7-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card7-front.jpg": "1bb96605a0a2ba8b6a64611be217305fc55ddc774b1c8799761879e9955fdeee",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card8-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card8-front.jpg": "e2edc91c8bfe0f21e31debf2396d4f0a274f90e4bd5f99e277f0eddb822f9a8f",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card9-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-card9-front.jpg": "1fadc012d2f333bdaa40327ab9ddcdb2a390eb2ce2ed25aaf5837739200a9aac",
+        "output/corsair-voidscarred/cards/operatives_selection/corsair-voidscarred-operative-selection-front.jpg": "34086a6310286bb90b441b862806e6277fc02f19077e9d22a2dd3f7c752cabe9",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-mobile-engagement-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-mobile-engagement-front.jpg": "68c0c374a2ee1d478941895a14651f27a83d6ab0bc39fab6e4c858771ef784d1",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-outcasts-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-outcasts-front.jpg": "bda9a3afb9ef634426af6dc0765d54dffd8ac621680107c00101ba22ee5bf3a6",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-piratical-profiteers-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-piratical-profiteers-front.jpg": "878782af9a012e3bc147c1fae136996086cd16332f0fcc0c822a619be3b3d5ed",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-plunderers-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/strategy_ploys/corsair-voidscarred-plunderers-front.jpg": "acdee2fed2c8d2189546d09e3c3bb66dffdaee222f2cdc9d5eba1791e097c059",
+        "output/corsair-voidscarred/cards/token_guide/corsair-voidscarred-token-guide-back.jpg": "0c8d21734993b95cbcf92bff5769b9693272623f3b5e7ad70b8b0d8fe5d580ab",
+        "output/corsair-voidscarred/cards/token_guide/corsair-voidscarred-token-guide-front.jpg": "3b3143ae021c879b47438035e0722b23e9ac81abed49aed8ff55015d6781ed2d",
+        "output/corsair-voidscarred/cardbox/corsair-voidscarred-card-box-texture.jpg": "7ff5bace76dfb1c878f02134abe0041eba7a91eef8614a2c6516f603d25acf7a",
+        "output/corsair-voidscarred/cardbox/corsair-voidscarred-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-erudite-hunter.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-erudite-hunter.png": "0faa587012b931368d9162fd950645cfdb987d30f1cf5799e8ab48524b1ad900",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-faolchs-bond.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-faolchs-bond.png": "f72e9f90f97054a9d149801c434ccbfb0e8b6dfdcf88a6e41f5cd68171a8e930",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-mistfield.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-mistfield.png": "4003ac7040748fa3a78f3c5dadef7c5a4fcba7a64e5ca6872f6bb8cc5f1e419b",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-one-step-ahead.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-one-step-ahead.png": "f0f59ff171b50e07c500a9bd534c0023796d8a491b59326e22340c7f5c704279",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-runes-of-guidance.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-runes-of-guidance.png": "914661fc3348790a3c4b249655f277300d1c2b64ec56e82bdc020689739a5712",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-warding-shield.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/corsair-voidscarred/tokens/corsair-voidscarred-warding-shield.png": "43b53ae3df5251ac3a142496cbcca45aa4aacedf28dbdc8dfdabd3a706efe2c8",
+        "output/corsair-voidscarred/tokens/tokenbag/corsair-voidscarred-token-bag-icon.png": "8b17f6db1fbfd69ad23c5172509edf797998fe5ac8f0bcbe8a15183588cb6da0",
+        "output/corsair-voidscarred/tokens/tokenbag/corsair-voidscarred-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/corsair-voidscarred/dice/corsair-voidscarred-dice-dark.jpg": "62d3807cfc70a6db7bd3b04da3fda818efcdb6b0c2c3cb034921dd8e9a5fb5f9",
+        "output/corsair-voidscarred/dice/corsair-voidscarred-dice-light.jpg": "323fcae0891736bf7ec3f632d95a9c4c9897606810cf2245bbfbb61c6afa479e",
+        "output/corsair-voidscarred/dice/corsair-voidscarred-dice-team.jpg": "2429998f64624190d4f301d72f1825f29af7ee5e73d7876e8961d81d9adafb5b",
+        "output/corsair-voidscarred/data/corsair-voidscarred-team-data.json": "7cc8007df96758f0e9a0b42ae6f3bbf7fd0d2a8b24bf223851bce8a0d643406d",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "strategy-ploys": {
+          "hash": "fcd66e0a9fa30859bcb537903d96acde56170e5ab964082ea5b4e87af17ff1a4",
+          "outputs": [
+            "layers/kt-app/extracted/corsair-voidscarred/cards/strategy-ploys/corsair-voidscarred-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/strategy-ploys/corsair-voidscarred-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/strategy-ploys/corsair-voidscarred-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/strategy-ploys/corsair-voidscarred-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:12.102949+00:00"
+        },
+        "datacards": {
+          "hash": "da635544ebfd031f0d5db5c12502d4ba9428ccffe61f0c691f9574eee3d2ed13",
+          "outputs": [
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_0.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_1.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_2.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_3.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_4.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_5.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_6.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_7.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_8.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_9.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_10.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_11.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/datacards/corsair-voidscarred-datacards-page_12.pdf"
+          ],
+          "modified": "2026-07-06T16:03:07.235813+00:00"
+        },
+        "faction-rules": {
+          "hash": "96c76897664966dc3e96deb84e560ddaad4aa5f650aeea6c878c67fb34d2a045",
+          "outputs": [
+            "layers/kt-app/extracted/corsair-voidscarred/cards/faction-rules/corsair-voidscarred-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/faction-rules/corsair-voidscarred-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/faction-rules/corsair-voidscarred-faction-rules-page_2.pdf"
+          ],
+          "modified": "2026-07-06T16:03:10.114586+00:00"
+        },
+        "equipment": {
+          "hash": "35907996c0e7103ab02bf3752dd690b2a52ddb69674628ed7478f545594ae4e5",
+          "outputs": [
+            "layers/kt-app/extracted/corsair-voidscarred/cards/equipment/corsair-voidscarred-equipment-page_0.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/equipment/corsair-voidscarred-equipment-page_1.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/equipment/corsair-voidscarred-equipment-page_2.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/equipment/corsair-voidscarred-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:05:35.703178+00:00"
+        },
+        "operatives-selection": {
+          "hash": "03f544780be80a96104d6697b026db85cd722978748112e9510278d40ea71885",
+          "outputs": [
+            "layers/kt-app/extracted/corsair-voidscarred/cards/operatives-selection/corsair-voidscarred-operatives-selection-page_0.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/operatives-selection/corsair-voidscarred-operatives-selection-page_1.pdf"
+          ],
+          "modified": "2026-07-06T16:09:51.608074+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "432fe0b4198b1a048e7c728133115da0d3eb13620c15b3fb49d63a0d53151a77",
+          "outputs": [
+            "layers/kt-app/extracted/corsair-voidscarred/cards/firefight-ploys/corsair-voidscarred-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/firefight-ploys/corsair-voidscarred-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/firefight-ploys/corsair-voidscarred-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/corsair-voidscarred/cards/firefight-ploys/corsair-voidscarred-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:10:45.157877+00:00"
+        },
+        "cards": {
+          "hash": "db46adfeb1d99c0e587944ad25a2f6660b2912ac184e7f29e0263a93d846c97f",
+          "outputs": [
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card1_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card2_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card3_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card4_landscape.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card4_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card1_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card2_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card3_portrait.pdf",
+            "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card4_portrait.pdf"
+          ],
+          "modified": "2026-07-08T19:01:26.639581+00:00"
+        }
+      },
+      "completed": "2026-07-08T19:01:26.639620+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/corsair-voidscarred-structure.json",
+          "hash": "91aef237d0310edf1e2a0c999a847d435372fdfcaf920df470fe169a0f35c55f",
+          "modified": "2026-08-29T18:41:08.605952+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card1_landscape.pdf": "3f7540d9c456274bb7190ee9302a7d4111c49843b5c676c47f1d73eb58f783b0",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card2_landscape.pdf": "ae7d1738649b30c4f113e79af435413761fea4a8c1eec0f52e6517134b375ad1",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card3_landscape.pdf": "a1ff13eef337deb62c413358679c3df2fdf371c47172f0a6489816e2e3e72079",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card4_landscape.pdf": "45069ad9d7f8ad7d519041ecb18e631811913e3e7d976bf99320c93975d7563d",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card1_landscape.pdf": "18f352e6cd62cca8d280851cdaff711a43f0027515ae8ef31728b61789384177",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card2_landscape.pdf": "77d678becdbb157ba14a2412cf5d3248aa0caedbae44284a753492c6c04b43f5",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card3_landscape.pdf": "5241f153294c171a2b1d25a9997fef960de0a6feb03e791f769976d3a6aacf3a",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card4_landscape.pdf": "35d2eef97417c2999e23cc32cf4a1c40afab7be98c1845a581daa7c175601faa",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card1_landscape.pdf": "e7e5ef9316d765bc9161e9008cbd152aa0686fb4bffe58b57ee9a0e2367a3240",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card2_landscape.pdf": "6a3887bada509645628a729dace954b7300bd591163b9221c499cc181a4b02a1",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card3_landscape.pdf": "f4778d2889b98d2661a03aec5ed45c432d6b4f4de6156778bead05c6fdfc343a",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card4_landscape.pdf": "62439d967a410ede1145c34f838351acd8a83ce1ca66149dfcdb80ad55d9b747",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card1_landscape.pdf": "14ce305c4d4022af8d7572f594488cfaea1f12d33b42a37a780804324eb43a16",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card2_landscape.pdf": "ae5f5df2bfcb6063f076a4617cc6370d5161d4bfa25004f63a22ab537d897091",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card3_landscape.pdf": "4e6fa93fddcc0fc5385ba5f532e13ac84b298079f7b3c2896a15db1100ed4511",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card4_landscape.pdf": "6ad3a82451ec848705626cddaabf8c34a6b8771fa846275566c4732978a4241b",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card1_portrait.pdf": "05d48c124eab581a23930888d50af41f85de8347e345c115cb0291ec60bb9b94",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card2_portrait.pdf": "b37bf09ca69902d94473a1cca4c95307e7a17afd32dada957294b100194d3446",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card3_portrait.pdf": "0d72e4795d915d8bcacb9f78849ba7cc9031b8921b7ccc7abaf5521f0bbc9ec8",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card4_portrait.pdf": "0de269b1facdebea90dbf8b94ed486b525bd85a93291f5a195e37beb6a01fba0",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card1_portrait.pdf": "0b84b6403b5691597113a798482c2e750d0c176e79aac06536151e02de454e00",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card2_portrait.pdf": "900cf0a369cb3bc203634de453599b7d8965b81d3e4a298cd4680ae2802c889b",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card3_portrait.pdf": "5bc9da2ef2c60febcb43960ad0e5210fb8b84fbd90a5fef2273f7b6d6a8eeb16",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card4_portrait.pdf": "b6e712d61a78c9ee338d19212cb05bc5dde9e68c71f969287eb1245c853dc600",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card1_portrait.pdf": "cd69ce1f6b84c94f62bce1d5e0a99f651724b67d0168d0f0a473155be233d7ee",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card2_portrait.pdf": "e93a75d4c53476733a887ee27bcf32772f5ac5ab15047a9386f83d3e495f9e96",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card3_portrait.pdf": "c04e7ec688b2c20f604170c48dac3c5d42666045ae25612cbd8569bcca1463ad",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card4_portrait.pdf": "59b22b6a7c8aaf9d977463f672518656bc2715fc7a4e817dfb04c9039e5d63e0",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card1_portrait.pdf": "7fffbcceec9c5bf2a8b29fa33ac0d22853f55e12cac232cb8990e7e92db75102",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card2_portrait.pdf": "b454eb99180a6511ec1774388ffd691a1c94f89a799f247960bc762a73019d86",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card3_portrait.pdf": "8ae2224580e6caef6475886333d0d193fa15d1134d60a76f4aa37c8b4c635cde",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card4_portrait.pdf": "a2dfbcefb7060ae9f68d5c622a6385a7142e7f83abf0bfd37b6273e28b306499",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card1_portrait.pdf": "fd2a1fdfbcbfb6ad38172898eccd0c5ddfb00de1ced41748a0ccde582e257220",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card2_portrait.pdf": "cbf1a9fbddf60ff20280ee35df222b5fa8f27a187004d7998fe6434c6f3b3351",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card3_portrait.pdf": "11b73da41437ea60bdf69e94921b15e0d221585df69db0456cd6bcd941f0486e",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card4_portrait.pdf": "5804a2c895fd71d4cc5d42e84711e03272daeaa7aa49a22073f615cc1422785d"
+      },
+      "completed": "2026-08-29T18:41:08.933405+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/corsair-voidscarred/manifest.json",
+          "hash": "91aef237d0310edf1e2a0c999a847d435372fdfcaf920df470fe169a0f35c55f",
+          "modified": "2026-08-29T18:41:09.085939+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-felarch.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-felarch.pdf",
+          "hash": "108d09bba56da2ac4e82bf81200eb4dd020c082613b5efac59259087c21179f3",
+          "modified": "2026-07-12T19:06:36.144928+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-fate-dealer.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-fate-dealer.pdf",
+          "hash": "786a531917479275d26db68f9d836d4f40866bdf3e309728f581d24df3806e50",
+          "modified": "2026-07-12T19:06:36.185714+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-gunner.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-gunner.pdf",
+          "hash": "d77f225f902d1d92bf34cfd352bb355e1325378a3c2d40004bd603d22308b92c",
+          "modified": "2026-07-12T19:06:36.223037+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-heavy-gunner.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-heavy-gunner.pdf",
+          "hash": "4f13f475e36ef48cf796f0c4e25c572b55537f94e6ea68d1308e5dd75276b180",
+          "modified": "2026-07-12T19:06:36.247030+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-kurnathi.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnathi.pdf",
+          "hash": "16004f2cdf677e4deb3ea5821ffa9d26ccb3336b2cdf86402d4905dd90217665",
+          "modified": "2026-07-12T19:06:36.284759+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-kurnite-hunter.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-kurnite-hunter.pdf",
+          "hash": "37ccc5a5161426facaaed044f3bac8548916bc9d0b86df58a6b91e0a8f0eb458",
+          "modified": "2026-07-12T19:06:36.327707+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-shade-runner.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-shade-runner.pdf",
+          "hash": "71fefde87163e63b4b7b57651f9430b79cdf6e10fb369938fcca58f16461d003",
+          "modified": "2026-07-12T19:06:36.373103+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-soul-weaver.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-soul-weaver.pdf",
+          "hash": "4dcf0a6f5ef52f6a20c01fcd019b0edd559e95446941ed930ebbc5dab2032ac5",
+          "modified": "2026-07-12T19:06:36.405348+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-starstorm-duellist.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-starstorm-duellist.pdf",
+          "hash": "f82ddf2624b18b2e054f386196e79964c0edf07aa43c9b3fd481400245e06ade",
+          "modified": "2026-07-12T19:06:36.431331+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-warrior.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-warrior.pdf",
+          "hash": "ef64d3de930a1805306b226e26aba5d8025014aedec113fe4bcc90420e120ed4",
+          "modified": "2026-07-12T19:06:36.450424+00:00"
+        },
+        "corsair-voidscarred-datacard-voidscarred-way-seeker.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-voidscarred-way-seeker.pdf",
+          "hash": "f4ee1570d78d2a252b21115ee48d8678ed2e2a91510c9184cd0107f83da0920c",
+          "modified": "2026-07-12T19:06:36.472785+00:00"
+        },
+        "corsair-voidscarred-equipment-diuturnal-mantles.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-diuturnal-mantles.pdf",
+          "hash": "0f932bdf791136093828e62cbbf236d4241cb09510ce816ced0af778a9604c6a",
+          "modified": "2026-07-12T19:06:36.481853+00:00"
+        },
+        "corsair-voidscarred-equipment-mistfield.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-mistfield.pdf",
+          "hash": "a300c697930671169db3de748c44c6e16d54d0b671c373730f3fbae6e1b3b8da",
+          "modified": "2026-07-12T19:06:36.491286+00:00"
+        },
+        "corsair-voidscarred-equipment-runes-of-guidance.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-runes-of-guidance.pdf",
+          "hash": "f637c3238edd4cc33be316eafdbf20fb1329efbd3979cc5cf0a9975aa5a96220",
+          "modified": "2026-07-12T19:06:36.500244+00:00"
+        },
+        "corsair-voidscarred-equipment-star-charts.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-equipment-star-charts.pdf",
+          "hash": "322852e44af042bb05f72f5f4a5a00a9b6438776adaa66a64d148fc4fae77d76",
+          "modified": "2026-07-12T19:06:36.516276+00:00"
+        },
+        "corsair-voidscarred-faction-rule-rifles.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-rifles.pdf",
+          "hash": "b63af838db580395273deab459e0cc62fbcde33ff68ad9ce8ab60ac2c64c6b96",
+          "modified": "2026-07-12T19:06:36.526019+00:00"
+        },
+        "corsair-voidscarred-faction-rule-aeldari-raiders.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-faction-rule-aeldari-raiders.pdf",
+          "hash": "7b06b62ac6035bf673d971ba40d7a6e2e1d9ad71532123bee604a1c752f6fab1",
+          "modified": "2026-07-12T19:06:36.534593+00:00"
+        },
+        "corsair-voidscarred-token-guide-token-guide.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-token-guide-token-guide.pdf",
+          "hash": "03ef25000647b0a1056165cc614b0b99691f5d86d8966b4a883cfa51cf56651d",
+          "modified": "2026-07-12T19:06:36.545804+00:00"
+        },
+        "corsair-voidscarred-firefight-ploy-opportunistic-fighters.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-opportunistic-fighters.pdf",
+          "hash": "dd67457625dc01561846b063d97746da03f0b4ff943c898ceadbff7eccef3ac9",
+          "modified": "2026-07-12T19:06:36.555296+00:00"
+        },
+        "corsair-voidscarred-firefight-ploy-light-fingers.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-light-fingers.pdf",
+          "hash": "cf40bf0ef196f32bb7d1862d7a946dea55b8d103d21b6cb080c6c61f2bff3be4",
+          "modified": "2026-07-12T19:06:36.563183+00:00"
+        },
+        "corsair-voidscarred-firefight-ploy-capricious-flight.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-capricious-flight.pdf",
+          "hash": "ba9c9477c1152116c79a415812ffd57055d285d1853874daf3151266ac4a5434",
+          "modified": "2026-07-12T19:06:36.571862+00:00"
+        },
+        "corsair-voidscarred-firefight-ploy-contemptuous-adventurer.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-firefight-ploy-contemptuous-adventurer.pdf",
+          "hash": "181bc8dd65f86dcb91fdd84bca4a27365aec2580561d674c75224f1432a5cd86",
+          "modified": "2026-07-12T19:06:36.581228+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection.pdf",
+          "hash": "642260188d9a1acd1a974531519a8f6353c325771c6e9f4412177a4d32b98afd",
+          "modified": "2026-07-12T19:06:36.591553+00:00"
+        },
+        "corsair-voidscarred-strategy-ploy-plunderers.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-plunderers.pdf",
+          "hash": "233f74efa1dead864ae81c8c3c1398effb9a4c28022843ac4cc7392ecc36781d",
+          "modified": "2026-07-12T19:06:36.601746+00:00"
+        },
+        "corsair-voidscarred-strategy-ploy-piratical-profiteers.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-piratical-profiteers.pdf",
+          "hash": "a8d4ce89f20ae2a116b671e1a7bf19b413c16bd3483dffa51312ff52efaef38e",
+          "modified": "2026-07-12T19:06:36.612217+00:00"
+        },
+        "corsair-voidscarred-strategy-ploy-mobile-engagement.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-mobile-engagement.pdf",
+          "hash": "2729a84d0348c60ad223d456e2aa6f201aedac22839d0b0573aa55cc4d049db8",
+          "modified": "2026-07-12T19:06:36.622448+00:00"
+        },
+        "corsair-voidscarred-strategy-ploy-outcasts.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-strategy-ploy-outcasts.pdf",
+          "hash": "7edbb048ed0ac979293bd39889119346cb43d8d81ec7d5e3cc3148cfb2e53440",
+          "modified": "2026-07-12T19:06:36.630855+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "5674275573572aead224aa3ad4cc3714567f3ffeb3e40b27b9f76009e09b99ee",
+          "modified": "2026-08-29T18:41:09.106041+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "b42cdcbabea8324d9e183a409a198c1cae5d920bc9bcfbdcbdc34586896e56da",
+          "modified": "2026-08-29T18:41:09.122287+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "c5e0f518dd88821efc0e7853d0147c1bef898794827407ca56b64bc1cf80092f",
+          "modified": "2026-08-29T18:41:09.143348+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "c5067c1434419b9cd5e5c0e11513fb0d848d9d613f71d2a452584e55417a31f0",
+          "modified": "2026-08-29T18:41:09.158586+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "e305a74367e9bac7c53c8af45598a6faa98e8c558c45397d9b8f6e5fa7c3036f",
+          "modified": "2026-08-29T18:41:09.171067+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "50951076ef2cf0506d8b2e7d1d1000d070921bbf2682eeb81d99bc5db04162b1",
+          "modified": "2026-08-29T18:41:09.188106+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "c5a33387b39cc84adff306820e6c86863c1354a727c5a2d0878c0860d162f129",
+          "modified": "2026-08-29T18:41:09.218002+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "8642d42e08147cf481452d8c37c692982eaebf25329eeaaeba7911428734e50d",
+          "modified": "2026-08-29T18:41:09.576229+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "ec18a0d9dcefef641071869612e72d024580ea908681c9fde7021ddc36315558",
+          "modified": "2026-08-29T18:41:10.124617+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "57d67e00e1b877812fe4ddecc03e439c6ad33c937e5e142d46ad7a07f7cb3ea3",
+          "modified": "2026-08-29T18:41:10.229760+00:00"
+        },
+        "corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "ce671919d49674e84472919bf7e09665fd6d08e2c7ef67712124114d18195fc5",
+          "modified": "2026-08-29T18:41:10.250191+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-1.pdf",
+          "hash": "d32da5a84d71dc2a9eb41002873dc93bff2a96deff346457beb8867de61f5845",
+          "modified": "2026-08-29T18:41:10.266751+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-2.pdf",
+          "hash": "597007e9956ca14f08cb4089b6476931f356a2e4cdfdc075f96ad49a5a6f44f3",
+          "modified": "2026-08-29T18:41:10.288939+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-3.pdf",
+          "hash": "a49ce35e34bc108644e2bd11327badf8c38fb703704559b0b8cec1fa6b7668a5",
+          "modified": "2026-08-29T18:41:10.305521+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-4.pdf",
+          "hash": "a8cb50f16b617555a765540b55b1bda8792a94dc73391ab06af933bdda185ac9",
+          "modified": "2026-08-29T18:41:10.480393+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-5.pdf",
+          "hash": "c9843f9216a9c9741d64ce93dcca6bc70138cd279fdebad3e2776f5eee3ac68d",
+          "modified": "2026-08-29T18:41:10.929083+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-6.pdf",
+          "hash": "6d581ddb5a12748b81cf3d82c54257eaa3e1437ef890858a413ab8f2361e4c6d",
+          "modified": "2026-08-29T18:41:10.965585+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-7.pdf",
+          "hash": "9ebacfb7d4455bdaf3538a16850b1c2f12123bd0fa41fa3443c620da9491e273",
+          "modified": "2026-08-29T18:41:10.982208+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-8.pdf",
+          "hash": "f51bd5e30124f7393f8482484754f07b6ec3abb582903272f7a24c0bef1f3e81",
+          "modified": "2026-08-29T18:41:10.998253+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-9.pdf",
+          "hash": "5b515ac8be64e79070ced6366962346e9c8934f555c804090609a422e64796a6",
+          "modified": "2026-08-29T18:41:11.012311+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-10.pdf",
+          "hash": "7d2c671b9c9afa997858a03593cf7b3d16afa5e9cbb4f46a49da4d756f60e5ce",
+          "modified": "2026-08-29T18:41:11.028905+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-11.pdf",
+          "hash": "93c1d501045a18493ac89893de63c8e645acb445db71be81a6ed718f3fd804b5",
+          "modified": "2026-08-29T18:41:11.044038+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-12.pdf",
+          "hash": "5ac39748e0fd10f34c0b833dcc50d229b7f65228029bc1e32fa97581c9bab782",
+          "modified": "2026-08-29T18:41:11.061117+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-13.pdf",
+          "hash": "0fa1fb375db67b4ed506a94b89112a17ef65b88f0650dc8e5cc69639309d270a",
+          "modified": "2026-08-29T18:41:11.077681+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-14.pdf",
+          "hash": "37acd23d08c7e5b679b696b4343c5b9a1ff1f0f7bd587c86e5dfbeba89dbf1c6",
+          "modified": "2026-08-29T18:41:11.097654+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-15.pdf",
+          "hash": "164dfb282e8bdc5c1d86439e263c42939b5f7052d4539222b1891415bb3b0d21",
+          "modified": "2026-08-29T18:41:11.117796+00:00"
+        },
+        "corsair-voidscarred-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/corsair-voidscarred/corsair-voidscarred-operatives-selection-operative-selection-16.pdf",
+          "hash": "9f7177943c44c38cb0b175adbb9e3095315812ccabf7b3ebc976478902d9cef0",
+          "modified": "2026-08-29T18:41:11.147306+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/corsair-voidscarred-structure.json": "91aef237d0310edf1e2a0c999a847d435372fdfcaf920df470fe169a0f35c55f",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card1_landscape.pdf": "3f7540d9c456274bb7190ee9302a7d4111c49843b5c676c47f1d73eb58f783b0",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card2_landscape.pdf": "ae7d1738649b30c4f113e79af435413761fea4a8c1eec0f52e6517134b375ad1",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card3_landscape.pdf": "a1ff13eef337deb62c413358679c3df2fdf371c47172f0a6489816e2e3e72079",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page01_card4_landscape.pdf": "45069ad9d7f8ad7d519041ecb18e631811913e3e7d976bf99320c93975d7563d",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card1_landscape.pdf": "18f352e6cd62cca8d280851cdaff711a43f0027515ae8ef31728b61789384177",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card2_landscape.pdf": "77d678becdbb157ba14a2412cf5d3248aa0caedbae44284a753492c6c04b43f5",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card3_landscape.pdf": "5241f153294c171a2b1d25a9997fef960de0a6feb03e791f769976d3a6aacf3a",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page02_card4_landscape.pdf": "35d2eef97417c2999e23cc32cf4a1c40afab7be98c1845a581daa7c175601faa",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card1_landscape.pdf": "e7e5ef9316d765bc9161e9008cbd152aa0686fb4bffe58b57ee9a0e2367a3240",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card2_landscape.pdf": "6a3887bada509645628a729dace954b7300bd591163b9221c499cc181a4b02a1",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card3_landscape.pdf": "f4778d2889b98d2661a03aec5ed45c432d6b4f4de6156778bead05c6fdfc343a",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page03_card4_landscape.pdf": "62439d967a410ede1145c34f838351acd8a83ce1ca66149dfcdb80ad55d9b747",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page04_card1_landscape.pdf": "14ce305c4d4022af8d7572f594488cfaea1f12d33b42a37a780804324eb43a16",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card1_portrait.pdf": "05d48c124eab581a23930888d50af41f85de8347e345c115cb0291ec60bb9b94",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card2_portrait.pdf": "b37bf09ca69902d94473a1cca4c95307e7a17afd32dada957294b100194d3446",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card3_portrait.pdf": "0d72e4795d915d8bcacb9f78849ba7cc9031b8921b7ccc7abaf5521f0bbc9ec8",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page05_card4_portrait.pdf": "0de269b1facdebea90dbf8b94ed486b525bd85a93291f5a195e37beb6a01fba0",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card1_portrait.pdf": "0b84b6403b5691597113a798482c2e750d0c176e79aac06536151e02de454e00",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card2_portrait.pdf": "900cf0a369cb3bc203634de453599b7d8965b81d3e4a298cd4680ae2802c889b",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card3_portrait.pdf": "5bc9da2ef2c60febcb43960ad0e5210fb8b84fbd90a5fef2273f7b6d6a8eeb16",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page06_card4_portrait.pdf": "b6e712d61a78c9ee338d19212cb05bc5dde9e68c71f969287eb1245c853dc600",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card1_portrait.pdf": "cd69ce1f6b84c94f62bce1d5e0a99f651724b67d0168d0f0a473155be233d7ee",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card2_portrait.pdf": "e93a75d4c53476733a887ee27bcf32772f5ac5ab15047a9386f83d3e495f9e96",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card3_portrait.pdf": "c04e7ec688b2c20f604170c48dac3c5d42666045ae25612cbd8569bcca1463ad",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page07_card4_portrait.pdf": "59b22b6a7c8aaf9d977463f672518656bc2715fc7a4e817dfb04c9039e5d63e0",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card1_portrait.pdf": "7fffbcceec9c5bf2a8b29fa33ac0d22853f55e12cac232cb8990e7e92db75102",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card2_portrait.pdf": "b454eb99180a6511ec1774388ffd691a1c94f89a799f247960bc762a73019d86",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card3_portrait.pdf": "8ae2224580e6caef6475886333d0d193fa15d1134d60a76f4aa37c8b4c635cde",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page08_card4_portrait.pdf": "a2dfbcefb7060ae9f68d5c622a6385a7142e7f83abf0bfd37b6273e28b306499",
+        "layers/warcom/extracted/corsair-voidscarred/cards/corsair-voidscarred_page09_card1_portrait.pdf": "fd2a1fdfbcbfb6ad38172898eccd0c5ddfb00de1ced41748a0ccde582e257220"
+      },
+      "completed": "2026-08-29T18:41:12.552048+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "db46adfeb1d99c0e587944ad25a2f6660b2912ac184e7f29e0263a93d846c97f",
+          "outputs": [
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-01.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-02.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-03.png",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-04.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-05.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-06.png",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-07.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-08.png",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-09.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-10.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-11.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-12.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-13.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-14.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-15.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-16.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-17.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-18.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-19.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-20.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-21.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-22.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-23.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-24.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-25.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-26.jpeg",
+            "layers/integration/corsair-voidscarred/artwork/corsair-voidscarred-artwork-metadata.json",
+            "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-landscape.jpg",
+            "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-portrait.jpg",
+            "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-token-transparent.png",
+            "layers/integration/corsair-voidscarred/artwork/icons/corsair-voidscarred-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:49:29.440111+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:49:29.440129+00:00"
+    }
+  }
+}

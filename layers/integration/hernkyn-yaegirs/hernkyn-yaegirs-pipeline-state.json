@@ -1,0 +1,1483 @@
+{
+  "team": "hernkyn-yaegirs",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:38.737657+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/hernkyn-yaegirs/content/hernkyn-yaegirs-content.json",
+          "hash": "3fadd988359a153516ac5f27fd61a2a33efa8fba60e41f2bc024e090992288c8",
+          "modified": "2026-08-29T18:44:37.763432+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:38.894468+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/manifest.json": "b770132814c68276f5dd6c64fd16d1061ad6d8671823eec68f44aca5485b40ba",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "c835eedbd7030e8085acdf9e446de1088d40f8483ef3aa16a59edfff08bbee66",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "5b57abafd3763b31ec485bc5e87c4855a57e27407845dc60d3358866b1b61354",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "fab7b6b2b7fd7aab56fe1422df814c5f79b023c432dd6ce9242023aac47e3bf0",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "8eb135a9f798330af6602060d3c925c80574b7f6b56a7e9cbee61806189b7a01",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "15035bea1d0401457db7150c783e9fa9756b197a61b6f729fc506ee1354d64ee",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "61f2e597cda38cafd20042b38f7377691a683a3d02ebb2457fa45179a8ca735d",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "33cf252f00edebf0c46489bdc686611a285ca3d31fe0e1a83129618f99d1885b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "de9031612096a14a949508bc02fdfd25ae119c7da538931b8ac71fce259a5ab7",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bladekyn.pdf": "5f6fc38d56af90fa7437023868f032057744beadeb0c46e148c726a318f50be7",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bombast.pdf": "afc5ea56798d6a489a11baebbf6efe5c800a707b61663c75756c1552b6532801",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-gunner.pdf": "5eb01651931b905c310efa43beb442e4455963831b0b4e730f19d0a4a70db226",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-ironbraek.pdf": "fbd5574a8ab024472b5da7265aab57a9de1f64c909e8779ec97c1b1cc7ace466",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-riflekyn.pdf": "3f662c26953a45939be8ae66fcddd37b72a6742599562de079e4a54bdb2ffc53",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-theyn.pdf": "a6a16f18f3f8c1701464b2e240191fa603f1ee694673a24d8b1ee687797da456",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-tracker.pdf": "93b3ded537c46a550e39cfdcce1ed0537ad09cacb0371471fd15402142501c14",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-warrior.pdf": "5b23c5d51de53eea164dbb566b060ca6d598dcbf5ce255e0e737dc30bb43be13",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-firestorm-bolt-shells.pdf": "23c64c61965886340cc552aae051a6dfe56985c7b796eaf19a6c358b6441915e",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-kv-ceramide-undersuit.pdf": "3cf80e68b83a57039b7755b1345c8cf5c11b445ec2fee2025291885118490d8b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-plasma-knives.pdf": "1a8351d9466d7e4e6714382f36ad19792d6c299a6617610ad566de681aa6709f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-stabilised-bolt-shells.pdf": "d73e52705c05670f0b33ce267856f0010e2844936239b6384d6deedf3a1e76cf",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-dauntless-explorers.pdf": "312665408eb73ec95034438c7289ffcfef646f7adf13451628cf3520bd7cd18d",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-resourceful.pdf": "9e12c4944c9dcda985b7c1a5445e2f3a421b1987417eb888c2106071645f3334",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-bonds-that-bind.pdf": "39fcab0df12233b3421070642feb822e88f6ecc9346c7c1a99c83e533232c7b3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-no-kin-left-behind.pdf": "e6e76dce678d26936df3019c47149c36a3ef11f71ffb4301c207434adbb0e032",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-stalwart-defence.pdf": "9dff6f7ed2c225929edb086a248db3ea102423902a9257a9e6e242fa83a4ff86",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-sturdy.pdf": "8860ed60be812ec5b256597dca2784ed1254cae710e27a7b713abe3fa268c48f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-1.pdf": "fa56f8c950e430b35229d5b16b52072c01bd739947d498bc45dc955ee82f6d08",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-10.pdf": "8ddd229686caf9fbe1f0ed18fce6862f242897cc5aae9332bf6cecb81f1939df",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-11.pdf": "0a2946a3407fed39565ade77ec231bd323b5c6dfb6b2b5510793e5d11fc70e11",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-12.pdf": "61fe9ac909c9156011d548ece5c812742aa4dee2e5d1882422714eda64f5d4da",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-13.pdf": "832182af6bae09cf8b648349b808e711a460842e14e94ce475270551a264dabc",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-14.pdf": "2804588d8a566a0d2599179d937d0cc1f3e74a749c3faf37c73bf8e54afbeb60",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-15.pdf": "534756de084f86a790eb3e7f5ec486cdf998014a347f1032bb7daa40f9c21c41",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-16.pdf": "e0ee2c4a475ed151206e4ef83956e3c6ed51099d8b9f0f8897a07a03f4eee33b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-17.pdf": "6b02a863fe872b35b927c1bde6c0e02912644828e6ef79baf1a4fa2743dc7a73",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-2.pdf": "3b882768eda5f3e9b15ab58854b8a28d17216b4b2871339af103d41e2328c3ee",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-3.pdf": "54317482ef33b91314cca5df86040ed3cf9108d7af785621a3161cbcfbe7d0ec",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-4.pdf": "05672d96113ede18b4924f0fcc65ac4891255a6adbfba995b753137a469c2317",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-5.pdf": "65f8628e31c501c39094a375dcdccc8adc425b338ea07cfb779f5d8a50ba0be6",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-6.pdf": "59a77bac23f1ad904029a68aac6d96148492fb029eff0a38217da6f380ea666f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-7.pdf": "e342dafd538e6136dda3d7518bb8f4ee777541f9d41b408107fa0db31da7de8a",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-8.pdf": "73c0ab456b19ae930777600db494eb2a661d631ff4a02de39dcacaa40ec5dd11",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-9.pdf": "cd68b6d303726a91ec57e11b64d563bc9cd717f4fad92452c69e289d16d4f5be",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection.pdf": "02d38afefb58fc041247df09e1e5029a34899aacd5aea8ebbf170c367a2ec3f3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-hidden-engagement.pdf": "f46ca404cf9cddd5dd8b409c51e071b67a18d1f7dfebfc77d4b8ca19766cd0f8",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-in-position.pdf": "f92b37538e155109fc3084034860c63c72ea78e024565e412bc2e8b1e7de7f6b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-masterful-bladework.pdf": "f314c9166e95e289d8a2bf2e956388e6141dc6a782441f524f0e01f25cc6078a",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-tough-survivalists.pdf": "7d0e3794a5bb674ae71a413741d9a57382788706dcdc54fc0a36b9a9d259ea62",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-token-guide-token-guide.pdf": "02c24e40ba404efe8585c2b5161260943c2c88c46c5e5ec49961ed0985fa6062"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/hernkyn-yaegirs/card-backside/hernkyn-yaegirs-backside-landscape.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-07-12T18:46:57.407583+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/hernkyn-yaegirs/card-backside/hernkyn-yaegirs-backside-portrait.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-07-12T18:46:57.410350+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:47:08.355766+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-token.jpg": "57b16e680cfccc67d4d40a339a81427cbd70d7c5b72d9eb06d2793081eb61060",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/hernkyn-yaegirs-fallen-kin.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-fallen-kin.png",
+          "hash": "400d62706e8462ba5715790f542c39f334ba2ff0ee52bc4ad5d36f2cd10bf185",
+          "modified": "2026-08-29T18:44:40.210303+00:00"
+        },
+        "tokens/hernkyn-yaegirs-firestorm-bolt-shells.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-firestorm-bolt-shells.png",
+          "hash": "4998c82cf140d61ed4746c74891a3fafe24a099b3d31f902127834e7fc7aeb50",
+          "modified": "2026-08-29T18:44:40.217948+00:00"
+        },
+        "tokens/hernkyn-yaegirs-hy-pex-mine.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-hy-pex-mine.png",
+          "hash": "1680b80e0c083c84811273d54b0b8de3c2f5872cb9a82013950316f90a3218ba",
+          "modified": "2026-08-10T09:15:13.551120+00:00"
+        },
+        "tokens/hernkyn-yaegirs-minefield.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-minefield.png",
+          "hash": "acaa5b125c2bf26b1de1940285d7065a4a78f2e703701699bd58092488d000f0",
+          "modified": "2026-08-10T08:15:10.165649+00:00"
+        },
+        "tokens/hernkyn-yaegirs-outright-conviction.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-outright-conviction.png",
+          "hash": "6c7ddcfb5d1ce09310285fc575bcbb6bf854ead5d38d59bc10ecf21eab6abb96",
+          "modified": "2026-08-29T18:44:40.226485+00:00"
+        },
+        "tokens/hernkyn-yaegirs-resourceful-points.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-resourceful-points.png",
+          "hash": "d7e14c7f0f3cbcd605a99cee83a29ac55d36ed528bd4aa0aa529e5e027eed16a",
+          "modified": "2026-08-29T18:44:40.234529+00:00"
+        },
+        "tokens/hernkyn-yaegirs-stabilised-bolt-shells.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-stabilised-bolt-shells.png",
+          "hash": "262ac49c092a541d803cd1aff3fe366d833aa4ce463a1b292ebfb8a378d48227",
+          "modified": "2026-08-29T18:44:40.242554+00:00"
+        },
+        "tokens/hernkyn-yaegirs-throwing-hatchet.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-hatchet.png",
+          "hash": "485de8738409535f5f375dbf6d091d46dec459fccb87b47d20aaf0590fc3de46",
+          "modified": "2026-08-29T18:44:40.253088+00:00"
+        },
+        "tokens/hernkyn-yaegirs-throwing-plasma-knife.png": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-plasma-knife.png",
+          "hash": "f2f7f11575f622f50657ddf340e50d1c1dd13d584102fa3505ffbde4d2ad209b",
+          "modified": "2026-08-29T18:44:40.266044+00:00"
+        },
+        "tokens/hernkyn-yaegirs-fallen-kin.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-fallen-kin.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.268123+00:00"
+        },
+        "tokens/hernkyn-yaegirs-firestorm-bolt-shells.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-firestorm-bolt-shells.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.270202+00:00"
+        },
+        "tokens/hernkyn-yaegirs-hy-pex-mine.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-hy-pex-mine.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-10T09:15:13.703056+00:00"
+        },
+        "tokens/hernkyn-yaegirs-minefield.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-minefield.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-10T08:15:10.330827+00:00"
+        },
+        "tokens/hernkyn-yaegirs-outright-conviction.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-outright-conviction.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.271205+00:00"
+        },
+        "tokens/hernkyn-yaegirs-resourceful-points.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-resourceful-points.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.272707+00:00"
+        },
+        "tokens/hernkyn-yaegirs-stabilised-bolt-shells.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-stabilised-bolt-shells.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.275710+00:00"
+        },
+        "tokens/hernkyn-yaegirs-throwing-hatchet.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-hatchet.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.278724+00:00"
+        },
+        "tokens/hernkyn-yaegirs-throwing-plasma-knife.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-plasma-knife.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:44:40.280728+00:00"
+        },
+        "tokens/tokenbag/hernkyn-yaegirs-token-bag-icon.png": {
+          "path": "output/hernkyn-yaegirs/tokens/tokenbag/hernkyn-yaegirs-token-bag-icon.png",
+          "hash": "57b16e680cfccc67d4d40a339a81427cbd70d7c5b72d9eb06d2793081eb61060",
+          "modified": "2026-08-29T18:44:40.290260+00:00"
+        },
+        "tokens/tokenbag/hernkyn-yaegirs-token-bag.obj": {
+          "path": "output/hernkyn-yaegirs/tokens/tokenbag/hernkyn-yaegirs-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:44:40.292266+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:45.421447+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/manifest.json": "b770132814c68276f5dd6c64fd16d1061ad6d8671823eec68f44aca5485b40ba",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-token.jpg": "57b16e680cfccc67d4d40a339a81427cbd70d7c5b72d9eb06d2793081eb61060",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "c835eedbd7030e8085acdf9e446de1088d40f8483ef3aa16a59edfff08bbee66",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "5b57abafd3763b31ec485bc5e87c4855a57e27407845dc60d3358866b1b61354",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "fab7b6b2b7fd7aab56fe1422df814c5f79b023c432dd6ce9242023aac47e3bf0",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "8eb135a9f798330af6602060d3c925c80574b7f6b56a7e9cbee61806189b7a01",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "15035bea1d0401457db7150c783e9fa9756b197a61b6f729fc506ee1354d64ee",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "61f2e597cda38cafd20042b38f7377691a683a3d02ebb2457fa45179a8ca735d",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "33cf252f00edebf0c46489bdc686611a285ca3d31fe0e1a83129618f99d1885b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "de9031612096a14a949508bc02fdfd25ae119c7da538931b8ac71fce259a5ab7",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bladekyn.pdf": "5f6fc38d56af90fa7437023868f032057744beadeb0c46e148c726a318f50be7",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bombast.pdf": "afc5ea56798d6a489a11baebbf6efe5c800a707b61663c75756c1552b6532801",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-gunner.pdf": "5eb01651931b905c310efa43beb442e4455963831b0b4e730f19d0a4a70db226",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-ironbraek.pdf": "fbd5574a8ab024472b5da7265aab57a9de1f64c909e8779ec97c1b1cc7ace466",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-riflekyn.pdf": "3f662c26953a45939be8ae66fcddd37b72a6742599562de079e4a54bdb2ffc53",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-theyn.pdf": "a6a16f18f3f8c1701464b2e240191fa603f1ee694673a24d8b1ee687797da456",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-tracker.pdf": "93b3ded537c46a550e39cfdcce1ed0537ad09cacb0371471fd15402142501c14",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-warrior.pdf": "5b23c5d51de53eea164dbb566b060ca6d598dcbf5ce255e0e737dc30bb43be13",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-firestorm-bolt-shells.pdf": "23c64c61965886340cc552aae051a6dfe56985c7b796eaf19a6c358b6441915e",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-kv-ceramide-undersuit.pdf": "3cf80e68b83a57039b7755b1345c8cf5c11b445ec2fee2025291885118490d8b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-plasma-knives.pdf": "1a8351d9466d7e4e6714382f36ad19792d6c299a6617610ad566de681aa6709f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-stabilised-bolt-shells.pdf": "d73e52705c05670f0b33ce267856f0010e2844936239b6384d6deedf3a1e76cf",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-dauntless-explorers.pdf": "312665408eb73ec95034438c7289ffcfef646f7adf13451628cf3520bd7cd18d",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-resourceful.pdf": "9e12c4944c9dcda985b7c1a5445e2f3a421b1987417eb888c2106071645f3334",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-bonds-that-bind.pdf": "39fcab0df12233b3421070642feb822e88f6ecc9346c7c1a99c83e533232c7b3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-no-kin-left-behind.pdf": "e6e76dce678d26936df3019c47149c36a3ef11f71ffb4301c207434adbb0e032",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-stalwart-defence.pdf": "9dff6f7ed2c225929edb086a248db3ea102423902a9257a9e6e242fa83a4ff86",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-sturdy.pdf": "8860ed60be812ec5b256597dca2784ed1254cae710e27a7b713abe3fa268c48f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-1.pdf": "fa56f8c950e430b35229d5b16b52072c01bd739947d498bc45dc955ee82f6d08",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-10.pdf": "8ddd229686caf9fbe1f0ed18fce6862f242897cc5aae9332bf6cecb81f1939df",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-11.pdf": "0a2946a3407fed39565ade77ec231bd323b5c6dfb6b2b5510793e5d11fc70e11",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-12.pdf": "61fe9ac909c9156011d548ece5c812742aa4dee2e5d1882422714eda64f5d4da",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-13.pdf": "832182af6bae09cf8b648349b808e711a460842e14e94ce475270551a264dabc",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-14.pdf": "2804588d8a566a0d2599179d937d0cc1f3e74a749c3faf37c73bf8e54afbeb60",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-15.pdf": "534756de084f86a790eb3e7f5ec486cdf998014a347f1032bb7daa40f9c21c41",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-16.pdf": "e0ee2c4a475ed151206e4ef83956e3c6ed51099d8b9f0f8897a07a03f4eee33b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-17.pdf": "6b02a863fe872b35b927c1bde6c0e02912644828e6ef79baf1a4fa2743dc7a73",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-2.pdf": "3b882768eda5f3e9b15ab58854b8a28d17216b4b2871339af103d41e2328c3ee",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-3.pdf": "54317482ef33b91314cca5df86040ed3cf9108d7af785621a3161cbcfbe7d0ec",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-4.pdf": "05672d96113ede18b4924f0fcc65ac4891255a6adbfba995b753137a469c2317",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-5.pdf": "65f8628e31c501c39094a375dcdccc8adc425b338ea07cfb779f5d8a50ba0be6",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-6.pdf": "59a77bac23f1ad904029a68aac6d96148492fb029eff0a38217da6f380ea666f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-7.pdf": "e342dafd538e6136dda3d7518bb8f4ee777541f9d41b408107fa0db31da7de8a",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-8.pdf": "73c0ab456b19ae930777600db494eb2a661d631ff4a02de39dcacaa40ec5dd11",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-9.pdf": "cd68b6d303726a91ec57e11b64d563bc9cd717f4fad92452c69e289d16d4f5be",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection.pdf": "02d38afefb58fc041247df09e1e5029a34899aacd5aea8ebbf170c367a2ec3f3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-hidden-engagement.pdf": "f46ca404cf9cddd5dd8b409c51e071b67a18d1f7dfebfc77d4b8ca19766cd0f8",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-in-position.pdf": "f92b37538e155109fc3084034860c63c72ea78e024565e412bc2e8b1e7de7f6b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-masterful-bladework.pdf": "f314c9166e95e289d8a2bf2e956388e6141dc6a782441f524f0e01f25cc6078a",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-tough-survivalists.pdf": "7d0e3794a5bb674ae71a413741d9a57382788706dcdc54fc0a36b9a9d259ea62",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-token-guide-token-guide.pdf": "02c24e40ba404efe8585c2b5161260943c2c88c46c5e5ec49961ed0985fa6062",
+        "config/teams/hernkyn-yaegirs/custom-tokens/hernkyn-yaegirs-resourceful-points.png": "89891a6a3059143bf62e29996b4674b2aab9a62249d176b04d0e3d3dd620e083"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/hernkyn-yaegirs/dice/hernkyn-yaegirs-dice-light.jpg",
+          "hash": "b1951a8a65d447fb74b6fba2be72487a40ac39d0f8e1b78d28800fd6b4192599",
+          "modified": "2026-08-29T18:44:52.534791+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/hernkyn-yaegirs/dice/hernkyn-yaegirs-dice-dark.jpg",
+          "hash": "9476f471334b95f4f0fe15faefdf715ea3fa89d6b029cab1acc4002366700fb6",
+          "modified": "2026-08-29T18:44:52.538815+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/hernkyn-yaegirs/dice/hernkyn-yaegirs-dice-team.jpg",
+          "hash": "4d38d5d0850f7c45e34fc0166fd726d5255c8f50a6562b1eb1d0c96a74c5045e",
+          "modified": "2026-08-29T18:44:52.542324+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:52.545386+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-token-transparent.png": "4f2035b5cd4de52bd7d4ba9c5d8d1be6b79ff796d08d9cd119f1004305b8edda",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/hernkyn-yaegirs/cardbox/hernkyn-yaegirs-card-box-texture.jpg",
+          "hash": "d244bb8fd851c3b793f217873fdcaa0632456c4b417fbed7ac63a7c41e463af2",
+          "modified": "2026-08-29T18:44:52.646793+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/hernkyn-yaegirs/cardbox/hernkyn-yaegirs-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:44:52.648157+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:52.653601+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-token.jpg": "57b16e680cfccc67d4d40a339a81427cbd70d7c5b72d9eb06d2793081eb61060",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/yaegir-bladekyn-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-bladekyn-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.424514+00:00"
+        },
+        "cards/datacards/yaegir-bladekyn-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-bladekyn-front.jpg",
+          "hash": "4212e795fe29e590756871192705ab0f1028bdf793f66f0da0b336f524b2f1ba",
+          "modified": "2026-08-29T18:45:01.430552+00:00"
+        },
+        "cards/datacards/yaegir-bombast-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-bombast-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.433591+00:00"
+        },
+        "cards/datacards/yaegir-bombast-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-bombast-front.jpg",
+          "hash": "8bec643542b0517bf9b258c14f45b6668bbe55dd352f10e1fa5dc89af15da722",
+          "modified": "2026-08-29T18:45:01.440152+00:00"
+        },
+        "cards/datacards/yaegir-gunner-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-gunner-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.443156+00:00"
+        },
+        "cards/datacards/yaegir-gunner-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-gunner-front.jpg",
+          "hash": "e17ff87a3a35fbb0e6064adcb49bca219ef6273120eef629a2381c5da366f6ec",
+          "modified": "2026-08-29T18:45:01.446183+00:00"
+        },
+        "cards/datacards/yaegir-ironbraek-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-ironbraek-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.447686+00:00"
+        },
+        "cards/datacards/yaegir-ironbraek-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-ironbraek-front.jpg",
+          "hash": "5797c2be8380ce6f465d021518480102201caee54c25882beed78b966380232a",
+          "modified": "2026-08-29T18:45:01.450193+00:00"
+        },
+        "cards/datacards/yaegir-riflekyn-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-riflekyn-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.452227+00:00"
+        },
+        "cards/datacards/yaegir-riflekyn-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-riflekyn-front.jpg",
+          "hash": "5edf14e725aa5f3e57e6e9a562c3d33d06b89bf248551b8b62c3d92e6a1215f0",
+          "modified": "2026-08-29T18:45:01.456231+00:00"
+        },
+        "cards/datacards/yaegir-theyn-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-theyn-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.457734+00:00"
+        },
+        "cards/datacards/yaegir-theyn-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-theyn-front.jpg",
+          "hash": "4ce5444afc7da5aa9dc892e03e8c9944693c3fad4331a1c87da2023048e09bdd",
+          "modified": "2026-08-29T18:45:01.462270+00:00"
+        },
+        "cards/datacards/yaegir-tracker-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-tracker-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.464778+00:00"
+        },
+        "cards/datacards/yaegir-tracker-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-tracker-front.jpg",
+          "hash": "f6cbfbec65d5e18ab2190c6be9f5df5835614f309e0905d7bd9f165b18bac4ca",
+          "modified": "2026-08-29T18:45:01.472945+00:00"
+        },
+        "cards/datacards/yaegir-warrior-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-warrior-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.476456+00:00"
+        },
+        "cards/datacards/yaegir-warrior-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/yaegir-warrior-front.jpg",
+          "hash": "346777ceabe5140ca00684ee1c30ea62ff72866497b799b3dea72bc41916e063",
+          "modified": "2026-08-29T18:45:01.480469+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-firestorm-bolt-shells-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-firestorm-bolt-shells-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.485979+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-firestorm-bolt-shells-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-firestorm-bolt-shells-front.jpg",
+          "hash": "02d04d2d88594b6320ed2afe4b5f64c3283923d3fe8e556991ff73d0fbd2a82e",
+          "modified": "2026-08-29T18:45:01.488485+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-kv-ceramide-undersuit-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-kv-ceramide-undersuit-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.490491+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-kv-ceramide-undersuit-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-kv-ceramide-undersuit-front.jpg",
+          "hash": "c146c8741fe0718d159b00672f3fa82b233634ee84de90fe0321265d2700ef56",
+          "modified": "2026-08-29T18:45:01.493993+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-plasma-knives-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-plasma-knives-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.494997+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-plasma-knives-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-plasma-knives-front.jpg",
+          "hash": "3334514c0e76ddf583799af2bfa7d332bc79727b07e0f51532c85441ec0acbc7",
+          "modified": "2026-08-29T18:45:01.501510+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-stabilised-bolt-shells-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-stabilised-bolt-shells-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.506200+00:00"
+        },
+        "cards/equipment/hernkyn-yaegirs-stabilised-bolt-shells-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-stabilised-bolt-shells-front.jpg",
+          "hash": "73fa23c982e1444f9e5a489b7b3ab1ee8c9094fb0f53557b990d131f771f5b20",
+          "modified": "2026-08-29T18:45:01.517851+00:00"
+        },
+        "cards/faction_rules/hernkyn-yaegirs-dauntless-explorers-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-dauntless-explorers-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.523369+00:00"
+        },
+        "cards/faction_rules/hernkyn-yaegirs-dauntless-explorers-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-dauntless-explorers-front.jpg",
+          "hash": "114dca1fb68f2880fa80809237b8b0c83cfbb10259bb2ef4a7e805abfde9fcc2",
+          "modified": "2026-08-29T18:45:01.532236+00:00"
+        },
+        "cards/faction_rules/hernkyn-yaegirs-resourceful-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-resourceful-back.jpg",
+          "hash": "717682674b999434bb511240ac90161ae720705f6a4bb91b33d0d4cccd6d1513",
+          "modified": "2026-08-29T18:45:01.536759+00:00"
+        },
+        "cards/faction_rules/hernkyn-yaegirs-resourceful-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-resourceful-front.jpg",
+          "hash": "25c62fa3ae78558f2e1370306bb0a848aef4040fdfa3962369b621e447918293",
+          "modified": "2026-08-29T18:45:01.539786+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-bonds-that-bind-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-bonds-that-bind-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.542291+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-bonds-that-bind-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-bonds-that-bind-front.jpg",
+          "hash": "a53551270479ddbdf7a239db57c2790a49a8eb6cfceca09404b0cbdf654b9045",
+          "modified": "2026-08-29T18:45:01.546296+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-no-kin-left-behind-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-no-kin-left-behind-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.549432+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-no-kin-left-behind-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-no-kin-left-behind-front.jpg",
+          "hash": "483e8a37247aa891e3a458000f1683f9bd4fa8a31cd4a4fde262b24be656199a",
+          "modified": "2026-08-29T18:45:01.554447+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-stalwart-defence-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-stalwart-defence-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.558991+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-stalwart-defence-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-stalwart-defence-front.jpg",
+          "hash": "b93af3adf179fb11bb63ddb78f1f0afed9eb70c05c5399c1167e30e19e35cb1d",
+          "modified": "2026-08-29T18:45:01.566556+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-sturdy-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-sturdy-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.570098+00:00"
+        },
+        "cards/firefight_ploys/hernkyn-yaegirs-sturdy-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-sturdy-front.jpg",
+          "hash": "69c94bb36add194bd0954f44fa218a00d540b842363c8b8d1d4a487d9d9df939",
+          "modified": "2026-08-29T18:45:01.571098+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.573044+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-front.jpg",
+          "hash": "2eecea0d3f9ea55e7f6bc73abee0bd3aa696dd05a304e75e089cefd711b979d6",
+          "modified": "2026-08-29T18:45:15.733107+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-hidden-engagement-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-hidden-engagement-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:15.735614+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-hidden-engagement-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-hidden-engagement-front.jpg",
+          "hash": "e22f355e14f290070098864ecfade81cae9cf1f4e6aedc21f49e198295d9ded3",
+          "modified": "2026-08-29T18:45:15.742162+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-in-position-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-in-position-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:15.745178+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-in-position-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-in-position-front.jpg",
+          "hash": "c667289e0580c32853394605b3c2206c6b4854d25e9ed5a48fc866050af76cdc",
+          "modified": "2026-08-29T18:45:15.750745+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-masterful-bladework-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-masterful-bladework-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:15.754759+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-masterful-bladework-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-masterful-bladework-front.jpg",
+          "hash": "6a44c7d464682dcf94c69912e58a776d187e8186e30e5f779e3a179a95e0d3a8",
+          "modified": "2026-08-29T18:45:16.301105+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-tough-survivalists-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-tough-survivalists-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:16.826937+00:00"
+        },
+        "cards/strategy_ploys/hernkyn-yaegirs-tough-survivalists-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-tough-survivalists-front.jpg",
+          "hash": "6af0d9b4d77caa34a1cd1ab5c9c100cde2166a73596f75a0be82c563e0921c22",
+          "modified": "2026-08-29T18:45:19.456660+00:00"
+        },
+        "cards/token_guide/hernkyn-yaegirs-token-guide-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/token_guide/hernkyn-yaegirs-token-guide-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:19.994321+00:00"
+        },
+        "cards/token_guide/hernkyn-yaegirs-token-guide-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/token_guide/hernkyn-yaegirs-token-guide-front.jpg",
+          "hash": "4ac1279d43b8105602deea4ddd3a86d22ea0d19df27576a31bf0920b5a2161b6",
+          "modified": "2026-08-29T18:45:22.106643+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.203560+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "ef7907ea34b9469a624cc2061e93e7c18cbc78ed194aa0ef211b541aea38729a",
+          "modified": "2026-08-29T18:45:01.213067+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.219596+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "5e348436759ba8ae93247b535fa213fe34d0d1f7b035dace69ca8087e6f132c6",
+          "modified": "2026-08-29T18:45:01.229139+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.236618+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "454e301cd9c30476959f2364fd873ed89442a6b67568c58e9640a2ee0f047610",
+          "modified": "2026-08-29T18:45:01.247679+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.257729+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "e9d0bc0b2942a8da79971f6984c8a120dfa68c1fa3e22ab6e07184d6ab0254d0",
+          "modified": "2026-08-29T18:45:01.274242+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.282336+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "e1f79da8fe241412ab7a0ea1b5fc0dd8ea316a337934d58ab40651cd32637dec",
+          "modified": "2026-08-29T18:45:01.294700+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.306296+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "fd37fb2bbb0560014613e7df0135ce1ecaa5d6704ff2e6fa57eccde206297798",
+          "modified": "2026-08-29T18:45:01.320626+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.330674+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "6960ca71df08991dbf0d57920f0db3db05cb1ff4450772523dd8e71e6d59bc3d",
+          "modified": "2026-08-29T18:45:01.396624+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+          "modified": "2026-08-29T18:45:01.406262+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "f831879ee00cf4562f6a46ed2db4f45146a590fcf09e33aaa2e339ce71434b53",
+          "modified": "2026-08-29T18:45:01.420993+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card1-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card1-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.583072+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card1-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card1-front.jpg",
+          "hash": "49bc7b61dbe7045283c8ff8165ef39c272120e13171361d54d6ee47d5c9ffebb",
+          "modified": "2026-08-29T18:45:01.595156+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card10-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card10-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.606241+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card10-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card10-front.jpg",
+          "hash": "f42cdbf926a004cade71cb2eb858b2f7d61c835a5206f9a465e94ad20fc8b6bf",
+          "modified": "2026-08-29T18:45:01.620437+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card11-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card11-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.629973+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card11-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card11-front.jpg",
+          "hash": "a8443e3f4467969fd72b9083c1acfbb0a4c30706148f4b054023e89052571335",
+          "modified": "2026-08-29T18:45:01.645545+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card12-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card12-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.656633+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card12-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card12-front.jpg",
+          "hash": "be9c05ec671966d2b7327e88250ab235fd84ba71fc83bce95eec9468f4de9a0c",
+          "modified": "2026-08-29T18:45:01.669786+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card13-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card13-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.678918+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card13-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card13-front.jpg",
+          "hash": "35b92553e0e716e2f6df40121f4605b623287015047450e688ddc199edea432a",
+          "modified": "2026-08-29T18:45:01.686944+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card14-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card14-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:01.694629+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card14-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card14-front.jpg",
+          "hash": "1e3cfa1f939d66a0d542fd735d44472606dcba36ac4e4875253d63b35ca66743",
+          "modified": "2026-08-29T18:45:02.380181+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card15-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card15-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:02.724682+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card15-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card15-front.jpg",
+          "hash": "c2468248741ef98d6be1f4263fb12c506488e31198043560516c402115546bb2",
+          "modified": "2026-08-29T18:45:02.738936+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card16-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card16-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:02.750126+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card16-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card16-front.jpg",
+          "hash": "3d048d9da2447263e6044862590e5319caf810711dce42b07fe6b34fb209391a",
+          "modified": "2026-08-29T18:45:03.435622+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card17-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card17-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:03.444732+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card17-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card17-front.jpg",
+          "hash": "220579a8b60d7e1c5e1d2754d208ef97b98a5e175a20a031e784fa1ce85489a2",
+          "modified": "2026-08-29T18:45:04.133897+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card2-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card2-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:04.520890+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card2-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card2-front.jpg",
+          "hash": "976ccd5f1a6b7e5fb676ff36c50219b60d46f1e6a20bb14ff570f71f461b5e3f",
+          "modified": "2026-08-29T18:45:05.237893+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card3-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card3-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:06.014106+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card3-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card3-front.jpg",
+          "hash": "2922a4618f7b60cdde6c2f7514432f5e0384bd727c9a5d41ac02965d403f4b3d",
+          "modified": "2026-08-29T18:45:07.004593+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card4-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card4-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:07.808991+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card4-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card4-front.jpg",
+          "hash": "e9b65d851e5d1bdaed71c5462cff24697859a55b41024fe8abf852a712e1dccd",
+          "modified": "2026-08-29T18:45:08.922046+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card5-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card5-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:09.383909+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card5-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card5-front.jpg",
+          "hash": "4b2c1cc57ea1de5d95a2924c823191e3ba1dfb81f65db4aeba0fc3bacaa471a7",
+          "modified": "2026-08-29T18:45:10.686282+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card6-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card6-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:11.467878+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card6-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card6-front.jpg",
+          "hash": "4ef3b44d99a6c6677da07ff2464114ed2ad24e626f9ff4212977bfdc422b8841",
+          "modified": "2026-08-29T18:45:12.628198+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card7-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card7-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:13.129538+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card7-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card7-front.jpg",
+          "hash": "0def475549f62eea2c3ec5d656ef2af473ba8739ba319c1898de3d500ca311a2",
+          "modified": "2026-08-29T18:45:14.295638+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card8-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card8-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:15.057691+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card8-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card8-front.jpg",
+          "hash": "29baed391c9e9f75b42cf71e9ca3134b4f5053d896098094dc4e585545c83720",
+          "modified": "2026-08-29T18:45:15.538076+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card9-back.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card9-back.jpg",
+          "hash": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+          "modified": "2026-08-29T18:45:15.633550+00:00"
+        },
+        "cards/operatives_selection/hernkyn-yaegirs-operative-selection-card9-front.jpg": {
+          "path": "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card9-front.jpg",
+          "hash": "fc72cd99f0d5896475a4d122a71ce7455055c89b99811f2774add33001eaa5f5",
+          "modified": "2026-08-29T18:45:15.725535+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:45:46.744155+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/manifest.json": "b770132814c68276f5dd6c64fd16d1061ad6d8671823eec68f44aca5485b40ba",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "c835eedbd7030e8085acdf9e446de1088d40f8483ef3aa16a59edfff08bbee66",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "5b57abafd3763b31ec485bc5e87c4855a57e27407845dc60d3358866b1b61354",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "fab7b6b2b7fd7aab56fe1422df814c5f79b023c432dd6ce9242023aac47e3bf0",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "8eb135a9f798330af6602060d3c925c80574b7f6b56a7e9cbee61806189b7a01",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "15035bea1d0401457db7150c783e9fa9756b197a61b6f729fc506ee1354d64ee",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "61f2e597cda38cafd20042b38f7377691a683a3d02ebb2457fa45179a8ca735d",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "33cf252f00edebf0c46489bdc686611a285ca3d31fe0e1a83129618f99d1885b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "de9031612096a14a949508bc02fdfd25ae119c7da538931b8ac71fce259a5ab7",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bladekyn.pdf": "5f6fc38d56af90fa7437023868f032057744beadeb0c46e148c726a318f50be7",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bombast.pdf": "afc5ea56798d6a489a11baebbf6efe5c800a707b61663c75756c1552b6532801",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-gunner.pdf": "5eb01651931b905c310efa43beb442e4455963831b0b4e730f19d0a4a70db226",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-ironbraek.pdf": "fbd5574a8ab024472b5da7265aab57a9de1f64c909e8779ec97c1b1cc7ace466",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-riflekyn.pdf": "3f662c26953a45939be8ae66fcddd37b72a6742599562de079e4a54bdb2ffc53",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-theyn.pdf": "a6a16f18f3f8c1701464b2e240191fa603f1ee694673a24d8b1ee687797da456",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-tracker.pdf": "93b3ded537c46a550e39cfdcce1ed0537ad09cacb0371471fd15402142501c14",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-warrior.pdf": "5b23c5d51de53eea164dbb566b060ca6d598dcbf5ce255e0e737dc30bb43be13",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-firestorm-bolt-shells.pdf": "23c64c61965886340cc552aae051a6dfe56985c7b796eaf19a6c358b6441915e",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-kv-ceramide-undersuit.pdf": "3cf80e68b83a57039b7755b1345c8cf5c11b445ec2fee2025291885118490d8b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-plasma-knives.pdf": "1a8351d9466d7e4e6714382f36ad19792d6c299a6617610ad566de681aa6709f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-stabilised-bolt-shells.pdf": "d73e52705c05670f0b33ce267856f0010e2844936239b6384d6deedf3a1e76cf",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-dauntless-explorers.pdf": "312665408eb73ec95034438c7289ffcfef646f7adf13451628cf3520bd7cd18d",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-resourceful.pdf": "9e12c4944c9dcda985b7c1a5445e2f3a421b1987417eb888c2106071645f3334",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-bonds-that-bind.pdf": "39fcab0df12233b3421070642feb822e88f6ecc9346c7c1a99c83e533232c7b3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-no-kin-left-behind.pdf": "e6e76dce678d26936df3019c47149c36a3ef11f71ffb4301c207434adbb0e032",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-stalwart-defence.pdf": "9dff6f7ed2c225929edb086a248db3ea102423902a9257a9e6e242fa83a4ff86",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-sturdy.pdf": "8860ed60be812ec5b256597dca2784ed1254cae710e27a7b713abe3fa268c48f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-1.pdf": "fa56f8c950e430b35229d5b16b52072c01bd739947d498bc45dc955ee82f6d08",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-10.pdf": "8ddd229686caf9fbe1f0ed18fce6862f242897cc5aae9332bf6cecb81f1939df",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-11.pdf": "0a2946a3407fed39565ade77ec231bd323b5c6dfb6b2b5510793e5d11fc70e11",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-12.pdf": "61fe9ac909c9156011d548ece5c812742aa4dee2e5d1882422714eda64f5d4da",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-13.pdf": "832182af6bae09cf8b648349b808e711a460842e14e94ce475270551a264dabc",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-14.pdf": "2804588d8a566a0d2599179d937d0cc1f3e74a749c3faf37c73bf8e54afbeb60",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-15.pdf": "534756de084f86a790eb3e7f5ec486cdf998014a347f1032bb7daa40f9c21c41",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-16.pdf": "e0ee2c4a475ed151206e4ef83956e3c6ed51099d8b9f0f8897a07a03f4eee33b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-17.pdf": "6b02a863fe872b35b927c1bde6c0e02912644828e6ef79baf1a4fa2743dc7a73",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-2.pdf": "3b882768eda5f3e9b15ab58854b8a28d17216b4b2871339af103d41e2328c3ee",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-3.pdf": "54317482ef33b91314cca5df86040ed3cf9108d7af785621a3161cbcfbe7d0ec",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-4.pdf": "05672d96113ede18b4924f0fcc65ac4891255a6adbfba995b753137a469c2317",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-5.pdf": "65f8628e31c501c39094a375dcdccc8adc425b338ea07cfb779f5d8a50ba0be6",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-6.pdf": "59a77bac23f1ad904029a68aac6d96148492fb029eff0a38217da6f380ea666f",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-7.pdf": "e342dafd538e6136dda3d7518bb8f4ee777541f9d41b408107fa0db31da7de8a",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-8.pdf": "73c0ab456b19ae930777600db494eb2a661d631ff4a02de39dcacaa40ec5dd11",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-9.pdf": "cd68b6d303726a91ec57e11b64d563bc9cd717f4fad92452c69e289d16d4f5be",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection.pdf": "02d38afefb58fc041247df09e1e5029a34899aacd5aea8ebbf170c367a2ec3f3",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-hidden-engagement.pdf": "f46ca404cf9cddd5dd8b409c51e071b67a18d1f7dfebfc77d4b8ca19766cd0f8",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-in-position.pdf": "f92b37538e155109fc3084034860c63c72ea78e024565e412bc2e8b1e7de7f6b",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-masterful-bladework.pdf": "f314c9166e95e289d8a2bf2e956388e6141dc6a782441f524f0e01f25cc6078a",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-tough-survivalists.pdf": "7d0e3794a5bb674ae71a413741d9a57382788706dcdc54fc0a36b9a9d259ea62",
+        "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-token-guide-token-guide.pdf": "02c24e40ba404efe8585c2b5161260943c2c88c46c5e5ec49961ed0985fa6062",
+        "layers/integration/hernkyn-yaegirs/card-backside/hernkyn-yaegirs-backside-portrait.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/hernkyn-yaegirs/card-backside/hernkyn-yaegirs-backside-landscape.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/hernkyn-yaegirs/data/hernkyn-yaegirs-team-data.json",
+          "hash": "3fadd988359a153516ac5f27fd61a2a33efa8fba60e41f2bc024e090992288c8",
+          "modified": "2026-08-29T18:45:46.835998+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:45:46.835998+00:00",
+      "inputs": {
+        "layers/integration/hernkyn-yaegirs/content/hernkyn-yaegirs-content.json": "3fadd988359a153516ac5f27fd61a2a33efa8fba60e41f2bc024e090992288c8"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Hernkyn Yaegirs Box.json": {
+          "path": "output/hernkyn-yaegirs/tts_objects/Hernkyn Yaegirs Box.json",
+          "hash": "7392a3bbcc0452520ce0a4ed30b0544951361b1c962f74becfe47b92d24d7c54",
+          "modified": "2026-07-21T11:11:12.884928+00:00"
+        },
+        "tts_objects/Hernkyn Yaegirs.json": {
+          "path": "output/hernkyn-yaegirs/tts_objects/Hernkyn Yaegirs.json",
+          "hash": "e98704fa098d569f7b3dff6c53d60f6d06635b464333d6c02a0fdce417eb2d7b",
+          "modified": "2026-08-29T18:53:38.637761+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:38.737657+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "ef7907ea34b9469a624cc2061e93e7c18cbc78ed194aa0ef211b541aea38729a",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "5e348436759ba8ae93247b535fa213fe34d0d1f7b035dace69ca8087e6f132c6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "454e301cd9c30476959f2364fd873ed89442a6b67568c58e9640a2ee0f047610",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "e9d0bc0b2942a8da79971f6984c8a120dfa68c1fa3e22ab6e07184d6ab0254d0",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "e1f79da8fe241412ab7a0ea1b5fc0dd8ea316a337934d58ab40651cd32637dec",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "fd37fb2bbb0560014613e7df0135ce1ecaa5d6704ff2e6fa57eccde206297798",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "6960ca71df08991dbf0d57920f0db3db05cb1ff4450772523dd8e71e6d59bc3d",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "f831879ee00cf4562f6a46ed2db4f45146a590fcf09e33aaa2e339ce71434b53",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-bladekyn-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-bladekyn-front.jpg": "4212e795fe29e590756871192705ab0f1028bdf793f66f0da0b336f524b2f1ba",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-bombast-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-bombast-front.jpg": "8bec643542b0517bf9b258c14f45b6668bbe55dd352f10e1fa5dc89af15da722",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-gunner-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-gunner-front.jpg": "e17ff87a3a35fbb0e6064adcb49bca219ef6273120eef629a2381c5da366f6ec",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-ironbraek-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-ironbraek-front.jpg": "5797c2be8380ce6f465d021518480102201caee54c25882beed78b966380232a",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-riflekyn-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-riflekyn-front.jpg": "5edf14e725aa5f3e57e6e9a562c3d33d06b89bf248551b8b62c3d92e6a1215f0",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-theyn-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-theyn-front.jpg": "4ce5444afc7da5aa9dc892e03e8c9944693c3fad4331a1c87da2023048e09bdd",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-tracker-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-tracker-front.jpg": "f6cbfbec65d5e18ab2190c6be9f5df5835614f309e0905d7bd9f165b18bac4ca",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-warrior-back.jpg": "1bc927936a9e2c9d0099603b484123d37b971e1eab0d79532fb24f892cf6e0a6",
+        "output/hernkyn-yaegirs/cards/datacards/yaegir-warrior-front.jpg": "346777ceabe5140ca00684ee1c30ea62ff72866497b799b3dea72bc41916e063",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-firestorm-bolt-shells-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-firestorm-bolt-shells-front.jpg": "02d04d2d88594b6320ed2afe4b5f64c3283923d3fe8e556991ff73d0fbd2a82e",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-kv-ceramide-undersuit-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-kv-ceramide-undersuit-front.jpg": "c146c8741fe0718d159b00672f3fa82b233634ee84de90fe0321265d2700ef56",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-plasma-knives-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-plasma-knives-front.jpg": "3334514c0e76ddf583799af2bfa7d332bc79727b07e0f51532c85441ec0acbc7",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-stabilised-bolt-shells-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-stabilised-bolt-shells-front.jpg": "73fa23c982e1444f9e5a489b7b3ab1ee8c9094fb0f53557b990d131f771f5b20",
+        "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-dauntless-explorers-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-dauntless-explorers-front.jpg": "114dca1fb68f2880fa80809237b8b0c83cfbb10259bb2ef4a7e805abfde9fcc2",
+        "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-resourceful-back.jpg": "717682674b999434bb511240ac90161ae720705f6a4bb91b33d0d4cccd6d1513",
+        "output/hernkyn-yaegirs/cards/faction_rules/hernkyn-yaegirs-resourceful-front.jpg": "25c62fa3ae78558f2e1370306bb0a848aef4040fdfa3962369b621e447918293",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-bonds-that-bind-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-bonds-that-bind-front.jpg": "a53551270479ddbdf7a239db57c2790a49a8eb6cfceca09404b0cbdf654b9045",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-no-kin-left-behind-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-no-kin-left-behind-front.jpg": "483e8a37247aa891e3a458000f1683f9bd4fa8a31cd4a4fde262b24be656199a",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-stalwart-defence-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-stalwart-defence-front.jpg": "b93af3adf179fb11bb63ddb78f1f0afed9eb70c05c5399c1167e30e19e35cb1d",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-sturdy-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/firefight_ploys/hernkyn-yaegirs-sturdy-front.jpg": "69c94bb36add194bd0954f44fa218a00d540b842363c8b8d1d4a487d9d9df939",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card1-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card1-front.jpg": "49bc7b61dbe7045283c8ff8165ef39c272120e13171361d54d6ee47d5c9ffebb",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card10-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card10-front.jpg": "f42cdbf926a004cade71cb2eb858b2f7d61c835a5206f9a465e94ad20fc8b6bf",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card11-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card11-front.jpg": "a8443e3f4467969fd72b9083c1acfbb0a4c30706148f4b054023e89052571335",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card12-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card12-front.jpg": "be9c05ec671966d2b7327e88250ab235fd84ba71fc83bce95eec9468f4de9a0c",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card13-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card13-front.jpg": "35b92553e0e716e2f6df40121f4605b623287015047450e688ddc199edea432a",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card14-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card14-front.jpg": "1e3cfa1f939d66a0d542fd735d44472606dcba36ac4e4875253d63b35ca66743",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card15-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card15-front.jpg": "c2468248741ef98d6be1f4263fb12c506488e31198043560516c402115546bb2",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card16-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card16-front.jpg": "3d048d9da2447263e6044862590e5319caf810711dce42b07fe6b34fb209391a",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card17-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card17-front.jpg": "220579a8b60d7e1c5e1d2754d208ef97b98a5e175a20a031e784fa1ce85489a2",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card2-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card2-front.jpg": "976ccd5f1a6b7e5fb676ff36c50219b60d46f1e6a20bb14ff570f71f461b5e3f",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card3-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card3-front.jpg": "2922a4618f7b60cdde6c2f7514432f5e0384bd727c9a5d41ac02965d403f4b3d",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card4-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card4-front.jpg": "e9b65d851e5d1bdaed71c5462cff24697859a55b41024fe8abf852a712e1dccd",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card5-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card5-front.jpg": "4b2c1cc57ea1de5d95a2924c823191e3ba1dfb81f65db4aeba0fc3bacaa471a7",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card6-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card6-front.jpg": "4ef3b44d99a6c6677da07ff2464114ed2ad24e626f9ff4212977bfdc422b8841",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card7-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card7-front.jpg": "0def475549f62eea2c3ec5d656ef2af473ba8739ba319c1898de3d500ca311a2",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card8-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card8-front.jpg": "29baed391c9e9f75b42cf71e9ca3134b4f5053d896098094dc4e585545c83720",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card9-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-card9-front.jpg": "fc72cd99f0d5896475a4d122a71ce7455055c89b99811f2774add33001eaa5f5",
+        "output/hernkyn-yaegirs/cards/operatives_selection/hernkyn-yaegirs-operative-selection-front.jpg": "2eecea0d3f9ea55e7f6bc73abee0bd3aa696dd05a304e75e089cefd711b979d6",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-hidden-engagement-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-hidden-engagement-front.jpg": "e22f355e14f290070098864ecfade81cae9cf1f4e6aedc21f49e198295d9ded3",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-in-position-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-in-position-front.jpg": "c667289e0580c32853394605b3c2206c6b4854d25e9ed5a48fc866050af76cdc",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-masterful-bladework-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-masterful-bladework-front.jpg": "6a44c7d464682dcf94c69912e58a776d187e8186e30e5f779e3a179a95e0d3a8",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-tough-survivalists-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/strategy_ploys/hernkyn-yaegirs-tough-survivalists-front.jpg": "6af0d9b4d77caa34a1cd1ab5c9c100cde2166a73596f75a0be82c563e0921c22",
+        "output/hernkyn-yaegirs/cards/token_guide/hernkyn-yaegirs-token-guide-back.jpg": "5f10d52048b17e07bc68c23e662f8a07daf13689d9732bf41252a8420ea1d1f9",
+        "output/hernkyn-yaegirs/cards/token_guide/hernkyn-yaegirs-token-guide-front.jpg": "4ac1279d43b8105602deea4ddd3a86d22ea0d19df27576a31bf0920b5a2161b6",
+        "output/hernkyn-yaegirs/cardbox/hernkyn-yaegirs-card-box-texture.jpg": "d244bb8fd851c3b793f217873fdcaa0632456c4b417fbed7ac63a7c41e463af2",
+        "output/hernkyn-yaegirs/cardbox/hernkyn-yaegirs-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-fallen-kin.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-fallen-kin.png": "400d62706e8462ba5715790f542c39f334ba2ff0ee52bc4ad5d36f2cd10bf185",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-firestorm-bolt-shells.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-firestorm-bolt-shells.png": "4998c82cf140d61ed4746c74891a3fafe24a099b3d31f902127834e7fc7aeb50",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-outright-conviction.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-outright-conviction.png": "6c7ddcfb5d1ce09310285fc575bcbb6bf854ead5d38d59bc10ecf21eab6abb96",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-resourceful-points.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-resourceful-points.png": "d7e14c7f0f3cbcd605a99cee83a29ac55d36ed528bd4aa0aa529e5e027eed16a",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-stabilised-bolt-shells.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-stabilised-bolt-shells.png": "262ac49c092a541d803cd1aff3fe366d833aa4ce463a1b292ebfb8a378d48227",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-hatchet.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-hatchet.png": "485de8738409535f5f375dbf6d091d46dec459fccb87b47d20aaf0590fc3de46",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-plasma-knife.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/hernkyn-yaegirs-throwing-plasma-knife.png": "f2f7f11575f622f50657ddf340e50d1c1dd13d584102fa3505ffbde4d2ad209b",
+        "output/hernkyn-yaegirs/tokens/tiles/blank-back.png": "9ca9d7c4cb93965997d62ff2b7b1b9ecdc824cef0476f434312acfab68d8d851",
+        "output/hernkyn-yaegirs/tokens/tiles/hy-pex-back.png": "6b7c286613a59ae8fe04a6ec33dbb284880728d4c4aa6255729a3df4cc9a4b49",
+        "output/hernkyn-yaegirs/tokens/tiles/minefield-front.png": "856b6415b123ac8151609913576cf424ee19433d8abee3ca7819436289b9f37d",
+        "output/hernkyn-yaegirs/tokens/tiles/tile-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/hernkyn-yaegirs/tokens/tokenbag/hernkyn-yaegirs-token-bag-icon.png": "57b16e680cfccc67d4d40a339a81427cbd70d7c5b72d9eb06d2793081eb61060",
+        "output/hernkyn-yaegirs/tokens/tokenbag/hernkyn-yaegirs-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/hernkyn-yaegirs/dice/hernkyn-yaegirs-dice-dark.jpg": "9476f471334b95f4f0fe15faefdf715ea3fa89d6b029cab1acc4002366700fb6",
+        "output/hernkyn-yaegirs/dice/hernkyn-yaegirs-dice-light.jpg": "b1951a8a65d447fb74b6fba2be72487a40ac39d0f8e1b78d28800fd6b4192599",
+        "output/hernkyn-yaegirs/dice/hernkyn-yaegirs-dice-team.jpg": "4d38d5d0850f7c45e34fc0166fd726d5255c8f50a6562b1eb1d0c96a74c5045e",
+        "output/hernkyn-yaegirs/data/hernkyn-yaegirs-team-data.json": "3fadd988359a153516ac5f27fd61a2a33efa8fba60e41f2bc024e090992288c8",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "equipment": {
+          "hash": "022c30fa274a0e7856263ba0b9f602cc601089a603c1655b904e9b1b67ef98fb",
+          "outputs": [
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-equipment-page_0.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-equipment-page_1.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-equipment-page_2.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/equipment/hernkyn-yaegirs-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:07:06.219591+00:00"
+        },
+        "faction-rules": {
+          "hash": "1091d2fca0e71ebbdfa6d203fcdbe7f2f4ac3eef8a2e43e0f3e499062ba93a12",
+          "outputs": [
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/faction-rules/hernkyn-yaegirs-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/faction-rules/hernkyn-yaegirs-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/faction-rules/hernkyn-yaegirs-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/faction-rules/hernkyn-yaegirs-faction-rules-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:07:22.335212+00:00"
+        },
+        "datacards": {
+          "hash": "9c217be0b5be687fd188cb15b10719e6b41eb4d5845fa474c1a0d10f74ab8815",
+          "outputs": [
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_0.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_1.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_2.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_3.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_4.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_5.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_6.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/datacards/hernkyn-yaegirs-datacards-page_7.pdf"
+          ],
+          "modified": "2026-07-06T16:08:57.088990+00:00"
+        },
+        "operatives-selection": {
+          "hash": "a8908464bfd9ad2fb6aa8719000706a5e0b39ccae9bebcea90a660d9a246a4e4",
+          "outputs": [
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/operatives-selection/hernkyn-yaegirs-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:10:19.451138+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "9d106f7871687df54e8e4d352cdf946ec64310acae8a3618815282f01c15fd5b",
+          "outputs": [
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/strategy-ploys/hernkyn-yaegirs-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/strategy-ploys/hernkyn-yaegirs-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/strategy-ploys/hernkyn-yaegirs-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/strategy-ploys/hernkyn-yaegirs-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:10:54.674484+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "f7ac895ce77d0108cf60230e8f4c7a782b88150df0e9b5858a9a93b051fbd4dc",
+          "outputs": [
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/firefight-ploys/hernkyn-yaegirs-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/firefight-ploys/hernkyn-yaegirs-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/firefight-ploys/hernkyn-yaegirs-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/hernkyn-yaegirs/cards/firefight-ploys/hernkyn-yaegirs-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:10:59.379117+00:00"
+        },
+        "cards": {
+          "hash": "6e8f6fec1a1b7205f76d9f7743dbd9c727207371dbad80e38db22ea3b47a9bf0",
+          "outputs": [
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card1_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card2_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card3_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card4_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:13:45.657885+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:13:45.657885+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/hernkyn-yaegirs-structure.json",
+          "hash": "b770132814c68276f5dd6c64fd16d1061ad6d8671823eec68f44aca5485b40ba",
+          "modified": "2026-08-29T18:44:07.792234+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card1_landscape.pdf": "1b5ad53c8bf846b3dba07361775b90530d80519e207e980f6ec7f0b2a613439c",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card2_landscape.pdf": "7a7f37f13c765e68cd4f2d69013c9d0ac1a9761d0bfc1fa653871b386bd8ffb4",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card3_landscape.pdf": "c7048e9f38aa651060f570677a46b310c82324acefb3b4fb38ea164a325742d4",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card4_landscape.pdf": "6bf872735261c8271732661a8e77d98459b395b69ade120f33040ab19677a863",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card1_landscape.pdf": "3c563051982f690554bf0d4c1c90aea8a155a29fd435a9558d37936a0271c62e",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card2_landscape.pdf": "187112f93d76c230241e2c509cb029e33efe0a84ad9fe9165000ffa8301fd3fb",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card3_landscape.pdf": "6defb2ef1bb9dec9d08afa49bc223bfb56bdf3dfe667a320c32268ef076a6c8d",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card4_landscape.pdf": "89384253bd8c39683b4a907d415e49de54fe0a9ffac7240d9169d7df997ccdaf",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card1_portrait.pdf": "dd31f9c629bc12f0be66153517e9f9a951cdd2de272188a0f026a6f075fac14f",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card2_portrait.pdf": "380fcaa6b9c1902fa423dcae641d76df72daa7bbd28d18121a6c20137d4fb8ad",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card3_portrait.pdf": "b2f49c4787031ec81b0ce8214310c83391edd8922f8ad4f7e71dc75a66b7f77a",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card4_portrait.pdf": "783467765b70dafc2c77060bcc0dcebad76e7a0e905d4f0195084db4e206969d",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card1_portrait.pdf": "0a1e5f65a135b8665cd28b4e2024cad10da626e5f7e35cca72f0bff4c80e395a",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card2_portrait.pdf": "ede8c09eedcd946fc191c44a57ae06a3ae070db320fa922543f5e94b7a3d419d",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card3_portrait.pdf": "d93367117899af9890ab7330da148f6832146dae7bc444ef53cb7121f21f035c",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card4_portrait.pdf": "064a521f469351c29798c4d1fb5c67466b305ee0dd8f133c2f52a43e64526e1a",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card1_portrait.pdf": "ed9ca95317b457277af06673633c664e89d1fd31276e007cb1679e443be39bbd",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card2_portrait.pdf": "ebf4af7e3d60d80291c1d09dff4e5afe2b27fa73b8d5f92e071750a1a8153cac",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card3_portrait.pdf": "2e8057eb88af6ad24c3e3792b8486e0c0c2a43a61866f420bfee15cb15e91df7",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card4_portrait.pdf": "c4d31caf090dc85211e73db5b50394776562a5b1595a09f671a9f41cda88d9e2",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card1_portrait.pdf": "1a9c7ab7801def2b4466c6c95ff82c0d1e89c1a5da2c742c48d46eb9d1e62324",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card2_portrait.pdf": "aacecb0a924cc98ced40879a0dfb0cc9143151ea9e71ea0c658182fb8472319f",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card3_portrait.pdf": "7ea569d6babc418b5247e649804e06ab41344945cd4e0cb1f19f2a1634288f29",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card4_portrait.pdf": "4aa760f201a1fb9d6db21edc4d853dfe6cbbc77f6e53ab1a7873a37d2843f4b7",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card1_portrait.pdf": "28cee871ce42e19dbc8012cd5235a03917a6efa63fabd7f0cfed04d4bde6a338",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card2_portrait.pdf": "a7eb1f18a011dd2b8adce725d5bc28d87c21fe9493ac7f00ad44a9a6a0c279d9",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card3_portrait.pdf": "b7f75b6e1cc69fc582775e8f7b93567e66c968be802ad0f69781f1d61c857978",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card4_portrait.pdf": "3a30138346a72266ca089f6a2b99a971d802aaca72a54d6bd1be852cb59d077f"
+      },
+      "completed": "2026-08-29T18:44:18.465650+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/hernkyn-yaegirs/manifest.json",
+          "hash": "b770132814c68276f5dd6c64fd16d1061ad6d8671823eec68f44aca5485b40ba",
+          "modified": "2026-08-29T18:44:27.555578+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-theyn.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-theyn.pdf",
+          "hash": "a6a16f18f3f8c1701464b2e240191fa603f1ee694673a24d8b1ee687797da456",
+          "modified": "2026-08-26T15:18:02.221464+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-bladekyn.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bladekyn.pdf",
+          "hash": "5f6fc38d56af90fa7437023868f032057744beadeb0c46e148c726a318f50be7",
+          "modified": "2026-08-26T15:18:02.223386+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-bombast.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-bombast.pdf",
+          "hash": "afc5ea56798d6a489a11baebbf6efe5c800a707b61663c75756c1552b6532801",
+          "modified": "2026-08-26T15:18:02.225158+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-gunner.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-gunner.pdf",
+          "hash": "5eb01651931b905c310efa43beb442e4455963831b0b4e730f19d0a4a70db226",
+          "modified": "2026-08-26T15:18:02.226918+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-ironbraek.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-ironbraek.pdf",
+          "hash": "fbd5574a8ab024472b5da7265aab57a9de1f64c909e8779ec97c1b1cc7ace466",
+          "modified": "2026-08-26T15:18:02.233699+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-riflekyn.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-riflekyn.pdf",
+          "hash": "3f662c26953a45939be8ae66fcddd37b72a6742599562de079e4a54bdb2ffc53",
+          "modified": "2026-08-26T15:18:02.237617+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-tracker.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-tracker.pdf",
+          "hash": "93b3ded537c46a550e39cfdcce1ed0537ad09cacb0371471fd15402142501c14",
+          "modified": "2026-08-26T15:18:02.240018+00:00"
+        },
+        "hernkyn-yaegirs-datacard-yaegir-warrior.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-yaegir-warrior.pdf",
+          "hash": "5b23c5d51de53eea164dbb566b060ca6d598dcbf5ce255e0e737dc30bb43be13",
+          "modified": "2026-08-26T15:18:02.243731+00:00"
+        },
+        "hernkyn-yaegirs-equipment-plasma-knives.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-plasma-knives.pdf",
+          "hash": "1a8351d9466d7e4e6714382f36ad19792d6c299a6617610ad566de681aa6709f",
+          "modified": "2026-08-26T15:18:02.245543+00:00"
+        },
+        "hernkyn-yaegirs-equipment-stabilised-bolt-shells.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-stabilised-bolt-shells.pdf",
+          "hash": "d73e52705c05670f0b33ce267856f0010e2844936239b6384d6deedf3a1e76cf",
+          "modified": "2026-08-26T15:18:02.249395+00:00"
+        },
+        "hernkyn-yaegirs-equipment-firestorm-bolt-shells.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-firestorm-bolt-shells.pdf",
+          "hash": "23c64c61965886340cc552aae051a6dfe56985c7b796eaf19a6c358b6441915e",
+          "modified": "2026-08-26T15:18:02.252376+00:00"
+        },
+        "hernkyn-yaegirs-equipment-kv-ceramide-undersuit.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-equipment-kv-ceramide-undersuit.pdf",
+          "hash": "3cf80e68b83a57039b7755b1345c8cf5c11b445ec2fee2025291885118490d8b",
+          "modified": "2026-08-26T15:18:02.254595+00:00"
+        },
+        "hernkyn-yaegirs-faction-rule-resourceful.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-resourceful.pdf",
+          "hash": "9e12c4944c9dcda985b7c1a5445e2f3a421b1987417eb888c2106071645f3334",
+          "modified": "2026-08-26T15:18:02.260773+00:00"
+        },
+        "hernkyn-yaegirs-faction-rule-dauntless-explorers.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-faction-rule-dauntless-explorers.pdf",
+          "hash": "312665408eb73ec95034438c7289ffcfef646f7adf13451628cf3520bd7cd18d",
+          "modified": "2026-08-26T15:18:02.264921+00:00"
+        },
+        "hernkyn-yaegirs-token-guide-token-guide.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-token-guide-token-guide.pdf",
+          "hash": "02c24e40ba404efe8585c2b5161260943c2c88c46c5e5ec49961ed0985fa6062",
+          "modified": "2026-08-26T15:18:02.268740+00:00"
+        },
+        "hernkyn-yaegirs-firefight-ploy-sturdy.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-sturdy.pdf",
+          "hash": "8860ed60be812ec5b256597dca2784ed1254cae710e27a7b713abe3fa268c48f",
+          "modified": "2026-08-26T15:18:02.272317+00:00"
+        },
+        "hernkyn-yaegirs-firefight-ploy-bonds-that-bind.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-bonds-that-bind.pdf",
+          "hash": "39fcab0df12233b3421070642feb822e88f6ecc9346c7c1a99c83e533232c7b3",
+          "modified": "2026-08-26T15:18:02.274030+00:00"
+        },
+        "hernkyn-yaegirs-firefight-ploy-no-kin-left-behind.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-no-kin-left-behind.pdf",
+          "hash": "e6e76dce678d26936df3019c47149c36a3ef11f71ffb4301c207434adbb0e032",
+          "modified": "2026-08-26T15:18:02.277042+00:00"
+        },
+        "hernkyn-yaegirs-firefight-ploy-stalwart-defence.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-firefight-ploy-stalwart-defence.pdf",
+          "hash": "9dff6f7ed2c225929edb086a248db3ea102423902a9257a9e6e242fa83a4ff86",
+          "modified": "2026-08-26T15:18:02.279871+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection.pdf",
+          "hash": "02d38afefb58fc041247df09e1e5029a34899aacd5aea8ebbf170c367a2ec3f3",
+          "modified": "2026-08-26T15:18:02.286214+00:00"
+        },
+        "hernkyn-yaegirs-strategy-ploy-hidden-engagement.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-hidden-engagement.pdf",
+          "hash": "f46ca404cf9cddd5dd8b409c51e071b67a18d1f7dfebfc77d4b8ca19766cd0f8",
+          "modified": "2026-08-26T15:18:02.289046+00:00"
+        },
+        "hernkyn-yaegirs-strategy-ploy-masterful-bladework.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-masterful-bladework.pdf",
+          "hash": "f314c9166e95e289d8a2bf2e956388e6141dc6a782441f524f0e01f25cc6078a",
+          "modified": "2026-08-26T15:18:02.292231+00:00"
+        },
+        "hernkyn-yaegirs-strategy-ploy-tough-survivalists.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-tough-survivalists.pdf",
+          "hash": "7d0e3794a5bb674ae71a413741d9a57382788706dcdc54fc0a36b9a9d259ea62",
+          "modified": "2026-08-26T15:18:02.295423+00:00"
+        },
+        "hernkyn-yaegirs-strategy-ploy-in-position.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-strategy-ploy-in-position.pdf",
+          "hash": "f92b37538e155109fc3084034860c63c72ea78e024565e412bc2e8b1e7de7f6b",
+          "modified": "2026-08-26T15:18:02.297332+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "c835eedbd7030e8085acdf9e446de1088d40f8483ef3aa16a59edfff08bbee66",
+          "modified": "2026-08-29T18:44:32.043832+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "5b57abafd3763b31ec485bc5e87c4855a57e27407845dc60d3358866b1b61354",
+          "modified": "2026-08-29T18:44:33.378383+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "fab7b6b2b7fd7aab56fe1422df814c5f79b023c432dd6ce9242023aac47e3bf0",
+          "modified": "2026-08-29T18:44:35.001233+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "8eb135a9f798330af6602060d3c925c80574b7f6b56a7e9cbee61806189b7a01",
+          "modified": "2026-08-29T18:44:35.027812+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "15035bea1d0401457db7150c783e9fa9756b197a61b6f729fc506ee1354d64ee",
+          "modified": "2026-08-29T18:44:35.039961+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "61f2e597cda38cafd20042b38f7377691a683a3d02ebb2457fa45179a8ca735d",
+          "modified": "2026-08-29T18:44:35.111358+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "33cf252f00edebf0c46489bdc686611a285ca3d31fe0e1a83129618f99d1885b",
+          "modified": "2026-08-29T18:44:35.160910+00:00"
+        },
+        "hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "de9031612096a14a949508bc02fdfd25ae119c7da538931b8ac71fce259a5ab7",
+          "modified": "2026-08-29T18:44:35.182178+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-1.pdf",
+          "hash": "fa56f8c950e430b35229d5b16b52072c01bd739947d498bc45dc955ee82f6d08",
+          "modified": "2026-08-29T18:44:35.210355+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-2.pdf",
+          "hash": "3b882768eda5f3e9b15ab58854b8a28d17216b4b2871339af103d41e2328c3ee",
+          "modified": "2026-08-29T18:44:35.236517+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-3.pdf",
+          "hash": "54317482ef33b91314cca5df86040ed3cf9108d7af785621a3161cbcfbe7d0ec",
+          "modified": "2026-08-29T18:44:35.264778+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-4.pdf",
+          "hash": "05672d96113ede18b4924f0fcc65ac4891255a6adbfba995b753137a469c2317",
+          "modified": "2026-08-29T18:44:35.283774+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-5.pdf",
+          "hash": "65f8628e31c501c39094a375dcdccc8adc425b338ea07cfb779f5d8a50ba0be6",
+          "modified": "2026-08-29T18:44:35.296361+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-6.pdf",
+          "hash": "59a77bac23f1ad904029a68aac6d96148492fb029eff0a38217da6f380ea666f",
+          "modified": "2026-08-29T18:44:35.313491+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-7.pdf",
+          "hash": "e342dafd538e6136dda3d7518bb8f4ee777541f9d41b408107fa0db31da7de8a",
+          "modified": "2026-08-29T18:44:35.324180+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-8.pdf",
+          "hash": "73c0ab456b19ae930777600db494eb2a661d631ff4a02de39dcacaa40ec5dd11",
+          "modified": "2026-08-29T18:44:35.337789+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-9.pdf",
+          "hash": "cd68b6d303726a91ec57e11b64d563bc9cd717f4fad92452c69e289d16d4f5be",
+          "modified": "2026-08-29T18:44:35.357837+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-10.pdf",
+          "hash": "8ddd229686caf9fbe1f0ed18fce6862f242897cc5aae9332bf6cecb81f1939df",
+          "modified": "2026-08-29T18:44:35.376003+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-11.pdf",
+          "hash": "0a2946a3407fed39565ade77ec231bd323b5c6dfb6b2b5510793e5d11fc70e11",
+          "modified": "2026-08-29T18:44:35.390161+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-12.pdf",
+          "hash": "61fe9ac909c9156011d548ece5c812742aa4dee2e5d1882422714eda64f5d4da",
+          "modified": "2026-08-29T18:44:35.400330+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-13.pdf",
+          "hash": "832182af6bae09cf8b648349b808e711a460842e14e94ce475270551a264dabc",
+          "modified": "2026-08-29T18:44:35.414356+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-14.pdf",
+          "hash": "2804588d8a566a0d2599179d937d0cc1f3e74a749c3faf37c73bf8e54afbeb60",
+          "modified": "2026-08-29T18:44:35.430105+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-15.pdf",
+          "hash": "534756de084f86a790eb3e7f5ec486cdf998014a347f1032bb7daa40f9c21c41",
+          "modified": "2026-08-29T18:44:35.444658+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-16.pdf",
+          "hash": "e0ee2c4a475ed151206e4ef83956e3c6ed51099d8b9f0f8897a07a03f4eee33b",
+          "modified": "2026-08-29T18:44:35.456219+00:00"
+        },
+        "hernkyn-yaegirs-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/hernkyn-yaegirs/hernkyn-yaegirs-operatives-selection-operative-selection-17.pdf",
+          "hash": "6b02a863fe872b35b927c1bde6c0e02912644828e6ef79baf1a4fa2743dc7a73",
+          "modified": "2026-08-29T18:44:35.474036+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/hernkyn-yaegirs-structure.json": "b770132814c68276f5dd6c64fd16d1061ad6d8671823eec68f44aca5485b40ba",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card1_landscape.pdf": "1b5ad53c8bf846b3dba07361775b90530d80519e207e980f6ec7f0b2a613439c",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card2_landscape.pdf": "7a7f37f13c765e68cd4f2d69013c9d0ac1a9761d0bfc1fa653871b386bd8ffb4",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card3_landscape.pdf": "c7048e9f38aa651060f570677a46b310c82324acefb3b4fb38ea164a325742d4",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page01_card4_landscape.pdf": "6bf872735261c8271732661a8e77d98459b395b69ade120f33040ab19677a863",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card1_landscape.pdf": "3c563051982f690554bf0d4c1c90aea8a155a29fd435a9558d37936a0271c62e",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card2_landscape.pdf": "187112f93d76c230241e2c509cb029e33efe0a84ad9fe9165000ffa8301fd3fb",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card3_landscape.pdf": "6defb2ef1bb9dec9d08afa49bc223bfb56bdf3dfe667a320c32268ef076a6c8d",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page02_card4_landscape.pdf": "89384253bd8c39683b4a907d415e49de54fe0a9ffac7240d9169d7df997ccdaf",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card1_portrait.pdf": "dd31f9c629bc12f0be66153517e9f9a951cdd2de272188a0f026a6f075fac14f",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card2_portrait.pdf": "380fcaa6b9c1902fa423dcae641d76df72daa7bbd28d18121a6c20137d4fb8ad",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card3_portrait.pdf": "b2f49c4787031ec81b0ce8214310c83391edd8922f8ad4f7e71dc75a66b7f77a",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page03_card4_portrait.pdf": "783467765b70dafc2c77060bcc0dcebad76e7a0e905d4f0195084db4e206969d",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card1_portrait.pdf": "0a1e5f65a135b8665cd28b4e2024cad10da626e5f7e35cca72f0bff4c80e395a",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card2_portrait.pdf": "ede8c09eedcd946fc191c44a57ae06a3ae070db320fa922543f5e94b7a3d419d",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card3_portrait.pdf": "d93367117899af9890ab7330da148f6832146dae7bc444ef53cb7121f21f035c",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page04_card4_portrait.pdf": "064a521f469351c29798c4d1fb5c67466b305ee0dd8f133c2f52a43e64526e1a",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card1_portrait.pdf": "ed9ca95317b457277af06673633c664e89d1fd31276e007cb1679e443be39bbd",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card2_portrait.pdf": "ebf4af7e3d60d80291c1d09dff4e5afe2b27fa73b8d5f92e071750a1a8153cac",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card3_portrait.pdf": "2e8057eb88af6ad24c3e3792b8486e0c0c2a43a61866f420bfee15cb15e91df7",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page05_card4_portrait.pdf": "c4d31caf090dc85211e73db5b50394776562a5b1595a09f671a9f41cda88d9e2",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card1_portrait.pdf": "1a9c7ab7801def2b4466c6c95ff82c0d1e89c1a5da2c742c48d46eb9d1e62324",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card2_portrait.pdf": "aacecb0a924cc98ced40879a0dfb0cc9143151ea9e71ea0c658182fb8472319f",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card3_portrait.pdf": "7ea569d6babc418b5247e649804e06ab41344945cd4e0cb1f19f2a1634288f29",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page06_card4_portrait.pdf": "4aa760f201a1fb9d6db21edc4d853dfe6cbbc77f6e53ab1a7873a37d2843f4b7",
+        "layers/warcom/extracted/hernkyn-yaegirs/cards/hernkyn-yaegirs_page07_card1_portrait.pdf": "28cee871ce42e19dbc8012cd5235a03917a6efa63fabd7f0cfed04d4bde6a338"
+      },
+      "completed": "2026-08-29T18:44:37.117089+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "6e8f6fec1a1b7205f76d9f7743dbd9c727207371dbad80e38db22ea3b47a9bf0",
+          "outputs": [
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-01.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-02.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-03.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-04.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-05.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-06.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-06.png",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-07.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-08.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-09.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-10.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-11.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-12.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-13.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-14.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-15.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-16.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-17.jpeg",
+            "layers/integration/hernkyn-yaegirs/artwork/hernkyn-yaegirs-artwork-metadata.json",
+            "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-landscape.jpg",
+            "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-portrait.jpg",
+            "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-token-transparent.png",
+            "layers/integration/hernkyn-yaegirs/artwork/icons/hernkyn-yaegirs-icon-token.jpg"
+          ],
+          "modified": "2026-08-29T18:39:06.273107+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:39:06.273107+00:00"
+    }
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "team": "hearthkyn-salvagers",
+  "box": {
+    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/tts_objects/Hearthkyn%20Salvagers.json?v=1788029608",
+    "modified": "2026-08-29T18:53:28.160484+00:00",
+    "hash": "de3014d2e1e0a7961434a7fd8101543f6986a0876e43c18797ff4df955ecd28f"
+  },
+  "objects": [
+    {
+      "type": "lua-script",
+      "name": "update-script",
+      "url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/config/defaults/tts-script/tts-update-rules-in-box-script.lua?v=1783888798",
+      "modified": "2026-07-12T20:39:58.110729+00:00",
+      "hash": "d909f8b32ec6579a2cb9029d486b0c5f53b65074077e513bbaa78d4e086f6d9c"
+    },
+    {
+      "type": "cardbox-texture",
+      "name": "hearthkyn-salvagers-card-box-texture",
+      "url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cardbox/hearthkyn-salvagers-card-box-texture.jpg?v=1783162071",
+      "modified": "2026-07-04T10:47:51.055680+00:00",
+      "hash": "b8df549d8026b750906a4a74519ddddf03473bd1227a69c3603760fd73c882e1"
+    },
+    {
+      "type": "cardbox-mesh",
+      "name": "hearthkyn-salvagers-card-box",
+      "url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cardbox/hearthkyn-salvagers-card-box.obj?v=1781895962",
+      "modified": "2026-06-19T19:06:02.305117+00:00",
+      "hash": "5859e89454f30c5826e4f8b348a91fb64bd367eb4e7de09eafc5d4a070d41125"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-attack",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-attack.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-attack.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.958039+00:00",
+      "hash": "6a208a5f4aa968d52005bcb88a47a0a4a2e371f12b4b79363f4116a0f82195e2"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-c8-hx-charge",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-c8-hx-charge.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-c8-hx-charge.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.958039+00:00",
+      "hash": "b5eef91b05b3c230fb0e4a5c1ed6e35cd28be2af2726b20ef59c1bf7b0b05610"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-defence",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-defence.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-defence.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.958039+00:00",
+      "hash": "ff73576dfb80eb6ea286524c9012dd0f19bc46c787b75a5f3508ce99ad3e67fa"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-grudge",
+      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-grudge.obj?v=1788026479",
+      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-grudge.png?v=1788029081",
+      "modified": "2026-08-29T18:44:41.973328+00:00",
+      "hash": "6a321eba3ead7079cd62710ffb4fd5b4f100da42ed6aa48fc0aa591abc9a2e9e"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-medic",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-medic.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-medic.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.973342+00:00",
+      "hash": "0021fd4bca7914923887ca34283e6a906d28ae6c3fa8f857346f431dfe5449a3"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-need-keeps",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-need-keeps.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-need-keeps.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.974678+00:00",
+      "hash": "1d104d62f65bafd23d24873dbbf4457dcc4d87d55d83bd0ce24cb89e4d18c53c"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-pan-spectral-scan",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-pan-spectral-scan.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-pan-spectral-scan.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.974678+00:00",
+      "hash": "128fc0c79a07e37ec63103580d8f46d519345f9a2c9c458cc866c64596c36747"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-spot",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-spot.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-spot.png?v=1783537981",
+      "modified": "2026-07-08T19:13:01.746344+00:00",
+      "hash": "16f062670e514472d50ef594afe6be0b4f92deb98f742c5ab61ddb773cda121a"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-system-jam",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-system-jam.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-system-jam.png?v=1783537981",
+      "modified": "2026-07-08T19:13:01.766111+00:00",
+      "hash": "9cdeba55fc220705aabf5505f9128d51224dd0016bb9a8d7608a68f0c25bf6a5"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-toil-earns",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-toil-earns.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-toil-earns.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.974678+00:00",
+      "hash": "33fea78c26d396bb9445f65990384ea77c14b7b4ca8a2351fbd6db8ff4f3e1f2"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-utility-grenade",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-utility-grenade.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-utility-grenade.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.974678+00:00",
+      "hash": "7c02b41b0fa661091aed264101549591a3273482a07dc4f0d68d8912a5112479"
+    },
+    {
+      "type": "token",
+      "name": "hearthkyn-salvagers-writ-of-claim",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-writ-of-claim.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/hearthkyn-salvagers-writ-of-claim.png?v=1785001578",
+      "modified": "2026-07-25T17:46:18.974678+00:00",
+      "hash": "0e3a9a2ef96bebd7f14348f9989a284d7b59e9a2c6105a6cd27d35353b5ee9ec"
+    },
+    {
+      "type": "token-bag",
+      "name": "hearthkyn-salvagers-token-bag",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/tokenbag/hearthkyn-salvagers-token-bag.obj?v=1779121408",
+      "icon_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/tokens/tokenbag/hearthkyn-salvagers-token-bag-icon.png?v=1783160247",
+      "modified": "2026-07-04T10:17:27.290405+00:00",
+      "hash": "df2ee4b45156050d6480922b0e8ad7860284c912b4177d3cfda75bace571afa1"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-dozr",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-dozr-front.jpg?v=1785003060",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-dozr-back.jpg?v=1784729909",
+      "modified": "2026-07-25T18:11:00.471878+00:00",
+      "hash": "1dff7816988b357a72f23dfcf705627a499297e97bea5667186ab46c5e9e059f"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-field-medic",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-field-medic-front.jpg?v=1783715860",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-field-medic-back.jpg?v=1783883612",
+      "modified": "2026-07-12T19:13:32.036118+00:00",
+      "hash": "b73254acbf21ffa1bc8dbe72d5b680f45de51d5e78b1c068339a91809779b500"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-grenadier",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-grenadier-front.jpg?v=1783538060",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-grenadier-back.jpg?v=1783538061",
+      "modified": "2026-07-08T19:14:21.121926+00:00",
+      "hash": "e3cdfaa0690ececb2ae59f04e42a48955956d95a26985249e985cf2b036c05b7"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-gunner",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-gunner-front.jpg?v=1783538061",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-gunner-back.jpg?v=1783538061",
+      "modified": "2026-07-08T19:14:21.969782+00:00",
+      "hash": "5340778c7d61923044457b9feec17bf096593c945c48ffcfdae526e32299fe23"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-jump-pack-warrior",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-jump-pack-warrior-front.jpg?v=1783538062",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-jump-pack-warrior-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:22.386384+00:00",
+      "hash": "a5e5082860660852a2da32ae38e66ecd042b0fe4f3a0d4683756677867347ddb"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-kinlynk",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-kinlynk-front.jpg?v=1783538062",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-kinlynk-back.jpg?v=1783538063",
+      "modified": "2026-07-08T19:14:23.191561+00:00",
+      "hash": "3849b027489933aaad84389e1c54d7e72a0cac255bcae972c9a8f24af10aca7f"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-kognitaar",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitaar-front.jpg?v=1785003064",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-kognitaar-back.jpg?v=1785003064",
+      "modified": "2026-07-25T18:11:04.927213+00:00",
+      "hash": "34d1eac2e529c0fac5a51534e2bafc40ee9cfe5adc0cae62f441bcef50f197c1"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-lokatr",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokatr-front.jpg?v=1785003065",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-lokatr-back.jpg?v=1785003065",
+      "modified": "2026-07-25T18:11:05.738323+00:00",
+      "hash": "9898212b92808f354c1f0da390285ee52d54cc96b12bb9aa560a08c57ba0bf16"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-lugger",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-lugger-front.jpg?v=1783538065",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-lugger-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:25.184833+00:00",
+      "hash": "4533d53705d73b01000a1584efa6a96b6bd46d9adb9f0600273935c77ce69652"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-theyn",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-theyn-front.jpg?v=1783538058",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-theyn-back.jpg?v=1783538059",
+      "modified": "2026-07-08T19:14:19.103883+00:00",
+      "hash": "bf4c7d1ff95adf6f82d4202b105451355ca420c4554200b8d7188dfeada8f41a"
+    },
+    {
+      "type": "datacards",
+      "name": "hearthkyn-warrior",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-warrior-front.jpg?v=1783538065",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/datacards/hearthkyn-warrior-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:25.585422+00:00",
+      "hash": "5a356730a4e8fd57845faf74aa4c313b4b98ddf235c1873d7be7d857f80da8b7"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg?v=1788029102",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:02.044409+00:00",
+      "hash": "84c3f02f818781585607712f9423997300b7cb2b7b586a08defb25edab70ba66"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg?v=1788029105",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:05.205966+00:00",
+      "hash": "1f843fe419ab34155a8dada14b892e22edcb364cd3edef4e84a349889343ab60"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg?v=1788029105",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:05.649657+00:00",
+      "hash": "a2ac6513003ea673d1e43b90be6d79c0436fb1938a4f4c1867c8502008859e57"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg?v=1788029106",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:06.051337+00:00",
+      "hash": "da8a1ea29a90188bca9f6caac6d56dc41fba5e5a78615544ed924f685a96f6a5"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg?v=1788029106",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:06.508970+00:00",
+      "hash": "5e876d8cfa34a427c0e949fca6223e9ae7ac971e763be2c2aadd87ab398d61ce"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg?v=1788029106",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:06.975785+00:00",
+      "hash": "cb26dfdd6398ae4d583d534c2cd2a8f4cf4668b9d5f1a07812692f3f997de938"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-front.jpg?v=1788029107",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card15-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:07.347900+00:00",
+      "hash": "aa7c65da4d36b70630bcd09aab7180e3102ed6ad2c3bab3d262a5938926495f8"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-front.jpg?v=1788029107",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card16-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:07.780591+00:00",
+      "hash": "f11382dd16a187b4d4404b5785c5489fd33e518d08baf509ebdabe265c8bee5a"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-front.jpg?v=1788029108",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card17-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:08.188074+00:00",
+      "hash": "54b4299339d552be44186547f68374285a53f87f03950848233a1bd082d8e394"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-front.jpg?v=1788029108",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card18-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:08.591359+00:00",
+      "hash": "7e3f58faffff56b29bb9c265a1b250463bc32c62235e7fe3787e5bf38db59ba0"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg?v=1788029102",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:02.377664+00:00",
+      "hash": "b136f0e815331f577b6340ddb966a4c296b74fabae8382b76b09ed9100da199e"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg?v=1788029102",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:02.719670+00:00",
+      "hash": "3b8c29859723ffb8254b024a2b6322a74ccb1506befd5732693c3df6f80a9c66"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg?v=1788029103",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:03.108802+00:00",
+      "hash": "6a7304cafde52a57eae5f01b5eab07af126ef0ce5eb1251c09cd33d1a38bd6c2"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg?v=1788029103",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:03.433619+00:00",
+      "hash": "84257bed9bab7e8ff02c4b0c32a46efbd1c10869561c8746380b8f445958b702"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg?v=1788029103",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:03.779848+00:00",
+      "hash": "39650ad126a3680c04c48dd985d836b5faf83c382947ccc95fa28646085086a6"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg?v=1788029104",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:04.176621+00:00",
+      "hash": "f126ef748b9c36b00431153e46092f24ade62a15ae0e4eac3cdce1bf8b0aa521"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg?v=1788029104",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:04.517883+00:00",
+      "hash": "eeb9c052d63d2d322ad0a1a643cda1b2457aceb08132b4086664a67b4f435175"
+    },
+    {
+      "type": "datacards",
+      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg?v=1788029104",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:04.850421+00:00",
+      "hash": "6d09cfd984dad7902786f3dca369b190a281dbd68eb688f23cbe7d0b86e51b4a"
+    },
+    {
+      "type": "equipment",
+      "name": "hearthkyn-salvagers-climbing-rigs",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-climbing-rigs-front.jpg?v=1783538067",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-climbing-rigs-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:27.615833+00:00",
+      "hash": "78570909cf7728f06bc66a57f5cb6d49a9a4e37bcd41f51048255bec37c9865b"
+    },
+    {
+      "type": "equipment",
+      "name": "hearthkyn-salvagers-excavation-tools",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-excavation-tools-front.jpg?v=1783538068",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-excavation-tools-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:28.017246+00:00",
+      "hash": "ad1ad4ddedbff439285c6869d0753f494bd4e56f573de3175d34596f927b63a9"
+    },
+    {
+      "type": "equipment",
+      "name": "hearthkyn-salvagers-plasma-knives",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-plasma-knives-front.jpg?v=1783538067",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-plasma-knives-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:27.217407+00:00",
+      "hash": "86cf0b8bcceb468c40eaf4e33ac07a2841d9cba73b61c7d87a7b204b29286c41"
+    },
+    {
+      "type": "equipment",
+      "name": "hearthkyn-salvagers-writ-of-claim",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-writ-of-claim-front.jpg?v=1783538068",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/equipment/hearthkyn-salvagers-writ-of-claim-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:28.451306+00:00",
+      "hash": "3409c9ad2db0987c57be135fa208f84e59dfb7cb44143314f2a342b2234bcc42"
+    },
+    {
+      "type": "faction_rules",
+      "name": "hearthkyn-salvagers-grudge",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/faction_rules/hearthkyn-salvagers-grudge-front.jpg?v=1783538066",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/faction_rules/hearthkyn-salvagers-grudge-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:26.784532+00:00",
+      "hash": "b03b4353c1522d37ac09020c6a3b31aad2543ad03f8d22a31775badb0462a240"
+    },
+    {
+      "type": "firefight_ploys",
+      "name": "hearthkyn-salvagers-engage-to-acquire",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-front.jpg?v=1783538070",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-engage-to-acquire-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:30.118610+00:00",
+      "hash": "5c78e2e8c1b0e838cd8ed3884b565fddb851ee421269b181024146f3b57fdee7"
+    },
+    {
+      "type": "firefight_ploys",
+      "name": "hearthkyn-salvagers-sturdy",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-sturdy-front.jpg?v=1783538069",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-sturdy-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:29.674134+00:00",
+      "hash": "e77d94f8451865a9b6cfe55d87be4288f49c3a01683a49566203078c3d175a61"
+    },
+    {
+      "type": "firefight_ploys",
+      "name": "hearthkyn-salvagers-the-ancestors-are-watching",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-front.jpg?v=1783538068",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-the-ancestors-are-watching-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:28.857321+00:00",
+      "hash": "2636c8bc43f88189a4cb234b3f7778dffc9bf89f4f8066fbec2ede293e9f6e89"
+    },
+    {
+      "type": "firefight_ploys",
+      "name": "hearthkyn-salvagers-worth-it",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-worth-it-front.jpg?v=1783538069",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/firefight_ploys/hearthkyn-salvagers-worth-it-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:29.267777+00:00",
+      "hash": "f976c0e0188324d6a40893d76412315ca31680efcc7092dd4e949f07bf4736a3"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-front.jpg?v=1783538065",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-back.jpg?v=1783538066",
+      "modified": "2026-07-08T19:14:26.370695+00:00",
+      "hash": "4d898b4e2de92bb910ad4bc0fa9b2ee5e93efa9eb323e30aa39922024b10ca1d"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card1",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-front.jpg?v=1788029108",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card1-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:08.970044+00:00",
+      "hash": "1bd0e4041e19baccb2f7aad71e99f00c4f743cbd970c75e50ea090fb03a10459"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card10",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-front.jpg?v=1788029112",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card10-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:12.691188+00:00",
+      "hash": "0135bf40dcd20efb0e46a2bd7551cf6dca06c7fe8e98ee527b299238642c24a8"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card11",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-front.jpg?v=1788029113",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card11-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:13.167095+00:00",
+      "hash": "a0c641c3957c165f28531c0f9a2c0cf21df536c654709945d5038fe80f017bd5"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card12",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-front.jpg?v=1788029113",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card12-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:13.701457+00:00",
+      "hash": "f3cce1803234c84e9c427bb68cd0bad8520d3d2df489e7d77f47237cf34ce3b0"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card13",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-front.jpg?v=1788029114",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card13-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:14.177188+00:00",
+      "hash": "18fcadd2d10dd0eb38a9c02f67fd3d8ec6c9d653b4008c48e28cf2c53cbd77da"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card14",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-front.jpg?v=1788029114",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card14-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:14.643929+00:00",
+      "hash": "b8cc02fcce9e4472bf6ba76bc719f4a866e9ba58623a29055ac18579f05a5f1e"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card15",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-front.jpg?v=1788029115",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card15-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:15.048870+00:00",
+      "hash": "11dc3dd88fb8dc3e69f7d7259a6c42a0ea809b62762b119f822421124c2e7778"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card16",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-front.jpg?v=1788029115",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card16-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:15.473676+00:00",
+      "hash": "f7ef9244008cd9720f0749fe9326b8f60e740c85652580550ade4002c0dee9c1"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card2",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-front.jpg?v=1788029109",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card2-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:09.347635+00:00",
+      "hash": "9e1a7c39e98417fc4ac0b9de00602fbf5b67798b7ec58947e3d381839d7b83e0"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card3",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-front.jpg?v=1788029109",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card3-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:09.756185+00:00",
+      "hash": "06b8726f65407d5e2bdcb03bb4a8d39a211d12aa96f932ff2acdfdbef2623e9b"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card4",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-front.jpg?v=1788029110",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card4-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:10.161591+00:00",
+      "hash": "f319f6e262b74de3ed0bb414c71eecdd44aa73e3504c0ae98adf3ea13b7993ff"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card5",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-front.jpg?v=1788029110",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card5-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:10.619769+00:00",
+      "hash": "fd26783935b816e7f86baf231d9d35778c9edb080e7ac632a8c636fda5a0b7fc"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card6",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-front.jpg?v=1788029111",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card6-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:11.022886+00:00",
+      "hash": "96fcb522f6842ea0ce74c8230466ada2e17cc50b62cc7ff4feec1235f84aee3e"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card7",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-front.jpg?v=1788029111",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card7-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:11.466365+00:00",
+      "hash": "8aa031f8a334e52f2c23df2fd593361add251a85e175a77a77f55e891195eb5c"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card8",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-front.jpg?v=1788029111",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card8-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:11.862156+00:00",
+      "hash": "8c13cdd7b0a4c4acad6192ff4d99ec8778a5aa94fff71d1f002f6cbfcf00a385"
+    },
+    {
+      "type": "operatives_selection",
+      "name": "hearthkyn-salvagers-operative-selection-card9",
+      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-front.jpg?v=1788029112",
+      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/hearthkyn-salvagers/cards/operatives_selection/hearthkyn-salvagers-operative-selection-card9-back.jpg?v=1788026486",
+      "modified": "2026-08-29T18:45:12.297967+00:00",
+      "hash": "df431e7fd0333de7830bbdd41063ebba129e359bc4767f17940608211634c2b7"
+    },
+    {
+      "type": "strategy_ploys",
+      "name": "hearthkyn-salvagers-need-keeps",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-need-keeps-front.jpg?v=1783538070",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-need-keeps-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:30.550337+00:00",
+      "hash": "dd27c68e56d1c825c2f356ffc7930b57147e649739bd31c23e594596be9ae205"
+    },
+    {
+      "type": "strategy_ploys",
+      "name": "hearthkyn-salvagers-proximate-firepower",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-front.jpg?v=1783538071",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-proximate-firepower-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:31.756046+00:00",
+      "hash": "360c0b2c2e611236917db2046b767e91dfcd9f4ed6ef653dee4b1623ac541c40"
+    },
+    {
+      "type": "strategy_ploys",
+      "name": "hearthkyn-salvagers-toil-earns",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-toil-earns-front.jpg?v=1783538070",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-toil-earns-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:30.950820+00:00",
+      "hash": "e320c5d78e700b230cc02d2576cf37f915b18ea9f9f0a83190ebad8742905587"
+    },
+    {
+      "type": "strategy_ploys",
+      "name": "hearthkyn-salvagers-wrought-defence",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-front.jpg?v=1783538071",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/strategy_ploys/hearthkyn-salvagers-wrought-defence-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:31.357728+00:00",
+      "hash": "031f37d6b5bbfe6401393484495ffd16550b961854797ce3d261655b4ad13adb"
+    },
+    {
+      "type": "token_guide",
+      "name": "hearthkyn-salvagers-token-guide",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/token_guide/hearthkyn-salvagers-token-guide-front.jpg?v=1783538072",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/hearthkyn-salvagers/cards/token_guide/hearthkyn-salvagers-token-guide-back.jpg?v=1783537931",
+      "modified": "2026-07-08T19:14:32.184520+00:00",
+      "hash": "bc63482fd66f8c162ecc56b439c19d53c872f4cb17ca38ca3aee21f71b79abaa"
+    }
+  ]
+}

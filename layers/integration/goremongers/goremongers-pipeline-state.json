@@ -1,0 +1,1748 @@
+{
+  "team": "goremongers",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:38.412153+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/goremongers/content/goremongers-content.json",
+          "hash": "c18e6918b0ee89a7c7ef5d094788a70f0048aa36b54276f7cb6ca97c4af89f44",
+          "modified": "2026-08-29T18:42:55.731435+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:08.072213+00:00",
+      "inputs": {
+        "layers/integration/goremongers/manifest.json": "96e896215370847b28f181056a2959d3da92ee2a356b5649527a40054590fc95",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-aspirant.pdf": "9bbb05d1475e39318b45adc054a95403e74648374201362c90f46e8f71edddaa",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-blood-herald.pdf": "ea9ebf5431e1b8f96b725051e1db9f864fcbfbf12b42c1cd50e6d992e6a71009",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-bloodtaker.pdf": "072cda71d0894e2134f88d2c8459fb694eb14f2d40cb540ae86fa73cee934826",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-impaler.pdf": "358763540992c868f56b2d9e906cd63b75c97479f75f84bd21c25408aca0d6c8",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-inciter.pdf": "fa128b5f233bdb03668cc12d42595a025fc3a6c10a0b893faadae37eafa9982a",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-skullclaimer.pdf": "4e28323ff2dcc6a40aaeb26d3e969d854f58783537ff4fefe47169f6f013e720",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-stalker.pdf": "1553bf05994c402a20fa1f081a06bc286d5e97e05289e4e241b908c33fed014a",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "0a44286f4380eeff43c1399321e28134b582d5949e98ad16eb29d851ed7f8ac2",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "65d57d5b0bf9cd62ece857fb5127351dba2cdf2c892bdf874e38426a888bc872",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c6cf74ad7a403fc649a28bf7e01699a11549be1eda17392ae2d5081d529ace22",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "a42bd7be2f74f4fbcff67aead8465f672db0277007a844259bdf1fb53ef55811",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "653476ed5e994d8f25ef0971a5f5eacd31467adf1d94bba88596b8390fdafcc0",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "e4687b94df3f93cb074f7ddac13715aaac2c4576c9f87d3d61a2e69a4f896f3d",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "5cccfa68bb0f5b50157df549ba069b5856dae9b578b49e505966bac3a7838012",
+        "layers/integration/goremongers/goremongers-equipment-bloody-cadaver.pdf": "4fed0f9bdf8fb2f5f98bf273d512ffd20f2df0d9ca51bb80fad9aca4d2c53f6c",
+        "layers/integration/goremongers/goremongers-equipment-chaos-sigil.pdf": "31076085c0cd5bf3a5d95a145be7bea856eb0fabac9b95a60ae8b3b3b30060bc",
+        "layers/integration/goremongers/goremongers-equipment-gory-totem.pdf": "3cccf6b637b4961e6a6d32b728f4001bb23f935e4d35706cc6cdb3448db1e54a",
+        "layers/integration/goremongers/goremongers-equipment-wrist-chains.pdf": "132c7b6a75021a63b43d76eeeebcb870f1c17e37cf94fa922b3ef4864ace9f88",
+        "layers/integration/goremongers/goremongers-faction-rule-gore-tanks.pdf": "04977ac59f6dcb2088151311d59121990770c5f53a2cbf1d534ff979e46a3e86",
+        "layers/integration/goremongers/goremongers-faction-rule-runes-of-khorne.pdf": "b35789e8411a79bea63ad7b74fbb98eecae50e27d8608a4d456b3f6242c519af",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-1.pdf": "d6751f0cb8abd2ef61cc4d8648c3eae2f71cb435189962a9b5fb77227a743fdd",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-2.pdf": "e76268d4811099f16b080314f36eb5b936a8b54f2b0173f686e48d56397ef97f",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-3.pdf": "6e4e51e1d2321941058cafdb641ea595bec575199129eb97d6d06a23377a915e",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-4.pdf": "45fe147a70658d83db8ccd80b030585dd206a1d981e22cad8f483f776ae80ec1",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-5.pdf": "76585a151d842d4f1c4c84b5044e81d508ed153b1c2647bae64cbb48fae8a340",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-6.pdf": "701a4ec3df7194c8194fa570b8ba3146fdfc4428f0ff2a95e3b343bd7f90c0c2",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-7.pdf": "cb65b6bc4665b57dd239626980ddd1347ad020810aae2884bbfe47cb126979a1",
+        "layers/integration/goremongers/goremongers-firefight-ploy-destructive-demise.pdf": "1fda364f8dc38f0927f7e4db2646b24049a9b580b48d29d1df3eae687e9bbdb0",
+        "layers/integration/goremongers/goremongers-firefight-ploy-gorethirst.pdf": "d1ef62bf9104651c2d95adcdd5b8ccc76992e86575fc418e74431a08c45f310d",
+        "layers/integration/goremongers/goremongers-firefight-ploy-lacerate-flesh.pdf": "8bbef63063968080c351ac8eaf8e150168159fa68d6bc70fd7ac2eb71a8d4399",
+        "layers/integration/goremongers/goremongers-firefight-ploy-unbridled-aggression.pdf": "40d76b108980188aa257fc19aa48eb36787d33e2a5fe6c8114866139e330f6f1",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-1.pdf": "965efb3c826907fddab8c8a44ee14d4db9161f2a41603111a6e5e44af4d7cf6e",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-10.pdf": "764ac96d7503717951c3cac9b4d4f42f5daadbe8d490ec2592253c7b00bd396e",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-11.pdf": "57a1914a961fd87b1f6963040555a08e5fb86d56d625dfc5c3146449fbb6fd07",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-12.pdf": "55853a1110862429ef5e8c374040ecf601d5f844867335993d7e9aaf8387d2a5",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-13.pdf": "58f1ff7b3bb0c1ac74b6f865f788aa2a456ee9176995b369e22dc1ad0f9e3e95",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-14.pdf": "3eecb2a0c1c8c82f9a6c48f191f2c9406deb81bb2449f0175b097b5b35b3d7ff",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-15.pdf": "f5701d6119eb3bc74b9a5561b233b51b3eaea63768b71d2b7f7f330e8e3e7f61",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-16.pdf": "2c179c5ac7605b9408d57695eb8e72ffe7bb419e1c81c1b8862209da9900e2c3",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-17.pdf": "81432581f94f6b61c8a8c4fc671c1a96aae535870b01cb9e7df61bf2790f5829",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-18.pdf": "c44e8bd92c299ee35887b679556f9e2ff47adff5a3eb557196d89318e7b445ee",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-19.pdf": "108cb9bcbcfc16f850a48be651f49067fca130a97510b5213865473ee8a87aea",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-2.pdf": "61502f444fe2da9885b78e91ad2c1b20c5c746d538749dabd952948f2ff32eda",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-20.pdf": "5ec50d448ef38da7258846080bbf7ada35e174061bdac3f80959c1eb4566da14",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-21.pdf": "d60ce2c8fe9c8f2e680487195216d47659202648ddeb56cfd9ffb14634865358",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-22.pdf": "2241893c690cc5d0fe614fd5cc33dfe0baec7c60aa6bb0429d7d62150d843cb1",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-23.pdf": "809adf3402b1ac82847568d6e3cffd7d02e09ee4bebc54afb114bdb7a2149dde",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-3.pdf": "3e58746835066fbeab101a7d865b818c3879cce3b79198d636dcaa65e85b0d54",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-4.pdf": "05590b832870a2541b3789410ceb94c5959447b790104f83c673d509cffeeafb",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-5.pdf": "11acfe008aa85fedefbfc1e595be6a090f540b68526c733f287d6d8da8be4b41",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-6.pdf": "ce7299b6fb4a646eebfb12a291bb1804d174872bc083e0cb79cb0aa2b413bda7",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-7.pdf": "0fc83c9cf75b9d75ebf0f51884f17bdc601a90ec7a6e86fa6023c4b1b20c19da",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-8.pdf": "b77b6e96d340f24629437c3e6240cead4d16f0f6b207c0763c81c9071170d7ca",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-9.pdf": "7dbaee71f3dcbb936d1863fbd2b94db0b55a1b05599737ebd865995c162eff92",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection.pdf": "50f80290a8b628741fc25b16ae57dfc831b6cc64d99dc9a8f00ed235d83f28a8",
+        "layers/integration/goremongers/goremongers-strategy-ploy-augmented-endurance.pdf": "e940833bc85829cd2c42b31ab7cd650dda798be33c4f810fd1d4be84fd49ac70",
+        "layers/integration/goremongers/goremongers-strategy-ploy-enhanced-violence.pdf": "7d07717cd56a86cb55a9d27bc1ea73af8854e101eb74ae2668858432ce610d5b",
+        "layers/integration/goremongers/goremongers-strategy-ploy-gory-tenacity.pdf": "f151ddc8c7829a01f3243051cd544998808fad64444f7cf0cd15495ecb1f3a6e",
+        "layers/integration/goremongers/goremongers-strategy-ploy-hunt-for-blood.pdf": "aa0f69c7e7a788ca7246fa54c12276f191f719ece493e79f08f9f1ef5e2a3494",
+        "layers/integration/goremongers/goremongers-token-guide-token-guide.pdf": "de6a8051f1adaff723ed4785eb9c2df7243af78a6f32de5eb2f3571852a98756"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/goremongers/card-backside/goremongers-backside-landscape.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-07-12T18:47:40.653112+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/goremongers/card-backside/goremongers-backside-portrait.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-07-12T18:47:40.654711+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:47:40.657388+00:00",
+      "inputs": {
+        "layers/integration/goremongers/artwork/icons/goremongers-icon-token.jpg": "6ee8e238b660f1771cd2ebb25ed39a3933ebc5eae356c0932592df299f81c11c",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/goremongers-bleeding.png": {
+          "path": "output/goremongers/tokens/goremongers-bleeding.png",
+          "hash": "96a13da5d5071686c197587ca90cdca19cd56e311d1411fb160fb6d0c9fcfdcb",
+          "modified": "2026-08-29T18:43:18.685959+00:00"
+        },
+        "tokens/goremongers-bloody-cadaver.png": {
+          "path": "output/goremongers/tokens/goremongers-bloody-cadaver.png",
+          "hash": "bd60bed5c68bd93dded6d81ad5820178d15c27aa2ef8f088cfd4406626118aaf",
+          "modified": "2026-08-29T18:43:18.694112+00:00"
+        },
+        "tokens/goremongers-chaos-sigil.png": {
+          "path": "output/goremongers/tokens/goremongers-chaos-sigil.png",
+          "hash": "f791c31572f2f170255c67f5b66bf09ab38aed5521347965f05dc10db28ed770",
+          "modified": "2026-08-29T18:43:18.702269+00:00"
+        },
+        "tokens/goremongers-claim-skull.png": {
+          "path": "output/goremongers/tokens/goremongers-claim-skull.png",
+          "hash": "e4ab07633c3643b23e0dcd905cfa59144c7deac43616829e313b3467e9f7aeea",
+          "modified": "2026-08-29T18:43:19.234758+00:00"
+        },
+        "tokens/goremongers-gore-tank-full.png": {
+          "path": "output/goremongers/tokens/goremongers-gore-tank-full.png",
+          "hash": "cd7bc165e006ab14bcc2fdb7df498e3e5cee78a229d3f35917953b80ad0587b8",
+          "modified": "2026-08-29T18:43:19.760253+00:00"
+        },
+        "tokens/goremongers-gore-tank-half.png": {
+          "path": "output/goremongers/tokens/goremongers-gore-tank-half.png",
+          "hash": "f5a3bbc1426937f9be379f66a3d92402712d724433a83b57600486a817e50221",
+          "modified": "2026-08-29T18:43:20.286249+00:00"
+        },
+        "tokens/goremongers-gory-totem.png": {
+          "path": "output/goremongers/tokens/goremongers-gory-totem.png",
+          "hash": "e15d6c1826f7aa8b58e1c30a3a5229b06b1283fdc0d8ea09205e667120a3e055",
+          "modified": "2026-08-29T18:43:21.100693+00:00"
+        },
+        "tokens/goremongers-impending-apotheosis.png": {
+          "path": "output/goremongers/tokens/goremongers-impending-apotheosis.png",
+          "hash": "895afa1fb7911d528e1556818c6072760de2ad6c6e835e8d71ae66ae10a23a2a",
+          "modified": "2026-08-29T18:43:22.287783+00:00"
+        },
+        "tokens/goremongers-wrist-chains.png": {
+          "path": "output/goremongers/tokens/goremongers-wrist-chains.png",
+          "hash": "60ab7778cb86875ba5cfe8356a6881b20ae90e2bcab2669ece6183498ef45448",
+          "modified": "2026-08-29T18:43:23.211287+00:00"
+        },
+        "tokens/goremongers-bleeding.obj": {
+          "path": "output/goremongers/tokens/goremongers-bleeding.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:23.546580+00:00"
+        },
+        "tokens/goremongers-bloody-cadaver.obj": {
+          "path": "output/goremongers/tokens/goremongers-bloody-cadaver.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:23.840998+00:00"
+        },
+        "tokens/goremongers-chaos-sigil.obj": {
+          "path": "output/goremongers/tokens/goremongers-chaos-sigil.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:24.416989+00:00"
+        },
+        "tokens/goremongers-claim-skull.obj": {
+          "path": "output/goremongers/tokens/goremongers-claim-skull.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:24.752665+00:00"
+        },
+        "tokens/goremongers-gore-tank-full.obj": {
+          "path": "output/goremongers/tokens/goremongers-gore-tank-full.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:25.949314+00:00"
+        },
+        "tokens/goremongers-gore-tank-half.obj": {
+          "path": "output/goremongers/tokens/goremongers-gore-tank-half.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:26.285471+00:00"
+        },
+        "tokens/goremongers-gory-totem.obj": {
+          "path": "output/goremongers/tokens/goremongers-gory-totem.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:27.427994+00:00"
+        },
+        "tokens/goremongers-impending-apotheosis.obj": {
+          "path": "output/goremongers/tokens/goremongers-impending-apotheosis.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:27.469195+00:00"
+        },
+        "tokens/goremongers-wrist-chains.obj": {
+          "path": "output/goremongers/tokens/goremongers-wrist-chains.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:28.307784+00:00"
+        },
+        "tokens/tokenbag/goremongers-token-bag-icon.png": {
+          "path": "output/goremongers/tokens/tokenbag/goremongers-token-bag-icon.png",
+          "hash": "6ee8e238b660f1771cd2ebb25ed39a3933ebc5eae356c0932592df299f81c11c",
+          "modified": "2026-08-29T18:43:29.790194+00:00"
+        },
+        "tokens/tokenbag/goremongers-token-bag.obj": {
+          "path": "output/goremongers/tokens/tokenbag/goremongers-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:43:30.144377+00:00"
+        },
+        "tokens/goremongers-gore-tank-empty.png": {
+          "path": "output/goremongers/tokens/goremongers-gore-tank-empty.png",
+          "hash": "30368ef6932fc35f03dd6d02f6bb0c11add8c249558b9ab65e3fd7916020b6ab",
+          "modified": "2026-08-29T18:43:19.754092+00:00"
+        },
+        "tokens/goremongers-gore-tank-empty.obj": {
+          "path": "output/goremongers/tokens/goremongers-gore-tank-empty.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:43:25.052515+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:46.192248+00:00",
+      "inputs": {
+        "layers/integration/goremongers/manifest.json": "96e896215370847b28f181056a2959d3da92ee2a356b5649527a40054590fc95",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/goremongers/artwork/icons/goremongers-icon-token.jpg": "6ee8e238b660f1771cd2ebb25ed39a3933ebc5eae356c0932592df299f81c11c",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-aspirant.pdf": "9bbb05d1475e39318b45adc054a95403e74648374201362c90f46e8f71edddaa",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-blood-herald.pdf": "ea9ebf5431e1b8f96b725051e1db9f864fcbfbf12b42c1cd50e6d992e6a71009",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-bloodtaker.pdf": "072cda71d0894e2134f88d2c8459fb694eb14f2d40cb540ae86fa73cee934826",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-impaler.pdf": "358763540992c868f56b2d9e906cd63b75c97479f75f84bd21c25408aca0d6c8",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-inciter.pdf": "fa128b5f233bdb03668cc12d42595a025fc3a6c10a0b893faadae37eafa9982a",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-skullclaimer.pdf": "4e28323ff2dcc6a40aaeb26d3e969d854f58783537ff4fefe47169f6f013e720",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-stalker.pdf": "1553bf05994c402a20fa1f081a06bc286d5e97e05289e4e241b908c33fed014a",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "0a44286f4380eeff43c1399321e28134b582d5949e98ad16eb29d851ed7f8ac2",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "65d57d5b0bf9cd62ece857fb5127351dba2cdf2c892bdf874e38426a888bc872",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c6cf74ad7a403fc649a28bf7e01699a11549be1eda17392ae2d5081d529ace22",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "a42bd7be2f74f4fbcff67aead8465f672db0277007a844259bdf1fb53ef55811",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "653476ed5e994d8f25ef0971a5f5eacd31467adf1d94bba88596b8390fdafcc0",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "e4687b94df3f93cb074f7ddac13715aaac2c4576c9f87d3d61a2e69a4f896f3d",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "5cccfa68bb0f5b50157df549ba069b5856dae9b578b49e505966bac3a7838012",
+        "layers/integration/goremongers/goremongers-equipment-bloody-cadaver.pdf": "4fed0f9bdf8fb2f5f98bf273d512ffd20f2df0d9ca51bb80fad9aca4d2c53f6c",
+        "layers/integration/goremongers/goremongers-equipment-chaos-sigil.pdf": "31076085c0cd5bf3a5d95a145be7bea856eb0fabac9b95a60ae8b3b3b30060bc",
+        "layers/integration/goremongers/goremongers-equipment-gory-totem.pdf": "3cccf6b637b4961e6a6d32b728f4001bb23f935e4d35706cc6cdb3448db1e54a",
+        "layers/integration/goremongers/goremongers-equipment-wrist-chains.pdf": "132c7b6a75021a63b43d76eeeebcb870f1c17e37cf94fa922b3ef4864ace9f88",
+        "layers/integration/goremongers/goremongers-faction-rule-gore-tanks.pdf": "04977ac59f6dcb2088151311d59121990770c5f53a2cbf1d534ff979e46a3e86",
+        "layers/integration/goremongers/goremongers-faction-rule-runes-of-khorne.pdf": "b35789e8411a79bea63ad7b74fbb98eecae50e27d8608a4d456b3f6242c519af",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-1.pdf": "d6751f0cb8abd2ef61cc4d8648c3eae2f71cb435189962a9b5fb77227a743fdd",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-2.pdf": "e76268d4811099f16b080314f36eb5b936a8b54f2b0173f686e48d56397ef97f",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-3.pdf": "6e4e51e1d2321941058cafdb641ea595bec575199129eb97d6d06a23377a915e",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-4.pdf": "45fe147a70658d83db8ccd80b030585dd206a1d981e22cad8f483f776ae80ec1",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-5.pdf": "76585a151d842d4f1c4c84b5044e81d508ed153b1c2647bae64cbb48fae8a340",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-6.pdf": "701a4ec3df7194c8194fa570b8ba3146fdfc4428f0ff2a95e3b343bd7f90c0c2",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-7.pdf": "cb65b6bc4665b57dd239626980ddd1347ad020810aae2884bbfe47cb126979a1",
+        "layers/integration/goremongers/goremongers-firefight-ploy-destructive-demise.pdf": "1fda364f8dc38f0927f7e4db2646b24049a9b580b48d29d1df3eae687e9bbdb0",
+        "layers/integration/goremongers/goremongers-firefight-ploy-gorethirst.pdf": "d1ef62bf9104651c2d95adcdd5b8ccc76992e86575fc418e74431a08c45f310d",
+        "layers/integration/goremongers/goremongers-firefight-ploy-lacerate-flesh.pdf": "8bbef63063968080c351ac8eaf8e150168159fa68d6bc70fd7ac2eb71a8d4399",
+        "layers/integration/goremongers/goremongers-firefight-ploy-unbridled-aggression.pdf": "40d76b108980188aa257fc19aa48eb36787d33e2a5fe6c8114866139e330f6f1",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-1.pdf": "965efb3c826907fddab8c8a44ee14d4db9161f2a41603111a6e5e44af4d7cf6e",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-10.pdf": "764ac96d7503717951c3cac9b4d4f42f5daadbe8d490ec2592253c7b00bd396e",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-11.pdf": "57a1914a961fd87b1f6963040555a08e5fb86d56d625dfc5c3146449fbb6fd07",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-12.pdf": "55853a1110862429ef5e8c374040ecf601d5f844867335993d7e9aaf8387d2a5",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-13.pdf": "58f1ff7b3bb0c1ac74b6f865f788aa2a456ee9176995b369e22dc1ad0f9e3e95",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-14.pdf": "3eecb2a0c1c8c82f9a6c48f191f2c9406deb81bb2449f0175b097b5b35b3d7ff",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-15.pdf": "f5701d6119eb3bc74b9a5561b233b51b3eaea63768b71d2b7f7f330e8e3e7f61",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-16.pdf": "2c179c5ac7605b9408d57695eb8e72ffe7bb419e1c81c1b8862209da9900e2c3",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-17.pdf": "81432581f94f6b61c8a8c4fc671c1a96aae535870b01cb9e7df61bf2790f5829",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-18.pdf": "c44e8bd92c299ee35887b679556f9e2ff47adff5a3eb557196d89318e7b445ee",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-19.pdf": "108cb9bcbcfc16f850a48be651f49067fca130a97510b5213865473ee8a87aea",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-2.pdf": "61502f444fe2da9885b78e91ad2c1b20c5c746d538749dabd952948f2ff32eda",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-20.pdf": "5ec50d448ef38da7258846080bbf7ada35e174061bdac3f80959c1eb4566da14",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-21.pdf": "d60ce2c8fe9c8f2e680487195216d47659202648ddeb56cfd9ffb14634865358",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-22.pdf": "2241893c690cc5d0fe614fd5cc33dfe0baec7c60aa6bb0429d7d62150d843cb1",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-23.pdf": "809adf3402b1ac82847568d6e3cffd7d02e09ee4bebc54afb114bdb7a2149dde",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-3.pdf": "3e58746835066fbeab101a7d865b818c3879cce3b79198d636dcaa65e85b0d54",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-4.pdf": "05590b832870a2541b3789410ceb94c5959447b790104f83c673d509cffeeafb",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-5.pdf": "11acfe008aa85fedefbfc1e595be6a090f540b68526c733f287d6d8da8be4b41",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-6.pdf": "ce7299b6fb4a646eebfb12a291bb1804d174872bc083e0cb79cb0aa2b413bda7",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-7.pdf": "0fc83c9cf75b9d75ebf0f51884f17bdc601a90ec7a6e86fa6023c4b1b20c19da",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-8.pdf": "b77b6e96d340f24629437c3e6240cead4d16f0f6b207c0763c81c9071170d7ca",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-9.pdf": "7dbaee71f3dcbb936d1863fbd2b94db0b55a1b05599737ebd865995c162eff92",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection.pdf": "50f80290a8b628741fc25b16ae57dfc831b6cc64d99dc9a8f00ed235d83f28a8",
+        "layers/integration/goremongers/goremongers-strategy-ploy-augmented-endurance.pdf": "e940833bc85829cd2c42b31ab7cd650dda798be33c4f810fd1d4be84fd49ac70",
+        "layers/integration/goremongers/goremongers-strategy-ploy-enhanced-violence.pdf": "7d07717cd56a86cb55a9d27bc1ea73af8854e101eb74ae2668858432ce610d5b",
+        "layers/integration/goremongers/goremongers-strategy-ploy-gory-tenacity.pdf": "f151ddc8c7829a01f3243051cd544998808fad64444f7cf0cd15495ecb1f3a6e",
+        "layers/integration/goremongers/goremongers-strategy-ploy-hunt-for-blood.pdf": "aa0f69c7e7a788ca7246fa54c12276f191f719ece493e79f08f9f1ef5e2a3494",
+        "layers/integration/goremongers/goremongers-token-guide-token-guide.pdf": "de6a8051f1adaff723ed4785eb9c2df7243af78a6f32de5eb2f3571852a98756",
+        "config/teams/goremongers/custom-tokens/goremongers-gore-tank-empty.png": "c8f33b411dd57abd7d6898baa988686c0edf930d2b2be18c5ff79b158a577956"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/goremongers/dice/goremongers-dice-light.jpg",
+          "hash": "447e531f316a858de4e493cf8845b8eb41024cebe39c607f51e12fd96d6bfe6c",
+          "modified": "2026-08-29T18:43:46.709153+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/goremongers/dice/goremongers-dice-dark.jpg",
+          "hash": "138ff0d25de61c6e6dd53c5cb412bcd5b92f3e671f05b70fa1228dce3f4e1d9f",
+          "modified": "2026-08-29T18:43:46.714729+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/goremongers/dice/goremongers-dice-team.jpg",
+          "hash": "7aa3eca0e1ca61b66fcf8527004e534921a059703c564936a293a739117906b1",
+          "modified": "2026-08-29T18:43:46.718769+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:46.720773+00:00",
+      "inputs": {
+        "layers/integration/goremongers/artwork/icons/goremongers-icon-token-transparent.png": "bb61694a2b0f520f4e9dbdf39556e29bcc55c5747c98154e85fcece2b49c22a7",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/goremongers/cardbox/goremongers-card-box-texture.jpg",
+          "hash": "6b0712cfe55ed07ceaeea76ac13a319c9bb060374d7f6ee131a77cfbe65614a9",
+          "modified": "2026-08-29T18:43:46.844070+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/goremongers/cardbox/goremongers-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:43:46.848147+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:46.862432+00:00",
+      "inputs": {
+        "layers/integration/goremongers/artwork/icons/goremongers-icon-token.jpg": "6ee8e238b660f1771cd2ebb25ed39a3933ebc5eae356c0932592df299f81c11c",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/goremonger-aspirant-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-aspirant-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:07.462040+00:00"
+        },
+        "cards/datacards/goremonger-aspirant-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-aspirant-front.jpg",
+          "hash": "1a005ddc6ce95ed61485b851d33523c8e92831f1779938b4b52ec7dc301a2f8e",
+          "modified": "2026-08-29T18:44:07.670717+00:00"
+        },
+        "cards/datacards/goremonger-blood-herald-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-blood-herald-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:07.768636+00:00"
+        },
+        "cards/datacards/goremonger-blood-herald-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-blood-herald-front.jpg",
+          "hash": "08a2161549dd90f941bf5361606854334bde7f0f59126fcdd04a6e2b8a178fcb",
+          "modified": "2026-08-29T18:44:07.790221+00:00"
+        },
+        "cards/datacards/goremonger-bloodtaker-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-bloodtaker-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:07.794821+00:00"
+        },
+        "cards/datacards/goremonger-bloodtaker-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-bloodtaker-front.jpg",
+          "hash": "621218869c518ce6e2bd1eb968f9b5fa8926efb2f7f311d7ee5608a4ae9638c5",
+          "modified": "2026-08-29T18:44:07.804886+00:00"
+        },
+        "cards/datacards/goremonger-impaler-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-impaler-back.jpg",
+          "hash": "e88ccbff7aa172c02d32704f8dfd9a3c9dd3dda8ef7e07c9f09d42b2c3122672",
+          "modified": "2026-08-29T18:44:07.813690+00:00"
+        },
+        "cards/datacards/goremonger-impaler-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-impaler-front.jpg",
+          "hash": "6de917c3fa9418aaa64fbe364404de29502ca84cccbfdc3a9dfc58930fab8f1d",
+          "modified": "2026-08-29T18:44:07.818717+00:00"
+        },
+        "cards/datacards/goremonger-inciter-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-inciter-back.jpg",
+          "hash": "4ad93218817cb34f1cb00c291fa5dd2f683ef17f5614b4ee072e0181070cdd2b",
+          "modified": "2026-08-29T18:44:07.821224+00:00"
+        },
+        "cards/datacards/goremonger-inciter-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-inciter-front.jpg",
+          "hash": "ca6de33a75c9fad5a7aacc0b6c00615d57233f250d6f13030f4abc20b8e49202",
+          "modified": "2026-08-29T18:44:07.823253+00:00"
+        },
+        "cards/datacards/goremonger-skullclaimer-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-skullclaimer-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:07.825252+00:00"
+        },
+        "cards/datacards/goremonger-skullclaimer-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-skullclaimer-front.jpg",
+          "hash": "d3d36b3f7ef1fe92e2125cca2b0d5cc3f73d5ac61110ffe708a37755b6965cd7",
+          "modified": "2026-08-29T18:44:07.827885+00:00"
+        },
+        "cards/datacards/goremonger-stalker-back.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-stalker-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:07.875446+00:00"
+        },
+        "cards/datacards/goremonger-stalker-front.jpg": {
+          "path": "output/goremongers/cards/datacards/goremonger-stalker-front.jpg",
+          "hash": "77e0c4620302d2043b7e35e790d781dbaeb95ef8d7a3025aa3b23ca61db9cf0d",
+          "modified": "2026-08-29T18:44:08.017831+00:00"
+        },
+        "cards/equipment/goremongers-bloody-cadaver-back.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-bloody-cadaver-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.132467+00:00"
+        },
+        "cards/equipment/goremongers-bloody-cadaver-front.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-bloody-cadaver-front.jpg",
+          "hash": "c3495f09b1a3296e59465dc58aae2867ea549d095f19dc1e1f11432b77ac4aef",
+          "modified": "2026-08-29T18:44:09.137060+00:00"
+        },
+        "cards/equipment/goremongers-chaos-sigil-back.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-chaos-sigil-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.670706+00:00"
+        },
+        "cards/equipment/goremongers-chaos-sigil-front.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-chaos-sigil-front.jpg",
+          "hash": "266abafa4aecbef29c817bc38a3ca4bac9af58e6b21f5c6b093ce32a6f836059",
+          "modified": "2026-08-29T18:44:09.715493+00:00"
+        },
+        "cards/equipment/goremongers-gory-totem-back.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-gory-totem-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.716524+00:00"
+        },
+        "cards/equipment/goremongers-gory-totem-front.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-gory-totem-front.jpg",
+          "hash": "3c1d6abbfeb6e0a0c7d961c4b43991004040a084807993f4ce5a16cff0c0b86f",
+          "modified": "2026-08-29T18:44:09.720031+00:00"
+        },
+        "cards/equipment/goremongers-wrist-chains-back.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-wrist-chains-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.720535+00:00"
+        },
+        "cards/equipment/goremongers-wrist-chains-front.jpg": {
+          "path": "output/goremongers/cards/equipment/goremongers-wrist-chains-front.jpg",
+          "hash": "82a8a53311f0d0438113e7057c9fab32959b59e93c9aa7385faa420c70b1a509",
+          "modified": "2026-08-29T18:44:09.723052+00:00"
+        },
+        "cards/faction_rules/goremongers-gore-tanks-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-gore-tanks-back.jpg",
+          "hash": "4b62b7eaf8d69bb7095d6ca8ec9d21cf8d69f2d5a98bfafc65ab195c7dece869",
+          "modified": "2026-08-29T18:44:09.725552+00:00"
+        },
+        "cards/faction_rules/goremongers-gore-tanks-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-gore-tanks-front.jpg",
+          "hash": "ef699375ded2b20d0a22711055515037d699d129d262c3674e30f76862135420",
+          "modified": "2026-08-29T18:44:09.726555+00:00"
+        },
+        "cards/faction_rules/goremongers-runes-of-khorne-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-runes-of-khorne-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.728070+00:00"
+        },
+        "cards/faction_rules/goremongers-runes-of-khorne-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-runes-of-khorne-front.jpg",
+          "hash": "eb9b2f6c4511565b6d1350e7fa2fad6882a6ce3705e5c470051a9d8761c9377e",
+          "modified": "2026-08-29T18:44:09.730073+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card1-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card1-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.731073+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card1-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card1-front.jpg",
+          "hash": "c3da8fc9e151480ce99049e3a3a5e4ae2e2ae6263c045f3a3b8a9f63bc651edf",
+          "modified": "2026-08-29T18:44:09.733505+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card2-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card2-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.735016+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card2-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card2-front.jpg",
+          "hash": "2db9033c65c733e3179cf51baaec3c8a76b180d304565d9fd36adc4a395bd109",
+          "modified": "2026-08-29T18:44:09.737020+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card3-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card3-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.738524+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card3-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card3-front.jpg",
+          "hash": "f25e1ed2c542252cdbdd5d2140ed9f1575f5131122eba1c1c6c7fbef4680b44f",
+          "modified": "2026-08-29T18:44:09.741043+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card4-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card4-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.742547+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card4-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card4-front.jpg",
+          "hash": "e7849e8e9ae46c35c63870b5b86dcc673eb846ec50e7ceaaa02dee0c47596fd1",
+          "modified": "2026-08-29T18:44:09.744551+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card5-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card5-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.746575+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card5-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card5-front.jpg",
+          "hash": "5e44275fdfbe2601ec5b889a51369820f38b06ce647ba63f0897213bfe906014",
+          "modified": "2026-08-29T18:44:09.748078+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card6-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card6-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.750082+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card6-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card6-front.jpg",
+          "hash": "8aab924d51f2d5f0cc3fb17feb0369c531bea68c220f7fdaf65c4c0a1fa14a03",
+          "modified": "2026-08-29T18:44:09.752123+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card7-back.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card7-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.753127+00:00"
+        },
+        "cards/faction_rules/goremongers-sanguavitae-card7-front.jpg": {
+          "path": "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card7-front.jpg",
+          "hash": "18752e822acf22cfec550586f541ac7c7d9a77a9a26be13a7052a85b9ff645ce",
+          "modified": "2026-08-29T18:44:09.755252+00:00"
+        },
+        "cards/firefight_ploys/goremongers-destructive-demise-back.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-destructive-demise-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.756756+00:00"
+        },
+        "cards/firefight_ploys/goremongers-destructive-demise-front.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-destructive-demise-front.jpg",
+          "hash": "e57d41fd04c5b226befe1baba0fd93272e828e0b1fe8f2f1286ecf026f6ee8fc",
+          "modified": "2026-08-29T18:44:09.758264+00:00"
+        },
+        "cards/firefight_ploys/goremongers-gorethirst-back.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-gorethirst-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.759769+00:00"
+        },
+        "cards/firefight_ploys/goremongers-gorethirst-front.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-gorethirst-front.jpg",
+          "hash": "98448c942dab43bad2101dfd2331e0bd63eceee6a665e114c0713c31bf586742",
+          "modified": "2026-08-29T18:44:09.760773+00:00"
+        },
+        "cards/firefight_ploys/goremongers-lacerate-flesh-back.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-lacerate-flesh-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:09.762780+00:00"
+        },
+        "cards/firefight_ploys/goremongers-lacerate-flesh-front.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-lacerate-flesh-front.jpg",
+          "hash": "338b59bd0dd4b53492d54eda6ea383cfeedc78d0df7d016575f053637c724045",
+          "modified": "2026-08-29T18:44:09.765071+00:00"
+        },
+        "cards/firefight_ploys/goremongers-unbridled-aggression-back.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-unbridled-aggression-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:10.347771+00:00"
+        },
+        "cards/firefight_ploys/goremongers-unbridled-aggression-front.jpg": {
+          "path": "output/goremongers/cards/firefight_ploys/goremongers-unbridled-aggression-front.jpg",
+          "hash": "82cb27349d166c321199a0c11b23af1abfa4382ec0fa27f07a6868e75908266a",
+          "modified": "2026-08-29T18:44:11.485942+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:12.025807+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-front.jpg",
+          "hash": "3344655668d680cc61e3f431e831609a8c4eb7853682e955fd8f95e68c6b169c",
+          "modified": "2026-08-29T18:44:35.164428+00:00"
+        },
+        "cards/strategy_ploys/goremongers-augmented-endurance-back.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-augmented-endurance-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.165428+00:00"
+        },
+        "cards/strategy_ploys/goremongers-augmented-endurance-front.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-augmented-endurance-front.jpg",
+          "hash": "d01b0d4a317cdd3aa4a70697430b1ba0252a44905f74176e5d803061ad3c4bfe",
+          "modified": "2026-08-29T18:44:35.167012+00:00"
+        },
+        "cards/strategy_ploys/goremongers-enhanced-violence-back.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-enhanced-violence-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.168035+00:00"
+        },
+        "cards/strategy_ploys/goremongers-enhanced-violence-front.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-enhanced-violence-front.jpg",
+          "hash": "00dc8af79e83e5b17611e425a1dd2a58b815f575f26df738c3ca804b5d2d5042",
+          "modified": "2026-08-29T18:44:35.170040+00:00"
+        },
+        "cards/strategy_ploys/goremongers-gory-tenacity-back.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-gory-tenacity-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.172040+00:00"
+        },
+        "cards/strategy_ploys/goremongers-gory-tenacity-front.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-gory-tenacity-front.jpg",
+          "hash": "ea7cb7d9f00157e372da2dcb81feefe58b53ebb2f185c17adaebec552c23b4a5",
+          "modified": "2026-08-29T18:44:35.175122+00:00"
+        },
+        "cards/strategy_ploys/goremongers-hunt-for-blood-back.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-hunt-for-blood-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.176157+00:00"
+        },
+        "cards/strategy_ploys/goremongers-hunt-for-blood-front.jpg": {
+          "path": "output/goremongers/cards/strategy_ploys/goremongers-hunt-for-blood-front.jpg",
+          "hash": "9d665de78c356c0fc1259dbbb750a3529a966f388bd203b16fef4086b5eb0efa",
+          "modified": "2026-08-29T18:44:35.179172+00:00"
+        },
+        "cards/token_guide/goremongers-token-guide-back.jpg": {
+          "path": "output/goremongers/cards/token_guide/goremongers-token-guide-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.181175+00:00"
+        },
+        "cards/token_guide/goremongers-token-guide-front.jpg": {
+          "path": "output/goremongers/cards/token_guide/goremongers-token-guide-front.jpg",
+          "hash": "f4e03765b26eabeb18b8f38c1cc31764e8a01403cbbfd308fe01ce1f3b96e72d",
+          "modified": "2026-08-29T18:44:35.183183+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:08.064728+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "351c200af20c02125d742c017fcb6ad28e8dc13af88931ebcb7fa7bba9bd62f2",
+          "modified": "2026-08-29T18:44:08.320982+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:08.470187+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "2e832b7dc7c44cb32d3dafe80110dd9f8fdab2983db4f7589ae8b987f7269380",
+          "modified": "2026-08-29T18:44:08.646307+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:08.724202+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "f5da31e2e574a101df8e2db60ec784736820b147a16ad3cfd025be553d7fb847",
+          "modified": "2026-08-29T18:44:08.927807+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:08.976931+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "97f786e23b6d44c8024e3daf044be059f04812ce300ba4f4de84c98947bfee3c",
+          "modified": "2026-08-29T18:44:09.073178+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "e0c5f13693d393f0062cec880f56a939be489f9d4ba8a7d888aa44b0fcd226a7",
+          "modified": "2026-08-29T18:44:09.082223+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "8f2a51bb9731bee833f206568a3fab7d38f34039496c6ff3bd09cd8d2f10bb14",
+          "modified": "2026-08-29T18:44:09.094292+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:09.101901+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "7d2e8dfd9fc65ba661f4c7ab884c2fb07b3ed66f6b5f3b1b752c993f6c5f7f02",
+          "modified": "2026-08-29T18:44:09.114289+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+          "modified": "2026-08-29T18:44:09.123373+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "03f0d769b4633445056c5abaea2907a970d0e44b2d5b4c338d59d4fc2c1be477",
+          "modified": "2026-08-29T18:44:09.130964+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card1-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card1-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:12.725198+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card1-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card1-front.jpg",
+          "hash": "2ea2383a52e80b3f4222af695d0425667adda6e5b35a504f70c1093727cb9292",
+          "modified": "2026-08-29T18:44:14.082638+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card10-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card10-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:14.650034+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card10-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card10-front.jpg",
+          "hash": "b9d4305cdd52ab9eda7f16de8c4f6ef2c6ba7aed1c7a1dde30fe30520c423fe3",
+          "modified": "2026-08-29T18:44:15.996888+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card11-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card11-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:16.785099+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card11-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card11-front.jpg",
+          "hash": "f4e03765b26eabeb18b8f38c1cc31764e8a01403cbbfd308fe01ce1f3b96e72d",
+          "modified": "2026-08-29T18:44:18.451088+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card12-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card12-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:18.459139+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card12-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card12-front.jpg",
+          "hash": "cf5bb0ead6aed722a35cd202567d0e6b4ba1b3b0b39e0e090724b0f31b753aec",
+          "modified": "2026-08-29T18:44:18.468214+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card13-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card13-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:18.476815+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card13-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card13-front.jpg",
+          "hash": "7d72ff2f3584c7ad8e6b94e9e834f76f046c7fc2fec7901b506f669b6a6f16a8",
+          "modified": "2026-08-29T18:44:19.078743+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card14-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card14-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:19.089971+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card14-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card14-front.jpg",
+          "hash": "51b6e6406f32a87700c51c2a6241ca10ed23e45d6afcd23c45f17a49396f6a34",
+          "modified": "2026-08-29T18:44:19.098493+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card15-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card15-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:19.659016+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card15-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card15-front.jpg",
+          "hash": "e90f1435bc8e78c929aa101551340b2c2108de0201be99cf0e8823cf45115e78",
+          "modified": "2026-08-29T18:44:19.674872+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card16-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card16-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:19.683299+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card16-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card16-front.jpg",
+          "hash": "5aeb88abc1639b98d0c82dcd02696db8f525f77878625736293c91e1d9526402",
+          "modified": "2026-08-29T18:44:19.695356+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card17-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card17-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:19.704437+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card17-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card17-front.jpg",
+          "hash": "8d48956297a042cf84af4e632eb1af78b01738683aa8acbfe8adeb9dfd215f68",
+          "modified": "2026-08-29T18:44:19.711454+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card18-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card18-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:19.719086+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card18-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card18-front.jpg",
+          "hash": "84c83f8ca1266654a1374a6cdf02a16bc7aea90e97155d930fee2b592a72cc02",
+          "modified": "2026-08-29T18:44:20.833748+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card19-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card19-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:21.979061+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card19-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card19-front.jpg",
+          "hash": "60c7b048b548a672a968b95bc5ab33448f2f6315b48f5a1e03b04080498a4211",
+          "modified": "2026-08-29T18:44:23.129731+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card2-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card2-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:24.640296+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card2-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card2-front.jpg",
+          "hash": "cc54de57212b87087f7a5b52ede3608b2277af9e8e7c3b5bc5973416a0321bcb",
+          "modified": "2026-08-29T18:44:26.361074+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card20-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card20-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:27.506224+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card20-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card20-front.jpg",
+          "hash": "2097e81e14ed2051b077789dd4045111847f7801b13af61909185f65fc19b4d6",
+          "modified": "2026-08-29T18:44:29.186950+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card21-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card21-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:29.821085+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card21-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card21-front.jpg",
+          "hash": "fdbb105dbab43ec627c0bf1f58a3f08365a6c749d78e15f2ad3ac2e8258c5e17",
+          "modified": "2026-08-29T18:44:30.954567+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card22-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card22-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:32.087107+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card22-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card22-front.jpg",
+          "hash": "b1d48a1f4be3f6b6ddbc40ef756fc56e55af3925eca9f646c9d27b117686f8f3",
+          "modified": "2026-08-29T18:44:32.660092+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card23-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card23-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:33.359805+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card23-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card23-front.jpg",
+          "hash": "9253a5942f867815f4e18c206210c0e2cab55f1f1ce3bd0a4f5e358965ab295b",
+          "modified": "2026-08-29T18:44:34.626288+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card3-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card3-back.jpg",
+          "hash": "5585d3d8f14567d3d9c6ae08e24f5a23150f6436f12bf2d4293427c51b5f8390",
+          "modified": "2026-08-29T18:44:34.824468+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card3-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card3-front.jpg",
+          "hash": "4f8e156a2114e6ac61ceb95c7d9e5e2af50733158d677beb38b97efd6885759e",
+          "modified": "2026-08-29T18:44:35.000229+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card4-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card4-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.008594+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card4-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card4-front.jpg",
+          "hash": "8dca247471c06e0a88596520e546abfa07a237d0376a240500c9bb3c6cfe2df3",
+          "modified": "2026-08-29T18:44:35.020708+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card5-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card5-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.027812+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card5-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card5-front.jpg",
+          "hash": "f12b2750f8d3a9160be35dfc69a4a96b1ddd12ca1f19c972a701e7a62fd8781f",
+          "modified": "2026-08-29T18:44:35.035862+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card6-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card6-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.041473+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card6-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card6-front.jpg",
+          "hash": "a1bb0aa858b3b35515e4e33418e7795f33b9324d7a123652c91afc8f1b27accf",
+          "modified": "2026-08-29T18:44:35.055078+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card7-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card7-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.069158+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card7-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card7-front.jpg",
+          "hash": "ec6078603988509f759526a3a1016dd2d8f7f58fab2413eb7db43e8e02db27af",
+          "modified": "2026-08-29T18:44:35.096297+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card8-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card8-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.114413+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card8-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card8-front.jpg",
+          "hash": "81894eccaa56bed35bf547280b7988879c880cfc07f4454e18a25cf5f5b868d2",
+          "modified": "2026-08-29T18:44:35.135668+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card9-back.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card9-back.jpg",
+          "hash": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+          "modified": "2026-08-29T18:44:35.152300+00:00"
+        },
+        "cards/operatives_selection/goremongers-operative-selection-card9-front.jpg": {
+          "path": "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card9-front.jpg",
+          "hash": "31fdb6a49960a2fc3dfae963437b93d354c517e90fd87de2f2324529b94a818d",
+          "modified": "2026-08-29T18:44:35.163428+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:35.413357+00:00",
+      "inputs": {
+        "layers/integration/goremongers/manifest.json": "96e896215370847b28f181056a2959d3da92ee2a356b5649527a40054590fc95",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-aspirant.pdf": "9bbb05d1475e39318b45adc054a95403e74648374201362c90f46e8f71edddaa",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-blood-herald.pdf": "ea9ebf5431e1b8f96b725051e1db9f864fcbfbf12b42c1cd50e6d992e6a71009",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-bloodtaker.pdf": "072cda71d0894e2134f88d2c8459fb694eb14f2d40cb540ae86fa73cee934826",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-impaler.pdf": "358763540992c868f56b2d9e906cd63b75c97479f75f84bd21c25408aca0d6c8",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-inciter.pdf": "fa128b5f233bdb03668cc12d42595a025fc3a6c10a0b893faadae37eafa9982a",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-skullclaimer.pdf": "4e28323ff2dcc6a40aaeb26d3e969d854f58783537ff4fefe47169f6f013e720",
+        "layers/integration/goremongers/goremongers-datacard-goremonger-stalker.pdf": "1553bf05994c402a20fa1f081a06bc286d5e97e05289e4e241b908c33fed014a",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "0a44286f4380eeff43c1399321e28134b582d5949e98ad16eb29d851ed7f8ac2",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "65d57d5b0bf9cd62ece857fb5127351dba2cdf2c892bdf874e38426a888bc872",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "c6cf74ad7a403fc649a28bf7e01699a11549be1eda17392ae2d5081d529ace22",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "a42bd7be2f74f4fbcff67aead8465f672db0277007a844259bdf1fb53ef55811",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "653476ed5e994d8f25ef0971a5f5eacd31467adf1d94bba88596b8390fdafcc0",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "e4687b94df3f93cb074f7ddac13715aaac2c4576c9f87d3d61a2e69a4f896f3d",
+        "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "5cccfa68bb0f5b50157df549ba069b5856dae9b578b49e505966bac3a7838012",
+        "layers/integration/goremongers/goremongers-equipment-bloody-cadaver.pdf": "4fed0f9bdf8fb2f5f98bf273d512ffd20f2df0d9ca51bb80fad9aca4d2c53f6c",
+        "layers/integration/goremongers/goremongers-equipment-chaos-sigil.pdf": "31076085c0cd5bf3a5d95a145be7bea856eb0fabac9b95a60ae8b3b3b30060bc",
+        "layers/integration/goremongers/goremongers-equipment-gory-totem.pdf": "3cccf6b637b4961e6a6d32b728f4001bb23f935e4d35706cc6cdb3448db1e54a",
+        "layers/integration/goremongers/goremongers-equipment-wrist-chains.pdf": "132c7b6a75021a63b43d76eeeebcb870f1c17e37cf94fa922b3ef4864ace9f88",
+        "layers/integration/goremongers/goremongers-faction-rule-gore-tanks.pdf": "04977ac59f6dcb2088151311d59121990770c5f53a2cbf1d534ff979e46a3e86",
+        "layers/integration/goremongers/goremongers-faction-rule-runes-of-khorne.pdf": "b35789e8411a79bea63ad7b74fbb98eecae50e27d8608a4d456b3f6242c519af",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-1.pdf": "d6751f0cb8abd2ef61cc4d8648c3eae2f71cb435189962a9b5fb77227a743fdd",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-2.pdf": "e76268d4811099f16b080314f36eb5b936a8b54f2b0173f686e48d56397ef97f",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-3.pdf": "6e4e51e1d2321941058cafdb641ea595bec575199129eb97d6d06a23377a915e",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-4.pdf": "45fe147a70658d83db8ccd80b030585dd206a1d981e22cad8f483f776ae80ec1",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-5.pdf": "76585a151d842d4f1c4c84b5044e81d508ed153b1c2647bae64cbb48fae8a340",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-6.pdf": "701a4ec3df7194c8194fa570b8ba3146fdfc4428f0ff2a95e3b343bd7f90c0c2",
+        "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-7.pdf": "cb65b6bc4665b57dd239626980ddd1347ad020810aae2884bbfe47cb126979a1",
+        "layers/integration/goremongers/goremongers-firefight-ploy-destructive-demise.pdf": "1fda364f8dc38f0927f7e4db2646b24049a9b580b48d29d1df3eae687e9bbdb0",
+        "layers/integration/goremongers/goremongers-firefight-ploy-gorethirst.pdf": "d1ef62bf9104651c2d95adcdd5b8ccc76992e86575fc418e74431a08c45f310d",
+        "layers/integration/goremongers/goremongers-firefight-ploy-lacerate-flesh.pdf": "8bbef63063968080c351ac8eaf8e150168159fa68d6bc70fd7ac2eb71a8d4399",
+        "layers/integration/goremongers/goremongers-firefight-ploy-unbridled-aggression.pdf": "40d76b108980188aa257fc19aa48eb36787d33e2a5fe6c8114866139e330f6f1",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-1.pdf": "965efb3c826907fddab8c8a44ee14d4db9161f2a41603111a6e5e44af4d7cf6e",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-10.pdf": "764ac96d7503717951c3cac9b4d4f42f5daadbe8d490ec2592253c7b00bd396e",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-11.pdf": "57a1914a961fd87b1f6963040555a08e5fb86d56d625dfc5c3146449fbb6fd07",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-12.pdf": "55853a1110862429ef5e8c374040ecf601d5f844867335993d7e9aaf8387d2a5",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-13.pdf": "58f1ff7b3bb0c1ac74b6f865f788aa2a456ee9176995b369e22dc1ad0f9e3e95",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-14.pdf": "3eecb2a0c1c8c82f9a6c48f191f2c9406deb81bb2449f0175b097b5b35b3d7ff",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-15.pdf": "f5701d6119eb3bc74b9a5561b233b51b3eaea63768b71d2b7f7f330e8e3e7f61",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-16.pdf": "2c179c5ac7605b9408d57695eb8e72ffe7bb419e1c81c1b8862209da9900e2c3",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-17.pdf": "81432581f94f6b61c8a8c4fc671c1a96aae535870b01cb9e7df61bf2790f5829",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-18.pdf": "c44e8bd92c299ee35887b679556f9e2ff47adff5a3eb557196d89318e7b445ee",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-19.pdf": "108cb9bcbcfc16f850a48be651f49067fca130a97510b5213865473ee8a87aea",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-2.pdf": "61502f444fe2da9885b78e91ad2c1b20c5c746d538749dabd952948f2ff32eda",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-20.pdf": "5ec50d448ef38da7258846080bbf7ada35e174061bdac3f80959c1eb4566da14",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-21.pdf": "d60ce2c8fe9c8f2e680487195216d47659202648ddeb56cfd9ffb14634865358",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-22.pdf": "2241893c690cc5d0fe614fd5cc33dfe0baec7c60aa6bb0429d7d62150d843cb1",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-23.pdf": "809adf3402b1ac82847568d6e3cffd7d02e09ee4bebc54afb114bdb7a2149dde",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-3.pdf": "3e58746835066fbeab101a7d865b818c3879cce3b79198d636dcaa65e85b0d54",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-4.pdf": "05590b832870a2541b3789410ceb94c5959447b790104f83c673d509cffeeafb",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-5.pdf": "11acfe008aa85fedefbfc1e595be6a090f540b68526c733f287d6d8da8be4b41",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-6.pdf": "ce7299b6fb4a646eebfb12a291bb1804d174872bc083e0cb79cb0aa2b413bda7",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-7.pdf": "0fc83c9cf75b9d75ebf0f51884f17bdc601a90ec7a6e86fa6023c4b1b20c19da",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-8.pdf": "b77b6e96d340f24629437c3e6240cead4d16f0f6b207c0763c81c9071170d7ca",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-9.pdf": "7dbaee71f3dcbb936d1863fbd2b94db0b55a1b05599737ebd865995c162eff92",
+        "layers/integration/goremongers/goremongers-operatives-selection-operative-selection.pdf": "50f80290a8b628741fc25b16ae57dfc831b6cc64d99dc9a8f00ed235d83f28a8",
+        "layers/integration/goremongers/goremongers-strategy-ploy-augmented-endurance.pdf": "e940833bc85829cd2c42b31ab7cd650dda798be33c4f810fd1d4be84fd49ac70",
+        "layers/integration/goremongers/goremongers-strategy-ploy-enhanced-violence.pdf": "7d07717cd56a86cb55a9d27bc1ea73af8854e101eb74ae2668858432ce610d5b",
+        "layers/integration/goremongers/goremongers-strategy-ploy-gory-tenacity.pdf": "f151ddc8c7829a01f3243051cd544998808fad64444f7cf0cd15495ecb1f3a6e",
+        "layers/integration/goremongers/goremongers-strategy-ploy-hunt-for-blood.pdf": "aa0f69c7e7a788ca7246fa54c12276f191f719ece493e79f08f9f1ef5e2a3494",
+        "layers/integration/goremongers/goremongers-token-guide-token-guide.pdf": "de6a8051f1adaff723ed4785eb9c2df7243af78a6f32de5eb2f3571852a98756",
+        "layers/integration/goremongers/card-backside/goremongers-backside-portrait.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/goremongers/card-backside/goremongers-backside-landscape.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/goremongers/data/goremongers-team-data.json",
+          "hash": "c18e6918b0ee89a7c7ef5d094788a70f0048aa36b54276f7cb6ca97c4af89f44",
+          "modified": "2026-08-29T18:44:35.477054+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:44:35.477054+00:00",
+      "inputs": {
+        "layers/integration/goremongers/content/goremongers-content.json": "c18e6918b0ee89a7c7ef5d094788a70f0048aa36b54276f7cb6ca97c4af89f44"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Goremongers Box.json": {
+          "path": "output/goremongers/tts_objects/Goremongers Box.json",
+          "hash": "a89fb7b4361f1fc6fc170ec46e62700cf8ffb1c71f183790f48dedbf2c53464f",
+          "modified": "2026-07-21T11:11:12.459890+00:00"
+        },
+        "tts_objects/Goremongers.json": {
+          "path": "output/goremongers/tts_objects/Goremongers.json",
+          "hash": "f577f53d35b5e552f34cc587417bcc9401fde74f35c0c3bf9f105e8e36ef4d26",
+          "modified": "2026-08-29T18:53:38.315632+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:38.412153+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/goremongers/cards/datacards/goremonger-aspirant-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/goremonger-aspirant-front.jpg": "1a005ddc6ce95ed61485b851d33523c8e92831f1779938b4b52ec7dc301a2f8e",
+        "output/goremongers/cards/datacards/goremonger-blood-herald-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/goremonger-blood-herald-front.jpg": "08a2161549dd90f941bf5361606854334bde7f0f59126fcdd04a6e2b8a178fcb",
+        "output/goremongers/cards/datacards/goremonger-bloodtaker-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/goremonger-bloodtaker-front.jpg": "621218869c518ce6e2bd1eb968f9b5fa8926efb2f7f311d7ee5608a4ae9638c5",
+        "output/goremongers/cards/datacards/goremonger-impaler-back.jpg": "e88ccbff7aa172c02d32704f8dfd9a3c9dd3dda8ef7e07c9f09d42b2c3122672",
+        "output/goremongers/cards/datacards/goremonger-impaler-front.jpg": "6de917c3fa9418aaa64fbe364404de29502ca84cccbfdc3a9dfc58930fab8f1d",
+        "output/goremongers/cards/datacards/goremonger-inciter-back.jpg": "4ad93218817cb34f1cb00c291fa5dd2f683ef17f5614b4ee072e0181070cdd2b",
+        "output/goremongers/cards/datacards/goremonger-inciter-front.jpg": "ca6de33a75c9fad5a7aacc0b6c00615d57233f250d6f13030f4abc20b8e49202",
+        "output/goremongers/cards/datacards/goremonger-skullclaimer-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/goremonger-skullclaimer-front.jpg": "d3d36b3f7ef1fe92e2125cca2b0d5cc3f73d5ac61110ffe708a37755b6965cd7",
+        "output/goremongers/cards/datacards/goremonger-stalker-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/goremonger-stalker-front.jpg": "77e0c4620302d2043b7e35e790d781dbaeb95ef8d7a3025aa3b23ca61db9cf0d",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "351c200af20c02125d742c017fcb6ad28e8dc13af88931ebcb7fa7bba9bd62f2",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "2e832b7dc7c44cb32d3dafe80110dd9f8fdab2983db4f7589ae8b987f7269380",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "f5da31e2e574a101df8e2db60ec784736820b147a16ad3cfd025be553d7fb847",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "97f786e23b6d44c8024e3daf044be059f04812ce300ba4f4de84c98947bfee3c",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "e0c5f13693d393f0062cec880f56a939be489f9d4ba8a7d888aa44b0fcd226a7",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "8f2a51bb9731bee833f206568a3fab7d38f34039496c6ff3bd09cd8d2f10bb14",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "7d2e8dfd9fc65ba661f4c7ab884c2fb07b3ed66f6b5f3b1b752c993f6c5f7f02",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "fc60e0a87b3eb96519b347952cee3ea2431630bef591cb10fec47e93fdb0ed95",
+        "output/goremongers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "03f0d769b4633445056c5abaea2907a970d0e44b2d5b4c338d59d4fc2c1be477",
+        "output/goremongers/cards/equipment/goremongers-bloody-cadaver-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/equipment/goremongers-bloody-cadaver-front.jpg": "c3495f09b1a3296e59465dc58aae2867ea549d095f19dc1e1f11432b77ac4aef",
+        "output/goremongers/cards/equipment/goremongers-chaos-sigil-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/equipment/goremongers-chaos-sigil-front.jpg": "266abafa4aecbef29c817bc38a3ca4bac9af58e6b21f5c6b093ce32a6f836059",
+        "output/goremongers/cards/equipment/goremongers-gory-totem-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/equipment/goremongers-gory-totem-front.jpg": "3c1d6abbfeb6e0a0c7d961c4b43991004040a084807993f4ce5a16cff0c0b86f",
+        "output/goremongers/cards/equipment/goremongers-wrist-chains-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/equipment/goremongers-wrist-chains-front.jpg": "82a8a53311f0d0438113e7057c9fab32959b59e93c9aa7385faa420c70b1a509",
+        "output/goremongers/cards/faction_rules/goremongers-gore-tanks-back.jpg": "4b62b7eaf8d69bb7095d6ca8ec9d21cf8d69f2d5a98bfafc65ab195c7dece869",
+        "output/goremongers/cards/faction_rules/goremongers-gore-tanks-front.jpg": "ef699375ded2b20d0a22711055515037d699d129d262c3674e30f76862135420",
+        "output/goremongers/cards/faction_rules/goremongers-runes-of-khorne-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-runes-of-khorne-front.jpg": "eb9b2f6c4511565b6d1350e7fa2fad6882a6ce3705e5c470051a9d8761c9377e",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card1-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card1-front.jpg": "c3da8fc9e151480ce99049e3a3a5e4ae2e2ae6263c045f3a3b8a9f63bc651edf",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card2-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card2-front.jpg": "2db9033c65c733e3179cf51baaec3c8a76b180d304565d9fd36adc4a395bd109",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card3-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card3-front.jpg": "f25e1ed2c542252cdbdd5d2140ed9f1575f5131122eba1c1c6c7fbef4680b44f",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card4-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card4-front.jpg": "e7849e8e9ae46c35c63870b5b86dcc673eb846ec50e7ceaaa02dee0c47596fd1",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card5-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card5-front.jpg": "5e44275fdfbe2601ec5b889a51369820f38b06ce647ba63f0897213bfe906014",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card6-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card6-front.jpg": "8aab924d51f2d5f0cc3fb17feb0369c531bea68c220f7fdaf65c4c0a1fa14a03",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card7-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/faction_rules/goremongers-sanguavitae-card7-front.jpg": "18752e822acf22cfec550586f541ac7c7d9a77a9a26be13a7052a85b9ff645ce",
+        "output/goremongers/cards/firefight_ploys/goremongers-destructive-demise-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/firefight_ploys/goremongers-destructive-demise-front.jpg": "e57d41fd04c5b226befe1baba0fd93272e828e0b1fe8f2f1286ecf026f6ee8fc",
+        "output/goremongers/cards/firefight_ploys/goremongers-gorethirst-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/firefight_ploys/goremongers-gorethirst-front.jpg": "98448c942dab43bad2101dfd2331e0bd63eceee6a665e114c0713c31bf586742",
+        "output/goremongers/cards/firefight_ploys/goremongers-lacerate-flesh-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/firefight_ploys/goremongers-lacerate-flesh-front.jpg": "338b59bd0dd4b53492d54eda6ea383cfeedc78d0df7d016575f053637c724045",
+        "output/goremongers/cards/firefight_ploys/goremongers-unbridled-aggression-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/firefight_ploys/goremongers-unbridled-aggression-front.jpg": "82cb27349d166c321199a0c11b23af1abfa4382ec0fa27f07a6868e75908266a",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card1-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card1-front.jpg": "2ea2383a52e80b3f4222af695d0425667adda6e5b35a504f70c1093727cb9292",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card10-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card10-front.jpg": "b9d4305cdd52ab9eda7f16de8c4f6ef2c6ba7aed1c7a1dde30fe30520c423fe3",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card11-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card11-front.jpg": "f4e03765b26eabeb18b8f38c1cc31764e8a01403cbbfd308fe01ce1f3b96e72d",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card12-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card12-front.jpg": "cf5bb0ead6aed722a35cd202567d0e6b4ba1b3b0b39e0e090724b0f31b753aec",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card13-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card13-front.jpg": "7d72ff2f3584c7ad8e6b94e9e834f76f046c7fc2fec7901b506f669b6a6f16a8",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card14-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card14-front.jpg": "51b6e6406f32a87700c51c2a6241ca10ed23e45d6afcd23c45f17a49396f6a34",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card15-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card15-front.jpg": "e90f1435bc8e78c929aa101551340b2c2108de0201be99cf0e8823cf45115e78",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card16-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card16-front.jpg": "5aeb88abc1639b98d0c82dcd02696db8f525f77878625736293c91e1d9526402",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card17-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card17-front.jpg": "8d48956297a042cf84af4e632eb1af78b01738683aa8acbfe8adeb9dfd215f68",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card18-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card18-front.jpg": "84c83f8ca1266654a1374a6cdf02a16bc7aea90e97155d930fee2b592a72cc02",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card19-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card19-front.jpg": "60c7b048b548a672a968b95bc5ab33448f2f6315b48f5a1e03b04080498a4211",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card2-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card2-front.jpg": "cc54de57212b87087f7a5b52ede3608b2277af9e8e7c3b5bc5973416a0321bcb",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card20-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card20-front.jpg": "2097e81e14ed2051b077789dd4045111847f7801b13af61909185f65fc19b4d6",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card21-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card21-front.jpg": "fdbb105dbab43ec627c0bf1f58a3f08365a6c749d78e15f2ad3ac2e8258c5e17",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card22-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card22-front.jpg": "b1d48a1f4be3f6b6ddbc40ef756fc56e55af3925eca9f646c9d27b117686f8f3",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card23-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card23-front.jpg": "9253a5942f867815f4e18c206210c0e2cab55f1f1ce3bd0a4f5e358965ab295b",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card3-back.jpg": "5585d3d8f14567d3d9c6ae08e24f5a23150f6436f12bf2d4293427c51b5f8390",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card3-front.jpg": "4f8e156a2114e6ac61ceb95c7d9e5e2af50733158d677beb38b97efd6885759e",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card4-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card4-front.jpg": "8dca247471c06e0a88596520e546abfa07a237d0376a240500c9bb3c6cfe2df3",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card5-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card5-front.jpg": "f12b2750f8d3a9160be35dfc69a4a96b1ddd12ca1f19c972a701e7a62fd8781f",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card6-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card6-front.jpg": "a1bb0aa858b3b35515e4e33418e7795f33b9324d7a123652c91afc8f1b27accf",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card7-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card7-front.jpg": "ec6078603988509f759526a3a1016dd2d8f7f58fab2413eb7db43e8e02db27af",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card8-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card8-front.jpg": "81894eccaa56bed35bf547280b7988879c880cfc07f4454e18a25cf5f5b868d2",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card9-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-card9-front.jpg": "31fdb6a49960a2fc3dfae963437b93d354c517e90fd87de2f2324529b94a818d",
+        "output/goremongers/cards/operatives_selection/goremongers-operative-selection-front.jpg": "3344655668d680cc61e3f431e831609a8c4eb7853682e955fd8f95e68c6b169c",
+        "output/goremongers/cards/strategy_ploys/goremongers-augmented-endurance-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/strategy_ploys/goremongers-augmented-endurance-front.jpg": "d01b0d4a317cdd3aa4a70697430b1ba0252a44905f74176e5d803061ad3c4bfe",
+        "output/goremongers/cards/strategy_ploys/goremongers-enhanced-violence-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/strategy_ploys/goremongers-enhanced-violence-front.jpg": "00dc8af79e83e5b17611e425a1dd2a58b815f575f26df738c3ca804b5d2d5042",
+        "output/goremongers/cards/strategy_ploys/goremongers-gory-tenacity-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/strategy_ploys/goremongers-gory-tenacity-front.jpg": "ea7cb7d9f00157e372da2dcb81feefe58b53ebb2f185c17adaebec552c23b4a5",
+        "output/goremongers/cards/strategy_ploys/goremongers-hunt-for-blood-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/strategy_ploys/goremongers-hunt-for-blood-front.jpg": "9d665de78c356c0fc1259dbbb750a3529a966f388bd203b16fef4086b5eb0efa",
+        "output/goremongers/cards/token_guide/goremongers-token-guide-back.jpg": "b437ccff1185269e3d3f203b5b7f8035e4df3978f4358053bbacb37de8d24b73",
+        "output/goremongers/cards/token_guide/goremongers-token-guide-front.jpg": "f4e03765b26eabeb18b8f38c1cc31764e8a01403cbbfd308fe01ce1f3b96e72d",
+        "output/goremongers/cardbox/goremongers-card-box-texture.jpg": "6b0712cfe55ed07ceaeea76ac13a319c9bb060374d7f6ee131a77cfbe65614a9",
+        "output/goremongers/cardbox/goremongers-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/goremongers/tokens/goremongers-bleeding.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-bleeding.png": "96a13da5d5071686c197587ca90cdca19cd56e311d1411fb160fb6d0c9fcfdcb",
+        "output/goremongers/tokens/goremongers-bloody-cadaver.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-bloody-cadaver.png": "bd60bed5c68bd93dded6d81ad5820178d15c27aa2ef8f088cfd4406626118aaf",
+        "output/goremongers/tokens/goremongers-chaos-sigil.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-chaos-sigil.png": "f791c31572f2f170255c67f5b66bf09ab38aed5521347965f05dc10db28ed770",
+        "output/goremongers/tokens/goremongers-claim-skull.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-claim-skull.png": "e4ab07633c3643b23e0dcd905cfa59144c7deac43616829e313b3467e9f7aeea",
+        "output/goremongers/tokens/goremongers-gore-tank-empty.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-gore-tank-empty.png": "30368ef6932fc35f03dd6d02f6bb0c11add8c249558b9ab65e3fd7916020b6ab",
+        "output/goremongers/tokens/goremongers-gore-tank-full.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-gore-tank-full.png": "cd7bc165e006ab14bcc2fdb7df498e3e5cee78a229d3f35917953b80ad0587b8",
+        "output/goremongers/tokens/goremongers-gore-tank-half.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-gore-tank-half.png": "f5a3bbc1426937f9be379f66a3d92402712d724433a83b57600486a817e50221",
+        "output/goremongers/tokens/goremongers-gory-totem.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-gory-totem.png": "e15d6c1826f7aa8b58e1c30a3a5229b06b1283fdc0d8ea09205e667120a3e055",
+        "output/goremongers/tokens/goremongers-impending-apotheosis.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-impending-apotheosis.png": "895afa1fb7911d528e1556818c6072760de2ad6c6e835e8d71ae66ae10a23a2a",
+        "output/goremongers/tokens/goremongers-wrist-chains.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/goremongers/tokens/goremongers-wrist-chains.png": "60ab7778cb86875ba5cfe8356a6881b20ae90e2bcab2669ece6183498ef45448",
+        "output/goremongers/tokens/tokenbag/goremongers-token-bag-icon.png": "6ee8e238b660f1771cd2ebb25ed39a3933ebc5eae356c0932592df299f81c11c",
+        "output/goremongers/tokens/tokenbag/goremongers-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/goremongers/dice/goremongers-dice-dark.jpg": "138ff0d25de61c6e6dd53c5cb412bcd5b92f3e671f05b70fa1228dce3f4e1d9f",
+        "output/goremongers/dice/goremongers-dice-light.jpg": "447e531f316a858de4e493cf8845b8eb41024cebe39c607f51e12fd96d6bfe6c",
+        "output/goremongers/dice/goremongers-dice-team.jpg": "7aa3eca0e1ca61b66fcf8527004e534921a059703c564936a293a739117906b1",
+        "output/goremongers/data/goremongers-team-data.json": "c18e6918b0ee89a7c7ef5d094788a70f0048aa36b54276f7cb6ca97c4af89f44",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "firefight-ploys": {
+          "hash": "dd0d91fc64af23f3b30ef9b44e0293c56d62e14bb5f1d619e816c8a969ee9ae7",
+          "outputs": [
+            "layers/kt-app/extracted/goremongers/cards/firefight-ploys/goremongers-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/goremongers/cards/firefight-ploys/goremongers-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/goremongers/cards/firefight-ploys/goremongers-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/goremongers/cards/firefight-ploys/goremongers-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:03:30.510051+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "856d704804aff0d8cfcc2a3f6a221b40b2be524e467606c16fd8eece0d66cd8d",
+          "outputs": [
+            "layers/kt-app/extracted/goremongers/cards/strategy-ploys/goremongers-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/goremongers/cards/strategy-ploys/goremongers-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/goremongers/cards/strategy-ploys/goremongers-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/goremongers/cards/strategy-ploys/goremongers-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:05:21.311247+00:00"
+        },
+        "faction-rules": {
+          "hash": "ef8f8155f627f2dc3f84100d5345fdfc33687a9e188dbcc69d2c6aa8998585fa",
+          "outputs": [
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_2.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_3.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_4.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_5.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_6.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_7.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_8.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_9.pdf",
+            "layers/kt-app/extracted/goremongers/cards/faction-rules/goremongers-faction-rules-page_10.pdf"
+          ],
+          "modified": "2026-07-06T16:05:36.453040+00:00"
+        },
+        "equipment": {
+          "hash": "2540dbf27436c50eb78235a102329a7878e23fc2479ec39c2d4d2e3bdffbdc8f",
+          "outputs": [
+            "layers/kt-app/extracted/goremongers/cards/equipment/goremongers-equipment-page_0.pdf",
+            "layers/kt-app/extracted/goremongers/cards/equipment/goremongers-equipment-page_1.pdf",
+            "layers/kt-app/extracted/goremongers/cards/equipment/goremongers-equipment-page_2.pdf",
+            "layers/kt-app/extracted/goremongers/cards/equipment/goremongers-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:06:07.094207+00:00"
+        },
+        "operatives-selection": {
+          "hash": "7470c7dd2a8fa630130698b20e649d6f51010980103b1e653951dbafcb6e4f88",
+          "outputs": [
+            "layers/kt-app/extracted/goremongers/cards/operatives-selection/goremongers-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:07:36.877072+00:00"
+        },
+        "datacards": {
+          "hash": "254d5d36d16f003c0865ee54c14d1a0a7cd094261008acccd0787c11f1ccabb3",
+          "outputs": [
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_0.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_1.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_2.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_3.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_4.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_5.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_6.pdf",
+            "layers/kt-app/extracted/goremongers/cards/datacards/goremongers-datacards-page_7.pdf"
+          ],
+          "modified": "2026-07-06T16:11:14.221794+00:00"
+        },
+        "cards": {
+          "hash": "c06199082cff66916398f474bbb6d595f91ccfec3d7981006e9729f5c5a758de",
+          "outputs": [
+            "layers/warcom/extracted/goremongers/cards/goremongers_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page03_card1_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page03_card2_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page03_card3_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page03_card4_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page07_card4_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page08_card1_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page08_card2_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page08_card3_portrait.pdf",
+            "layers/warcom/extracted/goremongers/cards/goremongers_page08_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:28:55.743364+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:28:55.743364+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/goremongers-structure.json",
+          "hash": "96e896215370847b28f181056a2959d3da92ee2a356b5649527a40054590fc95",
+          "modified": "2026-08-29T18:42:48.534003+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card1_landscape.pdf": "17bbe96afa3537cd8eeb532876f3c2c7cc7289f9c8e04e80200420e12fe09142",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card2_landscape.pdf": "663b85007b95289e3274d8c286d5dba151fa29f5b1cae9dd1a8fdf8effcc772b",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card3_landscape.pdf": "554c67531dc2d6cc4ff108b05e5178e16646c28a541a18efab76ba0adbea44ef",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card4_landscape.pdf": "b58d395a55938d85e710cf5df6ff158aaca3535fa2661efd1a6f573dc1b29878",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card1_landscape.pdf": "acdb95bbed3f2ebe9ef94f5080573c8415127bf23d5c868c987aba4346eb65e7",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card2_landscape.pdf": "72d5f7cc15bee2c5b7a7a1261df349c41dccac2ec96a70f0531fa8b81dd779cb",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card3_landscape.pdf": "19e532ba57b0a1c75efa1979e140e80545dc20549be62b850840a5e30a064bbf",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card4_landscape.pdf": "7cf18648e81d11b57bb466ca306890d5203d84e012a647d27d1e92a417feebf6",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card1_portrait.pdf": "4f1e1f1ae5f84a858b92a3baf6974893ab687e47de88b69f5661fdc7aca4306e",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card2_portrait.pdf": "0e27470020a51324974aa333e7741b50fda413be49ea5d931346d76f230f5f44",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card3_portrait.pdf": "f45d64c1edbcc536a735fe83036047001b78c2083eab59c05605a202de1046c1",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card4_portrait.pdf": "700fa291ea5acddba27a2fcd3c050807430ee9869543748a13a0ea52cedc36ee",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card1_portrait.pdf": "6170df3e205802f8eba5920c390b2ce742d30fab4e9df7ebf9b138d9e181c52c",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card2_portrait.pdf": "b1178ccdd87bc8906ddad96358be849012d36329c60c8a37189d76f00ea6d2b4",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card3_portrait.pdf": "52370d8bfb5b4d9fbe78a6b0a1b9f772e93f9c0dd1d875b7f06ade28da1be411",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card4_portrait.pdf": "0514f8907730e25f14242bd2f7faceec267a49e673ac09cef8fc0e6aaac42d60",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card1_portrait.pdf": "550d12e1b35152a727e183311486fdb080dfb14cc92a6b1df07553b159690dde",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card2_portrait.pdf": "ea31dcd7f0d8efce2ba92824a96bccf0fdcedf24a37bff514d598943bceb0e1b",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card3_portrait.pdf": "fbb69f91634fca80c194f6c3c71c929289a0a97a0e988aa6b224310914986d0d",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card4_portrait.pdf": "bc94a6467cec1e80424558e967096a8f49dec35c8b89c25590cd0d6fe1061a7b",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card1_portrait.pdf": "c5c7c1c0eb74fec687598233e3a7adf31f042a8e6ddf7ad095b5fb2ca9eb5efd",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card2_portrait.pdf": "7d5777ad0f2a1e7e1c918fec20c02aef07934bb37a5f9037e72615d2f4ff05e7",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card3_portrait.pdf": "1dd8bd5b62f36040af9d4ab0d6fe6a959a1ed0c4ecdd0d6ba4bea14bbf030276",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card4_portrait.pdf": "7658cbad9b7c1d24e73a174a215918d0cd78a039195d8599f53040f57cc8a002",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card1_portrait.pdf": "2d79e8d8990000ad26847be1c2eb994cff02f32c0ca46f43bc6b085fb1a07b15",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card2_portrait.pdf": "2d01bc3103c33a3b08a9dad0323cae4ac16df3abd882e5e51790a068b9b31dd5",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card3_portrait.pdf": "8a2bcea0f78b5c42cce086fd484d0c277461a6bf76c65bb6e44092700a7e4307",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card4_portrait.pdf": "475b7cfcb32e425bd8af72e41e9533d3c9575814c451ebb7d40b09241102acb0",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card1_portrait.pdf": "572ef0447f5fd79d2c3b10ca2bc3a3c705135363252465dcad1f64b49e30d23f",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card2_portrait.pdf": "d6b5622ee256e0e8d1c1e2beed327d9305a3e208a929bba49e029f54647a7041",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card3_portrait.pdf": "7073a65b6a0b3b89a14a2823424d8c17f20d589c23518aa2e9957bca3db8684f",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card4_portrait.pdf": "aa17c3235eb805005f60e386b959d88a895083701953d7722bdf16494a292ba4"
+      },
+      "completed": "2026-08-29T18:42:49.789072+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/goremongers/manifest.json",
+          "hash": "96e896215370847b28f181056a2959d3da92ee2a356b5649527a40054590fc95",
+          "modified": "2026-08-29T18:42:50.017760+00:00"
+        },
+        "goremongers-datacard-goremonger-blood-herald.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-blood-herald.pdf",
+          "hash": "ea9ebf5431e1b8f96b725051e1db9f864fcbfbf12b42c1cd50e6d992e6a71009",
+          "modified": "2026-08-26T15:18:03.110381+00:00"
+        },
+        "goremongers-datacard-goremonger-aspirant.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-aspirant.pdf",
+          "hash": "9bbb05d1475e39318b45adc054a95403e74648374201362c90f46e8f71edddaa",
+          "modified": "2026-08-26T15:18:03.226989+00:00"
+        },
+        "goremongers-datacard-goremonger-bloodtaker.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-bloodtaker.pdf",
+          "hash": "072cda71d0894e2134f88d2c8459fb694eb14f2d40cb540ae86fa73cee934826",
+          "modified": "2026-08-26T15:18:03.229696+00:00"
+        },
+        "goremongers-datacard-goremonger-impaler.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-impaler.pdf",
+          "hash": "358763540992c868f56b2d9e906cd63b75c97479f75f84bd21c25408aca0d6c8",
+          "modified": "2026-08-26T15:18:03.235206+00:00"
+        },
+        "goremongers-datacard-goremonger-inciter.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-inciter.pdf",
+          "hash": "fa128b5f233bdb03668cc12d42595a025fc3a6c10a0b893faadae37eafa9982a",
+          "modified": "2026-08-26T15:18:03.251153+00:00"
+        },
+        "goremongers-datacard-goremonger-skullclaimer.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-skullclaimer.pdf",
+          "hash": "4e28323ff2dcc6a40aaeb26d3e969d854f58783537ff4fefe47169f6f013e720",
+          "modified": "2026-08-26T15:18:03.274746+00:00"
+        },
+        "goremongers-datacard-goremonger-stalker.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-goremonger-stalker.pdf",
+          "hash": "1553bf05994c402a20fa1f081a06bc286d5e97e05289e4e241b908c33fed014a",
+          "modified": "2026-08-26T15:18:03.295883+00:00"
+        },
+        "goremongers-equipment-gory-totem.pdf": {
+          "path": "layers/integration/goremongers/goremongers-equipment-gory-totem.pdf",
+          "hash": "3cccf6b637b4961e6a6d32b728f4001bb23f935e4d35706cc6cdb3448db1e54a",
+          "modified": "2026-08-26T15:18:03.306642+00:00"
+        },
+        "goremongers-equipment-bloody-cadaver.pdf": {
+          "path": "layers/integration/goremongers/goremongers-equipment-bloody-cadaver.pdf",
+          "hash": "4fed0f9bdf8fb2f5f98bf273d512ffd20f2df0d9ca51bb80fad9aca4d2c53f6c",
+          "modified": "2026-08-26T15:18:03.330091+00:00"
+        },
+        "goremongers-equipment-chaos-sigil.pdf": {
+          "path": "layers/integration/goremongers/goremongers-equipment-chaos-sigil.pdf",
+          "hash": "31076085c0cd5bf3a5d95a145be7bea856eb0fabac9b95a60ae8b3b3b30060bc",
+          "modified": "2026-08-26T15:18:03.333383+00:00"
+        },
+        "goremongers-equipment-wrist-chains.pdf": {
+          "path": "layers/integration/goremongers/goremongers-equipment-wrist-chains.pdf",
+          "hash": "132c7b6a75021a63b43d76eeeebcb870f1c17e37cf94fa922b3ef4864ace9f88",
+          "modified": "2026-08-26T15:18:03.335811+00:00"
+        },
+        "goremongers-faction-rule-runes-of-khorne.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-runes-of-khorne.pdf",
+          "hash": "b35789e8411a79bea63ad7b74fbb98eecae50e27d8608a4d456b3f6242c519af",
+          "modified": "2026-08-26T15:18:03.346883+00:00"
+        },
+        "goremongers-faction-rule-gore-tanks.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-gore-tanks.pdf",
+          "hash": "04977ac59f6dcb2088151311d59121990770c5f53a2cbf1d534ff979e46a3e86",
+          "modified": "2026-08-26T15:18:03.566847+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-1.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-1.pdf",
+          "hash": "d6751f0cb8abd2ef61cc4d8648c3eae2f71cb435189962a9b5fb77227a743fdd",
+          "modified": "2026-08-26T15:18:04.171671+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-2.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-2.pdf",
+          "hash": "e76268d4811099f16b080314f36eb5b936a8b54f2b0173f686e48d56397ef97f",
+          "modified": "2026-08-26T15:18:04.541883+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-3.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-3.pdf",
+          "hash": "6e4e51e1d2321941058cafdb641ea595bec575199129eb97d6d06a23377a915e",
+          "modified": "2026-08-26T15:18:04.559135+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-4.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-4.pdf",
+          "hash": "45fe147a70658d83db8ccd80b030585dd206a1d981e22cad8f483f776ae80ec1",
+          "modified": "2026-08-26T15:18:04.562908+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-5.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-5.pdf",
+          "hash": "76585a151d842d4f1c4c84b5044e81d508ed153b1c2647bae64cbb48fae8a340",
+          "modified": "2026-08-26T15:18:04.572126+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-6.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-6.pdf",
+          "hash": "701a4ec3df7194c8194fa570b8ba3146fdfc4428f0ff2a95e3b343bd7f90c0c2",
+          "modified": "2026-08-26T15:18:04.588439+00:00"
+        },
+        "goremongers-faction-rule-sanguavitae-7.pdf": {
+          "path": "layers/integration/goremongers/goremongers-faction-rule-sanguavitae-7.pdf",
+          "hash": "cb65b6bc4665b57dd239626980ddd1347ad020810aae2884bbfe47cb126979a1",
+          "modified": "2026-08-26T15:18:04.593835+00:00"
+        },
+        "goremongers-token-guide-token-guide.pdf": {
+          "path": "layers/integration/goremongers/goremongers-token-guide-token-guide.pdf",
+          "hash": "de6a8051f1adaff723ed4785eb9c2df7243af78a6f32de5eb2f3571852a98756",
+          "modified": "2026-08-26T15:18:04.601317+00:00"
+        },
+        "goremongers-firefight-ploy-unbridled-aggression.pdf": {
+          "path": "layers/integration/goremongers/goremongers-firefight-ploy-unbridled-aggression.pdf",
+          "hash": "40d76b108980188aa257fc19aa48eb36787d33e2a5fe6c8114866139e330f6f1",
+          "modified": "2026-08-26T15:18:04.607584+00:00"
+        },
+        "goremongers-firefight-ploy-gorethirst.pdf": {
+          "path": "layers/integration/goremongers/goremongers-firefight-ploy-gorethirst.pdf",
+          "hash": "d1ef62bf9104651c2d95adcdd5b8ccc76992e86575fc418e74431a08c45f310d",
+          "modified": "2026-08-26T15:18:04.613018+00:00"
+        },
+        "goremongers-firefight-ploy-destructive-demise.pdf": {
+          "path": "layers/integration/goremongers/goremongers-firefight-ploy-destructive-demise.pdf",
+          "hash": "1fda364f8dc38f0927f7e4db2646b24049a9b580b48d29d1df3eae687e9bbdb0",
+          "modified": "2026-08-26T15:18:04.619931+00:00"
+        },
+        "goremongers-firefight-ploy-lacerate-flesh.pdf": {
+          "path": "layers/integration/goremongers/goremongers-firefight-ploy-lacerate-flesh.pdf",
+          "hash": "8bbef63063968080c351ac8eaf8e150168159fa68d6bc70fd7ac2eb71a8d4399",
+          "modified": "2026-08-26T15:18:04.624666+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection.pdf",
+          "hash": "50f80290a8b628741fc25b16ae57dfc831b6cc64d99dc9a8f00ed235d83f28a8",
+          "modified": "2026-08-26T15:18:04.636103+00:00"
+        },
+        "goremongers-strategy-ploy-enhanced-violence.pdf": {
+          "path": "layers/integration/goremongers/goremongers-strategy-ploy-enhanced-violence.pdf",
+          "hash": "7d07717cd56a86cb55a9d27bc1ea73af8854e101eb74ae2668858432ce610d5b",
+          "modified": "2026-08-26T15:18:04.640656+00:00"
+        },
+        "goremongers-strategy-ploy-augmented-endurance.pdf": {
+          "path": "layers/integration/goremongers/goremongers-strategy-ploy-augmented-endurance.pdf",
+          "hash": "e940833bc85829cd2c42b31ab7cd650dda798be33c4f810fd1d4be84fd49ac70",
+          "modified": "2026-08-26T15:18:04.646263+00:00"
+        },
+        "goremongers-strategy-ploy-gory-tenacity.pdf": {
+          "path": "layers/integration/goremongers/goremongers-strategy-ploy-gory-tenacity.pdf",
+          "hash": "f151ddc8c7829a01f3243051cd544998808fad64444f7cf0cd15495ecb1f3a6e",
+          "modified": "2026-08-26T15:18:04.651146+00:00"
+        },
+        "goremongers-strategy-ploy-hunt-for-blood.pdf": {
+          "path": "layers/integration/goremongers/goremongers-strategy-ploy-hunt-for-blood.pdf",
+          "hash": "aa0f69c7e7a788ca7246fa54c12276f191f719ece493e79f08f9f1ef5e2a3494",
+          "modified": "2026-08-26T15:18:04.660454+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "0a44286f4380eeff43c1399321e28134b582d5949e98ad16eb29d851ed7f8ac2",
+          "modified": "2026-08-29T18:42:50.037753+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "65d57d5b0bf9cd62ece857fb5127351dba2cdf2c892bdf874e38426a888bc872",
+          "modified": "2026-08-29T18:42:50.056340+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "c6cf74ad7a403fc649a28bf7e01699a11549be1eda17392ae2d5081d529ace22",
+          "modified": "2026-08-29T18:42:50.085055+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "a42bd7be2f74f4fbcff67aead8465f672db0277007a844259bdf1fb53ef55811",
+          "modified": "2026-08-29T18:42:50.111303+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "653476ed5e994d8f25ef0971a5f5eacd31467adf1d94bba88596b8390fdafcc0",
+          "modified": "2026-08-29T18:42:50.449151+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "e4687b94df3f93cb074f7ddac13715aaac2c4576c9f87d3d61a2e69a4f896f3d",
+          "modified": "2026-08-29T18:42:50.590055+00:00"
+        },
+        "goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/goremongers/goremongers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "5cccfa68bb0f5b50157df549ba069b5856dae9b578b49e505966bac3a7838012",
+          "modified": "2026-08-29T18:42:50.609754+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-1.pdf",
+          "hash": "965efb3c826907fddab8c8a44ee14d4db9161f2a41603111a6e5e44af4d7cf6e",
+          "modified": "2026-08-29T18:42:50.639951+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-2.pdf",
+          "hash": "61502f444fe2da9885b78e91ad2c1b20c5c746d538749dabd952948f2ff32eda",
+          "modified": "2026-08-29T18:42:50.665158+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-3.pdf",
+          "hash": "3e58746835066fbeab101a7d865b818c3879cce3b79198d636dcaa65e85b0d54",
+          "modified": "2026-08-29T18:42:50.697921+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-4.pdf",
+          "hash": "05590b832870a2541b3789410ceb94c5959447b790104f83c673d509cffeeafb",
+          "modified": "2026-08-29T18:42:50.989997+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-5.pdf",
+          "hash": "11acfe008aa85fedefbfc1e595be6a090f540b68526c733f287d6d8da8be4b41",
+          "modified": "2026-08-29T18:42:51.573788+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-6.pdf",
+          "hash": "ce7299b6fb4a646eebfb12a291bb1804d174872bc083e0cb79cb0aa2b413bda7",
+          "modified": "2026-08-29T18:42:52.405585+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-7.pdf",
+          "hash": "0fc83c9cf75b9d75ebf0f51884f17bdc601a90ec7a6e86fa6023c4b1b20c19da",
+          "modified": "2026-08-29T18:42:52.430859+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-8.pdf",
+          "hash": "b77b6e96d340f24629437c3e6240cead4d16f0f6b207c0763c81c9071170d7ca",
+          "modified": "2026-08-29T18:42:52.452410+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-9.pdf",
+          "hash": "7dbaee71f3dcbb936d1863fbd2b94db0b55a1b05599737ebd865995c162eff92",
+          "modified": "2026-08-29T18:42:52.821242+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-10.pdf",
+          "hash": "764ac96d7503717951c3cac9b4d4f42f5daadbe8d490ec2592253c7b00bd396e",
+          "modified": "2026-08-29T18:42:52.843159+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-11.pdf",
+          "hash": "57a1914a961fd87b1f6963040555a08e5fb86d56d625dfc5c3146449fbb6fd07",
+          "modified": "2026-08-29T18:42:52.862220+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-12.pdf",
+          "hash": "55853a1110862429ef5e8c374040ecf601d5f844867335993d7e9aaf8387d2a5",
+          "modified": "2026-08-29T18:42:52.882014+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-13.pdf",
+          "hash": "58f1ff7b3bb0c1ac74b6f865f788aa2a456ee9176995b369e22dc1ad0f9e3e95",
+          "modified": "2026-08-29T18:42:52.901483+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-14.pdf",
+          "hash": "3eecb2a0c1c8c82f9a6c48f191f2c9406deb81bb2449f0175b097b5b35b3d7ff",
+          "modified": "2026-08-29T18:42:52.919059+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-15.pdf",
+          "hash": "f5701d6119eb3bc74b9a5561b233b51b3eaea63768b71d2b7f7f330e8e3e7f61",
+          "modified": "2026-08-29T18:42:52.935649+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-16.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-16.pdf",
+          "hash": "2c179c5ac7605b9408d57695eb8e72ffe7bb419e1c81c1b8862209da9900e2c3",
+          "modified": "2026-08-29T18:42:52.953628+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-17.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-17.pdf",
+          "hash": "81432581f94f6b61c8a8c4fc671c1a96aae535870b01cb9e7df61bf2790f5829",
+          "modified": "2026-08-29T18:42:52.970233+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-18.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-18.pdf",
+          "hash": "c44e8bd92c299ee35887b679556f9e2ff47adff5a3eb557196d89318e7b445ee",
+          "modified": "2026-08-29T18:42:52.989386+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-19.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-19.pdf",
+          "hash": "108cb9bcbcfc16f850a48be651f49067fca130a97510b5213865473ee8a87aea",
+          "modified": "2026-08-29T18:42:53.006705+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-20.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-20.pdf",
+          "hash": "5ec50d448ef38da7258846080bbf7ada35e174061bdac3f80959c1eb4566da14",
+          "modified": "2026-08-29T18:42:53.036804+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-21.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-21.pdf",
+          "hash": "d60ce2c8fe9c8f2e680487195216d47659202648ddeb56cfd9ffb14634865358",
+          "modified": "2026-08-29T18:42:53.049211+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-22.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-22.pdf",
+          "hash": "2241893c690cc5d0fe614fd5cc33dfe0baec7c60aa6bb0429d7d62150d843cb1",
+          "modified": "2026-08-29T18:42:53.081317+00:00"
+        },
+        "goremongers-operatives-selection-operative-selection-23.pdf": {
+          "path": "layers/integration/goremongers/goremongers-operatives-selection-operative-selection-23.pdf",
+          "hash": "809adf3402b1ac82847568d6e3cffd7d02e09ee4bebc54afb114bdb7a2149dde",
+          "modified": "2026-08-29T18:42:53.139952+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/goremongers-structure.json": "96e896215370847b28f181056a2959d3da92ee2a356b5649527a40054590fc95",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card1_landscape.pdf": "17bbe96afa3537cd8eeb532876f3c2c7cc7289f9c8e04e80200420e12fe09142",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card2_landscape.pdf": "663b85007b95289e3274d8c286d5dba151fa29f5b1cae9dd1a8fdf8effcc772b",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card3_landscape.pdf": "554c67531dc2d6cc4ff108b05e5178e16646c28a541a18efab76ba0adbea44ef",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page01_card4_landscape.pdf": "b58d395a55938d85e710cf5df6ff158aaca3535fa2661efd1a6f573dc1b29878",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card1_landscape.pdf": "acdb95bbed3f2ebe9ef94f5080573c8415127bf23d5c868c987aba4346eb65e7",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card2_landscape.pdf": "72d5f7cc15bee2c5b7a7a1261df349c41dccac2ec96a70f0531fa8b81dd779cb",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card3_landscape.pdf": "19e532ba57b0a1c75efa1979e140e80545dc20549be62b850840a5e30a064bbf",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page02_card4_landscape.pdf": "7cf18648e81d11b57bb466ca306890d5203d84e012a647d27d1e92a417feebf6",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card1_portrait.pdf": "4f1e1f1ae5f84a858b92a3baf6974893ab687e47de88b69f5661fdc7aca4306e",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card2_portrait.pdf": "0e27470020a51324974aa333e7741b50fda413be49ea5d931346d76f230f5f44",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card3_portrait.pdf": "f45d64c1edbcc536a735fe83036047001b78c2083eab59c05605a202de1046c1",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page03_card4_portrait.pdf": "700fa291ea5acddba27a2fcd3c050807430ee9869543748a13a0ea52cedc36ee",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card1_portrait.pdf": "6170df3e205802f8eba5920c390b2ce742d30fab4e9df7ebf9b138d9e181c52c",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card2_portrait.pdf": "b1178ccdd87bc8906ddad96358be849012d36329c60c8a37189d76f00ea6d2b4",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card3_portrait.pdf": "52370d8bfb5b4d9fbe78a6b0a1b9f772e93f9c0dd1d875b7f06ade28da1be411",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page04_card4_portrait.pdf": "0514f8907730e25f14242bd2f7faceec267a49e673ac09cef8fc0e6aaac42d60",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card1_portrait.pdf": "550d12e1b35152a727e183311486fdb080dfb14cc92a6b1df07553b159690dde",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card2_portrait.pdf": "ea31dcd7f0d8efce2ba92824a96bccf0fdcedf24a37bff514d598943bceb0e1b",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card3_portrait.pdf": "fbb69f91634fca80c194f6c3c71c929289a0a97a0e988aa6b224310914986d0d",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page05_card4_portrait.pdf": "bc94a6467cec1e80424558e967096a8f49dec35c8b89c25590cd0d6fe1061a7b",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card1_portrait.pdf": "c5c7c1c0eb74fec687598233e3a7adf31f042a8e6ddf7ad095b5fb2ca9eb5efd",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card2_portrait.pdf": "7d5777ad0f2a1e7e1c918fec20c02aef07934bb37a5f9037e72615d2f4ff05e7",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card3_portrait.pdf": "1dd8bd5b62f36040af9d4ab0d6fe6a959a1ed0c4ecdd0d6ba4bea14bbf030276",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page06_card4_portrait.pdf": "7658cbad9b7c1d24e73a174a215918d0cd78a039195d8599f53040f57cc8a002",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card1_portrait.pdf": "2d79e8d8990000ad26847be1c2eb994cff02f32c0ca46f43bc6b085fb1a07b15",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card2_portrait.pdf": "2d01bc3103c33a3b08a9dad0323cae4ac16df3abd882e5e51790a068b9b31dd5",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card3_portrait.pdf": "8a2bcea0f78b5c42cce086fd484d0c277461a6bf76c65bb6e44092700a7e4307",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page07_card4_portrait.pdf": "475b7cfcb32e425bd8af72e41e9533d3c9575814c451ebb7d40b09241102acb0",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card1_portrait.pdf": "572ef0447f5fd79d2c3b10ca2bc3a3c705135363252465dcad1f64b49e30d23f",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card2_portrait.pdf": "d6b5622ee256e0e8d1c1e2beed327d9305a3e208a929bba49e029f54647a7041",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card3_portrait.pdf": "7073a65b6a0b3b89a14a2823424d8c17f20d589c23518aa2e9957bca3db8684f",
+        "layers/warcom/extracted/goremongers/cards/goremongers_page08_card4_portrait.pdf": "aa17c3235eb805005f60e386b959d88a895083701953d7722bdf16494a292ba4"
+      },
+      "completed": "2026-08-29T18:42:54.878156+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "c06199082cff66916398f474bbb6d595f91ccfec3d7981006e9729f5c5a758de",
+          "outputs": [
+            "layers/integration/goremongers/artwork/goremongers-artwork-01.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-02.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-03.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-04.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-05.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-06.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-07.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-08.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-09.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-10.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-11.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-12.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-13.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-14.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-15.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-16.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-17.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-18.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-19.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-20.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-21.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-22.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-23.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-24.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-25.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-26.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-27.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-28.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-29.jpeg",
+            "layers/integration/goremongers/artwork/goremongers-artwork-metadata.json",
+            "layers/integration/goremongers/artwork/icons/goremongers-icon-landscape.jpg",
+            "layers/integration/goremongers/artwork/icons/goremongers-icon-portrait.jpg",
+            "layers/integration/goremongers/artwork/icons/goremongers-icon-token-transparent.png",
+            "layers/integration/goremongers/artwork/icons/goremongers-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:46:52.274889+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:46:52.274912+00:00"
+    }
+  }
+}

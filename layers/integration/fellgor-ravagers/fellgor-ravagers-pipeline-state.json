@@ -1,0 +1,1526 @@
+{
+  "team": "fellgor-ravagers",
+  "pipeline_version": "2.0",
+  "last_updated": "2026-08-29T18:53:38.203581+00:00",
+  "steps": {
+    "content_analysis": {
+      "outputs": {
+        "content.json": {
+          "path": "layers/integration/fellgor-ravagers/content/fellgor-ravagers-content.json",
+          "hash": "3d4ea431bb2ec2ce9b63c4da37a1554e4d042e1b07ee5512e56424508374cbaa",
+          "modified": "2026-08-29T18:42:50.595617+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:42:53.013580+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/manifest.json": "bb1f1897655d98b270b25fa5e199b392fe8495d1c500c83d910fb7e5ad14fadc",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-deathknell.pdf": "4473fa907a15fca29b5a637fa0551ace2f0535905d90667e89eb3e43a1d24e5e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-fluxbray.pdf": "4b76ccebc8e75c772594ccbe4184ec4bf5807308ce83f03c9420bc1f7039fe44",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gnarlscar.pdf": "c42b0f051aece3cc5e893e49553c631039d52e9fd0ce04e6114975bae0bbbb23",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gorehorn.pdf": "a927722efe135d502fb67084f7795ca0df8683ad493265b1fe2dfb2f144c9157",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-herd-goad.pdf": "6f8d4a53d4d159f787f8dc7e5d311b3868b95c9d378a3d364ce801120c908ed2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-ironhorn.pdf": "fb150d050ecd1f5192066510845bac7ba08c37aece57fba854605c129f0b5829",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-mangler.pdf": "e26e995fdf582328b39e3d659d6b2976bc81b0b2d16aaf00fc7d9eb9df37d5ef",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-shaman.pdf": "3e72cce4a134d4f569c327aebf8d8287c68611798cea5de22859428cbacda657",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-toxhorn.pdf": "3ccd2f08046754109fd5f5e50795f31f570053c2b6db2def470b5f9693c838e4",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-vandal.pdf": "14e5ddf10763d9ae4a464de6cce0b714abb20360abc3ea31619e5245de80cf74",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-warrior.pdf": "e30c6eb651a2e12683230677a31197f7528d12b882c7e6bb78bfe4feb1681b02",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "7e50f34bdbd7db8373e1760919b194b86fc37acaf7014c0b4e481b179410cb10",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "57be0cb1cb3e64ffdd0222c36cd57d69475faaae88869fff7288c9103c5e9201",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "89a0a10741f8a5cb38cf435f777f79c4ff2f81ca772f0f08030ea28a5a957c78",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "17d70a171cc0c79ecdd1839be402048dc2498731b8ab38775b0f241afd5fe9a1",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "971b037486cbe991501d6647bb412e25a6941f3a83d671357f2a538295ad6ce3",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "193cddeee5170bca22cdb44cfb4341fa461fdf50c728cc4e055dfabda0967d3d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "4dedd0949b5d88e3064cb46b8489413cb74171ee7889851ea85d5b98182cb44e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "7d7906d6835e785a123035144a15b353df50f874163ba4bcb260a870a48526ae",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "711195c6239979b0562e79ab382600224911b98f80cfec364f69432793e412c9",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5fb807554dc96028570f27e684daee8e23094c021d3aa2795cc722df8753ca13",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "7a4c11e8160b2d6932e5c0ed5499a8d994e7c0dac6cbbac0c19a47118341a125",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-brass-adornments.pdf": "afbae4dd90fb9ade15135f9ce91b85ce016c85b8df56e009cbaf55d886734595",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-chaos-sigil.pdf": "6eb47d0cca150a0324c56fdc9313b0fcde315142eed604932deb256246d8ab56",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-gore-marks.pdf": "6202cb05cafa6417239a627ab8fc8ac391a6756ba09081bf3ccebecec5962e87",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-war-paint.pdf": "55cb54dfb27df8665278a4e585013fd713e7d3317d3c121ac7f8960b27c29b0b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-faction-rule-frenzy.pdf": "5ca83074b6e21367b2d4fa746103c3e943695e4a75acbf68256d7f68716b13a0",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-animalistic-fury.pdf": "5b03c1d676aa17fa3e264b92830cf88737b8936982d61d44810b069b0a0acd10",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-bloodsense.pdf": "e85b6d1d0d5ff9851d524c3b38ae47959b0d6852bd76d95ed41949d9c4f239c2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-ruthless-rampage.pdf": "819b796174cd30a80fc37e20c0b34cebded83d5d0d1e439e9925471f8347fccd",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-wild-rage.pdf": "a7272cf947412ec9400bf1abc48a59c16bc2e5b9e780196e7b809020b2ff0b9e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-1.pdf": "38bad7619db8b3c7274986131d23f607eacf7a4e19dfc6ca0fc3a40636b7369d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-10.pdf": "a90fbc4ce27ee3412b58a87f38a15e906f3dd24ddff34bea85aaf9e27d614e6b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-11.pdf": "9258a7b8db37f8327d67731b73fdd251a67a5f146d7108d1333bb489c0c7d502",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-12.pdf": "b8672dbb439fb999834be2e2325968716b27f3498c34be6b50cd8dd9f6cd78df",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-13.pdf": "550ef4d0065705b73c562cd13116df45d125d69f5d668508bd85dd80a0de7610",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-14.pdf": "35854bdc592d59bae94058cdbc2e147a5ab977ecb1a863d6e51cde231339a4fa",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-15.pdf": "26d329182d817757cec97990330cb664cda4371fea992637b5a4a3329696bae8",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-2.pdf": "4169d41b10c4682520e2b441cc5a5901c9bf1fefecd268875faacbe0b2ac355a",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-3.pdf": "4aa1f3e871154bf266e18c0f69016609313669cfc554c78266b2e9918dde158b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-4.pdf": "0f9e87a4eb15e8cc634e9b1b44ffaf2ff85fb0b48abd03596b0582a3473bd878",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-5.pdf": "e6acd6baf767ed375eab951e9f6d7b5fa240f54e0c7e501a605ac8118a82e4ce",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-6.pdf": "5925403a4178902dad0498b6fa12971b6f6cfeb5da15380766a34badca2aec9b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-7.pdf": "a858f53f0685697705e30f0b359eed76e8fbe52ed2b0c229b09f360e9e5676ff",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-8.pdf": "acf6c7b992ccdd79f86fb023cd632baee9624d0aee54c6c8e4190dfa129d627d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-9.pdf": "7a1f4f496beaf1e63d81b1085669851e2a030af53f22ea28dcbaf7c3cb8ca81c",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection.pdf": "9567a0bc7d3da9669bcf47724bb4d111310c744ce0b08f28f87c100a4fa10b36",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-ambush.pdf": "3614663d68e13c909129e5f7ae0e4c15a0073fbb9e22c7954362d0261615afc2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-pelting-firepower.pdf": "981bf558df62b9b57cb4ac266bb6a133455b71bf958ec73c3c54908ec78c179d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-reckless-determination.pdf": "16933f8e7aa8cbb510f0eb38edc149f5425f7a8a0c498efface39e236bc9fd39",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-violent-temperament.pdf": "329c3dba94397d138fa55734bee8c50d5ce7d43e8bda9084c2ca0f87118df682",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-token-guide-token-guide.pdf": "bed704eb178088c3f23266ef2a160f4ce1fe7626733c5bb463b2805bceb44a46"
+      }
+    },
+    "extract_backsides": {
+      "outputs": {
+        "backside-landscape.jpg": {
+          "path": "layers/integration/fellgor-ravagers/card-backside/fellgor-ravagers-backside-landscape.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-07-12T18:46:55.014944+00:00"
+        },
+        "backside-portrait.jpg": {
+          "path": "layers/integration/fellgor-ravagers/card-backside/fellgor-ravagers-backside-portrait.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-07-12T18:46:55.016741+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:46:55.020167+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-token.jpg": "362e293ff60c6c6aba373f25c52746eed1aaa328c2bd549efa8af4523a84992f",
+        "config/defaults/box/card-box-background.jpeg": "2dd1442a7c52ca1d66899333f678d60f48981ce20561ead77c1161d548176036"
+      }
+    },
+    "extract_tokens": {
+      "outputs": {
+        "tokens/fellgor-ravagers-brass-adornments.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.png",
+          "hash": "fa48fa26823cda36eb6525509ad09e41c120fa8cff7061298ae606b7110e3917",
+          "modified": "2026-08-29T18:42:55.003961+00:00"
+        },
+        "tokens/fellgor-ravagers-chaos-sigil.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.png",
+          "hash": "322301f9d67d08a66e5c713e456d01ceba3a76f92c9b8eb2863f3f7f63be2795",
+          "modified": "2026-08-29T18:42:55.058927+00:00"
+        },
+        "tokens/fellgor-ravagers-frenzy.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.png",
+          "hash": "0c577bd8bfe33f41f8351a426289accec0c67a1bea0d25cf26d46d363b0e2abb",
+          "modified": "2026-08-29T18:42:55.112032+00:00"
+        },
+        "tokens/fellgor-ravagers-gong-knell.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.png",
+          "hash": "de0cbb0e5b0b0d3855001291ec9d8c53e28b95f7b1bc1bf04ac9067ee347d0bc",
+          "modified": "2026-08-29T18:42:55.169988+00:00"
+        },
+        "tokens/fellgor-ravagers-gore-marks.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.png",
+          "hash": "7550c97215313db97df25a285fe97a055f9e1e328efcfec392345e42fc6608ab",
+          "modified": "2026-08-29T18:42:55.242490+00:00"
+        },
+        "tokens/fellgor-ravagers-mantle-of-darkness.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.png",
+          "hash": "ab5b5093d084f21c5b49edf72b5da380d25c9992922b861a8e96073f719cf76d",
+          "modified": "2026-08-29T18:42:55.466793+00:00"
+        },
+        "tokens/fellgor-ravagers-pelting-firepower.png": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.png",
+          "hash": "dffb58df325b6b0384fe45517f83de82e1256b5ef95d8d2ce2338fa3631b5346",
+          "modified": "2026-08-29T18:42:55.652113+00:00"
+        },
+        "tokens/fellgor-ravagers-brass-adornments.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.724929+00:00"
+        },
+        "tokens/fellgor-ravagers-chaos-sigil.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.726929+00:00"
+        },
+        "tokens/fellgor-ravagers-frenzy.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.729435+00:00"
+        },
+        "tokens/fellgor-ravagers-gong-knell.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.730436+00:00"
+        },
+        "tokens/fellgor-ravagers-gore-marks.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.732435+00:00"
+        },
+        "tokens/fellgor-ravagers-mantle-of-darkness.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.733939+00:00"
+        },
+        "tokens/fellgor-ravagers-pelting-firepower.obj": {
+          "path": "output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.obj",
+          "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+          "modified": "2026-08-29T18:42:55.735451+00:00"
+        },
+        "tokens/tokenbag/fellgor-ravagers-token-bag-icon.png": {
+          "path": "output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag-icon.png",
+          "hash": "362e293ff60c6c6aba373f25c52746eed1aaa328c2bd549efa8af4523a84992f",
+          "modified": "2026-08-29T18:42:55.742467+00:00"
+        },
+        "tokens/tokenbag/fellgor-ravagers-token-bag.obj": {
+          "path": "output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag.obj",
+          "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+          "modified": "2026-08-29T18:42:55.744481+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:07.976281+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/manifest.json": "bb1f1897655d98b270b25fa5e199b392fe8495d1c500c83d910fb7e5ad14fadc",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-token.jpg": "362e293ff60c6c6aba373f25c52746eed1aaa328c2bd549efa8af4523a84992f",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-deathknell.pdf": "4473fa907a15fca29b5a637fa0551ace2f0535905d90667e89eb3e43a1d24e5e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-fluxbray.pdf": "4b76ccebc8e75c772594ccbe4184ec4bf5807308ce83f03c9420bc1f7039fe44",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gnarlscar.pdf": "c42b0f051aece3cc5e893e49553c631039d52e9fd0ce04e6114975bae0bbbb23",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gorehorn.pdf": "a927722efe135d502fb67084f7795ca0df8683ad493265b1fe2dfb2f144c9157",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-herd-goad.pdf": "6f8d4a53d4d159f787f8dc7e5d311b3868b95c9d378a3d364ce801120c908ed2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-ironhorn.pdf": "fb150d050ecd1f5192066510845bac7ba08c37aece57fba854605c129f0b5829",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-mangler.pdf": "e26e995fdf582328b39e3d659d6b2976bc81b0b2d16aaf00fc7d9eb9df37d5ef",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-shaman.pdf": "3e72cce4a134d4f569c327aebf8d8287c68611798cea5de22859428cbacda657",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-toxhorn.pdf": "3ccd2f08046754109fd5f5e50795f31f570053c2b6db2def470b5f9693c838e4",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-vandal.pdf": "14e5ddf10763d9ae4a464de6cce0b714abb20360abc3ea31619e5245de80cf74",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-warrior.pdf": "e30c6eb651a2e12683230677a31197f7528d12b882c7e6bb78bfe4feb1681b02",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "7e50f34bdbd7db8373e1760919b194b86fc37acaf7014c0b4e481b179410cb10",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "57be0cb1cb3e64ffdd0222c36cd57d69475faaae88869fff7288c9103c5e9201",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "89a0a10741f8a5cb38cf435f777f79c4ff2f81ca772f0f08030ea28a5a957c78",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "17d70a171cc0c79ecdd1839be402048dc2498731b8ab38775b0f241afd5fe9a1",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "971b037486cbe991501d6647bb412e25a6941f3a83d671357f2a538295ad6ce3",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "193cddeee5170bca22cdb44cfb4341fa461fdf50c728cc4e055dfabda0967d3d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "4dedd0949b5d88e3064cb46b8489413cb74171ee7889851ea85d5b98182cb44e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "7d7906d6835e785a123035144a15b353df50f874163ba4bcb260a870a48526ae",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "711195c6239979b0562e79ab382600224911b98f80cfec364f69432793e412c9",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5fb807554dc96028570f27e684daee8e23094c021d3aa2795cc722df8753ca13",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "7a4c11e8160b2d6932e5c0ed5499a8d994e7c0dac6cbbac0c19a47118341a125",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-brass-adornments.pdf": "afbae4dd90fb9ade15135f9ce91b85ce016c85b8df56e009cbaf55d886734595",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-chaos-sigil.pdf": "6eb47d0cca150a0324c56fdc9313b0fcde315142eed604932deb256246d8ab56",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-gore-marks.pdf": "6202cb05cafa6417239a627ab8fc8ac391a6756ba09081bf3ccebecec5962e87",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-war-paint.pdf": "55cb54dfb27df8665278a4e585013fd713e7d3317d3c121ac7f8960b27c29b0b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-faction-rule-frenzy.pdf": "5ca83074b6e21367b2d4fa746103c3e943695e4a75acbf68256d7f68716b13a0",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-animalistic-fury.pdf": "5b03c1d676aa17fa3e264b92830cf88737b8936982d61d44810b069b0a0acd10",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-bloodsense.pdf": "e85b6d1d0d5ff9851d524c3b38ae47959b0d6852bd76d95ed41949d9c4f239c2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-ruthless-rampage.pdf": "819b796174cd30a80fc37e20c0b34cebded83d5d0d1e439e9925471f8347fccd",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-wild-rage.pdf": "a7272cf947412ec9400bf1abc48a59c16bc2e5b9e780196e7b809020b2ff0b9e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-1.pdf": "38bad7619db8b3c7274986131d23f607eacf7a4e19dfc6ca0fc3a40636b7369d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-10.pdf": "a90fbc4ce27ee3412b58a87f38a15e906f3dd24ddff34bea85aaf9e27d614e6b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-11.pdf": "9258a7b8db37f8327d67731b73fdd251a67a5f146d7108d1333bb489c0c7d502",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-12.pdf": "b8672dbb439fb999834be2e2325968716b27f3498c34be6b50cd8dd9f6cd78df",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-13.pdf": "550ef4d0065705b73c562cd13116df45d125d69f5d668508bd85dd80a0de7610",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-14.pdf": "35854bdc592d59bae94058cdbc2e147a5ab977ecb1a863d6e51cde231339a4fa",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-15.pdf": "26d329182d817757cec97990330cb664cda4371fea992637b5a4a3329696bae8",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-2.pdf": "4169d41b10c4682520e2b441cc5a5901c9bf1fefecd268875faacbe0b2ac355a",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-3.pdf": "4aa1f3e871154bf266e18c0f69016609313669cfc554c78266b2e9918dde158b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-4.pdf": "0f9e87a4eb15e8cc634e9b1b44ffaf2ff85fb0b48abd03596b0582a3473bd878",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-5.pdf": "e6acd6baf767ed375eab951e9f6d7b5fa240f54e0c7e501a605ac8118a82e4ce",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-6.pdf": "5925403a4178902dad0498b6fa12971b6f6cfeb5da15380766a34badca2aec9b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-7.pdf": "a858f53f0685697705e30f0b359eed76e8fbe52ed2b0c229b09f360e9e5676ff",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-8.pdf": "acf6c7b992ccdd79f86fb023cd632baee9624d0aee54c6c8e4190dfa129d627d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-9.pdf": "7a1f4f496beaf1e63d81b1085669851e2a030af53f22ea28dcbaf7c3cb8ca81c",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection.pdf": "9567a0bc7d3da9669bcf47724bb4d111310c744ce0b08f28f87c100a4fa10b36",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-ambush.pdf": "3614663d68e13c909129e5f7ae0e4c15a0073fbb9e22c7954362d0261615afc2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-pelting-firepower.pdf": "981bf558df62b9b57cb4ac266bb6a133455b71bf958ec73c3c54908ec78c179d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-reckless-determination.pdf": "16933f8e7aa8cbb510f0eb38edc149f5425f7a8a0c498efface39e236bc9fd39",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-violent-temperament.pdf": "329c3dba94397d138fa55734bee8c50d5ce7d43e8bda9084c2ca0f87118df682",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-token-guide-token-guide.pdf": "bed704eb178088c3f23266ef2a160f4ce1fe7626733c5bb463b2805bceb44a46"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/fellgor-ravagers/dice/fellgor-ravagers-dice-light.jpg",
+          "hash": "5719d8ebbc15d701130d86e8213f3d6eb40a3b8dff5b172679ead3b399d77d14",
+          "modified": "2026-08-29T18:43:09.084061+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/fellgor-ravagers/dice/fellgor-ravagers-dice-dark.jpg",
+          "hash": "77a7cfa5068b571afed6f8b0c88b0eca1a1d77d61fdaac0589a57214d1d457ae",
+          "modified": "2026-08-29T18:43:09.094587+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/fellgor-ravagers/dice/fellgor-ravagers-dice-team.jpg",
+          "hash": "2d358d239522668b187a29605617247841484d7dcfc2de6fe397f9a2f0b60692",
+          "modified": "2026-08-29T18:43:09.100116+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:09.108845+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-token-transparent.png": "a73110b8836e01f476256e71167f773f7922054835c35c7bd4f8f736a56e2deb",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box-texture.jpg",
+          "hash": "59d5256434e0fd3092c7b9fa932fd5c8e78d94fd46304df842a1b3a4eda51c80",
+          "modified": "2026-08-29T18:43:16.649702+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-08-29T18:43:16.975028+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:18.600048+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-token.jpg": "362e293ff60c6c6aba373f25c52746eed1aaa328c2bd549efa8af4523a84992f",
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/fellgor-deathknell-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-deathknell-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:38.331200+00:00"
+        },
+        "cards/datacards/fellgor-deathknell-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-deathknell-front.jpg",
+          "hash": "cf973daa8e0b8371f84e4289661b5f89ed00672b0a203fffa3523579e7adda0a",
+          "modified": "2026-08-29T18:43:38.335139+00:00"
+        },
+        "cards/datacards/fellgor-fluxbray-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-fluxbray-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:38.337138+00:00"
+        },
+        "cards/datacards/fellgor-fluxbray-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-fluxbray-front.jpg",
+          "hash": "c75e89d705606ff2714669c31fbc61347c6601042bbdc0ee34bb3f95bb250bd1",
+          "modified": "2026-08-29T18:43:38.859011+00:00"
+        },
+        "cards/datacards/fellgor-gnarlscar-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-gnarlscar-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:38.860013+00:00"
+        },
+        "cards/datacards/fellgor-gnarlscar-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-gnarlscar-front.jpg",
+          "hash": "d1516dff783ea2f6159f22d8cd218bd3c6e505e5dc670679516c2d924ff12dd5",
+          "modified": "2026-08-29T18:43:38.863095+00:00"
+        },
+        "cards/datacards/fellgor-gorehorn-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-gorehorn-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:38.864599+00:00"
+        },
+        "cards/datacards/fellgor-gorehorn-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-gorehorn-front.jpg",
+          "hash": "c17b779545e1ab931979cea99c7c0c3fde31ce3d4c68224dabb51ca5d7506f04",
+          "modified": "2026-08-29T18:43:38.868128+00:00"
+        },
+        "cards/datacards/fellgor-herd-goad-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-herd-goad-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:39.389446+00:00"
+        },
+        "cards/datacards/fellgor-herd-goad-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-herd-goad-front.jpg",
+          "hash": "dc49cd81d832ba0e931fb93c0188727a57f0cae924488c20d1f89f6f0ca953c0",
+          "modified": "2026-08-29T18:43:39.392452+00:00"
+        },
+        "cards/datacards/fellgor-ironhorn-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-ironhorn-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:39.393450+00:00"
+        },
+        "cards/datacards/fellgor-ironhorn-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-ironhorn-front.jpg",
+          "hash": "a2608e274de3580c2bae42c29befab3be1bd6e8b5f40c4cfbce954b288174dc3",
+          "modified": "2026-08-29T18:43:39.394451+00:00"
+        },
+        "cards/datacards/fellgor-mangler-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-mangler-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:39.395451+00:00"
+        },
+        "cards/datacards/fellgor-mangler-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-mangler-front.jpg",
+          "hash": "2ac298d3c6775037b22b3e5983271e89a4e286535def056e24ab2a0e2fae7742",
+          "modified": "2026-08-29T18:43:39.878085+00:00"
+        },
+        "cards/datacards/fellgor-shaman-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-shaman-back.jpg",
+          "hash": "67f8b6bea6d5c295f9952125886e6407c6bc91b1e8070b3963574eb3d444a89a",
+          "modified": "2026-08-29T18:43:39.921310+00:00"
+        },
+        "cards/datacards/fellgor-shaman-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-shaman-front.jpg",
+          "hash": "3798dcc08f1ea52526d9ee3253a34ebd2f9445a30a12514e93b54f6dbd8001a0",
+          "modified": "2026-08-29T18:43:39.924823+00:00"
+        },
+        "cards/datacards/fellgor-toxhorn-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-toxhorn-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:39.926822+00:00"
+        },
+        "cards/datacards/fellgor-toxhorn-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-toxhorn-front.jpg",
+          "hash": "c31288380c494b9301b300fe19062bbbaae41f8bf87d5661ca2b5c209d2179be",
+          "modified": "2026-08-29T18:43:40.446198+00:00"
+        },
+        "cards/datacards/fellgor-vandal-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-vandal-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:40.448212+00:00"
+        },
+        "cards/datacards/fellgor-vandal-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-vandal-front.jpg",
+          "hash": "e5f5db4a3fb9eba11a8d115cb354478f05b374495c2cda232c9b3d0cf1339a3d",
+          "modified": "2026-08-29T18:43:40.451231+00:00"
+        },
+        "cards/datacards/fellgor-warrior-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-warrior-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:40.452235+00:00"
+        },
+        "cards/datacards/fellgor-warrior-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/fellgor-warrior-front.jpg",
+          "hash": "1aa8cd2abb826b9e26ca6bb2e04fc56faee043fcc062d68a28b00ed60241ed23",
+          "modified": "2026-08-29T18:43:40.935044+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-brass-adornments-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.770038+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-brass-adornments-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-front.jpg",
+          "hash": "bed2907a666e9320ed649b95057bd61324313d487741584b49f6c1910423eb1c",
+          "modified": "2026-08-29T18:43:44.772095+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-chaos-sigil-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-chaos-sigil-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.773098+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-chaos-sigil-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-chaos-sigil-front.jpg",
+          "hash": "41a1a9c767258b7a7ef2cd309582d5ba817f28b888fedcf65b52617bace513a5",
+          "modified": "2026-08-29T18:43:44.776102+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-gore-marks-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-gore-marks-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.777723+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-gore-marks-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-gore-marks-front.jpg",
+          "hash": "c259c700576125a4a742afa361428b2a99802ff286c5bdb2b8f57c740c49ae4c",
+          "modified": "2026-08-29T18:43:44.779728+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-war-paint-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-war-paint-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.780727+00:00"
+        },
+        "cards/equipment/fellgor-ravagers-war-paint-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-war-paint-front.jpg",
+          "hash": "87683fc5b44b959d82c03d8039e188c3f14534e66470c3dd0d3bfe8943afd4d8",
+          "modified": "2026-08-29T18:43:44.783234+00:00"
+        },
+        "cards/faction_rules/fellgor-ravagers-frenzy-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/faction_rules/fellgor-ravagers-frenzy-back.jpg",
+          "hash": "de917fa15bca23786625dc88a96e4d04491dce1729f5f4450e1095e636f0630e",
+          "modified": "2026-08-29T18:43:44.785742+00:00"
+        },
+        "cards/faction_rules/fellgor-ravagers-frenzy-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/faction_rules/fellgor-ravagers-frenzy-front.jpg",
+          "hash": "9280a94bdf02aac85276b717fa140f77ee057b5ac45cc61d0e4badab90309894",
+          "modified": "2026-08-29T18:43:44.789281+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-animalistic-fury-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-animalistic-fury-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.790287+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-animalistic-fury-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-animalistic-fury-front.jpg",
+          "hash": "aad2351113006f5ad4c60dc0b71e6eda7f9e9fed638c5aa6e7dcd4c415930844",
+          "modified": "2026-08-29T18:43:44.791287+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-bloodsense-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-bloodsense-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.793118+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-bloodsense-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-bloodsense-front.jpg",
+          "hash": "1047daadcca55b9bece8632070498ebf376e74270a4f81819f56b4c2ef3aac4b",
+          "modified": "2026-08-29T18:43:44.795626+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-ruthless-rampage-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-ruthless-rampage-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.798133+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-ruthless-rampage-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-ruthless-rampage-front.jpg",
+          "hash": "c526874d816faecaca545a84faccde15665c649dcb7cae2331fe427a0d38ef1b",
+          "modified": "2026-08-29T18:43:44.800137+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-wild-rage-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-wild-rage-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.801654+00:00"
+        },
+        "cards/firefight_ploys/fellgor-ravagers-wild-rage-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-wild-rage-front.jpg",
+          "hash": "94e439ce8542707feaa914f83e7da4388988e46fea0f826db229dc765270bb75",
+          "modified": "2026-08-29T18:43:44.803659+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.805162+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-front.jpg",
+          "hash": "52e687612ddfa7b847572d67bad7b8ae6fbdc4538d22a8965806e2c1413af9ae",
+          "modified": "2026-08-29T18:43:46.245127+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-ambush-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-ambush-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.246134+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-ambush-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-ambush-front.jpg",
+          "hash": "5c208ccbbd3b8ffab8c102fbe3a311a9ecda118063919e2f7ab4522cbd04e94e",
+          "modified": "2026-08-29T18:43:46.248131+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-pelting-firepower-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-pelting-firepower-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.249173+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-pelting-firepower-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-pelting-firepower-front.jpg",
+          "hash": "e3c25530ebacb6316c3c714122ddf1f5960b0ae5788867f3681c4e34125b6fec",
+          "modified": "2026-08-29T18:43:46.252184+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-reckless-determination-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-reckless-determination-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.255204+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-reckless-determination-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-reckless-determination-front.jpg",
+          "hash": "7c61a6f7ecad294768d9859fb5a43b41cf8de0d908a202dfb5be24cb1bcb358b",
+          "modified": "2026-08-29T18:43:46.258189+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-violent-temperament-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-violent-temperament-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.259193+00:00"
+        },
+        "cards/strategy_ploys/fellgor-ravagers-violent-temperament-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-violent-temperament-front.jpg",
+          "hash": "f50f8e6dce848fd28fc42d106f76113017ad4579002d3b1c191e852b117e8e72",
+          "modified": "2026-08-29T18:43:46.261193+00:00"
+        },
+        "cards/token_guide/fellgor-ravagers-token-guide-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/token_guide/fellgor-ravagers-token-guide-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.263055+00:00"
+        },
+        "cards/token_guide/fellgor-ravagers-token-guide-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/token_guide/fellgor-ravagers-token-guide-front.jpg",
+          "hash": "3d210a998b54e6a4563143b877ec3d802d826547f5f6f311bb4bbcff26c33c04",
+          "modified": "2026-08-29T18:43:46.265571+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:40.979150+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
+          "hash": "b1fcba27d9b17683c0fe784d7a1afdb2d085ef13333eb74dfc21597f47bc9d84",
+          "modified": "2026-08-29T18:43:41.510393+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:41.517911+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg",
+          "hash": "15a4d1da543039001847e23a44dac0bb03bc2ca432e363654c724ec363de985f",
+          "modified": "2026-08-29T18:43:42.042978+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:42.050569+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg",
+          "hash": "166f937ea656e6dfe99cbb6d8e7f8ea21757166c528a80433af02768487d0f7a",
+          "modified": "2026-08-29T18:43:42.574554+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:42.582136+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
+          "hash": "8201befb98721d38ba6f9902ee033248a926f14a3733ba5d8a21c2886f542576",
+          "modified": "2026-08-29T18:43:43.107932+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:43.115476+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
+          "hash": "2ec1565428c67415607dc37a4045227764b20b355e32b17851107e0e52ab0d16",
+          "modified": "2026-08-29T18:43:43.632414+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:43.639937+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
+          "hash": "f281c9fdb8d488a285078dbcbde86d2e1bb2d702208cbffac464558f2af8d816",
+          "modified": "2026-08-29T18:43:44.163021+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:44.691313+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
+          "hash": "ce0affb89808df5fa5daa3fc6e7396796a753e2ed7fcd96f4c17e70217f17bc7",
+          "modified": "2026-08-29T18:43:44.700403+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:44.706920+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
+          "hash": "a2ded9017f6ef7e1ffc2a7f3be6411bd83215c85e3c0b425c901896b4b7d6122",
+          "modified": "2026-08-29T18:43:44.715622+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:44.724035+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
+          "hash": "1920c4849679857da129768fb1f2b0f6f9f3298e28c331244d1695eefd2d8fac",
+          "modified": "2026-08-29T18:43:44.732044+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
+          "hash": "8a295968a6bbb2ee224bfd9d7573f1b940feb5765682eab24153e5df44a9848d",
+          "modified": "2026-08-29T18:43:44.743120+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
+          "hash": "081b6e893cf07ac1ef5907441931bf36dc6048bf2ce3b1c022787af95cdec8bc",
+          "modified": "2026-08-29T18:43:44.750306+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
+          "hash": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+          "modified": "2026-08-29T18:43:44.757809+00:00"
+        },
+        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
+          "hash": "a8e62a6eb04e7735c911538165a7fcb3b01d75a1e7641e910eb5323faf2f953b",
+          "modified": "2026-08-29T18:43:44.767992+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card1-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card1-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.813017+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card1-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card1-front.jpg",
+          "hash": "d1eacb2e5fe623366aeff64f5bff9b4f030d7f062fceaf38dc606c242c387c08",
+          "modified": "2026-08-29T18:43:44.820647+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card10-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card10-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.830732+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card10-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card10-front.jpg",
+          "hash": "2f148df6a98689fbff86d77591b238c1687430adb7a5e16d0c5a38722064a0cd",
+          "modified": "2026-08-29T18:43:44.838773+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card11-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card11-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.845784+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card11-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card11-front.jpg",
+          "hash": "098c4995670e75ef21b8c18378df75f0032eec2dd33260d6c1c7190d5e40469b",
+          "modified": "2026-08-29T18:43:44.856872+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card12-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card12-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.866820+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card12-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card12-front.jpg",
+          "hash": "9be191695a72dc9c6abb133e7804887fe9c1de203880c97226d340e85de8c782",
+          "modified": "2026-08-29T18:43:44.876448+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card13-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card13-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.884973+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card13-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card13-front.jpg",
+          "hash": "4173752ad4455a4b81b59047e2d0ce0430ceb0681c9507f214d4d01e7c5b40cf",
+          "modified": "2026-08-29T18:43:44.893636+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card14-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card14-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.901165+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card14-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card14-front.jpg",
+          "hash": "d9d50b3c49321a24edbc9816738e729af2f544e45bf15a872544d2f9204996f7",
+          "modified": "2026-08-29T18:43:44.914768+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card15-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card15-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:44.923064+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card15-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card15-front.jpg",
+          "hash": "dcbb697c5a04577389c12e97cd506505d69242b58796862a7dbc2bb46230cc9b",
+          "modified": "2026-08-29T18:43:44.932087+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card2-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card2-back.jpg",
+          "hash": "8b3a1408b4b7ec9a6bf4184e4fa82061e9d0822b658dc958fb30afc3b6fea4a1",
+          "modified": "2026-08-29T18:43:44.943166+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card2-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card2-front.jpg",
+          "hash": "3f3dbcb24e02503292d880ce1afb64cbabed7dc68e3924e549ae5e3025e57284",
+          "modified": "2026-08-29T18:43:44.953179+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card3-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card3-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:45.015668+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card3-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card3-front.jpg",
+          "hash": "3d210a998b54e6a4563143b877ec3d802d826547f5f6f311bb4bbcff26c33c04",
+          "modified": "2026-08-29T18:43:45.181027+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card4-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card4-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:45.315296+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card4-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card4-front.jpg",
+          "hash": "e88fe01886776babba6f5c0cc0e69239b7517cb0dec5a13bccb7ceed4f4b7e32",
+          "modified": "2026-08-29T18:43:45.466908+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card5-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card5-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:45.601685+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card5-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card5-front.jpg",
+          "hash": "b177b3463f7bb1998e1978bb6b8bb9a4f0f1015bacb3aafbeb1864d31c853773",
+          "modified": "2026-08-29T18:43:45.792028+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card6-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card6-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:45.942265+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card6-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card6-front.jpg",
+          "hash": "e51a0af35bafa3bae95d128807eeb69fa6014d17541ed94db53043f44c009750",
+          "modified": "2026-08-29T18:43:46.155439+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card7-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card7-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.193751+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card7-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card7-front.jpg",
+          "hash": "1ccb9a51824ec9ddc70996a48638d778c06b50332bbca952f930f35611a7bcd7",
+          "modified": "2026-08-29T18:43:46.203792+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card8-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card8-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.210849+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card8-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card8-front.jpg",
+          "hash": "0af4dd8e0654a1055f9931cf1f21029dec8b0ac22178742e41bace4c72ff10d1",
+          "modified": "2026-08-29T18:43:46.223459+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card9-back.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card9-back.jpg",
+          "hash": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+          "modified": "2026-08-29T18:43:46.231984+00:00"
+        },
+        "cards/operatives_selection/fellgor-ravagers-operative-selection-card9-front.jpg": {
+          "path": "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card9-front.jpg",
+          "hash": "68bd5da4de8a9b87c868791177c3512a363105798943035af6858a6a6db7a851",
+          "modified": "2026-08-29T18:43:46.243077+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:46.830970+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/manifest.json": "bb1f1897655d98b270b25fa5e199b392fe8495d1c500c83d910fb7e5ad14fadc",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-deathknell.pdf": "4473fa907a15fca29b5a637fa0551ace2f0535905d90667e89eb3e43a1d24e5e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-fluxbray.pdf": "4b76ccebc8e75c772594ccbe4184ec4bf5807308ce83f03c9420bc1f7039fe44",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gnarlscar.pdf": "c42b0f051aece3cc5e893e49553c631039d52e9fd0ce04e6114975bae0bbbb23",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gorehorn.pdf": "a927722efe135d502fb67084f7795ca0df8683ad493265b1fe2dfb2f144c9157",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-herd-goad.pdf": "6f8d4a53d4d159f787f8dc7e5d311b3868b95c9d378a3d364ce801120c908ed2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-ironhorn.pdf": "fb150d050ecd1f5192066510845bac7ba08c37aece57fba854605c129f0b5829",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-mangler.pdf": "e26e995fdf582328b39e3d659d6b2976bc81b0b2d16aaf00fc7d9eb9df37d5ef",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-shaman.pdf": "3e72cce4a134d4f569c327aebf8d8287c68611798cea5de22859428cbacda657",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-toxhorn.pdf": "3ccd2f08046754109fd5f5e50795f31f570053c2b6db2def470b5f9693c838e4",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-vandal.pdf": "14e5ddf10763d9ae4a464de6cce0b714abb20360abc3ea31619e5245de80cf74",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-warrior.pdf": "e30c6eb651a2e12683230677a31197f7528d12b882c7e6bb78bfe4feb1681b02",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "7e50f34bdbd7db8373e1760919b194b86fc37acaf7014c0b4e481b179410cb10",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "57be0cb1cb3e64ffdd0222c36cd57d69475faaae88869fff7288c9103c5e9201",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "89a0a10741f8a5cb38cf435f777f79c4ff2f81ca772f0f08030ea28a5a957c78",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "17d70a171cc0c79ecdd1839be402048dc2498731b8ab38775b0f241afd5fe9a1",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "971b037486cbe991501d6647bb412e25a6941f3a83d671357f2a538295ad6ce3",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "193cddeee5170bca22cdb44cfb4341fa461fdf50c728cc4e055dfabda0967d3d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "4dedd0949b5d88e3064cb46b8489413cb74171ee7889851ea85d5b98182cb44e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "7d7906d6835e785a123035144a15b353df50f874163ba4bcb260a870a48526ae",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "711195c6239979b0562e79ab382600224911b98f80cfec364f69432793e412c9",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "5fb807554dc96028570f27e684daee8e23094c021d3aa2795cc722df8753ca13",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "7a4c11e8160b2d6932e5c0ed5499a8d994e7c0dac6cbbac0c19a47118341a125",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-brass-adornments.pdf": "afbae4dd90fb9ade15135f9ce91b85ce016c85b8df56e009cbaf55d886734595",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-chaos-sigil.pdf": "6eb47d0cca150a0324c56fdc9313b0fcde315142eed604932deb256246d8ab56",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-gore-marks.pdf": "6202cb05cafa6417239a627ab8fc8ac391a6756ba09081bf3ccebecec5962e87",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-war-paint.pdf": "55cb54dfb27df8665278a4e585013fd713e7d3317d3c121ac7f8960b27c29b0b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-faction-rule-frenzy.pdf": "5ca83074b6e21367b2d4fa746103c3e943695e4a75acbf68256d7f68716b13a0",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-animalistic-fury.pdf": "5b03c1d676aa17fa3e264b92830cf88737b8936982d61d44810b069b0a0acd10",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-bloodsense.pdf": "e85b6d1d0d5ff9851d524c3b38ae47959b0d6852bd76d95ed41949d9c4f239c2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-ruthless-rampage.pdf": "819b796174cd30a80fc37e20c0b34cebded83d5d0d1e439e9925471f8347fccd",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-wild-rage.pdf": "a7272cf947412ec9400bf1abc48a59c16bc2e5b9e780196e7b809020b2ff0b9e",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-1.pdf": "38bad7619db8b3c7274986131d23f607eacf7a4e19dfc6ca0fc3a40636b7369d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-10.pdf": "a90fbc4ce27ee3412b58a87f38a15e906f3dd24ddff34bea85aaf9e27d614e6b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-11.pdf": "9258a7b8db37f8327d67731b73fdd251a67a5f146d7108d1333bb489c0c7d502",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-12.pdf": "b8672dbb439fb999834be2e2325968716b27f3498c34be6b50cd8dd9f6cd78df",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-13.pdf": "550ef4d0065705b73c562cd13116df45d125d69f5d668508bd85dd80a0de7610",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-14.pdf": "35854bdc592d59bae94058cdbc2e147a5ab977ecb1a863d6e51cde231339a4fa",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-15.pdf": "26d329182d817757cec97990330cb664cda4371fea992637b5a4a3329696bae8",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-2.pdf": "4169d41b10c4682520e2b441cc5a5901c9bf1fefecd268875faacbe0b2ac355a",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-3.pdf": "4aa1f3e871154bf266e18c0f69016609313669cfc554c78266b2e9918dde158b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-4.pdf": "0f9e87a4eb15e8cc634e9b1b44ffaf2ff85fb0b48abd03596b0582a3473bd878",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-5.pdf": "e6acd6baf767ed375eab951e9f6d7b5fa240f54e0c7e501a605ac8118a82e4ce",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-6.pdf": "5925403a4178902dad0498b6fa12971b6f6cfeb5da15380766a34badca2aec9b",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-7.pdf": "a858f53f0685697705e30f0b359eed76e8fbe52ed2b0c229b09f360e9e5676ff",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-8.pdf": "acf6c7b992ccdd79f86fb023cd632baee9624d0aee54c6c8e4190dfa129d627d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-9.pdf": "7a1f4f496beaf1e63d81b1085669851e2a030af53f22ea28dcbaf7c3cb8ca81c",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection.pdf": "9567a0bc7d3da9669bcf47724bb4d111310c744ce0b08f28f87c100a4fa10b36",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-ambush.pdf": "3614663d68e13c909129e5f7ae0e4c15a0073fbb9e22c7954362d0261615afc2",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-pelting-firepower.pdf": "981bf558df62b9b57cb4ac266bb6a133455b71bf958ec73c3c54908ec78c179d",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-reckless-determination.pdf": "16933f8e7aa8cbb510f0eb38edc149f5425f7a8a0c498efface39e236bc9fd39",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-violent-temperament.pdf": "329c3dba94397d138fa55734bee8c50d5ce7d43e8bda9084c2ca0f87118df682",
+        "layers/integration/fellgor-ravagers/fellgor-ravagers-token-guide-token-guide.pdf": "bed704eb178088c3f23266ef2a160f4ce1fe7626733c5bb463b2805bceb44a46",
+        "layers/integration/fellgor-ravagers/card-backside/fellgor-ravagers-backside-portrait.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
+        "layers/integration/fellgor-ravagers/card-backside/fellgor-ravagers-backside-landscape.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
+      }
+    },
+    "extract_stats": {
+      "outputs": {
+        "team-data.json": {
+          "path": "output/fellgor-ravagers/data/fellgor-ravagers-team-data.json",
+          "hash": "3d4ea431bb2ec2ce9b63c4da37a1554e4d042e1b07ee5512e56424508374cbaa",
+          "modified": "2026-08-29T18:43:46.958017+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:43:47.490577+00:00",
+      "inputs": {
+        "layers/integration/fellgor-ravagers/content/fellgor-ravagers-content.json": "3d4ea431bb2ec2ce9b63c4da37a1554e4d042e1b07ee5512e56424508374cbaa"
+      }
+    },
+    "generate_tts": {
+      "outputs": {
+        "tts_objects/Fellgor Ravagers Box.json": {
+          "path": "output/fellgor-ravagers/tts_objects/Fellgor Ravagers Box.json",
+          "hash": "adfd93850b4f89aa4e1dac369e2068c732f20aac46df8495c7d6a2c21dae47d2",
+          "modified": "2026-07-21T11:11:12.197606+00:00"
+        },
+        "tts_objects/Fellgor Ravagers.json": {
+          "path": "output/fellgor-ravagers/tts_objects/Fellgor Ravagers.json",
+          "hash": "98dad9a8df4af23b1a0d370093de4fd16c4fd2e8552c9c7bda63d40705bb98d1",
+          "modified": "2026-08-29T18:53:38.121037+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:53:38.203581+00:00",
+      "inputs": {
+        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
+        "output/fellgor-ravagers/cards/datacards/fellgor-deathknell-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-deathknell-front.jpg": "cf973daa8e0b8371f84e4289661b5f89ed00672b0a203fffa3523579e7adda0a",
+        "output/fellgor-ravagers/cards/datacards/fellgor-fluxbray-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-fluxbray-front.jpg": "c75e89d705606ff2714669c31fbc61347c6601042bbdc0ee34bb3f95bb250bd1",
+        "output/fellgor-ravagers/cards/datacards/fellgor-gnarlscar-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-gnarlscar-front.jpg": "d1516dff783ea2f6159f22d8cd218bd3c6e505e5dc670679516c2d924ff12dd5",
+        "output/fellgor-ravagers/cards/datacards/fellgor-gorehorn-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-gorehorn-front.jpg": "c17b779545e1ab931979cea99c7c0c3fde31ce3d4c68224dabb51ca5d7506f04",
+        "output/fellgor-ravagers/cards/datacards/fellgor-herd-goad-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-herd-goad-front.jpg": "dc49cd81d832ba0e931fb93c0188727a57f0cae924488c20d1f89f6f0ca953c0",
+        "output/fellgor-ravagers/cards/datacards/fellgor-ironhorn-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-ironhorn-front.jpg": "a2608e274de3580c2bae42c29befab3be1bd6e8b5f40c4cfbce954b288174dc3",
+        "output/fellgor-ravagers/cards/datacards/fellgor-mangler-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-mangler-front.jpg": "2ac298d3c6775037b22b3e5983271e89a4e286535def056e24ab2a0e2fae7742",
+        "output/fellgor-ravagers/cards/datacards/fellgor-shaman-back.jpg": "67f8b6bea6d5c295f9952125886e6407c6bc91b1e8070b3963574eb3d444a89a",
+        "output/fellgor-ravagers/cards/datacards/fellgor-shaman-front.jpg": "3798dcc08f1ea52526d9ee3253a34ebd2f9445a30a12514e93b54f6dbd8001a0",
+        "output/fellgor-ravagers/cards/datacards/fellgor-toxhorn-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-toxhorn-front.jpg": "c31288380c494b9301b300fe19062bbbaae41f8bf87d5661ca2b5c209d2179be",
+        "output/fellgor-ravagers/cards/datacards/fellgor-vandal-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-vandal-front.jpg": "e5f5db4a3fb9eba11a8d115cb354478f05b374495c2cda232c9b3d0cf1339a3d",
+        "output/fellgor-ravagers/cards/datacards/fellgor-warrior-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/fellgor-warrior-front.jpg": "1aa8cd2abb826b9e26ca6bb2e04fc56faee043fcc062d68a28b00ed60241ed23",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "b1fcba27d9b17683c0fe784d7a1afdb2d085ef13333eb74dfc21597f47bc9d84",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "15a4d1da543039001847e23a44dac0bb03bc2ca432e363654c724ec363de985f",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "166f937ea656e6dfe99cbb6d8e7f8ea21757166c528a80433af02768487d0f7a",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "8201befb98721d38ba6f9902ee033248a926f14a3733ba5d8a21c2886f542576",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "2ec1565428c67415607dc37a4045227764b20b355e32b17851107e0e52ab0d16",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "f281c9fdb8d488a285078dbcbde86d2e1bb2d702208cbffac464558f2af8d816",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "ce0affb89808df5fa5daa3fc6e7396796a753e2ed7fcd96f4c17e70217f17bc7",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "a2ded9017f6ef7e1ffc2a7f3be6411bd83215c85e3c0b425c901896b4b7d6122",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "1920c4849679857da129768fb1f2b0f6f9f3298e28c331244d1695eefd2d8fac",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "8a295968a6bbb2ee224bfd9d7573f1b940feb5765682eab24153e5df44a9848d",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "081b6e893cf07ac1ef5907441931bf36dc6048bf2ce3b1c022787af95cdec8bc",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "73780678419cbe655c0b62eea4b17758fa2456c155ff3d69e1bdd6aded7406bd",
+        "output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "a8e62a6eb04e7735c911538165a7fcb3b01d75a1e7641e910eb5323faf2f953b",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-front.jpg": "bed2907a666e9320ed649b95057bd61324313d487741584b49f6c1910423eb1c",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-chaos-sigil-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-chaos-sigil-front.jpg": "41a1a9c767258b7a7ef2cd309582d5ba817f28b888fedcf65b52617bace513a5",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-gore-marks-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-gore-marks-front.jpg": "c259c700576125a4a742afa361428b2a99802ff286c5bdb2b8f57c740c49ae4c",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-war-paint-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/equipment/fellgor-ravagers-war-paint-front.jpg": "87683fc5b44b959d82c03d8039e188c3f14534e66470c3dd0d3bfe8943afd4d8",
+        "output/fellgor-ravagers/cards/faction_rules/fellgor-ravagers-frenzy-back.jpg": "de917fa15bca23786625dc88a96e4d04491dce1729f5f4450e1095e636f0630e",
+        "output/fellgor-ravagers/cards/faction_rules/fellgor-ravagers-frenzy-front.jpg": "9280a94bdf02aac85276b717fa140f77ee057b5ac45cc61d0e4badab90309894",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-animalistic-fury-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-animalistic-fury-front.jpg": "aad2351113006f5ad4c60dc0b71e6eda7f9e9fed638c5aa6e7dcd4c415930844",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-bloodsense-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-bloodsense-front.jpg": "1047daadcca55b9bece8632070498ebf376e74270a4f81819f56b4c2ef3aac4b",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-ruthless-rampage-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-ruthless-rampage-front.jpg": "c526874d816faecaca545a84faccde15665c649dcb7cae2331fe427a0d38ef1b",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-wild-rage-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-wild-rage-front.jpg": "94e439ce8542707feaa914f83e7da4388988e46fea0f826db229dc765270bb75",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card1-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card1-front.jpg": "d1eacb2e5fe623366aeff64f5bff9b4f030d7f062fceaf38dc606c242c387c08",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card10-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card10-front.jpg": "2f148df6a98689fbff86d77591b238c1687430adb7a5e16d0c5a38722064a0cd",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card11-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card11-front.jpg": "098c4995670e75ef21b8c18378df75f0032eec2dd33260d6c1c7190d5e40469b",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card12-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card12-front.jpg": "9be191695a72dc9c6abb133e7804887fe9c1de203880c97226d340e85de8c782",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card13-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card13-front.jpg": "4173752ad4455a4b81b59047e2d0ce0430ceb0681c9507f214d4d01e7c5b40cf",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card14-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card14-front.jpg": "d9d50b3c49321a24edbc9816738e729af2f544e45bf15a872544d2f9204996f7",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card15-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card15-front.jpg": "dcbb697c5a04577389c12e97cd506505d69242b58796862a7dbc2bb46230cc9b",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card2-back.jpg": "8b3a1408b4b7ec9a6bf4184e4fa82061e9d0822b658dc958fb30afc3b6fea4a1",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card2-front.jpg": "3f3dbcb24e02503292d880ce1afb64cbabed7dc68e3924e549ae5e3025e57284",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card3-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card3-front.jpg": "3d210a998b54e6a4563143b877ec3d802d826547f5f6f311bb4bbcff26c33c04",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card4-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card4-front.jpg": "e88fe01886776babba6f5c0cc0e69239b7517cb0dec5a13bccb7ceed4f4b7e32",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card5-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card5-front.jpg": "b177b3463f7bb1998e1978bb6b8bb9a4f0f1015bacb3aafbeb1864d31c853773",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card6-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card6-front.jpg": "e51a0af35bafa3bae95d128807eeb69fa6014d17541ed94db53043f44c009750",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card7-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card7-front.jpg": "1ccb9a51824ec9ddc70996a48638d778c06b50332bbca952f930f35611a7bcd7",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card8-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card8-front.jpg": "0af4dd8e0654a1055f9931cf1f21029dec8b0ac22178742e41bace4c72ff10d1",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card9-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-card9-front.jpg": "68bd5da4de8a9b87c868791177c3512a363105798943035af6858a6a6db7a851",
+        "output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-front.jpg": "52e687612ddfa7b847572d67bad7b8ae6fbdc4538d22a8965806e2c1413af9ae",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-ambush-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-ambush-front.jpg": "5c208ccbbd3b8ffab8c102fbe3a311a9ecda118063919e2f7ab4522cbd04e94e",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-pelting-firepower-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-pelting-firepower-front.jpg": "e3c25530ebacb6316c3c714122ddf1f5960b0ae5788867f3681c4e34125b6fec",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-reckless-determination-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-reckless-determination-front.jpg": "7c61a6f7ecad294768d9859fb5a43b41cf8de0d908a202dfb5be24cb1bcb358b",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-violent-temperament-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-violent-temperament-front.jpg": "f50f8e6dce848fd28fc42d106f76113017ad4579002d3b1c191e852b117e8e72",
+        "output/fellgor-ravagers/cards/token_guide/fellgor-ravagers-token-guide-back.jpg": "e201e898b2aa1a5c87b0938216c06c818b8f4602d4c3b12e0f83537f1b9c3742",
+        "output/fellgor-ravagers/cards/token_guide/fellgor-ravagers-token-guide-front.jpg": "3d210a998b54e6a4563143b877ec3d802d826547f5f6f311bb4bbcff26c33c04",
+        "output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box-texture.jpg": "59d5256434e0fd3092c7b9fa932fd5c8e78d94fd46304df842a1b3a4eda51c80",
+        "output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.png": "fa48fa26823cda36eb6525509ad09e41c120fa8cff7061298ae606b7110e3917",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.png": "322301f9d67d08a66e5c713e456d01ceba3a76f92c9b8eb2863f3f7f63be2795",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.png": "0c577bd8bfe33f41f8351a426289accec0c67a1bea0d25cf26d46d363b0e2abb",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.png": "de0cbb0e5b0b0d3855001291ec9d8c53e28b95f7b1bc1bf04ac9067ee347d0bc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.png": "7550c97215313db97df25a285fe97a055f9e1e328efcfec392345e42fc6608ab",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.png": "ab5b5093d084f21c5b49edf72b5da380d25c9992922b861a8e96073f719cf76d",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
+        "output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.png": "dffb58df325b6b0384fe45517f83de82e1256b5ef95d8d2ce2338fa3631b5346",
+        "output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag-icon.png": "362e293ff60c6c6aba373f25c52746eed1aaa328c2bd549efa8af4523a84992f",
+        "output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "output/fellgor-ravagers/dice/fellgor-ravagers-dice-dark.jpg": "77a7cfa5068b571afed6f8b0c88b0eca1a1d77d61fdaac0589a57214d1d457ae",
+        "output/fellgor-ravagers/dice/fellgor-ravagers-dice-light.jpg": "5719d8ebbc15d701130d86e8213f3d6eb40a3b8dff5b172679ead3b399d77d14",
+        "output/fellgor-ravagers/dice/fellgor-ravagers-dice-team.jpg": "2d358d239522668b187a29605617247841484d7dcfc2de6fe397f9a2f0b60692",
+        "output/fellgor-ravagers/data/fellgor-ravagers-team-data.json": "3d4ea431bb2ec2ce9b63c4da37a1554e4d042e1b07ee5512e56424508374cbaa",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
+        "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
+        "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
+        "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
+        "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
+        "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
+        "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
+        "config/defaults/tts-token/square-bag-mesh.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
+        "config/defaults/tts-token/template-diamond-cutter.png": "719f57ba2b86494be454a6d3d25d8567dde974a915f3dde5ddc0e2d8dafaa1a5",
+        "config/defaults/tts-token/template-octagon-cutter.png": "944632aeacab978293ae57758b63086166c5fbaf3b845f48b3dd61db67d5c076",
+        "config/defaults/tts-token/template-operative-cutter.png": "0e698ddd403d7f0e84f200eb42af73f5249a9c5539d773298ff4c700ac9fe153",
+        "config/defaults/tts-token/template-round-cutter.png": "6564e1451c9a135a1c756fd94cde1c71e373e3fa677b51bba9d4bbe9e795d544",
+        "config/defaults/tts-token/token-bag-script.lua": "1659887e0fbfb9e3ebbc1aa5f3df8e1ffd89ee192be24d2dd1f02fcb0407e486",
+        "config/defaults/tts-token/token-bg-sample.png": "f9f90664c7f1c877c6f050f6e85babde6523cdc0aed9c77de8c09214f44ee109",
+        "config/defaults/tts-token/token-mesh.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc"
+      }
+    },
+    "front_end": {
+      "outputs": {},
+      "sources": {
+        "equipment": {
+          "hash": "2f9700558a767536412792d6020610931b289548e0d26eab58b8ca17d31471fe",
+          "outputs": [
+            "layers/kt-app/extracted/fellgor-ravagers/cards/equipment/fellgor-ravagers-equipment-page_0.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/equipment/fellgor-ravagers-equipment-page_1.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/equipment/fellgor-ravagers-equipment-page_2.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/equipment/fellgor-ravagers-equipment-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:58:45.428435+00:00"
+        },
+        "strategy-ploys": {
+          "hash": "9d2ea57ce696f99a932d8d0c3a0e832d0ab2363a4eeaff82ab4ed2c24d0b2ed0",
+          "outputs": [
+            "layers/kt-app/extracted/fellgor-ravagers/cards/strategy-ploys/fellgor-ravagers-strategy-ploys-page_0.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/strategy-ploys/fellgor-ravagers-strategy-ploys-page_1.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/strategy-ploys/fellgor-ravagers-strategy-ploys-page_2.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/strategy-ploys/fellgor-ravagers-strategy-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T15:59:47.531276+00:00"
+        },
+        "firefight-ploys": {
+          "hash": "5f4474f513dd2a3c7bbcca10b8ff213fc34be59f793ab940bede1a6f863b5686",
+          "outputs": [
+            "layers/kt-app/extracted/fellgor-ravagers/cards/firefight-ploys/fellgor-ravagers-firefight-ploys-page_0.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/firefight-ploys/fellgor-ravagers-firefight-ploys-page_1.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/firefight-ploys/fellgor-ravagers-firefight-ploys-page_2.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/firefight-ploys/fellgor-ravagers-firefight-ploys-page_3.pdf"
+          ],
+          "modified": "2026-07-06T16:01:26.855208+00:00"
+        },
+        "operatives-selection": {
+          "hash": "04bef87c1616c68755ea7633bf68562d836359255b674ea74e491d01ab26a7f2",
+          "outputs": [
+            "layers/kt-app/extracted/fellgor-ravagers/cards/operatives-selection/fellgor-ravagers-operatives-selection-page_0.pdf"
+          ],
+          "modified": "2026-07-06T16:02:29.460265+00:00"
+        },
+        "faction-rules": {
+          "hash": "488eabc7591517ddc602a321465bb484dce5fdf0b1935dd7ef3902f61dce4da8",
+          "outputs": [
+            "layers/kt-app/extracted/fellgor-ravagers/cards/faction-rules/fellgor-ravagers-faction-rules-page_0.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/faction-rules/fellgor-ravagers-faction-rules-page_1.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/faction-rules/fellgor-ravagers-faction-rules-page_2.pdf"
+          ],
+          "modified": "2026-07-06T16:06:48.543437+00:00"
+        },
+        "datacards": {
+          "hash": "98696aec557a64416486a972b221a206959c38240c92bad330f4dba207500124",
+          "outputs": [
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_0.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_1.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_2.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_3.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_4.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_5.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_6.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_7.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_8.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_9.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_10.pdf",
+            "layers/kt-app/extracted/fellgor-ravagers/cards/datacards/fellgor-ravagers-datacards-page_11.pdf"
+          ],
+          "modified": "2026-07-06T16:11:23.851473+00:00"
+        },
+        "cards": {
+          "hash": "6354a05ca70eba90a52257f5352e0864bc88dbf4e132a2dd578018d7e0774c63",
+          "outputs": [
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card1_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card2_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card3_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card4_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card1_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card2_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card3_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card4_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card1_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card2_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card3_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card4_landscape.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card1_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card2_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card3_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card4_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card1_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card2_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card3_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card4_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card1_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card2_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card3_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card4_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card1_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card2_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card3_portrait.pdf",
+            "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card4_portrait.pdf"
+          ],
+          "modified": "2026-08-29T18:28:52.365106+00:00"
+        }
+      },
+      "completed": "2026-08-29T18:28:52.365106+00:00"
+    },
+    "build_structure": {
+      "outputs": {
+        "structure": {
+          "path": "layers/warcom/structure/fellgor-ravagers-structure.json",
+          "hash": "bb1f1897655d98b270b25fa5e199b392fe8495d1c500c83d910fb7e5ad14fadc",
+          "modified": "2026-08-29T18:42:45.799086+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card1_landscape.pdf": "ad9ca852e5861a3b73b83e4b1f75d107c9e14b1023a631917a1ea87cb279c642",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card2_landscape.pdf": "2751792855f14f31c385ed5cc2906c04351e1f4d57aa726053b1d554d8503de1",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card3_landscape.pdf": "1f5cd88cccbea405e6453d249f65bd465051ab335ade3546a317a9f71dc824e0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card4_landscape.pdf": "38947f181747c57a57f935addd75e27f60bc28974d374d1fe0d8ba93dd26609c",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card1_landscape.pdf": "b5c8bf9b9d7530349efa82efbfe275efb1b0c93cd52e536d112ce9292f6a6693",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card2_landscape.pdf": "8404f1ea0ac8561aca2a801d07a176b1289c46e343a0cd0166f628dbc4356062",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card3_landscape.pdf": "18ffe9ea2be4bc1661f3d8c71765e0189735002a35641f88a37389b6d90e0164",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card4_landscape.pdf": "51fbbee8d687d56365bb07c96bea721bdfd8e433bd6a01a31affe20381e653d8",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card1_landscape.pdf": "bd6a769847556d197bfafe61911078c50a52b511c4c5db2afa44a740a1254ab0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card2_landscape.pdf": "509b4a3175e0daeaa172ee2ed2d6644ca9c2f7248913fa7c13aaed6c19fd372a",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card3_landscape.pdf": "5e81fa8271e8c2336e4f01c92ba360b4aba5130049976adf2e10dcfada925a60",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card4_landscape.pdf": "093cf332d60f67381dff71f1c0e266fcebf31ee0ed370a8fc50a432e1902ea7b",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card1_portrait.pdf": "ba7f63ccc2a3109457cd91a84418be2a66e2bce117ae0c3b87de7f4d35539f14",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card2_portrait.pdf": "75e3d8e83bd133628bdffeb7cc0323601eb2411f76e18f5a6a555777b65f253d",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card3_portrait.pdf": "ffad0f1f2618829d6a7d5a824cd075d0d8ace2428038532e00fc8055449f4410",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card4_portrait.pdf": "f62ab7a1d17f8ead706e0e48b1ece1bb1a31394510c089663dd28dcfbca751a7",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card1_portrait.pdf": "ab43ab2096885e28bdf17b2ef16880e2689cd27217d5c5f021626c1ade30b084",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card2_portrait.pdf": "58192a17c66cd8de33c58f53a5d7d65b76d4923825f6aaf75bb90ecb147bf97d",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card3_portrait.pdf": "891a8b0155356fa6cf7ca7ef8a43f51f19065e66fa95bfb307ebadeaa82e9ed9",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card4_portrait.pdf": "582f739de2adbb44ddb13e5bf1eaf6176f56d61a93a3920521131a719b6e92b3",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card1_portrait.pdf": "4bf04a3fa1f3d952635cee023426f6ad99f8361552b2380c3a6b1977a30ab4b0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card2_portrait.pdf": "2e27a38b07c061d67df1e3e62ab3728551fd8778a19b26f3fbb0cc415e24bbc0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card3_portrait.pdf": "8bb760775c24ee463b86ddd149b810abfcf72df13a4f2c88face4b214d0cc1ce",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card4_portrait.pdf": "e3ec98357d393f3a081204e5b29728f55a6471bddae653d5eda49018d6c1baa4",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card1_portrait.pdf": "424c90328e4af919b4080d913069c103aa9de7b8a5fba47ac461c4425c15a53d",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card2_portrait.pdf": "000a26d0f71cec30ad0b95f189eb61431a6fb1eba21e82dec7e7998ec936202f",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card3_portrait.pdf": "674bd2c464d9f037e71cc2b81c4694c5b2a151392efdcad7bbade83e80959073",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card4_portrait.pdf": "a678c6c861acb27a4fe414c9142bd865df091c1781e21b02bdd2346e4e1d528a"
+      },
+      "completed": "2026-08-29T18:42:45.992015+00:00"
+    },
+    "integrate_classified": {
+      "outputs": {
+        "manifest.json": {
+          "path": "layers/integration/fellgor-ravagers/manifest.json",
+          "hash": "bb1f1897655d98b270b25fa5e199b392fe8495d1c500c83d910fb7e5ad14fadc",
+          "modified": "2026-08-29T18:42:46.155354+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-ironhorn.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-ironhorn.pdf",
+          "hash": "fb150d050ecd1f5192066510845bac7ba08c37aece57fba854605c129f0b5829",
+          "modified": "2026-08-26T15:17:53.518630+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-deathknell.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-deathknell.pdf",
+          "hash": "4473fa907a15fca29b5a637fa0551ace2f0535905d90667e89eb3e43a1d24e5e",
+          "modified": "2026-08-26T15:17:53.535282+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-fluxbray.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-fluxbray.pdf",
+          "hash": "4b76ccebc8e75c772594ccbe4184ec4bf5807308ce83f03c9420bc1f7039fe44",
+          "modified": "2026-08-26T15:17:53.542304+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-gnarlscar.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gnarlscar.pdf",
+          "hash": "c42b0f051aece3cc5e893e49553c631039d52e9fd0ce04e6114975bae0bbbb23",
+          "modified": "2026-08-26T15:17:53.548918+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-gorehorn.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-gorehorn.pdf",
+          "hash": "a927722efe135d502fb67084f7795ca0df8683ad493265b1fe2dfb2f144c9157",
+          "modified": "2026-08-26T15:17:53.555368+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-herd-goad.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-herd-goad.pdf",
+          "hash": "6f8d4a53d4d159f787f8dc7e5d311b3868b95c9d378a3d364ce801120c908ed2",
+          "modified": "2026-08-26T15:17:53.560326+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-mangler.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-mangler.pdf",
+          "hash": "e26e995fdf582328b39e3d659d6b2976bc81b0b2d16aaf00fc7d9eb9df37d5ef",
+          "modified": "2026-08-26T15:17:53.569017+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-shaman.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-shaman.pdf",
+          "hash": "3e72cce4a134d4f569c327aebf8d8287c68611798cea5de22859428cbacda657",
+          "modified": "2026-08-26T15:17:53.574873+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-toxhorn.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-toxhorn.pdf",
+          "hash": "3ccd2f08046754109fd5f5e50795f31f570053c2b6db2def470b5f9693c838e4",
+          "modified": "2026-08-26T15:17:53.580752+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-vandal.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-vandal.pdf",
+          "hash": "14e5ddf10763d9ae4a464de6cce0b714abb20360abc3ea31619e5245de80cf74",
+          "modified": "2026-08-26T15:17:53.586540+00:00"
+        },
+        "fellgor-ravagers-datacard-fellgor-warrior.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-fellgor-warrior.pdf",
+          "hash": "e30c6eb651a2e12683230677a31197f7528d12b882c7e6bb78bfe4feb1681b02",
+          "modified": "2026-08-26T15:17:53.594028+00:00"
+        },
+        "fellgor-ravagers-equipment-brass-adornments.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-brass-adornments.pdf",
+          "hash": "afbae4dd90fb9ade15135f9ce91b85ce016c85b8df56e009cbaf55d886734595",
+          "modified": "2026-08-26T15:17:53.597697+00:00"
+        },
+        "fellgor-ravagers-equipment-gore-marks.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-gore-marks.pdf",
+          "hash": "6202cb05cafa6417239a627ab8fc8ac391a6756ba09081bf3ccebecec5962e87",
+          "modified": "2026-08-26T15:17:53.601965+00:00"
+        },
+        "fellgor-ravagers-equipment-chaos-sigil.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-chaos-sigil.pdf",
+          "hash": "6eb47d0cca150a0324c56fdc9313b0fcde315142eed604932deb256246d8ab56",
+          "modified": "2026-08-26T15:17:53.606000+00:00"
+        },
+        "fellgor-ravagers-equipment-war-paint.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-equipment-war-paint.pdf",
+          "hash": "55cb54dfb27df8665278a4e585013fd713e7d3317d3c121ac7f8960b27c29b0b",
+          "modified": "2026-08-26T15:17:53.609757+00:00"
+        },
+        "fellgor-ravagers-faction-rule-frenzy.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-faction-rule-frenzy.pdf",
+          "hash": "5ca83074b6e21367b2d4fa746103c3e943695e4a75acbf68256d7f68716b13a0",
+          "modified": "2026-08-26T15:17:53.832468+00:00"
+        },
+        "fellgor-ravagers-token-guide-token-guide.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-token-guide-token-guide.pdf",
+          "hash": "bed704eb178088c3f23266ef2a160f4ce1fe7626733c5bb463b2805bceb44a46",
+          "modified": "2026-08-26T15:17:53.874071+00:00"
+        },
+        "fellgor-ravagers-firefight-ploy-ruthless-rampage.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-ruthless-rampage.pdf",
+          "hash": "819b796174cd30a80fc37e20c0b34cebded83d5d0d1e439e9925471f8347fccd",
+          "modified": "2026-08-26T15:17:53.878042+00:00"
+        },
+        "fellgor-ravagers-firefight-ploy-wild-rage.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-wild-rage.pdf",
+          "hash": "a7272cf947412ec9400bf1abc48a59c16bc2e5b9e780196e7b809020b2ff0b9e",
+          "modified": "2026-08-26T15:17:53.884248+00:00"
+        },
+        "fellgor-ravagers-firefight-ploy-animalistic-fury.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-animalistic-fury.pdf",
+          "hash": "5b03c1d676aa17fa3e264b92830cf88737b8936982d61d44810b069b0a0acd10",
+          "modified": "2026-08-26T15:17:53.888996+00:00"
+        },
+        "fellgor-ravagers-firefight-ploy-bloodsense.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-firefight-ploy-bloodsense.pdf",
+          "hash": "e85b6d1d0d5ff9851d524c3b38ae47959b0d6852bd76d95ed41949d9c4f239c2",
+          "modified": "2026-08-26T15:17:53.892963+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection.pdf",
+          "hash": "9567a0bc7d3da9669bcf47724bb4d111310c744ce0b08f28f87c100a4fa10b36",
+          "modified": "2026-08-26T15:17:53.900569+00:00"
+        },
+        "fellgor-ravagers-strategy-ploy-violent-temperament.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-violent-temperament.pdf",
+          "hash": "329c3dba94397d138fa55734bee8c50d5ce7d43e8bda9084c2ca0f87118df682",
+          "modified": "2026-08-26T15:17:53.905041+00:00"
+        },
+        "fellgor-ravagers-strategy-ploy-ambush.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-ambush.pdf",
+          "hash": "3614663d68e13c909129e5f7ae0e4c15a0073fbb9e22c7954362d0261615afc2",
+          "modified": "2026-08-26T15:17:53.909640+00:00"
+        },
+        "fellgor-ravagers-strategy-ploy-pelting-firepower.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-pelting-firepower.pdf",
+          "hash": "981bf558df62b9b57cb4ac266bb6a133455b71bf958ec73c3c54908ec78c179d",
+          "modified": "2026-08-26T15:17:53.914744+00:00"
+        },
+        "fellgor-ravagers-strategy-ploy-reckless-determination.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-strategy-ploy-reckless-determination.pdf",
+          "hash": "16933f8e7aa8cbb510f0eb38edc149f5425f7a8a0c498efface39e236bc9fd39",
+          "modified": "2026-08-26T15:17:53.919681+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
+          "hash": "7e50f34bdbd7db8373e1760919b194b86fc37acaf7014c0b4e481b179410cb10",
+          "modified": "2026-08-29T18:42:46.174583+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
+          "hash": "17d70a171cc0c79ecdd1839be402048dc2498731b8ab38775b0f241afd5fe9a1",
+          "modified": "2026-08-29T18:42:46.195771+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
+          "hash": "971b037486cbe991501d6647bb412e25a6941f3a83d671357f2a538295ad6ce3",
+          "modified": "2026-08-29T18:42:46.218944+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
+          "hash": "193cddeee5170bca22cdb44cfb4341fa461fdf50c728cc4e055dfabda0967d3d",
+          "modified": "2026-08-29T18:42:46.239240+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
+          "hash": "4dedd0949b5d88e3064cb46b8489413cb74171ee7889851ea85d5b98182cb44e",
+          "modified": "2026-08-29T18:42:46.712343+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
+          "hash": "7d7906d6835e785a123035144a15b353df50f874163ba4bcb260a870a48526ae",
+          "modified": "2026-08-29T18:42:47.297760+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
+          "hash": "711195c6239979b0562e79ab382600224911b98f80cfec364f69432793e412c9",
+          "modified": "2026-08-29T18:42:47.398981+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
+          "hash": "5fb807554dc96028570f27e684daee8e23094c021d3aa2795cc722df8753ca13",
+          "modified": "2026-08-29T18:42:47.422077+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
+          "hash": "7a4c11e8160b2d6932e5c0ed5499a8d994e7c0dac6cbbac0c19a47118341a125",
+          "modified": "2026-08-29T18:42:47.440317+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf",
+          "hash": "57be0cb1cb3e64ffdd0222c36cd57d69475faaae88869fff7288c9103c5e9201",
+          "modified": "2026-08-29T18:42:47.463393+00:00"
+        },
+        "fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf",
+          "hash": "89a0a10741f8a5cb38cf435f777f79c4ff2f81ca772f0f08030ea28a5a957c78",
+          "modified": "2026-08-29T18:42:47.498705+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-1.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-1.pdf",
+          "hash": "38bad7619db8b3c7274986131d23f607eacf7a4e19dfc6ca0fc3a40636b7369d",
+          "modified": "2026-08-29T18:42:47.514852+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-2.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-2.pdf",
+          "hash": "4169d41b10c4682520e2b441cc5a5901c9bf1fefecd268875faacbe0b2ac355a",
+          "modified": "2026-08-29T18:42:48.215969+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-3.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-3.pdf",
+          "hash": "4aa1f3e871154bf266e18c0f69016609313669cfc554c78266b2e9918dde158b",
+          "modified": "2026-08-29T18:42:48.527982+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-4.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-4.pdf",
+          "hash": "0f9e87a4eb15e8cc634e9b1b44ffaf2ff85fb0b48abd03596b0582a3473bd878",
+          "modified": "2026-08-29T18:42:48.552137+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-5.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-5.pdf",
+          "hash": "e6acd6baf767ed375eab951e9f6d7b5fa240f54e0c7e501a605ac8118a82e4ce",
+          "modified": "2026-08-29T18:42:48.581162+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-6.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-6.pdf",
+          "hash": "5925403a4178902dad0498b6fa12971b6f6cfeb5da15380766a34badca2aec9b",
+          "modified": "2026-08-29T18:42:48.594869+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-7.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-7.pdf",
+          "hash": "a858f53f0685697705e30f0b359eed76e8fbe52ed2b0c229b09f360e9e5676ff",
+          "modified": "2026-08-29T18:42:48.662359+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-8.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-8.pdf",
+          "hash": "acf6c7b992ccdd79f86fb023cd632baee9624d0aee54c6c8e4190dfa129d627d",
+          "modified": "2026-08-29T18:42:49.194649+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-9.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-9.pdf",
+          "hash": "7a1f4f496beaf1e63d81b1085669851e2a030af53f22ea28dcbaf7c3cb8ca81c",
+          "modified": "2026-08-29T18:42:49.564727+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-10.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-10.pdf",
+          "hash": "a90fbc4ce27ee3412b58a87f38a15e906f3dd24ddff34bea85aaf9e27d614e6b",
+          "modified": "2026-08-29T18:42:49.582499+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-11.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-11.pdf",
+          "hash": "9258a7b8db37f8327d67731b73fdd251a67a5f146d7108d1333bb489c0c7d502",
+          "modified": "2026-08-29T18:42:49.596548+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-12.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-12.pdf",
+          "hash": "b8672dbb439fb999834be2e2325968716b27f3498c34be6b50cd8dd9f6cd78df",
+          "modified": "2026-08-29T18:42:49.616086+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-13.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-13.pdf",
+          "hash": "550ef4d0065705b73c562cd13116df45d125d69f5d668508bd85dd80a0de7610",
+          "modified": "2026-08-29T18:42:49.637959+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-14.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-14.pdf",
+          "hash": "35854bdc592d59bae94058cdbc2e147a5ab977ecb1a863d6e51cde231339a4fa",
+          "modified": "2026-08-29T18:42:49.658124+00:00"
+        },
+        "fellgor-ravagers-operatives-selection-operative-selection-15.pdf": {
+          "path": "layers/integration/fellgor-ravagers/fellgor-ravagers-operatives-selection-operative-selection-15.pdf",
+          "hash": "26d329182d817757cec97990330cb664cda4371fea992637b5a4a3329696bae8",
+          "modified": "2026-08-29T18:42:49.674450+00:00"
+        }
+      },
+      "inputs": {
+        "layers/warcom/structure/fellgor-ravagers-structure.json": "bb1f1897655d98b270b25fa5e199b392fe8495d1c500c83d910fb7e5ad14fadc",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card1_landscape.pdf": "ad9ca852e5861a3b73b83e4b1f75d107c9e14b1023a631917a1ea87cb279c642",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card2_landscape.pdf": "2751792855f14f31c385ed5cc2906c04351e1f4d57aa726053b1d554d8503de1",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card3_landscape.pdf": "1f5cd88cccbea405e6453d249f65bd465051ab335ade3546a317a9f71dc824e0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page01_card4_landscape.pdf": "38947f181747c57a57f935addd75e27f60bc28974d374d1fe0d8ba93dd26609c",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card1_landscape.pdf": "b5c8bf9b9d7530349efa82efbfe275efb1b0c93cd52e536d112ce9292f6a6693",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card2_landscape.pdf": "8404f1ea0ac8561aca2a801d07a176b1289c46e343a0cd0166f628dbc4356062",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card3_landscape.pdf": "18ffe9ea2be4bc1661f3d8c71765e0189735002a35641f88a37389b6d90e0164",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page02_card4_landscape.pdf": "51fbbee8d687d56365bb07c96bea721bdfd8e433bd6a01a31affe20381e653d8",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card1_landscape.pdf": "bd6a769847556d197bfafe61911078c50a52b511c4c5db2afa44a740a1254ab0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card2_landscape.pdf": "509b4a3175e0daeaa172ee2ed2d6644ca9c2f7248913fa7c13aaed6c19fd372a",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card3_landscape.pdf": "5e81fa8271e8c2336e4f01c92ba360b4aba5130049976adf2e10dcfada925a60",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page03_card4_landscape.pdf": "093cf332d60f67381dff71f1c0e266fcebf31ee0ed370a8fc50a432e1902ea7b",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card1_portrait.pdf": "ba7f63ccc2a3109457cd91a84418be2a66e2bce117ae0c3b87de7f4d35539f14",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card2_portrait.pdf": "75e3d8e83bd133628bdffeb7cc0323601eb2411f76e18f5a6a555777b65f253d",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card3_portrait.pdf": "ffad0f1f2618829d6a7d5a824cd075d0d8ace2428038532e00fc8055449f4410",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page04_card4_portrait.pdf": "f62ab7a1d17f8ead706e0e48b1ece1bb1a31394510c089663dd28dcfbca751a7",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card1_portrait.pdf": "ab43ab2096885e28bdf17b2ef16880e2689cd27217d5c5f021626c1ade30b084",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card2_portrait.pdf": "58192a17c66cd8de33c58f53a5d7d65b76d4923825f6aaf75bb90ecb147bf97d",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card3_portrait.pdf": "891a8b0155356fa6cf7ca7ef8a43f51f19065e66fa95bfb307ebadeaa82e9ed9",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page05_card4_portrait.pdf": "582f739de2adbb44ddb13e5bf1eaf6176f56d61a93a3920521131a719b6e92b3",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card1_portrait.pdf": "4bf04a3fa1f3d952635cee023426f6ad99f8361552b2380c3a6b1977a30ab4b0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card2_portrait.pdf": "2e27a38b07c061d67df1e3e62ab3728551fd8778a19b26f3fbb0cc415e24bbc0",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card3_portrait.pdf": "8bb760775c24ee463b86ddd149b810abfcf72df13a4f2c88face4b214d0cc1ce",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page06_card4_portrait.pdf": "e3ec98357d393f3a081204e5b29728f55a6471bddae653d5eda49018d6c1baa4",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card1_portrait.pdf": "424c90328e4af919b4080d913069c103aa9de7b8a5fba47ac461c4425c15a53d",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card2_portrait.pdf": "000a26d0f71cec30ad0b95f189eb61431a6fb1eba21e82dec7e7998ec936202f",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card3_portrait.pdf": "674bd2c464d9f037e71cc2b81c4694c5b2a151392efdcad7bbade83e80959073",
+        "layers/warcom/extracted/fellgor-ravagers/cards/fellgor-ravagers_page07_card4_portrait.pdf": "a678c6c861acb27a4fe414c9142bd865df091c1781e21b02bdd2346e4e1d528a"
+      },
+      "completed": "2026-08-29T18:42:50.064424+00:00"
+    },
+    "extract_artwork": {
+      "outputs": {},
+      "sources": {
+        "artwork": {
+          "hash": "6354a05ca70eba90a52257f5352e0864bc88dbf4e132a2dd578018d7e0774c63",
+          "outputs": [
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-01.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-02.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-03.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-04.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-05.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-06.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-07.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-08.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-09.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-10.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-11.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-12.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-13.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-14.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-15.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-16.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-17.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-18.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-19.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-20.jpeg",
+            "layers/integration/fellgor-ravagers/artwork/fellgor-ravagers-artwork-metadata.json",
+            "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-landscape.jpg",
+            "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-portrait.jpg",
+            "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-token-transparent.png",
+            "layers/integration/fellgor-ravagers/artwork/icons/fellgor-ravagers-icon-token.jpg"
+          ],
+          "modified": "2026-07-06T20:46:09.045178+00:00"
+        }
+      },
+      "completed": "2026-07-06T20:46:09.045194+00:00"
+    }
+  }
+}

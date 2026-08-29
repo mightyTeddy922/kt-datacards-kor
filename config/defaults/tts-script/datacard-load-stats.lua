@@ -1,6 +1,6 @@
 -- kt-datacards: Load Stats to Model
 -- Card stores operative data in GMNotes (JSON).
--- Context menu "Load stats to model" finds a KTUIMini on top,
+-- Context menu "Load stats" finds a KTUIMini on top,
 -- shows a weapon selection popup (if multiple weapons),
 -- compares current vs new, reports diffs, and applies changes.
 
@@ -13,12 +13,67 @@ local groupSelections = {}
 local exclusiveSets = {}
 local activeSet = 1
 
+-- Faction-rule "Choose upgrades" flow. Mounted operatives pick N of the
+-- <archetype> UPGRADE options embedded in GMNotes.upgrades = {select, options}.
+local upgradeOptions = nil
+local upgradeChosen = {}
+local upgradeSelect = 2
+local upgradeModel = nil
+local upgradeData = nil
+local upgradePlayerColor = nil
+
+-- Context menu order (TTS shows items top -> bottom in REGISTRATION order):
+--   1. Update card        reserved top slot (self-update lives in the updater
+--                          tools; not wired here yet -- see TODO).
+--   2. Load everything    one button: stats (+loadout) -> faction upgrades ->
+--                          operative counters -> movement. Excludes Rotate base.
+--   3. Load stats          stats + weapons; ALWAYS forces the loadout popup when present.
+--   4. Movement           Move (non-mounted) or Sprint/Turn/Leap (mounted).
+--   5. Faction specifics   e.g. Choose upgrades (chapter tactics / gore tank / counters).
+--   6. Special            low-frequency extras (Rotate base 90), always last.
 function onLoad()
-    self.addContextMenuItem("Load stats to model", loadStatsToModel)
-    self.addContextMenuItem("Load stats (all)", loadStatsToModelAll)
+    -- 1. TODO: "Update card" self-update item belongs here, at the very top.
+
+    -- 2. One-button setup: stats + loadout + faction rules + movement.
+    self.addContextMenuItem("Load everything", loadEverything)
+
+    -- 3. Stats only. Always prompts the loadout selection when the operative has
+    --    one (there is no silent "apply all" anymore).
+    self.addContextMenuItem("Load stats", loadStatsToModel)
+
+    -- 4. Movement action for the model on top (keyword-gated by embedded code).
+    if type(SPRINT_TOOL_CODE) == "string" and hasKeyword("MOUNTED") then
+        self.addContextMenuItem("Add sprint action", addSprintAction)
+    end
+    if type(MOVE_TOOL_CODE) == "string" and not hasKeyword("MOUNTED") then
+        self.addContextMenuItem("Add Move Action", addMoveAction)
+    end
+
+    -- 5. Faction specifics.
+    if hasUpgrades() then
+        self.addContextMenuItem("Choose upgrades", chooseUpgrades)
+    end
+
+    -- 6. Special (always last).
+    if hasOvalBase() then
+        self.addContextMenuItem("Special: Rotate base 90", rotateBase90)
+    end
 end
 
 -- helpers
+
+-- Object types we accept as a "model" that can receive stats. Any of these can
+-- be turned into a KTUI extender mini on the fly.
+local MODEL_TYPES = {
+    Custom_Model      = true,
+    Figurine_Custom   = true,
+    Custom_Assetbundle= true,
+    Figurine          = true,
+}
+
+function isModelLike(obj)
+    return obj ~= nil and MODEL_TYPES[obj.type] == true
+end
 
 function findModelOnCard()
     local pos = self.getPosition()
@@ -35,7 +90,7 @@ function findModelOnCard()
     end
     for _, hit in ipairs(hits) do
         local obj = hit.hit_object
-        if obj and obj ~= self and obj.type == "Custom_Model" then return obj end
+        if obj and obj ~= self and isModelLike(obj) then return obj end
     end
     return nil
 end
@@ -49,6 +104,25 @@ end
 
 function valEq(a, b)
     return tostring(a) == tostring(b)
+end
+
+-- Parse a base-size stat into (x, z) millimetres. Round bases are a single
+-- number (e.g. 32 -> 32,32); oval bases are "AxB" (e.g. "75x42" -> 75,42). The
+-- KTUI extender draws base.x and base.z independently, so an oval base ring/mesh
+-- falls out for free once the two dimensions are split. Returns nil,nil on junk.
+function parseBaseSize(raw)
+    if type(raw) == "number" then
+        return raw, raw
+    end
+    if type(raw) == "string" then
+        local a, b = string.match(raw, "^%s*(%d+%.?%d*)%s*[xX]%s*(%d+%.?%d*)%s*$")
+        if a and b then
+            return tonumber(a), tonumber(b)
+        end
+        local n = tonumber(raw)
+        if n then return n, n end
+    end
+    return nil, nil
 end
 
 function tableEq(a, b)
@@ -161,8 +235,12 @@ function buildSelectionPanelXml(selection)
             local isOn = (inActive and o == 1) and "true" or "false"
             local textColor = inActive and "#FFFFFF" or "#666666"
             local label = option.label or ("Option " .. o)
-            label = label:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"):gsub('"', "&quot;")
+            -- Swap the "; " separator to " + " BEFORE XML-escaping. If escaping runs
+            -- first, an escaped entity like "&amp; " contains "; " and the separator
+            -- pass mangles it into "&amp + ", breaking the entity and the whole panel
+            -- XML (e.g. loadouts such as "dominator maul & assault shield").
             label = label:gsub("; ", " + ")
+            label = label:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"):gsub('"', "&quot;")
 
             rows = rows .. string.format(
                 '<Toggle id="sel_%d_%d" isOn="%s" '
@@ -311,7 +389,7 @@ function onApplySelection(player, value, id)
     -- Rebuild description with filtered weapons
     pendingData.description = rebuildDescription(pendingData)
 
-    local changes = diffAndApply(pendingModel, pendingData)
+    local changes = diffAndApply(pendingModel, pendingData, pendingPlayerColor)
 
     if #changes == 0 then
         broadcastToColor("Already up to date.", pendingPlayerColor, Color.White)
@@ -325,14 +403,18 @@ function onApplySelection(player, value, id)
         broadcastToColor(msg, pendingPlayerColor, Color.Green)
     end
 
+    local pc = pendingPlayerColor
     pendingData = nil
     pendingModel = nil
     pendingPlayerColor = nil
     selectionData = nil
+    -- Advance the "Load everything" chain (no-op unless active).
+    if loadEverythingActive then afterStatsLoaded(pc) end
 end
 
 function onCancelSelection(player, value, id)
     self.UI.setXml("")
+    cancelLoadEverything()
     broadcastToColor("Selection cancelled.", pendingPlayerColor or player.color, Color.White)
     pendingData = nil
     pendingModel = nil
@@ -342,7 +424,51 @@ end
 
 -- diff and apply
 
-function diffAndApply(model, data)
+-- Backfill the minimal state that the KTUI extender model script expects so a
+-- plain model becomes KTUI-compatible after loading stats. This only fills
+-- missing fields, so it never overwrites an existing extender mini's data.
+-- Only the bare basics needed by the extender (onLoad / refreshUI /
+-- refreshVectors) are set here -- not the full Command Node feature set.
+function ensureKtuiState(ms, data)
+    ms.stats = ms.stats or {}
+    ms.info  = ms.info or {}
+    ms.info.categories = ms.info.categories or {}
+    ms.info.weapons    = ms.info.weapons or {}
+    ms.info.special    = ms.info.special or {}
+    ms.info.psychic    = ms.info.psychic or {}
+    ms.info.abilities  = ms.info.abilities or {}
+    ms.info.actions    = ms.info.actions or {}
+    ms.info.upgrades   = ms.info.upgrades or {}
+    if ms.roles         == nil then ms.roles = {} end
+    if ms.hiddenRoles   == nil then ms.hiddenRoles = {} end
+    if ms.items         == nil then ms.items = {} end
+    if ms.attachments   == nil then ms.attachments = {} end
+    if ms.holding       == nil then ms.holding = false end
+    -- uiHeight/uiAngle are read unguarded by the real KT UI extender's refreshUI
+    -- (e.g. `"0 0 -"..tostring(state.uiHeight*100)`). A nil or non-number here is
+    -- the classic "attempt to concatenate a nil value at refreshUI" crash, so we
+    -- force them to valid numbers on every apply -- never leave them as-is.
+    if type(ms.uiHeight) ~= "number" or ms.uiHeight <= 0 then ms.uiHeight = 2 end
+    if type(ms.uiAngle)  ~= "number" then ms.uiAngle = 0 end
+    -- getUIPosition() returns nil for an out-of-range index -> the same refreshUI
+    -- concat crash when the in-place refresh runs without onLoad's default.
+    if type(ms.uiPositionIndex) ~= "number" then ms.uiPositionIndex = 1 end
+    if ms.display_arrows == nil then ms.display_arrows = false end
+    if ms.base          == nil then
+        local bx, bz = parseBaseSize(data.stats and data.stats.Base)
+        ms.base = { x = bx or 25, z = bz or 25 }
+    end
+    if ms.modelid == nil or ms.modelid == "" then
+        local slug = tostring(data.name or "operative"):lower():gsub("[^%w]+", "-")
+        slug = slug:gsub("^%-+", ""):gsub("%-+$", "")
+        if slug == "" then slug = "operative" end
+        ms.modelid = "ktui-" .. slug
+    end
+    -- owner is assigned in diffAndApply (baked into script_state) so the table
+    -- Save/Load Positions + Ready Operatives can find the model.
+end
+
+function diffAndApply(model, data, playerColor)
     local changes = {}
 
     local msRaw = model.script_state
@@ -352,8 +478,30 @@ function diffAndApply(model, data)
         if ok and parsed then ms = parsed end
     end
 
+    -- What kind of model is this?
+    --  * isKtui    : already a KTUI mini of ANY kind (our bundled one OR the real
+    --                KT UI extender). If so we NEVER replace its script -- we just
+    --                update its state in place so a fancy extender keeps its UI.
+    --  * isManaged : specifically OUR bundled mini (we tag those "KTUIMiniDatacard").
+    --                Only our own mini is safe to hard-reload() as a fallback,
+    --                because its onLoad tolerates a missing owner.
+    -- A truly plain model (neither tag) gets our bundled script installed.
+    local isKtui    = model.hasTag("KTUIMini")
+    local isManaged = model.hasTag("KTUIMiniDatacard")
+    -- Our OWN managed mini carrying an older script version -> re-stamp (upgrade),
+    -- mirroring how the real extender re-applies its latest. Real extender minis
+    -- (KTUIMini but NOT managed) are never re-stamped -- only their state updates.
+    local ktuiOutdated = false
+    if isManaged and type(KTUI_MODELSCRIPT_VERSION) == "string" then
+        local modelVer
+        pcall(function() modelVer = model.getVar("KT_MODELSCRIPT_VERSION") end)
+        ktuiOutdated = modelVer ~= KTUI_MODELSCRIPT_VERSION
+    end
+
     ms.stats = ms.stats or {}
     ms.info  = ms.info or {}
+
+    ensureKtuiState(ms, data)
 
     -- 1. Core stats
     local oldMaxWounds = ms.stats["Wounds"]
@@ -372,9 +520,40 @@ function diffAndApply(model, data)
         end
     end
 
+    -- Base size: physical base diameter (mm) used for the extender's base ring.
+    -- Update it on every apply so swapping operatives resizes the ring.
+    if data.stats and data.stats.Base ~= nil then
+        local bx, bz = parseBaseSize(data.stats.Base)
+        if bx then
+            local function baseStr(x, z)
+                if x == nil then return "-" end
+                if valEq(x, z) then return tostring(x) end
+                return string.format("%sx%s", tostring(x), tostring(z))
+            end
+            -- Store the long dimension on Z (front-back). "Rotate base 90" can
+            -- later swap x/z to put the long axis left-right instead. Round bases
+            -- (bx==bz) are orientation-independent.
+            if not valEq(bx, bz) then
+                bx, bz = math.min(bx, bz), math.max(bx, bz)
+            end
+            local oldX = (type(ms.base) == "table") and tonumber(ms.base.x) or nil
+            local oldZ = (type(ms.base) == "table") and tonumber(ms.base.z) or nil
+            local oldStr, newStr = baseStr(oldX, oldZ), baseStr(bx, bz)
+            if oldStr ~= newStr then
+                table.insert(changes, string.format("Base: %smm -> %smm", oldStr, newStr))
+            end
+            ms.base = { x = bx, z = bz }
+            ms.stats.Base = data.stats.Base
+        end
+    end
+
     -- Always reset wounds to full when loading stats
     if data.stats.Wounds then
         ms.wounds = data.stats.Wounds
+        -- The real KT UI extender reads MAX wounds from the abbreviated key
+        -- `state.stats.W` (not `Wounds`). Keep it in sync so switching operatives
+        -- updates the fancy wound bar instead of showing the previous op's max.
+        ms.stats.W = data.stats.Wounds
     end
 
     -- 2. Name
@@ -458,15 +637,551 @@ function diffAndApply(model, data)
     end
 
     -- Write back
-    if #changes > 0 then
+    -- A plain model (no KTUI tag) OR our OWN managed mini on an OLD version gets
+    -- the current composed script (re)installed. A real KT UI extender mini
+    -- (KTUIMini but not managed) is left alone -- we only update its state and
+    -- refresh in place (never overwrite the extender's script).
+    -- playerColor (optional) is used to assign the KTUI owner on a (re)stamp.
+    local needsScript = ((not isKtui) or ktuiOutdated) and KTUI_MODELSCRIPT ~= nil and KTUI_MODELSCRIPT ~= ""
+    if #changes > 0 or needsScript then
+        -- Bake the KTUI owner into the persisted state (never a post-reload call).
+        -- The table-level Save/Load Positions + Ready Operatives SKIP any model whose
+        -- getOwningPlayer() is nil, so state.owner must be a seated player's steam_id
+        -- AND must survive every reload in the chain. Keep an existing owner, else
+        -- assign the loader; loadState restores it, so it persists (no race).
+        if not ms.owner or ms.owner == "" then
+            local prev
+            if isKtui then pcall(function() prev = model.call("getOwningPlayer") end) end
+            if prev and prev.steam_id and prev.steam_id ~= "" then
+                ms.owner = prev.steam_id
+            elseif playerColor and Player[playerColor] and Player[playerColor].steam_id ~= "" then
+                ms.owner = Player[playerColor].steam_id
+            end
+        end
         model.script_state = JSON.encode(ms)
-        Wait.frames(function() model.reload() end, 5)
+        if needsScript then
+            -- Install (plain model) or upgrade (our managed mini on an old version)
+            -- the composed KTUI script + tags, then reload. State (owner/wounds) is
+            -- preserved via the script_state we just wrote.
+            model.setLuaScript(KTUI_MODELSCRIPT)
+            if not model.hasTag("KTUIMini") then model.addTag("KTUIMini") end
+            model.addTag("KTUIMiniDatacard")
+            table.insert(changes, ktuiOutdated and "Upgraded KTUI script" or "Prepared model for KTUI extender")
+            model.reload()
+        else
+            -- Already a KTUI mini (ours OR the real extender): refresh in place so
+            -- the existing script/UI is preserved.
+            --
+            -- First heal the real extender's malformed getWoundPanelWidth (see
+            -- healExtenderScript). If we detect it, patch this model's OWN copy of
+            -- the script (never the extender object) and reload so the corrected
+            -- chunk re-parses; onLoad rebuilds the fancy UI from the script_state we
+            -- just wrote. This is what makes repeat loads consistent.
+            local healed, didHeal = healExtenderScript(model.getLuaScript() or "")
+            if didHeal then
+                model.setLuaScript(healed)
+                pcall(function() model.reload() end)
+                table.insert(changes, "Patched extender UI script")
+            else
+                -- Redraw the base ring (refreshVectors) AND the status UI
+                -- (refreshUI). Each is guarded so one failure can't halt the apply.
+                -- Fall back to a full reload() only if the in-place refresh throws;
+                -- reload re-runs the extender's onLoad -> loadState, which re-reads
+                -- the valid script_state we just wrote (uiHeight etc. guaranteed
+                -- present), rebuilding the fancy UI cleanly.
+                local ok = pcall(function()
+                    model.call("loadState")
+                    pcall(function() model.call("refreshVectors") end)
+                    model.call("refreshUI")
+                end)
+                if not ok then
+                    pcall(function() model.reload() end)
+                end
+            end
+        end
     end
 
     return changes
 end
 
 -- main entry
+
+function reportChanges(changes, playerColor)
+    if #changes == 0 then
+        broadcastToColor("Already up to date.", playerColor, Color.White)
+    elseif #changes == 1 then
+        broadcastToColor("Updated: " .. changes[1], playerColor, Color.Green)
+    else
+        local msg = "Updated:\n"
+        for _, c in ipairs(changes) do
+            msg = msg .. " - " .. c .. "\n"
+        end
+        broadcastToColor(msg, playerColor, Color.Green)
+    end
+end
+
+function showSelectionPanel(data, model, playerColor)
+    pendingData = data
+    pendingModel = model
+    pendingPlayerColor = playerColor
+    selectionData = data.selection
+
+    -- Initialize exclusive sets (convert 0-based to 1-based)
+    exclusiveSets = {}
+    if data.selection.exclusive_sets then
+        for _, set in ipairs(data.selection.exclusive_sets) do
+            local luaSet = {}
+            for _, idx in ipairs(set) do
+                table.insert(luaSet, idx + 1)
+            end
+            table.insert(exclusiveSets, luaSet)
+        end
+    end
+    activeSet = 1
+
+    -- Pre-select first option in each group of the active set
+    groupSelections = {}
+    if #exclusiveSets > 0 then
+        for _, g in ipairs(exclusiveSets[activeSet]) do
+            groupSelections[g] = 1
+        end
+    else
+        for g = 1, #data.selection.groups do
+            groupSelections[g] = 1
+        end
+    end
+
+    self.UI.setXml(buildSelectionPanelXml(data.selection))
+    broadcastToColor("Choose options, then click Apply.", playerColor, Color.Yellow)
+end
+
+-- True only when this card's operative has faction-rule upgrade choices in its
+-- GMNotes. Operatives without upgrades get no "Choose upgrades" context item.
+function hasUpgrades()
+    local ok, data = pcall(function() return JSON.decode(self.getGMNotes() or "") end)
+    if not ok or type(data) ~= "table" then return false end
+    local up = data.upgrades
+    return up ~= nil and type(up.options) == "table" and #up.options > 0
+end
+
+-- True when this card's operative has the given keyword (e.g. "MOUNTED"),
+-- read from GMNotes.keywords. Used to gate the "Add sprint action" item.
+function hasKeyword(kw)
+    local ok, data = pcall(function() return JSON.decode(self.getGMNotes() or "") end)
+    if not ok or type(data) ~= "table" or type(data.keywords) ~= "table" then return false end
+    kw = tostring(kw):upper()
+    for _, k in ipairs(data.keywords) do
+        if tostring(k):upper() == kw then return true end
+    end
+    return false
+end
+
+-- Generic in-place injector/updater for a TAGGED block of Lua on a MODEL.
+-- Strips any existing block delimited by `startMarker` .. `endMarker` (any
+-- version) and appends the current `code`. When the tag is ABSENT (an older
+-- model, or a first install) it simply appends -- so it works as both installer
+-- and updater, and still overwrites/extends models that predate the tags. The
+-- host script and script_state are left intact. Returns true if a block existed
+-- (i.e. this was an update rather than a fresh install).
+-- Convention going forward: wrap every injectable function block in the model
+-- source with `-- START KT_<NAME> --` / `-- END KT_<NAME> --` so it can be
+-- find/replaced in place with an improved version.
+
+-- Heal a known defect in the third-party "KT Command Node UI Extender" script
+-- that the extender object stamps onto models. Its getWoundPanelWidth() is
+-- written with bare `if` where it needs `elseif`:
+--     if wounds <= 7 then  return 60
+--     if wounds <= 10 then return 80      -- should be elseif
+--     if wounds <= 14 then return 100     -- should be elseif
+--     elseif wounds <= 18 then return 120
+--     else return 140 end
+--     end
+-- Those two bare ifs nest instead of chaining, so the function is 2 `end`s short.
+-- On its own the missing ends are tolerated at end-of-file, but as soon as we
+-- append our movement tool the deficit swallows the start of the appended code
+-- and a callee inside refreshUI resolves to nil ("attempt to call a nil value"
+-- -- the model loads once, then breaks the next time it is loaded).
+--
+-- We cannot edit the extender object, but every model carries its OWN copy of the
+-- script, so we patch that copy: converting the two bare ifs to `elseif` makes the
+-- two existing `end`s correctly close the if-chain and the function. Returns the
+-- (possibly healed) code plus a boolean telling whether anything changed.
+function healExtenderScript(code)
+    if type(code) ~= "string" or code == "" then return code, false end
+    if not code:find("getWoundPanelWidth", 1, true) then return code, false end
+    local healed, a, b = code, 0, 0
+    healed, a = healed:gsub("(return%s+60%s+)if(%s+wounds%s*<=%s*10%s+then)", "%1elseif%2")
+    healed, b = healed:gsub("(return%s+80%s+)if(%s+wounds%s*<=%s*14%s+then)", "%1elseif%2")
+    return healed, (a + b) > 0
+end
+
+function injectBlock(model, startMarker, endMarker, code)
+    local lua = model.getLuaScript() or ""
+    local existed = false
+    -- 1) Remove EVERY current-format block (startMarker..endMarker). Looping so
+    --    that several stacked copies (from older always-append builds) all go.
+    while true do
+        local s = lua:find(startMarker, 1, true)
+        if not s then break end
+        existed = true
+        local e = lua:find(endMarker, s, true)
+        if e then
+            local nl = lua:find("\n", e, true)
+            lua = nl and (lua:sub(1, s - 1) .. lua:sub(nl + 1)) or lua:sub(1, s - 1)
+        else
+            lua = lua:sub(1, s - 1)
+            break
+        end
+    end
+    -- 2) Remove any LEGACY bare-marker block. Older builds appended the tool with
+    --    just "-- KT_<NAME>_V1" and no END marker, always at the END of the
+    --    script, so strip from the first legacy marker to the end (this clears
+    --    however many copies accumulated). Derived from startMarker:
+    --    "-- START KT_SPRINT_TOOL_" -> "-- KT_SPRINT_TOOL_V1".
+    local legacyMarker = startMarker:gsub("START ", "") .. "V1"
+    local ls = lua:find(legacyMarker, 1, true)
+    if ls then
+        existed = true
+        lua = lua:sub(1, ls - 1)
+    end
+    lua = lua:gsub("%s+$", "")
+    -- Heal a malformed foreign extender script (see healExtenderScript) BEFORE
+    -- appending so the extender's missing `end`s can't swallow our code.
+    lua = healExtenderScript(lua)
+    model.setLuaScript(lua .. "\n\n" .. code)
+    Wait.frames(function() if model ~= nil then model.reload() end end, 10)
+    return existed
+end
+
+-- Append the movement tool (SPRINT_TOOL_CODE, embedded on mounted cards) to the
+-- model on top, adding "Sprint", "Turn" and "Leap" context items to it.
+-- Injection-safe: the tool chains onLoad/onPickUp and never writes script_state.
+function addSprintAction(playerColor)
+    if type(SPRINT_TOOL_CODE) ~= "string" or SPRINT_TOOL_CODE == "" then
+        broadcastToColor("Sprint tool code missing - regenerate the cards.", playerColor, Color.Orange)
+        return
+    end
+    local model = findModelOnCard()
+    if not model then
+        broadcastToColor("Place the model on this card first.", playerColor, Color.Orange)
+        return
+    end
+    -- Re-running installs the CURRENT version (doubles as an updater).
+    local updating = injectBlock(model, "-- START KT_SPRINT_TOOL_", "-- END KT_SPRINT_TOOL_", SPRINT_TOOL_CODE)
+    if updating then
+        broadcastToColor("Sprint action updated to the latest version.", playerColor, {0.2, 0.85, 0.3})
+    else
+        broadcastToColor("Sprint action added. Right-click the model -> Sprint / Turn / Leap.", playerColor, {0.2, 0.85, 0.3})
+    end
+end
+
+-- Append the Move tool (MOVE_TOOL_CODE, embedded on non-mounted cards) to the
+-- model on top, adding a "Move" context item to it. Injection-safe: the tool
+-- chains onLoad/onPickUp and never writes script_state.
+function addMoveAction(playerColor)
+    if type(MOVE_TOOL_CODE) ~= "string" or MOVE_TOOL_CODE == "" then
+        broadcastToColor("Move tool code missing - regenerate the cards.", playerColor, Color.Orange)
+        return
+    end
+    local model = findModelOnCard()
+    if not model then
+        broadcastToColor("Place the model on this card first.", playerColor, Color.Orange)
+        return
+    end
+    -- Re-running installs the CURRENT version (doubles as an updater).
+    local updating = injectBlock(model, "-- START KT_MOVE_TOOL_", "-- END KT_MOVE_TOOL_", MOVE_TOOL_CODE)
+    if updating then
+        broadcastToColor("Move action updated to the latest version.", playerColor, {0.2, 0.85, 0.3})
+    else
+        broadcastToColor("Move action added. Right-click the model -> Move.", playerColor, {0.2, 0.85, 0.3})
+    end
+end
+
+-- True only when this card's operative uses an oval base (two different base
+-- dimensions). Round-base operatives get no "Rotate base 90" context item.
+function hasOvalBase()
+    local ok, data = pcall(function() return JSON.decode(self.getGMNotes() or "") end)
+    if not ok or type(data) ~= "table" then return false end
+    local bx, bz = parseBaseSize(data.stats and data.stats.Base)
+    return bx ~= nil and bz ~= nil and not valEq(bx, bz)
+end
+
+-- Rotate the oval base 90 degrees (KT UI compatible). The KT UI extender stores
+-- base = { x, z } (axis-aligned, no rotation field), so swapping x<->z is the only
+-- orientation it can render. We patch the model's OWN state and reload its OWN
+-- script -- never setLuaScript -- so the KT UI extender is preserved.
+function rotateBase90(playerColor)
+    local model = findModelOnCard()
+    if not model then
+        broadcastToColor("Place the model on this card first.", playerColor, Color.Orange)
+        return
+    end
+    local okd, ms = pcall(function() return JSON.decode(model.script_state or "") end)
+    if not okd or type(ms) ~= "table" then
+        broadcastToColor("Load stats to this model first.", playerColor, Color.Orange)
+        return
+    end
+    local bx = ms.base and tonumber(ms.base.x)
+    local bz = ms.base and tonumber(ms.base.z)
+    if not (bx and bz) then
+        local ok2, data = pcall(function() return JSON.decode(self.getGMNotes() or "") end)
+        if ok2 and data then bx, bz = parseBaseSize(data.stats and data.stats.Base) end
+    end
+    if not (bx and bz) or valEq(bx, bz) then
+        broadcastToColor("This operative has a round base -- nothing to rotate.", playerColor, Color.Orange)
+        return
+    end
+    ms.base = { x = bz, z = bx }   -- swap = rotate the oval RING 90 degrees
+    -- Also rotate the operative FRONT: Sprint/Turn/Leap derive their heading from
+    -- the transform + a per-model kt_front offset (0/90/180/270). Bumping it here
+    -- keeps the movement direction aligned with the (now-rotated) long axis and
+    -- lets players correct sculpts that otherwise run tail-first. KTUI ignores
+    -- this key but preserves it (loadState/saveState round-trip the whole table).
+    ms.kt_front = ((tonumber(ms.kt_front) or 0) + 90) % 360
+    model.script_state = JSON.encode(ms)
+    model.reload()
+    broadcastToColor(string.format("Base rotated 90 (now %sx%s, front +%d).", tostring(bz), tostring(bx), ms.kt_front), playerColor, Color.Green)
+end
+
+function proceedLoad(playerColor, data, model, ignoreWeapons)
+    if (not ignoreWeapons) and data.selection and data.selection.groups and #data.selection.groups > 0 then
+        showSelectionPanel(data, model, playerColor)
+    else
+        local changes = diffAndApply(model, data, playerColor)
+        reportChanges(changes, playerColor)
+        pendingData = nil
+        pendingModel = nil
+        pendingPlayerColor = nil
+        -- No loadout popup: the stats step finished synchronously, so advance the
+        -- "Load everything" chain now (no-op unless it is active).
+        if loadEverythingActive then afterStatsLoaded(playerColor) end
+    end
+end
+
+-- ===== "Load everything" orchestrator =====
+-- One click runs the full setup IN ORDER: load stats (forcing the loadout popup
+-- when the operative has one) -> apply faction upgrades if any -> faction-rule
+-- popup if any (chapter tactics / gore tanks) -> operative counters if any ->
+-- movement. The stats, upgrade and faction-rule steps use ASYNC selection
+-- popups, so the chain is advanced from their Apply handlers, guarded by this
+-- flag; the counters + movement steps are synchronous. Any Cancel aborts the
+-- chain. The individual menu items still work standalone. (Rotate base excluded.)
+--
+-- Each stats/counters/movement step rewrites the model's Lua and reload()s it
+-- (~10 frames later). Reloads that stack in the same frame make TTS leave TWO
+-- overlapping copies of the model, so between every mutate+reload step we WAIT a
+-- short window for the previous reload to settle. Each step re-acquires the
+-- model via findModelOnCard(), so it always works on the freshly reloaded object.
+loadEverythingActive = false
+local LOAD_EVERYTHING_STEP_FRAMES = 45   -- window between mutate+reload steps (the composed KTUI script is large -> reload needs longer to settle)
+
+-- Run nextFn(playerColor) after a short settle window, if the chain is still active.
+function loadEverythingWait(nextFn, playerColor)
+    if not loadEverythingActive then return end
+    Wait.frames(function()
+        if loadEverythingActive then nextFn(playerColor) end
+    end, LOAD_EVERYTHING_STEP_FRAMES)
+end
+
+function loadEverything(playerColor)
+    loadEverythingActive = true
+    loadStatsToModel(playerColor)          -- continues via afterStatsLoaded(...)
+end
+
+-- After the STATS step (called from onApplySelection and the sync path above).
+function afterStatsLoaded(playerColor)
+    if not loadEverythingActive then return end
+    if hasUpgrades() then
+        chooseUpgrades(playerColor)        -- async -> continues via afterUpgradesLoaded
+    else
+        -- Stats just reloaded the model; settle before the next step.
+        loadEverythingWait(afterFactionRuleStep, playerColor)
+    end
+end
+
+-- After the UPGRADES step (Exodite <archetype> UPGRADE picks). Continue to the
+-- faction-rule popup step.
+function afterUpgradesLoaded(playerColor)
+    if not loadEverythingActive then return end
+    -- Upgrades just refreshed/reloaded the model; settle before the next step.
+    loadEverythingWait(afterFactionRuleStep, playerColor)
+end
+
+-- Faction-rule popup step (e.g. AoD "Chapter Tactics", Goremongers "Gore Tanks"),
+-- generated as applyFactionRule() on teams that use the select-1/2 popup. It is
+-- an ASYNC popup: its Apply handler resumes via afterFactionRuleLoaded and its
+-- Cancel aborts the chain. Cards without a popup skip straight ahead.
+function afterFactionRuleStep(playerColor)
+    if not loadEverythingActive then return end
+    if type(applyFactionRule) == "function" then
+        applyFactionRule(playerColor)      -- async -> continues via afterFactionRuleLoaded
+    else
+        afterFactionRuleLoaded(playerColor)
+    end
+end
+
+-- After the FACTION-RULE popup (or when there is none). Continue to counters.
+function afterFactionRuleLoaded(playerColor)
+    if not loadEverythingActive then return end
+    loadEverythingWait(afterCountersStep, playerColor)
+end
+
+-- Operative counters are injected by an APPENDED feature block. A card may have
+-- the MULTI counter menu (addOperativeCountersToModel, e.g. Exodite) OR the
+-- SINGLE counter (addOperativeCounterToModel, e.g. Goremongers "Gore Tank") --
+-- run whichever exists. Both are synchronous (model rewrite + reload), so settle
+-- before movement; when neither exists, go straight to movement.
+function afterCountersStep(playerColor)
+    if not loadEverythingActive then return end
+    local didCounter = false
+    if type(addOperativeCountersToModel) == "function" then
+        addOperativeCountersToModel(playerColor)
+        didCounter = true
+    end
+    if type(addOperativeCounterToModel) == "function" then
+        addOperativeCounterToModel(playerColor)
+        didCounter = true
+    end
+    if didCounter then
+        loadEverythingWait(afterCountersLoaded, playerColor)
+    else
+        afterCountersLoaded(playerColor)
+    end
+end
+
+-- After the COUNTERS step. Adds the movement action (the final step) and ends.
+function afterCountersLoaded(playerColor)
+    if not loadEverythingActive then return end
+    loadEverythingActive = false
+    if type(SPRINT_TOOL_CODE) == "string" and hasKeyword("MOUNTED") then
+        addSprintAction(playerColor)
+    elseif type(MOVE_TOOL_CODE) == "string" then
+        addMoveAction(playerColor)
+    end
+end
+
+-- Abort the chain (called from the Cancel handlers of either popup).
+function cancelLoadEverything()
+    loadEverythingActive = false
+end
+
+-- ===== Faction-rule upgrades (mounted operatives pick N of M) =====
+
+function chooseUpgrades(playerColor)
+    local raw = self.getGMNotes()
+    local ok, data = pcall(function() return JSON.decode(raw or "") end)
+    if not ok or not data then
+        broadcastToColor("No stat data on this card.", playerColor, Color.Red)
+        return
+    end
+    local up = data.upgrades
+    if not up or not up.options or #up.options == 0 then
+        broadcastToColor("This datacard has no upgrade choices.", playerColor, Color.Orange)
+        return
+    end
+    local model = findModelOnCard()
+    if not model then
+        broadcastToColor("Place the model on this card first.", playerColor, Color.Orange)
+        return
+    end
+    upgradeOptions = up.options
+    upgradeSelect = tonumber(up.select) or 2
+    upgradeChosen = {}
+    upgradeModel = model
+    upgradeData = data
+    upgradePlayerColor = playerColor
+    self.UI.setXml(buildUpgradePanelXml(up.options, upgradeSelect))
+    broadcastToColor(string.format("Select %d upgrades, then click Apply.", upgradeSelect), playerColor, Color.Yellow)
+end
+
+function buildUpgradePanelXml(options, selectN)
+    local rows = ""
+    for i, opt in ipairs(options) do
+        local label = opt.name or ("Upgrade " .. i)
+        label = label:gsub("&", "&amp;"):gsub("<", "&lt;"):gsub(">", "&gt;"):gsub('"', "&quot;")
+        rows = rows .. string.format(
+            '<Toggle id="upg_%d" isOn="false" onValueChanged="onUpgradeToggle" '
+            .. 'fontSize="11" textColor="#FFFFFF" colors="#444444|#666666|#333333|#222222" '
+            .. 'toggleWidth="18" toggleHeight="18">%s</Toggle>\n', i, label)
+    end
+    local h = 74 + #options * 26
+    return string.format([[
+<Panel id="upgradePanel" active="true" width="264" height="%d"
+       color="rgba(0,0,0,0.92)" padding="6 6 6 6" position="0 0 -50"
+       rotation="0 0 180" allowDragging="true">
+  <VerticalLayout spacing="3" childForceExpandWidth="true" childForceExpandHeight="false">
+    <Text fontSize="12" fontStyle="Bold" color="#FF9900" alignment="MiddleCenter" preferredHeight="20">Choose %d Upgrades</Text>
+    <Image color="rgba(255,255,255,0.15)" preferredHeight="1" />
+    %s
+    <Image color="rgba(255,255,255,0.15)" preferredHeight="1" />
+    <HorizontalLayout spacing="4" preferredHeight="24">
+      <Button id="btnUpgApply" onClick="onApplyUpgrades" fontSize="10" fontStyle="Bold" colors="#2E7D32|#388E3C|#1B5E20|#555555" textColor="#FFFFFF">Apply</Button>
+      <Button id="btnUpgCancel" onClick="onCancelUpgrades" fontSize="10" colors="#C62828|#D32F2F|#B71C1C|#555555" textColor="#FFFFFF">Cancel</Button>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Panel>
+]], h, selectN, rows)
+end
+
+function _upgradeCount()
+    local n = 0
+    for _ in pairs(upgradeChosen) do n = n + 1 end
+    return n
+end
+
+function onUpgradeToggle(player, value, id)
+    local i = tonumber(id:match("upg_(%d+)"))
+    if not i then return end
+    if value == "True" then
+        if _upgradeCount() >= upgradeSelect then
+            -- Enforce the limit: bounce this toggle back off.
+            self.UI.setAttribute(id, "isOn", "false")
+            broadcastToColor(string.format("Pick exactly %d -- deselect one first.", upgradeSelect), upgradePlayerColor, Color.Orange)
+            return
+        end
+        upgradeChosen[i] = true
+    else
+        upgradeChosen[i] = nil
+    end
+end
+
+function onApplyUpgrades(player, value, id)
+    if _upgradeCount() ~= upgradeSelect then
+        broadcastToColor(string.format("Select exactly %d upgrades.", upgradeSelect), upgradePlayerColor, Color.Orange)
+        return
+    end
+    self.UI.setXml("")
+    if not upgradeData or not upgradeModel or not upgradeOptions then return end
+    local data = upgradeData
+    data.abilities = data.abilities or {}
+    local chosenNames = {}
+    for i in pairs(upgradeChosen) do
+        local opt = upgradeOptions[i]
+        if opt then
+            table.insert(data.abilities, { name = opt.name, text = opt.text })
+            table.insert(chosenNames, opt.name)
+        end
+    end
+    local changes = diffAndApply(upgradeModel, data, nil)
+    broadcastToColor("Upgrades applied: " .. table.concat(chosenNames, ", "), upgradePlayerColor, Color.Green)
+    local pc = upgradePlayerColor
+    upgradeChosen = {}
+    upgradeModel = nil
+    upgradeData = nil
+    upgradeOptions = nil
+    -- Advance the "Load everything" chain to the movement step (no-op unless active).
+    if loadEverythingActive then afterUpgradesLoaded(pc) end
+end
+
+function onCancelUpgrades(player, value, id)
+    self.UI.setXml("")
+    cancelLoadEverything()
+    broadcastToColor("Upgrade selection cancelled.", upgradePlayerColor or (player and player.color) or "White", Color.White)
+    upgradeChosen = {}
+    upgradeModel = nil
+    upgradeData = nil
+    upgradeOptions = nil
+end
 
 function loadStatsToModelAll(playerColor)
     local raw = self.getGMNotes()
@@ -481,25 +1196,14 @@ function loadStatsToModelAll(playerColor)
         return
     end
 
-    local model = findModelOnCard()
-    if model == nil then
-        broadcastToColor("Place a KTUIMini model on this card first.", playerColor, Color.Orange)
+    -- Base (incl. oval) applies in its default orientation; use "Rotate base 90"
+    -- afterwards if a mesh needs the oval turned.
+    local modelAll = findModelOnCard()
+    if modelAll == nil then
+        broadcastToColor("Place a model on this card first.", playerColor, Color.Orange)
         return
     end
-
-    -- Apply all weapons directly, ignoring selection
-    local changes = diffAndApply(model, data)
-    if #changes == 0 then
-        broadcastToColor("Already up to date.", playerColor, Color.White)
-    elseif #changes == 1 then
-        broadcastToColor("Updated: " .. changes[1], playerColor, Color.Green)
-    else
-        local msg = "Updated:\n"
-        for _, c in ipairs(changes) do
-            msg = msg .. " - " .. c .. "\n"
-        end
-        broadcastToColor(msg, playerColor, Color.Green)
-    end
+    proceedLoad(playerColor, data, modelAll, true)
 end
 
 function loadStatsToModel(playerColor)
@@ -515,59 +1219,12 @@ function loadStatsToModel(playerColor)
         return
     end
 
+    -- Base (incl. oval) applies in its default orientation; use "Rotate base 90"
+    -- afterwards if a mesh needs the oval turned.
     local model = findModelOnCard()
     if model == nil then
-        broadcastToColor("Place a KTUIMini model on this card first.", playerColor, Color.Orange)
+        broadcastToColor("Place a model on this card first.", playerColor, Color.Orange)
         return
     end
-
-    -- Check for selection data (operatives with weapon loadout choices)
-    if data.selection and data.selection.groups and #data.selection.groups > 0 then
-        pendingData = data
-        pendingModel = model
-        pendingPlayerColor = playerColor
-        selectionData = data.selection
-
-        -- Initialize exclusive sets (convert 0-based to 1-based)
-        exclusiveSets = {}
-        if data.selection.exclusive_sets then
-            for _, set in ipairs(data.selection.exclusive_sets) do
-                local luaSet = {}
-                for _, idx in ipairs(set) do
-                    table.insert(luaSet, idx + 1)
-                end
-                table.insert(exclusiveSets, luaSet)
-            end
-        end
-        activeSet = 1
-
-        -- Pre-select first option in each group of the active set
-        groupSelections = {}
-        if #exclusiveSets > 0 then
-            for _, g in ipairs(exclusiveSets[activeSet]) do
-                groupSelections[g] = 1
-            end
-        else
-            for g = 1, #data.selection.groups do
-                groupSelections[g] = 1
-            end
-        end
-
-        self.UI.setXml(buildSelectionPanelXml(data.selection))
-        broadcastToColor("Select loadout, then click Apply.", playerColor, Color.Yellow)
-    else
-        -- No selection choices: apply all weapons directly
-        local changes = diffAndApply(model, data)
-        if #changes == 0 then
-            broadcastToColor("Already up to date.", playerColor, Color.White)
-        elseif #changes == 1 then
-            broadcastToColor("Updated: " .. changes[1], playerColor, Color.Green)
-        else
-            local msg = "Updated:\n"
-            for _, c in ipairs(changes) do
-                msg = msg .. " - " .. c .. "\n"
-            end
-            broadcastToColor(msg, playerColor, Color.Green)
-        end
-    end
+    proceedLoad(playerColor, data, model, false)
 end
