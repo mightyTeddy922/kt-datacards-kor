@@ -1,359 +1,147 @@
 {
   "team": "legionaries",
   "box": {
-    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tts_objects/Legionaries.json?v=1788032014",
-    "modified": "2026-08-29T19:33:34.522439+00:00",
-    "hash": "f7e885131272812307eed1c3b649e0196ef017148ba08800b7badf0658106a53"
+    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tts_objects/Legionaries.json",
+    "modified": "2026-08-29T20:13:29.281288+00:00"
   },
   "objects": [
     {
-      "type": "lua-script",
-      "name": "update-script",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/config/defaults/tts-script/tts-update-rules-in-box-script.lua?v=1783888798",
-      "modified": "2026-07-12T20:39:58.110729+00:00",
-      "hash": "d909f8b32ec6579a2cb9029d486b0c5f53b65074077e513bbaa78d4e086f6d9c"
+      "type": "cardbox-mesh",
+      "name": "legionaries-card-box",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cardbox/legionaries-card-box.obj?v=1781895962",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "cardbox-texture",
       "name": "legionaries-card-box-texture",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cardbox/legionaries-card-box-texture.jpg?v=1783162072",
-      "modified": "2026-07-04T10:47:52.493769+00:00",
-      "hash": "11e6f569abebad6654fad7671ee18e025ff7c5d70e401b5bb90a595e4b95dfd1"
-    },
-    {
-      "type": "cardbox-mesh",
-      "name": "legionaries-card-box",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cardbox/legionaries-card-box.obj?v=1781895962",
-      "modified": "2026-06-19T19:06:02.305117+00:00",
-      "hash": "5859e89454f30c5826e4f8b348a91fb64bd367eb4e7de09eafc5d4a070d41125"
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cardbox/legionaries-card-box-texture.jpg?v=1783162072",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-grisly",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-grisly.obj?v=1788026479",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-grisly.png?v=1788029186",
-      "modified": "2026-08-29T18:46:26.153709+00:00",
-      "hash": "71853441e9c0516d1d70fa7bd535e7c3ed9445917f7a7415b0ea5f2fc13340a7"
+      "name": "Legionaries",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cardbox/legionaries-card-box.obj?v=1781895962",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cardbox/legionaries-card-box-texture.jpg?v=1783162072",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-mark-of-chaos-khorne",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-khorne.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-khorne.png?v=1783538221",
-      "modified": "2026-07-08T19:17:01.978503+00:00",
-      "hash": "4c06995dc1d3bd5fe6ec78eaf770d8dd71925b28a34e976b5593a82bf0c9aee0"
+      "name": "Legionaries tokens",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/tokenbag/legionaries-token-bag.obj?v=1779121408",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/tokenbag/legionaries-token-bag-icon.png?v=1784729911",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-mark-of-chaos-nurgle",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-nurgle.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-nurgle.png?v=1783538222",
-      "modified": "2026-07-08T19:17:02.010113+00:00",
-      "hash": "0b2c3632d404bc09bc1b673aeab310d347998e1f48263bc428742744f6cd83d2"
+      "name": "Grisly",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-grisly.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-grisly.png?v=1785001485",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-mark-of-chaos-slaanesh",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-slaanesh.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-slaanesh.png?v=1783538224",
-      "modified": "2026-07-08T19:17:04.844790+00:00",
-      "hash": "faa04a99038dd501800ac50b3ce271038ad8ef9d4678d43cc531c7f7cc8a3993"
+      "name": "Mark Of Chaos Khorne",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-khorne.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-khorne.png?v=1785001221",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-mark-of-chaos-tzeentch",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-tzeentch.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-tzeentch.png?v=1783371762",
-      "modified": "2026-07-06T21:02:42.651982+00:00",
-      "hash": "b5b85a48252e46a5913c296b09941bab196ecc983eae3adbdbad41246314c74d"
+      "name": "Mark Of Chaos Nurgle",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-nurgle.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-nurgle.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-mark-of-chaos-undivided",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-undivided.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-mark-of-chaos-undivided.png?v=1783538228",
-      "modified": "2026-07-08T19:17:08.104611+00:00",
-      "hash": "eaffd8e582179d1abb1bb2c0f41ae42f7a55ce46fcf030b802627a3805bd70c1"
+      "name": "Mark Of Chaos Slaanesh",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-slaanesh.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-slaanesh.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-tainted-rounds",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-tainted-rounds.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-tainted-rounds.png?v=1783188222",
-      "modified": "2026-07-04T18:03:42.136712+00:00",
-      "hash": "57f63d9d1c927d87c5cd47e7d8cb1ad6e2f866987d4a2e71acbca5ff4abad525"
+      "name": "Mark Of Chaos Tzeentch",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-tzeentch.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-tzeentch.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-unleash-daemon",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-unleash-daemon.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-unleash-daemon.png?v=1783371762",
-      "modified": "2026-07-06T21:02:42.687345+00:00",
-      "hash": "3bb92f89e0966d37593d651338ff526e04c33e6b73466f840bf491bf1a801522"
+      "name": "Mark Of Chaos Undivided",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-undivided.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-mark-of-chaos-undivided.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
       "type": "token",
-      "name": "legionaries-warded-armour",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-warded-armour.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/legionaries-warded-armour.png?v=1783538232",
-      "modified": "2026-07-08T19:17:12.208900+00:00",
-      "hash": "9cc7c5201c098f94e9d3644d5de47a3d748196b94e5eb4fe92e150ab85ef8e70"
+      "name": "Tainted Rounds",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-tainted-rounds.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-tainted-rounds.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "token-bag",
-      "name": "legionaries-token-bag",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/tokenbag/legionaries-token-bag.obj?v=1779121408",
-      "icon_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/tokens/tokenbag/legionaries-token-bag-icon.png?v=1783160381",
-      "modified": "2026-07-04T10:19:41.082477+00:00",
-      "hash": "3608a19da143b2aa6d3494637b9cc1ad2d15748d7152bbef005782c3d5b0cf07"
+      "type": "token",
+      "name": "Unleash Daemon",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-unleash-daemon.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-unleash-daemon.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg?v=1788029220",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:00.915299+00:00",
-      "hash": "df1f7a00c77751106c31e03fc62ed618d296099c530d249e630438648a732c71"
+      "type": "token",
+      "name": "Warded Armour",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-warded-armour.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/tokens/legionaries-warded-armour.png?v=1785001222",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg?v=1788029224",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:04.333510+00:00",
-      "hash": "c6172e6009353c29555de08f38a57c14deabb3fea5046c7ed6ab43a48173e5e3"
+      "type": "card",
+      "name": "legionaries-operatives",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/operatives_selection/legionaries-operative-selection-front.jpg?v=1783538277",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/operatives_selection/legionaries-operative-selection-back.jpg?v=1783538277",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg?v=1788029221",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:01.251375+00:00",
-      "hash": "00d19c49ef05dd4915f363a54a662b7c7c1dd683f1cb61921b85d3fe3d767aba"
+      "type": "card",
+      "name": "Faction Rules",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/faction_rules/legionaries-astartes-front.jpg?v=1783538280",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/faction_rules/legionaries-astartes-back.jpg?v=1783538195",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg?v=1788029221",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:01.585581+00:00",
-      "hash": "3333f6b19bcc690d08fdc913246f70887d9cd14599b3ed7a3bb57e453416b907"
+      "type": "card",
+      "name": "legionaries-markertoken-guide",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/token_guide/legionaries-token-guide-front.jpg?v=1783538286",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/token_guide/legionaries-token-guide-back.jpg?v=1783538195",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg?v=1788029221",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:01.926629+00:00",
-      "hash": "14722ac7ce327dcd8c2df1a29e968fee5e402055fb47f529472498d3bdb0b604"
+      "type": "card",
+      "name": "Datacards",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/datacards/legionary-anointed-front.jpg?v=1783538273",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/datacards/legionary-anointed-back.jpg?v=1783538193",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg?v=1788029222",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:02.264456+00:00",
-      "hash": "0f26d85e594e28eba270c7d682d9787cfe8049e115b3a0bde251991997a15396"
+      "type": "card",
+      "name": "Equipment",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/equipment/legionaries-chaos-talismans-front.jpg?v=1783538281",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/equipment/legionaries-chaos-talismans-back.jpg?v=1783538195",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg?v=1788029222",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:02.593121+00:00",
-      "hash": "bfbf113005b757c7beb64efff3a8fd6f07538aa912a49378489cb50f3a7f1e4d"
+      "type": "card",
+      "name": "Firefight Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/firefight_ploys/legionaries-malignant-aura-front.jpg?v=1783538284",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/firefight_ploys/legionaries-malignant-aura-back.jpg?v=1783538195",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg?v=1788029222",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:02.936149+00:00",
-      "hash": "b6097c25a273268e5fed234d3319fee822588c496caa5b9fe213736921d26dfd"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg?v=1788029223",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg?v=1788026488",
-      "modified": "2026-08-29T18:47:03.285620+00:00",
-      "hash": "40e710c1808964ff62c6381c065ef8c5c67e4fa514092e743a1bccb907761428"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg?v=1788029223",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg?v=1788029223",
-      "modified": "2026-08-29T18:47:03.966615+00:00",
-      "hash": "83c988ce037648c769c07c8bdd89d3402ecf08519f8aba421ef194a57cf7e63c"
-    },
-    {
-      "type": "equipment",
-      "name": "legionaries-chaos-talismans",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-chaos-talismans-front.jpg?v=1783538281",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-chaos-talismans-back.jpg?v=1783538195",
-      "modified": "2026-07-08T19:18:01.945631+00:00",
-      "hash": "df624b4b3ad34d61a2efe50e9f0e8ab40192452a04eca4a2485260ead02433b6"
-    },
-    {
-      "type": "equipment",
-      "name": "legionaries-malefic-blades",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-malefic-blades-front.jpg?v=1783538282",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-malefic-blades-back.jpg?v=1783538195",
-      "modified": "2026-07-08T19:18:02.397990+00:00",
-      "hash": "d20ebe0180eab17fcc4733b5f7205aa5ae930c5e7ce3f3f46600badf6592ae0d"
-    },
-    {
-      "type": "equipment",
-      "name": "legionaries-tainted-rounds",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-tainted-rounds-front.jpg?v=1783538281",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-tainted-rounds-back.jpg?v=1783538195",
-      "modified": "2026-07-08T19:18:01.475434+00:00",
-      "hash": "3966a62e70baca224abb7ae77952a0f0c5129ac86b0dbac30f6b4156990ef202"
-    },
-    {
-      "type": "equipment",
-      "name": "legionaries-warded-armour",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-warded-armour-front.jpg?v=1783538280",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/equipment/legionaries-warded-armour-back.jpg?v=1783538195",
-      "modified": "2026-07-08T19:18:00.990689+00:00",
-      "hash": "388d1d964a2b35e145080f6edaf15fcb3bc4339bcc82f3ea8700876100c4833b"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-astartes",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-astartes-front.jpg?v=1788025214",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-astartes-back.jpg?v=1788025214",
-      "modified": "2026-08-29T17:40:14.404958+00:00",
-      "hash": "b2fa524c27b5f86b4dacdddac1fd343e2171f0547b7b939117cadf187fdf7b08"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-marks-of-chaos",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-front.jpg?v=1788025212",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-back.jpg?v=1788025212",
-      "modified": "2026-08-29T17:40:12.353890+00:00",
-      "hash": "49407a5711bf8f92388cc1745c3b3d1571865c5d215b18003c5f8c7e9dfb79a1"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-marks-of-chaos-2",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-2-front.jpg?v=1788025212",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-2-back.jpg?v=1788025212",
-      "modified": "2026-08-29T17:40:12.696626+00:00",
-      "hash": "cfb0805ae0c51a981bb2d93d7d040840373b3c907bfef546ab0efac12d065b5e"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-marks-of-chaos-3",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-3-front.jpg?v=1788025213",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-3-back.jpg?v=1788025213",
-      "modified": "2026-08-29T17:40:13.037481+00:00",
-      "hash": "daed59fcdb3e22bd7d7fb600da6a34e8e83f458c4e3d322db58b2e6c64e8df41"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-marks-of-chaos-4",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-4-front.jpg?v=1788025213",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-4-back.jpg?v=1788025213",
-      "modified": "2026-08-29T17:40:13.373895+00:00",
-      "hash": "3bca764ca4d04f848336c853461a6db977781b75f19e7734c010b4e65e7aeb11"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-marks-of-chaos-5",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-5-front.jpg?v=1788025213",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-5-back.jpg?v=1788025213",
-      "modified": "2026-08-29T17:40:13.719350+00:00",
-      "hash": "3f58e190a205a0fa0174ae1ed2feea6f90143c96b75c86442d954542340b4975"
-    },
-    {
-      "type": "faction-rules",
-      "name": "legionaries-marks-of-chaos-6",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-6-front.jpg?v=1788025214",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/faction-rules/legionaries-marks-of-chaos-6-back.jpg?v=1788025214",
-      "modified": "2026-08-29T17:40:14.062929+00:00",
-      "hash": "6dded26f9b731f92b96571123c1e4c6f83b0b0e154dcdfc14e9a1e9a8eaea987"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "legionaries-malignant-aura",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-malignant-aura-front.jpg?v=1788025217",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-malignant-aura-back.jpg?v=1788025217",
-      "modified": "2026-08-29T17:40:17.248208+00:00",
-      "hash": "d1bad04537ec70f277e9fcd41ff10edbf479a212a371c282f7d65b23a34700f1"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "legionaries-mutability-and-change",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-mutability-and-change-front.jpg?v=1788025216",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-mutability-and-change-back.jpg?v=1788025216",
-      "modified": "2026-08-29T17:40:16.892755+00:00",
-      "hash": "3ed2d865aea8e901498bd979b42d010047aef1c5003bb562674559aa47f38c2c"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "legionaries-sickening-captivation",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-sickening-captivation-front.jpg?v=1788025217",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-sickening-captivation-back.jpg?v=1788025217",
-      "modified": "2026-08-29T17:40:17.600494+00:00",
-      "hash": "7434720d843e4f31072aa7e1ffa0e0995486285395a8fa7c4916c32e5509a535"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "legionaries-unending-bloodshed",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-unending-bloodshed-front.jpg?v=1788025216",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/firefight/legionaries-unending-bloodshed-back.jpg?v=1788025216",
-      "modified": "2026-08-29T17:40:16.538293+00:00",
-      "hash": "da518426a260a40af01fcf619c39d63d364994d24ab956dff388f527a07a2b01"
-    },
-    {
-      "type": "operative-selection",
-      "name": "legionaries-operative-selection",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/operative-selection/legionaries-operative-selection-front.jpg?v=1788025211",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/operative-selection/legionaries-operative-selection-back.jpg?v=1788025211",
-      "modified": "2026-08-29T17:40:11.889967+00:00",
-      "hash": "47747300da283239a3b17628701354ce3876cabc31edf98f4ec13ad9f19943b9"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "legionaries-blood-for-the-blood-god",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-blood-for-the-blood-god-front.jpg?v=1788025215",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-blood-for-the-blood-god-back.jpg?v=1788025215",
-      "modified": "2026-08-29T17:40:15.132914+00:00",
-      "hash": "02be98d38673c76a6185dde54dcb14bef2ba84e15f791a3810cef693b898b5c3"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "legionaries-fickle-fates",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-fickle-fates-front.jpg?v=1788025216",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-fickle-fates-back.jpg?v=1788025216",
-      "modified": "2026-08-29T17:40:16.185394+00:00",
-      "hash": "ef963741f9d34b37ee3c7566f5bd6b202946f3a65b03db9d023977041cf31601"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "legionaries-implacable",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-implacable-front.jpg?v=1788025215",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-implacable-back.jpg?v=1788025215",
-      "modified": "2026-08-29T17:40:15.488313+00:00",
-      "hash": "e8a26c525e625a7bd70ea41d860655d659f82a6ee759df947c20c81881dd6da0"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "legionaries-quicksilver-speed",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-quicksilver-speed-front.jpg?v=1788025215",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/ploys/strategy/legionaries-quicksilver-speed-back.jpg?v=1788025215",
-      "modified": "2026-08-29T17:40:15.839704+00:00",
-      "hash": "cb1ed63d0ef9442d33636fbebaa244fcec34f1ad17be7e316c8c34e584020956"
-    },
-    {
-      "type": "token-guide",
-      "name": "legionaries-token-guide",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/token-guide/legionaries-token-guide-front.jpg?v=1788025214",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/legionaries/cards/token-guide/legionaries-token-guide-back.jpg?v=1788025214",
-      "modified": "2026-08-29T17:40:14.767352+00:00",
-      "hash": "d2a44ba4734b650d2a83a6db26e4de467fabcdff39053725e69560511cb1c06c"
+      "type": "card",
+      "name": "Strategy Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/strategy_ploys/legionaries-blood-for-the-blood-god-front.jpg?v=1783538284",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/legionaries/cards/strategy_ploys/legionaries-blood-for-the-blood-god-back.jpg?v=1783538195",
+      "modified": "2026-08-29T20:13:29.281288+00:00"
     }
   ]
 }

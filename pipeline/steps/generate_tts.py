@@ -147,6 +147,12 @@ def _write_object_urls(branch: str) -> None:
     import json
 
     teams_data = tts_impl.generate_object_urls_json(branch)
+    teams_data = tts_impl.apply_workshop_fallback_overrides(
+        teams_data,
+        config_dir=paths.CONFIG,
+        output_dir=paths.OUTPUT,
+        repo_branch=branch,
+    )
     summary = tts_impl.generate_object_urls_summary(teams_data, branch)
 
     summary_file = paths.OUTPUT / "team-urls.json"

@@ -43,7 +43,12 @@ from .templates.tts_templates import (
 from ..utils import paths as _paths
 from ..utils import naming
 from ..utils.ktui_model_script import compose_ktui_model_script
-from ..utils.repo_urls import output_base_url, repo_base_url
+from ..utils.repo_urls import (
+    UPSTREAM_GITHUB_REPO,
+    output_base_url,
+    output_base_url_for_slug,
+    repo_base_url,
+)
 
 # Setup logging
 logging.basicConfig(
@@ -59,9 +64,11 @@ URL_OUTPUT_BASE = os.environ.get(
     "KT_DATACARDS_URL_BASE",
     output_base_url(project_root=PROJECT_ROOT, branch=URL_BRANCH),
 )
+UPSTREAM_OUTPUT_BASE = output_base_url_for_slug(UPSTREAM_GITHUB_REPO, branch=URL_BRANCH)
 
 _HANGUL_RE = re.compile(r"[가-힣]")
 _CARD_NUMBER_RE = re.compile(r"(?:^|-)card\d+$", re.IGNORECASE)
+_TEAM_ASSET_BASE_CACHE: dict[str, str] = {}
 
 
 def _rewrite_repo_urls(text: str, branch: str = URL_BRANCH) -> str:
@@ -122,6 +129,27 @@ def _preferred_card_pairs(card_type_dir: Path) -> dict[str, dict[str, Path]]:
         return {base: card_pairs[base] for base in numbered_bases}
 
     return card_pairs
+
+
+def _team_uses_localized_assets(team_dir: Path) -> bool:
+    cards_dir = team_dir / "cards"
+    if not cards_dir.exists():
+        return False
+    for front_file in cards_dir.rglob("*-front.jpg"):
+        if _contains_hangul(front_file.stem):
+            return True
+    return False
+
+
+def _team_asset_output_base(team: str, team_dir: Path | None = None) -> str:
+    cached = _TEAM_ASSET_BASE_CACHE.get(team)
+    if cached:
+        return cached
+
+    resolved_team_dir = team_dir or (PROJECT_ROOT / "output" / team)
+    base = URL_OUTPUT_BASE if _team_uses_localized_assets(resolved_team_dir) else UPSTREAM_OUTPUT_BASE
+    _TEAM_ASSET_BASE_CACHE[team] = base
+    return base
 
 
 # ===================================================================
@@ -273,8 +301,6 @@ def generate_urls_json_v3(repo_branch: str = URL_BRANCH):
     reload) right after a box update.
     """
     output_dir = PROJECT_ROOT / 'output'
-    base_url = URL_OUTPUT_BASE.format(branch=repo_branch)
-
     all_entries = []
 
     # Scan all team directories
@@ -285,6 +311,7 @@ def generate_urls_json_v3(repo_branch: str = URL_BRANCH):
         team = team_dir.name
         cards_dir = team_dir / 'cards'
         cardbox_dir = team_dir / 'cardbox'
+        team_base_url = _team_asset_output_base(team, team_dir)
 
         if not cards_dir.exists():
             continue
@@ -307,7 +334,7 @@ def generate_urls_json_v3(repo_branch: str = URL_BRANCH):
                     obj_type = 'cardbox-texture'
                 else:
                     continue
-                asset_base = f"{base_url}/{team}/cardbox/{asset_file.name}"
+                asset_base = f"{team_base_url}/{team}/cardbox/{asset_file.name}"
                 prev = prev_objs_by_key.get((obj_type, asset_file.stem))
                 stable = _reuse_or_new_single(prev, asset_file, asset_base, {})
                 all_entries.append({
@@ -331,8 +358,8 @@ def generate_urls_json_v3(repo_branch: str = URL_BRANCH):
                 if not front_file:
                     continue
 
-                front_url = f"{base_url}/{team}/cards/{rel_card_dir}/{front_file.name}"
-                back_url = (f"{base_url}/{team}/cards/{rel_card_dir}/{back_file.name}"
+                front_url = f"{team_base_url}/{team}/cards/{rel_card_dir}/{front_file.name}"
+                back_url = (f"{team_base_url}/{team}/cards/{rel_card_dir}/{back_file.name}"
                             if back_file else front_url)
                 effective_back = back_file if back_file else front_file
                 prev = prev_objs_by_key.get((card_type_v2, base_name))
@@ -405,6 +432,10 @@ def _git_unchanged_from_head(file_path: Path) -> bool | None:
         return None
 
 
+def _url_without_query(url: str | None) -> str:
+    return (url or "").split("?", 1)[0]
+
+
 def _reuse_or_new_single(prev_entry, file_path, url, entry):
     """Single-file entry: reuse prev url/modified if hash matches.
 
@@ -414,12 +445,18 @@ def _reuse_or_new_single(prev_entry, file_path, url, entry):
     """
     new_hash = _sha256_of_files([file_path])
     prev_hash = (prev_entry or {}).get("hash")
+    prev_url_changed = _url_without_query((prev_entry or {}).get("url")) != _url_without_query(url)
     if prev_entry and prev_hash == new_hash:
-        entry["url"] = prev_entry.get("url", url)
-        entry["modified"] = prev_entry.get("modified")
+        if prev_url_changed:
+            mtime = file_path.stat().st_mtime
+            entry["url"] = f"{url}?v={int(mtime)}"
+            entry["modified"] = datetime.fromtimestamp(mtime, tz=timezone.utc).isoformat()
+        else:
+            entry["url"] = prev_entry.get("url", url)
+            entry["modified"] = prev_entry.get("modified")
     elif prev_entry and prev_hash is None:
         git_clean = _git_unchanged_from_head(file_path)
-        if git_clean is False:
+        if git_clean is False or prev_url_changed:
             mtime = file_path.stat().st_mtime
             entry["url"] = f"{url}?v={int(mtime)}"
             entry["modified"] = datetime.fromtimestamp(mtime, tz=timezone.utc).isoformat()
@@ -451,6 +488,10 @@ def _reuse_or_new_pair(prev_entry, file_a, file_b, url_a, url_b, key_a, key_b, e
     """
     new_hash = _sha256_of_files([file_a, file_b])
     prev_hash = (prev_entry or {}).get("hash")
+    prev_urls_changed = (
+        _url_without_query((prev_entry or {}).get(key_a)) != _url_without_query(url_a)
+        or _url_without_query((prev_entry or {}).get(key_b)) != _url_without_query(url_b)
+    )
 
     def _emit_new():
         mtime_a = file_a.stat().st_mtime
@@ -467,11 +508,14 @@ def _reuse_or_new_pair(prev_entry, file_a, file_b, url_a, url_b, key_a, key_b, e
         entry["modified"] = prev_entry.get("modified")
 
     if prev_entry and prev_hash == new_hash:
-        _emit_prev()
+        if prev_urls_changed:
+            _emit_new()
+        else:
+            _emit_prev()
     elif prev_entry and prev_hash is None:
         clean_a = _git_unchanged_from_head(file_a)
         clean_b = _git_unchanged_from_head(file_b)
-        if clean_a is False or clean_b is False:
+        if clean_a is False or clean_b is False or prev_urls_changed:
             _emit_new()
         else:
             _emit_prev()
@@ -508,7 +552,6 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
     """
     output_dir = PROJECT_ROOT / 'output'
     config_dir = PROJECT_ROOT / 'config'
-    base_url = output_base_url(project_root=PROJECT_ROOT, branch=repo_branch)
     
     teams_data = {}
 
@@ -519,6 +562,7 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
         
         team = team_dir.name
         team_display_name = team.replace('-', ' ').title()
+        team_base_url = _team_asset_output_base(team, team_dir)
 
         # Load previous entries for change-detection
         prev_data = _load_prev_team_urls(output_dir, team)
@@ -540,7 +584,7 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
         tts_objects_dir = team_dir / 'tts_objects'
         box_file = tts_objects_dir / f"{team_display_name}.json"
         if box_file.exists():
-            box_base = f"{base_url}/{team}/tts_objects/{box_file.name.replace(' ', '%20')}"
+            box_base = f"{URL_OUTPUT_BASE}/{team}/tts_objects/{box_file.name.replace(' ', '%20')}"
             team_entry["box"] = _reuse_or_new_single(prev_box, box_file, box_base, {})
         
         # Add Lua script
@@ -562,7 +606,7 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
                 else:
                     continue
                 
-                asset_base = f"{base_url}/{team}/cardbox/{asset_file.name}"
+                asset_base = f"{team_base_url}/{team}/cardbox/{asset_file.name}"
                 entry = {"type": obj_type, "name": asset_file.stem}
                 prev = prev_objs_by_key.get((obj_type, asset_file.stem))
                 team_entry["objects"].append(_reuse_or_new_single(prev, asset_file, asset_base, entry))
@@ -575,8 +619,8 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
                 if not token_png.exists():
                     continue
                 
-                obj_url = f"{base_url}/{team}/tokens/{token_obj.name}"
-                png_url = f"{base_url}/{team}/tokens/{token_png.name}"
+                obj_url = f"{team_base_url}/{team}/tokens/{token_obj.name}"
+                png_url = f"{team_base_url}/{team}/tokens/{token_png.name}"
                 entry = {"type": "token", "name": token_obj.stem}
                 prev = prev_objs_by_key.get(("token", token_obj.stem))
                 team_entry["objects"].append(_reuse_or_new_pair(
@@ -591,8 +635,8 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
                 bag_icon = tokenbag_dir / f'{team}-token-bag-icon.png'
                 
                 if bag_mesh.exists() and bag_icon.exists():
-                    mesh_url = f"{base_url}/{team}/tokens/tokenbag/{bag_mesh.name}"
-                    icon_url = f"{base_url}/{team}/tokens/tokenbag/{bag_icon.name}"
+                    mesh_url = f"{team_base_url}/{team}/tokens/tokenbag/{bag_mesh.name}"
+                    icon_url = f"{team_base_url}/{team}/tokens/tokenbag/{bag_icon.name}"
                     entry = {"type": "token-bag", "name": f"{team}-token-bag"}
                     prev = prev_objs_by_key.get(("token-bag", f"{team}-token-bag"))
                     team_entry["objects"].append(_reuse_or_new_pair(
@@ -615,8 +659,8 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
                     if not front_file:
                         continue
                     
-                    front_url = f"{base_url}/{team}/cards/{rel_card_dir}/{front_file.name}"
-                    back_url = f"{base_url}/{team}/cards/{rel_card_dir}/{back_file.name}" if back_file else front_url
+                    front_url = f"{team_base_url}/{team}/cards/{rel_card_dir}/{front_file.name}"
+                    back_url = f"{team_base_url}/{team}/cards/{rel_card_dir}/{back_file.name}" if back_file else front_url
                     effective_back = back_file if back_file else front_file
                     entry = {"type": card_type, "name": base_name}
                     prev = prev_objs_by_key.get((card_type, base_name))
@@ -669,6 +713,184 @@ def generate_object_urls_summary(teams_data: dict, repo_branch: str = URL_BRANCH
         }
 
     return summary
+
+
+def _find_original_workshop_save() -> Path | None:
+    home = Path.home()
+    candidates = [
+        home / "OneDrive" / "문서" / "My Games" / "Tabletop Simulator" / "Mods" / "Workshop" / "3646032507.json",
+        home / "Documents" / "My Games" / "Tabletop Simulator" / "Mods" / "Workshop" / "3646032507.json",
+    ]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def _team_display_name(team: str) -> str:
+    return team.replace("-", " ").title()
+
+
+def _workshop_team_box_map(workshop_path: Path) -> dict[str, dict]:
+    with open(workshop_path, "r", encoding="utf-8-sig") as fh:
+        data = json.load(fh)
+    out: dict[str, dict] = {}
+    for obj in data.get("ObjectStates", []) or []:
+        if obj.get("Name") != "Custom_Model_Bag":
+            continue
+        nick = (obj.get("Nickname") or "").strip()
+        if not nick or nick == "Kill Team Card Boxes":
+            continue
+        out[nick] = obj
+    return out
+
+
+def _iter_nested_tts_objects(obj):
+    if isinstance(obj, dict):
+        yield obj
+        for key in ("ContainedObjects", "ChildObjects", "ObjectStates"):
+            for child in obj.get(key) or []:
+                yield from _iter_nested_tts_objects(child)
+
+
+def _rewrite_nested_single_object_scripts(obj: dict, single_object_script: str) -> None:
+    for child in (obj.get("ContainedObjects") or []) + (obj.get("ChildObjects") or []):
+        if child.get("Name") in {"Card", "CardCustom", "Deck", "Custom_Model_Infinite_Bag", "Custom_Model"}:
+            child["LuaScript"] = single_object_script
+        _rewrite_nested_single_object_scripts(child, single_object_script)
+
+
+def _extract_box_objects_metadata(team: str, box_obj: dict, box_modified: str) -> dict:
+    team_entry = {
+        "team": team,
+        "box": {
+            "url": f"{URL_OUTPUT_BASE}/{team}/tts_objects/{_team_display_name(team).replace(' ', '%20')}.json",
+            "modified": box_modified,
+        },
+        "objects": [],
+    }
+
+    custom_mesh = box_obj.get("CustomMesh") or {}
+    if custom_mesh.get("MeshURL"):
+        team_entry["objects"].append({
+            "type": "cardbox-mesh",
+            "name": f"{team}-card-box",
+            "mesh_url": custom_mesh.get("MeshURL"),
+            "modified": box_modified,
+        })
+    if custom_mesh.get("DiffuseURL"):
+        team_entry["objects"].append({
+            "type": "cardbox-texture",
+            "name": f"{team}-card-box-texture",
+            "texture_url": custom_mesh.get("DiffuseURL"),
+            "modified": box_modified,
+        })
+
+    seen_cards: set[tuple[str, str]] = set()
+    seen_tokens: set[tuple[str, str, str]] = set()
+    for obj in _iter_nested_tts_objects(box_obj):
+        name = obj.get("Name")
+        if name in {"Deck", "Card", "CardCustom"}:
+            custom_deck = obj.get("CustomDeck") or {}
+            if not custom_deck and obj.get("CardID"):
+                continue
+            if obj.get("CardID"):
+                key = str(obj["CardID"])[:-2]
+                deck_entry = custom_deck.get(key)
+            else:
+                deck_entry = next(iter(custom_deck.values()), None) if custom_deck else None
+            if not deck_entry and obj.get("CardID"):
+                continue
+            face_url = (deck_entry or {}).get("FaceURL") or ""
+            back_url = (deck_entry or {}).get("BackURL") or face_url
+            sig = (obj.get("Nickname") or "", face_url)
+            if face_url and sig not in seen_cards:
+                seen_cards.add(sig)
+                team_entry["objects"].append({
+                    "type": "card",
+                    "name": obj.get("Nickname") or f"{team}-card-{len(seen_cards)}",
+                    "face_url": face_url,
+                    "back_url": back_url,
+                    "modified": box_modified,
+                })
+        elif name in {"Custom_Model_Bag", "Custom_Model_Infinite_Bag", "Custom_Model"}:
+            mesh = ((obj.get("CustomMesh") or {}).get("MeshURL")) or ""
+            tex = ((obj.get("CustomMesh") or {}).get("DiffuseURL")) or ""
+            if not tex:
+                for child in (obj.get("ContainedObjects") or []) + (obj.get("ChildObjects") or []):
+                    image = child.get("CustomImage") or {}
+                    tex = image.get("ImageURL") or tex
+                    if tex:
+                        break
+            sig = (obj.get("Nickname") or "", mesh, tex)
+            if (mesh or tex) and sig not in seen_tokens:
+                seen_tokens.add(sig)
+                team_entry["objects"].append({
+                    "type": "token",
+                    "name": obj.get("Nickname") or f"{team}-token-{len(seen_tokens)}",
+                    "mesh_url": mesh,
+                    "texture_url": tex,
+                    "modified": box_modified,
+                })
+
+    return team_entry
+
+
+def apply_workshop_fallback_overrides(
+    teams_data: dict,
+    config_dir: Path,
+    output_dir: Path,
+    repo_branch: str = URL_BRANCH,
+) -> dict:
+    workshop_path = _find_original_workshop_save()
+    if not workshop_path:
+        logger.warning("Original TTS workshop save not found; skipping English asset fallback overrides")
+        return teams_data
+
+    try:
+        workshop_boxes = _workshop_team_box_map(workshop_path)
+    except Exception as e:
+        logger.warning(f"Could not load original TTS workshop save: {e}")
+        return teams_data
+
+    fallback_count = 0
+    top_level_script = load_lua_script(config_dir)
+    single_object_script = load_single_object_updater_script(config_dir)
+    box_description = load_box_description(config_dir)
+
+    for team_dir in sorted(output_dir.iterdir()):
+        if not team_dir.is_dir() or team_dir.name == "_generic-tts-objects":
+            continue
+        team = team_dir.name
+        if _team_uses_localized_assets(team_dir):
+            continue
+
+        display_name = _team_display_name(team)
+        source_box = workshop_boxes.get(display_name)
+        if not source_box:
+            logger.warning(f"Workshop fallback missing team box for {display_name}")
+            continue
+
+        box_obj = json.loads(json.dumps(source_box))
+        if top_level_script:
+            box_obj["LuaScript"] = top_level_script
+        if single_object_script:
+            _rewrite_nested_single_object_scripts(box_obj, single_object_script)
+        box_obj["Description"] = box_description
+
+        tts_dir = team_dir / "tts_objects"
+        tts_dir.mkdir(parents=True, exist_ok=True)
+        clean_path = tts_dir / f"{display_name}.json"
+        with open(clean_path, "w", encoding="utf-8") as fh:
+            json.dump(box_obj, fh, indent=2, ensure_ascii=False)
+
+        modified = datetime.fromtimestamp(clean_path.stat().st_mtime, tz=timezone.utc).isoformat()
+        teams_data[team] = _extract_box_objects_metadata(team, box_obj, modified)
+        fallback_count += 1
+
+    if fallback_count:
+        logger.info(f"  applied original workshop asset fallback for {fallback_count} team(s)")
+    return teams_data
 
 
 def save_object_urls_team_files(teams_data: dict, output_dir: Path) -> list[Path]:

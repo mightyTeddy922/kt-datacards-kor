@@ -1,223 +1,70 @@
 {
   "team": "angels-of-death",
   "box": {
-    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/tts_objects/Angels%20Of%20Death.json?v=1788032008",
-    "modified": "2026-08-29T19:33:28.708792+00:00",
-    "hash": "eb136697912bb5c4d61ce451c1dc50a0b6e28588bab4eba38a2068c7d2da6c1a"
+    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/tts_objects/Angels%20Of%20Death.json",
+    "modified": "2026-08-29T20:13:29.079671+00:00"
   },
   "objects": [
     {
-      "type": "lua-script",
-      "name": "update-script",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/config/defaults/tts-script/tts-update-rules-in-box-script.lua?v=1783888798",
-      "modified": "2026-07-12T20:39:58.110729+00:00",
-      "hash": "d909f8b32ec6579a2cb9029d486b0c5f53b65074077e513bbaa78d4e086f6d9c"
+      "type": "cardbox-mesh",
+      "name": "angels-of-death-card-box",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cardbox/angels-of-death-card-box.obj?v=1781895962",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
       "type": "cardbox-texture",
       "name": "angels-of-death-card-box-texture",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cardbox/angels-of-death-card-box-texture.jpg?v=1783162068",
-      "modified": "2026-07-04T10:47:48.188950+00:00",
-      "hash": "487644c56d28a737d89088260675dacda061fe167845c03c1e239717b53095de"
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cardbox/angels-of-death-card-box-texture.jpg?v=1783162068",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "cardbox-mesh",
-      "name": "angels-of-death-card-box",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cardbox/angels-of-death-card-box.obj?v=1781895962",
-      "modified": "2026-06-19T19:06:02.305117+00:00",
-      "hash": "5859e89454f30c5826e4f8b348a91fb64bd367eb4e7de09eafc5d4a070d41125"
+      "type": "token",
+      "name": "Angels Of Death",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cardbox/angels-of-death-card-box.obj?v=1781895962",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cardbox/angels-of-death-card-box-texture.jpg?v=1783162068",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg?v=1788028785",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg?v=1788026482",
-      "modified": "2026-08-29T18:39:45.719692+00:00",
-      "hash": "167f57446a321c0d7d712fc3e2742683458e43929ca5d0db1ebafc3a29cff86b"
+      "type": "card",
+      "name": "angels-of-death-operatives",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/operatives_selection/angels-of-death-operative-selection-front.jpg?v=1783537698",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/operatives_selection/angels-of-death-operative-selection-back.jpg?v=1783537698",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg?v=1788028786",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg?v=1788028786",
-      "modified": "2026-08-29T18:39:46.776511+00:00",
-      "hash": "a252cac9f160d12cc8180c1a2dd6f7ea75e3ba2187286bd56c58ec643ee9b62d"
+      "type": "card",
+      "name": "Faction Rules",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/faction_rules/angels-of-death-astartes-front.jpg?v=1783537702",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/faction_rules/angels-of-death-astartes-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg?v=1788028787",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg?v=1788028787",
-      "modified": "2026-08-29T18:39:47.819376+00:00",
-      "hash": "586ab6e89743b2d140768f75e4a9a47d3f0e93ece5d52397d5c57d3f35288351"
+      "type": "card",
+      "name": "Datacards",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/datacards/assault-intercessor-grenadier-front.jpg?v=1784631016",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/datacards/assault-intercessor-grenadier-back.jpg?v=1784629419",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg?v=1788028788",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg?v=1788026482",
-      "modified": "2026-08-29T18:39:48.339194+00:00",
-      "hash": "2b9869648590b94bd36844a394405e3cea6c10c5460a5f2d6a4905892e62349d"
+      "type": "card",
+      "name": "Equipment",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/equipment/angels-of-death-auspex-front.jpg?v=1783537706",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/equipment/angels-of-death-auspex-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg?v=1788028788",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg?v=1788026482",
-      "modified": "2026-08-29T18:39:48.854417+00:00",
-      "hash": "b364be41d71c80a6f5120d3713043f18039235b3bb04993bed7a96d73cd6cf96"
+      "type": "card",
+      "name": "Firefight Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/firefight_ploys/angels-of-death-adjust-doctrine-front.jpg?v=1783537707",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/firefight_ploys/angels-of-death-adjust-doctrine-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg?v=1788028789",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg?v=1788026482",
-      "modified": "2026-08-29T18:39:49.377829+00:00",
-      "hash": "b48d5cbb9959e3f3ef548c3ae3831e0fcfbc2d61e7d361db7abbe3b6f138f4e8"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg?v=1788028789",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg?v=1788026482",
-      "modified": "2026-08-29T18:39:49.888960+00:00",
-      "hash": "63959672d05e849e108193b72180263075496ea4a574b7f974262f8a93e79ce0"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg?v=1788028790",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg?v=1788026482",
-      "modified": "2026-08-29T18:39:50.410122+00:00",
-      "hash": "44e56b805ff1f10d9fc61e120f16ad226c86fd27d32c00a2a799d6d6adc36bd6"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg?v=1788028790",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg?v=1788028791",
-      "modified": "2026-08-29T18:39:51.475933+00:00",
-      "hash": "869a82378116169f192115af7c6f737b26a60b69e64cb001092f1d1a511953c4"
-    },
-    {
-      "type": "equipment",
-      "name": "angels-of-death-auspex",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-auspex-front.jpg?v=1783537706",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-auspex-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:08:26.346690+00:00",
-      "hash": "0b92f2372ba4f1f16096dbc5c1ef66332cd6e22c2d3f29c2c580ee3a943784d7"
-    },
-    {
-      "type": "equipment",
-      "name": "angels-of-death-chapter-reliquaries",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-chapter-reliquaries-front.jpg?v=1783537704",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-chapter-reliquaries-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:08:24.653579+00:00",
-      "hash": "05bbaf6518e4240d7f2b3f3e8085f4e94cef0ddf1d0ad143c48e2467de5425b6"
-    },
-    {
-      "type": "equipment",
-      "name": "angels-of-death-purity-seals",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-purity-seals-front.jpg?v=1783537703",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-purity-seals-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:08:23.634385+00:00",
-      "hash": "9df85435642d04e5c944f538116a6608fc7b9419faeb1ccbc24f3f7bd9877ef2"
-    },
-    {
-      "type": "equipment",
-      "name": "angels-of-death-tilting-shields",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-tilting-shields-front.jpg?v=1783537705",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/equipment/angels-of-death-tilting-shields-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:08:25.329302+00:00",
-      "hash": "46a8564968f433916d0b35c1161e173de1c1c91207bc3abc5b5d7600d58f9c9f"
-    },
-    {
-      "type": "faction-rules",
-      "name": "angels-of-death-astartes",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/faction-rules/angels-of-death-astartes-front.jpg?v=1788024834",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/faction-rules/angels-of-death-astartes-back.jpg?v=1788024834",
-      "modified": "2026-08-29T17:33:54.385854+00:00",
-      "hash": "2db9b9461cb8c47ad244327cee40117602c0adb51425bae41dd35011e9ef0f5d"
-    },
-    {
-      "type": "faction-rules",
-      "name": "angels-of-death-chapter-tactics",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/faction-rules/angels-of-death-chapter-tactics-front.jpg?v=1788024833",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/faction-rules/angels-of-death-chapter-tactics-back.jpg?v=1788024833",
-      "modified": "2026-08-29T17:33:53.793498+00:00",
-      "hash": "63d0696e8168d0f25394d4a64bd02a43268e0814424e74097d46a4623309f02a"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "angels-of-death-adjust-doctrine",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-adjust-doctrine-front.jpg?v=1788024837",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-adjust-doctrine-back.jpg?v=1788024837",
-      "modified": "2026-08-29T17:33:57.198226+00:00",
-      "hash": "83be4939e1f065ffc7b2236f8dbdee302d0e072423f7fc6a01e2e69d2147fa01"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "angels-of-death-shock-assault",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-shock-assault-front.jpg?v=1788024838",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-shock-assault-back.jpg?v=1788024838",
-      "modified": "2026-08-29T17:33:58.317131+00:00",
-      "hash": "5e73254af5809f046812531a5877c5c519e03f07cc06521c7cba5d0d318764ed"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "angels-of-death-transhuman-physiology",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-transhuman-physiology-front.jpg?v=1788024837",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-transhuman-physiology-back.jpg?v=1788024837",
-      "modified": "2026-08-29T17:33:57.759556+00:00",
-      "hash": "19c9c624ddd28c7efebb675926d29f696857f5ce28d5b5f06b6a5a51573faca9"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "angels-of-death-wrath-of-vengeance",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-wrath-of-vengeance-front.jpg?v=1788024838",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/firefight/angels-of-death-wrath-of-vengeance-back.jpg?v=1788024838",
-      "modified": "2026-08-29T17:33:58.875608+00:00",
-      "hash": "cc2896164080082e63fcce1c5706f07169fdb200641e357c67ebb94101103ef4"
-    },
-    {
-      "type": "operative-selection",
-      "name": "angels-of-death-operative-selection",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/operative-selection/angels-of-death-operative-selection-front.jpg?v=1788024832",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/operative-selection/angels-of-death-operative-selection-back.jpg?v=1788024832",
-      "modified": "2026-08-29T17:33:52.749209+00:00",
-      "hash": "f22b6e52c73e39d284742b7a23a9e9940f1aaa00cbea3d81954eebb74a168554"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "angels-of-death-adaptive-tactics",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-adaptive-tactics-front.jpg?v=1788024836",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-adaptive-tactics-back.jpg?v=1788024836",
-      "modified": "2026-08-29T17:33:56.064676+00:00",
-      "hash": "3e54cb222fb441784b4f8f6e3fc074601790301448cce56a9e32e6c84ba5dc0a"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "angels-of-death-and-they-shall-know-no-fear",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-and-they-shall-know-no-fear-front.jpg?v=1788024835",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-and-they-shall-know-no-fear-back.jpg?v=1788024835",
-      "modified": "2026-08-29T17:33:55.509223+00:00",
-      "hash": "f8d64c86fc620629d07656a2533a6ace9f48390c1a645d8b8b1e943c3cf3062a"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "angels-of-death-combat-doctrine",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-combat-doctrine-front.jpg?v=1788024834",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-combat-doctrine-back.jpg?v=1788024834",
-      "modified": "2026-08-29T17:33:54.949414+00:00",
-      "hash": "d476eaa5ec9603102861ddd3909065d0bd03692824e1171fd26993270d930aa4"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "angels-of-death-indomitus",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-indomitus-front.jpg?v=1788024836",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/ploys/strategy/angels-of-death-indomitus-back.jpg?v=1788024836",
-      "modified": "2026-08-29T17:33:56.623728+00:00",
-      "hash": "b4314e9738333824c4b451b155143c3f4bdebbe3cb006cdfadf0e21a8dbacb9a"
+      "type": "card",
+      "name": "Strategy Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/strategy_ploys/angels-of-death-adaptive-tactics-front.jpg?v=1783537712",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/angels-of-death/cards/strategy_ploys/angels-of-death-adaptive-tactics-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.079671+00:00"
     }
   ]
 }

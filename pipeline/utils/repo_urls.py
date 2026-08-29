@@ -8,6 +8,7 @@ import subprocess
 from pathlib import Path
 
 DEFAULT_GITHUB_REPO = "mightyTeddy922/kt-datacards-kor"
+UPSTREAM_GITHUB_REPO = "Wen-Qualtu/kt-datacards"
 
 
 def resolve_repo_slug(project_root: Path | None = None) -> str:
@@ -37,3 +38,11 @@ def repo_base_url(project_root: Path | None = None, branch: str = "main") -> str
 
 def output_base_url(project_root: Path | None = None, branch: str = "main") -> str:
     return f"{repo_base_url(project_root=project_root, branch=branch)}/output"
+
+
+def repo_base_url_for_slug(repo_slug: str, branch: str = "main") -> str:
+    return f"https://raw.githubusercontent.com/{repo_slug}/{branch}"
+
+
+def output_base_url_for_slug(repo_slug: str, branch: str = "main") -> str:
+    return f"{repo_base_url_for_slug(repo_slug=repo_slug, branch=branch)}/output"

@@ -1,303 +1,133 @@
 {
   "team": "fellgor-ravagers",
   "box": {
-    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tts_objects/Fellgor%20Ravagers.json?v=1788032011",
-    "modified": "2026-08-29T19:33:31.968150+00:00",
-    "hash": "0b14709bddef368d7c070822ed549a682a098fa567175bcdeaef0ab23a9d4cca"
+    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tts_objects/Fellgor%20Ravagers.json",
+    "modified": "2026-08-29T20:13:29.223128+00:00"
   },
   "objects": [
     {
-      "type": "lua-script",
-      "name": "update-script",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/config/defaults/tts-script/tts-update-rules-in-box-script.lua?v=1783888798",
-      "modified": "2026-07-12T20:39:58.110729+00:00",
-      "hash": "d909f8b32ec6579a2cb9029d486b0c5f53b65074077e513bbaa78d4e086f6d9c"
+      "type": "cardbox-mesh",
+      "name": "fellgor-ravagers-card-box",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box.obj?v=1781895962",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
       "type": "cardbox-texture",
       "name": "fellgor-ravagers-card-box-texture",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box-texture.jpg?v=1783162070",
-      "modified": "2026-07-04T10:47:50.360597+00:00",
-      "hash": "e4c863aeea0e7b73bd13e01f3a120e05564bbfc9c9d42279bd09cf51f518fe2e"
-    },
-    {
-      "type": "cardbox-mesh",
-      "name": "fellgor-ravagers-card-box",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box.obj?v=1781895962",
-      "modified": "2026-06-19T19:06:02.305117+00:00",
-      "hash": "5859e89454f30c5826e4f8b348a91fb64bd367eb4e7de09eafc5d4a070d41125"
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box-texture.jpg?v=1783162070",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
       "type": "token",
-      "name": "fellgor-ravagers-brass-adornments",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.obj?v=1788026479",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.png?v=1788028974",
-      "modified": "2026-08-29T18:42:54.840447+00:00",
-      "hash": "44c66d1be2b9f40afcaca84231c8cec29e12e3fc45eecea7cdd3973fc7392436"
+      "name": "Fellgor Ravagers",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box.obj?v=1781895962",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cardbox/fellgor-ravagers-card-box-texture.jpg?v=1783162070",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
       "type": "token",
-      "name": "fellgor-ravagers-chaos-sigil",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.obj?v=1788026479",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.png?v=1788028974",
-      "modified": "2026-08-29T18:42:54.849973+00:00",
-      "hash": "1a512ff21289421bc570e040bb3c6ecef4d97a37f182573d2476edc286a82ca6"
+      "name": "Fellgor Ravagers tokens",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag.obj?v=1779121408",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag-icon.png?v=1787751245",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
       "type": "token",
+      "name": "Brass Adornments",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-brass-adornments.png?v=1787754853",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "token",
+      "name": "Chaos Sigil",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-chaos-sigil.png?v=1787754853",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "token",
+      "name": "Frenzy",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.png?v=1787751715",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "token",
+      "name": "Gong Knell",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.png?v=1787751715",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "token",
+      "name": "Gore Marks",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.png?v=1787754853",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "token",
+      "name": "Mantle Of Darkness",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.png?v=1787751715",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "token",
+      "name": "Pelting Firepower",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.png?v=1787751715",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "card",
+      "name": "fellgor-ravagers-operatives",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-front.jpg?v=1783537954",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/operatives_selection/fellgor-ravagers-operative-selection-back.jpg?v=1783537881",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
+    },
+    {
+      "type": "card",
       "name": "fellgor-ravagers-frenzy",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-frenzy.png?v=1783537890",
-      "modified": "2026-07-08T19:11:30.478282+00:00",
-      "hash": "040b1b73205e44ff6eb941d713ff2f81dbda17c6480ce211393e1d0f9ac0c2d1"
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/faction_rules/fellgor-ravagers-frenzy-front.jpg?v=1787757678",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/faction_rules/fellgor-ravagers-frenzy-back.jpg?v=1787757686",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
-      "type": "token",
-      "name": "fellgor-ravagers-gong-knell",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gong-knell.png?v=1783537890",
-      "modified": "2026-07-08T19:11:30.510009+00:00",
-      "hash": "6666bace3cba0f3cb8ca89d7417f98ab5a8eaca489bd610ba0ecc4ccca1ba696"
+      "type": "card",
+      "name": "fellgor-ravagers-markertoken-guide",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/token_guide/fellgor-ravagers-token-guide-front.jpg?v=1783537965",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/token_guide/fellgor-ravagers-token-guide-back.jpg?v=1783537881",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
-      "type": "token",
-      "name": "fellgor-ravagers-gore-marks",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.obj?v=1788026479",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-gore-marks.png?v=1788028974",
-      "modified": "2026-08-29T18:42:54.891201+00:00",
-      "hash": "23fa4c94d94dddf8d2acf9fb6e688d49fac36b171d2b1aa8654e9de03aa3eebe"
+      "type": "card",
+      "name": "Datacards",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/datacards/fellgor-deathknell-front.jpg?v=1787757593",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/datacards/fellgor-deathknell-back.jpg?v=1784729908",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
-      "type": "token",
-      "name": "fellgor-ravagers-mantle-of-darkness",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-mantle-of-darkness.png?v=1783537890",
-      "modified": "2026-07-08T19:11:30.542237+00:00",
-      "hash": "ee1a79b5edc88b77606bb9e5fe045f4b94dff548e2b09cd04f5293b3996a6ddc"
+      "type": "card",
+      "name": "Equipment",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-front.jpg?v=1783537955",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-back.jpg?v=1783537881",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
-      "type": "token",
-      "name": "fellgor-ravagers-pelting-firepower",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/fellgor-ravagers-pelting-firepower.png?v=1783537890",
-      "modified": "2026-07-08T19:11:30.558894+00:00",
-      "hash": "60f538d1f1944349675c3eb2583916807a63b58f01c7232d66283836a86a2ad9"
+      "type": "card",
+      "name": "Firefight Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-animalistic-fury-front.jpg?v=1783537958",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/firefight_ploys/fellgor-ravagers-animalistic-fury-back.jpg?v=1783537881",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     },
     {
-      "type": "token-bag",
-      "name": "fellgor-ravagers-token-bag",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag.obj?v=1779121408",
-      "icon_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/tokens/tokenbag/fellgor-ravagers-token-bag-icon.png?v=1783160181",
-      "modified": "2026-07-04T10:16:21.817082+00:00",
-      "hash": "58972ffea8a1a9d74e983bc52383c881a6ebf1b5629692085553d282168db2a8"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg?v=1788029000",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:20.617475+00:00",
-      "hash": "badf77a33cbff8e9ce3c601ee4f4de6377e97dc1c1aa9e2491d9d510deb7e1f4"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg?v=1788029007",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:27.089316+00:00",
-      "hash": "0ad62d72b2ac8760f0a54682ea198835dfbe2498a0ec906100e00586551812e0"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg?v=1788029007",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:27.465669+00:00",
-      "hash": "0ceb6e6b36d5d019fc0fd2f5f047c8f2fa255f63720bb391c96813a671971fb4"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg?v=1788029001",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:21.474754+00:00",
-      "hash": "702ed22af681e22b651630cf86234ed5d3e132a60d76c2c7d7f97b736020c22f"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg?v=1788029002",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:22.327717+00:00",
-      "hash": "7666a65a86dfe7dc57fd7d667df3b6efed382471dc5d951eb4326cb7f9854ac5"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg?v=1788029003",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:23.169474+00:00",
-      "hash": "5a525befaf3403c92ff69cdc5beaa2119afc21de21c6673bc3db18e9bab1467f"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg?v=1788029003",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:23.545580+00:00",
-      "hash": "686842619446fc662c791cdba4dcda246201e602470de87dddd3261f1a2d2f8d"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg?v=1788029004",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:24.371059+00:00",
-      "hash": "012443e7d2d4f98186b0de1211ac4ba9f43fd2f45d21b234d44c98714b767c9f"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg?v=1788029004",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:24.752665+00:00",
-      "hash": "8fe20da6829f6888a18ba22f7bd4608d874faa7a81c8fb273ac7c2b86dd45e2e"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg?v=1788029005",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg?v=1788029005",
-      "modified": "2026-08-29T18:43:25.905623+00:00",
-      "hash": "b067344840f10e7e6c9675ece05e90998a222158457778c3ad02c26bd9463522"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg?v=1788029006",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg?v=1788026485",
-      "modified": "2026-08-29T18:43:26.282959+00:00",
-      "hash": "129bd89ea22263b55e6efbe55451021095f25000b26322bf1f450821bb7bb797"
-    },
-    {
-      "type": "equipment",
-      "name": "fellgor-ravagers-brass-adornments",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-front.jpg?v=1783537955",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-brass-adornments-back.jpg?v=1783537881",
-      "modified": "2026-07-08T19:12:35.851038+00:00",
-      "hash": "7af226683b0b455345679208a5787e2f75efea4cc3eb3d49ca461163a77cada3"
-    },
-    {
-      "type": "equipment",
-      "name": "fellgor-ravagers-chaos-sigil",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-chaos-sigil-front.jpg?v=1783537956",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-chaos-sigil-back.jpg?v=1783537881",
-      "modified": "2026-07-08T19:12:36.641778+00:00",
-      "hash": "f6979aa6fc9bc1954ed6545e648cef60f84267c5a808d7a9331cfaa243844dfb"
-    },
-    {
-      "type": "equipment",
-      "name": "fellgor-ravagers-gore-marks",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-gore-marks-front.jpg?v=1783537956",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-gore-marks-back.jpg?v=1783537881",
-      "modified": "2026-07-08T19:12:36.244407+00:00",
-      "hash": "f879cbb2b2de817dd4cb4628a7103829865fdc7b94049f231e5123c75ebc543d"
-    },
-    {
-      "type": "equipment",
-      "name": "fellgor-ravagers-war-paint",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-war-paint-front.jpg?v=1783537957",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/equipment/fellgor-ravagers-war-paint-back.jpg?v=1783537881",
-      "modified": "2026-07-08T19:12:37.024780+00:00",
-      "hash": "c2f200f8873fc73cb9bc32354e2b8dde5c323edc76744cef76f3dd383ab292e1"
-    },
-    {
-      "type": "faction-rules",
-      "name": "fellgor-ravagers-frenzy",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/faction-rules/fellgor-ravagers-frenzy-front.jpg?v=1788025050",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/faction-rules/fellgor-ravagers-frenzy-back.jpg?v=1788025050",
-      "modified": "2026-08-29T17:37:30.705883+00:00",
-      "hash": "76805df75cfa3e24146fa6dbc19d73bded3d9978dc47febaf70e0af97693d0d1"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "fellgor-ravagers-animalistic-fury",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-animalistic-fury-front.jpg?v=1788025053",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-animalistic-fury-back.jpg?v=1788025053",
-      "modified": "2026-08-29T17:37:33.536040+00:00",
-      "hash": "8903c081b7942083b63edeedf5e65e137a4ee048c1dc4986ee98fced2bdb0538"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "fellgor-ravagers-bloodsense",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-bloodsense-front.jpg?v=1788025053",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-bloodsense-back.jpg?v=1788025053",
-      "modified": "2026-08-29T17:37:33.893559+00:00",
-      "hash": "84819b5f32d4e355e4a75473772db26775e98ed53f90b8af5295fadabb675ead"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "fellgor-ravagers-ruthless-rampage",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-ruthless-rampage-front.jpg?v=1788025052",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-ruthless-rampage-back.jpg?v=1788025052",
-      "modified": "2026-08-29T17:37:32.825907+00:00",
-      "hash": "3bffca13f4916759ec49bac6da9fb81cb1809d52417eddd5d6149205ee3481d9"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "fellgor-ravagers-wild-rage",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-wild-rage-front.jpg?v=1788025053",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/firefight/fellgor-ravagers-wild-rage-back.jpg?v=1788025053",
-      "modified": "2026-08-29T17:37:33.179253+00:00",
-      "hash": "44091abd4a1936d66049aa36d75048d8d1627e212887fa55c1f4e54712f94a08"
-    },
-    {
-      "type": "operative-selection",
-      "name": "fellgor-ravagers-operative-selection",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/operative-selection/fellgor-ravagers-operative-selection-front.jpg?v=1788025049",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/operative-selection/fellgor-ravagers-operative-selection-back.jpg?v=1788025050",
-      "modified": "2026-08-29T17:37:30.000427+00:00",
-      "hash": "8af6349a24c6f192409f42dbd16aac6c2de51e4254a52a7f343575286c36ceed"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "fellgor-ravagers-ambush",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-ambush-front.jpg?v=1788025051",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-ambush-back.jpg?v=1788025051",
-      "modified": "2026-08-29T17:37:31.770547+00:00",
-      "hash": "843bfe025865603f2c292e359fffe24c5a0d526c97b916349433cc573a023b1d"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "fellgor-ravagers-pelting-firepower",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-pelting-firepower-front.jpg?v=1788025052",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-pelting-firepower-back.jpg?v=1788025052",
-      "modified": "2026-08-29T17:37:32.123477+00:00",
-      "hash": "9ce41bb5b474b08111622d24a7b33bde9e0eb84fa78cd6fc1d38f6414459e752"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "fellgor-ravagers-reckless-determination",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-reckless-determination-front.jpg?v=1788025052",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-reckless-determination-back.jpg?v=1788025052",
-      "modified": "2026-08-29T17:37:32.475838+00:00",
-      "hash": "159406a71cd384e8e5690dc2636169087e76592228e1fda4d7db6eec1ddbee59"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "fellgor-ravagers-violent-temperament",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-violent-temperament-front.jpg?v=1788025051",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/ploys/strategy/fellgor-ravagers-violent-temperament-back.jpg?v=1788025051",
-      "modified": "2026-08-29T17:37:31.422367+00:00",
-      "hash": "ae1dc583b6b477752ba36d5241a7a29e71cb0f54ec937a7c2c3304cecf885783"
-    },
-    {
-      "type": "token-guide",
-      "name": "fellgor-ravagers-token-guide",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/token-guide/fellgor-ravagers-token-guide-front.jpg?v=1788025051",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/fellgor-ravagers/cards/token-guide/fellgor-ravagers-token-guide-back.jpg?v=1788025051",
-      "modified": "2026-08-29T17:37:31.078401+00:00",
-      "hash": "1ff2447a92ca5c930baac74f1026e8ec628b02bc1f7a575ed018284d34a3a079"
+      "type": "card",
+      "name": "Strategy Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-ambush-front.jpg?v=1783537961",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/fellgor-ravagers/cards/strategy_ploys/fellgor-ravagers-ambush-back.jpg?v=1783537881",
+      "modified": "2026-08-29T20:13:29.223128+00:00"
     }
   ]
 }

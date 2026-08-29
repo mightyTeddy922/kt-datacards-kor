@@ -1,351 +1,154 @@
 {
   "team": "death-korps",
   "box": {
-    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tts_objects/Death%20Korps.json?v=1788032010",
-    "modified": "2026-08-29T19:33:30.686653+00:00",
-    "hash": "aa8cd3d290af92ce506e31d9fd42e87d6a5edf9c8a7cc51496c6efae8c4b924c"
+    "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tts_objects/Death%20Korps.json",
+    "modified": "2026-08-29T20:13:29.172586+00:00"
   },
   "objects": [
     {
-      "type": "lua-script",
-      "name": "update-script",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/config/defaults/tts-script/tts-update-rules-in-box-script.lua?v=1783888798",
-      "modified": "2026-07-12T20:39:58.110729+00:00",
-      "hash": "d909f8b32ec6579a2cb9029d486b0c5f53b65074077e513bbaa78d4e086f6d9c"
+      "type": "cardbox-mesh",
+      "name": "death-korps-card-box",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cardbox/death-korps-card-box.obj?v=1781895962",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "cardbox-texture",
       "name": "death-korps-card-box-texture",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cardbox/death-korps-card-box-texture.jpg?v=1783162069",
-      "modified": "2026-07-04T10:47:49.532172+00:00",
-      "hash": "f89eb6ea3d66374119a561d4de39d70724f860290a88c5ff512f229628c86859"
-    },
-    {
-      "type": "cardbox-mesh",
-      "name": "death-korps-card-box",
-      "url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cardbox/death-korps-card-box.obj?v=1781895962",
-      "modified": "2026-06-19T19:06:02.305117+00:00",
-      "hash": "5859e89454f30c5826e4f8b348a91fb64bd367eb4e7de09eafc5d4a070d41125"
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cardbox/death-korps-card-box-texture.jpg?v=1783162069",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-bruiser",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-bruiser.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-bruiser.png?v=1783537682",
-      "modified": "2026-07-08T19:08:02.221139+00:00",
-      "hash": "95ca78e1ad1a8a04e75bed7c577a6e77d8bdb7ead1f30bb2df67913dc5af618c"
+      "name": "Death Korps",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cardbox/death-korps-card-box.obj?v=1781895962",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cardbox/death-korps-card-box-texture.jpg?v=1783162069",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-dig-in",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-dig-in.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-dig-in.png?v=1783188215",
-      "modified": "2026-07-04T18:03:35.707854+00:00",
-      "hash": "e4fe235f23dd680fd2c5533b1201df2934057a5b8c5fb42979b16874a2a02922"
+      "name": "Death Korps tokens",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/tokenbag/death-korps-token-bag.obj?v=1779121408",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/tokenbag/death-korps-token-bag-icon.png?v=1784729907",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-fix-bayonets",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-fix-bayonets.obj?v=1788026479",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-fix-bayonets.png?v=1788028890",
-      "modified": "2026-08-29T18:41:30.119982+00:00",
-      "hash": "26c753820fe0615646feed0fe7930678ead1b0b8e3174745749985dec1e4b3ab"
+      "name": "Bruiser",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-bruiser.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-bruiser.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-gas",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-gas.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-gas.png?v=1783537682",
-      "modified": "2026-07-08T19:08:02.263124+00:00",
-      "hash": "509d41db1c345d817a14a38fdbcee806e32617723abbbf773c69bbabfdf84012"
+      "name": "Dig In",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-dig-in.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-dig-in.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-medic",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-medic.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-medic.png?v=1783371750",
-      "modified": "2026-07-06T21:02:30.560720+00:00",
-      "hash": "3f04288ebc52510b5e208b1927ef0673392e3e3fa334d8c2fa7028d72ac3c595"
+      "name": "Fix Bayonets",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-fix-bayonets.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-fix-bayonets.png?v=1785001485",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-mine",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-mine.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-mine.png?v=1783537682",
-      "modified": "2026-07-08T19:08:02.306584+00:00",
-      "hash": "10f6e4593243a5bc2cfd0b93b9a0329bf394b764cf63754d0c9053d99f747610"
+      "name": "Gas",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-gas.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-gas.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-move-move-move",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-move-move-move.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-move-move-move.png?v=1783371750",
-      "modified": "2026-07-06T21:02:30.576437+00:00",
-      "hash": "725f683d48a98b4ee01e21df2a9d4792beaaab4b38b7364d10c503e32962abd1"
+      "name": "Medic",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-medic.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-medic.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-remote-detonator",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-remote-detonator.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-remote-detonator.png?v=1783371750",
-      "modified": "2026-07-06T21:02:30.592296+00:00",
-      "hash": "969ad1755ea093f67e870034cad0a393cd94645b56951fbfc292c9315904b660"
+      "name": "Mine",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-mine.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-mine.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-spot",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-spot.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-spot.png?v=1783537682",
-      "modified": "2026-07-08T19:08:02.360353+00:00",
-      "hash": "a01853a387d64cf33f5eb81aa2ddce1b947f89598e765342340a7f144a56211e"
+      "name": "Move Move Move",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-move-move-move.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-move-move-move.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
       "type": "token",
-      "name": "death-korps-take-aim",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-take-aim.obj?v=1772029953",
-      "texture_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/death-korps-take-aim.png?v=1783537682",
-      "modified": "2026-07-08T19:08:02.372546+00:00",
-      "hash": "06a61e9f74c174a54442565b57d65becfcba0d832fd3c11024cbe512cafaa1de"
+      "name": "Remote Detonator",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-remote-detonator.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-remote-detonator.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "token-bag",
-      "name": "death-korps-token-bag",
-      "mesh_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/tokenbag/death-korps-token-bag.obj?v=1779121408",
-      "icon_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/tokens/tokenbag/death-korps-token-bag-icon.png?v=1783160108",
-      "modified": "2026-07-04T10:15:08.398679+00:00",
-      "hash": "f78a67d645f2cd6a2d41647f11eb24ae823e086b6edf09c6dd70651abe31377f"
+      "type": "token",
+      "name": "Spot",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-spot.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-spot.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg?v=1788028935",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg?v=1788028936",
-      "modified": "2026-08-29T18:42:16.273299+00:00",
-      "hash": "759c191256936b5cfbf180c1db4a7ee3dcf7cb44e9869c96748357c38147f81d"
+      "type": "token",
+      "name": "Take Aim",
+      "mesh_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-take-aim.obj?v=1772029953",
+      "texture_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/tokens/death-korps-take-aim.png?v=1785001210",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg?v=1788028939",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:19.863692+00:00",
-      "hash": "17d91baf5715d7e581272df041c0d8afd523691ae35790c36be5e80351042bb7"
+      "type": "card",
+      "name": "death-korps-operatives",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/operatives_selection/death-korps-operative-selection-front.jpg?v=1783537801",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/operatives_selection/death-korps-operative-selection-back.jpg?v=1783537802",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg?v=1788028940",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:20.191175+00:00",
-      "hash": "76c8ee79e6df07c25713f11a2e486be78db81c65ad5d1c270a9f4d611ae4f6a4"
+      "type": "card",
+      "name": "Faction Rules",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card1-front.jpg?v=1783537803",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/faction_rules/death-korps-guardsmen-orders-card1-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg?v=1788028940",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:20.518905+00:00",
-      "hash": "b2cfcf34303bfb4ec3091e9fa54662fb81cc2924c943895d545987b8b6fd26b8"
+      "type": "card",
+      "name": "death-korps-markertoken-guide",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/token_guide/death-korps-token-guide-front.jpg?v=1783537826",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/token_guide/death-korps-token-guide-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg?v=1788028936",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:16.600625+00:00",
-      "hash": "b26a6607e4f42c4811c32dfc726c02690ec01d41fe4a05dc20f30c58df98c130"
+      "type": "card",
+      "name": "Datacards",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/datacards/death-korps-bruiser-front.jpg?v=1783537790",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/datacards/death-korps-bruiser-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg?v=1788028936",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg?v=1788028937",
-      "modified": "2026-08-29T18:42:17.250184+00:00",
-      "hash": "c791ca4426b0465c502455caca806349506454a7e76ec7f877737bd8606105df"
+      "type": "card",
+      "name": "Equipment",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/equipment/death-korps-chronometer-front.jpg?v=1783537806",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/equipment/death-korps-chronometer-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg?v=1788028937",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:17.576213+00:00",
-      "hash": "f681a6fa69bd2fbad5bb53b853fb6fce8bc685985f8771d905ba1b8fc8f7a168"
+      "type": "card",
+      "name": "Firefight Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/firefight_ploys/death-korps-combined-arms-front.jpg?v=1783537814",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/firefight_ploys/death-korps-combined-arms-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     },
     {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg?v=1788028937",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg?v=1788028938",
-      "modified": "2026-08-29T18:42:18.227001+00:00",
-      "hash": "9df9524cc451c3875ce8eff28a4bd0af687a1fec739c4aee58017b4da405ef88"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg?v=1788028938",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:18.553840+00:00",
-      "hash": "c7cc2494e7f3ea0c0a3a7e57e1e018e7f9edeec675b04874e2a31b0979689bac"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg?v=1788028938",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:18.879066+00:00",
-      "hash": "7bedd173051ab1d72d3cf1418d0320368e256f0c7e67292b41d9a18224013e8f"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg?v=1788028939",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:19.210875+00:00",
-      "hash": "10cbf758b2f3ca2937bf399bce30db763f3080ff8f66b1fb7bfc7b1f3998e58b"
-    },
-    {
-      "type": "datacards",
-      "name": "image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg?v=1788028939",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg?v=1788026484",
-      "modified": "2026-08-29T18:42:19.544791+00:00",
-      "hash": "9b749ab1b6c5039164ab2f9784e4c76808d8e10dd9ca7b76903cce4f2d9007ff"
-    },
-    {
-      "type": "equipment",
-      "name": "death-korps-chronometer",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-chronometer-front.jpg?v=1783537806",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-chronometer-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:10:06.310226+00:00",
-      "hash": "6150336bad26be5589333af5b1b46b9be7c58dfb5921070a09834a78531f7595"
-    },
-    {
-      "type": "equipment",
-      "name": "death-korps-comm-beads",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-comm-beads-front.jpg?v=1783537807",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-comm-beads-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:10:07.189329+00:00",
-      "hash": "07c6e623b715a464b87d8bfaadbc68431b08011180cb03f444a1d06bf21c33f4"
-    },
-    {
-      "type": "equipment",
-      "name": "death-korps-gas-bombardment",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-gas-bombardment-front.jpg?v=1783537809",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-gas-bombardment-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:10:09.941284+00:00",
-      "hash": "5e38ee4162a7fe97a23758417148f1db524ca070ecd3dfac145333a1510f0ebc"
-    },
-    {
-      "type": "equipment",
-      "name": "death-korps-hand-axes",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-hand-axes-front.jpg?v=1783537808",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/equipment/death-korps-hand-axes-back.jpg?v=1783537675",
-      "modified": "2026-07-08T19:10:08.004456+00:00",
-      "hash": "7fd7ea165b2543f1ce61018ba8ca7bd2359c8a90a8566c03adc8434c9b1b3b51"
-    },
-    {
-      "type": "faction-rules",
-      "name": "death-korps-guardsmen-orders",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/faction-rules/death-korps-guardsmen-orders-front.jpg?v=1788024957",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/faction-rules/death-korps-guardsmen-orders-back.jpg?v=1788024957",
-      "modified": "2026-08-29T17:35:57.920196+00:00",
-      "hash": "97501e1bfea86d0c16c7346ce65fcdb530412bdf83327fd44dc74416b83bb94d"
-    },
-    {
-      "type": "faction-rules",
-      "name": "death-korps-guardsmen-orders-2",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/faction-rules/death-korps-guardsmen-orders-2-front.jpg?v=1788024958",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/faction-rules/death-korps-guardsmen-orders-2-back.jpg?v=1788024958",
-      "modified": "2026-08-29T17:35:58.270333+00:00",
-      "hash": "b731fd2865dc6b159984efdb99278c49f83a0aa83b4f925a53ebf8e9accbb667"
-    },
-    {
-      "type": "faction-rules",
-      "name": "death-korps-guardsmen-orders-3",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/faction-rules/death-korps-guardsmen-orders-3-front.jpg?v=1788024958",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/faction-rules/death-korps-guardsmen-orders-3-back.jpg?v=1788024958",
-      "modified": "2026-08-29T17:35:58.621892+00:00",
-      "hash": "fffc96225e8034765df1fba691341310875e7757bc813e60c8c9966dbb066c57"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "death-korps-combined-arms",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-combined-arms-front.jpg?v=1788024961",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-combined-arms-back.jpg?v=1788024961",
-      "modified": "2026-08-29T17:36:01.094760+00:00",
-      "hash": "dd6bc88f8263fbed978032002ac9537abd79ec80ff3537e2f7b57e4843a57614"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "death-korps-in-death-atonement",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-in-death-atonement-front.jpg?v=1788024961",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-in-death-atonement-back.jpg?v=1788024961",
-      "modified": "2026-08-29T17:36:01.794580+00:00",
-      "hash": "d8c664e29658f0ca4cc3d744d329a2996723a42772f39ad6dd0ce338ee8c2ab0"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "death-korps-in-life-shame",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-in-life-shame-front.jpg?v=1788024961",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-in-life-shame-back.jpg?v=1788024961",
-      "modified": "2026-08-29T17:36:01.444635+00:00",
-      "hash": "906e7ec2b38553a2432936e78f11bb5494c65ac30727bb028268a2fff876356c"
-    },
-    {
-      "type": "firefight-ploys",
-      "name": "death-korps-inspirational-leadership",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-inspirational-leadership-front.jpg?v=1788024960",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/firefight/death-korps-inspirational-leadership-back.jpg?v=1788024960",
-      "modified": "2026-08-29T17:36:00.728337+00:00",
-      "hash": "4272793f364fe91aa77056d66ad63936a2e20ae66d7f5d8a170dfc0d53ca3089"
-    },
-    {
-      "type": "operative-selection",
-      "name": "death-korps-operative-selection",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/operative-selection/death-korps-operative-selection-front.jpg?v=1788024957",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/operative-selection/death-korps-operative-selection-back.jpg?v=1788024957",
-      "modified": "2026-08-29T17:35:57.520493+00:00",
-      "hash": "b88218bdcb76bb742d0376dcddd392d611275a4d2579333ae469c2f6af9018de"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "death-korps-clear-the-line",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-clear-the-line-front.jpg?v=1788024960",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-clear-the-line-back.jpg?v=1788024960",
-      "modified": "2026-08-29T17:36:00.024365+00:00",
-      "hash": "24a49ab236b5b6b90c2c6aa3c37cebde2812737df6f5e8bf2f4db8c81fc168b4"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "death-korps-regroup",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-regroup-front.jpg?v=1788024960",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-regroup-back.jpg?v=1788024960",
-      "modified": "2026-08-29T17:36:00.372737+00:00",
-      "hash": "96c955c2fcc631f646a0996d9814af98c74a542b49cdf2ca4ef732dc6384f53f"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "death-korps-siege-warfare",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-siege-warfare-front.jpg?v=1788024959",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-siege-warfare-back.jpg?v=1788024959",
-      "modified": "2026-08-29T17:35:59.334712+00:00",
-      "hash": "1703801de6cf42bb4991b17eec5e728c0392e5f45e9728a95ec891186e65b7b8"
-    },
-    {
-      "type": "strategy-ploys",
-      "name": "death-korps-take-cover",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-take-cover-front.jpg?v=1788024959",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/ploys/strategy/death-korps-take-cover-back.jpg?v=1788024959",
-      "modified": "2026-08-29T17:35:59.675925+00:00",
-      "hash": "98c09588b19d9b6675922843a15e9900e6c68ae0f16bbd3d508369396a7fef82"
-    },
-    {
-      "type": "token-guide",
-      "name": "death-korps-token-guide",
-      "face_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/token-guide/death-korps-token-guide-front.jpg?v=1788024958",
-      "back_url": "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/death-korps/cards/token-guide/death-korps-token-guide-back.jpg?v=1788024958",
-      "modified": "2026-08-29T17:35:58.989087+00:00",
-      "hash": "d41efb00847ee724f4dff3dcba395c61181f3815def50ba91beef98b713610e5"
+      "type": "card",
+      "name": "Strategy Ploys",
+      "face_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/strategy_ploys/death-korps-clear-the-line-front.jpg?v=1783537822",
+      "back_url": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/death-korps/cards/strategy_ploys/death-korps-clear-the-line-back.jpg?v=1783537675",
+      "modified": "2026-08-29T20:13:29.172586+00:00"
     }
   ]
 }
