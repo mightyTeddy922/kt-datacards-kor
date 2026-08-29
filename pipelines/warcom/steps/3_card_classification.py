@@ -102,6 +102,10 @@ def _match_portrait_card_type(line: str) -> Optional[str]:
         return 'token-guide'
     if 'FACTION RULE' in type_line or '팩션 규칙' in line:
         return 'faction-rules'
+    if 'FORWARD SCOUTING' in type_line or '전방 정찰' in line:
+        return 'faction-rules'
+    if '업그레이드' in line:
+        return 'faction-rules'
     if 'EQUIPMENT' in type_line or '팩션 장비' in line:
         return 'equipment'
     if 'FIREFIGHT PLOY' in type_line or '화력전 플로이' in line:
@@ -347,7 +351,7 @@ class CardClassifier:
         Returns:
             Card type folder name or None if not recognized
         """
-        for line in lines[:5]:
+        for line in lines:
             card_type = _match_portrait_card_type(line)
             if card_type:
                 return card_type
@@ -388,7 +392,8 @@ class CardClassifier:
                     continue
                 
                 # This should be the operative name (first meaningful text)
-                if len(line) > 3 and any(c.isalpha() for c in line):
+                # Korean operative names can be only 2-3 syllables long.
+                if len(line) > 1 and any(c.isalpha() for c in line):
                     name = line.strip()
                     name = _slugify_card_name(name)
                     if name and len(name) > 2:
@@ -428,13 +433,18 @@ class CardClassifier:
             
             # Regular portrait card: name is at line 3 (index 2)
             if type_line_index is None:
-                for idx, line in enumerate(lines[:5]):
+                for idx, line in enumerate(lines):
                     if _match_portrait_card_type(line):
                         type_line_index = idx
                         break
 
             if type_line_index is not None and len(lines) > type_line_index + 1:
-                name = lines[type_line_index + 1]
+                if type_line_index == 0:
+                    name = lines[type_line_index + 1]
+                elif type_line_index >= 3 and lines:
+                    name = lines[0]
+                else:
+                    name = lines[type_line_index + 1]
                 name = _slugify_card_name(name)
                 if name:
                     return name
@@ -561,11 +571,15 @@ def _is_three_card_special_case(team_name: str, card_text: str, card_type: str) 
     card_text_upper = card_text.upper()
     
     # Elucidian Starstriders - WARRANT OF TRADE
-    if team_name == 'elucidian-starstriders' and 'WARRANT OF TRADE' in card_text_upper:
+    if team_name == 'elucidian-starstriders' and (
+        'WARRANT OF TRADE' in card_text_upper or '무역 허가장' in card_text
+    ):
         return True
     
     # Gellerpox - TECHNO-CURSE
-    if team_name == 'gellerpox-infected' and 'TECHNO-CURSE' in card_text_upper:
+    if team_name == 'gellerpox-infected' and (
+        'TECHNO-CURSE' in card_text_upper or '테크노커스' in card_text or '테크노-커스' in card_text
+    ):
         return True
     
     # Hunter Clade - Operative Selection
@@ -573,11 +587,15 @@ def _is_three_card_special_case(team_name: str, card_text: str, card_type: str) 
         return True
     
     # Hunter Clade - DOCTRINA IMPERATIVES
-    if team_name == 'hunter-clade' and 'DOCTRINA IMPERATIVES' in card_text_upper:
+    if team_name == 'hunter-clade' and (
+        'DOCTRINA IMPERATIVES' in card_text_upper or '독트리나 명령' in card_text
+    ):
         return True
     
     # Pathfinders - MARKERLIGHTS
-    if team_name == 'pathfinders' and 'MARKERLIGHTS' in card_text_upper:
+    if team_name == 'pathfinders' and (
+        'MARKERLIGHTS' in card_text_upper or '마커라이트' in card_text
+    ):
         return True
     
     return False
@@ -601,11 +619,15 @@ def _is_four_card_special_case(team_name: str, card_text: str) -> bool:
     card_text_upper = card_text.upper()
     
     # Angels of Death - CHAPTER TACTICS
-    if team_name == 'angels-of-death' and 'CHAPTER TACTICS' in card_text_upper:
+    if team_name == 'angels-of-death' and (
+        'CHAPTER TACTICS' in card_text_upper or '챕터 전술' in card_text
+    ):
         return True
     
     # Warpcoven - BOONS OF TZEENTCH
-    if team_name == 'warpcoven' and 'BOONS OF TZEENTCH' in card_text_upper:
+    if team_name == 'warpcoven' and (
+        'BOONS OF TZEENTCH' in card_text_upper or '젠취의 은총' in card_text
+    ):
         return True
     
     return False
@@ -628,8 +650,92 @@ def _is_inquisitorial_requisition_case(team_name: str, card_text: str) -> bool:
     Returns:
         True if this is the Inquisitorial Requisition special case
     """
-    return (team_name == 'inquisitorial-agents' and 
-            'INQUISITORIAL REQUISITION' in card_text.upper())
+    return (
+        team_name == 'inquisitorial-agents'
+        and (
+            'INQUISITORIAL REQUISITION' in card_text.upper()
+            or '이단심문소 징발권' in card_text
+        )
+    )
+
+
+def _build_unique_card_name(
+    card_type: str,
+    card_name: str,
+    seen_names: Dict[str, int],
+) -> str:
+    """Return a per-type unique card name using the project's -2, -3 suffix convention."""
+    name_key = f"{card_type}:{card_name}"
+    if name_key in seen_names:
+        seen_names[name_key] += 1
+        return f"{card_name}-{seen_names[name_key]}"
+    seen_names[name_key] = 1
+    return card_name
+
+
+def _process_card_run(
+    team_name: str,
+    run_cards: List[Path],
+    card_type: str,
+    type_output_dir: Path,
+    classifier: "CardClassifier",
+    seen_names: Dict[str, int],
+    config_dir: Path,
+    log_buffer: List[str],
+    fixed_name: Optional[str] = None,
+) -> int:
+    """Process a contiguous run of same logical cards, including headerless continuation pages."""
+    classified_count = 0
+    idx = 0
+
+    while idx < len(run_cards):
+        card_path = run_cards[idx]
+        lines = classifier.extract_text_blocks_sorted(card_path)
+        card_name = fixed_name or classifier._extract_name_from_card(lines, is_landscape=False)
+
+        if card_name is None or (card_name and 'none' in card_name.lower()):
+            failed_dir = Path('layers/warcom/failed') / team_name
+            failed_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(card_path, failed_dir / card_path.name)
+            log_buffer.append(
+                f"ERROR: Card naming failed in grouped run, copied to failed folder: {card_path.name} "
+                f"(type={card_type}, name={card_name})"
+            )
+            idx += 1
+            continue
+
+        unique_name = _build_unique_card_name(card_type, card_name, seen_names)
+        card_text = classifier.extract_text_from_card_pdf(card_path)
+        orientation = 'landscape' if 'landscape' in card_path.name.lower() else 'portrait'
+
+        if _has_backside_continue(card_text) and idx + 1 < len(run_cards):
+            if _combine_front_and_back(
+                card_path,
+                run_cards[idx + 1],
+                team_name,
+                unique_name,
+                card_type,
+                orientation,
+                type_output_dir,
+                log_buffer,
+            ):
+                classified_count += 1
+            idx += 2
+            continue
+
+        if _process_single_card(
+            card_path,
+            team_name,
+            unique_name,
+            orientation,
+            type_output_dir,
+            config_dir,
+            log_buffer,
+        ):
+            classified_count += 1
+        idx += 1
+
+    return classified_count
 
 
 def _combine_front_and_back(
@@ -1118,6 +1224,7 @@ def classify_team_cards(
     log_buffer = []
     
     team_cards_dir = extracted_dir / team_name / 'cards'
+    team_failed_dir = Path('layers/warcom/failed') / team_name
     
     if not team_cards_dir.exists():
         return {
@@ -1132,6 +1239,8 @@ def classify_team_cards(
     team_output_dir = output_dir / team_name / 'cards'
     if team_output_dir.exists():
         shutil.rmtree(team_output_dir, onerror=_handle_remove_readonly)
+    if team_failed_dir.exists():
+        shutil.rmtree(team_failed_dir, onerror=_handle_remove_readonly)
     
     # Find archived PDF for text extraction
     pdf_text = {}
@@ -1159,7 +1268,7 @@ def classify_team_cards(
     skipped_count = 0
     type_counts = {}
     
-    # Skip tracking for cards already processed as backsides
+    # Skip tracking for cards already processed as backsides or grouped runs
     skip_next_card = 0  # Counter for how many cards to skip (0 = don't skip)
     
     # Track seen names to handle duplicates (first keeps original name, subsequent get -2, -3, etc.)
@@ -1216,7 +1325,10 @@ def classify_team_cards(
                     type_counts[card_type] = type_counts.get(card_type, 0) + 1
                 skip_next_card = inq_skip
                 continue
-            
+
+            type_output_dir = team_output_dir / card_type
+            type_output_dir.mkdir(parents=True, exist_ok=True)
+
             # Special case: 4-card groups (Angels of Death, Warpcoven)
             if _is_four_card_special_case(team_name, card_text):
                 group_classified, group_skip = _process_card_group(
@@ -1242,24 +1354,68 @@ def classify_team_cards(
                     type_counts[card_type] = type_counts.get(card_type, 0) + 1
                 skip_next_card = group_skip
                 continue
+
+            if card_type == 'operative-selection':
+                run_cards = [card_path]
+                look_ahead = idx + 1
+                while look_ahead < len(card_files):
+                    next_type, _, _ = classifier.classify_card(card_files[look_ahead], pdf_text)
+                    if next_type is None:
+                        run_cards.append(card_files[look_ahead])
+                        look_ahead += 1
+                        continue
+                    break
+
+                run_classified = _process_card_run(
+                    team_name,
+                    run_cards,
+                    card_type,
+                    type_output_dir,
+                    classifier,
+                    seen_names,
+                    Path('config'),
+                    log_buffer,
+                    fixed_name='operative-selection',
+                )
+                classified_count += run_classified
+                for _ in range(run_classified):
+                    type_counts[card_type] = type_counts.get(card_type, 0) + 1
+                skip_next_card = len(run_cards) - 1
+                continue
+
+            if card_type == 'faction-rules':
+                run_cards = [card_path]
+                look_ahead = idx + 1
+                while look_ahead < len(card_files):
+                    next_type, _, _ = classifier.classify_card(card_files[look_ahead], pdf_text)
+                    if next_type is None or next_type == 'faction-rules':
+                        run_cards.append(card_files[look_ahead])
+                        look_ahead += 1
+                        continue
+                    break
+
+                if len(run_cards) > 1:
+                    run_classified = _process_card_run(
+                        team_name,
+                        run_cards,
+                        card_type,
+                        type_output_dir,
+                        classifier,
+                        seen_names,
+                        Path('config'),
+                        log_buffer,
+                    )
+                    classified_count += run_classified
+                    for _ in range(run_classified):
+                        type_counts[card_type] = type_counts.get(card_type, 0) + 1
+                    skip_next_card = len(run_cards) - 1
+                    continue
             
             # Handle duplicate names: first keeps original, subsequent get -2, -3, etc.
-            # Create a unique key combining type and name for tracking
-            name_key = f"{card_type}:{card_name}"
-            if name_key in seen_names:
-                # This is a duplicate - increment counter and add suffix
-                seen_names[name_key] += 1
-                card_name = f"{card_name}-{seen_names[name_key]}"
-            else:
-                # First occurrence - track it
-                seen_names[name_key] = 1
+            card_name = _build_unique_card_name(card_type, card_name, seen_names)
             
             # Build final card name: {team}-{name}-front (backsides are processed separately)
             final_name = f"{team_name}-{card_name}-front"
-            
-            # Create output directory
-            type_output_dir = team_output_dir / card_type
-            type_output_dir.mkdir(parents=True, exist_ok=True)
             
             # Convert PDF to JPG and save to output location
             output_path = type_output_dir / f"{final_name}.jpg"

@@ -10,6 +10,8 @@ import argparse
 import time
 import asyncio
 import logging
+import re
+import shutil
 from playwright.async_api import async_playwright
 
 logger = logging.getLogger(__name__)
@@ -120,6 +122,110 @@ def _filter_locale_pdfs(urls: list[str], locale: str) -> list[str]:
     return preferred or urls
 
 
+def _infer_team_slug_from_filename(filename: str) -> str:
+    """Infer a stable team slug from a WarCom download filename."""
+    stem = Path(filename).stem.lower().replace("_", "-")
+    stem = re.sub(r"^(?:kor|eng|deu|ger|fra|fre|ita|spa|esp|jpn|jap|korean)-", "", stem)
+    stem = re.sub(r"^\d{2}-\d{2}-", "", stem)
+    stem = re.sub(r"^kill-team-team-rules-", "", stem)
+    stem = re.sub(r"^kt-teamrules-", "", stem)
+    stem = re.sub(r"^kt-", "", stem)
+    stem = re.sub(r"^kill-team-", "", stem)
+    stem = re.sub(r"^killteam-", "", stem)
+    stem = re.sub(r"^team-rules-", "", stem)
+    stem = re.sub(r"-(?:[a-z0-9]{10})-(?:[a-z0-9]{10})$", "", stem)
+    stem = re.sub(r"-team-rules$", "", stem)
+    stem = re.sub(r"-teamrules$", "", stem)
+    stem = re.sub(r"-online-rules$", "", stem)
+    return stem.strip("-")
+
+
+def _detect_asset_locale(filename: str) -> str:
+    lower = filename.lower()
+    for locale, prefixes in LOCALE_FILENAME_PREFIXES.items():
+        if lower.startswith(prefixes):
+            return locale
+    return DEFAULT_LOCALE
+
+
+def _asset_priority(url: str, requested_locale: str) -> tuple[int, int, int, str]:
+    """Return a sort key that prefers complete locale PDFs and falls back to English full rules."""
+    filename = Path(url).name.lower()
+    asset_locale = _detect_asset_locale(filename)
+    is_team_rules = "team_rules" in filename or "teamrules" in filename
+    is_online_rules = "_online_rules" in filename or "-online-rules" in filename
+
+    locale_score = 2 if asset_locale == requested_locale else 1 if asset_locale == DEFAULT_LOCALE else 0
+    completeness_score = 2 if is_team_rules else 1 if is_online_rules else 0
+
+    # When the requested locale only has a 2-page online-rules stub, prefer the
+    # English full team-rules PDF so the downstream datacard extraction still works.
+    fallback_bonus = 1 if asset_locale == DEFAULT_LOCALE and is_team_rules else 0
+    return (completeness_score, locale_score, fallback_bonus, filename)
+
+
+def _select_best_team_assets(urls: list[str], requested_locale: str) -> list[str]:
+    """Choose one best PDF per team, preferring full requested-locale rules and otherwise English full rules."""
+    grouped: dict[str, list[str]] = {}
+    for url in list(dict.fromkeys(urls)):
+        team_slug = _infer_team_slug_from_filename(Path(url).name)
+        if not team_slug:
+            continue
+        grouped.setdefault(team_slug, []).append(url)
+
+    selected: list[str] = []
+    for team_slug in sorted(grouped):
+        candidates = grouped[team_slug]
+        best = sorted(candidates, key=lambda candidate: _asset_priority(candidate, requested_locale), reverse=True)[0]
+        selected.append(best)
+    return selected
+
+
+def _is_online_rules_filename(filename: str) -> bool:
+    lower = filename.lower()
+    return "_online_rules" in lower or "-online-rules" in lower
+
+
+def _is_full_team_rules_filename(filename: str) -> bool:
+    lower = filename.lower()
+    return ("team_rules" in lower or "teamrules" in lower) and not _is_online_rules_filename(lower)
+
+
+def _find_archived_full_pdf(archive_root: Path, team_slug: str) -> Path | None:
+    """Return the best archived full PDF when upstream only offers an online-rules stub."""
+    team_archive_dir = archive_root / team_slug / "warcom"
+    if not team_archive_dir.exists():
+        return None
+
+    candidates = sorted(team_archive_dir.glob("*.pdf"))
+    best_candidate: Path | None = None
+    best_score: tuple[int, int, str] | None = None
+
+    for candidate in candidates:
+        page_count = 0
+        try:
+            import fitz  # type: ignore
+
+            doc = fitz.open(candidate)
+            page_count = len(doc)
+            doc.close()
+        except Exception:
+            page_count = 0
+
+        score = (
+            1 if page_count > 2 else 0,
+            page_count,
+            candidate.name.lower(),
+        )
+        if best_score is None or score > best_score:
+            best_candidate = candidate
+            best_score = score
+
+    if best_candidate is not None and best_score is not None and best_score[0] == 1:
+        return best_candidate
+    return None
+
+
 def _matches_section(filename: str, section: str) -> bool:
     lower = filename.lower()
     if section == 'Team Rules':
@@ -143,57 +249,62 @@ def extract_pdf_urls_from_api(
 ) -> list[str]:
     """Extract PDF URLs via Warhammer Community's downloads search API."""
     requested_locale = (locale or DEFAULT_LOCALE).lower()
-    language_label = DOWNLOAD_LANGUAGE_QUERY_LABELS.get(requested_locale)
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         'Accept': 'application/json',
         'Content-Type': 'application/json',
     }
 
-    page = 0
-    nb_pages = None
+    locales_to_collect = [requested_locale]
+    if requested_locale != DEFAULT_LOCALE:
+        locales_to_collect.append(DEFAULT_LOCALE)
+
     team_pdfs: list[str] = []
+    for source_locale in locales_to_collect:
+        language_label = DOWNLOAD_LANGUAGE_QUERY_LABELS.get(source_locale)
+        page = 0
+        nb_pages = None
 
-    while nb_pages is None or page < nb_pages:
-        payload = {
-            'index': SEARCH_API_INDEX,
-            'searchTerm': 'kill team',
-            'page': page,
-            'locale': DEFAULT_LOCALE,
-        }
-        response = requests.post(
-            SEARCH_API_URL,
-            json=payload,
-            headers=headers,
-            timeout=60,
-        )
-        response.raise_for_status()
-        data = response.json()
-        nb_pages = data.get('nbPages', 0)
+        while nb_pages is None or page < nb_pages:
+            payload = {
+                'index': SEARCH_API_INDEX,
+                'searchTerm': 'kill team',
+                'page': page,
+                'locale': DEFAULT_LOCALE,
+            }
+            response = requests.post(
+                SEARCH_API_URL,
+                json=payload,
+                headers=headers,
+                timeout=60,
+            )
+            response.raise_for_status()
+            data = response.json()
+            nb_pages = data.get('nbPages', 0)
 
-        for hit in data.get('hits', []):
-            hit_language = str(hit.get('download_languages') or '').lower()
-            if language_label and hit_language != language_label:
-                continue
+            for hit in data.get('hits', []):
+                hit_language = str(hit.get('download_languages') or '').lower()
+                if language_label and hit_language != language_label:
+                    continue
 
-            if 'kill-team' not in str(hit.get('game_systems') or ''):
-                continue
+                if 'kill-team' not in str(hit.get('game_systems') or ''):
+                    continue
 
-            filename = str(hit.get('id', {}).get('file') or '')
-            if not filename or not _matches_section(filename, section):
-                continue
+                filename = str(hit.get('id', {}).get('file') or '')
+                if not filename or not _matches_section(filename, section):
+                    continue
 
-            filename_lower = filename.lower()
-            if any(pattern in filename_lower for pattern in EXCLUDE_PATTERNS):
-                continue
+                filename_lower = filename.lower()
+                if any(pattern in filename_lower for pattern in EXCLUDE_PATTERNS):
+                    continue
 
-            team_pdfs.append(_build_asset_url(filename))
+                team_pdfs.append(_build_asset_url(filename))
 
-        page += 1
+            page += 1
 
-    team_pdfs = _filter_locale_pdfs(team_pdfs, requested_locale)
+    team_pdfs = _select_best_team_assets(team_pdfs, requested_locale)
     logger.info(
-        f"Search API returned {len(team_pdfs)} PDFs in section '{section}' for locale '{requested_locale}'"
+        f"Search API returned {len(team_pdfs)} best-match PDFs in section '{section}' for locale '{requested_locale}'"
     )
     return team_pdfs
 
@@ -435,6 +546,29 @@ def download_pdf(url: str, output_path: Path, chunk_size: int = 8192) -> bool:
         return False
 
 
+def _remove_stale_team_pdfs(output_dir: Path, selected_urls: list[str]) -> int:
+    """Remove previously staged PDFs for teams whose chosen source file changed."""
+    selected_by_team = {
+        _infer_team_slug_from_filename(Path(url).name): Path(url).name
+        for url in selected_urls
+    }
+    removed = 0
+
+    for existing_pdf in output_dir.glob("*.pdf"):
+        team_slug = _infer_team_slug_from_filename(existing_pdf.name)
+        selected_name = selected_by_team.get(team_slug)
+        if not selected_name or existing_pdf.name == selected_name:
+            continue
+        try:
+            existing_pdf.unlink()
+            removed += 1
+            logger.info(f"    - Removed stale staged PDF: {existing_pdf.name}")
+        except OSError as exc:
+            logger.warning(f"    ! Could not remove stale staged PDF {existing_pdf.name}: {exc}")
+
+    return removed
+
+
 def run(
     output_dir: Path = None,
     url: str = None,
@@ -498,16 +632,37 @@ def run(
     logger.info(f"Output: {output_dir}")
     logger.info(f"Downloading {len(team_pdf_urls)} PDFs:")
     logger.info("-" * 70)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    removed_count = _remove_stale_team_pdfs(output_dir, team_pdf_urls)
+    if removed_count:
+        logger.info(f"Removed {removed_count} stale staged PDF(s) before download.")
+    archive_root = output_dir.parent.parent / "archive"
     
     # Download each PDF
     downloaded_count = 0
     skipped_count = 0
     failed_count = 0
+    restored_count = 0
     
     for idx, pdf_url in enumerate(team_pdf_urls, 1):
         # Extract filename from URL
         filename = Path(pdf_url).name
         output_path = output_dir / filename
+        team_slug = _infer_team_slug_from_filename(filename)
+
+        if _is_online_rules_filename(filename):
+            archived_full_pdf = _find_archived_full_pdf(archive_root, team_slug)
+            if archived_full_pdf is not None:
+                logger.info(f"  [{idx}/{len(team_pdf_urls)}] {filename}")
+                logger.info(
+                    f"    Restoring archived full team rules instead: {archived_full_pdf.name}"
+                )
+                if output_path.exists():
+                    output_path.unlink()
+                shutil.copy2(archived_full_pdf, output_dir / archived_full_pdf.name)
+                restored_count += 1
+                continue
         
         # Skip if already exists
         if output_path.exists():
@@ -537,6 +692,8 @@ def run(
     logger.info(f"  Downloaded: {downloaded_count}")
     logger.info(f"  Skipped: {skipped_count}")
     logger.info(f"  Failed: {failed_count}")
+    logger.info(f"  Replaced stale: {removed_count}")
+    logger.info(f"  Restored archived full PDFs: {restored_count}")
     logger.info(f"  Output: {output_dir}")
     logger.info("=" * 70)
     
@@ -544,7 +701,9 @@ def run(
         'success': failed_count == 0,
         'downloaded': downloaded_count,
         'skipped': skipped_count,
-        'failed': failed_count
+        'failed': failed_count,
+        'replaced': removed_count,
+        'restored': restored_count,
     }
 
 

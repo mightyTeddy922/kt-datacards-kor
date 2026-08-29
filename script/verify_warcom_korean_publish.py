@@ -46,6 +46,14 @@ def find_korean_pdf_names(project_root: Path) -> tuple[list[str], list[str], lis
     return staging_pdf_names, sorted(archived_korean_names), available_korean_names
 
 
+def find_failed_warcom_cards(project_root: Path) -> list[Path]:
+    """Return any WarCom-extracted card PDFs that classification moved to the failed area."""
+    failed_root = project_root / "layers" / "warcom" / "failed"
+    if not failed_root.exists():
+        return []
+    return sorted(failed_root.rglob("*.pdf"))
+
+
 def discover_published_team_dirs(tts_root: Path) -> list[str]:
     teams: list[str] = []
     for team_dir in sorted(p for p in tts_root.iterdir() if p.is_dir() and p.name != "display-table"):
@@ -72,6 +80,11 @@ def main() -> int:
         type=int,
         default=30,
         help="Minimum kor_*.pdf count required when --require-korean-pdfs is enabled",
+    )
+    parser.add_argument(
+        "--allow-failed-cards",
+        action="store_true",
+        help="Do not fail verification when layers/warcom/failed contains skipped card PDFs",
     )
     args = parser.parse_args()
 
@@ -134,6 +147,13 @@ def main() -> int:
                 f"layers/warcom/staging and layers/archive/*/warcom, found {len(available_korean_pdf_names)}"
             )
 
+    failed_cards = find_failed_warcom_cards(project_root)
+    if failed_cards and not args.allow_failed_cards:
+        issues.append(
+            f"Found {len(failed_cards)} failed WarCom card PDF(s) under "
+            f"{project_root / 'layers' / 'warcom' / 'failed'}"
+        )
+
     print(f"Repository slug: {repo_slug}")
     print(f"Expected raw URL prefix: {expected_prefix}")
     print(f"Published team boxes file: {tts_boxes_path}")
@@ -149,6 +169,11 @@ def main() -> int:
             print(f"Korean PDF samples: {preview}")
     else:
         print("WarCom staging directory not present in this checkout.")
+
+    print(f"WarCom failed card PDFs: {len(failed_cards)}")
+    if failed_cards:
+        failed_preview = ", ".join(path.name for path in failed_cards[:5])
+        print(f"Failed card samples: {failed_preview}")
 
     if issues:
         print("\nVerification failed:")
