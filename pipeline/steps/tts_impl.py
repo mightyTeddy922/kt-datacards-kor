@@ -43,6 +43,7 @@ from .templates.tts_templates import (
 from ..utils import paths as _paths
 from ..utils import naming
 from ..utils.ktui_model_script import compose_ktui_model_script
+from ..utils.official_korean_team_rules import has_korean_team_rules_entry, has_official_korean_translation
 from ..utils.repo_urls import (
     UPSTREAM_GITHUB_REPO,
     output_base_url,
@@ -65,6 +66,8 @@ URL_OUTPUT_BASE = os.environ.get(
     output_base_url(project_root=PROJECT_ROOT, branch=URL_BRANCH),
 )
 UPSTREAM_OUTPUT_BASE = output_base_url_for_slug(UPSTREAM_GITHUB_REPO, branch=URL_BRANCH)
+FORCE_CACHE_BUST = False
+CURRENT_RUN_CACHE_BUST = int(datetime.now(timezone.utc).timestamp())
 
 _HANGUL_RE = re.compile(r"[가-힣]")
 _CARD_NUMBER_RE = re.compile(r"(?:^|-)card\d+$", re.IGNORECASE)
@@ -132,6 +135,11 @@ def _preferred_card_pairs(card_type_dir: Path) -> dict[str, dict[str, Path]]:
 
 
 def _team_uses_localized_assets(team_dir: Path) -> bool:
+    team_slug = team_dir.name
+    if has_official_korean_translation(team_slug):
+        return True
+    if has_korean_team_rules_entry(team_slug):
+        return False
     cards_dir = team_dir / "cards"
     if not cards_dir.exists():
         return False
@@ -446,7 +454,10 @@ def _reuse_or_new_single(prev_entry, file_path, url, entry):
     new_hash = _sha256_of_files([file_path])
     prev_hash = (prev_entry or {}).get("hash")
     prev_url_changed = _url_without_query((prev_entry or {}).get("url")) != _url_without_query(url)
-    if prev_entry and prev_hash == new_hash:
+    if FORCE_CACHE_BUST:
+        entry["url"] = f"{url}?v={CURRENT_RUN_CACHE_BUST}"
+        entry["modified"] = datetime.now(timezone.utc).isoformat()
+    elif prev_entry and prev_hash == new_hash:
         if prev_url_changed:
             mtime = file_path.stat().st_mtime
             entry["url"] = f"{url}?v={int(mtime)}"
@@ -496,10 +507,12 @@ def _reuse_or_new_pair(prev_entry, file_a, file_b, url_a, url_b, key_a, key_b, e
     def _emit_new():
         mtime_a = file_a.stat().st_mtime
         mtime_b = file_b.stat().st_mtime
-        entry[key_a] = f"{url_a}?v={int(mtime_a)}"
-        entry[key_b] = f"{url_b}?v={int(mtime_b)}"
+        cache_bust = CURRENT_RUN_CACHE_BUST if FORCE_CACHE_BUST else None
+        entry[key_a] = f"{url_a}?v={cache_bust or int(mtime_a)}"
+        entry[key_b] = f"{url_b}?v={cache_bust or int(mtime_b)}"
         entry["modified"] = datetime.fromtimestamp(
-            max(mtime_a, mtime_b), tz=timezone.utc
+            max(mtime_a, mtime_b) if not FORCE_CACHE_BUST else datetime.now(timezone.utc).timestamp(),
+            tz=timezone.utc
         ).isoformat()
 
     def _emit_prev():
@@ -1683,7 +1696,7 @@ def rebuild_kill_team_card_boxes_example(output_dir: Path) -> tuple[int, Optiona
     object_states = manager_data.get("ObjectStates") or []
     if object_states and isinstance(object_states[0], dict):
         manager_obj = object_states[0]                      # save-file wrapper form
-    elif isinstance(manager_data, dict) and manager_data.get("Name") == "Custom_Model_Bag":
+    elif isinstance(manager_data, dict) and manager_data.get("Name") in {"Custom_Model_Bag", "Bag"}:
         manager_obj = manager_data                          # bare bag object form
     else:
         logger.warning("Manager bag JSON has no valid ObjectStates[0] or bare bag object")
@@ -1704,21 +1717,24 @@ def rebuild_kill_team_card_boxes_example(output_dir: Path) -> tuple[int, Optiona
 
     team_box_objects = []
     for team_tts_dir in sorted(output_dir.glob("*/tts_objects")):
-        # Use the bare {Team}.json clean box (skip urls/metadata json files).
+        # Find the bare team box object among the mixed per-team JSON outputs.
         clean_candidates = sorted(
             p for p in team_tts_dir.glob("*.json")
             if "urls" not in p.name.lower()
         )
         if not clean_candidates:
             continue
-        box_file = clean_candidates[0]
-        try:
-            with open(box_file, 'r', encoding='utf-8') as f:
-                team_obj = json.load(f)
-            if not isinstance(team_obj, dict) or team_obj.get("Name") != "Custom_Model_Bag":
-                continue
-        except Exception as e:
-            logger.warning(f"Could not read clean team box for manager bag ({box_file}): {e}")
+        team_obj = None
+        for box_file in clean_candidates:
+            try:
+                with open(box_file, 'r', encoding='utf-8') as f:
+                    candidate_obj = json.load(f)
+                if isinstance(candidate_obj, dict) and candidate_obj.get("Name") == "Custom_Model_Bag":
+                    team_obj = candidate_obj
+                    break
+            except Exception as e:
+                logger.warning(f"Could not read clean team box for manager bag ({box_file}): {e}")
+        if team_obj is None:
             continue
 
         team_box_objects.append(team_obj)

@@ -32,6 +32,7 @@ IMPLEMENTATION NOTES:
 from __future__ import annotations
 
 import logging
+from datetime import datetime, timezone
 from typing import Optional
 
 from ..utils import paths
@@ -77,6 +78,8 @@ def run(teams: Optional[list] = None, source=None, force: bool = False):
         return {"processed": 0, "skipped": 0}
 
     branch = tts_impl.URL_BRANCH
+    tts_impl.FORCE_CACHE_BUST = force
+    tts_impl.CURRENT_RUN_CACHE_BUST = int(datetime.now(timezone.utc).timestamp())
     logger.info(f"generate_tts: {len(teams)} team(s) (url branch={branch})")
 
     # Input-hash gate: only (re)build boxes for teams whose upstream assets changed.

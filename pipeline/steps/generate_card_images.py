@@ -26,9 +26,9 @@ from ..utils.state import StateIndex, StateManager
 
 logger = logging.getLogger(__name__)
 
-DPI = 300
+DPI = 450
 ZOOM = DPI / 72  # PDF base is 72 DPI
-JPEG_QUALITY = 90
+JPEG_QUALITY = 95
 
 # Max per-channel pixel diff treated as pure re-encode/requant noise: a re-exported
 # source PDF re-compresses embedded art, so a visually-identical card renders to
