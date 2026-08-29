@@ -1,5 +1,5 @@
 -- constants
-local TTS_METADATA_URL = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/refactor-kt-app-pipeline/output_v2/tts-metadata.json"
+local TTS_METADATA_URL = "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output_v2/tts-metadata.json"
 
 local SCRIPT_VERSION = "v2.0"
 

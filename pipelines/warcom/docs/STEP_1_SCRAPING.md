@@ -16,6 +16,7 @@ Download Kill Team rules PDFs from the official Warhammer Community downloads pa
 
 - **Source**: Warhammer Community downloads page
 - **Default URL**: <https://www.warhammer-community.com/en-gb/downloads/kill-team/>
+- **Locale Support**: pass `--locale ko-kr` for the Korean downloads view, or other supported WarCom locales
 
 ---
 
@@ -179,6 +180,9 @@ layers/warcom/staging/
 ```bash
 # Default (all options)
 python pipelines/warcom/steps/1_scrape_warcom_killteam_downloads.py
+
+# Prefer official Korean PDFs
+python pipelines/warcom/steps/1_scrape_warcom_killteam_downloads.py --locale ko-kr
 
 # Custom output directory
 python ... --output layers/my-pdfs

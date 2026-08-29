@@ -4,6 +4,8 @@ from pathlib import Path
 from typing import List, Dict
 import logging
 
+from ..repo_urls import output_base_url
+
 
 class URLGenerator:
     """Generates JSON file with URLs for card images"""
@@ -11,7 +13,7 @@ class URLGenerator:
     def __init__(
         self,
         output_dir: Path = Path('output'),
-        github_base: str = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output",
+        github_base: str | None = None,
         tts_objects_dir: Path = Path('tts_objects')
     ):
         """
@@ -23,7 +25,7 @@ class URLGenerator:
             tts_objects_dir: Directory containing TTS saved object files
         """
         self.output_dir = output_dir
-        self.github_base = github_base
+        self.github_base = github_base or output_base_url(output_dir="output")
         self.tts_objects_dir = tts_objects_dir
         self.logger = logging.getLogger(__name__)
         

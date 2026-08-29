@@ -56,8 +56,9 @@ def run_step_1(args, successful_teams=None):
     
     result = step1.run(
         output_dir=args.output or workspace_root / 'layers/warcom/staging',
-        url=args.url or 'https://www.warhammer-community.com/en-gb/downloads/kill-team/',
-        delay=args.delay
+        url=args.url,
+        delay=args.delay,
+        locale=args.warcom_locale,
     )
     
     # Step 1 doesn't filter by teams - all PDFs downloaded
@@ -170,6 +171,8 @@ def main():
                        help='Output directory for PDFs (Step 1, default: input/)')
     parser.add_argument('--delay', type=float, default=1.0,
                        help='Delay between PDF downloads in seconds (Step 1)')
+    parser.add_argument('--warcom-locale', type=str, default='en-gb',
+                       help='Warhammer Community locale to prefer for downloads (Step 1, default: en-gb)')
     
     # Step 2 arguments
     parser.add_argument('--input', type=Path,

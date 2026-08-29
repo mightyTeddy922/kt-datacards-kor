@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: pytest-ruff
+Version: 0.5
+Summary: pytest plugin to check ruff requirements.
+Author: Iuri de Silvio
+Author-email: iurisilvio@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pytest (>=5)
+Requires-Dist: ruff (>=0.0.242)
+Project-URL: Homepage, https://github.com/businho/pytest-ruff
+Description-Content-Type: text/markdown
+
+# pytest-ruff
+
+A pytest plugin to run [ruff](https://pypi.org/project/ruff/).
+
+## Installation
+
+```shell
+pip install pytest-ruff
+```
+
+## Usage
+
+```shell
+pytest --ruff --ruff-format
+```
+
+The plugin will run one ruff check test per file and fail if code is not ok for ruff.
+
+Format command only checks for format and fails for formatting errors.
+
+## Configuration
+
+You can override ruff configuration options by placing a `pyproject.toml` or `ruff.toml` file in your project directory, like when using standalone ruff.
+
+## License
+
+Distributed under the terms of the `MIT` license, `pytest-ruff` is free and open source software.
+

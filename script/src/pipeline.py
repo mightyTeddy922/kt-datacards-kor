@@ -14,6 +14,7 @@ from .processors.image_extractor import ImageExtractor
 from .processors.backside_processor import BacksideProcessor
 from .processors.box_texture_processor import BoxTextureProcessor
 from .processors.v2_output_processor import V2OutputProcessor
+from .repo_urls import output_base_url
 
 
 class DatacardPipeline:
@@ -65,7 +66,7 @@ class DatacardPipeline:
         tts_objects_path = project_root / 'tts_objects'
         self.url_generator = URLGenerator(
             output_dir=output_v2_dir,
-            github_base="https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output_v2",
+            github_base=output_base_url(project_root=project_root),
             tts_objects_dir=tts_objects_path
         )
         

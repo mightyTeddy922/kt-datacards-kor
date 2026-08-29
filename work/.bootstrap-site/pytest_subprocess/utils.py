@@ -1,0 +1,243 @@
+import os
+import re
+import shlex
+import sys
+import threading
+from pathlib import Path
+from pathlib import PureWindowsPath
+from typing import Any as AnyType
+from typing import Iterator
+from typing import Optional
+from typing import Sequence
+from typing import Tuple
+from typing import TYPE_CHECKING
+from typing import Union
+
+if TYPE_CHECKING:
+    from .types import COMMAND
+
+ARGUMENT = Union[str, "Any", "Regex", os.PathLike, "Program"]
+
+
+class Thread(threading.Thread):
+    """Custom thread class to capture exceptions"""
+
+    exception: Optional[Exception] = None
+
+    def run(self) -> None:
+        try:
+            super().run()
+        except Exception as exc:
+            self.exception = exc
+
+
+class Command:
+    """Command definition class."""
+
+    __slots__ = "command"
+
+    def __init__(
+        self,
+        command: "COMMAND",
+    ):
+        if isinstance(command, str):
+            command = tuple(self._split(command))
+        if isinstance(command, list):
+            command = tuple(command)
+        elif not isinstance(command, tuple):
+            raise TypeError("Command can be only of type string, list or tuple.")
+
+        self.command: Tuple[ARGUMENT, ...] = tuple(
+            os.fspath(c) if isinstance(c, os.PathLike) else c for c in command
+        )
+
+        for i, command_elem in enumerate(self.command):
+            if isinstance(command_elem, Any) and isinstance(
+                self._get_next_command_elem(i), Any
+            ):
+                raise AttributeError("Cannot use `Any()` one after another.")
+
+    def __eq__(self, other: AnyType) -> bool:
+        if isinstance(other, str):
+            other = self._split(other)
+        elif isinstance(other, tuple):
+            other = list(other)
+
+        norm_command = [
+            os.fspath(c) if isinstance(c, os.PathLike) else c for c in self.command
+        ]
+        norm_other = [os.fspath(c) if isinstance(c, os.PathLike) else c for c in other]
+
+        if norm_other == norm_command:
+            # straightforward matching
+            return True
+
+        for i, command_elem in enumerate(norm_command):
+            if isinstance(command_elem, Any):
+                next_command_elem = self._get_next_command_elem(i)
+                if next_command_elem is None:
+                    if not self._are_thresholds_ok(command_elem, len(norm_other)):
+                        return False
+                    return True
+                else:
+                    next_matching_elem = self._get_next_matching_elem_index(
+                        norm_other, next_command_elem
+                    )
+                    if next_matching_elem is None:
+                        return False
+                    else:
+                        if not self._are_thresholds_ok(
+                            command_elem, next_matching_elem
+                        ):
+                            return False
+
+                        norm_other = norm_other[next_matching_elem:]
+            else:
+                if len(norm_other) == 0 or norm_other.pop(0) != command_elem:
+                    return False
+
+        return len(norm_other) == 0
+
+    def __iter__(self) -> Iterator[ARGUMENT]:
+        return iter(self.command)
+
+    @staticmethod
+    def _are_thresholds_ok(command_elem: "Any", value: int) -> bool:
+        if command_elem.max is not None and value > command_elem.max:
+            return False
+        if command_elem.min is not None and value < command_elem.min:
+            return False
+        return True
+
+    def _get_next_command_elem(self, index: int) -> Optional[ARGUMENT]:
+        try:
+            return self.command[index + 1]
+        except IndexError:
+            return None
+
+    @staticmethod
+    def _get_next_matching_elem_index(
+        other: Sequence[ARGUMENT], elem: ARGUMENT
+    ) -> Optional[int]:
+        return next(
+            (i for i, other_elem in enumerate(other) if elem == other_elem), None
+        )
+
+    @staticmethod
+    def _split(command: str) -> Sequence[str]:
+        if not sys.platform.startswith("win"):
+            return shlex.split(command)
+        return [
+            (
+                command_elem[1:-1]
+                if len(command_elem) >= 2 and command_elem[0] == command_elem[-1] == '"'
+                else command_elem
+            )
+            for command_elem in shlex.split(command, posix=False)
+        ]
+
+    def __hash__(self) -> int:
+        return hash(self.command)
+
+    def __repr__(self) -> str:
+        return str(self.command)
+
+    def __str__(self) -> str:
+        return str(self.command)
+
+
+class Any:
+    """Wildcard definition class."""
+
+    def __init__(self, *, min: Optional[int] = None, max: Optional[int] = None) -> None:
+        if min is not None and max is not None and min > max:
+            raise AttributeError("min cannot be greater than max")
+        self.min: Optional[int] = min
+        self.max: Optional[int] = max
+
+    def __str__(self) -> str:
+        return f"{self.__class__.__name__} (min={self.min}, max={self.max})"
+
+    def __repr__(self) -> str:
+        return str(self)
+
+
+class Program:
+    """Specifies the name of the final program to be executed."""
+
+    def __init__(self, program: str) -> None:
+        self.program: str = program
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}({self.program!r})"
+
+    def __eq__(self, other: AnyType) -> bool:
+        if isinstance(other, str):
+            if not sys.platform.startswith("win") and Path(other).name == self.program:
+                return True
+
+            if sys.platform.startswith("win"):
+                if PureWindowsPath(other).name == self.program:
+                    return True
+
+                for ext in os.environ.get("PATHEXT", "").split(";"):
+                    if (
+                        PureWindowsPath(other).name.lower()
+                        == PureWindowsPath(self.program).with_suffix(ext).name.lower()
+                    ):
+                        return True
+        return False
+
+    def __hash__(self) -> int:
+        return hash(self.program)
+
+
+class Regex:
+    """Match a single command argument against a regular expression.
+
+    Uses :func:`re.fullmatch`, so the pattern must cover the *entire* argument
+    string.  Use ``.*`` at the start or end if partial matching is desired.
+
+    Example::
+
+        def test_cmake_varying_paths(fp):
+            fp.register(["cmake", fp.regex(r"-S.+"), fp.regex(r"-B.+")])
+
+            # All of these would match:
+            subprocess.run(["cmake", "-S/tmp/src", "-B/tmp/build"])
+            subprocess.run(["cmake", "-S/other/src", "-B/other/build"])
+
+            # This would NOT match (wrong argument order or missing args):
+            # subprocess.run(["cmake", "-B/tmp/build", "-S/tmp/src"])
+
+    Args:
+        pattern: Regular expression pattern to match against.
+        flags: Optional :mod:`re` flags (e.g. ``re.IGNORECASE``).
+    """
+
+    def __init__(self, pattern: str, flags: int = 0) -> None:
+        self._compiled = re.compile(pattern, flags)
+
+    @property
+    def pattern(self) -> str:
+        """The original pattern string."""
+        return self._compiled.pattern
+
+    @property
+    def flags(self) -> int:
+        """The compiled regex flags."""
+        return self._compiled.flags
+
+    def __eq__(self, other: AnyType) -> bool:
+        if isinstance(other, str):
+            return bool(self._compiled.fullmatch(other))
+        return NotImplemented
+
+    def __hash__(self) -> int:
+        return hash((self._compiled.pattern, self._compiled.flags))
+
+    def __repr__(self) -> str:
+        return f"Regex({self._compiled.pattern!r})"
+
+    def __str__(self) -> str:
+        return repr(self)

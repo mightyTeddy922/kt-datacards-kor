@@ -3,11 +3,39 @@
 import hashlib
 import json
 import random
+import os
+import re
+import subprocess
 from pathlib import Path
 from typing import Optional
 
 # Cache for team GUID mappings
 _TEAM_GUID_CACHE = None
+
+
+def _repo_base_url(branch: str = "main") -> str:
+    """Resolve the current repository raw base URL."""
+    env_value = os.environ.get("KT_GITHUB_REPO") or os.environ.get("GITHUB_REPOSITORY")
+    if env_value:
+        slug = env_value.strip().removeprefix("https://github.com/").removesuffix(".git").strip("/")
+        return f"https://raw.githubusercontent.com/{slug}/{branch}"
+
+    project_root = Path(__file__).resolve().parents[4]
+    try:
+        remote_url = subprocess.check_output(
+            ["git", "remote", "get-url", "origin"],
+            cwd=project_root,
+            text=True,
+            encoding="utf-8",
+            errors="ignore",
+        ).strip()
+        match = re.search(r"github\.com[:/](?P<slug>[^/]+/[^/]+?)(?:\.git)?$", remote_url)
+        if match:
+            return f"https://raw.githubusercontent.com/{match.group('slug')}/{branch}"
+    except Exception:
+        pass
+
+    return "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main"
 
 
 def _load_team_guids():
@@ -354,14 +382,15 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
     # This allows backend updates per team without regenerating TTS objects
     
     branch = "main"
+    repo_base = _repo_base_url(branch)
     
     if not mesh_url:
         # Always point to output_v3 cardbox location
-        mesh_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/output_v3/{team_folder_name}/cardbox/{team_folder_name}-card-box.obj"
+        mesh_url = f"{repo_base}/output_v3/{team_folder_name}/cardbox/{team_folder_name}-card-box.obj"
     
     if not texture_url:
         # Always point to output_v3 cardbox location
-        texture_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/output_v3/{team_folder_name}/cardbox/{team_folder_name}-card-box-texture.jpg"
+        texture_url = f"{repo_base}/output_v3/{team_folder_name}/cardbox/{team_folder_name}-card-box-texture.jpg"
     
     # Create LuaScriptState with positions for each contained object.
     # IMPORTANT: Placement must be stable across teams.

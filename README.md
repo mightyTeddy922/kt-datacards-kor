@@ -128,6 +128,11 @@ input/legionaries.pdf  →  [PIPELINE]  →  output_v2/legionaries/
    poetry shell
    ```
 
+4. **Install the Playwright Chromium browser** for the WarCom scraper
+   ```bash
+   python -m playwright install chromium
+   ```
+
 That's it! The pipeline is ready to use.
 
 ### Optional: pyenv for Python Version Management
@@ -195,6 +200,70 @@ poetry run python script/generate_team_tokens.py --team murderwings --extract
 ```
 
 **See [docs/token-generation-workflow.md](docs/token-generation-workflow.md) for the complete token workflow.**
+
+### Process Official WarCom PDFs in Korean
+
+When you want to rebuild from the official Warhammer Community downloads page instead of
+using manually translated PDFs, run the dedicated WarCom pipeline and prefer the Korean
+locale:
+
+```bash
+poetry run python pipelines/warcom/pdf_process_pipeline.py --all --warcom-locale ko-kr
+```
+
+To run the full live-mod sync flow in the same order as GitHub Actions, use:
+
+```bash
+poetry run python script/sync_official_korean_warcom.py --branch main --require-korean-pdfs
+```
+
+If your local Poetry environment is missing PDF or image runtime dependencies on Windows,
+bootstrap the known-good local runtime first:
+
+```bash
+python script/bootstrap_official_korean_warcom.py
+```
+
+The sync script automatically detects `work/.bootstrap-site` and reuses it for the
+WarCom pipeline subprocesses.
+
+If the Korean route is temporarily unavailable, the scraper falls back to the English
+downloads page while still preferring locale-tagged files such as `kor_*.pdf` when they
+exist in the rendered downloads data.
+
+### Keep the Repository Auto-Updating
+
+The repository now includes a GitHub Actions workflow at
+`.github/workflows/sync-warcom-korean.yml`.
+
+- It runs on a daily schedule.
+- It can also be started manually with `workflow_dispatch`.
+- It scrapes the official WarCom Korean downloads page.
+- It regenerates the WarCom team box JSON using the current repository branch.
+- It publishes the generated WarCom results back into the live mod endpoints:
+  `tts_objects/{team}/...`, `output_v2/tts-card-boxes.json`, `output_v2/tts-metadata.json`,
+  and `output_v2/datacards-urls.json`.
+- It verifies that the run actually produced Korean staging PDFs and that the published
+  live endpoints still point at your fork before committing.
+- It commits and pushes only when the official source changed the generated files.
+
+### Verify a Korean Auto-Sync Run
+
+After the workflow runs, verify that the published mod is still pointing at your fork and
+that the WarCom scrape actually pulled Korean PDFs:
+
+```bash
+poetry run python script/verify_warcom_korean_publish.py --branch main --require-korean-pdfs
+```
+
+This verifies:
+- `output_v2/tts-card-boxes.json` points at your fork's `tts_objects/...`
+- `output_v2/tts-metadata.json` points at your fork's live card/token JSON
+- `output_v2/datacards-urls.json` points at your fork's published images
+- `layers/warcom/staging/` currently contains `kor_*.pdf` files from the official downloads page
+
+If you only want to validate the published live endpoints and do not have local staging PDFs
+in the checkout, omit `--require-korean-pdfs`.
 
 ## 📁 Project Structure
 

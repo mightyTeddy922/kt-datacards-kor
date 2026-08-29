@@ -36,6 +36,28 @@ import numpy as np
 logger = logging.getLogger(__name__)
 
 
+def _cv2_imread_unicode(path: Path, flags: int = cv2.IMREAD_COLOR) -> Optional[np.ndarray]:
+    """Read images from Unicode paths on Windows using imdecode."""
+    try:
+        raw = np.fromfile(path, dtype=np.uint8)
+    except OSError:
+        return None
+    if raw.size == 0:
+        return None
+    return cv2.imdecode(raw, flags)
+
+
+def _cv2_imwrite_unicode(path: Path, image: np.ndarray, params: Optional[List[int]] = None) -> bool:
+    """Write images to Unicode paths on Windows using imencode."""
+    suffix = path.suffix.lower() or ".png"
+    ok, encoded = cv2.imencode(suffix, image, params or [])
+    if not ok:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    encoded.tofile(path)
+    return True
+
+
 def _handle_remove_readonly(func, path, exc_info):
     """Retry removal after making a file writable."""
     try:
@@ -64,6 +86,29 @@ def _safe_unlink(path: Path, retries: int = 3, delay: float = 0.2) -> None:
             if attempt == retries - 1:
                 raise exc
             time.sleep(delay)
+
+
+def _slugify_card_name(text: str) -> str:
+    """Create a filesystem-safe slug while preserving non-Latin letters like Korean."""
+    text = re.sub(r"[^\w\s-]", "", text, flags=re.UNICODE)
+    text = re.sub(r"[-\s]+", "-", text.strip(), flags=re.UNICODE)
+    return text.strip("-").lower()
+
+
+def _match_portrait_card_type(line: str) -> Optional[str]:
+    """Map a portrait-card header line to its output card type."""
+    type_line = line.upper().strip()
+    if 'MARKER/TOKEN GUIDE' in type_line or '마커/토큰 안내' in line:
+        return 'token-guide'
+    if 'FACTION RULE' in type_line or '팩션 규칙' in line:
+        return 'faction-rules'
+    if 'EQUIPMENT' in type_line or '팩션 장비' in line:
+        return 'equipment'
+    if 'FIREFIGHT PLOY' in type_line or '화력전 플로이' in line:
+        return 'ploys/firefight'
+    if 'STRATEGY PLOY' in type_line or '전략 플로이' in line:
+        return 'ploys/strategy'
+    return None
 
 try:
     import pytesseract
@@ -98,7 +143,7 @@ def _inpaint_card_corners(image_path: Path, orientation: str = 'portrait', card_
             corner_radius = 40
         
         # Load image
-        img = cv2.imread(str(image_path))
+        img = _cv2_imread_unicode(image_path)
         if img is None:
             logger.warning(f"Failed to load image for corner inpainting: {image_path}")
             return
@@ -124,7 +169,7 @@ def _inpaint_card_corners(image_path: Path, orientation: str = 'portrait', card_
         result = cv2.inpaint(img, mask, inpaintRadius=3, flags=cv2.INPAINT_TELEA)
         
         # Save result
-        cv2.imwrite(str(image_path), result, [cv2.IMWRITE_JPEG_QUALITY, 95])
+        _cv2_imwrite_unicode(image_path, result, [cv2.IMWRITE_JPEG_QUALITY, 95])
         
     except Exception as e:
         logger.warning(f"Failed to inpaint corners for {image_path.name}: {e}")
@@ -163,7 +208,7 @@ class CardClassifier:
         """Check if card is a NOTES card (should be skipped)."""
         # Notes cards only have "NOTES:" or "NOTES" as content
         text_clean = text.strip().upper().replace(':', '').strip()
-        return text_clean == 'NOTES'
+        return text_clean in {'NOTES', '메모'}
     
     def extract_text_from_card_pdf(self, pdf_path: Path) -> str:
         """
@@ -220,7 +265,7 @@ class CardClassifier:
                     # Split block into lines
                     for line in text.split('\n'):
                         line = line.strip()
-                        if line:
+                        if line and not line.startswith('<image:'):
                             text_lines.append(line)
             
             return text_lines
@@ -272,10 +317,10 @@ class CardClassifier:
         # Pattern: Team name with "KILL TEAM" on line 1-2, followed by "ARCHETYPES"
         text_upper = card_text.upper()
         first_part = text_upper[:300]  # Check first ~300 chars for team name
-        has_kill = 'KILL' in first_part
-        has_team = 'TEAM' in first_part
-        has_archetypes = 'ARCHETYPE' in text_upper  # Matches ARCHETYPE or ARCHETYPES
-        
+        has_kill = 'KILL' in first_part or '킬' in first_part
+        has_team = 'TEAM' in first_part or '팀' in first_part
+        has_archetypes = 'ARCHETYPE' in text_upper or '아키타입' in card_text  # Matches English or Korean
+
         if has_kill and has_team and has_archetypes:
             return ('operative-selection', 'operative-selection', orientation)
         
@@ -302,23 +347,10 @@ class CardClassifier:
         Returns:
             Card type folder name or None if not recognized
         """
-        # For portrait cards, type is always at line 1 (index 1)
-        if len(lines) >= 2:
-            type_line = lines[1].upper().strip()
-            
-            # Map type header text to folder names
-            # Check token-guide FIRST before faction-rules (more specific pattern)
-            if 'MARKER/TOKEN GUIDE' in type_line:
-                return 'token-guide'
-            elif 'FACTION RULE' in type_line:
-                return 'faction-rules'
-            elif 'EQUIPMENT' in type_line:
-                return 'equipment'
-            elif 'FIREFIGHT PLOY' in type_line:
-                return 'ploys/firefight'
-            elif 'STRATEGY PLOY' in type_line:
-                return 'ploys/strategy'
-        
+        for line in lines[:5]:
+            card_type = _match_portrait_card_type(line)
+            if card_type:
+                return card_type
         return None
     
     def _extract_name_from_card(self, lines: List[str], is_landscape: bool = False) -> str:
@@ -342,9 +374,11 @@ class CardClassifier:
             # DATACARDS: Extract name from first meaningful text block
             for line in lines[:10]:  # Check first 10 lines
                 line_upper = line.upper()
+                if line.startswith('<image:'):
+                    continue
                 
                 # Skip stat keywords that might appear at top
-                if line_upper in ['APL', 'WOUNDS', 'SAVE', 'MOVE', 'GA', 'DF', 'SV']:
+                if line_upper in ['APL', 'WOUNDS', 'SAVE', 'MOVE', 'GA', 'DF', 'SV', '체력', '방호', '이동', '무기 명칭', '공격', '명중', '피해', '무기 규칙']:
                     continue
                 
                 # Skip pure numbers or stat values
@@ -355,22 +389,20 @@ class CardClassifier:
                 
                 # This should be the operative name (first meaningful text)
                 if len(line) > 3 and any(c.isalpha() for c in line):
-                    name = line_upper
-                    
-                    # Clean and format (keep full name as it appears on card)
-                    name = re.sub(r'[^A-Z0-9\s\-]', '', name)
-                    name = name.strip()
+                    name = line.strip()
+                    name = _slugify_card_name(name)
                     if name and len(name) > 2:
-                        return name.lower().replace(' ', '-')
+                        return name
             
             return None
         else:
             # PORTRAIT CARDS: Name at line 3 (index 2)
             
             # Special case: token-guide cards always have hardcoded name
-            if len(lines) >= 2:
-                type_line = lines[1].upper().strip()
-                if 'MARKER' in type_line and 'TOKEN' in type_line:
+            type_line_index = None
+            for idx, line in enumerate(lines[:5]):
+                if _match_portrait_card_type(line) == 'token-guide':
+                    type_line_index = idx
                     return 'token-guide'
             
             # Check for multi-option faction rules (ACCURSED GIFTS, SANGUAVITAE)
@@ -383,25 +415,29 @@ class CardClassifier:
                     option_match = re.match(r'^(\d+)\.?\s+(.+)', line)
                     if option_match:
                         option_name = option_match.group(2).strip()
-                        option_name = re.sub(r'[^A-Z0-9\s\-]', '', option_name)
+                        option_name = _slugify_card_name(option_name)
                         if option_name:
-                            return f"{first_line.lower().replace(' ', '-')}-{option_name.lower().replace(' ', '-')}"
+                            return f"{_slugify_card_name(first_line)}-{option_name}"
                     # Check for non-numbered option name (like "Rejuvenate")
                     elif line and line not in ['WHEN', 'EFFECT', 'GOREMONGER', 'CHAOS CULT']:
-                        option_name = re.sub(r'[^A-Z0-9\s\-]', '', line)
+                        option_name = _slugify_card_name(line)
                         if option_name:
-                            return f"{first_line.lower().replace(' ', '-')}-{option_name.lower().replace(' ', '-')}"
+                            return f"{_slugify_card_name(first_line)}-{option_name}"
                 # Fallback: return base name if no option found
-                return first_line.lower().replace(' ', '-')
+                return _slugify_card_name(first_line)
             
             # Regular portrait card: name is at line 3 (index 2)
-            if len(lines) >= 3:
-                name = lines[2]
-                # Clean and format
-                name = re.sub(r'[^A-Z0-9\s\-]', '', name)
-                name = name.strip()
+            if type_line_index is None:
+                for idx, line in enumerate(lines[:5]):
+                    if _match_portrait_card_type(line):
+                        type_line_index = idx
+                        break
+
+            if type_line_index is not None and len(lines) > type_line_index + 1:
+                name = lines[type_line_index + 1]
+                name = _slugify_card_name(name)
                 if name:
-                    return name.lower().replace(' ', '-')
+                    return name
             
             return None
 
@@ -497,7 +533,10 @@ def _has_backside_continue(card_text: str) -> bool:
     Returns:
         True if card has a continue statement
     """
-    return bool(re.search(r'CONTINUES?\s+ON\s+(?:THE\s+)?OTHER\s+SIDE', card_text.upper()))
+    return bool(
+        re.search(r'CONTINUES?\s+ON\s+(?:THE\s+)?OTHER\s+SIDE', card_text.upper())
+        or '다음 면에 계속' in card_text
+    )
 
 
 def _is_three_card_special_case(team_name: str, card_text: str, card_type: str) -> bool:

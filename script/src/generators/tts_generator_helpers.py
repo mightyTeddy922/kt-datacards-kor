@@ -6,6 +6,8 @@ import random
 from pathlib import Path
 from typing import Optional
 
+from ..repo_urls import repo_base_url
+
 # Cache for team GUID mappings
 _TEAM_GUID_CACHE = None
 
@@ -300,29 +302,30 @@ def create_deck(deck_nickname, team_tag, cards_data, starting_deck_id=1000, card
     }
 
 
-def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=None, mesh_url=None, faction=None, last_modified=None, last_token_modified=None):
+def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=None, mesh_url=None, faction=None, last_modified=None, last_token_modified=None, github_base=None):
     """Create a TTS Custom_Model_Bag containing decks and cards"""
     
     # Get team folder name from tag
     team_folder_name = team_tag.strip('_').lower().replace(' ', '-')
+    github_base = github_base or repo_base_url(project_root=Path(__file__).resolve().parents[4])
     
     # If mesh_url not provided, construct team-specific GitHub URL
     if not mesh_url:
         # Always use team-specific mesh URL (even if it's a copy of default)
         # This allows backend updates per team
         if faction:
-            mesh_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output_v2/{faction}/{team_folder_name}/tts/{team_folder_name}-card-box.obj"
+            mesh_url = f"{github_base}/output_v2/{faction}/{team_folder_name}/tts/{team_folder_name}-card-box.obj"
         else:
             # Fallback if faction not provided
-            mesh_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/config/defaults/box/card-box.obj"
+            mesh_url = f"{github_base}/config/defaults/box/card-box.obj"
     
     # Texture URL should always come from parameter (GitHub URL from datacards-urls.json)
     if not texture_url:
         # Fallback: construct team-specific texture URL
         if faction:
-            texture_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output_v2/{faction}/{team_folder_name}/tts/{team_folder_name}-card-box-texture.jpg"
+            texture_url = f"{github_base}/output_v2/{faction}/{team_folder_name}/tts/{team_folder_name}-card-box-texture.jpg"
         else:
-            texture_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/config/defaults/box/card-box-texture.jpg"
+            texture_url = f"{github_base}/config/defaults/box/card-box-texture.jpg"
     
     # Create LuaScriptState with positions for each contained object.
     # IMPORTANT: Placement must be stable across teams.

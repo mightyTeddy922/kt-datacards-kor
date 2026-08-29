@@ -29,6 +29,9 @@ poetry install
 ### Run All Steps (1-3)
 ```bash
 poetry run python pipelines/warcom/pdf_process_pipeline.py --all
+
+# Prefer official Korean PDFs
+poetry run python pipelines/warcom/pdf_process_pipeline.py --all --warcom-locale ko-kr
 ```
 
 ### Run Individual Steps

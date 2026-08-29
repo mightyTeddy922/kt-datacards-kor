@@ -15,6 +15,8 @@ import yaml
 import hashlib
 from typing import Dict, List
 
+from ..repo_urls import repo_base_url
+
 
 class TeamTokenBagGenerator:
     """Generate team token bags with Lua script controls."""
@@ -23,13 +25,11 @@ class TeamTokenBagGenerator:
     # Using square-bag-mesh.obj - a simple 1x1 square for the bag
     BAG_MESH_SOURCE = "config/defaults/tts-token/square-bag-mesh.obj"
 
-    # GitHub repo base URL
-    GITHUB_BASE = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
-
     def __init__(self, team_config_path: Path = Path('config/team-config.yaml')):
         self.team_config_path = team_config_path
         self.team_config = self._load_team_config()
         self.lua_script = self._load_lua_script()
+        self.github_base = repo_base_url(project_root=Path(__file__).resolve().parents[3])
 
     def _load_team_config(self) -> Dict:
         """Load team configuration."""
@@ -174,7 +174,7 @@ class TeamTokenBagGenerator:
         # Always overwrite to ensure updates are applied
         shutil.copy2(source, dest)
         
-        return f"{self.GITHUB_BASE}/output_v2/{faction}/{team_name}/tts/{dest.name}"
+        return f"{self.github_base}/output_v2/{faction}/{team_name}/tts/{dest.name}"
 
     def _get_icon_image_url(self, team_name: str, faction: str, output_dir: Path) -> str:
         """Resolve and copy team icon image to output, return URL.
@@ -204,7 +204,7 @@ class TeamTokenBagGenerator:
         import shutil
         shutil.copy2(icon_source, dest_file)
         
-        return f"{self.GITHUB_BASE}/output_v2/{faction}/{team_name}/tts/{dest_file.name}"
+        return f"{self.github_base}/output_v2/{faction}/{team_name}/tts/{dest_file.name}"
 
     def generate_team_icon_tile(self, team_name: str, faction: str, output_dir: Path) -> Dict:
         """Generate the Custom_Tile showing team icon."""

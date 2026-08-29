@@ -99,7 +99,35 @@ def match_team_name(extracted_name: str, team_config: Dict[str, dict]) -> Option
     return None
 
 
-def extract_team_name_from_pdf(pdf_path: Path) -> str:
+def extract_team_name_from_filename(pdf_path: Path, team_config: Dict[str, dict]) -> Optional[str]:
+    """Infer a canonical team slug from a WarCom PDF filename."""
+    stem = pdf_path.stem.lower().replace("_", "-")
+    stem = re.sub(r"^(?:kor|eng|deu|ger|fra|fre|ita|spa|esp|jpn|jap|korean)-", "", stem)
+    stem = re.sub(r"^\d{2}-\d{2}-", "", stem)
+    stem = re.sub(r"^kill-team-", "", stem)
+    stem = re.sub(r"^killteam-", "", stem)
+    stem = re.sub(r"^team-rules-", "", stem)
+    stem = re.sub(r"-(?:[a-z0-9]{10})-(?:[a-z0-9]{10})$", "", stem)
+    stem = re.sub(r"-team-rules$", "", stem)
+    stem = re.sub(r"-online-rules$", "", stem)
+    stem = re.sub(r"^kill-team-team-rules-", "", stem)
+    stem = re.sub(r"^kill-team-", "", stem)
+    stem = stem.strip("-")
+
+    for config_key, config_data in team_config.items():
+        candidates = {config_key.lower().replace("_", "-")}
+        canonical = config_data.get("canonical_name")
+        if canonical:
+            candidates.add(canonical.lower().replace(" ", "-").replace("_", "-"))
+        for alias in config_data.get("aliases", []):
+            candidates.add(alias.lower().replace(" ", "-").replace("_", "-"))
+        if stem in candidates:
+            return config_key.lower().replace(" ", "-")
+
+    return match_team_name(stem, team_config)
+
+
+def extract_team_name_from_pdf(pdf_path: Path, team_config: Optional[Dict[str, dict]] = None) -> str:
     """
     Extract team name from PDF by finding large text near 'KILL TEAM' on later pages.
     Returns the extracted team name or an empty string if not found.
@@ -108,6 +136,11 @@ def extract_team_name_from_pdf(pdf_path: Path) -> str:
     should be improved for better reliability - consider checking multiple pages or using
     more specific patterns to identify team names vs other large text.
     """
+    if team_config:
+        filename_team = extract_team_name_from_filename(pdf_path, team_config)
+        if filename_team:
+            return filename_team
+
     try:
         doc = fitz.open(pdf_path)
         
@@ -1328,12 +1361,14 @@ def run(input_dir: Path = None, output_dir: Path = None, templates_file: Path = 
             
             # Extract team name from PDF content
             logger.info("  [%s] Extracting team name...", pdf_name)
-            extracted_name = extract_team_name_from_pdf(pdf_file)
+            extracted_name = extract_team_name_from_pdf(pdf_file, team_config)
             if not extracted_name:
-                raise ValueError("No team name extracted from PDF content")
+                raise ValueError("No team name extracted from PDF content or filename")
 
             # Match against config
             team_name = match_team_name(extracted_name, team_config) if team_config else extracted_name
+            if team_config and not team_name:
+                team_name = extract_team_name_from_filename(pdf_file, team_config)
             if team_config and not team_name:
                 raise ValueError(f"No team match for extracted name '{extracted_name}'")
             logger.info("  [%s] Team: %s (from '%s')", pdf_name, team_name, extracted_name)
@@ -1453,7 +1488,7 @@ def populate_staging_from_archive(archive_dir: Path, staging_dir: Path) -> None:
     skipped = 0
     for pdf_file in pdf_files:
         try:
-            extracted_name = extract_team_name_from_pdf(pdf_file)
+            extracted_name = extract_team_name_from_pdf(pdf_file, team_config)
             if not extracted_name:
                 skipped += 1
                 continue
@@ -1511,10 +1546,10 @@ def main():
         dpi=args.dpi,
         max_workers=args.workers
     )
-    
-    # Exit with error code if failed
-    if not result['success']:
-        exit(1)
+
+    # Keep the pipeline moving when at least one team was extracted successfully.
+    # Individual failures are already reported in the step summary.
+    exit(0 if result.get('files_processed', 0) > 0 else 1)
 
 
 if __name__ == '__main__':

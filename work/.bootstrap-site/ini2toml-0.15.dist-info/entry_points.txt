@@ -1,0 +1,12 @@
+[console_scripts]
+ini2toml = ini2toml.cli:run
+
+[ini2toml.processing]
+best_effort = ini2toml.plugins.best_effort:activate
+coverage = ini2toml.plugins.coverage:activate
+independent_tasks = ini2toml.plugins.profile_independent_tasks:activate
+isort = ini2toml.plugins.isort:activate
+mypy = ini2toml.plugins.mypy:activate
+pytest = ini2toml.plugins.pytest:activate
+setuptools_pep621 = ini2toml.plugins.setuptools_pep621:activate
+toml_incompatibilities = ini2toml.plugins.toml_incompatibilities:activate

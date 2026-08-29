@@ -22,6 +22,8 @@ import cv2
 import numpy as np
 import math
 
+from ..repo_urls import repo_base_url
+
 
 class TTSTokenGenerator:
     """Generate TTS token objects and infinite bags."""
@@ -44,9 +46,6 @@ class TTSTokenGenerator:
     # Use per-shape merge distances derived from the reference canvas sizes.
     MERGE_DISTANCE_PX_ROUND = max(5.0, float(int(round(max(TOKEN_CANVAS_ROUND) / 40))))
     MERGE_DISTANCE_PX_OPERATIVE = max(5.0, float(int(round(max(TOKEN_CANVAS_OPERATIVE) / 40))))
-
-    # GitHub repo base URL
-    GITHUB_BASE = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
 
     # Token size in Tabletop Simulator.
     #
@@ -116,7 +115,7 @@ class TTSTokenGenerator:
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, dest)
         
-        return f"{self.GITHUB_BASE}/output_v2/{faction}/{team_name}/tts/token/{dest.name}"
+        return f"{self.github_base}/output_v2/{faction}/{team_name}/tts/token/{dest.name}"
 
     def _flatten_alpha_to_bgr(self, bgra: np.ndarray, *, background_bgr: tuple[int, int, int]) -> np.ndarray:
         if bgra is None or bgra.ndim != 3 or bgra.shape[2] != 4:
@@ -221,12 +220,10 @@ class TTSTokenGenerator:
 
         return None
 
-    # GitHub repo base URL (from existing project)
-    GITHUB_BASE = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
-
     def __init__(self, team_config_path: Path = Path('config/team-config.yaml')):
         self.team_config_path = team_config_path
         self.team_config = self._load_team_config()
+        self.github_base = repo_base_url(project_root=Path(__file__).resolve().parents[3])
 
     def _load_team_config(self) -> Dict:
         """Load team configuration to get faction information."""
@@ -685,7 +682,7 @@ class TTSTokenGenerator:
             # Add cache busting parameter using current timestamp
             cache_bust = int(time.time())
             token_texture_url = (
-                f"{self.GITHUB_BASE}/output_v2/{faction}/{team_name}/tts/token/{dest_image.name}?v={cache_bust}"
+                f"{self.github_base}/output_v2/{faction}/{team_name}/tts/token/{dest_image.name}?v={cache_bust}"
                 if has_image
                 else ""
             )

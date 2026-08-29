@@ -7,6 +7,8 @@ import random
 import shutil
 import logging
 
+from ..repo_urls import repo_base_url
+
 
 class TTSGenerator:
     """Generates TTS Custom_Model_Bag objects from datacards URLs"""
@@ -32,6 +34,7 @@ class TTSGenerator:
         self.config_dir = config_dir
         self.team_filter = team_filter
         self.logger = logging.getLogger(__name__)
+        self.github_base = repo_base_url(project_root=self.output_v2_dir.resolve().parent)
 
     def generate_all_tts_objects(self) -> int:
         """
@@ -92,9 +95,6 @@ class TTSGenerator:
             team_display_name = self._get_team_display_name(team_name)
             output_filename = f"{team_display_name} Cards.json"
             
-            self._generate_team_tts_object(team_name, cards, lua_script, texture_url, mesh_url)
-            
-            # Add entry for this TTS object
             output_filename = f"{team_display_name} Cards.json"
             
             self._generate_team_tts_object(team_name, cards, lua_script, texture_url, mesh_url)
@@ -105,7 +105,7 @@ class TTSGenerator:
                 'team': team_name,
                 'type': 'tts_card_box_object',
                 'name': team_display_name,
-                'url': f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/tts_objects/{team_name}/{output_filename.replace(' ', '%20')}"
+                'url': f"{self.github_base}/tts_objects/{team_name}/{output_filename.replace(' ', '%20')}"
             })
             
             count += 1
@@ -248,7 +248,7 @@ class TTSGenerator:
         placeholder_timestamp = "2000-01-01T00:00:00"
         placeholder_token_timestamp = ""
         
-        bag_obj = create_bag(team_display_name, team_tag, contained_objects, lua_script, texture_url, mesh_url, faction, placeholder_timestamp, placeholder_token_timestamp)
+        bag_obj = create_bag(team_display_name, team_tag, contained_objects, lua_script, texture_url, mesh_url, faction, placeholder_timestamp, placeholder_token_timestamp, github_base=self.github_base)
         
         # Save to file
         with open(output_file, 'w', encoding='utf-8') as f:
@@ -278,7 +278,7 @@ class TTSGenerator:
         update_urls_in_object(bag_obj)
         
         # Update the bag object with the actual file timestamp in LuaScriptState
-        bag_obj = create_bag(team_display_name, team_tag, contained_objects, lua_script, texture_url, mesh_url, faction, actual_timestamp, token_timestamp or "")
+        bag_obj = create_bag(team_display_name, team_tag, contained_objects, lua_script, texture_url, mesh_url, faction, actual_timestamp, token_timestamp or "", github_base=self.github_base)
         
         # Apply URL updates again after recreating bag
         update_urls_in_object(bag_obj)

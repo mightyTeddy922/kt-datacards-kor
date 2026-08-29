@@ -1,0 +1,193 @@
+"""
+This module is a Sphinx plugin. Add ``jaraco.packaging.sphinx``
+to conf.py, and the setup hook does the rest.
+
+>>> 'setup' in globals()
+True
+"""
+
+from __future__ import annotations
+
+import os
+import warnings
+from collections.abc import MutableMapping
+from typing import TYPE_CHECKING, ClassVar
+
+import docutils.nodes
+import docutils.statemachine
+import domdf_python_tools.stringlist
+import sphinx.addnodes
+import sphinx.application
+import sphinx.config
+import sphinx.util.docutils
+from docutils.parsers.rst import directives
+from jaraco.context import suppress
+
+from . import metadata as jp_metadata
+
+if TYPE_CHECKING:
+    import importlib_metadata as metadata
+else:
+    from importlib import metadata
+
+
+def setup(app: sphinx.application.Sphinx) -> dict[str, str | bool]:
+    """
+    >>> class MockApp:
+    ...     def add_config_value(self, *a): pass
+    ...     def connect(self, *a): pass
+    ...     def add_directive(self, *a): pass
+    >>> result = setup(MockApp())
+    >>> result['parallel_read_safe']
+    True
+    """
+    app.add_config_value('package_url', '', '')
+    app.add_config_value('source_url', '', '')
+    app.connect('config-inited', load_config_from_setup)
+    app.connect('config-inited', configure_substitutions)
+    app.connect('html-page-context', add_package_url)
+    app.add_directive("sidebar-links", SidebarLinksDirective)
+    return dict(version=metadata.version('jaraco.packaging'), parallel_read_safe=True)
+
+
+class SidebarLinksDirective(sphinx.util.docutils.SphinxDirective):
+    """
+    Directive which adds a toctree to the sidebar containing links to the project home
+    and PyPI repo.
+    """
+
+    has_content: ClassVar[bool] = True
+
+    option_spec = {
+        "pypi": directives.flag,
+        "home": directives.flag,
+        "releases": directives.flag,
+        "caption": directives.unchanged_required,
+    }
+
+    def run(self) -> list[sphinx.addnodes.only]:
+        """
+        Create the installation node.
+
+        >>> from unittest.mock import MagicMock
+        >>> directive = object.__new__(SidebarLinksDirective)
+        >>> directive.state = MagicMock()
+        >>> env = directive.state.document.settings.env
+        >>> env.docname = env.config.master_doc = 'index'
+        >>> env.config.source_url = 'https://github.com/foo/bar'
+        >>> directive.options = {'releases': None}
+        >>> directive.content = []
+        >>> directive.content_offset = 0
+        >>> len(directive.run())  # one 'only' node wrapping the toctree
+        1
+        >>> env.config.source_url = ''
+        >>> from docutils.parsers.rst import DirectiveError
+        >>> directive.run()
+        Traceback (most recent call last):
+            ...
+        docutils.parsers.rst.DirectiveError
+        """
+
+        if self.env.docname != self.env.config.master_doc:
+            return []
+
+        body = domdf_python_tools.stringlist.StringList([
+            ".. toctree::",
+            "    :hidden:",
+        ])
+
+        with body.with_indent("    ", 1):
+            body.append(f":caption: {self.options.get('caption', 'Links')}")
+            body.blankline()
+
+            if "home" in self.options:
+                body.append(f"Home <{self.env.config.package_url}>")
+            if "pypi" in self.options:
+                body.append(
+                    f"PyPI <https://pypi.org/project/{self.env.config.project}>"
+                )
+            if "releases" in self.options:
+                source_url = self.env.config.source_url
+                if not source_url:
+                    raise self.error(
+                        "releases link requires a Source URL in project metadata"
+                    )
+                body.append(f"Releases <{source_url}/releases>")
+
+            body.extend(self.content)
+
+        body.blankline()
+        body.blankline()
+
+        only_node = sphinx.addnodes.only(expr="html")
+        content_node = docutils.nodes.paragraph(rawsource=str(body))
+        only_node += content_node
+        self.state.nested_parse(
+            docutils.statemachine.StringList(body), self.content_offset, content_node
+        )
+
+        return [only_node]
+
+
+@suppress(KeyError)
+def _load_metadata_from_wheel() -> metadata.PackageMetadata:
+    """
+    If indicated by an environment variable, expect the metadata
+    to be present in a wheel and load it from there, avoiding
+    the build process. Ref jaraco/jaraco.packaging#7.
+
+    >>> _load_metadata_from_wheel()
+    >>> getfixture('static_wheel')
+    >>> meta = _load_metadata_from_wheel()
+    >>> meta['Name']
+    'sampleproject'
+    """
+    wheel = os.environ['JARACO_PACKAGING_SPHINX_WHEEL']
+    warnings.warn(
+        "JARACO_PACKAGING_SPHINX_WHEEL is deprecated; "
+        "use BUILD_ENVIRONMENT=current instead",
+        DeprecationWarning,
+    )
+    (dist,) = metadata.distributions(path=[wheel])
+    assert dist.metadata is not None
+    return dist.metadata
+
+
+def load_config_from_setup(
+    app: sphinx.application.Sphinx, config: sphinx.config.Config
+) -> None:
+    """
+    Replace values in app.config from package metadata
+
+    >>> class MockConfig:
+    ...     pass
+    >>> class MockApp:
+    ...     confdir = 'docs'
+    >>> config = MockConfig()
+    >>> load_config_from_setup(MockApp(), config)
+    >>> config.source_url
+    'https://github.com/jaraco/jaraco.packaging'
+    """
+    # for now, assume project root is one level up
+    root = os.path.join(app.confdir, '..')
+    meta = _load_metadata_from_wheel() or jp_metadata.load(root)
+    config.project = meta['Name']
+    config.version = config.release = meta['Version']
+    config.package_url = jp_metadata.hunt_down_url(meta)
+    config.source_url = jp_metadata.get_source_url(meta)
+    config.author = config.copyright = jp_metadata.extract_author(meta)
+
+
+def configure_substitutions(app: object, config: sphinx.config.Config) -> None:
+    epilogs = config.rst_epilog, f'.. |project| replace:: {config.project}'
+    config.rst_epilog = '\n'.join(filter(None, epilogs))
+
+
+def add_package_url(
+    app: sphinx.application.Sphinx,
+    pagename: object,
+    templatename: object,
+    context: MutableMapping[str, str],
+    doctree: object,
+) -> None:
+    context['package_url'] = app.config.package_url

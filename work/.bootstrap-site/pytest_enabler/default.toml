@@ -1,0 +1,17 @@
+[tool.pytest-enabler.black]
+addopts = "--black"
+
+[tool.pytest-enabler.mypy]
+addopts = "--mypy --mypy-report-style mypy --mypy-no-status-check"
+
+[tool.pytest-enabler.cov]
+addopts = "--cov"
+
+[tool.pytest-enabler.ruff]
+addopts = "--ruff --ruff-format"
+
+[tool.pytest-enabler.xdist]
+addopts = "-n auto"
+
+[tool.pytest-enabler.ignore_flaky]
+addopts = "--ignore-flaky"

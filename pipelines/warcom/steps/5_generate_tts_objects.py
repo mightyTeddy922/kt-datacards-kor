@@ -23,8 +23,11 @@ import argparse
 import json
 import hashlib
 import logging
+import os
 import re
 import shutil
+import subprocess
+from urllib.parse import quote
 import yaml
 import cv2
 import numpy as np
@@ -36,6 +39,90 @@ from abc import ABC, abstractmethod
 
 
 logger = logging.getLogger(__name__)
+
+DEFAULT_GITHUB_REPO = "mightyTeddy922/kt-datacards-kor"
+
+
+def _cv2_imread_unicode(path: Path, flags: int = cv2.IMREAD_COLOR) -> Optional[np.ndarray]:
+    """Read images from Unicode paths on Windows using imdecode."""
+    try:
+        raw = np.fromfile(path, dtype=np.uint8)
+    except OSError:
+        return None
+    if raw.size == 0:
+        return None
+    return cv2.imdecode(raw, flags)
+
+
+def _cv2_imwrite_unicode(path: Path, image: np.ndarray) -> bool:
+    """Write images to Unicode paths on Windows using imencode."""
+    suffix = path.suffix.lower() or ".png"
+    ok, encoded = cv2.imencode(suffix, image)
+    if not ok:
+        return False
+    path.parent.mkdir(parents=True, exist_ok=True)
+    encoded.tofile(path)
+    return True
+
+
+def encode_raw_path(path: str) -> str:
+    """Percent-encode a repo-relative path for use in raw GitHub URLs."""
+    return quote(path, safe="/-_.~")
+
+
+def rewrite_raw_urls_in_data(content: Any, workspace_root: Path, branch: str) -> Any:
+    """Rewrite legacy raw GitHub URLs in JSON-like data to the current repo slug."""
+    if isinstance(content, dict):
+        return {
+            key: rewrite_raw_urls_in_data(value, workspace_root, branch)
+            for key, value in content.items()
+        }
+    if isinstance(content, list):
+        return [rewrite_raw_urls_in_data(item, workspace_root, branch) for item in content]
+    if isinstance(content, str) and content.startswith("https://raw.githubusercontent.com/"):
+        path_part = content.split("https://raw.githubusercontent.com/", 1)[1]
+        segments = path_part.split("/", 3)
+        if len(segments) == 4:
+            repo_relative = segments[3].split("?", 1)[0]
+            return f"{build_repo_base_url(workspace_root, branch)}/{encode_raw_path(repo_relative)}"
+    return content
+
+
+def load_first_existing_text(*paths: Path) -> str:
+    """Read the first existing text file from a list of candidate paths."""
+    for path in paths:
+        if path.exists():
+            return path.read_text(encoding="utf-8")
+    return ""
+
+
+def resolve_github_repo_slug(workspace_root: Path) -> str:
+    """Resolve the GitHub owner/repo slug for raw asset URLs."""
+    env_value = os.environ.get("KT_GITHUB_REPO")
+    if env_value:
+        return env_value.strip().removeprefix("https://github.com/").removesuffix(".git").strip("/")
+
+    try:
+        remote_url = subprocess.check_output(
+            ["git", "remote", "get-url", "origin"],
+            cwd=workspace_root,
+            text=True,
+            encoding="utf-8",
+            errors="ignore",
+        ).strip()
+    except Exception:
+        return DEFAULT_GITHUB_REPO
+
+    https_match = re.search(r"github\.com[:/](?P<slug>[^/]+/[^/]+?)(?:\.git)?$", remote_url)
+    if https_match:
+        return https_match.group("slug")
+
+    return DEFAULT_GITHUB_REPO
+
+
+def build_repo_base_url(workspace_root: Path, branch: str = "main") -> str:
+    slug = resolve_github_repo_slug(workspace_root)
+    return f"https://raw.githubusercontent.com/{slug}/{branch}"
 
 
 # ===================================================================
@@ -384,7 +471,7 @@ def _apply_template_and_save(
     template_mask: np.ndarray,
     target_size: Tuple[int, int],
 ) -> bool:
-    img = cv2.imread(str(src_path), cv2.IMREAD_UNCHANGED)
+    img = _cv2_imread_unicode(src_path, cv2.IMREAD_UNCHANGED)
     if img is None:
         return False
     bgr, existing_alpha = _ensure_bgr_alpha(img)
@@ -410,11 +497,11 @@ def _apply_template_and_save(
 
     rgba = np.dstack([bgr, alpha])
     dest_path.parent.mkdir(parents=True, exist_ok=True)
-    return bool(cv2.imwrite(str(dest_path), rgba))
+    return _cv2_imwrite_unicode(dest_path, rgba)
 
 
 def _load_template_with_size(path: Path) -> Tuple[np.ndarray, Tuple[int, int]]:
-    img = cv2.imread(str(path), cv2.IMREAD_UNCHANGED)
+    img = _cv2_imread_unicode(path, cv2.IMREAD_UNCHANGED)
     if img is None:
         raise ValueError(f"Failed to read template: {path}")
     _bgr, alpha = _ensure_bgr_alpha(img)
@@ -690,6 +777,61 @@ def prepare_clean_tokens(team_name: str, workspace_root: Path) -> Tuple[Optional
     return final_tokens_dir, output_name_map
 
 
+def load_legacy_token_dispensers(
+    team_name: str,
+    workspace_root: Path,
+    registry: ComponentRegistry,
+    branch: str,
+) -> List["LegacyTokenDispenser"]:
+    """Load existing token dispenser JSONs from legacy output locations."""
+    candidate_dirs = [
+        workspace_root / "output" / team_name / "tts_objects" / "tokens",
+        workspace_root / "tts_objects" / team_name / "tokens",
+    ]
+
+    dispensers: List["LegacyTokenDispenser"] = []
+    for candidate_dir in candidate_dirs:
+        if not candidate_dir.exists():
+            continue
+
+        for json_path in sorted(candidate_dir.glob("*.json")):
+            if json_path.stem.endswith("tokenbag"):
+                continue
+
+            try:
+                raw_content = json.loads(json_path.read_text(encoding="utf-8"))
+            except Exception:
+                logger.warning("Could not read legacy token JSON: %s", json_path)
+                continue
+
+            if isinstance(raw_content, dict) and "ObjectStates" in raw_content:
+                object_states = raw_content.get("ObjectStates") or []
+                if not object_states:
+                    continue
+                raw_content = object_states[0]
+
+            if not isinstance(raw_content, dict):
+                continue
+
+            normalized_content = rewrite_raw_urls_in_data(raw_content, workspace_root, branch)
+            nickname = str(normalized_content.get("Nickname") or json_path.stem).strip()
+            dispenser_slug = slugify(nickname or json_path.stem)
+            dispensers.append(
+                LegacyTokenDispenser(
+                    registry=registry,
+                    team_name=team_name,
+                    dispenser_name=nickname or json_path.stem,
+                    component_key=dispenser_slug,
+                    content=normalized_content,
+                )
+            )
+
+        if dispensers:
+            break
+
+    return dispensers
+
+
 def find_tokens_dir(team_name: str, workspace_root: Path) -> Optional[Path]:
     """Locate the tokens directory for a team if it exists."""
     output_tokens = workspace_root / "output" / team_name / "tokens"
@@ -705,9 +847,11 @@ def find_tokens_dir(team_name: str, workspace_root: Path) -> Optional[Path]:
 
 def build_raw_url(file_path: Path, workspace_root: Path, branch: str = "main") -> str:
     """Build a GitHub raw URL for a local file path."""
-    repo_base = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}"
+    workspace_root = workspace_root.resolve()
+    file_path = file_path.resolve()
+    repo_base = build_repo_base_url(workspace_root, branch)
     rel_path = file_path.relative_to(workspace_root).as_posix()
-    return f"{repo_base}/{rel_path}"
+    return f"{repo_base}/{encode_raw_path(rel_path)}"
 
 
 # ===================================================================
@@ -769,8 +913,7 @@ class TTSComponent(ABC):
         file_path = self.get_file_path(output_base)
         rel_path = file_path.relative_to(workspace_root).as_posix()
         
-        repo_url = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
-        return f"{repo_url}/{rel_path}"
+        return build_raw_url(file_path, workspace_root, "main")
     
     def get_file_path(self, output_dir: Path) -> Path:
         """Get the file path for this component based on its component path."""
@@ -1282,6 +1425,34 @@ class TTSTokenBag(TTSComponent):
         return hash_hex[:6]
 
 
+class LegacyTokenDispenser(TTSComponent):
+    """Wrap a legacy token dispenser JSON so it can be embedded in new card boxes."""
+
+    def __init__(
+        self,
+        registry: ComponentRegistry,
+        team_name: str,
+        dispenser_name: str,
+        component_key: str,
+        content: Dict[str, Any],
+    ):
+        super().__init__(registry)
+        self.team_name = team_name
+        self.dispenser_name = dispenser_name
+        self.component_key = component_key
+        self.content = content
+        self.token = None
+
+    def get_component_path(self) -> str:
+        return f"{self.team_name}.cardbox.token-bag.{self.component_key}"
+
+    def get_component_type(self) -> str:
+        return "token_dispenser"
+
+    def generate(self) -> Dict[str, Any]:
+        return self.content
+
+
 class TTSCardBox(TTSComponent):
     """Complete TTS card box containing all decks for a team."""
     
@@ -1587,12 +1758,14 @@ def register_image_and_get_url(
     image_content = image_path.read_bytes()
     
     # Build component path for metadata tracking
+    workspace_root = workspace_root.resolve()
+    image_path = image_path.resolve()
     rel_path = image_path.relative_to(workspace_root)
     component_path = f"images.{rel_path.as_posix().replace('/', '.')}"
     
     # Build base URL
-    repo_base = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}"
-    base_url = f"{repo_base}/{rel_path.as_posix()}"
+    repo_base = build_repo_base_url(workspace_root, branch)
+    base_url = f"{repo_base}/{encode_raw_path(rel_path.as_posix())}"
     
     # Register in metadata system
     was_updated, metadata = registry.register(
@@ -1877,8 +2050,10 @@ def generate_team_tts(team_dir: Path, output_dir: Path, registry: ComponentRegis
         if token_images:
             dispenser_mesh_path = workspace_root / "config" / "defaults" / "tts-token" / "square-bag-mesh.obj"
             dispenser_mesh_url = build_raw_url(dispenser_mesh_path, workspace_root, branch)
-            token_bag_script_path = workspace_root / "config" / "defaults" / "tts-script" / "token-bag-script.lua"
-            token_bag_script = load_text_file(token_bag_script_path)
+            token_bag_script = load_first_existing_text(
+                workspace_root / "config" / "defaults" / "tts-script" / "token-bag-script.lua",
+                workspace_root / "config" / "defaults" / "tts-token" / "token-bag-script.lua",
+            )
 
             dispensers = []
             seen_slugs = set()
@@ -1930,9 +2105,32 @@ def generate_team_tts(team_dir: Path, output_dir: Path, registry: ComponentRegis
                 )
                 logger.info("Created token bag with %d dispensers", len(dispensers))
     else:
-        logger.error("Token processing failed for %s; missing name mapping.", team_name)
-        # Don't return early - continue to save cards even if tokens fail
-        # return False
+        legacy_dispensers = load_legacy_token_dispensers(team_name, workspace_root, registry, branch)
+        if legacy_dispensers:
+            token_bag_script = load_first_existing_text(
+                workspace_root / "config" / "defaults" / "tts-script" / "token-bag-script.lua",
+                workspace_root / "config" / "defaults" / "tts-token" / "token-bag-script.lua",
+            )
+            output_bag_mesh = output_dir / team_name / "tts" / "cardbox" / "token-bag" / f"{team_name}-token-bag.obj"
+            source_bag_mesh = workspace_root / "config" / "defaults" / "tts-token" / "square-bag-mesh.obj"
+            pending_mesh_copy = (source_bag_mesh, output_bag_mesh)
+            token_bag = TTSTokenBag(
+                registry=registry,
+                team_name=team_name,
+                dispensers=legacy_dispensers,
+                mesh_url=build_raw_url(output_bag_mesh, workspace_root, branch),
+                icon_url=get_team_icon_url(team_name, workspace_root, output_dir, branch),
+                lua_script=token_bag_script,
+            )
+            logger.info(
+                "Reused legacy token dispensers for %s (%d dispensers)",
+                team_name,
+                len(legacy_dispensers),
+            )
+        else:
+            logger.error("Token processing failed for %s; missing name mapping.", team_name)
+            # Don't return early - continue to save cards even if tokens fail
+            # return False
     
     # Create card box (container for all decks and token bag)
     # TODO: Extract proper faction and display name from metadata
@@ -2062,18 +2260,19 @@ def generate_team_tts(team_dir: Path, output_dir: Path, registry: ComponentRegis
             json.dump(token_bag._content, f, indent=2, ensure_ascii=False)
 
         for dispenser in token_bag.dispensers:
-            dispenser_slug = slugify(dispenser.dispenser_name)
+            dispenser_slug = slugify(getattr(dispenser, "dispenser_name", "token"))
             dispenser_file = team_output / "cardbox" / "token-bag" / dispenser_slug / f"{team_name}-{dispenser_slug}.json"
             dispenser_file.parent.mkdir(parents=True, exist_ok=True)
             if dispenser._content:
                 with open(dispenser_file, 'w', encoding='utf-8') as f:
                     json.dump(dispenser._content, f, indent=2, ensure_ascii=False)
 
-            if dispenser.token and dispenser.token._content:
-                token_slug = slugify(dispenser.token.token_name)
+            dispenser_token = getattr(dispenser, "token", None)
+            if dispenser_token and dispenser_token._content:
+                token_slug = slugify(dispenser_token.token_name)
                 token_file = dispenser_file.parent / f"{team_name}-{token_slug}-token.json"
                 with open(token_file, 'w', encoding='utf-8') as f:
-                    json.dump(dispenser.token._content, f, indent=2, ensure_ascii=False)
+                    json.dump(dispenser_token._content, f, indent=2, ensure_ascii=False)
         
         # NOW copy the token bag mesh and icon files after cardbox directory is set up
         token_bag_dir = team_output / "cardbox" / "token-bag"

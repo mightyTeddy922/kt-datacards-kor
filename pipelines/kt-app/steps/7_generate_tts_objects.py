@@ -25,8 +25,10 @@ import argparse
 import hashlib
 import json
 import logging
+import os
 import re
 import shutil
+import subprocess
 import yaml
 from pathlib import Path
 from collections import defaultdict
@@ -52,6 +54,30 @@ logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 PIPELINE_METADATA_FILE = PROJECT_ROOT / "layers" / "kt-app" / "metadata.json"
 OUTPUT_METADATA_FILE = PROJECT_ROOT / "output" / "metadata.json"
+
+
+def get_repo_base_url(branch: str = "main") -> str:
+    """Resolve the current repository raw base URL."""
+    env_value = os.environ.get("KT_GITHUB_REPO") or os.environ.get("GITHUB_REPOSITORY")
+    if env_value:
+        slug = env_value.strip().removeprefix("https://github.com/").removesuffix(".git").strip("/")
+        return f"https://raw.githubusercontent.com/{slug}/{branch}"
+
+    try:
+        remote_url = subprocess.check_output(
+            ["git", "remote", "get-url", "origin"],
+            cwd=PROJECT_ROOT,
+            text=True,
+            encoding="utf-8",
+            errors="ignore",
+        ).strip()
+        match = re.search(r"github\.com[:/](?P<slug>[^/]+/[^/]+?)(?:\.git)?$", remote_url)
+        if match:
+            return f"https://raw.githubusercontent.com/{match.group('slug')}/{branch}"
+    except Exception:
+        pass
+
+    return "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main"
 
 
 # ===================================================================
@@ -149,7 +175,7 @@ def generate_urls_json_v3():
     """Generate flat list format for internal use (backwards compatibility)"""
     output_dir = PROJECT_ROOT / 'output'
     branch = "main"
-    base_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/output"
+    base_url = f"{get_repo_base_url(branch)}/output"
     
     all_entries = []
     
@@ -226,7 +252,8 @@ def generate_object_urls_json():
     output_dir = PROJECT_ROOT / 'output'
     config_dir = PROJECT_ROOT / 'config'
     branch = "main"
-    base_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/output"
+    repo_base = get_repo_base_url(branch)
+    base_url = f"{repo_base}/output"
     
     teams_data = {}
     
@@ -262,7 +289,7 @@ def generate_object_urls_json():
         if lua_script_path.exists():
             lua_mtime = lua_script_path.stat().st_mtime
             lua_modified = datetime.fromtimestamp(lua_mtime, tz=timezone.utc).isoformat()
-            lua_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/config/defaults/tts-script/tts-update-rules-in-box-script.lua"
+            lua_url = f"{repo_base}/config/defaults/tts-script/tts-update-rules-in-box-script.lua"
             team_entry["objects"].append({
                 "type": "lua-script",
                 "name": "update-script",
@@ -477,7 +504,7 @@ def load_token_bag(team_name: str, faction: str, sample_url: str, config_dir: Pa
     
     if not github_base:
         logger.warning(f"Could not extract github base URL, using placeholder")
-        github_base = "https://github.com/user/repo/raw/main"
+        github_base = get_repo_base_url()
     
     # Generate token objects (Custom_Model_Infinite_Bag, each containing a Custom_Token)
     token_objects = []
@@ -732,7 +759,7 @@ def load_dice_objects(team_name: str, sample_url: Optional[str], output_dir: Pat
         elif "/output_v2/" in sample_url:
             github_base = sample_url.split("/output_v2/")[0]
     if not github_base:
-        github_base = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
+        github_base = get_repo_base_url()
 
     team_tag = f"_{team_name.replace('-', '_').title().replace('_', ' ')}"
     display = team_name.replace("-", " ").title()

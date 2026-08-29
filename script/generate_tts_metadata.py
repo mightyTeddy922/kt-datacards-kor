@@ -13,6 +13,8 @@ from pathlib import Path
 from datetime import datetime
 import os
 
+from src.repo_urls import repo_base_url
+
 
 def get_file_timestamp(file_path: Path) -> str:
     """Get ISO format timestamp from file's modification time (fallback only)."""
@@ -49,26 +51,48 @@ def extract_timestamp_from_json(json_file: Path, timestamp_key: str) -> str:
         return ""
 
 
+def _discover_card_boxes(tts_objects_dir: Path, github_base: str) -> list[dict]:
+    entries: list[dict] = []
+    for team_dir in sorted(tts_objects_dir.iterdir()):
+        if not team_dir.is_dir() or team_dir.name == 'display-table':
+            continue
+
+        candidates = sorted(
+            path for path in team_dir.glob('*.json')
+            if not path.name.endswith('-tokenbag.json')
+        )
+        if not candidates:
+            continue
+
+        card_box_file = candidates[0]
+        team_name = card_box_file.stem.removesuffix(" Cards")
+        entries.append(
+            {
+                "team": team_dir.name,
+                "name": team_name,
+                "url": f"{github_base}/tts_objects/{team_dir.name}/{card_box_file.name.replace(' ', '%20')}",
+                "path": card_box_file,
+            }
+        )
+    return entries
+
+
 def generate_combined_metadata(team_filter=None):
     """Generate unified tts-metadata.json with both cards and tokens.
 
     When team_filter is a non-empty list of team slugs only those teams are
     refreshed; all other teams' entries are preserved from the existing file.
     """
-    # First, get card boxes from existing tts-card-boxes.json
-    card_boxes_file = Path('output_v2/tts-card-boxes.json')
-    
-    if not card_boxes_file.exists():
-        print(f"Error: {card_boxes_file} not found")
-        return
-    
-    with open(card_boxes_file, 'r', encoding='utf-8') as f:
-        card_boxes = json.load(f)
-    
-    # Build metadata dict keyed by team slug
     metadata_dict = {}
     tts_objects_dir = Path('tts_objects')
-    
+    github_base = repo_base_url(project_root=Path(__file__).resolve().parent.parent)
+
+    if not tts_objects_dir.exists():
+        print(f"Error: {tts_objects_dir} not found")
+        return
+
+    card_boxes = _discover_card_boxes(tts_objects_dir, github_base)
+
     print("Processing card boxes...")
     for entry in card_boxes:
         team_slug = entry['team']
@@ -77,9 +101,7 @@ def generate_combined_metadata(team_filter=None):
         if team_filter and team_slug not in team_filter:
             continue
         
-        # Find the card box file and extract timestamp from LuaScriptState
-        # Files are stored in team subfolders: tts_objects/{team_slug}/{Team Name} Cards.json
-        card_box_file = tts_objects_dir / team_slug / f"{team_name} Cards.json"
+        card_box_file = entry['path']
         cards_timestamp = extract_timestamp_from_json(card_box_file, 'lastCardUpdate')
         
         # Fallback to file modification time if extraction fails
@@ -123,7 +145,7 @@ def generate_combined_metadata(team_filter=None):
                 print(f"    Warning: Using file mtime for {team_slug} tokens (no LuaScriptState)")
             
             # Build URL
-            tokens_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/tts_objects/{team_slug}/tokens/{team_slug}-tokenbag.json"
+            tokens_url = f"{github_base}/tts_objects/{team_slug}/tokens/{team_slug}-tokenbag.json"
             
             # Add to existing entry or create new one
             if team_slug in metadata_dict:

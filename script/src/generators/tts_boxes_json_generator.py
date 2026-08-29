@@ -1,44 +1,59 @@
-"""Generate a minimal JSON file containing only TTS card box object URLs."""
+"""Generate `tts-card-boxes.json` from the published `tts_objects/` layout."""
+
+from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
+SCRIPT_DIR = Path(__file__).resolve().parents[2]
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
 
-def generate_tts_boxes_json():
-    """Generate tts-card-boxes.json with only TTS box objects."""
-    
-    # Read the full datacards-urls.json
-    urls_file = Path(__file__).parent.parent.parent.parent / 'output_v2' / 'datacards-urls.json'
-    
-    with open(urls_file, 'r', encoding='utf-8') as f:
-        all_entries = json.load(f)
-    
-    # Filter for tts_card_box_object entries only
-    tts_boxes = []
-    seen_teams = set()
-    
-    for entry in all_entries:
-        if entry.get('type') == 'tts_card_box_object':
-            team = entry.get('team', '')
-            # Skip duplicates
-            if team not in seen_teams:
-                seen_teams.add(team)
-                tts_boxes.append({
-                    'team': team,
-                    'name': entry.get('name', ''),
-                    'url': entry.get('url', '')
-                })
-    
-    # Write minimal JSON
-    output_file = Path(__file__).parent.parent.parent.parent / 'output_v2' / 'tts-card-boxes.json'
-    with open(output_file, 'w', encoding='utf-8') as f:
-        json.dump(tts_boxes, f, indent=2)
-    
-    print(f"✓ Generated {output_file.name}")
-    print(f"  - {len(tts_boxes)} TTS card boxes")
-    print(f"  - Original: {len(all_entries)} entries")
-    print(f"  - Reduced to: {len(tts_boxes)} entries ({len(tts_boxes)/len(all_entries)*100:.1f}%)")
+from src.repo_urls import repo_base_url
 
 
-if __name__ == '__main__':
+def _discover_team_boxes(project_root: Path) -> list[dict]:
+    tts_root = project_root / "tts_objects"
+    base_url = repo_base_url(project_root=project_root)
+    boxes: list[dict] = []
+
+    for team_dir in sorted(p for p in tts_root.iterdir() if p.is_dir() and p.name != "display-table"):
+        candidates = sorted(
+            path for path in team_dir.glob("*.json")
+            if not path.name.endswith("-tokenbag.json")
+        )
+        if not candidates:
+            continue
+
+        box_file = candidates[0]
+        display_name = box_file.stem.removesuffix(" Cards")
+        boxes.append(
+            {
+                "team": team_dir.name,
+                "name": display_name,
+                "url": f"{base_url}/tts_objects/{team_dir.name}/{box_file.name.replace(' ', '%20')}",
+            }
+        )
+
+    return boxes
+
+
+def generate_tts_boxes_json(project_root: Path | None = None) -> Path:
+    """Generate `output_v2/tts-card-boxes.json` from `tts_objects/{team}/*.json`."""
+    root = project_root or Path(__file__).resolve().parents[3]
+    boxes = _discover_team_boxes(root)
+
+    output_file = root / "output_v2" / "tts-card-boxes.json"
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(
+        json.dumps(boxes, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    print(f"Generated {output_file.name} with {len(boxes)} team box entries.")
+    return output_file
+
+
+if __name__ == "__main__":
     generate_tts_boxes_json()

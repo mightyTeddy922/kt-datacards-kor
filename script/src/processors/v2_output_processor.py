@@ -7,6 +7,7 @@ import logging
 from ..models.team import Team
 from ..models.card_type import CardType
 from ..models.datacard import Datacard
+from ..repo_urls import output_base_url
 
 
 class V2OutputProcessor:
@@ -36,7 +37,7 @@ class V2OutputProcessor:
             Number of URLs generated
         """
         if github_base is None:
-            github_base = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output_v2"
+            github_base = output_base_url(project_root=self.v2_output_dir.resolve().parent)
         
         import json
         

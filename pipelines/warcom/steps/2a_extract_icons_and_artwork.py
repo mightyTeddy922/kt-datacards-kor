@@ -13,11 +13,15 @@ Output:
 import fitz  # PyMuPDF
 import cv2
 import numpy as np
+import os
+import sys
 from pathlib import Path
 import logging
 import json
 import hashlib
 import argparse
+import re
+import yaml
 from typing import List, Dict, Optional, Set, Tuple
 from dataclasses import dataclass, asdict
 from concurrent.futures import ThreadPoolExecutor
@@ -61,6 +65,46 @@ class ArtworkImage:
     
     def to_dict(self):
         return asdict(self)
+
+
+def load_team_config(config_file: Path = None) -> Dict[str, dict]:
+    """Load team configuration with aliases from team-config.yaml."""
+    if config_file is None:
+        config_file = Path("config/team-config.yaml")
+
+    if not config_file.exists():
+        return {}
+
+    with open(config_file, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+        return data.get("teams", {})
+
+
+def infer_team_slug_from_filename(pdf_path: Path, team_config: Dict[str, dict]) -> str:
+    """Infer a canonical team slug from a WarCom PDF filename."""
+    stem = pdf_path.stem.lower().replace("_", "-")
+    stem = re.sub(r"^(?:kor|eng|deu|ger|fra|fre|ita|spa|esp|jpn|jap|korean)-", "", stem)
+    stem = re.sub(r"^\d{2}-\d{2}-", "", stem)
+    stem = re.sub(r"^kill-team-team-rules-", "", stem)
+    stem = re.sub(r"^kill-team-", "", stem)
+    stem = re.sub(r"^killteam-", "", stem)
+    stem = re.sub(r"^team-rules-", "", stem)
+    stem = re.sub(r"-(?:[a-z0-9]{10})-(?:[a-z0-9]{10})$", "", stem)
+    stem = re.sub(r"-team-rules$", "", stem)
+    stem = re.sub(r"-online-rules$", "", stem)
+    stem = stem.strip("-")
+
+    for config_key, config_data in team_config.items():
+        candidates = {config_key.lower().replace("_", "-")}
+        canonical = config_data.get("canonical_name")
+        if canonical:
+            candidates.add(canonical.lower().replace(" ", "-").replace("_", "-"))
+        for alias in config_data.get("aliases", []):
+            candidates.add(alias.lower().replace(" ", "-").replace("_", "-"))
+        if stem in candidates:
+            return config_key.lower().replace(" ", "-")
+
+    return stem
 
 
 def compute_image_hash(image_bytes: bytes) -> str:
@@ -525,6 +569,7 @@ def run(input_dir: Path = None, output_dir: Path = None, max_workers: int = 4) -
         output_dir = Path('layers/warcom/extracted')
     
     generic_dir = output_dir / '_generic'
+    team_config = load_team_config()
     
     logger.info("=" * 70)
     logger.info("Step 2a: Extract Icons and Artwork from PDFs")
@@ -551,7 +596,8 @@ def run(input_dir: Path = None, output_dir: Path = None, max_workers: int = 4) -
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = []
         for pdf_file in pdf_files:
-            future = executor.submit(process_team_pdf, pdf_file, output_dir, generic_dir)
+            team_slug = infer_team_slug_from_filename(pdf_file, team_config) if team_config else pdf_file.stem
+            future = executor.submit(process_team_pdf_with_slug, pdf_file, output_dir, generic_dir, team_slug)
             futures.append((pdf_file.stem, future))
         
         for team_name, future in futures:
@@ -579,6 +625,44 @@ def run(input_dir: Path = None, output_dir: Path = None, max_workers: int = 4) -
     }
 
 
+def process_team_pdf_with_slug(pdf_path: Path, output_dir: Path, generic_dir: Path, team_slug: str) -> dict:
+    """Process a single team PDF using a pre-resolved canonical team slug."""
+    team_output = output_dir / team_slug
+    team_output.mkdir(parents=True, exist_ok=True)
+
+    logger.info(f"\nProcessing: {team_slug}")
+
+    results = {
+        'team': team_slug,
+        'icons_extracted': 0,
+        'artwork_extracted': 0
+    }
+
+    logger.info("  Extracting icons...")
+    icons_result = extract_icons_from_pdf(pdf_path, team_output, team_slug)
+    results['icons_extracted'] = sum(1 for v in icons_result.values() if v)
+    logger.info(f"  ✓ Extracted {results['icons_extracted']} icons")
+
+    logger.info("  Extracting artwork...")
+    generic_exact, generic_perceptual = load_generic_hashes(generic_dir)
+    artwork_result = extract_artwork_from_pdf(
+        pdf_path=pdf_path,
+        output_dir=team_output,
+        team_name=team_slug,
+        generic_exact_hashes=generic_exact,
+        generic_perceptual_hashes=generic_perceptual,
+        perceptual_threshold=15
+    )
+    results['artwork_extracted'] = len(artwork_result)
+
+    if artwork_result:
+        logger.info(f"  ✓ Extracted {len(artwork_result)} artwork images")
+    else:
+        logger.info("  No artwork extracted (all images were generic backgrounds or too small)")
+
+    return results
+
+
 def main():
     parser = argparse.ArgumentParser(description='Extract icons and artwork from Kill Team PDFs')
     parser.add_argument('--input-dir', type=Path, default=Path('layers/warcom/staging'),
@@ -595,8 +679,13 @@ def main():
         output_dir=args.output_dir,
         max_workers=args.workers
     )
-    
-    exit(0 if result['success'] else 1)
+
+    # On some Windows environments, OpenCV/PyMuPDF teardown can crash after successful work.
+    # Exiting directly avoids turning a completed extraction pass into a failed pipeline run.
+    code = 0 if result['success'] else 1
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(code)
 
 
 if __name__ == '__main__':
