@@ -764,10 +764,114 @@ def _rebuild_canonical_warcom_datacards(team: str, cards_dir: Path, canonical_st
     return rebuilt if page_idx == len(raw_pages) else None
 
 
+def _expected_page_count(entities: List[Dict]) -> int:
+    total = 0
+    for entity in entities:
+        for card in entity.get("cards", []):
+            total += 2 if card.get("type") == "both" and card.get("back") else 1
+    return total
+
+
+def _rebuild_canonical_warcom_key(key: str, pages: List[Path], canonical_entities: List[Dict]) -> Optional[List[Dict]]:
+    if not canonical_entities:
+        return []
+    if len(pages) != _expected_page_count(canonical_entities):
+        return None
+
+    rebuilt: List[Dict] = []
+    page_idx = 0
+    number_prop = NUMBER_PROP_NAMES.get(key, f"{key}_number")
+    for entity_idx, canonical_entity in enumerate(canonical_entities, start=1):
+        item = {
+            number_prop: entity_idx,
+            "name": canonical_entity.get("name"),
+            "cards": [],
+        }
+        for card_idx, canonical_card in enumerate(canonical_entity.get("cards", []), start=1):
+            front = pages[page_idx]
+            page_idx += 1
+            card_obj = {
+                "card_number": card_idx,
+                "type": canonical_card.get("type") or "front",
+                "front": _warcom_rel(front),
+            }
+            if canonical_card.get("type") == "both" and canonical_card.get("back"):
+                back = pages[page_idx]
+                page_idx += 1
+                card_obj["back"] = _warcom_rel(back)
+            item["cards"].append(card_obj)
+        rebuilt.append(item)
+
+    return rebuilt if page_idx == len(pages) else None
+
+
+def _rebuild_canonical_warcom_structure(team: str, cards_dir: Path, canonical_structure: Dict) -> Optional[Dict]:
+    if not canonical_structure:
+        return None
+
+    structure: Dict = {"team": team}
+    canonical_datacards = _rebuild_canonical_warcom_datacards(team, cards_dir, canonical_structure)
+    if canonical_datacards is None:
+        return None
+    if canonical_datacards:
+        structure["datacards"] = canonical_datacards
+
+    portrait_pages: List[Path] = []
+    for path in sorted(cards_dir.glob("*portrait.pdf")):
+        text = card_naming.read_text(path)
+        if card_naming.is_notes(text):
+            continue
+        portrait_pages.append(path)
+
+    current_key: Optional[str] = None
+    pages_by_key: Dict[str, List[Path]] = {
+        "operatives_selection": [],
+        "faction_rules": [],
+        "token_guide": [],
+        "equipment": [],
+        "firefight_ploys": [],
+        "strategy_ploys": [],
+    }
+
+    for path in portrait_pages:
+        try:
+            card_type, _ = card_naming.classify(path, "portrait")
+        except Exception:
+            card_type = None
+        key = WARCOM_TYPE_TO_KEY.get(card_type) if card_type else None
+        if key in pages_by_key:
+            current_key = key
+        if current_key in pages_by_key:
+            pages_by_key[current_key].append(path)
+
+    for key in [
+        "equipment",
+        "faction_rules",
+        "token_guide",
+        "firefight_ploys",
+        "operatives_selection",
+        "strategy_ploys",
+    ]:
+        canonical_entities = canonical_structure.get(key) or []
+        rebuilt = _rebuild_canonical_warcom_key(key, pages_by_key.get(key, []), canonical_entities)
+        if rebuilt is None:
+            return None
+        if rebuilt:
+            structure[key] = rebuilt
+
+    return structure
+
+
 def _classify_warcom_team(team: str, cards_dir: Path) -> Optional[Dict]:
     card_files = sorted(cards_dir.glob("*.pdf"))
     if not card_files:
         return None
+
+    translated_team = has_official_korean_translation(team)
+    canonical_structure = _load_kt_app_structure(team) if translated_team else {}
+    canonical_full = _rebuild_canonical_warcom_structure(team, cards_dir, canonical_structure)
+    if canonical_full:
+        return canonical_full
 
     # Flat per-key list of (name, kind, front_rel, back_rel) preserving order.
     per_key: Dict[str, List[Dict]] = {k: [] for k in WARCOM_TYPE_TO_KEY.values()}
@@ -783,12 +887,16 @@ def _classify_warcom_team(team: str, cards_dir: Path) -> Optional[Dict]:
             logger.warning(f"  classify failed {card_path.name}: {e}")
             continue
 
-        if card_type == "notes" or card_type is None or not card_name:
+        if card_type == "notes" or card_type is None:
             continue
         key = WARCOM_TYPE_TO_KEY.get(card_type)
         if key is None:
             logger.warning(f"  unmapped warcom type '{card_type}' ({card_path.name})")
             continue
+        if not card_name and not translated_team:
+            continue
+        if not card_name:
+            card_name = f"{key}-slot-{idx + 1}"
 
         card_text = card_naming.read_text(card_path)
 
@@ -934,7 +1042,6 @@ def _classify_warcom_team(team: str, cards_dir: Path) -> Optional[Dict]:
             "back": back_rel,
         })
 
-    canonical_structure = _load_kt_app_structure(team) if has_official_korean_translation(team) else {}
     canonical_datacards = _rebuild_canonical_warcom_datacards(team, cards_dir, canonical_structure)
 
     # Group consecutive same-name cards into entities (mirrors kt-app grouping).

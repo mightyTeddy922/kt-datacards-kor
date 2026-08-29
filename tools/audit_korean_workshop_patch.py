@@ -67,6 +67,27 @@ def walk(node: Any):
             yield from walk(item)
 
 
+def object_states(root: dict[str, Any]) -> list[dict[str, Any]]:
+    states = root.get("ObjectStates")
+    if isinstance(states, list):
+        return [state for state in states if isinstance(state, dict)]
+    return []
+
+
+def contained_objects(obj: dict[str, Any]) -> list[dict[str, Any]]:
+    items = obj.get("ContainedObjects")
+    if isinstance(items, list):
+        return [item for item in items if isinstance(item, dict)]
+    return []
+
+
+def walk_objects(obj: dict[str, Any]) -> list[dict[str, Any]]:
+    result = [obj]
+    for child in contained_objects(obj):
+        result.extend(walk_objects(child))
+    return result
+
+
 def strip_url(url: str) -> str:
     return (url or "").split("?", 1)[0]
 
@@ -78,6 +99,24 @@ def url_signature(url: str) -> str:
     if idx >= 0:
         return clean[idx:].lower()
     return clean.lower()
+
+
+def is_team_box(obj: dict[str, Any]) -> bool:
+    tags = obj.get("Tags") or []
+    if isinstance(tags, list) and "KTCardsTokenBag" in tags:
+        return False
+    if isinstance(tags, list) and "_Faction_Decks" in tags:
+        return True
+    gm_notes = str(obj.get("GMNotes") or "")
+    return gm_notes.startswith("_") and obj.get("Name") == "Custom_Model_Bag"
+
+
+def slug_from_box(obj: dict[str, Any]) -> str:
+    gm_notes = str(obj.get("GMNotes") or "").strip()
+    if gm_notes.startswith("_"):
+        return gm_notes[1:].strip().lower().replace(" ", "-")
+    nickname = str(obj.get("Nickname") or "").strip()
+    return nickname.lower().replace(" ", "-")
 
 
 def count_feature_patterns(path: Path) -> dict[str, int]:
@@ -102,7 +141,7 @@ def script_repo_counts(data: Any) -> Counter:
 
 def first_matching_box_face_url(team_slug: str) -> str:
     datacard_url = ""
-    data = load_generated_team_box(team_slug)
+    data = load_patched_team_box(team_slug)
     for obj in collect_box_objects(data):
         if obj.get("kind") != "card":
             continue
@@ -147,6 +186,15 @@ def load_generated_team_box(team_slug: str) -> dict[str, Any]:
     if not candidates:
         raise FileNotFoundError(f"No generated team box JSON for {team_slug}")
     return load_json(candidates[0])
+
+
+def load_patched_team_box(team_slug: str) -> dict[str, Any]:
+    patched = load_json(PATCHED_SAVE_JSON)
+    for state in object_states(patched):
+        for obj in walk_objects(state):
+            if is_team_box(obj) and slug_from_box(obj) == team_slug:
+                return obj
+    raise KeyError(f"Patched save team box not found: {team_slug}")
 
 
 def collect_box_objects(data: Any) -> list[dict[str, str]]:
@@ -194,10 +242,12 @@ def source_script_repo_counts() -> Counter:
 
 def verify_team_objects(team_slug: str) -> list[str]:
     issues: list[str] = []
-    box = load_generated_team_box(team_slug)
-    active = collect_box_objects(box)
+    generated_box = load_generated_team_box(team_slug)
+    active = collect_box_objects(load_patched_team_box(team_slug))
+    generated_active = collect_box_objects(generated_box)
     manifest_objects = collect_manifest_objects(team_slug)
     manifest_signatures: set[tuple[str, str, str]] = set()
+    generated_signatures: set[tuple[str, str, str]] = set()
 
     for obj in manifest_objects:
         if obj.get("face_url"):
@@ -205,10 +255,17 @@ def verify_team_objects(team_slug: str) -> list[str]:
                 ("card", url_signature(str(obj.get("face_url") or "")), url_signature(str(obj.get("back_url") or "")))
             )
 
+    for obj in generated_active:
+        generated_signatures.add(
+            ("card", url_signature(obj.get("face_url", "")), url_signature(obj.get("back_url", "")))
+        )
+
     for obj in active:
         sig = ("card", url_signature(obj.get("face_url", "")), url_signature(obj.get("back_url", "")))
         if sig not in manifest_signatures:
             issues.append(f"{team_slug}: active card deck missing from object manifest: {obj.get('nickname') or sig[1]}")
+        if sig not in generated_signatures:
+            issues.append(f"{team_slug}: patched save card deck differs from generated team box: {obj.get('nickname') or sig[1]}")
 
     if has_official_korean_translation(team_slug):
         for obj in active:
@@ -218,6 +275,14 @@ def verify_team_objects(team_slug: str) -> list[str]:
                 issues.append(f"{team_slug}: translated active card face URL not in target repo: {face_url}")
             if back_url and not back_url.startswith(TARGET_REPO):
                 issues.append(f"{team_slug}: translated active card back URL not in target repo: {back_url}")
+    else:
+        for obj in active:
+            face_url = str(obj.get("face_url") or "")
+            back_url = str(obj.get("back_url") or "")
+            if not face_url.startswith(UPSTREAM_REPO):
+                issues.append(f"{team_slug}: fallback active card face URL not in upstream repo: {face_url}")
+            if back_url and not back_url.startswith(UPSTREAM_REPO):
+                issues.append(f"{team_slug}: fallback active card back URL not in upstream repo: {back_url}")
     return issues
 
 
@@ -243,6 +308,52 @@ def official_team_lists() -> tuple[list[str], list[str]]:
     return translated, fallback
 
 
+def patched_save_team_slugs() -> list[str]:
+    patched = load_json(PATCHED_SAVE_JSON)
+    slugs: list[str] = []
+    for state in object_states(patched):
+        for obj in walk_objects(state):
+            if is_team_box(obj):
+                slugs.append(slug_from_box(obj))
+    return sorted(set(slugs))
+
+
+def active_repo_team_lists(all_teams: list[str]) -> tuple[list[str], list[str]]:
+    localized: list[str] = []
+    fallback: list[str] = []
+    for team_slug in all_teams:
+        urls = [obj.get("face_url", "") for obj in collect_box_objects(load_patched_team_box(team_slug))]
+        if any(url.startswith(TARGET_REPO) for url in urls):
+            localized.append(team_slug)
+        else:
+            fallback.append(team_slug)
+    return sorted(localized), sorted(fallback)
+
+
+def repo_routing_issues(all_teams: list[str]) -> list[str]:
+    issues: list[str] = []
+    for team_slug in all_teams:
+        urls = [obj.get("face_url", "") for obj in collect_box_objects(load_patched_team_box(team_slug))]
+        if not urls:
+            issues.append(f"{team_slug}: no active card decks found in patched save")
+            continue
+        target_urls = [url for url in urls if url.startswith(TARGET_REPO)]
+        upstream_urls = [url for url in urls if url.startswith(UPSTREAM_REPO)]
+        other_urls = [url for url in urls if url and not url.startswith(TARGET_REPO) and not url.startswith(UPSTREAM_REPO)]
+        if has_official_korean_translation(team_slug):
+            if upstream_urls or other_urls:
+                issues.append(
+                    f"{team_slug}: translated team still has non-target deck URLs "
+                    f"(target={len(target_urls)}, upstream={len(upstream_urls)}, other={len(other_urls)})"
+                )
+        elif other_urls:
+            issues.append(
+                f"{team_slug}: fallback team has unexpected non-upstream deck URLs "
+                f"(target={len(target_urls)}, upstream={len(upstream_urls)}, other={len(other_urls)})"
+            )
+    return issues
+
+
 def localized_size_summary(localized_teams: list[str]) -> str:
     sizes: set[str] = set()
     for team_slug in localized_teams:
@@ -256,7 +367,6 @@ def localized_size_summary(localized_teams: list[str]) -> str:
 def build_report() -> str:
     workshop = load_json(WORKSHOP_JSON)
     patched = load_json(PATCHED_SAVE_JSON)
-    summary = load_json(SUMMARY_JSON)
     manager_bag = load_json(ROOT / "output" / "_generic-tts-objects" / "Kill Team Card Boxes.json")
 
     original_features = count_feature_patterns(WORKSHOP_JSON)
@@ -264,14 +374,12 @@ def build_report() -> str:
     script_counts = script_repo_counts(patched)
     source_script_counts = source_script_repo_counts()
 
-    patched_teams = summary.get("patched_teams", [])
-    kept_teams = summary.get("kept_original_teams", [])
     official_translated, official_fallback = official_team_lists()
+    all_teams = patched_save_team_slugs()
+    patched_teams, kept_teams = active_repo_team_lists(all_teams)
     legacy_fallback = sorted(team for team in kept_teams if team not in official_fallback)
     manager_count = len(manager_bag.get("ContainedObjects") or [])
-    verification_issues: list[str] = []
-    for team_slug in patched_teams + kept_teams:
-        verification_issues.extend(verify_team_objects(team_slug))
+    verification_issues = repo_routing_issues(all_teams)
 
     lines = [
         "# Korean Workshop Patch Audit",
@@ -333,15 +441,16 @@ def build_report() -> str:
             "- The patched save is produced by patching the original workshop JSON in place rather than rebuilding a simplified substitute.",
             "- Team boxes keep the original object structure; only repo references in scripts and per-team card image URLs are swapped where localized assets exist.",
             "",
-            "## Updater Match Audit",
+            "## Final Save Audit",
         ]
     )
     if verification_issues:
         lines.append(f"- Verification issues found: {len(verification_issues)}")
         lines.extend(f"- {issue}" for issue in verification_issues[:100])
     else:
-        lines.append("- All generated team boxes' active card decks matched their per-team object manifests.")
         lines.append("- All officially translated teams' active card decks point at the target repository.")
+        lines.append("- All English fallback teams' active card decks stayed on the upstream repository.")
+        lines.append("- No translated team box in the final save contains mixed target/upstream deck URLs.")
     return "\n".join(lines) + "\n"
 
 

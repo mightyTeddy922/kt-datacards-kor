@@ -87,17 +87,99 @@ def collect_custom_deck_objects(obj: dict[str, Any]) -> list[dict[str, Any]]:
     ]
 
 
+def first_deck_url(obj: dict[str, Any]) -> str:
+    custom = obj.get("CustomDeck")
+    if not isinstance(custom, dict) or not custom:
+        return ""
+    first = next(iter(custom.values()))
+    if not isinstance(first, dict):
+        return ""
+    return str(first.get("FaceURL") or "")
+
+
+def deck_role(obj: dict[str, Any]) -> str:
+    nickname = str(obj.get("Nickname") or "").strip().lower()
+    url = first_deck_url(obj).lower()
+
+    if nickname == "datacards" or "/datacards/" in url:
+        return "datacards"
+    if "faction rules" in nickname or "/faction_rules/" in url or "/faction-rules/" in url:
+        return "faction-rules"
+    if nickname == "equipment" or "/equipment/" in url:
+        return "equipment"
+    if "firefight ploys" in nickname or "/firefight_ploys/" in url or "/ploys/firefight/" in url:
+        return "firefight-ploys"
+    if "strategy ploys" in nickname or "/strategy_ploys/" in url or "/ploys/strategy/" in url:
+        return "strategy-ploys"
+    if "token-guide" in nickname or "/token_guide/" in url or "/token-guide/" in url:
+        return "token-guide"
+    if "operative" in nickname or "/operative-selection/" in url or "/operatives_selection/" in url:
+        return "operative-selection"
+    return re.sub(r"[^a-z0-9]+", "-", nickname).strip("-") or "unknown"
+
+
+PRESERVED_OBJECT_FIELDS = (
+    "GUID",
+    "Transform",
+    "LayoutGroupSortIndex",
+    "LuaScript",
+    "LuaScriptState",
+    "XmlUI",
+    "GMNotes",
+    "Name",
+    "Nickname",
+    "Tags",
+    "Tooltip",
+    "Description",
+    "SidewaysCard",
+)
+
+PRESERVED_CARD_FIELDS = (
+    "GUID",
+    "Transform",
+    "LayoutGroupSortIndex",
+    "LuaScript",
+    "LuaScriptState",
+    "XmlUI",
+    "GMNotes",
+    "Name",
+    "Nickname",
+    "Tooltip",
+    "Description",
+    "SidewaysCard",
+)
+
+
+def preserve_fields(dst: dict[str, Any], src: dict[str, Any], fields: tuple[str, ...]) -> None:
+    for key in fields:
+        if key in dst:
+            src[key] = copy.deepcopy(dst[key])
+
+
+def replace_deck_object(dst: dict[str, Any], src: dict[str, Any]) -> dict[str, Any]:
+    replaced = copy.deepcopy(src)
+    preserve_fields(dst, replaced, PRESERVED_OBJECT_FIELDS)
+
+    src_cards = contained_objects(replaced)
+    dst_cards = contained_objects(dst)
+    for src_card, dst_card in zip(src_cards, dst_cards):
+        preserve_fields(dst_card, src_card, PRESERVED_CARD_FIELDS)
+    return replaced
+
+
 def copy_custom_deck_urls(dst: dict[str, Any], src: dict[str, Any]) -> int:
     dst_custom = dst.get("CustomDeck")
     src_custom = src.get("CustomDeck")
     if not isinstance(dst_custom, dict) or not isinstance(src_custom, dict):
         return 0
 
+    dst_items = [item for _, item in sorted(dst_custom.items(), key=lambda pair: pair[0])]
+    src_items = [item for _, item in sorted(src_custom.items(), key=lambda pair: pair[0])]
+    if len(dst_items) != len(src_items):
+        return 0
+
     changed = 0
-    for deck_key, src_info in src_custom.items():
-        if deck_key not in dst_custom:
-            continue
-        dst_info = dst_custom[deck_key]
+    for dst_info, src_info in zip(dst_items, src_items):
         if not isinstance(dst_info, dict) or not isinstance(src_info, dict):
             continue
         for field in ("FaceURL", "BackURL"):
@@ -109,17 +191,36 @@ def copy_custom_deck_urls(dst: dict[str, Any], src: dict[str, Any]) -> int:
 
 
 def patch_team_box_images(dst_box: dict[str, Any], src_box: dict[str, Any], team_slug: str) -> tuple[int, bool]:
-    dst_decks = collect_custom_deck_objects(dst_box)
-    src_decks = collect_custom_deck_objects(src_box)
-    if len(dst_decks) != len(src_decks):
-        return 0, False
-
     if not has_official_korean_translation(team_slug):
         return 0, True
 
+    dst_children = contained_objects(dst_box)
+    src_children = contained_objects(src_box)
+    src_by_role: dict[str, dict[str, Any]] = {}
+    for src_obj in src_children:
+        if isinstance(src_obj.get("CustomDeck"), dict) and src_obj["CustomDeck"]:
+            src_by_role[deck_role(src_obj)] = src_obj
+
     changed = 0
-    for dst_deck, src_deck in zip(dst_decks, src_decks):
-        changed += copy_custom_deck_urls(dst_deck, src_deck)
+    replaced_any = False
+    for index, dst_obj in enumerate(dst_children):
+        if not isinstance(dst_obj.get("CustomDeck"), dict) or not dst_obj["CustomDeck"]:
+            continue
+        role = deck_role(dst_obj)
+        src_obj = src_by_role.get(role)
+        if src_obj is None:
+            return 0, False
+        dst_count = len(dst_obj.get("DeckIDs") or dst_obj.get("CustomDeck") or {})
+        src_count = len(src_obj.get("DeckIDs") or src_obj.get("CustomDeck") or {})
+        if dst_count != src_count or dst_obj.get("Name") != src_obj.get("Name"):
+            dst_children[index] = replace_deck_object(dst_obj, src_obj)
+            changed += 1
+            replaced_any = True
+            continue
+        changed += copy_custom_deck_urls(dst_obj, src_obj)
+
+    if replaced_any:
+        dst_box["ContainedObjects"] = dst_children
     return changed, True
 
 
@@ -157,12 +258,16 @@ def load_generated_team_box(team_slug: str) -> dict[str, Any] | None:
     team_dir = ROOT / "output" / team_slug / "tts_objects"
     if not team_dir.exists():
         return None
-    json_files = sorted(
-        [path for path in team_dir.glob("*.json") if not path.name.endswith(" Box.json")]
-    )
+    json_files = sorted([path for path in team_dir.glob("*.json") if path.is_file()])
+    preferred = [path for path in json_files if path.name.endswith(" Box.json")]
+    if preferred:
+        json_files = preferred
     if not json_files:
         return None
     data = load_json(json_files[0])
+    if isinstance(data, dict) and isinstance(data.get("ObjectStates"), list) and data["ObjectStates"]:
+        first = data["ObjectStates"][0]
+        return first if isinstance(first, dict) else None
     return data if isinstance(data, dict) else None
 
 

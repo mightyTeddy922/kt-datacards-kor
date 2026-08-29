@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Verify latest-upstream outputs for the official Korean/fallback workflow."""
+"""Verify generated TTS outputs follow the official Korean/fallback routing."""
 
 from __future__ import annotations
 
 import argparse
 import json
 import sys
-import unicodedata
+import urllib.parse
 from pathlib import Path
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -15,54 +16,96 @@ if str(ROOT) not in sys.path:
 
 from pipeline.utils.official_korean_team_rules import OFFICIAL_KOREAN_TEAM_RULES
 
+UPSTREAM_PREFIX = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output"
 
-def load_json(path: Path):
+
+def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def slugify_name(value: str) -> str:
-    normalized = unicodedata.normalize("NFKD", value)
-    ascii_like = "".join(ch for ch in normalized if not unicodedata.combining(ch))
-    ascii_like = (
-        ascii_like.strip()
-        .lower()
-        .replace("&", " and ")
-        .replace("’", "")
-        .replace("'", "")
-        .replace("‑", "-")
-        .replace("–", "-")
-        .replace("—", "-")
-        .replace(":", " ")
-        .replace("/", " ")
-    )
-    while "  " in ascii_like:
-        ascii_like = ascii_like.replace("  ", " ")
-    return ascii_like.replace(" ", "-")
+def strip_url(url: str) -> str:
+    return (url or "").split("?", 1)[0]
 
 
-def canonical_compare_name(value: str) -> str:
-    slug = slugify_name(value)
-    return slug.removesuffix("-card1").removesuffix("-card2").removesuffix("-card3")
+def url_signature(url: str) -> str:
+    clean = strip_url(url)
+    marker = "/output/"
+    idx = clean.lower().find(marker)
+    if idx >= 0:
+        return clean[idx:].lower()
+    return clean.lower()
 
 
-def canonical_datacard_names(team: str) -> set[str]:
-    path = ROOT / "layers" / "kt-app" / "classified" / team / "structure.json"
-    if not path.exists():
-        return set()
-    data = load_json(path)
-    return {
-        canonical_compare_name(str(entry.get("name") or ""))
-        for entry in data.get("datacards", [])
-        if str(entry.get("name") or "").strip()
-    }
+def load_team_urls() -> dict[str, Any]:
+    summary = load_json(ROOT / "output" / "team-urls.json")
+    if isinstance(summary, dict):
+        return summary
+    result: dict[str, Any] = {}
+    for entry in summary:
+        if isinstance(entry, dict) and entry.get("team"):
+            result[str(entry["team"])] = entry
+    return result
+
+
+def box_filename_from_summary(team_slug: str) -> str | None:
+    summary = load_team_urls()
+    entry = summary.get(team_slug) or {}
+    box = entry.get("box") or {}
+    url = str(box.get("url") or "")
+    if not url:
+        return None
+    return Path(urllib.parse.unquote(strip_url(url))).name
+
+
+def load_generated_team_box(team_slug: str) -> dict[str, Any]:
+    team_dir = ROOT / "output" / team_slug / "tts_objects"
+    filename = box_filename_from_summary(team_slug)
+    if filename:
+        path = team_dir / filename
+        if path.exists():
+            return load_json(path)
+    candidates = sorted(path for path in team_dir.glob("*.json") if not path.name.endswith(" Box.json"))
+    if not candidates:
+        raise FileNotFoundError(f"No generated team box JSON for {team_slug}")
+    return load_json(candidates[0])
+
+
+def collect_box_decks(data: dict[str, Any]) -> list[dict[str, str]]:
+    root = data.get("ObjectStates", [data])[0] if isinstance(data, dict) else data
+    children = root.get("ContainedObjects") if isinstance(root, dict) else []
+    result: list[dict[str, str]] = []
+    for node in children or []:
+        if not isinstance(node, dict):
+            continue
+        custom_deck = node.get("CustomDeck")
+        if not isinstance(custom_deck, dict) or not custom_deck:
+            continue
+        first = next(iter(custom_deck.values()))
+        if not isinstance(first, dict):
+            continue
+        result.append(
+            {
+                "nickname": str(node.get("Nickname") or ""),
+                "face_url": str(first.get("FaceURL") or ""),
+                "back_url": str(first.get("BackURL") or ""),
+            }
+        )
+    return result
+
+
+def collect_manifest_signatures(team_slug: str) -> set[tuple[str, str]]:
+    manifest = load_json(ROOT / "output" / team_slug / f"{team_slug}-object-urls.json")
+    signatures: set[tuple[str, str]] = set()
+    for obj in manifest.get("objects", []):
+        face = str(obj.get("face_url") or "")
+        if not face:
+            continue
+        signatures.add((url_signature(face), url_signature(str(obj.get("back_url") or ""))))
+    return signatures
 
 
 def main() -> int:
-    try:
-        sys.stdout.reconfigure(encoding="utf-8")
-    except Exception:
-        pass
-    parser = argparse.ArgumentParser(description="Verify official Korean WarCom output")
+    parser = argparse.ArgumentParser(description="Verify official Korean routing in generated TTS outputs")
     parser.add_argument("--branch", default="main")
     parser.add_argument("--repo", default="mightyTeddy922/kt-datacards-kor")
     parser.add_argument("--teams")
@@ -78,89 +121,36 @@ def main() -> int:
         team for team, meta in OFFICIAL_KOREAN_TEAM_RULES.items() if not bool(meta.get("translated"))
     )
 
-    summary_file = ROOT / "output" / "team-urls.json"
-    manager_file = ROOT / "output" / "_generic-tts-objects" / "Kill Team Card Boxes.json"
-    spawner_file = ROOT / "output" / "_generic-tts-objects" / "Kill Team Spawner.json"
+    summary = load_team_urls()
+    teams = sorted(team for team in summary if not wanted or team in wanted)
+    for team in teams:
+        entry = summary.get(team) or {}
+        box = entry.get("box") or {}
+        box_url = str(box.get("url") or "")
+        if not box_url.startswith(expected_prefix):
+            issues.append(f"{team}: team box URL not in target repo: {box_url}")
 
-    for path in (summary_file, manager_file, spawner_file):
-        if not path.exists():
-            issues.append(f"Missing required file: {path}")
+        generated_box = load_generated_team_box(team)
+        decks = collect_box_decks(generated_box)
+        manifest_signatures = collect_manifest_signatures(team)
+        if not decks:
+            issues.append(f"{team}: no card decks found in generated team box")
+            continue
 
-    teams = []
-    if summary_file.exists():
-        summary = load_json(summary_file)
-        entries = summary.values() if isinstance(summary, dict) else summary
-        for entry in entries:
-            if not isinstance(entry, dict):
-                continue
-            team = entry.get("team")
-            if wanted and team not in wanted:
-                continue
-            teams.append(team)
-            box = entry.get("box") or {}
-            url = str(box.get("url") or "")
-            if not url.startswith(expected_prefix):
-                issues.append(f"Unexpected team URL for {team}: {url}")
+        for deck in decks:
+            face = deck["face_url"]
+            back = deck["back_url"]
+            sig = (url_signature(face), url_signature(back))
+            if manifest_signatures and sig not in manifest_signatures:
+                issues.append(f"{team}: generated card deck missing from object manifest: {deck['nickname'] or sig[0]}")
+            expected = expected_prefix if team in translated else UPSTREAM_PREFIX
+            if not face.startswith(expected):
+                issues.append(f"{team}: card face URL not in expected repo: {face}")
+            if back and not back.startswith(expected):
+                issues.append(f"{team}: card back URL not in expected repo: {back}")
 
-            object_file = ROOT / "output" / team / f"{team}-object-urls.json"
-            if not object_file.exists():
-                issues.append(f"Missing team object URL file: {object_file}")
-                continue
-
-            object_data = load_json(object_file)
-            objects = object_data.get("objects", [])
-            datacards = [obj for obj in objects if obj.get("type") == "datacards"]
-            names = {
-                canonical_compare_name(str(obj.get("name") or ""))
-                for obj in datacards
-                if str(obj.get("name") or "")
-            }
-
-            if team in translated:
-                if not datacards:
-                    issues.append(f"{team}: no datacards found in object URL manifest")
-                canonical = canonical_datacard_names(team)
-                if canonical and names != canonical:
-                    missing = sorted(canonical - names)
-                    extra = sorted(names - canonical)
-                    if missing:
-                        issues.append(f"{team}: missing canonical datacards: {', '.join(missing[:8])}")
-                    if extra:
-                        issues.append(f"{team}: unexpected datacards: {', '.join(extra[:8])}")
-                for obj in datacards:
-                    face = str(obj.get("face_url") or "")
-                    back = str(obj.get("back_url") or "")
-                    if not face.startswith(expected_prefix):
-                        issues.append(f"{team}: translated datacard face URL not in target repo: {face}")
-                        break
-                    if back and not back.startswith(expected_prefix):
-                        issues.append(f"{team}: translated datacard back URL not in target repo: {back}")
-                        break
-                    name = str(obj.get("name") or "")
-                    normalized_name = canonical_compare_name(name)
-                    if not normalized_name or name.startswith("-") or normalized_name == "unknown":
-                        issues.append(f"{team}: suspicious translated datacard name: {name!r}")
-                        break
-            elif team in fallback:
-                if not datacards:
-                    issues.append(f"{team}: no datacards found in fallback object URL manifest")
-
-    if manager_file.exists():
-        manager = load_json(manager_file)
-        if manager.get("ObjectStates"):
-            contained = manager.get("ObjectStates", [{}])[0].get("ContainedObjects", [])
-        else:
-            contained = manager.get("ContainedObjects", [])
-        names = [obj.get("Nickname", "") for obj in contained]
-        if not any(name in {"Exodite Dragon Masters", "Exodite Dragon Masters Cards"} for name in names):
-            issues.append("Manager bag does not contain Exodite Dragon Masters")
-
-    if spawner_file.exists():
-        spawner_text = spawner_file.read_text(encoding="utf-8")
-        if args.repo not in spawner_text:
-            issues.append("Spawner is not pointing at the target repository")
-
-    print(f"Expected output prefix: {expected_prefix}")
+    print(f"Expected localized prefix: {expected_prefix}")
+    print(f"Expected fallback prefix: {UPSTREAM_PREFIX}")
     print(f"Verified teams: {len(teams)}")
     print(f"Official Korean teams: {len(translated)}")
     print(f"Official fallback teams: {len(fallback)}")

@@ -198,17 +198,18 @@ def is_datacard_front(text: str) -> bool:
 # ---------------------------------------------------------------------------
 
 def detect_type(lines: List[str]) -> Optional[str]:
-    """Card-type token from the header (line index 1), or None if unrecognised.
+    """Card-type token from the header band, or None if unrecognised.
 
     Used by the warcom track, which has no per-type folders. The kt-app track
     already knows the type from the folder and only needs ``extract_name``.
     """
     if len(lines) < 2:
         return None
-    header = lines[1].upper().strip()
-    for needle, card_type in _TYPE_HEADERS:
-        if needle in header:
-            return card_type
+    for idx in range(min(4, len(lines))):
+        header = lines[idx].upper().strip()
+        for needle, card_type in _TYPE_HEADERS:
+            if needle in header:
+                return card_type
     return None
 
 
@@ -263,7 +264,24 @@ def extract_name(lines: List[str]) -> Optional[str]:
                     return f"{base}-{option}"
         return base
 
-    # Plain portrait card: the name is line index 2.
+    # Plain portrait card: use the first non-empty line after the detected
+    # header band. Korean WarCom cards sometimes repeat the team name above the
+    # actual type header, shifting the title down by one row.
+    header_idx = None
+    for idx in range(min(4, len(lines))):
+        header = lines[idx].upper().strip()
+        for needle, _card_type in _TYPE_HEADERS:
+            if needle in header:
+                header_idx = idx
+                break
+        if header_idx is not None:
+            break
+    if header_idx is not None:
+        for idx in range(header_idx + 1, min(header_idx + 4, len(lines))):
+            name = _clean(lines[idx])
+            if name:
+                return name
+
     if len(lines) >= 3:
         name = _clean(lines[2])
         if name:
