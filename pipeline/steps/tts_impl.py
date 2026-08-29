@@ -60,6 +60,9 @@ URL_OUTPUT_BASE = os.environ.get(
     output_base_url(project_root=PROJECT_ROOT, branch=URL_BRANCH),
 )
 
+_HANGUL_RE = re.compile(r"[가-힣]")
+_CARD_NUMBER_RE = re.compile(r"(?:^|-)card\d+$", re.IGNORECASE)
+
 
 def _rewrite_repo_urls(text: str, branch: str = URL_BRANCH) -> str:
     base = repo_base_url(project_root=PROJECT_ROOT, branch=branch)
@@ -72,6 +75,53 @@ def _rewrite_repo_urls(text: str, branch: str = URL_BRANCH) -> str:
     for old, new in replacements.items():
         text = text.replace(old, new)
     return text
+
+
+def _contains_hangul(text: str) -> bool:
+    return bool(_HANGUL_RE.search(text or ""))
+
+
+def _canonical_card_dir_map(cards_dir: Path) -> dict[str, Path]:
+    candidates = {
+        "datacards": [cards_dir / "datacards"],
+        "equipment": [cards_dir / "equipment"],
+        "operative-selection": [cards_dir / "operative-selection", cards_dir / "operatives_selection"],
+        "faction-rules": [cards_dir / "faction-rules", cards_dir / "faction_rules"],
+        "token-guide": [cards_dir / "token-guide", cards_dir / "token_guide"],
+        "firefight-ploys": [cards_dir / "ploys" / "firefight", cards_dir / "firefight_ploys"],
+        "strategy-ploys": [cards_dir / "ploys" / "strategy", cards_dir / "strategy_ploys"],
+    }
+    selected = {}
+    for card_type, options in candidates.items():
+        for option in options:
+            if option.exists() and any(option.glob("*.jpg")):
+                selected[card_type] = option
+                break
+    return selected
+
+
+def _preferred_card_pairs(card_type_dir: Path) -> dict[str, dict[str, Path]]:
+    card_pairs: dict[str, dict[str, Path]] = {}
+    for card_file in sorted(card_type_dir.glob("*.jpg")):
+        stem = card_file.stem
+        if stem.endswith("-front"):
+            card_pairs.setdefault(stem[:-6], {})["front"] = card_file
+        elif stem.endswith("-back"):
+            card_pairs.setdefault(stem[:-5], {})["back"] = card_file
+
+    if not card_pairs:
+        return {}
+
+    bases = list(card_pairs.keys())
+    hangul_bases = [base for base in bases if _contains_hangul(base)]
+    if hangul_bases:
+        return {base: card_pairs[base] for base in hangul_bases}
+
+    numbered_bases = [base for base in bases if _CARD_NUMBER_RE.search(base)]
+    if numbered_bases:
+        return {base: card_pairs[base] for base in numbered_bases}
+
+    return card_pairs
 
 
 # ===================================================================
@@ -267,32 +317,13 @@ def generate_urls_json_v3(repo_branch: str = URL_BRANCH):
                     'url': stable['url'],
                 })
 
-        # Scan card types
-        for card_type_dir in sorted(cards_dir.iterdir()):
-            if not card_type_dir.is_dir():
-                continue
+        # Scan canonical card type directories. Prefer current WarCom-style
+        # folders and, within a chosen folder, prefer Korean-labelled outputs
+        # when present; otherwise fall back to numbered or legacy English files.
+        for card_type_v2, card_type_dir in sorted(_canonical_card_dir_map(cards_dir).items()):
+            card_pairs = _preferred_card_pairs(card_type_dir)
 
-            card_type = card_type_dir.name
-
-            # Convert v3 naming (underscores) to v2 naming (dashes)
-            type_mappings = {
-                'operatives_selection': 'operative-selection',
-                'faction_rules': 'faction-rules',
-                'firefight_ploys': 'firefight-ploys',
-                'strategy_ploys': 'strategy-ploys',
-                'token_guide': 'token-guide'
-            }
-            card_type_v2 = type_mappings.get(card_type, card_type.replace('_', '-'))
-
-            # Group front/back pairs (matches generate_object_urls_json grouping
-            # so the combined-hash reuse decision is identical on both sides).
-            card_pairs = {}
-            for card_file in card_type_dir.glob('*.jpg'):
-                stem = card_file.stem
-                if stem.endswith('-front'):
-                    card_pairs.setdefault(stem[:-6], {})['front'] = card_file
-                elif stem.endswith('-back'):
-                    card_pairs.setdefault(stem[:-5], {})['back'] = card_file
+            rel_card_dir = str(card_type_dir.relative_to(cards_dir)).replace("\\", "/")
 
             for base_name, files in sorted(card_pairs.items()):
                 front_file = files.get('front')
@@ -300,11 +331,11 @@ def generate_urls_json_v3(repo_branch: str = URL_BRANCH):
                 if not front_file:
                     continue
 
-                front_url = f"{base_url}/{team}/cards/{card_type}/{front_file.name}"
-                back_url = (f"{base_url}/{team}/cards/{card_type}/{back_file.name}"
+                front_url = f"{base_url}/{team}/cards/{rel_card_dir}/{front_file.name}"
+                back_url = (f"{base_url}/{team}/cards/{rel_card_dir}/{back_file.name}"
                             if back_file else front_url)
                 effective_back = back_file if back_file else front_file
-                prev = prev_objs_by_key.get((card_type, base_name))
+                prev = prev_objs_by_key.get((card_type_v2, base_name))
                 stable = _reuse_or_new_pair(
                     prev, front_file, effective_back, front_url, back_url,
                     "face_url", "back_url", {}
@@ -572,27 +603,10 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
         # Add card images
         cards_dir = team_dir / 'cards'
         if cards_dir.exists():
-            for card_type_dir in sorted(cards_dir.iterdir()):
-                if not card_type_dir.is_dir():
-                    continue
-                
-                card_type = card_type_dir.name
-                
-                # Group front/back pairs
-                card_pairs = {}
-                for card_file in card_type_dir.glob('*.jpg'):
-                    name = card_file.stem
-                    if name.endswith('-front'):
-                        base_name = name[:-6]
-                        if base_name not in card_pairs:
-                            card_pairs[base_name] = {}
-                        card_pairs[base_name]['front'] = card_file
-                    elif name.endswith('-back'):
-                        base_name = name[:-5]
-                        if base_name not in card_pairs:
-                            card_pairs[base_name] = {}
-                        card_pairs[base_name]['back'] = card_file
-                
+            for card_type, card_type_dir in sorted(_canonical_card_dir_map(cards_dir).items()):
+                card_pairs = _preferred_card_pairs(card_type_dir)
+                rel_card_dir = str(card_type_dir.relative_to(cards_dir)).replace("\\", "/")
+
                 # Add paired cards
                 for base_name, files in sorted(card_pairs.items()):
                     front_file = files.get('front')
@@ -601,8 +615,8 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
                     if not front_file:
                         continue
                     
-                    front_url = f"{base_url}/{team}/cards/{card_type}/{front_file.name}"
-                    back_url = f"{base_url}/{team}/cards/{card_type}/{back_file.name}" if back_file else front_url
+                    front_url = f"{base_url}/{team}/cards/{rel_card_dir}/{front_file.name}"
+                    back_url = f"{base_url}/{team}/cards/{rel_card_dir}/{back_file.name}" if back_file else front_url
                     effective_back = back_file if back_file else front_file
                     entry = {"type": card_type, "name": base_name}
                     prev = prev_objs_by_key.get((card_type, base_name))

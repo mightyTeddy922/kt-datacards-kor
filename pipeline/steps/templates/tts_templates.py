@@ -412,9 +412,12 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
             after = face_url.split("/output/", 1)[1]
             # URL format: .../output/{team}/cards/{card_type}/...
             parts = after.split("/")
-            if len(parts) < 3:
+            if len(parts) < 4:
+                return None
+            if parts[1].strip().lower() != "cards":
                 return None
             folder = parts[2].strip().lower()
+            subfolder = parts[3].strip().lower() if len(parts) > 4 else ""
         else:
             return None
 
@@ -425,6 +428,11 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
             return "markertokens"
         if folder in {"datacards", "equipment", "firefight-ploys", "strategy-ploys"}:
             return folder
+        if folder == "ploys":
+            if subfolder == "firefight":
+                return "firefight-ploys"
+            if subfolder == "strategy":
+                return "strategy-ploys"
         if folder == "firefight_ploys":
             return "firefight-ploys"
         if folder == "strategy_ploys":
