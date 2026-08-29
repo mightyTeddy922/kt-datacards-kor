@@ -1,189 +1,483 @@
 {
   "team": "imperial-navy-breachers",
-  "generated_at": "2026-08-29T18:45:09.016091+00:00",
+  "generated_at": "2026-08-29T22:28:56.322893+00:00",
   "datacards": [
     {
-      "name": "<image: DeviceN(1,DeviceCMYK,Black), width: 2480, height: 3508, bpc: 8>",
+      "name": "해군 경위관",
       "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 9,
+      "wounds": 8,
       "base_size": 25,
       "weapons": [
         {
-          "name": "Bolt pistol",
-          "attacks": "4",
-          "hit": "4+",
-          "damage": "3/4",
-          "special_rules": "Range 8\""
-        },
-        {
-          "name": "Heirloom autopistol",
+          "name": "가이스트스컬 기폭 장치",
           "attacks": "4",
           "hit": "3+",
-          "damage": "2/4",
-          "special_rules": "Range 8\", Lethal 5+"
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
         },
         {
-          "name": "Navis shotgun (close range)",
+          "name": "해군 산탄총(근거리)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/3",
-          "special_rules": "Range 6\""
+          "special_rules": "사거리 6\""
         },
         {
-          "name": "Navis shotgun (long range)",
+          "name": "해군 산탄총(장거리)",
           "attacks": "4",
           "hit": "5+",
           "damage": "1/2"
         },
         {
-          "name": "Chainsword",
-          "attacks": "4",
-          "hit": "3+",
-          "damage": "4/5"
-        },
-        {
-          "name": "Navis hatchet",
+          "name": "해군 손도끼",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
-        },
-        {
-          "name": "Power weapon",
-          "attacks": "4",
-          "hit": "3+",
-          "damage": "4/6",
-          "special_rules": "Lethal 5+"
         }
-      ],
-      "keywords": [
-        "IMPERIAL NAVY BREACHER",
-        "IMPERIUM",
-        "LEADER",
-        "SERGEANT-AT-ARMS"
       ],
       "passive_abilities": [
         {
-          "name": "Command Breach",
-          "description": "Whenever you would use the Attack Order or Defence Order strategy ploy, if this operative is in the killzone, it costs you 0CP. Once during each of this operative’s activations, before or after it performs an action, if your Attack Order or Defence Order marker is in the killzone (see relevant strategy ploy), you can either:\n• Remove that marker and place it again.\n• Change the selected ploy to the other (e.g. your Attack Order becomes a Defence Order). You cannot do both, and you don’t need to spend any CP to change the ploy. NAVIS SERGEANT-AT-"
-        },
-        {
-          "name": "Group Activation",
-          "description": "Whenever this operative is expended, you must then activate one other ready friendly IMPERIAL NAVY BREACHER ARMSMAN operative (if able) before your opponent activates. When that other operative is expended, your opponent then activates as normal (in other words, you cannot activate more than two operatives in succession with this rule). Ignore this rule when you are using the Breach and Clear faction rule."
-        },
-        {
-          "name": "Emboldened",
-          "description": "Whenever an attack dice inflicts damage of 3 or more on this operative during a turning point in which it"
-        },
-        {
-          "name": "performed the Charge action, roll one D6",
-          "description": "on a 5+, subtract 1 from that inflicted damage."
-        },
-        {
-          "name": "Machine",
-          "description": "• This operative cannot be activated or perform actions if it’s within control range of an enemy operative, or if a friendly IMPERIAL NAVY BREACHER SURVEYOR operative has been incapacitated. The turning point can end even if this operative is still ready.\n• This operative cannot perform any actions other than Charge, Dash, Fall Back, Reposition and Spot.\n• It cannot retaliate, assist in a fight, climb or jump.\n• Whenever determining control of a marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n• Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\n• Whenever determining what's visible to this operative, draw the line from any part of the miniature. NAVIS C.A.T."
-        },
-        {
-          "name": "Expendable",
-          "description": "This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives). It’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy operatives (if it escapes/survives/ is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.)."
-        },
-        {
-          "name": "Breachwall",
-          "description": "Whenever your opponent is selecting a valid target, they cannot select another friendly IMPERIAL NAVY BREACHER operative whose base is touching this operative’s if this operative has an Engage order and is intervening. This rule has no effect if more than one other friendly operative’s base is touching this operative’s."
-        },
-        {
-          "name": "*Shield",
-          "description": "Whenever this operative is fighting or retaliating with this weapon, each of your blocks can be allocated to block two unresolved successes (instead of one)."
-        },
-        {
-          "name": "Disengage",
-          "description": "This operative can perform the Fall Back action for 1 less AP."
-        },
-        {
-          "name": "Machine",
-          "description": "• This operative cannot perform any actions other than Boost, Charge, Dash, Fall Back and Reposition.\n• It cannot retaliate or assist in a fight.\n• Whenever determining control of a marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n• Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\"."
-        },
-        {
-          "name": "Expendable",
-          "description": "This operative is ignored for your opponent’s kill/elimination op (when it’s incapacitated, and when determining your starting number of operatives). It’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy operatives (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.)."
-        },
-        {
-          "name": "Grenadier",
-          "description": "This operative can use frag, krak and stun grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives). Whenever this operative is using a frag or krak grenade, improve the Hit stat of that weapon by 1."
-        },
-        {
-          "name": "*Detonate",
-          "description": "Don’t select a valid target. Instead, a friendly IMPERIAL NAVY BREACHER GHEISTSKULL operative is always the primary target and cannot be in cover or obscured. If that operative isn’t in the killzone, you cannot select this weapon. NAVIS VOID-"
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
         }
       ],
-      "unique_actions": [
+      "unique_actions": []
+    },
+    {
+      "name": "해군 함대병",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
         {
-          "name": "SPOT (1AP)",
-          "description": "Select one enemy operative visible to this operative. Until the end of the turning point, until that enemy operative is no longer visible to this operative or until this operative performs this action again (whichever comes first), whenever a friendly IMPERIAL NAVY BREACHER operative is shooting that enemy operative, you can use this effect. If you do:\n• That friendly operative’s ranged weapons have the Seek Light weapon rule.\n• That enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative. NAVIS C.A.T. UNIT"
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
         },
         {
-          "name": "BOOST (1AP)",
-          "description": "Until the end of the activation, add 6\" to this operative’s Move stat. This operative cannot perform this action more than once per battle, and cannot perform it during the first turning point. NAVIS GHEISTSKULL"
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
         },
         {
-          "name": "WELD SHUT (1AP)",
-          "description": "Select a closed hatchway (e.g. Killzone: Tomb World) within this operative’s control range. 1 additional AP must be spent for other operatives to perform the Operate Hatch action to open that hatchway. This effect ends when that hatchway is opened. Note this operative isn’t affected by this effect. This operative cannot perform this action while within control range of an enemy operative, or if it isn’t within 1\" of a closed hatchway. NAVIS HATCHCUTTER"
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
         },
         {
-          "name": "BREACH POINT (1AP)",
-          "description": "Place one of your Breach markers within this operative’s control range as close as possible to a terrain feature within control range of it. Whenever an operative is within 1\" of that marker, it treats parts of that terrain feature that are no more than 1\" thick as Accessible terrain. This operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn’t within its control range. NAVIS HATCHCUTTER"
-        },
-        {
-          "name": "WAYFIND (1AP)",
-          "description": "SUPPORT. Select one other friendly IMPERIAL NAVY BREACHER operative (excluding C.A.T. UNIT or GHEISTSKULL) visible to and within 6\" of this operative, or visible to and within 6\" of a friendly IMPERIAL NAVY BREACHER C.A.T. UNIT operative. Until the end of that operative’s next activation, add 1 to its APL stat. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control that marker. This operative cannot perform this action while within control range of an enemy operative. NAVIS SURVEYOR"
-        },
-        {
-          "name": "REMOTE CONTROL (1AP)",
-          "description": "Select one friendly IMPERIAL NAVY BREACHER C.A.T. UNIT operative. That operative can immediately perform one free action, but it cannot move more than 3\" during that action. This operative cannot perform this action while within control range of an enemy operative, or if a friendly IMPERIAL NAVY BREACHER C.A.T. UNIT operative isn’t in the killzone. NAVIS SURVEYOR"
-        },
-        {
-          "name": "INTERFERENCE PULSE (1AP)",
-          "description": "Select one enemy operative visible to and within 8\" of a friendly GHEISTSKULL operative. Roll one D6, adding 1 to the result if that enemy operative is a valid target for that friendly GHEISTSKULL operative: on a 3+, subtract 1 from that enemy operative’s APL stat until the end of its next activation. This operative cannot perform this action while within control range of an enemy operative, or if a friendly GHEISTSKULL operative isn’t in the killzone. NAVIS VOID-JAMMER"
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
         }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 도부수",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 C.A.T. 유닛",
+      "apl": 2,
+      "movement": "8″",
+      "save": "5+",
+      "wounds": 5,
+      "base_size": 25,
+      "passive_abilities": [
+        {
+          "name": "기계",
+          "description": "• 이 요원은 적 요원의 장악 범위 내에 있을 때, 또는 아군 제국 해군 돌파조 해군 측량병 요원이 무력화되었을 때는 운용되거나 행동을 수행할 수 없습니다. 이 요원이 준비 상태일 때에도 전환점이 종료될 수 있습니다.\n• 이 요원은 돌격, 질주, 후퇴, 기동, 감적 이외의 다른 행동을 수행할 수 없습니다.\n• 이 요원은 근접전에서 반격 또는 지원을 수행할 수 없으며, 올라가기 및 도약도 수행할 수 없습니다."
+        },
+        {
+          "name": "소모품",
+          "description": "이 요원은 제거/섬멸 작전에 서 상대의 기록에 집계되지 않습니다 (무력화될 때와 게임 시작 시 플레이 어의 요원 숫자를 셀 때). 요원이 ‘탈 출’ 또는 ‘생존’하거나 적 요원에게 무력화되어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않 습니다(이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음). 감적"
+        }
+      ],
+      "unique_actions": [],
+      "keywords": [
+        "제국 해군 돌파조",
+        "제국",
+        "C.A.T. 유닛"
       ]
+    },
+    {
+      "name": "해군 팽배수",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 가이스트스컬",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 척탄병",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 사수",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 시설개조병",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 측량병",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "해군 공허교란수",
+      "apl": 2,
+      "movement": "6″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "폭발 1\", 살상 4+, 한도 1, 무성, 혼미, 기폭*"
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "사거리 6\""
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2"
+        },
+        {
+          "name": "해군 손도끼",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "*기폭",
+          "description": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        }
+      ],
+      "unique_actions": []
+    }
+  ],
+  "equipment": [
+    {
+      "name": "apl",
+      "text": "제국 해군 돌파조\n팩션 장비\n재호흡기\n이 마스크는 산소를 재순환시키기 때문에 착용자는 독성 대기, \n해저, 진공 상태에서도 장기간 생존할 수 있다.\n아군 제국 해군 돌파조 요원의 APL 수치에 적용되는 변경 \n사항을 무시할 수 있으며, 적 요원의 충격 무기 규칙에 영향\n을 받지 않습니다."
+    },
+    {
+      "name": "ap-1",
+      "text": "제국 해군 돌파조\n팩션 장비\n시스템 오버라이드 장치\n이 장치를 코지테이터 패널에 연결하면 개폐 장치에 들어가는 전\n력을 끊을 수 있다. 즉, 돌파조의 강제 진입이 가능해지는 것이다.\n전환점당 한 번, 아군 제국 해군 돌파조 요원 하나가 해치 조작 \n행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다."
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "apl-1",
+      "text": "제국 해군 돌파조\n화력전 플로이\n목표물 압도\n일부 인원이 제압 사격을 수행하는 동안, 돌파조의 나머지는 엄폐물\n에서 벗어나 적을 둘러싼다.\n돌파 및 소탕 팩션 규칙을 사용하는 중에 두 아군 제국 해군 \n돌파조 요원 중 하나를 운용할 때 이 화력전 플로이를 사용\n합니다. 그 요원의 운용이 종료될 때까지 APL 수치가 +1만\n큼 변경됩니다.\n\n---\n\n제국 해군 돌파조\n화력전 플로이\n위치 사수\n강력한 무장과 장갑을 갖춘 돌파조는 확보한 위치를 사수하는 데 \n뛰어나다.\n아군 제국 해군 돌파조 요원 하나가 운용될 때 이 화력전 플\n로이를 사용합니다. 사용 시, 목표물 마커 하나를 지정합니\n다. 전투가 종료될 때까지, 또는 이 플로이를 다시 사용할 때\n까지(어느 하나라도 충족 시까지), 그 목표물 마커의 장악 여\n부를 판정할 때 그 아군 요원의 APL 수치가 +1만큼 변경된 \n것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므\n로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION",
-      "text": "IMPERIAL NAVY BREACHERS \nKILL TEAM\nARCHETYPES: SECURITY, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 IMPERIAL NAVY BREACHER \nSERGEANT-AT-ARMS operative with the \nfollowing option:\n• Navis shotgun and Navis hatchet\n Or one option from each of the following:\n• Bolt pistol or heirloom autopistol\n• Chainsword or power weapon \n \n↘ 10 IMPERIAL NAVY BREACHER operatives \nselected from the following list:\n• ARMSMAN\n• AXEJACK\n• C.A.T. UNIT\n• ENDURANT\n• GHEISTSKULL\n• GRENADIER\n• GUNNER with Navis las-volley and gun butt\n• GUNNER with meltagun and gun butt\n• GUNNER with plasma gun and gun butt\nCONTINUES ON OTHER SIDE\n\n---\n\n• HATCHCUTTER\n• SURVEYOR\n• VOID-JAMMER \nOther than ARMSMAN operatives, your kill team \ncan only include each operative on this list \nonce. Your kill team can only include up to two \nGUNNER operatives. \nYour kill team can only include a GHEISTSKULL \noperative if it also includes a VOID-JAMMER \noperative, and it can only include a \nC.A.T. UNIT operative if it also includes a \nSURVEYOR operative.\n These operatives count as half a selection each, \nmeaning you can select both of them and it’s \ntreated as one selection in total.\n\n---\n\nIMPERIAL NAVY BREACHER\nFACTION RULE\nVOID ARMOUR\nThe armour worn by Imperial Navy Armsmen \nis void-sealed, meaning that they can fight in \nenvironments devoid of gravity or atmosphere. Such \narmour also serves to protect them from explosive \nblasts and flaming torrents.\nWhenever an operative is shooting a friendly \nIMPERIAL NAVY BREACHER operative, if the \nranged weapon in that sequence has the Blast \nor Torrent weapon rule (excluding weapons that \nhave a sweeping profile), you can re-roll one of \nyour defence dice, or up to two of your defence \ndice if that friendly operative is a GRENADIER.\nFriendly IMPERIAL NAVY BREACHER operatives \naren’t affected by the x\" Devastating x weapon \nrule (i.e. Devastating with a distance) unless they \nare the target during that sequence.\n\n---\n\nIMPERIAL NAVY BREACHER\nFACTION RULE\nBREACH AND CLEAR\nMethodical, professional and well-drilled, Imperial \nNavy Breachers work as a unit to breach and clear the \ncorridors and chambers of enemy voidcraft, space \nhulks, orbital stations and more.\nOnce per turning point, when a ready friendly \nIMPERIAL NAVY BREACHER operative is \nactivated, you can use this rule. If you do, \nselect one other ready friendly IMPERIAL NAVY \nBREACHER operative visible to and within 3\" of \nthat operative. When that first friendly operative \nis expended, you can activate that other friendly \noperative before your opponent activates. When \nthat other operative is expended, your opponent \nthen activates as normal.\n\n---\n\nMARKER/TOKEN GUIDE\nEmboldened \ntoken\nDemolition \nCharge token\nLock it Down \ntoken\nAttack Order \nmarker\nDefence Order \nmarker\nSystem \nOverride \nDevice token\nSpot token\nGheistskull \nDetonator \ntoken\nWeld Shut \nmarker\nIMPERIAL NAVY BREACHER\nSlugs \ntoken\nBreach \nmarker\n\n---\n\nIMPERIAL NAVY BREACHER\nSTRATEGY PLOY\nATTACK ORDER\nWhen directed to assault a designated position, Imperial \nNavy Breachers achieve their goal through coordination \nand determination.\nPlace your Attack Order marker in the killzone. \nWhenever a friendly IMPERIAL NAVY \nBREACHER operative within 3\" of that marker is \nshooting, fighting or retaliating, its weapons have \nthe Ceaseless weapon rule. In the Ready step \nof the next Strategy phase, remove that marker. \nYou cannot use this ploy and the Defence Order \nstrategy ploy during the same Strategy phase.\n\n---\n\nIMPERIAL NAVY BREACHER\nSTRATEGY PLOY\nDEFENCE ORDER\nWhen called upon to hold a position, Imperial Navy \nBreachers move into tight formation, creating an \nimpenetrable wall of shields and guns.\nPlace your Defence Order marker in the killzone. \nWhenever an operative is shooting a friendly \nIMPERIAL NAVY BREACHER operative that’s \nwithin 3\" of that marker, you can re-roll any \nof your defence dice results of one result (e.g. \nresults of 2). In the Ready step of the next \nStrategy phase, remove that marker. You cannot \nuse this ploy and the Attack Order strategy ploy \nduring the same Strategy phase.\n\n---\n\nIMPERIAL NAVY BREACHER\nSTRATEGY PLOY\nCLOSE ASSAULT\nBreachers are used to fighting in the close confines of \na voidship's decks and are devastatingly effective when \nengaging foes at close range.\nWhenever a friendly IMPERIAL NAVY \nBREACHER operative is fighting or shooting an \noperative within 3\" of it:\n• Add 1 to both Dmg stats of all profiles of \nits Navis shotguns or Navis heavy shotguns \n(if any).\n• If you roll two or more fails, you can discard \none of them to retain another as a normal \nsuccess instead.\n\n---\n\nIMPERIAL NAVY BREACHER\nSTRATEGY PLOY\nBRACE FOR COUNTERATTACK\nTaking up a defensive stance, the Breachers prepare to \nrepel the oncoming enemy.\nWhenever an operative is shooting against, \nfighting against or retaliating against a friendly \nIMPERIAL NAVY BREACHER operative that’s \nwithin your territory or that hasn’t performed \nthe Charge, Fall Back or Reposition action \nduring this turning point, Normal and Critical \nDmg of 3 or more inflicts 1 less damage on that \nfriendly operative.\n\n---\n\nIMPERIAL NAVY BREACHER\nFIREFIGHT PLOY\nOVERWHELM TARGET\nAs some Breachers lay down pinning fire, others break \ncover in at attempt to outflank the foe.\nUse this firefight ploy when you activate either \nfriendly IMPERIAL NAVY BREACHER operative \nwhile using the Breach and Clear faction rule. \nUntil the end of that operative’s activation, add 1 \nto its APL stat.\n\n---\n\nIMPERIAL NAVY BREACHER\nFIREFIGHT PLOY\nBLITZ\nThe keys to a successful boarding action are speed \nand violence. Breachers advance quickly, maintaining \na rapid rate of fire and cutting down any who block \ntheir progress.\nUse this firefight ploy when a friendly IMPERIAL \nNAVY BREACHER operative performs the \nShoot or Fight action, and you select an enemy \noperative within 6\" of it as a valid target or to \nfight against. If it’s the first friendly operative \nto perform either of those actions during this \nturning point, its weapons have the Accurate 1 \nweapon rule for that action. If it’s the first friendly \noperative to be activated during this turning \npoint, its weapons also have the Severe weapon \nrule for that action.\n\n---\n\nIMPERIAL NAVY BREACHER\nFIREFIGHT PLOY\nLOCK IT DOWN\nHeavily armed and armoured, Breachers are adept at \nholding the positions they seize.\nUse this firefight ploy when a friendly IMPERIAL \nNAVY BREACHER operative is activated. Select \none objective marker. Until the end of the battle \nor until you use this ploy again (whichever comes \nfirst), when determining control of that objective \nmarker, treat that friendly operative’s APL stat as \n1 higher. Note this isn’t a change to the APL stat, \nso any changes are cumulative with this.\n\n---\n\nIMPERIAL NAVY BREACHER\nFIREFIGHT PLOY\nDECK HAND\nSpending the vast majority of their lives aboard \nvoidships, Breachers are used to fighting their way \nacross decks and through cramped hatchways \nand bulkheads.\nUse this firefight ploy during a friendly IMPERIAL \nNAVY BREACHER operative’s activation, before \nor after it performs an action. That operative \ncan move through one Accessible terrain \nfeature without it counting as an additional 1\" \nand/or perform a free Operate Hatch action \nduring its activation, and can do so during the \nCharge or Fall Back action. You cannot use \nthis ploy if the access point has been welded \nshut (see HATCHCUTTER) unless it’s a friendly \nHATCHCUTTER operative’s activation.\n\n---\n\nIMPERIAL NAVY BREACHER\nFACTION EQUIPMENT\nREBREATHERS\nThese masks recycle a supply of oxygen, allowing the \nbearer to survive for extended periods in poisonous \natmospheres, underwater or in the vacuum of space.\nYou can ignore any changes to the APL stat of \nfriendly IMPERIAL NAVY BREACHER operatives, \nand they aren’t affected by enemy operatives’ \nShock weapon rule.\n\n---\n\nIMPERIAL NAVY BREACHER\nFACTION EQUIPMENT\nSLUGS\nThese heavy projectiles can be fired from a shotgun, \ntrading close-quarters impact for increased range and \nlethality against a single target.\nUp to three times per turning point, whenever a \nfriendly IMPERIAL NAVY BREACHER operative \nis performing the Shoot action and you select a \nNavis shotgun (long range), you can use this rule. \nIf you do, until the end of that action, improve the \nHit stat of that weapon by 1 and add 1 to both of \nits Dmg stats.\n\n---\n\nIMPERIAL NAVY BREACHER\nFACTION EQUIPMENT\nCOMBAT STIMMS\nMany Imperial soldiers carry combat stimms designed to \nstave off fatigue, dull pain and enhance concentration.\nYou can ignore any changes to the Move stat of \nfriendly IMPERIAL NAVY BREACHER operatives \nfrom being injured.\n\n---\n\nIMPERIAL NAVY BREACHER\nFACTION EQUIPMENT\nSYSTEM OVERRIDE DEVICE\nThis device, when attached to cogitator panels, reroutes \npower away from locking mechanisms, allowing \nBreachers to force entry.\nOnce per turning point, one friendly IMPERIAL \nNAVY BREACHER operative can perform the \nOperate Hatch action for 1 less AP.",
-      "selection": {
-        "C.A.T. UNIT": [],
-        "SERGEANT-AT-ARMS": [
-          [
-            "Navis shotgun and Navis hatchet"
-          ],
-          [
-            "Bolt pistol",
-            "heirloom autopistol"
-          ],
-          [
-            "Chainsword",
-            "power weapon"
-          ]
-        ],
-        "ARMSMAN": [],
-        "AXEJACK": [],
-        "ENDURANT": [],
-        "GHEISTSKULL": [],
-        "GRENADIER": [],
-        "HATCHCUTTER": [],
-        "SURVEYOR": [],
-        "VOID-JAMMER": [],
-        "GUNNER": [
-          [
-            "Navis las-volley and gun butt",
-            "meltagun and gun butt",
-            "plasma gun and gun butt"
-          ]
-        ]
-      }
+      "name": "OPERATIVE SELECTION IMPERIAL NAVY BREACHERS",
+      "text": "제국 해군 돌파조 \n킬 팀\n아키타입: 경비, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002제국 해군 돌파조\u0002경위관\u0002요원,\u0002다음\u0002선택지를\u0002장비합니다.\n• \u0002해군\u0002산탄총과\u0002해군\u0002손도끼\n\u0002또는\u0002다음\u0002각\u0002선택지에서\u0002하나씩\u0002골라\u0002장비합니다.\n• \u0002볼트\u0002권총\u0002또는\u0002가보\u0002기관권총\n• \u0002체인소드\u0002또는\u0002역장\u0002무기\n \n↘\u000210\u0002제국 해군 돌파조\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성\n합니다.\n• \u0002함대병\n• \u0002도부수\n• \u0002C.A.T. 유닛\n• \u0002팽배수\n• \u0002가이스트스컬\n• \u0002척탄병\n• \u0002사수,\u0002해군\u0002라스볼리,\u0002개머리판\n• \u0002사수,\u0002멜타건,\u0002개머리판\n• \u0002사수,\u0002플라스마\u0002건,\u0002개머리판\n다음 면에 계속\n\n---\n\n• \u0002시설개조병\n• \u0002측량병\n• \u0002공허교란수\u0002\n함대병\u0002요원을\u0002제외하면\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번\n씩만\u0002편성할\u0002수\u0002있습니다.\u0002사수\u0002요원은\u0002최대\u0002둘\u0002편성할\u0002수\u0002있\n습니다.\n가이스트스컬\u0002요원은\u0002공허교란수\u0002요원이\u0002포함되어야\u0002편성할\u0002\n수\u0002있습니다.\u0002C.A.T. 유닛\u0002요원은\u0002측량병\u0002요원이\u0002포함되어야\u0002\n편성할\u0002수\u0002있습니다.\n\u0002이\u0002요원들은\u0002각각\u0002편성\u0002단위의\u0002절반만\u0002차지합니다.\u0002즉,\u0002\n두\u0002요원을\u0002동시에\u0002편성하면\u0002인원\u0002계산\u0002시\u0002요원\u0002하나로\u0002간\n주됩니다.",
+      "selection": {}
     }
   ]
 }

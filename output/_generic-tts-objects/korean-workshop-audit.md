@@ -14,6 +14,8 @@
 ## Script Repo Audit
 - Target repo inside Lua scripts: 1669
 - Upstream repo inside Lua scripts: 0
+- Source updater/spawner scripts with target repo: 5/5
+- Source updater/spawner scripts with upstream repo: 0
 - Target repo base: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main`
 - Upstream repo base: `https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main`
 
@@ -25,21 +27,31 @@
 - `click_update_single_object` original=3334 patched=3334
 
 ## Team URL Mode
+- Officially translated teams (34): angels-of-death, battleclade, blades-of-khaine, brood-brothers, canoptek-circle, celestian-insidiants, chaos-cult, deathwatch, exaction-squad, exodite-dragon-masters, farstalker-kinband, fellgor-ravagers, goremongers, hand-of-the-archon, hearthkyn-salvagers, hernkyn-yaegirs, hierotek-circle, imperial-navy-breachers, inquisitorial-agents, kasrkin, mandrakes, murderwings, nemesis-claw, plague-marines, ratlings, raveners, sanctifiers, scout-squad, spectre-squad, tempestus-aquilons, vespid-stingwings, wolf-scouts, wrecka-krew, xv26-stealth-battlesuits
+- Official English-fallback teams (3): gellerpox-infected, novitiates, pathfinders
+- Legacy/no-Korean-entry fallback teams (11): blooded, corsair-voidscarred, death-korps, elucidian-starstriders, hunter-clade, kommandos, legionaries, phobos-strike-team, void-dancer-troupe, warpcoven, wyrmblade
 - Korean-applied teams (34): angels-of-death, battleclade, blades-of-khaine, brood-brothers, canoptek-circle, celestian-insidiants, chaos-cult, deathwatch, exaction-squad, exodite-dragon-masters, farstalker-kinband, fellgor-ravagers, goremongers, hand-of-the-archon, hearthkyn-salvagers, hernkyn-yaegirs, hierotek-circle, imperial-navy-breachers, inquisitorial-agents, kasrkin, mandrakes, murderwings, nemesis-claw, plague-marines, ratlings, raveners, sanctifiers, scout-squad, spectre-squad, tempestus-aquilons, vespid-stingwings, wolf-scouts, wrecka-krew, xv26-stealth-battlesuits
 - English fallback teams (14): blooded, corsair-voidscarred, death-korps, elucidian-starstriders, gellerpox-infected, hunter-clade, kommandos, legionaries, novitiates, pathfinders, phobos-strike-team, void-dancer-troupe, warpcoven, wyrmblade
 - Manager bag contained team boxes: 48
 
 ## Representative FaceURL Checks
-- Korean team `blades-of-khaine`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/blades-of-khaine/cards/operative-selection/blades-of-khaine-operative-selection-front.jpg?v=1788024859`
-- English fallback team `angels-of-death`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/operative-selection/angels-of-death-operative-selection-front.jpg?v=1788036405`
+- Official Korean team `angels-of-death`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/assault-intercessor-grenadier-front.jpg?v=1788039484`
+- Official Korean team `battleclade`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/battleclade/cards/datacards/battleclade-auto-proxy-servitor-front.jpg?v=1788039248`
+- Official Korean team `blades-of-khaine`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/blades-of-khaine/cards/datacards/dire-avenger-exarch-front.jpg?v=1788039248`
+- English fallback team `gellerpox-infected`: `https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/gellerpox-infected/cards/datacards/bloatspawn-front.jpg?v=1783537960`
 
 ## Image Resolution Checks
-- Localized sample front-image sizes seen: 1408x805, 1409x807, 1409x809, 1410x808, 1430x827, 2112x1208, 2114x1211, 2114x1214
-- `blades-of-khaine`: `blades-of-khaine-엄습하는-전갈-전사-front.jpg` -> 1430x827
-- `chaos-cult`: `blessed-blade-front.jpg` -> 1409x809
-- `kasrkin`: `image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg` -> 2114x1211
-- `angels-of-death`: `angels-of-death-assault-intercessor-grenadier-front.jpg` -> 1430x827
+- Localized sample front-image sizes seen: 1211x2115, 1211x2117, 1212x2115, 1212x2117, 2112x1208, 2114x1211, 2114x1214, 2115x1212, 827x1430
+- `angels-of-death` officially translated? True
+- `angels-of-death`: `assault-intercessor-grenadier-front.jpg` -> 2114x1214
+- `battleclade`: `battleclade-auto-proxy-servitor-front.jpg` -> 2114x1214
+- `blades-of-khaine`: `dire-avenger-exarch-front.jpg` -> 2114x1211
+- `gellerpox-infected`: `bloatspawn-front.jpg` -> 1408x805
 
 ## Save Integrity
 - The patched save is produced by patching the original workshop JSON in place rather than rebuilding a simplified substitute.
 - Team boxes keep the original object structure; only repo references in scripts and per-team card image URLs are swapped where localized assets exist.
+
+## Updater Match Audit
+- All generated team boxes' active card decks matched their per-team object manifests.
+- All officially translated teams' active card decks point at the target repository.

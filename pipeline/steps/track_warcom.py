@@ -148,21 +148,19 @@ def _scrape(teams: Optional[List[str]], force: bool, section: str = "Team Rules"
 
     if teams:
         wanted = {_slug(t) for t in teams}
+        team_config = card_extractor.load_team_config(paths.TEAM_CONFIG)
         filtered = []
         for url in urls:
-            fname = _slug(Path(url).stem)
-            if any(w in fname for w in wanted):
+            team_slug = _team_from_filename(Path(url), team_config) or _slug(
+                scraper._infer_team_slug_from_filename(Path(url).name)
+            )
+            if team_slug in wanted:
                 filtered.append(url)
         logger.info(f"Filtered {len(urls)} scraped URLs down to {len(filtered)} for teams={sorted(wanted)}")
         urls = filtered
 
     downloaded: List[Path] = []
     for url in urls:
-        restored = scraper.maybe_restore_archived_full_pdf(staging, url)
-        if restored is not None:
-            downloaded.append(restored)
-            continue
-
         out = staging / Path(url).name
         if out.exists() and not force:
             logger.info(f"  staging exists, skipping download: {out.name}")
@@ -171,14 +169,18 @@ def _scrape(teams: Optional[List[str]], force: bool, section: str = "Team Rules"
         logger.info(f"  downloading {out.name}")
         if scraper.download_pdf(url, out):
             if scraper.should_skip_incomplete_online_rules_pdf(out, url):
-                logger.warning(
-                    "  skipping %s because only a 2-page online_rules stub is available and no full fallback archive exists",
-                    out.name,
-                )
+                restored = scraper.restore_archived_full_pdf(staging, url)
                 try:
                     out.unlink()
                 except OSError:
                     pass
+                if restored is not None:
+                    downloaded.append(restored)
+                    continue
+                logger.warning(
+                    "  skipping %s because only a 2-page online_rules stub is available and no full fallback archive exists",
+                    out.name,
+                )
                 continue
             downloaded.append(out)
         else:

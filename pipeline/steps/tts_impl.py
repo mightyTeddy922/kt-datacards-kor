@@ -127,6 +127,14 @@ def _preferred_card_pairs(card_type_dir: Path) -> dict[str, dict[str, Path]]:
     if hangul_bases:
         return {base: card_pairs[base] for base in hangul_bases}
 
+    named_bases = [
+        base
+        for base in bases
+        if base and not _CARD_NUMBER_RE.search(base)
+    ]
+    if named_bases:
+        return {base: card_pairs[base] for base in named_bases}
+
     numbered_bases = [base for base in bases if _CARD_NUMBER_RE.search(base)]
     if numbered_bases:
         return {base: card_pairs[base] for base in numbered_bases}

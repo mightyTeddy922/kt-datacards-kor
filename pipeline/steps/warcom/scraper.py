@@ -80,9 +80,11 @@ def _matches_section(filename: str, section: str) -> bool:
 
 def _infer_team_slug_from_filename(filename: str) -> str:
     stem = Path(filename).stem.lower().replace("_", "-")
+    stem = re.sub(r"^killl-", "kill-", stem)
     stem = re.sub(r"^(?:kor|eng|deu|ger|fra|fre|ita|spa|esp|jpn|jap|korean)-", "", stem)
     stem = re.sub(r"^\d{2}-\d{2}-", "", stem)
     stem = re.sub(r"^kill-team-team-rules-", "", stem)
+    stem = re.sub(r"^killl-team-team-rules-", "", stem)
     stem = re.sub(r"^kt-teamrules-", "", stem)
     stem = re.sub(r"^kt-", "", stem)
     stem = re.sub(r"^kill-team-", "", stem)
@@ -192,8 +194,8 @@ def _find_archived_full_pdf(team_slug: str) -> Path | None:
     return None
 
 
-def maybe_restore_archived_full_pdf(output_dir: Path, source_url: str) -> Path | None:
-    """Copy an archived English full-rules PDF into staging for online-rules-only teams."""
+def restore_archived_full_pdf(output_dir: Path, source_url: str) -> Path | None:
+    """Copy an archived English full-rules PDF into staging for an incomplete locale stub."""
     filename = Path(source_url).name
     if not _is_online_rules_filename(filename):
         return None
