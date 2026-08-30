@@ -1,20 +1,23 @@
 {
   "team": "murderwings",
   "pipeline_version": "2.0",
-  "last_updated": "2026-08-29T20:47:43.348440+00:00",
+  "last_updated": "2026-08-29T23:28:34.983498+00:00",
   "steps": {
     "content_analysis": {
       "outputs": {
         "content.json": {
           "path": "layers/integration/murderwings/content/murderwings-content.json",
-          "hash": "5e91808a2d2d3e0f3adf184251fbbcc1e8afc31a586fb7c443f900b622e8639f",
-          "modified": "2026-08-29T18:46:49.147996+00:00"
+          "hash": "d93c2a2538886ce3f906ee0ac270c6b31fa7688ed9514ac4863958fe99206c89",
+          "modified": "2026-08-29T22:21:17.683891+00:00"
         }
       },
-      "completed": "2026-08-29T18:47:03.288123+00:00",
+      "completed": "2026-08-29T22:21:53.498329+00:00",
       "inputs": {
-        "layers/integration/murderwings/manifest.json": "f185f58ecf4929251caf437923be23ca66e1330b311315de5b97385132d14772",
+        "layers/integration/murderwings/manifest.json": "3593a41e17e7697d3e93a86b6af650942cd3baa9bbff929e52222cf3fc05e970",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/murderwings/murderwings-datacard--1.pdf": "a6b980320c9fc10474a5e4b2db05ba482ce484934c912ccb7578b1812d1e9732",
+        "layers/integration/murderwings/murderwings-datacard--2.pdf": "de44144ad73b5d982edc73fd2d58863957f82b92cef1f3832db75332f5f2661f",
+        "layers/integration/murderwings/murderwings-datacard-.pdf": "a4cf39a635f2c42689082dfdfa70550d7f149bfc783ed9809ba8a7ea68700e7d",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "3bcebbddda036dbcfa3b4945939a2f12542c805640c0e3aef94c9f3da485b975",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "25e8e2595cd934f5a1dd126cb6aa210e1e594cec5689ede94d717f2e455e75d4",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "2d9ac1965e6ea32475bc83ec2f8120ccb9fb88e962815809adea65ab3c732798",
@@ -29,29 +32,35 @@
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "2d44f15c5e4f022c3eed8b786a59fbacd9bc32d79d3d15cb95c1f331c79a8fb8",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "43aa1b13b56d4cdf9ee853c47df361788dd3e264cc0ef4caf344770dc06f8b7a",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "a2909b833ebeb9bd5f50d4c77ddb9159e22ac774a2a855ab269d9e343c13a36d",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-champion.pdf": "09982ec78ee56b748004f8478bff9702a2bcb4725c41b636309592a3359656ac",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-chaos-lord.pdf": "e6a877dd19c2944ef1aaa5a8927da5e802571ee80672043a80cf5c1431fed9de",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-curseclaw.pdf": "de807c1a958fcad13d956d4b974d032803fd7a9ed6e00ca68783f91208576034",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-depredator.pdf": "70f4bd45aeb7825303a80860990a53ba6f397d4e2d47cbe60bfe7b4bef22d6bf",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-huntmaster.pdf": "a30c3a3f7bf3d9d0eb88344a272eaff8cf31bf3302f7fba042851252fad9f852",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-raptor.pdf": "2868c768bf9c0ca5a739e08c211817fb009775010f7069241a7cd7acc8450b7a",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-shrieker.pdf": "baab13cada866c98c069567d02fa97d3680ebda518c6737164180609af5883cc",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-skysear.pdf": "7055850ae456a6f52d6a4cf06385cb8f71eb56e7104e78e0114847cce0d7e624",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-warp-talon.pdf": "28918bf0f003ca47552e6aa75c43beb04780f3e78cfa1f8781b314fa389f54cb",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-champion.pdf": "f527b3cce56fed80a85e97d0a6825410f53d1c2dee9c94d3b839637abbea7405",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-chaos-lord.pdf": "084ac077421ea812668de0023168d38a30383231e47a0c25d912e8a72ba8a6df",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-curseclaw.pdf": "7a313ae2297a28be7cecfb981160c440c1100a95528455ca0755addfd87fbc0b",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-depredator.pdf": "6e43354a4a8d6cb3926824143b666e21fd679155b001e885c6f76335f52a5b2f",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-huntmaster.pdf": "6b158f04b5eff11e33a716f2a5ec0db6a24923701e3bdd05dd700ff7200694bf",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-raptor.pdf": "52395fe63847056d98e6877c40c4ce91ae26a5e8ee5f1a8a3649ca05f8fa507e",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-shrieker.pdf": "04d9d213d0c4dd3f2c41b137b176ab805387d5cd7a4786391560ae3ef99cc7cc",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-skysear.pdf": "6ff83d08f93d28f5e58260aa7c56f50824513dad9b9da93f3c3682836e949cfb",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-warp-talon.pdf": "9bb4577994af079c5db9f5b9449fc8927346cd1a0cafb023b20ab390b580b8aa",
+        "layers/integration/murderwings/murderwings-equipment-0ap.pdf": "d31d867963620dd65b80a3f972ee1f145f74a8f9dd2eeacf6d8e3e8edb855847",
+        "layers/integration/murderwings/murderwings-equipment-1ap.pdf": "2649d1e4e4fb11a8d32e785ab40d0331e5ca15014d799d75deb2dcd12a24267e",
         "layers/integration/murderwings/murderwings-equipment-bladefins.pdf": "47cfa186e833d16b38298d4608dd2893c6e09f1d8826bf31931ad01ac75dd3e9",
         "layers/integration/murderwings/murderwings-equipment-clawed-armour.pdf": "ad33f896d2e6cbe0fa2aeaa8d27eabc3b9ea3010dc5a125cfbf861a9ffac791c",
         "layers/integration/murderwings/murderwings-equipment-vox-casters.pdf": "554d8c0fb4f0ecfcbdbc5b1a2c492a187abe080d1a28591fcc644ce158b76188",
         "layers/integration/murderwings/murderwings-equipment-warp-fuel.pdf": "3477606bf5e15e4464330b05c548916f6276b0cf6748c0ce134fa9b2fdbd1ddb",
-        "layers/integration/murderwings/murderwings-faction-rule-astartes.pdf": "b2de958a7ada36b40ee46139302a2a2c1ec2cdb9af08622bed659b6eebbf6daf",
-        "layers/integration/murderwings/murderwings-faction-rule-boost-actions-example.pdf": "b225672ad0e7b305bdad6f667fc361e324103e5cb95c285a6209c5151d11b72d",
-        "layers/integration/murderwings/murderwings-faction-rule-boost-actions.pdf": "9d7fa87de6b7dd4d0ee42c07f16f00449574fbfbac59428ce56f5fa4a263f846",
-        "layers/integration/murderwings/murderwings-faction-rule-jump-pack-example.pdf": "690c68c17254935b2d238edf97641bcf2d03921aaf78120ebe2ba2d93bf9d24a",
-        "layers/integration/murderwings/murderwings-faction-rule-jump-pack.pdf": "5f3afe4bb949fdc33d9ebcf7b4a82678b100bd40bb04f8744bdbb7325f395760",
+        "layers/integration/murderwings/murderwings-faction-rule-a.pdf": "c17a687f48214f1e6aee75ba882ce642196196cdd89058252854c2908063c28f",
+        "layers/integration/murderwings/murderwings-faction-rule-astartes.pdf": "73646780b296ac391453a60ff8e192ebd25ac6e3dfc8f0e0b487173b5b332d6b",
+        "layers/integration/murderwings/murderwings-faction-rule-boost-actions-example.pdf": "1be133ea469a8289d05f41412030b74f4827ffd5630a06fc89c52c71e8b6772c",
+        "layers/integration/murderwings/murderwings-faction-rule-boost-actions.pdf": "97ce8c483763b228de5638e585a128222828afcf6f6a0a31741911b91ec2a4e2",
+        "layers/integration/murderwings/murderwings-faction-rule-c-a.pdf": "cd8c5bf981cf3e483b2a0be9c7932c763d31480e616bca3e97a628538dff0619",
+        "layers/integration/murderwings/murderwings-faction-rule-jump-pack-example.pdf": "11cbcbb756bb86c3278694742a93a6835ec4c28bb03b6e20f30b2feaf9b3e795",
+        "layers/integration/murderwings/murderwings-faction-rule-jump-pack.pdf": "3c3882b6f071aeb9982c2c6dd452fbd36f2e6559e30cbc7235fec5c98854387e",
+        "layers/integration/murderwings/murderwings-faction-rule-unknown.pdf": "131f5e91f006b4e4304ea85c1aa551bf7afa9a13d05a000f64593b46c46dce37",
+        "layers/integration/murderwings/murderwings-faction-rule-x.pdf": "f7c65c98dd8f0d3523f35a9542f32ca53fd9ade2e5bbbbdfc8563785452622e0",
         "layers/integration/murderwings/murderwings-firefight-ploy-long-forgotten-honour.pdf": "def94015e2a7ca8f8f1e84fe9879ea3fa446579050c9302963e6fd9f4388c95b",
         "layers/integration/murderwings/murderwings-firefight-ploy-malicious-narcissism.pdf": "137833c2a6cd0a755c1f1347a835bad82629fb0b62cb750f7079e5da7afb581f",
         "layers/integration/murderwings/murderwings-firefight-ploy-murderous-descent.pdf": "0cbef3a92c2f1b44f817277a685cf583691b5f91553ac10132dc42799375d749",
         "layers/integration/murderwings/murderwings-firefight-ploy-wings-of-darkness.pdf": "8865d1f7f2fe90bcafb2f661b22df92e2213df910778e56389d3427a093e9182",
-        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-1.pdf": "7e1d607c4bddfad3698e86cba744be9cd2204b71b048aaf2c75a6de74289ca32",
+        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-1.pdf": "0b44710bff7a6f103afabbebbfeeb9cc7e8510a3337e55d5db8dd8d5e76d60c4",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-10.pdf": "b616fcf27469de25821bb65326939e35311b925974841cd21bb6a51a047c6720",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-11.pdf": "21e49b649f386b93994c1f895171943aaf52c173077816422a2d52eddcce2940",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-12.pdf": "ebb3b74fe3a108322bd0726052a801fab873006ae13843443f4dceeb80939084",
@@ -62,7 +71,7 @@
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-17.pdf": "7dd4372afe4d5b255843889249b4d03fee5c516437cb9bd50c992ffe81198780",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-18.pdf": "c4e5c85a24fb8aa057f2a8d00e82896b5c2ccdeeb661df36bf8635599994538e",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-19.pdf": "9192e5a50590c5cbca6670b1b01b7649f37c393a2953951128d68162f1fc5d1b",
-        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-2.pdf": "7a05a67e2955a3b430e9ebdd14e4ca7836436c209847d3b287c155c39e81ff97",
+        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-2.pdf": "656646eddb64cf5e03c6ad98f2533a0b2aacead9ad7476181fce4b6234669145",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-20.pdf": "b839260fd2ea9a75e3d739e5cc19072cfe2b7ecfb8eb1fa9becd0b957332cd41",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-21.pdf": "380f84ff47e4f5b4c5acd4cb4f43312222772779fe8141082a0349d602cf2940",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-3.pdf": "da0921dd8ca12fecec0014f62f8d2c1b5756052b3850cb8fb1248a47b7f9448f",
@@ -72,12 +81,15 @@
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-7.pdf": "f6b7d9b511b4d6b2ae59310738825343fb1ad34efe448c048e92434e76e26d14",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-8.pdf": "d68e9bfa6e76dd9a185991394ac6420b3fd99f9e3dca6eee43da65d6771a9bfa",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-9.pdf": "a04d2e97954595bd7a3da3f5def1fce5811a0c06b76828187c1b1ea5202cb27b",
+        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-murderwings.pdf": "4e192ab1be1c1883eab5c31ed4d390493de662aac0996bf4a021031a1b3fc369",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection.pdf": "df047f62a798b5905beee690ab29a4ae036747321d3149c003abaacbd446282b",
+        "layers/integration/murderwings/murderwings-strategy-ploy-apl.pdf": "15bbf7788c2c849313907e1c80f0118b21c6c258f8892cb12200caa44d4d9753",
         "layers/integration/murderwings/murderwings-strategy-ploy-cull-the-weak.pdf": "06947cbc8c2b6fc1ae77cf4fee3633c0ed5b5af08014d2818c81ee5561f90d05",
         "layers/integration/murderwings/murderwings-strategy-ploy-instil-fear.pdf": "0d581be880d0f48f5a3b1cd27180480bf139928aac46cad0101970b05fa9c537",
         "layers/integration/murderwings/murderwings-strategy-ploy-nightmare-on-high.pdf": "06e12e3e07b44ed24bbb726a9ea059979411f26763c5a0c281ec240dd8531139",
         "layers/integration/murderwings/murderwings-strategy-ploy-predators-above.pdf": "6b270915200d923d923943222ad027a3cf14a0dd65f7acd410f48e0e90881bf0",
-        "layers/integration/murderwings/murderwings-token-guide-token-guide.pdf": "29e97bd8c03af26a07e7cda13bccc677f299a081dbae117ed541f7f6b9e8546a"
+        "layers/integration/murderwings/murderwings-token-guide-token-guide-murderwings.pdf": "71c87d1ff31a7697a0fcaa6f664a255c8a84673ea0c2e63fe9c3b47de08cdb20",
+        "layers/integration/murderwings/murderwings-token-guide-token-guide.pdf": "62a0d76df0f2a270667fe1633aaa0abc6210c195c1ac81282cc3ca2c20c60483"
       }
     },
     "extract_backsides": {
@@ -236,21 +248,21 @@
       "outputs": {
         "dice-light.jpg": {
           "path": "output/murderwings/dice/murderwings-dice-light.jpg",
-          "hash": "a5689645f63f2debf7342b154adb45572ea598dbaabc722602aeeba9898855df",
-          "modified": "2026-08-29T18:47:16.629485+00:00"
+          "hash": "ff59e2b5b5bb54e3b0fb43f653eed0c2c9f46d843ed46ed697c7405b9158a14e",
+          "modified": "2026-08-29T21:24:12.934309+00:00"
         },
         "dice-dark.jpg": {
           "path": "output/murderwings/dice/murderwings-dice-dark.jpg",
-          "hash": "a85cfcf1878746875aa951b12a5662429842bc3d93a75db3f933392fad456c20",
-          "modified": "2026-08-29T18:47:16.633489+00:00"
+          "hash": "87533cebf128fabe10d256892f09e79fb772d667a240fed2bfa49f295ebfaf5b",
+          "modified": "2026-08-29T21:24:12.946310+00:00"
         },
         "dice-team.jpg": {
           "path": "output/murderwings/dice/murderwings-dice-team.jpg",
-          "hash": "6462214518ff8cd08dc37a4b7c4b0d70e8cdae6569e4654084f03c2c390e407d",
-          "modified": "2026-08-29T18:47:16.635488+00:00"
+          "hash": "c07341db0f674baa3fdb1e5de0a4deb724e1f87bcff80759f9f37b43e054f86c",
+          "modified": "2026-08-29T21:24:12.950309+00:00"
         }
       },
-      "completed": "2026-08-29T18:47:16.642550+00:00",
+      "completed": "2026-08-29T21:24:12.959309+00:00",
       "inputs": {
         "layers/integration/murderwings/artwork/icons/murderwings-icon-token-transparent.png": "0feb2ec9513eb08c2c82d95fda2619f3e03b558d34c222087500606896e2ab5d",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
@@ -261,17 +273,18 @@
         "card-box-texture.jpg": {
           "path": "output/murderwings/cardbox/murderwings-card-box-texture.jpg",
           "hash": "bba83b0f565dc0a57e41f289db0ee6dee5fd6194c188b90b4682d62a5977971e",
-          "modified": "2026-08-29T18:47:17.854178+00:00"
+          "modified": "2026-08-29T21:24:14.336816+00:00"
         },
         "card-box.obj": {
           "path": "output/murderwings/cardbox/murderwings-card-box.obj",
           "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
-          "modified": "2026-08-29T18:47:17.855576+00:00"
+          "modified": "2026-08-29T21:24:14.883816+00:00"
         }
       },
-      "completed": "2026-08-29T18:47:17.859081+00:00",
+      "completed": "2026-08-29T21:24:16.039815+00:00",
       "inputs": {
         "layers/integration/murderwings/artwork/icons/murderwings-icon-token.jpg": "cddb08c075e3d76317041fc3d3a84071c7bff782bf75e147f9867b8c8bb8f68d",
+        "config/teams/murderwings/box/card-box-texture.jpg": "66d009fdc90f8e855b83b07f3e192c18bbd97a17bdcdb7eb5123cfdc72664b89",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
         "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
         "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
@@ -281,283 +294,283 @@
       "outputs": {
         "cards/datacards/murderwing-champion-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-champion-back.jpg",
-          "hash": "d21ed6d9b49471920792656029ff91d49598630dbde5c14126edd215ea3512bb",
-          "modified": "2026-08-29T20:29:21.792767+00:00"
+          "hash": "45e57088ad1d86260ece7e48d88e25d0021a2e311623e88446f4a84f8009bb20",
+          "modified": "2026-08-29T23:28:34.682207+00:00"
         },
         "cards/datacards/murderwing-champion-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-champion-front.jpg",
-          "hash": "d9e6da72eba5db19e21e0063143927a317776c376822b65672ffee4b1d773a26",
-          "modified": "2026-08-29T20:29:21.799852+00:00"
+          "hash": "28b5c01d58d25a354495d42520fc4ef6f5b5382223653b5a116a4324755bac49",
+          "modified": "2026-08-29T23:28:34.683207+00:00"
         },
         "cards/datacards/murderwing-chaos-lord-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-chaos-lord-back.jpg",
-          "hash": "c6c868ec723ccf341d0355e0bb7af87f50008a6209dce223e319e1d46926bb6c",
-          "modified": "2026-08-29T20:29:21.809897+00:00"
+          "hash": "9470f7ac9ddb88c4c8f5ef100fa14c068e0246f1119f56735c6dda0628db1bb4",
+          "modified": "2026-08-29T23:28:34.684205+00:00"
         },
         "cards/datacards/murderwing-chaos-lord-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-chaos-lord-front.jpg",
-          "hash": "fa35de4bef07bc3dfb7ea184f99c797044a3daeaa1a48ccca53f70d191b0fdae",
-          "modified": "2026-08-29T20:29:21.817933+00:00"
+          "hash": "3bc4a703a608a8a54a01594d266bec2d9471beaa1f58fc09e2e012ab68a7df14",
+          "modified": "2026-08-29T23:28:34.685206+00:00"
         },
         "cards/datacards/murderwing-curseclaw-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-curseclaw-back.jpg",
-          "hash": "04793cd846819251e45d312a2b707ba3297d164ee699a3a98e084251622959ae",
-          "modified": "2026-08-29T20:29:21.825603+00:00"
+          "hash": "02fd7fe40f912855a52535f7e113bb912d6026438d56a109ada30fad70c4e4bf",
+          "modified": "2026-08-29T23:28:34.685206+00:00"
         },
         "cards/datacards/murderwing-curseclaw-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-curseclaw-front.jpg",
-          "hash": "fa0bf7ba9db3822b7fa322d005bfa125de69d1a9226e30708cfa117f59cd652c",
-          "modified": "2026-08-29T20:29:21.832156+00:00"
+          "hash": "ca24998c1fd840fe3ff4c869d98813b81551dace5a918c10ec072f252432c1be",
+          "modified": "2026-08-29T23:28:34.686207+00:00"
         },
         "cards/datacards/murderwing-depredator-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-depredator-back.jpg",
-          "hash": "6b5785213a6cc67a2a9335d1c0470b5abc5efec5d63516a48bceace49076feb2",
-          "modified": "2026-08-29T20:29:21.839410+00:00"
+          "hash": "5888c55637e46131862d874ffe94392bd54630df2a2da03b97a8458e7d7c73b3",
+          "modified": "2026-08-29T23:28:34.687207+00:00"
         },
         "cards/datacards/murderwing-depredator-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-depredator-front.jpg",
-          "hash": "0a994368ed9b9f4032de964864ebee0c586c669e3541e861a62b8cfa182fe28c",
-          "modified": "2026-08-29T20:29:21.846471+00:00"
+          "hash": "a8f6b03d2b61b33de2f30c04080ae6638b57312c0fb6097e4a484c7bf83a64e2",
+          "modified": "2026-08-29T23:28:34.688207+00:00"
         },
         "cards/datacards/murderwing-huntmaster-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-huntmaster-back.jpg",
           "hash": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-          "modified": "2026-08-29T20:29:21.849982+00:00"
+          "modified": "2026-08-29T23:28:34.694204+00:00"
         },
         "cards/datacards/murderwing-huntmaster-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-huntmaster-front.jpg",
-          "hash": "4b1be762a71bb5cf9cc2b8ea16f20eb8ccda81dfc7682dcb7e9ec86e76916287",
-          "modified": "2026-08-29T20:29:21.861592+00:00"
+          "hash": "7554dcde1a06fa5d4ecce15d211527a900ca5f39b23abdb81154586499c91b83",
+          "modified": "2026-08-29T23:28:34.695207+00:00"
         },
         "cards/datacards/murderwing-raptor-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-raptor-back.jpg",
           "hash": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-          "modified": "2026-08-29T20:29:21.866611+00:00"
+          "modified": "2026-08-29T23:28:34.700205+00:00"
         },
         "cards/datacards/murderwing-raptor-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-raptor-front.jpg",
-          "hash": "c77168d8f996e3ae305798af73cfd87331ebbe7a4d1715c061fb9c493d6c7fdb",
-          "modified": "2026-08-29T20:29:21.874252+00:00"
+          "hash": "0c8777e195fe9216741fd86a52b5b3dbf0bdcca4c7e9eff5a8347eadcf39d0a8",
+          "modified": "2026-08-29T23:28:34.701207+00:00"
         },
         "cards/datacards/murderwing-shrieker-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-shrieker-back.jpg",
-          "hash": "f6d4d80100c665014fb7c0d8de087c22444af660636712475c9db389b4c77532",
-          "modified": "2026-08-29T20:29:21.889193+00:00"
+          "hash": "03a1980a53f84c180c23faf8f1b751a9a845a5b517dfe7d2d60225623828d612",
+          "modified": "2026-08-29T23:28:34.702206+00:00"
         },
         "cards/datacards/murderwing-shrieker-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-shrieker-front.jpg",
-          "hash": "3ef3a9c088765d04344ab510c523fea4278ad2ee53cc3ed25a60cb8cb9be8b8b",
-          "modified": "2026-08-29T20:29:21.897711+00:00"
+          "hash": "b50660fdf2d6a20fb6e2b4ed15309bc67c0ff8ce26f6fb2da94876af25f7975a",
+          "modified": "2026-08-29T23:28:34.703206+00:00"
         },
         "cards/datacards/murderwing-skysear-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-skysear-back.jpg",
           "hash": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-          "modified": "2026-08-29T20:29:21.899725+00:00"
+          "modified": "2026-08-29T23:28:34.707207+00:00"
         },
         "cards/datacards/murderwing-skysear-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-skysear-front.jpg",
-          "hash": "1e5b3102a764d234366ef041cd16781ec5752ed251c080741379fe7be67f9a0b",
-          "modified": "2026-08-29T20:29:21.906353+00:00"
+          "hash": "f7a0fe7454fa4b5f1d452e1424a7b1f07540d6555c46f740c9d2d3a53d9e1003",
+          "modified": "2026-08-29T23:28:34.708206+00:00"
         },
         "cards/datacards/murderwing-warp-talon-back.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-warp-talon-back.jpg",
           "hash": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-          "modified": "2026-08-29T20:29:21.912887+00:00"
+          "modified": "2026-08-29T23:28:34.712205+00:00"
         },
         "cards/datacards/murderwing-warp-talon-front.jpg": {
           "path": "output/murderwings/cards/datacards/murderwing-warp-talon-front.jpg",
-          "hash": "a45be431a82387da90b57c5b339657d84e04fcf05583a60afcc5f59060976c75",
-          "modified": "2026-08-29T20:29:21.927220+00:00"
+          "hash": "27e3d0119e0d93b28eb6799f4c83b086faa3a3b17acbd6415f6dfdf1290c4535",
+          "modified": "2026-08-29T23:28:34.713207+00:00"
         },
         "cards/equipment/murderwings-bladefins-back.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-bladefins-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:23.191491+00:00"
+          "modified": "2026-08-29T23:28:34.718204+00:00"
         },
         "cards/equipment/murderwings-bladefins-front.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-bladefins-front.jpg",
-          "hash": "f30711e55e39b4492f3847505b98ae1e5c2610b35996f78f90248f0959abf2ca",
-          "modified": "2026-08-29T20:29:23.196261+00:00"
+          "hash": "809f7127d02635268ca6a46bcdb79d49be0ca73c9edb5d873bc88b86903e2346",
+          "modified": "2026-08-29T23:28:34.724205+00:00"
         },
         "cards/equipment/murderwings-clawed-armour-back.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-clawed-armour-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:23.200293+00:00"
+          "modified": "2026-08-29T23:28:34.733205+00:00"
         },
         "cards/equipment/murderwings-clawed-armour-front.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-clawed-armour-front.jpg",
-          "hash": "3c1f764eaf5ab1b0e7025d8976a0e05d08cefbdb062f4b6d77ca171c0c4818b1",
-          "modified": "2026-08-29T20:29:23.214820+00:00"
+          "hash": "94874b0feb0c969cf9904eec6ea148c3ceec4ff7178cf97c8f623596334e7b58",
+          "modified": "2026-08-29T23:28:34.738206+00:00"
         },
         "cards/equipment/murderwings-vox-casters-back.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-vox-casters-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:23.221884+00:00"
+          "modified": "2026-08-29T23:28:34.742206+00:00"
         },
         "cards/equipment/murderwings-vox-casters-front.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-vox-casters-front.jpg",
-          "hash": "e1580d3e6d54236feff2fa308be3d2d6cc8e8ec7f329c2de01246d4d51cd596e",
-          "modified": "2026-08-29T20:29:23.234927+00:00"
+          "hash": "24850725fc6e3136f24772839d13cd59afbabdf1b66387b66299b48b74e12aeb",
+          "modified": "2026-08-29T23:28:34.748205+00:00"
         },
         "cards/equipment/murderwings-warp-fuel-back.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-warp-fuel-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:23.239664+00:00"
+          "modified": "2026-08-29T23:28:34.752205+00:00"
         },
         "cards/equipment/murderwings-warp-fuel-front.jpg": {
           "path": "output/murderwings/cards/equipment/murderwings-warp-fuel-front.jpg",
-          "hash": "e93933c317490c1da97149bc55082c5dd63077da9645b79da23d5819c2449bc6",
-          "modified": "2026-08-29T20:29:23.646720+00:00"
+          "hash": "eea92ab8a6346f46c80ea25212f50049ffbcc7bbdc0e07c12c57671d12878b61",
+          "modified": "2026-08-29T23:28:34.757206+00:00"
         },
         "cards/faction_rules/murderwings-astartes-back.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-astartes-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:25.281100+00:00"
+          "modified": "2026-08-29T23:28:34.766654+00:00"
         },
         "cards/faction_rules/murderwings-astartes-front.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-astartes-front.jpg",
-          "hash": "b39eee98de0c3a454742924d907feca924eeff2c5a89febf689956af04a40c68",
-          "modified": "2026-08-29T20:29:25.284610+00:00"
+          "hash": "6601e26720656fa29fc4661b6034bd7307627ad1f4071de4b5d8b91577eb525e",
+          "modified": "2026-08-29T23:28:34.767654+00:00"
         },
         "cards/faction_rules/murderwings-boost-actions-back.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-boost-actions-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:25.288121+00:00"
+          "modified": "2026-08-29T23:28:34.774656+00:00"
         },
         "cards/faction_rules/murderwings-boost-actions-example-back.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-boost-actions-example-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:25.291228+00:00"
+          "modified": "2026-08-29T23:28:34.783654+00:00"
         },
         "cards/faction_rules/murderwings-boost-actions-example-front.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-boost-actions-example-front.jpg",
-          "hash": "a111e9a96c5129e4d8712d96c98dfee962b8c26deb8d3441d8495f81afe3cae9",
-          "modified": "2026-08-29T20:29:25.296763+00:00"
+          "hash": "58806589ef9f8af5d5a94b0f6dcab5d82daa792930a011500a6d6814a064b9ed",
+          "modified": "2026-08-29T23:28:34.784657+00:00"
         },
         "cards/faction_rules/murderwings-boost-actions-front.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-boost-actions-front.jpg",
-          "hash": "c8a5a54654290706d37a1d36dddfb3693633a60b8c8961767ae1e520c69dcbe7",
-          "modified": "2026-08-29T20:29:25.678733+00:00"
+          "hash": "6cbd54e8011d5bd34bf7493d445ff361cfde000aa04e075e9e7c356db0604590",
+          "modified": "2026-08-29T23:28:34.785656+00:00"
         },
         "cards/faction_rules/murderwings-jump-pack-back.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-jump-pack-back.jpg",
-          "hash": "70fa587dd30f390dca21b183e58372cbb480fa56b0c4898c92c5bfb3066133b4",
-          "modified": "2026-08-29T20:29:25.682752+00:00"
+          "hash": "e3f947ad40af6ba1badeb6445965c67e04a3e83abc925032f3ea73cce99e7079",
+          "modified": "2026-08-29T23:28:34.785656+00:00"
         },
         "cards/faction_rules/murderwings-jump-pack-example-back.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-jump-pack-example-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:25.685757+00:00"
+          "modified": "2026-08-29T23:28:34.793656+00:00"
         },
         "cards/faction_rules/murderwings-jump-pack-example-front.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-jump-pack-example-front.jpg",
-          "hash": "855c049c33b3f87615c925f676bb9f569ec95282030d3a225ddd96fe3dba7212",
-          "modified": "2026-08-29T20:29:25.690286+00:00"
+          "hash": "a30a2bdd10fe9204a5f07ce78a3d561d7a95f55bf56aa3a08acc2189b3da648c",
+          "modified": "2026-08-29T23:28:34.794655+00:00"
         },
         "cards/faction_rules/murderwings-jump-pack-front.jpg": {
           "path": "output/murderwings/cards/faction_rules/murderwings-jump-pack-front.jpg",
-          "hash": "e3e82f8566fda651cea5bf8e9a2294d8e12546a9ad57244beab5bf5f6dc9b85f",
-          "modified": "2026-08-29T20:29:25.695802+00:00"
+          "hash": "48b45301b114ffe0a2001c2efac3938458e2bfad5e37ff605ef9622312c8344a",
+          "modified": "2026-08-29T23:28:34.795654+00:00"
         },
         "cards/firefight_ploys/murderwings-long-forgotten-honour-back.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-long-forgotten-honour-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:25.698799+00:00"
+          "modified": "2026-08-29T23:28:34.800264+00:00"
         },
         "cards/firefight_ploys/murderwings-long-forgotten-honour-front.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-long-forgotten-honour-front.jpg",
-          "hash": "3db2e0eece5b77212dea2ed628c0347914de79bca1469dcdab334b954a5f6c5b",
-          "modified": "2026-08-29T20:29:26.095187+00:00"
+          "hash": "ccaac2e02facdd5ea2ceedfa735f573a02c28d9a2c6e4dea7ff3b90fd6e87b42",
+          "modified": "2026-08-29T23:28:34.801264+00:00"
         },
         "cards/firefight_ploys/murderwings-malicious-narcissism-back.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-malicious-narcissism-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:26.097191+00:00"
+          "modified": "2026-08-29T23:28:34.805264+00:00"
         },
         "cards/firefight_ploys/murderwings-malicious-narcissism-front.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-malicious-narcissism-front.jpg",
-          "hash": "95f368570e3321fccb6bc86877b983d1524912cbf47c0f4eccd56db32cc40e1e",
-          "modified": "2026-08-29T20:29:26.101700+00:00"
+          "hash": "dcd769ec5af42833384f9d249a49301fb3e1a3698710a6c630bf1a479ea2e1dd",
+          "modified": "2026-08-29T23:28:34.806264+00:00"
         },
         "cards/firefight_ploys/murderwings-murderous-descent-back.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-murderous-descent-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:26.105212+00:00"
+          "modified": "2026-08-29T23:28:34.811263+00:00"
         },
         "cards/firefight_ploys/murderwings-murderous-descent-front.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-murderous-descent-front.jpg",
-          "hash": "5dc0917beba28edbae4309a03e4262c58ea58da55572f8e98f0774d00e2ae019",
-          "modified": "2026-08-29T20:29:26.110230+00:00"
+          "hash": "da1e2606b2e7f2ca80aa998ea11ee6e7755a0360b1b1a539623327a087d8c8df",
+          "modified": "2026-08-29T23:28:34.812264+00:00"
         },
         "cards/firefight_ploys/murderwings-wings-of-darkness-back.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-wings-of-darkness-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:26.421124+00:00"
+          "modified": "2026-08-29T23:28:34.816263+00:00"
         },
         "cards/firefight_ploys/murderwings-wings-of-darkness-front.jpg": {
           "path": "output/murderwings/cards/firefight_ploys/murderwings-wings-of-darkness-front.jpg",
-          "hash": "e9b2fefffcb29507b057476640be7da07c8b15300b573aae676d0c22fc7dfef2",
-          "modified": "2026-08-29T20:29:26.517964+00:00"
+          "hash": "94b6cdddf21b206685ea31da48e130173c675956de802e332eae282acf1c7386",
+          "modified": "2026-08-29T23:28:34.817264+00:00"
         },
         "cards/operatives_selection/murderwings-operative-selection-back.jpg": {
           "path": "output/murderwings/cards/operatives_selection/murderwings-operative-selection-back.jpg",
-          "hash": "db1eb8f8f7ae0ad20c933177e01eeded251d9824d81578953edb1f03cbaedd19",
-          "modified": "2026-08-29T20:29:26.536370+00:00"
+          "hash": "bb023fa30582ab3f41b15edf3ffb82a450f6950b00bf57813307c5088b289ef1",
+          "modified": "2026-08-29T23:28:34.818265+00:00"
         },
         "cards/operatives_selection/murderwings-operative-selection-front.jpg": {
           "path": "output/murderwings/cards/operatives_selection/murderwings-operative-selection-front.jpg",
-          "hash": "30d553790e8b06d4afc28ac5762871d663faf05ee60e7a3d35661075d08baf1d",
-          "modified": "2026-08-29T20:29:40.534158+00:00"
+          "hash": "d8480f2f54742d81aed2eb3a95ab2b061746510f116697dd1356bf2cedbef7f7",
+          "modified": "2026-08-29T23:28:34.819264+00:00"
         },
         "cards/strategy_ploys/murderwings-cull-the-weak-back.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-cull-the-weak-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:47.623784+00:00"
+          "modified": "2026-08-29T23:28:34.833792+00:00"
         },
         "cards/strategy_ploys/murderwings-cull-the-weak-front.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-cull-the-weak-front.jpg",
-          "hash": "e4c348d93d8250821466b661ade8990b248856597c2d0512780fc16457e92468",
-          "modified": "2026-08-29T20:29:47.627803+00:00"
+          "hash": "b2d4ca82ff12e02d97500b4f465cb2d3bd61c14bd265e6e4d91a85d4c2e61c32",
+          "modified": "2026-08-29T23:28:34.837792+00:00"
         },
         "cards/strategy_ploys/murderwings-instil-fear-back.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-instil-fear-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:47.629830+00:00"
+          "modified": "2026-08-29T23:28:34.842793+00:00"
         },
         "cards/strategy_ploys/murderwings-instil-fear-front.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-instil-fear-front.jpg",
-          "hash": "0483ff4f3eac6a20ae1f7e20eeefb7f406c09bb323942957d308b6f2816cb5b8",
-          "modified": "2026-08-29T20:29:47.633864+00:00"
+          "hash": "0c0ceec2430408b8001ec5e3b7ce47031932e6c3d8917d494463b970e5a78d0f",
+          "modified": "2026-08-29T23:28:34.846792+00:00"
         },
         "cards/strategy_ploys/murderwings-nightmare-on-high-back.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-nightmare-on-high-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:47.636376+00:00"
+          "modified": "2026-08-29T23:28:34.850792+00:00"
         },
         "cards/strategy_ploys/murderwings-nightmare-on-high-front.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-nightmare-on-high-front.jpg",
-          "hash": "c404179af1cbceab509cb840c20354c2c666c40833af6ae5e1f518cf6dfa7ba2",
-          "modified": "2026-08-29T20:29:47.639972+00:00"
+          "hash": "27ddb9dbc73ec4489a99a04d5ba4837f9c144e4112651c3988446a0a02d12d44",
+          "modified": "2026-08-29T23:28:34.855792+00:00"
         },
         "cards/strategy_ploys/murderwings-predators-above-back.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-predators-above-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:47.641477+00:00"
+          "modified": "2026-08-29T23:28:34.859793+00:00"
         },
         "cards/strategy_ploys/murderwings-predators-above-front.jpg": {
           "path": "output/murderwings/cards/strategy_ploys/murderwings-predators-above-front.jpg",
-          "hash": "3e1e35e7d52a433c54d59e10549acf1ac5e1e94fbb34c4e18e238454fc866975",
-          "modified": "2026-08-29T20:29:47.646504+00:00"
+          "hash": "6a4890b948f2ae03b668dc61f2b5ea01ff5d7baf973ed44c02b02bbc5e3b8a16",
+          "modified": "2026-08-29T23:28:34.865793+00:00"
         },
         "cards/token_guide/murderwings-token-guide-back.jpg": {
           "path": "output/murderwings/cards/token_guide/murderwings-token-guide-back.jpg",
           "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-          "modified": "2026-08-29T20:29:50.254326+00:00"
+          "modified": "2026-08-29T23:28:34.870792+00:00"
         },
         "cards/token_guide/murderwings-token-guide-front.jpg": {
           "path": "output/murderwings/cards/token_guide/murderwings-token-guide-front.jpg",
-          "hash": "e8b586bd8f3572d324f74781fd9ddff9a67389728bfd014a373ad6d0dbb1b582",
-          "modified": "2026-08-29T20:29:50.257838+00:00"
+          "hash": "4f8b5bc09d41bb1fdd2705c2f2b41eeb39e34fa312586669ddfe44c80c7bd552",
+          "modified": "2026-08-29T23:28:34.870792+00:00"
         },
         "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
           "path": "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
@@ -1042,157 +1055,190 @@
         "cards/faction-rules/murderwings-아스타르테스-back.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-아스타르테스-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:24.450682+00:00"
+          "modified": "2026-08-29T23:28:34.758205+00:00"
         },
         "cards/faction-rules/murderwings-아스타르테스-front.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-아스타르테스-front.jpg",
           "hash": "1817fdbe965d74d4ab0b172df5716f749fbbb9fd8129f3bef097342f17555bb0",
-          "modified": "2026-08-29T20:29:24.459736+00:00"
+          "modified": "2026-08-29T23:28:34.759205+00:00"
         },
         "cards/faction-rules/murderwings-점프팩-back.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-점프팩-back.jpg",
           "hash": "a742150bdfdd7598bea411d97b97042636be5c4e469f6580e01e37fcda75a719",
-          "modified": "2026-08-29T20:29:24.466771+00:00"
+          "modified": "2026-08-29T23:28:34.759205+00:00"
         },
         "cards/faction-rules/murderwings-점프팩-front.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-점프팩-front.jpg",
           "hash": "83c0bc32a25bed3694c4f77c5a9e05e9b22fe9b3872fe46cf94232b595e70b76",
-          "modified": "2026-08-29T20:29:24.873520+00:00"
+          "modified": "2026-08-29T23:28:34.760205+00:00"
         },
         "cards/faction-rules/murderwings-점프팩-예시-back.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-점프팩-예시-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:24.876631+00:00"
+          "modified": "2026-08-29T23:28:34.760205+00:00"
         },
         "cards/faction-rules/murderwings-점프팩-예시-front.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-점프팩-예시-front.jpg",
           "hash": "6832eeaa9f0d54229fa49a64984bd2237c6e85d0a2ceffc6fbb0cfe5c52c5ffc",
-          "modified": "2026-08-29T20:29:24.882654+00:00"
+          "modified": "2026-08-29T23:28:34.761205+00:00"
         },
         "cards/faction-rules/murderwings-추진-행동-back.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-추진-행동-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:24.885175+00:00"
+          "modified": "2026-08-29T23:28:34.761205+00:00"
         },
         "cards/faction-rules/murderwings-추진-행동-front.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-추진-행동-front.jpg",
           "hash": "63a4b92da65fb2ee2316e0e2559a339bc35e94d5c878d8adeb970b85a238ab7c",
-          "modified": "2026-08-29T20:29:25.271066+00:00"
+          "modified": "2026-08-29T23:28:34.762205+00:00"
         },
         "cards/faction-rules/murderwings-추진-행동-예시-back.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-추진-행동-예시-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:25.274073+00:00"
+          "modified": "2026-08-29T23:28:34.762205+00:00"
         },
         "cards/faction-rules/murderwings-추진-행동-예시-front.jpg": {
           "path": "output/murderwings/cards/faction-rules/murderwings-추진-행동-예시-front.jpg",
           "hash": "0e225a36a87772bf22d06b0b200609c2c8ee817b43f00222e0924c604de4d29e",
-          "modified": "2026-08-29T20:29:25.279092+00:00"
+          "modified": "2026-08-29T23:28:34.763206+00:00"
         },
         "cards/operative-selection/murderwings-operative-selection-back.jpg": {
           "path": "output/murderwings/cards/operative-selection/murderwings-operative-selection-back.jpg",
           "hash": "98d732b2813465194c83667f2096785d2c069ba83e13036e38ab9380fa15219b",
-          "modified": "2026-08-29T20:29:26.523798+00:00"
+          "modified": "2026-08-29T23:28:34.817264+00:00"
         },
         "cards/operative-selection/murderwings-operative-selection-front.jpg": {
           "path": "output/murderwings/cards/operative-selection/murderwings-operative-selection-front.jpg",
           "hash": "2a7d3d27b419138974b6136f86eb49a696837548d5ce79934f4188ec22bf0bda",
-          "modified": "2026-08-29T20:29:26.528828+00:00"
+          "modified": "2026-08-29T23:28:34.818265+00:00"
         },
         "cards/ploys/firefight/murderwings-살육의-하강-back.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-살육의-하강-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:41.709116+00:00"
+          "modified": "2026-08-29T23:28:34.819264+00:00"
         },
         "cards/ploys/firefight/murderwings-살육의-하강-front.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-살육의-하강-front.jpg",
           "hash": "fb64448eefa35eb545919644722d2822b475c04ec8d846554f479426b9b2048d",
-          "modified": "2026-08-29T20:29:42.390475+00:00"
+          "modified": "2026-08-29T23:28:34.820265+00:00"
         },
         "cards/ploys/firefight/murderwings-악독한-자기도취-back.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-악독한-자기도취-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:42.809958+00:00"
+          "modified": "2026-08-29T23:28:34.820265+00:00"
         },
         "cards/ploys/firefight/murderwings-악독한-자기도취-front.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-악독한-자기도취-front.jpg",
           "hash": "c593a13b5bc0d8c606cc33c702454d14717f14710c71ba7f04820b2adc4950b0",
-          "modified": "2026-08-29T20:29:42.815469+00:00"
+          "modified": "2026-08-29T23:28:34.821264+00:00"
         },
         "cards/ploys/firefight/murderwings-어둠의-날개-back.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-어둠의-날개-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:42.817974+00:00"
+          "modified": "2026-08-29T23:28:34.821264+00:00"
         },
         "cards/ploys/firefight/murderwings-어둠의-날개-front.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-어둠의-날개-front.jpg",
           "hash": "2f7a8f4c5b65717d6a90aba3626be7133d87f6484c4bcfc8498b6b5c2df09ea7",
-          "modified": "2026-08-29T20:29:42.822012+00:00"
+          "modified": "2026-08-29T23:28:34.822264+00:00"
         },
         "cards/ploys/firefight/murderwings-오래전-저버린-명예-back.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-오래전-저버린-명예-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:42.823514+00:00"
+          "modified": "2026-08-29T23:28:34.822264+00:00"
         },
         "cards/ploys/firefight/murderwings-오래전-저버린-명예-front.jpg": {
           "path": "output/murderwings/cards/ploys/firefight/murderwings-오래전-저버린-명예-front.jpg",
           "hash": "4ff816b00f23ccb9fd3344ab091ed36b69c146a7963d4dbee5cdd22e00516a95",
-          "modified": "2026-08-29T20:29:44.656989+00:00"
+          "modified": "2026-08-29T23:28:34.823264+00:00"
         },
         "cards/ploys/strategy/murderwings-공포-주입-back.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-공포-주입-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:44.658989+00:00"
+          "modified": "2026-08-29T23:28:34.824264+00:00"
         },
         "cards/ploys/strategy/murderwings-공포-주입-front.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-공포-주입-front.jpg",
           "hash": "4b7d9b1d07f547e702d5c61c091f5eea31cf6d4d8469424e5576c2d604edac7c",
-          "modified": "2026-08-29T20:29:44.663137+00:00"
+          "modified": "2026-08-29T23:28:34.824264+00:00"
         },
         "cards/ploys/strategy/murderwings-높은-곳의-악몽-back.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-높은-곳의-악몽-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:44.665648+00:00"
+          "modified": "2026-08-29T23:28:34.824264+00:00"
         },
         "cards/ploys/strategy/murderwings-높은-곳의-악몽-front.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-높은-곳의-악몽-front.jpg",
           "hash": "3905354c81c5d99f99b27841872a19274d6393c1297330f3902ebbc40ae16cb3",
-          "modified": "2026-08-29T20:29:44.669151+00:00"
+          "modified": "2026-08-29T23:28:34.825262+00:00"
         },
         "cards/ploys/strategy/murderwings-상공의-포식자-back.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-상공의-포식자-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:44.672156+00:00"
+          "modified": "2026-08-29T23:28:34.826264+00:00"
         },
         "cards/ploys/strategy/murderwings-상공의-포식자-front.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-상공의-포식자-front.jpg",
           "hash": "5b1c78e6797c05a163129db75cd0d711b8f5f801e1d89f8439580e3615d44ff2",
-          "modified": "2026-08-29T20:29:46.290933+00:00"
+          "modified": "2026-08-29T23:28:34.826264+00:00"
         },
         "cards/ploys/strategy/murderwings-약자-도태-back.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-약자-도태-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:47.617248+00:00"
+          "modified": "2026-08-29T23:28:34.827264+00:00"
         },
         "cards/ploys/strategy/murderwings-약자-도태-front.jpg": {
           "path": "output/murderwings/cards/ploys/strategy/murderwings-약자-도태-front.jpg",
           "hash": "3a47b83fa87ee3fc1d0b97fe64473bd557e2b79f4c670924a553d9e7cfa276bf",
-          "modified": "2026-08-29T20:29:47.622273+00:00"
+          "modified": "2026-08-29T23:28:34.827264+00:00"
         },
         "cards/token-guide/murderwings-token-guide-back.jpg": {
           "path": "output/murderwings/cards/token-guide/murderwings-token-guide-back.jpg",
           "hash": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-          "modified": "2026-08-29T20:29:47.648008+00:00"
+          "modified": "2026-08-29T23:28:34.865793+00:00"
         },
         "cards/token-guide/murderwings-token-guide-front.jpg": {
           "path": "output/murderwings/cards/token-guide/murderwings-token-guide-front.jpg",
           "hash": "f02def242e4d9f3153576038dbf17a6841aea38bd23d2a4174dd7ef7bd139dc0",
-          "modified": "2026-08-29T20:29:47.991920+00:00"
+          "modified": "2026-08-29T23:28:34.866792+00:00"
+        },
+        "cards/equipment/murderwings-0ap-back.jpg": {
+          "path": "output/murderwings/cards/equipment/murderwings-0ap-back.jpg",
+          "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
+          "modified": "2026-08-29T22:22:34.600792+00:00"
+        },
+        "cards/equipment/murderwings-0ap-front.jpg": {
+          "path": "output/murderwings/cards/equipment/murderwings-0ap-front.jpg",
+          "hash": "94874b0feb0c969cf9904eec6ea148c3ceec4ff7178cf97c8f623596334e7b58",
+          "modified": "2026-08-29T22:22:34.608792+00:00"
+        },
+        "cards/equipment/murderwings-1ap-back.jpg": {
+          "path": "output/murderwings/cards/equipment/murderwings-1ap-back.jpg",
+          "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
+          "modified": "2026-08-29T22:22:34.616792+00:00"
+        },
+        "cards/equipment/murderwings-1ap-front.jpg": {
+          "path": "output/murderwings/cards/equipment/murderwings-1ap-front.jpg",
+          "hash": "24850725fc6e3136f24772839d13cd59afbabdf1b66387b66299b48b74e12aeb",
+          "modified": "2026-08-29T22:22:34.624792+00:00"
+        },
+        "cards/strategy_ploys/murderwings-apl-back.jpg": {
+          "path": "output/murderwings/cards/strategy_ploys/murderwings-apl-back.jpg",
+          "hash": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
+          "modified": "2026-08-29T22:22:40.809792+00:00"
+        },
+        "cards/strategy_ploys/murderwings-apl-front.jpg": {
+          "path": "output/murderwings/cards/strategy_ploys/murderwings-apl-front.jpg",
+          "hash": "b2d4ca82ff12e02d97500b4f465cb2d3bd61c14bd265e6e4d91a85d4c2e61c32",
+          "modified": "2026-08-29T22:22:40.819792+00:00"
         }
       },
-      "completed": "2026-08-29T20:30:40.180335+00:00",
+      "completed": "2026-08-29T23:28:34.983498+00:00",
       "inputs": {
-        "layers/integration/murderwings/manifest.json": "f185f58ecf4929251caf437923be23ca66e1330b311315de5b97385132d14772",
+        "layers/integration/murderwings/manifest.json": "c0670ef1cb8775677d5c266b11c0b74671fe7fb8eff1b5f51c643410707e7d19",
+        "layers/integration/murderwings/murderwings-datacard--1.pdf": "a6b980320c9fc10474a5e4b2db05ba482ce484934c912ccb7578b1812d1e9732",
+        "layers/integration/murderwings/murderwings-datacard--2.pdf": "de44144ad73b5d982edc73fd2d58863957f82b92cef1f3832db75332f5f2661f",
+        "layers/integration/murderwings/murderwings-datacard-.pdf": "a4cf39a635f2c42689082dfdfa70550d7f149bfc783ed9809ba8a7ea68700e7d",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "3bcebbddda036dbcfa3b4945939a2f12542c805640c0e3aef94c9f3da485b975",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-10.pdf": "25e8e2595cd934f5a1dd126cb6aa210e1e594cec5689ede94d717f2e455e75d4",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-11.pdf": "2d9ac1965e6ea32475bc83ec2f8120ccb9fb88e962815809adea65ab3c732798",
@@ -1207,29 +1253,35 @@
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "2d44f15c5e4f022c3eed8b786a59fbacd9bc32d79d3d15cb95c1f331c79a8fb8",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "43aa1b13b56d4cdf9ee853c47df361788dd3e264cc0ef4caf344770dc06f8b7a",
         "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "a2909b833ebeb9bd5f50d4c77ddb9159e22ac774a2a855ab269d9e343c13a36d",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-champion.pdf": "09982ec78ee56b748004f8478bff9702a2bcb4725c41b636309592a3359656ac",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-chaos-lord.pdf": "e6a877dd19c2944ef1aaa5a8927da5e802571ee80672043a80cf5c1431fed9de",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-curseclaw.pdf": "de807c1a958fcad13d956d4b974d032803fd7a9ed6e00ca68783f91208576034",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-depredator.pdf": "70f4bd45aeb7825303a80860990a53ba6f397d4e2d47cbe60bfe7b4bef22d6bf",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-huntmaster.pdf": "a30c3a3f7bf3d9d0eb88344a272eaff8cf31bf3302f7fba042851252fad9f852",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-raptor.pdf": "2868c768bf9c0ca5a739e08c211817fb009775010f7069241a7cd7acc8450b7a",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-shrieker.pdf": "baab13cada866c98c069567d02fa97d3680ebda518c6737164180609af5883cc",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-skysear.pdf": "7055850ae456a6f52d6a4cf06385cb8f71eb56e7104e78e0114847cce0d7e624",
-        "layers/integration/murderwings/murderwings-datacard-murderwing-warp-talon.pdf": "28918bf0f003ca47552e6aa75c43beb04780f3e78cfa1f8781b314fa389f54cb",
-        "layers/integration/murderwings/murderwings-equipment-bladefins.pdf": "47cfa186e833d16b38298d4608dd2893c6e09f1d8826bf31931ad01ac75dd3e9",
-        "layers/integration/murderwings/murderwings-equipment-clawed-armour.pdf": "ad33f896d2e6cbe0fa2aeaa8d27eabc3b9ea3010dc5a125cfbf861a9ffac791c",
-        "layers/integration/murderwings/murderwings-equipment-vox-casters.pdf": "554d8c0fb4f0ecfcbdbc5b1a2c492a187abe080d1a28591fcc644ce158b76188",
-        "layers/integration/murderwings/murderwings-equipment-warp-fuel.pdf": "3477606bf5e15e4464330b05c548916f6276b0cf6748c0ce134fa9b2fdbd1ddb",
-        "layers/integration/murderwings/murderwings-faction-rule-astartes.pdf": "b2de958a7ada36b40ee46139302a2a2c1ec2cdb9af08622bed659b6eebbf6daf",
-        "layers/integration/murderwings/murderwings-faction-rule-boost-actions-example.pdf": "b225672ad0e7b305bdad6f667fc361e324103e5cb95c285a6209c5151d11b72d",
-        "layers/integration/murderwings/murderwings-faction-rule-boost-actions.pdf": "9d7fa87de6b7dd4d0ee42c07f16f00449574fbfbac59428ce56f5fa4a263f846",
-        "layers/integration/murderwings/murderwings-faction-rule-jump-pack-example.pdf": "690c68c17254935b2d238edf97641bcf2d03921aaf78120ebe2ba2d93bf9d24a",
-        "layers/integration/murderwings/murderwings-faction-rule-jump-pack.pdf": "5f3afe4bb949fdc33d9ebcf7b4a82678b100bd40bb04f8744bdbb7325f395760",
-        "layers/integration/murderwings/murderwings-firefight-ploy-long-forgotten-honour.pdf": "def94015e2a7ca8f8f1e84fe9879ea3fa446579050c9302963e6fd9f4388c95b",
-        "layers/integration/murderwings/murderwings-firefight-ploy-malicious-narcissism.pdf": "137833c2a6cd0a755c1f1347a835bad82629fb0b62cb750f7079e5da7afb581f",
-        "layers/integration/murderwings/murderwings-firefight-ploy-murderous-descent.pdf": "0cbef3a92c2f1b44f817277a685cf583691b5f91553ac10132dc42799375d749",
-        "layers/integration/murderwings/murderwings-firefight-ploy-wings-of-darkness.pdf": "8865d1f7f2fe90bcafb2f661b22df92e2213df910778e56389d3427a093e9182",
-        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-1.pdf": "7e1d607c4bddfad3698e86cba744be9cd2204b71b048aaf2c75a6de74289ca32",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-champion.pdf": "f527b3cce56fed80a85e97d0a6825410f53d1c2dee9c94d3b839637abbea7405",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-chaos-lord.pdf": "084ac077421ea812668de0023168d38a30383231e47a0c25d912e8a72ba8a6df",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-curseclaw.pdf": "7a313ae2297a28be7cecfb981160c440c1100a95528455ca0755addfd87fbc0b",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-depredator.pdf": "6e43354a4a8d6cb3926824143b666e21fd679155b001e885c6f76335f52a5b2f",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-huntmaster.pdf": "6b158f04b5eff11e33a716f2a5ec0db6a24923701e3bdd05dd700ff7200694bf",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-raptor.pdf": "52395fe63847056d98e6877c40c4ce91ae26a5e8ee5f1a8a3649ca05f8fa507e",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-shrieker.pdf": "04d9d213d0c4dd3f2c41b137b176ab805387d5cd7a4786391560ae3ef99cc7cc",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-skysear.pdf": "6ff83d08f93d28f5e58260aa7c56f50824513dad9b9da93f3c3682836e949cfb",
+        "layers/integration/murderwings/murderwings-datacard-murderwing-warp-talon.pdf": "9bb4577994af079c5db9f5b9449fc8927346cd1a0cafb023b20ab390b580b8aa",
+        "layers/integration/murderwings/murderwings-equipment-0ap.pdf": "d31d867963620dd65b80a3f972ee1f145f74a8f9dd2eeacf6d8e3e8edb855847",
+        "layers/integration/murderwings/murderwings-equipment-1ap.pdf": "2649d1e4e4fb11a8d32e785ab40d0331e5ca15014d799d75deb2dcd12a24267e",
+        "layers/integration/murderwings/murderwings-equipment-bladefins.pdf": "d26e708d3ee06948d10beb28de228e5af7bf33536af18d9ef3761740567851ef",
+        "layers/integration/murderwings/murderwings-equipment-clawed-armour.pdf": "d31d867963620dd65b80a3f972ee1f145f74a8f9dd2eeacf6d8e3e8edb855847",
+        "layers/integration/murderwings/murderwings-equipment-vox-casters.pdf": "2649d1e4e4fb11a8d32e785ab40d0331e5ca15014d799d75deb2dcd12a24267e",
+        "layers/integration/murderwings/murderwings-equipment-warp-fuel.pdf": "ae76c456396e119dd43c03d7d1ff001012c89d5ebab6aca85ae66351ed207c5d",
+        "layers/integration/murderwings/murderwings-faction-rule-a.pdf": "c17a687f48214f1e6aee75ba882ce642196196cdd89058252854c2908063c28f",
+        "layers/integration/murderwings/murderwings-faction-rule-astartes.pdf": "73646780b296ac391453a60ff8e192ebd25ac6e3dfc8f0e0b487173b5b332d6b",
+        "layers/integration/murderwings/murderwings-faction-rule-boost-actions-example.pdf": "1be133ea469a8289d05f41412030b74f4827ffd5630a06fc89c52c71e8b6772c",
+        "layers/integration/murderwings/murderwings-faction-rule-boost-actions.pdf": "97ce8c483763b228de5638e585a128222828afcf6f6a0a31741911b91ec2a4e2",
+        "layers/integration/murderwings/murderwings-faction-rule-c-a.pdf": "cd8c5bf981cf3e483b2a0be9c7932c763d31480e616bca3e97a628538dff0619",
+        "layers/integration/murderwings/murderwings-faction-rule-jump-pack-example.pdf": "11cbcbb756bb86c3278694742a93a6835ec4c28bb03b6e20f30b2feaf9b3e795",
+        "layers/integration/murderwings/murderwings-faction-rule-jump-pack.pdf": "3c3882b6f071aeb9982c2c6dd452fbd36f2e6559e30cbc7235fec5c98854387e",
+        "layers/integration/murderwings/murderwings-faction-rule-unknown.pdf": "131f5e91f006b4e4304ea85c1aa551bf7afa9a13d05a000f64593b46c46dce37",
+        "layers/integration/murderwings/murderwings-faction-rule-x.pdf": "f7c65c98dd8f0d3523f35a9542f32ca53fd9ade2e5bbbbdfc8563785452622e0",
+        "layers/integration/murderwings/murderwings-firefight-ploy-long-forgotten-honour.pdf": "342054da71aab016bd8db2b2d060e6c4a2e153e886ac0db531ab55a01b638829",
+        "layers/integration/murderwings/murderwings-firefight-ploy-malicious-narcissism.pdf": "4523910728353b28bcbe3f947680b03b9134687acb26e7c6c2b0843737a57248",
+        "layers/integration/murderwings/murderwings-firefight-ploy-murderous-descent.pdf": "591c60a6b34bec7225c971d0b124ecdc49b7667ff1528b5eb34e93e0057e7249",
+        "layers/integration/murderwings/murderwings-firefight-ploy-wings-of-darkness.pdf": "4dd9e8aaa88da68e138beb28f06c00ac8b9a4c2fdb90fe62ecaf04536283a4aa",
+        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-1.pdf": "0b44710bff7a6f103afabbebbfeeb9cc7e8510a3337e55d5db8dd8d5e76d60c4",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-10.pdf": "b616fcf27469de25821bb65326939e35311b925974841cd21bb6a51a047c6720",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-11.pdf": "21e49b649f386b93994c1f895171943aaf52c173077816422a2d52eddcce2940",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-12.pdf": "ebb3b74fe3a108322bd0726052a801fab873006ae13843443f4dceeb80939084",
@@ -1240,7 +1292,7 @@
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-17.pdf": "7dd4372afe4d5b255843889249b4d03fee5c516437cb9bd50c992ffe81198780",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-18.pdf": "c4e5c85a24fb8aa057f2a8d00e82896b5c2ccdeeb661df36bf8635599994538e",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-19.pdf": "9192e5a50590c5cbca6670b1b01b7649f37c393a2953951128d68162f1fc5d1b",
-        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-2.pdf": "7a05a67e2955a3b430e9ebdd14e4ca7836436c209847d3b287c155c39e81ff97",
+        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-2.pdf": "656646eddb64cf5e03c6ad98f2533a0b2aacead9ad7476181fce4b6234669145",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-20.pdf": "b839260fd2ea9a75e3d739e5cc19072cfe2b7ecfb8eb1fa9becd0b957332cd41",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-21.pdf": "380f84ff47e4f5b4c5acd4cb4f43312222772779fe8141082a0349d602cf2940",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-3.pdf": "da0921dd8ca12fecec0014f62f8d2c1b5756052b3850cb8fb1248a47b7f9448f",
@@ -1250,12 +1302,15 @@
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-7.pdf": "f6b7d9b511b4d6b2ae59310738825343fb1ad34efe448c048e92434e76e26d14",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-8.pdf": "d68e9bfa6e76dd9a185991394ac6420b3fd99f9e3dca6eee43da65d6771a9bfa",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-9.pdf": "a04d2e97954595bd7a3da3f5def1fce5811a0c06b76828187c1b1ea5202cb27b",
+        "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-murderwings.pdf": "4e192ab1be1c1883eab5c31ed4d390493de662aac0996bf4a021031a1b3fc369",
         "layers/integration/murderwings/murderwings-operatives-selection-operative-selection.pdf": "df047f62a798b5905beee690ab29a4ae036747321d3149c003abaacbd446282b",
-        "layers/integration/murderwings/murderwings-strategy-ploy-cull-the-weak.pdf": "06947cbc8c2b6fc1ae77cf4fee3633c0ed5b5af08014d2818c81ee5561f90d05",
-        "layers/integration/murderwings/murderwings-strategy-ploy-instil-fear.pdf": "0d581be880d0f48f5a3b1cd27180480bf139928aac46cad0101970b05fa9c537",
-        "layers/integration/murderwings/murderwings-strategy-ploy-nightmare-on-high.pdf": "06e12e3e07b44ed24bbb726a9ea059979411f26763c5a0c281ec240dd8531139",
-        "layers/integration/murderwings/murderwings-strategy-ploy-predators-above.pdf": "6b270915200d923d923943222ad027a3cf14a0dd65f7acd410f48e0e90881bf0",
-        "layers/integration/murderwings/murderwings-token-guide-token-guide.pdf": "29e97bd8c03af26a07e7cda13bccc677f299a081dbae117ed541f7f6b9e8546a",
+        "layers/integration/murderwings/murderwings-strategy-ploy-apl.pdf": "15bbf7788c2c849313907e1c80f0118b21c6c258f8892cb12200caa44d4d9753",
+        "layers/integration/murderwings/murderwings-strategy-ploy-cull-the-weak.pdf": "15bbf7788c2c849313907e1c80f0118b21c6c258f8892cb12200caa44d4d9753",
+        "layers/integration/murderwings/murderwings-strategy-ploy-instil-fear.pdf": "3f9792a4493217e2a0d8dd04547d98591a349bf0ca9328cb09ba6f317b7d3a37",
+        "layers/integration/murderwings/murderwings-strategy-ploy-nightmare-on-high.pdf": "378250819a547cbc7e5a5c6ff311c7589ee8a780bf3740c0024d423d993f7a29",
+        "layers/integration/murderwings/murderwings-strategy-ploy-predators-above.pdf": "00828fc6f985919a59b5e0e2e3abf4b778be357d71a59602de8f6a5ef8f031a4",
+        "layers/integration/murderwings/murderwings-token-guide-token-guide-murderwings.pdf": "71c87d1ff31a7697a0fcaa6f664a255c8a84673ea0c2e63fe9c3b47de08cdb20",
+        "layers/integration/murderwings/murderwings-token-guide-token-guide.pdf": "62a0d76df0f2a270667fe1633aaa0abc6210c195c1ac81282cc3ca2c20c60483",
         "layers/integration/murderwings/card-backside/murderwings-backside-portrait.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
         "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
         "layers/integration/murderwings/card-backside/murderwings-backside-landscape.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
@@ -1266,13 +1321,13 @@
       "outputs": {
         "team-data.json": {
           "path": "output/murderwings/data/murderwings-team-data.json",
-          "hash": "5e91808a2d2d3e0f3adf184251fbbcc1e8afc31a586fb7c443f900b622e8639f",
-          "modified": "2026-08-29T18:47:50.259995+00:00"
+          "hash": "d93c2a2538886ce3f906ee0ac270c6b31fa7688ed9514ac4863958fe99206c89",
+          "modified": "2026-08-29T21:57:49.669667+00:00"
         }
       },
-      "completed": "2026-08-29T18:47:50.262515+00:00",
+      "completed": "2026-08-29T21:57:49.671667+00:00",
       "inputs": {
-        "layers/integration/murderwings/content/murderwings-content.json": "5e91808a2d2d3e0f3adf184251fbbcc1e8afc31a586fb7c443f900b622e8639f"
+        "layers/integration/murderwings/content/murderwings-content.json": "d93c2a2538886ce3f906ee0ac270c6b31fa7688ed9514ac4863958fe99206c89"
       }
     },
     "generate_tts": {
@@ -1280,98 +1335,40 @@
         "tts_objects/Murderwings Box.json": {
           "path": "output/murderwings/tts_objects/Murderwings Box.json",
           "hash": "b7140eee7dc8671e299aaaf38f5a2071840e1a8cb2d69feccbe5a9b6824fd1d9",
-          "modified": "2026-08-29T20:47:43.215440+00:00"
+          "modified": "2026-08-29T23:25:52.896018+00:00"
         },
         "tts_objects/Murderwings.json": {
           "path": "output/murderwings/tts_objects/Murderwings.json",
-          "hash": "f287a03ed952f45499a61e298af8acf3738335773b5d01239fb37dbda135b204",
-          "modified": "2026-08-29T20:47:43.227440+00:00"
+          "hash": "8b5d673a759cdad170b99acd67142d1d831fcd4cc462bcb5bd5acbb63827ef88",
+          "modified": "2026-08-29T23:25:52.904019+00:00"
         }
       },
-      "completed": "2026-08-29T20:47:43.348440+00:00",
+      "completed": "2026-08-29T23:25:52.969019+00:00",
       "inputs": {
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
         "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "3bc4a703a608a8a54a01594d266bec2d9471beaa1f58fc09e2e012ab68a7df14",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card10-front.jpg": "0c8777e195fe9216741fd86a52b5b3dbf0bdcca4c7e9eff5a8347eadcf39d0a8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card11-front.jpg": "b50660fdf2d6a20fb6e2b4ed15309bc67c0ff8ce26f6fb2da94876af25f7975a",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card12-front.jpg": "03a1980a53f84c180c23faf8f1b751a9a845a5b517dfe7d2d60225623828d612",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card13-front.jpg": "f7a0fe7454fa4b5f1d452e1424a7b1f07540d6555c46f740c9d2d3a53d9e1003",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card14-front.jpg": "27e3d0119e0d93b28eb6799f4c83b086faa3a3b17acbd6415f6dfdf1290c4535",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "9470f7ac9ddb88c4c8f5ef100fa14c068e0246f1119f56735c6dda0628db1bb4",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "28b5c01d58d25a354495d42520fc4ef6f5b5382223653b5a116a4324755bac49",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "45e57088ad1d86260ece7e48d88e25d0021a2e311623e88446f4a84f8009bb20",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "ca24998c1fd840fe3ff4c869d98813b81551dace5a918c10ec072f252432c1be",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "02fd7fe40f912855a52535f7e113bb912d6026438d56a109ada30fad70c4e4bf",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "a8f6b03d2b61b33de2f30c04080ae6638b57312c0fb6097e4a484c7bf83a64e2",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "5888c55637e46131862d874ffe94392bd54630df2a2da03b97a8458e7d7c73b3",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "7554dcde1a06fa5d4ecce15d211527a900ca5f39b23abdb81154586499c91b83",
-        "output/murderwings/cards/datacards/murderwing-champion-back.jpg": "d21ed6d9b49471920792656029ff91d49598630dbde5c14126edd215ea3512bb",
-        "output/murderwings/cards/datacards/murderwing-champion-front.jpg": "d9e6da72eba5db19e21e0063143927a317776c376822b65672ffee4b1d773a26",
-        "output/murderwings/cards/datacards/murderwing-chaos-lord-back.jpg": "c6c868ec723ccf341d0355e0bb7af87f50008a6209dce223e319e1d46926bb6c",
-        "output/murderwings/cards/datacards/murderwing-chaos-lord-front.jpg": "fa35de4bef07bc3dfb7ea184f99c797044a3daeaa1a48ccca53f70d191b0fdae",
-        "output/murderwings/cards/datacards/murderwing-curseclaw-back.jpg": "04793cd846819251e45d312a2b707ba3297d164ee699a3a98e084251622959ae",
-        "output/murderwings/cards/datacards/murderwing-curseclaw-front.jpg": "fa0bf7ba9db3822b7fa322d005bfa125de69d1a9226e30708cfa117f59cd652c",
-        "output/murderwings/cards/datacards/murderwing-depredator-back.jpg": "6b5785213a6cc67a2a9335d1c0470b5abc5efec5d63516a48bceace49076feb2",
-        "output/murderwings/cards/datacards/murderwing-depredator-front.jpg": "0a994368ed9b9f4032de964864ebee0c586c669e3541e861a62b8cfa182fe28c",
+        "output/murderwings/cards/datacards/murderwing-champion-back.jpg": "45e57088ad1d86260ece7e48d88e25d0021a2e311623e88446f4a84f8009bb20",
+        "output/murderwings/cards/datacards/murderwing-champion-front.jpg": "28b5c01d58d25a354495d42520fc4ef6f5b5382223653b5a116a4324755bac49",
+        "output/murderwings/cards/datacards/murderwing-chaos-lord-back.jpg": "9470f7ac9ddb88c4c8f5ef100fa14c068e0246f1119f56735c6dda0628db1bb4",
+        "output/murderwings/cards/datacards/murderwing-chaos-lord-front.jpg": "3bc4a703a608a8a54a01594d266bec2d9471beaa1f58fc09e2e012ab68a7df14",
+        "output/murderwings/cards/datacards/murderwing-curseclaw-back.jpg": "02fd7fe40f912855a52535f7e113bb912d6026438d56a109ada30fad70c4e4bf",
+        "output/murderwings/cards/datacards/murderwing-curseclaw-front.jpg": "ca24998c1fd840fe3ff4c869d98813b81551dace5a918c10ec072f252432c1be",
+        "output/murderwings/cards/datacards/murderwing-depredator-back.jpg": "5888c55637e46131862d874ffe94392bd54630df2a2da03b97a8458e7d7c73b3",
+        "output/murderwings/cards/datacards/murderwing-depredator-front.jpg": "a8f6b03d2b61b33de2f30c04080ae6638b57312c0fb6097e4a484c7bf83a64e2",
         "output/murderwings/cards/datacards/murderwing-huntmaster-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/murderwing-huntmaster-front.jpg": "4b1be762a71bb5cf9cc2b8ea16f20eb8ccda81dfc7682dcb7e9ec86e76916287",
+        "output/murderwings/cards/datacards/murderwing-huntmaster-front.jpg": "7554dcde1a06fa5d4ecce15d211527a900ca5f39b23abdb81154586499c91b83",
         "output/murderwings/cards/datacards/murderwing-raptor-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/murderwing-raptor-front.jpg": "c77168d8f996e3ae305798af73cfd87331ebbe7a4d1715c061fb9c493d6c7fdb",
-        "output/murderwings/cards/datacards/murderwing-shrieker-back.jpg": "f6d4d80100c665014fb7c0d8de087c22444af660636712475c9db389b4c77532",
-        "output/murderwings/cards/datacards/murderwing-shrieker-front.jpg": "3ef3a9c088765d04344ab510c523fea4278ad2ee53cc3ed25a60cb8cb9be8b8b",
+        "output/murderwings/cards/datacards/murderwing-raptor-front.jpg": "0c8777e195fe9216741fd86a52b5b3dbf0bdcca4c7e9eff5a8347eadcf39d0a8",
+        "output/murderwings/cards/datacards/murderwing-shrieker-back.jpg": "03a1980a53f84c180c23faf8f1b751a9a845a5b517dfe7d2d60225623828d612",
+        "output/murderwings/cards/datacards/murderwing-shrieker-front.jpg": "b50660fdf2d6a20fb6e2b4ed15309bc67c0ff8ce26f6fb2da94876af25f7975a",
         "output/murderwings/cards/datacards/murderwing-skysear-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/murderwing-skysear-front.jpg": "1e5b3102a764d234366ef041cd16781ec5752ed251c080741379fe7be67f9a0b",
+        "output/murderwings/cards/datacards/murderwing-skysear-front.jpg": "f7a0fe7454fa4b5f1d452e1424a7b1f07540d6555c46f740c9d2d3a53d9e1003",
         "output/murderwings/cards/datacards/murderwing-warp-talon-back.jpg": "17db5ecb8045189fbeaad1384762584e3a387a61de6ea4b4e2520b53e6baf7e8",
-        "output/murderwings/cards/datacards/murderwing-warp-talon-front.jpg": "a45be431a82387da90b57c5b339657d84e04fcf05583a60afcc5f59060976c75",
-        "output/murderwings/cards/datacards/murderwings-살육날개-강탈자-back.jpg": "0b29b72dd87aab9002bcc8c3134be1fcabe83d6f4256876d1dbf65ef1b942f91",
-        "output/murderwings/cards/datacards/murderwings-살육날개-강탈자-front.jpg": "aa722e7d8684e1ef185cfc4aaeb031c13068c4f8e867f77c9a4ebece79fd072a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-비명꾼-back.jpg": "59b95d287dce2a455dea6e77ec1d6d77866786b50e5649c68a576d702e9041a2",
-        "output/murderwings/cards/datacards/murderwings-살육날개-비명꾼-front.jpg": "27d634f7e052bf861adeefad0a8f75eacc60eaf06bf66121e3b38cd14317e19e",
-        "output/murderwings/cards/datacards/murderwings-살육날개-사냥대가-back.jpg": "9b3a9332ecd3141ccad7efb6badaa95d58dbc2cd9b8ae77cdbe72304ac58a85a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-사냥대가-front.jpg": "1ab40b07997069066763308dc3dcb48ae917385a05bdd09e3407ac5191768143",
-        "output/murderwings/cards/datacards/murderwings-살육날개-용사-back.jpg": "5f08623bd17c4dfbc34b4ab72623172c39fa4ac882d51b2729fd838fd7527fd0",
-        "output/murderwings/cards/datacards/murderwings-살육날개-용사-front.jpg": "e530c45f42cdea9ccb0806784611b8d480b0ba4f389d4a2a72519dc208269cd0",
-        "output/murderwings/cards/datacards/murderwings-살육날개-워프-탈론-back.jpg": "9b3a9332ecd3141ccad7efb6badaa95d58dbc2cd9b8ae77cdbe72304ac58a85a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-워프-탈론-front.jpg": "e063f33b65c85b785469d94dd87e4ae550dc81eba69671bca05bbf127202ee90",
-        "output/murderwings/cards/datacards/murderwings-살육날개-육식조-back.jpg": "9b3a9332ecd3141ccad7efb6badaa95d58dbc2cd9b8ae77cdbe72304ac58a85a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-육식조-front.jpg": "4acc8e187b6e95023d5e20a7515285e4b812e8a4c482afea89586cac9836772a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-저주발톱-back.jpg": "4cf5f113d68877bba2b12af63295c9ef651868e619430ab5724e8a4d3fe280fe",
-        "output/murderwings/cards/datacards/murderwings-살육날개-저주발톱-front.jpg": "b07ae9d5bdca5a97ecc30230e0b31f9cf2bf15508f315761c0acc1d08411683a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-카오스-군주-back.jpg": "d2adf9dbd76cec869984992f596ebcf4d00109d3f790bb48b6e3c14f2a602fac",
-        "output/murderwings/cards/datacards/murderwings-살육날개-카오스-군주-front.jpg": "c4c5281e4455af51cb57601508de888610e5896025a77a3da1ba5cc48ead7dda",
-        "output/murderwings/cards/datacards/murderwings-살육날개-하늘맹염-back.jpg": "9b3a9332ecd3141ccad7efb6badaa95d58dbc2cd9b8ae77cdbe72304ac58a85a",
-        "output/murderwings/cards/datacards/murderwings-살육날개-하늘맹염-front.jpg": "e02ba6521fe15356fe9094a62d63ff9be9ec3b84c8bcd0150474908299f6a221",
-        "output/murderwings/cards/equipment/murderwings-bladefins-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/equipment/murderwings-bladefins-front.jpg": "f30711e55e39b4492f3847505b98ae1e5c2610b35996f78f90248f0959abf2ca",
-        "output/murderwings/cards/equipment/murderwings-clawed-armour-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/equipment/murderwings-clawed-armour-front.jpg": "3c1f764eaf5ab1b0e7025d8976a0e05d08cefbdb062f4b6d77ca171c0c4818b1",
-        "output/murderwings/cards/equipment/murderwings-vox-casters-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/equipment/murderwings-vox-casters-front.jpg": "e1580d3e6d54236feff2fa308be3d2d6cc8e8ec7f329c2de01246d4d51cd596e",
-        "output/murderwings/cards/equipment/murderwings-warp-fuel-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/equipment/murderwings-warp-fuel-front.jpg": "e93933c317490c1da97149bc55082c5dd63077da9645b79da23d5819c2449bc6",
-        "output/murderwings/cards/equipment/murderwings-갈퀴-돋친-갑주-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-        "output/murderwings/cards/equipment/murderwings-갈퀴-돋친-갑주-front.jpg": "8b9e79ae4b8aae1af4f9ec0a195fefae1b7f3b86f2d4c5b1be1f2738f3292f46",
-        "output/murderwings/cards/equipment/murderwings-복스캐스터-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-        "output/murderwings/cards/equipment/murderwings-복스캐스터-front.jpg": "46ac71eed7cfbc4440caffc9176b9026d5039b13f9c1503abc217503ca2b4769",
-        "output/murderwings/cards/equipment/murderwings-워프-연료-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-        "output/murderwings/cards/equipment/murderwings-워프-연료-front.jpg": "2a8c5123c0bb49768ca7d0344913d1b34c32e81a89f57aa3d906f803f1a36761",
-        "output/murderwings/cards/equipment/murderwings-칼날깃-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
-        "output/murderwings/cards/equipment/murderwings-칼날깃-front.jpg": "be898de674910d18768ff512fa3a5814f0da9e8b70780367fdc961b1204c25b7",
+        "output/murderwings/cards/datacards/murderwing-warp-talon-front.jpg": "27e3d0119e0d93b28eb6799f4c83b086faa3a3b17acbd6415f6dfdf1290c4535",
+        "output/murderwings/cards/equipment/murderwings-0ap-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
+        "output/murderwings/cards/equipment/murderwings-0ap-front.jpg": "94874b0feb0c969cf9904eec6ea148c3ceec4ff7178cf97c8f623596334e7b58",
+        "output/murderwings/cards/equipment/murderwings-1ap-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
+        "output/murderwings/cards/equipment/murderwings-1ap-front.jpg": "24850725fc6e3136f24772839d13cd59afbabdf1b66387b66299b48b74e12aeb",
         "output/murderwings/cards/faction-rules/murderwings-아스타르테스-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
         "output/murderwings/cards/faction-rules/murderwings-아스타르테스-front.jpg": "1817fdbe965d74d4ab0b172df5716f749fbbb9fd8129f3bef097342f17555bb0",
         "output/murderwings/cards/faction-rules/murderwings-점프팩-back.jpg": "a742150bdfdd7598bea411d97b97042636be5c4e469f6580e01e37fcda75a719",
@@ -1383,15 +1380,15 @@
         "output/murderwings/cards/faction-rules/murderwings-추진-행동-예시-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
         "output/murderwings/cards/faction-rules/murderwings-추진-행동-예시-front.jpg": "0e225a36a87772bf22d06b0b200609c2c8ee817b43f00222e0924c604de4d29e",
         "output/murderwings/cards/faction_rules/murderwings-astartes-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/faction_rules/murderwings-astartes-front.jpg": "b39eee98de0c3a454742924d907feca924eeff2c5a89febf689956af04a40c68",
+        "output/murderwings/cards/faction_rules/murderwings-astartes-front.jpg": "6601e26720656fa29fc4661b6034bd7307627ad1f4071de4b5d8b91577eb525e",
         "output/murderwings/cards/faction_rules/murderwings-boost-actions-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
         "output/murderwings/cards/faction_rules/murderwings-boost-actions-example-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/faction_rules/murderwings-boost-actions-example-front.jpg": "a111e9a96c5129e4d8712d96c98dfee962b8c26deb8d3441d8495f81afe3cae9",
-        "output/murderwings/cards/faction_rules/murderwings-boost-actions-front.jpg": "c8a5a54654290706d37a1d36dddfb3693633a60b8c8961767ae1e520c69dcbe7",
-        "output/murderwings/cards/faction_rules/murderwings-jump-pack-back.jpg": "70fa587dd30f390dca21b183e58372cbb480fa56b0c4898c92c5bfb3066133b4",
+        "output/murderwings/cards/faction_rules/murderwings-boost-actions-example-front.jpg": "58806589ef9f8af5d5a94b0f6dcab5d82daa792930a011500a6d6814a064b9ed",
+        "output/murderwings/cards/faction_rules/murderwings-boost-actions-front.jpg": "6cbd54e8011d5bd34bf7493d445ff361cfde000aa04e075e9e7c356db0604590",
+        "output/murderwings/cards/faction_rules/murderwings-jump-pack-back.jpg": "e3f947ad40af6ba1badeb6445965c67e04a3e83abc925032f3ea73cce99e7079",
         "output/murderwings/cards/faction_rules/murderwings-jump-pack-example-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/faction_rules/murderwings-jump-pack-example-front.jpg": "855c049c33b3f87615c925f676bb9f569ec95282030d3a225ddd96fe3dba7212",
-        "output/murderwings/cards/faction_rules/murderwings-jump-pack-front.jpg": "e3e82f8566fda651cea5bf8e9a2294d8e12546a9ad57244beab5bf5f6dc9b85f",
+        "output/murderwings/cards/faction_rules/murderwings-jump-pack-example-front.jpg": "a30a2bdd10fe9204a5f07ce78a3d561d7a95f55bf56aa3a08acc2189b3da648c",
+        "output/murderwings/cards/faction_rules/murderwings-jump-pack-front.jpg": "48b45301b114ffe0a2001c2efac3938458e2bfad5e37ff605ef9622312c8344a",
         "output/murderwings/cards/firefight_ploys/murderwings-long-forgotten-honour-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
         "output/murderwings/cards/firefight_ploys/murderwings-long-forgotten-honour-front.jpg": "3db2e0eece5b77212dea2ed628c0347914de79bca1469dcdab334b954a5f6c5b",
         "output/murderwings/cards/firefight_ploys/murderwings-malicious-narcissism-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
@@ -1402,50 +1399,8 @@
         "output/murderwings/cards/firefight_ploys/murderwings-wings-of-darkness-front.jpg": "e9b2fefffcb29507b057476640be7da07c8b15300b573aae676d0c22fc7dfef2",
         "output/murderwings/cards/operative-selection/murderwings-operative-selection-back.jpg": "98d732b2813465194c83667f2096785d2c069ba83e13036e38ab9380fa15219b",
         "output/murderwings/cards/operative-selection/murderwings-operative-selection-front.jpg": "2a7d3d27b419138974b6136f86eb49a696837548d5ce79934f4188ec22bf0bda",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-back.jpg": "db1eb8f8f7ae0ad20c933177e01eeded251d9824d81578953edb1f03cbaedd19",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card1-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card1-front.jpg": "d8480f2f54742d81aed2eb3a95ab2b061746510f116697dd1356bf2cedbef7f7",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card10-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card10-front.jpg": "6a4890b948f2ae03b668dc61f2b5ea01ff5d7baf973ed44c02b02bbc5e3b8a16",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card11-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card11-front.jpg": "b2d4ca82ff12e02d97500b4f465cb2d3bd61c14bd265e6e4d91a85d4c2e61c32",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card12-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card12-front.jpg": "27ddb9dbc73ec4489a99a04d5ba4837f9c144e4112651c3988446a0a02d12d44",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card13-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card13-front.jpg": "0c0ceec2430408b8001ec5e3b7ce47031932e6c3d8917d494463b970e5a78d0f",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card14-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card14-front.jpg": "dcd769ec5af42833384f9d249a49301fb3e1a3698710a6c630bf1a479ea2e1dd",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card15-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card15-front.jpg": "da1e2606b2e7f2ca80aa998ea11ee6e7755a0360b1b1a539623327a087d8c8df",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card16-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card16-front.jpg": "ccaac2e02facdd5ea2ceedfa735f573a02c28d9a2c6e4dea7ff3b90fd6e87b42",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card17-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card17-front.jpg": "94b6cdddf21b206685ea31da48e130173c675956de802e332eae282acf1c7386",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card18-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card18-front.jpg": "809f7127d02635268ca6a46bcdb79d49be0ca73c9edb5d873bc88b86903e2346",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card19-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card19-front.jpg": "94874b0feb0c969cf9904eec6ea148c3ceec4ff7178cf97c8f623596334e7b58",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card2-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card2-front.jpg": "bb023fa30582ab3f41b15edf3ffb82a450f6950b00bf57813307c5088b289ef1",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card20-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card20-front.jpg": "eea92ab8a6346f46c80ea25212f50049ffbcc7bbdc0e07c12c57671d12878b61",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card21-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card21-front.jpg": "24850725fc6e3136f24772839d13cd59afbabdf1b66387b66299b48b74e12aeb",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card3-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card3-front.jpg": "48b45301b114ffe0a2001c2efac3938458e2bfad5e37ff605ef9622312c8344a",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card4-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card4-front.jpg": "e3f947ad40af6ba1badeb6445965c67e04a3e83abc925032f3ea73cce99e7079",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card5-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card5-front.jpg": "a30a2bdd10fe9204a5f07ce78a3d561d7a95f55bf56aa3a08acc2189b3da648c",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card6-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card6-front.jpg": "6cbd54e8011d5bd34bf7493d445ff361cfde000aa04e075e9e7c356db0604590",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card7-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card7-front.jpg": "58806589ef9f8af5d5a94b0f6dcab5d82daa792930a011500a6d6814a064b9ed",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card8-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card8-front.jpg": "6601e26720656fa29fc4661b6034bd7307627ad1f4071de4b5d8b91577eb525e",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card9-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-card9-front.jpg": "4f8b5bc09d41bb1fdd2705c2f2b41eeb39e34fa312586669ddfe44c80c7bd552",
-        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-front.jpg": "30d553790e8b06d4afc28ac5762871d663faf05ee60e7a3d35661075d08baf1d",
+        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-back.jpg": "bb023fa30582ab3f41b15edf3ffb82a450f6950b00bf57813307c5088b289ef1",
+        "output/murderwings/cards/operatives_selection/murderwings-operative-selection-front.jpg": "d8480f2f54742d81aed2eb3a95ab2b061746510f116697dd1356bf2cedbef7f7",
         "output/murderwings/cards/ploys/firefight/murderwings-살육의-하강-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
         "output/murderwings/cards/ploys/firefight/murderwings-살육의-하강-front.jpg": "fb64448eefa35eb545919644722d2822b475c04ec8d846554f479426b9b2048d",
         "output/murderwings/cards/ploys/firefight/murderwings-악독한-자기도취-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
@@ -1462,18 +1417,12 @@
         "output/murderwings/cards/ploys/strategy/murderwings-상공의-포식자-front.jpg": "5b1c78e6797c05a163129db75cd0d711b8f5f801e1d89f8439580e3615d44ff2",
         "output/murderwings/cards/ploys/strategy/murderwings-약자-도태-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
         "output/murderwings/cards/ploys/strategy/murderwings-약자-도태-front.jpg": "3a47b83fa87ee3fc1d0b97fe64473bd557e2b79f4c670924a553d9e7cfa276bf",
-        "output/murderwings/cards/strategy_ploys/murderwings-cull-the-weak-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/strategy_ploys/murderwings-cull-the-weak-front.jpg": "e4c348d93d8250821466b661ade8990b248856597c2d0512780fc16457e92468",
-        "output/murderwings/cards/strategy_ploys/murderwings-instil-fear-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/strategy_ploys/murderwings-instil-fear-front.jpg": "0483ff4f3eac6a20ae1f7e20eeefb7f406c09bb323942957d308b6f2816cb5b8",
-        "output/murderwings/cards/strategy_ploys/murderwings-nightmare-on-high-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/strategy_ploys/murderwings-nightmare-on-high-front.jpg": "c404179af1cbceab509cb840c20354c2c666c40833af6ae5e1f518cf6dfa7ba2",
-        "output/murderwings/cards/strategy_ploys/murderwings-predators-above-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/strategy_ploys/murderwings-predators-above-front.jpg": "3e1e35e7d52a433c54d59e10549acf1ac5e1e94fbb34c4e18e238454fc866975",
+        "output/murderwings/cards/strategy_ploys/murderwings-apl-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
+        "output/murderwings/cards/strategy_ploys/murderwings-apl-front.jpg": "b2d4ca82ff12e02d97500b4f465cb2d3bd61c14bd265e6e4d91a85d4c2e61c32",
         "output/murderwings/cards/token-guide/murderwings-token-guide-back.jpg": "1333d18076a634f912cce19b377b61e95761ebc75e06575b198fa40131f74b62",
         "output/murderwings/cards/token-guide/murderwings-token-guide-front.jpg": "f02def242e4d9f3153576038dbf17a6841aea38bd23d2a4174dd7ef7bd139dc0",
         "output/murderwings/cards/token_guide/murderwings-token-guide-back.jpg": "de8e173f00d4a48587329738b258ca0e685b5cfd0f0a7d69b960b107adcb829b",
-        "output/murderwings/cards/token_guide/murderwings-token-guide-front.jpg": "e8b586bd8f3572d324f74781fd9ddff9a67389728bfd014a373ad6d0dbb1b582",
+        "output/murderwings/cards/token_guide/murderwings-token-guide-front.jpg": "4f8b5bc09d41bb1fdd2705c2f2b41eeb39e34fa312586669ddfe44c80c7bd552",
         "output/murderwings/cardbox/murderwings-card-box-texture.jpg": "bba83b0f565dc0a57e41f289db0ee6dee5fd6194c188b90b4682d62a5977971e",
         "output/murderwings/cardbox/murderwings-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
         "output/murderwings/tokens/murderwings-challenge.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
@@ -1488,22 +1437,22 @@
         "output/murderwings/tokens/murderwings-warp.png": "a3cbb0a11a33a916b93b303b5991093da059ddae14603d3bff55065ea3be7bf1",
         "output/murderwings/tokens/tokenbag/murderwings-token-bag-icon.png": "cddb08c075e3d76317041fc3d3a84071c7bff782bf75e147f9867b8c8bb8f68d",
         "output/murderwings/tokens/tokenbag/murderwings-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
-        "output/murderwings/dice/murderwings-dice-dark.jpg": "a85cfcf1878746875aa951b12a5662429842bc3d93a75db3f933392fad456c20",
-        "output/murderwings/dice/murderwings-dice-light.jpg": "a5689645f63f2debf7342b154adb45572ea598dbaabc722602aeeba9898855df",
-        "output/murderwings/dice/murderwings-dice-team.jpg": "6462214518ff8cd08dc37a4b7c4b0d70e8cdae6569e4654084f03c2c390e407d",
-        "output/murderwings/data/murderwings-team-data.json": "5e91808a2d2d3e0f3adf184251fbbcc1e8afc31a586fb7c443f900b622e8639f",
-        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "output/murderwings/dice/murderwings-dice-dark.jpg": "87533cebf128fabe10d256892f09e79fb772d667a240fed2bfa49f295ebfaf5b",
+        "output/murderwings/dice/murderwings-dice-light.jpg": "ff59e2b5b5bb54e3b0fb43f653eed0c2c9f46d843ed46ed697c7405b9158a14e",
+        "output/murderwings/dice/murderwings-dice-team.jpg": "c07341db0f674baa3fdb1e5de0a4deb724e1f87bcff80759f9f37b43e054f86c",
+        "output/murderwings/data/murderwings-team-data.json": "d93c2a2538886ce3f906ee0ac270c6b31fa7688ed9514ac4863958fe99206c89",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "ccb3d10961c3353d0c325f4a6f4f4b1fbb8b962144f511b49e9dd229e52dd569",
         "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
-        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/display-table-manager-script.lua": "915b585df566254cafb6a699af34668afe51abe94803acc82645652433c13421",
         "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
         "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
         "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
         "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
         "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
-        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/single-object-updater.lua": "0c8f12587d1e4f34727ae0b50246885c6700ca52456c7b0088a00d2da3e7d352",
         "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
-        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
-        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "259c2e3629ecba126b5db0ec2a3066072601ab6ed9585c4d191eed9453d7204e",
+        "config/defaults/tts-script/team-spawner-script.lua": "60e659195fe37e96d6ffb8c4c9dcad9ceb669cae401bea03cd532b683499316d",
         "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
         "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
         "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
@@ -1644,175 +1593,175 @@
       "outputs": {
         "structure": {
           "path": "layers/warcom/structure/murderwings-structure.json",
-          "hash": "f185f58ecf4929251caf437923be23ca66e1330b311315de5b97385132d14772",
-          "modified": "2026-08-29T18:46:11.370768+00:00"
+          "hash": "c0670ef1cb8775677d5c266b11c0b74671fe7fb8eff1b5f51c643410707e7d19",
+          "modified": "2026-08-29T23:13:37.994776+00:00"
         }
       },
       "inputs": {
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card1_landscape.pdf": "6d99dde2faaee2560bf78666fa69cfdd190732834fa23282096bbb457c7d4e7f",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card2_landscape.pdf": "e40ec4c157a10f2f9551f7bbb73b1e2c339b797a3bfc54c2ee3e4556f89df66a",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card3_landscape.pdf": "50b16aba6788367bd9e29eac3e7bc1c12d9d387b75a9c079632e24aa96191495",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card4_landscape.pdf": "3022254492558aafbeef4858a1bf5dc8b2079de441ec41b50fd1f0c70d6afad7",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card1_landscape.pdf": "04cd560ada68cf8ac05245d4f277d965c533738f34fc0ee15aaedabd35765e99",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card2_landscape.pdf": "0ff4128bc6fd28b0fce982a4078bef885fd87b25532299e0b82895658832dc19",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card3_landscape.pdf": "81bad20ce421304201653d33a5f036ea4ab4706a610c4def3c4682be34f650d2",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card4_landscape.pdf": "1e8feedad3fccb975e22479e29f0fa8482983b6598aa08b110c6d24a930bf043",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card1_landscape.pdf": "a17f9cf75fbf941eb9f48135d84c9ae98fe9cb4a701249be779b57f943d2b1d9",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card2_landscape.pdf": "851fdf9fb62ed781048f2d4e442f694443c87bd1c22053765f1d16e28de46fce",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card3_landscape.pdf": "f9b68bb370a25ff4507595d3b8d7eceb1d236dafab4cdeee02e8a386dc44d6de",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card4_landscape.pdf": "f9c7ad6714234e8813c4aa0889c5d8f73161b428b679b211b215e84c59b4fc7f",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card1_landscape.pdf": "28528e039309360b03457bb046ea4c3e167b01e93470a6bbe9b1b2fd26e93afa",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card2_landscape.pdf": "e90649aa0f783071dac27d87c0024ce2d6d5d851d4c032a80567f64d6535d411",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card3_landscape.pdf": "61158e76851c02dfda5ff2f353b440c40318d507f7a355600aa73e861fa6a83e",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card4_landscape.pdf": "31b3d3975475df85a4c11bc0756b6fc9792ec640cab129df8cb5cc46b88880cb",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card1_portrait.pdf": "536089d03aa7127555c33fdbfe265fbae4e6dd3ad154d4a583ac6bd00485ee55",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card2_portrait.pdf": "afce7d5f5833eb6998b0b53890f4649574403a968af67e0f8f92ed1b41075840",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card3_portrait.pdf": "a81010a0687d799dcf2655f1c12e33bc13ca657d22d9ff8a13c4a050cc28a364",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card4_portrait.pdf": "0301448268ed2c59d14ca9e65d7de77c605b2a423f1a7f6f0fe4a59b7aaa237c",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card1_portrait.pdf": "723c37eeda8d6c34424ee29a2912aa0fcdb836fcb3f727a56801f0f355bb7a6d",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card2_portrait.pdf": "75a0b8f4e27f351ff75e84c8908d35760ada44e785683ad84ad46515a2517a3e",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card3_portrait.pdf": "7abdb901a4fc52a96dcca7d4b55c54bd07a7adff54d530342a1491860b1cfd8d",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card4_portrait.pdf": "c992bb3fe1cd5f3a03c3edb556fe1db033a90075b4c7bb40950d933ffc690ae4",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card1_portrait.pdf": "1f52bf7273ff659700bd1cc15f68f99f7f44a395dcc588a0c90fd8999ec4cb8c",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card2_portrait.pdf": "c616a796ae76a478d982a381807ded33cd4eafd739356724cc16bf7fb66c31d6",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card3_portrait.pdf": "c927d51d0e647e289ff31b325b5b833de531ea1b76c04b02bdedb904b4bd3529",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card4_portrait.pdf": "fdaa8773b0c8d08d338e7f9773f96a967461f8e444d858372e42af6e1d9b91d8",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card1_portrait.pdf": "a187ce419e3cdddf7f62e8586bb7912d890ce17ca31c57bdd98f5c2f2015b055",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card2_portrait.pdf": "379a089025a9f2dbb9d319faa61807159ed421156dc89a89f5f861299fad0dab",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card3_portrait.pdf": "a916bb0a7c99328873151f4a266c22fdde2240f5a7826e80aa3d3ab94dfd7eea",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card4_portrait.pdf": "40c6a35d85557fc2585787462d74cfb0a34aa21c0d3ca3cc1894eda59b701a81",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card1_portrait.pdf": "aa7ca7d5bc1c1a64e58ced017919ececd6511ea61f37118ca746e45aa94298a7",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card2_portrait.pdf": "e8cb2ddb02f518334fc08ce5e78d6f421b02fe0507a1e08323a92d51505a06e7",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card3_portrait.pdf": "f4af4e97820ba387c8183b67aa29c26b4693ff84fed0f874770a251aa0c571e8",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card4_portrait.pdf": "df9d1eee2b3ef21e5e317d51e428f5feb5bcd17649ddef860092c16443cef0f8",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card1_portrait.pdf": "4fe5febb1d9659b26ff3f323b0c4265088d7f903c020f6367de7067ad1cbfa0f",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card2_portrait.pdf": "109e1a6bd347002beed6d028b8eb2b7533371f230c09734037be323c44a8e079",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card3_portrait.pdf": "2edd5406919312bf162cd8aa089df526a5113b768b4c4786ffdb0d552b8549e6",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card4_portrait.pdf": "9b3f5b558eeeb8b4fa879c955a12db07557412d1ece250fdcdfce92216a35d09"
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card1_landscape.pdf": "4c0f19179d272fd652599af807ad3ac308fc896489d0539c8d361cca5aaac4cd",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card2_landscape.pdf": "79fce13edb0a4904396636efc0b601a19a3d102aaf693e24cea74ef0aba28f7f",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card3_landscape.pdf": "b5f95cb127597c4a9fdb75bcbafcf8f2144ae8be532dd4001cca52fa8afb3023",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card4_landscape.pdf": "f0b1e3454c17806ef35106b039b634771a504e31e5c1d7bb2453f9c337b7e1ec",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card1_landscape.pdf": "02f9034e5fc4a82e4959ae366250347550258350d9a03192b7cc927b17709922",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card2_landscape.pdf": "d7fa84adfdcbba9ee15db42bf0db109fd5090050221ac2efbee65e958df75494",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card3_landscape.pdf": "0a68285ce18385b9b180a38deca50947e72494bb1d2af2757c53759c6f99617b",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card4_landscape.pdf": "e831f4f3d6648d97d7357a4e8bd61fb9df094c318ecc4b9b4f632a746259a867",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card1_landscape.pdf": "de3a00750686ebfaf8b21517fd6fbc6b3b87f5d99fb215209c9fa453f92d714b",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card2_landscape.pdf": "ef2980142884f2513216e18fb5fe866f2e2ad2184b4231aa448b4bb8fd8e8ad1",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card3_landscape.pdf": "109da239475fbe02afae3010364a0637c95255bf4fae34ef1449eb4fdbfef093",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card4_landscape.pdf": "c1979e3bf47afd148e7d11450f24fc70cf576176b051ea8bf17a438eef9ec7ff",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card1_landscape.pdf": "65932fc61aeccae0fbf0acf411f070c944e186e270b0134babd92b0dbd24ec74",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card2_landscape.pdf": "628bd158e6cf78da95c96f7cc84a299b2380152ca36c5ad4d6dfe6b2d55fc0b8",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card3_landscape.pdf": "d1545b1e94445af38514321e5682bce5405d96175ab00199f55d87894e3a5970",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card4_landscape.pdf": "29472667a2a37bb6e0ef0d52c9afca92e6e0baa27ec127ba1b96003ffd40579a",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card1_portrait.pdf": "28fdd30beab97b4e477afca7dad9c0c40c146813c4bac59dcf0070ad7636bef1",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card2_portrait.pdf": "f357125ab7a9969aaa2d8f07f1bae9b683879609e82822a26f3faf83e07281ab",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card3_portrait.pdf": "d03f0fc7b3ffe8e2a1c686307c6d83a87208209f9544965e110a9560b90877e5",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card4_portrait.pdf": "b6009d6bf93d708f33fc125a12d73fb7eb5c8dfb51c2e6f709086296b88b1b16",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card1_portrait.pdf": "e93dbb3a8a53d1aeaad4c4bc310e68703463ba4c1b614f5028de678ba3b368ee",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card2_portrait.pdf": "3a9159022a61d30a9375bf7a4cc99128eea6fbfb4afc464399b65707b41b32b4",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card3_portrait.pdf": "1dc58e11abbc9a4dc5055baf60debb2e12121b67c85ca397d07557f9d035a6af",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card4_portrait.pdf": "8cb9c8ca5aed18acb9052e606890ed384e216041545afaa1c774c11073916b60",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card1_portrait.pdf": "cf0adb731c060d25ebde77caffd42f495b85a617454f537f3d1463da35881e86",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card2_portrait.pdf": "8b2f680b52ac8dc0e4d10346540be12c23ae2095372c4694f861524ad32c848f",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card3_portrait.pdf": "accd25f113b72d2064f04e814a43abadff71bf2e0a4520488034faf6467c516a",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card4_portrait.pdf": "091b4575f2fd2297f93549883b7dccffc9bed33983a8e567c7e2bc11eb0a604c",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card1_portrait.pdf": "1eb71df85ee7b685ceb7796831376c8112764fbbe536e0418956599d1bf03fbc",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card2_portrait.pdf": "5c8c1764d11eed82c901d2d9177e02431b546968172f483a0da2910e48203761",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card3_portrait.pdf": "abdba5fb27f14ba5ce46796808517590450d41b1953931243e3d1134690aefd2",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card4_portrait.pdf": "543d04cfb64f5e0e238fcd81b743a029cdacb22417196391785cca3a39e07f50",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card1_portrait.pdf": "93130b06237f418f2d85a57bb5d51365f98c454e74a70445d3abc033935582a7",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card2_portrait.pdf": "ff2f6d3509f93811545cdd3f31e0699763106c7805d78e7cca489a1f96140071",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card3_portrait.pdf": "50b119d849e6edd2a4deaf4303ef32c4dc6ca2806bd81d91a52f02ec7a279780",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card4_portrait.pdf": "c821732ea1619e488ce96764dad0ab4a875ccf2a9d752e1ae04de19efb571548",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card1_portrait.pdf": "eb279b2c36c8087b3e8846221fa0f8a5c180141fdc88043fd9e3b2236299779c",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card2_portrait.pdf": "96b968d531fde26c915534d5999666caddfb475dc06ad074f01bb935bf8d7e33",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card3_portrait.pdf": "a795648a14c0600135111faffbf0f50aadc426a866ccb293227dea633531087d",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card4_portrait.pdf": "2e7091841ac0e786a62914d677866e7db5c182f1e774ec297f704f3ac246ae2b"
       },
-      "completed": "2026-08-29T18:46:12.286297+00:00"
+      "completed": "2026-08-29T23:13:48.322102+00:00"
     },
     "integrate_classified": {
       "outputs": {
         "manifest.json": {
           "path": "layers/integration/murderwings/manifest.json",
-          "hash": "f185f58ecf4929251caf437923be23ca66e1330b311315de5b97385132d14772",
-          "modified": "2026-08-29T18:46:12.550221+00:00"
+          "hash": "c0670ef1cb8775677d5c266b11c0b74671fe7fb8eff1b5f51c643410707e7d19",
+          "modified": "2026-08-29T23:20:40.109422+00:00"
         },
         "murderwings-datacard-murderwing-chaos-lord.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-chaos-lord.pdf",
-          "hash": "e6a877dd19c2944ef1aaa5a8927da5e802571ee80672043a80cf5c1431fed9de",
-          "modified": "2026-07-12T19:14:39.158097+00:00"
+          "hash": "084ac077421ea812668de0023168d38a30383231e47a0c25d912e8a72ba8a6df",
+          "modified": "2026-08-29T23:20:40.110421+00:00"
         },
         "murderwings-datacard-murderwing-champion.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-champion.pdf",
-          "hash": "09982ec78ee56b748004f8478bff9702a2bcb4725c41b636309592a3359656ac",
-          "modified": "2026-07-12T19:14:39.194336+00:00"
+          "hash": "f527b3cce56fed80a85e97d0a6825410f53d1c2dee9c94d3b839637abbea7405",
+          "modified": "2026-08-29T23:20:40.111421+00:00"
         },
         "murderwings-datacard-murderwing-curseclaw.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-curseclaw.pdf",
-          "hash": "de807c1a958fcad13d956d4b974d032803fd7a9ed6e00ca68783f91208576034",
-          "modified": "2026-07-12T19:14:39.225568+00:00"
+          "hash": "7a313ae2297a28be7cecfb981160c440c1100a95528455ca0755addfd87fbc0b",
+          "modified": "2026-08-29T23:20:40.112421+00:00"
         },
         "murderwings-datacard-murderwing-depredator.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-depredator.pdf",
-          "hash": "70f4bd45aeb7825303a80860990a53ba6f397d4e2d47cbe60bfe7b4bef22d6bf",
-          "modified": "2026-07-12T19:14:45.463563+00:00"
+          "hash": "6e43354a4a8d6cb3926824143b666e21fd679155b001e885c6f76335f52a5b2f",
+          "modified": "2026-08-29T23:20:40.113421+00:00"
         },
         "murderwings-datacard-murderwing-huntmaster.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-huntmaster.pdf",
-          "hash": "a30c3a3f7bf3d9d0eb88344a272eaff8cf31bf3302f7fba042851252fad9f852",
-          "modified": "2026-07-12T19:14:45.868261+00:00"
+          "hash": "6b158f04b5eff11e33a716f2a5ec0db6a24923701e3bdd05dd700ff7200694bf",
+          "modified": "2026-08-29T23:20:40.114421+00:00"
         },
         "murderwings-datacard-murderwing-raptor.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-raptor.pdf",
-          "hash": "2868c768bf9c0ca5a739e08c211817fb009775010f7069241a7cd7acc8450b7a",
-          "modified": "2026-07-12T19:14:45.878567+00:00"
+          "hash": "52395fe63847056d98e6877c40c4ce91ae26a5e8ee5f1a8a3649ca05f8fa507e",
+          "modified": "2026-08-29T23:20:40.115421+00:00"
         },
         "murderwings-datacard-murderwing-shrieker.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-shrieker.pdf",
-          "hash": "baab13cada866c98c069567d02fa97d3680ebda518c6737164180609af5883cc",
-          "modified": "2026-07-12T19:14:45.894696+00:00"
+          "hash": "04d9d213d0c4dd3f2c41b137b176ab805387d5cd7a4786391560ae3ef99cc7cc",
+          "modified": "2026-08-29T23:20:40.116421+00:00"
         },
         "murderwings-datacard-murderwing-skysear.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-skysear.pdf",
-          "hash": "7055850ae456a6f52d6a4cf06385cb8f71eb56e7104e78e0114847cce0d7e624",
-          "modified": "2026-07-12T19:14:45.906319+00:00"
+          "hash": "6ff83d08f93d28f5e58260aa7c56f50824513dad9b9da93f3c3682836e949cfb",
+          "modified": "2026-08-29T23:20:40.117422+00:00"
         },
         "murderwings-datacard-murderwing-warp-talon.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-murderwing-warp-talon.pdf",
-          "hash": "28918bf0f003ca47552e6aa75c43beb04780f3e78cfa1f8781b314fa389f54cb",
-          "modified": "2026-07-12T19:14:45.922109+00:00"
+          "hash": "9bb4577994af079c5db9f5b9449fc8927346cd1a0cafb023b20ab390b580b8aa",
+          "modified": "2026-08-29T23:20:40.118421+00:00"
         },
         "murderwings-equipment-bladefins.pdf": {
           "path": "layers/integration/murderwings/murderwings-equipment-bladefins.pdf",
-          "hash": "47cfa186e833d16b38298d4608dd2893c6e09f1d8826bf31931ad01ac75dd3e9",
-          "modified": "2026-07-12T19:14:45.931801+00:00"
+          "hash": "d26e708d3ee06948d10beb28de228e5af7bf33536af18d9ef3761740567851ef",
+          "modified": "2026-08-29T23:20:40.119421+00:00"
         },
         "murderwings-equipment-clawed-armour.pdf": {
           "path": "layers/integration/murderwings/murderwings-equipment-clawed-armour.pdf",
-          "hash": "ad33f896d2e6cbe0fa2aeaa8d27eabc3b9ea3010dc5a125cfbf861a9ffac791c",
-          "modified": "2026-07-12T19:14:45.966412+00:00"
+          "hash": "d31d867963620dd65b80a3f972ee1f145f74a8f9dd2eeacf6d8e3e8edb855847",
+          "modified": "2026-08-29T23:20:40.119421+00:00"
         },
         "murderwings-equipment-warp-fuel.pdf": {
           "path": "layers/integration/murderwings/murderwings-equipment-warp-fuel.pdf",
-          "hash": "3477606bf5e15e4464330b05c548916f6276b0cf6748c0ce134fa9b2fdbd1ddb",
-          "modified": "2026-07-12T19:14:45.976244+00:00"
+          "hash": "ae76c456396e119dd43c03d7d1ff001012c89d5ebab6aca85ae66351ed207c5d",
+          "modified": "2026-08-29T23:20:40.120421+00:00"
         },
         "murderwings-equipment-vox-casters.pdf": {
           "path": "layers/integration/murderwings/murderwings-equipment-vox-casters.pdf",
-          "hash": "554d8c0fb4f0ecfcbdbc5b1a2c492a187abe080d1a28591fcc644ce158b76188",
-          "modified": "2026-07-12T19:14:45.997270+00:00"
+          "hash": "2649d1e4e4fb11a8d32e785ab40d0331e5ca15014d799d75deb2dcd12a24267e",
+          "modified": "2026-08-29T23:20:40.121421+00:00"
         },
         "murderwings-faction-rule-jump-pack.pdf": {
           "path": "layers/integration/murderwings/murderwings-faction-rule-jump-pack.pdf",
-          "hash": "5f3afe4bb949fdc33d9ebcf7b4a82678b100bd40bb04f8744bdbb7325f395760",
-          "modified": "2026-07-12T19:14:46.021905+00:00"
+          "hash": "3c3882b6f071aeb9982c2c6dd452fbd36f2e6559e30cbc7235fec5c98854387e",
+          "modified": "2026-08-29T23:20:40.122423+00:00"
         },
         "murderwings-faction-rule-jump-pack-example.pdf": {
           "path": "layers/integration/murderwings/murderwings-faction-rule-jump-pack-example.pdf",
-          "hash": "690c68c17254935b2d238edf97641bcf2d03921aaf78120ebe2ba2d93bf9d24a",
-          "modified": "2026-07-12T19:14:49.647339+00:00"
+          "hash": "11cbcbb756bb86c3278694742a93a6835ec4c28bb03b6e20f30b2feaf9b3e795",
+          "modified": "2026-08-29T23:20:40.124421+00:00"
         },
         "murderwings-faction-rule-boost-actions.pdf": {
           "path": "layers/integration/murderwings/murderwings-faction-rule-boost-actions.pdf",
-          "hash": "9d7fa87de6b7dd4d0ee42c07f16f00449574fbfbac59428ce56f5fa4a263f846",
-          "modified": "2026-07-12T19:14:49.656937+00:00"
+          "hash": "97ce8c483763b228de5638e585a128222828afcf6f6a0a31741911b91ec2a4e2",
+          "modified": "2026-08-29T23:20:40.125421+00:00"
         },
         "murderwings-faction-rule-boost-actions-example.pdf": {
           "path": "layers/integration/murderwings/murderwings-faction-rule-boost-actions-example.pdf",
-          "hash": "b225672ad0e7b305bdad6f667fc361e324103e5cb95c285a6209c5151d11b72d",
-          "modified": "2026-07-12T19:14:49.675805+00:00"
+          "hash": "1be133ea469a8289d05f41412030b74f4827ffd5630a06fc89c52c71e8b6772c",
+          "modified": "2026-08-29T23:20:40.126424+00:00"
         },
         "murderwings-faction-rule-astartes.pdf": {
           "path": "layers/integration/murderwings/murderwings-faction-rule-astartes.pdf",
-          "hash": "b2de958a7ada36b40ee46139302a2a2c1ec2cdb9af08622bed659b6eebbf6daf",
-          "modified": "2026-07-12T19:14:49.688451+00:00"
+          "hash": "73646780b296ac391453a60ff8e192ebd25ac6e3dfc8f0e0b487173b5b332d6b",
+          "modified": "2026-08-29T23:20:40.127423+00:00"
         },
         "murderwings-token-guide-token-guide.pdf": {
           "path": "layers/integration/murderwings/murderwings-token-guide-token-guide.pdf",
-          "hash": "29e97bd8c03af26a07e7cda13bccc677f299a081dbae117ed541f7f6b9e8546a",
-          "modified": "2026-07-12T19:14:49.707456+00:00"
+          "hash": "62a0d76df0f2a270667fe1633aaa0abc6210c195c1ac81282cc3ca2c20c60483",
+          "modified": "2026-08-29T21:23:27.916618+00:00"
         },
         "murderwings-firefight-ploy-malicious-narcissism.pdf": {
           "path": "layers/integration/murderwings/murderwings-firefight-ploy-malicious-narcissism.pdf",
-          "hash": "137833c2a6cd0a755c1f1347a835bad82629fb0b62cb750f7079e5da7afb581f",
-          "modified": "2026-07-12T19:14:49.738634+00:00"
+          "hash": "4523910728353b28bcbe3f947680b03b9134687acb26e7c6c2b0843737a57248",
+          "modified": "2026-08-29T23:20:40.129423+00:00"
         },
         "murderwings-firefight-ploy-murderous-descent.pdf": {
           "path": "layers/integration/murderwings/murderwings-firefight-ploy-murderous-descent.pdf",
-          "hash": "0cbef3a92c2f1b44f817277a685cf583691b5f91553ac10132dc42799375d749",
-          "modified": "2026-07-12T19:14:49.770980+00:00"
+          "hash": "591c60a6b34bec7225c971d0b124ecdc49b7667ff1528b5eb34e93e0057e7249",
+          "modified": "2026-08-29T23:20:40.130423+00:00"
         },
         "murderwings-firefight-ploy-long-forgotten-honour.pdf": {
           "path": "layers/integration/murderwings/murderwings-firefight-ploy-long-forgotten-honour.pdf",
-          "hash": "def94015e2a7ca8f8f1e84fe9879ea3fa446579050c9302963e6fd9f4388c95b",
-          "modified": "2026-07-12T19:14:49.807185+00:00"
+          "hash": "342054da71aab016bd8db2b2d060e6c4a2e153e886ac0db531ab55a01b638829",
+          "modified": "2026-08-29T23:20:40.130423+00:00"
         },
         "murderwings-firefight-ploy-wings-of-darkness.pdf": {
           "path": "layers/integration/murderwings/murderwings-firefight-ploy-wings-of-darkness.pdf",
-          "hash": "8865d1f7f2fe90bcafb2f661b22df92e2213df910778e56389d3427a093e9182",
-          "modified": "2026-07-12T19:14:49.839900+00:00"
+          "hash": "4dd9e8aaa88da68e138beb28f06c00ac8b9a4c2fdb90fe62ecaf04536283a4aa",
+          "modified": "2026-08-29T23:20:40.131423+00:00"
         },
         "murderwings-operatives-selection-operative-selection.pdf": {
           "path": "layers/integration/murderwings/murderwings-operatives-selection-operative-selection.pdf",
@@ -1821,23 +1770,23 @@
         },
         "murderwings-strategy-ploy-predators-above.pdf": {
           "path": "layers/integration/murderwings/murderwings-strategy-ploy-predators-above.pdf",
-          "hash": "6b270915200d923d923943222ad027a3cf14a0dd65f7acd410f48e0e90881bf0",
-          "modified": "2026-07-12T19:15:01.558502+00:00"
+          "hash": "00828fc6f985919a59b5e0e2e3abf4b778be357d71a59602de8f6a5ef8f031a4",
+          "modified": "2026-08-29T23:20:40.133423+00:00"
         },
         "murderwings-strategy-ploy-cull-the-weak.pdf": {
           "path": "layers/integration/murderwings/murderwings-strategy-ploy-cull-the-weak.pdf",
-          "hash": "06947cbc8c2b6fc1ae77cf4fee3633c0ed5b5af08014d2818c81ee5561f90d05",
-          "modified": "2026-07-12T19:15:01.589843+00:00"
+          "hash": "15bbf7788c2c849313907e1c80f0118b21c6c258f8892cb12200caa44d4d9753",
+          "modified": "2026-08-29T23:20:40.134423+00:00"
         },
         "murderwings-strategy-ploy-nightmare-on-high.pdf": {
           "path": "layers/integration/murderwings/murderwings-strategy-ploy-nightmare-on-high.pdf",
-          "hash": "06e12e3e07b44ed24bbb726a9ea059979411f26763c5a0c281ec240dd8531139",
-          "modified": "2026-07-12T19:15:01.601068+00:00"
+          "hash": "378250819a547cbc7e5a5c6ff311c7589ee8a780bf3740c0024d423d993f7a29",
+          "modified": "2026-08-29T23:20:40.135423+00:00"
         },
         "murderwings-strategy-ploy-instil-fear.pdf": {
           "path": "layers/integration/murderwings/murderwings-strategy-ploy-instil-fear.pdf",
-          "hash": "0d581be880d0f48f5a3b1cd27180480bf139928aac46cad0101970b05fa9c537",
-          "modified": "2026-07-12T19:15:01.634242+00:00"
+          "hash": "3f9792a4493217e2a0d8dd04547d98591a349bf0ca9328cb09ba6f317b7d3a37",
+          "modified": "2026-08-29T23:20:40.135423+00:00"
         },
         "murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
           "path": "layers/integration/murderwings/murderwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
@@ -1911,13 +1860,13 @@
         },
         "murderwings-operatives-selection-operative-selection-1.pdf": {
           "path": "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-1.pdf",
-          "hash": "7e1d607c4bddfad3698e86cba744be9cd2204b71b048aaf2c75a6de74289ca32",
-          "modified": "2026-08-29T18:46:16.264064+00:00"
+          "hash": "0b44710bff7a6f103afabbebbfeeb9cc7e8510a3337e55d5db8dd8d5e76d60c4",
+          "modified": "2026-08-29T21:23:28.599619+00:00"
         },
         "murderwings-operatives-selection-operative-selection-2.pdf": {
           "path": "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-2.pdf",
-          "hash": "7a05a67e2955a3b430e9ebdd14e4ca7836436c209847d3b287c155c39e81ff97",
-          "modified": "2026-08-29T18:46:18.232513+00:00"
+          "hash": "656646eddb64cf5e03c6ad98f2533a0b2aacead9ad7476181fce4b6234669145",
+          "modified": "2026-08-29T21:23:28.630620+00:00"
         },
         "murderwings-operatives-selection-operative-selection-3.pdf": {
           "path": "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-3.pdf",
@@ -2013,47 +1962,107 @@
           "path": "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-21.pdf",
           "hash": "380f84ff47e4f5b4c5acd4cb4f43312222772779fe8141082a0349d602cf2940",
           "modified": "2026-08-29T18:46:33.222119+00:00"
+        },
+        "murderwings-datacard--1.pdf": {
+          "path": "layers/integration/murderwings/murderwings-datacard--1.pdf",
+          "hash": "a6b980320c9fc10474a5e4b2db05ba482ce484934c912ccb7578b1812d1e9732",
+          "modified": "2026-08-29T21:23:16.935574+00:00"
+        },
+        "murderwings-datacard--2.pdf": {
+          "path": "layers/integration/murderwings/murderwings-datacard--2.pdf",
+          "hash": "de44144ad73b5d982edc73fd2d58863957f82b92cef1f3832db75332f5f2661f",
+          "modified": "2026-08-29T21:23:17.918572+00:00"
+        },
+        "murderwings-datacard-.pdf": {
+          "path": "layers/integration/murderwings/murderwings-datacard-.pdf",
+          "hash": "a4cf39a635f2c42689082dfdfa70550d7f149bfc783ed9809ba8a7ea68700e7d",
+          "modified": "2026-08-29T21:23:19.735598+00:00"
+        },
+        "murderwings-equipment-1ap.pdf": {
+          "path": "layers/integration/murderwings/murderwings-equipment-1ap.pdf",
+          "hash": "2649d1e4e4fb11a8d32e785ab40d0331e5ca15014d799d75deb2dcd12a24267e",
+          "modified": "2026-08-29T22:21:08.033868+00:00"
+        },
+        "murderwings-equipment-0ap.pdf": {
+          "path": "layers/integration/murderwings/murderwings-equipment-0ap.pdf",
+          "hash": "d31d867963620dd65b80a3f972ee1f145f74a8f9dd2eeacf6d8e3e8edb855847",
+          "modified": "2026-08-29T22:21:08.022867+00:00"
+        },
+        "murderwings-faction-rule-x.pdf": {
+          "path": "layers/integration/murderwings/murderwings-faction-rule-x.pdf",
+          "hash": "f7c65c98dd8f0d3523f35a9542f32ca53fd9ade2e5bbbbdfc8563785452622e0",
+          "modified": "2026-08-29T21:23:23.234599+00:00"
+        },
+        "murderwings-faction-rule-unknown.pdf": {
+          "path": "layers/integration/murderwings/murderwings-faction-rule-unknown.pdf",
+          "hash": "131f5e91f006b4e4304ea85c1aa551bf7afa9a13d05a000f64593b46c46dce37",
+          "modified": "2026-08-29T21:23:27.901619+00:00"
+        },
+        "murderwings-faction-rule-a.pdf": {
+          "path": "layers/integration/murderwings/murderwings-faction-rule-a.pdf",
+          "hash": "c17a687f48214f1e6aee75ba882ce642196196cdd89058252854c2908063c28f",
+          "modified": "2026-08-29T21:23:24.997600+00:00"
+        },
+        "murderwings-faction-rule-c-a.pdf": {
+          "path": "layers/integration/murderwings/murderwings-faction-rule-c-a.pdf",
+          "hash": "cd8c5bf981cf3e483b2a0be9c7932c763d31480e616bca3e97a628538dff0619",
+          "modified": "2026-08-29T21:23:27.883619+00:00"
+        },
+        "murderwings-strategy-ploy-apl.pdf": {
+          "path": "layers/integration/murderwings/murderwings-strategy-ploy-apl.pdf",
+          "hash": "15bbf7788c2c849313907e1c80f0118b21c6c258f8892cb12200caa44d4d9753",
+          "modified": "2026-08-29T22:21:13.990174+00:00"
+        },
+        "murderwings-token-guide-token-guide-murderwings.pdf": {
+          "path": "layers/integration/murderwings/murderwings-token-guide-token-guide-murderwings.pdf",
+          "hash": "71c87d1ff31a7697a0fcaa6f664a255c8a84673ea0c2e63fe9c3b47de08cdb20",
+          "modified": "2026-08-29T23:20:40.128423+00:00"
+        },
+        "murderwings-operatives-selection-operative-selection-murderwings.pdf": {
+          "path": "layers/integration/murderwings/murderwings-operatives-selection-operative-selection-murderwings.pdf",
+          "hash": "4e192ab1be1c1883eab5c31ed4d390493de662aac0996bf4a021031a1b3fc369",
+          "modified": "2026-08-29T23:20:40.132423+00:00"
         }
       },
       "inputs": {
-        "layers/warcom/structure/murderwings-structure.json": "f185f58ecf4929251caf437923be23ca66e1330b311315de5b97385132d14772",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card1_landscape.pdf": "6d99dde2faaee2560bf78666fa69cfdd190732834fa23282096bbb457c7d4e7f",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card2_landscape.pdf": "e40ec4c157a10f2f9551f7bbb73b1e2c339b797a3bfc54c2ee3e4556f89df66a",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card3_landscape.pdf": "50b16aba6788367bd9e29eac3e7bc1c12d9d387b75a9c079632e24aa96191495",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card4_landscape.pdf": "3022254492558aafbeef4858a1bf5dc8b2079de441ec41b50fd1f0c70d6afad7",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card1_landscape.pdf": "04cd560ada68cf8ac05245d4f277d965c533738f34fc0ee15aaedabd35765e99",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card2_landscape.pdf": "0ff4128bc6fd28b0fce982a4078bef885fd87b25532299e0b82895658832dc19",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card3_landscape.pdf": "81bad20ce421304201653d33a5f036ea4ab4706a610c4def3c4682be34f650d2",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card4_landscape.pdf": "1e8feedad3fccb975e22479e29f0fa8482983b6598aa08b110c6d24a930bf043",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card1_landscape.pdf": "a17f9cf75fbf941eb9f48135d84c9ae98fe9cb4a701249be779b57f943d2b1d9",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card2_landscape.pdf": "851fdf9fb62ed781048f2d4e442f694443c87bd1c22053765f1d16e28de46fce",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card3_landscape.pdf": "f9b68bb370a25ff4507595d3b8d7eceb1d236dafab4cdeee02e8a386dc44d6de",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card4_landscape.pdf": "f9c7ad6714234e8813c4aa0889c5d8f73161b428b679b211b215e84c59b4fc7f",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card1_landscape.pdf": "28528e039309360b03457bb046ea4c3e167b01e93470a6bbe9b1b2fd26e93afa",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card2_landscape.pdf": "e90649aa0f783071dac27d87c0024ce2d6d5d851d4c032a80567f64d6535d411",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card1_portrait.pdf": "536089d03aa7127555c33fdbfe265fbae4e6dd3ad154d4a583ac6bd00485ee55",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card2_portrait.pdf": "afce7d5f5833eb6998b0b53890f4649574403a968af67e0f8f92ed1b41075840",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card3_portrait.pdf": "a81010a0687d799dcf2655f1c12e33bc13ca657d22d9ff8a13c4a050cc28a364",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card4_portrait.pdf": "0301448268ed2c59d14ca9e65d7de77c605b2a423f1a7f6f0fe4a59b7aaa237c",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card1_portrait.pdf": "723c37eeda8d6c34424ee29a2912aa0fcdb836fcb3f727a56801f0f355bb7a6d",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card2_portrait.pdf": "75a0b8f4e27f351ff75e84c8908d35760ada44e785683ad84ad46515a2517a3e",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card3_portrait.pdf": "7abdb901a4fc52a96dcca7d4b55c54bd07a7adff54d530342a1491860b1cfd8d",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card4_portrait.pdf": "c992bb3fe1cd5f3a03c3edb556fe1db033a90075b4c7bb40950d933ffc690ae4",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card1_portrait.pdf": "1f52bf7273ff659700bd1cc15f68f99f7f44a395dcc588a0c90fd8999ec4cb8c",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card2_portrait.pdf": "c616a796ae76a478d982a381807ded33cd4eafd739356724cc16bf7fb66c31d6",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card3_portrait.pdf": "c927d51d0e647e289ff31b325b5b833de531ea1b76c04b02bdedb904b4bd3529",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card4_portrait.pdf": "fdaa8773b0c8d08d338e7f9773f96a967461f8e444d858372e42af6e1d9b91d8",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card1_portrait.pdf": "a187ce419e3cdddf7f62e8586bb7912d890ce17ca31c57bdd98f5c2f2015b055",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card2_portrait.pdf": "379a089025a9f2dbb9d319faa61807159ed421156dc89a89f5f861299fad0dab",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card3_portrait.pdf": "a916bb0a7c99328873151f4a266c22fdde2240f5a7826e80aa3d3ab94dfd7eea",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card4_portrait.pdf": "40c6a35d85557fc2585787462d74cfb0a34aa21c0d3ca3cc1894eda59b701a81",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card1_portrait.pdf": "aa7ca7d5bc1c1a64e58ced017919ececd6511ea61f37118ca746e45aa94298a7",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card2_portrait.pdf": "e8cb2ddb02f518334fc08ce5e78d6f421b02fe0507a1e08323a92d51505a06e7",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card3_portrait.pdf": "f4af4e97820ba387c8183b67aa29c26b4693ff84fed0f874770a251aa0c571e8",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card4_portrait.pdf": "df9d1eee2b3ef21e5e317d51e428f5feb5bcd17649ddef860092c16443cef0f8",
-        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card1_portrait.pdf": "4fe5febb1d9659b26ff3f323b0c4265088d7f903c020f6367de7067ad1cbfa0f"
+        "layers/warcom/structure/murderwings-structure.json": "c0670ef1cb8775677d5c266b11c0b74671fe7fb8eff1b5f51c643410707e7d19",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card1_landscape.pdf": "4c0f19179d272fd652599af807ad3ac308fc896489d0539c8d361cca5aaac4cd",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card2_landscape.pdf": "79fce13edb0a4904396636efc0b601a19a3d102aaf693e24cea74ef0aba28f7f",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card3_landscape.pdf": "b5f95cb127597c4a9fdb75bcbafcf8f2144ae8be532dd4001cca52fa8afb3023",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page01_card4_landscape.pdf": "f0b1e3454c17806ef35106b039b634771a504e31e5c1d7bb2453f9c337b7e1ec",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card1_landscape.pdf": "02f9034e5fc4a82e4959ae366250347550258350d9a03192b7cc927b17709922",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card2_landscape.pdf": "d7fa84adfdcbba9ee15db42bf0db109fd5090050221ac2efbee65e958df75494",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card3_landscape.pdf": "0a68285ce18385b9b180a38deca50947e72494bb1d2af2757c53759c6f99617b",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page02_card4_landscape.pdf": "e831f4f3d6648d97d7357a4e8bd61fb9df094c318ecc4b9b4f632a746259a867",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card1_landscape.pdf": "de3a00750686ebfaf8b21517fd6fbc6b3b87f5d99fb215209c9fa453f92d714b",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card2_landscape.pdf": "ef2980142884f2513216e18fb5fe866f2e2ad2184b4231aa448b4bb8fd8e8ad1",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card3_landscape.pdf": "109da239475fbe02afae3010364a0637c95255bf4fae34ef1449eb4fdbfef093",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page03_card4_landscape.pdf": "c1979e3bf47afd148e7d11450f24fc70cf576176b051ea8bf17a438eef9ec7ff",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card1_landscape.pdf": "65932fc61aeccae0fbf0acf411f070c944e186e270b0134babd92b0dbd24ec74",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page04_card2_landscape.pdf": "628bd158e6cf78da95c96f7cc84a299b2380152ca36c5ad4d6dfe6b2d55fc0b8",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card2_portrait.pdf": "ff2f6d3509f93811545cdd3f31e0699763106c7805d78e7cca489a1f96140071",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card3_portrait.pdf": "50b119d849e6edd2a4deaf4303ef32c4dc6ca2806bd81d91a52f02ec7a279780",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card4_portrait.pdf": "c821732ea1619e488ce96764dad0ab4a875ccf2a9d752e1ae04de19efb571548",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page10_card1_portrait.pdf": "eb279b2c36c8087b3e8846221fa0f8a5c180141fdc88043fd9e3b2236299779c",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card3_portrait.pdf": "d03f0fc7b3ffe8e2a1c686307c6d83a87208209f9544965e110a9560b90877e5",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card4_portrait.pdf": "b6009d6bf93d708f33fc125a12d73fb7eb5c8dfb51c2e6f709086296b88b1b16",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card1_portrait.pdf": "e93dbb3a8a53d1aeaad4c4bc310e68703463ba4c1b614f5028de678ba3b368ee",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card2_portrait.pdf": "3a9159022a61d30a9375bf7a4cc99128eea6fbfb4afc464399b65707b41b32b4",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card3_portrait.pdf": "1dc58e11abbc9a4dc5055baf60debb2e12121b67c85ca397d07557f9d035a6af",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page06_card4_portrait.pdf": "8cb9c8ca5aed18acb9052e606890ed384e216041545afaa1c774c11073916b60",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card1_portrait.pdf": "cf0adb731c060d25ebde77caffd42f495b85a617454f537f3d1463da35881e86",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card2_portrait.pdf": "5c8c1764d11eed82c901d2d9177e02431b546968172f483a0da2910e48203761",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card3_portrait.pdf": "abdba5fb27f14ba5ce46796808517590450d41b1953931243e3d1134690aefd2",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card4_portrait.pdf": "543d04cfb64f5e0e238fcd81b743a029cdacb22417196391785cca3a39e07f50",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page09_card1_portrait.pdf": "93130b06237f418f2d85a57bb5d51365f98c454e74a70445d3abc033935582a7",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card1_portrait.pdf": "28fdd30beab97b4e477afca7dad9c0c40c146813c4bac59dcf0070ad7636bef1",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page05_card2_portrait.pdf": "f357125ab7a9969aaa2d8f07f1bae9b683879609e82822a26f3faf83e07281ab",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card2_portrait.pdf": "8b2f680b52ac8dc0e4d10346540be12c23ae2095372c4694f861524ad32c848f",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card3_portrait.pdf": "accd25f113b72d2064f04e814a43abadff71bf2e0a4520488034faf6467c516a",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page07_card4_portrait.pdf": "091b4575f2fd2297f93549883b7dccffc9bed33983a8e567c7e2bc11eb0a604c",
+        "layers/warcom/extracted/murderwings/cards/murderwings_page08_card1_portrait.pdf": "1eb71df85ee7b685ceb7796831376c8112764fbbe536e0418956599d1bf03fbc"
       },
-      "completed": "2026-08-29T18:46:37.883810+00:00"
+      "completed": "2026-08-29T23:20:40.170423+00:00"
     },
     "extract_artwork": {
       "outputs": {},

@@ -1,20 +1,23 @@
 {
   "team": "mandrakes",
   "pipeline_version": "2.0",
-  "last_updated": "2026-08-29T20:47:43.211440+00:00",
+  "last_updated": "2026-08-29T23:28:14.656344+00:00",
   "steps": {
     "content_analysis": {
       "outputs": {
         "content.json": {
           "path": "layers/integration/mandrakes/content/mandrakes-content.json",
-          "hash": "5c211d6b3aa47ad0eb01c4d699eb1f0dfb7d8820cab496b27b3049c994f7df60",
-          "modified": "2026-08-29T18:46:10.169817+00:00"
+          "hash": "9434d3746df5ce4d54088ffd9b7ee25992875deda6146affed55a5717748cd30",
+          "modified": "2026-08-29T22:21:07.988868+00:00"
         }
       },
-      "completed": "2026-08-29T18:46:12.269732+00:00",
+      "completed": "2026-08-29T22:21:17.847386+00:00",
       "inputs": {
-        "layers/integration/mandrakes/manifest.json": "5aa2779f91e487300406f575e2d1ab2ca9b5055c5567b94ed484ccdb125b93b8",
+        "layers/integration/mandrakes/manifest.json": "171b770b2e36cfcc35b7a6a1a378dbe44ee9496f23784db37352407be566d365",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
+        "layers/integration/mandrakes/mandrakes-datacard--1.pdf": "39ff6475d0d4576fcf835c02a3f8da0e17f07d9f1c9f46f49d211bec19dea34a",
+        "layers/integration/mandrakes/mandrakes-datacard--2.pdf": "17d5a18f7b8328ea3cd5aca53b93146d93f0cf72b6271360d3e0690db438d5bb",
+        "layers/integration/mandrakes/mandrakes-datacard-.pdf": "36ea6ab641bb423a7e7417832ccbe28c521d4602ed9092f0a6d9bacee09c3fb4",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "61f71bb1479914920debe6551ff5be45d4cd71d6e468725dccfbaabf6abdc64c",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "c47ae6246ce85b02d660a548a9b89fb8e02ee2ab063ea33bc8a400e6dad16590",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "daeecfb5b2515091a94bf6cee806da7c03432288939162f1af4ba8b80b3c0138",
@@ -24,20 +27,26 @@
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "59889ec1ac83939d0d1d179be68ee697003050b245835c992745914698c68c3e",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "f3d99d9dd4ed4682522c8281bbd75f6036a750c05f5285248e23fc6cfacf64ab",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "06db6a81365a0a9e1af7bac9b2598c5f0b50791b3916088b9132b40babe67966",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-abyssal.pdf": "b2a74241d87cd1faa356f9532234a7b6f3cb4dae5812b21d65ecb02955e2270e",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-chooser-of-the-flesh.pdf": "68f64dde70560f2b2a3b0cdbe399f1a1cdab61cad17a2c631226bb4724241345",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-dirgemaw.pdf": "635f946064d18c584ebd38637d2509f63202862bbf7f5edcc6c9a94b9519794c",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-nightfiend.pdf": "c6f20ff324a7f70dee141d8e76a2bd45aaabf32b77e0d8dd8d266d985ef7de1a",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-shadeweaver.pdf": "b04aaa380f546989dce77b7ce3c9cf0e4cbe9f44660ed7ad78b1beb18d8591c4",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-warrior.pdf": "233daea2906fa1228ee94f9467c482c5018e213de2054af0d3e7cc6a87ea6271",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-abyssal.pdf": "012af8d476f2785cc9133d49f087c1e7dd1b42b53710b9c76f02a0f2761a43a6",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-chooser-of-the-flesh.pdf": "16131e597782eade47e534782be7806ad9e98b52e1eb5233691f8aa7e1cb7219",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-dirgemaw.pdf": "440c80f092532f752c839a38141803af1b81951b359ea3c8381c1e64ab9c682b",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-nightfiend.pdf": "5365bffd263aaf728a26d2e46f3bc860011495859dc6ae269d9298336e084e5e",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-shadeweaver.pdf": "9e4b187281aed06cd6a98b28cee39d9d6e57bdeb156dffd5abd4a696f2a45cde",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-warrior.pdf": "d8d9a4a5c40ac5a9c7dd1aec89bd842e0b80ed1b9935a625dad9684b74cded03",
         "layers/integration/mandrakes/mandrakes-equipment-bone-darts.pdf": "86588bac29ec220dcdfb3475d9d2ebb047c4e98276cf531f59827198d91b7859",
         "layers/integration/mandrakes/mandrakes-equipment-chain-snare.pdf": "b9badcda73a7a1c41581b05da459bab162a99b2f69acaa9f1467b6c23e67c291",
+        "layers/integration/mandrakes/mandrakes-equipment-d6.pdf": "56a697a151138258cb138272b2ed5ba65f8e85d0823c8c750ff18e9a9287b2b0",
         "layers/integration/mandrakes/mandrakes-equipment-shadow-glyph.pdf": "7ce6b844410903d8a6599bcc9ee733a25d682fe843c7562ba6ddec51e40adab3",
         "layers/integration/mandrakes/mandrakes-equipment-soul-gem.pdf": "0012bfef28bfd11c26d692e281452dc1fb505a9bb50f26f1333fade38d23b377",
-        "layers/integration/mandrakes/mandrakes-faction-rule-shadow-passage.pdf": "c5c8d1dd0f48c0f82b53e8de8a5c83755616e43bd3fb28a6c9446119e540faa9",
-        "layers/integration/mandrakes/mandrakes-faction-rule-soulstrike.pdf": "53ded3ddffbc4d3a6f690f07902153323038589bfc62dc249fccd50b4b4e93a1",
-        "layers/integration/mandrakes/mandrakes-faction-rule-umbral-entities.pdf": "8f6e48f1cbda1660ad805178dd5821cae03441304af1a88a4120e3fd584efeb4",
-        "layers/integration/mandrakes/mandrakes-faction-rule-within-shadow.pdf": "3852a919635aaeb072b5b6d71ad979b75c3e93d32418c089158cee8851aab26c",
+        "layers/integration/mandrakes/mandrakes-faction-rule-apl.pdf": "07d216b80a93014f7ac2d1e2d944e61f1f9b55825697769533e246e5478dad99",
+        "layers/integration/mandrakes/mandrakes-faction-rule-shadow-passage.pdf": "10296c9d38a1a3b15f151ca69ff1cb5f0605b1b8bac14b9cdebb60b0df2171a8",
+        "layers/integration/mandrakes/mandrakes-faction-rule-soulstrike.pdf": "445e106e430bf33253d621d6487d3f11e25badabd5372d3170e325e5ad6894d0",
+        "layers/integration/mandrakes/mandrakes-faction-rule-umbral-entities.pdf": "df9e13f5b49940ea519e6d080e1d27ce6d121995587ad0aee12cc56f510a7f2e",
+        "layers/integration/mandrakes/mandrakes-faction-rule-unknown-1.pdf": "b61cf26444b503dc73e07b06f30c8a156c78575720c69992386838888a3a0be0",
+        "layers/integration/mandrakes/mandrakes-faction-rule-unknown-2.pdf": "95042ba2aeb7e64668a8ebc0a6ebdf30e6f24e2913ac43c087a6351396ad54a2",
+        "layers/integration/mandrakes/mandrakes-faction-rule-unknown-3.pdf": "336c20a4738d8d1871feabca16e374db6f9196f4cc24a7d3d378084f922e90c0",
+        "layers/integration/mandrakes/mandrakes-faction-rule-within-shadow.pdf": "4f3a662a23bb43db164644fa7e1a7f1677139391969f48236a00b6aaa7a03197",
+        "layers/integration/mandrakes/mandrakes-firefight-ploy-apl.pdf": "d9940405263e33fbc45a8a84d0317c0db41f5afbcac92f2116e13d35d64730eb",
         "layers/integration/mandrakes/mandrakes-firefight-ploy-nowhere-to-hide.pdf": "4d0851d45e65bc5a5a7b3c3ddbcbb693247d559b38f3e7f7cbfa1082b2013074",
         "layers/integration/mandrakes/mandrakes-firefight-ploy-shadows-bite.pdf": "f85b5e226183399067fa8fa92e571011d8739068a818c8df17ff61fe8300737c",
         "layers/integration/mandrakes/mandrakes-firefight-ploy-slither-out-of-sight.pdf": "1262d9a30d8654782de9dc32632b4c25e6e767ad0d4a8b5b650d470d6d0ead70",
@@ -60,12 +69,14 @@
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-7.pdf": "5e00734a20900728924891158fb4d2e94a1850f053a7b5862f22c59623386310",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-8.pdf": "ae87a0fe5880f283fa045131ca266f7fa0f03ad1bfd2ea8fa93d97713b9db23c",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-9.pdf": "50077fb9700f54c3834f48d4424ad884f645adf7ac89c09f5c078bd8583a6d53",
-        "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection.pdf": "14e4406771f0f1c6c8f932ac387d221d2970d0fbaedd05d6ceb1485035b642da",
+        "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-mandrakes.pdf": "a91b0f91bd55bd6d383de1c4ed541998e19f59276ceae3de2f0a346eb5aed651",
+        "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection.pdf": "6b7ffb098f10d5169b660c743a4ddc6d5893c3c898095574454771921cc338d7",
         "layers/integration/mandrakes/mandrakes-strategy-ploy-blade-in-the-dark.pdf": "e4148b102e8b8fd5fe4d4bd7ac309b2a56631ddb4386dd858d06fbede51ee423",
         "layers/integration/mandrakes/mandrakes-strategy-ploy-creeping-horror.pdf": "c08e6b09ab04e1fdf95bbfbda15030e669f88ee13596f30aefb954652ae84465",
         "layers/integration/mandrakes/mandrakes-strategy-ploy-gloaming-shroud.pdf": "3efd8fe2e8a7681fe1195078e2f2001e28e3e8dde2b3635f79e47d03493c808f",
         "layers/integration/mandrakes/mandrakes-strategy-ploy-inescapable-nightmare.pdf": "28abd7ac3a7e43ad2c94aca7dd774e94ac0ad86fe7d48e07859778900a24adee",
-        "layers/integration/mandrakes/mandrakes-token-guide-token-guide.pdf": "4b92f3802e8614850d4565efa05cbba67afb0c874277c14cccb99d7c565d2056"
+        "layers/integration/mandrakes/mandrakes-token-guide-token-guide-mandrakes.pdf": "7c6350832800bfc9e2d84a772f162ea893265f1d621c8e5e164ee5f6b6376e5a",
+        "layers/integration/mandrakes/mandrakes-token-guide-token-guide.pdf": "bd25eb52522fffe3d45eb770b5684e500863814129fc7e103ae0c367e2b668c4"
       }
     },
     "extract_backsides": {
@@ -273,21 +284,21 @@
       "outputs": {
         "dice-light.jpg": {
           "path": "output/mandrakes/dice/mandrakes-dice-light.jpg",
-          "hash": "f52603c5bb9d1ad4b2deb106923747801c1fd52a427162828d66dffdc2b9c9c4",
-          "modified": "2026-08-29T18:46:49.800959+00:00"
+          "hash": "ff59e2b5b5bb54e3b0fb43f653eed0c2c9f46d843ed46ed697c7405b9158a14e",
+          "modified": "2026-08-29T21:23:45.729173+00:00"
         },
         "dice-dark.jpg": {
           "path": "output/mandrakes/dice/mandrakes-dice-dark.jpg",
-          "hash": "99128db18477196ec36d0328b11a596fea58ca700fcafa909106ef1078abe007",
-          "modified": "2026-08-29T18:46:50.116041+00:00"
+          "hash": "87533cebf128fabe10d256892f09e79fb772d667a240fed2bfa49f295ebfaf5b",
+          "modified": "2026-08-29T21:23:45.769173+00:00"
         },
         "dice-team.jpg": {
           "path": "output/mandrakes/dice/mandrakes-dice-team.jpg",
-          "hash": "889578a15f21a63a70901a42c29b10f0dbfbbecee650627caa8fa9349f4fcaca",
-          "modified": "2026-08-29T18:46:50.119421+00:00"
+          "hash": "98a7b6b277ac9df3beca1ae1ed4e2aa950310094954ebe0b0046501458251ccb",
+          "modified": "2026-08-29T21:23:45.783174+00:00"
         }
       },
-      "completed": "2026-08-29T18:46:50.123928+00:00",
+      "completed": "2026-08-29T21:23:45.800173+00:00",
       "inputs": {
         "layers/integration/mandrakes/artwork/icons/mandrakes-icon-token-transparent.png": "30ada506587dec20317313804a7adf163ad6d91f0592ef92e71614eba949908f",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
@@ -298,17 +309,18 @@
         "card-box-texture.jpg": {
           "path": "output/mandrakes/cardbox/mandrakes-card-box-texture.jpg",
           "hash": "a0e81bf2c4045d384654fb38c26891fa0bb8ce400fe7e4b5ce29676b5c226b0f",
-          "modified": "2026-08-29T18:46:50.248027+00:00"
+          "modified": "2026-08-29T21:23:47.538173+00:00"
         },
         "card-box.obj": {
           "path": "output/mandrakes/cardbox/mandrakes-card-box.obj",
           "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
-          "modified": "2026-08-29T18:46:50.250587+00:00"
+          "modified": "2026-08-29T21:23:47.540173+00:00"
         }
       },
-      "completed": "2026-08-29T18:46:50.264704+00:00",
+      "completed": "2026-08-29T21:23:47.555173+00:00",
       "inputs": {
         "layers/integration/mandrakes/artwork/icons/mandrakes-icon-token.jpg": "61f07f772ab364caa939c3e6674a7f870537729127ba17de74c96c5b547d442d",
+        "config/teams/mandrakes/box/card-box-texture.jpg": "20b8bc197f64093f01bbb40b64a394eb7f95b000e6d4f44951bd296e945189a8",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
         "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
         "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
@@ -318,243 +330,243 @@
       "outputs": {
         "cards/datacards/mandrake-abyssal-back.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-abyssal-back.jpg",
-          "hash": "271d0005a384c04e3c434d283e111aee177a08b71b73e156efa937722310240a",
-          "modified": "2026-08-29T20:29:07.194892+00:00"
+          "hash": "76b7a6cb6f66c76658e551f158094969ffd24e3184f75c512a9eca234a7dc746",
+          "modified": "2026-08-29T23:28:14.388452+00:00"
         },
         "cards/datacards/mandrake-abyssal-front.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-abyssal-front.jpg",
-          "hash": "f67a4673d59ccaa2595a4322359b896fa6d1747af88346238b5b389ff2049cf4",
-          "modified": "2026-08-29T20:29:07.199926+00:00"
+          "hash": "ae7e1f8ca947173ca3e82903f06f24b1d5d71c3c0564d61c4f6f7d9b36fd0a75",
+          "modified": "2026-08-29T23:28:14.389450+00:00"
         },
         "cards/datacards/mandrake-chooser-of-the-flesh-back.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-chooser-of-the-flesh-back.jpg",
-          "hash": "627f0cc842cb0ca749c5084e6bc0499be088b4f55596762dc622e363c0da1055",
-          "modified": "2026-08-29T20:29:07.201927+00:00"
+          "hash": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+          "modified": "2026-08-29T23:28:14.394451+00:00"
         },
         "cards/datacards/mandrake-chooser-of-the-flesh-front.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-chooser-of-the-flesh-front.jpg",
-          "hash": "3e4a36529a5dfeae8078372c5dfed1964c6924225eafbdf5a9744fbfc01f362f",
-          "modified": "2026-08-29T20:29:07.206425+00:00"
+          "hash": "45baceeb8ef07629ea627ebf23e76eec54387d094f589c4e2b198bc676f5c45b",
+          "modified": "2026-08-29T23:28:14.395450+00:00"
         },
         "cards/datacards/mandrake-dirgemaw-back.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-dirgemaw-back.jpg",
-          "hash": "2d20b65c7625e94639c1d1b50cdd091902d3f979c2429656bc6d321ec760527f",
-          "modified": "2026-08-29T20:29:07.211691+00:00"
+          "hash": "1c369e567a870cd7155f98c1221577fb59e5d863ecfbcf7f21cf30d3d247e313",
+          "modified": "2026-08-29T23:28:14.396450+00:00"
         },
         "cards/datacards/mandrake-dirgemaw-front.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-dirgemaw-front.jpg",
-          "hash": "f2920e2bbf079a01fa886c021243e80694ec9b7b5ca75b63732e0a1e7815fc00",
-          "modified": "2026-08-29T20:29:07.220290+00:00"
+          "hash": "fdc05a8487e8ac8f958f2c67be441302a24ed58a317e312387f12b4e5db7916b",
+          "modified": "2026-08-29T23:28:14.397452+00:00"
         },
         "cards/datacards/mandrake-nightfiend-back.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-nightfiend-back.jpg",
-          "hash": "627f0cc842cb0ca749c5084e6bc0499be088b4f55596762dc622e363c0da1055",
-          "modified": "2026-08-29T20:29:07.222794+00:00"
+          "hash": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+          "modified": "2026-08-29T23:28:14.402000+00:00"
         },
         "cards/datacards/mandrake-nightfiend-front.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-nightfiend-front.jpg",
-          "hash": "ac4ed89b136bedc4d4aa8825646fe6cd9ca17a137bd27d0c7ef0626f67617901",
-          "modified": "2026-08-29T20:29:07.228822+00:00"
+          "hash": "a0057d358b81959eebf3151975c6ed4eda3f07837b0cad7a960e365ccc3af50f",
+          "modified": "2026-08-29T23:28:14.402000+00:00"
         },
         "cards/datacards/mandrake-shadeweaver-back.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-shadeweaver-back.jpg",
-          "hash": "4f24152fef5f6867b2e801f692127776aeae9ea1e9cc7791dea71a37657193d2",
-          "modified": "2026-08-29T20:29:07.234854+00:00"
+          "hash": "70f0090511b46f8dc8aa7ba180306f69829b82323feae0472466beb061261d2f",
+          "modified": "2026-08-29T23:28:14.403000+00:00"
         },
         "cards/datacards/mandrake-shadeweaver-front.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-shadeweaver-front.jpg",
-          "hash": "6dffa45fb42573bef0e6f86c83ab4de63beb27f5dc50921f4965e47c10bcf48d",
-          "modified": "2026-08-29T20:29:07.241206+00:00"
+          "hash": "3353959c733d0df10c5bd61a4307733a7ed0fe7575575f6c8dda51e13ca7d4eb",
+          "modified": "2026-08-29T23:28:14.404000+00:00"
         },
         "cards/datacards/mandrake-warrior-back.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-warrior-back.jpg",
-          "hash": "627f0cc842cb0ca749c5084e6bc0499be088b4f55596762dc622e363c0da1055",
-          "modified": "2026-08-29T20:29:07.244207+00:00"
+          "hash": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+          "modified": "2026-08-29T23:28:14.409000+00:00"
         },
         "cards/datacards/mandrake-warrior-front.jpg": {
           "path": "output/mandrakes/cards/datacards/mandrake-warrior-front.jpg",
-          "hash": "b00d5901381ecad52899a1feac01dda397407fe170f5b5a82f8673d255829ced",
-          "modified": "2026-08-29T20:29:08.179755+00:00"
+          "hash": "356d379e6b0a61af280e3645e75030004b609a8376aeaae308b7a6a3bd346078",
+          "modified": "2026-08-29T23:28:14.409000+00:00"
         },
         "cards/equipment/mandrakes-bone-darts-back.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-bone-darts-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:09.246876+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.416338+00:00"
         },
         "cards/equipment/mandrakes-bone-darts-front.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-bone-darts-front.jpg",
-          "hash": "626b62bc0767e815419df727f2d8e374c1db2bb153282c65277432f5c8302735",
-          "modified": "2026-08-29T20:29:09.251458+00:00"
+          "hash": "a50634050804254e5644f1887f713b84ce651903361ea1e9be9a1e19cb4fc4de",
+          "modified": "2026-08-29T23:28:14.422338+00:00"
         },
         "cards/equipment/mandrakes-chain-snare-back.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-chain-snare-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:09.253978+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.427338+00:00"
         },
         "cards/equipment/mandrakes-chain-snare-front.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-chain-snare-front.jpg",
-          "hash": "37bbf482cb75bbe8137ede19021f9096ba5f74a61d28f21ae6f45ec412105301",
-          "modified": "2026-08-29T20:29:09.264026+00:00"
+          "hash": "9c6428518c54f40bb714a9130238358e042026b6d0bb11655a9f53d03157bbfc",
+          "modified": "2026-08-29T23:28:14.432338+00:00"
         },
         "cards/equipment/mandrakes-shadow-glyph-back.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-shadow-glyph-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:09.652800+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.437338+00:00"
         },
         "cards/equipment/mandrakes-shadow-glyph-front.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-shadow-glyph-front.jpg",
-          "hash": "b3f9564d281a4849150a8a5027b247dd37d0aefb2b28c45e9b43546f005d02b4",
-          "modified": "2026-08-29T20:29:10.428860+00:00"
+          "hash": "ce74da176e1955b4c7836bc89b3d6df69a40271560a377608c88b0454f342e70",
+          "modified": "2026-08-29T23:28:14.442339+00:00"
         },
         "cards/equipment/mandrakes-soul-gem-back.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-soul-gem-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:10.432883+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.447338+00:00"
         },
         "cards/equipment/mandrakes-soul-gem-front.jpg": {
           "path": "output/mandrakes/cards/equipment/mandrakes-soul-gem-front.jpg",
-          "hash": "13d47aeb03fdb6a0beb3f41d7537b21d307f3f63b4769f8354379f05f9a74218",
-          "modified": "2026-08-29T20:29:10.437911+00:00"
+          "hash": "0e2d01ca03c5d2867d54d1a4817c3c8119d23d29d672e4d87dcd852f40054022",
+          "modified": "2026-08-29T23:28:14.452338+00:00"
         },
         "cards/faction_rules/mandrakes-shadow-passage-back.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-shadow-passage-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:11.533917+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.461338+00:00"
         },
         "cards/faction_rules/mandrakes-shadow-passage-front.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-shadow-passage-front.jpg",
-          "hash": "fd441384a57a3aac8141dcbf7c06e9e9d2052f99155b17f3bb6633f9f77b42dc",
-          "modified": "2026-08-29T20:29:12.574504+00:00"
+          "hash": "5b0e7f9d2f140d2755adf0d331893548fba4ff2b43b46b07886d0a3c30f32264",
+          "modified": "2026-08-29T23:28:14.462338+00:00"
         },
         "cards/faction_rules/mandrakes-soulstrike-back.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-soulstrike-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.579016+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.468338+00:00"
         },
         "cards/faction_rules/mandrakes-soulstrike-front.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-soulstrike-front.jpg",
-          "hash": "798a95bbbd3f995759137f952f7963a4a71ea0f17b223d6901a6e0ccb8e5aef4",
-          "modified": "2026-08-29T20:29:12.583030+00:00"
+          "hash": "5fc3736276bf83c091510d2c76f053476bb0beb39c9a9348f5499befa372b1e1",
+          "modified": "2026-08-29T23:28:14.469338+00:00"
         },
         "cards/faction_rules/mandrakes-umbral-entities-back.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-umbral-entities-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.587668+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.473338+00:00"
         },
         "cards/faction_rules/mandrakes-umbral-entities-front.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-umbral-entities-front.jpg",
-          "hash": "89c2c50f8fae30be40928dedd965e3a2ccd607358ecc7e62d023ba4124f5c049",
-          "modified": "2026-08-29T20:29:12.591694+00:00"
+          "hash": "7623389fe8855f82103070a5341abdae494b8789cd9ff16a9bc42f2d39f92d3b",
+          "modified": "2026-08-29T23:28:14.474338+00:00"
         },
         "cards/faction_rules/mandrakes-within-shadow-back.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-within-shadow-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.593208+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.479338+00:00"
         },
         "cards/faction_rules/mandrakes-within-shadow-front.jpg": {
           "path": "output/mandrakes/cards/faction_rules/mandrakes-within-shadow-front.jpg",
-          "hash": "503c1d99d6d7d4dfebc31022b89da7831a0b3f3bc9377faa05a7fc0a582b8128",
-          "modified": "2026-08-29T20:29:12.596227+00:00"
+          "hash": "1afc22740acfeb65da158372948a6334ea04b4c61070c2975f2d77a2f1b5ed1e",
+          "modified": "2026-08-29T23:28:14.479338+00:00"
         },
         "cards/firefight_ploys/mandrakes-nowhere-to-hide-back.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-nowhere-to-hide-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.596227+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.488338+00:00"
         },
         "cards/firefight_ploys/mandrakes-nowhere-to-hide-front.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-nowhere-to-hide-front.jpg",
-          "hash": "d441d9a339dc36ae9ee4b3539f14e7f1fef398c6fd5936170b52515795e9ee56",
-          "modified": "2026-08-29T20:29:12.598751+00:00"
+          "hash": "f487490d00a22bc51843ba5a0c05ba5ebcee4cf4a22d171961f409818fd53c24",
+          "modified": "2026-08-29T23:28:14.492339+00:00"
         },
         "cards/firefight_ploys/mandrakes-shadows-bite-back.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-shadows-bite-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.599780+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.497339+00:00"
         },
         "cards/firefight_ploys/mandrakes-shadows-bite-front.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-shadows-bite-front.jpg",
-          "hash": "94fb9480edbca6e7f955c3162b187caea39a8b33cbf11a92a06de8928491b8e6",
-          "modified": "2026-08-29T20:29:12.601781+00:00"
+          "hash": "65d076ceae66e52a67cd00f771ce9ea9928948d09bf1d3c729e170b71663ee73",
+          "modified": "2026-08-29T23:28:14.502339+00:00"
         },
         "cards/firefight_ploys/mandrakes-slither-out-of-sight-back.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-slither-out-of-sight-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.603780+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.507338+00:00"
         },
         "cards/firefight_ploys/mandrakes-slither-out-of-sight-front.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-slither-out-of-sight-front.jpg",
-          "hash": "d6af9090a4cb16cc569341b613dd09c79befac010b12957474b7833a18d38ecf",
-          "modified": "2026-08-29T20:29:12.604859+00:00"
+          "hash": "ff2a649c12a003d2d98bf2bd1c3cf5fa50dd94d3c39ad3947232f263f6d84708",
+          "modified": "2026-08-29T23:28:14.512338+00:00"
         },
         "cards/firefight_ploys/mandrakes-soul-feast-back.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-soul-feast-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.605858+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.518339+00:00"
         },
         "cards/firefight_ploys/mandrakes-soul-feast-front.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-soul-feast-front.jpg",
-          "hash": "6d821c9aeb6a20c41c77a8ef876c017f6340270eba57fb09542b09b05f008959",
-          "modified": "2026-08-29T20:29:12.607444+00:00"
+          "hash": "88677dbd3f0a79d802d5e4947406236511e45837507191f37d6fb60f0efcf30b",
+          "modified": "2026-08-29T23:28:14.523339+00:00"
         },
         "cards/operatives_selection/mandrakes-operative-selection-back.jpg": {
           "path": "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:12.611580+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.530338+00:00"
         },
         "cards/operatives_selection/mandrakes-operative-selection-front.jpg": {
           "path": "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-front.jpg",
-          "hash": "bb1212cf4c3f1a5dd16042e2d98a00ee207fd65d2f35f81a5bda7f22a05681ca",
-          "modified": "2026-08-29T20:29:21.219030+00:00"
+          "hash": "f159636ef110d6d4b9cbabe9d542c5d3494885bfe7dc7ab6274d9b0d85d25b45",
+          "modified": "2026-08-29T23:28:14.531340+00:00"
         },
         "cards/strategy_ploys/mandrakes-blade-in-the-dark-back.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-blade-in-the-dark-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:21.694827+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.544338+00:00"
         },
         "cards/strategy_ploys/mandrakes-blade-in-the-dark-front.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-blade-in-the-dark-front.jpg",
-          "hash": "e8268020556541208f07a608fc062a3a7ba2591cca0b1d2febbc213a93d6f9e3",
-          "modified": "2026-08-29T20:29:21.699333+00:00"
+          "hash": "fd3afc82385659f7586f24ba2425bfbe5e1c8984823a7673975b4457aba1a38b",
+          "modified": "2026-08-29T23:28:14.545339+00:00"
         },
         "cards/strategy_ploys/mandrakes-creeping-horror-back.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-creeping-horror-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:21.702852+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.550339+00:00"
         },
         "cards/strategy_ploys/mandrakes-creeping-horror-front.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-creeping-horror-front.jpg",
-          "hash": "281b9f1b9866855372c02e2fd5b52b86e7970eebb2902bb1dcf2ce924497111d",
-          "modified": "2026-08-29T20:29:21.708919+00:00"
+          "hash": "8be95b64018c00822c6e02aecfbac92bb8acb452e8e404d885b961490821343b",
+          "modified": "2026-08-29T23:28:14.551339+00:00"
         },
         "cards/strategy_ploys/mandrakes-gloaming-shroud-back.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-gloaming-shroud-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:21.711016+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.557339+00:00"
         },
         "cards/strategy_ploys/mandrakes-gloaming-shroud-front.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-gloaming-shroud-front.jpg",
-          "hash": "f8b1aa55082b6252ecbc490ac6687fae731a9d3924751175cbc6ea23ad95c4ce",
-          "modified": "2026-08-29T20:29:21.715887+00:00"
+          "hash": "03534126438c9c0f75d0ab86be767b25d940bd9ae5879de86f8fb5b0705ab24b",
+          "modified": "2026-08-29T23:28:14.558339+00:00"
         },
         "cards/strategy_ploys/mandrakes-inescapable-nightmare-back.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-inescapable-nightmare-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:21.719929+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.563339+00:00"
         },
         "cards/strategy_ploys/mandrakes-inescapable-nightmare-front.jpg": {
           "path": "output/mandrakes/cards/strategy_ploys/mandrakes-inescapable-nightmare-front.jpg",
-          "hash": "1507b857322557c5fd3e565a71eef3a1d7d6580bb76148986322ee042a5006e3",
-          "modified": "2026-08-29T20:29:21.723945+00:00"
+          "hash": "ef988351a543955b029197ca8c3b21850dbfdc6983aabf61f73acf6fd915dbc1",
+          "modified": "2026-08-29T23:28:14.563339+00:00"
         },
         "cards/token_guide/mandrakes-token-guide-back.jpg": {
           "path": "output/mandrakes/cards/token_guide/mandrakes-token-guide-back.jpg",
-          "hash": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-          "modified": "2026-08-29T20:29:21.741098+00:00"
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T23:28:14.569339+00:00"
         },
         "cards/token_guide/mandrakes-token-guide-front.jpg": {
           "path": "output/mandrakes/cards/token_guide/mandrakes-token-guide-front.jpg",
-          "hash": "1d2575831d7051f0f84bf8b6f317ef0338044c2df22373ffa8f603432454783a",
-          "modified": "2026-08-29T20:29:21.750230+00:00"
+          "hash": "da7401be42731f6a32184777a9ec91bedf4c17ad16257fe82a5fabc7cc6490d8",
+          "modified": "2026-08-29T23:28:14.570338+00:00"
         },
         "cards/firefight_ploys/mandrakes-shadow’s-bite-back.jpg": {
           "path": "output/mandrakes/cards/firefight_ploys/mandrakes-shadow’s-bite-back.jpg",
@@ -939,147 +951,170 @@
         "cards/faction-rules/mandrakes-그늘-안-back.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-그늘-안-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:11.487632+00:00"
+          "modified": "2026-08-29T23:28:14.453338+00:00"
         },
         "cards/faction-rules/mandrakes-그늘-안-front.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-그늘-안-front.jpg",
           "hash": "198ae4380cf37b9efd9cceda0168f0ad86428a9edbc6e95e86a4f8de8d9f9126",
-          "modified": "2026-08-29T20:29:11.493146+00:00"
+          "modified": "2026-08-29T23:28:14.453338+00:00"
         },
         "cards/faction-rules/mandrakes-그늘-통로-back.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-그늘-통로-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:11.497187+00:00"
+          "modified": "2026-08-29T23:28:14.454340+00:00"
         },
         "cards/faction-rules/mandrakes-그늘-통로-front.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-그늘-통로-front.jpg",
           "hash": "28c26cc6c77001e0a2d3d7edcf3fbe78f7e5f1aa2eef006b61336dc7ffaca1e8",
-          "modified": "2026-08-29T20:29:11.505883+00:00"
+          "modified": "2026-08-29T23:28:14.454340+00:00"
         },
         "cards/faction-rules/mandrakes-그림자-존재-back.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-그림자-존재-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:11.511586+00:00"
+          "modified": "2026-08-29T23:28:14.455338+00:00"
         },
         "cards/faction-rules/mandrakes-그림자-존재-front.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-그림자-존재-front.jpg",
           "hash": "4e9de88ca8d2cb3515fc5fcd4762d4115aa4a3c8d0f78189e4d8e657b76027ed",
-          "modified": "2026-08-29T20:29:11.519147+00:00"
+          "modified": "2026-08-29T23:28:14.455338+00:00"
         },
         "cards/faction-rules/mandrakes-영혼격-back.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-영혼격-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:11.523152+00:00"
+          "modified": "2026-08-29T23:28:14.456338+00:00"
         },
         "cards/faction-rules/mandrakes-영혼격-front.jpg": {
           "path": "output/mandrakes/cards/faction-rules/mandrakes-영혼격-front.jpg",
           "hash": "3ba20387e992114171c672466813db0e6ab96cc1152146760efc4d6181023b4a",
-          "modified": "2026-08-29T20:29:11.530404+00:00"
+          "modified": "2026-08-29T23:28:14.456338+00:00"
         },
         "cards/operative-selection/mandrakes-operative-selection-back.jpg": {
           "path": "output/mandrakes/cards/operative-selection/mandrakes-operative-selection-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:12.609574+00:00"
+          "modified": "2026-08-29T23:28:14.523339+00:00"
         },
         "cards/operative-selection/mandrakes-operative-selection-front.jpg": {
           "path": "output/mandrakes/cards/operative-selection/mandrakes-operative-selection-front.jpg",
           "hash": "d57ad922a08d8da58806f8b92de86135ca18949e6b5ffcb9e8f8523a2e32d05c",
-          "modified": "2026-08-29T20:29:12.610580+00:00"
+          "modified": "2026-08-29T23:28:14.524338+00:00"
         },
         "cards/ploys/firefight/mandrakes-물어뜯는-그림자-back.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-물어뜯는-그림자-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.223889+00:00"
+          "modified": "2026-08-29T23:28:14.531340+00:00"
         },
         "cards/ploys/firefight/mandrakes-물어뜯는-그림자-front.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-물어뜯는-그림자-front.jpg",
           "hash": "d80ff3f87be9ae98200ab16ba4948d4e4a1517dea25adbbfb4e7d8cfd19ef0aa",
-          "modified": "2026-08-29T20:29:21.622202+00:00"
+          "modified": "2026-08-29T23:28:14.532339+00:00"
         },
         "cards/ploys/firefight/mandrakes-미끄러지듯-사라지다-back.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-미끄러지듯-사라지다-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.627222+00:00"
+          "modified": "2026-08-29T23:28:14.533339+00:00"
         },
         "cards/ploys/firefight/mandrakes-미끄러지듯-사라지다-front.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-미끄러지듯-사라지다-front.jpg",
           "hash": "971e5f7abe18e77b035220fcffe46a3e250d3dcacad8c64b45a512cd4e5fcd69",
-          "modified": "2026-08-29T20:29:21.631827+00:00"
+          "modified": "2026-08-29T23:28:14.533339+00:00"
         },
         "cards/ploys/firefight/mandrakes-숨을-곳은-없다-back.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-숨을-곳은-없다-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.636342+00:00"
+          "modified": "2026-08-29T23:28:14.534338+00:00"
         },
         "cards/ploys/firefight/mandrakes-숨을-곳은-없다-front.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-숨을-곳은-없다-front.jpg",
           "hash": "2802bda81235c1bdba385e5191415db3145cd0df6bdae82e4e9e5e9a38a4ce00",
-          "modified": "2026-08-29T20:29:21.639355+00:00"
+          "modified": "2026-08-29T23:28:14.534338+00:00"
         },
         "cards/ploys/firefight/mandrakes-영혼-포식-back.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-영혼-포식-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.643378+00:00"
+          "modified": "2026-08-29T23:28:14.535338+00:00"
         },
         "cards/ploys/firefight/mandrakes-영혼-포식-front.jpg": {
           "path": "output/mandrakes/cards/ploys/firefight/mandrakes-영혼-포식-front.jpg",
           "hash": "676a96f193114d0a01583b186c2c79e03eb69ec7745b214fbb10c85f097bf843",
-          "modified": "2026-08-29T20:29:21.648983+00:00"
+          "modified": "2026-08-29T23:28:14.535338+00:00"
         },
         "cards/ploys/strategy/mandrakes-닥쳐오는-공포-back.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-닥쳐오는-공포-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.653576+00:00"
+          "modified": "2026-08-29T23:28:14.536338+00:00"
         },
         "cards/ploys/strategy/mandrakes-닥쳐오는-공포-front.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-닥쳐오는-공포-front.jpg",
           "hash": "351e8694b44006e45289b873627ab44da6fdf6df76983ff743f3bd428b327995",
-          "modified": "2026-08-29T20:29:21.659131+00:00"
+          "modified": "2026-08-29T23:28:14.536338+00:00"
         },
         "cards/ploys/strategy/mandrakes-어둠-속의-칼날-back.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-어둠-속의-칼날-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.663684+00:00"
+          "modified": "2026-08-29T23:28:14.537338+00:00"
         },
         "cards/ploys/strategy/mandrakes-어둠-속의-칼날-front.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-어둠-속의-칼날-front.jpg",
           "hash": "a986c3910de6c85389f73d9b1e7e12665d921fe6da355624c299a41ee3bac956",
-          "modified": "2026-08-29T20:29:21.672733+00:00"
+          "modified": "2026-08-29T23:28:14.537338+00:00"
         },
         "cards/ploys/strategy/mandrakes-어스름-장막-back.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-어스름-장막-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.676775+00:00"
+          "modified": "2026-08-29T23:28:14.538338+00:00"
         },
         "cards/ploys/strategy/mandrakes-어스름-장막-front.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-어스름-장막-front.jpg",
           "hash": "890635bdefb31901ffeda62fccc1d55da32d4675c35fdbbc15ada90d92c14052",
-          "modified": "2026-08-29T20:29:21.681805+00:00"
+          "modified": "2026-08-29T23:28:14.538338+00:00"
         },
         "cards/ploys/strategy/mandrakes-피할-수-없는-악몽-back.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-피할-수-없는-악몽-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.686260+00:00"
+          "modified": "2026-08-29T23:28:14.539340+00:00"
         },
         "cards/ploys/strategy/mandrakes-피할-수-없는-악몽-front.jpg": {
           "path": "output/mandrakes/cards/ploys/strategy/mandrakes-피할-수-없는-악몽-front.jpg",
           "hash": "5bbce54f74154f702b19776e30f749711d03703127be9c4a471d9d6f2ad551c3",
-          "modified": "2026-08-29T20:29:21.691799+00:00"
+          "modified": "2026-08-29T23:28:14.539340+00:00"
         },
         "cards/token-guide/mandrakes-token-guide-back.jpg": {
           "path": "output/mandrakes/cards/token-guide/mandrakes-token-guide-back.jpg",
           "hash": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-          "modified": "2026-08-29T20:29:21.730483+00:00"
+          "modified": "2026-08-29T23:28:14.564339+00:00"
         },
         "cards/token-guide/mandrakes-token-guide-front.jpg": {
           "path": "output/mandrakes/cards/token-guide/mandrakes-token-guide-front.jpg",
           "hash": "8ac2c6c508ba01aa87f15c4e8cec827aa269f9194f2c11fb878868f7b98370ef",
-          "modified": "2026-08-29T20:29:21.738587+00:00"
+          "modified": "2026-08-29T23:28:14.565338+00:00"
+        },
+        "cards/equipment/mandrakes-d6-back.jpg": {
+          "path": "output/mandrakes/cards/equipment/mandrakes-d6-back.jpg",
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T22:21:46.460139+00:00"
+        },
+        "cards/equipment/mandrakes-d6-front.jpg": {
+          "path": "output/mandrakes/cards/equipment/mandrakes-d6-front.jpg",
+          "hash": "9c6428518c54f40bb714a9130238358e042026b6d0bb11655a9f53d03157bbfc",
+          "modified": "2026-08-29T22:21:46.817140+00:00"
+        },
+        "cards/firefight_ploys/mandrakes-apl-back.jpg": {
+          "path": "output/mandrakes/cards/firefight_ploys/mandrakes-apl-back.jpg",
+          "hash": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+          "modified": "2026-08-29T22:21:53.532329+00:00"
+        },
+        "cards/firefight_ploys/mandrakes-apl-front.jpg": {
+          "path": "output/mandrakes/cards/firefight_ploys/mandrakes-apl-front.jpg",
+          "hash": "88677dbd3f0a79d802d5e4947406236511e45837507191f37d6fb60f0efcf30b",
+          "modified": "2026-08-29T22:21:53.551329+00:00"
         }
       },
-      "completed": "2026-08-29T20:29:35.934179+00:00",
+      "completed": "2026-08-29T23:28:14.656344+00:00",
       "inputs": {
-        "layers/integration/mandrakes/manifest.json": "5aa2779f91e487300406f575e2d1ab2ca9b5055c5567b94ed484ccdb125b93b8",
+        "layers/integration/mandrakes/manifest.json": "90b0694130f3bf334d394b11d17832f3d73be53489b4b4b77881aad34d529d6c",
+        "layers/integration/mandrakes/mandrakes-datacard--1.pdf": "39ff6475d0d4576fcf835c02a3f8da0e17f07d9f1c9f46f49d211bec19dea34a",
+        "layers/integration/mandrakes/mandrakes-datacard--2.pdf": "17d5a18f7b8328ea3cd5aca53b93146d93f0cf72b6271360d3e0690db438d5bb",
+        "layers/integration/mandrakes/mandrakes-datacard-.pdf": "36ea6ab641bb423a7e7417832ccbe28c521d4602ed9092f0a6d9bacee09c3fb4",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "61f71bb1479914920debe6551ff5be45d4cd71d6e468725dccfbaabf6abdc64c",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "c47ae6246ce85b02d660a548a9b89fb8e02ee2ab063ea33bc8a400e6dad16590",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "daeecfb5b2515091a94bf6cee806da7c03432288939162f1af4ba8b80b3c0138",
@@ -1089,24 +1124,30 @@
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "59889ec1ac83939d0d1d179be68ee697003050b245835c992745914698c68c3e",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "f3d99d9dd4ed4682522c8281bbd75f6036a750c05f5285248e23fc6cfacf64ab",
         "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "06db6a81365a0a9e1af7bac9b2598c5f0b50791b3916088b9132b40babe67966",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-abyssal.pdf": "b2a74241d87cd1faa356f9532234a7b6f3cb4dae5812b21d65ecb02955e2270e",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-chooser-of-the-flesh.pdf": "68f64dde70560f2b2a3b0cdbe399f1a1cdab61cad17a2c631226bb4724241345",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-dirgemaw.pdf": "635f946064d18c584ebd38637d2509f63202862bbf7f5edcc6c9a94b9519794c",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-nightfiend.pdf": "c6f20ff324a7f70dee141d8e76a2bd45aaabf32b77e0d8dd8d266d985ef7de1a",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-shadeweaver.pdf": "b04aaa380f546989dce77b7ce3c9cf0e4cbe9f44660ed7ad78b1beb18d8591c4",
-        "layers/integration/mandrakes/mandrakes-datacard-mandrake-warrior.pdf": "233daea2906fa1228ee94f9467c482c5018e213de2054af0d3e7cc6a87ea6271",
-        "layers/integration/mandrakes/mandrakes-equipment-bone-darts.pdf": "86588bac29ec220dcdfb3475d9d2ebb047c4e98276cf531f59827198d91b7859",
-        "layers/integration/mandrakes/mandrakes-equipment-chain-snare.pdf": "b9badcda73a7a1c41581b05da459bab162a99b2f69acaa9f1467b6c23e67c291",
-        "layers/integration/mandrakes/mandrakes-equipment-shadow-glyph.pdf": "7ce6b844410903d8a6599bcc9ee733a25d682fe843c7562ba6ddec51e40adab3",
-        "layers/integration/mandrakes/mandrakes-equipment-soul-gem.pdf": "0012bfef28bfd11c26d692e281452dc1fb505a9bb50f26f1333fade38d23b377",
-        "layers/integration/mandrakes/mandrakes-faction-rule-shadow-passage.pdf": "c5c8d1dd0f48c0f82b53e8de8a5c83755616e43bd3fb28a6c9446119e540faa9",
-        "layers/integration/mandrakes/mandrakes-faction-rule-soulstrike.pdf": "53ded3ddffbc4d3a6f690f07902153323038589bfc62dc249fccd50b4b4e93a1",
-        "layers/integration/mandrakes/mandrakes-faction-rule-umbral-entities.pdf": "8f6e48f1cbda1660ad805178dd5821cae03441304af1a88a4120e3fd584efeb4",
-        "layers/integration/mandrakes/mandrakes-faction-rule-within-shadow.pdf": "3852a919635aaeb072b5b6d71ad979b75c3e93d32418c089158cee8851aab26c",
-        "layers/integration/mandrakes/mandrakes-firefight-ploy-nowhere-to-hide.pdf": "4d0851d45e65bc5a5a7b3c3ddbcbb693247d559b38f3e7f7cbfa1082b2013074",
-        "layers/integration/mandrakes/mandrakes-firefight-ploy-shadows-bite.pdf": "f85b5e226183399067fa8fa92e571011d8739068a818c8df17ff61fe8300737c",
-        "layers/integration/mandrakes/mandrakes-firefight-ploy-slither-out-of-sight.pdf": "1262d9a30d8654782de9dc32632b4c25e6e767ad0d4a8b5b650d470d6d0ead70",
-        "layers/integration/mandrakes/mandrakes-firefight-ploy-soul-feast.pdf": "34cb58656f8bf3067a32d7c4e049dd78d665674d9caf251d76afb7486792d127",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-abyssal.pdf": "012af8d476f2785cc9133d49f087c1e7dd1b42b53710b9c76f02a0f2761a43a6",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-chooser-of-the-flesh.pdf": "16131e597782eade47e534782be7806ad9e98b52e1eb5233691f8aa7e1cb7219",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-dirgemaw.pdf": "440c80f092532f752c839a38141803af1b81951b359ea3c8381c1e64ab9c682b",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-nightfiend.pdf": "5365bffd263aaf728a26d2e46f3bc860011495859dc6ae269d9298336e084e5e",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-shadeweaver.pdf": "9e4b187281aed06cd6a98b28cee39d9d6e57bdeb156dffd5abd4a696f2a45cde",
+        "layers/integration/mandrakes/mandrakes-datacard-mandrake-warrior.pdf": "d8d9a4a5c40ac5a9c7dd1aec89bd842e0b80ed1b9935a625dad9684b74cded03",
+        "layers/integration/mandrakes/mandrakes-equipment-bone-darts.pdf": "15eac25ed5af474c74f026e83546943410ccd19cd8caa6c8b2927d7b7a2ec806",
+        "layers/integration/mandrakes/mandrakes-equipment-chain-snare.pdf": "56a697a151138258cb138272b2ed5ba65f8e85d0823c8c750ff18e9a9287b2b0",
+        "layers/integration/mandrakes/mandrakes-equipment-d6.pdf": "56a697a151138258cb138272b2ed5ba65f8e85d0823c8c750ff18e9a9287b2b0",
+        "layers/integration/mandrakes/mandrakes-equipment-shadow-glyph.pdf": "a238fb7545acb0509c84595d4e46de447c493fb9cd1f78d88badd7482c1afb55",
+        "layers/integration/mandrakes/mandrakes-equipment-soul-gem.pdf": "4589b67514fc6b646e97e9403ec83225ef54323a7f3e67c488d933e4bc518d5d",
+        "layers/integration/mandrakes/mandrakes-faction-rule-apl.pdf": "07d216b80a93014f7ac2d1e2d944e61f1f9b55825697769533e246e5478dad99",
+        "layers/integration/mandrakes/mandrakes-faction-rule-shadow-passage.pdf": "10296c9d38a1a3b15f151ca69ff1cb5f0605b1b8bac14b9cdebb60b0df2171a8",
+        "layers/integration/mandrakes/mandrakes-faction-rule-soulstrike.pdf": "445e106e430bf33253d621d6487d3f11e25badabd5372d3170e325e5ad6894d0",
+        "layers/integration/mandrakes/mandrakes-faction-rule-umbral-entities.pdf": "df9e13f5b49940ea519e6d080e1d27ce6d121995587ad0aee12cc56f510a7f2e",
+        "layers/integration/mandrakes/mandrakes-faction-rule-unknown-1.pdf": "b61cf26444b503dc73e07b06f30c8a156c78575720c69992386838888a3a0be0",
+        "layers/integration/mandrakes/mandrakes-faction-rule-unknown-2.pdf": "95042ba2aeb7e64668a8ebc0a6ebdf30e6f24e2913ac43c087a6351396ad54a2",
+        "layers/integration/mandrakes/mandrakes-faction-rule-unknown-3.pdf": "336c20a4738d8d1871feabca16e374db6f9196f4cc24a7d3d378084f922e90c0",
+        "layers/integration/mandrakes/mandrakes-faction-rule-within-shadow.pdf": "4f3a662a23bb43db164644fa7e1a7f1677139391969f48236a00b6aaa7a03197",
+        "layers/integration/mandrakes/mandrakes-firefight-ploy-apl.pdf": "d9940405263e33fbc45a8a84d0317c0db41f5afbcac92f2116e13d35d64730eb",
+        "layers/integration/mandrakes/mandrakes-firefight-ploy-nowhere-to-hide.pdf": "408170b076330de43a2560d76c492461b4f856fa81858a149b8b36371f0c76d2",
+        "layers/integration/mandrakes/mandrakes-firefight-ploy-shadows-bite.pdf": "d74656f04aa1e855a5744b99b8fa6c94ddf28c8ad2d2afb7b2296b167c73aa9e",
+        "layers/integration/mandrakes/mandrakes-firefight-ploy-slither-out-of-sight.pdf": "880ef842e456240da1a91dcd566b68bcad81a5f2a8e50667326f16786ae40e7b",
+        "layers/integration/mandrakes/mandrakes-firefight-ploy-soul-feast.pdf": "d9940405263e33fbc45a8a84d0317c0db41f5afbcac92f2116e13d35d64730eb",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-1.pdf": "25ca9e87756fc3eb8d57af68265c5e1f3d193e65a6b3dbf29251b4fc1a71b459",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-10.pdf": "361f292b47ee3ccbfb4be06136c25fb1a52142491994db194a96a9124908bd23",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-11.pdf": "9bf1435616812f5731251f3b0f887374103b9f6d5028eff7d3ace6226a13ddd3",
@@ -1125,12 +1166,14 @@
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-7.pdf": "5e00734a20900728924891158fb4d2e94a1850f053a7b5862f22c59623386310",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-8.pdf": "ae87a0fe5880f283fa045131ca266f7fa0f03ad1bfd2ea8fa93d97713b9db23c",
         "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-9.pdf": "50077fb9700f54c3834f48d4424ad884f645adf7ac89c09f5c078bd8583a6d53",
-        "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection.pdf": "14e4406771f0f1c6c8f932ac387d221d2970d0fbaedd05d6ceb1485035b642da",
-        "layers/integration/mandrakes/mandrakes-strategy-ploy-blade-in-the-dark.pdf": "e4148b102e8b8fd5fe4d4bd7ac309b2a56631ddb4386dd858d06fbede51ee423",
-        "layers/integration/mandrakes/mandrakes-strategy-ploy-creeping-horror.pdf": "c08e6b09ab04e1fdf95bbfbda15030e669f88ee13596f30aefb954652ae84465",
-        "layers/integration/mandrakes/mandrakes-strategy-ploy-gloaming-shroud.pdf": "3efd8fe2e8a7681fe1195078e2f2001e28e3e8dde2b3635f79e47d03493c808f",
-        "layers/integration/mandrakes/mandrakes-strategy-ploy-inescapable-nightmare.pdf": "28abd7ac3a7e43ad2c94aca7dd774e94ac0ad86fe7d48e07859778900a24adee",
-        "layers/integration/mandrakes/mandrakes-token-guide-token-guide.pdf": "4b92f3802e8614850d4565efa05cbba67afb0c874277c14cccb99d7c565d2056",
+        "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-mandrakes.pdf": "a91b0f91bd55bd6d383de1c4ed541998e19f59276ceae3de2f0a346eb5aed651",
+        "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection.pdf": "6b7ffb098f10d5169b660c743a4ddc6d5893c3c898095574454771921cc338d7",
+        "layers/integration/mandrakes/mandrakes-strategy-ploy-blade-in-the-dark.pdf": "6703aa003bb2401f1c54a223b79e2f8db30a5d357b3a69ec890e91ce349d554f",
+        "layers/integration/mandrakes/mandrakes-strategy-ploy-creeping-horror.pdf": "bd6584b26dc92b3e04f565eb86287b434ae96a1718272e0049012572834b1fdd",
+        "layers/integration/mandrakes/mandrakes-strategy-ploy-gloaming-shroud.pdf": "a6e108c87b8f87990322ac2cb123629cf5938d8e615f26a2deffb28a08e1fd87",
+        "layers/integration/mandrakes/mandrakes-strategy-ploy-inescapable-nightmare.pdf": "1bbba60412bc5ca3d810850ad0f6bafc9526d1a1f209e105040b6f556e15efb6",
+        "layers/integration/mandrakes/mandrakes-token-guide-token-guide-mandrakes.pdf": "7c6350832800bfc9e2d84a772f162ea893265f1d621c8e5e164ee5f6b6376e5a",
+        "layers/integration/mandrakes/mandrakes-token-guide-token-guide.pdf": "bd25eb52522fffe3d45eb770b5684e500863814129fc7e103ae0c367e2b668c4",
         "config/teams/mandrakes/card-backside/mandrakes-backside-portrait.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
         "layers/integration/mandrakes/card-backside/mandrakes-backside-portrait.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
         "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
@@ -1143,13 +1186,13 @@
       "outputs": {
         "team-data.json": {
           "path": "output/mandrakes/data/mandrakes-team-data.json",
-          "hash": "5c211d6b3aa47ad0eb01c4d699eb1f0dfb7d8820cab496b27b3049c994f7df60",
-          "modified": "2026-08-29T18:47:13.336418+00:00"
+          "hash": "9434d3746df5ce4d54088ffd9b7ee25992875deda6146affed55a5717748cd30",
+          "modified": "2026-08-29T21:57:06.555752+00:00"
         }
       },
-      "completed": "2026-08-29T18:47:13.339003+00:00",
+      "completed": "2026-08-29T21:57:06.559752+00:00",
       "inputs": {
-        "layers/integration/mandrakes/content/mandrakes-content.json": "5c211d6b3aa47ad0eb01c4d699eb1f0dfb7d8820cab496b27b3049c994f7df60"
+        "layers/integration/mandrakes/content/mandrakes-content.json": "9434d3746df5ce4d54088ffd9b7ee25992875deda6146affed55a5717748cd30"
       }
     },
     "generate_tts": {
@@ -1157,76 +1200,32 @@
         "tts_objects/Mandrakes Box.json": {
           "path": "output/mandrakes/tts_objects/Mandrakes Box.json",
           "hash": "572de5aebe9ca2ba1df8062b0bba4a5f26429fd7acf9c6a6bf412e646f2b8953",
-          "modified": "2026-08-29T20:47:43.084440+00:00"
+          "modified": "2026-08-29T23:25:52.810020+00:00"
         },
         "tts_objects/Mandrakes.json": {
           "path": "output/mandrakes/tts_objects/Mandrakes.json",
-          "hash": "a36ca1ef20ec601b68a994de63e606013d021ab281f62787bcb382fd746bcb1d",
-          "modified": "2026-08-29T20:47:43.093440+00:00"
+          "hash": "3ad6a63dcdca52b0cbb4734fb529427e445227d85957cba4f63153fda2e4d51a",
+          "modified": "2026-08-29T23:25:52.821020+00:00"
         }
       },
-      "completed": "2026-08-29T20:47:43.211440+00:00",
+      "completed": "2026-08-29T23:25:52.891019+00:00",
       "inputs": {
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
         "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": "a0057d358b81959eebf3151975c6ed4eda3f07837b0cad7a960e365ccc3af50f",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": "ae7e1f8ca947173ca3e82903f06f24b1d5d71c3c0564d61c4f6f7d9b36fd0a75",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": "76b7a6cb6f66c76658e551f158094969ffd24e3184f75c512a9eca234a7dc746",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": "45baceeb8ef07629ea627ebf23e76eec54387d094f589c4e2b198bc676f5c45b",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": "fdc05a8487e8ac8f958f2c67be441302a24ed58a317e312387f12b4e5db7916b",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": "1c369e567a870cd7155f98c1221577fb59e5d863ecfbcf7f21cf30d3d247e313",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": "3353959c733d0df10c5bd61a4307733a7ed0fe7575575f6c8dda51e13ca7d4eb",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": "70f0090511b46f8dc8aa7ba180306f69829b82323feae0472466beb061261d2f",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
-        "output/mandrakes/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": "356d379e6b0a61af280e3645e75030004b609a8376aeaae308b7a6a3bd346078",
-        "output/mandrakes/cards/datacards/mandrake-abyssal-back.jpg": "271d0005a384c04e3c434d283e111aee177a08b71b73e156efa937722310240a",
-        "output/mandrakes/cards/datacards/mandrake-abyssal-front.jpg": "f67a4673d59ccaa2595a4322359b896fa6d1747af88346238b5b389ff2049cf4",
-        "output/mandrakes/cards/datacards/mandrake-chooser-of-the-flesh-back.jpg": "627f0cc842cb0ca749c5084e6bc0499be088b4f55596762dc622e363c0da1055",
-        "output/mandrakes/cards/datacards/mandrake-chooser-of-the-flesh-front.jpg": "3e4a36529a5dfeae8078372c5dfed1964c6924225eafbdf5a9744fbfc01f362f",
-        "output/mandrakes/cards/datacards/mandrake-dirgemaw-back.jpg": "2d20b65c7625e94639c1d1b50cdd091902d3f979c2429656bc6d321ec760527f",
-        "output/mandrakes/cards/datacards/mandrake-dirgemaw-front.jpg": "f2920e2bbf079a01fa886c021243e80694ec9b7b5ca75b63732e0a1e7815fc00",
-        "output/mandrakes/cards/datacards/mandrake-nightfiend-back.jpg": "627f0cc842cb0ca749c5084e6bc0499be088b4f55596762dc622e363c0da1055",
-        "output/mandrakes/cards/datacards/mandrake-nightfiend-front.jpg": "ac4ed89b136bedc4d4aa8825646fe6cd9ca17a137bd27d0c7ef0626f67617901",
-        "output/mandrakes/cards/datacards/mandrake-shadeweaver-back.jpg": "4f24152fef5f6867b2e801f692127776aeae9ea1e9cc7791dea71a37657193d2",
-        "output/mandrakes/cards/datacards/mandrake-shadeweaver-front.jpg": "6dffa45fb42573bef0e6f86c83ab4de63beb27f5dc50921f4965e47c10bcf48d",
-        "output/mandrakes/cards/datacards/mandrake-warrior-back.jpg": "627f0cc842cb0ca749c5084e6bc0499be088b4f55596762dc622e363c0da1055",
-        "output/mandrakes/cards/datacards/mandrake-warrior-front.jpg": "b00d5901381ecad52899a1feac01dda397407fe170f5b5a82f8673d255829ced",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-그늘방직공-back.jpg": "7a630a7c81651ce082e15052b7339877952825b00f5d1fa72697738c213e9942",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-그늘방직공-front.jpg": "9b685781af4d594ea35b3622286154ed4f353fc9bd28e139622447a9549bd9cf",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-밤악령-back.jpg": "0939ac22262b042203558f13c9f4840fcdd516f5b3d9cfc0254f0fa369cb7a43",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-밤악령-front.jpg": "ddb7ab60618848f3a89933cbbee99ebb92987513d8878f166ad074e45d5499d0",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-살점을-고르는-자-back.jpg": "0939ac22262b042203558f13c9f4840fcdd516f5b3d9cfc0254f0fa369cb7a43",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-살점을-고르는-자-front.jpg": "db71deeb03ed4295bc96abc33dcc8adb9c9a57619086873907a94210ea5e6d97",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-심연귀-back.jpg": "210b6ed6cfc76416f617d85a070220d685e4752572e91a149f52deb2bf5cf21c",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-심연귀-front.jpg": "3144d7533470c8fe0286c7b40df5742c8fcd0f7d2ee0f043a471a059cf8cc6d7",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-장송구렁-back.jpg": "147675fa8d304564ca85da4ea956c08c76c2dcd931488d1d0d8224ae1296f761",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-장송구렁-front.jpg": "c8693ce988f489f4db89db371f8529b372f059403a00e0b831951154111696ad",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-전사-back.jpg": "0939ac22262b042203558f13c9f4840fcdd516f5b3d9cfc0254f0fa369cb7a43",
-        "output/mandrakes/cards/datacards/mandrakes-맨드레이크-전사-front.jpg": "b27af0b704bd4968de668d6bc8565edd1ae71c743dbc3b233242e2ec04f4ff4b",
-        "output/mandrakes/cards/equipment/mandrakes-bone-darts-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/equipment/mandrakes-bone-darts-front.jpg": "626b62bc0767e815419df727f2d8e374c1db2bb153282c65277432f5c8302735",
-        "output/mandrakes/cards/equipment/mandrakes-chain-snare-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/equipment/mandrakes-chain-snare-front.jpg": "37bbf482cb75bbe8137ede19021f9096ba5f74a61d28f21ae6f45ec412105301",
-        "output/mandrakes/cards/equipment/mandrakes-shadow-glyph-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/equipment/mandrakes-shadow-glyph-front.jpg": "b3f9564d281a4849150a8a5027b247dd37d0aefb2b28c45e9b43546f005d02b4",
-        "output/mandrakes/cards/equipment/mandrakes-soul-gem-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/equipment/mandrakes-soul-gem-front.jpg": "13d47aeb03fdb6a0beb3f41d7537b21d307f3f63b4769f8354379f05f9a74218",
-        "output/mandrakes/cards/equipment/mandrakes-그림자-상형문자-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-        "output/mandrakes/cards/equipment/mandrakes-그림자-상형문자-front.jpg": "6702e7d99c654ff85e99a0a0b11a5325746470e21d6dfb784a498d81d911c0aa",
-        "output/mandrakes/cards/equipment/mandrakes-뼈-다트-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-        "output/mandrakes/cards/equipment/mandrakes-뼈-다트-front.jpg": "4a03b118b0ca62cadcfe79a74ca0dc9cef5ff3029f671021aeadfa302e6cc8ef",
-        "output/mandrakes/cards/equipment/mandrakes-사슬-올가미-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-        "output/mandrakes/cards/equipment/mandrakes-사슬-올가미-front.jpg": "dcb2ff19f4510acc40ca50561e80d15e9705a151183b6f187c7569839e9832b2",
-        "output/mandrakes/cards/equipment/mandrakes-영혼석-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
-        "output/mandrakes/cards/equipment/mandrakes-영혼석-front.jpg": "8608df2a45bd7c6c31318de3672910bfa4e898da4e68dd96076a311098396ed8",
+        "output/mandrakes/cards/datacards/mandrake-abyssal-back.jpg": "76b7a6cb6f66c76658e551f158094969ffd24e3184f75c512a9eca234a7dc746",
+        "output/mandrakes/cards/datacards/mandrake-abyssal-front.jpg": "ae7e1f8ca947173ca3e82903f06f24b1d5d71c3c0564d61c4f6f7d9b36fd0a75",
+        "output/mandrakes/cards/datacards/mandrake-chooser-of-the-flesh-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+        "output/mandrakes/cards/datacards/mandrake-chooser-of-the-flesh-front.jpg": "45baceeb8ef07629ea627ebf23e76eec54387d094f589c4e2b198bc676f5c45b",
+        "output/mandrakes/cards/datacards/mandrake-dirgemaw-back.jpg": "1c369e567a870cd7155f98c1221577fb59e5d863ecfbcf7f21cf30d3d247e313",
+        "output/mandrakes/cards/datacards/mandrake-dirgemaw-front.jpg": "fdc05a8487e8ac8f958f2c67be441302a24ed58a317e312387f12b4e5db7916b",
+        "output/mandrakes/cards/datacards/mandrake-nightfiend-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+        "output/mandrakes/cards/datacards/mandrake-nightfiend-front.jpg": "a0057d358b81959eebf3151975c6ed4eda3f07837b0cad7a960e365ccc3af50f",
+        "output/mandrakes/cards/datacards/mandrake-shadeweaver-back.jpg": "70f0090511b46f8dc8aa7ba180306f69829b82323feae0472466beb061261d2f",
+        "output/mandrakes/cards/datacards/mandrake-shadeweaver-front.jpg": "3353959c733d0df10c5bd61a4307733a7ed0fe7575575f6c8dda51e13ca7d4eb",
+        "output/mandrakes/cards/datacards/mandrake-warrior-back.jpg": "9d3c07319ea3ed371f5a8e91b8b5b9a5bf05f2fbdcec21c2aee8e5af1745e590",
+        "output/mandrakes/cards/datacards/mandrake-warrior-front.jpg": "356d379e6b0a61af280e3645e75030004b609a8376aeaae308b7a6a3bd346078",
+        "output/mandrakes/cards/equipment/mandrakes-d6-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/equipment/mandrakes-d6-front.jpg": "9c6428518c54f40bb714a9130238358e042026b6d0bb11655a9f53d03157bbfc",
         "output/mandrakes/cards/faction-rules/mandrakes-그늘-안-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
         "output/mandrakes/cards/faction-rules/mandrakes-그늘-안-front.jpg": "198ae4380cf37b9efd9cceda0168f0ad86428a9edbc6e95e86a4f8de8d9f9126",
         "output/mandrakes/cards/faction-rules/mandrakes-그늘-통로-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
@@ -1235,62 +1234,20 @@
         "output/mandrakes/cards/faction-rules/mandrakes-그림자-존재-front.jpg": "4e9de88ca8d2cb3515fc5fcd4762d4115aa4a3c8d0f78189e4d8e657b76027ed",
         "output/mandrakes/cards/faction-rules/mandrakes-영혼격-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
         "output/mandrakes/cards/faction-rules/mandrakes-영혼격-front.jpg": "3ba20387e992114171c672466813db0e6ab96cc1152146760efc4d6181023b4a",
-        "output/mandrakes/cards/faction_rules/mandrakes-shadow-passage-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/faction_rules/mandrakes-shadow-passage-front.jpg": "fd441384a57a3aac8141dcbf7c06e9e9d2052f99155b17f3bb6633f9f77b42dc",
-        "output/mandrakes/cards/faction_rules/mandrakes-soulstrike-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/faction_rules/mandrakes-soulstrike-front.jpg": "798a95bbbd3f995759137f952f7963a4a71ea0f17b223d6901a6e0ccb8e5aef4",
-        "output/mandrakes/cards/faction_rules/mandrakes-umbral-entities-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/faction_rules/mandrakes-umbral-entities-front.jpg": "89c2c50f8fae30be40928dedd965e3a2ccd607358ecc7e62d023ba4124f5c049",
-        "output/mandrakes/cards/faction_rules/mandrakes-within-shadow-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/faction_rules/mandrakes-within-shadow-front.jpg": "503c1d99d6d7d4dfebc31022b89da7831a0b3f3bc9377faa05a7fc0a582b8128",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-nowhere-to-hide-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-nowhere-to-hide-front.jpg": "d441d9a339dc36ae9ee4b3539f14e7f1fef398c6fd5936170b52515795e9ee56",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-shadows-bite-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-shadows-bite-front.jpg": "94fb9480edbca6e7f955c3162b187caea39a8b33cbf11a92a06de8928491b8e6",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-slither-out-of-sight-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-slither-out-of-sight-front.jpg": "d6af9090a4cb16cc569341b613dd09c79befac010b12957474b7833a18d38ecf",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-soul-feast-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/firefight_ploys/mandrakes-soul-feast-front.jpg": "6d821c9aeb6a20c41c77a8ef876c017f6340270eba57fb09542b09b05f008959",
+        "output/mandrakes/cards/faction_rules/mandrakes-shadow-passage-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/faction_rules/mandrakes-shadow-passage-front.jpg": "5b0e7f9d2f140d2755adf0d331893548fba4ff2b43b46b07886d0a3c30f32264",
+        "output/mandrakes/cards/faction_rules/mandrakes-soulstrike-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/faction_rules/mandrakes-soulstrike-front.jpg": "5fc3736276bf83c091510d2c76f053476bb0beb39c9a9348f5499befa372b1e1",
+        "output/mandrakes/cards/faction_rules/mandrakes-umbral-entities-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/faction_rules/mandrakes-umbral-entities-front.jpg": "7623389fe8855f82103070a5341abdae494b8789cd9ff16a9bc42f2d39f92d3b",
+        "output/mandrakes/cards/faction_rules/mandrakes-within-shadow-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/faction_rules/mandrakes-within-shadow-front.jpg": "1afc22740acfeb65da158372948a6334ea04b4c61070c2975f2d77a2f1b5ed1e",
+        "output/mandrakes/cards/firefight_ploys/mandrakes-apl-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/firefight_ploys/mandrakes-apl-front.jpg": "88677dbd3f0a79d802d5e4947406236511e45837507191f37d6fb60f0efcf30b",
         "output/mandrakes/cards/operative-selection/mandrakes-operative-selection-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
         "output/mandrakes/cards/operative-selection/mandrakes-operative-selection-front.jpg": "d57ad922a08d8da58806f8b92de86135ca18949e6b5ffcb9e8f8523a2e32d05c",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card1-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card1-front.jpg": "f159636ef110d6d4b9cbabe9d542c5d3494885bfe7dc7ab6274d9b0d85d25b45",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card10-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card10-front.jpg": "ef988351a543955b029197ca8c3b21850dbfdc6983aabf61f73acf6fd915dbc1",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card11-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card11-front.jpg": "ff2a649c12a003d2d98bf2bd1c3cf5fa50dd94d3c39ad3947232f263f6d84708",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card12-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card12-front.jpg": "88677dbd3f0a79d802d5e4947406236511e45837507191f37d6fb60f0efcf30b",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card13-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card13-front.jpg": "f487490d00a22bc51843ba5a0c05ba5ebcee4cf4a22d171961f409818fd53c24",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card14-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card14-front.jpg": "65d076ceae66e52a67cd00f771ce9ea9928948d09bf1d3c729e170b71663ee73",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card15-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card15-front.jpg": "9c6428518c54f40bb714a9130238358e042026b6d0bb11655a9f53d03157bbfc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card16-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card16-front.jpg": "ce74da176e1955b4c7836bc89b3d6df69a40271560a377608c88b0454f342e70",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card17-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card17-front.jpg": "0e2d01ca03c5d2867d54d1a4817c3c8119d23d29d672e4d87dcd852f40054022",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card18-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card18-front.jpg": "a50634050804254e5644f1887f713b84ce651903361ea1e9be9a1e19cb4fc4de",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card2-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card2-front.jpg": "5fc3736276bf83c091510d2c76f053476bb0beb39c9a9348f5499befa372b1e1",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card3-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card3-front.jpg": "5b0e7f9d2f140d2755adf0d331893548fba4ff2b43b46b07886d0a3c30f32264",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card4-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card4-front.jpg": "7623389fe8855f82103070a5341abdae494b8789cd9ff16a9bc42f2d39f92d3b",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card5-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card5-front.jpg": "1afc22740acfeb65da158372948a6334ea04b4c61070c2975f2d77a2f1b5ed1e",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card6-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card6-front.jpg": "da7401be42731f6a32184777a9ec91bedf4c17ad16257fe82a5fabc7cc6490d8",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card7-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card7-front.jpg": "8be95b64018c00822c6e02aecfbac92bb8acb452e8e404d885b961490821343b",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card8-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card8-front.jpg": "03534126438c9c0f75d0ab86be767b25d940bd9ae5879de86f8fb5b0705ab24b",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card9-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-card9-front.jpg": "fd3afc82385659f7586f24ba2425bfbe5e1c8984823a7673975b4457aba1a38b",
-        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-front.jpg": "bb1212cf4c3f1a5dd16042e2d98a00ee207fd65d2f35f81a5bda7f22a05681ca",
+        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/operatives_selection/mandrakes-operative-selection-front.jpg": "f159636ef110d6d4b9cbabe9d542c5d3494885bfe7dc7ab6274d9b0d85d25b45",
         "output/mandrakes/cards/ploys/firefight/mandrakes-물어뜯는-그림자-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
         "output/mandrakes/cards/ploys/firefight/mandrakes-물어뜯는-그림자-front.jpg": "d80ff3f87be9ae98200ab16ba4948d4e4a1517dea25adbbfb4e7d8cfd19ef0aa",
         "output/mandrakes/cards/ploys/firefight/mandrakes-미끄러지듯-사라지다-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
@@ -1317,8 +1274,8 @@
         "output/mandrakes/cards/strategy_ploys/mandrakes-inescapable-nightmare-front.jpg": "1507b857322557c5fd3e565a71eef3a1d7d6580bb76148986322ee042a5006e3",
         "output/mandrakes/cards/token-guide/mandrakes-token-guide-back.jpg": "bdfdf9546843fb93f3ebcc41ae119d69d793c0c53b8133134d45e9921fcae99b",
         "output/mandrakes/cards/token-guide/mandrakes-token-guide-front.jpg": "8ac2c6c508ba01aa87f15c4e8cec827aa269f9194f2c11fb878868f7b98370ef",
-        "output/mandrakes/cards/token_guide/mandrakes-token-guide-back.jpg": "a69e161838783f9ceb75ee11e526f1864229fcaef1e2d48ca3b4390b8ddf85b0",
-        "output/mandrakes/cards/token_guide/mandrakes-token-guide-front.jpg": "1d2575831d7051f0f84bf8b6f317ef0338044c2df22373ffa8f603432454783a",
+        "output/mandrakes/cards/token_guide/mandrakes-token-guide-back.jpg": "151d8045cff311a2f68dccd7faf86679f13bc6d766c1199a87f9a0b2b74a54cc",
+        "output/mandrakes/cards/token_guide/mandrakes-token-guide-front.jpg": "da7401be42731f6a32184777a9ec91bedf4c17ad16257fe82a5fabc7cc6490d8",
         "output/mandrakes/cardbox/mandrakes-card-box-texture.jpg": "a0e81bf2c4045d384654fb38c26891fa0bb8ce400fe7e4b5ce29676b5c226b0f",
         "output/mandrakes/cardbox/mandrakes-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
         "output/mandrakes/tokens/mandrakes-balefire.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
@@ -1343,22 +1300,22 @@
         "output/mandrakes/tokens/mandrakes-weave-darkness.png": "d9d035c6acea26ad28ce700a1f3b2e2bc8162d0b2cb967c1b073cfb7f16ac206",
         "output/mandrakes/tokens/tokenbag/mandrakes-token-bag-icon.png": "61f07f772ab364caa939c3e6674a7f870537729127ba17de74c96c5b547d442d",
         "output/mandrakes/tokens/tokenbag/mandrakes-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
-        "output/mandrakes/dice/mandrakes-dice-dark.jpg": "99128db18477196ec36d0328b11a596fea58ca700fcafa909106ef1078abe007",
-        "output/mandrakes/dice/mandrakes-dice-light.jpg": "f52603c5bb9d1ad4b2deb106923747801c1fd52a427162828d66dffdc2b9c9c4",
-        "output/mandrakes/dice/mandrakes-dice-team.jpg": "889578a15f21a63a70901a42c29b10f0dbfbbecee650627caa8fa9349f4fcaca",
-        "output/mandrakes/data/mandrakes-team-data.json": "5c211d6b3aa47ad0eb01c4d699eb1f0dfb7d8820cab496b27b3049c994f7df60",
-        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
+        "output/mandrakes/dice/mandrakes-dice-dark.jpg": "87533cebf128fabe10d256892f09e79fb772d667a240fed2bfa49f295ebfaf5b",
+        "output/mandrakes/dice/mandrakes-dice-light.jpg": "ff59e2b5b5bb54e3b0fb43f653eed0c2c9f46d843ed46ed697c7405b9158a14e",
+        "output/mandrakes/dice/mandrakes-dice-team.jpg": "98a7b6b277ac9df3beca1ae1ed4e2aa950310094954ebe0b0046501458251ccb",
+        "output/mandrakes/data/mandrakes-team-data.json": "9434d3746df5ce4d54088ffd9b7ee25992875deda6146affed55a5717748cd30",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "ccb3d10961c3353d0c325f4a6f4f4b1fbb8b962144f511b49e9dd229e52dd569",
         "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
-        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
+        "config/defaults/tts-script/display-table-manager-script.lua": "915b585df566254cafb6a699af34668afe51abe94803acc82645652433c13421",
         "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
         "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
         "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
         "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
         "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
-        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
+        "config/defaults/tts-script/single-object-updater.lua": "0c8f12587d1e4f34727ae0b50246885c6700ca52456c7b0088a00d2da3e7d352",
         "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
-        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
-        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "259c2e3629ecba126b5db0ec2a3066072601ab6ed9585c4d191eed9453d7204e",
+        "config/defaults/tts-script/team-spawner-script.lua": "60e659195fe37e96d6ffb8c4c9dcad9ceb669cae401bea03cd532b683499316d",
         "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
         "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
         "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
@@ -1483,172 +1440,172 @@
       "outputs": {
         "structure": {
           "path": "layers/warcom/structure/mandrakes-structure.json",
-          "hash": "5aa2779f91e487300406f575e2d1ab2ca9b5055c5567b94ed484ccdb125b93b8",
-          "modified": "2026-08-29T18:45:54.533813+00:00"
+          "hash": "90b0694130f3bf334d394b11d17832f3d73be53489b4b4b77881aad34d529d6c",
+          "modified": "2026-08-29T23:13:36.682095+00:00"
         }
       },
       "inputs": {
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card1_landscape.pdf": "b291a89e95f2bfd908c91ccf2c09b4a17433e92cb867c64721cbb88da3bd7bdf",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card2_landscape.pdf": "a9c0fe065462ab85f71d1b608560bd0736375f880915d36d18bc6be76388acd2",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card3_landscape.pdf": "2d3e14bb47c244a3c2d2ab07c13be587951f0e712c71116e8a4ba9a72d801fb1",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card4_landscape.pdf": "9741735b8382b90cdcf2860fd7c777f63d0e28989cb114ffb29034740378e159",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card1_landscape.pdf": "033f42191eb3cba9c4dd19824a36a385869f8632105c81a577151a638a4ef0e4",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card2_landscape.pdf": "ccaa9d901f5b8d5c0643352ea9066222e8faf3d5c2bee280fc2a0da337ea8835",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card3_landscape.pdf": "c22532be46283ac227e63894e31b8fe1891d4b92225e8bfdbd330138bd4e26cf",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card4_landscape.pdf": "ce85efaa04d4ae1c1ca51cd28b967adb2d2125ac3e40047a1a116eb5c63c0024",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card1_landscape.pdf": "172fa4af8262a8f04ef0f46cb2f2bc120356851c3877dd8aad9903ce35c88b83",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card2_landscape.pdf": "cac012114c73b16676e4247774c0c4a613fa791bbfb915bf0be86af50f2af0c9",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card3_landscape.pdf": "106c14d40b038fe7a85070061ea2b381e84113124f01370b696a2ad281c41ae4",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card4_landscape.pdf": "501a6a01c8caa81b346a83eedb4d76c3702e6ac88d883839b98531c1f5a251e5",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card1_portrait.pdf": "e243572ece3fe8758f29c42285c61d7d453ff36611d02391dfe2e0286e6a168c",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card2_portrait.pdf": "3aa802b1afa6401b7eeea152382949822320f93a2bf476d010e74451c9b8e27c",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card3_portrait.pdf": "37ecd8bf291c2d42a10073b6df3b146bf8cc49aa7a88b762d57a03c7cb4b5be1",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card4_portrait.pdf": "80fcf65eac5a59c79ba3c86dae7c10496b10c999f7803b36fa189ae555f25584",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card1_portrait.pdf": "3b65ff9e22b3611122bd8c515814cc5f954d312407655052e630465e0609d6ab",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card2_portrait.pdf": "59ca8c41e830c85db9264e7dff92a55d54cedab73cd8d35bb011210a9918be42",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card3_portrait.pdf": "d61da4f2defe2e0b5231855636a888981bb79c676961f0d4f53ea853512fb9ff",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card4_portrait.pdf": "638804fb3936d802f40fd819c314821371fdc99f977b1daedb36a010ff174dd6",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card1_portrait.pdf": "fc91d162b1b9d50bbd0c80d4f8c146673e8289b1954d5bbac4d67e3086c5e084",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card2_portrait.pdf": "2ff7f40737337cc14bbe69f85ca76e98bc971592f1fc376abdeeb6581dbe8b94",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card3_portrait.pdf": "215db4ffed883ef23eb4d8a078875841c2c8838aa39b381af6353940560b6db9",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card4_portrait.pdf": "a924ba6d874fb2cb0613fe41ebbdb59ded309e0b1452c8fb6b471322727f9d81",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card1_portrait.pdf": "382a2122f9c20b406e3af0d9142f1739deea483ff37717b1b70084f72fb89c09",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card2_portrait.pdf": "516e9189145ab1bacbf14626605e8d8df1e6ba10b5de3f4716d73c56469637c4",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card3_portrait.pdf": "8cca3fed066ed8135e91d20ae0262a03e96ac00b67ba9e4586686dc4feb695af",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card4_portrait.pdf": "1bb3a716f51a1d74c11de1078775c0fefa7168b20d970ef1ed5584982b0350e8",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card1_portrait.pdf": "31de8a886e1143ecd5c51b07a8103145fc891f36aa671688c540cf1a11fd88f6",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card2_portrait.pdf": "b612ea86c16777ec37b9e8aec0354f17ce917c5f2a470fc6bfb3165b53f1bbf5",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card3_portrait.pdf": "135670a267841512cccd36ad3bff8cd8a334c24daea1055e143c80c904103675",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card4_portrait.pdf": "47c94896cadd9de8f90c746c13e368bdd587e560d3dc4e3ccd9f86692551c6ed"
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card1_landscape.pdf": "4cc523102f1d8cef49691ce8902e4e29e70440fde66f51ae614ddeaeb1d9be57",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card2_landscape.pdf": "c66008dc53880847062a9fd09b06d313586db35e96e848fb42af24caa37468c7",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card3_landscape.pdf": "c6c8fc790fc003ebeb7f7b58a2ec14d2d5a09356ef05c682a943de8b90a4936f",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card4_landscape.pdf": "b5a39d5740390c7e347302498f2761964e3d08c0871f1fbabdb1e95b674334c8",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card1_landscape.pdf": "c39a5c4122a6d6232f0d6cb48e072b9e5441b19a7df22bc289f87b3358fc8cd8",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card2_landscape.pdf": "f53dad2df520beceaf17efe92c80b05bc16b68ffed593f4a80950e6dd205da0d",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card3_landscape.pdf": "55c943863ed0e882f4186fc891d253d1f7d1940f0fdd3ca71b8de0bb3fb68146",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card4_landscape.pdf": "02d334a01d274b1655a5534b8f7dcd035659162a04a2ef8569e35e1d32fc4160",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card1_landscape.pdf": "fd9eb8e09491f6c065517b2c200ccf0aa4675239dad50d873d6bf3c297911c1e",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card2_landscape.pdf": "c2f957d3e0cc312a945f9c45f1b6cfde9fb234e72829ac955873eb0f534745dc",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card3_landscape.pdf": "69156b1d3ef34f0b63471808d693d7f1021a015a1bb52e58e3942a59640e82df",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card4_landscape.pdf": "2163981f587a3a619a984fe80c6e9aa385be4b5315fc6d6e58cd20715f5bcf52",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card1_portrait.pdf": "9f38dbdbf8046069d985d9c4075916a2e93a342d20af2d79e99935a838d5ea69",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card2_portrait.pdf": "c14f2f5d83d726d83b2651eb813ef476868230ef9c4ab9e5724c0657bf1cc61f",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card3_portrait.pdf": "66f66de2f2f3a8d086964ddd78f4249a3a19ed4a3a0755879c93f31f3f0b26ca",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card4_portrait.pdf": "630a866b44b64fad63e6c79709e220f9abe79528146d7c7bfd1a6f91801fadd9",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card1_portrait.pdf": "1b09126735dab6b9847bc8a975c8487af90cb8b27fc80970069a148a153945e4",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card2_portrait.pdf": "3abad72f475688b065d616f8a0d71a3bc90a41560414d241659191b22b0468a0",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card3_portrait.pdf": "6450b5847b6c03854bc6a4ad2d3ea7cd372fdd64f2dc4701caee1072ea21c116",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card4_portrait.pdf": "4196dfd3c0d0e6ef7d402f258dda555a2a5e19d5765dfbc9f8c040ac0a9db237",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card1_portrait.pdf": "1dd54fea013365cd30cc9c9ead40041046d5bd05246cb1b14dc7daf5f52bc641",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card2_portrait.pdf": "ed16e58aa804e7d7c061deccc01fe6c01a48d2c2a298dcd9b698138d720806c8",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card3_portrait.pdf": "78debb1f3a4a8b58ea7f7045993a58dbc025583e6836062cc939d8c4679435bc",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card4_portrait.pdf": "33260d5c3ea8f20c91ec5f4f2ea0d5ce0a26831d9aafe68bb6af4a78ea4e4e72",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card1_portrait.pdf": "fc3e0a1318221c05af3ba7d501946fc68c74e9926c9ad4fdf7a56d67cecb4c5a",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card2_portrait.pdf": "819f41c4c816f9a90d11716e4ba6fcba5b378660275d2558eb04b840121d3908",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card3_portrait.pdf": "e9c500eb8731f9de9169d4c2f144cd28a78d2256bb4c278465264f105ad6ae39",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card4_portrait.pdf": "1163bd97178358d774a6a2aa6434c5948cef9f340d6a98373ed51e4fd6ecddb5",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card1_portrait.pdf": "7ef0bb4bad53d480c55104f0fd9c90babd192b245c2e65cddaa7df46eae7a104",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card2_portrait.pdf": "f790af08fd5368308e8bae8019e9d406a7f3164dae45345bf5f2dd29083af389",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card3_portrait.pdf": "4ca6c5786d2d6047df1a663f860fc78c07afc6babbb09b44d5b9df85284cea7d",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card4_portrait.pdf": "25c7acc2b013fb134c1acdf91bd5e3f9b92ca50ea7c7cb78b32e72a54998cf72"
       },
-      "completed": "2026-08-29T18:46:06.479906+00:00"
+      "completed": "2026-08-29T23:13:44.233519+00:00"
     },
     "integrate_classified": {
       "outputs": {
         "manifest.json": {
           "path": "layers/integration/mandrakes/manifest.json",
-          "hash": "5aa2779f91e487300406f575e2d1ab2ca9b5055c5567b94ed484ccdb125b93b8",
-          "modified": "2026-08-29T18:46:06.639050+00:00"
+          "hash": "90b0694130f3bf334d394b11d17832f3d73be53489b4b4b77881aad34d529d6c",
+          "modified": "2026-08-29T23:20:39.685423+00:00"
         },
         "mandrakes-datacard-mandrake-nightfiend.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-mandrake-nightfiend.pdf",
-          "hash": "c6f20ff324a7f70dee141d8e76a2bd45aaabf32b77e0d8dd8d266d985ef7de1a",
-          "modified": "2026-07-12T19:14:23.464267+00:00"
+          "hash": "5365bffd263aaf728a26d2e46f3bc860011495859dc6ae269d9298336e084e5e",
+          "modified": "2026-08-29T23:20:39.686423+00:00"
         },
         "mandrakes-datacard-mandrake-abyssal.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-mandrake-abyssal.pdf",
-          "hash": "b2a74241d87cd1faa356f9532234a7b6f3cb4dae5812b21d65ecb02955e2270e",
-          "modified": "2026-07-12T19:14:23.474851+00:00"
+          "hash": "012af8d476f2785cc9133d49f087c1e7dd1b42b53710b9c76f02a0f2761a43a6",
+          "modified": "2026-08-29T23:20:39.686423+00:00"
         },
         "mandrakes-datacard-mandrake-chooser-of-the-flesh.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-mandrake-chooser-of-the-flesh.pdf",
-          "hash": "68f64dde70560f2b2a3b0cdbe399f1a1cdab61cad17a2c631226bb4724241345",
-          "modified": "2026-07-12T19:14:23.486239+00:00"
+          "hash": "16131e597782eade47e534782be7806ad9e98b52e1eb5233691f8aa7e1cb7219",
+          "modified": "2026-08-29T23:20:39.687422+00:00"
         },
         "mandrakes-datacard-mandrake-dirgemaw.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-mandrake-dirgemaw.pdf",
-          "hash": "635f946064d18c584ebd38637d2509f63202862bbf7f5edcc6c9a94b9519794c",
-          "modified": "2026-07-12T19:14:23.496526+00:00"
+          "hash": "440c80f092532f752c839a38141803af1b81951b359ea3c8381c1e64ab9c682b",
+          "modified": "2026-08-29T23:20:39.688422+00:00"
         },
         "mandrakes-datacard-mandrake-shadeweaver.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-mandrake-shadeweaver.pdf",
-          "hash": "b04aaa380f546989dce77b7ce3c9cf0e4cbe9f44660ed7ad78b1beb18d8591c4",
-          "modified": "2026-07-12T19:14:23.505547+00:00"
+          "hash": "9e4b187281aed06cd6a98b28cee39d9d6e57bdeb156dffd5abd4a696f2a45cde",
+          "modified": "2026-08-29T23:20:39.689422+00:00"
         },
         "mandrakes-datacard-mandrake-warrior.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-mandrake-warrior.pdf",
-          "hash": "233daea2906fa1228ee94f9467c482c5018e213de2054af0d3e7cc6a87ea6271",
-          "modified": "2026-07-12T19:14:23.522808+00:00"
+          "hash": "d8d9a4a5c40ac5a9c7dd1aec89bd842e0b80ed1b9935a625dad9684b74cded03",
+          "modified": "2026-08-29T23:20:39.690421+00:00"
         },
         "mandrakes-equipment-chain-snare.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-equipment-chain-snare.pdf",
-          "hash": "b9badcda73a7a1c41581b05da459bab162a99b2f69acaa9f1467b6c23e67c291",
-          "modified": "2026-07-12T19:14:23.530131+00:00"
+          "hash": "56a697a151138258cb138272b2ed5ba65f8e85d0823c8c750ff18e9a9287b2b0",
+          "modified": "2026-08-29T23:20:39.691421+00:00"
         },
         "mandrakes-equipment-shadow-glyph.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-equipment-shadow-glyph.pdf",
-          "hash": "7ce6b844410903d8a6599bcc9ee733a25d682fe843c7562ba6ddec51e40adab3",
-          "modified": "2026-07-12T19:14:23.539981+00:00"
+          "hash": "a238fb7545acb0509c84595d4e46de447c493fb9cd1f78d88badd7482c1afb55",
+          "modified": "2026-08-29T23:20:39.691421+00:00"
         },
         "mandrakes-equipment-soul-gem.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-equipment-soul-gem.pdf",
-          "hash": "0012bfef28bfd11c26d692e281452dc1fb505a9bb50f26f1333fade38d23b377",
-          "modified": "2026-07-12T19:14:23.555714+00:00"
+          "hash": "4589b67514fc6b646e97e9403ec83225ef54323a7f3e67c488d933e4bc518d5d",
+          "modified": "2026-08-29T23:20:39.692422+00:00"
         },
         "mandrakes-equipment-bone-darts.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-equipment-bone-darts.pdf",
-          "hash": "86588bac29ec220dcdfb3475d9d2ebb047c4e98276cf531f59827198d91b7859",
-          "modified": "2026-07-12T19:14:23.572704+00:00"
+          "hash": "15eac25ed5af474c74f026e83546943410ccd19cd8caa6c8b2927d7b7a2ec806",
+          "modified": "2026-08-29T23:20:39.693421+00:00"
         },
         "mandrakes-faction-rule-soulstrike.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-faction-rule-soulstrike.pdf",
-          "hash": "53ded3ddffbc4d3a6f690f07902153323038589bfc62dc249fccd50b4b4e93a1",
-          "modified": "2026-07-12T19:14:23.583517+00:00"
+          "hash": "445e106e430bf33253d621d6487d3f11e25badabd5372d3170e325e5ad6894d0",
+          "modified": "2026-08-29T23:20:39.694421+00:00"
         },
         "mandrakes-faction-rule-shadow-passage.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-faction-rule-shadow-passage.pdf",
-          "hash": "c5c8d1dd0f48c0f82b53e8de8a5c83755616e43bd3fb28a6c9446119e540faa9",
-          "modified": "2026-07-12T19:14:23.604247+00:00"
+          "hash": "10296c9d38a1a3b15f151ca69ff1cb5f0605b1b8bac14b9cdebb60b0df2171a8",
+          "modified": "2026-08-29T23:20:39.694421+00:00"
         },
         "mandrakes-faction-rule-umbral-entities.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-faction-rule-umbral-entities.pdf",
-          "hash": "8f6e48f1cbda1660ad805178dd5821cae03441304af1a88a4120e3fd584efeb4",
-          "modified": "2026-07-12T19:14:23.617216+00:00"
+          "hash": "df9e13f5b49940ea519e6d080e1d27ce6d121995587ad0aee12cc56f510a7f2e",
+          "modified": "2026-08-29T23:20:39.695421+00:00"
         },
         "mandrakes-faction-rule-within-shadow.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-faction-rule-within-shadow.pdf",
-          "hash": "3852a919635aaeb072b5b6d71ad979b75c3e93d32418c089158cee8851aab26c",
-          "modified": "2026-07-12T19:14:23.636313+00:00"
+          "hash": "4f3a662a23bb43db164644fa7e1a7f1677139391969f48236a00b6aaa7a03197",
+          "modified": "2026-08-29T23:20:39.696421+00:00"
         },
         "mandrakes-token-guide-token-guide.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-token-guide-token-guide.pdf",
-          "hash": "4b92f3802e8614850d4565efa05cbba67afb0c874277c14cccb99d7c565d2056",
-          "modified": "2026-07-12T19:14:23.658807+00:00"
+          "hash": "bd25eb52522fffe3d45eb770b5684e500863814129fc7e103ae0c367e2b668c4",
+          "modified": "2026-08-29T21:23:02.365966+00:00"
         },
         "mandrakes-firefight-ploy-slither-out-of-sight.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-firefight-ploy-slither-out-of-sight.pdf",
-          "hash": "1262d9a30d8654782de9dc32632b4c25e6e767ad0d4a8b5b650d470d6d0ead70",
-          "modified": "2026-07-12T19:14:23.671196+00:00"
+          "hash": "880ef842e456240da1a91dcd566b68bcad81a5f2a8e50667326f16786ae40e7b",
+          "modified": "2026-08-29T23:20:39.698422+00:00"
         },
         "mandrakes-firefight-ploy-soul-feast.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-firefight-ploy-soul-feast.pdf",
-          "hash": "34cb58656f8bf3067a32d7c4e049dd78d665674d9caf251d76afb7486792d127",
-          "modified": "2026-07-12T19:14:23.703121+00:00"
+          "hash": "d9940405263e33fbc45a8a84d0317c0db41f5afbcac92f2116e13d35d64730eb",
+          "modified": "2026-08-29T23:20:39.698422+00:00"
         },
         "mandrakes-firefight-ploy-nowhere-to-hide.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-firefight-ploy-nowhere-to-hide.pdf",
-          "hash": "4d0851d45e65bc5a5a7b3c3ddbcbb693247d559b38f3e7f7cbfa1082b2013074",
-          "modified": "2026-07-12T19:14:23.745376+00:00"
+          "hash": "408170b076330de43a2560d76c492461b4f856fa81858a149b8b36371f0c76d2",
+          "modified": "2026-08-29T23:20:39.699423+00:00"
         },
         "mandrakes-firefight-ploy-shadows-bite.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-firefight-ploy-shadows-bite.pdf",
-          "hash": "f85b5e226183399067fa8fa92e571011d8739068a818c8df17ff61fe8300737c",
-          "modified": "2026-07-12T19:14:23.753065+00:00"
+          "hash": "d74656f04aa1e855a5744b99b8fa6c94ddf28c8ad2d2afb7b2296b167c73aa9e",
+          "modified": "2026-08-29T23:20:39.700423+00:00"
         },
         "mandrakes-operatives-selection-operative-selection.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection.pdf",
-          "hash": "14e4406771f0f1c6c8f932ac387d221d2970d0fbaedd05d6ceb1485035b642da",
-          "modified": "2026-07-12T19:14:23.814195+00:00"
+          "hash": "6b7ffb098f10d5169b660c743a4ddc6d5893c3c898095574454771921cc338d7",
+          "modified": "2026-08-29T21:23:04.567965+00:00"
         },
         "mandrakes-strategy-ploy-creeping-horror.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-strategy-ploy-creeping-horror.pdf",
-          "hash": "c08e6b09ab04e1fdf95bbfbda15030e669f88ee13596f30aefb954652ae84465",
-          "modified": "2026-07-12T19:14:23.846345+00:00"
+          "hash": "bd6584b26dc92b3e04f565eb86287b434ae96a1718272e0049012572834b1fdd",
+          "modified": "2026-08-29T23:20:39.701423+00:00"
         },
         "mandrakes-strategy-ploy-gloaming-shroud.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-strategy-ploy-gloaming-shroud.pdf",
-          "hash": "3efd8fe2e8a7681fe1195078e2f2001e28e3e8dde2b3635f79e47d03493c808f",
-          "modified": "2026-07-12T19:14:32.097154+00:00"
+          "hash": "a6e108c87b8f87990322ac2cb123629cf5938d8e615f26a2deffb28a08e1fd87",
+          "modified": "2026-08-29T23:20:39.702423+00:00"
         },
         "mandrakes-strategy-ploy-blade-in-the-dark.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-strategy-ploy-blade-in-the-dark.pdf",
-          "hash": "e4148b102e8b8fd5fe4d4bd7ac309b2a56631ddb4386dd858d06fbede51ee423",
-          "modified": "2026-07-12T19:14:32.101309+00:00"
+          "hash": "6703aa003bb2401f1c54a223b79e2f8db30a5d357b3a69ec890e91ce349d554f",
+          "modified": "2026-08-29T23:20:39.703422+00:00"
         },
         "mandrakes-strategy-ploy-inescapable-nightmare.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-strategy-ploy-inescapable-nightmare.pdf",
-          "hash": "28abd7ac3a7e43ad2c94aca7dd774e94ac0ad86fe7d48e07859778900a24adee",
-          "modified": "2026-07-12T19:14:38.509874+00:00"
+          "hash": "1bbba60412bc5ca3d810850ad0f6bafc9526d1a1f209e105040b6f556e15efb6",
+          "modified": "2026-08-29T23:20:39.704424+00:00"
         },
         "mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
           "path": "layers/integration/mandrakes/mandrakes-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
@@ -1784,39 +1741,94 @@
           "path": "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-18.pdf",
           "hash": "506ad6b6013623c5766b2f513504e082ca915440fc0d24fec3983b509cc8515b",
           "modified": "2026-08-29T18:46:08.408056+00:00"
+        },
+        "mandrakes-datacard-.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-datacard-.pdf",
+          "hash": "36ea6ab641bb423a7e7417832ccbe28c521d4602ed9092f0a6d9bacee09c3fb4",
+          "modified": "2026-08-29T21:22:58.101945+00:00"
+        },
+        "mandrakes-datacard--1.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-datacard--1.pdf",
+          "hash": "39ff6475d0d4576fcf835c02a3f8da0e17f07d9f1c9f46f49d211bec19dea34a",
+          "modified": "2026-08-29T21:22:57.387944+00:00"
+        },
+        "mandrakes-datacard--2.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-datacard--2.pdf",
+          "hash": "17d5a18f7b8328ea3cd5aca53b93146d93f0cf72b6271360d3e0690db438d5bb",
+          "modified": "2026-08-29T21:22:57.739944+00:00"
+        },
+        "mandrakes-equipment-d6.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-equipment-d6.pdf",
+          "hash": "56a697a151138258cb138272b2ed5ba65f8e85d0823c8c750ff18e9a9287b2b0",
+          "modified": "2026-08-29T22:21:02.989049+00:00"
+        },
+        "mandrakes-faction-rule-apl.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-faction-rule-apl.pdf",
+          "hash": "07d216b80a93014f7ac2d1e2d944e61f1f9b55825697769533e246e5478dad99",
+          "modified": "2026-08-29T21:22:59.869947+00:00"
+        },
+        "mandrakes-faction-rule-unknown-1.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-faction-rule-unknown-1.pdf",
+          "hash": "b61cf26444b503dc73e07b06f30c8a156c78575720c69992386838888a3a0be0",
+          "modified": "2026-08-29T21:22:59.900948+00:00"
+        },
+        "mandrakes-faction-rule-unknown-2.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-faction-rule-unknown-2.pdf",
+          "hash": "95042ba2aeb7e64668a8ebc0a6ebdf30e6f24e2913ac43c087a6351396ad54a2",
+          "modified": "2026-08-29T21:23:01.024946+00:00"
+        },
+        "mandrakes-faction-rule-unknown-3.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-faction-rule-unknown-3.pdf",
+          "hash": "336c20a4738d8d1871feabca16e374db6f9196f4cc24a7d3d378084f922e90c0",
+          "modified": "2026-08-29T21:23:02.009965+00:00"
+        },
+        "mandrakes-firefight-ploy-apl.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-firefight-ploy-apl.pdf",
+          "hash": "d9940405263e33fbc45a8a84d0317c0db41f5afbcac92f2116e13d35d64730eb",
+          "modified": "2026-08-29T22:21:03.157050+00:00"
+        },
+        "mandrakes-token-guide-token-guide-mandrakes.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-token-guide-token-guide-mandrakes.pdf",
+          "hash": "7c6350832800bfc9e2d84a772f162ea893265f1d621c8e5e164ee5f6b6376e5a",
+          "modified": "2026-08-29T23:20:39.697422+00:00"
+        },
+        "mandrakes-operatives-selection-operative-selection-mandrakes.pdf": {
+          "path": "layers/integration/mandrakes/mandrakes-operatives-selection-operative-selection-mandrakes.pdf",
+          "hash": "a91b0f91bd55bd6d383de1c4ed541998e19f59276ceae3de2f0a346eb5aed651",
+          "modified": "2026-08-29T23:20:39.701423+00:00"
         }
       },
       "inputs": {
-        "layers/warcom/structure/mandrakes-structure.json": "5aa2779f91e487300406f575e2d1ab2ca9b5055c5567b94ed484ccdb125b93b8",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card1_landscape.pdf": "b291a89e95f2bfd908c91ccf2c09b4a17433e92cb867c64721cbb88da3bd7bdf",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card2_landscape.pdf": "a9c0fe065462ab85f71d1b608560bd0736375f880915d36d18bc6be76388acd2",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card3_landscape.pdf": "2d3e14bb47c244a3c2d2ab07c13be587951f0e712c71116e8a4ba9a72d801fb1",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card4_landscape.pdf": "9741735b8382b90cdcf2860fd7c777f63d0e28989cb114ffb29034740378e159",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card1_landscape.pdf": "033f42191eb3cba9c4dd19824a36a385869f8632105c81a577151a638a4ef0e4",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card2_landscape.pdf": "ccaa9d901f5b8d5c0643352ea9066222e8faf3d5c2bee280fc2a0da337ea8835",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card3_landscape.pdf": "c22532be46283ac227e63894e31b8fe1891d4b92225e8bfdbd330138bd4e26cf",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card4_landscape.pdf": "ce85efaa04d4ae1c1ca51cd28b967adb2d2125ac3e40047a1a116eb5c63c0024",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card1_landscape.pdf": "172fa4af8262a8f04ef0f46cb2f2bc120356851c3877dd8aad9903ce35c88b83",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card1_portrait.pdf": "e243572ece3fe8758f29c42285c61d7d453ff36611d02391dfe2e0286e6a168c",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card2_portrait.pdf": "3aa802b1afa6401b7eeea152382949822320f93a2bf476d010e74451c9b8e27c",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card3_portrait.pdf": "37ecd8bf291c2d42a10073b6df3b146bf8cc49aa7a88b762d57a03c7cb4b5be1",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card4_portrait.pdf": "80fcf65eac5a59c79ba3c86dae7c10496b10c999f7803b36fa189ae555f25584",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card1_portrait.pdf": "3b65ff9e22b3611122bd8c515814cc5f954d312407655052e630465e0609d6ab",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card2_portrait.pdf": "59ca8c41e830c85db9264e7dff92a55d54cedab73cd8d35bb011210a9918be42",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card3_portrait.pdf": "d61da4f2defe2e0b5231855636a888981bb79c676961f0d4f53ea853512fb9ff",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card4_portrait.pdf": "638804fb3936d802f40fd819c314821371fdc99f977b1daedb36a010ff174dd6",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card1_portrait.pdf": "fc91d162b1b9d50bbd0c80d4f8c146673e8289b1954d5bbac4d67e3086c5e084",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card2_portrait.pdf": "2ff7f40737337cc14bbe69f85ca76e98bc971592f1fc376abdeeb6581dbe8b94",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card3_portrait.pdf": "215db4ffed883ef23eb4d8a078875841c2c8838aa39b381af6353940560b6db9",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card4_portrait.pdf": "a924ba6d874fb2cb0613fe41ebbdb59ded309e0b1452c8fb6b471322727f9d81",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card1_portrait.pdf": "382a2122f9c20b406e3af0d9142f1739deea483ff37717b1b70084f72fb89c09",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card2_portrait.pdf": "516e9189145ab1bacbf14626605e8d8df1e6ba10b5de3f4716d73c56469637c4",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card3_portrait.pdf": "8cca3fed066ed8135e91d20ae0262a03e96ac00b67ba9e4586686dc4feb695af",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card4_portrait.pdf": "1bb3a716f51a1d74c11de1078775c0fefa7168b20d970ef1ed5584982b0350e8",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card1_portrait.pdf": "31de8a886e1143ecd5c51b07a8103145fc891f36aa671688c540cf1a11fd88f6",
-        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card2_portrait.pdf": "b612ea86c16777ec37b9e8aec0354f17ce917c5f2a470fc6bfb3165b53f1bbf5"
+        "layers/warcom/structure/mandrakes-structure.json": "90b0694130f3bf334d394b11d17832f3d73be53489b4b4b77881aad34d529d6c",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card1_landscape.pdf": "4cc523102f1d8cef49691ce8902e4e29e70440fde66f51ae614ddeaeb1d9be57",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card2_landscape.pdf": "c66008dc53880847062a9fd09b06d313586db35e96e848fb42af24caa37468c7",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card3_landscape.pdf": "c6c8fc790fc003ebeb7f7b58a2ec14d2d5a09356ef05c682a943de8b90a4936f",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page01_card4_landscape.pdf": "b5a39d5740390c7e347302498f2761964e3d08c0871f1fbabdb1e95b674334c8",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card1_landscape.pdf": "c39a5c4122a6d6232f0d6cb48e072b9e5441b19a7df22bc289f87b3358fc8cd8",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card2_landscape.pdf": "f53dad2df520beceaf17efe92c80b05bc16b68ffed593f4a80950e6dd205da0d",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card3_landscape.pdf": "55c943863ed0e882f4186fc891d253d1f7d1940f0fdd3ca71b8de0bb3fb68146",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page02_card4_landscape.pdf": "02d334a01d274b1655a5534b8f7dcd035659162a04a2ef8569e35e1d32fc4160",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page03_card1_landscape.pdf": "fd9eb8e09491f6c065517b2c200ccf0aa4675239dad50d873d6bf3c297911c1e",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card3_portrait.pdf": "e9c500eb8731f9de9169d4c2f144cd28a78d2256bb4c278465264f105ad6ae39",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card4_portrait.pdf": "1163bd97178358d774a6a2aa6434c5948cef9f340d6a98373ed51e4fd6ecddb5",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card1_portrait.pdf": "7ef0bb4bad53d480c55104f0fd9c90babd192b245c2e65cddaa7df46eae7a104",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page08_card2_portrait.pdf": "f790af08fd5368308e8bae8019e9d406a7f3164dae45345bf5f2dd29083af389",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card2_portrait.pdf": "c14f2f5d83d726d83b2651eb813ef476868230ef9c4ab9e5724c0657bf1cc61f",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card3_portrait.pdf": "66f66de2f2f3a8d086964ddd78f4249a3a19ed4a3a0755879c93f31f3f0b26ca",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card4_portrait.pdf": "630a866b44b64fad63e6c79709e220f9abe79528146d7c7bfd1a6f91801fadd9",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card1_portrait.pdf": "1b09126735dab6b9847bc8a975c8487af90cb8b27fc80970069a148a153945e4",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card2_portrait.pdf": "3abad72f475688b065d616f8a0d71a3bc90a41560414d241659191b22b0468a0",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card3_portrait.pdf": "78debb1f3a4a8b58ea7f7045993a58dbc025583e6836062cc939d8c4679435bc",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card4_portrait.pdf": "33260d5c3ea8f20c91ec5f4f2ea0d5ce0a26831d9aafe68bb6af4a78ea4e4e72",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card1_portrait.pdf": "fc3e0a1318221c05af3ba7d501946fc68c74e9926c9ad4fdf7a56d67cecb4c5a",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page07_card2_portrait.pdf": "819f41c4c816f9a90d11716e4ba6fcba5b378660275d2558eb04b840121d3908",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page04_card1_portrait.pdf": "9f38dbdbf8046069d985d9c4075916a2e93a342d20af2d79e99935a838d5ea69",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card3_portrait.pdf": "6450b5847b6c03854bc6a4ad2d3ea7cd372fdd64f2dc4701caee1072ea21c116",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page05_card4_portrait.pdf": "4196dfd3c0d0e6ef7d402f258dda555a2a5e19d5765dfbc9f8c040ac0a9db237",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card1_portrait.pdf": "1dd54fea013365cd30cc9c9ead40041046d5bd05246cb1b14dc7daf5f52bc641",
+        "layers/warcom/extracted/mandrakes/cards/mandrakes_page06_card2_portrait.pdf": "ed16e58aa804e7d7c061deccc01fe6c01a48d2c2a298dcd9b698138d720806c8"
       },
-      "completed": "2026-08-29T18:46:09.026994+00:00"
+      "completed": "2026-08-29T23:20:39.727423+00:00"
     },
     "extract_artwork": {
       "outputs": {},

@@ -1,9 +1,9 @@
 {
   "team": "hierotek-circle",
-  "generated_at": "2026-08-29T18:44:39.034461+00:00",
+  "generated_at": "2026-08-29T21:54:26.526524+00:00",
   "datacards": [
     {
-      "name": "<image: DeviceN(1,DeviceCMYK,Black), width: 2480, height: 3508, bpc: 8>",
+      "name": "CHRONOMANCER",
       "apl": 3,
       "movement": "6″",
       "save": "3+",
@@ -11,165 +11,312 @@
       "base_size": 40,
       "weapons": [
         {
-          "name": "Aeonstave (ranged)",
+          "name": "억겁장대(원거리)",
           "attacks": "5",
           "hit": "3+",
           "damage": "3/3",
-          "special_rules": "Blast 2\", Lethal 5+, Stun, Magnify*"
+          "special_rules": "폭발 2\", 살상 5+, 혼미, 확대*"
         },
         {
-          "name": "Entropic lance (ranged)",
+          "name": "엔트로피 랜스(원거리)",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/3",
-          "special_rules": "Devastating 3, Piercing 1, Magnify*"
+          "special_rules": "궤멸 3, 관통 1, 확대*"
         },
         {
-          "name": "Aeonstave (melee)",
+          "name": "억겁장대(근접)",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "Lethal 5+, Shock"
+          "special_rules": "살상 5+, 충격"
         },
         {
-          "name": "Entropic lance (melee)",
+          "name": "엔트로피 랜스(근접)",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/6"
         }
-      ],
-      "keywords": [
-        "HIEROTEK CIRCLE",
-        "NECRON",
-        "LEADER",
-        "CRYPTEK",
-        "CHRONOMANCER"
-      ],
-      "unique_actions": [
+      ]
+    },
+    {
+      "name": "PSYCHOMANCER",
+      "apl": 3,
+      "movement": "6″",
+      "save": "3+",
+      "wounds": 14,
+      "base_size": 40,
+      "weapons": [
         {
-          "name": "INTERSTITIAL COMMAND (1AP)",
-          "description": "SUPPORT. Select one other friendly HIEROTEK CIRCLE operative (excluding APPRENTEK and CRYPTEK) visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK operative that’s visible to this operative. That selected operative can immediately perform a 1AP action for free; it cannot move more than or be removed and set up more than 2\" during that action, perform an action it’s already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action while within control range of an enemy operative, or while counteracting."
+          "name": "나락의 랜스(원거리)",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "2/2",
+          "special_rules": "폭발 2\", 2\" 궤멸 1, 관통 2, 확대*"
         },
         {
-          "name": "TIMESPLINTER (1AP)",
-          "description": "SUPPORT. Select one other expended friendly HIEROTEK CIRCLE operative visible to and within 5\" of this operative. Remove it from the killzone and set it back up visible to and within 5\" horizontally of this operative, in a location it can be placed. Note that a Comms Device from universal equipment only affects the first distance of this rule. This operative cannot perform this action while within control range of an enemy operative, during the first turning point, or if a friendly operative has already performed this action during this turning point. CHRONOMANCER ACTIONS"
+          "name": "나락의 랜스(근거리)",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/4",
+          "special_rules": "궤멸 1"
+        }
+      ]
+    },
+    {
+      "name": "TECHNOMANCER",
+      "apl": 3,
+      "movement": "6″",
+      "save": "3+",
+      "wounds": 14,
+      "base_size": 50,
+      "weapons": [
+        {
+          "name": "빛의 지팡이(원거리)",
+          "attacks": "6",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "파쇄, 확대*"
         },
         {
-          "name": "COUNTERTEMPORAL NANOMINE (1AP)",
-          "description": "Place your Countertemporal Nanomine marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. Whenever an enemy operative is within 4\" of your Countertemporal Nanomine marker, subtract 2\" from its Move stat. When this operative is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker. This operative cannot perform this action while within control range of an enemy operative."
+          "name": "빛의 지팡이(근거리)",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "special_rules": "파쇄"
+        }
+      ]
+    },
+    {
+      "name": "PLASMACYTE ACCELERATOR",
+      "apl": 2,
+      "movement": "7″",
+      "save": "5+",
+      "wounds": 5,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "스파크",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "special_rules": "사거리 4\",  관통 1"
         },
         {
-          "name": "CHRONOMETRON (1AP)",
-          "description": "SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative. Until the start of this operative’s next activation, until this operative is incapacitated or until this action is performed again by a friendly operative (whichever comes first), subtract 1 from the Atk stat of an operative’s weapons whenever it’s shooting that selected operative. This operative cannot perform this action while within control range of an enemy operative."
-        },
-        {
-          "name": "INTERSTITIAL COMMAND (1AP)",
-          "description": "SUPPORT. Select one other friendly HIEROTEK CIRCLE operative (excluding APPRENTEK and CRYPTEK) visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK operative that’s visible to this operative. That selected operative can immediately perform a 1AP action for free; it cannot move more than or be removed and set up more than 2\" during that action, perform an action it’s already performed during this turning point, or perform that action again during this turning point."
-        },
-        {
-          "name": "HARBINGER OF DESPAIR (1AP)",
-          "description": "Place your Despair marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. When this operative is next activated, is incapacitated or this action is performed again by a friendly operative (whichever comes first), remove that marker. Whenever an enemy operative is within 2\" of your Despair marker, your opponent must spend 1 additional AP for that enemy operative to perform the Pick Up Marker and mission actions. Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 2\" of your Despair marker. Note this isn’t a change to the APL stat, so any changes are cumulative with this. PSYCHOMANCER ACTIONS"
-        },
-        {
-          "name": "NIGHTMARE SHROUD (1AP)",
-          "description": "Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), whenever an enemy operative within 4\" of this operative is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice and cannot retain attack dice results of less than 6 as critical successes (e.g. as a result of the Lethal, Rending or Severe weapon rules). This operative cannot perform this action while within control range of an enemy operative."
-        },
-        {
-          "name": "VISION OF MADNESS (1AP)",
-          "description": "Select one enemy operative visible to this operative. Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), that selected operative gains one of your Madness tokens. Whenever your opponent would activate an enemy operative that has one of your Madness tokens, you can roll one D6: if the result is equal to or higher than that enemy operative’s APL, they cannot activate it during this activation. If that operative is successfully activated, or there are no other enemy operatives eligible to be activated, remove its Madness token. This operative cannot perform this action while within control range of an enemy operative. PSYCHOMANCER ACTIONS"
-        },
-        {
-          "name": "INTERSTITIAL COMMAND (1AP)",
-          "description": "SUPPORT. Select one other friendly HIEROTEK CIRCLE operative (excluding APPRENTEK and CRYPTEK) visible to and within 6\" of this operative, or visible to and within 6\" of a friendly DESPOTEK operative that’s visible to this operative. That selected operative can immediately perform a 1AP action for free; it cannot move more than or be removed and set up more than 2\" during that action, perform an action it’s already performed during this turning point, or perform that action again during this turning point."
-        },
-        {
-          "name": "CANOPTEK REPAIR (1AP)",
-          "description": "SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative to regain up to 2D3 lost wounds. This operative cannot perform this action while within control range of an enemy operative, or if a friendly operative has already performed this action during this turning point. TECHNOMANCER ACTIONS"
-        },
-        {
-          "name": "AUGMENT WEAPON (1AP)",
-          "description": "SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative. Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), select two of the following weapon rules for one weapon from that selected operative’s datacard to have: Lethal 5+, Rending, Saturate, Severe. Note that if you select a staff of light or arcane conduit, you only select the additional weapon rules for either the ranged or melee profile of that weapon. This operative cannot perform this action while within control range of an enemy operative."
-        },
-        {
-          "name": "REINFORCE METAL (1AP)",
-          "description": "SUPPORT. Select one friendly HIEROTEK CIRCLE operative visible to and within 6\" of this operative. Until the start of this operative’s next activation, until it’s incapacitated or until this action is performed again by a friendly operative (whichever comes first), whenever an attack dice inflicts damage of 3 or more on that operative, subtract 1 from that inflicted damage. This operative cannot perform this action while within control range of an enemy operative. TECHNOMANCER ACTIONS"
-        },
-        {
-          "name": "ACCELERATE (1AP)",
-          "description": "Select one friendly DEATHMARK or IMMORTAL operative visible to and within 6\" of this operative. Until the end of that operative’s next activation, add 1 to its APL stat. This operative cannot perform this action while within control range of an enemy operative. PLASMACYTE ACCELERATOR"
-        },
-        {
-          "name": "REANIMATE (1/2AP)",
-          "description": "Select one of your Reanimation markers visible to and within 6\" of this operative. Roll one D6: on a 3+, a friendly operative is REANIMATED; if you spent 1 additional AP, a friendly operative is automatically REANIMATED (you don’t need to roll one D6). An operative that’s REANIMATED from this unique action is set up expended if it was already expended during this turning point. This operative cannot perform this action while within control range of an enemy operative. PLASMACYTE REANIMATOR"
-        },
-        {
-          "name": "MULTI-DIMENSIONAL VISION (1AP)",
-          "description": "Until the start of this operative’s next activation, whenever it’s shooting, enemy operatives cannot be obscured. This operative cannot perform this action while within control range of an enemy operative. DEATHMARK"
-        },
-        {
-          "name": "INTERSTITIAL COMMAND (1AP)",
-          "description": "SUPPORT. Select one other friendly HIEROTEK CIRCLE operative (excluding APPRENTEK and CRYPTEK) visible to and within 6\" of this operative. That selected operative can immediately perform a 1AP action for free (excluding Accelerate); it cannot move more than or be removed and set up more than 2\" during that action, perform an action it’s already performed during this turning point, or perform that action again during this turning point. This operative cannot perform this action while within control range of an enemy operative, or while counteracting. IMMORTAL DESPOTEK"
+          "name": "손톱",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2"
         }
       ],
       "passive_abilities": [
         {
-          "name": "Scuttler",
-          "description": "• Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\n• This operative can perform the Fall Back action for 1 less AP.\n• This operative cannot use any weapons that aren’t on its datacard, or perform unique actions other than Accelerate."
-        },
-        {
-          "name": "Scuttler",
-          "description": "• Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\n• This operative can perform the Fall Back action for 1 less AP.\n• This operative cannot use any weapons that aren’t on its datacard, or perform unique actions other than Reanimate."
-        },
-        {
-          "name": "Apprentek Assistance",
-          "description": "This operative has the same unique actions as your CRYPTEK operative selected for the battle, but can only perform one CRYPTEK unique action per turning point."
-        },
-        {
-          "name": "Deathmarked",
-          "description": "Whenever this operative ends the Shoot action, the target gains one of your Deathmarked tokens if it wasn’t incapacitated (the primary target, if relevant). Whenever a friendly HIEROTEK CIRCLE DEATHMARK operative is shooting an enemy operative that has one of your Deathmarked tokens, that friendly operative’s ranged weapons have the Seek weapon rule."
-        },
-        {
-          "name": "Steadfast",
-          "description": "Whenever determining control of a marker, you can treat this operative’s APL stat as 3. If you do, this takes precedence over all other rules, meaning any changes to its APL stat are ignored for this."
-        },
-        {
-          "name": "Steadfast",
-          "description": "Whenever determining control of a marker, you can treat this operative’s APL stat as 3. If you do, this takes precedence over all other rules, meaning any changes to its APL stat are ignored for this."
+          "name": "작은 표적",
+          "description": "• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으 로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외 한 다른 모든 규칙(예: 색적, 고지)에 우선합니다.\n• 이 요원이 후퇴 행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다.\n• 이 요원은 자기 데이터카드에 명시되지 않은 무기를 사용할 수 가속"
         }
-      ]
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "PLASMACYTE REANIMATOR",
+      "apl": 2,
+      "movement": "7″",
+      "save": "5+",
+      "wounds": 5,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "원자화 광선",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "special_rules": "사거리 6\", 살상 5+"
+        },
+        {
+          "name": "손톱",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "작은 표적",
+          "description": "• \u0002이\u0002요원은\u0002은폐\u0002명령을\u0002받은\u0002상태로\u0002엄폐\u0002중일\u0002때는\u0002유 효\u0002대상으로\u0002지정되지\u0002않습니다.\u0002이는\u0002공격자가\u00022\"\u0002내 에\u0002있을\u0002때를\u0002제외한\u0002다른\u0002모든\u0002규칙(예:\u0002색적,\u0002고지)에\u0002 우선합니다.\n• \u0002이\u0002요원이\u0002후퇴\u0002행동을\u0002수행하는\u0002데\u0002소모되는\u0002AP가\u0002-1 만큼\u0002변경됩니다.\n• \u0002이\u0002요원은\u0002자기\u0002데이터카드에\u0002명시되지\u0002않은\u0002무기를\u0002사 용할\u0002수\u0002없으며,\u0002소생\u0002이외의\u0002고유\u0002행동을\u0002사용할\u0002수\u0002없습 니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "APPRENTEK",
+      "apl": 3,
+      "movement": "6″",
+      "save": "3+",
+      "wounds": 11,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "비전 도관(원거리)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "관통 1,  확대*"
+        },
+        {
+          "name": "비전 도관(근거리)",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/5"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "어프렌텍 도제",
+          "description": "이 요원은 이번 전투를 위해 선택한 크립텍 요원과 동일한 고유 행동을 수행할 수 있습니다. 단, 크립텍 고유 행동은 전환점당 한 가지만 수행할 수 있습니다."
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "DEATHMARK",
+      "apl": 2,
+      "movement": "5″",
+      "save": "3+",
+      "wounds": 10,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "시냅스 분해기",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/3",
+          "special_rules": "궤멸 2, 중화기(질주 한정), 관통 1, 중상"
+        },
+        {
+          "name": "주먹",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "죽음 인장",
+          "description": "이 요원이 사격 행동을 종료할 때마다, 그 대 상은(주 대상에 한함) 무력화되지 않았다면 죽음 인장 토 큰을 하나 받습니다. 아군 히에로텍 회합 신경엽병 요원 이 죽음 인장 토큰을 가진 적 요원을 대상으로 사격할 때 마다, 그 아군 요원의 원거리 무기에 색적 무기 규칙을 부 여합니다. 다차원 시야"
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "IMMORTAL DESPOTEK",
+      "apl": 2,
+      "movement": "5″",
+      "save": "3+",
+      "wounds": 11,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "가우스 투사기",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "관통 1"
+        },
+        {
+          "name": "테슬라 카빈",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "2\" 궤멸 1"
+        },
+        {
+          "name": "총검",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "확고부동",
+          "description": "\u0002마커\u0002장악\u0002판정\u0002시,\u0002이\u0002요원의\u0002APL\u0002수치를\u00023\u0002 으로\u0002간주할\u0002수\u0002있습니다.\u0002이\u0002효과는\u0002다른\u0002모든\u0002규칙보다\u0002"
+        }
+      ],
+      "unique_actions": []
+    },
+    {
+      "name": "IMMORTAL GUARDIAN",
+      "apl": 2,
+      "movement": "5″",
+      "save": "3+",
+      "wounds": 10,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "가우스 투사기",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "관통 1"
+        },
+        {
+          "name": "테슬라 카빈",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/3",
+          "special_rules": "2\" 궤멸 1"
+        },
+        {
+          "name": "총검",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "확고부동",
+          "description": "마커 장악 판정 시, 이 요원의 APL 수치를 3 으로 간주할 수 있습니다. 이 효과는 다른 모든 규칙보다"
+        }
+      ],
+      "unique_actions": []
+    }
+  ],
+  "equipment": [
+    {
+      "name": "cp",
+      "text": "히에로텍 회합\n팩션 장비\n테서렉트 입방체\n일견 작아 보이는 이 장치는 차원 기술을 사용해 엄청난 양의 사물을 \n저장할 수 있다. 때문에 히에로텍 회합이 회수한 온갖 종류의 자원, \n지식, 유물이 이 입방체에 저장된다.\n각 전략 페이즈의 준비 단계에, 플레이어가 CP를 획득할 \n때, 아군 크립텍 요원이 무력화되지 않았으며, 적 요원의 장\n악 범위에 있지 않으며, 이번 전환점에 소생되지 않았다면, \n이 규칙을 사용할 수 있습니다. 사용 시, D6 하나를 굴립니\n다. 굴림 값이 1이라면 남은 전투 동안 이 규칙을 사용할 수 \n없습니다. 값이 4+라면 플레이어는 1CP를 획득합니다. 이 \n규칙을 통해 2CP를 획득한 이후에는 전투가 종료될 때까지 \n이 규칙을 사용할 수 없습니다."
+    },
+    {
+      "name": "d3-1",
+      "text": "히에로텍 회합\n팩션 장비\n테슬라 뜨개\n크립텍의 명령에 따라 테슬라 에너지로 구성된 비물질적 그물이 \n네크론과 카놉텍 구조체를 감싸며 깜빡인다. 이 널뛰는 아크의 \n사정권에 들어온 적은 뜨겁게 불타오른다.\n전환점당 한 번, 적 요원이 자신의 장악 범위 내에 아군 \n히에로텍 회합 요원이 들어오는 상태로 돌격 행동을 종료 \n시, 이 규칙을 사용할 수 있습니다. 그렇게 할 경우, 그 적 요\n원에 D3+1 피해를 입힙니다."
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "REANIMATION PROTOCOLS",
+      "text": "팩션 규칙\n소생 규례\n네크론의 쓰러진 신체는 음산한 형광에 휩싸인다. 이윽고 에메랄드\n빛 스파크 속에서 잘려나간 사지는 다시 달라붙고 으스러진 신체는 \n재구성된다. 시각 렌즈에 다시 빛이 돌아온 네크론은 다시 일어나 \n전투에 참가한다.\n각\u0002아군\u0002히에로텍 회합\u0002요원이\u0002처음으로\u0002무력화되었을\u0002때,\u0002\n그\u0002요원의\u0002장악\u0002범위\u0002내에\u0002소생\u0002마커\u0002하나를\u0002놓은\u0002다음\u0002킬존\n에서\u0002그\u0002요원을\u0002킬존에서\u0002제거합니다.\u0002무력화되기\u0002전에\u0002받은\u0002\n토큰과\u0002규칙\u0002효과(예:\u0002시간술사\u0002요원의\u0002시간운전기\u0002행동,\u0002중독\u0002\n토큰,\u0002APL\u0002수치\u0002변경,\u0002이식됨\u0002상태)도\u0002모두\u0002제거합니다.\n각\u0002전략\u0002페이즈의\u0002준비\u0002단계에,\u0002소생\u0002마커\u0002하나를\u0002지정하고\u0002\nD6\u0002하나를\u0002굴립니다.\u0002값이\u00021~2라면\u0002그\u0002소생\u0002마커를\u0002킬존에\u0002\n그대로\u0002두고\u0002다른\u0002소생\u0002마커(소생\u0002마커가\u0002킬존에\u0002또\u0002있다면)\n를\u0002대상으로\u0002이\u0002절차를\u0002반복합니다.\u0002값이\u00023+라면\u0002그\u0002요원은\u0002\n소생됩니다.\n다음 면에 계속 \n히에로텍 회합\n\n---\n\n각\u0002소생\u0002마커는\u0002전환점당\u0002한\u0002번\u0002지정할\u0002수\u0002있으며,\u00023+의\u0002굴림\u0002\n값이\u0002나온\u0002다음에는\u0002다른\u0002소생\u0002마커를\u0002지정하지\u0002않습니다.\u0002요\n원이\u0002소생될\u0002때마다\u0002다음\u0002규칙을\u0002적용합니다.\n• \u0002요원을\u0002그\u0002소생\u0002마커가\u0002있던\u0002위치에\u0002배치합니다(더\u0002이상\u0002\n무력화\u0002상태가\u0002아님).\u0002요원은\u0002그\u0002소생\u0002마커의\u00023\"\u0002내,\u0002그리\n고\u0002적\u0002요원의\u0002장악\u0002범위가\u0002아닌\u0002곳에\u0002배치해야\u0002합니다(이\n렇게\u0002배치할\u0002수\u0002없다면,\u0002굴림\u0002값으로\u00021~2가\u0002나온\u0002것으로\u0002\n취급).\n• \u0002요원의\u0002남은\u0002체력은\u00021입니다.\n• \u0002요원은\u0002플레이어가\u0002원하는\u0002명령을\u0002받은\u0002준비\u0002상태가\u0002됩\n니다.\n• \u0002그\u0002소생\u0002마커를\u0002제거합니다.\n소생된\u0002요원은\u0002더\u0002이상\u0002무력화\u0002상태가\u0002아니므로,\u0002상대의\u0002제\n거\u0002작전\u0002제거\u0002등급은\u0002전투\u0002도중에\u0002낮아질\u0002수도\u0002있습니다(VP\n도\u0002함께\u0002낮아짐).\u0002하지만\u0002상대가\u0002다른\u0002방식(예:\u0002전술\u0002작전)\u0002\n으로\u0002획득한\u0002VP는\u0002소급하여\u0002변경되지\u0002않습니다."
+    },
+    {
+      "name": "MAGNIFY",
+      "text": "히에로텍 회합\n팩션 규칙\n확대\n네크론 크립텍은 종복과 아랫것들에게 자기 의지를 강요할 수 있다. \n크립텍의 의식이 투사된 부하들은 향상된 전투 능력을 발휘하며 적\n을 말살한다.\n이 킬팀의 일부 히에로텍 회합 어프렌텍 및 히에로텍 회합 \n크립텍이 보유한 무기에는 아래와 같은 확대 무기 규칙이 부\n여되어 있습니다.\n*확대: 이 요원이 이 무기로 사격 행동을 수행할 때마다, 대\n상이 이 요원의 시야에 들어오고, 적 요원의 장악 범위 내\n에 있지 않은 다른 아군 히에로텍 회합 어프렌텍 또는 히에로\n텍 회합 크립텍 요원이 교전 명령을 받았으며 이 요원의 시\n야에 들어왔다면, 이 규칙을 사용할 수 있습니다. 그렇게 할 \n경우, 유효 대상, 그 사격 행동의 요건, 엄폐, 차폐를 판단할 \n때, 그 다른 요원을 운용 중인 요원으로 취급합니다. 이때 이 \n무기에는 그 행동이 종료될 때까지 집요 무기 규칙이 부여\n됩니다."
+    },
+    {
+      "name": "LIVING METAL",
+      "text": "히에로텍 회합\n팩션 규칙\n생체 금속\n네크론의 금속 피부에는 어느 정도의 정신이 깃들어 있으며, 전투 \n중에도 궤멸적인 피해를 자가 수복한다.\n각 전략 페이즈의 준비 단계에, 그 단계의 다른 모든 팩션 규\n칙(예: 소생 규례)을 처리하기 전, 각 히에로텍 회합 요원은 \n잃어버린 체력을 D3+1만큼 회복합니다(각 요원마다 별도\n로 굴림)."
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "apl-1",
+      "text": "히에로텍 회합\n화력전 플로이\n기능 소생\n히에로텍 회합은 쓰러진 네크론을 계속 소생시키면서 목표물에 \n대한 장악력을 점차적으로 강화한다.\n이 화력전 플로이는 마커의 장악 여부를 판정할 때 사용할 \n수 있습니다. 사용 시 아군의 소생 마커 하나를 지정합니다. \n다음 전환점이 시작될 때까지, 마커의 장악 여부를 판정할 \n때, 그 소생 마커를 APL 수치가 1인 아군 히에로텍 회합 요\n원으로 취급합니다. 순교자 전술 작전(인가 작전 2025)과 \n관련하여, 이 플로이는 아무 효과도 제공하지 않습니다."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION",
-      "text": "HIEROTEK CIRCLE \nKILL TEAM\nARCHETYPES: RECON, SECURITY\nOPERATIVES\n \n↘ 1 HIEROTEK CIRCLE operative selected from \nthe following list:\n• CHRONOMANCER operative with one of the \nfollowing options:\n \n○ Aeonstave\n \n○ Entropic lance\n• PSYCHOMANCER\n• TECHNOMANCER \n \n↘ 1 PLASMACYTE ACCELERATOR operative \n \n↘ 1 PLASMACYTE REANIMATOR operative \n \n↘ 5 HIEROTEK CIRCLE operatives selected from \nthe following list:\n• APPRENTEK\n• DEATHMARK\nCONTINUES ON OTHER SIDE\n\n---\n\n• DESPOTEK with one of the following options:\n \n○ Gauss blaster; bayonet\n \n○ Tesla carbine; bayonet\n• GUARDIAN with one of the following options:\n \n○ Gauss blaster; bayonet\n \n○ Tesla carbine; bayonet \nOther than DEATHMARK and GUARDIAN \noperatives, your kill team can only include each \noperative on this list once.\n\n---\n\nHIEROTEK CIRCLE\nFACTION RULE\nREANIMATION PROTOCOLS\nThe body of a slain Necron becomes wreathed in an \neerie glow. Severed limbs reattach and broken bodies \nreform in a shower of emerald sparks. Eye-lenses flicker \nonce more and the Necron rises again to rejoin the fight.\nThe first time each friendly HIEROTEK CIRCLE \noperative is incapacitated, before it's removed \nfrom the killzone, place one of your Reanimation \nmarkers within its control range. Then remove \nit as incapacitated, also removing any tokens \nand rules effects it had (e.g. CHRONOMANCER \noperative’s Chronometron action, Poison tokens, \nAPL stat changes, being implanted, etc.).\nIn the Ready step of each Strategy phase, select \none of your Reanimation markers and roll one D6: \non a 1-2, leave that Reanimation marker in the \nkillzone and repeat this process with a different \none of your Reanimation markers (if any); on a \n3+, an operative is REANIMATED.\nCONTINUES ON OTHER SIDE\n\n---\n\nYou can only select each of your Reanimation \nmarkers once per turning point, and once you roll \na 3+, you don’t select any more for that turning \npoint. Whenever an operative is REANIMATED:\n• Set up the operative that Reanimation marker \nwas placed for (it’s no longer incapacitated). It \nmust be placed within 3\" of that Reanimation \nmarker and not within control range of enemy \noperatives (if you cannot do so, treat the roll as \n1-2 instead).\n• It has 1 wound remaining.\n• It has an order of your choice and is ready.\n• Remove that Reanimation marker.\nFor the purposes of the kill op, your opponent \ntreats your starting number of HIEROTEK \nCIRCLE operatives as 5 (in other words, \ntheir kill grade goes up whenever a friendly \nHIEROTEK CIRCLE operative is incapacitated, \nto a maximum kill grade of 5, and goes down \nwhenever a friendly HIEROTEK CIRCLE operative \nis REANIMATED). REANIMATED operatives don’t \nretroactively change any other VPs your opponent \nhas scored, e.g. from tac ops.\n\n---\n\nHIEROTEK CIRCLE\nFACTION RULE\nMAGNIFY\nNecron Crypteks may impose their will over their thralls \nand underlings, projecting their consciousness into \nthese lesser beings in order to enhance their combat \nability and ensure the obliteration of the enemy.\nSome HIEROTEK CIRCLE APPRENTEK and \nHIEROTEK CIRCLE CRYPTEK weapons in this \nteam’s rules have the Magnify weapon rule below.\n*Magnify: Whenever this operative is performing \nthe Shoot action with this weapon, if the target \nis visible to this operative, and another friendly \nHIEROTEK CIRCLE APPRENTEK or HIEROTEK \nCIRCLE CRYPTEK operative has an Engage \norder and is visible to this operative, you can use \nthis rule. If you do, treat that operative as the \nactive operative for the purposes of determining \na valid target, that Shoot action’s conditions, \ncover and obscured. If you do, this weapon \nhas the Ceaseless weapon rule until the end of \nthat action.\n\n---\n\nHIEROTEK CIRCLE\nFACTION RULE\nLIVING METAL\nThe Necrons’ semi-sentient metal skin enables them to \nheal devastating damage in the midst of battle.\nIn the Ready step of each Strategy phase, \nafter resolving all other rules in this step (e.g. \nReanimation Protocols faction rule), each friendly \nHIEROTEK CIRCLE operative regains up to D3+1 \nlost wounds (roll separately for each).\n\n---\n\nMARKER/TOKEN GUIDE\nTimesplinter \ntoken\nChronometron \ntoken\nMulti-\ndimensional \nVision token\nDeathmarked \ntoken\nReinforce \nMetal token\nMadness \ntoken\nDespair \nmarker\nReanimation \nmarker\nCountertemporal Nanomine marker\nMagnification \nConduits \ntoken\nPhase Shifter \ntoken\nNightmare \nShroud token\nHIEROTEK CIRCLE\nAugment \nWeapon token\n\n---\n\nHIEROTEK CIRCLE\nSTRATEGY PLOY\nRELENTLESS ONSLAUGHT\nNecrons are relentless and implacable, making up for \ntheir lack of accuracy with unthinking determination.\nWhenever a friendly HIEROTEK CIRCLE \noperative is shooting an operative within 8\" of it, \nthat friendly operative’s ranged weapons have \nthe Balanced weapon rule. Note that when you’re \nusing the Magnify weapon rule, this operative \nmust still be within 8\" of the target to use this \nrule (not the other friendly operative from which \nyou’re determining a valid target).\n\n---\n\nHIEROTEK CIRCLE\nSTRATEGY PLOY\nUNDYING ANDROIDS\nThe living metal forms of Necrons are resistant to the \nmajority of weapons wielded by the galaxy’s primitive \nbiological species.\nWhenever an operative is shooting a friendly \nHIEROTEK CIRCLE operative, if you cannot \nretain any cover saves, you can retain one of \nyour defence dice as a normal success without \nrolling it.\n\n---\n\nHIEROTEK CIRCLE\nSTRATEGY PLOY\nMETHODICAL ELIMINATION\nNecrons often trade speed of movement for steadfast \nresilience and unrelenting firepower.\nFriendly HIEROTEK CIRCLE operatives’ \nmelee weapons have the Accurate 1 weapon \nrule. Whenever a friendly HIEROTEK CIRCLE \noperative is fighting during an activation in which \nit hasn’t moved more than its Move stat, or \nwhenever it’s retaliating, its melee weapons have \nthe Accurate 2 weapon rule instead.\n\n---\n\nHIEROTEK CIRCLE\nSTRATEGY PLOY\nCOMMAND UNDERLINGS\nNecron Crypteks and Apprenteks wield their underlings \nlike puppets, directing their every movement and action \nin order to confound the enemy.\nSelect one of the following:\n• SUPPORT. Each other friendly HIEROTEK \nCIRCLE operative visible to and within 6\" of a \nfriendly CRYPTEK operative can immediately \nperform a free Dash action in an order of \nyour choice.\n• SUPPORT. Each other friendly HIEROTEK \nCIRCLE operative (excluding CRYPTEK) visible \nto and within 3\" of a friendly APPRENTEK \noperative can immediately perform a free Dash \naction in an order of your choice.\n\n---\n\nHIEROTEK CIRCLE\nFIREFIGHT PLOY\nCORTICAL CONTROL\nCrypteks and their Apprentek servants may project their \nwill directly into the minds of their Canoptek constructs, \neven across vast distances.\nUse this firefight ploy when a friendly HIEROTEK \nCIRCLE APPRENTEK or HIEROTEK CIRCLE \nCRYPTEK operative performs a SUPPORT unique \naction. Until the end of that action, for the \npurposes of selecting another friendly operative, \nignore the distance requirement (only visibility is \na requirement).\n\n---\n\nHIEROTEK CIRCLE\nFIREFIGHT PLOY\nREANIMATED FUNCTION\nThe continual reanimation of fallen Necrons enables \nthe Hierotek Circle to steadily tighten its grip on \nits objectives.\nUse this firefight ploy when determining control \nof a marker. Select one of your Reanimation \nmarkers. Until the start of the next turning point, \nwhenever determining control of a marker, treat \nthat Reanimation marker as a friendly HIEROTEK \nCIRCLE operative that has an APL stat of 1. For \nthe purposes of the Martyrs tac op (Approved Ops \n2025), this ploy has no effect.\n\n---\n\nHIEROTEK CIRCLE\nFIREFIGHT PLOY\nLIVING LIGHTNING\nTesla weapons project living lightning that grows in \npower, leaping between targets as it drains life from \nthe living.\nUse this firefight ploy when a friendly HIEROTEK \nCIRCLE IMMORTAL operative is performing the \nShoot action and you select a tesla carbine. Until \nthe end of that action, that weapon doesn’t have \nthe 2\" from its Devastating weapon rule but has \nthe Blast 2\" weapon rule.\n\n---\n\nHIEROTEK CIRCLE\nFIREFIGHT PLOY\nDIMENSIONAL AMBUSH\nShifting between dimensions, a Deathmark reveals its \nposition only when a kill shot presents itself.\nUse this firefight ploy during a friendly HIEROTEK \nCIRCLE DEATHMARK operative’s activation, \nif it has a Conceal order. During that activation, \nthat operative can perform the Guard action \nregardless of the killzone and while it has a \nConceal order (see close quarters rules, Kill Team \nCore Book), but when you perform the free Shoot \nor Fight action during the interruption, you must \nchange its order to Engage.\n\n---\n\nHIEROTEK CIRCLE\nFACTION EQUIPMENT\nMAGNIFICATION CONDUITS\nThis device allows any Necron well-versed in arcane \nhypertechnology to peer through the occular lenses of \na nearby thrall and channel ranged attacks through the \nbody of their dominated underling.\nOnce per turning point, when a friendly \nHIEROTEK CIRCLE APPRENTEK or HIEROTEK \nCIRCLE CRYPTEK operative is performing the \nShoot action, you can use this rule. If you do, \nselect one other friendly HIEROTEK CIRCLE \noperative (excluding PLASMACYTE) that has \nan Engage order and is visible to that friendly \noperative. Until the end of that action, that other \nfriendly operative can be treated as the active \noperative for the Magnify weapon rule.\n\n---\n\nHIEROTEK CIRCLE\nFACTION EQUIPMENT\nPHASE SHIFTER\nAt a moment’s notice, a Cryptek can use this device to \nflit between dimensions to avoid incoming fire.\nOnce per turning point, when an operative is \nshooting a friendly CRYPTEK operative, at the \nstart of the Roll Defence Dice step, you can use \nthis rule. If you do, worsen the x of the Piercing \nweapon rule by 1 (if any) until the end of that \nsequence. Note that Piercing 1 would therefore \nbe ignored.\n\n---\n\nHIEROTEK CIRCLE\nFACTION EQUIPMENT\nTESSERACT CUBE\nThis device uses dimensional technology to hold \nconsiderably more than its size suggests, becoming \na vault for all manner of resources, knowledge and \nartefacts recovered by the Hierotek Circle.\nIn the Ready step of each Strategy phase, when \nyou gain CP, if a friendly CRYPTEK operative isn’t \nincapacitated, isn’t within control range of enemy \noperatives and hasn’t been REANIMATED this \nturning point, you can use this rule. If you do, roll \none D6: on a 1, you cannot use this rule for the \nrest of the battle; on a 4+, you gain 1CP. Once \nyou’ve gained 2CP from this rule, you cannot use \nit for the rest of the battle.\n\n---\n\nHIEROTEK CIRCLE\nFACTION EQUIPMENT\nTESLA WEAVE\nUpon the Cryptek’s command, an insubstantial web \nof tesla energy flickers from Necron to Canoptek \nconstruct, searing any enemy caught within its \nleaping arcs.\nOnce per turning point, when an enemy operative \nends the Charge action with friendly HIEROTEK \nCIRCLE operatives within its control range, you \ncan use this rule. If you do, inflict D3+1 damage \non that enemy operative.",
-      "selection": {
-        "SUPPORT HIEROTEK": [],
-        "CHRONOMANCER": [
-          [
-            "Aeonstave",
-            "Entropic lance"
-          ]
-        ],
-        "PSYCHOMANCER": [],
-        "TECHNOMANCER": [],
-        "APPRENTEK": [],
-        "DEATHMARK": [],
-        "DESPOTEK": [
-          [
-            "Gauss blaster; bayonet",
-            "Tesla carbine; bayonet"
-          ]
-        ],
-        "GUARDIAN": [
-          [
-            "Gauss blaster; bayonet",
-            "Tesla carbine; bayonet one of your Reanimation markers and roll one D6: on a 1-2, leave that Reanimation marker in the one of your Reanimation markers (if any); on a markers once per turning point, and once you roll a 3+, you don’t select any more for that turning",
-            "Set up the operative that Reanimation marker was placed for (it’s no longer incapacitated). It marker and not within control range of enemy this rule. If you do",
-            "treat that operative as the active operative for the purposes of determining token token rule (not the other friendly operative from which your defence dice as a normal success without"
-          ]
-        ]
-      }
+      "name": "OPERATIVE SELECTION HIEROTEK CIRCLE",
+      "text": "히에로텍 회합 \n킬 팀\n아키타입: 정찰, 경비\n요원 목록\n \n↘\u00021\u0002히에로텍 회합\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002시간술사\u0002요원,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002\n장비합니다.\n \n○\n\u0002억겁장대\n \n○\n\u0002앤트로피\u0002랜스\n• \u0002정신술사\n• \u0002기계술사\u0002\n \n↘\u00021\u0002전리세포 가속기\u0002요원\n \n↘\u00021\u0002전리세포 소생기\u0002요원\n \n↘\u00025\u0002히에로텍 회합\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002어프렌텍\n• \u0002신경엽병\n다음 면에 계속\n\n---\n\n• \u0002데스포텍,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002가우스\u0002투사기,\u0002총검\n \n○\n\u0002테슬라\u0002카빈,\u0002총검\n• \u0002수호자,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002가우스\u0002투사기,\u0002총검\n \n○\n\u0002테슬라\u0002카빈,\u0002총검\u0002\n신경엽병\u0002및\u0002수호자\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002\n킬\u0002팀에\u0002한\u0002번씩만\u0002편성할\u0002수\u0002있습니다.",
+      "selection": {}
     }
   ]
 }
