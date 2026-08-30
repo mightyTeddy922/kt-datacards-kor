@@ -5,6 +5,7 @@ import copy
 import json
 import re
 import sys
+from collections import defaultdict, deque
 from pathlib import Path
 from typing import Any
 
@@ -26,6 +27,85 @@ DEFAULT_DELIVERABLE_JSON = (
 UPSTREAM_REPO = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
 KOREAN_REPO = "https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main"
 TEAM_TAG = "_Faction_Decks"
+GLOBAL_OBJECT_URLS_PATH = ROOT / "output" / "object-urls.json"
+MANUAL_NAME_MAPS: dict[str, dict[str, str]] = {
+    "blades-of-khaine": {
+        "blades-of-khaine-aspect-techniques": "blades-of-khaine-일면-기술",
+        "blades-of-khaine-dire-avenger-card1": "blades-of-khaine-절박한-복수자",
+        "blades-of-khaine-dire-avenger-card2": "blades-of-khaine-절박한-복수자-2",
+        "blades-of-khaine-dire-avenger-card3": "blades-of-khaine-절박한-복수자-3",
+        "blades-of-khaine-dire-avenger-card4": "blades-of-khaine-절박한-복수자-4",
+        "blades-of-khaine-dire-avenger-card5": "blades-of-khaine-절박한-복수자-5",
+        "blades-of-khaine-howling-banshee-card1": "blades-of-khaine-울부짖는-밴시",
+        "blades-of-khaine-howling-banshee-card2": "blades-of-khaine-울부짖는-밴시-2",
+        "blades-of-khaine-howling-banshee-card3": "blades-of-khaine-울부짖는-밴시-3",
+        "blades-of-khaine-howling-banshee-card4": "blades-of-khaine-울부짖는-밴시-4",
+        "blades-of-khaine-howling-banshee-card5": "blades-of-khaine-울부짖는-밴시-5",
+        "blades-of-khaine-striking-scorpion-card1": "blades-of-khaine-엄습하는-전갈",
+        "blades-of-khaine-striking-scorpion-card2": "blades-of-khaine-엄습하는-전갈-2",
+        "blades-of-khaine-striking-scorpion-card3": "blades-of-khaine-엄습하는-전갈-3",
+        "blades-of-khaine-striking-scorpion-card4": "blades-of-khaine-엄습하는-전갈-4",
+        "blades-of-khaine-striking-scorpion-card5": "blades-of-khaine-엄습하는-전갈-5",
+    },
+    "exodite-dragon-masters": {
+        "exodite-dragon-masters-bladed-stance": "exodite-dragon-masters-날-선-자세",
+        "exodite-dragon-masters-cleansing-of-the-pale-moon": "exodite-dragon-masters-창백한-달의-정화",
+        "dragon-master-clanblade": "exodite-dragon-masters-용의-달인-부족검",
+        "drakolithe": "exodite-dragon-masters-달음룡붙이",
+        "exodite-dragon-masters-clan-talismans": "exodite-dragon-masters-부족-액막이",
+        "exodite-dragon-masters-draconic-cavalry-tactics": "exodite-dragon-masters-용기병-전술",
+        "exodite-dragon-masters-draconic-fury": "exodite-dragon-masters-용의-분노",
+        "exodite-dragon-masters-drakesteed-agility": "exodite-dragon-masters-달음룡-민첩성",
+        "exodite-dragon-masters-dragonscale-mesh": "exodite-dragon-masters-용비늘-그물망",
+        "exodite-dragon-masters-earthen-wrath": "exodite-dragon-masters-대지가-빚은-분노",
+        "exodite-dragon-masters-elusive-phantasm": "exodite-dragon-masters-닿지-않는-환영",
+        "exodite-dragon-masters-fated-shot": "exodite-dragon-masters-운명이-깃든-한-발",
+        "exodite-dragon-masters-feral-hunger": "exodite-dragon-masters-야생의-허기",
+        "exodite-dragon-masters-focused-reflection": "exodite-dragon-masters-초점-반사",
+        "exodite-dragon-masters-friendly-operative-has-speed-4-you-can-retain": "exodite-dragon-masters-기민한-속도",
+        "exodite-dragon-masters-gloaming-mantle": "exodite-dragon-masters-땅거미-망토",
+        "exodite-dragon-masters-leap": "exodite-dragon-masters-뜀뛰기",
+        "exodite-dragon-masters-lileathan-crystal-matrices": "exodite-dragon-masters-릴리아산-수정-매트릭스",
+        "exodite-dragon-masters-mercurial-speed": "exodite-dragon-masters-기민한-속도",
+        "exodite-dragon-masters-moonsong-cull": "exodite-dragon-masters-말살의-달노래",
+        "exodite-dragon-masters-nexus-sentinel": "exodite-dragon-masters-연결체-파수꾼",
+        "exodite-dragon-masters-nomad-executioner": "exodite-dragon-masters-방랑하는-처단자",
+        "exodite-dragon-masters-ride-them-down": "exodite-dragon-masters-짓밟고-달려가라",
+        "exodite-dragon-masters-riding-mastery": "exodite-dragon-masters-기마술-대가",
+        "exodite-dragon-masters-sinuous-flux": "exodite-dragon-masters-유연한-흐름",
+        "exodite-dragon-masters-sow-the-seeds": "exodite-dragon-masters-파종",
+        "exodite-dragon-masters-speartip-of-the-clan": "exodite-dragon-masters-부족의-창끝",
+        "exodite-dragon-masters-spirit-stones": "exodite-dragon-masters-혼백석",
+        "exodite-dragon-masters-spectral-nimbus": "exodite-dragon-masters-영적-후광",
+        "dragon-master-leystalker": "exodite-dragon-masters-용의-달인-지맥추적자",
+        "dragon-master-stonesinger": "exodite-dragon-masters-용의-달인-돌노래꾼",
+        "exodite-dragon-masters-survivalist-spirit": "exodite-dragon-masters-생존주의-정신",
+        "exodite-dragon-masters-wails-of-the-world": "exodite-dragon-masters-세계의-곡성",
+        "exodite-dragon-masters-wind-swift-precision": "exodite-dragon-masters-질풍-속-정밀함",
+        "exodite-dragon-masters-winds-grace": "exodite-dragon-masters-바람의-은혜",
+        "exodite-dragon-masters-token-guide-card1": "exodite-dragon-masters-token-guide",
+        "exodite-dragon-masters-token-guide-card2": "exodite-dragon-masters-token-guide-2",
+    },
+    "imperial-navy-breachers": {
+        "navis-cat-unit": "cat",
+        "navis-gheistskull": "imperial-navy-breachers-해군-가이스트스컬",
+    },
+    "inquisitorial-agents": {
+        "inquisitorial-agents-death-korps": "inquisitorial-agents-bruiser",
+        "inquisitorial-agents-exaction-squad": "inquisitorial-agents-castigator",
+        "inquisitorial-agents-imperial-navy-breachers": "inquisitorial-agents-armsman",
+        "inquisitorial-agents-kasrkin": "inquisitorial-agents-combat-medic",
+        "inquisitorial-agents-sisters-of-silence": "inquisitorial-agents-prosecutor",
+        "inquisitorial-agents-tempestus-scions": "inquisitorial-agents-medic",
+        "tome-skull": "inquisitorial-agents-톰스컬",
+    },
+    "kasrkin": {
+        "kasrkin-rapid-fire": "kasrkin-속사",
+    },
+    "spectre-squad": {
+        "spectre-vox-relay-beacon": "spectre-squad-유령-분대-복스중계-신호기",
+    },
+}
 
 
 def load_json(path: Path) -> Any:
@@ -87,140 +167,354 @@ def collect_custom_deck_objects(obj: dict[str, Any]) -> list[dict[str, Any]]:
     ]
 
 
-def first_deck_url(obj: dict[str, Any]) -> str:
-    custom = obj.get("CustomDeck")
-    if not isinstance(custom, dict) or not custom:
-        return ""
-    first = next(iter(custom.values()))
-    if not isinstance(first, dict):
-        return ""
-    return str(first.get("FaceURL") or "")
-
-
-def deck_role(obj: dict[str, Any]) -> str:
-    nickname = str(obj.get("Nickname") or "").strip().lower()
-    url = first_deck_url(obj).lower()
-
-    if nickname == "datacards" or "/datacards/" in url:
-        return "datacards"
-    if "faction rules" in nickname or "/faction_rules/" in url or "/faction-rules/" in url:
-        return "faction-rules"
-    if nickname == "equipment" or "/equipment/" in url:
-        return "equipment"
-    if "firefight ploys" in nickname or "/firefight_ploys/" in url or "/ploys/firefight/" in url:
-        return "firefight-ploys"
-    if "strategy ploys" in nickname or "/strategy_ploys/" in url or "/ploys/strategy/" in url:
-        return "strategy-ploys"
-    if "token-guide" in nickname or "/token_guide/" in url or "/token-guide/" in url:
-        return "token-guide"
-    if "operative" in nickname or "/operative-selection/" in url or "/operatives_selection/" in url:
-        return "operative-selection"
-    return re.sub(r"[^a-z0-9]+", "-", nickname).strip("-") or "unknown"
-
-
-PRESERVED_OBJECT_FIELDS = (
-    "GUID",
-    "Transform",
-    "LayoutGroupSortIndex",
-    "LuaScript",
-    "LuaScriptState",
-    "XmlUI",
-    "GMNotes",
-    "Name",
-    "Nickname",
-    "Tags",
-    "Tooltip",
-    "Description",
-    "SidewaysCard",
-)
-
-PRESERVED_CARD_FIELDS = (
-    "GUID",
-    "Transform",
-    "LayoutGroupSortIndex",
-    "LuaScript",
-    "LuaScriptState",
-    "XmlUI",
-    "GMNotes",
-    "Name",
-    "Nickname",
-    "Tooltip",
-    "Description",
-    "SidewaysCard",
-)
-
-
-def preserve_fields(dst: dict[str, Any], src: dict[str, Any], fields: tuple[str, ...]) -> None:
-    for key in fields:
-        if key in dst:
-            src[key] = copy.deepcopy(dst[key])
-
-
-def replace_deck_object(dst: dict[str, Any], src: dict[str, Any]) -> dict[str, Any]:
-    replaced = copy.deepcopy(src)
-    preserve_fields(dst, replaced, PRESERVED_OBJECT_FIELDS)
-
-    src_cards = contained_objects(replaced)
-    dst_cards = contained_objects(dst)
-    for src_card, dst_card in zip(src_cards, dst_cards):
-        preserve_fields(dst_card, src_card, PRESERVED_CARD_FIELDS)
-    return replaced
-
-
-def copy_custom_deck_urls(dst: dict[str, Any], src: dict[str, Any]) -> int:
-    dst_custom = dst.get("CustomDeck")
-    src_custom = src.get("CustomDeck")
-    if not isinstance(dst_custom, dict) or not isinstance(src_custom, dict):
+def copy_custom_entry_urls(dst_info: dict[str, Any], src_info: dict[str, Any]) -> int:
+    if not isinstance(dst_info, dict) or not isinstance(src_info, dict):
         return 0
-
-    dst_items = [item for _, item in sorted(dst_custom.items(), key=lambda pair: pair[0])]
-    src_items = [item for _, item in sorted(src_custom.items(), key=lambda pair: pair[0])]
-    if len(dst_items) != len(src_items):
-        return 0
-
     changed = 0
-    for dst_info, src_info in zip(dst_items, src_items):
-        if not isinstance(dst_info, dict) or not isinstance(src_info, dict):
-            continue
-        for field in ("FaceURL", "BackURL"):
-            new_value = src_info.get(field)
-            if new_value and dst_info.get(field) != new_value:
-                dst_info[field] = new_value
-                changed += 1
+    for field in ("FaceURL", "BackURL"):
+        new_value = src_info.get(field)
+        if new_value and dst_info.get(field) != new_value:
+            dst_info[field] = new_value
+            changed += 1
     return changed
 
 
-def patch_team_box_images(dst_box: dict[str, Any], src_box: dict[str, Any], team_slug: str) -> tuple[int, bool]:
+def first_custom_entry(obj: dict[str, Any]) -> dict[str, Any] | None:
+    custom = obj.get("CustomDeck")
+    if not isinstance(custom, dict) or not custom:
+        return None
+    first = next(iter(custom.values()))
+    return first if isinstance(first, dict) else None
+
+
+def object_nickname(obj: dict[str, Any]) -> str:
+    return str(obj.get("Nickname") or "").strip().lower()
+
+
+def object_state_root(data: Any) -> dict[str, Any] | None:
+    if isinstance(data, dict) and isinstance(data.get("ObjectStates"), list) and data["ObjectStates"]:
+        first = data["ObjectStates"][0]
+        if isinstance(first, dict):
+            return first
+    return data if isinstance(data, dict) else None
+
+
+def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
+    result: dict[str, dict[str, str]] = {}
+
+    sources: list[dict[str, Any]] = []
+    path = ROOT / "output" / team_slug / f"{team_slug}-object-urls.json"
+    if path.exists():
+        sources.append(load_json(path))
+
+    if GLOBAL_OBJECT_URLS_PATH.exists():
+        global_data = load_json(GLOBAL_OBJECT_URLS_PATH)
+        team_data = global_data.get(team_slug)
+        if isinstance(team_data, dict):
+            sources.append(team_data)
+
+    for data in sources:
+        for entry in data.get("objects", []):
+            if not isinstance(entry, dict):
+                continue
+            face_url = str(entry.get("face_url") or "")
+            if not face_url:
+                continue
+            name = str(entry.get("name") or "").strip().lower()
+            if name:
+                result[name] = {
+                    "FaceURL": face_url,
+                    "BackURL": str(entry.get("back_url") or ""),
+                }
+
+    cards_root = ROOT / "output" / team_slug / "cards"
+    if cards_root.exists():
+        grouped: dict[str, dict[str, str]] = {}
+        for front_path in cards_root.rglob("*-front.jpg"):
+            rel = front_path.relative_to(ROOT / "output").as_posix()
+            back_path = front_path.with_name(front_path.name.replace("-front.jpg", "-back.jpg"))
+            back_rel = back_path.relative_to(ROOT / "output").as_posix() if back_path.exists() else ""
+            name = front_path.stem.removesuffix("-front").lower()
+            grouped[name] = {
+                "FaceURL": f"{KOREAN_REPO}/output/{rel}",
+                "BackURL": f"{KOREAN_REPO}/output/{back_rel}" if back_rel else "",
+            }
+        result.update(grouped)
+
+    tts_cards_root = ROOT / "output" / team_slug / "tts_objects" / "cards"
+    if tts_cards_root.exists():
+        for path in tts_cards_root.rglob("*.json"):
+            try:
+                data = load_json(path)
+            except Exception:
+                continue
+
+            obj = object_state_root(data)
+            if not obj:
+                continue
+
+            custom_entry = first_custom_entry(obj)
+            if not custom_entry:
+                continue
+
+            face_url = str(custom_entry.get("FaceURL") or "")
+            if not face_url:
+                continue
+
+            url_info = {
+                "FaceURL": face_url,
+                "BackURL": str(custom_entry.get("BackURL") or ""),
+            }
+            keys = {object_nickname(obj), path.stem.strip().lower()}
+            for key in keys:
+                if key:
+                    result[key] = url_info
+
+    tts_decks_root = ROOT / "output" / team_slug / "tts" / "cardbox" / "decks"
+    if tts_decks_root.exists():
+        for path in tts_decks_root.rglob("*.json"):
+            try:
+                data = load_json(path)
+            except Exception:
+                continue
+
+            obj = object_state_root(data)
+            if not obj:
+                continue
+
+            custom_entry = first_custom_entry(obj)
+            if not custom_entry:
+                continue
+
+            face_url = str(custom_entry.get("FaceURL") or "")
+            if not face_url:
+                continue
+
+            url_info = {
+                "FaceURL": face_url,
+                "BackURL": str(custom_entry.get("BackURL") or ""),
+            }
+            nickname = object_nickname(obj)
+            keys = {nickname, path.stem.strip().lower()}
+            if nickname and not nickname.startswith(team_slug):
+                keys.add(f"{team_slug}-{nickname}")
+            for key in keys:
+                if key:
+                    result[key] = url_info
+    return result
+
+
+def normalize_name(value: str) -> str:
+    text = re.sub(r"[^0-9a-z가-힣]+", "", value.strip().lower())
+    return text
+
+
+def load_team_card_aliases(team_slug: str) -> dict[str, set[str]]:
+    cards_root = ROOT / "output" / team_slug / "tts_objects" / "cards"
+    if not cards_root.exists():
+        return {}
+
+    grouped_names: dict[tuple[str, int], set[str]] = defaultdict(set)
+    for path in cards_root.rglob("*.json"):
+        try:
+            data = load_json(path)
+        except Exception:
+            continue
+
+        nickname = object_nickname(data)
+        guid = str(data.get("GUID") or "").strip().lower()
+        card_id = int(data.get("CardID") or 0)
+        if not nickname or not guid or not card_id:
+            continue
+        grouped_names[(guid, card_id)].add(nickname)
+
+    aliases: dict[str, set[str]] = defaultdict(set)
+    for names in grouped_names.values():
+        if len(names) < 2:
+            continue
+        for name in names:
+            aliases[name].update(other for other in names if other != name)
+    return {name: values for name, values in aliases.items() if values}
+
+
+def generic_name_variants(name: str) -> list[str]:
+    variants: list[str] = []
+
+    def add(value: str) -> None:
+        value = value.strip().lower()
+        if value and value not in variants:
+            variants.append(value)
+
+    add(name)
+    add(name.replace("markertoken-guide", "token-guide"))
+    add(name.replace("-operatives", "-operative-selection"))
+    add(name.replace("-operatives", "-operative-selection-card1"))
+    add(name.replace("navis-cat-unit", "navis-c.a.t.-unit"))
+    add(name.replace("kaboom", "kaboom!"))
+    add(name.replace("waaagh", "waaagh!"))
+    add(name.replace("-mutation", "-abhorrent-mutation"))
+
+    forward_scout = re.match(r"^(scout-squad-forward-scouting)-card([1-4])$", name)
+    if forward_scout:
+        add(f"{forward_scout.group(1)}-options-are-presented-card{forward_scout.group(2)}")
+
+    return variants
+
+
+def lookup_generated_card_url(
+    direct_urls: dict[str, dict[str, str]],
+    aliases: dict[str, set[str]],
+    normalized_direct: dict[str, str],
+    name: str,
+    team_slug: str | None = None,
+) -> dict[str, str] | None:
+    if team_slug:
+        manual_target = (MANUAL_NAME_MAPS.get(team_slug) or {}).get(name)
+        if manual_target:
+            if manual_target in direct_urls:
+                return direct_urls[manual_target]
+            normalized_match = normalized_direct.get(normalize_name(manual_target))
+            if normalized_match:
+                return direct_urls[normalized_match]
+
+    queue = deque(generic_name_variants(name))
+    seen: set[str] = set()
+
+    while queue:
+        candidate = queue.popleft()
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+
+        if candidate in direct_urls:
+            return direct_urls[candidate]
+
+        normalized_match = normalized_direct.get(normalize_name(candidate))
+        if normalized_match:
+            return direct_urls[normalized_match]
+
+        for alias in aliases.get(candidate, set()):
+            if alias not in seen:
+                queue.append(alias)
+        for variant in generic_name_variants(candidate):
+            if variant not in seen:
+                queue.append(variant)
+
+    return None
+
+
+def resolve_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
+    direct_urls = load_generated_card_urls(team_slug)
+    aliases = load_team_card_aliases(team_slug)
+    normalized_direct = {normalize_name(name): name for name in direct_urls}
+
+    resolved = dict(direct_urls)
+    original_names = list({*direct_urls.keys(), *aliases.keys()})
+
+    for name in original_names:
+        if name in resolved:
+            continue
+        match = lookup_generated_card_url(direct_urls, aliases, normalized_direct, name, team_slug)
+        if match:
+            resolved[name] = match
+
+    return resolved
+
+
+def apply_urls_from_generated(dst_obj: dict[str, Any], src_obj: dict[str, str]) -> int:
+    dst_entry = first_custom_entry(dst_obj)
+    if dst_entry is None:
+        return 0
+    return copy_custom_entry_urls(dst_entry, src_obj)
+
+
+def apply_deck_urls_from_generated_cards(dst_deck: dict[str, Any], generated_cards: dict[str, dict[str, str]]) -> int:
+    dst_custom = dst_deck.get("CustomDeck")
+    if not isinstance(dst_custom, dict) or not dst_custom:
+        return 0
+
+    dst_cards = contained_objects(dst_deck)
+    if not dst_cards:
+        nickname = object_nickname(dst_deck)
+        src_obj = generated_cards.get(nickname)
+        return apply_urls_from_generated(dst_deck, src_obj) if src_obj else 0
+
+    changed = 0
+    for dst_card in dst_cards:
+        src_obj = generated_cards.get(object_nickname(dst_card))
+        if src_obj is None:
+            return 0
+        card_id = int(dst_card.get("CardID") or 0)
+        deck_key = str(card_id // 100) if card_id else ""
+        dst_info = dst_custom.get(deck_key)
+        if not isinstance(dst_info, dict):
+            return 0
+        changed += copy_custom_entry_urls(dst_info, src_obj)
+    return changed
+
+
+def apply_deck_urls_from_generated_cards_with_lookup(
+    dst_deck: dict[str, Any],
+    *,
+    direct_urls: dict[str, dict[str, str]],
+    aliases: dict[str, set[str]],
+    normalized_direct: dict[str, str],
+    team_slug: str,
+) -> int:
+    dst_custom = dst_deck.get("CustomDeck")
+    if not isinstance(dst_custom, dict) or not dst_custom:
+        return 0
+
+    dst_cards = contained_objects(dst_deck)
+    if not dst_cards:
+        nickname = object_nickname(dst_deck)
+        src_obj = lookup_generated_card_url(direct_urls, aliases, normalized_direct, nickname, team_slug)
+        return apply_urls_from_generated(dst_deck, src_obj) if src_obj else 0
+
+    changed = 0
+    for dst_card in dst_cards:
+        src_obj = lookup_generated_card_url(
+            direct_urls,
+            aliases,
+            normalized_direct,
+            object_nickname(dst_card),
+            team_slug,
+        )
+        if src_obj is None:
+            return 0
+        card_id = int(dst_card.get("CardID") or 0)
+        deck_key = str(card_id // 100) if card_id else ""
+        dst_info = dst_custom.get(deck_key)
+        if not isinstance(dst_info, dict):
+            return 0
+        changed += copy_custom_entry_urls(dst_info, src_obj)
+    return changed
+
+
+def patch_team_box_images(dst_box: dict[str, Any], team_slug: str) -> tuple[int, bool]:
     if not has_official_korean_translation(team_slug):
         return 0, True
 
-    dst_children = contained_objects(dst_box)
-    src_children = contained_objects(src_box)
-    src_by_role: dict[str, dict[str, Any]] = {}
-    for src_obj in src_children:
-        if isinstance(src_obj.get("CustomDeck"), dict) and src_obj["CustomDeck"]:
-            src_by_role[deck_role(src_obj)] = src_obj
+    direct_urls = load_generated_card_urls(team_slug)
+    if not direct_urls:
+        return 0, False
+    aliases = load_team_card_aliases(team_slug)
+    normalized_direct = {normalize_name(name): name for name in direct_urls}
 
     changed = 0
-    replaced_any = False
-    for index, dst_obj in enumerate(dst_children):
+    for dst_obj in contained_objects(dst_box):
         if not isinstance(dst_obj.get("CustomDeck"), dict) or not dst_obj["CustomDeck"]:
             continue
-        role = deck_role(dst_obj)
-        src_obj = src_by_role.get(role)
-        if src_obj is None:
+        delta = apply_deck_urls_from_generated_cards_with_lookup(
+            dst_obj,
+            direct_urls=direct_urls,
+            aliases=aliases,
+            normalized_direct=normalized_direct,
+            team_slug=team_slug,
+        )
+        if delta == 0:
             return 0, False
-        dst_count = len(dst_obj.get("DeckIDs") or dst_obj.get("CustomDeck") or {})
-        src_count = len(src_obj.get("DeckIDs") or src_obj.get("CustomDeck") or {})
-        if dst_count != src_count or dst_obj.get("Name") != src_obj.get("Name"):
-            dst_children[index] = replace_deck_object(dst_obj, src_obj)
-            changed += 1
-            replaced_any = True
-            continue
-        changed += copy_custom_deck_urls(dst_obj, src_obj)
-
-    if replaced_any:
-        dst_box["ContainedObjects"] = dst_children
+        changed += delta
     return changed, True
 
 
@@ -254,23 +548,6 @@ def collect_repo_script_matches(node: Any, matches: list[dict[str, Any]], path: 
             collect_repo_script_matches(item, matches, f"{path}[{index}]")
 
 
-def load_generated_team_box(team_slug: str) -> dict[str, Any] | None:
-    team_dir = ROOT / "output" / team_slug / "tts_objects"
-    if not team_dir.exists():
-        return None
-    json_files = sorted([path for path in team_dir.glob("*.json") if path.is_file()])
-    preferred = [path for path in json_files if path.name.endswith(" Box.json")]
-    if preferred:
-        json_files = preferred
-    if not json_files:
-        return None
-    data = load_json(json_files[0])
-    if isinstance(data, dict) and isinstance(data.get("ObjectStates"), list) and data["ObjectStates"]:
-        first = data["ObjectStates"][0]
-        return first if isinstance(first, dict) else None
-    return data if isinstance(data, dict) else None
-
-
 def patch_mod(workshop_json: Path, output_json: Path, deliverable_json: Path | None = None) -> dict[str, Any]:
     mod_data = load_json(workshop_json)
     patched = copy.deepcopy(mod_data)
@@ -285,11 +562,7 @@ def patch_mod(workshop_json: Path, output_json: Path, deliverable_json: Path | N
             if not is_team_box(obj):
                 continue
             slug = slug_from_box(obj)
-            generated = load_generated_team_box(slug)
-            if generated is None:
-                team_changes.append({"team": slug, "status": "missing-generated-box", "fields": 0})
-                continue
-            changed_fields, compatible = patch_team_box_images(obj, generated, slug)
+            changed_fields, compatible = patch_team_box_images(obj, slug)
             if not compatible:
                 team_changes.append({"team": slug, "status": "shape-mismatch", "fields": 0})
                 continue
