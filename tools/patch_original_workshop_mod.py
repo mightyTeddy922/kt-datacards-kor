@@ -3,11 +3,13 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import os
 import re
 import sys
 from collections import defaultdict, deque
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
@@ -120,6 +122,26 @@ def save_json(path: Path, data: Any) -> None:
         fh.write("\n")
 
 
+def normalize_repo_localized_url(url: str) -> str:
+    if not url or not url.startswith(f"{KOREAN_REPO}/output/"):
+        return url
+
+    split = urlsplit(url)
+    relative = split.path.removeprefix("/mightyTeddy922/kt-datacards-kor/main/").lstrip("/")
+    if not relative.startswith("output/"):
+        output_index = relative.find("output/")
+        if output_index >= 0:
+            relative = relative[output_index:]
+    local_path = ROOT / Path(relative.replace("/", os.sep))
+    if not local_path.exists():
+        return url
+
+    version = str(int(local_path.stat().st_mtime))
+    query_items = [(key, value) for key, value in parse_qsl(split.query, keep_blank_values=True) if key != "v"]
+    query_items.append(("v", version))
+    return urlunsplit((split.scheme, split.netloc, split.path, urlencode(query_items), split.fragment))
+
+
 def object_states(root: dict[str, Any]) -> list[dict[str, Any]]:
     states = root.get("ObjectStates")
     if isinstance(states, list):
@@ -173,6 +195,8 @@ def copy_custom_entry_urls(dst_info: dict[str, Any], src_info: dict[str, Any]) -
     changed = 0
     for field in ("FaceURL", "BackURL"):
         new_value = src_info.get(field)
+        if isinstance(new_value, str):
+            new_value = normalize_repo_localized_url(new_value)
         if new_value and dst_info.get(field) != new_value:
             dst_info[field] = new_value
             changed += 1
@@ -223,8 +247,8 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
             name = str(entry.get("name") or "").strip().lower()
             if name:
                 result[name] = {
-                    "FaceURL": face_url,
-                    "BackURL": str(entry.get("back_url") or ""),
+                    "FaceURL": normalize_repo_localized_url(face_url),
+                    "BackURL": normalize_repo_localized_url(str(entry.get("back_url") or "")),
                 }
 
     cards_root = ROOT / "output" / team_slug / "cards"
@@ -236,8 +260,8 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
             back_rel = back_path.relative_to(ROOT / "output").as_posix() if back_path.exists() else ""
             name = front_path.stem.removesuffix("-front").lower()
             grouped[name] = {
-                "FaceURL": f"{KOREAN_REPO}/output/{rel}",
-                "BackURL": f"{KOREAN_REPO}/output/{back_rel}" if back_rel else "",
+                "FaceURL": normalize_repo_localized_url(f"{KOREAN_REPO}/output/{rel}"),
+                "BackURL": normalize_repo_localized_url(f"{KOREAN_REPO}/output/{back_rel}") if back_rel else "",
             }
         result.update(grouped)
 
@@ -262,8 +286,8 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
                 continue
 
             url_info = {
-                "FaceURL": face_url,
-                "BackURL": str(custom_entry.get("BackURL") or ""),
+                "FaceURL": normalize_repo_localized_url(face_url),
+                "BackURL": normalize_repo_localized_url(str(custom_entry.get("BackURL") or "")),
             }
             keys = {object_nickname(obj), path.stem.strip().lower()}
             for key in keys:
@@ -291,8 +315,8 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
                 continue
 
             url_info = {
-                "FaceURL": face_url,
-                "BackURL": str(custom_entry.get("BackURL") or ""),
+                "FaceURL": normalize_repo_localized_url(face_url),
+                "BackURL": normalize_repo_localized_url(str(custom_entry.get("BackURL") or "")),
             }
             nickname = object_nickname(obj)
             keys = {nickname, path.stem.strip().lower()}

@@ -6,6 +6,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlsplit
 
 from PIL import Image
 
@@ -53,8 +54,8 @@ SOURCE_SCRIPT_FILES = [
 
 
 def load_json(path: Path) -> Any:
-    with path.open("r", encoding="utf-8-sig") as fh:
-        return json.load(fh)
+    text = path.read_text(encoding="utf-8-sig")
+    return json.loads(text, strict=False)
 
 
 def walk(node: Any):
@@ -90,6 +91,13 @@ def walk_objects(obj: dict[str, Any]) -> list[dict[str, Any]]:
 
 def strip_url(url: str) -> str:
     return (url or "").split("?", 1)[0]
+
+
+def has_cachebuster(url: str) -> bool:
+    if not url.startswith(f"{TARGET_REPO}/output/"):
+        return True
+    query = dict(parse_qsl(urlsplit(url).query, keep_blank_values=True))
+    return bool(query.get("v"))
 
 
 def url_signature(url: str) -> str:
@@ -273,8 +281,12 @@ def verify_team_objects(team_slug: str) -> list[str]:
             back_url = str(obj.get("back_url") or "")
             if not face_url.startswith(TARGET_REPO):
                 issues.append(f"{team_slug}: translated active card face URL not in target repo: {face_url}")
+            elif not has_cachebuster(face_url):
+                issues.append(f"{team_slug}: translated active card face URL missing cache-buster: {face_url}")
             if back_url and not back_url.startswith(TARGET_REPO):
                 issues.append(f"{team_slug}: translated active card back URL not in target repo: {back_url}")
+            elif back_url and not has_cachebuster(back_url):
+                issues.append(f"{team_slug}: translated active card back URL missing cache-buster: {back_url}")
     else:
         for obj in active:
             face_url = str(obj.get("face_url") or "")

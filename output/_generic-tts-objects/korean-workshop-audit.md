@@ -37,7 +37,7 @@
 ## Representative FaceURL Checks
 - Official Korean team `angels-of-death`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/angels-of-death/cards/datacards/angels-of-death-assault-intercessor-grenadier-front.jpg?v=202608291725`
 - Official Korean team `battleclade`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/battleclade/cards/datacards/battleclade-battleclade-auto-proxy-servitor-front.jpg?v=202608291725`
-- Official Korean team `blades-of-khaine`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/blades-of-khaine/cards/datacards/dire-avenger-exarch-front.jpg`
+- Official Korean team `blades-of-khaine`: `https://raw.githubusercontent.com/mightyTeddy922/kt-datacards-kor/main/output/blades-of-khaine/cards/datacards/dire-avenger-exarch-front.jpg?v=1788039229`
 - English fallback team `gellerpox-infected`: `https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/gellerpox-infected/cards/datacards/bloatspawn-front.jpg?v=1783537960`
 
 ## Image Resolution Checks
