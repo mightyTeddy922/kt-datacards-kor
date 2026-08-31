@@ -2,12 +2,21 @@
 
 import hashlib
 import json
+import os
 import random
 from pathlib import Path
 from typing import Optional
 
 # Cache for team GUID mappings
 _TEAM_GUID_CACHE = None
+_URL_REPO_ROOT = os.environ.get(
+    "KT_DATACARDS_REPO_ROOT",
+    "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}",
+)
+
+
+def _repo_root(branch: str) -> str:
+    return _URL_REPO_ROOT.format(branch=branch)
 
 
 def _load_team_guids():
@@ -354,10 +363,10 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
     # Fallback cardbox URLs point to output/{team}/cardbox/ (step 6 writes the
     # actual files there, copying defaults when a team has no custom cardbox).
     if not mesh_url:
-        mesh_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{repo_branch}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box.obj"
+        mesh_url = f"{_repo_root(repo_branch)}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box.obj"
 
     if not texture_url:
-        texture_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{repo_branch}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box-texture.jpg"
+        texture_url = f"{_repo_root(repo_branch)}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box-texture.jpg"
     
     # Create LuaScriptState with positions for each contained object.
     # IMPORTANT: Placement must be stable across teams.

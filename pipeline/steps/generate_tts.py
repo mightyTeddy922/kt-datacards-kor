@@ -131,7 +131,7 @@ def run(teams: Optional[list] = None, source=None, force: bool = False):
     # Runs across ALL output teams (not just the filtered set) and is guarded so a
     # manager-bag failure can't fail the whole step.
     try:
-        n, mgr_path = tts_impl.rebuild_kill_team_card_boxes_example(paths.OUTPUT)
+        n, mgr_path = tts_impl.rebuild_kill_team_card_boxes_example(paths.OUTPUT, branch)
         if mgr_path is not None:
             logger.info(f"  rebuilt manager bag: {n} team boxes")
     except Exception as e:

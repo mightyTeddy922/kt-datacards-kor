@@ -54,12 +54,29 @@ logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = _paths.ROOT  # repo root
 URL_BRANCH = os.environ.get("KT_DATACARDS_URL_BRANCH", "main")
+URL_REPO_ROOT = os.environ.get(
+    "KT_DATACARDS_REPO_ROOT",
+    "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}",
+)
 # Base path (under the repo) that hosts the generated output. Output lives at the
 # repo-root ``output/``, so URLs point there directly. Overridable via env.
 URL_OUTPUT_BASE = os.environ.get(
     "KT_DATACARDS_URL_BASE",
-    "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/output",
+    f"{URL_REPO_ROOT}/output",
 )
+_UPSTREAM_REPO_ROOT = "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main"
+
+
+def _repo_root(branch: str = URL_BRANCH) -> str:
+    return URL_REPO_ROOT.format(branch=branch)
+
+
+def _output_base(branch: str = URL_BRANCH) -> str:
+    return URL_OUTPUT_BASE.format(branch=branch)
+
+
+def _rewrite_repo_urls(content: str, branch: str = URL_BRANCH) -> str:
+    return content.replace(_UPSTREAM_REPO_ROOT, _repo_root(branch))
 
 
 # ===================================================================
@@ -371,8 +388,16 @@ def _reuse_or_new_single(prev_entry, file_path, url, entry):
     """
     new_hash = _sha256_of_files([file_path])
     prev_hash = (prev_entry or {}).get("hash")
+    def _retarget(prev_url: Optional[str], current_url: str) -> str:
+        if not prev_url:
+            return current_url
+        match = re.search(r"[?&]v=(\d+)", prev_url)
+        if match:
+            return f"{current_url}?v={match.group(1)}"
+        return current_url
+
     if prev_entry and prev_hash == new_hash:
-        entry["url"] = prev_entry.get("url", url)
+        entry["url"] = _retarget(prev_entry.get("url"), url)
         entry["modified"] = prev_entry.get("modified")
     elif prev_entry and prev_hash is None:
         git_clean = _git_unchanged_from_head(file_path)
@@ -381,7 +406,7 @@ def _reuse_or_new_single(prev_entry, file_path, url, entry):
             entry["url"] = f"{url}?v={int(mtime)}"
             entry["modified"] = datetime.fromtimestamp(mtime, tz=timezone.utc).isoformat()
         else:
-            entry["url"] = prev_entry.get("url", url)
+            entry["url"] = _retarget(prev_entry.get("url"), url)
             entry["modified"] = prev_entry.get("modified")
     else:
         # prev hash present but differs. If the deployed file is NONETHELESS
@@ -390,7 +415,7 @@ def _reuse_or_new_single(prev_entry, file_path, url, entry):
         # ?v= still points at the current bytes, so reuse it (and heal the hash
         # below) instead of forcing a needless re-download.
         if prev_entry and _git_unchanged_from_head(file_path) is not False:
-            entry["url"] = prev_entry.get("url", url)
+            entry["url"] = _retarget(prev_entry.get("url"), url)
             entry["modified"] = prev_entry.get("modified")
         else:
             mtime = file_path.stat().st_mtime
@@ -419,8 +444,12 @@ def _reuse_or_new_pair(prev_entry, file_a, file_b, url_a, url_b, key_a, key_b, e
         ).isoformat()
 
     def _emit_prev():
-        entry[key_a] = prev_entry.get(key_a, url_a)
-        entry[key_b] = prev_entry.get(key_b, url_b)
+        prev_a = prev_entry.get(key_a)
+        prev_b = prev_entry.get(key_b)
+        match_a = re.search(r"[?&]v=(\d+)", prev_a or "")
+        match_b = re.search(r"[?&]v=(\d+)", prev_b or "")
+        entry[key_a] = f"{url_a}?v={match_a.group(1)}" if match_a else url_a
+        entry[key_b] = f"{url_b}?v={match_b.group(1)}" if match_b else url_b
         entry["modified"] = prev_entry.get("modified")
 
     if prev_entry and prev_hash == new_hash:
@@ -465,7 +494,7 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
     """
     output_dir = PROJECT_ROOT / 'output'
     config_dir = PROJECT_ROOT / 'config'
-    base_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{repo_branch}/output"
+    base_url = _output_base(repo_branch)
     
     teams_data = {}
 
@@ -503,7 +532,7 @@ def generate_object_urls_json(repo_branch: str = URL_BRANCH):
         # Add Lua script
         lua_script_path = config_dir / "defaults" / "tts-script" / "tts-update-rules-in-box-script.lua"
         if lua_script_path.exists():
-            lua_base = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{repo_branch}/config/defaults/tts-script/tts-update-rules-in-box-script.lua"
+            lua_base = f"{_repo_root(repo_branch)}/config/defaults/tts-script/tts-update-rules-in-box-script.lua"
             entry = {"type": "lua-script", "name": "update-script"}
             prev = prev_objs_by_key.get(("lua-script", "update-script"))
             team_entry["objects"].append(_reuse_or_new_single(prev, lua_script_path, lua_base, entry))
@@ -614,7 +643,7 @@ def _to_stamp(ts: str) -> int:
 def generate_object_urls_summary(teams_data: dict, repo_branch: str = URL_BRANCH) -> dict:
     """Build lightweight global summary for fast box-level update checks."""
     summary = {}
-    base_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{repo_branch}/output"
+    base_url = _output_base(repo_branch)
 
     for team, team_entry in sorted(teams_data.items()):
         max_modified = ""
@@ -689,6 +718,7 @@ def load_lua_script(config_dir: Path) -> str:
             content = f.read()
             if content.startswith('\ufeff'):
                 content = content[1:]
+            content = _rewrite_repo_urls(content)
             content = content.replace('\n', '\r\n')
             return content
     except Exception as e:
@@ -711,6 +741,7 @@ def load_single_object_updater_script(config_dir: Path) -> str:
             content = f.read()
             if content.startswith('\ufeff'):
                 content = content[1:]
+            content = _rewrite_repo_urls(content)
             content = content.replace('\n', '\r\n')
             return content
     except Exception as e:
@@ -726,6 +757,7 @@ def load_display_table_manager_script(config_dir: Path) -> str:
             content = f.read()
             if content.startswith('\ufeff'):
                 content = content[1:]
+            content = _rewrite_repo_urls(content)
             content = content.replace('\n', '\r\n')
             return content
     except Exception as e:
@@ -1358,7 +1390,7 @@ def load_dice_objects(team_name: str, sample_url: Optional[str], output_dir: Pat
         if "/output/" in sample_url:
             github_base = sample_url.split("/output/")[0]
     if not github_base:
-        github_base = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{repo_branch}"
+        github_base = _repo_root(repo_branch)
 
     team_tag = f"_{team_name.replace('-', '_').title().replace('_', ' ')}"
     display = team_name.replace("-", " ").title()
@@ -1394,7 +1426,10 @@ def load_dice_objects(team_name: str, sample_url: Optional[str], output_dir: Pat
     return dice_objects
 
 
-def rebuild_kill_team_card_boxes_example(output_dir: Path) -> tuple[int, Optional[Path]]:
+def rebuild_kill_team_card_boxes_example(
+    output_dir: Path,
+    repo_branch: str = URL_BRANCH,
+) -> tuple[int, Optional[Path]]:
     """Refresh manager bag contents with latest generated team boxes.
 
     Source template is loaded from dev/examples (or existing generated output
@@ -1513,7 +1548,7 @@ def rebuild_kill_team_card_boxes_example(output_dir: Path) -> tuple[int, Optiona
     spawner_lua_path = PROJECT_ROOT / "config" / "defaults" / "tts-script" / "team-spawner-clean-script.lua"
     if spawner_lua_path.exists():
         try:
-            spawner_lua = spawner_lua_path.read_text(encoding="utf-8")
+            spawner_lua = _rewrite_repo_urls(spawner_lua_path.read_text(encoding="utf-8"), repo_branch)
             spawner_tile = {
                 "Name": "Custom_Tile",
                 "Transform": {
@@ -1530,7 +1565,7 @@ def rebuild_kill_team_card_boxes_example(output_dir: Path) -> tuple[int, Optiona
                 "Sticky": True, "Tooltip": True, "GridProjection": False,
                 "HideWhenFaceDown": False, "Hands": False,
                 "CustomImage": {
-                    "ImageURL": "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/main/output/_generic-tts-objects/team-spawner-image.png",
+                    "ImageURL": f"{_output_base(repo_branch)}/_generic-tts-objects/team-spawner-image.png",
                     "ImageSecondaryURL": "",
                     "ImageScalar": 1.0,
                     "WidthScale": 0.0,
@@ -2757,7 +2792,7 @@ def _build_operative_counter_lua(team: str, counter_cfg: dict, url_branch: str) 
     if not states:
         return ""
 
-    base_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{url_branch}/output/{team}/tokens"
+    base_url = f"{_output_base(url_branch)}/{team}/tokens"
 
     def asset_name(v: int) -> str:
         return f"oc_asset_{v}"
@@ -2934,7 +2969,7 @@ def _counter_asset_base(team: str, url_branch: str, cfg: dict) -> str:
     branch = url_branch
     if cfg.get('generate'):
         branch = os.environ.get("KT_COUNTER_ASSET_BRANCH", url_branch)
-    return f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}/output/{team}/tokens"
+    return f"{_output_base(branch)}/{team}/tokens"
 
 
 def _build_operative_counters_lua(team: str, counters: list, url_branch: str, menu_label: str) -> str:
@@ -2945,7 +2980,7 @@ def _build_operative_counters_lua(team: str, counters: list, url_branch: str, me
     assets) so multiple can coexist on the same model. Panels are auto-positioned
     side by side (a single counter ends up centred). Right-click = up, left = down.
     """
-    base_url = f"https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{url_branch}/output/{team}/tokens"
+    base_url = f"{_output_base(url_branch)}/{team}/tokens"
 
     def lua_str(s: str) -> str:
         return '"' + str(s).replace('\\', '\\\\').replace('"', '\\"') + '"'

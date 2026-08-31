@@ -1,12 +1,15 @@
 """Scrape + download Kill Team team-rules PDFs from warhammer-community.
 
-Standalone port of the legacy step-1 scraper. Uses Playwright to render the
-JavaScript download page, locate the "Team Rules" section, and collect PDF URLs;
-``requests`` to download.
+Prefer the site's JSON search API, which exposes the same Team Rules catalog the
+downloads page renders. This is more robust than driving the UI and also lets us
+request a specific download language such as Korean. Playwright remains as a
+fallback for environments where the API shape changes unexpectedly.
 """
 from __future__ import annotations
 
+import json
 import logging
+import os
 from pathlib import Path
 
 import requests
@@ -15,6 +18,14 @@ from playwright.async_api import async_playwright
 logger = logging.getLogger(__name__)
 
 DOWNLOADS_URL = "https://www.warhammer-community.com/en-gb/downloads/kill-team/"
+DOWNLOADS_API_URL = "https://www.warhammer-community.com/api/search/downloads/"
+DOWNLOADS_INDEX = "downloads_v2"
+DOWNLOADS_LANGUAGE = os.environ.get("KT_DATACARDS_WARCOM_LANGUAGE", "english").strip().lower()
+EXCLUDED_TEAM_SLUGS = {
+    slug.strip().lower()
+    for slug in os.environ.get("KT_DATACARDS_WARCOM_EXCLUDE_SLUGS", "").split(",")
+    if slug.strip()
+}
 
 # Files that live in the Team Rules section but are not a single team's rules.
 _EXCLUDE_PATTERNS = (
@@ -44,6 +55,63 @@ def _is_team_rules_file(filename: str, link_text: str) -> bool:
     filename = filename.lower()
     link_text = link_text.lower()
     return not any(p in filename or p in link_text for p in _EXCLUDE_PATTERNS)
+
+
+def _api_payload(language: str) -> dict:
+    return {
+        "index": DOWNLOADS_INDEX,
+        "searchTerm": "",
+        "gameSystem": "kill-team",
+        "language": language,
+    }
+
+
+def _fetch_download_entries(language: str) -> list[dict]:
+    headers = {
+        "Referer": DOWNLOADS_URL,
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    }
+    response = requests.post(
+        DOWNLOADS_API_URL,
+        json=_api_payload(language),
+        headers=headers,
+        timeout=60,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    hits = payload.get("hits")
+    if not isinstance(hits, list):
+        raise ValueError(f"unexpected downloads API response: {json.dumps(payload)[:500]}")
+    return hits
+
+
+def _entry_is_team_rules(entry: dict) -> bool:
+    info = entry.get("id") or {}
+    categories = entry.get("download_categories") or []
+    slug = str(info.get("slug") or "").strip().lower()
+    title = str(entry.get("title") or info.get("title") or "").strip()
+    filename = str(info.get("file") or "").strip()
+    return (
+        "team-rules" in categories
+        and slug not in EXCLUDED_TEAM_SLUGS
+        and _is_team_rules_file(filename, title)
+    )
+
+
+def _urls_from_api_entries(entries: list[dict], section: str) -> list[str]:
+    selected: list[str] = []
+    recently_added = section.strip().lower() == "recently added"
+    for entry in entries:
+        info = entry.get("id") or {}
+        if not _entry_is_team_rules(entry):
+            continue
+        if recently_added and not info.get("new"):
+            continue
+        filename = str(info.get("file") or "").strip()
+        if not filename:
+            continue
+        selected.append(_absolute_url(filename))
+    return list(dict.fromkeys(selected))
 
 
 async def _expand_section(page, heading: str) -> object | None:
@@ -103,6 +171,24 @@ async def extract_pdf_urls_from_page(
     balance dataslate / release). Non-team files (update logs, mission packs,
     companions, …) are filtered out of either section by ``_is_team_rules_file``.
     """
+    try:
+        team_pdfs = _urls_from_api_entries(_fetch_download_entries(DOWNLOADS_LANGUAGE), section)
+        if team_pdfs:
+            logger.info(
+                "Fetched %s '%s' PDFs via downloads API (language=%s)",
+                len(team_pdfs),
+                section,
+                DOWNLOADS_LANGUAGE,
+            )
+            return team_pdfs
+        logger.warning(
+            "Downloads API returned no '%s' PDFs for language=%s; falling back to Playwright",
+            section,
+            DOWNLOADS_LANGUAGE,
+        )
+    except Exception as e:
+        logger.warning(f"Downloads API fetch failed ({DOWNLOADS_LANGUAGE}): {e}; falling back to Playwright")
+
     logger.info("Launching browser to fetch Kill Team downloads page...")
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
