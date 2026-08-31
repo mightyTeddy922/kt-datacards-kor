@@ -142,6 +142,20 @@ def normalize_repo_localized_url(url: str) -> str:
     return urlunsplit((split.scheme, split.netloc, split.path, urlencode(query_items), split.fragment))
 
 
+def localized_repo_url_exists_locally(url: str) -> bool:
+    if not url or not url.startswith(f"{KOREAN_REPO}/output/"):
+        return True
+
+    split = urlsplit(url)
+    relative = split.path.removeprefix("/mightyTeddy922/kt-datacards-kor/main/").lstrip("/")
+    if not relative.startswith("output/"):
+        output_index = relative.find("output/")
+        if output_index >= 0:
+            relative = relative[output_index:]
+    local_path = ROOT / Path(relative.replace("/", os.sep))
+    return local_path.exists()
+
+
 def object_states(root: dict[str, Any]) -> list[dict[str, Any]]:
     states = root.get("ObjectStates")
     if isinstance(states, list):
@@ -203,6 +217,21 @@ def copy_custom_entry_urls(dst_info: dict[str, Any], src_info: dict[str, Any]) -
     return changed
 
 
+def copy_custom_deck_urls(dst_deck: dict[str, Any], src_deck: dict[str, Any]) -> int:
+    dst_custom = dst_deck.get("CustomDeck")
+    src_custom = src_deck.get("CustomDeck")
+    if not isinstance(dst_custom, dict) or not isinstance(src_custom, dict):
+        return 0
+
+    changed = 0
+    for key, dst_info in dst_custom.items():
+        src_info = src_custom.get(key)
+        if not isinstance(dst_info, dict) or not isinstance(src_info, dict):
+            return 0
+        changed += copy_custom_entry_urls(dst_info, src_info)
+    return changed
+
+
 def first_custom_entry(obj: dict[str, Any]) -> dict[str, Any] | None:
     custom = obj.get("CustomDeck")
     if not isinstance(custom, dict) or not custom:
@@ -246,10 +275,12 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
                 continue
             name = str(entry.get("name") or "").strip().lower()
             if name:
-                result[name] = {
+                url_info = {
                     "FaceURL": normalize_repo_localized_url(face_url),
                     "BackURL": normalize_repo_localized_url(str(entry.get("back_url") or "")),
                 }
+                if localized_repo_url_exists_locally(url_info["FaceURL"]):
+                    result[name] = url_info
 
     cards_root = ROOT / "output" / team_slug / "cards"
     if cards_root.exists():
@@ -289,10 +320,55 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
                 "FaceURL": normalize_repo_localized_url(face_url),
                 "BackURL": normalize_repo_localized_url(str(custom_entry.get("BackURL") or "")),
             }
+            if not localized_repo_url_exists_locally(url_info["FaceURL"]):
+                continue
             keys = {object_nickname(obj), path.stem.strip().lower()}
             for key in keys:
                 if key:
                     result[key] = url_info
+
+    tts_team_root = ROOT / "output" / team_slug / "tts_objects"
+    if tts_team_root.exists():
+        for path in sorted(tts_team_root.glob("*.json")):
+            try:
+                data = load_json(path)
+            except Exception:
+                continue
+
+            root_obj = object_state_root(data)
+            if not root_obj:
+                continue
+
+            for deck in contained_objects(root_obj):
+                deck_custom = deck.get("CustomDeck")
+                if not isinstance(deck_custom, dict) or not deck_custom:
+                    continue
+
+                deck_cards = contained_objects(deck)
+                if not deck_cards:
+                    continue
+
+                for deck_card in deck_cards:
+                    card_id = int(deck_card.get("CardID") or 0)
+                    deck_key = str(card_id // 100) if card_id else ""
+                    custom_entry = deck_custom.get(deck_key)
+                    if not isinstance(custom_entry, dict):
+                        continue
+
+                    face_url = str(custom_entry.get("FaceURL") or "")
+                    if not face_url:
+                        continue
+
+                    url_info = {
+                        "FaceURL": normalize_repo_localized_url(face_url),
+                        "BackURL": normalize_repo_localized_url(str(custom_entry.get("BackURL") or "")),
+                    }
+                    if not localized_repo_url_exists_locally(url_info["FaceURL"]):
+                        continue
+
+                    nickname = object_nickname(deck_card)
+                    if nickname:
+                        result[nickname] = url_info
 
     tts_decks_root = ROOT / "output" / team_slug / "tts" / "cardbox" / "decks"
     if tts_decks_root.exists():
@@ -318,6 +394,8 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
                 "FaceURL": normalize_repo_localized_url(face_url),
                 "BackURL": normalize_repo_localized_url(str(custom_entry.get("BackURL") or "")),
             }
+            if not localized_repo_url_exists_locally(url_info["FaceURL"]):
+                continue
             nickname = object_nickname(obj)
             keys = {nickname, path.stem.strip().lower()}
             if nickname and not nickname.startswith(team_slug):
@@ -325,6 +403,32 @@ def load_generated_card_urls(team_slug: str) -> dict[str, dict[str, str]]:
             for key in keys:
                 if key:
                     result[key] = url_info
+    return result
+
+
+def load_generated_team_decks(team_slug: str) -> dict[str, dict[str, Any]]:
+    root = ROOT / "output" / team_slug / "tts_objects"
+    result: dict[str, dict[str, Any]] = {}
+    if not root.exists():
+        return result
+
+    for path in sorted(root.glob("*.json")):
+        try:
+            data = load_json(path)
+        except Exception:
+            continue
+
+        obj = object_state_root(data)
+        if not obj:
+            continue
+
+        for child in contained_objects(obj):
+            deck_custom = child.get("CustomDeck")
+            if not isinstance(deck_custom, dict) or not deck_custom:
+                continue
+            nickname = object_nickname(child)
+            if nickname:
+                result[nickname] = child
     return result
 
 
@@ -524,6 +628,7 @@ def patch_team_box_images(dst_box: dict[str, Any], team_slug: str) -> tuple[int,
         return 0, False
     aliases = load_team_card_aliases(team_slug)
     normalized_direct = {normalize_name(name): name for name in direct_urls}
+    generated_decks = load_generated_team_decks(team_slug)
 
     changed = 0
     for dst_obj in contained_objects(dst_box):
@@ -537,7 +642,12 @@ def patch_team_box_images(dst_box: dict[str, Any], team_slug: str) -> tuple[int,
             team_slug=team_slug,
         )
         if delta == 0:
-            return 0, False
+            src_deck = generated_decks.get(object_nickname(dst_obj))
+            if src_deck is None:
+                return 0, False
+            delta = copy_custom_deck_urls(dst_obj, src_deck)
+            if delta == 0:
+                return 0, False
         changed += delta
     return changed, True
 
