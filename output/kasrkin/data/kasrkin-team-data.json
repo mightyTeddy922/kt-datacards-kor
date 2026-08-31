@@ -1,6 +1,6 @@
 {
   "team": "kasrkin",
-  "generated_at": "2026-08-29T21:54:36.080831+00:00",
+  "generated_at": "2026-07-25T17:13:17.004926+00:00",
   "datacards": [
     {
       "name": "KASRKIN SERGEANT",
@@ -11,63 +11,70 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "핫샷 라스건",
+          "name": "Hot-shot lasgun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "핫샷 라스피스톨",
+          "name": "Hot-shot laspistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "플라스마 권총(표준)",
+          "name": "Plasma pistol (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "플라스마 권총(과충전)",
+          "name": "Plasma pistol (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 과열, 살상 5+, 관통 1"
+          "special_rules": "Range 8\", Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "체인소드",
+          "name": "Chainsword",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "3+",
           "damage": "2/3"
         },
         {
-          "name": "역장 무기",
+          "name": "Power weapon",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
+      ],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "LEADER",
+        "SERGEANT"
       ],
       "passive_abilities": [
         {
-          "name": "베테랑 지휘자",
-          "description": "이 요원이 킬존에 있고 전투 기술 전략 포 석을 사용할 때마다, 플레이어는 전투 기술을 추가로 하 나 더 선택할 수 있습니다. 단, 중복된 것을 선택할 수는 없습니다."
+          "name": "TACTICAL COMMAND",
+          "description": "Select one friendly KASRKIN operative, then select one SKILL AT ARMS for that operative to have until the Ready step of the next Strategy phase. This can be in addition to any SKILL AT ARMS it already has, but they cannot be the same. Alternatively, instead of resolving the above effect, if your Clearance Sweep marker is in the killzone, you can remove it and place it again. This operative cannot perform this action while within control range of an enemy operative. Veteran Leadership: Whenever this operative is in the killzone and you use the SKILL AT ARMS STRATEGIC GAMBIT, you can select one additional SKILL AT ARMS but they cannot be the same."
         }
       ]
     },
@@ -80,13 +87,13 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "핫샷 라스건",
+          "name": "Hot-shot lasgun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -94,11 +101,22 @@
       ],
       "passive_abilities": [
         {
-          "name": "환자 발생!",
-          "description": "매 전환점 도중 이 요원의 3” 내에 있으며 시야에 들어온 다른 아군 카스르킨 요원이 무력화됐을 때, 이 요원과 그 아군 요원이 모두 적 요원의 장악 범위 내에 있지 않다면 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 그 아군 요원은 1 체력이 남은 상태가 되며 그 행동이 끝날 때까지 무력화되지 않습니다. 그 행동 이후, 그 아군 요원은 즉 시 무상으로 질주 행동을 수행해 반드시 이 요원의 장악 범위 내에서 이동을 종료해야 합니다. 이 요원과 그 아군 요원"
+          "name": "Medic!",
+          "description": "The first time during each turning point that another friendly KASRKIN operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range. Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it’s a Shoot action and this operative would be a primary or secondary target."
+        },
+        {
+          "name": "MEDIKIT",
+          "description": "Select one friendly KASRKIN operative within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "MEDIC",
+        "COMBAT MEDIC"
+      ]
     },
     {
       "name": "KASRKIN DEMO-TROOPER",
@@ -109,14 +127,14 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "핫샷 라스피스톨",
+          "name": "Hot-shot laspistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -124,19 +142,25 @@
       ],
       "passive_abilities": [
         {
-          "name": "멜타 지뢰",
-          "description": "이 요원은 아군의 멜타 지뢰 마커를 운반하고 있으며, 그 마커에 마커 회수 행동을 수행할 수 있습니다. 마커 배치 행동 수행 시마다 이 요원은 즉시 무상 질주 행동을 수행할 수 있습니다. 그 마커는 적 요원의 장악 범위 내에 놓을 수 없습니다(만약 이 요원이 그 마커를 운반하는 상태로 무력화되었는데 마커를 배치할 수 없다면, 마커 는 이 요원과 함께 제거됩니다."
+          "name": "Melta Mine",
+          "description": "This operative is carrying your Melta Mine marker. It can perform the Pick Up Marker action on that marker, and whenever it performs the Place Marker action on that marker, it can immediately perform a free Dash action. That marker cannot be placed within an enemy operative’s control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative)."
         },
         {
-          "name": "근접 지뢰",
-          "description": "아군의 멜타 지뢰 마커가 다른 요원의 장악 범 위에 처음으로 들어갔을 때, 그 마커를 제거한 다음 그 요 원에게 2D6+3만큼 피해를 입힙니다. 그 요원이 무력화 되지 않았으며 행동 중이었다면 그 행동은 종료됩니다 (행동의 효과가 완전히 적용되지 않았더라도 즉시 종료 됨). 그 적 요원을 놓을 수 없다면 놓을 수 있는 지점으로 최소 거리만 옮깁니다. 이 요원에게는 이 효과가 적용되 지 않는다는 점에 유의하십시오(즉, 이 요원은 지뢰를 기 폭시킬 수 없으며 그 마커로부터 피해를 입지 않습니다)."
+          "name": "Proximity Mine",
+          "description": "The first time your Melta Mine marker is within another operative’s control range, remove that marker and inflict 2D6+3 damage on that operative; if it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so. Note that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker)."
         },
         {
-          "name": "방폭복",
-          "description": "요원이 폭발 또는 격류 무기 규칙을 보유한 무기 (소사 프로필을 보유한 무기 제외)를 사용해 이 요원을 대상으로 사격할 때마다, 이 요원은 방어 주사위 하나를 재굴림할 수 있습니다. 또한 이 요원은 그 절차에서 사격 대상이 되지 않은 한 x\" 궤멸 x 무기 규칙(즉, 거리 요건 이 있는 궤멸 규칙)에 영향을 받지 않습니다. 카스르킨 폭파병 2 APL 체력 방호 이동 6\" 4+ 8"
+          "name": "Blast Padding",
+          "description": "Whenever an operative is shooting this operative with a weapon that has the Blast or Torrent weapon rule (excluding weapons that have a sweeping profile), you can re-roll one of your defence dice. In addition, this operative isn’t affected by the x\" Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence. KASRKIN DEMO-"
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "DEMO-TROOPER"
+      ]
     },
     {
       "name": "KASRKIN GUNNER",
@@ -147,67 +171,73 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "화염방사기",
+          "name": "Flamer",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "사거리 8\", 포화, 격류 2\""
+          "special_rules": "Range 8\", Saturate, Torrent 2\""
         },
         {
-          "name": "유탄발사기(세열)",
+          "name": "Grenade launcher (frag)",
           "attacks": "4",
           "hit": "3+",
           "damage": "2/4",
-          "special_rules": "폭발 2\""
+          "special_rules": "Blast 2\""
         },
         {
-          "name": "유탄발사기(크랙)",
+          "name": "Grenade launcher (krak)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "관통 1"
+          "special_rules": "Piercing 1"
         },
         {
-          "name": "핫샷 볼리 건(집중)",
+          "name": "Hot-shot volley gun (focused)",
           "attacks": "5",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "핫샷 볼리 건(소사)",
+          "name": "Hot-shot volley gun (sweeping)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1, 격류 1\""
+          "special_rules": "Piercing Crits 1, Torrent 1\""
         },
         {
-          "name": "멜타건",
+          "name": "Meltagun",
           "attacks": "4",
           "hit": "3+",
           "damage": "6/3",
-          "special_rules": "사거리 6\", 궤멸 4, 관통 2"
+          "special_rules": "Range 6\", Devastating 4, Piercing 2"
         },
         {
-          "name": "플라스마 건(표준)",
+          "name": "Plasma gun (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "관통 1"
+          "special_rules": "Piercing 1"
         },
         {
-          "name": "플라스마 건(과충전)",
+          "name": "Plasma gun (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "과열, 살상 5+, 관통 1"
+          "special_rules": "Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
         }
+      ],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "GUNNER"
       ]
     },
     {
@@ -219,13 +249,13 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "핫샷 라스건",
+          "name": "Hot-shot lasgun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -233,11 +263,22 @@
       ],
       "passive_abilities": [
         {
-          "name": "킬존 정찰",
-          "description": "위치 이동 전략 플로이를 사용할 때 대상 아군 카스르킨 요원으로 이 요원을 지정하면 0CP를 소모합니다. 오스펙스 스캔"
+          "name": "Reconnoitre Killzone",
+          "description": "The Relocate strategy ploy costs you 0CP if this operative is the selected friendly KASRKIN operative."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "AUSPEX SCAN (1AP)",
+          "description": "Until the start of this operative’s next activation or until it’s incapacitated (whichever comes first), whenever an enemy operative is within 8\" of this operative, that enemy operative is being scanned. Whenever a friendly KASRKIN operative is shooting an enemy operative that’s being scanned, that enemy operative cannot be obscured This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "RECON-TROOPER"
+      ]
     },
     {
       "name": "KASRKIN SHARPSHOOTER",
@@ -246,13 +287,47 @@
       "save": "4+",
       "wounds": 8,
       "base_size": 28,
-      "passive_abilities": [
+      "weapons": [
         {
-          "name": "위장 망토",
-          "description": "이 요원이 사격당할 때 다음을 따릅니다.\n• 포화 무기 규칙을 무시합니다.\n• 엄폐 방호로 주사위를 보전할 수 있다면, 엄폐 방호 하나를 추가로 보전하거나 또는 엄폐 방호 하나를 결정적 성공으로 판정할 수 있습니다. 이 규칙은 고지로 인해 향상된 엄폐 방호와 누적되지 않습니다."
+          "name": "Hot-shot marksman rifle (concealed)",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "special_rules": "Devastating 3, Heavy, Silent, Concealed Position*"
+        },
+        {
+          "name": "Hot-shot marksman rifle (mobile)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4"
+        },
+        {
+          "name": "Hot-shot marksman rifle (stationary)",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "special_rules": "Devastating 3, Heavy"
+        },
+        {
+          "name": "Gun butt",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3"
         }
       ],
-      "unique_actions": []
+      "passive_abilities": [
+        {
+          "name": "Camo Cloak",
+          "description": "Whenever an operative is shooting this operative:\n• Ignore the Saturate weapon rule.\n• If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain."
+        }
+      ],
+      "unique_actions": [],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "SHARPSHOOTER"
+      ]
     },
     {
       "name": "KASRKIN TROOPER",
@@ -263,13 +338,13 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "핫샷 라스건",
+          "name": "Hot-shot lasgun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -277,11 +352,17 @@
       ],
       "passive_abilities": [
         {
-          "name": "적응형 장비",
-          "description": "다음 각 항목을 전환점당 한 번씩 사용할 수 있습니다\n• 아군 카스르킨 대원 요원 하나가 연막탄 행동을 수행할 수 있습니다.\n• 아군 카스르킨 대원 요원 하나가 섬광 수류탄 행동을 수행할 수 있습니다. 이러한 행동의 규칙은 공용 장비에서 확인할 수 있습니다. 이 규칙의 행동 수행 시에는 공용 장비의 행동 개수 제한에 영향을 미치지 않습니다(즉, 장비에서 같은 수류탄 선택 시 차감과 무관)."
+          "name": "Adaptive Equipment",
+          "description": "You can do each of the following once per turning point:\n• One friendly KASRKIN TROOPER operative can perform the Smoke Grenade action.\n• One friendly KASRKIN TROOPER operative can perform the Stun Grenade action. The rules for these actions are found in universal equipment. Performing these actions using this rule doesn’t count towards their action limits (i.e. if you also select those grenades from equipment)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "TROOPER"
+      ]
     },
     {
       "name": "KASRKIN VOX-TROOPER",
@@ -292,35 +373,144 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "핫샷 라스건",
+          "name": "Hot-shot lasgun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
         }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "BATTLE COMMS (1AP)",
+          "description": "Select one other friendly KASRKIN operative. Until the end of that operative’s next activation, add 1 to its APL stat (to a maximum of 3 after all APL stat changes have been totalled). This operative can perform this action twice during its activation, but cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "KASRKIN",
+        "IMPERIUM",
+        "ASTRA MILITARUM",
+        "VOX-TROOPER"
       ]
+    }
+  ],
+  "equipment": [
+    {
+      "name": "foregrip",
+      "text": "KASRKIN\nFACTION EQUIPMENT\nFOREGRIP\nFitted under the barrel of the gun, this foregrip helps \nstabilise the bearer’s weapon, improving its handling at \nclose range.\nWhenever a friendly KASRKIN operative is \nshooting an operative within 3\" of it, ranged \nweapons on its datacard (excluding weapons \nthat include ‘pistol’ in their name, e.g. hot-shot \nlaspistol, all profiles of a plasma pistol, etc.) have \nthe Accurate 1 weapon rule."
+    },
+    {
+      "name": "long-range-scope",
+      "text": "KASRKIN\nFACTION EQUIPMENT\nLONG-RANGE SCOPE\nThis weapon is fitted with a marksman’s scope, enabling \ngreat accuracy even at long range.\nWhenever a friendly KASRKIN operative is \nshooting an operative more than 6\" from it, that \nfriendly operative’s hot-shot weapons have the \nSaturate weapon rule."
+    },
+    {
+      "name": "relics-of-cadia",
+      "text": "KASRKIN\nFACTION EQUIPMENT\nRELICS OF CADIA\nSmall personal effects remind the Kasrkin of their \nhomeworld, those they have lost, and that which they \nfight for.\nOnce per turning point, when a friendly \nKASRKIN operative is shooting, fighting or \nretaliating, if you roll two or more fails, you can \ndiscard one of them to retain another as a normal \nsuccess instead."
+    },
+    {
+      "name": "combat-daggers",
+      "text": "KASRKIN\nFACTION EQUIPMENT\nCOMBAT DAGGERS\nWhen close combat is required, the Kasrkin turn to their \ncombat daggers in order to silence the enemy.\nFriendly KASRKIN operatives have the following \nmelee weapon:\nNAME \nATK HIT DMG\n Combat dagger \n 3 \n4+ \n3/4"
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "skill-at-arms",
+      "text": "KASRKIN\nFACTION RULE\nSKILL AT ARMS\nThe Kasrkin go where they are needed. Battle-hardened, \nuncompromising and equipped with the best weapons \navailable, these elites pursue their objectives \nwith professionalism, hard-won experience and \nrigid determination.\nSTRATEGIC GAMBIT. Select a SKILL AT ARMS for \nfriendly KASRKIN operatives to have until the \nReady step of the next Strategy phase.\nSKILL AT ARMS",
+      "options": [
+        {
+          "name": "Light ’Em Up",
+          "text": "Establishing overlapping fields of fire as they advance, the Kasrkin react to any enemy movement with a lethal volley of fire. Friendly KASRKIN operatives’ ranged weapons have the Severe weapon rule."
+        },
+        {
+          "name": "Strike Fast",
+          "text": "Kasrkin pride themselves upon their physical fitness and can cover ground swiftly, even when carrying heavy combat gear. Whenever a friendly KASRKIN operative is performing the Reposition action, add 1\" to its Move stat."
+        },
+        {
+          "name": "Ice In Your Veins",
+          "text": "All Cadians are subjected to a lifetime of war. Those chosen to join the ranks of the elite Kasrkin are amongst the hardiest. Whenever a friendly KASRKIN operative is fighting or retaliating, or an operative is shooting it, the first time an attack dice inflicts Normal Dmg of 3 or more on this operative during that sequence, that dice inflicts 1 less damage on it."
+        },
+        {
+          "name": "For Cadia!",
+          "text": "All Kasrkin strive to uphold the honour of their dead homeworld. Add 1 to the Atk stat of friendly KASRKIN operatives’ melee weapons (to a maximum of 4). Whenever a friendly KASRKIN operative is fighting, the first time you strike during that sequence, inflict 1 additional damage."
+        }
+      ]
+    },
+    {
+      "name": "rapid-fire",
+      "text": "KASRKIN\nFACTION RULE\nRAPID FIRE\nRuthlessly drilled and murderously efficient, Kasrkin lay \ndown hails of high-powered fire against the foe.\nEach friendly KASRKIN operative that doesn’t \nperform an action in which it moves during \nits activation can perform two Shoot actions \n(excluding Guard) during that activation, but a \nbolt pistol, hot-shot lasgun or hot-shot laspistol \nmust be selected for both of those actions."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "1ap",
-      "text": "카스르킨\n화력전 플로이\n주도권 확보\n혼란스러운 전투 상황 속에서도 카스르킨 분대는 과감하고 단호한 \n자세를 유지하면서 명확한 목표를 향해 빠르게 움직인다.\n화력전 페이즈 시작 시 이 화력전 플로이를 사용할 수 있습\n니다. 아군 카스르킨 요원 하나가 즉시 무상으로 1AP 행동\n을 수행할 수 있습니다. 단, 그 행동 중에 이동할 수는 없습\n니다. 선제권을 가진 플레이어라면 이 플로이를 사용할 수 \n없습니다."
+      "name": "seize-the-initiative",
+      "text": "KASRKIN\nFIREFIGHT PLOY\nSEIZE THE INITIATIVE\nKasrkin squads are bold and decisive, acting with speed \nand clarity even in the confusion of battle.\nUse this firefight ploy at the start of the Firefight \nphase. One friendly KASRKIN operative can \nimmediately perform a 1AP action for free, but it \ncannot move during that action. You cannot use \nthis ploy if you’re the player with initiative."
     },
     {
-      "name": "apl-2",
-      "text": "카스르킨\n화력전 플로이\n배수진\n공포의 눈동자에 도사린 끔찍한 존재들로부터 인류제국을 지키면\n서 일생을 보낸 카스르킨은 적에 맞서 싸울 때 강철 같은 규율을 유\n지한다.\n아군 카스르킨 요원의 운용 중에, 또는 화력전 페이즈 종료 \n시 이 화력전 플로이를 사용할 수 있습니다. 사용 시 아군의 \n임무 마커 또는 목표물 마커 하나를 지정합니다. 그 운용이 \n종료될 때까지, 또는 다음 전환점이 시작될 때까지, 그 마커\n를 놓고 경쟁하는 아군 카스르킨 요원의 APL 총합이 2이며 \n마찬가지로 경쟁하는 적 요원의 APL 총합도 동일하다면, \n아군 카스르킨 요원이 그 마커를 장악합니다."
+      "name": "cover-retreat",
+      "text": "KASRKIN\nFIREFIGHT PLOY\nCOVER RETREAT\nShould a Kasrkin soldier need to retreat, their allies may \nlay down a withering barrage of covering fire.\nUse this firefight ploy when a friendly KASRKIN \noperative performs the Fall Back action while \nvisible to and within 6\" of another friendly \nKASRKIN operative that’s not within control \nrange of enemy operatives. After that friendly \noperative has finished moving, but before \nthat Fall Back action ends, that other friendly \noperative can immediately perform a free Shoot \naction (you can change its order to Engage to \ndo so)."
+    },
+    {
+      "name": "neutralise-target",
+      "text": "KASRKIN\nFIREFIGHT PLOY\nNEUTRALISE TARGET\nDesignating an exposed enemy operative as a priority \ntarget, this operative levels their weapon and fires a \nvolley of rounds.\nUse this firefight ploy after rolling your attack dice \nfor a friendly KASRKIN operative, if it’s shooting \nan operative that either cannot retain any cover \nsaves or is being scanned (see RECON-TROOPER). \nYou can re-roll any of your attack dice."
+    },
+    {
+      "name": "give-no-ground",
+      "text": "KASRKIN\nFIREFIGHT PLOY\nGIVE NO GROUND\nHardened by a lifetime spent defending the Imperium \nfrom the horrific denizens of the Eye of Terror, the \nKasrkin demonstrate unwavering discipline in the face \nof the enemy.\nUse this firefight ploy during a friendly KASRKIN \noperative’s activation, or at the end of the \nFirefight phase. Select one of your mission \nmarkers or an objective marker. Until the end of \nthat activation or until the start of the next turning \npoint respectively, if the total APL of friendly \nKASRKIN operatives that contest that marker \nis 2, and the total APL of enemy operatives \nthat contest it is the same, friendly KASRKIN \noperatives control that marker."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION KASRKIN",
-      "text": "카스르킨 \n킬 팀\n아키타입: 경비, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002카스르킨\u0002부사관\u0002요원,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비\u0002\n합니다.\n• \u0002볼트\u0002권총,\u0002역장\u0002무기\n• \u0002핫샷\u0002라스건,\u0002개머리판\n• \u0002핫샷\u0002라스피스톨,\u0002역장\u0002무기\n• \u0002플라스마\u0002권총,\u0002체인소드\n \n↘\u00029\u0002카스르킨\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002전투의무병\n• \u0002폭파병\n• \u0002사수,\u0002화염방사기,\u0002개머리판\n• \u0002사수,\u0002유탄발사기,\u0002개머리판\n• \u0002사수,\u0002핫샷\u0002볼리\u0002건,\u0002개머리판\n• \u0002사수,\u0002멜타건,\u0002개머리판\n• \u0002사수,\u0002플라스마\u0002건,\u0002개머리판\n• \u0002정찰병\n다음 면에 계속\n\n---\n\n• \u0002지정사수\n• \u0002대원\n• \u0002무전병\u0002\n대원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번씩만\u0002\n편성할\u0002수\u0002있습니다.\n이\u0002요원들은\u0002최대\u0002넷까지\u0002편성할\u0002수\u0002있습니다.\n일부\u0002카스르킨\u0002규칙에는 ‘핫샷 무기’가 언급됩니다. 이\n는 무기 명칭에 ‘핫샷’이 포함된 원거리 무기(예: 핫샷 라\n스건, 모든 핫샷 지정사수소총 프로필)를 의미합니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "KASRKIN \nKILL TEAM\nARCHETYPES: SECURITY, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 KASRKIN SERGEANT operative with one of \nthe following options:\n• Bolt pistol; power weapon\n• Hot-shot lasgun; gun butt\n• Hot-shot laspistol; power weapon\n• Plasma pistol; chainsword \n \n↘ 9 KASRKIN operatives selected from the \nfollowing list:\n• COMBAT MEDIC\n• DEMO-TROOPER\n• GUNNER with flamer and gun butt\n• GUNNER with grenade launcher and \ngun butt\n• GUNNER with hot-shot volley gun and \ngun butt\n• GUNNER with meltagun and gun butt\n• GUNNER with plasma gun and gun butt\n• RECON-TROOPER\nCONTINUES ON OTHER SIDE\n\n---\n\n• SHARPSHOOTER\n• TROOPER\n• VOX-TROOPER \nOther than TROOPER operatives, your kill team \ncan only include each operative on this list once.\n You cannot select more than four of these \noperatives combined.\nSome KASRKIN rules refer to a ‘hot-shot \nweapon’. This is a ranged weapon that \nincludes ‘hot-shot’ in its name, e.g. hot-shot \nlasgun, all profiles of a hot-shot marksman \nrifle, etc.",
+      "selection": {
+        "KASRKIN SERGEANT": [
+          [
+            "Bolt pistol; power weapon",
+            "Hot-shot lasgun; gun butt",
+            "Hot-shot laspistol; power weapon",
+            "Plasma pistol; chainsword"
+          ]
+        ],
+        "KASRKIN COMBAT MEDIC": [],
+        "KASRKIN DEMO-TROOPER": [],
+        "KASRKIN RECON-TROOPER": [],
+        "KASRKIN SHARPSHOOTER": [],
+        "KASRKIN TROOPER": [],
+        "KASRKIN VOX-TROOPER": [],
+        "KASRKIN GUNNER": [
+          [
+            "flamer and gun butt",
+            "grenade launcher and gun butt",
+            "hot-shot volley gun and gun butt",
+            "meltagun and gun butt",
+            "plasma gun and gun butt"
+          ]
+        ]
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "elimination-pattern",
+      "text": "KASRKIN\nSTRATEGY PLOY\nELIMINATION PATTERN\nHaving already outmanoeuvred the foe, the Kasrkin \nattempt to fell their target in a single volley.\nWhenever a friendly KASRKIN operative is \nshooting with a hot-shot weapon against an \noperative that cannot retain any cover saves or \nis being scanned (see RECON-TROOPER), that \nweapon has the Piercing Crits 1 weapon rule, or \nPiercing 1 instead if it’s a hot-shot volley gun."
+    },
+    {
+      "name": "engage-from-cover",
+      "text": "KASRKIN\nSTRATEGY PLOY\nENGAGE FROM COVER\nKasrkin are used to being outnumbered and outgunned, \nusing cover to avoid incoming fire as they engage.\nWhenever an operative is shooting a friendly \nKASRKIN operative that’s in cover, you can \nre-roll one of your defence dice."
+    },
+    {
+      "name": "clearance-sweep",
+      "text": "KASRKIN\nSTRATEGY PLOY\nCLEARANCE SWEEP\nThe Kasrkin advance steadily towards their objectives, \nclearing the battlefield of enemies quadrant \nby quadrant.\nPlace your Clearance Sweep marker in the \nkillzone. Whenever a friendly KASRKIN \noperative within 5\" horizontally of that marker is \nshooting an operative also within 5\" horizontally \nof that marker, that friendly operative’s weapons \nhave the Ceaseless weapon rule. In the Ready \nstep of the next Strategy phase, remove \nthat marker."
+    },
+    {
+      "name": "relocate",
+      "text": "KASRKIN\nSTRATEGY PLOY\nRELOCATE\nThe Kasrkin are always on the move, advancing swiftly \nacross the battlefield to take up new firing positions.\nSelect one friendly KASRKIN operative that’s \nmore than 3\" from enemy operatives. That \noperative, and each other friendly KASRKIN \noperative that’s both within 3\" of that operative \nand more than 3\" from enemy operatives, can \nimmediately perform a free Dash action in an \norder of your choice. You cannot use this ploy \nduring the first turning point."
     }
   ]
 }

@@ -1,79 +1,85 @@
 {
   "team": "wrecka-krew",
-  "generated_at": "2026-08-29T21:57:27.682260+00:00",
+  "generated_at": "2026-07-25T17:15:30.772152+00:00",
   "datacards": [
     {
       "name": "WRECKA BOSS NOB",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 14,
       "base_size": 40,
       "weapons": [
         {
-          "name": "로킷 권총",
+          "name": "Rokkit pistol",
           "attacks": "6",
           "hit": "5+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 폭발 1\""
+          "special_rules": "Range 8\", Blast 1\""
         },
         {
-          "name": "쌍수 로킷 권총(집중)",
+          "name": "Two rokkit pistols (focused)",
           "attacks": "6",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 폭발 1\", 집요"
+          "special_rules": "Range 8\", Blast 1\", Ceaseless"
         },
         {
-          "name": "쌍수 로킷 권총(일제 사격)",
+          "name": "Two rokkit pistols (salvo)",
           "attacks": "6",
           "hit": "5+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 폭발 1\", 일제 사격*"
+          "special_rules": "Range 8\", Blast 1\", Salvo*"
         },
         {
-          "name": "초파",
+          "name": "Choppa",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
         },
         {
-          "name": "스매시 해머",
+          "name": "Smash hammer",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         }
       ],
       "passive_abilities": [
         {
-          "name": "레카 보스",
-          "description": "이 요원이 사격 또는 근접전 행동을 수행할 때마다(엄호 제외), 1 레카 포인트를 획득합니다."
+          "name": "Wrecka Boss",
+          "description": "Whenever this operative performs the Shoot or Fight action (excluding Guard), you gain 1 Wrecka point."
         },
         {
-          "name": "*일제사격",
-          "description": "아군 요원의 장악 범위 내에 있지 않으며 서로 다른 유효 대 상을 최대 둘 지정합니다. 이 무기를 사용하여 지정한 주 대상 둘 모두를 원하는 순서대로 사격한 뒤, 같은 방식으로 남은 부가 대상 모두를 사격합"
+          "name": "*Salvo",
+          "description": "Select up to two different valid targets that aren’t within control range of friendly operatives. Shoot with this weapon against both primary targets in an order of your choice, then against all remaining secondary targets in the same manner (roll each sequence separately). Each target (primary and secondary) cannot be shot more than once during the action."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "LEADER",
+        "BOSS NOB"
+      ]
     },
     {
       "name": "WRECKA BOMB SQUIG",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 5,
       "base_size": 25,
       "weapons": [
         {
-          "name": "폭발물",
+          "name": "Explosives",
           "attacks": "6",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "폭발 1\", 한도 1, 폭발물*"
+          "special_rules": "Blast 1\", Limited 1, Explosive*"
         },
         {
-          "name": "물기",
+          "name": "Bite",
           "attacks": "3",
           "hit": "4+",
           "damage": "4/5"
@@ -81,34 +87,39 @@
       ],
       "passive_abilities": [
         {
-          "name": "*폭발물",
-          "description": "이 요원은 적 요원의 장악 범위 내에서 이 무기로 사격을 수행할 수 있습니다. 이때 유효 대상을 지정하지 않습니다. 대신, 폭발물의 주 대상은 항상 이 요원이며 엄폐와 차폐 효과를 받을 수 없습니다."
+          "name": "*Explosive",
+          "description": "This operative can perform the Shoot action with this weapon while within control range of an enemy operative. Don’t select a valid target. Instead, this operative is always the primary target and cannot be in cover or obscured."
         },
         {
-          "name": "멍충이",
-          "description": "화력전 페이즈에 이 요원의 명령을 정할 때, 은폐 명령 을 내릴 수 없습니다. 이 요원은 오직 돌격, 질주, 근접전, 기동 및 사격 행동만 수행할 수 있으며, 요원의 데이터카드에 없는 무기는"
+          "name": "Stoopid",
+          "description": "In the Firefight phase, whenever you determine this operative’s order, you cannot select Conceal. This operative cannot perform any actions other than Charge, Dash, Fight, Reposition and Shoot. It cannot use any weapons that aren’t on its datacard."
         },
         {
-          "name": "펑!",
-          "description": "이 요원이 폭발물을 사용하지 않은 채로 무력화될 경우, D6를 하나 혹은 둘 굴립니다. 굴림 값이 하나라도 4+일 경우, 이 요원은 킬존에서 제거 전 폭발물로 무상 사격 행동을 할 수 있습니다."
+          "name": "Boom!",
+          "description": "If this operative is incapacitated during a battle in which it hasn’t used its explosives, roll one D6, or two D6 if you wish. If any result is a 4+, this operative performs a free Shoot action with its explosives before it’s removed from the killzone."
         },
         {
-          "name": "소모품",
-          "description": "이 요원은 제거/섬멸 작전에서 상대의 기록에 집계되지 않습니다(무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되어 야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습"
+          "name": "Expendable",
+          "description": "This operative is ignored for your opponent’s kill/ elimination op (when it’s incapacitated, and when determining your starting number of operatives). It’s also ignored for victory conditions and scoring VPs if either require operatives to ‘escape’, ‘survive’ or be incapacitated by enemy operatives (if it escapes/survives/is incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "BOMB SQUIG"
+      ]
     },
     {
       "name": "BREAKA BOY DEMOLISHA",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 12,
       "base_size": 32,
       "weapons": [
         {
-          "name": "탱크해머(후려치기)",
+          "name": "Tankhammer (bash)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -116,85 +127,110 @@
       ],
       "passive_abilities": [
         {
-          "name": "무모한 성질",
-          "description": "이 요원은 4 이상의 일반 피해를 받을 때, 그 피해를 -1만큼 변경합니다. 이 요원이 교전 명령을 받은 상태라면, 4 이상의 결정적 피해를 받을 때도 그 피해를 -1만큼 변경합니다."
+          "name": "Reckless Temperament",
+          "description": "Normal Dmg of 4 or more inflicts 1 less damage on this operative; if this operative has an Engage order, Critical Dmg of 4 or more also inflicts 1 less damage on this operative."
         },
         {
-          "name": "*기폭",
-          "description": "전투 중 이 무기 프로필로 적 요원에게 처음 피해 를 입혔을 때, 일반 성공이라면 그 적 요원, 그리고 그 적 요원의 장악 범위 내에 들어간 모든 요원에 D6+6 피해"
+          "name": "*Detonate",
+          "description": "The first time you would inflict damage on an enemy operative with this weapon profile during the battle, inflict D6+6 damage on that enemy operative and each other operative within its control range if it’s a normal success, or 2D6+6 damage if it’s a critical success (roll separately for each). Then the action ends and you gain 1 Wrecka point, plus 1 for each operative that was incapacitated during that action. Damage from this weapon rule cannot be ignored or reduced."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "BREAKA BOY",
+        "DEMOLISHA"
+      ]
     },
     {
       "name": "BREAKA BOY FIGHTER",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 12,
       "base_size": 32,
       "weapons": [
         {
-          "name": "스매시 해머",
+          "name": "Smash hammer",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "BREAK STUFF (1AP)",
+          "description": "Select a terrain feature within this operative’s control range. If it’s an equipment terrain feature, remove it. Otherwise, place one of your Breach markers within this operative’s control range as close as possible to that terrain feature. Whenever an operative is within 1\" of that marker, it treats parts of that terrain feature that are no more than 1\" thick as Accessible terrain. This operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn’t within its control range."
+        }
+      ],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "BREAKA BOY",
+        "FIGHTER"
       ]
     },
     {
       "name": "BREAKA BOY KRUSHA",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 12,
       "base_size": 32,
       "weapons": [
         {
-          "name": "너클버스타",
+          "name": "Knucklebustas",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "무자비, 충격, 강격*"
+          "special_rules": "Brutal, Shock, Smash*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*강격",
-          "description": "타격 시, 공격 대상인 적 요원을 최대 1\"까지 직선 으로 움직일 수 있습니다. 움직일 경우, 그 적 요원은 반 드시 이 요원으로부터 더 멀리 떨어졌으며 모델을 놓을 수 있는 위치에서 이동을 종료해야 합니다. 그 후, 이 요원 을 최대 1\"까지 직선으로 움직여 그 적 요원의 장악 범위 내에서 이동을 종료해야 합니다(두 조건 모두를 만족할 수 없다면 둘 모두 이동할 수 없음)."
+          "name": "*Smash",
+          "description": "Whenever you strike, you can move the enemy operative in a straight line increment of up to 1\". If you do, it must end the move further away from this operative and in a location it can be placed. Then move this operative in a straight line increment of up to 1\", but it must end that move within that enemy operative’s control range (if either isn’t possible, you cannot move them)."
         },
         {
-          "name": "중갑무장",
-          "description": "적 요원이 이 요원을 사격할 때, 혹은 이 요원 이 근접전 또는 대응을 수행할 때, 상대는 값이 6 미만인 공격 주사위 굴림을 결정적 성공으로 보전할 수 없습니다 (예: 살상, 파쇄, 중상 등의 무기 규칙의 결과)."
+          "name": "Armoured Up",
+          "description": "Whenever an enemy operative is shooting this operative, or this operative is fighting or retaliating, your opponent cannot retain attack dice results of less than 6 as critical successes (e.g. as a result of the Lethal, Rending or Severe weapon rules)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "BREAKA BOY",
+        "KRUSHA"
+      ]
     },
     {
       "name": "TANKBUSTA GUNNER",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 12,
       "base_size": 32,
       "weapons": [
         {
-          "name": "에비 로킷 런차",
+          "name": "’Eavy rokkit launcha",
           "attacks": "6",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "폭발 1\", 중화기(질주 한정)"
+          "special_rules": "Blast 1\", Heavy (Dash only)"
         },
         {
-          "name": "로킷 런차",
+          "name": "Rokkit launcha",
           "attacks": "6",
           "hit": "5+",
           "damage": "4/5",
-          "special_rules": "폭발 1\""
+          "special_rules": "Blast 1\""
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/4"
@@ -202,55 +238,157 @@
       ],
       "passive_abilities": [
         {
-          "name": "경쟁 심리",
-          "description": "사격 행동당 한 번, 이 요원이 이번 전환점 동 안 이미 다른 아군 요원에게 사격당한 적 요원을 사격하 면 1 레카 포인트를 획득합니다. 사격 유효 대상을 지정 할 때 이를 결정해야 하며 부가 대상에도 이 규칙을 적용 할 수 있습니다(예: 폭발 무기 규칙의 부가 대상)."
+          "name": "Kompetitive Streak",
+          "description": "Once per Shoot action, if this operative shoots an enemy operative that another friendly operative has already shot during this turning point, you gain 1 Wrecka point. Determine this when you select a valid target, but you can include any secondary targets when doing so (e.g. from the Blast weapon rule)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "TANKBUSTA",
+        "GUNNER"
+      ]
     },
     {
       "name": "TANKBUSTA ROKKITEER",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 12,
       "base_size": 32,
-      "passive_abilities": [
+      "weapons": [
         {
-          "name": "*펄사",
-          "description": "유효 대상을 지정하는 대신, 이 요원의 시야에 들어온 위치 또는 시야에 들어온 지형지물의 고지에 펄사 마커를 배치합니다. 그 마커는 1 펄사 포인트를 획득하며, 그 후 플레이어가 공격 주사 위를 굴려 성공한 굴림마다 1 펄사 포인트를 추가로 획득합니다(최 대 3 추가 포인트). 그 마커로부터 x\" 내에 완전히 들어간 모든 요 원은 D3만큼 피해를 입으며(각 요원마다 별도로 굴림), 이때 x 값 은 그 마커의 펄사 포인트 수치입니다. 그 후 행동이 종료됩니다."
+          "name": "Rokkit launcha",
+          "attacks": "6",
+          "hit": "5+",
+          "damage": "4/5",
+          "special_rules": "Blast 1\""
         },
         {
-          "name": "충격파",
-          "description": "요원이 플레이어의 펄사 마커로부터 x” 내에 있을 때 (왼쪽 참고) 그 요원의 이동 수치를 -2”만큼 변경하고, 요원이 장 비한 무기의 명중 요구치를 1만큼 악화합니다. 이는 부상 상태로 인한 능력치 변경에 누적됩니다. x는 그 마커의 펄사 포인트 수 치입니다. 전략 페이즈마다 준비 단계에서 마커의 펄사 포인트를 -1만큼 변경합니다. 펄사 포인트가 0이 되면 마커를 킬존에서 제 거합니다."
+          "name": "Rokkit rack",
+          "attacks": "6",
+          "hit": "5+",
+          "damage": "4/5",
+          "special_rules": "Blast 2\", Heavy (Reposition only), Limited 1, Relentless"
+        },
+        {
+          "name": "Fists",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4"
         }
       ],
-      "unique_actions": []
+      "passive_abilities": [
+        {
+          "name": "*Pulsa",
+          "description": "Don’t select a valid target. Instead, place your Pulsa marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. That marker gains 1 Pulsa point, then roll attack dice: it gains 1 additional Pulsa point for each success (to a maximum of 3 additional points). Separately inflict D3 damage on each operative wholly within x\" of that marker, where x is that marker’s Pulsa points. Then the action ends."
+        },
+        {
+          "name": "Shokkwave",
+          "description": "Whenever an operative is within x\" of your Pulsa marker (see left), subtract 2\" from its Move stat and worsen the Hit stat of its weapons by 1. This is cumulative with being injured. X is that marker’s Pulsa points. In the Ready step of each Strategy phase, subtract 1 from your Pulsa marker’s points. If a Pulsa marker ever has 0 points, remove it."
+        }
+      ],
+      "unique_actions": [],
+      "keywords": [
+        "WRECKA KREW",
+        "ORK",
+        "TANKBUSTA",
+        "ROKKITEER"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "0cp",
-      "text": "팩션 장비\n레카 크루\n문양\n레카 크루는 등에 짊어진 깃발, 조악한 표식, 문양을 휘갈겨 그린 \n방어구로 어떤 방식의 파괴를 선호하는지 표현한다.\n이\u0002장비\u0002선택\u0002시,\u0002동시에\u0002와아아아!나\u0002파괴\u0002전략\u0002플로이\u0002중\u0002\n하나를\u0002선택합니다.\u0002그\u0002플로이를\u0002전투에서\u0002처음으로\u0002사용할\u0002\n때\u00020CP를\u0002소모합니다.\u0002이후\u0002그\u0002플로이를\u0002다시\u0002사용할\u0002때,\u0002\n레카\u0002포인트를\u0002하나라도\u0002보유\u0002시\u00020CP를\u0002소모해\u0002사용할\u0002수\u0002\n있습니다."
+      "name": "drill-rokkits",
+      "text": "WRECKA KREW\nFACTION EQUIPMENT\nDRILL ROKKITS\nMek ingenuity knows few bounds. Drill rokkits are \ndesigned to strike a target and bore through thick \narmour before exploding.\nOnce per turning point, when a friendly WRECKA \nKREW operative is performing the Shoot action \nand you select a rokkit launcha or ’eavy rokkit \nlauncha, you can use this rule. If you do, until the \nend of that action, that weapon loses the Blast \nweapon rule but has the Piercing 1 weapon rule."
+    },
+    {
+      "name": "extra-armour",
+      "text": "WRECKA KREW\nFACTION EQUIPMENT\nEXTRA ARMOUR\nScrap metal Ork armour may appear haphazard, but it is \nno less effective for its simple construction. \nSubtract 1\" from the Move stat of friendly \nWRECKA KREW operatives and improve their \nSave stat by 1. This excludes BOMB SQUIG \noperatives and isn’t cumulative with the \nProtective rule of a Portable Barricade from \nuniversal equipment."
+    },
+    {
+      "name": "engine-oil",
+      "text": "WRECKA KREW\nFACTION EQUIPMENT\nENGINE OIL\nWrecka Krews are known to ingest the oils of vehicles \nthey have destroyed. The intoxicating fluid bolsters their \nnatural resilience.\nOnce per turning point, when a friendly WRECKA \nKREW operative (excluding BOMB SQUIG) is \nactivated, you can use this rule. If you do, until \nthe end of that activation, you can ignore any \nchanges to that operative’s stats from being \ninjured (including its weapons’ stats)."
+    },
+    {
+      "name": "glyphs",
+      "text": "WRECKA KREW\nFACTION EQUIPMENT\nGLYPHS\nBack-banners, crude markings and glyph-scrawled \narmour proudly display the Wrecka Krew’s favoured \nmethod of destruction.\nWhen this item of equipment is selected, also \nselect the Waaagh! or Destruction strategy ploy. \nThe first time you would use that ploy during the \nbattle, it costs you 0CP; whenever you would \nuse it thereafter, it costs you 0CP if you have any \nWrecka points."
     }
   ],
   "faction_rules": [
     {
-      "name": "apl-1",
-      "text": "팩션 규칙\n레카 크루\n혈기 왕성\n레카 크루는 폭음이 난무하는 전장에서 힘을 얻으며, 이렇게 얻은 \n동력으로 살육의 난장판을 이어 나간다.\n교전\u0002명령을\u0002받은\u0002아군\u0002레카 크루\u0002요원(폭탄 스퀴그\u0002제외)이\u0002\n각\u0002운용/대응\u0002중\u0002처음으로\u0002돌격이나\u0002사격,\u0002또는\u0002근접전\u0002행동\n을\u0002수행할\u0002때(엄호\u0002제외),\u0002다음\u0002운용이\u0002시작될\u0002때까지\u0002그\u0002요\n원의\u0002APL\u0002수치를\u0002+1만큼\u0002변경합니다."
+      "name": "wrecka-rampage",
+      "text": "WRECKA KREW\nFACTION RULE\nWRECKA RAMPAGE\nThe sound of explosions, the acrid stench of smoke and \nthe screams of battle drive Wrecka Krews forwards to \never more destructive acts.\nWhenever a friendly WRECKA KREW operative \nis shooting, fighting or retaliating, in the Roll \nAttack Dice step:\n• For each attack dice result of 6 you retain, you \ngain one Wrecka point.\n• You can spend up to 2 of your Wrecka points \n(unless it’s a BOMB SQUIG, then you cannot \nspend any). For each point you spend this way, \nretain one of your fails as a normal success \ninstead of discarding it.\nYou cannot have more than 6 Wrecka points at \nonce. You can gain and spend Wrecka points \nduring the same action and can do so in an order \nof your choice, unless you started the action with \n6, in which case you can only spend them."
+    },
+    {
+      "name": "tanked-up",
+      "text": "WRECKA KREW\nFACTION RULE\nTANKED UP\nWrecka Krews are empowered by the thrill of explosive \ncombat, lending them fresh impetus as they undertake \ntheir murderous rampages.\nThe first time a friendly WRECKA KREW \noperative (excluding BOMB SQUIG) that has an \nEngage order performs either the Charge, Shoot \nor Fight action (excluding Guard) during each of \nits activations/counteractions, add 1 to its APL \nstat until the start of its next activation."
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "just-a-scratch",
+      "text": "WRECKA KREW\nFIREFIGHT PLOY\nJUST A SCRATCH\nOrks have a remarkable ability to shrug off grievous \ndamage that would incapacitate most other creatures.\nUse this firefight ploy when an attack dice inflicts \nNormal Dmg on a friendly WRECKA KREW \noperative (excluding BOMB SQUIG). Ignore that \ninflicted damage."
+    },
+    {
+      "name": "demolition-job",
+      "text": "WRECKA KREW\nFIREFIGHT PLOY\nDEMOLITION JOB\nShould a prime target present itself, the Wrecka \nKrew will unleash their combined destructive might, \ndemolishing anything in the vicinity.\nUse this firefight ploy after a friendly WRECKA \nKREW operative performs the Shoot or Fight \naction, just before incapacitated operatives are \nremoved (if any). Place one of your Demolition \nmarkers within the target’s control range (if \nit’s using a Blast weapon, the primary target). \nWhenever a friendly WRECKA KREW operative \n(excluding BOMB SQUIG) is shooting against, \nfighting against or retaliating against an operative \nthat’s within 3\" of that marker, you can spend \na Wrecka point for free (even if you have none). \nIn the Ready step of the next Strategy phase, \nremove that marker."
+    },
+    {
+      "name": "proppa-scrap",
+      "text": "WRECKA KREW\nFIREFIGHT PLOY\nPROPPA SCRAP\nOrks like nothing better than a good scrap. With fist or \nhammer, they seek to demonstrate that might is right.\nUse this firefight ploy during a friendly WRECKA \nKREW BREAKA BOY or WRECKA KREW BOSS \nNOB operative’s activation. During that activation, \nthat operative can perform two Fight actions."
+    },
+    {
+      "name": "kaboom",
+      "text": "WRECKA KREW\nFIREFIGHT PLOY\nKABOOM!\nThe more intense the dakka and the louder the boom of \nexplosions, the more satisfying the carnage!\nUse this firefight ploy when a friendly WRECKA \nKREW operative performs the Shoot action and \na weapon with the Blast weapon rule is selected. \nUntil the end of that action, add 1\" to that \nweapon’s Blast and it has the Severe weapon rule \nwhen shooting the primary target. You cannot use \nthis ploy and the Drill Rokkits rule (see faction \nequipment) during the same action. Note that \nSevere doesn’t generate a Wrecka point (as it’s \nnot a 6)."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION WRECKA KREW",
-      "text": "레카 크루 킬 팀\n아키타입: 확보, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002레카 크루\u0002보스 놉\u0002요원,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002\n장비합니다.\n• 로킷\u0002권총,\u0002스매시\u0002해머\n• 쌍수\u0002로킷\u0002권총,\u0002초파\n \n↘\u00022\u0002레카 크루\u0002폭탄 스퀴그\u0002요원\n \n↘\u00025\u0002레카 크루\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• 브레이카 보이 데몰리샤\n• 브레이카 보이 파이터\n• 브레이카 보이 크러샤\n• 탱크버스타 거너,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002\n장비합니다.\n \n○\n에비\u0002로킷\u0002런차,\u0002주먹\n \n○\n로킷\u0002런차,\u0002주먹\n• 탱크버스타 로킷티어,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002\n장비합니다.\n \n○\n로킷\u0002런차,\u0002펄사\u0002로킷,\u0002주먹\n \n○\n로킷\u0002런차,\u0002로킷\u0002발사대,\u0002주먹\n\u0002\n폭탄 스퀴그,\u0002 브레이카 보이 파이터,\u0002 탱크버스타 거너\u0002요원을\u0002\n제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번씩만\u0002편성할\u0002수\u0002\n있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "WRECKA KREW KILL TEAM\nARCHETYPES: SECURITY, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 WRECKA KREW BOSS NOB operative with \none of the following options:\n• Rokkit pistol; smash hammer\n• Two rokkit pistols; choppa \n \n↘ 2 WRECKA KREW BOMB SQUIG operatives \n \n↘ 5 WRECKA KREW operatives selected from \nthe following list:\n• BREAKA BOY DEMOLISHA\n• BREAKA BOY FIGHTER\n• BREAKA BOY KRUSHA\n• TANKBUSTA GUNNER with one of the \nfollowing options:\n \n○’Eavy rokkit launcha; fists\n \n○Rokkit launcha; fists\n• TANKBUSTA ROKKITEER with one of the \nfollowing options:\n \n○Rokkit launcha; pulsa rokkit; fists\n \n○Rokkit launcha; rokkit rack; fists\n \nOther than BOMB SQUIG, BREAKA BOY FIGHTER \nand TANKBUSTA GUNNER operatives, your kill \nteam can only include each operative on this \nlist once.",
+      "selection": {
+        "WRECKA BOSS NOB": [
+          [
+            "Rokkit pistol; smash hammer",
+            "Two rokkit pistols; choppa"
+          ]
+        ],
+        "BREAKA BOY DEMOLISHA": [],
+        "BREAKA BOY FIGHTER": [],
+        "BREAKA BOY KRUSHA": [],
+        "TANKBUSTA GUNNER": [
+          [
+            "’Eavy rokkit launcha; fists",
+            "Rokkit launcha; fists"
+          ]
+        ],
+        "TANKBUSTA ROKKITEER": [
+          [
+            "Rokkit launcha; pulsa rokkit; fists",
+            "Rokkit launcha; rokkit rack; fists"
+          ]
+        ]
+      }
     }
   ],
   "strategy_ploys": [
     {
-      "name": "d3-1",
-      "text": "전략 플로이\n레카 크루\n기세 폭발\n오크는 전투의 혼돈과 불협화음을 즐긴다. 주변에 터져 나가고 \n파괴되는 것이 많을수록 더 많은 아드레날린이 분비된다. 이러한 \n분노에 휩싸인 오크는 평소라면 진작에 쓰러졌을 부상을 입고도 \n싸워나갈 수 있다.\n교전\u0002명령을\u0002받은\u0002각\u0002아군\u0002레카 크루\u0002요원이\u0002D3+1만큼의\u0002\n손실한\u0002체력을\u0002회복합니다(각\u0002요원마다\u0002별도로\u0002굴림)."
+      "name": "waaagh",
+      "text": "WRECKA KREW\nSTRATEGY PLOY\nWAAAGH!\nWhen the Wrecka Krew’s violent rampage reaches its \ncrescendo, a rage overcomes them. They bellow the \ninfamous Ork battle cry as they set upon their enemies \nwith hammer and fist.\nFriendly WRECKA KREW operatives’ melee \nweapons have the Balanced weapon rule."
+    },
+    {
+      "name": "tuff-gitz",
+      "text": "WRECKA KREW\nSTRATEGY PLOY\nTUFF GITZ\nWrecka Krews don’t have time for mukkin’ about. They’ll \ngladly take a hit if it means they get to land a few of \ntheir own.\nWhenever an operative is shooting a friendly \nWRECKA KREW operative that has an Engage \norder, you can re-roll one of your defence dice."
+    },
+    {
+      "name": "destruction",
+      "text": "WRECKA KREW\nSTRATEGY PLOY\nDESTRUCTION\nIf an enemy takes cover, this just provides Wrecka \nKrews with the opportunity to blow more stuff up.\nFriendly WRECKA KREW operatives’ ranged \nweapons have the Saturate weapon rule."
+    },
+    {
+      "name": "amped-up",
+      "text": "WRECKA KREW\nSTRATEGY PLOY\nAMPED UP\nOrks thrive in the chaos and cacophony of battle. The \ngreater the explosions and destruction around them, the \nmore their adrenaline kicks in. When whipped up into \nsuch a fury, they can fight on through injuries that would \nordinarily lay them low.\nEach friendly WRECKA KREW operative that has \nan Engage order can immediately regain up to \nD3+1 lost wounds (roll separately for each)."
     }
   ]
 }

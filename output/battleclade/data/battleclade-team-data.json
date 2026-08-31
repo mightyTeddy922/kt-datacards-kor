@@ -1,43 +1,388 @@
 {
   "team": "battleclade",
-  "generated_at": "2026-08-29T21:33:32.185686+00:00",
+  "generated_at": "2026-08-26T15:17:53.930551+00:00",
+  "datacards": [
+    {
+      "name": "BATTLECLADE TECHNOARCHEOLOGIST",
+      "apl": 3,
+      "movement": "6″",
+      "save": "3+",
+      "wounds": 9,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "Eradication pistol",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/2",
+          "special_rules": "Range 8\", 1\" Devastating 3, Lethal 5+"
+        },
+        {
+          "name": "Servo-arc claw",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "Severe, Shock"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "Seeker of Divine Arcana",
+          "description": "STRATEGIC GAMBIT. You can immediately change this operative’s order and/or it can immediately perform a free Omniscanner, Fall Back, Place Marker, Pick Up Marker, Reposition or mission action. If it’s the Fall Back or Reposition action and this operative isn’t carrying a marker, it must end that move either within your drop zone (if this isn’t possible, then as close as possible to it), or with an objective marker or one of your mission markers within its control range."
+        }
+      ],
+      "unique_actions": [
+        {
+          "name": "OMNISCANNER (1AP)",
+          "description": "Select one enemy operative visible to or within 8\" of this operative to gain one of your Omniscanner tokens. Whenever a friendly BATTLECLADE operative is shooting against, fighting against or retaliating against an enemy operative that has one of your Omniscanner tokens, that friendly operative’s weapons have the Ceaseless weapon rule."
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "TECH-PRIEST",
+        "LEADER",
+        "TECHNOARCHEOLOGIST"
+      ]
+    },
+    {
+      "name": "BATTLECLADE AUTO-PROXY SERVITOR",
+      "apl": 2,
+      "movement": "5″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "Taser goad",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "special_rules": "Lethal 5+, Shock"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "Achillan Eye",
+          "description": "Whenever a friendly BATTLECLADE operative is shooting an enemy operative visible to this operative, that friendly operative’s ranged weapons have the Saturate weapon rule. This rule has no effect if this operative is within control range of an enemy operative."
+        }
+      ],
+      "unique_actions": [
+        {
+          "name": "GAZE OF THE OMNISSIAH (1AP)",
+          "description": "Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly BATTLECLADE operative is shooting that enemy operative, you can use this effect. If you do:\n• That friendly operative’s ranged weapons have the Seek Light weapon rule.\n• That enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "AUTO-PROXY",
+        "SERVITOR"
+      ]
+    },
+    {
+      "name": "BATTLECLADE BREACHER SERVITOR",
+      "apl": 2,
+      "movement": "5″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "Lascutter (close range)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "Range 2\", Lethal 5+, Piercing 2"
+        },
+        {
+          "name": "Lascutter (short range)",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "Range 6\", Lethal 5+"
+        },
+        {
+          "name": "Hydraulic pincer & lascutter",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/6",
+          "special_rules": "Lethal 5+"
+        }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "BREACH (1AP)",
+          "description": "Place one of your Breach markers within this operative’s control range as close as possible to a terrain feature within control range of it. Whenever an operative is within 1\" of that marker, it treats parts of that terrain feature that are no more than 1\" thick as Accessible terrain. This operative cannot perform this action while within control range of an enemy operative, or if a terrain feature isn’t within its control range."
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "BREACHER",
+        "SERVITOR"
+      ]
+    },
+    {
+      "name": "BATTLECLADE COMBAT SERVITOR",
+      "apl": 2,
+      "movement": "5″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "Incendine igniter",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "special_rules": "Range 6\", Saturate, Torrent 1\""
+        },
+        {
+          "name": "Meltagun",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "special_rules": "Range 6\", Devastating 4, Piercing 2"
+        },
+        {
+          "name": "Phosphor blaster",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "special_rules": "Blast 1\", Severe"
+        },
+        {
+          "name": "Servo-claw",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4"
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "COMBAT",
+        "SERVITOR"
+      ]
+    },
+    {
+      "name": "BATTLECLADE GUN SERVITOR",
+      "apl": 2,
+      "movement": "5″",
+      "save": "4+",
+      "wounds": 11,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "Heavy arc rifle",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/6",
+          "special_rules": "Heavy (Dash only), Piercing 1, Stun"
+        },
+        {
+          "name": "Heavy bolter (focused)",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "special_rules": "Heavy (Dash only), Piercing Crits 1"
+        },
+        {
+          "name": "Heavy bolter (sweeping)",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "special_rules": "Heavy (Dash only), Piercing Crits 1, Torrent 1\""
+        },
+        {
+          "name": "Augmetic claw",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "4/5",
+          "special_rules": "Brutal"
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "GUN",
+        "SERVITOR"
+      ]
+    },
+    {
+      "name": "BATTLECLADE SERVITOR UNDERSEER",
+      "apl": 3,
+      "movement": "6″",
+      "save": "3+",
+      "wounds": 9,
+      "base_size": 32,
+      "weapons": [
+        {
+          "name": "Master-crafted radium pistol",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "special_rules": "Range 8\", Balanced, Rending"
+        },
+        {
+          "name": "Dataspikes",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "2/3"
+        }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "DATACORONAL ACCUMULATOR (1AP)",
+          "description": "SUPPORT. Determine the friendly BATTLECLADE operatives within 6\" of this operative and/or a friendly BATTLECLADE AUTO-PROXY operative, then roll one D3. If the result is equal to or less than the number of objective markers those friendly operatives contest, you gain 1CP. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control your Comms Device marker to add 3\" to its distance requirement for this rule. This operative cannot perform this action while within control range of an enemy operative."
+        },
+        {
+          "name": "NETWORK OVERRIDE (1AP)",
+          "description": "SUPPORT. Select one friendly BATTLECLADE SERVITOR operative within 6\" of either this operative or a friendly BATTLECLADE AUTO-PROXY operative to immediately NETWORK COUNTERACT (you don’t have to TRANSFER POWER to do so) or perform a free Dash action. Continue this operative’s activation after doing so. For the purposes of the Comms Device universal equipment, the operative the distance is being determined from must control that marker. This operative can perform this action twice during its activation, but it must select a different friendly operative each time and it cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "TECH-PRIEST",
+        "SERVITOR UNDERSEER"
+      ]
+    },
+    {
+      "name": "BATTLECLADE TECHNOMEDIC SERVITOR",
+      "apl": 2,
+      "movement": "5″",
+      "save": "4+",
+      "wounds": 8,
+      "base_size": 25,
+      "weapons": [
+        {
+          "name": "Servo-chirurgic claw",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "special_rules": "Rending"
+        }
+      ],
+      "passive_abilities": [
+        {
+          "name": "Mechanosuture Array",
+          "description": "Once per turning point, when another friendly BATTLECLADE operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range. If this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it’s a Shoot action and this operative would be a primary or secondary target."
+        }
+      ],
+      "unique_actions": [
+        {
+          "name": "EXPEDIENT REPAIR (1AP)",
+          "description": "Select one friendly BATTLECLADE operative within this operative’s control range to regain up to D3+3 lost wounds. It cannot be an operative that the Mechanosuture Array rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "BATTLECLADE",
+        "IMPERIUM",
+        "ADEPTUS MECHANICUS",
+        "MEDIC",
+        "TECHNOMEDIC",
+        "SERVITOR"
+      ]
+    }
+  ],
   "equipment": [
     {
-      "name": "0ap",
-      "text": "전투계통\n팩션 장비\n신경주기성 예비 셀\n전투계통 요원은 서비터 역량 가속화를 위해 이 장치를 승인받는다.\n전환점당\u0002한\u0002번,\u0002동력 전달을\u0002수행\u0002시\u0002이\u0002규칙을\u0002사용할\u0002수\u0002있습\n니다.\u0002그렇게\u0002할\u0002경우,\u00020AP로\u0002동력 전달을\u0002수행할\u0002수\u0002있습니다\n(일반적인\u0002노어스피어\u0002네트워크\u0002규칙에\u0002우선함)."
+      "name": "covert-guises",
+      "text": "BATTLECLADE\nFACTION EQUIPMENT\nCOVERT GUISES\nUsing filthy bodysuits of local design, falsified insignia or \nemitters that broadcast shrouding static-filled hisses to \nfoil biological senses, this Battleclade can infiltrate into \nrestricted areas undetected.\nAfter revealing this equipment option, roll one \nD3. As a STRATEGIC GAMBIT in the first turning \npoint, a number of friendly BATTLECLADE \noperatives equal to the result that are wholly \nwithin your drop zone can immediately perform \na free Reposition action, but must end that \nmove wholly within 3\" of your drop zone. Your \nTECHNOARCHEOLOGIST operative cannot \nperform more than one Reposition action in the \nStrategy phase of the first turning point (i.e. as a \nresult of the Seeker of Divine Arcana rule as well)."
+    },
+    {
+      "name": "electromantic-capacitors",
+      "text": "BATTLECLADE\nFACTION EQUIPMENT\nELECTROMANTIC CAPACITORS\nWired into an operative’s numerous mechanical \ncomponents, these devices can charge the bodies of a \nclandestine team with coruscating arcs of the sacred \nMotive Force.\nFriendly BATTLECLADE operatives’ melee \nweapons have the Shock weapon rule. Whenever \na friendly BATTLECLADE operative is retaliating, \nits melee weapons also have the Severe \nweapon rule."
+    },
+    {
+      "name": "concealed-apparatus",
+      "text": "BATTLECLADE\nFACTION EQUIPMENT\nCONCEALED APPARATUS\nSeemingly lightly equipped servitors can, at an \nimperative from their master, swiftly assemble far more \ndeadly apparatus, the components of which were hidden \nin body cavities or as entirely different mechanisms.\nOnce per battle, one COMBAT SERVITOR or \nGUN SERVITOR operative can use another \nweapon option on its datacard it didn’t select for \nthe battle."
+    },
+    {
+      "name": "neurocyclic-reserve-cells",
+      "text": "BATTLECLADE\nFACTION EQUIPMENT\nNEUROCYCLIC RESERVE CELLS\nBattleclades are granted these devices to accelerate \nservitor capabilities.\nOnce per turning point, whenever you TRANSFER \nPOWER, you can use this rule. If you do, you \ncan TRANSFER POWER for 0AP (this takes \nprecedence over the normal Noospheric \nNetwork rules)."
     }
   ],
   "faction_rules": [
     {
-      "name": "NOOSPHERIC NETWORK",
-      "text": "전투계통\n팩션 규칙\n노어스피어 네트워크\n서비터들은 보이지 않는 통제 망으로 기술사제 주인에 복속되어 \n있다. 노어스피어 네트워크를 통해 서비터들은 빠르게 재편성되어 \n기술사제의 즉각적인 명령을 더 잘 섬길 수 있는 다른 종복에 처리 \n동력을 전달할 수 있다. 일부는 기본적인 프로그래밍에 순응할 수\n밖에 없는 반면, 기계신의 영광을 위해 달성해야 하는 주요 과업을 \n지시받은 종복도 있다.\n각\u0002아군\u0002전투계통\u0002서비터\u0002요원의\u0002운용\u0002중\u0002한\u0002번,\u0002행동을\u0002수행\n하기\u0002전\u0002또는\u0002후에\u00021AP를\u0002소모하여\u0002동력 전달을\u0002수행할\u0002수\u0002\n있습니다.\n그\u0002운용이\u0002종료된\u0002후,\u0002상대의\u0002운용\u0002전\u0002다른\u0002아군\u0002전투계통\u0002\n서비터\u0002요원\u0002하나로\u0002네트워크 대응을\u0002수행할\u0002수\u0002있습니다.\u0002아군\u0002\n요원이\u0002네트워크 대응을\u0002수행할\u0002때마다,\u0002먼저\u0002요원의\u0002명령을\u0002\n지정합니다.\u0002이후\u0002그\u0002요원은\u00021AP\u0002행동을\u0002무상으로\u0002수행할\u0002수\u0002\n있으나,\u0002그\u0002행동\u0002중\u00022”\u0002넘게\u0002이동할\u0002수는\u0002없습니다.\u0002무상\u0002행동\n을\u0002수행한\u0002후에는\u0002상대가\u0002원래대로\u0002운용합니다.\n다음 면에 계속\n\n---\n\n요원은\u0002APL\u0002수치가\u00022\u0002미만이라면(다른\u0002규칙에\u0002의해\u0002수치\n가\u00022\u0002미만으로\u0002변경될\u0002경우)\u0002동력 전달\u0002또는\u0002네트워크 대응을\u0002\n수행할\u0002수\u0002없습니다.\u0002네트워크 대응은\u0002대응이지만,\u0002수행하는\u0002\n요원이\u0002교전\u0002명령을\u0002받고\u0002소진\u0002상태일\u0002필요는\u0002없습니다.\u0002즉,\u0002\n네트워크 대응을\u0002수행할\u0002때\u0002준비\u0002상태였다면,\u0002전환점\u0002중\u0002그\u0002\n이후\u0002원래대로\u0002운용될\u0002수\u0002있습니다.\u0002네트워크 대응을\u0002수행한\u0002\n요원은\u0002같은\u0002전환점\u0002중에는\u0002이를\u0002다시\u0002수행하거나\u0002대응할\u0002\n수\u0002없습니다."
+      "name": "noospheric-network",
+      "text": "BATTLECLADE\nFACTION RULE\nNOOSPHERIC NETWORK\nServitors are yoked to their Tech-Priest masters by \nan invisible web of control. This noospheric network \nenables servitors to be rapidly reorganised, transferring \nprocessing power to other thralls who might better serve \nthe Tech-Priests’ immediate wishes. While some are \nleft to conform to their basic programming, others are \ninstructed with key tasks that must be fulfilled for the \nglory of the Machine God.\nOnce during each friendly BATTLECLADE \nSERVITOR operative’s activation, before or after \nit performs an action, you can spend 1AP to \nTRANSFER POWER. \nAfter that activation, you can NETWORK \nCOUNTERACT with one other friendly \nBATTLECLADE SERVITOR operative before your \nopponent activates. Whenever you NETWORK \nCOUNTERACT with a friendly operative, first \nselect its order. It can then perform a 1AP action \nfor free, but cannot move more than 2\" during \nthat action. Once it’s done so, your opponent \nthen activates as normal.\nCONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "An operative cannot TRANSFER POWER or",
+          "text": "NETWORK COUNTERACT if it has an APL stat of less than 2 (e.g. if the stat has been changed to less than 2 by a rule). NETWORK COUNTERACT is a counteraction, but the operative doesn’t need to be expended with an Engage order to do it. That means if they’re ready when they NETWORK COUNTERACT, they can still be activated as normal later in the turning point. An operative that does NETWORK COUNTERACT cannot do so again, or counteract, during the same turning point."
+        }
+      ]
     }
   ],
   "firefight_ploys": [
     {
-      "name": "1apl",
-      "text": "전투계통\n화력전 플로이\n시스템 퇴마\n전투계통의 정예 요원은 센서 경로를 재설정하거나, 오염 물질을 \n제거하거나, 야생 기계령을 풀어 오염된 논리 루프를 처리하는 \n방법으로 위험한 고난을 퇴마할 수 있다.\n이\u0002화력전\u0002플로이는\u0002아군\u0002전투계통\u0002요원이\u0002운용됐을\u0002때\u0002사용\n할\u0002수\u0002있습니다.\u0002상대가\u0002그\u0002아군\u0002요원에\u0002적용한\u0002규칙\u0002효과\u0002또\n는\u0002수치\u0002변경을(예:\u0002중독\u0002토큰,\u0002-1APL,\u0002운용\u0002불가,\u0002행동\u0002수행\u0002\n불가\u0002등)\u0002하나\u0002제거한\u0002뒤\u0002운용합니다.\u0002이\u0002플로이는\u0002손실한\u0002체\n력을\u0002회복하거나,\u0002부상\u0002상태의\u0002효과를\u0002무시하거나,\u0002임무\u0002팩\u0002\n규칙을\u0002제거하기\u0002위해\u0002쓸\u0002수\u0002없습니다."
+      "name": "system-exorcism",
+      "text": "BATTLECLADE\nFIREFIGHT PLOY\nSYSTEM EXORCISM\nBy redirecting sensory pathways, purging contaminants \nor unleashing feral machine spirits to consume tainted \nlogic loops, the elite operatives of a Battleclade can \nexorcise many dangerous afflictions.\nUse this firefight ploy when you would activate a \nfriendly BATTLECLADE operative. Remove one \nrules effect or stat change your opponent has \napplied to it (e.g. Poison token, -1APL, cannot be \nactivated or perform actions, etc.), then activate \nit. This ploy cannot allow it to regain lost wounds, \nignore the effects of being injured or remove \nmission pack rules."
+    },
+    {
+      "name": "remote-access",
+      "text": "BATTLECLADE\nFIREFIGHT PLOY\nREMOTE ACCESS\nProjecting a canticle of hexamathic authority, the most \nworthy Tech-Priests can commune with intransigent \nmachine spirits even without physical contact.\nUse this firefight ploy during a friendly \nBATTLECLADE TECH-PRIEST operative’s \nactivation. Once during that activation, you can \nuse one of the following rules:\n• That operative doesn’t require a marker to be \nwithin its control range to perform a mission \naction that usually requires this (this takes \nprecedence over that action’s conditions). \nInstead, the marker must be within 4\" of it \nand no enemy operatives can contest that \nmarker. However, you can ignore enemy \noperatives within control range of other \nfriendly BATTLECLADE operatives when \ndetermining this.\n• That operative doesn’t require a hatchway’s \naccess point to be within its control range to \nperform an Operate Hatch action. Instead, that \naccess point must be within 4\" of it."
+    },
+    {
+      "name": "auto-ferric-supplication",
+      "text": "BATTLECLADE\nFIREFIGHT PLOY\nAUTO-FERRIC SUPPLICATION\nIn extremis, the Omnissiah’s faithful channel their zeal \ninto shielding energy projectors and the refractive \nrealignment of their bionic body parts.\nUse this firefight ploy when an operative is \nshooting a friendly BATTLECLADE TECH-PRIEST \noperative, at the start of the Roll Attack Dice step. \nUntil the end of the sequence, ignore the Piercing \nweapon rule."
+    },
+    {
+      "name": "servile-surrogacy",
+      "text": "BATTLECLADE\nFIREFIGHT PLOY\nSERVILE SURROGACY\nDeeply woven into each thrall’s cybernetic programming \nis the instinct to bodily shield their masters should they \nbe threatened.\nUse this firefight ploy when a friendly \nBATTLECLADE TECH-PRIEST operative is \nselected as the valid target of a Shoot action or \nto fight against during the Fight action. Select \none friendly BATTLECLADE SERVITOR operative \nvisible to and within 3\" of that first friendly \noperative to become the valid target or to be \nfought against (as appropriate) instead (even if \nit wouldn’t normally be valid for this). If it’s the \nFight action, treat that SERVITOR operative as \nbeing within the fighting operative’s control range \nfor the duration of that action. If it’s the Shoot \naction, that SERVITOR operative is only in cover \nor obscured if the original target was.\nThis ploy has no effect if it’s the Shoot action \nand the ranged weapon has the Blast or Torrent \nweapon rule."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION BATTLECLADE",
-      "text": "전투계통 킬 팀\n아키타입: 침투, 정찰\n요원 목록\n \n↘\u00021\u0002전투계통\u0002기술고고학자\u0002요원\n \n↘\u00021\u0002전투계통\u0002서비터 하위감독\u0002요원\n \n↘\u00028\u0002전투계통\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• 자동중계형 서비터\n• 돌파형 서비터\n• 교전형 서비터,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002\n장비합니다.\n \n○\n\u0002서보클로,\u0002소각성\u0002점화기\n \n○\n\u0002서보클로,\u0002멜타건\n \n○\n\u0002서보클로,\u0002포스퍼\u0002블라스터\n• 총기형 서비터,\u0002중형\u0002아크\u0002소총,\u0002증강\u0002클로\u0002장비\n• 총기형 서비터,\u0002중형\u0002볼터,\u0002증강\u0002클로\u0002장비\n• 기술의료형 서비터\n다음 면에 계속\n\n---\n\n교전형 서비터\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀\n에\u0002한\u0002번씩만\u0002편성할\u0002수\u0002있습니다.\u0002킬\u0002팀에\u0002멜타건을\u0002장비한\u0002\n교전형 서비터\u0002요원은\u0002하나만\u0002편성할\u0002수\u0002있으며,\u0002소각성\u0002점화기\n를\u0002장비한\u0002교전형 서비터\u0002요원은\u0002셋까지\u0002편성할\u0002수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "BATTLECLADE KILL TEAM\nARCHETYPES: INFILTRATION, RECON\nOPERATIVES\n \n↘ 1 BATTLECLADE TECHNOARCHEOLOGIST \noperative \n \n↘ 1 BATTLECLADE SERVITOR UNDERSEER \noperative \n \n↘ 8 BATTLECLADE operatives selected from the \nfollowing list:\n• AUTO-PROXY SERVITOR\n• BREACHER SERVITOR\n• COMBAT SERVITOR with one of the \nfollowing options:\n \n○ Servo-claw; incendine igniter\n \n○ Servo-claw; meltagun\n \n○ Servo-claw; phosphor blaster\n• GUN SERVITOR with heavy arc rifle and \naugmetic claw\n• GUN SERVITOR with heavy bolter and \naugmetic claw\n• TECHNOMEDIC SERVITOR\nCONTINUES ON OTHER SIDE\n\n---\n\nOther than COMBAT SERVITOR operatives, your \nkill team can only include each operative on this \nlist once. Your kill team can only include up to \none COMBAT SERVITOR operative with meltagun, \nand it can only include up to three COMBAT \nSERVITOR operatives with incendine igniter.",
+      "selection": {
+        "BATTLECLADE AUTO-PROXY SERVITOR": [],
+        "BATTLECLADE BREACHER SERVITOR": [],
+        "BATTLECLADE COMBAT SERVITOR": [
+          [
+            "Servo-claw; incendine igniter",
+            "Servo-claw; meltagun",
+            "Servo-claw; phosphor blaster"
+          ]
+        ],
+        "BATTLECLADE TECHNOMEDIC SERVITOR": [],
+        "BATTLECLADE GUN SERVITOR": [
+          [
+            "heavy arc rifle and augmetic claw",
+            "heavy bolter and augmetic claw"
+          ]
+        ]
+      }
     }
   ],
   "strategy_ploys": [
     {
-      "name": "0cp",
-      "text": "전투계통\n전략 플로이\n환원의 의무\n향상된 바이너릭 교리의 은밀한 문자열이 전투계통 요원들에 \n내장되어 있다. 이 명령은 기술사제가 지정한 전리품과 인접했을 \n때 활성화되어 작동한다.\n행동당\u0002한\u0002번,\u0002목표물\u0002마커나\u0002플레이어의\u0002임무\u0002마커\u0002중\u0002하\n나를\u0002경쟁\u0002중인\u0002아군\u0002전투계통\u0002요원에\u0002대해\u0002공격\u0002또는\u0002방어\u0002\n주사위를\u0002굴린\u0002경우,\u0002지휘\u0002재굴림\u0002화력전\u0002플로이를\u00020CP에\u0002\n사용할\u0002수\u0002있습니다."
+      "name": "noospheric-possession",
+      "text": "BATTLECLADE\nSTRATEGY PLOY\nNOOSPHERIC POSSESSION\nBy broadcasting portions of their neural architecture \ninto their thralls, sometimes via a well-positioned relay, \nmanipulative Servitor Underseers effectively possess \ntheir tools to better direct the Omnissiah’s wrath.\nSUPPORT. Whenever a friendly BATTLECLADE \nSERVITOR operative is within 6\" of a friendly \nBATTLECLADE AUTO-PROXY or BATTLECLADE \nSERVITOR UNDERSEER operative, that friendly \nSERVITOR operative’s weapons have the \nAccurate 1 weapon rule.\nFor the purposes of the Comms Device universal \nequipment, the operative the distance is \nbeing determined from must control your \nComms Device marker to add 3\" to its distance \nrequirement for this rule."
     },
     {
-      "name": "d6-4",
-      "text": "전투계통\n전략 플로이\n철혼의 낭송문\n기술사제의 바이나릭 찬송이나 성스러운 서브루틴에 의해 마이\n크로구동기가 지탱 위치에 고정되고 예비 동력 셀이 활성화된다. \n육신은 나약하나, 기계신께서 하사하신 증강의 축복이 주는 성스\n러운 방호는 모두에게 증거가 되리라.\n공격\u0002주사위가\u0002아군\u0002전투계통\u0002요원에게\u00023\u0002이상의\u0002피해를\u0002\n가할\u0002때마다\u0002D6\u0002하나를\u0002굴립니다.\u0002값이\u00024+이면,\u0002그\u0002공격의\u0002\n피해를\u0002-1만큼\u0002변경합니다."
+      "name": "duty-of-reclamation",
+      "text": "BATTLECLADE\nSTRATEGY PLOY\nDUTY OF RECLAMATION\nEmbedded in Battleclade operatives are lurking strands \nof enhanced binharic doctrine. These instructions await \nthe moment to activate, triggered by the proximity of a \nTech-Priest’s designated prize.\nOnce per action, you can use the Command Re-\nroll firefight ploy for 0CP if the attack or defence \ndice was rolled for a friendly BATTLECLADE \noperative that contests an objective marker or \none of your mission markers."
     },
     {
-      "name": "apl-1",
-      "text": "전투계통\n전략 플로이\n우선적 취득\n기술고고학자에게 취득은 성스러운 과업이며, 그 열성적인 광신은 \n그들의 바이나릭 지시에 묻어나온다. 도둑들의 신성모독에 대해 \n공격 프로토콜이 개시되며 종복들에게 생화학적 자극제가 투입된\n다. 이들은 주인이 혐오스러워하는 모든 대상에 조치를 취한다.\n목표물\u0002마커\u0002또는\u0002플레이어의\u0002임무\u0002마커\u0002중\u0002하나를\u0002지정합니다.\n• \u0002그\u0002마커의\u0002장악\u0002여부를\u0002결정할\u0002때마다,\u0002아군\u0002전투계통\u0002요\n원이\u0002하나라도\u0002그\u0002마커를\u0002경쟁한다면\u0002마커를\u0002경쟁하는\u0002\n아군\u0002전투계통\u0002요원의\u0002APL\u0002총합이\u0002+1만큼\u0002변경된\u0002것으\n로\u0002간주합니다.\u0002실제로\u0002APL\u0002수치가\u0002변경된\u0002것은\u0002아니므로\u0002\n다른\u0002APL\u0002변경\u0002사항과\u0002누적된다는\u0002점을\u0002유의하십시오.\n• \u0002아군\u0002전투계통\u0002요원이\u0002그\u0002마커의\u00023\"\u0002내에\u0002있을\u0002때마다,\u0002\n보유한\u0002근접\u0002무기의\u0002공격\u0002수치를\u0002+1만큼\u0002변경합니다(최\n대\u00024까지)."
+      "name": "incantation-of-the-iron-soul",
+      "text": "BATTLECLADE\nSTRATEGY PLOY\nINCANTATION OF THE IRON SOUL\nThrough chanted binharic praise from the Tech-Priests, \nor sparked by holy subroutines, microactuators lock \ninto bracing positions and reserve power cells are \nbrought online. The flesh may be weak, but the sacred \ninvulnerability of the Machine God’s augmetic blessings \nis evident to all.\nWhenever an attack dice inflicts damage of 3 or \nmore on a friendly BATTLECLADE operative, \nroll one D6: on a 4+, subtract 1 from that \ninflicted damage."
+    },
+    {
+      "name": "prioritised-acquisition",
+      "text": "BATTLECLADE\nSTRATEGY PLOY\nPRIORITISED ACQUISITION\nAcquisition is a holy task to a Technoarcheologist, \nand their zealous fanaticism bleeds into their binharic \ninstructions. Faced with the sacrilege of thieves, \naggression protocols are initiated and biochemical \nstimulants are released in their thralls, endowing all with \na measure of their master’s repugnance.\nSelect one objective marker or one of your \nmission markers.\n• Whenever determining control of that \nmarker, treat the total APL stat of friendly \nBATTLECLADE operatives that contest it as 1 \nhigher if at least one friendly BATTLECLADE \noperative contests that marker. Note this isn’t \na change to the APL stat, so any changes are \ncumulative with this.\n• Whenever a friendly BATTLECLADE operative \nis within 3\" of that marker, add 1 to the Atk stat \nof its melee weapons (to a maximum of 4)."
     }
   ]
 }

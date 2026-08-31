@@ -1,6 +1,6 @@
 {
   "team": "nemesis-claw",
-  "generated_at": "2026-08-29T21:55:46.210519+00:00",
+  "generated_at": "2026-08-15T18:39:39.276225+00:00",
   "datacards": [
     {
       "name": "NIGHT LORD VISIONARY",
@@ -11,67 +11,81 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "플라스마 권총(표준)",
+          "name": "Plasma pistol (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "플라스마 권총(과충전)",
+          "name": "Plasma pistol (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 과열, 살상 5+, 관통 1"
+          "special_rules": "Range 8\", Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "노스트라만 체인블레이드",
+          "name": "Nostraman chainblade",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "파쇄"
+          "special_rules": "Rending"
         },
         {
-          "name": "파워 피스트",
+          "name": "Power fist",
           "attacks": "5",
           "hit": "4+",
           "damage": "5/7",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         },
         {
-          "name": "파워 몰",
+          "name": "Power maul",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "충격"
+          "special_rules": "Shock"
         },
         {
-          "name": "역장 무기",
+          "name": "Power weapon",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
+      ],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "PSYKER",
+        "LEADER",
+        "VISIONARY"
       ],
       "passive_abilities": [
         {
-          "name": "예지",
-          "description": "사이킥. 전략 페이즈마다 준비 단계에서 D3 예지 포인트를 획득합니다. 각 전환점이 종료될 때마다 보유 중인 예지 포인트를 버립니다. 예지 포인트는 화력전 페이즈에 사용할 수 있으며 다음을 따릅니다(한 전환점에 다음 규칙 중 동일한 규칙을 여러 번 사용할 수는 없음)."
+          "name": "Prescience",
+          "description": "PSYCHIC. In the Ready step of each Strategy phase, you gain D3 Prescience points. At the end of each turning point, discard your Prescience points. You can spend your Prescience points in the Firefight phase as follows (you cannot use each of the following rules more than once per turning point):"
         },
         {
-          "name": "\u0002불길한\u0002예감",
-          "description": "\u0002사이킥. 플레이어의 턴에 아군 요원을 운용 시, 1 예지 포인트를 소모하여 그 운용을 넘길 수 있습니다."
+          "name": "Foreboding",
+          "description": "PSYCHIC. Whenever it’s your turn to activate a friendly operative, you can spend 1 of your Prescience points to skip that activation."
         },
         {
-          "name": "흉조",
-          "description": "사이킥. 이 요원이 공격 주사위로 인한 일반 피해 를 입을 때마다, 1 예지 포인트를 소모하여 그 피해를 무시할 수 있습니다. 이 요원이 무력화되었다면 예지 포인트를 획득, 또는 소모할 수 없습니다. 사전경고"
+          "name": "Portent",
+          "description": "PSYCHIC. Whenever an attack dice inflicts Normal Dmg on this operative, you can spend 1 of your Prescience points to ignore that inflicted damage. You cannot gain or spend your Prescience points if this operative is incapacitated."
+        }
+      ],
+      "unique_actions": [
+        {
+          "name": "PREMONITION (1AP)",
+          "description": "PSYCHIC. Spend 1 of your Prescience points to gain 1CP."
         }
       ]
     },
@@ -84,44 +98,55 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "조준경 볼트 권총(단거리)",
+          "name": "Scoped bolt pistol (short range)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\", 살상 5+"
+          "special_rules": "Range 8\", Lethal 5+"
         },
         {
-          "name": "조준경 볼트 권총(장거리)",
+          "name": "Scoped bolt pistol (long range)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "공포작용제 약병",
+          "name": "Terrorchem vial",
           "attacks": "5",
           "hit": "3+",
           "damage": "2/0",
-          "special_rules": "사거리 6\", 폭발 2\", 궤멸 3, 한도 1, 포화, 공포작용제*"
+          "special_rules": "Range 6\", Blast 2\", Devastating 3, Limited 1, Saturate, Terrorchem*"
         },
         {
-          "name": "독날",
+          "name": "Tainted blade",
           "attacks": "5",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "공포작용제*"
+          "special_rules": "Terrorchem*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*공포작용제",
-          "description": "공격 주사위 처리 단계에, 플레이어가 결정적 성공으로 피해를 가하면(궤멸 무기 규칙의 결과도 포함), 그 무기의 대상으로 지정된 요원은 공포작용제 토큰을 하나 획득합니다. 이미 공포작용제 토큰을 보유하고 있"
+          "name": "*Terrorchem",
+          "description": "In the Resolve Attack Dice step, if you inflict damage with any critical successes (including as a result of the Devastating weapon rule), the operative this weapon is being used against gains one of your Terrorchem tokens (if it doesn’t already have one)."
         },
         {
-          "name": "공포작용제 독",
-          "description": "공포작용제 토큰을 보유한 요원이 운용 될 때마다 그 요원에게 D3 피해를 가합니다."
+          "name": "Terrorchem Poison",
+          "description": "Whenever an operative that has one of your Terrorchem tokens is activated, inflict D3 damage on it."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "POISON OBJECTIVE (1AP)",
+          "description": "Select one objective marker this operative controls to gain one of your Terrorchem tokens. It cannot be an objective marker within control range of an enemy operative, or one that already has one of your Terrorchem tokens. The first time an enemy operative that doesn’t have one of your Terrorchem tokens contests that objective marker, that operative gains that Terrorchem token, then inflict 2D3 damage on it (if it’s during an action, at the end of that action). This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "FEARMONGER"
+      ]
     },
     {
       "name": "NIGHT LORD GUNNER",
@@ -132,46 +157,52 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "화염방사기",
+          "name": "Flamer",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "사거리 8\", 포화, 격류 2\""
+          "special_rules": "Range 8\", Saturate, Torrent 2\""
         },
         {
-          "name": "멜타건",
+          "name": "Meltagun",
           "attacks": "4",
           "hit": "3+",
           "damage": "6/3",
-          "special_rules": "사거리 6\", 궤멸 4, 관통 2"
+          "special_rules": "Range 6\", Devastating 4, Piercing 2"
         },
         {
-          "name": "플라스마 건(표준)",
+          "name": "Plasma gun (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "관통 1"
+          "special_rules": "Piercing 1"
         },
         {
-          "name": "플라스마 건(과충전)",
+          "name": "Plasma gun (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "과열, 살상 5+, 관통 1"
+          "special_rules": "Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         }
+      ],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "GUNNER"
       ]
     },
     {
@@ -183,46 +214,52 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "중형 볼터(집중)",
+          "name": "Heavy bolter (focused)",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "중화기(기동 한정), 결정적 관통 1"
+          "special_rules": "Heavy (Reposition only), Piercing Crits 1"
         },
         {
-          "name": "중형 볼터(소사)",
+          "name": "Heavy bolter (sweeping)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "중화기(기동 한정), 결정적 관통 1, 격류 1”"
+          "special_rules": "Heavy (Reposition only), Piercing Crits 1, Torrent 1\""
         },
         {
-          "name": "미사일 발사기(세열)",
+          "name": "Missile launcher (frag)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "폭발 2\", 중화기(기동 한정)"
+          "special_rules": "Blast 2\", Heavy (Reposition only)"
         },
         {
-          "name": "미사일 발사기(크랙)",
+          "name": "Missile launcher (krak)",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/7",
-          "special_rules": "중화기(기동 한정), 관통 1"
+          "special_rules": "Heavy (Reposition only), Piercing 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         }
+      ],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "HEAVY GUNNER"
       ]
     },
     {
@@ -234,24 +271,30 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "라이트닝 클로",
+          "name": "Lightning claws",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "집요, 살상 5+"
+          "special_rules": "Ceaseless, Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "비명자",
-          "description": "이 요원의 3\" 내에 있는 적 요원이 사격, 근접전, 또는 반격 시, 상대방은 공격 주사위를 재굴림할 수 없습 니다."
+          "name": "Screecher",
+          "description": "Whenever an enemy operative within 3\" of this operative is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice."
         },
         {
-          "name": "잔악무도",
-          "description": "이 요원이 체력을 손실한 적 요원을 대상으로 근접전 시, 이 요원의 라이트닝 클로에 살상 4+ 무기 규칙 이 부여됩니다."
+          "name": "Appetite for Cruelty",
+          "description": "Whenever this operative is fighting against a wounded enemy operative, this operative’s lightning claws have the Lethal 4+ weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "SCREECHER"
+      ]
     },
     {
       "name": "NIGHT LORD SKINTHIEF",
@@ -262,31 +305,37 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "노스트라만 체인글레이브",
+          "name": "Nostraman chainglaive",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "파쇄"
+          "special_rules": "Rending"
         }
       ],
       "passive_abilities": [
         {
-          "name": "산 채로 박피",
-          "description": "전환점당 한 번, 이 요원이 자신의 장악 범위 내로 들어온 적 요원을 무력화할 시, 이 요원 또는 무력화된 적 요원의 시야 내에 들어오고 6\" 내에 있는 적 요원을 하나 지정할 수 있습니다. 다음 전환점이 시작 될 때까지, 그 적 요원은 마커 장악 및 마커 회수나 임무 행동을 수행할 수 없습니다."
+          "name": "Flay Them Alive",
+          "description": "Once per turning point, when this operative incapacitates an enemy operative within its control range, you can select one other enemy operative visible to and within 6\" of either this operative or the incapacitated enemy operative. Until the start of the next turning point, that other enemy operative cannot control markers or perform the Pick Up Marker or mission actions."
         },
         {
-          "name": "박피장의 폭군",
-          "description": "이 요원이 근접전 또는 반격 시, 3 이상의 일반 또는 결정적 피해를 입을 경우 그 피해가 -1만큼 변 경됩니다."
+          "name": "Tyrant of the Skinning Pits",
+          "description": "Whenever this operative is fighting or retaliating, Normal and Critical Dmg of 3 or more inflicts 1 less damage on it."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "SKINTHIEF"
+      ]
     },
     {
       "name": "NIGHT LORD VENTRILOKAR",
@@ -297,14 +346,14 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "체인소드",
+          "name": "Chainsword",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
@@ -312,11 +361,23 @@
       ],
       "passive_abilities": [
         {
-          "name": "우상기수",
-          "description": "마커를 어느 플 레이어가 장악했는지 판단"
+          "name": "Icon Bearer",
+          "description": "Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn’t a change to its APL stat, so any changes are cumulative with this."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "DISCONCERTING MIMICRY (1AP)",
+          "description": "PSYCHIC. Select one enemy operative within 6\" of this operative, then select one of the following for that enemy operative (you can only select each option once per battle):\n• Until the end of its next activation, subtract 1 from its APL stat.\n• Change its order.\n• Perform a free Dash action with it (specify the location for your opponent to move it to)."
+        }
+      ],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "PSYKER",
+        "VENTRILOKAR"
+      ]
     },
     {
       "name": "NIGHT LORD WARRIOR",
@@ -327,26 +388,26 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "볼트건",
+          "name": "Boltgun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "체인소드",
+          "name": "Chainsword",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
@@ -354,40 +415,120 @@
       ],
       "passive_abilities": [
         {
-          "name": "잔혹한 참형관",
-          "description": "이 요원이 부상 상태의 적 요원, 또는 체력 수치가 7 이하인 적 요원을 대상으로 사격, 근접전, 반격 시, 이 요원의 무기에 살상 5+ 무기 규칙이 부여됩니다."
+          "name": "Cruel Tormenter",
+          "description": "Whenever this operative is shooting against, fighting against or retaliating against an injured enemy operative, or an enemy operative that has a Wounds stat of 7 or less, this operative’s weapons have the Lethal 5+ weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "NEMESIS CLAW",
+        "CHAOS",
+        "HERETIC ASTARTES",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "d6",
-      "text": "천벌갈퀴\n팩션 장비\n사슬 올가미\n칼날이 빼곡한 올가미가 기다란 사슬에 달린 이 무기는 공격 대상의 \n피부나 갑주에 깊숙히 박혀 도주를 막는다.\n아군 천벌갈퀴 요원의 장악 범위 내에 있는 적 요원이 후퇴 \n행동을 수행할 때마다 이 규칙을 사용할 수 있습니다. 이때, \n이 아군 요원의 장악 범위 내에 다른 적 요원이 없어야 합니\n다. 규칙 사용 시, D6를 두 개 굴립니다. 단, 적 요원이 아군 \n요원보다 체력 수치가 높다면 D6를 하나만 굴립니다. 어느 \n값이든 4+이면, 그 적 요원은 그 운용/대응 중 그 행동을 수\n행할 수 없습니다(AP는 소모되지 않음). 또한, 플레이어는 \n이번 전환점 동안 이 규칙을 다시 사용할 수 없습니다."
+      "name": "flayed-skin",
+      "text": "NEMESIS CLAW\nFACTION EQUIPMENT\nFLAYED SKIN\nBedecked with the bloody hides of butchered victims, \nthe Night Lords inspire abject terror and revulsion in \ntheir enemies.\nWhenever an enemy operative is shooting \nagainst, fighting against or retaliating against a \nfriendly NEMESIS CLAW operative within 2\" of \nit, your opponent cannot re-roll their attack dice \nresults of 1."
     },
     {
-      "name": "apl",
-      "text": "천벌갈퀴\n팩션 장비\n통신 교란기\n나이트 로드는 통신 교란기를 사용해 질겁한 적의 소통을 차단하여 \n혼돈과 공황을 몰고 온다.\n적 요원이 아군 천벌갈퀴 요원의 3\" 내에 있을 때마다, 그 \n적 요원의 APL 수치가 향상될 수 없습니다. 단, 이미 변경된 \nAPL 수치는 그대로 유지되는 점을 참고하십시오."
+      "name": "chain-snare",
+      "text": "NEMESIS CLAW\nFACTION EQUIPMENT\nCHAIN SNARE\nComposed of hooked blades attached to a length of \nchain, this weapon bites into the flesh or armour of the \nwielder’s target, preventing them from fleeing.\nWhenever an enemy operative would perform \nthe Fall Back action while within control range \nof a friendly NEMESIS CLAW operative, if no \nother enemy operatives are within that friendly \noperative’s control range, you can use this rule. \nIf you do, roll two D6, or one D6 if that enemy \noperative has a higher Wounds stat than that \nfriendly operative. If any result is a 4+, that enemy \noperative cannot perform that action during that \nactivation/counteraction (no AP are spent on it), \nand you cannot use this rule again during this \nturning point."
+    },
+    {
+      "name": "grisly-trophy",
+      "text": "NEMESIS CLAW\nFACTION EQUIPMENT\nGRISLY TROPHY\nSevered hands and limbs, eyeballs plucked from the \nskulls of screaming victims – these macabre trophies \nand more cause the Night Lords’ foes to waver.\nOnce per battle, when a friendly NEMESIS CLAW \noperative incapacitates an enemy operative \nwithin 2\" of it, you can use this rule. If you do, that \nfriendly operative gains one of your Grisly Trophy \ntokens (if it doesn’t already have one). Whenever \na friendly NEMESIS CLAW operative that has \none of your Grisly Trophy tokens is visible to and \nwithin 2\" of an enemy operative, subtract 1 from \nthe Atk stat of that enemy operative’s weapons."
+    },
+    {
+      "name": "comms-jammers",
+      "text": "NEMESIS CLAW\nFACTION EQUIPMENT\nCOMMS JAMMERS\nThe Night Lords use jamming devices to sow chaos \nand confusion by preventing their panicked foes \nfrom communicating.\nWhenever an enemy operative is within 3\" of a \nfriendly NEMESIS CLAW operative, that enemy \noperative’s APL stat cannot be added to. Note \nthat this doesn’t affect APL stats that have \nalready been changed."
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "astartes",
+      "text": "NEMESIS CLAW\nFACTION RULE\nASTARTES\nThese genetically modified superhumans are made for \none purpose: war.\nDuring each friendly NEMESIS CLAW operative’s \nactivation, it can perform either two Shoot \nactions or two Fight actions. If it’s two Shoot \nactions, a bolt pistol, boltgun or scoped bolt pistol \nmust be selected for at least one of them.\nEach friendly NEMESIS CLAW operative can \ncounteract regardless of its order."
+    },
+    {
+      "name": "in-midnight-clad",
+      "text": "NEMESIS CLAW\nFACTION RULE\nIN MIDNIGHT CLAD\nNight Lords are one with the darkness, employing it as \nan ally and a weapon.\nWhenever an enemy operative is shooting a \nfriendly NEMESIS CLAW operative, that friendly \noperative is obscured if both of the following \nare true:\n• It’s more than 8\" from enemy operatives it’s \nvisible to.\n• It’s within 1\" of Heavy terrain that’s not lower \nthan it, or any part of its base is underneath \nVantage terrain."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "d6",
-      "text": "천벌갈퀴\n화력전 플로이\n복스 괴성\n나이트 로드 요원은 투구에 장착된 복스 기기의 주파수를 조작하여 \n무지막지한 괴성이 울려퍼지게 하며, 이에 노출된 적은 옴짝달싹도 \n못 하게 된다.\n이 화력전 플로이는 상대가 아군 천벌갈퀴 요원의 시야에 \n들어오는 적 요원을 운용할 때 사용할 수 있습니다. D6를 \n하나 굴려 그 값이 적 요원의 APL 수치보다 높다면, 상대는 \n이번 운용 동안 그 요원을 운용할 수 없습니다. 굴림 값이 그 \n적 요원의 APL 수치 이하라면, 이 플로이는 적용되지 않습\n니다. 사용한 CP는 반환되지만 이번 전환점 동안 이 플로이\n를 다시 사용할 수 없습니다. 운용할 수 있는 다른 적 요원이 \n남아있지 않았어도 이 플로이는 적용되지 않습니다."
+      "name": "vox-scream",
+      "text": "NEMESIS CLAW\nFIREFIGHT PLOY\nVOX SCREAM\nBy modulating the frequency of their helm-mounted \nvox-units, Night Lord operatives can unleash a terrifying \nscream with the ability to stun an opponent.\nUse this firefight ploy when your opponent would \nactivate an enemy operative that’s visible to a \nfriendly NEMESIS CLAW operative. Roll one D6; \nif the result is higher than that enemy operative’s \nAPL stat, your opponent cannot activate it during \nthis activation; if the result is less than or equal \nto that enemy operative’s APL stat, this ploy isn’t \nused, the CP spent on it is refunded and you \ncannot use this ploy again during this turning \npoint. If there are no other enemy operatives \neligible to be activated, this ploy has no effect."
+    },
+    {
+      "name": "death-to-the-false-emperor",
+      "text": "NEMESIS CLAW\nFIREFIGHT PLOY\nDEATH TO THE FALSE EMPEROR\nThe Night Lords, like all Heretic Astartes, bear a \nparticular hatred for the corpse-worshipping soldiers of \nthe Imperium.\nUse this firefight ploy after rolling your attack \ndice for a friendly NEMESIS CLAW operative, \nif it’s shooting against, fighting against or \nretaliating against an enemy operative that has \nthe IMPERIUM keyword. That friendly operative’s \nweapons have the Ceaseless weapon rule \nuntil the end of that sequence; if that enemy \noperative also has the ADEPTUS ASTARTES \nkeyword, that friendly operative’s weapons have \nthe Relentless weapon rule until the end of that \nsequence instead."
+    },
+    {
+      "name": "proclivity-for-murder",
+      "text": "NEMESIS CLAW\nFIREFIGHT PLOY\nPROCLIVITY FOR MURDER\nEach brutal kill a Night Lord performs serves to feed \ntheir bloodlust and drives them to further acts of \nterrible violence.\nUse this firefight ploy after a friendly NEMESIS \nCLAW operative incapacitates an enemy \noperative within its control range. That friendly \noperative can immediately perform a free Charge \nor Dash action (for the former, it cannot move \nmore than 3\"), even if it’s performed an action \nthat prevents it from performing those actions."
+    },
+    {
+      "name": "dirty-fighter",
+      "text": "NEMESIS CLAW\nFIREFIGHT PLOY\nDIRTY FIGHTER\nThe Night Lords have no respect for the concept of \nhonour and will use whatever underhanded tactics they \ndeem necessary.\nUse this firefight ploy when a friendly NEMESIS \nCLAW operative is retaliating, at the start of the \nResolve Attack Dice step. You can resolve one of \nyour successes before the normal order. If you do, \nyou cannot resolve any other successes during \nthat sequence."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION NEMESIS CLAW",
-      "text": "천벌갈퀴 \n킬 팀\n아키타입: 침투, 수색 섬멸\n요원 목록\n \n↘ 1 천벌갈퀴 예지자 요원, 다음 선택지 중 하나를 골라 장비\n합니다.\n• 볼트 권총, 파워 피스트\n• 볼트 권총, 파워 몰\n• 볼트 권총, 역장 무기\n• 플라스마 권총, 노스트라만 체인블레이드 \n \n↘ 5 천벌갈퀴 요원을 다음 목록에서 선택해 편성합니다.\n• 공포상\n• 사수, 다음 선택지 중 하나를 골라 장비합니다.\n \n○\n 볼트 권총, 화염방사기, 주먹\n \n○\n 볼트 권총, 멜타건, 주먹\n \n○\n 볼트 권총, 플라스마 건, 주먹\n• 중화기 사수, 다음 선택지 중 하나를 골라 장비합니다.\n \n○\n 볼트 권총, 중형 볼터, 주먹\n \n○\n 볼트 권총, 미사일 발사기, 주먹\n다음 면에 계속\n\n---\n\n• 비명자\n• 피부침탈자\n• 장기인형사\n• 전사, 다음 선택지 중 하나를 골라 장비합니다.\n \n○\n 볼트 권총, 체인소드\n \n○\n 볼트건, 주먹 \n전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 \n편성할 수 있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "NEMESIS CLAW \nKILL TEAM\nARCHETYPES: INFILTRATION, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 NEMESIS CLAW VISIONARY operative with \none of the following options:\n• Bolt pistol; power fist\n• Bolt pistol; power maul\n• Bolt pistol; power weapon\n• Plasma pistol; Nostraman chainblade \n \n↘ 5 NEMESIS CLAW operatives selected from \nthe following list:\n• FEARMONGER\n• GUNNER with one of the following options:\n \n○ Bolt pistol; flamer; fists\n \n○ Bolt pistol; meltagun; fists\n \n○ Bolt pistol; plasma gun; fists\n• HEAVY GUNNER with one of the \nfollowing options:\n \n○ Bolt pistol; heavy bolter; fists\n \n○ Bolt pistol; missile launcher; fists\nCONTINUES ON OTHER SIDE\n\n---\n\n• SCREECHER\n• SKINTHIEF\n• VENTRILOKAR\n• WARRIOR with one of the following options:\n \n○ Bolt pistol; chainsword\n \n○ Boltgun; fists \nOther than WARRIOR operatives, your kill team \ncan only include each operative on this list once.",
+      "selection": {
+        "NIGHT LORD VISIONARY": [
+          [
+            "Bolt pistol; power fist",
+            "Bolt pistol; power maul",
+            "Bolt pistol; power weapon",
+            "Plasma pistol; Nostraman chainblade"
+          ]
+        ],
+        "NIGHT LORD HEAVY GUNNER": [
+          [
+            "Bolt pistol; heavy bolter; fists",
+            "Bolt pistol; missile launcher; fists"
+          ]
+        ],
+        "NIGHT LORD FEARMONGER": [],
+        "NIGHT LORD GUNNER": [
+          [
+            "Bolt pistol; flamer; fists",
+            "Bolt pistol; meltagun; fists",
+            "Bolt pistol; plasma gun; fists"
+          ]
+        ],
+        "NIGHT LORD SCREECHER": [],
+        "NIGHT LORD SKINTHIEF": [],
+        "NIGHT LORD VENTRILOKAR": [],
+        "NIGHT LORD WARRIOR": [
+          [
+            "Bolt pistol; chainsword",
+            "Boltgun; fists"
+          ]
+        ]
+      }
     }
   ],
   "strategy_ploys": [
     {
-      "name": "d3",
-      "text": "천벌갈퀴\n전략 플로이\n우리가 왔도다\n신속히 적을 타격하는 나이트 로드는 충격 및 공포 전술을 유감없\n이 발휘하여 상대가 검을 채 들기도 전에 끝장낸다.\n아군 천벌갈퀴 요원이 운용될 때마다, 그 운용 동안 이 요원이 \n첫 행동으로 돌격 행동을 수행했고, 그 행동 도중에 이동을 \n종료할 경우, 이 요원의 장악 범위 내에 있는 적 요원에게 \nD3 피해를 가할 수 있습니다."
+      "name": "we-have-come-for-you",
+      "text": "NEMESIS CLAW\nSTRATEGY PLOY\nWE HAVE COME FOR YOU\nThe Night Lords strike their foes swiftly, utilising shock, \nawe and terror to brutalise the enemy before they can \nlift a blade in response.\nWhenever a friendly NEMESIS CLAW operative \nis activated, if the first action it performs during \nthat activation is the Charge action, when it \nends its move during that action, you can inflict \nD3 damage on one enemy operative within its \ncontrol range."
+    },
+    {
+      "name": "the-black-hunt",
+      "text": "NEMESIS CLAW\nSTRATEGY PLOY\nTHE BLACK HUNT\nA terrible malice burns within the twin hearts of each \nNight Lord, and they enjoy nothing more than toying \nwith their wounded prey.\nWhenever a friendly NEMESIS CLAW operative \nis shooting against, fighting against or retaliating \nagainst a wounded enemy operative, you can \nre-roll one of your attack dice."
+    },
+    {
+      "name": "preysight",
+      "text": "NEMESIS CLAW\nSTRATEGY PLOY\nPREYSIGHT\nThe Night Lords seem able to sense the fear of cowering \nprey, hunting down the craven with unerring precision.\nWhenever a friendly NEMESIS CLAW operative \nperforms the Shoot action, you can use this rule. \nIf you do, until the end of that action, that friendly \noperative’s ranged weapons have the Range 6\" \nand Seek Light weapon rules."
+    },
+    {
+      "name": "return-to-darkness",
+      "text": "NEMESIS CLAW\nSTRATEGY PLOY\nRETURN TO DARKNESS\nThe Night Lords move from shadow to shadow with an \nagility and speed belied by their transhuman bulk.\nOne friendly NEMESIS CLAW operative \ncan immediately perform a free Fall Back or \nReposition action, but it must end that move \nwith Heavy terrain within its control range, or \nany part of its base underneath Vantage terrain. \nIn addition, it cannot move more than 4\" during \nthat action and it cannot end that move closer \nto enemy operatives (in a killzone that uses the \nclose quarters rules, e.g. Killzone: Tomb World, \nignore Wall terrain when determining this)."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "team": "mandrakes",
-  "generated_at": "2026-08-29T21:55:41.621519+00:00",
+  "generated_at": "2026-07-25T17:13:54.091517+00:00",
   "datacards": [
     {
       "name": "MANDRAKE NIGHTFIEND",
@@ -11,31 +11,38 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "비탄화염",
+          "name": "Baleblast",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "영혼격*"
+          "special_rules": "Soulstrike*"
         },
         {
-          "name": "껍질곡도",
+          "name": "Huskblade",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+, 충격"
+          "special_rules": "Lethal 5+, Shock"
         }
       ],
       "passive_abilities": [
         {
-          "name": "경악스러운 속삭임",
-          "description": "상대가 이 요원의 6” 내에 있는 적"
+          "name": "Harrowing Whispers",
+          "description": "Whenever your opponent would activate an enemy operative within 6\" of this operative, you can roll one D6 (you cannot do so if you already interrupted that operative’s activation with this rule or the DIRGEMAW operative’s Haunting Focus additional rule during this turning point): if the result is higher than that enemy operative’s APL stat, your opponent cannot activate it during this activation. If there are no other enemy operatives eligible to be activated, this rule has no effect."
         },
         {
-          "name": "망각기",
-          "description": "이 요원이 준비 상태이거나 껍질곡도로 적 요원 을 무력화하면, 망각기가 활성화됩니다. 망각기가 활성 화된 요원이 공격 주사위로 피해를 입기 전, 플레이어가 D6를 하나 굴립니다. 값이 5+이면 공격 주사위 하나만 큼의 피해를 무시하고 망각기가 비활성화됩니다."
+          "name": "Oubliex",
+          "description": "Whenever this operative is readied, or if this operative incapacitates an enemy operative with its huskblade, its oubliex becomes active. Whenever its oubliex is active and an attack dice would inflict damage on this operative, you can roll one D6: on a 5+, ignore the damage inflicted from that attack dice and its oubliex is no longer active."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "MANDRAKE",
+        "AELDARI",
+        "DRUKHARI",
+        "LEADER",
+        "NIGHTFIEND"
+      ]
     },
     {
       "name": "MANDRAKE ABYSSAL",
@@ -46,34 +53,45 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "비탄쇄도(폭발)",
+          "name": "Balesurge (blast)",
           "attacks": "5",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "폭발 2”, 영혼격*"
+          "special_rules": "Blast 2\", Soulstrike*"
         },
         {
-          "name": "비탄쇄도(불태우기)",
+          "name": "Balesurge (burn)",
           "attacks": "5",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "살상 5+, 영혼격*"
+          "special_rules": "Lethal 5+, Soulstrike*"
         },
         {
-          "name": "명멸강철 칼날",
+          "name": "Glimmersteel blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "비탄불꽃",
-          "description": "아군 맨드레이크 요원이 플레이어의 비탄불꽃 토큰을 보유한 적 요원을 대상으로 사격할 때마다, 그 아군 요원이 장비한 원거리 무기의 일반 및 결정적 피해 수치를 +1만큼 변경하고 포화 무기 규칙을 부여합니다. 플레이어 의 비탄불꽃 토큰을 보유한 아군 맨드레이크 요원이 사격당할 때마다, 사격하는 요원이 장비한 원거리 무기의 일반 및 결정적 피해 수치를 -1만큼 변경합니다(최소 1)."
+          "name": "Balefire",
+          "description": "Whenever a friendly MANDRAKE operative is shooting an enemy operative that has one of your Balefire tokens, add 1 to both Dmg stats of that friendly operative’s ranged weapons, and those weapons have the Saturate weapon rule. Whenever an operative is shooting a friendly MANDRAKE operative that has one of your Balefire tokens, subtract 1 from both Dmg stats of that operative’s ranged weapons (to a minimum of 1)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "WREATHE IN BALEFIRE (1AP)",
+          "description": "Select one operative visible to this operative that doesn’t have one of your Balefire tokens. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first), that selected operative gains one of your Balefire tokens. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "MANDRAKE",
+        "AELDARI",
+        "DRUKHARI",
+        "ABYSSAL"
+      ]
     },
     {
       "name": "MANDRAKE CHOOSER OF THE FLESH",
@@ -84,31 +102,37 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "비탄화염",
+          "name": "Baleblast",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "영혼격*"
+          "special_rules": "Soulstrike*"
         },
         {
-          "name": "비탄칼날",
+          "name": "Baleblade",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "무자비, 살상 5+"
+          "special_rules": "Brutal, Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "영혼 수확",
-          "description": "이 요원의 부위 수집가 규칙 또는 비탄칼날로 적 요원이 무력화될 때마다, 플레이어가 영혼 수확 포인트를 1포인트 획득합니다. 그 적 요원의 APL 수치가 3 이상이면 2포인트 획득합니다. 아군 맨드레이크 요원이 운 용될 때마다, 플레이어의 영혼 수확 포인트를 1포인트 소모하여 전투가 종료"
+          "name": "Soul Harvest",
+          "description": "Whenever an enemy operative is incapacitated as a result of this operative’s Part Collector rule or baleblade, you gain 1 Soul Harvest point, or two if that enemy operative had an APL stat of 3 or more. Whenever a friendly MANDRAKE operative is activated, you can spend 1 of your Soul Harvest points to either add 1 to its APL stat until the end of the battle, or have it regain up to 2D3 lost wounds. Note you can spend your Soul Harvest points even if this operative is incapacitated."
         },
         {
-          "name": "부위 수집가",
-          "description": "적 요원이 이 요원의 장 악 범위에 있는 동안 후퇴 행동을 수행 하면 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 그 적 요원이 이동하기 전에 2D3 피해를 가합니다."
+          "name": "Part Collector",
+          "description": "Whenever an enemy operative performs the Fall Back action while within control range of this operative, you can use this rule. If you do, inflict 2D3 damage on that enemy operative before it moves."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "MANDRAKE",
+        "AELDARI",
+        "DRUKHARI",
+        "CHOOSER OF THE FLESH"
+      ]
     },
     {
       "name": "MANDRAKE DIRGEMAW",
@@ -119,34 +143,45 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "비탄화염",
+          "name": "Baleblast",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "영혼격*"
+          "special_rules": "Soulstrike*"
         },
         {
-          "name": "끔찍한 비명",
+          "name": "Horrifying scream",
           "attacks": "5",
           "hit": "2+",
           "damage": "2/2",
-          "special_rules": "사거리 6”, 궤멸 2, 저밀도 색적, 혼미, 영혼격*"
+          "special_rules": "Range 6\", Devastating 2, Seek Light, Stun, Soulstrike*"
         },
         {
-          "name": "명멸강철 칼날",
+          "name": "Glimmersteel blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "음침한 주시",
-          "description": "전략 포석. 적 요원을 하나 지정합니다. 다음 전략 페이즈의 준비 단계까지, 지정된 적 요원이 플레이어의 음침한 주시 토큰을 받습니다. 상대가 음침한 주시 토큰을 받은 적 요원의 다음번 운용을 시작하려 할 때, 이 요원이 준비 상태라면 이 요원을 먼저 운용할 수 있습니다(이번 전환점에 밤악령 요원의 경악스러운 속삭임 추가 규칙으로 그 적 요원의 운용을 막기 위해 굴림을 수행했다 면 불가). 운용 시, 이 요원은 반드시 그 적 요원을 대상으로 지정해 근접전이나 사격을 수행해야만 하며, 그전에는 다른 적 요원을 대 상으로 지정할 수 없습니다. 이것이 불가능하다면, 이 요원의 운용은 취소됩니다. 이 요원의 운용을 완료한 후, 상대는 그 적 요원을 운용하며(가능한 경우), 그럴 수 없다면 다른 적 요원을 운용합니다."
+          "name": "Haunting Focus",
+          "description": "STRATEGIC GAMBIT. Select one enemy operative. Until the Ready step of the next Strategy phase, it gains your Haunting Focus token. The next time your opponent would activate an enemy operative that has your Haunting Focus token, if this operative is ready, you can activate this operative first (you cannot do so if you also rolled to prevent that operative’s activation with the NIGHTFIEND operative’s Harrowing Whispers additional rule during this turning point). If you do, during that activation, this operative must shoot against or fight against that enemy operative, and cannot do so against any other enemy operatives until it does (if this isn’t possible, this operative’s activation is cancelled). After completing this operative’s activation, your opponent activates that enemy operative (if possible), or activates a different enemy operative if they can’t."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "PAREIDOLIC PROJECTION (1AP)",
+          "description": "Select one enemy operative that’s a valid target for this operative or is WITHIN SHADOW. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first), worsen the Hit stat of that enemy operative’s weapons by 1 and subtract 2\" from its Move stat (these aren’t cumulative with being injured). This operative cannot perform this action while within control range of an enemy operative, unless the only enemy operative it’s within control range of is selected for this action."
+        }
+      ],
+      "keywords": [
+        "MANDRAKE",
+        "AELDARI",
+        "DRUKHARI",
+        "DIRGEMAW"
+      ]
     },
     {
       "name": "MANDRAKE SHADEWEAVER",
@@ -157,27 +192,38 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "비탄화염",
+          "name": "Baleblast",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "영혼격*"
+          "special_rules": "Soulstrike*"
         },
         {
-          "name": "명멸강철 칼날",
+          "name": "Glimmersteel blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "그늘 차원문",
-          "description": "이 요원이 그늘 통로를 사용하여 기동 행동을 수행할 때마다, 이 규칙을 사용할 수 있습니다. 사용 시, 킬존에 플레이어의 그늘 차원문 마커가 있다면 제거한 후, 플레이어의 그늘 차원문 마커를 이 요원이 제거되기 전 위 치의 장악 범위 내에 하나, 이 요원을 다시 놓은 위치의 장악 범위 내에 하나 놓습니다. 각 아군 맨드레이크 요원은 전환점마다 이 규칙을 통해 그늘 통로를 사용할 수 있습니다(이는 전환점당 한 번, 요원 하나 제한에 우선함). 단, 그 요원이 제거될 때 위치의 장악 범위 내와 그 요원을 다시 놓은 위치의 장악 범위 내에 각 각 그늘 차원문 마커가 있어야 합니다. 이 요원이 무력화된 후에도 아군 요원에게는 이 규칙의 효과가 적용되며, 일반"
+          "name": "Shadow Portal",
+          "description": "Whenever this operative performs the Reposition action using a SHADOW PASSAGE, you can use this rule. If you do, remove your Shadow Portal markers from the killzone (if any), then place one of your Shadow Portal markers within this operative’s control range before it’s removed and one within its control range after it’s set up. Each friendly MANDRAKE operative can use a SHADOW PASSAGE each turning point (this takes precedence over one operative once per turning point) if one of your Shadow Portal markers is within that operative’s control range when it’s removed, and the other is when it’s set up. Note that friendly operatives can do so even if this operative has been incapacitated, and doing so doesn’t prevent one operative from using a SHADOW PASSAGE in the normal manner."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "WEAVE DARKNESS (1AP)",
+          "description": "Remove your Weave Darkness marker from the killzone (if any). Then place your Weave Darkness marker visible to this operative, or on Vantage terrain of a terrain feature visible to this operative. That marker creates an area of smoke with the same size and effects as a smoke grenade (see universal equipment), except you don’t remove it during the following turning point. If this operative is incapacitated, remove your Weave Darkness marker from the killzone. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "MANDRAKE",
+        "AELDARI",
+        "DRUKHARI",
+        "SHADEWEAVER"
+      ]
     },
     {
       "name": "MANDRAKE WARRIOR",
@@ -188,64 +234,118 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "비탄화염",
+          "name": "Baleblast",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "영혼격*"
+          "special_rules": "Soulstrike*"
         },
         {
-          "name": "명멸강철 칼날",
+          "name": "Glimmersteel blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "그림자 전사",
-          "description": "이 요원이 그늘 안 상태일 때, 장비한 명멸 강철 칼날의 결정적 피해 수치를 +1만큼 변경합니다."
+          "name": "Shadow Warrior",
+          "description": "Whenever this operative is WITHIN SHADOW, add 1 to the Critical Dmg stat of its glimmersteel blade."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "MANDRAKE",
+        "AELDARI",
+        "DRUKHARI",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "d6",
-      "text": "팩션 장비\n사슬 올가미\n기다란 사슬에 칼날이 빼곡한 올가미가 달린 이 무기는 공격 대상의 \n피부나 갑주에 깊숙히 박혀 도주를 막는다.\n적\u0002요원이\u0002아군\u0002맨드레이크 요원의\u0002장악\u0002범위\u0002내에\u0002있는\u0002동\n안\u0002후퇴\u0002행동을\u0002수행하려\u0002할\u0002때마다,\u0002그\u0002아군\u0002요원의\u0002장악\u0002범\n위\u0002내에\u0002다른\u0002적\u0002요원이\u0002있지\u0002않다면\u0002이\u0002규칙을\u0002사용할\u0002수\u0002있\n습니다.\u0002규칙\u0002사용\u0002시,\u0002D6\u0002두\u0002개를\u0002굴립니다.\u0002그\u0002적\u0002요원의\u0002\n체력\u0002수치가\u0002규칙을\u0002사용한\u0002아군\u0002요원보다\u0002높다면,\u0002D6를\u0002한\u0002\n개만\u0002굴립니다.\u0002어느\u0002주사위든\u0002값이\u00024+이면,\u0002그\u0002적\u0002요원은\u0002\n이번\u0002운용\u0002또는\u0002대응\u0002도중\u0002본래\u0002하려던\u0002후퇴\u0002행동을\u0002수행할\u0002\n수\u0002없고,\u0002그에\u0002따른\u0002AP도\u0002소모하지\u0002않습니다.\n맨드레이크"
+      "name": "chain-snare",
+      "text": "MANDRAKE\nFACTION EQUIPMENT\nCHAIN SNARE\nComposed of hooked blades attached to a length of \nchain, this weapon bites into the flesh or armour of the \nwielder’s target, preventing them from fleeing.\nWhenever an enemy operative would perform \nthe Fall Back action while within control range \nof a friendly MANDRAKE operative, if no \nother enemy operatives are within that friendly \noperative’s control range, you can use this rule. \nIf you do, roll two D6, or one D6 if that enemy \noperative has a higher Wounds stat than that \nfriendly operative. If any result is a 4+, that enemy \noperative cannot perform that action during that \nactivation/counteraction (no AP are spent on it), \nand you cannot use this rule again during this \nturning point."
+    },
+    {
+      "name": "shadow-glyph",
+      "text": "MANDRAKE\nFACTION EQUIPMENT\nSHADOW GLYPH\nEtched into the inky skin of the Mandrake, this glyph \nglows when activated, causing the creature to fade \nutterly from sight.\nOnce per turning point, when a friendly \nMANDRAKE operative is activated WITHIN \nSHADOW, you can use this rule. If you do, until \nthe start of its next activation, while that operative \nhas a Conceal order and is in cover, it cannot be \nselected as a valid target, taking precedence over \nall other rules (e.g. Seek, Vantage terrain) except \nbeing within 2\"."
+    },
+    {
+      "name": "soul-gem",
+      "text": "MANDRAKE\nFACTION EQUIPMENT\nSOUL GEM\nContaining the life force of a tortured victim, this \nshimmering crystal emits an eerie glow and enhances \nthe supernatural might of the bearer.\nOnce per turning point, when a friendly \nMANDRAKE operative is performing the Shoot \naction and you select a baleblast, you can use \nthis rule. If you do, until the end of that action, \nthat weapon has the Blast 1\" weapon rule."
+    },
+    {
+      "name": "bone-darts",
+      "text": "MANDRAKE\nFACTION EQUIPMENT\nBONE DARTS\nDelicately carved from the bones of the Mandrakes’ \nvictims, these brittle but sharp projectiles are deadly \nwhen hurled accurately.\nOnce per turning point, a friendly MANDRAKE \noperative can use the following ranged weapon:\nNAME \nATK HIT DMG\n Bone dart \n 4 \n3+ \n2/4\nWR\nRange 6\", Rending, Silent"
     }
   ],
   "faction_rules": [
     {
-      "name": "SOULSTRIKE",
-      "text": "팩션 규칙\n영혼격\n맨드레이크가 던지는 비탄불은 그 대상의 생명력과 적대감을 장작\n으로 삼아 차갑고 맹렬하게 타오른다. 재래식 갑옷은 이 음흉한 힘을 \n거의 막아주지 못한다.\n이\u0002킬\u0002팀의\u0002일부\u0002무기는\u0002아래의\u0002영혼격\u0002무기\u0002규칙을\u0002보유합니다.\n*영혼격:\u0002방어\u0002주사위\u0002성공이\u0002다르게\u0002판정됩니다.\u0002사격\u0002\n대상의\u0002APL\u0002수치\u0002이하인\u0002굴림\u0002값은\u0002성공이며\u0002보전됩니다.\u0002\n사격\u0002대상의\u0002APL\u0002수치를\u0002초과하는\u0002굴림\u0002값은\u0002실패이며\u0002버\n립니다.\u0002값이\u00021이면\u0002항상\u0002결정적\u0002성공입니다.\u0002그\u0002외의\u0002다른\u0002\n성공은\u0002일반\u0002성공입니다.\u0002값이\u00026이면\u0002항상\u0002실패입니다.\n개발자의 한마디: 이\u0002킬\u0002팀의\u0002규칙은\u0002적\u0002요원의\u0002APL\u0002수치를\u0002\n참조하는\u0002것이\u0002많습니다.\u0002이는\u0002규칙이\u0002효과를\u0002발휘하는\u0002시\n점의\u0002APL\u0002수치를\u0002말하는\u0002것입니다(즉,\u0002변경\u0002적용\u0002후).\n맨드레이크"
+      "name": "soulstrike",
+      "text": "MANDRAKE\nFACTION RULE\nSOULSTRIKE\nThe balefire hurled by the Mandrakes burns cold and \nfierce, fed by the tinder of their victim’s life force and \nanimus. Conventional armour offers little protection \nagainst this insidious force.\nSome weapons in this team’s rules have the \nSoulstrike weapon rule below.\n*Soulstrike: Successful defence dice are \ndetermined differently. Each result that’s equal \nto or less than the target’s APL stat is a success \nand is retained. Each result that’s higher than the \ntarget’s APL stat is a fail and is discarded. Each \nresult of 1 is always a critical success. Each other \nsuccess is a normal success. Each result of 6 is \nalways a fail.\nDesigner’s Note: Many of this kill team’s rules \nrefer to an enemy operative’s APL stat. This would \nbe the APL stat at the time the rule takes effect \n(i.e. including changes)."
     },
     {
-      "name": "SHADOW PASSAGE",
-      "text": "팩션 규칙\n그늘 통로\n맨드레이크는 약간의 그림자만 있어도 물 속으로 사라지듯 그림자 \n안으로 미끄러져 들어갈 수 있으며, 거리에 전혀 구애받지 않고 다\n른 동떨어진 그림자에서 기어나온다. 이 불길한 능력으로 이들은 \n아무도 모르게 초병과 방어물을 지나칠 수 있으며, 사냥감이 전혀 \n예측하지 못하는 곳에서 덮친다.\n전환점당\u0002한\u0002번,\u0002그늘 안\u0002상태의\u0002아군\u0002맨드레이크\u0002요원\u0002하나가\u0002\n기동\u0002행동을\u0002수행할\u0002때\u0002그늘 통로를\u0002사용할\u0002수\u0002있습니다.\u0002사용\u0002시,\u0002\n그\u0002아군\u0002요원을\u0002이동하는\u0002대신\u0002킬존에서\u0002제거한\u0002다음\u0002그늘 안\n에\u0002있으며\u0002놓을\u0002수\u0002있는\u0002위치에\u0002다시\u0002배치합니다.\u0002다시\u0002배치\n하는\u0002요원에게는\u0002다음\u0002사항이\u0002적용됩니다.\n• 적\u0002요원의\u0002장악\u0002범위\u0002내에\u0002들어갈\u0002수\u0002없습니다.\n• 적\u0002요원의\u0002유효\u0002대상이\u0002될\u0002수\u0002없습니다.\n• \u0002다음\u0002전환점\u0002시작\u0002전에\u0002사격\u0002또는\u0002근접전\u0002행동을\u0002수행할\u0002\n수\u0002없습니다.\n맨드레이크"
+      "name": "shadow-passage",
+      "text": "MANDRAKE\nFACTION RULE\nSHADOW PASSAGE\nMandrakes can slip into the slightest patch of shadow \nas if vanishing into dark waters, only to crawl forth \nfrom another patch of gloom as though the intervening \ndistance doesn’t exist. This sinister ability allows them \nto bypass sentries and defences unseen, and to pounce \nupon their victims from unexpected quarters.\nOnce per turning point, one friendly MANDRAKE \noperative WITHIN SHADOW can use a SHADOW \nPASSAGE when it performs the Reposition action. \nIf it does, don’t move it. Instead, remove it from \nthe killzone and set it back up WITHIN SHADOW \nin a location it can be placed. When you set it \nback up, it cannot:\n• Be within control range of an enemy operative.\n• Be a valid target for an enemy operative.\n• Perform the Shoot or Fight action until the start \nof the next turning point."
     },
     {
-      "name": "UMBRAL ENTITIES",
-      "text": "팩션 규칙\n그림자 존재\n맨드레이크의 물리적 형태는 꺼질 듯한 횃불의 마지막 빛을 뒤덮\n는 그림자처럼 변화하며 흔들린다. 그 공격에서 살아남은 생존자\n들은 이들이 잠식해오는 어둠에 섞여 들거나, 아예 시야에서 사라\n져버린다고 한다. 극도의 혼란에 빠진 사냥감은 맨드레이크가 다\n가오는 것을 눈치채지 못한다.\n아군\u0002맨드레이크 요원이\u0002사격당할\u0002때마다,\u0002관통\u0002무기\u0002규칙\n을\u0002무시합니다.\u0002아군\u0002맨드레이크 요원이\u0002그늘 안\u0002상태인\u0002동\n안,\u0002방호\u0002요구치가\u00021만큼\u0002완화됩니다.\n맨드레이크"
+      "name": "umbral-entities",
+      "text": "MANDRAKE\nFACTION RULE\nUMBRAL ENTITIES\nThe Mandrakes’ physical forms shift and shudder like \nshadows smothering the last light of a guttering torch. \nThose rare survivors of their attacks describe the \nMandrakes blending with the encroaching darkness, or \neven vanishing from sight altogether, confounding the \nincreasingly panicked aim of their prey as they flitter \never closer.\nWhenever an operative is shooting a friendly \nMANDRAKE operative, ignore the Piercing \nweapon rule. Whenever a friendly MANDRAKE \noperative is WITHIN SHADOW, improve its Save \nstat by 1."
     },
     {
-      "name": "WITHIN SHADOW",
-      "text": "팩션 규칙\n그늘 안\n맨드레이크는 그림자의 존재이며, 움직임을 감추고 아무것도 모르는 \n사냥감에 접근하기 위해 어둠을 활용한다.\n다음\u0002중\u0002하나라도\u0002충족한\u0002요원은\u0002그늘 안\u0002상태입니다.\n• \u0002그\u0002요원보다\u0002낮지\u0002않은\u0002고밀도\u0002지형의\u00021”\u0002내에\u0002있음\n• \u0002베이스의\u0002아무\u0002부분이라도\u0002고지\u0002아래에\u0002들어감\n• \u0002그\u0002요원의\u0002장악\u0002범위\u0002내에\u0002그늘\u0002차원문\u0002마커가\u0002있음(그늘\n방직공\u0002참고)\n맨드레이크"
+      "name": "within-shadow",
+      "text": "MANDRAKE\nFACTION RULE\nWITHIN SHADOW\nMandrakes are creatures of shadow, using the darkness \nto conceal their movements and close in upon their \nunsuspecting prey.\nAn operative is WITHIN SHADOW if any of the \nfollowing are true:\n• It’s within 1\" of Heavy terrain that’s not lower \nthan it.\n• Any part of its base is underneath \nVantage terrain.\n• A Shadow Portal marker is within its control \nrange (see SHADEWEAVER)."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "apl",
-      "text": "화력전 플로이\n영혼 포식\n맨드레이크는 피해자의 고통으로 존속하며, 사냥감에 끔찍한 일격을 \n가할 때마다 활력을 얻는다.\n이\u0002화력전\u0002플로이는\u0002아군\u0002맨드레이크 요원이\u00026”\u0002내에\u0002있는\u0002\n적\u0002요원을\u0002대상으로\u0002사격,\u0002근접전,\u0002반격을\u0002수행할\u0002때,\u0002공격\u0002\n주사위\u0002처리\u0002단계\u0002종료\u0002시\u0002사용할\u0002수\u0002있습니다.\u0002그\u0002아군\u0002요원\n이\u0002그\u0002절차\u0002도중\u0002피해를\u0002가한\u0002공격\u0002주사위의\u0002개수에\u0002대상\u0002적\u0002\n요원의\u0002APL\u0002수치를\u0002곱한\u0002값만큼\u0002잃은\u0002체력을\u0002회복합니다.\u0002\n초과된\u0002주사위는\u0002무시합니다(즉,\u0002남은\u0002공격\u0002주사위를\u0002처리\n하기\u0002전에\u0002적\u0002요원이\u0002무력화된\u0002경우).\u0002이\u0002플로이는\u0002그\u0002아군\u0002\n맨드레이크 요원이\u0002무력화됐다면\u0002사용할\u0002수\u0002없습니다.\n맨드레이크"
+      "name": "slither-out-of-sight",
+      "text": "MANDRAKE\nFIREFIGHT PLOY\nSLITHER OUT OF SIGHT\nBeings of umbral malice, Mandrakes may slip \ninto shadow to evade the attentions of their \nconfounded foes.\nUse this firefight ploy at the end of any \noperative’s activation. Select one friendly \nMANDRAKE operative that has an Engage order \nand is WITHIN SHADOW. Change that operative’s \norder to Conceal."
+    },
+    {
+      "name": "soul-feast",
+      "text": "MANDRAKE\nFIREFIGHT PLOY\nSOUL FEAST\nMandrakes subsist on the agonies of their victims, \ngaining vigour with each torturous blow inflicted upon \ntheir prey.\nUse this firefight ploy when a friendly \nMANDRAKE operative is shooting against, \nfighting against or retaliating against an enemy \noperative within 6\" of it, at the end of the Resolve \nAttack Dice step. That friendly operative regains \na number of lost wounds equal to that enemy \noperative’s APL stat, multiplied by the number \nof your attack dice that inflicted damage during \nthat sequence. Excess attack dice are ignored \n(i.e. if the enemy operative is incapacitated \nbefore remaining attack dice are resolved). You \ncannot use this ploy if that friendly MANDRAKE \noperative is incapacitated."
+    },
+    {
+      "name": "nowhere-to-hide",
+      "text": "MANDRAKE\nFIREFIGHT PLOY\nNOWHERE TO HIDE\nWalls and other obstructions are of no concern to \nMandrakes, who fade in and out of the physical realm at \ntheir own whim.\nUse this firefight ploy during a friendly \nMANDRAKE operative’s activation, when it \nperforms an action in which it moves. Until the \nend of that activation, that operative can move \nthrough parts of terrain features as if they weren’t \nthere, but it cannot move more than its Move \nstat if it’s the Charge action and must end those \nmoves in a location it can be placed."
+    },
+    {
+      "name": "shadows-bite",
+      "text": "MANDRAKE\nFIREFIGHT PLOY\nSHADOW’S BITE\nWhen suffused with shadow, a Mandrake moves with \nunnatural speed and grace, lashing out preemptively \nwith its glimmersteel blade.\nUse this firefight ploy when an enemy operative \nperforms the Fight action during an activation \nin which it performed the Charge action, and \nselects a friendly MANDRAKE operative WITHIN \nSHADOW to fight against. In the Resolve Attack \nDice step of that sequence, you resolve the first \nattack dice (i.e. defender instead of attacker)."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION MANDRAKES",
-      "text": "맨드레이크 \n킬 팀\n아키타입: 침투, 정찰\n요원 목록\n \n↘\u00021\u0002맨드레이크 밤악령 요원\n \n↘\u00028\u0002맨드레이크\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002심연귀\n• 살점을 고르는 자\n• \u0002장송구렁\n• \u0002그늘방직공\n• 전사\u0002\n전사\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번씩만\u0002\n편성할\u0002수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "MANDRAKES \nKILL TEAM\nARCHETYPES: INFILTRATION, RECON\nOPERATIVES\n \n↘ 1 MANDRAKE NIGHTFIEND operative \n \n↘ 8 MANDRAKE operatives selected from the \nfollowing list:\n• ABYSSAL\n• CHOOSER OF THE FLESH\n• DIRGEMAW\n• SHADEWEAVER\n• WARRIOR \nOther than WARRIOR operatives, your kill team \ncan only include each operative on this list once.",
+      "selection": {
+        "MANDRAKE CHOOSER OF THE FLESH": [],
+        "MANDRAKE ABYSSAL": [],
+        "MANDRAKE DIRGEMAW": [],
+        "MANDRAKE SHADEWEAVER": [],
+        "MANDRAKE WARRIOR": []
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "creeping-horror",
+      "text": "MANDRAKE\nSTRATEGY PLOY\nCREEPING HORROR\nFlitting in and out of the shadows, Mandrakes advance \nwith unsettling speed.\nAfter each enemy operative’s activation, before \nthe next operative is activated, one friendly \nMANDRAKE operative that has a Conceal order \ncan perform a free Dash action if it starts and \nends that action WITHIN SHADOW. You cannot \nuse this ploy during the first turning point, and \nyou cannot select each friendly operative for this \nploy more than once per turning point."
+    },
+    {
+      "name": "gloaming-shroud",
+      "text": "MANDRAKE\nSTRATEGY PLOY\nGLOAMING SHROUD\nCloaked in shadows, a Mandrake’s form is indistinct, \nrendering it particularly difficult to strike from range.\nWhenever an operative is shooting a friendly \nMANDRAKE operative that’s WITHIN SHADOW, \nyou can retain one of your defence dice as a \nnormal success without rolling it (in addition to a \ncover save, if any)."
+    },
+    {
+      "name": "blade-in-the-dark",
+      "text": "MANDRAKE\nSTRATEGY PLOY\nBLADE IN THE DARK\nLeaping from shadow to shadow, Mandrakes appear \nbeside unsuspecting foes with blades raised to strike.\nEach friendly MANDRAKE operative can perform \nthe Charge action while it has a Conceal order if it \nstarts or ends that action WITHIN SHADOW."
+    },
+    {
+      "name": "inescapable-nightmare",
+      "text": "MANDRAKE\nSTRATEGY PLOY\nINESCAPABLE NIGHTMARE\nThe nightmarish appearance of a Mandrake is matched \nby its terrifying speed and accuracy.\nWhenever a friendly MANDRAKE operative is \nshooting, fighting or retaliating, if it’s WITHIN \nSHADOW, you can re-roll one of your attack dice."
     }
   ]
 }

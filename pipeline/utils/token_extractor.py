@@ -13,15 +13,11 @@ import numpy as np
 import cv2
 from typing import List, Tuple, Dict
 import json
+import pytesseract
 import fitz  # PyMuPDF
 import re
 import time
 import yaml
-
-try:
-    import pytesseract
-except ImportError:  # pragma: no cover - optional OCR fallback
-    pytesseract = None
 
 
 class TokenExtractor:
@@ -1483,8 +1479,6 @@ class TokenExtractor:
         img = cv2.imread(str(image_path))
         if img is None:
             return {}
-        if pytesseract is None:
-            return {}
         
         # Convert to PIL for pytesseract
         img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -1569,8 +1563,6 @@ class TokenExtractor:
         
         # Extract region
         region = img[y_expanded:y_expanded+h_expanded, x_expanded:x_expanded+w_expanded]
-        if pytesseract is None:
-            return 'unknown'
         
         # Convert to PIL for pytesseract
         img_rgb = cv2.cvtColor(region, cv2.COLOR_BGR2RGB)

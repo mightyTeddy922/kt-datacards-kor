@@ -1,6 +1,6 @@
 {
   "team": "hearthkyn-salvagers",
-  "generated_at": "2026-08-29T21:54:09.237017+00:00",
+  "generated_at": "2026-08-15T18:38:02.567604+00:00",
   "datacards": [
     {
       "name": "HEARTHKYN THEYN",
@@ -11,70 +11,76 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼트 권총",
+          "name": "Autoch-pattern bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8”, 정확 1"
+          "special_rules": "Range 8\", Accurate 1"
         },
         {
-          "name": "오토크 패턴 볼터",
+          "name": "Autoch-pattern bolter",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "정확 1"
+          "special_rules": "Accurate 1"
         },
         {
-          "name": "볼트 리볼버",
+          "name": "Bolt revolver",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "에타카른 플라스마 권총",
+          "name": "EtaCarn plasma pistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "이온 블라스터",
+          "name": "Ion blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "이온 권총",
+          "name": "Ion pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\", 결정적 관통 1"
+          "special_rules": "Range 8\", Piercing Crits 1"
         },
         {
-          "name": "진탕 건틀릿",
+          "name": "Concussion gauntlet",
           "attacks": "4",
           "hit": "4+",
           "damage": "5/7",
-          "special_rules": "무자비, 충격"
+          "special_rules": "Brutal, Shock"
         },
         {
-          "name": "플라스마 무기",
+          "name": "Plasma weapon",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "LEADER",
+        "THEYN"
       ],
       "passive_abilities": [
         {
-          "name": "선조의 눈",
-          "description": "전략 포석(이 요원이 킬존에 있을 시 사용 가능). 적 요원을 하나 지정합니다. 혹은, 아군 하스킨 인양단 요원이 셋 이상 무력화되었다면 적 요원을 최대 둘 지정합 니다. 지정된 적 요원은 각각 앙심 토큰을 하나 받습니다."
+          "name": "Eye of the Ancestors",
+          "description": "STRATEGIC GAMBIT if this operative is in the killzone. Select one enemy operative, or up to two enemy operatives if three or more friendly HEARTHKYN SALVAGER operatives are incapacitated. Each of those enemy operatives gains one of your Grudge tokens."
         },
         {
-          "name": "그물역장 볏머리",
-          "description": "전투당 한 번, 이 요원이 공격 주사위로 일반 피해를 입을 때, 그 주사위 중 하나의 피해를 무시합 니다. 하스킨 테인 2 APL 체력 방호 이동 5\" 3+ 9"
+          "name": "Weavefield Crest",
+          "description": "Once per battle, when an attack dice inflicts Normal Dmg on this operative, you can ignore that inflicted damage."
         }
       ]
     },
@@ -87,27 +93,37 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼트 권총",
+          "name": "Autoch-pattern bolt pistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "사거리 8”, 정확 1"
+          "special_rules": "Range 8\", Accurate 1"
         },
         {
-          "name": "진탕 너클",
+          "name": "Concussion knux",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "집요, 살상 5+, 충격"
+          "special_rules": "Ceaseless, Lethal 5+, Shock"
         }
       ],
       "passive_abilities": [
         {
-          "name": "싸움꾼",
-          "description": "이 요원이 근접전 또는 반격 시, 다음 효과를 적용합니다.\n• 적 요원이 지원할 수 없습니다.\n• 이 요원이 행동 도중 무력화되면, 이 요 원을 킬존에서 제거하기 전에 그 절차에 서 아직 처리하지 않은 성공 주사위 하나 로 적 요원을 타격할 수 있습니다\n• 4 이상의 일반 피해를 입을 때, 그 피해 너클 강타"
+          "name": "Brawler",
+          "description": "Whenever this operative is fighting or retaliating:\n• Enemy operatives cannot assist.\n• If it's incapacitated, you can strike the enemy operative in that sequence with one of your unresolved successes before it’s removed from the killzone.\n• Normal Dmg of 4 or more inflicts 1 less damage on it."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "KNUX SMASH (1AP)",
+          "description": "Select one enemy operative within this operative’s control range. You can move that enemy operative up to 3\" to a location it can be placed. Then inflict D3+1 damage on it (even if you don’t move it); if the D3 result is a 3, also subtract 1 from that enemy operative's APL stat until the end of its next activation. This operative can then immediately perform a free Charge action (even if it’s already performed the Charge action during that activation), but cannot move more than 3\" during that action."
+        }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "DÔZR"
+      ]
     },
     {
       "name": "HEARTHKYN FIELD MEDIC",
@@ -118,27 +134,38 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "볼트 리볼버",
+          "name": "Bolt revolver",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "플라스마 나이프",
+          "name": "Plasma knife",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "환자 발생!",
-          "description": "매 전환점 도중 이 요원의 3” 내에 있으며 시야에 들어온 다른 아군 하스킨 인양단 요원이 처음으로 무 력화됐을 때, 이 요원과 그 아군 요원이 모두 적 요원의 장악 범위 내에 있지 않다면 이 규칙을 사용할 수 있습니다. 그렇게 할 경우, 그 아군 요원은 1 체력이 남은 상태가 되며 그 행동이 끝날 때까지 무력화되지 않습니다. 그 행동 이 후, 그 아군 요원은 즉시 무상으로 질주 행동을 수행할 수 있으나 반드시 이 요원의 장악 범위 내에서 이동을 종료해 야 합니다. 이 요원과 아군 요원은 각각 다음 운용을 종료할 때까지 APL 수치가 -1만큼 변경됩니다. 이 규칙을 그 아 군 요원의 운용 도중 사용했다면, 그 운용은 종료됩니다. 이 요원이 무력화되었을 때, 또는 사격 행동의 주 대상이나"
+          "name": "Medic!",
+          "description": "The first time during each turning point that another friendly HEARTHKYN SALVAGER operative would be incapacitated while visible to and within 3\" of this operative, you can use this rule, providing neither this nor that operative is within control range of an enemy operative. If you do, that friendly operative isn’t incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. After that action, that friendly operative can immediately perform a free Dash action, but must end that move within this operative’s control range. Subtract 1 from this and that operative’s APL stats until the end of their next activations respectively, and if this rule was used during that friendly operative’s activation, that activation ends. You cannot use this rule if this operative is incapacitated, or if it’s a Shoot action and this operative would be a primary or secondary target."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "MEDIKIT (1AP)",
+          "description": "Select one friendly HEARTHKYN SALVAGER operative within this operative’s control range to regain up to 2D3 lost wounds. It cannot be an operative that the Medic! rule was used on during this turning point. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "MEDIC",
+        "FIELD MEDIC"
+      ]
     },
     {
       "name": "HEARTHKYN GRENADIER",
@@ -149,21 +176,21 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼트 권총",
+          "name": "Autoch-pattern bolt pistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "사거리 8”, 정확 1"
+          "special_rules": "Range 8\", Accurate 1"
         },
         {
-          "name": "C8 HX 폭약",
+          "name": "C8 HX charge",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "사거리 4\", 폭발 1\", 중화기(기동 한정), 한도 1, 관통 1, 포화"
+          "special_rules": "Range 4\", Blast 1\", Heavy (Reposition only), Limited 1, Piercing 1, Saturate"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -171,11 +198,21 @@
       ],
       "passive_abilities": [
         {
-          "name": "척탄병",
-          "description": "이 요원은 세열, 크랙, 섬광 수류탄과 연막탄(공용 장비 참고)을 사용할 수 있습니다. 사용 시, 이 장비의 사용 한도가 차감되지 않습니다(즉, 다른 요원이 수류탄 및 연막탄을 사용 시 차감과 무관). 이 요원이 세열 또는 크랙 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화합니다."
+          "name": "Grenadier",
+          "description": "This operative can use frag, krak, smoke and stun grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select those grenades from equipment for other operatives). Whenever this operative is using a frag or krak grenade, improve the Hit stat of that weapon by 1."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "VÂYR-3 UTILITY GRENADE (1AP)",
+          "description": "Place one of your Utility Grenade markers within 6\" of this operative. It must be visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. Whenever an operative is within 3\" of that Utility Grenade marker, its controlling player must spend 1 additional AP for that operative to perform the Pick Up Marker and mission actions. In the Ready step of the next Strategy phase, roll one D3. Remove that Utility Grenade marker after a number of activations equal to the result have been completed or at the end of the turning point (whichever comes first). This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "GRENADIER"
+      ]
     },
     {
       "name": "HEARTHKYN GUNNER",
@@ -186,65 +223,70 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "에타카른 플라스마 조사기",
+          "name": "EtaCarn plasma beamer",
           "attacks": "4",
           "hit": "4+",
           "damage": "5/6",
-          "special_rules": "관통 1, 조사*"
+          "special_rules": "Piercing 1, Beam*"
         },
         {
-          "name": "하이라스 자동 소총",
+          "name": "HYLas auto rifle",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "집요, 파쇄"
+          "special_rules": "Ceaseless, Rending"
         },
         {
-          "name": "하이라스 회전포(집중)",
+          "name": "HYLas rotary cannon (focused)",
           "attacks": "5",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "집요, 중화기(기동 한정), 포화"
+          "special_rules": "Ceaseless, Heavy (Reposition only), Saturate"
         },
         {
-          "name": "하이라스 회전포(소사)",
+          "name": "HYLas rotary cannon (sweeping)",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "집요, 중화기(기동 한정), 포화, 격류 1”"
+          "special_rules": "Ceaseless, Heavy (Reposition only), Saturate, Torrent 1\""
         },
         {
-          "name": "L7 미사일 발사기(폭발)",
+          "name": "L7 missile launcher (blast)",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "폭발 2\""
+          "special_rules": "Blast 2\""
         },
         {
-          "name": "L7 미사일 발사기(집중)",
+          "name": "L7 missile launcher (focused)",
           "attacks": "4",
           "hit": "4+",
           "damage": "5/6",
-          "special_rules": "관통 1"
+          "special_rules": "Piercing 1"
         },
         {
-          "name": "마그나 레일소총",
+          "name": "Magna rail rifle",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/2",
-          "special_rules": "궤멸 3, 중화기(질주 한정), 관통 2"
+          "special_rules": "Devastating 3, Heavy (Dash only), Piercing 2"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
         }
       ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "GUNNER"
+      ],
       "passive_abilities": [
         {
-          "name": "*조사",
-          "description": "이 요원이 이 무기로 사격 수행 시, 보전된 결정적 성공마다 하나의 조사선 위에 있으며 대상이 아닌 각 요원 에 즉시 D3 피해를 가합니다(요원마다 별도로 굴림). 조 사선은 하나만 그을 수 있으며 사격의 대상은 이 규칙에 영향받지 않습니다. 이 요원으로부터 조사선 위 판정을 위한 요원의 베이스까지 조준선이 그려지며, 그 조준선이 원래 사격 대상의 베이스에 닿지만 고밀도 지형에 간섭받 지 않는 상태일 때 요원은 조사선 위에 있는 것입니다."
+          "name": "*Beam",
+          "description": "Whenever this operative is shooting with this weapon, each retained critical success immediately inflicts D3 damage on each other operative along one (and only one) beam line (roll separately for each operative), but the target isn’t affected. An operative is along a beam line if a targeting line can be drawn from this operative to its base, and that line crosses the base of the original target but doesn’t cross Heavy terrain. In this example, Operative A is the target. Operatives B and C are along the beam line, but Operative D isn’t."
         }
       ]
     },
@@ -257,35 +299,36 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼트 권총",
+          "name": "Autoch-pattern bolt pistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "사거리 8”, 정확 1"
+          "special_rules": "Range 8\", Accurate 1"
         },
         {
-          "name": "플라스마 무기",
+          "name": "Plasma weapon",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+,  강력 충돌*"
+          "special_rules": "Lethal 5+,  Force Impact*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "점프팩",
-          "description": "이 요원은 이동과 관련한 행동을 수행할 때 비행할 수 있습니다. 비행 시, 요원을 이동하는 대신 킬존에서 제거한 다음 본래"
+          "name": "Jump Pack",
+          "description": "Whenever this operative performs an action in which it moves, it can FLY. If it does, don’t move it. Instead, remove it from the killzone and set it back up wholly within a distance equal to its Move stat (or 3\" if it was a Dash) horizontally of its original location (in a killzone that uses the close quarters rules, e.g. Killzone: Tomb World, this distance cannot be measured over or through Wall terrain, and that operative cannot be set up on the other side of an access point – in other words it cannot FLY through an open hatchway). Note that it gains no additional distance when performing the Charge action. It must be set up in a location it can be placed, and unless it’s the Charge action, it cannot be set up within control range of an enemy operative."
         },
         {
-          "name": "위치로부터 이동 수치와 동일한 수평 거리(질주 시에는 3\") 내에 완전히 들어가도록 다시 배치합니다(킬존",
-          "description": "갤로다크처럼 폐쇄 공간 규칙을 사용하는 킬존에서는 벽 지형을 넘거나 통과해서 이 거리를 측정할 수 없으며, 요원을 출입구의 반대쪽 편에 배치할 수 없습니 다. 다시 말해, 열린 해치 통로를 통과해 비행할 수 없습니다). 돌격 행동 수행 시에는 이동 거리가 추가되지 않는다는 점에 유의하십 시오. 요원은 반드시 놓을 수 있는 위치에 배치해야 하며, 돌격 행동을 수행하는 때가 아닌 한 적 요원의 장악 범위 내에는 배치할 수 없습니다."
-        },
-        {
-          "name": "*강력 충돌",
-          "description": "이 요원이 이 무기로 근접전을 수행할 때마다, 그 운용 중 돌격 행동을 수행했다면, 이 무기에 무자비 무기 규칙이 부여됩니다."
+          "name": "*Force Impact",
+          "description": "Whenever this operative is fighting with this weapon, if it’s performed the Charge action during the activation, this weapon has the Brutal weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "JUMP PACK WARRIOR"
+      ]
     },
     {
       "name": "HEARTHKYN KINLYNK",
@@ -296,25 +339,41 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼터",
+          "name": "Autoch-pattern bolter",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "정확 1"
+          "special_rules": "Accurate 1"
         },
         {
-          "name": "이온 블라스터",
+          "name": "Ion blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
         }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "SIGNAL (1AP)",
+          "description": "SUPPORT. Select one other friendly HEARTHKYN SALVAGER operative in the killzone. Until the end of that operative’s next activation, add 1 to its APL stat. This operative cannot perform this action while within control range of an enemy operative."
+        },
+        {
+          "name": "SYSTEM JAM (1AP)",
+          "description": "Select one enemy operative that's a valid target for this operative and that doesn’t have one of your System Jam tokens; it gains one. Until the end of the battle, whenever an enemy operative has one of your System Jam tokens, it cannot be activated until each enemy operative without one is expended. When an enemy operative that has one of your System Jam tokens is activated, remove that token. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "KINLYNK"
       ]
     },
     {
@@ -326,21 +385,21 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼터",
+          "name": "Autoch-pattern bolter",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "정확 1"
+          "special_rules": "Accurate 1"
         },
         {
-          "name": "이온 블라스터",
+          "name": "Ion blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -348,11 +407,21 @@
       ],
       "passive_abilities": [
         {
-          "name": "전술가",
-          "description": "전략 포석(이 요원이 킬존에 있을 시 사용 가능). 킬존에 플레이어의 공격 또는 방어 마커 중 하나를 둡니다. 아군 하스킨 인양단 요원이 플레이어의 공격 마커로부터 3” 내에 있는 적 요원을 대상으로 사격, 근접전, 반격 수행 시, 그 아군 요원의 무기에 균형 무기 규칙을 부여합니다. 적 요원이 플레이어의 방어 마커로부터 3” 내에 있는 아군 하스킨 인양단 요원을 대상으로 사격 수행 시, 플레이어의 방어 주사위 하나를 재굴림할 수 있습니다. 다음 전략 페이 즈의 준비 단계에서 그 마커를 제거합니다."
+          "name": "Tactician",
+          "description": "STRATEGIC GAMBIT if this operative is in the killzone. Place either your Attack or Defence marker in the killzone. Whenever a friendly HEARTHKYN SALVAGER operative is shooting against, fighting against or retaliating against an enemy operative that’s within 3\" of your Attack marker, that friendly operative’s weapons have the Balanced weapon rule. Whenever an enemy operative is shooting a friendly HEARTHKYN SALVAGER operative that’s within 3\" of your Defence marker, you can re-roll one of your defence dice. In the Ready step of the next Strategy phase, remove that marker."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "ACCELERATED APPRAISAL (1AP)",
+          "description": "If your Attack or Defence marker is in the killzone, remove it. Place your Attack or Defence marker in the killzone. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "KOGNITÂAR"
+      ]
     },
     {
       "name": "HEARTHKYN LOKÂTR",
@@ -363,24 +432,39 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼터",
+          "name": "Autoch-pattern bolter",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "정확 1"
+          "special_rules": "Accurate 1"
         },
         {
-          "name": "이온 블라스터",
+          "name": "Ion blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
+        }
+      ],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "LOKÂTR"
+      ],
+      "unique_actions": [
+        {
+          "name": "SPOT (1AP)",
+          "description": "SUPPORT. Select one enemy operative visible to this operative. Until the end of the turning point, whenever a friendly HEARTHKYN SALVAGER operative within 3\" of this operative is shooting that enemy operative, you can use this effect. If you do:\n• That friendly operative’s ranged weapons have the Seek Light weapon rule.\n• That enemy operative cannot be obscured. This operative cannot perform this action while within control range of an enemy operative."
+        },
+        {
+          "name": "PAN SPECTRAL SCAN (1AP)",
+          "description": "Place your Pan Spectral Scan marker in the killzone. Whenever a friendly HEARTHKYN SALVAGER operative is shooting an enemy operative that’s within 3\" of that marker, that friendly operative’s ranged weapons have the Accurate 1 and Saturate weapon rules. When this operative is next activated, is incapacitated or performs this action again (whichever comes first), remove that marker. This operative cannot perform this action while within control range of an enemy operative."
         }
       ]
     },
@@ -393,21 +477,21 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼터",
+          "name": "Autoch-pattern bolter",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "정확 1"
+          "special_rules": "Accurate 1"
         },
         {
-          "name": "이온 블라스터",
+          "name": "Ion blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -415,15 +499,20 @@
       ],
       "passive_abilities": [
         {
-          "name": "충분한 보급",
-          "description": "장비 선택지를 하나 더 추가할 수 있으며, 첫 번째 전략 페이즈의 준비 단계에서 플레이어가 1CP 를 추가로 획득합니다."
+          "name": "Well Supplied",
+          "description": "You can select one additional equipment option, and in the Ready step of the first Strategy phase, you gain 1 additional CP."
         },
         {
-          "name": "내가 맡지",
-          "description": "이 요원의 운용당 한 번, 임무 행동에 필요한 AP가 -1만큼 변경됩니다."
+          "name": "I’ve Got It",
+          "description": "Once during each of this operative’s activations, it can perform a mission action for 1 less AP."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "LUGGER"
+      ]
     },
     {
       "name": "HEARTHKYN WARRIOR",
@@ -434,21 +523,21 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "오토크 패턴 볼터",
+          "name": "Autoch-pattern bolter",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "정확 1"
+          "special_rules": "Accurate 1"
         },
         {
-          "name": "이온 블라스터",
+          "name": "Ion blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1"
+          "special_rules": "Piercing Crits 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -456,30 +545,141 @@
       ],
       "passive_abilities": [
         {
-          "name": "인양물 확보",
-          "description": "적 요원이 이 요원을 대상으로 사격하거나, 근접전을 수행하거나, 반격을 수행할 때마다, 이 요원이 목표물 마커 또는 플레이어의 임무 마커를 경쟁하는 중 이라면, 공격 주사위 처리 단계에서 이 요원에게 피해를 가하는 성공 주사위 중 하나를 선택해 그 피해를 -1만큼 변경합니다."
+          "name": "Secure Salvage",
+          "description": "Whenever an enemy operative is shooting against, fighting against or retaliating against this operative, if this operative contests an objective marker or one of your mission markers, in the Resolve Attack Dice step, you can subtract 1 from the damage inflicted on it from one success."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HEARTHKYN SALVAGER",
+        "LEAGUES OF VOTANN",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "ap-1",
-      "text": "팩션 장비\n발굴 도구\n하스킨 인양단은 역장 곡괭이, 플라스마 절단기, 공압식 드릴 등의 \n장비를 사용하여 깊이 묻힌 보화를 추출한다.\n아군 하스킨 인양단 요원이 마커 회수 행동을 수행하는 데\n에 필요한 AP가 -1만큼 변경되며, 그 행동을 위해 마커를 \n장악할 필요가 없습니다(그 행동의 요건에 우선하며, 아군 \n요원이 마커를 경쟁하고만 있어도 행동 수행 가능).\n하스킨 인양단"
+      "name": "plasma-knives",
+      "text": "FACTION EQUIPMENT\nPLASMA KNIVES\nThe superheated edge of a plasma knife can slice \nthrough several inches of solid metal. Armour and bone \nare no match for such a cutting edge.\nFriendly HEARTHKYN SALVAGER operatives \nhave the following melee weapon. Note that the \nFIELD MEDIC operative already has this weapon \nbut with better stats; in that instance, use the \nbetter version.\nNAME \nATK HIT DMG\n Plasma knife \n 3 \n4+ \n3/5\nWR \nLethal 5+\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "climbing-rigs",
+      "text": "FACTION EQUIPMENT\nCLIMBING RIGS\nThis climbing gear allows pioneering Hearthkyn \nSalvagers to traverse any difficult terrain they may \nencounter during the course of their duty.\nDuring each friendly HEARTHKYN \nSALVAGER operative’s activation, you can do \none of the following:\n• When that operative is climbing up, you can \ntreat the vertical distance as 2\" (regardless of \nhow far the operative actually moves vertically).\n• When that operative is dropping, ignore the \nvertical distance.\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "excavation-tools",
+      "text": "FACTION EQUIPMENT\nEXCAVATION TOOLS\nPowered picks, plasma cutters and pneumatic drills are \nitems of equipment that allow the Hearthkyn Salvagers \nto extract treasures buried deep.\nFriendly HEARTHKYN SALVAGER operatives can \nperform the Pick Up Marker action for 1 less AP, \nand don’t have to control the marker to do so (this \ntakes precedence over that action’s conditions – \nthey only need to contest the marker).\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "writ-of-claim",
+      "text": "FACTION EQUIPMENT\nWRIT OF CLAIM\nWhen the Salvagers of a League have staked their claim, \nthey will defend their due with steadfast determination.\nOnce per battle, if friendly HEARTHKYN \nSALVAGER operatives contest two or more \nobjective markers, after rolling off to decide \ninitiative, you can use this rule. If you do, you can \nre-roll your dice.\nHEARTHKYN SALVAGER"
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "grudge",
+      "text": "HEARTHKYN SALVAGER\nFACTION RULE\nGRUDGE\nIf a particular foe shames or insults the Kin gravely \nenough, they will become the subject of a Grudge. To \ndestroy this most hated enemy, the Kin will go to any \nlengths, even if it is to their own detriment.\nWhenever an enemy operative incapacitates a \nfriendly HEARTHKYN SALVAGER operative, that \nenemy operative gains one of your Grudge tokens \nfor the battle.\nWhenever a friendly HEARTHKYN SALVAGER \noperative is shooting against, fighting against or \nretaliating against an enemy operative, for each \nof your Grudge tokens that enemy operative has, \nyou can retain one of your normal successes as \na critical success instead (including any normal \nsuccesses already retained as a result of the \nAccurate weapon rule). Note that Grudge tokens \naren’t removed when you do this."
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "the-ancestors-are-watching",
+      "text": "FIREFIGHT PLOY\nTHE ANCESTORS ARE WATCHING\nThe Kin revere their Ancestors and are guided by the \nlessons of their forebears.\nUse this firefight ploy during a friendly \nHEARTHKYN SALVAGER operative’s activation. \nUntil the end of that activation, that operative \ncan perform either a free Shoot or a free Fight \naction and you can ignore any changes to that \noperative’s weapon stats from being injured.\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "worth-it",
+      "text": "FIREFIGHT PLOY\nWORTH IT\nKin will gladly risk death if the rewards to their kindred \nare justified.\nUse this firefight ploy when a friendly \nHEARTHKYN SALVAGER operative is \nincapacitated. It can perform a free mission \naction before it’s removed from the killzone.\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "sturdy",
+      "text": "FIREFIGHT PLOY\nSTURDY\nStocky and stalwart, Hearthkyn Salvagers grit their \nteeth and shrug off wounds that would fell a Human.\nUse this firefight ploy when an operative is \nshooting a friendly HEARTHKYN SALVAGER \noperative, when you collect your defence dice. \nChange the attacker’s retained critical successes \nto normal successes (any weapon rules \nthey’ve already resolved aren’t affected, e.g. \nPiercing Crits).\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "engage-to-acquire",
+      "text": "FIREFIGHT PLOY\nENGAGE TO ACQUIRE\nSome prizes must be wrested from the foe by force. The \nnecessity of violent acquisition incites within the Kin a \nruthless determination.\nUse this firefight ploy after rolling your attack dice \nfor a friendly HEARTHKYN SALVAGER operative, \nif it’s shooting against or fighting against an \nenemy operative that controls an objective \nmarker or one of your mission markers. You can \nre-roll any of your attack dice.\nHEARTHKYN SALVAGER"
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION HEARTHKYN SALVAGERS",
-      "text": "하스킨 인양단 \n킬 팀\n아키타입: 정찰, 경비\n요원 목록\n \n↘\u00021\u0002하스킨 인양단\u0002테인\u0002요원,\u0002다음\u0002각\u0002선택지에서\u0002하나씩\u0002\n골라\u0002장비합니다.\n• \u0002오토크\u0002패턴\u0002볼트\u0002권총,\u0002오토크\u0002패턴\u0002볼터,\u0002볼트\u0002\n리볼버,\u0002에타카른\u0002플라스마\u0002권총,\u0002이온\u0002블라스터,\u0002\n이온\u0002권총\n• \u0002진탕\u0002건틀릿,\u0002플라스마\u0002무기\u0002\n \n↘\u00029\u0002하스킨 인양단\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002도즈르\n• \u0002야전의무병\n• \u0002척탄병\n• \u0002사수,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002에타카른\u0002플라스마\u0002조사기,\u0002주먹\n \n○\n\u0002하이라스\u0002자동\u0002소총,\u0002주먹\n \n○\n\u0002하이라스\u0002회전포,\u0002주먹\n \n○\n\u0002L7\u0002미사일\u0002발사기,\u0002주먹\n \n○\n\u0002마그나\u0002레일소총,\u0002주먹\n다음 면에 계속\n\n---\n\n• \u0002점프팩 전사\n• 킨링크\n• \u0002코그니타르\n• \u0002로카트르\n• \u0002화물운반자\n• \u0002전사\u0002\n사수와\u0002전사\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002\n한\u0002번씩만\u0002편성할\u0002수\u0002있습니다.\u0002사수는\u0002최대\u0002셋\u0002편성할\u0002수\u0002있\n으나,\u0002각\u0002요원의\u0002장비\u0002선택지가\u0002달라야\u0002합니다.\n\u0002\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n• \u0002오토크\u0002패턴\u0002볼터,\u0002주먹\n• \u0002이온\u0002블라스터,\u0002주먹",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "HEARTHKYN SALVAGERS \nKILL TEAM\nARCHETYPES: RECON, SECURITY\nOPERATIVES\n \n↘ 1 HEARTHKYN SALVAGER THEYN operative \nwith one option from each of the following:\n• Autoch-pattern bolt pistol, Autoch-pattern \nbolter, bolt revolver, EtaCarn plasma pistol, \nion blaster or ion pistol\n• Concussion gauntlet or plasma weapon \n \n↘ 9 HEARTHKYN SALVAGER operatives \nselected from the following list:\n• DÔZR\n• FIELD MEDIC\n• GRENADIER\n• GUNNER with one of the following options:\n \n○ EtaCarn plasma beamer; fists\n \n○ HYLas auto rifle; fists\n \n○ HYLas rotary cannon; fists\n \n○ L7 missile launcher; fists\n \n○ Magna rail rifle; fists\nCONTINUES ON OTHER SIDE\n\n---\n\n• JUMP PACK WARRIOR\n• KINLYNK\n• KOGNITÂAR\n• LOKÂTR\n• LUGGER\n• WARRIOR \nOther than GUNNER and WARRIOR operatives, \nyour kill team can only include each operative on \nthis list once. Your kill team can only include up \nto three GUNNER operatives (each must have a \ndifferent option).\n With one of the following options:\n• Autoch-pattern bolter; fists\n• Ion blaster; fists",
+      "selection": {
+        "HEARTHKYN THEYN": [
+          [
+            "Autoch-pattern bolt pistol",
+            "Autoch-pattern bolter",
+            "bolt revolver",
+            "EtaCarn plasma pistol",
+            "ion blaster",
+            "ion pistol"
+          ],
+          [
+            "Concussion gauntlet",
+            "plasma weapon"
+          ]
+        ],
+        "HEARTHKYN JUMP PACK WARRIOR": [],
+        "HEARTHKYN FIELD MEDIC": [],
+        "HEARTHKYN DÔZR": [],
+        "HEARTHKYN GRENADIER": [],
+        "HEARTHKYN GUNNER": [
+          [
+            "EtaCarn plasma beamer; fists",
+            "HYLas auto rifle; fists",
+            "HYLas rotary cannon; fists",
+            "L7 missile launcher; fists",
+            "Magna rail rifle; fists"
+          ]
+        ],
+        "HEARTHKYN KINLYNK": [
+          [
+            "Autoch-pattern bolter; fists",
+            "Ion blaster; fists"
+          ]
+        ],
+        "HEARTHKYN KOGNITÂAR": [
+          [
+            "Autoch-pattern bolter; fists",
+            "Ion blaster; fists"
+          ]
+        ],
+        "HEARTHKYN LOKÂTR": [
+          [
+            "Autoch-pattern bolter; fists",
+            "Ion blaster; fists"
+          ]
+        ],
+        "HEARTHKYN LUGGER": [
+          [
+            "Autoch-pattern bolter; fists",
+            "Ion blaster; fists"
+          ]
+        ],
+        "HEARTHKYN WARRIOR": [
+          [
+            "Autoch-pattern bolter; fists",
+            "Ion blaster; fists"
+          ]
+        ]
+      }
     }
   ],
   "strategy_ploys": [
     {
-      "name": "apl-1",
-      "text": "전략 플로이\n필요로 지키라\n가장 필요한 자가 가장 열심히 싸우는 법이다.\n목표물 마커 하나 또는 플레이어의 임무 마커 중 하나를 \n지정합니다.\n• 그 마커의 장악 여부를 결정할 때마다, 아군 하스킨 인양단 \n요원이 하나라도 그 마커를 경쟁한다면 마커를 경쟁하는 \n아군 하스킨 인양단 요원의 APL 총합이 +1만큼 변경된 \n것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아\n니므로 다른 APL 변경 사항과 누적된다는 점을 유의하\n십시오.\n• 아군 하스킨 인양단 요원이 그 마커의 3\" 내에 있을 때마\n다, 그 요원이 보유한 근접 무기의 공격 수치를 +1만큼 \n변경합니다(최대 4까지). 만약 무기의 공격 수치가 이미 \n4라면, 그 무기에 균형 무기 규칙을 부여합니다.\n하스킨 인양단"
+      "name": "need-keeps",
+      "text": "STRATEGY PLOY\nNEED KEEPS\nThose whose need is greatest shall fight hardest for \ntheir prize.\nSelect one objective marker or one of your \nmission markers.\n• Whenever determining control of that marker, \ntreat the total APL stat of friendly HEARTHKYN \nSALVAGER operatives that contest it as 1 \nhigher if at least one friendly HEARTHKYN \nSALVAGER operative contests that marker. \nNote this isn’t a change to the APL stat, so any \nchanges are cumulative with this.\n• Whenever a friendly HEARTHKYN SALVAGER \noperative is within 3\" of that marker, add \n1 to the Atk stat of its melee weapons (to a \nmaximum of 4); if the weapon already has an \nAtk stat of 4, it has the Balanced weapon rule.\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "toil-earns",
+      "text": "STRATEGY PLOY\nTOIL EARNS\nThe harder the prize is won, the greater the reward.\nSelect one objective marker or one of your \nmission markers. Whenever an enemy operative \nis within 3\" of that marker, treat it as having one \nadditional Grudge token.\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "wrought-defence",
+      "text": "STRATEGY PLOY\nWROUGHT DEFENCE\nArtificers of consummate skill, the Kin forge armour of \ngreat quality and resilience.\nWhenever an operative is shooting a friendly \nHEARTHKYN SALVAGER operative, if you rolled \none or less successes (including any re-rolls), you \ncan retain one of your fails as a normal success \ninstead of discarding it.\nHEARTHKYN SALVAGER"
+    },
+    {
+      "name": "proximate-firepower",
+      "text": "STRATEGY PLOY\nPROXIMATE FIREPOWER\nHearthkyn Salvagers are supremely effective in \nclose-quarters environments.\nWhenever a friendly HEARTHKYN SALVAGER \noperative is shooting an enemy operative within \n6\" of it, improve the Hit stat of that friendly \noperative’s ranged weapons by 1 (to a maximum \nof 3+). This can allow you to apply or remove \nthe Hit stat change during an action (this takes \nprecedence over the core rules).\nHEARTHKYN SALVAGER"
     }
   ]
 }

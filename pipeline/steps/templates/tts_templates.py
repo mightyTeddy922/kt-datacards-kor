@@ -9,6 +9,14 @@ from typing import Optional
 
 # Cache for team GUID mappings
 _TEAM_GUID_CACHE = None
+_URL_REPO_ROOT = os.environ.get(
+    "KT_DATACARDS_REPO_ROOT",
+    "https://raw.githubusercontent.com/Wen-Qualtu/kt-datacards/{branch}",
+)
+
+
+def _repo_root(branch: str) -> str:
+    return _URL_REPO_ROOT.format(branch=branch)
 
 
 def _load_team_guids():
@@ -354,16 +362,11 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
     
     # Fallback cardbox URLs point to output/{team}/cardbox/ (step 6 writes the
     # actual files there, copying defaults when a team has no custom cardbox).
-    repo_slug = (
-        os.environ.get("KT_GITHUB_REPO")
-        or os.environ.get("GITHUB_REPOSITORY")
-        or "mightyTeddy922/kt-datacards-kor"
-    )
     if not mesh_url:
-        mesh_url = f"https://raw.githubusercontent.com/{repo_slug}/{repo_branch}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box.obj"
+        mesh_url = f"{_repo_root(repo_branch)}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box.obj"
 
     if not texture_url:
-        texture_url = f"https://raw.githubusercontent.com/{repo_slug}/{repo_branch}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box-texture.jpg"
+        texture_url = f"{_repo_root(repo_branch)}/output/{team_folder_name}/cardbox/{team_folder_name}-card-box-texture.jpg"
     
     # Create LuaScriptState with positions for each contained object.
     # IMPORTANT: Placement must be stable across teams.
@@ -412,12 +415,9 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
             after = face_url.split("/output/", 1)[1]
             # URL format: .../output/{team}/cards/{card_type}/...
             parts = after.split("/")
-            if len(parts) < 4:
-                return None
-            if parts[1].strip().lower() != "cards":
+            if len(parts) < 3:
                 return None
             folder = parts[2].strip().lower()
-            subfolder = parts[3].strip().lower() if len(parts) > 4 else ""
         else:
             return None
 
@@ -428,11 +428,6 @@ def create_bag(team_name, team_tag, contained_objects, lua_script, texture_url=N
             return "markertokens"
         if folder in {"datacards", "equipment", "firefight-ploys", "strategy-ploys"}:
             return folder
-        if folder == "ploys":
-            if subfolder == "firefight":
-                return "firefight-ploys"
-            if subfolder == "strategy":
-                return "strategy-ploys"
         if folder == "firefight_ploys":
             return "firefight-ploys"
         if folder == "strategy_ploys":

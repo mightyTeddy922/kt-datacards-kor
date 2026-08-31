@@ -1,66 +1,74 @@
 {
   "team": "wolf-scouts",
-  "generated_at": "2026-08-29T21:57:30.865752+00:00",
+  "generated_at": "2026-08-26T15:18:16.965479+00:00",
   "datacards": [
     {
       "name": "WOLF SCOUT PACK LEADER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "플라스마 권총(표준)",
+          "name": "Plasma pistol (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "플라스마 권총(과충전)",
+          "name": "Plasma pistol (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 과열, 살상 5+, 관통 1"
+          "special_rules": "Range 8\", Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "역장 무기",
+          "name": "Power weapon",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "늑대의 교활",
-          "description": "전투당 한 번 이 요원이 킬존에 있다면, 선제권을 정하는 롤오프 후 플레이어의 주사위를 재굴림 할 수 있습니다."
+          "name": "Lupine Guile",
+          "description": "Once per battle, after rolling off to decide initiative, if this operative is in the killzone, you can re-roll your dice."
         },
         {
-          "name": "반백의 베테랑",
-          "description": "전투 도중 이 요원이 처음으로 무력화됐 을 때, 무력화되는 대신 1 체력이 남은 상태가 되며 그 행 동이 끝날 때까지 무력화되지 않습니다. 남은 공격 주사위 는 모두 버립니다(이 요원이 근접전이나 반격 중이었다면 플레이어의 주사위도 버림). 그 행동이 끝날 때까지 역습 화력전 플로이를 사용하거나 혹독한 전사 전략 플로이로"
+          "name": "Grizzled Veteran",
+          "description": "The first time this operative would be incapacitated during the battle, it’s not incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating). You cannot use the Counterattack firefight ploy or inflict damage as a result of the Savage Fighters strategy ploy at the end of that action."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "PACK",
+        "LEADER"
+      ]
     },
     {
       "name": "WOLF SCOUT FANGBEARER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "앱솔버 볼트 권총",
+          "name": "Absolvor bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 결정적 관통 1"
+          "special_rules": "Range 8\", Piercing Crits 1"
         },
         {
-          "name": "컴뱃 블레이드",
+          "name": "Combat blade",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
@@ -68,29 +76,41 @@
       ],
       "passive_abilities": [
         {
-          "name": "영적 의술",
-          "description": "아군 늑대 척후 요원(펜리스늑대 제외)의 부 상으로 인한 능력치 변경(무기의 요구치 포함)을 무시할 수 있습니다. 킬 팀 편성 시 이 요원을 선택했다면, 모든 아군 요원에 이 규칙이 적용됩니다(이후 이 요원이 무력 화되어도 지속 적용). 회복 연고"
+          "name": "Spiritual Chirurgy",
+          "description": "You can ignore any changes to the stats of friendly WOLF SCOUT operatives (excluding FENRISIAN WOLF) from being injured (including their weapons’ stats). Note that friendly operatives have this rule if you select this operative for the battle (even if it’s incapacitated later)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "HEALING BALMS (1AP)",
+          "description": "Select one friendly WOLF SCOUT operative within this operative’s control range to regain up to D3+3 lost wounds. This operative cannot perform this action while within control range of an enemy operative, or more than once per turning point."
+        }
+      ],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "FANGBEARER"
+      ]
     },
     {
       "name": "WOLF SCOUT FROSTEYE",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "인스티게이터 볼트 카빈",
+          "name": "Instigator bolt carbine",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "결정적 관통 1, 무성"
+          "special_rules": "Piercing Crits 1, Silent"
         },
         {
-          "name": "컴뱃 블레이드",
+          "name": "Combat blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -98,36 +118,48 @@
       ],
       "passive_abilities": [
         {
-          "name": "폭풍에 가린 처형",
-          "description": "이 요원이 플레이어의 폭풍 속에 완전히 들어가 있다면, 다음을 적용합니다.\n• 킬존과 무관하게 엄호(킬 팀 코어북, 폐쇄 공간 규칙 참고) 행동을 수행할 수 있습니다.\n• 은폐 명령을 받은 동안 엄호 명령을 수행할 수 있습니다."
+          "name": "Storm-veiled Execution",
+          "description": "Whenever this operative is wholly within your STORM:\n• It can perform the Guard action regardless of the killzone (see close quarters rules, Kill Team Core Book).\n• It can perform the Guard action while it has a Conceal order."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "HUNTER’S SENSES (1AP)",
+          "description": "Select one of the following rules for this operative’s instigator bolt carbine to have until the start of its next activation:\n• Severe.\n• Saturate, and whenever this operative is shooting with that weapon, enemy operatives cannot be obscured. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "FROSTEYE"
+      ]
     },
     {
       "name": "WOLF SCOUT GUNNER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "플라스마 건(표준)",
+          "name": "Plasma gun (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "관통 1"
+          "special_rules": "Piercing 1"
         },
         {
-          "name": "플라스마 건(과충전)",
+          "name": "Plasma gun (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "5/6",
-          "special_rules": "과열, 살상 5+, 관통 1"
+          "special_rules": "Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "컴뱃 블레이드",
+          "name": "Combat blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -135,36 +167,43 @@
       ],
       "passive_abilities": [
         {
-          "name": "폭풍우의 분노",
-          "description": "이 요원이 플레이어의 폭풍 속에 완전히 들어가 있다면, 다음을 적용합니다.\n• 장비한 플라스마 건의 모든 프로필에 맹공 무기 규칙이 부여됩니다.\n• 장비한 플라스마 건(과충전)에 과열 무기 규칙을 적용하지 않습니다."
+          "name": "Tempest’s Fury",
+          "description": "Whenever this operative is wholly within your STORM:\n• All profiles of its plasma gun have the Punishing weapon rule.\n• Its plasma gun (supercharge) doesn’t have the Hot weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "GUNNER"
+      ]
     },
     {
       "name": "WOLF SCOUT HUNTER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "플라스마 권총(표준)",
+          "name": "Plasma pistol (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "플라스마 권총(과충전)",
+          "name": "Plasma pistol (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 과열, 살상 5+, 관통 1"
+          "special_rules": "Range 8\", Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "컴뱃 블레이드",
+          "name": "Combat blade",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
@@ -172,81 +211,101 @@
       ],
       "passive_abilities": [
         {
-          "name": "다혈질",
-          "description": "이 요원이 플레이어의 폭풍 속에 완전히 들어가 있다면, 장비한 무기에 중상 무기 규칙이 부여됩니다."
+          "name": "Fierce Temperament",
+          "description": "Whenever this operative is wholly within your STORM, its weapons have the Severe weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "HUNTER"
+      ]
     },
     {
       "name": "WOLF SCOUT RUNE PRIEST SKJALD",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "세계 늑대의 아귀",
+          "name": "Jaws of the World Wolf",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사이킥, 폭발 2\", 중상"
+          "special_rules": "PSYCHIC, Blast 2\", Severe"
         },
         {
-          "name": "뇌성",
+          "name": "Thunderclap",
           "attacks": "5",
           "hit": "2+",
           "damage": "2/2",
-          "special_rules": "사이킥, 사거리 6\", 포화, 저밀도 색적, 혼미, 격류 2\""
+          "special_rules": "PSYCHIC, Range 6\", Saturate, Seek Light, Stun, Torrent 2\""
         },
         {
-          "name": "룬 지팡이",
+          "name": "Runic stave",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "사이킥, 충격"
+          "special_rules": "PSYCHIC, Shock"
         }
       ],
       "passive_abilities": [
         {
-          "name": "룬 단조",
-          "description": "킬 팀 편성 시 이 요원을 선택한 후, D6 세 개를 굴려 한 곳에 보존합니다. 값이 1~4인 주사위마다, 그 값과 일치하는 전환점 순번에 지휘 재굴림 화력전 플로이를 0CP로 사용할 수 있습니다. 값이 5~6인 주사위가 하나 이상"
+          "name": "Cast the Runes",
+          "description": "After selecting this operative, before the battle, roll three D6 and put them to one side. For each result of 1-4, you can use the Command Re-roll firefight ploy for OCP once during the turning point that matches the result. If one or more results are 5-6, you gain 1CP. For example, if you roll 2, 2 and 5, you gain 1CP and twice during the second turning point you can use Command Re-roll for 0CP."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "CALL THE STORM (1AP)",
+          "description": "PSYCHIC. Remove your Storm marker from the killzone (if any), then place it in the killzone. PSYCHIC. Alternatively, instead of resolving the above effect, select one friendly WOLF SCOUT operative. Until the start of this operative’s next activation, until it’s incapacitated or until it performs this action again (whichever comes first), whenever that friendly operative is wholly within your STORM and more than 3\" from the active operative, it’s obscured."
+        }
+      ],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "PSYKER",
+        "RUNE PRIEST SKJALD"
+      ]
     },
     {
       "name": "WOLF SCOUT TRAPMASTER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "3+",
-      "wounds": 3,
+      "wounds": 13,
       "base_size": 32,
       "weapons": [
         {
-          "name": "플라스마 권총(표준)",
+          "name": "Plasma pistol (standard)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "플라스마 권총(과충전)",
+          "name": "Plasma pistol (supercharge)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 과열, 살상 5+, 관통 1"
+          "special_rules": "Range 8\", Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "컴뱃 블레이드",
+          "name": "Combat blade",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
@@ -254,62 +313,136 @@
       ],
       "passive_abilities": [
         {
-          "name": "와해 지뢰",
-          "description": "이 요원은 플레이어의 와해 지뢰 마커를 운반하며, 그 마커를 대상으로 마커 회수 행동을 수행할 수 있습니다. 단, 그 마커는 다른 요원의 장악 범위에 배치할 수 없습니다. 이 요원이 그 마커를 운반하는 동안 무력화되었는데 마커를 배치할 수 없다면, 무력화된 요원과 함께 제거합니다."
+          "name": "Haywire Mine",
+          "description": "This operative is carrying your Haywire Mine marker. It can perform the Pick Up Marker action on that marker, but that marker cannot be placed within another operative’s control range (if this operative is incapacitated while carrying that marker and that marker cannot be placed, it’s removed with this operative)."
         },
         {
-          "name": "근접 지뢰",
-          "description": "플레이어의 와해 지뢰 마커가 다른 요원의 장 악 범위 내에 처음으로 들어가면, 그 마커를 제거합니다. 그 요원은 다음 운용이 종료될 때까지 APL 수치가 -1만 큼 변경됩니다. 또한 그 요원에게 2D3+3(그 와해 지뢰 마커가 플레이어의 폭풍 마커로부터 수평으로 6\" 내에 있다면 D3+6) 피해를 가합니다. 그 요원이 무력화되지 않았으며 행동 도중이었다면, 행동의 효과가 완전히 처 리되지 않았어도 그 행동을 종료합니다. 이때 그 요원을 놓을 수 없다면, 최소 거리만 이동해 놓을 수 있는 지점으"
+          "name": "Proximity Mine",
+          "description": "The first time your Haywire Mine marker is within another operative’s control range, remove that marker, subtract 1 from that operative’s APL stat until the end of its next activation, and inflict 2D3+3 damage on it (or D3+6 if that marker is within 6\" horizontally of your Storm marker); if it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so. Note that this operative is ignored for these effects (i.e. it cannot set it off or take damage from that marker)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "TRAPMASTER"
+      ]
     },
     {
       "name": "WOLF SCOUT FENRISIAN WOLF",
-      "apl": null,
+      "apl": 2,
       "movement": "8″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 9,
       "base_size": "60x35",
       "weapons": [
         {
-          "name": "송곳니",
+          "name": "Fangs",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "파쇄"
+          "special_rules": "Rending"
         }
       ],
       "passive_abilities": [
         {
-          "name": "본능적인 포식자",
-          "description": "이 요원은 돌격, 질주, 후퇴, 근접전, 기동, 엄호 이외의 다른 행동을 수행할 수 없으며, 이 요원 의 데이터카드에 명시되지 않은 무기를 사용할 수 없습 니다. 이 요원은 은폐 명령을 받은 상태에서도 돌격 행동 을 수행할 수 있습니다."
+          "name": "Instinctive Predator",
+          "description": "This operative cannot perform any actions other than Charge, Dash, Fall Back, Fight, Guard and Reposition. It cannot use any weapons that aren’t on its datacard. This operative can perform the Charge action while it has a Conceal order."
         },
         {
-          "name": "덮치기",
-          "description": "전략 포석(전투당 한 번 사용 가능). 이 요원은"
+          "name": "Pounce",
+          "description": "Once per battle STRATEGIC GAMBIT. If this operative’s APL stat is 2 or more, this operative can perform a free Charge, Fall Back or Reposition action. If it does, until the end of its next activation, subtract 1 from its APL stat and it cannot perform any of the aforementioned actions."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "WOLF SCOUT",
+        "IMPERIUM",
+        "ADEPTUS ASTARTES",
+        "SPACE WOLVES",
+        "FENRISIAN WOLF"
+      ]
+    }
+  ],
+  "equipment": [
+    {
+      "name": "frost-weapons",
+      "text": "WOLF SCOUT\nFACTION EQUIPMENT\nFROST WEAPONS\nThese blisteringly cold weapons are crafted by a master \nIron Priest and boast lethal edges. Some incorporate \nice kraken fangs while others are shards of energised \ndiamond, appearing as if forged from purest ice.\nWhenever a friendly WOLF SCOUT operative is \nwholly within your STORM, its combat blade (if \nany) has the Lethal 5+ weapon rule."
+    },
+    {
+      "name": "runic-charms",
+      "text": "WOLF SCOUT\nFACTION EQUIPMENT\nRUNIC CHARMS\nMany pieces of a warrior’s wargear are artfully inscribed \nwith runes, but only the enigmatic Rune Priests know \nthe secrets of etching these more potent charms, which \nthe Space Wolves believe can ward their very souls.\nOnce per turning point, when an operative is \nshooting a friendly WOLF SCOUT operative \n(excluding FENRISIAN WOLF) that’s wholly within \nyour STORM, at the start of the Roll Defence Dice \nstep, you can use this rule. If you do, worsen the x \nof the Piercing weapon rule by 1 (if any) until the \nend of that sequence. Note that Piercing 1 would \ntherefore be ignored."
+    },
+    {
+      "name": "wolfteeth-necklaces",
+      "text": "WOLF SCOUT\nFACTION EQUIPMENT\nWOLFTEETH NECKLACES\nThe right to wear one of these fetishes may be \nearned in the contests of might held in the Chapter’s \nfortress monastery: the Fang. They recognise the \nbearer’s martial skill, and their capacity to draw upon \ngreat reserves of genetically augmented strength \nand perseverance.\nOnce per turning point, when a friendly WOLF \nSCOUT operative (excluding FENRISIAN WOLF) \nis shooting, fighting or retaliating, if you roll two or \nmore fails, you can discard one of them to retain \nanother as a normal success instead."
+    },
+    {
+      "name": "talismanic-trophies",
+      "text": "WOLF SCOUT\nFACTION EQUIPMENT\nTALISMANIC TROPHIES\nThick pelts, skulls and tails adorn these sons of Russ. \nThese trophies – taken from huge lupine beasts they \nhave tracked and killed on Fenris – are seen as potent \ntokens of luck and protection against malign attacks.\nWhenever a friendly WOLF SCOUT operative \n(excluding FENRISIAN WOLF) that’s wholly \nwithin your STORM is fighting or retaliating, in \nthe Resolve Attack Dice step, you can subtract \n1 from the damage inflicted on it from one \nnormal success."
     }
   ],
   "faction_rules": [
     {
-      "name": "1ap",
-      "text": "팩션 규칙\n늑대 척후\n사냥 아스타르테스\n늑대 척후는 사냥에서 극도의 치명적인 능력을 발휘하는 숙련된 \n스페이스 마린 병력이다. 유전적으로 강화된 초인이자 무자비한 전\n사로서, 기묘한 기상 현상을 능숙하게 활용하여 적 모르게 접근한다.\n각\u0002아군\u0002늑대 척후\u0002요원은\u0002운용\u0002도중\u0002사격\u0002또는\u0002근접전\u0002행동\u0002\n중\u0002하나를\u0002두\u0002번\u0002수행할\u0002수\u0002있습니다.\u0002사격\u0002행동을\u0002두\u0002번\u0002수\n행할\u0002때는\u0002다음을\u0002따릅니다.\n• \u0002두\u0002번의\u0002행동\u0002모두\u0002플라스마\u0002건\u0002또는\u0002플라스마\u0002권총을\u0002사\n용하면,\u0002두\u0002번째\u0002행동은\u00021AP를\u0002추가로\u0002소모해야\u0002합니다.\n• \u0002사이킥\u0002원거리\u0002무기는\u0002두\u0002번\u0002선택할\u0002수\u0002없습니다.\n각\u0002아군\u0002늑대 척후\u0002요원은\u0002받은\u0002명령과\u0002무관하게\u0002대응할\u0002수\u0002\n있습니다.\u0002요원이\u0002플레이어의\u0002폭풍\u0002속에\u0002있으면,\u0002그렇게\u0002대\n응할\u0002때마다\u0002먼저\u0002요원의\u0002명령을\u0002변경할\u0002수\u0002있습니다.\u0002행동\n을\u0002수행하는\u0002대신\u0002명령만\u0002변경할\u0002수도\u0002있으나,\u0002이\u0002경우\u0002여전\n히\u0002그\u0002전환점에\u0002대응한\u0002것으로\u0002간주합니다."
+      "name": "elemental-storm",
+      "text": "WOLF SCOUT\nFACTION RULE\nELEMENTAL STORM\nIt is said by some battle-brothers that their Chapter’s \nWolf Scouts take the storm with them. In many cases, \nthese tempestuous upheavals truly are supernatural, \ncalled into being by accompanying Rune Priest Skjalds. \nAt other times, Wolf Scouts skilfully time their hunts to \ncoincide with local atmospheric phenomena or instigate \nthem with arcane technologies. Wolf Scouts can operate \nfor extended periods hidden by such storms; using the \ncover to mask their movements and confuse the senses \nof their prey, their enemies feel they are fighting the \nvery elements themselves.\nSTRATEGIC GAMBIT. Remove your Storm marker \nfrom the killzone (if any), then place it in the \nkillzone. Whenever an operative is wholly within \n6\" horizontally of your Storm marker, it’s wholly \nwithin your STORM.\nEach friendly WOLF SCOUT operative can \nperform the Charge action while it has a \nConceal order if it ends that action wholly within \nyour STORM."
+    },
+    {
+      "name": "hunting-astartes",
+      "text": "WOLF SCOUT\nFACTION RULE\nHUNTING ASTARTES\nWolf Scouts are experienced Space Marines who \nare utterly lethal on the hunt. These genetically \nmodified superhumans are merciless warriors capable \nof exploiting strange climatic events to conceal \ntheir approach.\nDuring each friendly WOLF SCOUT operative’s \nactivation, it can perform either two Shoot actions \nor two Fight actions. If it’s two Shoot actions:\n• 1 additional AP must be spent for the second \naction if both actions are using a plasma gun or \nplasma pistol.\n• You cannot select two PSYCHIC \nranged weapons.\nEach friendly WOLF SCOUT operative can \ncounteract regardless of its order. Whenever \nit does so within your STORM, you can change \nits order first, or change its order instead of \nperforming an action (for the latter, still treat it as \nhaving counteracted this turning point)."
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "acute-senses",
+      "text": "WOLF SCOUT\nFIREFIGHT PLOY\nACUTE SENSES\nThe heightened acuity of the sons of Russ coupled with \nthe keen hunter’s instincts of an experienced Wolf Scout \nenable these operatives to pick out their prey no matter \nwhere they hide.\nUse this firefight ploy when a friendly WOLF \nSCOUT operative performs the Shoot action \nand you’re selecting a valid target. Until the end \nof that action, that friendly operative’s ranged \nweapons have the Range 6\" and Seek Light \nweapon rules and enemy operatives cannot \nbe obscured."
+    },
+    {
+      "name": "counterattack",
+      "text": "WOLF SCOUT\nFIREFIGHT PLOY\nCOUNTERATTACK\nThe greatest hunters know never to waste the chance \nto make an unexpected lunge, their prey at its most \nvulnerable just as they strike.\nUse this firefight ploy at the end of an enemy \noperative’s activation, or after an enemy \noperative performs the Fight action. One friendly \nWOLF SCOUT operative can immediately \nperform a free Fight action, but you cannot select \nany other enemy operative to fight against during \nthat action."
+    },
+    {
+      "name": "touched-by-lokyar",
+      "text": "WOLF SCOUT\nFIREFIGHT PLOY\nTOUCHED BY LOKYAR\nIndependence of spirit is exceptionally strong amongst \nWolf Scouts. Enemies who believe them vulnerably \nisolated soon regret tackling these vicious survivalists.\nUse this firefight ploy after rolling your attack dice \nfor a friendly WOLF SCOUT operative (excluding \nFENRISIAN WOLF), if it’s fighting more than 5\" \nfrom other friendly operatives. You can re-roll any \nof your attack dice."
+    },
+    {
+      "name": "transhuman-physiology",
+      "text": "WOLF SCOUT\nFIREFIGHT PLOY\nTRANSHUMAN PHYSIOLOGY\nThe genetically modified physiology of the Space \nWolves is capable of resisting wounds that would kill a \nlesser being.\nUse this firefight ploy when an operative is \nshooting a friendly WOLF SCOUT operative \n(excluding FENRISIAN WOLF), in the Roll Defence \nDice step. You can retain one of your normal \nsuccesses as a critical success instead."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION WOLF SCOUTS",
-      "text": "늑대 척후 \n킬 팀\n아키타입: 정찰, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002늑대 척후\u0002펜리스늑대\n \n↘\u00025\u0002늑대 척후\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002무리 우두머리\n• \u0002송곳니\n• \u0002서리눈\n• \u0002포수\n• \u0002함정꾼\n• \u0002룬 사제 스키얄드\n• \u0002사냥꾼\u0002\n사냥꾼\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번\n씩만\u0002편성할\u0002수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "WOLF SCOUTS \nKILL TEAM\nARCHETYPES: RECON, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 WOLF SCOUT FENRISIAN WOLF\n \n↘ 5 WOLF SCOUT operatives selected from the \nfollowing list:\n• PACK LEADER\n• FANGBEARER\n• FROSTEYE\n• GUNNER\n• TRAPMASTER\n• RUNE PRIEST SKJALD\n• HUNTER \nOther than HUNTER operatives, your kill team can \nonly include each operative on this list once.",
+      "selection": {
+        "WOLF SCOUT RUNE PRIEST SKJALD": [],
+        "WOLF SCOUT PACK LEADER": [],
+        "WOLF SCOUT FANGBEARER": [],
+        "WOLF SCOUT FROSTEYE": [],
+        "WOLF SCOUT GUNNER": [],
+        "WOLF SCOUT TRAPMASTER": [],
+        "WOLF SCOUT HUNTER": []
+      }
     }
   ],
   "strategy_ploys": [
     {
-      "name": "d3-1",
-      "text": "전략 플로이\n늑대 척후\n혹독한 전사\n표적을 구석에 몰아세운 늑대 척후는 사냥감의 힘을 뺄 기회를 일절 \n놓치지 않고자 가혹한 압박을 지속한다.\n아군\u0002늑대 척후\u0002요원이\u0002반격을\u0002마칠\u0002때마다,\u0002무력화되지\u0002않\n았으며\u0002그\u0002적\u0002요원의\u0002장악\u0002범위\u0002내에\u0002남아있다면,\u0002그\u0002적\u0002요원\n에게\u0002D3+1\u0002피해를\u0002가할\u0002수\u0002있습니다."
+      "name": "cloaked-by-the-storm",
+      "text": "WOLF SCOUT\nSTRATEGY PLOY\nCLOAKED BY THE STORM\nWolf Scouts are expert in using the uncanny tempests \naround them to their advantage, ensuring their \ndesperate prey rarely get a clean shot.\nWhenever an operative is shooting a friendly \nWOLF SCOUT operative that’s wholly within your \nSTORM, you can re-roll one of your defence dice."
+    },
+    {
+      "name": "tempestuous-wrath",
+      "text": "WOLF SCOUT\nSTRATEGY PLOY\nTEMPESTUOUS WRATH\nWhen roused, the elemental fury of Wolf Scouts is \nas ferocious as that of Fenris’ winter storms or the \ncrackling lightning of its Season of Fire.\nWhenever a friendly WOLF SCOUT operative \nis fighting or retaliating, if it’s wholly within your \nSTORM or was wholly within your STORM at the \nstart of the activation, its melee weapons have \nthe Balanced weapon rule."
+    },
+    {
+      "name": "storms-bite",
+      "text": "WOLF SCOUT\nSTRATEGY PLOY\nSTORM’S BITE\nSubjected to numbing temperatures, flying debris or the \nempyric lash of a Rune Priest Skjald, the Wolf Scouts’ \nenemies struggle to focus their wrath and skill.\nWhenever a friendly WOLF SCOUT operative is \nfighting against an enemy operative that’s wholly \nwithin your STORM, subtract 1 from the Atk stat \nof that enemy operative’s melee weapons (to a \nminimum of 3)."
+    },
+    {
+      "name": "savage-fighters",
+      "text": "WOLF SCOUT\nSTRATEGY PLOY\nSAVAGE FIGHTERS\nOnce their prey have been cornered, the Wolf Scouts \nsavagely sustain the pressure, ensuring no opportunity \nis missed to weaken their quarry.\nWhenever a friendly WOLF SCOUT operative \nfinishes retaliating, if it wasn’t incapacitated and \nis still within control range of the enemy operative \nin that sequence, you can inflict D3+1 damage on \nthat enemy operative."
     }
   ]
 }

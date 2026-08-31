@@ -26,9 +26,9 @@ from ..utils.state import StateIndex, StateManager
 
 logger = logging.getLogger(__name__)
 
-DPI = 450
+DPI = 300
 ZOOM = DPI / 72  # PDF base is 72 DPI
-JPEG_QUALITY = 95
+JPEG_QUALITY = 90
 
 # Max per-channel pixel diff treated as pure re-encode/requant noise: a re-exported
 # source PDF re-compresses embedded art, so a visually-identical card renders to
@@ -124,22 +124,6 @@ def _copy_default_backside(team: str, out_path: Path, is_portrait: bool) -> bool
     return True
 
 
-def _remove_stale_outputs(out_dir: Path, expected_files: set[str]) -> None:
-    """Delete leftover JPGs from an older manifest/name scheme.
-
-    This keeps translated teams from carrying stale English-named renders after a
-    Korean re-scrape changes the current card names.
-    """
-    if not out_dir.exists():
-        return
-    for old_file in out_dir.glob("*.jpg"):
-        if old_file.name not in expected_files:
-            try:
-                old_file.unlink()
-            except OSError:
-                logger.warning(f"  Failed to remove stale output: {old_file.name}")
-
-
 def _process_team(team: str) -> int:
     manifest_path = paths.integration_manifest_file(team)
     if not manifest_path.exists():
@@ -157,10 +141,9 @@ def _process_team(team: str) -> int:
             continue
         out_dir = paths.team_output(team) / "cards" / card_type
         is_portrait = card_type != "datacards"
-        expected_files: set[str] = set()
 
         for entity in entities:
-            name = entity.get("name") or "UNKNOWN"
+            name = entity.get("name", "UNKNOWN")
             cards = entity.get("cards", [])
             pdfs = _entity_pdfs(team, entity, card_type)
             multi = len(cards) > 1
@@ -171,8 +154,6 @@ def _process_team(team: str) -> int:
                     logger.warning(f"  Missing PDF: {pdf_path.name}")
                     continue
                 base = f"{base_name}-card{idx}" if multi else base_name
-                expected_files.add(f"{base}-front.jpg")
-                expected_files.add(f"{base}-back.jpg")
 
                 try:
                     doc = fitz.open(pdf_path)
@@ -192,8 +173,6 @@ def _process_team(team: str) -> int:
                 if not has_back and front_ok:
                     if _copy_default_backside(team, out_dir / f"{base}-back.jpg", is_portrait):
                         total += 1
-
-        _remove_stale_outputs(out_dir, expected_files)
 
     logger.info(f"  Rendered {total} card images")
     return total
