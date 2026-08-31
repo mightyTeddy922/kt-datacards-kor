@@ -32,17 +32,10 @@ logger = logging.getLogger(__name__)
 # the existing WARCOM_TYPE_TO_KEY map keeps working.
 _TYPE_HEADERS: Tuple[Tuple[str, str], ...] = (
     ("MARKER/TOKEN GUIDE", "token-guide"),
-    ("마커/토큰 안내", "token-guide"),
     ("FACTION RULE", "faction-rules"),
-    ("팩션 규칙", "faction-rules"),
-    ("전방 정찰", "faction-rules"),
-    ("업그레이드", "faction-rules"),
     ("EQUIPMENT", "equipment"),
-    ("팩션 장비", "equipment"),
     ("FIREFIGHT PLOY", "ploys/firefight"),
-    ("화력전 플로이", "ploys/firefight"),
     ("STRATEGY PLOY", "ploys/strategy"),
-    ("전략 플로이", "ploys/strategy"),
 )
 
 # Faction rules that list several named options on sub-cards.
@@ -158,18 +151,12 @@ def read_text(pdf_path: Path) -> str:
 
 def is_notes(text: str) -> bool:
     """True if the card is just a blank "NOTES" card (should be skipped)."""
-    normalized = text.strip().upper().replace(":", "").strip()
-    return normalized in {"NOTES", "메모"}
+    return text.strip().upper().replace(":", "").strip() == "NOTES"
 
 
 def has_backside_continue(text: str) -> bool:
     """True if the card states its rules continue on the other side."""
-    upper = text.upper()
-    return bool(
-        re.search(r"CONTINUES?\s+ON\s+(?:THE\s+)?OTHER\s+SIDE", upper)
-        or re.search(r"CONTINUE\s+ON\s+BACK", upper)
-        or re.search(r"다음\s*면에\s*계속", text)
-    )
+    return bool(re.search(r"CONTINUES?\s+ON\s+(?:THE\s+)?OTHER\s+SIDE", text.upper()))
 
 
 def has_own_cards(text: str) -> bool:
@@ -178,7 +165,7 @@ def has_own_cards(text: str) -> bool:
     This is the Necron "action overflow" tag line: the operative's stat card is
     followed by separate action cards (not a front/back pair).
     """
-    return "OWN CARD" in text.upper() or "자체 카드" in text
+    return "OWN CARD" in text.upper()
 
 
 def is_datacard_front(text: str) -> bool:
@@ -188,9 +175,7 @@ def is_datacard_front(text: str) -> bool:
     operative's stat card). Action/ability overflow cards lack this header.
     """
     head = text[:150].upper()
-    if "NAME" in head and ("ATK" in head or "WR" in head or "HIT" in head):
-        return True
-    return "무기 명칭" in text[:200] and "공격" in text[:200] and "피해" in text[:240]
+    return "NAME" in head and ("ATK" in head or "WR" in head or "HIT" in head)
 
 
 # ---------------------------------------------------------------------------
@@ -198,18 +183,17 @@ def is_datacard_front(text: str) -> bool:
 # ---------------------------------------------------------------------------
 
 def detect_type(lines: List[str]) -> Optional[str]:
-    """Card-type token from the header band, or None if unrecognised.
+    """Card-type token from the header (line index 1), or None if unrecognised.
 
     Used by the warcom track, which has no per-type folders. The kt-app track
     already knows the type from the folder and only needs ``extract_name``.
     """
     if len(lines) < 2:
         return None
-    for idx in range(min(4, len(lines))):
-        header = lines[idx].upper().strip()
-        for needle, card_type in _TYPE_HEADERS:
-            if needle in header:
-                return card_type
+    header = lines[1].upper().strip()
+    for needle, card_type in _TYPE_HEADERS:
+        if needle in header:
+            return card_type
     return None
 
 
@@ -235,7 +219,7 @@ def extract_name(lines: List[str]) -> Optional[str]:
     # Token-guide cards have a fixed name.
     if len(lines) >= 2:
         header = lines[1].upper()
-        if ("MARKER" in header and "TOKEN" in header) or "마커/토큰 안내" in lines[1]:
+        if "MARKER" in header and "TOKEN" in header:
             return "TOKEN GUIDE"
 
     # "(CARD x/y)" multi-part rule (e.g. "ELITE FIELDCRAFT (CARD 1/3)").
@@ -264,24 +248,7 @@ def extract_name(lines: List[str]) -> Optional[str]:
                     return f"{base}-{option}"
         return base
 
-    # Plain portrait card: use the first non-empty line after the detected
-    # header band. Korean WarCom cards sometimes repeat the team name above the
-    # actual type header, shifting the title down by one row.
-    header_idx = None
-    for idx in range(min(4, len(lines))):
-        header = lines[idx].upper().strip()
-        for needle, _card_type in _TYPE_HEADERS:
-            if needle in header:
-                header_idx = idx
-                break
-        if header_idx is not None:
-            break
-    if header_idx is not None:
-        for idx in range(header_idx + 1, min(header_idx + 4, len(lines))):
-            name = _clean(lines[idx])
-            if name:
-                return name
-
+    # Plain portrait card: the name is line index 2.
     if len(lines) >= 3:
         name = _clean(lines[2])
         if name:
@@ -302,60 +269,18 @@ def extract_datacard_name(lines: List[str]) -> Optional[str]:
     The operative name is the first meaningful text block, skipping the stat
     header keywords/values that may sit above it.
     """
-    stat_words = {
-        "APL", "WOUNDS", "SAVE", "MOVE", "GA", "DF", "SV",
-        "체력", "방호", "이동", "무기 명칭", "공격", "명중 피해", "무기 규칙",
-    }
-    skip_exact = stat_words | {
-        "NAME", "ATK", "HIT", "DMG", "WR", "NOTES", "NOTES:",
-    }
-
-    def is_numericish(value: str) -> bool:
-        stripped = value.upper().replace('"', "").replace("'", "").replace("+", "").replace("-", "").replace("/", "").strip()
-        return bool(stripped) and stripped.isdigit()
-
-    def is_candidate(value: str) -> bool:
-        raw = value.strip()
-        upper = raw.upper()
-        if not raw or upper in skip_exact or is_numericish(raw):
-            return False
-        if raw.startswith("•") or raw.startswith("-"):
-            return False
-        if ":" in raw and len(raw) > 18:
-            return False
-        if len(raw) < 3 or len(raw) > 80:
-            return False
-        return any(ch.isalpha() for ch in raw) or bool(re.search(r"[가-힣]", raw))
-
-    # Common WarCom layout: the stat labels occupy the first four lines and the
-    # operative name appears immediately after them.
-    if len(lines) >= 5:
-        header4 = [line.strip().upper() for line in lines[:4]]
-        if header4 == ["APL", "체력", "방호", "이동"] or header4 == ["APL", "WOUNDS", "SAVE", "MOVE"]:
-            if is_candidate(lines[4]):
-                return lines[4].strip()
-
-    # Common layout: comma-separated keyword/tag line followed by operative name.
-    for idx in range(1, len(lines)):
-        prev = lines[idx - 1].strip()
-        cur = lines[idx].strip()
-        if prev.count(",") >= 2 and is_candidate(cur):
-            return cur
-
-    # Alternate layout: operative name immediately followed by the stat block.
-    for idx, line in enumerate(lines):
-        cur = line.strip()
-        if not is_candidate(cur):
+    stat_words = {"APL", "WOUNDS", "SAVE", "MOVE", "GA", "DF", "SV"}
+    stat_values = {"3+", "4+", "5+", "6\"", "7\"", "8\"", "5\"", "4\""}
+    for line in lines[:10]:
+        upper = line.upper()
+        if upper in stat_words or upper in stat_values:
             continue
-        window = lines[idx + 1: idx + 6]
-        if any(item == "APL" for item in window) and any(item in {"체력", "WOUNDS"} for item in window):
-            return cur
-
-    # Fallback: last good-looking short line, which is often the operative name
-    # after the keyword line on Korean cards.
-    for line in reversed(lines):
-        if is_candidate(line):
-            return line.strip()
+        if upper.replace('"', "").replace("'", "").replace("+", "").strip().isdigit():
+            continue
+        if len(line) > 3 and any(c.isalpha() for c in line):
+            name = line.strip()
+            if name and len(name) > 2:
+                return name
     return None
 
 
@@ -379,10 +304,7 @@ def classify(pdf_path: Path, orientation: str) -> Tuple[Optional[str], Optional[
 
     # Portrait: operative-selection has a distinctive "KILL TEAM … ARCHETYPES" head.
     upper = text.upper()
-    if (
-        ("KILL" in upper[:300] and "TEAM" in upper[:300] and "ARCHETYPE" in upper)
-        or ("킬" in text[:300] and "팀" in text[:300] and "아키타입" in text)
-    ):
+    if "KILL" in upper[:300] and "TEAM" in upper[:300] and "ARCHETYPE" in upper:
         return ("operative-selection", "OPERATIVE SELECTION")
 
     lines = read_lines(pdf_path)

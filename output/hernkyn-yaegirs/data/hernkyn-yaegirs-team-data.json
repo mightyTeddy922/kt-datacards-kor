@@ -1,6 +1,6 @@
 {
   "team": "hernkyn-yaegirs",
-  "generated_at": "2026-08-29T21:53:56.253017+00:00",
+  "generated_at": "2026-08-26T15:18:04.765582+00:00",
   "datacards": [
     {
       "name": "YAEGIR THEYN",
@@ -11,44 +11,50 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "볼트 리볼버",
+          "name": "Bolt revolver",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "볼트 산탄총(단거리)",
+          "name": "Bolt shotgun (short range)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "사거리 6\""
+          "special_rules": "Range 6\""
         },
         {
-          "name": "볼트 산탄총(장거리)",
+          "name": "Bolt shotgun (long range)",
           "attacks": "4",
           "hit": "5+",
           "damage": "2/3"
         },
         {
-          "name": "플라스마 나이프",
+          "name": "Plasma knife",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "노련한 모험가",
-          "description": "첫 번째 전략 페이즈가 끝난 이후 매 전략 페이즈의 준비 단계마다, 이 요원이 킬존에 있고 적 요원 의 장악 범위 내에 있지 않다면, 임기응변 포인트를 하나 얻습니다."
+          "name": "Veteran Adventurer",
+          "description": "In the Ready step of each Strategy phase after the first, if this operative is in the killzone and isn’t within control range of enemy operatives, you gain 1 Resourceful point."
         },
         {
-          "name": "완전한 확신",
-          "description": "전투 도중 이 요원이 처음으로 무력화되면, 그 대신 1 체력이 남은 상태가 되며 그 행동이 끝날 때까 지 무력화되지 않습니다. 남아 있는 모든 공격 주사위는 버려집니다(이 요원이 근접전이나 반격 중이었다면 플레"
+          "name": "Outright Conviction",
+          "description": "The first time this operative would be incapacitated during the battle, it’s not incapacitated, has 1 wound remaining and cannot be incapacitated for the remainder of the action. All remaining attack dice are discarded (including yours if this operative is fighting or retaliating)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "LEADER",
+        "THEYN"
+      ]
     },
     {
       "name": "YAEGIR BLADEKYN",
@@ -59,31 +65,36 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "투척용 플라스마 나이프",
+          "name": "Throwing plasma knife",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 6\", 살상 5+, 한도 1, 무성"
+          "special_rules": "Range 6\", Lethal 5+, Limited 1, Silent"
         },
         {
-          "name": "쌍수 플라스마 나이프",
+          "name": "Dual plasma knives",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "집요, 살상 5+"
+          "special_rules": "Ceaseless, Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "추적자",
-          "description": "이 요원은 은폐 명령을 받은 상태에서 돌격 행동 을 수행할 수 있습니다."
+          "name": "Stalker",
+          "description": "This operative can perform the Charge action while it has a Conceal order."
         },
         {
-          "name": "굴하지 않는 강인함",
-          "description": "이 요원이 근접전 행동 중 무력화되 면, 이 요원을 킬존에서 제거하기 전에 그 절차의 아직 처 리하지 않은 성공 주사위 중 하나로 적 요원을 타격할 수 있습니다."
+          "name": "Irrepressible Hardiness",
+          "description": "If this operative is incapacitated during the Fight action, you can strike the enemy operative in that sequence with one of your unresolved successes before this operative is removed from the killzone."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "BLADEKYN"
+      ]
     },
     {
       "name": "YAEGIR BOMBAST",
@@ -94,14 +105,14 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "모루격발 리볼버",
+          "name": "Wroughtlock revolvers",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 9\", 집요, 살상 5+"
+          "special_rules": "Range 9\", Ceaseless, Lethal 5+"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -109,15 +120,20 @@
       ],
       "passive_abilities": [
         {
-          "name": "모루격발 협상",
-          "description": "전략 포석. 이 요원은 즉시 무상으로 사격 행동을 수행할 수 있습니다(무상 사격을 위해 명령을 교 전으로 변경 가능)."
+          "name": "Wroughtlock Negotiation",
+          "description": "STRATEGIC GAMBIT. This operative can immediately perform a free Shoot action (you can change its order to Engage to do so)."
         },
         {
-          "name": "철판 깐 살인자",
-          "description": "이 요원이 모루격발 리볼버로 적 요원을 무력화할 때마다, 그 적 요원의 시야에 있으며 2\" 내에 들어가는 적 요원들을 대상으로 각각 D6 하나를 굴립니"
+          "name": "Brazen Killer",
+          "description": "Whenever this operative incapacitates an enemy operative with its wroughtlock revolvers, roll one D6 separately for each other enemy operative visible to and within 2\" of that enemy operative: if the result is higher than that other enemy operative’s APL stat, subtract 1 from its APL stat until the end of its next activation."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "BOMBAST"
+      ]
     },
     {
       "name": "YAEGIR GUNNER",
@@ -128,28 +144,28 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "APM 발사기(철갑)",
+          "name": "APM launcher (armour piercing)",
           "attacks": "5",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "중화기(기동 한정), 관통 1,  양각대*"
+          "special_rules": "Heavy (Reposition only), Piercing 1,  Bipod*"
         },
         {
-          "name": "APM 발사기(돌파)",
+          "name": "APM launcher (breaching)",
           "attacks": "5",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "폭발 2\", 중화기(기동 한정),  양각대*"
+          "special_rules": "Blast 2\", Heavy (Reposition only),  Bipod*"
         },
         {
-          "name": "APM 발사기(고폭)",
+          "name": "APM launcher (high explosive)",
           "attacks": "5",
           "hit": "4+",
           "damage": "2/4",
-          "special_rules": "폭발 3\", 중화기(기동 한정),  양각대*"
+          "special_rules": "Blast 3\", Heavy (Reposition only),  Bipod*"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -157,11 +173,16 @@
       ],
       "passive_abilities": [
         {
-          "name": "*양각대",
-          "description": "이 요원이 이 무기로 사격할 때, 이번 운용 중 이동하지 않았거나 대응 중이라면, 이 무기에 집요 무기 규칙이 부여됩니다. 사격 후에는 제한사항 없이 이동 가 능합니다."
+          "name": "*Bipod",
+          "description": "Whenever this operative is shooting with this weapon, if it hasn’t moved during the activation, or if it’s a counteraction, this weapon has the Ceaseless weapon rule. Note this operative isn’t restricted from moving after shooting."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "GUNNER"
+      ]
     },
     {
       "name": "YAEGIR IRONBRAEK",
@@ -172,14 +193,14 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "볼트 리볼버",
+          "name": "Bolt revolver",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "야전삽",
+          "name": "Entrencher",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
@@ -187,19 +208,19 @@
       ],
       "passive_abilities": [
         {
-          "name": "지뢰지대",
-          "description": "플레이어는 전투 시 사용 가능한 지뢰지대 마커 다섯 개를 보유합니다. 이 마커 중 세 개에는 뒷면에 HY-Pex 지뢰(아래 참고)가, 두 개에는 뒷면에 공포탄이 표시되어 있습니다. 모든 지뢰지대 마커는 한 가지 장비와 같이 전장에 둡니다. 각 마커는 뒷면이 보이지 않게(정체가 드러나지 않게) 설치해야 하며, 다른 마커, 출입구, 통과 가능 지형으로부터 2\" 넘게 떨어지고 상대방의 투입 구역과 플레이어의 다른 지뢰지대 마커로부터 6\" 넘게 떨어져야 합니다. 이 요원이 준비 상태가 될 때, 적 요원의 장악 범위 내에 있지 않다면 그 장악 범위 내에 있는 뒤집힌 지뢰 지대 마커 중 하나를 재설정, 즉 뒤집을 수 있습니다."
+          "name": "Minefield",
+          "description": "You have five Minefield markers for the battle. On the reverse side, three of them are HY-Pex mines (see below) and two are blank. Set up all your Minefield markers as if they were one item of equipment. Each must be set up reverse-side down (their specifics aren’t revealed), more than 2\" from other markers, access points and Accessible terrain, and more than 6\" from your opponent’s drop zone and your other Minefield markers. Whenever this operative is readied, if it’s not within control range of enemy operatives, you can reset one of your flipped Minefield markers that’s within its control range (flip the marker back over again)."
         },
         {
-          "name": "HY-Pex 지뢰",
-          "description": "플레이어의 지뢰지대 마커 중 뒷면이 가려진 마커가 적 요원의 장악 범위 내에 들어간 동시에 아군 헤른킨 예이기르 요원의 장악 범위 내에 들어가지 않을 때, 그 마커를 뒤집습니다. 표시된 것이 공포탄이라면, 아무런 효과도 발생하지 않습니다. 표시된 것이 HY-Pex"
+          "name": "HY-Pex Mines",
+          "description": "Whenever one of your reverse-side down Minefield markers is both within an enemy operative’s control range and not within a friendly HERNKYN YAEGIR operative’s control range, flip the marker over. If it’s a blank, there’s no effect. If it’s a HY-Pex mine, inflict 3 damage on that enemy operative and roll one D6: if the result is less than that enemy operative’s Save stat, inflict additional damage on it equal to the dice result; regardless of the result, if it isn’t incapacitated, end its action (if any), even if that action’s effects aren’t fulfilled. If it cannot be placed, move it the minimum amount to do so. Regardless, that marker isn’t removed."
         }
       ],
       "unique_actions": [],
       "keywords": [
-        "지뢰라면",
-        "그 적 요원에게 피해를 3 입히고 D6 하나를 굴립니다. 굴림 값이 적 요원의 방호 요구치보다 작다면",
-        "굴림 값과 동일한 추가 피해를"
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "IRONBRAEK"
       ]
     },
     {
@@ -211,28 +232,28 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "마그나코일 소총(은폐)",
+          "name": "Magna-coil rifle (concealed)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "궤멸 3, 중화기, 관통 1, 무성, 위치 은폐*"
+          "special_rules": "Devastating 3, Heavy, Piercing 1, Silent, Concealed Position*"
         },
         {
-          "name": "마그나코일 소총(기동)",
+          "name": "Magna-coil rifle (mobile)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "중화기(기동 한정), 관통 1"
+          "special_rules": "Heavy (Reposition only), Piercing 1"
         },
         {
-          "name": "마그나코일 소총(고정)",
+          "name": "Magna-coil rifle (stationary)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "궤멸 3, 중화기, 관통 1"
+          "special_rules": "Devastating 3, Heavy, Piercing 1"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
@@ -240,15 +261,20 @@
       ],
       "passive_abilities": [
         {
-          "name": "*위치 은폐",
-          "description": "이 요원은 전투 중 처음 으로 사격 행동을 수행할 때만 이 무 기를 사용할 수 있습니다."
+          "name": "*Concealed Position",
+          "description": "This operative can only use this weapon the first time it’s performing the Shoot action during the battle."
         },
         {
-          "name": "위브베르케 망토",
-          "description": "적 요원이 이 요원에게 사격할 때마다 다음 규칙을 적용합니다.\n• 포화 무기 규칙을 무시합니다.\n• 엄폐 방호로 주사위를 보전할 수 있다면, 엄폐 방호 하나를 추가로 보전하 거나 또는 엄폐 방호 하나를 결정적 성공으로 판정할 수 있습니다. 이 규칙"
+          "name": "Weavewërke Cloak",
+          "description": "Whenever an operative is shooting this operative:\n• Ignore the Saturate weapon rule.\n• If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "RIFLEKYN"
+      ]
     },
     {
       "name": "YAEGIR TRACKER",
@@ -259,21 +285,21 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "SiNR 손쇠뇌",
+          "name": "SiNR handbow",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "무성"
+          "special_rules": "Silent"
         },
         {
-          "name": "투척용 손도끼",
+          "name": "Throwing hatchet",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 6\", 한도 1, 파쇄, 무성"
+          "special_rules": "Range 6\", Limited 1, Rending, Silent"
         },
         {
-          "name": "손도끼",
+          "name": "Hatchet",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -281,15 +307,20 @@
       ],
       "passive_abilities": [
         {
-          "name": "범스펙트럼 바이저",
-          "description": "이 요원이 6\" 내의 다른 요원을 지정 해 사격할 때마다 다음 규칙을 적용합니다.\n• 이 요원의 무기에 저밀도 색적 무기 규칙을 부여합니다.\n• 사격 대상 요원은 차폐할 수 없습니다."
+          "name": "Pan Spectral Visor",
+          "description": "Whenever this operative is shooting an operative within 6\" of it:\n• This operative’s weapons have the Seek Light weapon rule.\n• That operative cannot be obscured."
         },
         {
-          "name": "추적가",
-          "description": "이 요원이 6\" 내에 있는 소진된 요원을 지정해 사격 또는 근접전을 수행할 때, 이 요원의 무기에 맹공 무기 규칙을 부여합니다."
+          "name": "Tracker",
+          "description": "Whenever this operative is shooting against or fighting against an expended operative within 6\" of it, this operative’s weapons have the Punishing weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "TRACKER"
+      ]
     },
     {
       "name": "YAEGIR WARRIOR",
@@ -300,59 +331,141 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "볼트 리볼버",
+          "name": "Bolt revolver",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "볼트 산탄총(단거리)",
+          "name": "Bolt shotgun (short range)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "사거리 6\""
+          "special_rules": "Range 6\""
         },
         {
-          "name": "볼트 산탄총(장거리)",
+          "name": "Bolt shotgun (long range)",
           "attacks": "4",
           "hit": "5+",
           "damage": "2/3"
         },
         {
-          "name": "주먹",
+          "name": "Fists",
           "attacks": "3",
           "hit": "4+",
           "damage": "2/3"
         },
         {
-          "name": "플라스마 나이프",
+          "name": "Plasma knife",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "살상 5+"
+          "special_rules": "Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "용감무쌍",
-          "description": "이 요원을 지정해 임기응변 포인트를 소모할 때, 다음 규칙이 우선 적용됩니다."
+          "name": "Intrepid",
+          "description": "Whenever you spend a Resourceful point for this operative, the following take precedence:\n• If you add 1 to its APL stat, it lasts until the start of its next activation instead.\n• If it regains lost wounds, it regains up to 4 instead."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "HERNKYN YAEGIR",
+        "LEAGUES OF VOTANN",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "kv",
-      "text": "헤른킨 예이기르\n팩션 장비\nKV 세라마이드 내피\n헤른킨 예이기르는 일반적으로 경장갑만 착용한다. 이 얇지만 탄력 \n있는 세라믹 혼합 내피는 착용자에게 추가적인 보호층을 제공한다.\n적\u0002요원이\u0002아군\u0002헤른킨 예이기르\n 요원을\u0002지정하여\u0002사격할\u0002\n때,\u0002그\u0002사격\u0002절차에\u0002사용되는\u0002원거리\u0002무기가\u0002폭발\u0002또는\u0002격류\u0002\n무기\u0002규칙을\u0002가진다면\u0002방어\u0002주사위\u0002중\u0002하나를\u0002재굴림할\u0002수\u0002\n있습니다.\u0002또한\u0002아군\u0002헤른킨 예이기르 요원은\u0002그\u0002절차에서\u0002\n자신이\u0002대상이\u0002아니라면\u0002x\"\u0002궤멸\u0002x\u0002무기\u0002규칙(궤멸에\u0002거리\n가\u0002붙는\u0002형태)에\u0002영향을\u0002받지\u0002않습니다."
+      "name": "plasma-knives",
+      "text": "HERNKYN YAEGIR\nFACTION EQUIPMENT\nPLASMA KNIVES\nThe superheated edge of a plasma knife can slice \nthrough several inches of solid metal. Armour and bone \nare no match for such a cutting edge.\nFriendly HERNKYN YAEGIR operatives have \nthe following melee weapon. Note that some \noperatives already have this weapon but with \nbetter stats; in that instance, use the better \nversion, and that weapon has the Balanced \nweapon rule for the battle.\nNAME \nATK HIT DMG\n Plasma knife \n 3 \n4+ \n3/5\nWR\nLethal 5+"
+    },
+    {
+      "name": "stabilised-bolt-shells",
+      "text": "HERNKYN YAEGIR\nFACTION EQUIPMENT\nSTABILISED BOLT SHELLS\nFitted with fin stabilisers, these specially crafted bolt \nshells are designed to enhance accuracy and lethality at \nextreme range.\nUp to twice per turning point, whenever a friendly \nHERNKYN YAEGIR operative is performing the \nShoot action and you select a bolt shotgun (long \nrange), you can use this rule. If you do, until the \nend of that action, improve the Hit stat of that \nweapon by 1 and add 1 to both of its Dmg stats, \nand that weapon has the Accurate 1 weapon rule."
+    },
+    {
+      "name": "firestorm-bolt-shells",
+      "text": "HERNKYN YAEGIR\nFACTION EQUIPMENT\nFIRESTORM BOLT SHELLS\nThese bolt rounds are packed with shrapnel and \nphosphor, detonating on impact and emitting a cloud of \nlethal burning shards.\nOnce per turning point, when a friendly HERNKYN \nYAEGIR operative is performing the Shoot action \nand you select a bolt shotgun (short range), you \ncan use this rule. If you do, until the end of that \naction, that weapon has the Blast 1\" weapon rule."
+    },
+    {
+      "name": "kv-ceramide-undersuit",
+      "text": "HERNKYN YAEGIR\nFACTION EQUIPMENT\nKV-CERAMIDE UNDERSUIT\nHernkyn Yaegirs ordinarily wear only light armour. These \nthin but resilient semi-ceramic undersuits provide the \nwearer with an additional layer of protection.\nWhenever an operative is shooting a friendly \nHERNKYN YAEGIR operative, if the ranged \nweapon in that sequence has the Blast or Torrent \nweapon rule, you can re-roll one of your defence \ndice. In addition, friendly HERNKYN YAEGIR \noperatives aren’t affected by the x\" Devastating \nx weapon rule (i.e. Devastating with a distance) \nunless they are the target during that sequence."
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "resourceful",
+      "text": "HERNKYN YAEGIR\nFACTION RULE\nRESOURCEFUL\nHernkyn Yaegirs are self-sufficiency specialists. They are \nalso skilled warriors who, usually unsupported, embark \nupon missions equipped for countless contingencies. \nThis allows them to adapt to hazardous environments \nand enemy actions with decisive speed.\nIn the Ready step of each Strategy phase after \nthe first, you gain Resourceful points determined \nby the number of friendly HERNKYN YAEGIR \noperatives in the killzone that aren’t within control \nrange of enemy operatives. At the end of each \nturning point, discard your Resourceful points.\nOPERATIVES\nRESOURCEFUL POINTS\n5+\n2\n1-4\n1\nCONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "You can spend 1 of your Resourceful points",
+          "text": "during each activation of each friendly HERNKYN YAEGIR operative to do one of the following: • Before or after it performs an action, if it’s not within control range of enemy operatives, you can use this rule. If you do, add 1 to that friendly operative’s APL stat until the end of its activation. • When it’s activated, if it’s not within control range of enemy operatives, it regains up to D3+1 lost wounds."
+        }
+      ]
+    },
+    {
+      "name": "dauntless-explorers",
+      "text": "HERNKYN YAEGIR\nFACTION RULE\nDAUNTLESS EXPLORERS\nThe first of their kindred to set foot on new worlds, \nYaegirs are frequently deployed for extended periods \nand are experts in swiftly evaluating and exploiting their \narea of operations.\nSTRATEGIC GAMBIT in the first turning point. \nEach friendly HERNKYN YAEGIR operative \nwholly within your drop zone can immediately \nperform a free Reposition action. Each that does \nso must end that move wholly within 4\" of your \ndrop zone."
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "sturdy",
+      "text": "HERNKYN YAEGIR\nFIREFIGHT PLOY\nSTURDY\nStocky and stalwart, Hernkyn Yaegirs grit their teeth and \nshrug off wounds that would fell other species.\nUse this firefight ploy when an operative is \nshooting a friendly HERNKYN YAEGIR operative, \nwhen you collect your defence dice. Change the \nattacker’s retained critical successes to normal \nsuccesses (any weapon rules they’ve already \nresolved aren’t affected, e.g. Piercing Crits)."
+    },
+    {
+      "name": "bonds-that-bind",
+      "text": "HERNKYN YAEGIR\nFIREFIGHT PLOY\nBONDS THAT BIND\nSquads of Hernkyn Yaegirs are exceptionally close-knit \nand operate with instinctive coordination.\nUse this firefight ploy when a friendly HERNKYN \nYAEGIR operative is activated. Select one other \nready friendly HERNKYN YAEGIR operative \nvisible to and within 3\" of that operative. When \nthat first friendly operative is expended, you can \nactivate that other friendly operative before your \nopponent activates. When that other operative \nis expended, your opponent then activates \nas normal.\nNeither operative can be a BOMBAST operative if \nits Wroughtlock Negotiation STRATEGIC GAMBIT \nhas been used this turning point."
+    },
+    {
+      "name": "no-kin-left-behind",
+      "text": "HERNKYN YAEGIR\nFIREFIGHT PLOY\nNO KIN LEFT BEHIND\nAll Kin desire to return to their Hold’s Ancestor Core \nupon their death. Hernkyn will fight tooth and nail to \nensure that none of their fallen are left behind.\nUse this firefight ploy when a friendly HERNKYN \nYAEGIR operative is incapacitated. Before that \noperative is removed from the killzone, remove \nyour Fallen Kin marker from the killzone (if any), \nthen place it within that operative’s control range. \nThat operative is then removed from the killzone \nas normal.\nWhenever a friendly HERNKYN YAEGIR \noperative within 3\" of your Fallen Kin marker \nis shooting, fighting or retaliating, in the Roll \nAttack Dice step, you can retain one of your fails \nas a normal success instead of discarding it, or \nretain one of your normal successes as a critical \nsuccess instead."
+    },
+    {
+      "name": "stalwart-defence",
+      "text": "HERNKYN YAEGIR\nFIREFIGHT PLOY\nSTALWART DEFENCE\nThe Kin are steadfast and determined in defence. They \nmaintain accurate and punishing fire even as their \nenemies close in.\nUse this firefight ploy when an enemy operative \nends the Charge action within control range of \na friendly HERNKYN YAEGIR operative. Select \none other friendly HERNKYN YAEGIR operative \nvisible to and within 6\" of that friendly operative, \nbut that isn’t itself within control range of enemy \noperatives. The selected operative can perform a \nfree Shoot action. During that action:\n• It can target that enemy operative even though \nit’s within control range of a friendly operative.\n• You cannot select any other enemy operative \nas a valid target.\n• You cannot select a frag or krak grenade, or \na weapon with the Blast or x\" Devastating \nx weapon rule (i.e. Devastating with a distance)."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION HERNKYN YAEGIRS",
-      "text": "헤른킨 예이기르 \n킬 팀\n아키타입: 침투, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002헤른킨 예이기르 테인\u0002요원\n \n↘\u00029\u0002헤른킨 예이기르 요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합\n니다.\n• \u0002칼잡이\n• 허풍선이\n• \u0002사수\n• \u0002철벽대\n• \u0002소총수\n• \u0002추적가\n• \u0002전사,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002볼트\u0002리볼버,\u0002플라스마\u0002나이프\n \n○\n\u0002볼트\u0002산탄총,\u0002주먹\u0002\n전사\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번씩만\u0002\n편성할\u0002수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "HERNKYN YAEGIRS \nKILL TEAM\nARCHETYPES: INFILTRATION, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 HERNKYN YAEGIR THEYN operative \n \n↘ 9 HERNKYN YAEGIR operatives selected \nfrom the following list:\n• BLADEKYN\n• BOMBAST\n• GUNNER\n• IRONBRAEK\n• RIFLEKYN\n• TRACKER\n• WARRIOR with one of the following options:\n \n○ Bolt revolver; plasma knife\n \n○ Bolt shotgun; fists \nOther than WARRIOR operatives, your kill team \ncan only include each operative on this list once.",
+      "selection": {
+        "YAEGIR BLADEKYN": [],
+        "YAEGIR BOMBAST": [],
+        "YAEGIR GUNNER": [],
+        "YAEGIR IRONBRAEK": [],
+        "YAEGIR RIFLEKYN": [],
+        "YAEGIR TRACKER": [],
+        "YAEGIR WARRIOR": [
+          [
+            "Bolt revolver; plasma knife",
+            "Bolt shotgun; fists"
+          ]
+        ]
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "hidden-engagement",
+      "text": "HERNKYN YAEGIR\nSTRATEGY PLOY\nHIDDEN ENGAGEMENT\nBeing experienced survivalists, Hernkyn Yaegirs are \nskilled hunters, well used to stalking and engaging their \nprey from the shadows.\nWhenever a friendly HERNKYN YAEGIR \noperative is shooting, if it’s in cover from the \ntarget’s perspective, that friendly operative’s \nweapons have the Balanced weapon rule. Note \nthat your opponent still determines the targeting \nlines for this (i.e. they decide which point of their \noperative’s base targeting lines are drawn from)."
+    },
+    {
+      "name": "masterful-bladework",
+      "text": "HERNKYN YAEGIR\nSTRATEGY PLOY\nMASTERFUL BLADEWORK\nYaegirs are extensively trained in the use of plasma \nknives and other close combat weapons, wielding them \nwith ruthless precision.\nWhenever a friendly HERNKYN YAEGIR \noperative is fighting, or has a Conceal order and \nis retaliating, add 1 to the Atk stat of its melee \nweapons (to a maximum of 4) and they have the \nBalanced weapon rule; if the weapon already has \nthat weapon rule, it has the Ceaseless weapon \nrule instead of Balanced."
+    },
+    {
+      "name": "tough-survivalists",
+      "text": "HERNKYN YAEGIR\nSTRATEGY PLOY\nTOUGH SURVIVALISTS\nA lifetime of frontier exploration coupled with their \nkind’s natural fortitude renders Hernkyn Yaegirs highly \nresistant to injury.\nThe first time an attack dice inflicts damage \non each friendly HERNKYN YAEGIR operative \nduring the turning point in the Resolve Attack \nDice step, you can halve that inflicted damage \n(rounding up, to a minimum of 2)."
+    },
+    {
+      "name": "in-position",
+      "text": "HERNKYN YAEGIR\nSTRATEGY PLOY\nIN POSITION\nHernkyn Yaegirs stalk their enemies with great patience, \nusing the surrounding terrain to conceal themselves \nfrom prying eyes.\nWhenever a friendly HERNKYN YAEGIR \noperative has a Conceal order and is in cover, \nit cannot be selected as a valid target, taking \nprecedence over all other rules (e.g. Seek, \nVantage terrain) except being within 2\"."
     }
   ]
 }

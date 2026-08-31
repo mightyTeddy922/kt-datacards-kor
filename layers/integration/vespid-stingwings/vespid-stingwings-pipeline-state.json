@@ -1,85 +1,44 @@
 {
   "team": "vespid-stingwings",
   "pipeline_version": "2.0",
-  "last_updated": "2026-08-29T23:31:27.313797+00:00",
+  "last_updated": "2026-08-26T15:37:48.227934+00:00",
   "steps": {
     "content_analysis": {
       "outputs": {
         "content.json": {
           "path": "layers/integration/vespid-stingwings/content/vespid-stingwings-content.json",
-          "hash": "58194767b4e5d9af6f9bb8ce1474aa35953055037b3a3c4ddf6284fd0464087d",
-          "modified": "2026-08-29T22:22:56.005047+00:00"
+          "hash": "f096170ea5909561e451a537d1595ec2ba0b65a26b22d3452dd7814d13a5d906",
+          "modified": "2026-08-26T15:18:17.954042+00:00"
         }
       },
-      "completed": "2026-08-29T22:23:11.308130+00:00",
+      "completed": "2026-08-26T15:18:17.998399+00:00",
       "inputs": {
-        "layers/integration/vespid-stingwings/manifest.json": "67be64d3cb2038a012d0d550b2664a09ddd6b2cda972a20fafdce61fc7fb6602",
+        "layers/integration/vespid-stingwings/manifest.json": "cf22ee6fb0d44e8c7b628f57c214e459c54fa74d642e700371f9f9f25f16b33f",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard--1.pdf": "7cd61a95b1bda93ac061a244356ce16a742ac420703268381ab3a5e798d7888e",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard--2.pdf": "05758aa573a3e20414d9c8693b8d90c546f209d45a0bc5f04234d9f8c097aa3a",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-.pdf": "f6e84c2c04a749fc04609dc7423889b3682b027e4a3b9b7bcb54ab25a93dafc3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "03547f24b3e4b6e112bce5c65e4cae03876c0a6a97b0b32935896f86f2b5bb33",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "d6cd8893e5d1df20569495a24a9c510efe6d7920bc8a90a2252f9422727de1c7",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "9001fba36e69752702491a48bfc9ed7dd24790e88119f09bcc341b85f126d199",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "b0e21c701fac73ffa7c3b7ef553ffaf1af509cb0a25f4345cf3075ef529e08e3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "d20119e9bd2f7446f61bf34f885cf2adaeaa98257c34233fea9d968e4a2780f3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "8956ef4027f0177c50926efd5e59cac4036c77e1f3176d4eeb9e0e9559f8aefa",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "a8f469a6a2d5cbaebb1fdb3353e1fa536e1acba367ff3e3aefe83f6af49b0dcc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "c5672f9493af58126d503fc5825bc77de96ac544be0d977568e79e8adb37a758",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "6abaa210dda61d20d7c9d9fc400b4634f40f9e1e05c3c4a1728af665b255dc6c",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-oversight-drone.pdf": "b29ceec32fc967cc4dacd10de972b224adae8a9343bfa03a0c09d68273037789",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-longsting.pdf": "e701d542c4ce0f303a8076544d9b76a260d092b99d89201c464a2a6cccf6d6e5",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-shadestrain.pdf": "534794c72d1d2804cb8a7e223c3ccf8236c41b8a8a7128774d5408a4acfa5ded",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-skyblast.pdf": "bf4c24aa900e62b3ef12e189aff2e4b4f257baa4fb40f085377d008d337700cf",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-strain-leader.pdf": "9454e6ed44228f30ddc1b1e8c6fb2aafa6742747581a243445a694b2ea3c04aa",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-swarmguard.pdf": "4cf871feb43ea74ef1e2dcd549820c6b3cc1aa1b0db6aa3ed009d6947b853203",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-warrior.pdf": "717c0f19640eb29808e61030e3a4352b0ebfcf4f3634b71ab0a6b0516c336784",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-oversight-drone.pdf": "eec4b269a45733f41e6d3a4e245df8c78e89cf7dc527e6e49337a03015492e43",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-longsting.pdf": "62736a2da9c727280788fb3039ad79758d54654d007f8ae236a6c567a07f6afa",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-shadestrain.pdf": "b5e95bf940d03e79132491ff291f5d76a9695035881ef575f2de07979f7fc834",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-skyblast.pdf": "cc33dbda66eb3f7ebd3b6cef4e961b133438f4618008446716e324cbff493379",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-strain-leader.pdf": "4b765ad8c3c6fb46fb30b6e99c4c5c757c56c137c91eb6f26fe1538856974a84",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-swarmguard.pdf": "38ab2b5a50c13e85824de38d5cbaad803ad8890d298589bd7d508866c0c1ea6f",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-warrior.pdf": "4aab0d24fd11df875c14dfb6ebfea8a47ebe0c5a92a6111e6baa737ddd42669c",
         "layers/integration/vespid-stingwings/vespid-stingwings-equipment-accelerant-stimulant.pdf": "8fa8a25279550de6ce2171c6586369a5e2875d2783098a3bbae3fc572d1df4ff",
         "layers/integration/vespid-stingwings/vespid-stingwings-equipment-aggression-stimulant.pdf": "687226e99ceb22d8e23aa16b43e92fedff317bd67bf16c8108cb087b50d8eed6",
         "layers/integration/vespid-stingwings/vespid-stingwings-equipment-convergence-stimulant.pdf": "16eb565b3b28434532a43ab5006f18a136fb65d9e3c57de68698bcfb62552635",
-        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-d3.pdf": "77926886ed2c4fa1b5efd6d9b0ed6ca3f164fe3290d953b019ee7b3f3a51a886",
         "layers/integration/vespid-stingwings/vespid-stingwings-equipment-neurostimulant.pdf": "d0d51a737d6c8b21cc3c612a610dc4a48912b6fe12a1ad74255ce53955eaf638",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-communion.pdf": "9c81c72e5e6876c9f54793d7ac265364fcff67305459d85b59c6e536c81f34cc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-d3.pdf": "b4453da9a84f9fa1cdb7e71bb41a36bd3cc1a64d8578dc1f9c1f12a206bb3581",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-fly.pdf": "a6abf7aa81ac67d388849ba460168073c31e9491e982c6ba56033eb77c75acdb",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-neutron-charge.pdf": "be89d422966aa658ca69c89ebdc5248f696041b13a5f35144847fadcd706af3d",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-1.pdf": "42946f399129dfb0c292fd856db0e9e2fa8c69ff9e31d0e7871df2cd19d00c4b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-2.pdf": "e49416c4f86afad7ec943452d8808482fbb890d401aa80385fb00d1cfd879034",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-3.pdf": "01f158f310411eb8091c030865bb7921f40a2d87954a7a7b7dc68dfe28aa9cd2",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-1.pdf": "02185a7c353aad0e6aca07e5aef8e812ce06930647d2a382f0d2af4ba555a1cc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-2.pdf": "8dafb49a33b72ee8e7465910f84ba8a55cd1c2c07ff5448761afc253fa05da7e",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-3.pdf": "80bafc0db348ab91c1e45c3ce5147e8449a9627d3c69d7e4c637998681b7d448",
+        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-communion.pdf": "5393db77916ef8fb8558f826767360eb5bf4cb00e3b3bc2e0bb3d2dafb99eadc",
+        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-fly.pdf": "6b9ccb6eeb01a940e13fd78880578f6a86f378cdfc04f5792b28a909a078594e",
+        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-neutron-charge.pdf": "f455a796baa02a3c90127da423843bcafcb711a0139b2c1dfaef85a748b2ab9e",
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-darting-flight.pdf": "7bed0d49378ffe36261f38e44a83959f08b50418d1f630130867a627fad58eb4",
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-neutron-overload.pdf": "070e5f98161e9a6e169f1dbd409900e9ed95c6fcbcb46c1ab05a69c295f4950a",
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-ocelli.pdf": "edb0decd927c6f0618cf77d950559893d181513acf54b0fe66e20fe494ebe8b7",
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-vicious-venom.pdf": "200f382d36059283cd5d2bfbbf0cfa839856aecb443c096d770f65989fb1ba17",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-1.pdf": "b5e30877af6d000376a994bc72acae7a2f2f1b3a5b22163e4ce063b81c57c21f",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-10.pdf": "db69ac21a7f1632711b4a95c3ff3acc743bed300b09162955a637c9333a23536",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-11.pdf": "e344a5c0e12667d67ef897d7e616cb55bb60f0f1daa5ed8dba2d0f8c64d6ebae",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-12.pdf": "30cab0c06509d23d9c897d3ad110e5cd53b9517d00f9d36378d2a5f65ea0695b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-13.pdf": "e68919cc465abead2ee9199d2b733a91758a488c39c765cb63ca4c8ade472005",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-14.pdf": "e38e0252974124a733c7d76ad5c7330348762671cd068511d40c639f34b43f59",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-15.pdf": "e415e26a077af9be887e5fb31cadcc2eed382ff63acdeb720046ea46217d18e6",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-16.pdf": "a0761f5670722e1b72a1b90b96a3203f61e2c3685508456a4b6ff3cf96ff3b86",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-17.pdf": "66f9ae2af9862f0dc0ac56e8b91c78dfc01f81dfef211d4ec1e943eec0bb85ab",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-18.pdf": "7f26f13d8c1a6f96beb500b95b755c44908b6a8c8a5399b06571b9bcad01db90",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-2.pdf": "3f55d5033031b8d634d7dec91811496ac3c0bd09b13c2851ccb91dd6a58d7435",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-3.pdf": "2b1a0c45c03c408fda137e1ed34070b539e5212553aebb25547194c04f67ff65",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-4.pdf": "53f5695413d30516555a90deabf2ab6a18fc5ded4f7779a64eab65d756804445",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-5.pdf": "6092f5c039b6b02af1fe86d1a46958984736c466a953a55bf6d2570cb3deede6",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-6.pdf": "ddb4192ae697fbef512e38e75738c2cf2cef5bca5a274032c056e2b6f999c1a3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-7.pdf": "36bb1f009793afe1cf611f4a0b02de7cb6643dcb41f365d3c5270356d8b6f556",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-8.pdf": "77198042cbd0bd1f91d284cbf040e8938fb2f4b7865e284eb1f7d33a26935f5b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-9.pdf": "03954d54f076dc37cfa3fcb8a340412c9c8642478f7b1db437efe501eac209ff",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-vespid-stingwings.pdf": "db788b3c7d4187cb84b3530b4179cd663a97fb50fcd330a0008a6dcb535472d0",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection.pdf": "4029e4f25cd3d46adb600432d0a53f792df1e28e9e68c196dfb1214dd8447c3b",
+        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection.pdf": "1fa1e3cb9265a861e32253d6af12fa524e9f43e617c4f77e6c26ebe1cf2c3c13",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-aerial-agility.pdf": "7c75738323e5a62367b7e7fa614315d1a0b7d5614b0ccf7bfc90ca2918200a84",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-airborne-predators.pdf": "8de77b13a1beef381aeb1b9540d9620b42ae3b1206e5c06ede5e844b99fb71b0",
-        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-d6.pdf": "3525e3876fc01540d6903d34ce70d47355b2eacfcdc0f28470b69d12e34897bf",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-hardened-exoskeleton.pdf": "73a20c8175f7d363f99c19adccc537f1d7edc548b2bb31daa34eded4cb6311d0",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-sting.pdf": "09bf97b3e495274ece0a4984570ef69a44b211a21c593f4c98d7730a64107f05",
-        "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide-vespid-stingwings.pdf": "6d52e698413670293140be0a985d60daa1af8b999e9f7342feb77559fe51f1bb",
-        "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide.pdf": "f1ffb6e52fe73fcb7f7c7972d7a73931fc52e86ab264f9fac022b2cb2b2646f8"
+        "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide.pdf": "9385e37d821176f02d070c312fbe61673ba73c19bc6fec21606acdfae962e32c"
       }
     },
     "extract_backsides": {
@@ -106,78 +65,387 @@
         "tokens/vespid-stingwings-communion-point.png": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-communion-point.png",
           "hash": "e3d185f28eef39f17b1e881ed30f6140094d2011a88deb10415c6c6499f49fec",
-          "modified": "2026-08-29T18:49:47.196152+00:00"
+          "modified": "2026-08-16T12:34:34.224751+00:00"
         },
         "tokens/vespid-stingwings-neutron-fallout.png": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fallout.png",
           "hash": "e83f253f1bb1e024f9e47c53b5af045e74af4258dc34d09c80df3d48edc32f0c",
-          "modified": "2026-08-29T18:49:47.202182+00:00"
+          "modified": "2026-08-16T12:34:34.246508+00:00"
         },
         "tokens/vespid-stingwings-neutron-fragment.png": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fragment.png",
           "hash": "d4ec0a41fe1ac918c98dca410d7a33b93ac59eb4dcbdd4dfe12960a0a5d1781b",
-          "modified": "2026-08-29T18:49:47.209787+00:00"
+          "modified": "2026-08-16T12:34:34.272569+00:00"
         },
         "tokens/vespid-stingwings-neutron-grenade.png": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-neutron-grenade.png",
           "hash": "a63b499e6429f917f378da1d571421d96ee015bc6ac6ebd681be6297f34782db",
-          "modified": "2026-08-29T18:49:47.217625+00:00"
+          "modified": "2026-08-16T12:34:34.292577+00:00"
         },
         "tokens/vespid-stingwings-skytorch.png": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-skytorch.png",
           "hash": "9865fb8a14647ca6276069f7b7ffcf81b4fef4329c0405238d854eee34b9aacc",
-          "modified": "2026-08-29T18:49:47.227675+00:00"
+          "modified": "2026-08-16T12:34:34.312090+00:00"
         },
         "tokens/vespid-stingwings-communion-point.obj": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-communion-point.obj",
           "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-          "modified": "2026-08-29T18:49:47.228679+00:00"
+          "modified": "2026-08-16T12:34:34.317225+00:00"
         },
         "tokens/vespid-stingwings-neutron-fallout.obj": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fallout.obj",
           "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-          "modified": "2026-08-29T18:49:47.230726+00:00"
+          "modified": "2026-08-16T12:34:34.321378+00:00"
         },
         "tokens/vespid-stingwings-neutron-fragment.obj": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fragment.obj",
           "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-          "modified": "2026-08-29T18:49:47.232230+00:00"
+          "modified": "2026-08-16T12:34:34.324956+00:00"
         },
         "tokens/vespid-stingwings-neutron-grenade.obj": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-neutron-grenade.obj",
           "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-          "modified": "2026-08-29T18:49:47.233738+00:00"
+          "modified": "2026-08-16T12:34:34.327702+00:00"
         },
         "tokens/vespid-stingwings-skytorch.obj": {
           "path": "output/vespid-stingwings/tokens/vespid-stingwings-skytorch.obj",
           "hash": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-          "modified": "2026-08-29T18:49:47.235741+00:00"
+          "modified": "2026-08-16T12:34:34.330287+00:00"
         },
         "tokens/tokenbag/vespid-stingwings-token-bag-icon.png": {
           "path": "output/vespid-stingwings/tokens/tokenbag/vespid-stingwings-token-bag-icon.png",
           "hash": "777941b9908c5798a16361d9145b19c847b7ada1813be2e80ccb170fc606eb1f",
-          "modified": "2026-08-29T18:49:47.242249+00:00"
+          "modified": "2026-08-16T12:34:34.356903+00:00"
         },
         "tokens/tokenbag/vespid-stingwings-token-bag.obj": {
           "path": "output/vespid-stingwings/tokens/tokenbag/vespid-stingwings-token-bag.obj",
           "hash": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
-          "modified": "2026-08-29T18:49:47.244263+00:00"
+          "modified": "2026-08-16T12:34:34.381711+00:00"
         }
       },
-      "completed": "2026-08-29T18:49:49.721848+00:00",
+      "completed": "2026-08-16T12:34:35.291161+00:00",
       "inputs": {
-        "layers/integration/vespid-stingwings/manifest.json": "f49e0b656157277eae8d4f348fb66d8464af17bb488d00dcc37bdda0dd6c3c97",
+        "layers/integration/vespid-stingwings/manifest.json": "cf22ee6fb0d44e8c7b628f57c214e459c54fa74d642e700371f9f9f25f16b33f",
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
         "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token.jpg": "777941b9908c5798a16361d9145b19c847b7ada1813be2e80ccb170fc606eb1f",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "03547f24b3e4b6e112bce5c65e4cae03876c0a6a97b0b32935896f86f2b5bb33",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "d6cd8893e5d1df20569495a24a9c510efe6d7920bc8a90a2252f9422727de1c7",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "9001fba36e69752702491a48bfc9ed7dd24790e88119f09bcc341b85f126d199",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "b0e21c701fac73ffa7c3b7ef553ffaf1af509cb0a25f4345cf3075ef529e08e3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "d20119e9bd2f7446f61bf34f885cf2adaeaa98257c34233fea9d968e4a2780f3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "8956ef4027f0177c50926efd5e59cac4036c77e1f3176d4eeb9e0e9559f8aefa",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "a8f469a6a2d5cbaebb1fdb3353e1fa536e1acba367ff3e3aefe83f6af49b0dcc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "c5672f9493af58126d503fc5825bc77de96ac544be0d977568e79e8adb37a758",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "6abaa210dda61d20d7c9d9fc400b4634f40f9e1e05c3c4a1728af665b255dc6c",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-oversight-drone.pdf": "e54f885da7a4821e6aa875009ccb8b611f673c65e0073543955df180b0d53eba",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-longsting.pdf": "e91aa7a13ec877f5842f9c6e687ec52d9e8adeace1903039d012adbb4b5e1e33",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-shadestrain.pdf": "fd779096126919c2649459c047d0be3025b5c515c326b999b8ae0c0a35772533",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-skyblast.pdf": "5e7124c6f782dc60f5f87ce99ede56eca14483f34ecaed4ccbc09788f1f3c3bc",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-strain-leader.pdf": "3cc4e09c2a7ec8f7c319272f23dc1cab3b125b41ba1a953d63c6231f9a8bd162",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-swarmguard.pdf": "281c180e6c486a400636586ab02121218cf642f074bec39cfbef564f1dfec045",
+        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-warrior.pdf": "081f43bec1349bcda4e89c78d9cfa2981ee0d37d221157602b1e0b6a381072a0",
+        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-accelerant-stimulant.pdf": "49b33d837bc93e583cf405f97aa1f5c21b4a7a8f113990d6075705a67a010ffd",
+        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-aggression-stimulant.pdf": "1144026398d2ce48fe5bb44cbe128b94e7a25d50c43dcb4ff7df495474f9c246",
+        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-convergence-stimulant.pdf": "cd24649c1a5d244d28c3551c2c7254efa37510df837ac249c38b5eb1fd9f3fb7",
+        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-neurostimulant.pdf": "7a658b45dcbf27b7b8ce85400d23d503db592dc2290c084f3fdbaf0522fe3b41",
+        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-communion.pdf": "7e60e41edc6294b149b1e2b2d74d9fe0b66ed92b1542039530dcbd070ef41965",
+        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-fly.pdf": "a9a990ec644ac974985b5b64a74c647157dee558b9791096e9164fb66f482b15",
+        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-neutron-charge.pdf": "2ccb10b10768669b66470d6f7c10cad4c9ce80265bf3183b2edbc8ff599fd2b1",
+        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-darting-flight.pdf": "d323134ee2a9881158ab6a608cff3cbcedb5f5c25ffd4d77fcb3326f40e808c6",
+        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-neutron-overload.pdf": "2f58cc6531eaddefb41b7716091f30bdf61190a105be93a336bcd55fe10763ee",
+        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-ocelli.pdf": "96017e96dc51fd7b6668b348e9dfa7cb89e71a327ada4e4b90001808245ae2fa",
+        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-vicious-venom.pdf": "42c45a26c70b08ddd685466455aacccf360ea5abcc1ef3e75d19629e6c13ec45",
+        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection.pdf": "ce47edc47c2e39d2c03ebeb7f0e5e31990ce45f47089fd1649c0ce125c2351d2",
+        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-aerial-agility.pdf": "e097c38bad22f50ad4fc24c179e92dcb071a3ad8f0fd3c37ef166ed815d7c8d7",
+        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-airborne-predators.pdf": "90e3fceeca848414f71d301704a24bd51ac661bf223b8003bdb2d840fddb6f8a",
+        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-hardened-exoskeleton.pdf": "1e9a86f79a343072493cb0a228a62ac5951c27d3620b9b4dfa44cfb068e9a8a0",
+        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-sting.pdf": "3954111ef17dd7ef5ee66407a479f228ab61b7ec7549bba4afc7295187234a0d",
+        "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide.pdf": "540586432b808f7e1e9d58caa39bbdb8ffb09753f5575db78a2814ca101e92ac",
+        "config/teams/vespid-stingwings/custom-tokens/skytorch.png": "0ea181ff8ff3878a8e9028ce6f1b3f8c23c1e59bb2a8a31602919a4d698c2852"
+      }
+    },
+    "generate_dice": {
+      "outputs": {
+        "dice-light.jpg": {
+          "path": "output/vespid-stingwings/dice/vespid-stingwings-dice-light.jpg",
+          "hash": "6aebc1daaa34cd11557716cbb1a895eea11ae9b95d9b479b505886af6bbdcf1e",
+          "modified": "2026-07-12T18:58:28.021663+00:00"
+        },
+        "dice-dark.jpg": {
+          "path": "output/vespid-stingwings/dice/vespid-stingwings-dice-dark.jpg",
+          "hash": "b307cc7f750a1930b8ee40a5f746cbd2139237ffe029334f9a1a86253d39cd5f",
+          "modified": "2026-07-12T18:58:28.028605+00:00"
+        },
+        "dice-team.jpg": {
+          "path": "output/vespid-stingwings/dice/vespid-stingwings-dice-team.jpg",
+          "hash": "bdb749e4e3ff40d893840a5945acc0ec68858eace21dd065f5111478ae46ee40",
+          "modified": "2026-07-12T18:58:28.031207+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:58:28.034703+00:00",
+      "inputs": {
+        "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token-transparent.png": "3ed5f1ab38b2117362fc2e01193ef97498789f42928db3c3a4fd5c75a7df50dc",
+        "config/team-config.yaml": "de34c56f77a00f03ce3468a30d2ccb3477ef9c2a19dcef05ab33fa8f97148a41"
+      }
+    },
+    "generate_box_texture": {
+      "outputs": {
+        "card-box-texture.jpg": {
+          "path": "output/vespid-stingwings/cardbox/vespid-stingwings-card-box-texture.jpg",
+          "hash": "676d25556c829dd1b55cd8afdbc28574c89a954b1bcdbd81440ecae987b1f022",
+          "modified": "2026-07-12T18:58:28.149820+00:00"
+        },
+        "card-box.obj": {
+          "path": "output/vespid-stingwings/cardbox/vespid-stingwings-card-box.obj",
+          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+          "modified": "2026-07-12T18:58:28.151876+00:00"
+        }
+      },
+      "completed": "2026-07-12T18:58:28.157148+00:00",
+      "inputs": {
+        "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token.jpg": "777941b9908c5798a16361d9145b19c847b7ada1813be2e80ccb170fc606eb1f",
+        "config/team-config.yaml": "de34c56f77a00f03ce3468a30d2ccb3477ef9c2a19dcef05ab33fa8f97148a41",
+        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
+        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
+      }
+    },
+    "generate_card_images": {
+      "outputs": {
+        "cards/datacards/oversight-drone-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/oversight-drone-back.jpg",
+          "hash": "3946d9f540e468d832799f905ba41f67d651f1fd1eac1734b6586097cf6a29ee",
+          "modified": "2026-08-26T15:25:46.195841+00:00"
+        },
+        "cards/datacards/oversight-drone-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/oversight-drone-front.jpg",
+          "hash": "50e71cd74c5ab771ed9c1281b53928647a9c8e7c67ba796d234b7b8f8a2fbd71",
+          "modified": "2026-08-26T15:25:46.200399+00:00"
+        },
+        "cards/datacards/vespid-longsting-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-longsting-back.jpg",
+          "hash": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+          "modified": "2026-08-26T15:25:46.815344+00:00"
+        },
+        "cards/datacards/vespid-longsting-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-longsting-front.jpg",
+          "hash": "61591f85c4b21e96411cf7a30e3383f4c41ba102125765c5c0a0c3c5b3b80fec",
+          "modified": "2026-08-26T15:25:48.331611+00:00"
+        },
+        "cards/datacards/vespid-shadestrain-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-shadestrain-back.jpg",
+          "hash": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+          "modified": "2026-08-26T15:25:49.757756+00:00"
+        },
+        "cards/datacards/vespid-shadestrain-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-shadestrain-front.jpg",
+          "hash": "c6876de0b15dbb105556cae0ddeaf2c65191433a1e71415396cff7096d5e86e8",
+          "modified": "2026-08-26T15:25:51.495647+00:00"
+        },
+        "cards/datacards/vespid-skyblast-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-skyblast-back.jpg",
+          "hash": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+          "modified": "2026-08-26T15:25:52.219988+00:00"
+        },
+        "cards/datacards/vespid-skyblast-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-skyblast-front.jpg",
+          "hash": "bdd747e42260e303a58080711471be76a14284c73e8447cc2565b27abfdabe0e",
+          "modified": "2026-08-26T15:25:53.505590+00:00"
+        },
+        "cards/datacards/vespid-strain-leader-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-strain-leader-back.jpg",
+          "hash": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+          "modified": "2026-08-26T15:25:54.865922+00:00"
+        },
+        "cards/datacards/vespid-strain-leader-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-strain-leader-front.jpg",
+          "hash": "833e7d0cf125f52446f4b61f5facebd2667bc826fc51a249b3e739df4f0e8792",
+          "modified": "2026-08-26T15:25:54.868722+00:00"
+        },
+        "cards/datacards/vespid-swarmguard-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-swarmguard-back.jpg",
+          "hash": "72afb8efade97cf020635b4e4b0aea6cb3f82d078dc9700d80216fda7a5c1f39",
+          "modified": "2026-08-26T15:25:54.869706+00:00"
+        },
+        "cards/datacards/vespid-swarmguard-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-swarmguard-front.jpg",
+          "hash": "6f3b804e8450ebc6148f832ccd1d8880714f253d609b371d48560c82bd407a59",
+          "modified": "2026-08-26T15:25:55.540429+00:00"
+        },
+        "cards/datacards/vespid-warrior-back.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-warrior-back.jpg",
+          "hash": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+          "modified": "2026-08-26T15:25:55.548302+00:00"
+        },
+        "cards/datacards/vespid-warrior-front.jpg": {
+          "path": "output/vespid-stingwings/cards/datacards/vespid-warrior-front.jpg",
+          "hash": "06e3bb761194baaf0fd4f187acc173c8df105b12bd022c00d90f3af8531be2cf",
+          "modified": "2026-08-26T15:25:56.205578+00:00"
+        },
+        "cards/equipment/vespid-stingwings-accelerant-stimulant-back.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-accelerant-stimulant-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:25:56.220518+00:00"
+        },
+        "cards/equipment/vespid-stingwings-accelerant-stimulant-front.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-accelerant-stimulant-front.jpg",
+          "hash": "dc6dea337d64f4a5a6ff97aad1780d5d67f4f2d4979b3a1b37109ea441c4b0b0",
+          "modified": "2026-08-26T15:25:57.455972+00:00"
+        },
+        "cards/equipment/vespid-stingwings-aggression-stimulant-back.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-aggression-stimulant-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:25:58.134072+00:00"
+        },
+        "cards/equipment/vespid-stingwings-aggression-stimulant-front.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-aggression-stimulant-front.jpg",
+          "hash": "8d0979b3d0e37c6a90ef6ae2c8ed028c2a5642f50834095ff7679d8e2d56b0b6",
+          "modified": "2026-08-26T15:25:58.833146+00:00"
+        },
+        "cards/equipment/vespid-stingwings-convergence-stimulant-back.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-convergence-stimulant-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:25:58.842743+00:00"
+        },
+        "cards/equipment/vespid-stingwings-convergence-stimulant-front.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-convergence-stimulant-front.jpg",
+          "hash": "0c4517449d0d46b89cb951d9e053dd7accade69958803d5af4de605bbec289d7",
+          "modified": "2026-08-26T15:25:59.478533+00:00"
+        },
+        "cards/equipment/vespid-stingwings-neurostimulant-back.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-neurostimulant-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:25:59.484594+00:00"
+        },
+        "cards/equipment/vespid-stingwings-neurostimulant-front.jpg": {
+          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-neurostimulant-front.jpg",
+          "hash": "d315a4d296b72e66809936779694619fbbcb78c9bf72c7f3782d18e1d25df4a0",
+          "modified": "2026-08-26T15:25:59.485200+00:00"
+        },
+        "cards/faction_rules/vespid-stingwings-communion-back.jpg": {
+          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-back.jpg",
+          "hash": "f9330e54a139383b3082fb0309f84d9b46c1f2602a12312791cc8f31cfba8882",
+          "modified": "2026-08-26T15:26:00.089615+00:00"
+        },
+        "cards/faction_rules/vespid-stingwings-communion-front.jpg": {
+          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-front.jpg",
+          "hash": "b15232167ebf2449ffb42e7f2bae16721caca11623e015e878be7cfe38ce8054",
+          "modified": "2026-08-26T15:26:00.160516+00:00"
+        },
+        "cards/faction_rules/vespid-stingwings-fly-back.jpg": {
+          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:00.778253+00:00"
+        },
+        "cards/faction_rules/vespid-stingwings-fly-front.jpg": {
+          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-front.jpg",
+          "hash": "92025fff1cbada3a4f8c1f1447e01a20964f02d1538ddb31c0f9825cd995821a",
+          "modified": "2026-08-26T15:26:00.833830+00:00"
+        },
+        "cards/faction_rules/vespid-stingwings-neutron-charge-back.jpg": {
+          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:00.840566+00:00"
+        },
+        "cards/faction_rules/vespid-stingwings-neutron-charge-front.jpg": {
+          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-front.jpg",
+          "hash": "f35088a3163abdb90c5327cb2907cc13944c43013c368bd9c1ef5fb12dffed1c",
+          "modified": "2026-08-26T15:26:00.842195+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-darting-flight-back.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-darting-flight-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:00.849986+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-darting-flight-front.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-darting-flight-front.jpg",
+          "hash": "cb781a34d294fa4706c0e1f8e704139c1ff4a7685370675cfa7a531dd0c01cd4",
+          "modified": "2026-08-26T15:26:00.851264+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-neutron-overload-back.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-neutron-overload-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:00.858148+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-neutron-overload-front.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-neutron-overload-front.jpg",
+          "hash": "f245aa89b8851d09b8dc79b5703c3e1150e955c0126a94deee4bc879afe23979",
+          "modified": "2026-08-26T15:26:00.860047+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-ocelli-back.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-ocelli-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:00.868173+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-ocelli-front.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-ocelli-front.jpg",
+          "hash": "0d72ab3ab3a1a674d7b655748ffd3858e9442ce318c6e59a37c6d2ffc4b9b95a",
+          "modified": "2026-08-26T15:26:00.876434+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-vicious-venom-back.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-vicious-venom-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:01.466428+00:00"
+        },
+        "cards/firefight_ploys/vespid-stingwings-vicious-venom-front.jpg": {
+          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-vicious-venom-front.jpg",
+          "hash": "26a76d984d73adf5411e77c7173b24e542779506c81f1306a1ce217f67224b4e",
+          "modified": "2026-08-26T15:26:01.541319+00:00"
+        },
+        "cards/operatives_selection/vespid-stingwings-operative-selection-back.jpg": {
+          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:02.872135+00:00"
+        },
+        "cards/operatives_selection/vespid-stingwings-operative-selection-front.jpg": {
+          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-front.jpg",
+          "hash": "651be9a198a6efb7d858e3637aab388144b2b412b1313d88bb831e3f8fed037c",
+          "modified": "2026-08-26T15:26:02.874265+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-aerial-agility-back.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-aerial-agility-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:02.883107+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-aerial-agility-front.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-aerial-agility-front.jpg",
+          "hash": "e015e1c61c8913fce0ec422e195097d57beb3d8a59122e87953c0ea8d7ff987a",
+          "modified": "2026-08-26T15:26:02.885149+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-airborne-predators-back.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-airborne-predators-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:02.891519+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-airborne-predators-front.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-airborne-predators-front.jpg",
+          "hash": "aaf5d5c59097c7b1be34b2ecfa67ade04657d40a3be756b341e3638af65eda17",
+          "modified": "2026-08-26T15:26:02.893661+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-back.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:02.901056+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-front.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-front.jpg",
+          "hash": "9c9ec71c6d966852764d711f53a0473e2f94c5f4f988b00ed69ecbd7dbf6dfb0",
+          "modified": "2026-08-26T15:26:02.902372+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-sting-back.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-sting-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:02.917257+00:00"
+        },
+        "cards/strategy_ploys/vespid-stingwings-sting-front.jpg": {
+          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-sting-front.jpg",
+          "hash": "da3ed8ee6190891e79d73e6ac40cd6506c009ff1341d6d7d48b2fc182d058cf6",
+          "modified": "2026-08-26T15:26:02.926222+00:00"
+        },
+        "cards/token_guide/vespid-stingwings-token-guide-back.jpg": {
+          "path": "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-back.jpg",
+          "hash": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+          "modified": "2026-08-26T15:26:03.582634+00:00"
+        },
+        "cards/token_guide/vespid-stingwings-token-guide-front.jpg": {
+          "path": "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-front.jpg",
+          "hash": "195f71eaf505ae435ca080d45536926d8881e00fe08308175fff89dd5aab97f1",
+          "modified": "2026-08-26T15:26:04.301467+00:00"
+        }
+      },
+      "completed": "2026-08-26T15:26:08.340888+00:00",
+      "inputs": {
+        "layers/integration/vespid-stingwings/manifest.json": "cf22ee6fb0d44e8c7b628f57c214e459c54fa74d642e700371f9f9f25f16b33f",
         "layers/integration/vespid-stingwings/vespid-stingwings-datacard-oversight-drone.pdf": "eec4b269a45733f41e6d3a4e245df8c78e89cf7dc527e6e49337a03015492e43",
         "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-longsting.pdf": "62736a2da9c727280788fb3039ad79758d54654d007f8ae236a6c567a07f6afa",
         "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-shadestrain.pdf": "b5e95bf940d03e79132491ff291f5d76a9695035881ef575f2de07979f7fc834",
@@ -196,954 +464,14 @@
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-neutron-overload.pdf": "070e5f98161e9a6e169f1dbd409900e9ed95c6fcbcb46c1ab05a69c295f4950a",
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-ocelli.pdf": "edb0decd927c6f0618cf77d950559893d181513acf54b0fe66e20fe494ebe8b7",
         "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-vicious-venom.pdf": "200f382d36059283cd5d2bfbbf0cfa839856aecb443c096d770f65989fb1ba17",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-1.pdf": "b5e30877af6d000376a994bc72acae7a2f2f1b3a5b22163e4ce063b81c57c21f",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-10.pdf": "db69ac21a7f1632711b4a95c3ff3acc743bed300b09162955a637c9333a23536",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-11.pdf": "e344a5c0e12667d67ef897d7e616cb55bb60f0f1daa5ed8dba2d0f8c64d6ebae",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-12.pdf": "30cab0c06509d23d9c897d3ad110e5cd53b9517d00f9d36378d2a5f65ea0695b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-13.pdf": "e68919cc465abead2ee9199d2b733a91758a488c39c765cb63ca4c8ade472005",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-14.pdf": "e38e0252974124a733c7d76ad5c7330348762671cd068511d40c639f34b43f59",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-15.pdf": "e415e26a077af9be887e5fb31cadcc2eed382ff63acdeb720046ea46217d18e6",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-16.pdf": "a0761f5670722e1b72a1b90b96a3203f61e2c3685508456a4b6ff3cf96ff3b86",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-17.pdf": "66f9ae2af9862f0dc0ac56e8b91c78dfc01f81dfef211d4ec1e943eec0bb85ab",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-18.pdf": "7f26f13d8c1a6f96beb500b95b755c44908b6a8c8a5399b06571b9bcad01db90",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-2.pdf": "3f55d5033031b8d634d7dec91811496ac3c0bd09b13c2851ccb91dd6a58d7435",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-3.pdf": "2b1a0c45c03c408fda137e1ed34070b539e5212553aebb25547194c04f67ff65",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-4.pdf": "53f5695413d30516555a90deabf2ab6a18fc5ded4f7779a64eab65d756804445",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-5.pdf": "6092f5c039b6b02af1fe86d1a46958984736c466a953a55bf6d2570cb3deede6",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-6.pdf": "ddb4192ae697fbef512e38e75738c2cf2cef5bca5a274032c056e2b6f999c1a3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-7.pdf": "36bb1f009793afe1cf611f4a0b02de7cb6643dcb41f365d3c5270356d8b6f556",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-8.pdf": "77198042cbd0bd1f91d284cbf040e8938fb2f4b7865e284eb1f7d33a26935f5b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-9.pdf": "03954d54f076dc37cfa3fcb8a340412c9c8642478f7b1db437efe501eac209ff",
         "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection.pdf": "1fa1e3cb9265a861e32253d6af12fa524e9f43e617c4f77e6c26ebe1cf2c3c13",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-aerial-agility.pdf": "7c75738323e5a62367b7e7fa614315d1a0b7d5614b0ccf7bfc90ca2918200a84",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-airborne-predators.pdf": "8de77b13a1beef381aeb1b9540d9620b42ae3b1206e5c06ede5e844b99fb71b0",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-hardened-exoskeleton.pdf": "73a20c8175f7d363f99c19adccc537f1d7edc548b2bb31daa34eded4cb6311d0",
         "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-sting.pdf": "09bf97b3e495274ece0a4984570ef69a44b211a21c593f4c98d7730a64107f05",
         "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide.pdf": "9385e37d821176f02d070c312fbe61673ba73c19bc6fec21606acdfae962e32c",
-        "config/teams/vespid-stingwings/custom-tokens/skytorch.png": "0ea181ff8ff3878a8e9028ce6f1b3f8c23c1e59bb2a8a31602919a4d698c2852"
-      }
-    },
-    "generate_dice": {
-      "outputs": {
-        "dice-light.jpg": {
-          "path": "output/vespid-stingwings/dice/vespid-stingwings-dice-light.jpg",
-          "hash": "ff59e2b5b5bb54e3b0fb43f653eed0c2c9f46d843ed46ed697c7405b9158a14e",
-          "modified": "2026-08-29T21:25:18.689151+00:00"
-        },
-        "dice-dark.jpg": {
-          "path": "output/vespid-stingwings/dice/vespid-stingwings-dice-dark.jpg",
-          "hash": "87533cebf128fabe10d256892f09e79fb772d667a240fed2bfa49f295ebfaf5b",
-          "modified": "2026-08-29T21:25:18.693152+00:00"
-        },
-        "dice-team.jpg": {
-          "path": "output/vespid-stingwings/dice/vespid-stingwings-dice-team.jpg",
-          "hash": "1ebdbb8efc6f9896b14f60ccc39bc6206b70b449dc830ef048bfd17510755f1f",
-          "modified": "2026-08-29T21:25:18.694153+00:00"
-        }
-      },
-      "completed": "2026-08-29T21:25:18.696150+00:00",
-      "inputs": {
-        "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token-transparent.png": "3ed5f1ab38b2117362fc2e01193ef97498789f42928db3c3a4fd5c75a7df50dc",
-        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3"
-      }
-    },
-    "generate_box_texture": {
-      "outputs": {
-        "card-box-texture.jpg": {
-          "path": "output/vespid-stingwings/cardbox/vespid-stingwings-card-box-texture.jpg",
-          "hash": "676d25556c829dd1b55cd8afdbc28574c89a954b1bcdbd81440ecae987b1f022",
-          "modified": "2026-08-29T21:25:18.865150+00:00"
-        },
-        "card-box.obj": {
-          "path": "output/vespid-stingwings/cardbox/vespid-stingwings-card-box.obj",
-          "hash": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
-          "modified": "2026-08-29T21:25:18.866152+00:00"
-        }
-      },
-      "completed": "2026-08-29T21:25:18.880153+00:00",
-      "inputs": {
-        "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token.jpg": "777941b9908c5798a16361d9145b19c847b7ada1813be2e80ccb170fc606eb1f",
-        "config/teams/vespid-stingwings/box/card-box-texture.jpg": "f0a66b37152542ecac1d3ad56f766334f586b2f2d863f130207bade8a1f4f148",
-        "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
-        "config/defaults/box/card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
-        "config/defaults/box/card-box-texture.jpg": "b2f310b01a0d28e8806e99ce0b972e8967e3014608eacefcb6ec51597695a313"
-      }
-    },
-    "generate_card_images": {
-      "outputs": {
-        "cards/datacards/oversight-drone-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/oversight-drone-back.jpg",
-          "hash": "e10b1694c87841c7a1b3e679d27e899c7416bb21031d9c5ddbc6f16495a840f8",
-          "modified": "2026-08-29T23:31:27.011052+00:00"
-        },
-        "cards/datacards/oversight-drone-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/oversight-drone-front.jpg",
-          "hash": "9507db834d1ba98431a81cbafa6bff1654f3a01a2a65427038a74fba6177f108",
-          "modified": "2026-08-29T23:31:27.012051+00:00"
-        },
-        "cards/datacards/vespid-longsting-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-longsting-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T23:31:27.018050+00:00"
-        },
-        "cards/datacards/vespid-longsting-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-longsting-front.jpg",
-          "hash": "26c1d6c0aaa519f0a0e61fc0b474af5b49ea9540fb006a2825b661a189042b4d",
-          "modified": "2026-08-29T23:31:27.018050+00:00"
-        },
-        "cards/datacards/vespid-shadestrain-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-shadestrain-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T23:31:27.023051+00:00"
-        },
-        "cards/datacards/vespid-shadestrain-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-shadestrain-front.jpg",
-          "hash": "68bf4b9a1cbad5203315ea14cc7f7ed1f3154effe2604e7e139bd9cc70fc9dad",
-          "modified": "2026-08-29T23:31:27.024051+00:00"
-        },
-        "cards/datacards/vespid-skyblast-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-skyblast-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T23:31:27.030053+00:00"
-        },
-        "cards/datacards/vespid-skyblast-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-skyblast-front.jpg",
-          "hash": "531b73541d38303f5ebb73910dfad47ad18b8bfcddc2cf7b04c514520c4ccfc1",
-          "modified": "2026-08-29T23:31:27.031051+00:00"
-        },
-        "cards/datacards/vespid-strain-leader-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-strain-leader-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T23:31:27.037051+00:00"
-        },
-        "cards/datacards/vespid-strain-leader-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-strain-leader-front.jpg",
-          "hash": "3f6686be83796f1cf5cb9d31b950d00cfaf617faf2b4a17fd13b54b203cffdb5",
-          "modified": "2026-08-29T23:31:27.038051+00:00"
-        },
-        "cards/datacards/vespid-swarmguard-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-swarmguard-back.jpg",
-          "hash": "1410e10f2c787ebaf1eee8c4fe77046a852612fc7bb9f5899e8d30c710b4e03c",
-          "modified": "2026-08-29T23:31:27.038051+00:00"
-        },
-        "cards/datacards/vespid-swarmguard-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-swarmguard-front.jpg",
-          "hash": "69f12aafb988dea804da79f4be2f98b17f180a51c1cdd147e8a50050a3875760",
-          "modified": "2026-08-29T23:31:27.039052+00:00"
-        },
-        "cards/datacards/vespid-warrior-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-warrior-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T23:31:27.044053+00:00"
-        },
-        "cards/datacards/vespid-warrior-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-warrior-front.jpg",
-          "hash": "12592acb9ff5cdb3af2e07b41a609edb52931005f9a9353cc130495886845fd9",
-          "modified": "2026-08-29T23:31:27.045052+00:00"
-        },
-        "cards/equipment/vespid-stingwings-accelerant-stimulant-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-accelerant-stimulant-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.050052+00:00"
-        },
-        "cards/equipment/vespid-stingwings-accelerant-stimulant-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-accelerant-stimulant-front.jpg",
-          "hash": "8a97dba094587e967bcbeb278974f7e1b12c72d7b506b193e5f1b919c6be925c",
-          "modified": "2026-08-29T23:31:27.055053+00:00"
-        },
-        "cards/equipment/vespid-stingwings-aggression-stimulant-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-aggression-stimulant-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.060053+00:00"
-        },
-        "cards/equipment/vespid-stingwings-aggression-stimulant-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-aggression-stimulant-front.jpg",
-          "hash": "50f04916c843df9b68e3c5822d2e8dd61c448e882e8455baf39d91953547cac3",
-          "modified": "2026-08-29T23:31:27.065052+00:00"
-        },
-        "cards/equipment/vespid-stingwings-convergence-stimulant-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-convergence-stimulant-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.070053+00:00"
-        },
-        "cards/equipment/vespid-stingwings-convergence-stimulant-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-convergence-stimulant-front.jpg",
-          "hash": "c9ee9a5f03f7fccb63bf5b4e10b428398887c6c7421a6639995f3ecc337222fe",
-          "modified": "2026-08-29T23:31:27.074053+00:00"
-        },
-        "cards/equipment/vespid-stingwings-neurostimulant-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-neurostimulant-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.081051+00:00"
-        },
-        "cards/equipment/vespid-stingwings-neurostimulant-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-neurostimulant-front.jpg",
-          "hash": "5cd519b91caa6cbb79fd40a140fe460da6aa394a1eb873d8c688ffd6fe051212",
-          "modified": "2026-08-29T23:31:27.085052+00:00"
-        },
-        "cards/faction_rules/vespid-stingwings-communion-back.jpg": {
-          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-back.jpg",
-          "hash": "af543c7428af39b4d6790991a3940752fc1d8e8ae7bf003ec096c6528de6523a",
-          "modified": "2026-08-29T23:31:27.090050+00:00"
-        },
-        "cards/faction_rules/vespid-stingwings-communion-front.jpg": {
-          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-front.jpg",
-          "hash": "b2da793687cfb53d3f294579279d7fef8708fddf4576bdf34237188ddcdcf883",
-          "modified": "2026-08-29T23:31:27.090050+00:00"
-        },
-        "cards/faction_rules/vespid-stingwings-fly-back.jpg": {
-          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.095051+00:00"
-        },
-        "cards/faction_rules/vespid-stingwings-fly-front.jpg": {
-          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-front.jpg",
-          "hash": "613b678b4ba14710be1ccefcabeee975e2569ff55c284fa433397e1940c7af64",
-          "modified": "2026-08-29T23:31:27.096052+00:00"
-        },
-        "cards/faction_rules/vespid-stingwings-neutron-charge-back.jpg": {
-          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.106051+00:00"
-        },
-        "cards/faction_rules/vespid-stingwings-neutron-charge-front.jpg": {
-          "path": "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-front.jpg",
-          "hash": "c5e15a2e80962c49f176b2bc2031b33fc99b7c65d1eb3ca811bd3a839a37e08d",
-          "modified": "2026-08-29T23:31:27.107051+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-darting-flight-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-darting-flight-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.116050+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-darting-flight-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-darting-flight-front.jpg",
-          "hash": "c74577b84abeade5c857ce5d52f841ae5c54ce71977816248a19624285070cb0",
-          "modified": "2026-08-29T23:31:27.122561+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-neutron-overload-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-neutron-overload-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.130558+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-neutron-overload-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-neutron-overload-front.jpg",
-          "hash": "bc71134152593b2004b91aa653efc6550450e21c90b95943fac2fd6897026ba5",
-          "modified": "2026-08-29T23:31:27.134907+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-ocelli-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-ocelli-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.138906+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-ocelli-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-ocelli-front.jpg",
-          "hash": "93aa28cbcb7088647edfd224b846886edd4adb29f06957c94bc5e594cede2af1",
-          "modified": "2026-08-29T23:31:27.144906+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-vicious-venom-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-vicious-venom-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.149907+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-vicious-venom-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-vicious-venom-front.jpg",
-          "hash": "452ab1343a002da5497192df99c3e9f2e5cc372a558c5b8888ccc04c327ca7f4",
-          "modified": "2026-08-29T23:31:27.154862+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.160862+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-front.jpg",
-          "hash": "7c0610f536338566781328acab00fcde16626a991c263ebe992cc4858252218c",
-          "modified": "2026-08-29T23:31:27.161863+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-aerial-agility-back.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-aerial-agility-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.174862+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-aerial-agility-front.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-aerial-agility-front.jpg",
-          "hash": "d8e576422bb07e6dd884b819cd04a9ff12996ecd34a8903a5aafb3502c19ffe6",
-          "modified": "2026-08-29T23:31:27.180861+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-airborne-predators-back.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-airborne-predators-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.185862+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-airborne-predators-front.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-airborne-predators-front.jpg",
-          "hash": "f029cd5848d64b5e709d73c7492b0af7f9a4de0099b127486c6854041381576b",
-          "modified": "2026-08-29T23:31:27.189863+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-back.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.194861+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-front.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-front.jpg",
-          "hash": "6d44119e6858d660d595869fe8db2c9d11d9df52660ba45286b4d8e744790ad9",
-          "modified": "2026-08-29T23:31:27.199861+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-sting-back.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-sting-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.204863+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-sting-front.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-sting-front.jpg",
-          "hash": "e76fc1fc4898474dcde5e01a0f165a956c61b299ae73e012cf5aa9482529f9d8",
-          "modified": "2026-08-29T23:31:27.210861+00:00"
-        },
-        "cards/token_guide/vespid-stingwings-token-guide-back.jpg": {
-          "path": "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T23:31:27.218861+00:00"
-        },
-        "cards/token_guide/vespid-stingwings-token-guide-front.jpg": {
-          "path": "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-front.jpg",
-          "hash": "2b395fc65c437e92d947166bec804d6ad471864c49c7bfdf4397b235961ca270",
-          "modified": "2026-08-29T23:31:27.220863+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:38.483723+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card1-front.jpg",
-          "hash": "3f6686be83796f1cf5cb9d31b950d00cfaf617faf2b4a17fd13b54b203cffdb5",
-          "modified": "2026-08-29T20:32:39.860725+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:40.401136+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card2-front.jpg",
-          "hash": "9507db834d1ba98431a81cbafa6bff1654f3a01a2a65427038a74fba6177f108",
-          "modified": "2026-08-29T20:32:40.407387+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:42.249041+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card3-front.jpg",
-          "hash": "e10b1694c87841c7a1b3e679d27e899c7416bb21031d9c5ddbc6f16495a840f8",
-          "modified": "2026-08-29T20:32:42.977116+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:43.272861+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card4-front.jpg",
-          "hash": "26c1d6c0aaa519f0a0e61fc0b474af5b49ea9540fb006a2825b661a189042b4d",
-          "modified": "2026-08-29T20:32:43.362932+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:45.832277+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card5-front.jpg",
-          "hash": "68bf4b9a1cbad5203315ea14cc7f7ed1f3154effe2604e7e139bd9cc70fc9dad",
-          "modified": "2026-08-29T20:32:45.922346+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:45.933858+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card6-front.jpg",
-          "hash": "531b73541d38303f5ebb73910dfad47ad18b8bfcddc2cf7b04c514520c4ccfc1",
-          "modified": "2026-08-29T20:32:45.942223+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:48.608200+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card7-front.jpg",
-          "hash": "69f12aafb988dea804da79f4be2f98b17f180a51c1cdd147e8a50050a3875760",
-          "modified": "2026-08-29T20:32:48.617209+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:48.626721+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card8-front.jpg",
-          "hash": "1410e10f2c787ebaf1eee8c4fe77046a852612fc7bb9f5899e8d30c710b4e03c",
-          "modified": "2026-08-29T20:32:48.634234+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-back.jpg",
-          "hash": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-          "modified": "2026-08-29T20:32:48.644744+00:00"
-        },
-        "cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-card9-front.jpg",
-          "hash": "12592acb9ff5cdb3af2e07b41a609edb52931005f9a9353cc130495886845fd9",
-          "modified": "2026-08-29T20:32:51.140962+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card1-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card1-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:06.857307+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card1-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card1-front.jpg",
-          "hash": "7c0610f536338566781328acab00fcde16626a991c263ebe992cc4858252218c",
-          "modified": "2026-08-29T20:33:06.858811+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card10-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card10-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:09.183516+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card10-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card10-front.jpg",
-          "hash": "e76fc1fc4898474dcde5e01a0f165a956c61b299ae73e012cf5aa9482529f9d8",
-          "modified": "2026-08-29T20:33:09.186516+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card11-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card11-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:09.198028+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card11-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card11-front.jpg",
-          "hash": "93aa28cbcb7088647edfd224b846886edd4adb29f06957c94bc5e594cede2af1",
-          "modified": "2026-08-29T20:33:09.202539+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card12-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card12-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:10.636297+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card12-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card12-front.jpg",
-          "hash": "c74577b84abeade5c857ce5d52f841ae5c54ce71977816248a19624285070cb0",
-          "modified": "2026-08-29T20:33:10.825557+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card13-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card13-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:11.344234+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card13-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card13-front.jpg",
-          "hash": "bc71134152593b2004b91aa653efc6550450e21c90b95943fac2fd6897026ba5",
-          "modified": "2026-08-29T20:33:11.348234+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card14-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card14-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:11.361252+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card14-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card14-front.jpg",
-          "hash": "452ab1343a002da5497192df99c3e9f2e5cc372a558c5b8888ccc04c327ca7f4",
-          "modified": "2026-08-29T20:33:11.365252+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card15-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card15-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:13.017817+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card15-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card15-front.jpg",
-          "hash": "5cd519b91caa6cbb79fd40a140fe460da6aa394a1eb873d8c688ffd6fe051212",
-          "modified": "2026-08-29T20:33:13.022325+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card16-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card16-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:13.034255+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card16-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card16-front.jpg",
-          "hash": "c9ee9a5f03f7fccb63bf5b4e10b428398887c6c7421a6639995f3ecc337222fe",
-          "modified": "2026-08-29T20:33:13.039255+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card17-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card17-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:14.536392+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card17-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card17-front.jpg",
-          "hash": "8a97dba094587e967bcbeb278974f7e1b12c72d7b506b193e5f1b919c6be925c",
-          "modified": "2026-08-29T20:33:15.157388+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card18-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card18-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:15.163897+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card18-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card18-front.jpg",
-          "hash": "50f04916c843df9b68e3c5822d2e8dd61c448e882e8455baf39d91953547cac3",
-          "modified": "2026-08-29T20:33:15.164896+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card2-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card2-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:15.172407+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card2-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card2-front.jpg",
-          "hash": "b2da793687cfb53d3f294579279d7fef8708fddf4576bdf34237188ddcdcf883",
-          "modified": "2026-08-29T20:33:15.173407+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card3-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card3-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:15.183915+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card3-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card3-front.jpg",
-          "hash": "af543c7428af39b4d6790991a3940752fc1d8e8ae7bf003ec096c6528de6523a",
-          "modified": "2026-08-29T20:33:15.185916+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card4-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card4-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:16.820077+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card4-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card4-front.jpg",
-          "hash": "c5e15a2e80962c49f176b2bc2031b33fc99b7c65d1eb3ca811bd3a839a37e08d",
-          "modified": "2026-08-29T20:33:16.833584+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card5-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card5-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:17.392636+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card5-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card5-front.jpg",
-          "hash": "613b678b4ba14710be1ccefcabeee975e2569ff55c284fa433397e1940c7af64",
-          "modified": "2026-08-29T20:33:18.027604+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card6-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card6-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:18.039123+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card6-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card6-front.jpg",
-          "hash": "2b395fc65c437e92d947166bec804d6ad471864c49c7bfdf4397b235961ca270",
-          "modified": "2026-08-29T20:33:18.042127+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card7-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card7-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:18.579057+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card7-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card7-front.jpg",
-          "hash": "6d44119e6858d660d595869fe8db2c9d11d9df52660ba45286b4d8e744790ad9",
-          "modified": "2026-08-29T20:33:18.583069+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card8-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card8-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:18.593577+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card8-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card8-front.jpg",
-          "hash": "d8e576422bb07e6dd884b819cd04a9ff12996ecd34a8903a5aafb3502c19ffe6",
-          "modified": "2026-08-29T20:33:18.595576+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card9-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card9-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T20:33:18.605092+00:00"
-        },
-        "cards/operatives_selection/vespid-stingwings-operative-selection-card9-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-card9-front.jpg",
-          "hash": "f029cd5848d64b5e709d73c7492b0af7f9a4de0099b127486c6854041381576b",
-          "modified": "2026-08-29T20:33:18.608093+00:00"
-        },
-        "cards/datacards/vespid-stingwings-감독-드론-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-감독-드론-back.jpg",
-          "hash": "d170bcdbd30c36cfe41a6329e7dd7c24d5ea1225c54702a5a78e43170cfed049",
-          "modified": "2026-08-29T20:32:53.627210+00:00"
-        },
-        "cards/datacards/vespid-stingwings-감독-드론-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-감독-드론-front.jpg",
-          "hash": "523bb71cbe6b04c29dfa37473c3eac936bd6939d020a44d53974beef14bb9143",
-          "modified": "2026-08-29T20:32:53.632717+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-군집수호병-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-군집수호병-back.jpg",
-          "hash": "bc7176292d193a2ad5e6356a2533a10645a031ff5e6d6187bd9af22bd7d0da83",
-          "modified": "2026-08-29T20:32:53.644225+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-군집수호병-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-군집수호병-front.jpg",
-          "hash": "0d02aa61583caa1da129b0ae9349df4fec128cbed3ea2a94640a8d879737723a",
-          "modified": "2026-08-29T20:32:55.636324+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-그늘살이-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-그늘살이-back.jpg",
-          "hash": "8559250c684f98b744ec4e740175f63a7ee852c8d421e1463e6c5d32e6cf4978",
-          "modified": "2026-08-29T20:32:56.262273+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-그늘살이-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-그늘살이-front.jpg",
-          "hash": "14580dacb7f403e70a4b3c185b86cd3705566134c063c9c8667f88a673c93fcc",
-          "modified": "2026-08-29T20:32:56.562014+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-길쭉쐐기-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-길쭉쐐기-back.jpg",
-          "hash": "8559250c684f98b744ec4e740175f63a7ee852c8d421e1463e6c5d32e6cf4978",
-          "modified": "2026-08-29T20:32:58.201183+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-길쭉쐐기-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-길쭉쐐기-front.jpg",
-          "hash": "1a51821ce291da2a534b49102dc950298f1b27352b749cefdd192fe1fc37d289",
-          "modified": "2026-08-29T20:32:59.189150+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-병정-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-병정-back.jpg",
-          "hash": "8559250c684f98b744ec4e740175f63a7ee852c8d421e1463e6c5d32e6cf4978",
-          "modified": "2026-08-29T20:32:59.195612+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-병정-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-병정-front.jpg",
-          "hash": "6f67ae814320a0c5d993c76e13b7c4b5ef6efe01ceafaf455caafe1b0f049512",
-          "modified": "2026-08-29T20:32:59.281687+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-지휘종-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-지휘종-back.jpg",
-          "hash": "8559250c684f98b744ec4e740175f63a7ee852c8d421e1463e6c5d32e6cf4978",
-          "modified": "2026-08-29T20:33:00.822656+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-지휘종-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-지휘종-front.jpg",
-          "hash": "3b82194b03e05447dfcd841a423d64459f922db8fa127a8ce40842afefa57b26",
-          "modified": "2026-08-29T20:33:01.890621+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-하늘재비-back.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-하늘재비-back.jpg",
-          "hash": "8559250c684f98b744ec4e740175f63a7ee852c8d421e1463e6c5d32e6cf4978",
-          "modified": "2026-08-29T20:33:01.893622+00:00"
-        },
-        "cards/datacards/vespid-stingwings-베스피드-하늘재비-front.jpg": {
-          "path": "output/vespid-stingwings/cards/datacards/vespid-stingwings-베스피드-하늘재비-front.jpg",
-          "hash": "ab3afed695187621799ffc4e6ebdb0153a6484f1a7e24419d874a046b1cc86ee",
-          "modified": "2026-08-29T20:33:01.895623+00:00"
-        },
-        "cards/equipment/vespid-stingwings-가속-자극제-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-가속-자극제-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T20:33:04.453075+00:00"
-        },
-        "cards/equipment/vespid-stingwings-가속-자극제-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-가속-자극제-front.jpg",
-          "hash": "98505098435cfcce228c4ba836b99da36ea1e4a4530fb4bd6b1b5c2b89e213cd",
-          "modified": "2026-08-29T20:33:04.453075+00:00"
-        },
-        "cards/equipment/vespid-stingwings-공격성-자극제-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-공격성-자극제-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T20:33:04.454073+00:00"
-        },
-        "cards/equipment/vespid-stingwings-공격성-자극제-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-공격성-자극제-front.jpg",
-          "hash": "87166f343cdfcc9d05a7a87ccab9e706152a7c7d91c4540b2febde50950b20c6",
-          "modified": "2026-08-29T20:33:04.455072+00:00"
-        },
-        "cards/equipment/vespid-stingwings-수렴-자극제-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-수렴-자극제-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T20:33:04.456073+00:00"
-        },
-        "cards/equipment/vespid-stingwings-수렴-자극제-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-수렴-자극제-front.jpg",
-          "hash": "cb3c889b6cc6757439f628f402e6ff45bfc350f34ff532d6cc5ddd843d87bb61",
-          "modified": "2026-08-29T20:33:04.456073+00:00"
-        },
-        "cards/equipment/vespid-stingwings-신경-자극제-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-신경-자극제-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T20:33:04.457072+00:00"
-        },
-        "cards/equipment/vespid-stingwings-신경-자극제-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-신경-자극제-front.jpg",
-          "hash": "2cf253a8f43cc3d068039f2aff0410df7b57af9d3c5c27ec2ae4830b43b3b9a6",
-          "modified": "2026-08-29T20:33:04.459578+00:00"
-        },
-        "cards/faction-rules/vespid-stingwings-교감-back.jpg": {
-          "path": "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-교감-back.jpg",
-          "hash": "1a24755f43c0b26ab841c37c53479a5851a2a7cfae380724afe35610063c7bbd",
-          "modified": "2026-08-29T23:31:27.086052+00:00"
-        },
-        "cards/faction-rules/vespid-stingwings-교감-front.jpg": {
-          "path": "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-교감-front.jpg",
-          "hash": "a2d3380297590966e9d4d5b6df204f0bcb9327e963d6387a71986143d9b5af4f",
-          "modified": "2026-08-29T23:31:27.086052+00:00"
-        },
-        "cards/faction-rules/vespid-stingwings-비행-back.jpg": {
-          "path": "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-비행-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.087051+00:00"
-        },
-        "cards/faction-rules/vespid-stingwings-비행-front.jpg": {
-          "path": "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-비행-front.jpg",
-          "hash": "6a36f0aeac68022ac544612a2caedfafa3e692c2966f9ecd903e0b53722b30f6",
-          "modified": "2026-08-29T23:31:27.088051+00:00"
-        },
-        "cards/faction-rules/vespid-stingwings-중성자-충전-back.jpg": {
-          "path": "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-중성자-충전-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.088051+00:00"
-        },
-        "cards/faction-rules/vespid-stingwings-중성자-충전-front.jpg": {
-          "path": "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-중성자-충전-front.jpg",
-          "hash": "d387b7b85d6280f883d5dee6119f67736e63dc1c50765e0659ad030b0507b962",
-          "modified": "2026-08-29T23:31:27.089051+00:00"
-        },
-        "cards/operative-selection/vespid-stingwings-operative-selection-back.jpg": {
-          "path": "output/vespid-stingwings/cards/operative-selection/vespid-stingwings-operative-selection-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.155863+00:00"
-        },
-        "cards/operative-selection/vespid-stingwings-operative-selection-front.jpg": {
-          "path": "output/vespid-stingwings/cards/operative-selection/vespid-stingwings-operative-selection-front.jpg",
-          "hash": "31e6141c5454885433166cbff35c1bb7854a2b71e1533afc20849b586e05d28e",
-          "modified": "2026-08-29T23:31:27.156863+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-쏜살같은-비행-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-쏜살같은-비행-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.161863+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-쏜살같은-비행-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-쏜살같은-비행-front.jpg",
-          "hash": "5588758a8f9afef585e632ea972f3b8e01b3c7fa2f63939e3d7bb85b1eecf296",
-          "modified": "2026-08-29T23:31:27.162863+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-악성-맹독-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-악성-맹독-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.163863+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-악성-맹독-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-악성-맹독-front.jpg",
-          "hash": "ea80ffa64b716b62c1d14fed2e5a96b5e8cee350372537d91d94c8dedeae5cba",
-          "modified": "2026-08-29T23:31:27.163863+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-중성자-과부하-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-중성자-과부하-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.164862+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-중성자-과부하-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-중성자-과부하-front.jpg",
-          "hash": "77baadc7005bfb1c49352c4bbc77f30031ff2e2d735f933f3328672f72e5bf78",
-          "modified": "2026-08-29T23:31:27.164862+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-홑눈-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-홑눈-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.165863+00:00"
-        },
-        "cards/ploys/firefight/vespid-stingwings-홑눈-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-홑눈-front.jpg",
-          "hash": "fc2d178c1d8e0a1985e3b3cad8a03748714565f9ce360d2a9e8046e87acd717b",
-          "modified": "2026-08-29T23:31:27.165863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-경화-외골격-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-경화-외골격-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.166863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-경화-외골격-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-경화-외골격-front.jpg",
-          "hash": "e11a274faaf3b1358c5df1f45173de53d063aa54d15919a5b298fc5b3b0d2a3e",
-          "modified": "2026-08-29T23:31:27.166863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-공중-기동성-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중-기동성-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.167863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-공중-기동성-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중-기동성-front.jpg",
-          "hash": "76ad1ba915868564301962c2cf48e9529bb1558c20a6bb0a674794bc55e4ef18",
-          "modified": "2026-08-29T23:31:27.167863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-공중의-포식자-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중의-포식자-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.168863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-공중의-포식자-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중의-포식자-front.jpg",
-          "hash": "f20c925ccb4d194c112b0d47105b8ed020b0f86fbe419b5f0dedca90ce735e28",
-          "modified": "2026-08-29T23:31:27.168863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-독침-back.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-독침-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.169863+00:00"
-        },
-        "cards/ploys/strategy/vespid-stingwings-독침-front.jpg": {
-          "path": "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-독침-front.jpg",
-          "hash": "f2803fe0593e54cd6cd08545dd08346b7212aa57f6e7c8c0e8093358aa46952b",
-          "modified": "2026-08-29T23:31:27.169863+00:00"
-        },
-        "cards/token-guide/vespid-stingwings-token-guide-back.jpg": {
-          "path": "output/vespid-stingwings/cards/token-guide/vespid-stingwings-token-guide-back.jpg",
-          "hash": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-          "modified": "2026-08-29T23:31:27.211862+00:00"
-        },
-        "cards/token-guide/vespid-stingwings-token-guide-front.jpg": {
-          "path": "output/vespid-stingwings/cards/token-guide/vespid-stingwings-token-guide-front.jpg",
-          "hash": "04cc26214eccfa7175c138ce08ee74f310611f8d0aa9284636ad7655c06b93cb",
-          "modified": "2026-08-29T23:31:27.212864+00:00"
-        },
-        "cards/equipment/vespid-stingwings-d3-back.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-d3-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T22:23:51.585809+00:00"
-        },
-        "cards/equipment/vespid-stingwings-d3-front.jpg": {
-          "path": "output/vespid-stingwings/cards/equipment/vespid-stingwings-d3-front.jpg",
-          "hash": "5cd519b91caa6cbb79fd40a140fe460da6aa394a1eb873d8c688ffd6fe051212",
-          "modified": "2026-08-29T22:23:51.588809+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-d3-card1-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card1-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T22:23:51.649809+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-d3-card1-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card1-front.jpg",
-          "hash": "c74577b84abeade5c857ce5d52f841ae5c54ce71977816248a19624285070cb0",
-          "modified": "2026-08-29T22:23:51.652809+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-d3-card2-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card2-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T22:23:51.660809+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-d3-card2-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card2-front.jpg",
-          "hash": "bc71134152593b2004b91aa653efc6550450e21c90b95943fac2fd6897026ba5",
-          "modified": "2026-08-29T22:23:51.663810+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-d3-card3-back.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card3-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T22:23:51.672809+00:00"
-        },
-        "cards/firefight_ploys/vespid-stingwings-d3-card3-front.jpg": {
-          "path": "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card3-front.jpg",
-          "hash": "452ab1343a002da5497192df99c3e9f2e5cc372a558c5b8888ccc04c327ca7f4",
-          "modified": "2026-08-29T22:23:51.675809+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-d6-back.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-d6-back.jpg",
-          "hash": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-          "modified": "2026-08-29T22:23:51.731809+00:00"
-        },
-        "cards/strategy_ploys/vespid-stingwings-d6-front.jpg": {
-          "path": "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-d6-front.jpg",
-          "hash": "d8e576422bb07e6dd884b819cd04a9ff12996ecd34a8903a5aafb3502c19ffe6",
-          "modified": "2026-08-29T22:23:51.734810+00:00"
-        }
-      },
-      "completed": "2026-08-29T23:31:27.313797+00:00",
-      "inputs": {
-        "layers/integration/vespid-stingwings/manifest.json": "ce0d85e2420fdb08d8a94907b87ba4ae7d13a6c5ee92da04a19b83f9724a4687",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard--1.pdf": "7cd61a95b1bda93ac061a244356ce16a742ac420703268381ab3a5e798d7888e",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard--2.pdf": "05758aa573a3e20414d9c8693b8d90c546f209d45a0bc5f04234d9f8c097aa3a",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-.pdf": "f6e84c2c04a749fc04609dc7423889b3682b027e4a3b9b7bcb54ab25a93dafc3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": "03547f24b3e4b6e112bce5c65e4cae03876c0a6a97b0b32935896f86f2b5bb33",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": "d6cd8893e5d1df20569495a24a9c510efe6d7920bc8a90a2252f9422727de1c7",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": "9001fba36e69752702491a48bfc9ed7dd24790e88119f09bcc341b85f126d199",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": "b0e21c701fac73ffa7c3b7ef553ffaf1af509cb0a25f4345cf3075ef529e08e3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": "d20119e9bd2f7446f61bf34f885cf2adaeaa98257c34233fea9d968e4a2780f3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": "8956ef4027f0177c50926efd5e59cac4036c77e1f3176d4eeb9e0e9559f8aefa",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": "a8f469a6a2d5cbaebb1fdb3353e1fa536e1acba367ff3e3aefe83f6af49b0dcc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": "c5672f9493af58126d503fc5825bc77de96ac544be0d977568e79e8adb37a758",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": "6abaa210dda61d20d7c9d9fc400b4634f40f9e1e05c3c4a1728af665b255dc6c",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-oversight-drone.pdf": "b29ceec32fc967cc4dacd10de972b224adae8a9343bfa03a0c09d68273037789",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-longsting.pdf": "e701d542c4ce0f303a8076544d9b76a260d092b99d89201c464a2a6cccf6d6e5",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-shadestrain.pdf": "534794c72d1d2804cb8a7e223c3ccf8236c41b8a8a7128774d5408a4acfa5ded",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-skyblast.pdf": "bf4c24aa900e62b3ef12e189aff2e4b4f257baa4fb40f085377d008d337700cf",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-strain-leader.pdf": "9454e6ed44228f30ddc1b1e8c6fb2aafa6742747581a243445a694b2ea3c04aa",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-swarmguard.pdf": "4cf871feb43ea74ef1e2dcd549820c6b3cc1aa1b0db6aa3ed009d6947b853203",
-        "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-warrior.pdf": "717c0f19640eb29808e61030e3a4352b0ebfcf4f3634b71ab0a6b0516c336784",
-        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-accelerant-stimulant.pdf": "30b46ef0a3de895618c71334c822c94a2e8965a87a2cad34cdbb615337112bd1",
-        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-aggression-stimulant.pdf": "1ad926681a9ef870c910a21669a9bb655ce546d15503c0898637b2c6afcbc62a",
-        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-convergence-stimulant.pdf": "52fb13447b7194e1dfac81ae23d133be762b71a0a1976a9ddf3f7032e7b26d4b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-d3.pdf": "77926886ed2c4fa1b5efd6d9b0ed6ca3f164fe3290d953b019ee7b3f3a51a886",
-        "layers/integration/vespid-stingwings/vespid-stingwings-equipment-neurostimulant.pdf": "77926886ed2c4fa1b5efd6d9b0ed6ca3f164fe3290d953b019ee7b3f3a51a886",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-communion.pdf": "9c81c72e5e6876c9f54793d7ac265364fcff67305459d85b59c6e536c81f34cc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-d3.pdf": "b4453da9a84f9fa1cdb7e71bb41a36bd3cc1a64d8578dc1f9c1f12a206bb3581",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-fly.pdf": "a6abf7aa81ac67d388849ba460168073c31e9491e982c6ba56033eb77c75acdb",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-neutron-charge.pdf": "be89d422966aa658ca69c89ebdc5248f696041b13a5f35144847fadcd706af3d",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-1.pdf": "42946f399129dfb0c292fd856db0e9e2fa8c69ff9e31d0e7871df2cd19d00c4b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-2.pdf": "e49416c4f86afad7ec943452d8808482fbb890d401aa80385fb00d1cfd879034",
-        "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-3.pdf": "01f158f310411eb8091c030865bb7921f40a2d87954a7a7b7dc68dfe28aa9cd2",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-1.pdf": "02185a7c353aad0e6aca07e5aef8e812ce06930647d2a382f0d2af4ba555a1cc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-2.pdf": "8dafb49a33b72ee8e7465910f84ba8a55cd1c2c07ff5448761afc253fa05da7e",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-3.pdf": "80bafc0db348ab91c1e45c3ce5147e8449a9627d3c69d7e4c637998681b7d448",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-darting-flight.pdf": "02185a7c353aad0e6aca07e5aef8e812ce06930647d2a382f0d2af4ba555a1cc",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-neutron-overload.pdf": "8dafb49a33b72ee8e7465910f84ba8a55cd1c2c07ff5448761afc253fa05da7e",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-ocelli.pdf": "01716eaf51bb081f3110925dc2d77da64462e47d83d85edb2b8f35b63d1ec00d",
-        "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-vicious-venom.pdf": "80bafc0db348ab91c1e45c3ce5147e8449a9627d3c69d7e4c637998681b7d448",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-1.pdf": "b5e30877af6d000376a994bc72acae7a2f2f1b3a5b22163e4ce063b81c57c21f",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-10.pdf": "db69ac21a7f1632711b4a95c3ff3acc743bed300b09162955a637c9333a23536",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-11.pdf": "e344a5c0e12667d67ef897d7e616cb55bb60f0f1daa5ed8dba2d0f8c64d6ebae",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-12.pdf": "30cab0c06509d23d9c897d3ad110e5cd53b9517d00f9d36378d2a5f65ea0695b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-13.pdf": "e68919cc465abead2ee9199d2b733a91758a488c39c765cb63ca4c8ade472005",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-14.pdf": "e38e0252974124a733c7d76ad5c7330348762671cd068511d40c639f34b43f59",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-15.pdf": "e415e26a077af9be887e5fb31cadcc2eed382ff63acdeb720046ea46217d18e6",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-16.pdf": "a0761f5670722e1b72a1b90b96a3203f61e2c3685508456a4b6ff3cf96ff3b86",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-17.pdf": "66f9ae2af9862f0dc0ac56e8b91c78dfc01f81dfef211d4ec1e943eec0bb85ab",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-18.pdf": "7f26f13d8c1a6f96beb500b95b755c44908b6a8c8a5399b06571b9bcad01db90",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-2.pdf": "3f55d5033031b8d634d7dec91811496ac3c0bd09b13c2851ccb91dd6a58d7435",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-3.pdf": "2b1a0c45c03c408fda137e1ed34070b539e5212553aebb25547194c04f67ff65",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-4.pdf": "53f5695413d30516555a90deabf2ab6a18fc5ded4f7779a64eab65d756804445",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-5.pdf": "6092f5c039b6b02af1fe86d1a46958984736c466a953a55bf6d2570cb3deede6",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-6.pdf": "ddb4192ae697fbef512e38e75738c2cf2cef5bca5a274032c056e2b6f999c1a3",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-7.pdf": "36bb1f009793afe1cf611f4a0b02de7cb6643dcb41f365d3c5270356d8b6f556",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-8.pdf": "77198042cbd0bd1f91d284cbf040e8938fb2f4b7865e284eb1f7d33a26935f5b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-9.pdf": "03954d54f076dc37cfa3fcb8a340412c9c8642478f7b1db437efe501eac209ff",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-vespid-stingwings.pdf": "db788b3c7d4187cb84b3530b4179cd663a97fb50fcd330a0008a6dcb535472d0",
-        "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection.pdf": "4029e4f25cd3d46adb600432d0a53f792df1e28e9e68c196dfb1214dd8447c3b",
-        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-aerial-agility.pdf": "3525e3876fc01540d6903d34ce70d47355b2eacfcdc0f28470b69d12e34897bf",
-        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-airborne-predators.pdf": "9fef35002ffb34c170fb6fe84c4b76f832525c91955d1042ff12a6138330525f",
-        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-d6.pdf": "3525e3876fc01540d6903d34ce70d47355b2eacfcdc0f28470b69d12e34897bf",
-        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-hardened-exoskeleton.pdf": "d67fe69f8119c083878bb4104abe4c0c510609ddc2e4e7e45e591b7154f0141f",
-        "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-sting.pdf": "907bf006be5777b9d411f12625f77af0cde6b1b75a6ca2e15b4416cfc846334a",
-        "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide-vespid-stingwings.pdf": "6d52e698413670293140be0a985d60daa1af8b999e9f7342feb77559fe51f1bb",
-        "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide.pdf": "f1ffb6e52fe73fcb7f7c7972d7a73931fc52e86ab264f9fac022b2cb2b2646f8",
-        "config/teams/vespid-stingwings/card-backside/vespid-stingwings-backside-portrait.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
         "layers/integration/vespid-stingwings/card-backside/vespid-stingwings-backside-portrait.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
         "config/defaults/card-backside/default-backside-portrait.jpg": "f00ff15fa70005b9f804de08519e2e83485d7eaf78dfacea65dcef0eb1a29c22",
-        "config/teams/vespid-stingwings/card-backside/vespid-stingwings-backside-landscape.jpg": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
         "layers/integration/vespid-stingwings/card-backside/vespid-stingwings-backside-landscape.jpg": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
         "config/defaults/card-backside/default-backside-landscape.jpg": "1cf5580a1dff0c10adb1a286edad4479c487f3d2d698b0b8be84fe653039fd7e"
       }
@@ -1152,122 +480,110 @@
       "outputs": {
         "team-data.json": {
           "path": "output/vespid-stingwings/data/vespid-stingwings-team-data.json",
-          "hash": "58194767b4e5d9af6f9bb8ce1474aa35953055037b3a3c4ddf6284fd0464087d",
-          "modified": "2026-08-29T21:58:39.799932+00:00"
+          "hash": "f096170ea5909561e451a537d1595ec2ba0b65a26b22d3452dd7814d13a5d906",
+          "modified": "2026-08-26T15:26:54.270805+00:00"
         }
       },
-      "completed": "2026-08-29T21:58:39.800932+00:00",
+      "completed": "2026-08-26T15:26:54.277646+00:00",
       "inputs": {
-        "layers/integration/vespid-stingwings/content/vespid-stingwings-content.json": "58194767b4e5d9af6f9bb8ce1474aa35953055037b3a3c4ddf6284fd0464087d"
+        "layers/integration/vespid-stingwings/content/vespid-stingwings-content.json": "f096170ea5909561e451a537d1595ec2ba0b65a26b22d3452dd7814d13a5d906"
       }
     },
     "generate_tts": {
       "outputs": {
         "tts_objects/Vespid Stingwings Box.json": {
           "path": "output/vespid-stingwings/tts_objects/Vespid Stingwings Box.json",
-          "hash": "35ffa4a4a57a5afaa8b93ba98b6f648da0cd3466d0f1674dd2397a031e2d829a",
-          "modified": "2026-08-29T23:25:54.010019+00:00"
+          "hash": "708ee5727256dff4f6154233e1a22862dc53d7e53bb7e286c30133da59600516",
+          "modified": "2026-07-21T11:11:15.543312+00:00"
         },
         "tts_objects/Vespid Stingwings.json": {
           "path": "output/vespid-stingwings/tts_objects/Vespid Stingwings.json",
-          "hash": "ab8844419eb5966505a8aef76e1e58f3e6fe1a2298f608b191ddd3ab72b5505a",
-          "modified": "2026-08-29T23:25:54.018018+00:00"
+          "hash": "6a40467bc63acf278e1ebc3389b323d779b695943bccd22dbb6e512745c6bbcd",
+          "modified": "2026-08-26T15:37:48.191911+00:00"
         }
       },
-      "completed": "2026-08-29T23:25:54.088018+00:00",
+      "completed": "2026-08-26T15:37:48.227923+00:00",
       "inputs": {
         "config/team-config.yaml": "f519a4a58a2c96dcda0d1bf7cbb5f51e71f5194eb68396b61ad6697a5593e2d3",
         "config/team-guids.json": "906473ddbf256345a4150df497def05ec513f95948b27d6fc98fa6dba00bb7d0",
-        "output/vespid-stingwings/cards/datacards/oversight-drone-back.jpg": "e10b1694c87841c7a1b3e679d27e899c7416bb21031d9c5ddbc6f16495a840f8",
-        "output/vespid-stingwings/cards/datacards/oversight-drone-front.jpg": "9507db834d1ba98431a81cbafa6bff1654f3a01a2a65427038a74fba6177f108",
-        "output/vespid-stingwings/cards/datacards/vespid-longsting-back.jpg": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-        "output/vespid-stingwings/cards/datacards/vespid-longsting-front.jpg": "26c1d6c0aaa519f0a0e61fc0b474af5b49ea9540fb006a2825b661a189042b4d",
-        "output/vespid-stingwings/cards/datacards/vespid-shadestrain-back.jpg": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-        "output/vespid-stingwings/cards/datacards/vespid-shadestrain-front.jpg": "68bf4b9a1cbad5203315ea14cc7f7ed1f3154effe2604e7e139bd9cc70fc9dad",
-        "output/vespid-stingwings/cards/datacards/vespid-skyblast-back.jpg": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-        "output/vespid-stingwings/cards/datacards/vespid-skyblast-front.jpg": "531b73541d38303f5ebb73910dfad47ad18b8bfcddc2cf7b04c514520c4ccfc1",
-        "output/vespid-stingwings/cards/datacards/vespid-strain-leader-back.jpg": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-        "output/vespid-stingwings/cards/datacards/vespid-strain-leader-front.jpg": "3f6686be83796f1cf5cb9d31b950d00cfaf617faf2b4a17fd13b54b203cffdb5",
-        "output/vespid-stingwings/cards/datacards/vespid-swarmguard-back.jpg": "1410e10f2c787ebaf1eee8c4fe77046a852612fc7bb9f5899e8d30c710b4e03c",
-        "output/vespid-stingwings/cards/datacards/vespid-swarmguard-front.jpg": "69f12aafb988dea804da79f4be2f98b17f180a51c1cdd147e8a50050a3875760",
-        "output/vespid-stingwings/cards/datacards/vespid-warrior-back.jpg": "5f85bc386ff0985a9a0038ebe0ea2b9e6bbf707ffd964a725a47c13f8730990e",
-        "output/vespid-stingwings/cards/datacards/vespid-warrior-front.jpg": "12592acb9ff5cdb3af2e07b41a609edb52931005f9a9353cc130495886845fd9",
-        "output/vespid-stingwings/cards/equipment/vespid-stingwings-d3-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/equipment/vespid-stingwings-d3-front.jpg": "5cd519b91caa6cbb79fd40a140fe460da6aa394a1eb873d8c688ffd6fe051212",
-        "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-교감-back.jpg": "1a24755f43c0b26ab841c37c53479a5851a2a7cfae380724afe35610063c7bbd",
-        "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-교감-front.jpg": "a2d3380297590966e9d4d5b6df204f0bcb9327e963d6387a71986143d9b5af4f",
-        "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-비행-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-비행-front.jpg": "6a36f0aeac68022ac544612a2caedfafa3e692c2966f9ecd903e0b53722b30f6",
-        "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-중성자-충전-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/faction-rules/vespid-stingwings-중성자-충전-front.jpg": "d387b7b85d6280f883d5dee6119f67736e63dc1c50765e0659ad030b0507b962",
-        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-back.jpg": "af543c7428af39b4d6790991a3940752fc1d8e8ae7bf003ec096c6528de6523a",
-        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-front.jpg": "b2da793687cfb53d3f294579279d7fef8708fddf4576bdf34237188ddcdcf883",
-        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-front.jpg": "613b678b4ba14710be1ccefcabeee975e2569ff55c284fa433397e1940c7af64",
-        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-front.jpg": "c5e15a2e80962c49f176b2bc2031b33fc99b7c65d1eb3ca811bd3a839a37e08d",
-        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card1-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card1-front.jpg": "c74577b84abeade5c857ce5d52f841ae5c54ce71977816248a19624285070cb0",
-        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card2-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card2-front.jpg": "bc71134152593b2004b91aa653efc6550450e21c90b95943fac2fd6897026ba5",
-        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card3-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-d3-card3-front.jpg": "452ab1343a002da5497192df99c3e9f2e5cc372a558c5b8888ccc04c327ca7f4",
-        "output/vespid-stingwings/cards/operative-selection/vespid-stingwings-operative-selection-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/operative-selection/vespid-stingwings-operative-selection-front.jpg": "31e6141c5454885433166cbff35c1bb7854a2b71e1533afc20849b586e05d28e",
-        "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-front.jpg": "7c0610f536338566781328acab00fcde16626a991c263ebe992cc4858252218c",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-쏜살같은-비행-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-쏜살같은-비행-front.jpg": "5588758a8f9afef585e632ea972f3b8e01b3c7fa2f63939e3d7bb85b1eecf296",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-악성-맹독-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-악성-맹독-front.jpg": "ea80ffa64b716b62c1d14fed2e5a96b5e8cee350372537d91d94c8dedeae5cba",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-중성자-과부하-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-중성자-과부하-front.jpg": "77baadc7005bfb1c49352c4bbc77f30031ff2e2d735f933f3328672f72e5bf78",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-홑눈-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/firefight/vespid-stingwings-홑눈-front.jpg": "fc2d178c1d8e0a1985e3b3cad8a03748714565f9ce360d2a9e8046e87acd717b",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-경화-외골격-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-경화-외골격-front.jpg": "e11a274faaf3b1358c5df1f45173de53d063aa54d15919a5b298fc5b3b0d2a3e",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중-기동성-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중-기동성-front.jpg": "76ad1ba915868564301962c2cf48e9529bb1558c20a6bb0a674794bc55e4ef18",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중의-포식자-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-공중의-포식자-front.jpg": "f20c925ccb4d194c112b0d47105b8ed020b0f86fbe419b5f0dedca90ce735e28",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-독침-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/ploys/strategy/vespid-stingwings-독침-front.jpg": "f2803fe0593e54cd6cd08545dd08346b7212aa57f6e7c8c0e8093358aa46952b",
-        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-d6-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-d6-front.jpg": "d8e576422bb07e6dd884b819cd04a9ff12996ecd34a8903a5aafb3502c19ffe6",
-        "output/vespid-stingwings/cards/token-guide/vespid-stingwings-token-guide-back.jpg": "e65fa6a8183796529ce07f08b5d9066858a65c7695b823962a0a94f208c6702e",
-        "output/vespid-stingwings/cards/token-guide/vespid-stingwings-token-guide-front.jpg": "04cc26214eccfa7175c138ce08ee74f310611f8d0aa9284636ad7655c06b93cb",
-        "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-back.jpg": "2c11431c409843de38b4b5bc850788bb29a6e36b3ce3cec0d2c5e538f44a3a91",
-        "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-front.jpg": "2b395fc65c437e92d947166bec804d6ad471864c49c7bfdf4397b235961ca270",
+        "output/vespid-stingwings/cards/datacards/oversight-drone-back.jpg": "3946d9f540e468d832799f905ba41f67d651f1fd1eac1734b6586097cf6a29ee",
+        "output/vespid-stingwings/cards/datacards/oversight-drone-front.jpg": "50e71cd74c5ab771ed9c1281b53928647a9c8e7c67ba796d234b7b8f8a2fbd71",
+        "output/vespid-stingwings/cards/datacards/vespid-longsting-back.jpg": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+        "output/vespid-stingwings/cards/datacards/vespid-longsting-front.jpg": "61591f85c4b21e96411cf7a30e3383f4c41ba102125765c5c0a0c3c5b3b80fec",
+        "output/vespid-stingwings/cards/datacards/vespid-shadestrain-back.jpg": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+        "output/vespid-stingwings/cards/datacards/vespid-shadestrain-front.jpg": "c6876de0b15dbb105556cae0ddeaf2c65191433a1e71415396cff7096d5e86e8",
+        "output/vespid-stingwings/cards/datacards/vespid-skyblast-back.jpg": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+        "output/vespid-stingwings/cards/datacards/vespid-skyblast-front.jpg": "bdd747e42260e303a58080711471be76a14284c73e8447cc2565b27abfdabe0e",
+        "output/vespid-stingwings/cards/datacards/vespid-strain-leader-back.jpg": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+        "output/vespid-stingwings/cards/datacards/vespid-strain-leader-front.jpg": "833e7d0cf125f52446f4b61f5facebd2667bc826fc51a249b3e739df4f0e8792",
+        "output/vespid-stingwings/cards/datacards/vespid-swarmguard-back.jpg": "72afb8efade97cf020635b4e4b0aea6cb3f82d078dc9700d80216fda7a5c1f39",
+        "output/vespid-stingwings/cards/datacards/vespid-swarmguard-front.jpg": "6f3b804e8450ebc6148f832ccd1d8880714f253d609b371d48560c82bd407a59",
+        "output/vespid-stingwings/cards/datacards/vespid-warrior-back.jpg": "4d4b877caf075fb696f1debfcaa1fe57d366f3e367ea6765dfca33ae36622d2a",
+        "output/vespid-stingwings/cards/datacards/vespid-warrior-front.jpg": "06e3bb761194baaf0fd4f187acc173c8df105b12bd022c00d90f3af8531be2cf",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-accelerant-stimulant-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-accelerant-stimulant-front.jpg": "dc6dea337d64f4a5a6ff97aad1780d5d67f4f2d4979b3a1b37109ea441c4b0b0",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-aggression-stimulant-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-aggression-stimulant-front.jpg": "8d0979b3d0e37c6a90ef6ae2c8ed028c2a5642f50834095ff7679d8e2d56b0b6",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-convergence-stimulant-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-convergence-stimulant-front.jpg": "0c4517449d0d46b89cb951d9e053dd7accade69958803d5af4de605bbec289d7",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-neurostimulant-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/equipment/vespid-stingwings-neurostimulant-front.jpg": "d315a4d296b72e66809936779694619fbbcb78c9bf72c7f3782d18e1d25df4a0",
+        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-back.jpg": "f9330e54a139383b3082fb0309f84d9b46c1f2602a12312791cc8f31cfba8882",
+        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-communion-front.jpg": "b15232167ebf2449ffb42e7f2bae16721caca11623e015e878be7cfe38ce8054",
+        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-fly-front.jpg": "92025fff1cbada3a4f8c1f1447e01a20964f02d1538ddb31c0f9825cd995821a",
+        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/faction_rules/vespid-stingwings-neutron-charge-front.jpg": "f35088a3163abdb90c5327cb2907cc13944c43013c368bd9c1ef5fb12dffed1c",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-darting-flight-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-darting-flight-front.jpg": "cb781a34d294fa4706c0e1f8e704139c1ff4a7685370675cfa7a531dd0c01cd4",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-neutron-overload-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-neutron-overload-front.jpg": "f245aa89b8851d09b8dc79b5703c3e1150e955c0126a94deee4bc879afe23979",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-ocelli-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-ocelli-front.jpg": "0d72ab3ab3a1a674d7b655748ffd3858e9442ce318c6e59a37c6d2ffc4b9b95a",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-vicious-venom-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/firefight_ploys/vespid-stingwings-vicious-venom-front.jpg": "26a76d984d73adf5411e77c7173b24e542779506c81f1306a1ce217f67224b4e",
+        "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/operatives_selection/vespid-stingwings-operative-selection-front.jpg": "651be9a198a6efb7d858e3637aab388144b2b412b1313d88bb831e3f8fed037c",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-aerial-agility-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-aerial-agility-front.jpg": "e015e1c61c8913fce0ec422e195097d57beb3d8a59122e87953c0ea8d7ff987a",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-airborne-predators-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-airborne-predators-front.jpg": "aaf5d5c59097c7b1be34b2ecfa67ade04657d40a3be756b341e3638af65eda17",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-hardened-exoskeleton-front.jpg": "9c9ec71c6d966852764d711f53a0473e2f94c5f4f988b00ed69ecbd7dbf6dfb0",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-sting-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/strategy_ploys/vespid-stingwings-sting-front.jpg": "da3ed8ee6190891e79d73e6ac40cd6506c009ff1341d6d7d48b2fc182d058cf6",
+        "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-back.jpg": "9c4cd049fe80a5787cce5ccfc75116ddb622b460b76d8d4ffbc932470e99394c",
+        "output/vespid-stingwings/cards/token_guide/vespid-stingwings-token-guide-front.jpg": "195f71eaf505ae435ca080d45536926d8881e00fe08308175fff89dd5aab97f1",
         "output/vespid-stingwings/cardbox/vespid-stingwings-card-box-texture.jpg": "676d25556c829dd1b55cd8afdbc28574c89a954b1bcdbd81440ecae987b1f022",
         "output/vespid-stingwings/cardbox/vespid-stingwings-card-box.obj": "094d162a26a5626f427ce0f06ef87394b93f6ddae867a3b629c60d5e7e8fb2dd",
         "output/vespid-stingwings/tokens/tokenbag/vespid-stingwings-token-bag-icon.png": "777941b9908c5798a16361d9145b19c847b7ada1813be2e80ccb170fc606eb1f",
         "output/vespid-stingwings/tokens/tokenbag/vespid-stingwings-token-bag.obj": "7ac7494c9641babc1f89e53053206d677b0792cbc10b8d960fa89383f44dafeb",
         "output/vespid-stingwings/tokens/vespid-stingwings-communion-point.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-        "output/vespid-stingwings/tokens/vespid-stingwings-communion-point.png": "e3d185f28eef39f17b1e881ed30f6140094d2011a88deb10415c6c6499f49fec",
+        "output/vespid-stingwings/tokens/vespid-stingwings-communion-point.png": "044b3447d0f076aea021280e2317f2dc102c16508b7d645f1f3cf2bdb1a16eee",
         "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fallout.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
-        "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fallout.png": "e83f253f1bb1e024f9e47c53b5af045e74af4258dc34d09c80df3d48edc32f0c",
+        "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fallout.png": "b0d37c39e050db7c10364bdd9e0377f353a829992b9a62208bc3f20ab7816099",
         "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fragment.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
         "output/vespid-stingwings/tokens/vespid-stingwings-neutron-fragment.png": "d4ec0a41fe1ac918c98dca410d7a33b93ac59eb4dcbdd4dfe12960a0a5d1781b",
         "output/vespid-stingwings/tokens/vespid-stingwings-neutron-grenade.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
         "output/vespid-stingwings/tokens/vespid-stingwings-neutron-grenade.png": "a63b499e6429f917f378da1d571421d96ee015bc6ac6ebd681be6297f34782db",
         "output/vespid-stingwings/tokens/vespid-stingwings-skytorch.obj": "381bf5e083c56c569ee9eb6d48eb847bf94e4fe338a01afaae8bc8e77144e1cc",
         "output/vespid-stingwings/tokens/vespid-stingwings-skytorch.png": "9865fb8a14647ca6276069f7b7ffcf81b4fef4329c0405238d854eee34b9aacc",
-        "output/vespid-stingwings/dice/vespid-stingwings-dice-dark.jpg": "87533cebf128fabe10d256892f09e79fb772d667a240fed2bfa49f295ebfaf5b",
-        "output/vespid-stingwings/dice/vespid-stingwings-dice-light.jpg": "ff59e2b5b5bb54e3b0fb43f653eed0c2c9f46d843ed46ed697c7405b9158a14e",
-        "output/vespid-stingwings/dice/vespid-stingwings-dice-team.jpg": "1ebdbb8efc6f9896b14f60ccc39bc6206b70b449dc830ef048bfd17510755f1f",
-        "output/vespid-stingwings/data/vespid-stingwings-team-data.json": "58194767b4e5d9af6f9bb8ce1474aa35953055037b3a3c4ddf6284fd0464087d",
-        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "ccb3d10961c3353d0c325f4a6f4f4b1fbb8b962144f511b49e9dd229e52dd569",
+        "output/vespid-stingwings/dice/vespid-stingwings-dice-dark.jpg": "b307cc7f750a1930b8ee40a5f746cbd2139237ffe029334f9a1a86253d39cd5f",
+        "output/vespid-stingwings/dice/vespid-stingwings-dice-light.jpg": "6aebc1daaa34cd11557716cbb1a895eea11ae9b95d9b479b505886af6bbdcf1e",
+        "output/vespid-stingwings/dice/vespid-stingwings-dice-team.jpg": "bdb749e4e3ff40d893840a5945acc0ec68858eace21dd065f5111478ae46ee40",
+        "output/vespid-stingwings/data/vespid-stingwings-team-data.json": "f096170ea5909561e451a537d1595ec2ba0b65a26b22d3452dd7814d13a5d906",
+        "config/defaults/tts-script/bag-of-bags-reload-script.lua": "0568079805699a7d3b5f6e93807c0420a7c9fe2c3b297f2273f4dcc4e2aea2b0",
         "config/defaults/tts-script/datacard-load-stats.lua": "e163a1c2bbf015020a7ffe5ee861e9e78e7127ed99661187805c247862108260",
-        "config/defaults/tts-script/display-table-manager-script.lua": "915b585df566254cafb6a699af34668afe51abe94803acc82645652433c13421",
+        "config/defaults/tts-script/display-table-manager-script.lua": "846de299f8e2c925e63cc77c4991fedd07ae75e9bde375f3b3c991c8730b891b",
         "config/defaults/tts-script/faction-rule-chapter-tactics.lua": "c906742268076fb91f7cb4a92c6b588e1122ccddb692688f635c8dd4f7110ad0",
         "config/defaults/tts-script/intermediate-updater.lua": "1a2d6dbc1a8c9c57ba6a3e7a3d4bc4b7a38a6c242a93f6ef3dae698123384d35",
         "config/defaults/tts-script/ktui-extender-modelscript.lua": "efaa258acaadc765e64e274a97c327161d6d9f3f1068582b8e097bdbb87318f7",
         "config/defaults/tts-script/ktui-extension.lua": "3e7ec3dad8556d351dcb9a7fc399592f582b08434bc22ed45b6735cafabfad9b",
         "config/defaults/tts-script/move-tool.lua": "68059b5fd1b60ab7037930223b7d64863c0619e12719d1866853b010c651b34e",
-        "config/defaults/tts-script/single-object-updater.lua": "0c8f12587d1e4f34727ae0b50246885c6700ca52456c7b0088a00d2da3e7d352",
+        "config/defaults/tts-script/single-object-updater.lua": "3613b85169e986a8e50ebe221482079e27c18037e3f48920aa0f7e138c0ccacc",
         "config/defaults/tts-script/sprint-movement-tool.lua": "c0b96cbf193785c64dc6cb4bb90b4730d872214581c3973e9fbf30a01e8c5fd8",
-        "config/defaults/tts-script/team-spawner-clean-script.lua": "259c2e3629ecba126b5db0ec2a3066072601ab6ed9585c4d191eed9453d7204e",
-        "config/defaults/tts-script/team-spawner-script.lua": "60e659195fe37e96d6ffb8c4c9dcad9ceb669cae401bea03cd532b683499316d",
+        "config/defaults/tts-script/team-spawner-clean-script.lua": "12457bff3961eee2293c42d81cf4f4eb8b103177245a1ab8b46fd65da40672a2",
+        "config/defaults/tts-script/team-spawner-script.lua": "a51ff45c8622923db909fb465781801511f235412f099f83dff728d4027650db",
         "config/defaults/tts-script/tts-update-rules-in-box-script.lua": "84f7f9b260f4e4968d208953b534bdbb7ab0b2f475e13264a2407f6c4d4d2b03",
         "config/defaults/tts-image/default-icon.png": "892aff2628b9685c813e77be05c66afc1dc4247bc1dc9ce6fe54f006c2608271",
         "config/defaults/tts-image/spawner-token.png": "61903b093f01d834f5e4c4c069b1353ecf7d29f012fef914b3027266816d8a6b",
@@ -1348,7 +664,7 @@
           "modified": "2026-07-06T16:08:25.598111+00:00"
         },
         "cards": {
-          "hash": "47c6f427c27400e0e15da4855968a4b8c80a8533cf3b1286b42bc98c29d9b8f5",
+          "hash": "ad688285678a1f5b0c8b9f8dc05b871926dacfc6bdc7e8d85cca4f659d370441",
           "outputs": [
             "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card1_landscape.pdf",
             "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card2_landscape.pdf",
@@ -1383,425 +699,220 @@
             "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card3_portrait.pdf",
             "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card4_portrait.pdf"
           ],
-          "modified": "2026-08-29T18:34:38.559219+00:00"
+          "modified": "2026-08-26T15:13:27.888046+00:00"
         }
       },
-      "completed": "2026-08-29T18:34:38.559219+00:00"
+      "completed": "2026-08-26T15:13:27.888313+00:00"
     },
     "build_structure": {
       "outputs": {
         "structure": {
           "path": "layers/warcom/structure/vespid-stingwings-structure.json",
-          "hash": "ce0d85e2420fdb08d8a94907b87ba4ae7d13a6c5ee92da04a19b83f9724a4687",
-          "modified": "2026-08-29T23:13:49.150946+00:00"
+          "hash": "cf22ee6fb0d44e8c7b628f57c214e459c54fa74d642e700371f9f9f25f16b33f",
+          "modified": "2026-08-26T15:18:13.901344+00:00"
         }
       },
       "inputs": {
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card1_landscape.pdf": "446f2a7a8ad47bba428350d2dc015df07188c0e7772a9018ae2de679a43ca655",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card2_landscape.pdf": "ea8d0d24e2032d05330654d5a9f1a64455c9daf36f583cd3109b7ab9632bd31f",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card3_landscape.pdf": "7190b366acebe9854ecfe8efcfa85bfee2430292028eae13ac2455d3d9c73d83",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card4_landscape.pdf": "a84eb990a248bc0636f8c4752e997b269bc7abaf67ba204ed076950fb3122af9",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card1_landscape.pdf": "9fa18549693f9b100c3e373aacbb0f68dcf0c9d42d303e1b3b77fb799151c40d",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card2_landscape.pdf": "8016ea2ce7f125fe29ae92174672f666b86713fa6b7b0753a4157824af238da1",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card3_landscape.pdf": "7d9c068026d5be842c4f27ced61b6859f53b116085983821aa160153c08ad98f",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card4_landscape.pdf": "acdef16f8d6c05ec2537a67ffa4d37607b7e4a3d04ab1a61ccd7503efb6ce50c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card1_landscape.pdf": "df5498c54d89dd18a1ab978c839f615657fc0281d5cab86cae679f92010b0a26",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card2_landscape.pdf": "5faa29f3a8dc34de48a86405f4a98a9287148b9218b184c2195c14b8bf76b378",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card3_landscape.pdf": "28a8fa0fb4349f4829901d5192ed2151dfdc047a734146f18659e1764583c3eb",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card4_landscape.pdf": "cdd6b959e189090ad368cd5b1af72ccba5e33d475676f2dc2ee54c6bd1ab4522",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card1_portrait.pdf": "7555d1e8707534416403226b44986346a4a71e6ecdd262fb54e8472c105f271e",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card2_portrait.pdf": "9c79270912e637e6a5488befa9bc7312ed1bab972d2d064d19cf8b95fcb1f127",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card3_portrait.pdf": "0f3bad13309a646b2a95a6679305e71e910e5bf27fe94328543999ea43efd6df",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card4_portrait.pdf": "51063762229f6556e48301195054417f7408ad5229439e8a262b930cd1efe62b",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card1_portrait.pdf": "854ff10903fb96209a9e6a721c9b6f1f13d1fe9cf29edf757d27ca2aa568654c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card2_portrait.pdf": "3b53a2524ae541cbc1d893738abfdf6ea4bf3990d11cb2ce4985fe51069db3ea",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card3_portrait.pdf": "738b3e054a69e46840552f8691807e0498c9a0d8f16d986b56ff73179c3ab66c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card4_portrait.pdf": "76c1052b8093b6cdd63fe5104ceccbefa51be6e331b15e244012e815718c33da",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card1_portrait.pdf": "e0d0f20f46f11be24a0672df1b30ec96668d3282152105701b616910ebddbeb3",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card2_portrait.pdf": "dd32863703e56f3ebc229c2d793617578e79c30c694563a9c11763f26d0ac6b5",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card3_portrait.pdf": "faaf3399d34dd0025966faa9e5e4003ca68c322a5beba36c57afc80e44823428",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card4_portrait.pdf": "7e9c5fb9a5d41093717fd1898ab6e3c6eea28bd62f7bdc80e5309480cdca6842",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card1_portrait.pdf": "34832e4c60ffe6b5165ec4bf1749bfebd5a4193d1daec0218c105810d6efb886",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card2_portrait.pdf": "a77f35dc216a3cfa42f39f15c623eb8f58a3c8e25af6bb2f1c3eac41e1cd982c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card3_portrait.pdf": "fa495caef96910b560ec11cc07d105f3517c92db75e301831a8279ea22e2f512",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card4_portrait.pdf": "a692977aae89e91c9e7c5e994b14bf0bb14efd3b79c16bd949e681d378e60fe3",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card1_portrait.pdf": "41efed18b5c29f6ca733422b51cb6fc32203cd361e1a34856ac022ac8f40ddbf",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card2_portrait.pdf": "98cf4ed6e598e83abbfdd81b16b0b15815429f498c73af05e546e6315bd289ff",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card3_portrait.pdf": "f482de549d7491a2653b94c1f42bfea79d0bbccf920b18f014a71bc9adc73e53",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card4_portrait.pdf": "8cf4e4e691e3a9bf6a01ae8839428a34fa4964ebe08c446498928f63e6746dfa"
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card1_landscape.pdf": "955f289418709089afe84e2df524c254d92ce988974832a542ea73d4372885bf",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card2_landscape.pdf": "fa2058a45e4c3b262b02052ef15e837833b8d71728e88677250937267c1e4fe5",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card3_landscape.pdf": "c6232aa3439523c9aaea7fd2e7ae0c979612e161cd5c7da985f3c40efce8e9cf",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card4_landscape.pdf": "93bdbe1ddf14dfcd9528c3cab2a878c97058382e18c7983f812af3a1420e04c5",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card1_landscape.pdf": "92865ae4ec7d8a82d2ac965b629a617b90d1354d1b490e6afbe89d8f64e48717",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card2_landscape.pdf": "81f0573d9495d2d5e50133b7a099c921de39723bec8d059c4ac430035dc32b0d",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card3_landscape.pdf": "799b9083020e30cc46a6ad004fbb72208726e483e885302d6a07bc64b86a95ea",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card4_landscape.pdf": "9a4bd55abb3c2df054b95b41049d06103ac7df0d2e1e15fc641203bb75aa4419",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card1_landscape.pdf": "65d22ec0e66d93d0f692d5e8dc989c6d541a0507bf821b2947c3cd3d780b8a1e",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card2_landscape.pdf": "c8acddbbb9f3e480fdb50dabe203e393ec86901a108ccc11df7aeb5fda51e954",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card3_landscape.pdf": "2806b6ee7dcf212a4ee2683f1f98534e0455950948d0a939a65222f34de4f796",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card4_landscape.pdf": "90cb2fab7c27c4e567ba55d9a98e4526fb6ffeeca487a8eddc455a27bccf6d53",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card1_portrait.pdf": "f1a4b5f40b9a34664905aa8d429ef065de707f7874651cffc94757f870bad035",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card2_portrait.pdf": "e7496cfef589cba646b318713a1eae23f445ccbd70cbc9114090f3583949657f",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card3_portrait.pdf": "5c6c4c4a74eba6d9edc7283c1621934ded4a9e54b54472d130cb4bef5e4838d2",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card4_portrait.pdf": "d636d87b07de9896810d1340ddfe995ec785f5d5c9b89417be303e03614851ea",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card1_portrait.pdf": "d6933ea9abff3a75bdb4ce0571e6ec89ef531f8a91314f496c29adf340c28449",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card2_portrait.pdf": "f877cebe83cf1abf4b7639df72f075bebdbe2c699ace51aa98a8fedbeb7aa053",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card3_portrait.pdf": "69b311538dc6d2ee9c27dead23e6019fb3525635c6832e8ea68a2af49e5ab1db",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card4_portrait.pdf": "684cb1f05ad8b409a77f479f7aea99b2350c52aecc842958c38002cdc7a122b8",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card1_portrait.pdf": "06355b57f3275136d71dcf1ec2221fdc11bc46d976084b74c1c5ed5d3be56ab1",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card2_portrait.pdf": "20d65bdfce6c5bf3d466a68deea4ab72b901f94d57444bd745cbf0051c235ca0",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card3_portrait.pdf": "baf0a4e6e0c6ef6d7eb501489bb627c041bef1a7f8463c881ea48bbb0f903832",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card4_portrait.pdf": "c17545d4861635d477ace0c2a2fb59a077cb120d6516c45ae0871156d3b0cdf6",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card1_portrait.pdf": "bcc92a8019b9bf6eba95b0ed7840d84fb763545319936fd78b1bf84e7de9c6cd",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card2_portrait.pdf": "4b2533e6125dbb1fbb1417aa9abb23717b4656a0dd3151a322f0a9d3294278c0",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card3_portrait.pdf": "881065291202d7f00f0ca5a5099ebbc3a360569a7ce2004dfd5116dba2183d27",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card4_portrait.pdf": "09d70379025df3971ca144e60f9c7c885a1215813411965097ebfd504bafba8c",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card1_portrait.pdf": "716374492730d2aa8d1c13899e8c6d1e91b0a5223a0935f0725d58ad6d034d1c",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card2_portrait.pdf": "a575655bb48ba70d4d3e32de25eaeada7d9e3656beb1d7a773288e9579d166db",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card3_portrait.pdf": "895615ebd3f703c5611859b36df98e35019dccba49bdc943b6a149170785621e",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card4_portrait.pdf": "f234d83be76e562f440e32090d985d59416c370944d21eaaf01846dffda4f0ed"
       },
-      "completed": "2026-08-29T23:13:55.105822+00:00"
+      "completed": "2026-08-26T15:18:14.443070+00:00"
     },
     "integrate_classified": {
       "outputs": {
         "manifest.json": {
           "path": "layers/integration/vespid-stingwings/manifest.json",
-          "hash": "ce0d85e2420fdb08d8a94907b87ba4ae7d13a6c5ee92da04a19b83f9724a4687",
-          "modified": "2026-08-29T23:20:45.193423+00:00"
+          "hash": "cf22ee6fb0d44e8c7b628f57c214e459c54fa74d642e700371f9f9f25f16b33f",
+          "modified": "2026-08-26T15:18:16.827005+00:00"
         },
         "vespid-stingwings-datacard-vespid-strain-leader.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-strain-leader.pdf",
-          "hash": "9454e6ed44228f30ddc1b1e8c6fb2aafa6742747581a243445a694b2ea3c04aa",
-          "modified": "2026-08-29T23:20:45.194424+00:00"
+          "hash": "4b765ad8c3c6fb46fb30b6e99c4c5c757c56c137c91eb6f26fe1538856974a84",
+          "modified": "2026-08-26T15:18:16.829314+00:00"
         },
         "vespid-stingwings-datacard-oversight-drone.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-oversight-drone.pdf",
-          "hash": "b29ceec32fc967cc4dacd10de972b224adae8a9343bfa03a0c09d68273037789",
-          "modified": "2026-08-29T23:20:45.196424+00:00"
+          "hash": "eec4b269a45733f41e6d3a4e245df8c78e89cf7dc527e6e49337a03015492e43",
+          "modified": "2026-08-26T15:18:16.832132+00:00"
         },
         "vespid-stingwings-datacard-vespid-longsting.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-longsting.pdf",
-          "hash": "e701d542c4ce0f303a8076544d9b76a260d092b99d89201c464a2a6cccf6d6e5",
-          "modified": "2026-08-29T23:20:45.197423+00:00"
+          "hash": "62736a2da9c727280788fb3039ad79758d54654d007f8ae236a6c567a07f6afa",
+          "modified": "2026-08-26T15:18:16.840260+00:00"
         },
         "vespid-stingwings-datacard-vespid-shadestrain.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-shadestrain.pdf",
-          "hash": "534794c72d1d2804cb8a7e223c3ccf8236c41b8a8a7128774d5408a4acfa5ded",
-          "modified": "2026-08-29T23:20:45.198423+00:00"
+          "hash": "b5e95bf940d03e79132491ff291f5d76a9695035881ef575f2de07979f7fc834",
+          "modified": "2026-08-26T15:18:16.851272+00:00"
         },
         "vespid-stingwings-datacard-vespid-skyblast.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-skyblast.pdf",
-          "hash": "bf4c24aa900e62b3ef12e189aff2e4b4f257baa4fb40f085377d008d337700cf",
-          "modified": "2026-08-29T23:20:45.199423+00:00"
+          "hash": "cc33dbda66eb3f7ebd3b6cef4e961b133438f4618008446716e324cbff493379",
+          "modified": "2026-08-26T15:18:16.865380+00:00"
         },
         "vespid-stingwings-datacard-vespid-swarmguard.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-swarmguard.pdf",
-          "hash": "4cf871feb43ea74ef1e2dcd549820c6b3cc1aa1b0db6aa3ed009d6947b853203",
-          "modified": "2026-08-29T23:20:45.200424+00:00"
+          "hash": "38ab2b5a50c13e85824de38d5cbaad803ad8890d298589bd7d508866c0c1ea6f",
+          "modified": "2026-08-26T15:18:16.877350+00:00"
         },
         "vespid-stingwings-datacard-vespid-warrior.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-vespid-warrior.pdf",
-          "hash": "717c0f19640eb29808e61030e3a4352b0ebfcf4f3634b71ab0a6b0516c336784",
-          "modified": "2026-08-29T23:20:45.201423+00:00"
+          "hash": "4aab0d24fd11df875c14dfb6ebfea8a47ebe0c5a92a6111e6baa737ddd42669c",
+          "modified": "2026-08-26T15:18:16.887095+00:00"
         },
         "vespid-stingwings-equipment-neurostimulant.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-equipment-neurostimulant.pdf",
-          "hash": "77926886ed2c4fa1b5efd6d9b0ed6ca3f164fe3290d953b019ee7b3f3a51a886",
-          "modified": "2026-08-29T23:20:45.202424+00:00"
+          "hash": "d0d51a737d6c8b21cc3c612a610dc4a48912b6fe12a1ad74255ce53955eaf638",
+          "modified": "2026-08-26T15:18:16.895993+00:00"
         },
         "vespid-stingwings-equipment-convergence-stimulant.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-equipment-convergence-stimulant.pdf",
-          "hash": "52fb13447b7194e1dfac81ae23d133be762b71a0a1976a9ddf3f7032e7b26d4b",
-          "modified": "2026-08-29T23:20:45.202424+00:00"
+          "hash": "16eb565b3b28434532a43ab5006f18a136fb65d9e3c57de68698bcfb62552635",
+          "modified": "2026-08-26T15:18:16.897435+00:00"
         },
         "vespid-stingwings-equipment-accelerant-stimulant.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-equipment-accelerant-stimulant.pdf",
-          "hash": "30b46ef0a3de895618c71334c822c94a2e8965a87a2cad34cdbb615337112bd1",
-          "modified": "2026-08-29T23:20:45.203423+00:00"
+          "hash": "8fa8a25279550de6ce2171c6586369a5e2875d2783098a3bbae3fc572d1df4ff",
+          "modified": "2026-08-26T15:18:16.898891+00:00"
         },
         "vespid-stingwings-equipment-aggression-stimulant.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-equipment-aggression-stimulant.pdf",
-          "hash": "1ad926681a9ef870c910a21669a9bb655ce546d15503c0898637b2c6afcbc62a",
-          "modified": "2026-08-29T23:20:45.204423+00:00"
+          "hash": "687226e99ceb22d8e23aa16b43e92fedff317bd67bf16c8108cb087b50d8eed6",
+          "modified": "2026-08-26T15:18:16.901745+00:00"
         },
         "vespid-stingwings-faction-rule-communion.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-communion.pdf",
-          "hash": "9c81c72e5e6876c9f54793d7ac265364fcff67305459d85b59c6e536c81f34cc",
-          "modified": "2026-08-29T23:20:45.205423+00:00"
+          "hash": "5393db77916ef8fb8558f826767360eb5bf4cb00e3b3bc2e0bb3d2dafb99eadc",
+          "modified": "2026-08-26T15:18:16.904686+00:00"
         },
         "vespid-stingwings-faction-rule-neutron-charge.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-neutron-charge.pdf",
-          "hash": "be89d422966aa658ca69c89ebdc5248f696041b13a5f35144847fadcd706af3d",
-          "modified": "2026-08-29T23:20:45.206423+00:00"
+          "hash": "f455a796baa02a3c90127da423843bcafcb711a0139b2c1dfaef85a748b2ab9e",
+          "modified": "2026-08-26T15:18:16.906532+00:00"
         },
         "vespid-stingwings-faction-rule-fly.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-fly.pdf",
-          "hash": "a6abf7aa81ac67d388849ba460168073c31e9491e982c6ba56033eb77c75acdb",
-          "modified": "2026-08-29T23:20:45.207423+00:00"
+          "hash": "6b9ccb6eeb01a940e13fd78880578f6a86f378cdfc04f5792b28a909a078594e",
+          "modified": "2026-08-26T15:18:16.908171+00:00"
         },
         "vespid-stingwings-token-guide-token-guide.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide.pdf",
-          "hash": "f1ffb6e52fe73fcb7f7c7972d7a73931fc52e86ab264f9fac022b2cb2b2646f8",
-          "modified": "2026-08-29T21:24:30.131865+00:00"
+          "hash": "9385e37d821176f02d070c312fbe61673ba73c19bc6fec21606acdfae962e32c",
+          "modified": "2026-08-26T15:18:16.910720+00:00"
         },
         "vespid-stingwings-firefight-ploy-ocelli.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-ocelli.pdf",
-          "hash": "01716eaf51bb081f3110925dc2d77da64462e47d83d85edb2b8f35b63d1ec00d",
-          "modified": "2026-08-29T23:20:45.209424+00:00"
+          "hash": "edb0decd927c6f0618cf77d950559893d181513acf54b0fe66e20fe494ebe8b7",
+          "modified": "2026-08-26T15:18:16.912699+00:00"
         },
         "vespid-stingwings-firefight-ploy-darting-flight.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-darting-flight.pdf",
-          "hash": "02185a7c353aad0e6aca07e5aef8e812ce06930647d2a382f0d2af4ba555a1cc",
-          "modified": "2026-08-29T23:20:45.209424+00:00"
+          "hash": "7bed0d49378ffe36261f38e44a83959f08b50418d1f630130867a627fad58eb4",
+          "modified": "2026-08-26T15:18:16.914486+00:00"
         },
         "vespid-stingwings-firefight-ploy-neutron-overload.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-neutron-overload.pdf",
-          "hash": "8dafb49a33b72ee8e7465910f84ba8a55cd1c2c07ff5448761afc253fa05da7e",
-          "modified": "2026-08-29T23:20:45.210423+00:00"
+          "hash": "070e5f98161e9a6e169f1dbd409900e9ed95c6fcbcb46c1ab05a69c295f4950a",
+          "modified": "2026-08-26T15:18:16.915942+00:00"
         },
         "vespid-stingwings-firefight-ploy-vicious-venom.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-vicious-venom.pdf",
-          "hash": "80bafc0db348ab91c1e45c3ce5147e8449a9627d3c69d7e4c637998681b7d448",
-          "modified": "2026-08-29T23:20:45.211423+00:00"
+          "hash": "200f382d36059283cd5d2bfbbf0cfa839856aecb443c096d770f65989fb1ba17",
+          "modified": "2026-08-26T15:18:16.917658+00:00"
         },
         "vespid-stingwings-operatives-selection-operative-selection.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection.pdf",
-          "hash": "4029e4f25cd3d46adb600432d0a53f792df1e28e9e68c196dfb1214dd8447c3b",
-          "modified": "2026-08-29T21:24:34.655370+00:00"
+          "hash": "1fa1e3cb9265a861e32253d6af12fa524e9f43e617c4f77e6c26ebe1cf2c3c13",
+          "modified": "2026-08-26T15:18:16.919482+00:00"
         },
         "vespid-stingwings-strategy-ploy-hardened-exoskeleton.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-hardened-exoskeleton.pdf",
-          "hash": "d67fe69f8119c083878bb4104abe4c0c510609ddc2e4e7e45e591b7154f0141f",
-          "modified": "2026-08-29T23:20:45.214422+00:00"
+          "hash": "73a20c8175f7d363f99c19adccc537f1d7edc548b2bb31daa34eded4cb6311d0",
+          "modified": "2026-08-26T15:18:16.921166+00:00"
         },
         "vespid-stingwings-strategy-ploy-aerial-agility.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-aerial-agility.pdf",
-          "hash": "3525e3876fc01540d6903d34ce70d47355b2eacfcdc0f28470b69d12e34897bf",
-          "modified": "2026-08-29T23:20:45.216421+00:00"
+          "hash": "7c75738323e5a62367b7e7fa614315d1a0b7d5614b0ccf7bfc90ca2918200a84",
+          "modified": "2026-08-26T15:18:16.922856+00:00"
         },
         "vespid-stingwings-strategy-ploy-airborne-predators.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-airborne-predators.pdf",
-          "hash": "9fef35002ffb34c170fb6fe84c4b76f832525c91955d1042ff12a6138330525f",
-          "modified": "2026-08-29T23:20:45.217421+00:00"
+          "hash": "8de77b13a1beef381aeb1b9540d9620b42ae3b1206e5c06ede5e844b99fb71b0",
+          "modified": "2026-08-26T15:18:16.924481+00:00"
         },
         "vespid-stingwings-strategy-ploy-sting.pdf": {
           "path": "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-sting.pdf",
-          "hash": "907bf006be5777b9d411f12625f77af0cde6b1b75a6ca2e15b4416cfc846334a",
-          "modified": "2026-08-29T23:20:45.219423+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-1.pdf",
-          "hash": "03547f24b3e4b6e112bce5c65e4cae03876c0a6a97b0b32935896f86f2b5bb33",
-          "modified": "2026-08-29T18:49:12.965957+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-2.pdf",
-          "hash": "d6cd8893e5d1df20569495a24a9c510efe6d7920bc8a90a2252f9422727de1c7",
-          "modified": "2026-08-29T18:49:12.983956+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-3.pdf",
-          "hash": "9001fba36e69752702491a48bfc9ed7dd24790e88119f09bcc341b85f126d199",
-          "modified": "2026-08-29T18:49:13.007955+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-4.pdf",
-          "hash": "b0e21c701fac73ffa7c3b7ef553ffaf1af509cb0a25f4345cf3075ef529e08e3",
-          "modified": "2026-08-29T18:49:13.040652+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-5.pdf",
-          "hash": "d20119e9bd2f7446f61bf34f885cf2adaeaa98257c34233fea9d968e4a2780f3",
-          "modified": "2026-08-29T18:49:13.060964+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-6.pdf",
-          "hash": "8956ef4027f0177c50926efd5e59cac4036c77e1f3176d4eeb9e0e9559f8aefa",
-          "modified": "2026-08-29T18:49:13.086818+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-7.pdf",
-          "hash": "a8f469a6a2d5cbaebb1fdb3353e1fa536e1acba367ff3e3aefe83f6af49b0dcc",
-          "modified": "2026-08-29T18:49:13.134708+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-8.pdf",
-          "hash": "c5672f9493af58126d503fc5825bc77de96ac544be0d977568e79e8adb37a758",
-          "modified": "2026-08-29T18:49:13.162370+00:00"
-        },
-        "vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-image-devicen-1-devicecmyk-black-width-2480-height-3508-bpc-8-9.pdf",
-          "hash": "6abaa210dda61d20d7c9d9fc400b4634f40f9e1e05c3c4a1728af665b255dc6c",
-          "modified": "2026-08-29T18:49:13.174067+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-1.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-1.pdf",
-          "hash": "b5e30877af6d000376a994bc72acae7a2f2f1b3a5b22163e4ce063b81c57c21f",
-          "modified": "2026-08-29T18:49:13.494237+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-2.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-2.pdf",
-          "hash": "3f55d5033031b8d634d7dec91811496ac3c0bd09b13c2851ccb91dd6a58d7435",
-          "modified": "2026-08-29T18:49:14.016086+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-3.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-3.pdf",
-          "hash": "2b1a0c45c03c408fda137e1ed34070b539e5212553aebb25547194c04f67ff65",
-          "modified": "2026-08-29T18:49:14.042883+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-4.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-4.pdf",
-          "hash": "53f5695413d30516555a90deabf2ab6a18fc5ded4f7779a64eab65d756804445",
-          "modified": "2026-08-29T18:49:14.536513+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-5.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-5.pdf",
-          "hash": "6092f5c039b6b02af1fe86d1a46958984736c466a953a55bf6d2570cb3deede6",
-          "modified": "2026-08-29T18:49:14.821951+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-6.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-6.pdf",
-          "hash": "ddb4192ae697fbef512e38e75738c2cf2cef5bca5a274032c056e2b6f999c1a3",
-          "modified": "2026-08-29T18:49:14.834034+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-7.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-7.pdf",
-          "hash": "36bb1f009793afe1cf611f4a0b02de7cb6643dcb41f365d3c5270356d8b6f556",
-          "modified": "2026-08-29T18:49:14.851172+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-8.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-8.pdf",
-          "hash": "77198042cbd0bd1f91d284cbf040e8938fb2f4b7865e284eb1f7d33a26935f5b",
-          "modified": "2026-08-29T18:49:14.867974+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-9.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-9.pdf",
-          "hash": "03954d54f076dc37cfa3fcb8a340412c9c8642478f7b1db437efe501eac209ff",
-          "modified": "2026-08-29T18:49:14.894094+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-10.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-10.pdf",
-          "hash": "db69ac21a7f1632711b4a95c3ff3acc743bed300b09162955a637c9333a23536",
-          "modified": "2026-08-29T18:49:14.914223+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-11.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-11.pdf",
-          "hash": "e344a5c0e12667d67ef897d7e616cb55bb60f0f1daa5ed8dba2d0f8c64d6ebae",
-          "modified": "2026-08-29T18:49:14.938732+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-12.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-12.pdf",
-          "hash": "30cab0c06509d23d9c897d3ad110e5cd53b9517d00f9d36378d2a5f65ea0695b",
-          "modified": "2026-08-29T18:49:17.874366+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-13.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-13.pdf",
-          "hash": "e68919cc465abead2ee9199d2b733a91758a488c39c765cb63ca4c8ade472005",
-          "modified": "2026-08-29T18:49:19.064933+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-14.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-14.pdf",
-          "hash": "e38e0252974124a733c7d76ad5c7330348762671cd068511d40c639f34b43f59",
-          "modified": "2026-08-29T18:49:19.078129+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-15.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-15.pdf",
-          "hash": "e415e26a077af9be887e5fb31cadcc2eed382ff63acdeb720046ea46217d18e6",
-          "modified": "2026-08-29T18:49:23.120422+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-16.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-16.pdf",
-          "hash": "a0761f5670722e1b72a1b90b96a3203f61e2c3685508456a4b6ff3cf96ff3b86",
-          "modified": "2026-08-29T18:49:25.762252+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-17.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-17.pdf",
-          "hash": "66f9ae2af9862f0dc0ac56e8b91c78dfc01f81dfef211d4ec1e943eec0bb85ab",
-          "modified": "2026-08-29T18:49:25.777964+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-18.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-18.pdf",
-          "hash": "7f26f13d8c1a6f96beb500b95b755c44908b6a8c8a5399b06571b9bcad01db90",
-          "modified": "2026-08-29T18:49:27.123524+00:00"
-        },
-        "vespid-stingwings-datacard-.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard-.pdf",
-          "hash": "f6e84c2c04a749fc04609dc7423889b3682b027e4a3b9b7bcb54ab25a93dafc3",
-          "modified": "2026-08-29T21:24:21.660865+00:00"
-        },
-        "vespid-stingwings-datacard--1.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard--1.pdf",
-          "hash": "7cd61a95b1bda93ac061a244356ce16a742ac420703268381ab3a5e798d7888e",
-          "modified": "2026-08-29T21:24:17.737357+00:00"
-        },
-        "vespid-stingwings-datacard--2.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-datacard--2.pdf",
-          "hash": "05758aa573a3e20414d9c8693b8d90c546f209d45a0bc5f04234d9f8c097aa3a",
-          "modified": "2026-08-29T21:24:19.368865+00:00"
-        },
-        "vespid-stingwings-equipment-d3.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-equipment-d3.pdf",
-          "hash": "77926886ed2c4fa1b5efd6d9b0ed6ca3f164fe3290d953b019ee7b3f3a51a886",
-          "modified": "2026-08-29T22:22:41.023792+00:00"
-        },
-        "vespid-stingwings-faction-rule-d3.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-d3.pdf",
-          "hash": "b4453da9a84f9fa1cdb7e71bb41a36bd3cc1a64d8578dc1f9c1f12a206bb3581",
-          "modified": "2026-08-29T21:24:26.619866+00:00"
-        },
-        "vespid-stingwings-faction-rule-unknown-1.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-1.pdf",
-          "hash": "42946f399129dfb0c292fd856db0e9e2fa8c69ff9e31d0e7871df2cd19d00c4b",
-          "modified": "2026-08-29T21:24:27.317867+00:00"
-        },
-        "vespid-stingwings-faction-rule-unknown-2.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-2.pdf",
-          "hash": "e49416c4f86afad7ec943452d8808482fbb890d401aa80385fb00d1cfd879034",
-          "modified": "2026-08-29T21:24:29.071865+00:00"
-        },
-        "vespid-stingwings-faction-rule-unknown-3.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-faction-rule-unknown-3.pdf",
-          "hash": "01f158f310411eb8091c030865bb7921f40a2d87954a7a7b7dc68dfe28aa9cd2",
-          "modified": "2026-08-29T21:24:29.127865+00:00"
-        },
-        "vespid-stingwings-firefight-ploy-d3-1.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-1.pdf",
-          "hash": "02185a7c353aad0e6aca07e5aef8e812ce06930647d2a382f0d2af4ba555a1cc",
-          "modified": "2026-08-29T22:22:41.539284+00:00"
-        },
-        "vespid-stingwings-firefight-ploy-d3-2.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-2.pdf",
-          "hash": "8dafb49a33b72ee8e7465910f84ba8a55cd1c2c07ff5448761afc253fa05da7e",
-          "modified": "2026-08-29T22:22:41.549283+00:00"
-        },
-        "vespid-stingwings-firefight-ploy-d3-3.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-firefight-ploy-d3-3.pdf",
-          "hash": "80bafc0db348ab91c1e45c3ce5147e8449a9627d3c69d7e4c637998681b7d448",
-          "modified": "2026-08-29T22:22:41.557283+00:00"
-        },
-        "vespid-stingwings-strategy-ploy-d6.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-strategy-ploy-d6.pdf",
-          "hash": "3525e3876fc01540d6903d34ce70d47355b2eacfcdc0f28470b69d12e34897bf",
-          "modified": "2026-08-29T22:22:41.576283+00:00"
-        },
-        "vespid-stingwings-token-guide-token-guide-vespid-stingwings.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-token-guide-token-guide-vespid-stingwings.pdf",
-          "hash": "6d52e698413670293140be0a985d60daa1af8b999e9f7342feb77559fe51f1bb",
-          "modified": "2026-08-29T23:20:45.208425+00:00"
-        },
-        "vespid-stingwings-operatives-selection-operative-selection-vespid-stingwings.pdf": {
-          "path": "layers/integration/vespid-stingwings/vespid-stingwings-operatives-selection-operative-selection-vespid-stingwings.pdf",
-          "hash": "db788b3c7d4187cb84b3530b4179cd663a97fb50fcd330a0008a6dcb535472d0",
-          "modified": "2026-08-29T23:20:45.212423+00:00"
+          "hash": "09bf97b3e495274ece0a4984570ef69a44b211a21c593f4c98d7730a64107f05",
+          "modified": "2026-08-26T15:18:16.925846+00:00"
         }
       },
       "inputs": {
-        "layers/warcom/structure/vespid-stingwings-structure.json": "ce0d85e2420fdb08d8a94907b87ba4ae7d13a6c5ee92da04a19b83f9724a4687",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card1_landscape.pdf": "446f2a7a8ad47bba428350d2dc015df07188c0e7772a9018ae2de679a43ca655",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card2_landscape.pdf": "ea8d0d24e2032d05330654d5a9f1a64455c9daf36f583cd3109b7ab9632bd31f",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card3_landscape.pdf": "7190b366acebe9854ecfe8efcfa85bfee2430292028eae13ac2455d3d9c73d83",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card4_landscape.pdf": "a84eb990a248bc0636f8c4752e997b269bc7abaf67ba204ed076950fb3122af9",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card1_landscape.pdf": "9fa18549693f9b100c3e373aacbb0f68dcf0c9d42d303e1b3b77fb799151c40d",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card2_landscape.pdf": "8016ea2ce7f125fe29ae92174672f666b86713fa6b7b0753a4157824af238da1",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card3_landscape.pdf": "7d9c068026d5be842c4f27ced61b6859f53b116085983821aa160153c08ad98f",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card4_landscape.pdf": "acdef16f8d6c05ec2537a67ffa4d37607b7e4a3d04ab1a61ccd7503efb6ce50c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card1_landscape.pdf": "df5498c54d89dd18a1ab978c839f615657fc0281d5cab86cae679f92010b0a26",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card3_portrait.pdf": "fa495caef96910b560ec11cc07d105f3517c92db75e301831a8279ea22e2f512",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card4_portrait.pdf": "a692977aae89e91c9e7c5e994b14bf0bb14efd3b79c16bd949e681d378e60fe3",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card1_portrait.pdf": "41efed18b5c29f6ca733422b51cb6fc32203cd361e1a34856ac022ac8f40ddbf",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card2_portrait.pdf": "98cf4ed6e598e83abbfdd81b16b0b15815429f498c73af05e546e6315bd289ff",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card2_portrait.pdf": "9c79270912e637e6a5488befa9bc7312ed1bab972d2d064d19cf8b95fcb1f127",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card3_portrait.pdf": "0f3bad13309a646b2a95a6679305e71e910e5bf27fe94328543999ea43efd6df",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card4_portrait.pdf": "51063762229f6556e48301195054417f7408ad5229439e8a262b930cd1efe62b",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card1_portrait.pdf": "854ff10903fb96209a9e6a721c9b6f1f13d1fe9cf29edf757d27ca2aa568654c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card2_portrait.pdf": "3b53a2524ae541cbc1d893738abfdf6ea4bf3990d11cb2ce4985fe51069db3ea",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card3_portrait.pdf": "faaf3399d34dd0025966faa9e5e4003ca68c322a5beba36c57afc80e44823428",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card4_portrait.pdf": "7e9c5fb9a5d41093717fd1898ab6e3c6eea28bd62f7bdc80e5309480cdca6842",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card1_portrait.pdf": "34832e4c60ffe6b5165ec4bf1749bfebd5a4193d1daec0218c105810d6efb886",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card2_portrait.pdf": "a77f35dc216a3cfa42f39f15c623eb8f58a3c8e25af6bb2f1c3eac41e1cd982c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card1_portrait.pdf": "7555d1e8707534416403226b44986346a4a71e6ecdd262fb54e8472c105f271e",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card3_portrait.pdf": "738b3e054a69e46840552f8691807e0498c9a0d8f16d986b56ff73179c3ab66c",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card4_portrait.pdf": "76c1052b8093b6cdd63fe5104ceccbefa51be6e331b15e244012e815718c33da",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card1_portrait.pdf": "e0d0f20f46f11be24a0672df1b30ec96668d3282152105701b616910ebddbeb3",
-        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card2_portrait.pdf": "dd32863703e56f3ebc229c2d793617578e79c30c694563a9c11763f26d0ac6b5"
+        "layers/warcom/structure/vespid-stingwings-structure.json": "cf22ee6fb0d44e8c7b628f57c214e459c54fa74d642e700371f9f9f25f16b33f",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card1_landscape.pdf": "955f289418709089afe84e2df524c254d92ce988974832a542ea73d4372885bf",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card2_landscape.pdf": "fa2058a45e4c3b262b02052ef15e837833b8d71728e88677250937267c1e4fe5",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card3_landscape.pdf": "c6232aa3439523c9aaea7fd2e7ae0c979612e161cd5c7da985f3c40efce8e9cf",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page01_card4_landscape.pdf": "93bdbe1ddf14dfcd9528c3cab2a878c97058382e18c7983f812af3a1420e04c5",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card1_landscape.pdf": "92865ae4ec7d8a82d2ac965b629a617b90d1354d1b490e6afbe89d8f64e48717",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card2_landscape.pdf": "81f0573d9495d2d5e50133b7a099c921de39723bec8d059c4ac430035dc32b0d",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card3_landscape.pdf": "799b9083020e30cc46a6ad004fbb72208726e483e885302d6a07bc64b86a95ea",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page02_card4_landscape.pdf": "9a4bd55abb3c2df054b95b41049d06103ac7df0d2e1e15fc641203bb75aa4419",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page03_card1_landscape.pdf": "65d22ec0e66d93d0f692d5e8dc989c6d541a0507bf821b2947c3cd3d780b8a1e",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card3_portrait.pdf": "881065291202d7f00f0ca5a5099ebbc3a360569a7ce2004dfd5116dba2183d27",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card4_portrait.pdf": "09d70379025df3971ca144e60f9c7c885a1215813411965097ebfd504bafba8c",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card1_portrait.pdf": "716374492730d2aa8d1c13899e8c6d1e91b0a5223a0935f0725d58ad6d034d1c",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page08_card2_portrait.pdf": "a575655bb48ba70d4d3e32de25eaeada7d9e3656beb1d7a773288e9579d166db",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card2_portrait.pdf": "e7496cfef589cba646b318713a1eae23f445ccbd70cbc9114090f3583949657f",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card3_portrait.pdf": "5c6c4c4a74eba6d9edc7283c1621934ded4a9e54b54472d130cb4bef5e4838d2",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card4_portrait.pdf": "d636d87b07de9896810d1340ddfe995ec785f5d5c9b89417be303e03614851ea",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card1_portrait.pdf": "d6933ea9abff3a75bdb4ce0571e6ec89ef531f8a91314f496c29adf340c28449",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card2_portrait.pdf": "f877cebe83cf1abf4b7639df72f075bebdbe2c699ace51aa98a8fedbeb7aa053",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card3_portrait.pdf": "baf0a4e6e0c6ef6d7eb501489bb627c041bef1a7f8463c881ea48bbb0f903832",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card4_portrait.pdf": "c17545d4861635d477ace0c2a2fb59a077cb120d6516c45ae0871156d3b0cdf6",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card1_portrait.pdf": "bcc92a8019b9bf6eba95b0ed7840d84fb763545319936fd78b1bf84e7de9c6cd",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page07_card2_portrait.pdf": "4b2533e6125dbb1fbb1417aa9abb23717b4656a0dd3151a322f0a9d3294278c0",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page04_card1_portrait.pdf": "f1a4b5f40b9a34664905aa8d429ef065de707f7874651cffc94757f870bad035",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card3_portrait.pdf": "69b311538dc6d2ee9c27dead23e6019fb3525635c6832e8ea68a2af49e5ab1db",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page05_card4_portrait.pdf": "684cb1f05ad8b409a77f479f7aea99b2350c52aecc842958c38002cdc7a122b8",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card1_portrait.pdf": "06355b57f3275136d71dcf1ec2221fdc11bc46d976084b74c1c5ed5d3be56ab1",
+        "layers/warcom/extracted/vespid-stingwings/cards/vespid-stingwings_page06_card2_portrait.pdf": "20d65bdfce6c5bf3d466a68deea4ab72b901f94d57444bd745cbf0051c235ca0"
       },
-      "completed": "2026-08-29T23:20:45.249424+00:00"
+      "completed": "2026-08-26T15:18:17.301042+00:00"
     },
     "extract_artwork": {
       "outputs": {},
       "sources": {
         "artwork": {
-          "hash": "47c6f427c27400e0e15da4855968a4b8c80a8533cf3b1286b42bc98c29d9b8f5",
+          "hash": "212863c205620301a1e902201668577ec1d3e4be7484d4980baba4bc57cea733",
           "outputs": [
             "layers/integration/vespid-stingwings/artwork/vespid-stingwings-artwork-01.jpeg",
             "layers/integration/vespid-stingwings/artwork/vespid-stingwings-artwork-02.jpeg",
@@ -1849,10 +960,10 @@
             "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token-transparent.png",
             "layers/integration/vespid-stingwings/artwork/icons/vespid-stingwings-icon-token.jpg"
           ],
-          "modified": "2026-08-29T18:39:27.784728+00:00"
+          "modified": "2026-07-06T20:44:39.926146+00:00"
         }
       },
-      "completed": "2026-08-29T18:39:27.784728+00:00"
+      "completed": "2026-07-06T20:44:39.926161+00:00"
     }
   }
 }

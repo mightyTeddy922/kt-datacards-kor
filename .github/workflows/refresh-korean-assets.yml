@@ -1,0 +1,56 @@
+name: Refresh Korean Assets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 18 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pymupdf pillow pypdf2 pytesseract pyyaml pandas requests beautifulsoup4 opencv-python
+
+      - name: Render Korean card images
+        env:
+          PYTHONPATH: .
+        run: python tools/render_korean_warcom_cards.py
+
+      - name: Regenerate TTS metadata
+        env:
+          PYTHONPATH: .
+          KT_DATACARDS_REPO_ROOT: https://raw.githubusercontent.com/${{ github.repository }}/{branch}
+          KT_DATACARDS_URL_BRANCH: ${{ github.ref_name }}
+        run: python -m pipeline.main --step generate_tts --force
+
+      - name: Retarget generated JSON URLs
+        env:
+          KT_DATACARDS_REPO_ROOT: https://raw.githubusercontent.com/${{ github.repository }}/{branch}
+          KT_DATACARDS_URL_BRANCH: ${{ github.ref_name }}
+        run: python tools/retarget_output_urls.py output
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output tools/render_korean_warcom_cards.py tools/retarget_output_urls.py pipeline/steps/generate_tts.py pipeline/steps/warcom/scraper.py pipeline/steps/tts_impl.py pipeline/steps/templates/tts_templates.py .github/workflows/refresh-korean-assets.yml
+          git commit -m "Refresh Korean Kill Team assets"
+          git push

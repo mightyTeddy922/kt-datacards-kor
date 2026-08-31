@@ -1,11 +1,16 @@
-"""Scrape + download Kill Team team-rules PDFs from warhammer-community."""
+"""Scrape + download Kill Team team-rules PDFs from warhammer-community.
+
+Prefer the site's JSON search API, which exposes the same Team Rules catalog the
+downloads page renders. This is more robust than driving the UI and also lets us
+request a specific download language such as Korean. Playwright remains as a
+fallback for environments where the API shape changes unexpectedly.
+"""
 from __future__ import annotations
 
+import json
 import logging
 import os
 from pathlib import Path
-import re
-import shutil
 
 import requests
 from playwright.async_api import async_playwright
@@ -13,9 +18,14 @@ from playwright.async_api import async_playwright
 logger = logging.getLogger(__name__)
 
 DOWNLOADS_URL = "https://www.warhammer-community.com/en-gb/downloads/kill-team/"
-DEFAULT_LOCALE = "en-gb"
-SEARCH_API_URL = "https://www.warhammer-community.com/api/search/"
-SEARCH_API_INDEX = "downloads_v2_date_desc"
+DOWNLOADS_API_URL = "https://www.warhammer-community.com/api/search/downloads/"
+DOWNLOADS_INDEX = "downloads_v2"
+DOWNLOADS_LANGUAGE = os.environ.get("KT_DATACARDS_WARCOM_LANGUAGE", "english").strip().lower()
+EXCLUDED_TEAM_SLUGS = {
+    slug.strip().lower()
+    for slug in os.environ.get("KT_DATACARDS_WARCOM_EXCLUDE_SLUGS", "").split(",")
+    if slug.strip()
+}
 
 # Files that live in the Team Rules section but are not a single team's rules.
 _EXCLUDE_PATTERNS = (
@@ -32,26 +42,6 @@ _EXCLUDE_PATTERNS = (
     "shadowvaults", "chalnath", "octarius",
 )
 
-DOWNLOAD_LANGUAGE_QUERY_LABELS = {
-    "en-gb": "english",
-    "de-de": "german",
-    "fr-fr": "french",
-    "it-it": "italian",
-    "es-es": "spanish",
-    "ja-jp": "japanese",
-    "ko-kr": "korean",
-}
-
-LOCALE_FILENAME_PREFIXES = {
-    "en-gb": ("eng_",),
-    "de-de": ("deu_", "ger_"),
-    "fr-fr": ("fra_", "fre_"),
-    "it-it": ("ita_",),
-    "es-es": ("spa_", "esp_"),
-    "ja-jp": ("jpn_", "jap_"),
-    "ko-kr": ("kor_", "korean_"),
-}
-
 
 def _absolute_url(href: str) -> str:
     if href.startswith("http"):
@@ -67,232 +57,61 @@ def _is_team_rules_file(filename: str, link_text: str) -> bool:
     return not any(p in filename or p in link_text for p in _EXCLUDE_PATTERNS)
 
 
-def _current_locale() -> str:
-    return (os.environ.get("KT_WARCOM_LOCALE") or DEFAULT_LOCALE).strip().lower()
-
-
-def _matches_section(filename: str, section: str) -> bool:
-    lower = filename.lower()
-    if section == "Team Rules":
-        return "team_rules" in lower or "teamrules" in lower or "_online_rules" in lower
-    return True
-
-
-def _infer_team_slug_from_filename(filename: str) -> str:
-    stem = Path(filename).stem.lower().replace("_", "-")
-    stem = re.sub(r"^killl-", "kill-", stem)
-    stem = re.sub(r"^(?:kor|eng|deu|ger|fra|fre|ita|spa|esp|jpn|jap|korean)-", "", stem)
-    stem = re.sub(r"^\d{2}-\d{2}-", "", stem)
-    stem = re.sub(r"^kill-team-team-rules-", "", stem)
-    stem = re.sub(r"^killl-team-team-rules-", "", stem)
-    stem = re.sub(r"^kt-teamrules-", "", stem)
-    stem = re.sub(r"^kt-", "", stem)
-    stem = re.sub(r"^kill-team-", "", stem)
-    stem = re.sub(r"^killteam-", "", stem)
-    stem = re.sub(r"^team-rules-", "", stem)
-    stem = re.sub(r"-(?:[a-z0-9]{10})-(?:[a-z0-9]{10})$", "", stem)
-    stem = re.sub(r"-team-rules$", "", stem)
-    stem = re.sub(r"-teamrules$", "", stem)
-    stem = re.sub(r"-online-rules$", "", stem)
-    return stem.strip("-")
-
-
-def _detect_asset_locale(filename: str) -> str:
-    lower = filename.lower()
-    for locale, prefixes in LOCALE_FILENAME_PREFIXES.items():
-        if lower.startswith(prefixes):
-            return locale
-    return DEFAULT_LOCALE
-
-
-def _asset_priority(url: str, requested_locale: str) -> tuple[int, int, int, str]:
-    filename = Path(url).name.lower()
-    asset_locale = _detect_asset_locale(filename)
-    is_team_rules = "team_rules" in filename or "teamrules" in filename
-    is_online_rules = "_online_rules" in filename or "-online-rules" in filename
-    locale_score = 2 if asset_locale == requested_locale else 1 if asset_locale == DEFAULT_LOCALE else 0
-    completeness_score = 2 if is_team_rules else 1 if is_online_rules else 0
-    fallback_bonus = 1 if asset_locale == DEFAULT_LOCALE and is_team_rules else 0
-    return (completeness_score, locale_score, fallback_bonus, filename)
-
-
-def _select_best_team_assets(urls: list[str], requested_locale: str) -> list[str]:
-    grouped: dict[str, list[str]] = {}
-    for url in list(dict.fromkeys(urls)):
-        team_slug = _infer_team_slug_from_filename(Path(url).name)
-        if not team_slug:
-            continue
-        grouped.setdefault(team_slug, []).append(url)
-
-    selected: list[str] = []
-    for team_slug in sorted(grouped):
-        candidates = grouped[team_slug]
-        best = sorted(candidates, key=lambda candidate: _asset_priority(candidate, requested_locale), reverse=True)[0]
-        selected.append(best)
-    return selected
-
-
-def _is_online_rules_filename(filename: str) -> bool:
-    lower = filename.lower()
-    return "_online_rules" in lower or "-online-rules" in lower
-
-
-def _is_full_team_rules_filename(filename: str) -> bool:
-    lower = filename.lower()
-    return ("team_rules" in lower or "teamrules" in lower) and not _is_online_rules_filename(lower)
-
-
-def _archive_roots() -> list[Path]:
-    value = (os.environ.get("KT_WARCOM_ARCHIVE_ROOTS") or "").strip()
-    if not value:
-        return []
-    roots: list[Path] = []
-    for raw in value.split(os.pathsep):
-        raw = raw.strip()
-        if not raw:
-            continue
-        roots.append(Path(raw))
-    return roots
-
-
-def _pdf_page_count(pdf: Path) -> int:
-    try:
-        import fitz  # type: ignore
-
-        with fitz.open(pdf) as doc:
-            return len(doc)
-    except Exception:
-        return 0
-
-
-def _find_archived_full_pdf(team_slug: str) -> Path | None:
-    """Return the best archived English PDF when WarCom only exposes a locale stub."""
-    best_candidate: Path | None = None
-    best_score: tuple[int, int, int, str] | None = None
-
-    for archive_root in _archive_roots():
-        team_archive_dir = archive_root / team_slug / "warcom"
-        if not team_archive_dir.exists():
-            continue
-
-        for candidate in sorted(team_archive_dir.glob("*.pdf")):
-            if _detect_asset_locale(candidate.name) != DEFAULT_LOCALE:
-                continue
-            page_count = _pdf_page_count(candidate)
-            score = (
-                1 if page_count > 2 else 0,
-                1 if _is_full_team_rules_filename(candidate.name) else 0,
-                page_count,
-                str(candidate),
-            )
-            if best_score is None or score > best_score:
-                best_candidate = candidate
-                best_score = score
-
-    if best_candidate is not None and best_score is not None and best_score[0] == 1:
-        return best_candidate
-    return None
-
-
-def restore_archived_full_pdf(output_dir: Path, source_url: str) -> Path | None:
-    """Copy an archived English full-rules PDF into staging for an incomplete locale stub."""
-    filename = Path(source_url).name
-    if not _is_online_rules_filename(filename):
-        return None
-
-    team_slug = _infer_team_slug_from_filename(filename)
-    if not team_slug:
-        return None
-
-    archived_full_pdf = _find_archived_full_pdf(team_slug)
-    if archived_full_pdf is None:
-        return None
-
-    restored_path = output_dir / archived_full_pdf.name
-    output_dir.mkdir(parents=True, exist_ok=True)
-    if restored_path.exists():
-        restored_path.unlink()
-    shutil.copy2(archived_full_pdf, restored_path)
-    logger.info(
-        "  restored archived full team rules for %s: %s",
-        team_slug,
-        archived_full_pdf.name,
-    )
-    return restored_path
-
-
-def should_skip_incomplete_online_rules_pdf(pdf_path: Path, source_url: str) -> bool:
-    """Skip locale-only online-rules stubs when no archived full-rules fallback exists."""
-    filename = Path(source_url).name
-    if not _is_online_rules_filename(filename):
-        return False
-
-    team_slug = _infer_team_slug_from_filename(filename)
-    if not team_slug:
-        return False
-    if _find_archived_full_pdf(team_slug) is not None:
-        return False
-
-    return _pdf_page_count(pdf_path) <= 2
-
-
-def _build_asset_url(file_path: str) -> str:
-    if file_path.startswith("http://") or file_path.startswith("https://"):
-        return file_path
-    return f"https://assets.warhammer-community.com/{file_path.lstrip('/')}"
-
-
-def extract_pdf_urls_from_api(section: str = "Team Rules", locale: str | None = None) -> list[str]:
-    requested_locale = (locale or _current_locale() or DEFAULT_LOCALE).lower()
-    locales_to_collect = [requested_locale]
-    if requested_locale != DEFAULT_LOCALE:
-        locales_to_collect.append(DEFAULT_LOCALE)
-
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Accept": "application/json",
-        "Content-Type": "application/json",
+def _api_payload(language: str) -> dict:
+    return {
+        "index": DOWNLOADS_INDEX,
+        "searchTerm": "",
+        "gameSystem": "kill-team",
+        "language": language,
     }
 
-    team_pdfs: list[str] = []
-    for source_locale in locales_to_collect:
-        language_label = DOWNLOAD_LANGUAGE_QUERY_LABELS.get(source_locale)
-        page = 0
-        nb_pages = None
 
-        while nb_pages is None or page < nb_pages:
-            payload = {
-                "index": SEARCH_API_INDEX,
-                "searchTerm": "kill team",
-                "page": page,
-                "locale": DEFAULT_LOCALE,
-            }
-            response = requests.post(SEARCH_API_URL, json=payload, headers=headers, timeout=60)
-            response.raise_for_status()
-            data = response.json()
-            nb_pages = data.get("nbPages", 0)
-
-            for hit in data.get("hits", []):
-                hit_language = str(hit.get("download_languages") or "").lower()
-                if language_label and hit_language != language_label:
-                    continue
-                if "kill-team" not in str(hit.get("game_systems") or ""):
-                    continue
-
-                filename = str(hit.get("id", {}).get("file") or "")
-                if not filename or not _matches_section(filename, section):
-                    continue
-                if not _is_team_rules_file(filename, ""):
-                    continue
-
-                team_pdfs.append(_build_asset_url(filename))
-            page += 1
-
-    team_pdfs = _select_best_team_assets(team_pdfs, requested_locale)
-    logger.info(
-        f"Search API returned {len(team_pdfs)} best-match PDFs in section '{section}' for locale '{requested_locale}'"
+def _fetch_download_entries(language: str) -> list[dict]:
+    headers = {
+        "Referer": DOWNLOADS_URL,
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    }
+    response = requests.post(
+        DOWNLOADS_API_URL,
+        json=_api_payload(language),
+        headers=headers,
+        timeout=60,
     )
-    return team_pdfs
+    response.raise_for_status()
+    payload = response.json()
+    hits = payload.get("hits")
+    if not isinstance(hits, list):
+        raise ValueError(f"unexpected downloads API response: {json.dumps(payload)[:500]}")
+    return hits
+
+
+def _entry_is_team_rules(entry: dict) -> bool:
+    info = entry.get("id") or {}
+    categories = entry.get("download_categories") or []
+    slug = str(info.get("slug") or "").strip().lower()
+    title = str(entry.get("title") or info.get("title") or "").strip()
+    filename = str(info.get("file") or "").strip()
+    return (
+        "team-rules" in categories
+        and slug not in EXCLUDED_TEAM_SLUGS
+        and _is_team_rules_file(filename, title)
+    )
+
+
+def _urls_from_api_entries(entries: list[dict], section: str) -> list[str]:
+    selected: list[str] = []
+    recently_added = section.strip().lower() == "recently added"
+    for entry in entries:
+        info = entry.get("id") or {}
+        if not _entry_is_team_rules(entry):
+            continue
+        if recently_added and not info.get("new"):
+            continue
+        filename = str(info.get("file") or "").strip()
+        if not filename:
+            continue
+        selected.append(_absolute_url(filename))
+    return list(dict.fromkeys(selected))
 
 
 async def _expand_section(page, heading: str) -> object | None:
@@ -343,7 +162,7 @@ async def _expand_section(page, heading: str) -> object | None:
 
 
 async def extract_pdf_urls_from_page(
-    url: str = DOWNLOADS_URL, section: str = "Team Rules", locale: str | None = None
+    url: str = DOWNLOADS_URL, section: str = "Team Rules"
 ) -> list[str]:
     """Return team-rules PDF URLs from a named section of the Kill Team downloads page.
 
@@ -352,7 +171,24 @@ async def extract_pdf_urls_from_page(
     balance dataslate / release). Non-team files (update logs, mission packs,
     companions, …) are filtered out of either section by ``_is_team_rules_file``.
     """
-    requested_locale = (locale or _current_locale() or DEFAULT_LOCALE).lower()
+    try:
+        team_pdfs = _urls_from_api_entries(_fetch_download_entries(DOWNLOADS_LANGUAGE), section)
+        if team_pdfs:
+            logger.info(
+                "Fetched %s '%s' PDFs via downloads API (language=%s)",
+                len(team_pdfs),
+                section,
+                DOWNLOADS_LANGUAGE,
+            )
+            return team_pdfs
+        logger.warning(
+            "Downloads API returned no '%s' PDFs for language=%s; falling back to Playwright",
+            section,
+            DOWNLOADS_LANGUAGE,
+        )
+    except Exception as e:
+        logger.warning(f"Downloads API fetch failed ({DOWNLOADS_LANGUAGE}): {e}; falling back to Playwright")
+
     logger.info("Launching browser to fetch Kill Team downloads page...")
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -403,18 +239,9 @@ async def extract_pdf_urls_from_page(
         finally:
             await browser.close()
 
-    team_pdfs = _select_best_team_assets(list(dict.fromkeys(team_pdfs)), requested_locale)
-    logger.info(f"Found {len(team_pdfs)} PDFs in section '{section}' for locale '{requested_locale}'")
+    team_pdfs = list(dict.fromkeys(team_pdfs))  # de-dup, preserve order
+    logger.info(f"Found {len(team_pdfs)} PDFs in section '{section}'")
     return team_pdfs
-
-
-def extract_pdf_urls(url: str = DOWNLOADS_URL, section: str = "Team Rules", locale: str | None = None) -> list[str]:
-    requested_locale = (locale or _current_locale() or DEFAULT_LOCALE).lower()
-    try:
-        return extract_pdf_urls_from_api(section=section, locale=requested_locale)
-    except Exception as exc:
-        logger.warning(f"Search API scrape failed, falling back to page scrape: {exc}")
-        return asyncio.run(extract_pdf_urls_from_page(url=url, section=section, locale=requested_locale))
 
 
 def download_pdf(url: str, output_path: Path, chunk_size: int = 8192) -> bool:

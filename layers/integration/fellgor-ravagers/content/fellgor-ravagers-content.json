@@ -1,302 +1,375 @@
 {
   "team": "fellgor-ravagers",
-  "generated_at": "2026-08-29T21:53:37.780018+00:00",
+  "generated_at": "2026-08-26T15:17:55.561452+00:00",
   "datacards": [
     {
       "name": "FELLGOR IRONHORN",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 11,
       "base_size": 32,
       "weapons": [
         {
-          "name": "타락한 권총",
+          "name": "Corrupted pistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 파쇄"
+          "special_rules": "Range 8\", Rending"
         },
         {
-          "name": "플라스마 권총(일반)",
+          "name": "Plasma pistol (standard)",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 관통 1"
+          "special_rules": "Range 8\", Piercing 1"
         },
         {
-          "name": "플라스마 권총(과충전)",
+          "name": "Plasma pistol (supercharge)",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 과열, 살상 5+, 관통 1"
+          "special_rules": "Range 8\", Hot, Lethal 5+, Piercing 1"
         },
         {
-          "name": "곤봉",
+          "name": "Bludgeon",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         },
         {
-          "name": "타락한 체인소드",
+          "name": "Corrupted chainsword",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "파쇄"
+          "special_rules": "Rending"
         }
       ],
       "passive_abilities": [
         {
-          "name": "공격 명령",
-          "description": "전략 포석(이 요원이 플레이어의 광분 토큰을 하나도 보유하고 있지 않을 시 사용 가능). 이 요원으로부터 6\" 내에 있으며 시야에 들어온 아군 펠고어 약탈자 요원을 지정합니다. 지정된 아군 요원과 그 아군 요원으로부터 2\" 내에 있으며 시야에 들어온 모든 아군 펠고어 약탈자 요원은 즉시 무상으로 질주 행동을 플레이어가 원하는 순서대"
+          "name": "Call the Attack",
+          "description": "STRATEGIC GAMBIT if this operative doesn’t have one of your Frenzy tokens. Select one friendly FELLGOR RAVAGER operative visible to and within 6\" of this operative. That selected operative, and each other friendly FELLGOR RAVAGER operative visible to and within 2\" of it, can immediately perform a free Dash action in an order of your choice."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "LEADER",
+        "IRONHORN"
+      ]
     },
     {
       "name": "FELLGOR DEATHKNELL",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "4+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "곤봉",
+          "name": "Bludgeon",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         }
       ],
       "passive_abilities": [
         {
-          "name": "우상기수",
-          "description": "마커의 장악 여부를 판정할 때마다, 이 요원은 광분 팩"
+          "name": "Icon Bearer",
+          "description": "This operative isn’t affected by the marker control bullet point of the Frenzy faction rule. Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn’t a change to its APL stat, so any changes are cumulative with this."
         },
         {
-          "name": "전쟁 징",
-          "description": "이 요원으로부터 3\" 내에 있는 아군 펠고어 약탈자 요원 이 공격 주사위로 인해 결정적 피해를 입을 때마다, 이 요원이 광 분 토큰을 보유하고 있지 않다면, 그 공격 주사위는 결정적 피해 징 울림"
+          "name": "War Gong",
+          "description": "Whenever an attack dice would inflict Critical Dmg on a friendly FELLGOR RAVAGER operative within 3\" of this operative, if this operative doesn’t have one of your Frenzy tokens, you can choose for that attack dice to inflict Normal Dmg instead."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "GONG KNELL (1AP)",
+          "description": "Until the start of this operative’s next activation or until this operative is incapacitated (whichever comes first), whenever an operative is shooting this operative, improve this operative’s Save stat by 1."
+        }
+      ],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "DEATHKNELL"
+      ]
     },
     {
       "name": "FELLGOR FLUXBRAY",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "도살칼 세 자루",
+          "name": "Triple cleavers",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "집요"
+          "special_rules": "Ceaseless"
         }
       ],
       "passive_abilities": [
         {
-          "name": "칼춤",
-          "description": "이 요원이 광분 토큰을 보유하지 않고 근접전 또는 반격 시, 성공한 주사 위 하나를 통상적인 처리 순서에 앞서 처리할 수 있습니다. 이 경우 그 주사위 는 반드시 막기에 사용해야 합니다. 도살칼 난격"
+          "name": "Blade Whirl",
+          "description": "Whenever this operative is fighting or retaliating, if it doesn’t have one of your Frenzy tokens, you can resolve one of your successes before the normal order. If you do, that success must be used to block."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "CLEAVER FLURRY (2AP)",
+          "description": "Perform a free Reposition action with this operative. During that action, it can move an additional 2\", and can move within control range of enemy operatives (it cannot begin or end the move there). Inflict D3+1 damage on each enemy operative it moved within control range of (roll separately for each after it’s moved, in the order it moved within control range of them). This operative cannot perform this action while it has a Conceal order."
+        }
+      ],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "FLUXBRAY"
+      ]
     },
     {
       "name": "FELLGOR GNARLSCAR",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "바이오닉 주먹",
+          "name": "Bionic fist",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         }
       ],
       "passive_abilities": [
         {
-          "name": "영리함",
-          "description": "이 요원의 운용이 종료 시, 명령을 전환할 수 있습니다. 자비없는 공격"
+          "name": "Sagacious",
+          "description": "At the end of this operative’s activation, you can change its order."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "UNCOMPROMISING ATTACK (1AP)",
+          "description": "Perform a free Fight action with this operative, then perform a free Shoot action with this operative (or vice versa). This operative can perform that Shoot action while within control range of an enemy operative, but if it does, it can and must target an enemy operative within its control range (even if other friendly operatives are within that enemy operative’s control range). You can only select an autopistol for that Shoot action."
+        }
+      ],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "GNARLSCAR"
+      ]
     },
     {
       "name": "FELLGOR GOREHORN",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "참골칼",
+          "name": "Skullcleaver",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "살상 5+,  참수*"
+          "special_rules": "Lethal 5+,  Headtaker*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "용사",
-          "description": "이 요원은 운용 도중 근접전 행동을 두 번 수행할 수 있습니다."
+          "name": "Champion",
+          "description": "This operative can perform two Fight actions during its activation."
         },
         {
-          "name": "*참수",
-          "description": "이 요원이 이 무기로 적 요원을 무력화하면, D3 하나를 굴립니다.\n• 굴림 값에 상응하는 만큼 잃은 체력을 회복합니다(광분 토큰을 보유했을 경우 무효).\n• 전투가 종료될 때까지, 이 요원이 장비한 참골칼의 결정적 피해 수치에 굴림 값을 더합니다(최대 8까지)."
+          "name": "*Headtaker",
+          "description": "Whenever this operative incapacitates an operative with this weapon, roll one D3:\n• This operative regains a number of lost wounds equal to the result (unless it has a Frenzy token).\n• Until the end of the battle, add the result to the Critical Dmg stat of this operative’s skullcleaver (to a maximum of 8)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "GOREHORN"
+      ]
     },
     {
       "name": "FELLGOR HERD-GOAD",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "파열가시 채찍(원거리)",
+          "name": "Crackthorn whip (ranged)",
           "attacks": "4",
           "hit": "2+",
           "damage": "2/3",
-          "special_rules": "사거리 3\", 살상 4+, 혼미"
+          "special_rules": "Range 3\", Lethal 4+, Stun"
         },
         {
-          "name": "파열가시 채찍(근접)",
+          "name": "Crackthorn whip (melee)",
           "attacks": "4",
           "hit": "3+",
           "damage": "2/3",
-          "special_rules": "살상 4+, 충격"
+          "special_rules": "Lethal 4+, Shock"
         }
       ],
       "passive_abilities": [
         {
-          "name": "채찍 휘두르기",
-          "description": "적 요원이 이 요원으로부터 3\" 내에 있고, 시야에 들어왔으며, 이 요원이 적 요원의 장악 범위 내에 있지 않을 경우 다음의 사항을 적용합니다.\n• 그 적 요원이 장비한 근접 무기의 공격 수치를 -1만큼 변경합니다(최소 1까지).\n• 상대의 요원이 후퇴 행동을 수행할 때 소모하는 AP가 분노 유발"
+          "name": "Whip Control",
+          "description": "Whenever an enemy operative is visible to and within 3\" of this operative, if this operative isn’t within control range of any other enemy operatives:\n• Subtract 1 from the Atk stat of that enemy operative’s melee weapons (to a minimum of 1).\n• Your opponent must spend 1 additional AP for that enemy operative to perform the Fall Back action."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "INCITE FURY (1AP)",
+          "description": "Select one other friendly FELLGOR RAVAGER operative (excluding SHAMAN or IRONHORN) visible to and within 3\" of this operative. Until the end of that operative’s next activation, add 1 to its APL stat."
+        }
+      ],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "HERD-GOAD"
+      ]
     },
     {
       "name": "FELLGOR MANGLER",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "포악한 손톱",
+          "name": "Vicious claws",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/6",
-          "special_rules": "집요, 촉각 사냥꾼*"
+          "special_rules": "Ceaseless, Tactual Hunter*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*촉각 사냥꾼",
-          "description": "이 요원이 이 무기로 소진된 적 요원에게 근접전을 수행할 때, 해당 절차 중 처음으로 결정적 성공 으로 적을 타격하면, 다른 성공으로 그 즉시 한 번 더 타 격할 수 있습니다(상대방이 타격하기 전에)."
+          "name": "*Tactual Hunter",
+          "description": "Whenever this operative is fighting with this weapon against an expended operative, the first time you strike with a critical success during that sequence, you can immediately resolve another of your successes as a strike (before your opponent)."
         },
         {
-          "name": "광전사",
-          "description": "이 요원은 사격 행동을 수행할 수 없습니다(엄호 는 할 수 있으나, 방해하는 동안 무상 사격 행동은 수행할 수 없음). 이 요원은 마커 회수와 임무 행동을 수행할 때"
+          "name": "Berserker",
+          "description": "This operative cannot perform the Shoot action (other than Guard, but cannot then perform a free Shoot action during the interruption). You must spend 1 additional AP for this operative to perform the Pick Up Marker and mission actions (excluding Operate Hatch)."
         },
         {
-          "name": "야만성",
-          "description": "이 요원이 각 운용 시기마다 처음으로 근접전 행동을 수행하고 무력화되지 않는다면, 직후 무상으로 근접전 행동을 수행할 수 있습니다(같은 적 요원을 상대 로 근접전을 수행하지 않아도 됨). 이 규칙은 다른 행동 제약보다 우선하며, 플레이어는 두 근접전 행동 사이에 무자비한 광란 화력전 플로이를 사용할 수 없습니다."
+          "name": "Savage",
+          "description": "The first time this operative performs the Fight action during each of its activations, if it isn’t incapacitated, it can immediately perform a free Fight action afterwards (you don't have to select the same enemy operative to fight against). This takes precedence over action restrictions, and you cannot use the Ruthless Rampage firefight ploy between those two Fight actions."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "MANGLER"
+      ]
     },
     {
       "name": "FELLGOR SHAMAN",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "기술저주",
+          "name": "Tech-curse",
           "attacks": "4",
           "hit": "3+",
           "damage": "1/3",
-          "special_rules": "사이킥, 파쇄,  포화, 저밀도 색적"
+          "special_rules": "PSYCHIC, Rending,  Saturate, Seek Light"
         },
         {
-          "name": "야수지팡이",
+          "name": "Braystave",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "충격"
+          "special_rules": "Shock"
         }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "APOPLECTIC REJUVENATION (1AP)",
+          "description": "Select one friendly FELLGOR RAVAGER operative that doesn’t have one of your Frenzy tokens and is visible to and within 6\" of this operative. That friendly operative regains up to 2D3 lost wounds; if that operative has incapacitated an enemy operative while fighting or retaliating during the battle, it regains up to 6 lost wounds instead. This operative cannot perform this action while within control range of an enemy operative."
+        },
+        {
+          "name": "MANTLE OF DARKNESS (1AP)",
+          "description": "PSYCHIC. Until the start of this operative’s next activation or until it’s incapacitated (whichever comes first), whenever a friendly FELLGOR RAVAGER operative is visible to and within 3\" of this operative, has a Conceal order and is in cover, that friendly operative cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\". This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "PSYKER",
+        "SHAMAN"
       ]
     },
     {
       "name": "FELLGOR TOXHORN",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "도살칼",
+          "name": "Cleaver",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -304,64 +377,79 @@
       ],
       "passive_abilities": [
         {
-          "name": "맹독의 은총",
-          "description": "이 요원의 APL 수치 변경을 무시할 수 있 으며, 이 요원은 적 요원의 충격 무기 규칙의 효과를 받지 않습니다. 공격 주사위로 인해 이 요원이 3 이상의 일반 피해를 입을 때마다 D6 하나를 굴립니다. 값이 5+라면 입은 피해를 -1만큼 변경합니다."
+          "name": "Toxic Blessings",
+          "description": "You can ignore any changes to this operative’s APL stat and it’s not affected by enemy operatives’ Shock weapon rule. Whenever an attack dice inflicts Normal Dmg of 3 or more on this operative, roll one D6: on a 5+, subtract 1 from that inflicted damage."
         },
         {
-          "name": "독 폭탄",
-          "description": "이 요원은 섬광 수류탄을 사용할 수 있습니다 (공용 장비 참고). 사용 시, 이 장비의 사용 한도가 차감되 지 않습니다(즉, 다른 요원이 수류탄을 사용 시 차감과 무 관). 이 요원이 수행한 섬광 수류탄 행동으로 인해 적 요원 이 혼미 체크를 수행할 때마다, 값이 3+라면, 그 적 요원 에게 굴림 값과 상응하는 피해를 입힙니다(올림 값 적용)."
+          "name": "Pox Bomb",
+          "description": "This operative can use stun grenades (see universal equipment). Doing so doesn’t count towards any limited uses you have (i.e. if you also select that grenade from equipment for other operatives). Whenever an enemy operative takes a stun test as a result of this operative performing the Stun Grenade action, if the result is a 3+, also inflict damage on that enemy operative equal to the dice result halved (rounding up)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "TOXHORN"
+      ]
     },
     {
       "name": "FELLGOR VANDAL",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "인간분쇄기",
+          "name": "Mancrusher",
           "attacks": "4",
           "hit": "4+",
           "damage": "5/5",
-          "special_rules": "무자비, 악독한 일격*"
+          "special_rules": "Brutal, Vicious Blows*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*악독한 일격",
-          "description": "이 요원이 근접전 수행 시, 이 무기에 집요 무기 규칙이 부여됩니다. 휩쓰는 일격"
+          "name": "*Vicious Blows",
+          "description": "Whenever this operative is fighting, this weapon has the Ceaseless weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "SWEEPING BLOW (1AP)",
+          "description": "Inflict D3+1 damage on each other operative visible to and within 2\" of this operative in an order of your choice (roll separately for each). This operative cannot perform this action while it has a Conceal order."
+        }
+      ],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "VANDAL"
+      ]
     },
     {
       "name": "FELLGOR WARRIOR",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 32,
       "weapons": [
         {
-          "name": "기관권총",
+          "name": "Autopistol",
           "attacks": "4",
           "hit": "4+",
           "damage": "2/3",
-          "special_rules": "사거리 8\""
+          "special_rules": "Range 8\""
         },
         {
-          "name": "곤봉",
+          "name": "Bludgeon",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "무자비"
+          "special_rules": "Brutal"
         },
         {
-          "name": "도살칼",
+          "name": "Cleaver",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -369,30 +457,111 @@
       ],
       "passive_abilities": [
         {
-          "name": "전사의 광분",
-          "description": "이 요원이 광분 토큰을 보유했을 때, 부상 상태가 되지 않습니다. 이 규칙은 통상적인 광분 규칙보다 우선합니다."
+          "name": "Warrior Frenzy",
+          "description": "Whenever this operative has one of your Frenzy tokens, it cannot be injured. This takes precedence over the normal Frenzy rules."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FELLGOR RAVAGER",
+        "CHAOS",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "0cp",
-      "text": "팩션 장비\n펠고어 약탈자\n황동 장식\n황동판을 덧댄 굽쇠와 뿔 덮개, 혹은 용접된 스파이크는 펠고어 약\n탈자의 폭력적 갈망을 한층 더 자극하며, 그 갈망을 퍼부어 쏟아낼 \n무기 역할까지 해준다.\n전투당\u0002한\u0002번,\u0002동물적\u0002분노와\u0002야생의\u0002격노\u0002화력전\u0002플로이를\u0002\n0CP로\u0002사용할\u0002수\u0002있습니다."
+      "name": "brass-adornments",
+      "text": "FELLGOR RAVAGER\nFACTION EQUIPMENT\nBRASS ADORNMENTS\nBrass-plated hooves, horn caps or welded spikes incite \nwithin the Fellgor Ravagers an even greater lust for \nviolence, and provide them with additional weapons \nwith which to mete it out.\nOnce per battle, you can use the Animalistic Fury \nand Wild Rage firefight ploys for 0CP each."
+    },
+    {
+      "name": "gore-marks",
+      "text": "FELLGOR RAVAGER\nFACTION EQUIPMENT\nGORE MARKS\nInflicted upon a Fellgor Ravager by their Shamans, these \nwounds continue to bleed as the battle unfolds, the \nstench of fresh blood empowering the Beastmen.\nOnce per turning point, when a friendly FELLGOR \nRAVAGER operative is fighting or retaliating, \nyou can use this rule. If you do, inflict 1 damage \non that friendly operative and re-roll one of \nyour attack dice. If the result is a fail, inflict 1 \nadditional damage on that friendly operative."
+    },
+    {
+      "name": "chaos-sigil",
+      "text": "FELLGOR RAVAGER\nFACTION EQUIPMENT\nCHAOS SIGIL\nImbued with warp energies and blessed by a Shaman, \nthis icon offers protection to a dedicated worshipper of \nthe Dark Gods.\nOnce per turning point, when an operative is \nshooting a friendly FELLGOR RAVAGER \noperative, at the start of the Roll Defence Dice \nstep, you can use this rule. If you do, worsen the x \nof the Piercing weapon rule by 1 (if any) until the \nend of that sequence. Note that Piercing 1 would \ntherefore be ignored."
+    },
+    {
+      "name": "war-paint",
+      "text": "FELLGOR RAVAGER\nFACTION EQUIPMENT\nWAR PAINT\nApplied in ritual fashion prior to battle, war paint \nemboldens the Fellgor Ravagers to shrug off their \nwounds and hurl themselves into the fight.\nYou can ignore any changes to the Move stat of \nfriendly FELLGOR RAVAGER operatives from \nbeing injured."
     }
   ],
   "faction_rules": [
     {
-      "name": "FRENZY",
-      "text": "팩션 규칙\n펠고어 약탈자\n광분\n펠고어 약탈자는 고통을 통해 동물적 광분 상태에 빠져들어, 부상을 \n무시하고 공격성을 더욱 증폭한다.\n전투 중 광분 토큰을 보유하지 않은 아군 펠고어 약탈자 요원\n이 무력화되면, 광분 토큰을 하나 획득하며 무력화 상태가 되\n지 않습니다. 모든 공격 주사위는 버립니다.(이 요원이 근접\n전이나 반격 시, 플레이어의 주사위도 버림). 이 요원이 은폐 \n명령을 받은 상태라면, 교전 명령으로 전환합니다.\n광분 토큰을 보유한 아군 펠고어 약탈자 요원은 다음의 사항\n을 따르거나 만족해야 합니다.\n• 오직 다음 면에 명시된 절차대로만 무력화될 수 있습니다.\n• 은폐 명령을 받을 수 없습니다.\n• 부상 상태입니다.\n• 마커 회수나 고유(휩쓰는 일격 제외, 난동꾼 참고) 및 임무 \n행동을 수행할 수 없습니다(해치 조작 제외).\n• 마커와 킬 존 구역의 장악 여부를 판정할 때마다, 이 요원\n의 APL의 수치를 1로 간주합니다. 이는 다른 능력치 변화\n에 우선합니다.\n다음 면에 계속\n\n---\n\n광분 토큰을 보유한 아군 펠고어 약탈자 요원은 다음 요건 \n중 하나가 충족되면 무력화됩니다.\n• 운용 상태나 대응 상태 종료 시.\n• 그 아군 요원을 대상으로 근접전 또는 반격을 수행하는 \n적 요원이 결정적 성공으로 타격할 경우.\n• 그 아군 요원을 대상으로 근접전 또는 반격을 수행하는 적 \n요원이 일반 성공으로 두 번 타격할 경우. 두 번의 근접전 \n행동에 나누어 공격해도 유효하다는 점에 유의하십시오.\n• 적 요원이 그 아군 요원을 사격해 결정적 피해를 입힌 경우.\n• 적 요원이 사격 수행 중 공격 주사위 두 개 이상으로부터 \n일반 피해를 입은 경우.\n• 전투가 종료될 경우(전투 종료 시 처리하는 승리 조건을 \n처리하기 전에 처리해야 함).\n상대 요원의 무력화를 조건으로 하는 팩션 규칙(예: 집정관의 \n손 고통에서 뽑아낸 힘, 카오스 사교도 변이 등)을 적용하거\n나 VP 획득 여부를 집계할 때(예: 제거 작전), 광분 토큰을 \n획득한 펠고어 약탈자 요원은 무력화된 것으로 간주합니다 \n(대신, 실제로 무력화 상태가 될 때는 적용 및 집계하지 않음)."
+      "name": "frenzy",
+      "text": "FELLGOR RAVAGER\nFACTION RULE\nFRENZY\nFellgor Ravagers channel their pain into an animalistic \nfrenzy, dismissing wounds and bursting with aggression.\nWhenever a friendly FELLGOR RAVAGER \noperative that doesn’t have one of your Frenzy tokens \nwould be incapacitated during the battle, it’s not \nincapacitated and it gains one of your Frenzy tokens. \nAll remaining attack dice are discarded (including \nyours if this operative is fighting or retaliating). If it has \na Conceal order, change it to Engage.\nWhenever a friendly FELLGOR RAVAGER \noperative has one of your Frenzy tokens:\n• It’s only incapacitated as detailed overleaf.\n• It cannot have a Conceal order.\n• It’s injured.\n• It cannot perform the Pick Up Marker, unique \n(excluding Sweeping Blow, see VANDAL) or \nmission actions (excluding Operate Hatch).\n• For the purpose of determining control of \nmarkers and areas of the killzone, treat its \nAPL stat as 1. This takes precedence over any \nstat changes.\nCONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "THE ARCHON Power From Pain, CHAOS CULT",
+          "text": "Mutation, etc.)."
+        }
+      ]
+    }
+  ],
+  "firefight_ploys": [
+    {
+      "name": "ruthless-rampage",
+      "text": "FELLGOR RAVAGER\nFIREFIGHT PLOY\nRUTHLESS RAMPAGE\nWith each kill they make, so are the Fellgor Ravagers \ndriven to new heights of fury with which to chase down \ntheir foes.\nUse this firefight ploy after a friendly FELLGOR \nRAVAGER operative performs the Fight \naction, if it's no longer within control range of \nenemy operatives. That friendly operative can \nimmediately perform a free Charge action (even \nif it’s already performed the Charge action during \nthat activation), but cannot move more than 3\" \nduring that action."
+    },
+    {
+      "name": "wild-rage",
+      "text": "FELLGOR RAVAGER\nFIREFIGHT PLOY\nWILD RAGE\nWhen Fellgor Ravagers find themselves overcome by \nbestial rage, they are able to move with terrifying speed.\nUse this firefight ploy when a friendly FELLGOR \nRAVAGER operative is activated. Until the \nend of that operative’s activation, add 1\" to its \nMove stat."
+    },
+    {
+      "name": "animalistic-fury",
+      "text": "FELLGOR RAVAGER\nFIREFIGHT PLOY\nANIMALISTIC FURY\nWhen whipped into a frenzy, Fellgor Ravagers strike with \nterrifying strength and brutality.\nUse this firefight ploy when a friendly FELLGOR \nRAVAGER operative is fighting or retaliating \nand you strike with a critical success. Inflict 1 \nadditional damage with that strike."
+    },
+    {
+      "name": "bloodsense",
+      "text": "FELLGOR RAVAGER\nFIREFIGHT PLOY\nBLOODSENSE\nAs the blood flows, a contagious battle-frenzy \novercomes the Fellgor Ravagers.\nUse this firefight ploy during a friendly FELLGOR \nRAVAGER operative’s activation, when it \nincapacitates an enemy operative within its \ncontrol range. Select one other ready friendly \nFELLGOR RAVAGER operative that’s visible \nto and within 3\" of the incapacitated enemy \noperative. When that first friendly operative is \nexpended, you can activate that other friendly \noperative before your opponent activates. When \nthat other operative is expended, your opponent \nthen activates as normal."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION FELLGOR RAVAGERS",
-      "text": "펠고어 약탈자 \n킬 팀\n아키타입: 정찰, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002펠고어 약탈자\u0002무쇠뿔\u0002요원,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002\n장비합니다.\n• \u0002타락한\u0002권총,\u0002타락한\u0002체인소드\n• \u0002플라스마\u0002권총,\u0002곤봉\n \n↘\u00029\u0002펠고어 약탈자\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성합니다.\n• \u0002징꾼\n• \u0002왜곡포효자\n• \u0002상흔자\n• \u0002혈각자\n• \u0002무리몰이꾼\n• \u0002박살꾼\n• \u0002주술사\n• \u0002맹독뿔\n• \u0002난동꾼\n• \u0002전사,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002기관권총,\u0002곤봉\n \n○\n\u0002기관권총,\u0002도살칼\n전사\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번씩만\u0002\n편성할\u0002수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "FELLGOR RAVAGERS \nKILL TEAM\nARCHETYPES: RECON, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 FELLGOR RAVAGER IRONHORN operative \nwith one of the following options:\n• Corrupted pistol; corrupted chainsword\n• Plasma pistol; bludgeon \n \n↘ 9 FELLGOR RAVAGER operatives selected \nfrom the following list:\n• DEATHKNELL\n• FLUXBRAY\n• GNARLSCAR\n• GOREHORN\n• HERD-GOAD\n• MANGLER\n• SHAMAN\n• TOXHORN\n• VANDAL\n• WARRIOR with one of the following options:\n \n○ Autopistol; bludgeon\n \n○ Autopistol; cleaver \nOther than WARRIOR operatives, your kill team \ncan only include each operative on this list once.",
+      "selection": {
+        "FELLGOR IRONHORN": [
+          [
+            "Corrupted pistol; corrupted chainsword",
+            "Plasma pistol; bludgeon"
+          ]
+        ],
+        "FELLGOR DEATHKNELL": [],
+        "FELLGOR FLUXBRAY": [],
+        "FELLGOR GNARLSCAR": [],
+        "FELLGOR GOREHORN": [],
+        "FELLGOR HERD-GOAD": [],
+        "FELLGOR MANGLER": [],
+        "FELLGOR SHAMAN": [],
+        "FELLGOR TOXHORN": [],
+        "FELLGOR VANDAL": [],
+        "FELLGOR WARRIOR": [
+          [
+            "Autopistol; bludgeon",
+            "Autopistol; cleaver"
+          ]
+        ]
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "violent-temperament",
+      "text": "FELLGOR RAVAGER\nSTRATEGY PLOY\nVIOLENT TEMPERAMENT\nFellgor Beastmen are driven by primal savagery, striking \nat their foes with frenzied blow after frenzied blow.\nWhenever a friendly FELLGOR RAVAGER \noperative is fighting or retaliating, after rolling \nyour attack dice, you can use this rule. If you \ndo, you must re-roll all of your attack dice (you \ncannot only re-roll some)."
+    },
+    {
+      "name": "ambush",
+      "text": "FELLGOR RAVAGER\nSTRATEGY PLOY\nAMBUSH\nFellgor Ravagers utilise cover and darkness to strike \nfrom the shadows and butcher the enemy.\nWhenever a friendly FELLGOR RAVAGER \noperative is activated, if its order is changed \nfrom Conceal to Engage, it’s ambushing for \nthat activation. Whenever a friendly FELLGOR \nRAVAGER operative that’s ambushing is fighting, \nyou can retain one of your normal successes \nas a critical success instead. Note that an \noperative that has one of your Frenzy tokens \ncannot ambush."
+    },
+    {
+      "name": "pelting-firepower",
+      "text": "FELLGOR RAVAGER\nSTRATEGY PLOY\nPELTING FIREPOWER\nThough it may lack accuracy, the combined firepower \nof a group of Fellgor Ravagers is rendered lethal by \nits volume.\nWhenever a friendly FELLGOR RAVAGER \noperative is shooting an enemy operative that’s \nbeen shot by another friendly FELLGOR \nRAVAGER operative during this turning point, \nthat first friendly operative’s ranged weapons \nhave the Ceaseless weapon rule; if the enemy \noperative has been shot by more than one other \nfriendly FELLGOR RAVAGER operative during \nthis turning point, that first friendly operative’s \nranged weapons have the Relentless weapon \nrule instead."
+    },
+    {
+      "name": "reckless-determination",
+      "text": "FELLGOR RAVAGER\nSTRATEGY PLOY\nRECKLESS DETERMINATION\nSuch is their determination to slaughter the enemy \nthat the Fellgor Ravagers will shrug off volleys of \nincoming fire.\nWhenever an enemy operative is shooting \nan expended friendly FELLGOR RAVAGER \noperative, if you cannot retain any cover saves, \nyou can retain one of your defence dice as a \nnormal success without rolling it."
     }
   ]
 }

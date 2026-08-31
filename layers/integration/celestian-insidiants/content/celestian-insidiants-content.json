@@ -1,6 +1,6 @@
 {
   "team": "celestian-insidiants",
-  "generated_at": "2026-08-29T21:51:55.077189+00:00",
+  "generated_at": "2026-07-25T17:10:27.644452+00:00",
   "datacards": [
     {
       "name": "INSIDIANT SUPERIOR",
@@ -11,41 +11,53 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "인페르노 권총",
+          "name": "Inferno pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/2",
-          "special_rules": "사거리 3”, 궤멸 3, 관통 2"
+          "special_rules": "Range 3\", Devastating 3, Piercing 2"
         },
         {
-          "name": "성물 볼트 권총",
+          "name": "Relic bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8”, 살상 5+"
+          "special_rules": "Range 8\", Lethal 5+"
         },
         {
-          "name": "성물 선고자 말뚝 발사기",
+          "name": "Relic condemnor stakethrower",
           "attacks": "4",
           "hit": "3+",
           "damage": "2/2",
-          "special_rules": "궤멸 2, 살상 5+, 결정적 관통 1, 무성, 사이커 특화*"
+          "special_rules": "Devastating 2, Lethal 5+, Piercing Crits 1, Silent, Anti-PSYKER*"
         },
         {
-          "name": "부존 철퇴",
+          "name": "Null mace",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "충격, 사이커 특화*"
+          "special_rules": "Shock, Anti-PSYKER*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "성스러운 본보기",
-          "description": "전환점당 한 번, 이 요원이 고취자라면, 이 셀레스티안 항마단 요원이 화력전 플로이의 대상으로 지정된 경우에 이를 0CP로 사용할 수 있습니다(이 요원의 공격 혹은 방어 주사위를 굴렸다면 지휘 재굴림 화력전 플 로이도 사용 가능)."
+          "name": "Holy Example",
+          "description": "Once per turning point, if this operative is INSPIRING, you can use a firefight ploy for 0CP if this is the specified CELESTIAN INSIDIANT operative (including Command Re-roll if the attack or defence dice was rolled for this operative)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "SPIRITUAL MENTOR (1AP)",
+          "description": "SUPPORT. Select one friendly CELESTIAN INSIDIANT operative visible to and within 6\" of this operative. That operative becomes INSPIRING. This operative cannot perform this action while within control range of an enemy operative, or more than once per turning point."
+        }
+      ],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "LEADER",
+        "SUPERIOR"
+      ]
     },
     {
       "name": "INSIDIANT ABJUROR",
@@ -56,31 +68,37 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "축복받은 검과",
+          "name": "Blessed sword & praesidium",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "방패* 프라이시디움 프로텍티바(방어형)"
+          "special_rules": "Shield* protectiva (defensive)"
         },
         {
-          "name": "축복받은 검과",
+          "name": "Blessed sword & praesidium",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+ 프라이시디움 프로텍티바(공격형)"
+          "special_rules": "Lethal 5+ protectiva (offensive)"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*방패",
-          "description": "이 요원이 이 무기 프로필로 근접전 또는 반격을 수행할 때마다, 막기 주사위 하나를 처리되지 않은 성공 두 개 (한 개에서 변경)를 막는 데 할당할 수 있습니다."
+          "name": "*Shield",
+          "description": "Whenever this operative is fighting or retaliating with this weapon profile, each of your blocks can be allocated to block two unresolved successes (instead of one)."
         },
         {
-          "name": "성스러운 수호자",
-          "description": "전환점당 한 번, 이 요원의 시야에 들어 오며 2” 내에 있는 아군 셀레스티안 항마단 요원이 사격 행동의 유효 대상으로 지정되거나 근접전 행동 도중 근 접전 상대로 지정될 때, 이 규칙을 사용할 수 있습니다. 그렇게 할 경우, 이 요원이 대신 유효 대상 또는 근접전 상대(상황에 맞게)가 됩니다(일반적으로 유효하지 않더 라도 가능). 근접전 행동이라면, 행동이 지속되는 동안 이 요원이 근접전을 수행하는 요원의 장악 범위 내에 들 어간 것으로 간주합니다. 사격 행동이라면, 원래 대상이 었던 요원이 엄폐 또는 차폐 상태였어야만 이 요원에게 사격 행동에 사용된 원거리 무기에 폭발이나 격류 무기 규칙이 있으면 이 규칙의 효과가 발생하지 않습니다. 항마단 배격자 2 APL 체력 방호 이동 6\" 2+ 11"
+          "name": "Holy Defender",
+          "description": "Once per turning point, when a friendly CELESTIAN INSIDIANT operative visible to and within 2\" of this operative is selected as the valid target of a Shoot action or to fight against during the Fight action, you can use this rule. If you do, this operative becomes the valid target or is fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat this operative as being within the fighting operative’s control range for the duration of that action. If it’s the Shoot action, this operative is only in cover or obscured if the original target was. This rule has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "ABJUROR"
+      ]
     },
     {
       "name": "INSIDIANT CENSOR",
@@ -91,24 +109,35 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "계도의 권장",
+          "name": "Virge of admonition",
           "attacks": "4",
           "hit": "4+",
           "damage": "5/5",
-          "special_rules": "무자비, 충격, 사이커 특화*"
+          "special_rules": "Brutal, Shock, Anti-PSYKER*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "계도의 권장 봉송자",
-          "description": "마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 +1만큼 변경된 것으로 간주합니 다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
+          "name": "Virge of Admonition Icon Bearer",
+          "description": "Whenever determining control of a marker, treat this operative’s APL stat as 1 higher. Note this isn't a change to its APL stat, so any changes are cumulative with this."
         },
         {
-          "name": "부존장",
-          "description": "전투 시작 시, 이 요원은 부존 범위 1”을 보유합 니다. 적 요원이 이 요원의 부존 범위 내에 있을 때마다, 그 적 요원의 이동력 수치를 -2”만큼 변경하고 명중 요구 부존화 의식"
+          "name": "Null Field",
+          "description": "This operative starts the battle with a null range of 1\". Whenever an enemy operative is within null range of this operative, subtract 2\" from the Move stat of that enemy operative and worsen the Hit stat of its weapons by 1 (this isn’t cumulative with being injured)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "NULLIFYING RITUAL (1AP)",
+          "description": "Add 1 to this operative’s null range (to a maximum of 5\"). Nullification tokens in the marker/token guide are numbered, so use the numbered token equal to this operative’s null range. This operative cannot perform this action while within control range of an enemy operative, or more than once per turning point."
+        }
+      ],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "CENSOR"
+      ]
     },
     {
       "name": "INSIDIANT CREMATOR",
@@ -119,34 +148,40 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "한손 화염방사기(표준)",
+          "name": "Hand flamer (standard)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "사거리 6”, 포화, 격류 1”"
+          "special_rules": "Range 6”, Saturate, Torrent 1”"
         },
         {
-          "name": "한손 화염방사기(범람)",
+          "name": "Hand flamer (deluge)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "사거리 4”, 포화, 저밀도 색적, 격류 0”1"
+          "special_rules": "Range 4\", Saturate, Seek Light, Torrent 0\"1"
         },
         {
-          "name": "부존 철퇴",
+          "name": "Null mace",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "충격, 사이커 특화*"
+          "special_rules": "Shock, Anti-PSYKER*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "고취의 성화",
-          "description": "전환점당 한 번, 이 요원이 한손 화염방사기 의 어느 프로필로든 적 요원에 피해를 가했으나 무력화 하지 않았다면, 이 규칙을 사용할 수 있습니다. 그렇게 할 경우, 이 요원의 6” 내에 있는 아군 셀레스티안 항마단 요원을 하나 지정해 고취자가 되게 할 수 있습니다. 1격류 0”는 부가 대상을 지정할 수 없다는 의미이나, 협 소한 요새 규칙(킬 팀 코어북의 킬존: 볼쿠스 참고)처럼 격류 무기 규칙과 관련된 다른 모든 규칙은 그대로 적용 됩니다."
+          "name": "Inspirational Pyre",
+          "description": "Once per turning point, when this operative inflicts damage on an enemy operative with either profile of its hand flamer but doesn’t incapacitate it, you can use this rule. If you do, you can select one friendly CELESTIAN INSIDIANT operative within 6\" of this operative to become INSPIRING. 1 Note that Torrent 0\" means you cannot select secondary targets, but this weapon still has the Torrent weapon rule for all other rules purposes, e.g. the Condensed Stronghold rule (see Killzone: Volkus, Kill Team Core Book)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "CREMATOR"
+      ]
     },
     {
       "name": "INSIDIANT DENUNCIA",
@@ -157,27 +192,38 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "규탄의 목소리",
+          "name": "Voice of condemnation",
           "attacks": "5",
           "hit": "3+",
           "damage": "1/1",
-          "special_rules": "사거리 6”, 색적, 혼미"
+          "special_rules": "Range 6\", Seek, Stun"
         },
         {
-          "name": "선언의 지팡이",
+          "name": "Staff of declamation",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/3",
-          "special_rules": "충격"
+          "special_rules": "Shock"
         }
       ],
       "passive_abilities": [
         {
-          "name": "단죄하는 구마사",
-          "description": "이 요원이 고취자일 때마다, 의심하고 제거하라 전략 플로이의 대상으로 지정하는 적 요원 또는 마"
+          "name": "Accusing Exorcist",
+          "description": "Whenever this operative is INSPIRING, the Suspect & Eliminate strategy ploy costs you 0CP if the enemy operative or marker you select is visible to or within 6\" of this operative."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "SPEAK OF HER DEEDS (1AP)",
+          "description": "SUPPORT. Select an INSPIRING friendly CELESTIAN INSIDIANT operative visible to and within 6\" of this operative. That operative is no longer INSPIRING. Then, select another friendly CELESTIAN INSIDIANT operative visible to and within 6\" of this operative. Resolve one BENEDICTION from the Martyrdom faction rule on that operative (excluding Exigence). This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "DENUNCIA"
+      ]
     },
     {
       "name": "INSIDIANT MORTISANCTUS",
@@ -188,24 +234,30 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "축복받은 브로드소드",
+          "name": "Blessed broadsword",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/6",
-          "special_rules": "살상 5+, 무자비"
+          "special_rules": "Lethal 5+, Brutal"
         }
       ],
       "passive_abilities": [
         {
-          "name": "광신적인 최후통첩",
-          "description": "전략 포석(전투당 한 번 사용 가능). 이 요원의 8” 내에 있는 적 요원을 하나 지정하고 최후통첩을 선포합니다. 상대"
+          "name": "Zealous Ultimatum",
+          "description": "Once per battle STRATEGIC GAMBIT. Select one enemy operative within 8\" of this operative and issue an ultimatum to it. Your opponent must accept or decline that ultimatum (if it's a non-player operative, roll one D6: on a 4+, the ultimatum is accepted, otherwise it’s declined). If the ultimatum is accepted, whenever this operative is fighting against or retaliating against that enemy operative, add 1 to the Atk stat of this operative's blessed broadsword. The first time this operative incapacitates that enemy operative while fighting or retaliating during the battle, add 1 to the Atk stat of this operative’s blessed broadsword until the end of the battle. In either case, this is to a maximum of 5. If the ultimatum is declined, whenever that enemy operative is fighting against or retaliating against a friendly CELESTIAN INSIDIANT operative, subtract 1 from the Atk stat of that enemy operative’s weapons."
         },
         {
-          "name": "날 선 자세",
-          "description": "이 요원이 근접전이나 반격을 수행할 때, 성 공한 주사위 하나를 일반적인 처리 순서에 앞서 처리할 수 있습니다. 그 성공 주사위는 반드시 막기에 사용해야 합니다. 항마단 모르티상크투스 2 APL 체력 방호 이동 6\" 3+ 9"
+          "name": "Bladed Stance",
+          "description": "Whenever this operative is fighting or retaliating, you can resolve one of your successes before the normal order. If you do, that success must be used to block."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "MORTISANCTUS"
+      ]
     },
     {
       "name": "INSIDIANT RELIQUARIUS",
@@ -216,21 +268,21 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8”"
+          "special_rules": "Range 8\""
         },
         {
-          "name": "선고자 말뚝 발사기",
+          "name": "Condemnor stakethrower",
           "attacks": "4",
           "hit": "3+",
           "damage": "2/2",
-          "special_rules": "궤멸 1, 결정적 관통 1, 무성, 사이커 특화*"
+          "special_rules": "Devastating 1, Piercing Crits 1, Silent, Anti-PSYKER*"
         },
         {
-          "name": "개머리판",
+          "name": "Gun butt",
           "attacks": "3",
           "hit": "3+",
           "damage": "2/3"
@@ -238,15 +290,21 @@
       ],
       "passive_abilities": [
         {
-          "name": "눌리피카투스 모사본 봉송자",
-          "description": "마커의 장악 여부를 결정 할 때마다, 그 마커를 경쟁하는 적 요원 중 하나라도 이 요원의 3” 내에 있다면 그러한 적 요원의 APL 총합을 -1 만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변 경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
+          "name": "Simulacrum Nullificatus Icon Bearer",
+          "description": "Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of this operative. Note this isn’t a change to the APL stat, so any changes are cumulative with this."
         },
         {
-          "name": "헌신",
-          "description": "이 요원의 각 운용 종료 시, 이 요원이 고취자이며 목표물 마커 또는 플레이어의 임무 마커 하나를 장악하 고 있다면, 이 요원의 시야에 들어오며 6” 내에 있는 아군 셀레스티안 항마단 요원 하나가 고취자가 됩니다."
+          "name": "Devotion",
+          "description": "At the end of each of this operative’s activations, if it’s INSPIRING and it controls an objective marker or one of your mission markers, one friendly CELESTIAN INSIDIANT operative this operative is visible to and within 6\" of becomes INSPIRING."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "RELIQUARIUS"
+      ]
     },
     {
       "name": "INSIDIANT WARRIOR",
@@ -257,68 +315,139 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "볼트 권총",
+          "name": "Bolt pistol",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 8”"
+          "special_rules": "Range 8\""
         },
         {
-          "name": "선고자 말뚝 발사기",
+          "name": "Condemnor stakethrower",
           "attacks": "4",
           "hit": "3+",
           "damage": "2/2",
-          "special_rules": "궤멸 1, 결정적 관통 1, 무성, 사이커 특화*"
+          "special_rules": "Devastating 1, Piercing Crits 1, Silent, Anti-PSYKER*"
         },
         {
-          "name": "부존 철퇴",
+          "name": "Null mace",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "충격, 사이커 특화*"
+          "special_rules": "Shock, Anti-PSYKER*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "고취된 일격",
-          "description": "이 요원이 고취자일 때마다, 데이터카드에 명시된 무기의 결정적 피해 수치를 +1만큼 변경합니다."
+          "name": "Inspired Strikes",
+          "description": "Whenever this operative is INSPIRING, add 1 to the Critical Dmg stat of weapons on its datacard."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "CELESTIAN INSIDIANT",
+        "IMPERIUM",
+        "ADEPTA SORORITAS",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "d6-d6",
-      "text": "팩션 장비\n신성 성물\n사술사냥꾼은 자신을 해악에서 지켜주리라 여겨지는 다양한 신앙적 \n비전 물품을 지니고 다니며, 이를 통해 신성한 임무를 속행한다.\n공격\u0002주사위\u0002하나가\u0002아군\u0002셀레스티안 항마단\u0002요원에\u0002피해를\u0002\n가하려\u0002할\u0002때마다\u0002이\u0002규칙을\u0002사용할\u0002수\u0002있습니다.\u0002그렇게\u0002할\u0002\n경우,\u0002D6를\u0002하나\u0002굴립니다.\u0002그\u0002요원이\u0002고취자라면\u0002D6를\u0002두\u0002\n개\u0002굴립니다.\u0002값이\u0002하나라도\u00026이면,\u0002그\u0002공격\u0002주사위로\u0002입는\u0002\n피해를\u0002무시합니다.\u0002이\u0002방식으로는\u0002행동당\u0002하나의\u0002공격\u0002주\n사위만,\u0002전투를\u0002통틀어\u0002총\u0002두\u0002개의\u0002공격\u0002주사위만\u0002무시할\u0002수\u0002\n있습니다.\n셀레스티안 항마단"
+      "name": "psyk-out-grenades",
+      "text": "CELESTIAN INSIDIANT\nFACTION EQUIPMENT\nPSYK-OUT GRENADES\nPowerful psyk-out grenades are particularly potent \nagainst psykers.\nThis equipment allows you to select two utility \ngrenades from the utility grenades equipment \n(see universal equipment) and they must all be \nstun grenades. If you also select that equipment \nas normal, you cannot select any stun grenades \n(i.e. to give you more than two). Whenever an \noperative takes a stun test as a result of a friendly \nCELESTIAN INSIDIANT operative performing \nthe Stun Grenade action, if the result is a 3+, \nalso inflict damage on it equal to the dice result \nhalved (rounding up). If that first operative has \nthe PSYKER keyword, inflict damage on it equal \nto the dice result instead."
     },
     {
-      "name": "d6",
-      "text": "팩션 장비\n자동 고행구\n지극히 신심 깊은 셀레스티안 항마단원은 파워 아머 아래에 저 자신\n을 스스로 채찍질할 도구를 품고 다닌다. 중대한 순간이 닥치면, 이 \n장치는 신체에 극심한 고통을 가해 정신과 영혼의 집중력을 높이고 \n대상자를 고무적인 광신 행위로 몰아넣는다.\n아군\u0002셀레스티안 항마단\u0002요원이\u0002운용될\u0002때마다\u0002이\u0002규칙을\u0002사\n용할\u0002수\u0002있습니다.\u0002그렇게\u0002할\u0002경우,\u0002D6\u0002하나를\u0002굴리고\u0002값의\u0002\n절반만큼\u0002그\u0002요원에\u0002피해를\u0002가합니다(소수점\u0002아래\u0002올림).\u0002값\n이\u00024+이면,\u0002그\u0002요원은\u0002고취자가\u0002됩니다.\u0002이\u0002규칙으로는\u0002전환\n점당\u0002하나의\u0002아군\u0002요원만\u0002고취자가\u0002될\u0002수\u0002있습니다.\n셀레스티안 항마단"
+      "name": "vocifera-mortis",
+      "text": "CELESTIAN INSIDIANT\nFACTION EQUIPMENT\nVOCIFERA MORTIS\nUpon the death of its bearer, this device transmits \na sombre requiem across the squad’s vox-channel, \nbroadcasting the sister’s martyrdom.\nOnce per battle, when an INSPIRING \nfriendly CELESTIAN INSIDIANT operative is \nincapacitated, you can use this rule. If you do, \nfor the Martyrdom faction rule, the other friendly \nCELESTIAN INSIDIANT operative you select \ncan be one that isn’t visible to or within 6\" of \nthat operative."
+    },
+    {
+      "name": "saintly-relics",
+      "text": "CELESTIAN INSIDIANT\nFACTION EQUIPMENT\nSAINTLY RELICS\nThe witch hunters carry a variety of devotional esoterica \nbelieved to shield them from harm, enabling them to \ncontinue their holy duties.\nWhenever an attack dice would inflict damage on \na friendly CELESTIAN INSIDIANT operative, you \ncan use this rule. If you do, roll one D6, or two D6 \nif that operative is INSPIRING: if any result is a 6, \nignore the damage inflicted from that attack dice. \nYou cannot ignore more than one attack dice per \naction and two attack dice per battle this way."
+    },
+    {
+      "name": "auto-flagellator",
+      "text": "CELESTIAN INSIDIANT\nFACTION EQUIPMENT\nAUTO-FLAGELLATOR\nThe most devout of Celestian Insidiants may bear \nbeneath their power armour instruments of self-\nflagellation. At times of great import, these devices \ninflict agonising pain upon the body, focusing the mind \nand spirit and driving the recipient to inspirational acts \nof zealotry.\nWhenever a friendly CELESTIAN INSIDIANT \noperative is activated, you can use this rule. If \nyou do, roll one D6 and inflict damage on that \noperative equal to half the result (rounding \nup); on a 4+, that operative also becomes \nINSPIRING. You cannot make more than one \nfriendly operative INSPIRING using this rule per \nturning point."
     }
   ],
   "faction_rules": [
     {
-      "name": "apl-1",
-      "text": "축도\n효과\n열성\n전투가\u0002종료될\u0002때까지,\u0002그\u0002요원의\u0002\nAPL\u0002수치를\u0002+1만큼\u0002변경합니다.\u0002이\u0002\n축도는\u0002수석 수녀\u0002요원에게\u0002부여할\u0002수\u0002\n없습니다.\n분노\n전투가\u0002종료될\u0002때까지,\u0002그\u0002요원의\u0002데\n이터카드에\u0002명시된\u0002무기에\u0002집요\u0002규\n칙을\u0002부여합니다.\n회복\n그\u0002요원이\u0002잃은\u0002체력을\u0002D3+2만큼\u0002\n회복합니다.\n절박\n그\u0002요원이\u0002즉시\u0002무상으로\u0002돌격\u0002또는\u0002\n질주\u0002행동을\u0002수행할\u0002수\u0002있으나(돌격\n은\u0002최대\u00023”만\u0002가능),\u0002그\u0002이동은\u0002반드\n시\u0002무력화된\u0002고취자\u0002요원과\u0002더\u0002가까\n워진\u0002위치에서\u0002종료해야\u0002합니다.\n축도 목록\n팩션 규칙\n셀레스티안 항마단"
+      "name": "martyrdom",
+      "text": "CELESTIAN INSIDIANT\nFACTION RULE\nMARTYRDOM\nVaunted veterans of the Orders Militant, Celestian \nInsidiants hunt witches with extreme prejudice. Those \nstruck down in the course of their duties become \nmartyrs, their deaths only serving to harden the resolve \nof their surviving sisters.\nWhenever an INSPIRING friendly CELESTIAN \nINSIDIANT operative is incapacitated, before \nit’s removed from the killzone, select one other \nfriendly CELESTIAN INSIDIANT operative that \noperative is visible to or within 6\" of.\nThen, that selected operative gains one \nBENEDICTION (incapacitated operatives cannot \nbe selected for a BENEDICTION)."
     },
     {
-      "name": null,
-      "text": "팩션 규칙\n사술사냥꾼의 무기\n셀레스티안 항마단은 마법으로부터 몸을 스스로 보호하고, 사냥감\n이 사악한 힘을 끌어내는 것을 방해하고자 각종 비술적인 무기와 \n방어구, 장비를 갖춘다.\n사이킥\u0002원거리\u0002무기로\u0002아군\u0002셀레스티안 항마단\u0002요원에게\u0002피해\n를\u0002가할\u0002수\u0002없습니다.\u0002아군\u0002셀레스티안 항마단\u0002요원은\u0002사이킥 \n행동의\u0002대상으로\u0002지정될\u0002수\u0002없으며,\u0002항상\u0002그러한\u0002행동\u0002수행\n에\u0002요구되는\u0002거리에서\u0002벗어난\u0002것으로\u0002간주합니다.\u0002아군\u0002셀레\n스티안 항마단\u0002요원의\u00023”\u0002내에\u0002다른\u0002요원이\u0002있을\u0002때마다\u0002다\n음을\u0002적용합니다.\n• \u0002그\u0002요원은\u0002사이킥\u0002행동을\u0002수행하거나\u0002사이킥\u0002추가\u0002규칙을\u0002\n사용할\u0002수\u0002없습니다.\n• \u0002그\u0002요원은\u0002사이킥\u0002원거리\u0002무기를\u0002사용할\u0002수\u0002없습니다.\n• \u0002사이킥\u0002근접\u0002무기가\u0002무기\u0002규칙을\u0002보유하지\u0002않게\u0002되며,\u0002피\n해\u0002수치의\u0002최댓값이\u00023/4로\u0002고정됩니다.\n다음 면에 계속 \n셀레스티안 항마단",
-      "options": []
+      "name": "benedictions",
+      "text": "BENEDICTION\nEFFECT\nArdour\nUntil the end of the battle, \nadd 1 to that operative’s \nAPL stat. You cannot select \nthis BENEDICTION for a \nSUPERIOR operative.\nWrath\nUntil the end of the battle, \nweapons on that operative’s \ndatacard have the Ceaseless \nweapon rule.\nRestoration\nThat operative regains up to \nD3+2 lost wounds.\nExigence\nThat operative can \nimmediately perform a \nfree Charge or Dash action \n(for the former, it cannot \nmove more than 3\"), but \nmust end that move closer \nto that incapacitated \nINSPIRING operative.\nBENEDICTIONS\nCELESTIAN INSIDIANT\nFACTION RULE"
+    },
+    {
+      "name": "weapons-of-the-witch-hunters",
+      "text": "CELESTIAN INSIDIANT\nFACTION RULE\nWEAPONS OF THE WITCH HUNTERS\nCelestian Insidiants bear all manner of esoteric \nweapons, armour and equipment intended to shield \nthem from sorcery and impede the ability of their quarry \nto channel malefic power.\nPSYCHIC ranged weapons cannot inflict damage \non friendly CELESTIAN INSIDIANT operatives. \nFor the effects of PSYCHIC actions, friendly \nCELESTIAN INSIDIANT operatives cannot be \nselected and are never treated as being within \nthose actions’ required distances. Whenever an \noperative is within 3\" of a friendly CELESTIAN \nINSIDIANT operative:\n• That operative cannot perform PSYCHIC \nactions or use PSYCHIC additional rules.\n• That operative cannot use PSYCHIC \nranged weapons.\n• PSYCHIC melee weapons have no weapon rules \nand cannot have Dmg stats higher than 3/4.\nRULE CONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "Some weapons in this team’s rules have the",
+          "text": "Anti-PSYKER weapon rule below. *Anti-PSYKER: Whenever this weapon is being used against an operative that has the PSYKER keyword, it has the Lethal 5+ weapon rule."
+        }
+      ]
+    },
+    {
+      "name": "inspiration",
+      "text": "CELESTIAN INSIDIANT\nFACTION RULE\nINSPIRATION\nVeteran Celestians of the Orders Militant lead by \nexample, inspiring their sisters by throwing themselves \ninto the heaviest fighting against the deadliest \nof enemies.\nWhenever a friendly CELESTIAN INSIDIANT \noperative:\n• Incapacitates an enemy operative that has \na Wounds stat of 6 or more, that friendly \noperative becomes INSPIRING.\n• Performs the Charge action, before it moves, it \nbecomes INSPIRING.\nWhenever a friendly CELESTIAN INSIDIANT \noperative is INSPIRING, weapons on its datacard \nhave the Severe weapon rule."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "d3",
-      "text": "화력전 플로이\n신앙과 격노\n신성한 격노가 이 전사들에게 여러 적을 단숨에 베어버릴 힘을 부여\n한다.\n이\u0002화력전\u0002플로이는\u0002아군\u0002셀레스티안 항마단\u0002요원이\u0002근접전\n을\u0002수행하여\u0002그\u0002절차\u0002도중\u0002적\u0002요원을\u0002결정적\u0002성공으로\u0002타격\n할\u0002때\u0002사용할\u0002수\u0002있습니다.\u0002그\u0002타격을\u0002처리한\u0002후,\u0002플레이어가\u0002\n지정하는\u0002순서대로\u0002그\u0002아군\u0002요원의\u0002시야에\u0002들어오며\u00022”\u0002내\n에\u0002있는\u0002적\u0002요원에게\u0002각각\u0002D3\u0002피해를\u0002가합니다(요원마다\u0002별\n도로\u0002굴림).\u0002이\u0002피해로\u0002인해\u0002체력\u0002수치가\u00026\u0002이상인\u0002적\u0002요원\n이\u0002무력화되면,\u0002그\u0002아군\u0002요원은\u0002고취자가\u0002된다는\u0002점을\u0002유의하\n십시오.\n셀레스티안 항마단"
+      "name": "glory-to-the-martyrs",
+      "text": "CELESTIAN INSIDIANT\nFIREFIGHT PLOY\nGLORY TO THE MARTYRS\nThere is no greater inspiration than the glorious death \nof a martyr.\nUse this firefight ploy when a friendly CELESTIAN \nINSIDIANT operative is incapacitated while \nfighting or retaliating. You can strike the enemy \noperative in that sequence with one of your \nunresolved successes before it’s removed \nfrom the killzone. If that enemy operative is \nincapacitated as a result, that friendly operative \nbecomes INSPIRING before it’s removed from \nthe killzone and you can resolve the Martyrdom \nfaction rule."
+    },
+    {
+      "name": "faith-fury",
+      "text": "CELESTIAN INSIDIANT\nFIREFIGHT PLOY\nFAITH & FURY\nDivine rage empowers these warriors to cleave through \nmultiple foes.\nUse this firefight ploy when a friendly CELESTIAN \nINSIDIANT operative is fighting and you strike \nthe enemy operative in that sequence with a \ncritical success. After resolving that strike, also \ninflict D3 damage on each other enemy operative \nvisible to and within 2\" of that friendly operative \nin an order of your choice (roll separately for \neach). Note that the friendly operative would \nbecome INSPIRING if any enemy operatives with \na Wounds stat of 6 or more are incapacitated as a \nresult of this damage."
+    },
+    {
+      "name": "unshakeable-pursuit",
+      "text": "CELESTIAN INSIDIANT\nFIREFIGHT PLOY\nUNSHAKEABLE PURSUIT\nNeither fatigue nor terrain can keep a Celestian Insidiant \nfrom their quarry.\nUse this firefight ploy during a friendly \nCELESTIAN INSIDIANT operative’s activation, \nbefore or after it performs an action. Until the \nend of that operative’s activation, you can ignore \nany changes to its Move stat. If that operative \nis INSPIRING, add 1\" to its Move stat until the \nend of that activation. If that operative becomes \nINSPIRING by performing the Charge action, \nyou can use this ploy before it moves to gain the \nadditional movement (this takes precedence over \nstats not changing during an action)."
+    },
+    {
+      "name": "fervent-hate",
+      "text": "CELESTIAN INSIDIANT\nFIREFIGHT PLOY\nFERVENT HATE\nThe Celestian Insidiants embody the hatred and \nparanoia of their creed.\nUse this firefight ploy after rolling your attack dice \nfor a friendly CELESTIAN INSIDIANT operative, if \nit’s shooting against, fighting against or retaliating \nagainst an enemy operative that doesn’t have \nthe IMPERIUM keyword. That friendly operative’s \nweapons have the Ceaseless weapon rule \nuntil the end of that sequence; if that enemy \noperative also has the CHAOS and/or PSYKER \nkeyword, that friendly operative’s weapons have \nthe Relentless weapon rule until the end of that \nsequence instead."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION CELESTIAN INSIDIANTS",
-      "text": "셀레스티안 항마단 \n킬 팀\n아키타입: 경비, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002셀레스티안 항마단\u0002수석 수녀\u0002요원,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002\n골라\u0002장비합니다.\n• \u0002성물\u0002선고자\u0002말뚝\u0002발사기,\u0002성물\u0002볼트\u0002권총,\u0002부존\u0002철퇴\n• \u0002인페르노\u0002권총,\u0002부존\u0002철퇴\u0002\n \n↘\u00028\u0002셀레스티안 항마단\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성\n합니다.\n• \u0002배격자\n• \u0002향로지기\n• \u0002소각자\n• \u0002데눈시아\n• \u0002모르티상크투스\n• \u0002렐리콰리우스\n• \u0002전사\u0002\n소각자와\u0002전사\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀\n에\u0002한\u0002번씩만\u0002편성할\u0002수\u0002있습니다.\u0002소각자는\u0002최대\u0002둘\u0002편성할\u0002\n수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "CELESTIAN INSIDIANTS \nKILL TEAM\nARCHETYPE: SECURITY, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 CELESTIAN INSIDIANT SUPERIOR \noperative with one of the following options:\n• Relic condemnor stakethrower; relic bolt \npistol; null mace\n• Inferno pistol; null mace \n \n↘ 8 CELESTIAN INSIDIANT operatives selected \nfrom the following list:\n• ABJUROR\n• CENSOR\n• CREMATOR\n• DENUNCIA\n• MORTISANCTUS\n• RELIQUARIUS\n• WARRIOR \nOther than CREMATOR and WARRIOR operatives, \nyour kill team can only include each operative on \nthis list once. Your kill team can only include up to \ntwo CREMATOR operatives.",
+      "selection": {
+        "INSIDIANT SUPERIOR": [
+          [
+            "Relic condemnor stakethrower; relic bolt pistol; null mace",
+            "Inferno pistol; null mace"
+          ]
+        ],
+        "INSIDIANT ABJUROR": [],
+        "INSIDIANT CENSOR": [],
+        "INSIDIANT CREMATOR": [],
+        "INSIDIANT DENUNCIA": [],
+        "INSIDIANT MORTISANCTUS": [],
+        "INSIDIANT RELIQUARIUS": [],
+        "INSIDIANT WARRIOR": []
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "suspect-eliminate",
+      "text": "CELESTIAN INSIDIANT\nSTRATEGY PLOY\nSUSPECT & ELIMINATE\nRuthless in their pursuit of the witch, Celestian \nInsidiants are swift to condemn those they suspect of \nheresy. Protestations of innocence are treated with the \ncallous disregard they deserve.\nSelect one enemy operative or marker. If you \nselect an enemy operative, that operative and \neach other enemy operative visible to and within \n2\" of it gains one of your Suspicion tokens until \nthe end of the turning point. If you selected a \nmarker, each enemy operative contesting that \nmarker gains one of your Suspicion tokens until \nthe end of the turning point.\nWhenever a friendly CELESTIAN INSIDIANT \noperative is shooting against or fighting against \nan operative that has one of your Suspicion \ntokens, that friendly operative's weapons have \nthe Punishing weapon rule."
+    },
+    {
+      "name": "wrathful-determination",
+      "text": "CELESTIAN INSIDIANT\nSTRATEGY PLOY\nWRATHFUL DETERMINATION\nOnce the Celestian Insidiants have detected the spoor \nof sorcery, they will pursue their targets through hails \nof fire.\nWhenever an operative is shooting a friendly \nCELESTIAN INSIDIANT operative that has \nan Engage order, you can re-roll one of your \ndefence dice."
+    },
+    {
+      "name": "suffering-sacrifice",
+      "text": "CELESTIAN INSIDIANT\nSTRATEGY PLOY\nSUFFERING & SACRIFICE\nBattlefield veterans all, Celestian Insidiants are inured \nto pain. Injuries serve only to focus their martial prowess \nand stoke their zealous rage.\nWhenever a wounded friendly CELESTIAN \nINSIDIANT operative is shooting against, fighting \nagainst or retaliating against an enemy operative, \nits weapons have the Balanced weapon rule."
+    },
+    {
+      "name": "holy-resilience",
+      "text": "CELESTIAN INSIDIANT\nSTRATEGY PLOY\nHOLY RESILIENCE\nFaith is the greatest of the Celestian Insidiants’ many \nweapons. So long as it remains unbroken, they may \nshrug off even the most crippling of injuries and remain \nin the fight.\nWhenever an INSPIRING friendly CELESTIAN \nINSIDIANT operative is fighting or retaliating, \nNormal and Critical Dmg of 4 or more inflicts 1 \nless damage on that friendly operative."
     }
   ]
 }

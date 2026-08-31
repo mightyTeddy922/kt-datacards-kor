@@ -20,7 +20,6 @@ from __future__ import annotations
 
 import asyncio
 import logging
-import os
 import shutil
 from pathlib import Path
 from typing import List, Optional
@@ -36,10 +35,6 @@ TRACK = "warcom"
 
 TEMPLATES_FILE = paths.CONFIG / "pipelines" / "warcom" / "card_templates.json"
 DEFAULT_URL = scraper.DOWNLOADS_URL
-
-
-def _requested_locale() -> str:
-    return (os.environ.get("KT_WARCOM_LOCALE") or scraper.DEFAULT_LOCALE).strip().lower()
 
 
 def _slug(value: str) -> str:
@@ -80,7 +75,7 @@ def recent_team_slugs(teams: Optional[List[str]] = None) -> List[str]:
     team_config = card_extractor.load_team_config(paths.TEAM_CONFIG)
     try:
         urls = asyncio.run(
-            scraper.extract_pdf_urls(DEFAULT_URL, section="Recently Added", locale=_requested_locale())
+            scraper.extract_pdf_urls_from_page(DEFAULT_URL, section="Recently Added")
         )
     except Exception as e:
         logger.error(f"Recently Added scrape failed: {e}")
@@ -141,20 +136,17 @@ def _scrape(teams: Optional[List[str]], force: bool, section: str = "Team Rules"
     staging.mkdir(parents=True, exist_ok=True)
 
     try:
-        urls = scraper.extract_pdf_urls(DEFAULT_URL, section=section, locale=_requested_locale())
+        urls = asyncio.run(scraper.extract_pdf_urls_from_page(DEFAULT_URL, section=section))
     except Exception as e:
         logger.error(f"Scrape failed: {e}")
         return []
 
     if teams:
         wanted = {_slug(t) for t in teams}
-        team_config = card_extractor.load_team_config(paths.TEAM_CONFIG)
         filtered = []
         for url in urls:
-            team_slug = _team_from_filename(Path(url), team_config) or _slug(
-                scraper._infer_team_slug_from_filename(Path(url).name)
-            )
-            if team_slug in wanted:
+            fname = _slug(Path(url).stem)
+            if any(w in fname for w in wanted):
                 filtered.append(url)
         logger.info(f"Filtered {len(urls)} scraped URLs down to {len(filtered)} for teams={sorted(wanted)}")
         urls = filtered
@@ -168,20 +160,6 @@ def _scrape(teams: Optional[List[str]], force: bool, section: str = "Team Rules"
             continue
         logger.info(f"  downloading {out.name}")
         if scraper.download_pdf(url, out):
-            if scraper.should_skip_incomplete_online_rules_pdf(out, url):
-                restored = scraper.restore_archived_full_pdf(staging, url)
-                try:
-                    out.unlink()
-                except OSError:
-                    pass
-                if restored is not None:
-                    downloaded.append(restored)
-                    continue
-                logger.warning(
-                    "  skipping %s because only a 2-page online_rules stub is available and no full fallback archive exists",
-                    out.name,
-                )
-                continue
             downloaded.append(out)
         else:
             logger.warning(f"  failed to download {url}")

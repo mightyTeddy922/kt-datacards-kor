@@ -1,6 +1,6 @@
 {
   "team": "farstalker-kinband",
-  "generated_at": "2026-08-29T21:53:32.736018+00:00",
+  "generated_at": "2026-08-15T18:37:34.374803+00:00",
   "datacards": [
     {
       "name": "KROOT KILL-BROKER",
@@ -11,19 +11,19 @@
       "base_size": 32,
       "weapons": [
         {
-          "name": "크룻 소총",
+          "name": "Kroot rifle",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "펄스 무기",
+          "name": "Pulse weapon",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/5"
         },
         {
-          "name": "의식용 도검",
+          "name": "Ritual blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5"
@@ -31,15 +31,22 @@
       ],
       "passive_abilities": [
         {
-          "name": "살상 지시",
-          "description": "전략 포석(이 요원이 킬존에 있을 시 사용 가능). 이 번 전환점의 사냥 목표로 삼을 적 요원을 하나 지정합니다. 아군 먼길밟이 혈족단 요원이 사냥 목표를 대상으로 사격, 근접전, 반 격을 수행할 때마다, 그 아군 요원의 무기에 균형 무기 규칙이 부 여됩니다. 사냥 목표가 무력화될 때마다, 다른 적 요원을 그 전환 점의 새 사냥 목표로 지정할 수 있습니다(이 방식으로 이번 전환"
+          "name": "Call The Kill",
+          "description": "STRATEGIC GAMBIT if this operative is in the killzone. Select one enemy operative to be your mark for the turning point. Whenever a friendly FARSTALKER KINBAND operative is shooting against, fighting against or retaliating against your mark, that friendly operative's weapons have the Balanced weapon rule. Whenever your mark is incapacitated, you can select a new enemy operative to be your mark for the turning point (and can continue to do so during this turning point)."
         },
         {
-          "name": "승리의 괴성",
-          "description": "사냥감이 무력화될 때마다, 이 요원의 6\" 내에 있는 아군 먼길밟이 혈족단 요원을 하나 지정할 수 있습니다. 전투가 종료될 때까지, 지정된 요원의 무기에 균형 무기 규칙이 부여됩 니다. 각 아군 요원은 전투당 한 번만 이 규칙의 대상으로 지정될 수 있습니다."
+          "name": "Victory Shriek",
+          "description": "Whenever your mark is incapacitated, you can select one friendly FARSTALKER KINBAND operative within 6\" of this operative. Until the end of the battle, that operative’s weapons have the Balanced weapon rule. Each friendly operative can only be selected for this rule once per battle."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "LEADER",
+        "KROOT",
+        "KILL-BROKER"
+      ]
     },
     {
       "name": "KROOT BOW-HUNTER",
@@ -50,32 +57,45 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "가속궁(뇌관 화살)",
+          "name": "Accelerator bow (fused arrow)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "관통 1"
+          "special_rules": "Piercing 1"
         },
         {
-          "name": "가속궁(활공 화살)",
+          "name": "Accelerator bow (glide arrow)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "무성"
+          "special_rules": "Silent"
         },
         {
-          "name": "가속궁(전류 화살)",
+          "name": "Accelerator bow (voltaic arrow)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "폭발 1\""
+          "special_rules": "Blast 1\""
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
         }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "ENERGISE (1AP)",
+          "description": "Until the end of the turning point or until this operative has shot with its accelerator bow (whichever comes first), all profiles of its accelerator bow have the Lethal 5+ weapon rule. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "BOW-HUNTER"
       ]
     },
     {
@@ -87,13 +107,13 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "크룻 소총",
+          "name": "Kroot rifle",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
@@ -101,15 +121,21 @@
       ],
       "passive_abilities": [
         {
-          "name": "강건함",
-          "description": "공격 주사위 하나가 이 요원에게 결정적 피해를 가할 때마다, 대신 일반 피해를 가하도록 선택할 수 있습 니다."
+          "name": "Hardy",
+          "description": "Whenever an attack dice would inflict Critical Dmg on this operative, you can choose for that attack dice to inflict Normal Dmg instead."
         },
         {
-          "name": "냉혈",
-          "description": "이 요원이 체력 손실 상태의 적 요원을 대상으로 사 격, 근접전, 반격을 수행할 때마다, 이 요원의 무기에 살 상 5+ 무기 규칙이 부여됩니다. 그 적 요원이 부상 상태 라면, 파쇄 무기 규칙 또한 부여됩니다."
+          "name": "Cold-blooded",
+          "description": "Whenever this operative is shooting against, fighting against or retaliating against a wounded enemy operative, this operative’s weapons have the Lethal 5+ weapon rule; if that enemy operative is also injured, this operative’s weapons also have the Rending weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "COLD-BLOOD"
+      ]
     },
     {
       "name": "KROOT CUT-SKIN",
@@ -120,24 +146,30 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "살점썰이의 검",
+          "name": "Cut-skin's blades",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "집요, 살상 5+"
+          "special_rules": "Ceaseless, Lethal 5+"
         }
       ],
       "passive_abilities": [
         {
-          "name": "악랄한 결투사",
-          "description": "이 요원이 근접전 또는 반격을 수행할 때 마다, 상대가 버린 실패 주사위 하나당 그 공격 절차의 적 요원에게 1 피해를 가합니다."
+          "name": "Vicious Duellist",
+          "description": "Whenever this operative is fighting or retaliating, for each attack dice your opponent discards as a fail, inflict 1 damage on the enemy operative in that sequence."
         },
         {
-          "name": "흉포한 습격",
-          "description": "이 요원이 각 운용 도중 처음으로 근접전 행 동을 수행할 때, 그 절차에 이 요원과 적 요원 중 누구도 무력화되지 않았다면 이후 이 요원이 즉시 무상 근접전 행동을 수행할 수 있습니다. 단, 그 행동에서는 다른 적 요원을 지정해 근접전을 수행할 수 없습니다(반드시 앞 서 공격 대상으로 지정한 적 요원이 근접전 대상으로 유 효해야 함). 이는 행동 제약에 우선합니다."
+          "name": "Savage Assault",
+          "description": "The first time this operative performs the Fight action during each of its activations, if neither it nor the enemy operative in that sequence is incapacitated, this operative can immediately perform a free Fight action afterwards, but you cannot select any other enemy operative to fight against during that action (and only if it’s still valid to fight against). This takes precedence over action restrictions."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "CUT-SKIN"
+      ]
     },
     {
       "name": "KROOT HEAVY GUNNER",
@@ -148,25 +180,31 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "드보르가이트 무두질기",
+          "name": "Dvorgite skinner",
           "attacks": "5",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "사거리 6\", 중화기(기동 한정), 관통 2, 격류 2\""
+          "special_rules": "Range 6\", Heavy (Reposition only), Piercing 2, Torrent 2\""
         },
         {
-          "name": "론다크시 삼중쇠뇌",
+          "name": "Londaxi tribalest",
           "attacks": "5",
           "hit": "4+",
           "damage": "4/5",
-          "special_rules": "중화기(기동 한정), 관통 1, 파쇄"
+          "special_rules": "Heavy (Reposition only), Piercing 1, Rending"
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
         }
+      ],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "HEAVY GUNNER"
       ]
     },
     {
@@ -178,24 +216,35 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "찢어발기는 송곳니",
+          "name": "Ripping fangs",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "파쇄"
+          "special_rules": "Rending"
         }
       ],
       "passive_abilities": [
         {
-          "name": "짐승",
-          "description": "이 요원은 돌격, 질주, 후퇴, 근접전, 수집, 수비, 기동, 마커 회수, 마커 배치 이외의 다른 행동을 수행할 수 없으며, 자신의 데이터카드에 명시되지 않은 무기를 사용할 수 없습니다."
+          "name": "Beast",
+          "description": "This operative cannot perform any actions other than Charge, Dash, Fall Back, Fight, Gather, Guard, Reposition, Pick Up Marker and Place Marker. It cannot use any weapons that aren’t on its datacard."
         },
         {
-          "name": "사나운 성미",
-          "description": "적 요원이 근접전 행동을 수행할 때마다, 이 요원이 근접전 상대 로 유효하다면 강제로 이 요원을 지정하게 할 수 있습니다. 적 요원이 이 요원 으로부터 3\" 내에 있는 다른 아군 먼길밟이 혈족단 요원의 장악 범위 내에서 돌격 행동을 종료할 때마다, 이 요원이 어느 적 요원의 장악 범위에도 들어가지 않은 상태라면, 이 요원은 즉시 무상으로 돌격 행동을 수행할 수 있습니다(그 수집"
+          "name": "Bad-tempered",
+          "description": "Whenever an enemy operative performs the Fight action, if this operative is a valid operative to fight against, you can force them to select this operative to fight against instead. Whenever an enemy operative ends the Charge action within control range of another friendly FARSTALKER KINBAND operative within 3\" of this operative, if this operative isn’t within control range of enemy operatives, this operative can immediately perform a free Charge action (you can change its order to Engage to do so), but must end that move within control range of that enemy operative."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "GATHER (1AP)",
+          "description": "Perform a free Dash or Reposition action with this operative. During that move, it can perform a free Pick Up Marker or Place Marker action (you can determine control during that action to do so), and any remaining move distance it had from the Dash or Reposition action can be used after it does so."
+        }
+      ],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "HOUND"
+      ]
     },
     {
       "name": "KROOT LONG-SIGHT",
@@ -206,27 +255,27 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "크룻 엽총(은폐)",
+          "name": "Kroot hunting rifle (concealed)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "중화기, 궤멸 3, 무성, 위치 은폐*"
+          "special_rules": "Heavy, Devastating 3, Silent, Concealed Position*"
         },
         {
-          "name": "크룻 엽총(기동)",
+          "name": "Kroot hunting rifle (mobile)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4"
         },
         {
-          "name": "크룻 엽총(고정)",
+          "name": "Kroot hunting rifle (stationary)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "중화기, 궤멸 3"
+          "special_rules": "Heavy, Devastating 3"
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
@@ -234,11 +283,22 @@
       ],
       "passive_abilities": [
         {
-          "name": "*위치 은폐",
-          "description": "이 요원은 전투 중 처음으로 사격 행동을 수행할 때만 이 무기를 사용할 수 있습니다."
+          "name": "*Concealed Position",
+          "description": "This operative can only use this weapon the first time it’s performing the Shoot action during the battle."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "LONG-SIGHT (1AP)",
+          "description": "Until the start of this operative’s next activation:\n• The concealed and stationary profiles of its Kroot hunting rifle have the Lethal 5+ weapon rule.\n• Whenever it’s shooting with its Kroot hunting rifle, enemy operatives cannot be obscured. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "LONG-SIGHT"
+      ]
     },
     {
       "name": "KROOT PISTOLIER",
@@ -249,21 +309,21 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "크룻 쌍권총(집중)",
+          "name": "Dual Kroot pistols (focused)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 집요, 살상 5+"
+          "special_rules": "Range 8\", Ceaseless, Lethal 5+"
         },
         {
-          "name": "크룻 쌍권총(일제사격)",
+          "name": "Dual Kroot pistols (salvo)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 일제사격*"
+          "special_rules": "Range 8\", Salvo*"
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
@@ -271,15 +331,21 @@
       ],
       "passive_abilities": [
         {
-          "name": "먼저 쏘기",
-          "description": "전환점당 한 번, 적 요원이 이 요원을 유효 대상으로 지정해 사격 행동을 수행할 때(또는 이 요원이 폭발 무기 규칙의 부가 대상이 될 때), 이 요원이 준비 상태라면 그 행동을 방해하여 이 규칙을 사용할 수 있습니다. 규 칙 사용 시, 이 요원이 보유한 크룻 쌍권총(집중) 무기로 그 적 요원에게 무상 사격 행동을 수행할 수 있습니다(이를 위해 요원이 받은 명령을 교전으로 변 경 가능). 단, 그 적 요원은 반드시 유효 대상이어야 합니다."
+          "name": "Quick Draw",
+          "description": "Once per turning point, when an enemy operative is performing the Shoot action and this operative is selected as the valid target (or if it will be a secondary target from the Blast weapon rule), if this operative is ready, you can interrupt that action to use this rule. If you do, this operative can immediately perform a free Shoot action with its dual Kroot pistols (focused) against that enemy operative (you can change its order to Engage to do so), but that enemy operative must be a valid target."
         },
         {
-          "name": "*일제사격",
-          "description": "아군 요원의 장악 범위 내에 있지 않으며 서로 다른 유효 대 상을 최대 둘 지정합니다. 이 무기를 사용하여 지정한 적 둘 모두를 원하 는 순서대로 사격할 수 있습니다(각 절차는 별도로 굴림)."
+          "name": "*Salvo",
+          "description": "Select up to two different valid targets that aren’t within control range of friendly operatives. Shoot with this weapon against both of them in an order of your choice (roll each sequence separately)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "PISTOLIER"
+      ]
     },
     {
       "name": "KROOT STALKER",
@@ -290,27 +356,38 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "크룻 산탄총",
+          "name": "Kroot scattergun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/3",
-          "special_rules": "사거리 6\""
+          "special_rules": "Range 6\""
         },
         {
-          "name": "잠행꾼의 검",
+          "name": "Stalker's blade",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "균형, 파쇄"
+          "special_rules": "Balanced, Rending"
         }
       ],
       "passive_abilities": [
         {
-          "name": "잠행꾼",
-          "description": "이 요원은 은폐 명 령을 받은 상태에서 돌격 행 동을 수행할 수 있습니다. 은밀한 공격"
+          "name": "Stalker",
+          "description": "This operative can perform the Charge action while it has a Conceal order."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "STEALTH ATTACK (2AP)",
+          "description": "Perform a free Charge action with this operative, but don’t exceed its Move stat (i.e. don’t add 2\"). Then immediately perform a free Fight action with this operative. The first time you strike during that action, you can immediately resolve another of your successes as a strike (before your opponent). This operative cannot perform this action while it has an Engage order, while within control range of an enemy operative, or if it isn’t within 1\" of Light or Heavy terrain."
+        }
+      ],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "STALKER"
+      ]
     },
     {
       "name": "KROOT TRACKER",
@@ -321,17 +398,34 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "크룻 소총",
+          "name": "Kroot rifle",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4"
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
         }
+      ],
+      "passive_abilities": [],
+      "unique_actions": [
+        {
+          "name": "MARKED FOR THE HUNT (1AP)",
+          "description": "Remove your Pech’ra marker from the killzone (if any). Then place your Pech’ra marker visible to this operative, or on Vantage terrain of a terrain feature that’s visible to this operative. Whenever a friendly FARSTALKER KINBAND operative is shooting an enemy operative that has that marker within its control range, that friendly operative’s ranged weapons have the Seek Light weapon rule. At the start of this operative’s next activation or if it’s removed from the killzone (whichever comes first), remove your Pech’ra marker from the killzone. This operative cannot perform this action while within control range of an enemy operative."
+        },
+        {
+          "name": "FROM THE EYE ABOVE (1AP)",
+          "description": "SUPPORT. Select one other friendly FARSTALKER KINBAND operative visible to and within 6\" of this operative. Until the end of that operative’s next activation, add 1 to its APL stat. This operative cannot perform this action while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "TRACKER"
       ]
     },
     {
@@ -343,20 +437,20 @@
       "base_size": 28,
       "weapons": [
         {
-          "name": "크룻 소총",
+          "name": "Kroot rifle",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/4"
         },
         {
-          "name": "크룻 산탄총",
+          "name": "Kroot scattergun",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/3",
-          "special_rules": "사거리 6\""
+          "special_rules": "Range 6\""
         },
         {
-          "name": "도검",
+          "name": "Blade",
           "attacks": "3",
           "hit": "3+",
           "damage": "3/5"
@@ -364,34 +458,111 @@
       ],
       "passive_abilities": [
         {
-          "name": "만반의 준비",
-          "description": "전환점당 한 번, 아군 전사 요원의 운용 도중 그 요원에게 고기, 관통 사격, 독성 사격 규칙(팩션 장비 참고)을 사용할 수 있습니다. 사용 시, 그 장비의 전환점당 한 번 한도가 차감되지 않습니다."
+          "name": "Ready for Anything",
+          "description": "Once per turning point, during a friendly WARRIOR operative’s activation, you can use the Meat, Piercing Shot or Toxin Shot rule (see faction equipment) for that operative. Doing so doesn’t count for its once per turning point limit."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "FARSTALKER KINBAND",
+        "T’AU EMPIRE",
+        "KROOT",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "d3-1",
-      "text": "먼길밟이 혈족단\n팩션 장비\n고기\n호리호리한 몸피와는 달리, 크룻은 무척이나 억세고 튼튼하다. \n날고기를 섭취하면 재생 능력이 더욱 강해지기까지 한다.\n전환점당 한 번, 아군 먼길밟이 혈족단 요원(사냥개 제외)이 \n운용될 때 적 요원의 장악 범위 내에 있지 않다면, 이 규칙을 \n사용할 수 있습니다. 규칙 사용 시, 그 아군 요원이 잃은 체\n력을 D3+1 회복합니다."
+      "name": "piercing-shot",
+      "text": "FARSTALKER KINBAND\nFACTION EQUIPMENT\nPIERCING SHOT\nThe Kroot make use of many forms of specially crafted \nammunition. Bullets tipped with hardened alloys can \npunch through cover and armour alike.\nOnce per turning point, when a friendly \nFARSTALKER KINBAND operative is performing \nthe Shoot action and you select a Kroot rifle, \nKroot scattergun or dual Kroot pistols (focused), \nyou can use this rule. If you do, until the end \nof that action, that weapon has the Piercing 1 \nweapon rule. You cannot use the Piercing Shot \nand Toxin Shot rule during the same action."
     },
     {
-      "name": "apl",
-      "text": "먼길밟이 혈족단\n팩션 장비\n사냥 전리품\n크룻 먼길밟이는 손쉬운 사냥감에는 만족하지 못한다. 가치 있다고 \n판단한 사냥감이라면 맹렬하게 뒤쫓아 시체에서 전리품을 거두고 \n말 것이다.\n전투당 한 번, 아군 먼길밟이 혈족단 요원(사냥개 제외)의 운\n용 도중, 요원이 행동 수행 전 또는 후에 적 요원의 장악 범\n위 내에 있지 않다면 이 규칙을 사용할 수 있습니다. 규칙 사\n용 시, 그 아군 요원은 운용이 종료될 때까지 APL 수치가 \n+1만큼 변경됩니다."
+      "name": "toxin-shot",
+      "text": "FARSTALKER KINBAND\nFACTION EQUIPMENT\nTOXIN SHOT\nKroot toxin bullets contain reservoirs of venom \nextracted from various alien fauna, all of which is \nincredibly lethal.\nOnce per turning point, when a friendly \nFARSTALKER KINBAND operative is performing \nthe Shoot action and you select a Kroot rifle, \nKroot scattergun or dual Kroot pistols (focused), \nyou can use this rule. If you do, until the end of \nthat action, that weapon has the Lethal 5+ and \nStun weapon rules. You cannot use the Piercing \nShot and Toxin Shot rule during the same action."
+    },
+    {
+      "name": "meat",
+      "text": "FARSTALKER KINBAND\nFACTION EQUIPMENT\nMEAT\nKroot physiologies are far more resilient than their wiry \nframes suggest. The ingestion of raw meat only serves to \nbolster their regenerative abilities.\nOnce per turning point, when a friendly \nFARSTALKER KINBAND operative (excluding \nHOUND) is activated, if it’s not within control \nrange of enemy operatives, you can use this rule. \nIf you do, that friendly operative regains up to \nD3+1 lost wounds."
+    },
+    {
+      "name": "trophy",
+      "text": "FARSTALKER KINBAND\nFACTION EQUIPMENT\nTROPHY\nKroot Farstalkers seek to cut down the most powerful \nof foes. They will aggressively pursue any enemy they \njudge worthy and harvest trophies from the corpse.\nOnce per battle, during a friendly FARSTALKER \nKINBAND operative’s activation (excluding \nHOUND), before or after it performs an action, if \nit’s not within control range of enemy operatives, \nyou can use this rule. If you do, add 1 to that \nfriendly operative’s APL stat until the end of \nits activation."
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "farstalker",
+      "text": "FARSTALKER KINBAND\nFACTION RULE\nFARSTALKER\nFarstalker Kindbands move and fight instinctively, \nreacting to developing battlefield conditions with an \ninhuman speed of thought.\nIn the Ready step of each Strategy phase, you \ncan change the order of up to three friendly \nFARSTALKER KINBAND operatives that are not \nwithin control range of enemy operatives.\nWhenever it’s your turn to counteract, you can \nchange the order of one friendly FARSTALKER \nKINBAND operative that’s not within control \nrange of enemy operatives instead. This still \ncounts as you counteracting (so activation \nalternates back to your opponent afterwards), \nbut doesn’t count as that friendly operative’s \ncounteraction for this turning point."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "ap",
-      "text": "먼길밟이 혈족단\n화력전 플로이\n소실\n유연하고 민첩한 크룻은 공격할 때와 다름없이 신속하게 전투에서 \n이탈한다.\n이 화력전 플로이는 아군 먼길밟이 혈족단 요원의 운용 \n도중, 요원의 행동 수행 전 또는 후에 사용할 수 있습니다. \n그 운용 도중 요원이 후퇴 행동을 수행할 때 소모되는 AP가 \n-1만큼 변경됩니다."
+      "name": "savage-ambush",
+      "text": "FARSTALKER KINBAND\nFIREFIGHT PLOY\nSAVAGE AMBUSH\nKroot Farstalkers are ambush predators, relying upon \nstealth, speed and bursts of savage violence to take \ndown their enemies.\nUse this firefight ploy during the Fight action \nwhen a ready friendly FARSTALKER KINBAND \noperative that has Light or Heavy terrain within its \ncontrol range is selected to fight against. In the \nResolve Attack Dice step of that sequence, you \nresolve the first attack dice (i.e. defender instead \nof attacker)."
+    },
+    {
+      "name": "slip-away",
+      "text": "FARSTALKER KINBAND\nFIREFIGHT PLOY\nSLIP AWAY\nLithe and agile, the Kroot melt away from a fight using \nthe same speed with which they strike.\nUse this firefight ploy during a friendly \nFARSTALKER KINBAND operative's activation, \nbefore or after it performs an action. During that \nactivation, that operative can perform the Fall \nBack action for 1 less AP."
+    },
+    {
+      "name": "poach",
+      "text": "FARSTALKER KINBAND\nFIREFIGHT PLOY\nPOACH\nFarstalker Kindbands avoid protracted fights, using their \nspeed and dexterity to advance upon and seize their \nobjectives as swiftly as possible.\nUse this firefight ploy during a friendly \nFARSTALKER KINBAND operative’s activation. \nUntil the end of that activation, that operative \ndoesn’t have to control a marker to perform the \nPick Up Marker or mission actions that usually \nrequire this (this takes precedence over that \naction’s conditions – it only needs to contest \nthe marker)."
+    },
+    {
+      "name": "vengeance-for-the-kinband",
+      "text": "FARSTALKER KINBAND\nFIREFIGHT PLOY\nVENGEANCE FOR THE KINBAND\nFarstalker Kinbands are bonded by blood. The death of \nan ally awakes within the survivors a vengeful fury.\nUse this firefight ploy when a friendly \nFARSTALKER KINBAND operative is \nincapacitated by an enemy operative. Until the \nend of the battle, whenever another friendly \nFARSTALKER KINBAND operative is shooting \nagainst, fighting against or retaliating against that \nenemy operative, that other friendly operative's \nweapons have the Relentless weapon rule. You \ncannot use this ploy again during the battle until \nthat enemy operative is incapacitated."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION FARSTALKER KINBAND",
-      "text": "먼길밟이 혈족단 \n킬 팀\n아키타입: 침투, 정찰\n요원 목록\n \n↘\u00021\u0002먼길밟이 혈족단\u0002살해중개꾼\u0002요원,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002\n골라\u0002장비합니다.\n• \u0002크룻\u0002소총,\u0002의식용\u0002도검\n• \u0002펄스\u0002무기,\u0002의식용\u0002도검\u0002\n \n↘\u000211\u0002먼길밟이 혈족단\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성\n합니다.\n• \u0002활사냥꾼\n• \u0002냉혈한\n• \u0002살점썰이\n• 사냥개\n• \u0002먼눈초리\n• \u0002권총잡이\n• \u0002잠행꾼\n• \u0002추적꾼\n• \u0002중화기 사수,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002드보르가이트\u0002무두질기,\u0002도검\n \n○\n\u0002론다크시\u0002삼중쇠뇌,\u0002도검\n• \u0002전사,\u0002다음\u0002선택지\u0002중\u0002하나를\u0002골라\u0002장비합니다.\n \n○\n\u0002크룻\u0002소총,\u0002도검\n \n○\n\u0002크룻\u0002산탄총,\u0002도검\n다음 면에 계속\n\n---\n\n사냥개와\u0002전사\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀\n에\u0002한\u0002번씩만\u0002편성할\u0002수\u0002있습니다.\u0002사냥개는\u0002최대\u0002둘\u0002편성할\u0002\n수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "FARSTALKER KINBAND \nKILL TEAM\nARCHETYPES: INFILTRATION, RECON\nOPERATIVES\n \n↘ 1 FARSTALKER KINBAND KILL-BROKER \noperative with one of the following options:\n• Kroot rifle; ritual blade\n• Pulse weapon; ritual blade \n \n↘ 11 FARSTALKER KINBAND operatives \nselected from the following list:\n• BOW-HUNTER\n• COLD-BLOOD\n• CUT-SKIN\n• HOUND\n• LONG-SIGHT\n• PISTOLIER\n• STALKER\n• TRACKER\n• HEAVY GUNNER with one of the \nfollowing options:\n \n○ Dvorgite skinner; blade\n \n○ Londaxi tribalest; blade\n• WARRIOR with one of the following options:\n \n○ Kroot rifle; blade\n \n○ Kroot scattergun; blade\nCONTINUES ON OTHER SIDE\n\n---\n\nOther than HOUND and WARRIOR operatives, \nyour kill team can only include each operative on \nthis list once. Your kill team can only include up to \ntwo HOUND operatives.",
+      "selection": {
+        "KROOT KILL-BROKER": [
+          [
+            "Kroot rifle; ritual blade",
+            "Pulse weapon; ritual blade"
+          ]
+        ],
+        "KROOT HEAVY GUNNER": [
+          [
+            "Dvorgite skinner; blade",
+            "Londaxi tribalest; blade"
+          ]
+        ],
+        "KROOT BOW-HUNTER": [],
+        "KROOT COLD-BLOOD": [],
+        "KROOT CUT-SKIN": [],
+        "KROOT HOUND": [],
+        "KROOT LONG-SIGHT": [],
+        "KROOT PISTOLIER": [],
+        "KROOT STALKER": [],
+        "KROOT TRACKER": [],
+        "KROOT WARRIOR": [
+          [
+            "Kroot rifle; blade",
+            "Kroot scattergun; blade"
+          ]
+        ]
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "cut-throats",
+      "text": "FARSTALKER KINBAND\nSTRATEGY PLOY\nCUT-THROATS\nKroot warriors are lethal melee combatants. Their \nbladed weapons are capable of tearing through exposed \nflesh with ease.\nAdd 1 to the Atk stat of friendly FARSTALKER \nKINBAND operatives’ melee weapons (to a \nmaximum of 5)."
+    },
+    {
+      "name": "rogue",
+      "text": "FARSTALKER KINBAND\nSTRATEGY PLOY\nROGUE\nKroot Farstalkers are naturally gifted hunters, using \ncover and shadow to their advantage as they close in \nupon their prey.\nWhenever an operative is shooting a friendly \nFARSTALKER KINBAND operative:\n• Ignore the Saturate weapon rule.\n• If you can retain any cover saves, you can \nretain one additional cover save, or you can \nretain one cover save as a critical success \ninstead. This isn’t cumulative with improved \ncover saves from Vantage terrain."
+    },
+    {
+      "name": "prey",
+      "text": "FARSTALKER KINBAND\nSTRATEGY PLOY\nPREY\nWhen a Kroot Farstalker has selected their target, the \nhunter’s focus is directed fully towards bringing down \ntheir chosen prey.\nWhenever a friendly FARSTALKER KINBAND \noperative is shooting during an activation in which \nit hasn’t performed the Charge, Fall Back or \nReposition action, its ranged weapons have the \nBalanced and Severe weapon rules; if the weapon \nalready has the Balanced weapon rule, it has the \nCeaseless and Severe weapon rules instead. Note \nthat operative isn’t restricted from performing \nthose actions after shooting."
+    },
+    {
+      "name": "bound",
+      "text": "FARSTALKER KINBAND\nSTRATEGY PLOY\nBOUND\nThe long, muscular legs of the Kroot allow them to cover \ngreat distances in a single, bounding leap.\nDuring each friendly FARSTALKER KINBAND \noperative’s activation, you can ignore the first \nvertical distance of 2\" they move during one \nclimb up."
     }
   ]
 }

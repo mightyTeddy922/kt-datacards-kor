@@ -1,122 +1,170 @@
 {
   "team": "raveners",
-  "generated_at": "2026-08-29T21:56:27.946027+00:00",
+  "generated_at": "2026-08-26T15:18:14.025706+00:00",
   "datacards": [
     {
       "name": "RAVENER PRIME",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "5+",
-      "wounds": 3,
+      "wounds": 19,
       "base_size": 40,
-      "passive_abilities": [
+      "weapons": [
         {
-          "name": "신경포식성 볏",
-          "description": "마커를 어느 플레이어가 장악했는지 판단할 때, 적 요원이 최소 하나라도 이 요원으로부터 3\" 내에 있다면 마커를 두고 경쟁하는 적 요원들의 APL 총합을 -1만큼 변경된 것으로 간주합니다. 다만 이것은 APL 수치 자체를 변경하는 것은 아니기 때문에 기타 변경 사항은 누적됩니다. 적 요원이 이 요원 으로부터 3\" 내에 있다면 다음을 따릅니다.\n• 상대는 자기 요원이 마커 회수 및 임무 행동을 수행할 때 1AP를 추가로 소모해야 합니다."
+          "name": "Tail blade",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "Range 3\", Rending, Silent"
         },
         {
-          "name": "시냅스 연결",
-          "description": "전략 포석. 이 요원이 무력화되지 않 았다면 D6를 하나 굴려 진행 중인 전환점의 순번과 비교합니다. 그 값에 따라 다음 규칙을 적용합니다."
-        },
-        {
-          "name": "굴림 값이 두 배로 높거나, 더 높음",
-          "description": "플레이어가 1CP를 획득합니다."
-        },
-        {
-          "name": "굴림 값이 더 낮음",
-          "description": "이 요원에게 굴림 값만큼 피해를 줍니다."
+          "name": "Scything talons & rending claws",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "Rending"
         }
       ],
-      "unique_actions": []
+      "passive_abilities": [
+        {
+          "name": "Neuropredatory Crest",
+          "description": "Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of this operative. Note this isn’t a change to the APL stat, so any changes are cumulative with this. Whenever an enemy operative is within 3\" of this operative:\n• Your opponent must spend 1 additional AP for that enemy operative to perform the Pick Up Marker and mission actions.\n• Your opponent cannot re-roll their attack or defence dice for that operative."
+        },
+        {
+          "name": "Synaptic Link",
+          "description": "STRATEGIC GAMBIT if this operative isn’t incapacitated. Roll one D6 and compare the result to the number of the current turning point; if the result is:\n• Twice as high or higher, you gain 1CP.\n• Less, inflict damage on this operative equal to the result.\n• Any other result, nothing happens."
+        }
+      ],
+      "unique_actions": [],
+      "keywords": [
+        "RAVENER",
+        "GREAT DEVOURER",
+        "TYRANID",
+        "LEADER",
+        "PRIME"
+      ]
     },
     {
       "name": "RAVENER FELLTALON",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "5+",
-      "wounds": 3,
+      "wounds": 18,
       "base_size": 40,
       "weapons": [
         {
-          "name": "집게 꼬리",
+          "name": "Pincer tail",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 3\", 무성"
+          "special_rules": "Range 3\", Silent"
         },
         {
-          "name": "독샘",
+          "name": "Toxic glands",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 6\", 무성, 독*"
+          "special_rules": "Range 6\", Silent, Poison*"
         },
         {
-          "name": "맹독낫",
+          "name": "Toxic scythes",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "살상 5+, 충격, 독*"
+          "special_rules": "Lethal 5+, Shock, Poison*"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*독",
-          "description": "공격 주사위 처리 단계 시, 플레이어가 결정적 성공으로 피해를 가하면 그 무기의 대상으로 지정된 요원에게 독 토큰을 부여합니다. 이미 독 토큰을 보유하고 있다면 무시합니다. 독 토큰을 보유한 요원이 운용될 때마다 D3 피해 를 입습니다."
+          "name": "*Poison",
+          "description": "In the Resolve Attack Dice step, if you inflict damage with any critical successes, the operative this weapon is being used against gains one of your Poison tokens (if it doesn’t already have one). Whenever an operative that has one of your Poison tokens is activated, inflict D3 damage on it."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "TOXIC LUNGE (1AP)",
+          "description": "Select one enemy operative visible to and within 2\" of this operative. If enemy operatives are within control range of this operative, you cannot select an enemy operative that isn’t. Alternatively, if this operative is underground, select one enemy operative on your TUNNEL. Inflict D3+2 damage on that enemy operative and it gains one of your Poison tokens (if it doesn’t already have one). This operative can perform this action while underground (this takes precedence over the normal Burrow rules)."
+        }
+      ],
+      "keywords": [
+        "RAVENER",
+        "GREAT DEVOURER",
+        "TYRANID",
+        "FELLTALON"
+      ]
     },
     {
       "name": "RAVENER TREMORSCYTHE",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "5+",
-      "wounds": 3,
+      "wounds": 18,
       "base_size": 40,
-      "passive_abilities": [
+      "weapons": [
         {
-          "name": "지저 습격",
-          "description": "전환점당 한 번, 화력전 페이즈에 적 요원이 행동을 수행하여 2\" 넘게 이동 하고 플레이어의 땅굴로부터 2\" 내에서 이동을 종료한 후, 이 요원이 지하 잠복 중이거 나, 준비 상태 또는 이번 전환점에 대응을 수행하지 않았다면, 플레이어는 방해하여 다음 의 규칙을 적용할 수 있습니다. 적용하기로 했다면, 이 요원을 운용 또는 대응합니다. 단, 이때 그 적 요원을 대상으로 근접 전 또는 사격을 수행해야 합니다. 다른 적 요원은 대상으로 지정될 수 없습니다. 만약 그렇 게 할 수 없다면 이 요원의 운용/대응이 취소되고 해당 규칙 적용은 취소됩니다. 이 요원의 운용/대응이 종료된 후, 그 적 요원이 이어서 운용/대응이 가능하고 연관된 것이라면 이를 수행합니다."
+          "name": "Pincer tail",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "Range 3\", Silent"
         },
         {
-          "name": "초감각 사냥꾼",
-          "description": "이 요원은 은폐 명령 상태라도 돌격 행동을 수행할 수 있습니 다. 단, 같은 운용/대응 중에 굴착을 수행했어야 합니다."
+          "name": "Scything talons & rending claws",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "Rending"
         }
       ],
-      "unique_actions": []
+      "passive_abilities": [
+        {
+          "name": "Subterranean Ambush",
+          "description": "Once per turning point in the Firefight phase, after an enemy operative performs an action in which it moves more than 2\" and ends within 2\" of your TUNNEL, if this operative is underground and is either ready or hasn’t counteracted during this turning point, you can interrupt to use this rule. If you do, activate or counteract with this operative (as appropriate), but during its activation/ counteraction it must shoot against or fight against that enemy operative, and cannot do so against any other enemy operatives until it does (if this isn’t possible, this operative’s activation/ counteraction is cancelled and this rule hasn’t been used). After completing this operative’s activation/counteraction, continue that enemy operative’s activation/counteraction (if possible and relevant)."
+        },
+        {
+          "name": "Hypersensory Hunter",
+          "description": "This operative can perform the Charge action while it has a Conceal order if it performed the Burrow action during the same activation/ counteraction."
+        }
+      ],
+      "unique_actions": [],
+      "keywords": [
+        "RAVENER",
+        "GREAT DEVOURER",
+        "TYRANID",
+        "TREMORSCYTHE"
+      ]
     },
     {
       "name": "RAVENER VENOMSPITTER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "5+",
-      "wounds": 3,
+      "wounds": 18,
       "base_size": 40,
       "weapons": [
         {
-          "name": "집게 꼬리",
+          "name": "Pincer tail",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 3\", 무성"
+          "special_rules": "Range 3\", Silent"
         },
         {
-          "name": "맹독탄(폭발)",
+          "name": "Venom bolt (blast)",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/5",
-          "special_rules": "사거리 8\", 폭발 2\", 독*"
+          "special_rules": "Range 8\", Blast 2\", Poison*"
         },
         {
-          "name": "맹독탄(집중)",
+          "name": "Venom bolt (focused)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/5",
-          "special_rules": "사거리 8\", 관통 1, 독*"
+          "special_rules": "Range 8\", Piercing 1, Poison*"
         },
         {
-          "name": "낫질 갈퀴",
+          "name": "Scything talons",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
@@ -124,29 +172,40 @@
       ],
       "passive_abilities": [
         {
-          "name": "*독",
-          "description": "공격 주사위 처리 단계 시, 플레이어가 결정적 성공으로 피해를 가하면 그 무기의 대상으로 지정된 요원에게 독 토큰을 부여합 니다. 이미 독 토큰을 보유하고 있다면 무시 배측낭 팽창"
+          "name": "*Poison",
+          "description": "In the Resolve Attack Dice step, if you inflict damage with any critical successes, the operative this weapon is being used against gains one of your Poison tokens (if it doesn’t already have one). Whenever an operative that has one of your Poison tokens is activated, inflict D3 damage on it."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "DISTEND DORSAL SAC (1AP)",
+          "description": "Until this operative has shot with its venom bolt, until it performs this action again or until it performs the Burrow action (whichever comes first), all profiles of its venom bolt have the Lethal 5+ weapon rule, have 1 added to their Atk stat and the Range 8\" weapon rule removed."
+        }
+      ],
+      "keywords": [
+        "RAVENER",
+        "GREAT DEVOURER",
+        "TYRANID",
+        "VENOMSPITTER"
+      ]
     },
     {
       "name": "RAVENER WARRIOR",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "5+",
-      "wounds": 3,
+      "wounds": 18,
       "base_size": 40,
       "weapons": [
         {
-          "name": "집게 꼬리",
+          "name": "Pincer tail",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/4",
-          "special_rules": "사거리 3\", 무성"
+          "special_rules": "Range 3\", Silent"
         },
         {
-          "name": "낫질 갈퀴",
+          "name": "Scything talons",
           "attacks": "5",
           "hit": "3+",
           "damage": "4/5"
@@ -154,61 +213,151 @@
       ],
       "passive_abilities": [
         {
-          "name": "본능 각성",
-          "description": "이 요원이 체력을 손실한 적 요원, 또는 이번 전환점에 후퇴 행동을 수행한 적 요원을 대상으로 사격, 근접전, 반격을 수행할 때마다 이 요원의 무기에 살상 5+ 무기 규칙을 부여합니다."
+          "name": "Instinctive Behaviour",
+          "description": "Whenever this operative is shooting against, fighting against or retaliating against a wounded enemy operative, or an enemy operative that performed the Fall Back action during this turning point, this operative’s weapons have the Lethal 5+ weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "RAVENER",
+        "GREAT DEVOURER",
+        "TYRANID",
+        "WARRIOR"
+      ]
     },
     {
       "name": "RAVENER WRECKER",
-      "apl": null,
+      "apl": 3,
       "movement": "7″",
       "save": "4+",
-      "wounds": 3,
+      "wounds": 18,
       "base_size": 40,
-      "passive_abilities": [
+      "weapons": [
         {
-          "name": "강화 외피",
-          "description": "일반 및 결정적 피해가 4 이상이라면 이 요원 이 받는 피해를 -1만큼 변경합니다."
+          "name": "Bone mace",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "special_rules": "Range 3\", Piercing 1, Silent"
         },
         {
-          "name": "*분쇄",
-          "description": "플레이어가 타격할 때마다, 양 플레이어가 모두 롤오프를 합니다. 이 무기의 대상으로 지정된 요원의 체 력이 9 이하라면 플레이어의 굴림 값을 +1만큼 변경합니 다. 플레이어가 롤오프에서 이겼다면, 그 요원에게 양측 롤오프 값의 차이만큼 추가 피해를 가합니다(최대 3 추가 피해)."
+          "name": "Scything talons & crushing claws",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "special_rules": "Crush*"
         }
       ],
-      "unique_actions": []
+      "passive_abilities": [
+        {
+          "name": "Reinforced Carapace",
+          "description": "Normal and Critical Dmg of 4 or more inflicts 1 less damage on this operative."
+        },
+        {
+          "name": "*Crush",
+          "description": "Whenever you strike, you and your opponent roll-off, adding 1 to your result if the operative this weapon is being used against has a Wounds stat of 9 or less. If you win, inflict additional damage on that operative equal to the difference between the dice results (to a maximum of 3 additional damage)."
+        }
+      ],
+      "unique_actions": [],
+      "keywords": [
+        "RAVENER",
+        "GREAT DEVOURER",
+        "TYRANID",
+        "WRECKER"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "d6",
-      "text": "팩션 장비\n래버너\n산성피\n부식 유발 내장과 강산 용액이 이 개체의 상처로부터 뿜어져 나온다.\n아군 래버너 요원이 근접전 또는 반격을 수행할 때, 공격 주\n사위가 피해를 가하면 그때마다 D6를 하나 굴립니다. 값이 \n5+이면 그 절차에서 지정된 적 요원에게 1 피해를 줍니다."
+      "name": "chromatospore-camouflage",
+      "text": "RAVENER\nFACTION EQUIPMENT\nCHROMATOSPORE CAMOUFLAGE\nChameleonic adaptations enable these bioforms to \nvirtually disappear.\nWhenever an operative is shooting a friendly \nRAVENER operative, if you can retain any cover \nsaves, you can retain one additional cover save. \nThis isn’t cumulative with improved cover saves \nfrom Vantage terrain."
     },
     {
-      "name": "d3",
-      "text": "팩션 장비\n래버너\n탈피체 피부\n보고에 따르면 일부 래버너는 치명상을 수복했을 뿐만 아니라 \n피부와 키틴질이 급속 재생으로 재건된 것으로 보인다.\n아군 래버너 요원이 운용될 때, 잃은 체력을 D3 회복합니다."
+      "name": "acid-blood",
+      "text": "RAVENER\nFACTION EQUIPMENT\nACID BLOOD\nCorrosive viscera and caustic fluids spray from these \ncreatures’ wounds.\nWhenever a friendly RAVENER operative is \nfighting or retaliating, whenever an attack dice \ninflicts damage on it, roll one D6: on a 5+, inflict 1 \ndamage on the enemy operative in that sequence."
+    },
+    {
+      "name": "metamorphic-flesh",
+      "text": "RAVENER\nFACTION EQUIPMENT\nMETAMORPHIC FLESH\nSome Raveners are reported to have recovered from \ninjuries that should have been fatal, their flesh and \nchitin reknitting in rapid regeneration.\nWhenever a friendly RAVENER operative is \nactivated, it regains up to D3 lost wounds."
+    },
+    {
+      "name": "heightened-senses",
+      "text": "RAVENER\nFACTION EQUIPMENT\nHEIGHTENED SENSES\nEven burrowing, Raveners can detect enemy \npheromones, esoteric energies and the whirr of servos, \nenabling them to land sudden ambushes.\nOnce per battle, after rolling off to decide \ninitiative, if a friendly RAVENER operative is \nunderground and an enemy operative is within 5\" \nof your TUNNEL, you can re-roll your dice."
+    }
+  ],
+  "faction_rules": [
+    {
+      "name": "burrow",
+      "text": "RAVENER\nFACTION RULE\nBURROW\nRaveners will emerge from their tunnels to strike at \nunsuspecting victims, then disappear again before their \nfoe can properly react.\nWhen setting up a RAVENER kill team before the \nbattle, your first two operatives must be set up as \nnormal. Each other friendly RAVENER operative \nthereafter can be set up underground: place it to \none side instead of in the killzone.\nIn the Firefight phase, friendly RAVENER \noperatives set up underground are activated and \ncan counteract as normal. Whenever a friendly \nRAVENER operative is underground, it cannot \nperform any actions other than Burrow. At the \nend of the battle, each friendly RAVENER \noperative that’s underground is incapacitated.\nCONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "If this operative is underground, set it up",
+          "text": "on your TUNNEL in a location it can be placed (it’s no longer underground, and it can be set up within control range of enemy operatives). Until the end of the activation/counteraction, subtract 2\" from its Move stat. Alternatively, instead of resolving the above effect, if this operative is in the killzone and on your TUNNEL, remove it from the killzone: it’s now underground. An operative cannot perform this action while carrying a marker, or if it isn’t either underground or on your TUNNEL."
+        }
+      ]
+    },
+    {
+      "name": "tunnel",
+      "text": "RAVENER\nFACTION RULE\nTUNNEL\nRaveners dig extensive tunnel networks in the ground \nand foundations beneath their prey’s feet, enabling \nthe Hive Mind’s elite creations to outmanoeuvre and \nambush their prey.\nAt the end of the Set Up Operatives step, place \nyour Tunnel marker numbered ‘0’ on the killzone \nfloor, wholly within your drop zone and touching \nyour killzone edge. As a STRATEGIC GAMBIT in \nthe first four turning points, you can place your \nnext numbered Tunnel marker on the killzone \nfloor wholly within 5\" of your preceding Tunnel \nmarker. This means that, as the battle progresses, \nyou can have a series of sequentially numbered \nTunnel markers (0, 1, 2, 3 and 4). Once you \nhave placed five Tunnel markers, don’t place \nany more (i.e. if your battle lasts more than four \nturning points).\nYour Tunnel markers and the area between your \nsequentially numbered markers (i.e. between 0 \nand 1, 1 and 2, etc.), create your TUNNEL.\nCONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "In a killzone that uses the close quarters rules",
+          "text": "(e.g. Killzone: Tomb World), your TUNNEL and the distance between your Tunnel markers can be measured through Wall terrain. In a killzone that uses the hazardous areas rules (e.g. Killzone: Bheta Decima), for the purposes of the Restricted Movement rule, parts of a Tunnel marker that are touching a hazardous area are treated as a hazardous area. In this example, operative A is on your TUNNEL as it’s on the area between markers 0 and 1. Operative B is also on your TUNNEL as it’s touching one of your Tunnel markers. Operative C is not on your TUNNEL as markers 1 and 3 are not sequential, so the area between those markers is not part of your TUNNEL."
+        }
+      ]
+    },
+    {
+      "name": "predatory-instincts",
+      "text": "RAVENER\nFACTION RULE\nPREDATORY INSTINCTS\nSeemingly driven by an all-consuming hunger, and with \nhyper-adapted reflexes, Raveners are deadly blurs of \nmuscle, talons and fangs.\nDuring each friendly RAVENER operative’s \nactivation, it can perform two Fight actions.\nEach friendly RAVENER operative can \ncounteract regardless of its order. Whenever \nit does:\n• You can change its order first, or change its \norder instead of performing an action (for the \nlatter, still treat it as having counteracted this \nturning point).\n• During that counteraction, if it doesn’t \nperform a mission action it can perform a free \nBurrow action."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "ap-1",
-      "text": "화력전 플로이\n래버너\n활주 회피\n점액이 번들거리는 외피와 경이로운 속도 덕에 래버너는 위험한 \n사냥감으로부터 발목 잡힐 일이 없다.\n이 화력전 플로이는 아군 래버너 요원이 운용 또는 대응하는 \n동안 행동을 수행하기 전이나 그 후에 사용합니다. 이 운용/\n대응 중에 요원은 다음을 수행할 수 있습니다.\n• 후퇴 행동에 소모되는 AP가 -1만큼 변경됩니다.\n• 적 요원의 장악 범위 내에 있더라도 돌격 행동을 수행할 \n수 있습니다. 또한, 돌격을 수행하기 위해 그 요원의 장악 \n범위에서 벗어날 수 있습니다(단, 그 이동에 적용되는 기본 \n규칙은 그대로 적용)."
+      "name": "slithering-evasion",
+      "text": "RAVENER\nFIREFIGHT PLOY\nSLITHERING EVASION\nThe secretion-slick carapace and unholy speed of a \nRavener enables them to avoid becoming bogged down \nagainst dangerous prey.\nUse this firefight ploy during a friendly RAVENER \noperative’s activation or counteraction, before or \nafter it performs an action. During that activation/\ncounteraction, that operative can:\n• Perform the Fall Back action for 1 less AP.\n• Perform the Charge action while within control \nrange of an enemy operative, and can leave \nthat operative’s control range to do so (but \nthen normal requirements for that move apply)."
     },
     {
-      "name": "d3-1",
-      "text": "화력전 플로이\n래버너\n굴착 타격\n래버너를 상대하는 대다수 요원이 마지막으로 목격하는 건 자기 복\n장이 남긴 잔상이다. 삽시간에 제노의 굴속으로 사라져버린 탓이다.\n이 화력전 플로이를 아군 래버너 요원이 굴착 행동을 수행\n할 때 사용합니다. 킬존에서 이 요원을 제거하기 전에, 또는 \n플레이어의 땅굴에 놓은 다음, 이 요원의 장악 범위 내에 있\n는 각 적 요원에게 D3+1 피해를 줍니다(주사위는 개별적으\n로 굴림). 이 플로이는 전략 페이즈에 사용할 수 없습니다. \n또한, 펠탈론 요원이 운용/대응하는 동안 맹독 찌르기 행동\n을 수행했어도 이 플로이를 사용할 수 없습니다(그 반대의 \n경우도 마찬가지)."
+      "name": "subterranean-horror",
+      "text": "RAVENER\nFIREFIGHT PLOY\nSUBTERRANEAN HORROR\nThose who think to trap a Ravener by tackling it at \nits brood burrow invite only their own demise, as the \nbioform uses hidden tunnels to encircle its prey before \nstriking from an unexpected angle.\nUse this firefight ploy when an enemy operative is \nperforming the Fight action and selects a friendly \nRAVENER operative on your TUNNEL to fight \nagainst. In the Resolve Attack Dice step of that \nsequence, you resolve the first attack dice (i.e. \ndefender instead of attacker)."
     },
     {
-      "name": "d3",
-      "text": "화력전 플로이\n래버너\n죽음의 광란\n제 몸이 빈사지경이라도 래버너는 군체 의식의 명에 따라 공격성\n을 생체자극으로 끌어올려 최후의 쇄도를 감행한다.\n이 화력전 플로이를 아군 래버너 요원이 무력화되었을 때 \n사용합니다. 이 요원이 킬존에서 제거되기 전에, 이 요원의 \n장악 범위 내에 있는 각 적 요원에게 D3 피해를 입힙니다\n(주사위는 개별적으로 굴림). 이 아군 요원이 베놈스피터이고 \n현재 배측낭 팽창 행동의 효과를 받고 있다면, 기존 피해 대\n신 2D3 피해를 입힙니다."
+      "name": "burrowing-strike",
+      "text": "RAVENER\nFIREFIGHT PLOY\nBURROWING STRIKE\nThe last sight for many operatives fighting Raveners is \na blur of their own uniform as they disappear into the \ndepths of a xenos burrow.\nUse this firefight ploy when a friendly RAVENER \noperative performs the Burrow action. Before \nthat operative is removed from the killzone, \nor after setting it up on your TUNNEL, inflict \nD3+1 damage on each enemy operative within \nits control range (roll separately for each). You \ncannot use this ploy in the Strategy phase, or \nduring a FELLTALON operative’s activation or \ncounteraction if it performs the Toxic Lunge \naction (and vice versa)."
+    },
+    {
+      "name": "death-frenzy",
+      "text": "RAVENER\nFIREFIGHT PLOY\nDEATH FRENZY\nRaveners can be compelled by the Hive Mind to fight in \na last surge of biostimulated aggression, even as their \nown bodies fail.\nUse this firefight ploy when a friendly RAVENER \noperative is incapacitated. Before that operative \nis removed from the killzone, inflict D3 damage \non each enemy operative within its control range \n(roll separately for each). If that friendly operative \nis a VENOMSPITTER that’s currently benefitting \nfrom the effects of its Distend Dorsal Sac action, \ninflict 2D3 damage instead."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION RAVENERS",
-      "text": "래버너 킬 팀\n아키타입: 침투, 수색 섬멸\n요원 목록\n \n↘ 1 래버너 프라임 요원\n \n↘ 4 래버너 요원을 다음 목록에서 선택해 편성합니다.\n• 펠탈론\n• 트레머사이드\n• 베놈스피터\n• 워리어\n• 레커 \n워리어를 제외하고, 이 목록의 각 요원은 킬 팀에 한 번씩만 \n편성할 수 있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "RAVENERS KILL TEAM\nARCHETYPES: INFILTRATION, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 RAVENER PRIME operative \n \n↘ 4 RAVENER operatives selected from the \nfollowing list:\n• FELLTALON\n• TREMORSCYTHE\n• VENOMSPITTER\n• WARRIOR\n• WRECKER \nOther than WARRIOR operatives, your kill team \ncan only include each operative on this list once.",
+      "selection": {
+        "RAVENER FELLTALON": [],
+        "RAVENER TREMORSCYTHE": [],
+        "RAVENER VENOMSPITTER": [],
+        "RAVENER WARRIOR": [],
+        "RAVENER WRECKER": []
+      }
+    }
+  ],
+  "strategy_ploys": [
+    {
+      "name": "death-from-below",
+      "text": "RAVENER\nSTRATEGY PLOY\nDEATH FROM BELOW\nSpurred by an imperative from the Hive Mind, Raveners \nwill coordinate lunges from the depths of their tunnel \nnetwork to eviscerate unwary prey that have strayed \ntoo close.\nWhenever a friendly RAVENER operative \nis fighting:\n• If it’s performed the Burrow action during that \nactivation/counteraction, its melee weapons \nhave the Balanced weapon rule.\n• If it’s on your TUNNEL, its melee weapons have \nthe Ceaseless weapon rule."
+    },
+    {
+      "name": "whipcord-emergence",
+      "text": "RAVENER\nSTRATEGY PLOY\nWHIPCORD EMERGENCE\nWhether lunging from a rubble-strewn entrance to \ntheir network of tunnels or bursting forth in a shower \nof debris to snatch at prey, Raveners can surprise even \nelite sentinels.\nWhenever an operative is shooting a friendly \nRAVENER operative:\n• If that friendly operative has performed the \nBurrow action during that turning point, you \ncan re-roll one of your defence dice.\n• If that friendly operative is on your TUNNEL, \nyou can re-roll any of your defence dice results \nof one result."
+    },
+    {
+      "name": "writhe-out-of-sight",
+      "text": "RAVENER\nSTRATEGY PLOY\nWRITHE OUT OF SIGHT\nFew organisms are as capable of slithering away \ninto darkness in the blink of an eye as Raveners. The \nquestion then is, where did they go…?\nSelect one friendly RAVENER operative in the \nkillzone. That friendly operative can immediately \nperform a free Burrow action. If it’s within 2\" of \nyour TUNNEL, it can immediately perform a free \nFall Back or Reposition action before it does so."
+    },
+    {
+      "name": "tunnel-lurkers",
+      "text": "RAVENER\nSTRATEGY PLOY\nTUNNEL LURKERS\nRaveners are horrifically adept at remaining all but \ninvisible, partially submerged amidst broken terrain, \nuntil the moment they lunge.\nWhenever a friendly RAVENER operative is \non your TUNNEL it’s in cover, unless it’s within \n2\" of the active operative. Treat this as cover \nprovided by Light terrain (therefore it’s affected \nby rules that prevent this, e.g. Seek Light and \nVantage terrain)."
     }
   ]
 }

@@ -1,24 +1,24 @@
 {
   "team": "vespid-stingwings",
-  "generated_at": "2026-08-29T21:57:31.861666+00:00",
+  "generated_at": "2026-08-26T15:18:17.687411+00:00",
   "datacards": [
     {
       "name": "VESPID STRAIN LEADER",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 10,
       "base_size": 28,
       "weapons": [
         {
-          "name": "중성자 블라스터",
+          "name": "Neutron blaster",
           "attacks": "4",
           "hit": "3+",
           "damage": "3/3",
-          "special_rules": "궤멸 2"
+          "special_rules": "Devastating 2"
         },
         {
-          "name": "발톱",
+          "name": "Claws",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
@@ -26,62 +26,80 @@
       ],
       "passive_abilities": [
         {
-          "name": "교감 헬멧",
-          "description": "이 요원의 운용당 한 번씩 다음 중 하나를 수행할 수 있습니다.\n• 1 교감 점수를 무상으로 소모합니다.\n• 1 교감 점수를 소모하고 이 요원으로부터 3” 내에 있는 아군 베스피드 독침날개 요원을 하나 지정합니다. 지정된 아군 요원은 즉시 무상으로 1AP 임무 행동을 수행할 수 있습니다(여전히 일반적인 방법으로 그 행동을 수행하듯 교감 점수를 소모해야 하며, 수렴 자극제 장비로 무시할 수 없습니다."
+          "name": "Communion Helm",
+          "description": "Once during each of this operative’s activations, you can do one of the following:\n• Spend 1 Communion point for free.\n• Spend 1 Communion point and select one friendly VESPID STINGWING operative within 3\" of this operative. That other friendly operative can immediately perform a free 1AP mission action (you must still spend a Communion point for it to perform that action as normal, and this cannot be ignored using the Convergence Stimulant equipment)."
         },
         {
-          "name": "교감",
-          "description": "요원들을 전투에 편성할 때, 베스피드 독침날개 전략 플로이 하나도 함께 선택합니다. 이 요원이 킬존에 있으며"
+          "name": "Commune",
+          "description": "When selecting your operatives for the battle, also select one VESPID STINGWING strategy ploy. Whenever this operative is in the killzone and isn’t within control range of enemy operatives, that ploy costs you 0CP."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "STRAIN",
+        "LEADER"
+      ]
     },
     {
       "name": "OVERSIGHT DRONE",
-      "apl": null,
+      "apl": 2,
       "movement": "8″",
       "save": "2+",
-      "wounds": 2,
+      "wounds": 5,
       "base_size": 25,
       "weapons": [
         {
-          "name": "들이받기",
+          "name": "Ram",
           "attacks": "3",
           "hit": "5+",
           "damage": "1/2"
         }
       ],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "OVERSIGHT",
+        "DRONE"
+      ],
       "passive_abilities": [
         {
-          "name": "드론 회피기동",
-          "description": "• 이 요원은 공중 인솔, 돌격, 질주, 후퇴, 근접전, 기동 이외의 다 른 행동을 수행할 수 없습니다."
+          "name": "Evasive Drone",
+          "description": "• This operative cannot perform any actions other than Aerial Guidance, Charge, Dash, Fall Back, Fight and Reposition.\n• Whenever determining control of an objective marker, treat this operative’s APL stat as 1 lower. Note this isn’t a change to its APL stat, so any changes are cumulative with this.\n• Whenever determining what’s visible to this operative, the round disc at the top of the miniature is its head.\n• Whenever this operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\n• Whenever an operative is shooting this operative, ignore the Piercing weapon rule."
+        }
+      ],
+      "unique_actions": [
+        {
+          "name": "AERIAL GUIDANCE (1AP)",
+          "description": "SUPPORT. Until the start of this operative’s next activation, whenever another friendly VESPID STINGWING operative within 6\" of this operative is shooting an enemy operative visible to this operative, that friendly operative’s ranged weapons have the Lethal 5+ and Saturate weapon rules. This has no effect while this operative is within control range of an enemy operative. This operative cannot perform this action while within control range of an enemy operative."
         }
       ]
     },
     {
       "name": "VESPID LONGSTING",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 9,
       "base_size": 28,
       "weapons": [
         {
-          "name": "중성자 레일 소총(표준)",
+          "name": "Neutron rail rifle (standard)",
           "attacks": "4",
           "hit": "4+",
           "damage": "4/4",
-          "special_rules": "궤멸 2, 중성자 파편*"
+          "special_rules": "Devastating 2, Neutron Fragment*"
         },
         {
-          "name": "중성자 레일 소총(조준)",
+          "name": "Neutron rail rifle (aimed)",
           "attacks": "4",
           "hit": "3+",
           "damage": "4/4",
-          "special_rules": "궤멸 2, 중화기(질주 한정), 살상 5+, 중성자 파편*"
+          "special_rules": "Devastating 2, Heavy (Dash only), Lethal 5+, Neutron Fragment*"
         },
         {
-          "name": "발톱",
+          "name": "Claws",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
@@ -89,36 +107,41 @@
       ],
       "passive_abilities": [
         {
-          "name": "*중성자 파편",
-          "description": "이 무기의 대상이 무력화되지 않았으나 플 레이어가 공격 주사위를 하나라도 처리했다면, 대상이 중성자 파편 토큰 하나를 획득합니다. 중성자 파편 토큰 을 보유한 요원은 운용을 시작할 때마다 보유한 토큰 하 나당 D3 피해(토큰별로 굴림)를 받습니다."
+          "name": "*Neutron Fragment",
+          "description": "If the target of this weapon isn’t incapacitated but you resolve any attack dice, the target gains one of your Neutron Fragment tokens. Whenever an operative that has one of your Neutron Fragment tokens is activated, inflict D3 damage on it for each Neutron Fragment token it has (roll separately for each)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "LONGSTING"
+      ]
     },
     {
       "name": "VESPID SHADESTRAIN",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "3+",
-      "wounds": 2,
+      "wounds": 9,
       "base_size": 28,
       "weapons": [
         {
-          "name": "중성자 사출기",
+          "name": "Neutron sting",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/3",
-          "special_rules": "사거리 8\", 궤멸 2"
+          "special_rules": "Range 8\", Devastating 2"
         },
         {
-          "name": "중성자 수류탄",
+          "name": "Neutron grenade",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/3",
-          "special_rules": "사거리 6\", 폭발 2\", 궤멸 2, 한도 1, 포화"
+          "special_rules": "Range 6\", Blast 2\", Devastating 2, Limited 1, Saturate"
         },
         {
-          "name": "발톱",
+          "name": "Claws",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
@@ -126,33 +149,38 @@
       ],
       "passive_abilities": [
         {
-          "name": "유령 장비",
-          "description": "이 요원이 은폐 명령을 받은 동안, 이 요원에게 서 6\" 내에 있지 않은 상대 요원은 이 요원을 유효 대상으 로 지정할 수 없습니다. 요원이 유효 대상으로 지정되지 않았다면 이 규칙은 효과를 발휘하지 않는다는 점에 유의 하십시오(예: 폭발 무기 규칙의 부가 대상이 되었을 때)."
+          "name": "Ghost Rig",
+          "description": "While this operative has a Conceal order, your opponent cannot select it as a valid target unless it’s within 6\" of the operative trying to target it. Note that this rule has no effect if this operative isn’t selected as the valid target, e.g. if it’s a secondary target from the Blast weapon rule."
         },
         {
-          "name": "위장",
-          "description": "다른 요원이 이 요원에게 사격할 때마다, 관통 무 기 규칙을 무시하고 모든 엄폐 방호를 결정적 성공으로 보전합니다. 요원이 유효 대상으로 지정되지 않았다면 이 규칙은 효과를 발휘하지 않는다는 점에 유의하십시오 (예: 폭발 무기 규칙의 부가 대상이 되었을 때)."
+          "name": "Camouflaged",
+          "description": "Whenever an operative is shooting this operative, ignore the Piercing weapon rule and all cover saves are retained as critical successes. This rule has no effect if this operative isn’t selected as the valid target, e.g. if it’s a secondary target from the Blast weapon rule."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "SHADESTRAIN"
+      ]
     },
     {
       "name": "VESPID SKYBLAST",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 9,
       "base_size": 28,
       "weapons": [
         {
-          "name": "중성자 유탄발사기",
+          "name": "Neutron grenade launcher",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/3",
-          "special_rules": "폭발 2\", 궤멸 2, 중성자 폭격*"
+          "special_rules": "Blast 2\", Devastating 2, Neutron Bombardment*"
         },
         {
-          "name": "발톱",
+          "name": "Claws",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
@@ -160,70 +188,86 @@
       ],
       "passive_abilities": [
         {
-          "name": "*중성자 폭격",
-          "description": "주 대상의 장악 범위 안에 플레이어의 중성자 낙진 마커를 하나 놓습니다."
+          "name": "*Neutron Bombardment",
+          "description": "Place one of your Neutron Fallout markers within the primary target’s control range."
         },
         {
-          "name": "중성자 낙진",
-          "description": "적 요원의 운용마다 한 번씩, 그 적 요원이 플레이어의 중성자 낙진 마커로부터 2\" 내에 들어올 때 마다 D3 피해를 가합니다. 다수의 마커가 있어도 피해가 누적되지 않습니다."
+          "name": "Neutron Fallout",
+          "description": "Once during each enemy operative’s activation, as soon as it’s within 2\" of one of your Neutron Fallout markers, inflict D3 damage on that operative (multiple markers aren’t cumulative)."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "SKYBLAST"
+      ]
     },
     {
       "name": "VESPID SWARMGUARD",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 9,
       "base_size": 28,
       "weapons": [
         {
-          "name": "화염방사기(표준)",
+          "name": "Flamer (standard)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "사거리 8\", 포화, 격류 2\""
+          "special_rules": "Range 8\", Saturate, Torrent 2\""
         },
         {
-          "name": "화염방사기(하늘점화)",
+          "name": "Flamer (skytorch)",
           "attacks": "4",
           "hit": "2+",
           "damage": "3/3",
-          "special_rules": "포화, 격류 0\", 하늘점화*"
+          "special_rules": "Saturate, Torrent 0\", Skytorch*"
         },
         {
-          "name": "발톱",
+          "name": "Claws",
           "attacks": "3",
           "hit": "4+",
-          "damage": "3/4"
+          "damage": "3/4",
+          "special_rules": "- -"
         }
       ],
       "passive_abilities": [
         {
-          "name": "*하늘점화",
-          "description": "이 무기는 하늘점화 강습 행동(카드 뒷면 참고) 중에만 사용할 수 있습니다. 무기 사용 시, 유효 대상을 지정하지 않습니다. 대신, 무기의 점화 구역 내에 있는 요원에게 각각 사격합니다(고지 밑에 완전히 들어간 요원은 제외). 이들 요원은 엄폐 또는 차폐 상태가 아닌 것으로 간주합니다. 각 절 차의 굴림은 가장 먼 요원부터 가장 가까운 요원 순으로 개별적으로 수행합니다. 점화 구역은 요원이 직전에 있던 위치와 현재 위치 사이의 수평 범위입니다. 이 요원이 움직이기 전, 범위 확인을 위해 요 원 아래에 28mm 원형 하늘점화 마커를 일시적으로 놓을 수 있습니다. 격류 0”는 점화 구역 바깥의 부가 대상을 지정할 수 없다는 의미이나, 협소한 요새 규칙(킬 팀 코어북의 킬존: 볼쿠스 참고)처럼 격류 무기 규칙과 관련된 다른 모든 규칙은 그대로 적용됩니다. 점화 구역"
+          "name": "*Skytorch",
+          "description": "An operative can only use this weapon during the Skytorch Assault action (see other side of card). If it does, don’t select a valid target. Instead, shoot against each operative within its torch zone (excluding operatives wholly underneath Vantage terrain); they aren’t in cover or obscured. Roll each sequence separately in order of furthest operative to closest. The torch zone is the horizontal area between the operative’s current and previous location. A 28mm round Skytorch marker can be temporarily placed underneath this operative before it moves to help determine this. Torrent 0\" means you cannot select secondary targets outside of its torch zone, but this weapon still has the Torrent weapon rule for all other rules purposes, e.g. the Condensed Stronghold rule (see Killzone: Volkus, Kill Team Core Book). TORCH ZONE"
         }
       ],
-      "unique_actions": []
+      "unique_actions": [
+        {
+          "name": "SKYTORCH ASSAULT (2AP)",
+          "description": "Perform a free Reposition action with this operative. During that action, it must FLY and can move an additional 2\". Then perform a free Shoot action. You can only select a flamer (skytorch) for that Shoot action. This operative cannot perform this action while it has a Conceal order, or while within control range of an enemy operative."
+        }
+      ],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "SWARMGUARD"
+      ]
     },
     {
       "name": "VESPID WARRIOR",
-      "apl": null,
+      "apl": 2,
       "movement": "6″",
       "save": "5+",
-      "wounds": 2,
+      "wounds": 9,
       "base_size": 28,
       "weapons": [
         {
-          "name": "중성자 블라스터",
+          "name": "Neutron blaster",
           "attacks": "4",
           "hit": "4+",
           "damage": "3/3",
-          "special_rules": "궤멸 2"
+          "special_rules": "Devastating 2"
         },
         {
-          "name": "발톱",
+          "name": "Claws",
           "attacks": "3",
           "hit": "4+",
           "damage": "3/4"
@@ -231,50 +275,115 @@
       ],
       "passive_abilities": [
         {
-          "name": "병정의 본능",
-          "description": "이 요원이 사격할 때마다, 그 절차 중에 플 레이어가 교감 점수를 소비하지 않으면 절차가 끝날 때 까지 요원의 중성자 블라스터에 정확 1 무기 규칙이 부여 됩니다."
+          "name": "Warrior Instincts",
+          "description": "Whenever this operative is shooting, if you don’t spend Communion points during that sequence, its neutron blaster has the Accurate 1 weapon rule until the end of that sequence."
         }
       ],
-      "unique_actions": []
+      "unique_actions": [],
+      "keywords": [
+        "VESPID STINGWING",
+        "T’AU EMPIRE",
+        "WARRIOR"
+      ]
     }
   ],
   "equipment": [
     {
-      "name": "d3",
-      "text": "팩션 장비\n베스피드 독침날개\n신경 자극제\n베스피드의 방어구에 내장된 앰풀에서 투여되는 이 화학 혼합물은 \n교감이 더욱 명료해지도록 보조하고 전투 중에도 기율이 유지되게 \n해준다.\n각\u0002전략\u0002페이즈의\u0002준비\u0002단계에\u0002교감\u0002점수\u0002획득량을\u0002결정할\u0002때,\u0002\nD3를\u0002두\u0002개\u0002굴리고\u0002하나를\u0002선택해\u0002사용할\u0002수\u0002있습니다."
+      "name": "neurostimulant",
+      "text": "VESPID STINGWING\nFACTION EQUIPMENT\nNEUROSTIMULANT\nDispensed from ampoules within the Vespid’s armour, \nthis chemical cocktail is intended to aid the clarity \nof communion and ensure discipline is maintained \nduring battle.\nIn the Ready step of each Strategy phase, when \ndetermining how many Communion points to \ngain, you can roll two D3 and select one D3 \nto use."
+    },
+    {
+      "name": "convergence-stimulant",
+      "text": "VESPID STINGWING\nFACTION EQUIPMENT\nCONVERGENCE STIMULANT\nThis substance, dispensed only in extreme cases and \nat the Shas’ui’s discretion, suppresses the instinctual \nresponses of the Vespids to aid in mission focus under \nextreme stress.\nOnce per turning point, a friendly VESPID \nSTINGWING operative can perform the Pick Up \nMarker or a mission action without you spending \na Communion point."
+    },
+    {
+      "name": "accelerant-stimulant",
+      "text": "VESPID STINGWING\nFACTION EQUIPMENT\nACCELERANT STIMULANT\nThough it bears long‑term risks of injury or dangerous \nfatigue, this stimulant sharpens the Vespids’ reactions \nand lends them haste in the heat of battle.\nWhenever a friendly VESPID STINGWING \noperative (excluding OVERSIGHT DRONE) \nperforms the Charge or Dash action, it can move \nan additional 1\". If it uses FLY for this action, you \ncan set it back up 1\" further away."
+    },
+    {
+      "name": "aggression-stimulant",
+      "text": "VESPID STINGWING\nFACTION EQUIPMENT\nAGGRESSION STIMULANT\nShould their Vespids look in danger of being overrun, \na Shas’ui may risk triggering the release of this \nhighly‑addictive mixture of combat stimulants and \naggression amplifiers.\nWhenever a friendly VESPID STINGWING \noperative (excluding OVERSIGHT DRONE) is \nfighting, its melee weapons have the Ceaseless \nweapon rule."
     }
   ],
   "faction_rules": [
     {
-      "name": "COMMUNION",
-      "text": "팩션 규칙\n베스피드 독침날개\n교감\n다른 종족은 베스피드를 이해하고 상호작용하기 위해 부단히 애를 \n쓴다. 타우는 다양한 기술력을 동원해 베스피드와 강력한 연결고\n리를 형성하는 데 성공했으며, 교감 헬멧은 그 대표적인 사례라 할 \n수 있다. 베스피드는 이런 보조장치를 유익하다고 여겨 수용했지\n만, 이것이 장기적으로 어떤 여파를 낳을지는 아직도 불확실하다.\n교감 점수는 아군 베스피드 독침날개 요원의 전략적 집중력\n을 유지하는 데 쓰입니다. 각 전략 페이즈의 준비 단계에 플\n레이어는 D3 교감 점수를 획득하며, 킬존에 아군 감독 드론\n이 있다면 여기에 추가로 1점을 획득합니다. 교감 점수는 다\n음과 같은 상황에 사용됩니다(감독 드론 요원은 이에 영향을 \n받지 않음).\n다음 면에 계속\n\n---\n\n1. 교감 점수를 1점 소비하지 않으면, 아군 베스피드 독침날개 \n요원은 사격 행동을 수행할 때마다 자신으로부터 8\" 내\n에 있는 가장 가까운 적 요원만 대상으로 지정할 수 있습\n니다(다른 아군 베스피드 독침날개 요원의 장악 범위 내에 \n있는 적 요원은 제외). 폭발 및 격류 무기 규칙을 보유한 \n무기는 주 대상만을 이러한 방식으로 지정합니다.\n2. 교감 점수를 1점 소비하지 않으면, 아군 베스피드 독침날개 \n요원은 돌격 행동을 수행할 때마다 반드시 가장 가까운 \n적 요원의 장악 범위 내에서 행동을 종료해야 합니다.\n3. 아군 베스피드 독침날개 요원으로 마커 회수 또는 임무 \n행동(해치 조작 제외)을 수행하려면 반드시 교감 점수를 \n1점 소비해야 합니다.\n4. 아군 베스피드 독침날개 요원이 사격할 때마다, 교감 점수\n를 1점(초과 불가능) 소비해 공격 주사위를 하나 재굴림할 \n수 있습니다."
+      "name": "communion",
+      "text": "VESPID STINGWING\nFACTION RULE\nCOMMUNION\nOther species struggle to understand and interact with \nVespids. The T’au have managed to establish strong \nlinks through various technological aids, most notably \ntheir communion helms. The Vespids have accepted \nthese aids as beneficial, but the true extent of their \nimpact is unknown.\nCommunion points are used to maintain the \ntactical focus of friendly VESPID STINGWING \noperatives. In the Ready step of each Strategy \nphase, you gain D3 Communion points, plus 1 if \na friendly OVERSIGHT DRONE operative is in the \nkillzone. Communion points are used as follows \n(OVERSIGHT DRONE operatives aren’t affected by \nthe following):\nRULE CONTINUES ON OTHER SIDE",
+      "options": [
+        {
+          "name": "Whenever a friendly VESPID STINGWING",
+          "text": "operative is performing the Shoot action, it can only target the closest enemy operative within 8\" of it (excluding enemy operatives within control range of other friendly VESPID STINGWING operatives) unless you spend 1 of your Communion points. For weapons with the Blast and Torrent weapon rules, only the first target must be selected in this way."
+        },
+        {
+          "name": "Whenever a friendly VESPID STINGWING",
+          "text": "operative (excluding DRONE) performs the Charge action, it must end the action within control range of the closest enemy operative it can unless you spend 1 of your Communion points."
+        },
+        {
+          "name": "Whenever you would perform the Pick",
+          "text": "Up Marker or a mission action (excluding Operate Hatch) with a friendly VESPID STINGWING operative, you must also spend 1 of your Communion points to do so."
+        },
+        {
+          "name": "Whenever a friendly VESPID STINGWING",
+          "text": "operative is shooting, you can spend 1 (and only 1) of your Communion points to re‑roll one of your attack dice."
+        }
+      ]
     },
     {
-      "name": "NEUTRON CHARGE",
-      "text": "팩션 규칙\n베스피드 독침날개\n중성자 충전\n중성자 무기의 동력원은 베스피드의 모행성에서 유래한 방사능 \n수정이다. 수정은 베스피드의 날갯짓 진동과 공명함으로써 충전\n되며, 이를 방출하면 육중한 전투 장갑조차 원자 단위로 해체하는 \n에너지가 발생한다.\n이름에\u0002‘중성자’가\u0002포함된\u0002무기는\u0002모두\u0002중성자\u0002무기입니다\n(예:\u0002중성자\u0002블라스터,\u0002중성자\u0002유탄발사기\u0002등).\u0002아군\u0002베스피드 \n독침날개\u0002요원이\u0002이동하거나\u0002비행하면,\u0002전환점이\u0002종료될\u0002때\n까지\u0002요원이\u0002장비한\u0002중성자\u0002무기에\u0002관통\u00021\u0002무기\u0002규칙이\u0002부여\n됩니다."
+      "name": "neutron-charge",
+      "text": "VESPID STINGWING\nFACTION RULE\nNEUTRON CHARGE\nNeutron weapons are powered by radioactive crystals \nfrom the Vespids’ home world. The harmonic thrumming \nof Vespids’ wings resonates within the crystals to \ncharge them. When unleashed, even heavy combat \narmour can barely protect against this atom‑stripping \nenergy charge.\nNeutron weapons are any weapons that have the \nword ‘neutron’ in their name, e.g. neutron blaster, \nneutron grenade launcher, etc. Whenever a \nfriendly VESPID STINGWING operative moves or \nuses FLY, its neutron weapons have the Piercing \n1 weapon rule until the end of the turning point."
     },
     {
-      "name": "FLY",
-      "text": "팩션 규칙\n베스피드 독침날개\n비행\n베스피드는 낮게 윙윙대는 소리를 내는 날개로 놀랍도록 민첩한 \n공중 기동성을 선보인다.\n아군\u0002베스피드 독침날개\u0002요원은\u0002이동과\u0002관련한\u0002행동을\u0002수\n행할\u0002때마다\u0002비행할\u0002수\u0002있습니다.\u0002비행\u0002시,\u0002요원을\u0002이동하는\u0002\n대신\u0002킬존에서\u0002제거한\u0002다음\u0002본래\u0002위치로부터\u0002이동\u0002수치와\u0002\n동일한\u0002수평\u0002거리(질주\u0002시에는\u00023”)\u0002내에\u0002완전히\u0002들어가도록\u0002\n다시\u0002배치합니다(킬존:\u0002갤로다크\u0002등\u0002폐쇄\u0002공간\u0002규칙을\u0002사용\n하는\u0002킬존에서는\u0002벽\u0002지형을\u0002넘거나\u0002통과해서\u0002이\u0002거리를\u0002측\n정할\u0002수\u0002없으며,\u0002요원을\u0002출입구의\u0002반대쪽\u0002편에\u0002배치할\u0002수\u0002없\n습니다.\u0002다시\u0002말해,\u0002열린\u0002해치\u0002통로를\u0002통과해\u0002비행할\u0002수\u0002없습\n니다).\u0002비행\u0002시에는\u0002돌격\u0002행동을\u0002수행할\u0002때\u0002이동\u0002거리가\u0002추가\n되지\u0002않는다는\u0002점에\u0002유의하십시오.\u0002요원은\u0002반드시\u0002놓을\u0002수\u0002\n있는\u0002위치에\u0002배치해야\u0002하며,\u0002돌격\u0002행동을\u0002수행하지\u0002않는\u0002한\u0002\n적\u0002요원의\u0002장악\u0002범위\u0002내에는\u0002배치할\u0002수\u0002없습니다."
+      "name": "fly",
+      "text": "VESPID STINGWING\nFACTION RULE\nFLY\nThe thrumming wings of the Vespids bear them aloft \nwith speed and remarkable agility.\nWhenever a friendly VESPID STINGWING \noperative performs an action in which it moves, it \ncan FLY. If it does, don’t move it. Instead, remove \nit from the killzone and set it back up wholly \nwithin a distance equal to its Move stat (or 3\" if \nit was a Dash) horizontally of its original location \n(in a killzone that uses the close quarters rules, \ne.g. Killzone: Tomb World, this distance cannot \nbe measured over or through Wall terrain, and \nthat operative cannot be set up on the other side \nof an access point – in other words it cannot FLY \nthrough an open hatchway). Note that it gains \nno additional distance when performing the \nCharge action. It must be set up in a location it \ncan be placed, and unless it’s the Charge action, \nit cannot be set up within control range of an \nenemy operative."
     }
   ],
   "firefight_ploys": [
     {
-      "name": "d3",
-      "text": "화력전 플로이\n베스피드 독침날개\n쏜살같은 비행\n베스피드는 공중에서 무지막지한 속도로 움직일 수 있어 화력전이 \n한창인 와중에도 신속하게 재기동한다.\n이\u0002화력전\u0002플로이는\u0002아군\u0002베스피드 독침날개\u0002요원이\u0002기동\u0002행\n동을\u0002수행할\u0002때\u0002사용할\u0002수\u0002있습니다.\u0002그\u0002행동을\u0002종료할\u0002때까\n지,\u0002요원이\u0002추가로\u0002D3\"만큼\u0002이동할\u0002수\u0002있으며\u0002비행을\u0002사용하\n면\u0002추가로\u0002D3\"\u0002떨어진\u0002위치에\u0002배치할\u0002수\u0002있습니다.\u0002어떤\u0002경\n우라도\u0002남은\u0002전환점\u0002동안\u0002요원은\u0002사격\u0002또는\u0002근접전\u0002행동을\u0002\n수행할\u0002수\u0002없습니다.\n\n---\n\n화력전 플로이\n베스피드 독침날개\n중성자 과부하\n급속도로 진동하는 날갯짓에 의해 형언하기 어려운 방식으로 강화\n된 베스피드의 중성자 무기는 근거리에서 끔찍한 에너지 작렬을 \n일으킬 수 있다.\n이\u0002화력전\u0002플로이는\u0002이동\u0002또는\u0002비행한\u0002운용\u0002중에\u0002중성자\u0002무\n기로\u0002사격하는\u0002아군\u0002베스피드 독침날개\u0002요원의\u0002결정적\u0002성공\n을\u0002처리했을\u0002때\u0002사용할\u0002수\u0002있습니다.\u0002대상이\u0002요원에게서\u00024\"\u0002\n내에\u0002있다면,\u0002추가로\u0002D3\u0002피해를\u0002가합니다.\n\n---\n\n화력전 플로이\n베스피드 독침날개\n악성 맹독\n많은 베스피드 계통은 복부의 독침에서 다양한 신경독과 염증 유발 \n물질을 만들어낸다. 여기 쏘인 희생자는 하릴없이 경련을 일으키거\n나 아나필락시스 반응에 의해 살점이 부풀다가 터져버리고 만다.\n이\u0002화력전\u0002플로이는\u0002아군\u0002베스피드 독침날개\u0002요원(감독 드론\u0002\n제외)이\u0002근접전을\u0002수행하여\u0002결정적\u0002성공으로\u0002타격했을\u0002때\u0002\n사용할\u0002수\u0002있습니다.\u0002대상에게\u0002추가로\u0002D3\u0002피해를\u0002가합니다."
+      "name": "ocelli",
+      "text": "VESPID STINGWING\nFIREFIGHT PLOY\nOCELLI\nThe multispectral eyesight and esoteric sensory acuity \nof the Vespids are equal to any scanning technologies. \nAs they sweep over the battlefield, they easily pick out \neven the most well‑concealed enemies.\nUse this firefight ploy when a friendly VESPID \nSTINGWING operative performs the Shoot \naction during an activation in which it’s used \nFLY. Until the end of that action, it gains all \nbenefits from the first and second main features \nof Vantage terrain. When determining the height \ndifference between operatives for Vantage \nterrain rules, treat that friendly operative as \nbeing 3\" higher than it currently is (but not when \ndetermining the distance for Communion)."
+    },
+    {
+      "name": "darting-flight",
+      "text": "VESPID STINGWING\nFIREFIGHT PLOY\nDARTING FLIGHT\nVespids are capable of tremendous airborne speed, \nallowing them to rapidly reposition during a firefight.\nUse this firefight ploy when a friendly VESPID \nSTINGWING operative performs the Reposition \naction. Until the end of that action, it can move \nan additional D3\", or be set up an additional \nD3\" away if it uses FLY. In either case, it cannot \nperform Shoot or Fight actions for the rest of the \nturning point."
+    },
+    {
+      "name": "neutron-overload",
+      "text": "VESPID STINGWING\nFIREFIGHT PLOY\nNEUTRON OVERLOAD\nAugmented in some ineffable fashion by the rapid \nwing beats of the Vespids, their neutron weaponry can \nunleash horrific point‑blank energy blasts.\nUse this firefight ploy when you resolve a critical \nsuccess for a friendly VESPID STINGWING \noperative that’s shooting with a neutron weapon \nduring an activation in which it’s moved or used \nFLY. If the target is within 4\" of it, inflict D3 \nadditional damage."
+    },
+    {
+      "name": "vicious-venom",
+      "text": "VESPID STINGWING\nFIREFIGHT PLOY\nVICIOUS VENOM\nMany Strains of Vespid produce various neurotoxins \nand inflammatory agents from their abdominal stingers, \nwhich can reduce victims to convulsing wrecks or \nanaphylactically bloat their flesh to bursting point.\nUse this firefight ploy when a friendly VESPID \nSTINGWING operative (excluding OVERSIGHT \nDRONE) is fighting and you strike with a critical \nsuccess. Inflict D3 additional damage."
     }
   ],
   "operatives_selection": [
     {
-      "name": "OPERATIVE SELECTION VESPID STINGWINGS",
-      "text": "베스피드 독침날개 \n킬 팀\n아키타입: 정찰, 수색 섬멸\n요원 목록\n \n↘\u00021\u0002베스피드 독침날개 지휘종\u0002요원\n \n↘\u00021\u0002베스피드 독침날개 감독 드론\u0002요원\n \n↘\u00029\u0002베스피드 독침날개\u0002요원을\u0002다음\u0002목록에서\u0002선택해\u0002편성\n합니다.\n• 길쭉쐐기\n• 그늘살이\n• 하늘재비\n• 군집수호병\n• 병정\n\u0002\n병정\u0002요원을\u0002제외하면,\u0002이\u0002목록의\u0002각\u0002요원은\u0002킬\u0002팀에\u0002한\u0002번씩만\u0002\n편성할\u0002수\u0002있습니다.",
-      "selection": {}
+      "name": "OPERATIVE SELECTION",
+      "text": "VESPID STINGWINGS \nKILL TEAM\nARCHETYPE: RECON, SEEK & DESTROY\nOPERATIVES\n \n↘ 1 VESPID STINGWING \nSTRAIN LEADER operative\n \n↘ 1 VESPID STINGWING \nOVERSIGHT DRONE operative\n \n↘ 9 VESPID STINGWING operatives selected \nfrom the following list:\n• LONGSTING\n• SHADESTRAIN\n• SKYBLAST\n• SWARMGUARD\n• WARRIOR\n \nOther than WARRIOR operatives, your kill team \ncan only include each operative on this list once.",
+      "selection": {
+        "VESPID LONGSTING": [],
+        "VESPID SHADESTRAIN": [],
+        "VESPID SKYBLAST": [],
+        "VESPID SWARMGUARD": [],
+        "VESPID WARRIOR": []
+      }
     }
   ],
   "strategy_ploys": [
     {
-      "name": "d6",
-      "text": "전략 플로이\n베스피드 독침날개\n공중 기동성\n베스피드는 순식간에 공기를 가르고 비행해 예측할 수 없는 경로를 \n취하며 제때 조준조차 마치지 못한 적을 교란한다.\n다른\u0002요원이\u0002대응\u0002도중,\u0002또는\u0002자신이\u0002이동하거나\u0002전장에\u0002놓\n인\u0002운용\u0002도중\u0002아군\u0002베스피드 독침날개\u0002요원을\u0002사격할\u0002때마다,\u0002\n공격\u0002주사위로\u0002일반\u0002피해를\u0002가했다면\u0002D6\u0002하나를\u0002굴립니다.\u0002\n값이\u00025+이면\u0002그\u0002피해를\u0002무시합니다.\u0002이\u0002방식으로는\u0002사격\u0002행동\u0002\n절차\u0002한\u0002번당\u0002하나의\u0002공격\u0002주사위만\u0002무시할\u0002수\u0002있습니다."
+      "name": "hardened-exoskeleton",
+      "text": "VESPID STINGWING\nSTRATEGY PLOY\nHARDENED EXOSKELETON\nNatural exoskeletal chitin armours the Vespids, giving \nthem an insectile resilience against all but the most \ngrievous blows.\nWhenever a friendly VESPID STINGWING \noperative (excluding OVERSIGHT DRONE) is \nfighting or retaliating, Normal Dmg of 4 or more \ninflicts 1 less damage on it."
+    },
+    {
+      "name": "aerial-agility",
+      "text": "VESPID STINGWING\nSTRATEGY PLOY\nAERIAL AGILITY\nVespids jink and weave through the air, following \nunpredictable flight paths that confound foes who have \nnot had time to line up clean shots.\nWhenever an operative is shooting a friendly \nVESPID STINGWING operative while \ncounteracting or interrupting, or during an \nactivation in which that shooting operative moved \nor was set up, roll one D6 whenever an attack \ndice would inflict Normal Dmg: on a 5+, ignore \nthat inflicted damage. You cannot ignore more \nthan one attack dice per Shoot action sequence \nthis way."
+    },
+    {
+      "name": "airborne-predators",
+      "text": "VESPID STINGWING\nSTRATEGY PLOY\nAIRBORNE PREDATORS\nHard‑wired instincts see the Vespids pounce upon \ntheir victims from on high, striking with lethal \npredatory intent.\nWhenever a friendly VESPID STINGWING \noperative moves or uses FLY during its activation, \nits weapons have the Balanced weapon rule until \nthe end of that activation."
+    },
+    {
+      "name": "sting",
+      "text": "VESPID STINGWING\nSTRATEGY PLOY\nSTING\nThe bayonet‑like stingers that jut from the Vespids’ \nabdomens can be employed as weapons, their vicious \nbarbs piercing plate armour and driving deep into their \nvictims’ bodies.\nImprove the Hit stat of friendly VESPID \nSTINGWING operatives’ claws by 1, and \nthose weapons have the Lethal 5+ and Shock \nweapon rules."
     }
   ]
 }
